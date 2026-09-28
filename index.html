@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#ffffff"><title>TCF Tâche 3 背诵器</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div><div class="eyebrow">TCF Canada · Expression écrite · Tâche 3</div><h1>写作全文背诵器</h1><p class="subtitle">62 篇最终稿 · 四段默写 · 原稿逐词对照</p></div>
+  <div class="stats" aria-label="学习统计"><div><strong id="statDone">0</strong><span>已熟练</span></div><div><strong id="statReview">0</strong><span>待复习</span></div><div><strong id="statAttempts">0</strong><span>练习次数</span></div></div>
+</header>
+<main class="layout">
+<aside class="sidebar">
+  <div class="filters"><label><span>主题分类</span><select id="sectionFilter"></select></label><label><span>搜索题目</span><input id="searchInput" type="search" placeholder="中文 / Français"></label></div>
+  <div class="side-actions"><button id="randomBtn" class="btn secondary" type="button">🎲 随机抽题</button><button id="reviewOnlyBtn" class="btn ghost" type="button" aria-pressed="false">只看待复习</button></div>
+  <div id="topicList" class="topic-list" aria-label="题目列表"></div>
+</aside>
+<section class="practice">
+  <div class="topic-head"><div><div id="topicCounter" class="eyebrow"></div><h2 id="topicZh"></h2><p id="topicFr"></p></div>
+  <div class="status-group" role="group" aria-label="熟练度"><button type="button" class="status-btn" data-status="mastered">✅ 已熟练</button><button type="button" class="status-btn" data-status="review">🟡 待复习</button><button type="button" class="status-btn" data-status="new">↺ 未标记</button></div></div>
+  <div class="mode-row"><div class="segmented" role="group" aria-label="练习模式"><button type="button" class="mode-btn active" data-mode="paragraph">逐段模式</button><button type="button" class="mode-btn" data-mode="full">全文模式</button></div>
+  <div class="segmented" role="group" aria-label="提示强度"><button type="button" class="hint-btn active" data-hint="zh">中文提示</button><button type="button" class="hint-btn" data-hint="first">句首提示</button><button type="button" class="hint-btn" data-hint="none">无提示</button></div></div>
+  <div id="paragraphTabs" class="paragraph-tabs" role="tablist"></div>
+  <div class="prompt-card"><div class="prompt-label">提示</div><div id="promptText" class="prompt-text"></div></div>
+  <label class="answer-label" for="answerBox"><span>默写法语</span><span id="wordCount">0 mots</span></label>
+  <textarea id="answerBox" spellcheck="false" autocomplete="off" placeholder="在这里默写。建议先完整写完，再检查答案……"></textarea>
+  <div class="primary-actions"><button id="checkBtn" class="btn primary" type="button">检查答案</button><button id="revealBtn" class="btn secondary" type="button">显示原稿</button><button id="clearBtn" class="btn ghost" type="button">清空重写</button></div>
+  <div id="resultPanel" class="result-panel hidden" aria-live="polite">
+    <div class="score-row"><div><span class="score-label">相似度</span><strong id="scoreValue">—</strong></div><div id="scoreMessage" class="score-message"></div></div>
+    <div class="legend"><span><i class="miss"></i> 原稿中缺失/不同</span><span><i class="extra"></i> 你多写或替换的内容</span></div>
+    <div class="compare-grid"><div><h3>你的答案</h3><div id="userDiff" class="diff-box"></div></div><div><h3>最终原稿</h3><div id="answerDiff" class="diff-box"></div></div></div>
+  </div>
+  <div class="nav-row"><button id="prevBtn" class="btn ghost" type="button">← 上一题</button><button id="nextSegmentBtn" class="btn secondary" type="button">下一段 →</button><button id="nextBtn" class="btn ghost" type="button">下一题 →</button></div>
+  <div class="note"><strong>当前版本：</strong>答案严格采用你的《写作T3 (2).docx》最终稿。中文提示是帮助回忆结构的简要提示，不改变法语原文。学习进度目前保存在当前浏览器中；不同电脑之间暂不自动同步。</div>
+</section></main>
+<script src="data.js"></script><script src="app.js"></script>
+</body></html>
