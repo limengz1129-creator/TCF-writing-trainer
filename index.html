@@ -20,7 +20,7 @@
   <div class="topic-head"><div><div id="topicCounter" class="eyebrow"></div><h2 id="topicZh"></h2><p id="topicFr"></p></div>
   <div class="status-group" role="group" aria-label="熟练度"><button type="button" class="status-btn" data-status="mastered">✅ 已熟练</button><button type="button" class="status-btn" data-status="review">🟡 待复习</button><button type="button" class="status-btn" data-status="new">↺ 未标记</button></div></div>
   <div class="mode-row"><div class="segmented" role="group" aria-label="练习模式"><button type="button" class="mode-btn active" data-mode="paragraph">逐段模式</button><button type="button" class="mode-btn" data-mode="full">全文模式</button></div>
-  <div class="segmented" role="group" aria-label="提示强度"><button type="button" class="hint-btn active" data-hint="zh">中文提示</button><button type="button" class="hint-btn" data-hint="first">句首提示</button><button type="button" class="hint-btn" data-hint="none">无提示</button></div></div>
+  <div class="segmented" role="group" aria-label="提示强度"><button type="button" class="hint-btn active" data-hint="zh">完整中文翻译</button><button type="button" class="hint-btn" data-hint="first">句首提示</button><button type="button" class="hint-btn" data-hint="none">无提示</button></div></div>
   <div id="paragraphTabs" class="paragraph-tabs" role="tablist"></div>
   <div class="prompt-card"><div class="prompt-label">提示</div><div id="promptText" class="prompt-text"></div></div>
   <label class="answer-label" for="answerBox"><span>默写法语</span><span id="wordCount">0 mots</span></label>
@@ -32,7 +32,7 @@
     <div class="compare-grid"><div><h3>你的答案</h3><div id="userDiff" class="diff-box"></div></div><div><h3>最终原稿</h3><div id="answerDiff" class="diff-box"></div></div></div>
   </div>
   <div class="nav-row"><button id="prevBtn" class="btn ghost" type="button">← 上一题</button><button id="nextSegmentBtn" class="btn secondary" type="button">下一段 →</button><button id="nextBtn" class="btn ghost" type="button">下一题 →</button></div>
-  <div class="note"><strong>当前版本：</strong>答案严格采用你的《写作T3 (2).docx》最终稿。中文提示是帮助回忆结构的简要提示，不改变法语原文。学习进度目前保存在当前浏览器中；不同电脑之间暂不自动同步。</div>
+  <div class="note"><strong>当前版本：</strong>答案严格采用你的《写作T3 (2).docx》最终稿。中文提示采用对应法语段落的完整中文翻译，不改变法语原文。学习进度目前保存在当前浏览器中；不同电脑之间暂不自动同步。</div>
 </section></main>
-<script src="data.js"></script><script src="app.js"></script>
+<script src="data.js"></script><script src="translations.js"></script><script src="app.js"></script>
 </body></html>
