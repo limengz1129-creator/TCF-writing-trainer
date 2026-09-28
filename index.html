@@ -7,7 +7,7 @@
 </head>
 <body>
 <header class="topbar">
-  <div><div class="eyebrow">TCF Canada · Expression écrite · Tâche 3</div><h1>写作全文背诵器</h1><p class="subtitle">62 篇最终稿 · 四段默写 · 原稿逐词对照</p></div>
+  <div><div class="eyebrow">TCF Canada · Expression écrite · Tâche 3</div><h1>写作全文背诵器</h1><p class="subtitle">62 篇最终稿 · 四段默写 · 主题句块卡牌 · 原稿逐词对照</p></div>
   <div class="stats" aria-label="学习统计"><div><strong id="statDone">0</strong><span>已熟练</span></div><div><strong id="statReview">0</strong><span>待复习</span></div><div><strong id="statAttempts">0</strong><span>练习次数</span></div></div>
 </header>
 <main class="layout">
@@ -19,9 +19,9 @@
 <section class="practice">
   <div class="topic-head"><div><div id="topicCounter" class="eyebrow"></div><h2 id="topicZh"></h2><p id="topicFr"></p></div>
   <div class="status-group" role="group" aria-label="熟练度"><button type="button" class="status-btn" data-status="mastered">✅ 已熟练</button><button type="button" class="status-btn" data-status="review">🟡 待复习</button><button type="button" class="status-btn" data-status="new">↺ 未标记</button></div></div>
-  <div class="mode-row"><div class="segmented" role="group" aria-label="练习模式"><button type="button" class="mode-btn active" data-mode="paragraph">逐段模式</button><button type="button" class="mode-btn" data-mode="full">全文模式</button></div>
+  <div class="mode-row"><div class="segmented" role="group" aria-label="练习模式"><button type="button" class="mode-btn active" data-mode="paragraph">逐段模式</button><button type="button" class="mode-btn" data-mode="full">全文模式</button><button type="button" class="mode-btn" data-mode="cards">卡牌模式</button></div>
   <div class="segmented" role="group" aria-label="提示强度"><button type="button" class="hint-btn active" data-hint="zh">完整中文翻译</button><button type="button" class="hint-btn" data-hint="first">句首提示</button><button type="button" class="hint-btn" data-hint="none">无提示</button></div></div>
-  <div id="paragraphTabs" class="paragraph-tabs" role="tablist"></div>
+  <div id="paragraphTabs" class="paragraph-tabs" role="tablist"></div><div id="cardBar" class="card-bar hidden"><span id="cardCounter"></span><button id="shuffleCardsBtn" class="btn ghost small" type="button">🔀 打乱卡牌</button></div>
   <div class="prompt-card"><div class="prompt-label">提示</div><div id="promptText" class="prompt-text"></div></div>
   <label class="answer-label" for="answerBox"><span>默写法语</span><span id="wordCount">0 mots</span></label>
   <textarea id="answerBox" spellcheck="false" autocomplete="off" placeholder="在这里默写。建议先完整写完，再检查答案……"></textarea>
