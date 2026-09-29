@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>TCF Tâche 2 口语提问训练器</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div>
+    <div class="eyebrow">TCF Canada · Expression orale · Tâche 2</div>
+    <h1>口语提问训练器</h1>
+    <p class="subtitle">看中文 → 自己写法语问题 → 检查答案 · 按大主题 / 子分类筛选</p>
+  </div>
+  <div class="stats" aria-label="学习统计">
+    <div><strong id="statMastered">0</strong><span>已熟练</span></div>
+    <div><strong id="statReview">0</strong><span>待复习</span></div>
+    <div><strong id="statAttempts">0</strong><span>练习次数</span></div>
+  </div>
+</header>
+<main class="layout">
+  <aside class="sidebar">
+    <div class="filters">
+      <label><span>大主题</span><select id="themeFilter"></select></label>
+      <label><span>子分类</span><select id="subFilter"></select></label>
+      <label><span>搜索</span><input id="searchInput" type="search" placeholder="中文 / Français"></label>
+    </div>
+    <div class="side-actions">
+      <button id="randomBtn" class="btn secondary" type="button">🎲 随机抽题</button>
+      <button id="reviewOnlyBtn" class="btn ghost" type="button" aria-pressed="false">只看待复习</button>
+    </div>
+    <div id="questionList" class="question-list"></div>
+  </aside>
+  <section class="practice">
+    <div class="topic-head">
+      <div>
+        <div id="questionCounter" class="eyebrow"></div>
+        <h2 id="themeName"></h2>
+        <p id="subName"></p>
+      </div>
+      <div class="status-group" role="group" aria-label="熟练度">
+        <button type="button" class="status-btn" data-status="mastered">✅ 已熟练</button>
+        <button type="button" class="status-btn" data-status="review">🟡 待复习</button>
+        <button type="button" class="status-btn" data-status="new">↺ 未标记</button>
+      </div>
+    </div>
+    <div class="prompt-card">
+      <div class="prompt-label">中文提示</div>
+      <div id="promptZh" class="prompt-text"></div>
+    </div>
+    <label class="answer-label" for="answerBox">
+      <span>请输入对应的法语问题</span>
+      <span id="wordCount">0 mots</span>
+    </label>
+    <textarea id="answerBox" spellcheck="false" autocomplete="off" placeholder="根据中文提示写出法语问题……"></textarea>
+    <div class="primary-actions">
+      <button id="checkBtn" class="btn primary" type="button">检查答案</button>
+      <button id="revealBtn" class="btn secondary" type="button">显示原句</button>
+      <button id="clearBtn" class="btn ghost" type="button">清空重写</button>
+    </div>
+    <div id="resultPanel" class="result-panel hidden" aria-live="polite">
+      <div class="score-row">
+        <div><span class="score-label">匹配度</span><strong id="scoreValue">—</strong></div>
+        <div id="scoreMessage" class="score-message"></div>
+      </div>
+      <div class="legend">
+        <span><i class="miss"></i> 原句中缺失 / 不同</span>
+        <span><i class="extra"></i> 你多写 / 替换的内容</span>
+      </div>
+      <div class="compare-grid">
+        <div><h3>你的答案</h3><div id="userDiff" class="diff-box"></div></div>
+        <div><h3>文档原句</h3><div id="answerDiff" class="diff-box"></div></div>
+      </div>
+    </div>
+    <div class="nav-row">
+      <button id="prevBtn" class="btn ghost" type="button">← 上一题</button>
+      <button id="nextBtn" class="btn secondary" type="button">下一题 →</button>
+    </div>
+    <div class="note">
+      <strong>练习规则：</strong>法语答案严格采用你上传的 Tâche 2 分层题库原句。检查时忽略大小写和标点差异，保留词汇、变位、介词、冠词、tu/vous 等实质差异。学习进度保存在当前浏览器。
+    </div>
+  </section>
+</main>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
