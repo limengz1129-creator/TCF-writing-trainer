@@ -1,0 +1,39 @@
+(()=>{
+const themes=window.TCF_T2_THEMES||[],subs=window.TCF_T2_SUBS||[],raw=window.TCF_T2_RAW||[],$=id=>document.getElementById(id);
+const questions=raw.map((r,i)=>({id:i+1,theme:themes[r[0]]||"",subcategory:(subs[r[0]]||[])[r[1]]||"",fr:r[2],zh:r[3]}));
+const el={themeFilter:$("themeFilter"),subFilter:$("subFilter"),searchInput:$("searchInput"),questionList:$("questionList"),randomBtn:$("randomBtn"),reviewOnlyBtn:$("reviewOnlyBtn"),questionCounter:$("questionCounter"),themeName:$("themeName"),subName:$("subName"),promptZh:$("promptZh"),answerBox:$("answerBox"),wordCount:$("wordCount"),checkBtn:$("checkBtn"),revealBtn:$("revealBtn"),clearBtn:$("clearBtn"),resultPanel:$("resultPanel"),scoreValue:$("scoreValue"),scoreMessage:$("scoreMessage"),userDiff:$("userDiff"),answerDiff:$("answerDiff"),prevBtn:$("prevBtn"),nextBtn:$("nextBtn"),statMastered:$("statMastered"),statReview:$("statReview"),statAttempts:$("statAttempts")};
+const KEY="tcf-tache2-trainer-v1";
+const saved=(()=>{try{return JSON.parse(localStorage.getItem(KEY)||"{}")}catch{return{}}})();
+const state={questionId:Number(saved.questionId)||1,statuses:saved.statuses||{},attempts:Number(saved.attempts)||0,reviewOnly:false};
+function persist(){localStorage.setItem(KEY,JSON.stringify({questionId:state.questionId,statuses:state.statuses,attempts:state.attempts}))}
+function current(){return questions.find(q=>q.id===state.questionId)||questions[0]}
+function esc(s){return String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]))}
+function normalizeText(s){return String(s||"").normalize("NFC").replace(/[’‘`]/g,"'").replace(/[«»“”]/g,'"').replace(/\s+/g," ").trim()}
+function wordTokens(s){return normalizeText(s).match(/[\p{L}\p{M}]+(?:['’-][\p{L}\p{M}]+)*/gu)||[]}
+function comparable(t){return t.toLocaleLowerCase("fr")}
+function lcsDiff(a,b){const A=wordTokens(a),B=wordTokens(b),n=A.length,m=B.length,dp=Array.from({length:n+1},()=>new Uint16Array(m+1));for(let i=n-1;i>=0;i--)for(let j=m-1;j>=0;j--)dp[i][j]=comparable(A[i])===comparable(B[j])?dp[i+1][j+1]+1:Math.max(dp[i+1][j],dp[i][j+1]);let i=0,j=0,match=0;const user=[],answer=[];while(i<n&&j<m){if(comparable(A[i])===comparable(B[j])){user.push({t:A[i],c:"ok"});answer.push({t:B[j],c:"ok"});match++;i++;j++}else if(dp[i+1][j]>=dp[i][j+1])user.push({t:A[i++],c:"extra"});else answer.push({t:B[j++],c:"miss"})}while(i<n)user.push({t:A[i++],c:"extra"});while(j<m)answer.push({t:B[j++],c:"miss"});return{user,answer,score:Math.round(2*match/Math.max(1,n+m)*100)}}
+function renderTokens(arr){return arr.map(x=>'<span'+(x.c==="ok"?'':' class="'+x.c+'"')+'>'+esc(x.t)+'</span>').join(' ')}
+function populateThemes(){const ts=[...new Set(questions.map(q=>q.theme))];el.themeFilter.innerHTML='<option value="">全部大主题（'+questions.length+'）</option>'+ts.map(t=>'<option value="'+esc(t)+'">'+esc(t)+'</option>').join('');populateSubcategories()}
+function populateSubcategories(){const theme=el.themeFilter.value,source=questions.filter(q=>!theme||q.theme===theme),ss=[...new Set(source.map(q=>q.subcategory))];el.subFilter.innerHTML='<option value="">全部子分类（'+source.length+'）</option>'+ss.map(s=>'<option value="'+esc(s)+'">'+esc(s)+'</option>').join('')}
+function filtered(){const theme=el.themeFilter.value,sub=el.subFilter.value,q=el.searchInput.value.trim().toLowerCase();return questions.filter(x=>(!theme||x.theme===theme)&&(!sub||x.subcategory===sub)&&(!state.reviewOnly||state.statuses[x.id]==="review")&&(!q||(`${x.zh} ${x.fr} ${x.theme} ${x.subcategory}`.toLowerCase().includes(q))))}
+function ensureCurrentVisible(){const list=filtered();if(list.length&&!list.some(q=>q.id===state.questionId)){state.questionId=list[0].id;persist();resetAnswer()}}
+function renderList(){ensureCurrentVisible();const list=filtered();el.questionList.innerHTML=list.length?list.map((q,i)=>{const st=state.statuses[q.id]||"new";return '<button type="button" class="question-item '+(q.id===state.questionId?'active':'')+'" data-id="'+q.id+'"><span class="dot '+st+'"></span><span class="num">'+String(i+1).padStart(2,'0')+'</span><span class="zh">'+esc(q.zh)+'</span><span class="fr">'+esc(q.fr)+'</span></button>'}).join(''):'<div style="padding:20px;color:var(--muted)">没有匹配的题目。</div>';el.questionList.querySelectorAll('[data-id]').forEach(b=>b.addEventListener('click',()=>{state.questionId=Number(b.dataset.id);persist();resetAnswer();render()}))}
+function renderStats(){const vals=Object.values(state.statuses);el.statMastered.textContent=vals.filter(x=>x==='mastered').length;el.statReview.textContent=vals.filter(x=>x==='review').length;el.statAttempts.textContent=state.attempts}
+function renderPractice(){const q=current();if(!q)return;const list=filtered(),idx=Math.max(0,list.findIndex(x=>x.id===q.id));el.questionCounter.textContent='当前筛选第 '+(idx+1)+' / '+list.length+' 题 · 总题号 '+q.id;el.themeName.textContent=q.theme;el.subName.textContent=q.subcategory;el.promptZh.textContent=q.zh;document.querySelectorAll('.status-btn').forEach(b=>b.classList.toggle('active',b.dataset.status===(state.statuses[q.id]||'new')))}
+function render(){renderList();renderStats();renderPractice()}
+function updateWordCount(){el.wordCount.textContent=wordTokens(el.answerBox.value).length+' mots'}
+function resetAnswer(){el.answerBox.value='';el.resultPanel.classList.add('hidden');updateWordCount()}
+function check(){const q=current(),user=el.answerBox.value.trim();if(!user){el.answerBox.focus();return}const d=lcsDiff(user,q.fr);el.scoreValue.textContent=d.score+'%';el.scoreMessage.textContent=d.score===100?'完全正确。':d.score>=92?'非常接近，看看标出的细节。':d.score>=80?'大体正确，重点检查变位、介词、冠词或 tu/vous。':'建议先看原句，再清空重写一遍。';el.userDiff.innerHTML=renderTokens(d.user);el.answerDiff.innerHTML=renderTokens(d.answer);el.resultPanel.classList.remove('hidden');state.attempts++;if(d.score===100&&state.statuses[q.id]!=='review')state.statuses[q.id]='mastered';persist();renderStats();renderList()}
+function reveal(){const q=current();el.scoreValue.textContent='原句';el.scoreMessage.textContent='对照以后建议清空，再自己写一遍。';el.userDiff.textContent=el.answerBox.value.trim()||'（尚未作答）';el.answerDiff.textContent=q.fr;el.resultPanel.classList.remove('hidden')}
+function move(delta){const list=filtered();if(!list.length)return;let idx=list.findIndex(q=>q.id===state.questionId);if(idx<0)idx=0;idx=(idx+delta+list.length)%list.length;state.questionId=list[idx].id;persist();resetAnswer();render()}
+populateThemes();
+el.themeFilter.addEventListener('change',()=>{populateSubcategories();state.questionId=(filtered()[0]||questions[0]).id;persist();resetAnswer();render()});
+el.subFilter.addEventListener('change',()=>{state.questionId=(filtered()[0]||questions[0]).id;persist();resetAnswer();render()});
+el.searchInput.addEventListener('input',render);
+el.randomBtn.addEventListener('click',()=>{const list=filtered();if(!list.length)return;const q=list[Math.floor(Math.random()*list.length)];state.questionId=q.id;persist();resetAnswer();render()});
+el.reviewOnlyBtn.addEventListener('click',()=>{state.reviewOnly=!state.reviewOnly;el.reviewOnlyBtn.setAttribute('aria-pressed',String(state.reviewOnly));el.reviewOnlyBtn.classList.toggle('secondary',state.reviewOnly);render()});
+document.querySelectorAll('.status-btn').forEach(b=>b.addEventListener('click',()=>{state.statuses[state.questionId]=b.dataset.status;persist();render()}));
+el.answerBox.addEventListener('input',updateWordCount);el.answerBox.addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&e.key==='Enter')check()});
+el.checkBtn.addEventListener('click',check);el.revealBtn.addEventListener('click',reveal);el.clearBtn.addEventListener('click',resetAnswer);el.prevBtn.addEventListener('click',()=>move(-1));el.nextBtn.addEventListener('click',()=>move(1));
+render();
+})();
