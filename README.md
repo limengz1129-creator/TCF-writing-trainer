@@ -20,6 +20,14 @@
 | 写作 Tâche 2 | [打开表达默写](https://limengz1129-creator.github.io/TCF-writing-trainer/tache2-expressions/) |
 | 写作 Tâche 3 | [打开表达默写](https://limengz1129-creator.github.io/TCF-writing-trainer/tache3-expressions/) |
 
+## EO 口语 · 稿子 / 提问默写
+
+| 练习 | 网页入口 |
+| --- | --- |
+| 口语 Tâche 2 | [打开口语提问默写](https://limengz1129-creator.github.io/TCF-writing-trainer/tache2/) |
+
+按大主题、子分类和 C 层级题目筛选；看中文，默写法语问题。
+
 ## EO 口语 · 表达默写
 
 看中文，输入法语表达；固定句型与动词固定用法按核心表达核对。
