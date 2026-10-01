@@ -51,7 +51,7 @@ function grade(input,item){
 }
 
 
-return {grade,variants};
+return {grade,variants,norm,stripSlots,normalizeSlots};
 })(),
 (function(){
 function norm(s){return s.normalize('NFC').toLowerCase().replace(/[’‘`]/g,"'").replace(/œ/g,'oe').replace(/[.,!?;:…()]/g,' ').replace(/\s+/g,' ').trim()}
@@ -115,7 +115,7 @@ function grade(input,item){
 }
 
 
-return {grade,variants};
+return {grade,variants,norm,stripSlots,normalizeSlots};
 })(),
 (function(){
 function norm(s){return s.normalize('NFC').toLowerCase().replace(/[’‘`]/g,"'").replace(/œ/g,'oe').replace(/[.,!?;:…()]/g,' ').replace(/\s+/g,' ').trim()}
@@ -181,7 +181,7 @@ function grade(input,item){
 }
 
 
-return {grade,variants};
+return {grade,variants,norm,stripSlots,normalizeSlots};
 })(),
 (function(){
 function norm(s){return s.normalize('NFC').toLowerCase().replace(/[’‘`]/g,"'").replace(/œ/g,'oe').replace(/[.,!?;:…()]/g,' ').replace(/\s+/g,' ').trim()}
@@ -248,7 +248,7 @@ function grade(input,item){
 }
 
 
-return {grade,variants};
+return {grade,variants,norm,stripSlots,normalizeSlots};
 })(),
 (function(){
 function norm(s){return s.normalize('NFC').toLowerCase().replace(/[’‘`]/g,"'").replace(/œ/g,'oe').replace(/[.,!?;:…()]/g,' ').replace(/\s+/g,' ').trim()}
@@ -314,8 +314,48 @@ function grade(input,item){
 }
 
 
-return {grade,variants};
+return {grade,variants,norm,stripSlots,normalizeSlots};
 })()];
 function variants(item){return [...new Set(item.members.flatMap(m=>SOURCE_MATCHERS[m.sourceIndex].variants(m)))];}
 function grade(input,item){return {ok:item.members.some(m=>SOURCE_MATCHERS[m.sourceIndex].grade(input,m).ok),cores:variants(item)};}
 
+
+function differenceAlignment(input,target){
+ const a=Array.from(input),b=Array.from(target);
+ const dp=Array.from({length:a.length+1},()=>new Uint16Array(b.length+1));
+ for(let i=0;i<=a.length;i++)dp[i][0]=i;
+ for(let j=0;j<=b.length;j++)dp[0][j]=j;
+ for(let i=1;i<=a.length;i++)for(let j=1;j<=b.length;j++)dp[i][j]=Math.min(dp[i-1][j]+1,dp[i][j-1]+1,dp[i-1][j-1]+(a[i-1]===b[j-1]?0:1));
+ const wrong=new Set(),missing=new Set();let i=a.length,j=b.length;
+ while(i||j){
+  if(i&&j&&a[i-1]===b[j-1]&&dp[i][j]===dp[i-1][j-1]){i--;j--;}
+  else if(i&&j&&dp[i][j]===dp[i-1][j-1]+1){wrong.add(--i);missing.add(--j);}
+  else if(j&&dp[i][j]===dp[i][j-1]+1){missing.add(--j);}
+  else{wrong.add(--i);}
+ }
+ function runs(chars,set){const out=[];for(let k=0;k<chars.length;k++){const marked=set.has(k);if(out.length&&out[out.length-1].marked===marked)out[out.length-1].text+=chars[k];else out.push({text:chars[k],marked});}return out;}
+ return {distance:dp[a.length][b.length],input:input,target:target,inputRuns:runs(a,wrong),targetRuns:runs(b,missing)};
+}
+function answerDifference(input,item){
+ if(grade(input,item).ok)return null;
+ const candidates=[];
+ for(const member of item.members){
+  const matcher=SOURCE_MATCHERS[member.sourceIndex];
+  const normalized=matcher.norm(input);
+  if(item.module!==0){
+   let core=matcher.norm(matcher.stripSlots(input.replace(/\([^)]*\)/g,'')));
+   core=core.replace(/\b(?:de|à|pour) faire(?= |$)/g,m=>m.replace(/ faire$/,''));
+   for(const target of matcher.variants(member))candidates.push({input:core,target,core:true});
+  }
+  const slotForm=s=>matcher.norm(matcher.normalizeSlots(s)).replace(/__slot__/g,'[占位词]');
+  for(const target of [member.fr,...(member.acceptedFr||[])])candidates.push({input:slotForm(input),target:slotForm(target),core:false});
+ }
+ let best=null;
+ for(const candidate of candidates){
+  // Keep visual comparison bounded for accidentally pasted paragraphs.
+  const bounded=candidate.input.slice(0,500);
+  const diff=differenceAlignment(bounded,candidate.target);
+  if(!best||diff.distance<best.distance)best={...diff,core:candidate.core,truncated:candidate.input.length>500};
+ }
+ return best;
+}
