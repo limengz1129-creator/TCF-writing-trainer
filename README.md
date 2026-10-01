@@ -2,6 +2,14 @@
 
 点击下方链接即可进入练习网页，无需手动输入网址。
 
+## 五任务表达 · 综合默写
+
+[打开综合练习网页](https://limengz1129-creator.github.io/TCF-writing-trainer/combined-expressions/)
+
+动词搭配 1,042 条、固定句型 371 条、动词固定用法 330 条，共 1,743 条练习。固定句型按写作 T1 / T2 / T3、口语 T2 / T3 分成五个独立子模块，可从下拉菜单选择。另含错题本和可导出 Excel 的单词本。
+
+[查看来源与去重对应清单](https://limengz1129-creator.github.io/TCF-writing-trainer/combined-expressions/audit.json)
+
 ## EE 写作 · 文章默写
 
 | 练习 | 网页入口 |
