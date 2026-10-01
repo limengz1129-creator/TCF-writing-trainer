@@ -4,7 +4,7 @@ const FORMS={"suis":{"lemma":"être","tense":"直陈式现在时","person":"je"}
 const PARTICIPLES={"été":"être","apprécié":"apprécier","touché":"toucher","plu":"plaire","dépassé":"dépasser","appris":"apprendre","convaincu":"convaincre","montré":"montrer","rappelé":"rappeler","fait":"faire","captivé":"captiver","impressionné":"impressionner","séduit":"séduire"};
 
 // Curated regular stems; spelling-changing verbs are listed separately below.
-const regular = 'aider aimer améliorer apporter arriver augmenter changer communiquer comprendre? considérer? constituer continuer contribuer coûter créer décider développer donner encourager enseigner entrer éviter expliquer favoriser former gagner garder habiter limiter manquer montrer organiser parler partager passer penser pratiquer préparer présenter profiter proposer protéger? raconter recommander réduire? regarder rencontrer représenter rester retrouver risquer sembler souhaiter travailler utiliser visiter vivre?'.split(' ').filter(x=>!x.includes('?'));
+const regular = 'adapter installer aider aimer améliorer apporter arriver augmenter changer communiquer comprendre? considérer? constituer continuer contribuer coûter créer décider développer donner encourager enseigner entrer éviter expliquer favoriser former gagner garder habiter limiter manquer montrer organiser parler partager passer penser pratiquer préparer présenter profiter proposer protéger? raconter recommander réduire? regarder rencontrer représenter rester retrouver risquer sembler souhaiter travailler utiliser visiter vivre?'.split(' ').filter(x=>!x.includes('?'));
 const persons=['je','tu','il/elle/on','nous','vous','ils/elles'];
 function addSeries(lemma,tense,forms){forms.split(' ').forEach((f,i)=>{if(f!=='-'){const old=FORMS[f];FORMS[f]={lemma,tense,person:old?.lemma===lemma&&old.tense===tense?[...new Set((old.person+'/'+persons[i]).split('/'))].join('/'):persons[i]};}});}
 function stemSeries(lemma,stem,endings,tense){addSeries(lemma,tense,endings.map(e=>stem+e).join(' '));}
@@ -53,6 +53,7 @@ function analyze(fr){
   if(t.lower==='recherche' && /(?:\bune|\bla)\s*$/.test(before))continue;
   if(t.lower==='présente' && /\best\s*$/.test(before))continue;
   // Exclude clear noun/adjective homographs after determiners or an auxiliary.
+  if(!['être','avoir'].includes(entry.lemma)&&/\bl'$/.test(before))continue;
   if(!['être','avoir'].includes(entry.lemma)&&/(?:\b(le|la|les|un|une|des|du|ce|cette|ces|mon|ma|son|sa|leur|quelque))\s*$/.test(before))continue;
   if(['fait','dit','écrit','pris','mis','compris','appris'].includes(t.lower)&&/(?:\b(ai|as|a|avons|avez|ont|avait|avaient|est|sont))\s*$/.test(before))continue;
   if(t.lower==='fait'&&/\ben\s*$/.test(before))continue;
