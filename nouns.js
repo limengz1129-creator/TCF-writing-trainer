@@ -10,6 +10,8 @@ function determiner(ts,i,fr){let j=i-1,skipped=0;while(j>=0&&skipped<3&&ADJ.has(
 function analyze(fr){fr=fr.normalize('NFC');const ts=tokens(fr),out=[];for(let i=0;i<ts.length;i++){const t=ts[i],entry=DATA[t.key];if(!entry||t.word.length<2)continue;const [senses,mask]=entry,d=determiner(ts,i,fr),before=ts[i-1]?.key||'',prior=d?ts[d.index-1]?.key:'';
 // Noun/verb, noun/adjective and noun/function-word homographs require a noun phrase.
 if(mask&&!d)continue;
+const next=ts[i+1];if((mask&1)&&next&&DATA[next.key]&&!DET.has(next.key)&&!/[,.!?;:\n]/.test(fr.slice(t.end,next.start)))continue;
+if(t.key==='abord'&&before==='d')continue;
 if(mask&2&&d&&['le','la','les','l'].includes(d.key)&&(SUBJECT.has(prior)||['j','s','m','t','n'].includes(prior)))continue;
 if(mask&2&&['ai','as','a','avons','avez','ont','avait','avaient','est','sont'].includes(before))continue;
 if((mask&1)&&d?.key==='l'&&['est','sont','être'].includes(prior))continue;
