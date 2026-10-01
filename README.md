@@ -33,8 +33,11 @@
 | 练习 | 网页入口 |
 | --- | --- |
 | 口语 Tâche 2 | [打开口语提问默写](https://limengz1129-creator.github.io/TCF-writing-trainer/tache2/) |
+| 口语 Tâche 3 | [打开九大话题语料默写](https://limengz1129-creator.github.io/TCF-writing-trainer/eo-tache3-corpus/) |
 
-按大主题、子分类和 C 层级题目筛选；看中文，默写法语问题。
+口语 T2 按大主题、子分类和 C 层级题目筛选；看中文，默写法语问题。
+
+口语 T3 汇总 9 份原始语料：9 个大话题、98 个论据子话题、507 个主体论段、169 道原题。可逐论段默写或合练同题三个主体段，包含错题本、选词单词本与 Excel 导出、动词变位提示和差异高亮。
 
 ## EO 口语 · 表达默写
 
