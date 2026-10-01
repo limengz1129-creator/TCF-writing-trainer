@@ -62,7 +62,7 @@
       });
     });
     keys.appendChild(toggle);
-    answer.after(keyboard);
+    answer.before(keyboard);
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, {once: true});
   else init();
