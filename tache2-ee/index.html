@@ -42,4 +42,5 @@ $('export').onclick=()=>{saveDraft();const blob=new Blob([JSON.stringify(state,n
 fillMinor();rec();unit();$('category').textContent=`${current.major} / ${current.minor} · ${current.id} / 72`;$('title').textContent=current.title;$('question').textContent=current.prompt;$('questionZh').textContent=current.promptZh;document.querySelectorAll('.status').forEach(b=>{b.classList.toggle('active',b.dataset.status===rec().status);b.setAttribute('aria-pressed',b.dataset.status===rec().status)});renderList();
 window.TCF_TEST={compare,data:DATA};
 </script><script src="../vocabulary.js?v=1"></script>
+<script src="../french-keyboard.js?v=1"></script>
 </body></html>
