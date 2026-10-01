@@ -13,37 +13,43 @@
 <script src="../grammar.js?v=3"></script>
 <script>
 (()=>{
-const box=document.createElement('section');
-box.style.cssText='margin:12px 0;padding:12px;border:1px solid #dce0ee;border-radius:10px';
-box.innerHTML='<strong>🔊 法语朗读 · 试听版</strong><div class="row"><button type="button" id="speakFrench">朗读当前原文</button><button type="button" id="stopFrench">停止</button></div><label for="frenchVoice">法语声音</label><select id="frenchVoice"></select><label for="frenchRate">语速</label><select id="frenchRate"><option value="0.7">慢速 0.7×</option><option value="0.85">稍慢 0.85×</option><option value="1" selected>正常 1×</option></select><p id="speechStatus" class="note" role="status">点击试听；朗读原文会提前透露答案。</p>';
+const box=document.createElement('section');box.style.cssText='margin:12px 0;max-width:100%';
+box.innerHTML='<button type="button" id="openFrenchSpeech" aria-expanded="false" aria-controls="frenchSpeechPanel">🔊 朗读原文</button><div id="frenchSpeechPanel" hidden style="margin-top:10px;padding:14px;border:1px solid #dce0ee;border-radius:10px"><div id="speechOriginal" lang="fr" style="font-size:1.2rem;line-height:1.9;white-space:pre-wrap;overflow-wrap:anywhere"></div><div class="row"><button type="button" id="speakFrench">重新朗读</button><button type="button" id="stopFrench">停止</button><button type="button" id="closeFrenchSpeech">收起</button></div><label for="frenchVoice">法语声音</label><select id="frenchVoice"></select><label for="frenchRate">语速</label><select id="frenchRate"><option value="0.7">慢速 0.7×</option><option value="0.85">稍慢 0.85×</option><option value="1" selected>正常 1×</option></select><p id="speechStatus" class="note" role="status"></p></div>';
 document.querySelector('#answer').before(box);
-const status=box.querySelector('#speechStatus'), select=box.querySelector('#frenchVoice');
-if(!('speechSynthesis' in window)){status.textContent='当前浏览器不支持朗读，请使用 Chrome 或 Edge 试听。';box.querySelectorAll('button,select').forEach(e=>e.disabled=true);return;}
-const synth=window.speechSynthesis;let voices=[],utterance=null;
-function populate(){
- const old=select.value;voices=synth.getVoices().filter(v=>/^fr(?:-|_)/i.test(v.lang)||v.lang==='fr');select.replaceChildren();
- voices.forEach(v=>{const o=document.createElement('option');o.value=v.voiceURI;o.textContent=v.name+' ('+v.lang+')';select.append(o);});
- if(voices.some(v=>v.voiceURI===old))select.value=old;
- else {const preferred=voices.find(v=>v.lang.toLowerCase()==='fr-fr');if(preferred)select.value=preferred.voiceURI;}
- if(!voices.length){const o=document.createElement('option');o.textContent='未检测到法语声音';select.append(o);status.textContent='未检测到法语声音。请在系统添加法语语音，或换一个浏览器重试。';}
- else status.textContent='已检测到 '+voices.length+' 个法语声音，点击朗读试听。';
+const get=id=>box.querySelector('#'+id),panel=get('frenchSpeechPanel'),opener=get('openFrenchSpeech'),original=get('speechOriginal'),status=get('speechStatus'),select=get('frenchVoice');
+const synth=window.speechSynthesis;let voices=[],utterance=null,run=0,tokens=[],active=null;
+function clearMark(){if(active){active.style.background='';active.style.color='';active.removeAttribute('aria-current');active=null;}}
+function stop(){run++;if(synth)synth.cancel();utterance=null;clearMark();}
+function close(){stop();panel.hidden=true;opener.setAttribute('aria-expanded','false');original.replaceChildren();}
+function render(text){
+ tokens=[];original.replaceChildren();const pattern=/\S+/gu;let end=0;
+ for(const m of text.matchAll(pattern)){original.append(document.createTextNode(text.slice(end,m.index)));const span=document.createElement('span');span.textContent=m[0];original.append(span);tokens.push({start:m.index,end:m.index+m[0].length,span});end=m.index+m[0].length;}
+ original.append(document.createTextNode(text.slice(end)));
 }
-populate();synth.addEventListener('voiceschanged',populate);
-function stop(){synth.cancel();utterance=null;}
-box.querySelector('#speakFrench').onclick=()=>{
- stop();if(!voices.length){populate();if(!voices.length)return;}
- const text=window.TCF_GRAMMAR_TARGET?.()?.fr;if(!text){status.textContent='请先选择练习词条。';return;}
- utterance=new SpeechSynthesisUtterance(text);utterance.voice=voices.find(v=>v.voiceURI===select.value)||voices[0];utterance.lang=utterance.voice.lang;utterance.rate=Number(box.querySelector('#frenchRate').value);
- utterance.onstart=()=>status.textContent='正在朗读：'+text;
- utterance.onend=()=>status.textContent='朗读完成。可以更换声音或语速再试听。';
- utterance.onerror=e=>{if(!['canceled','interrupted'].includes(e.error))status.textContent='朗读失败（'+e.error+'），请换一个法语声音重试。';};
+function populate(){
+ if(!synth)return;const old=select.value;voices=synth.getVoices().filter(v=>/^fr(?:-|_)/i.test(v.lang)||v.lang==='fr');select.replaceChildren();
+ voices.forEach(v=>{const o=document.createElement('option');o.value=v.voiceURI;o.textContent=v.name+' ('+v.lang+')';select.append(o);});
+ if(voices.some(v=>v.voiceURI===old))select.value=old;else{const v=voices.find(v=>v.lang.toLowerCase()==='fr-fr');if(v)select.value=v.voiceURI;}
+ if(!voices.length){const o=document.createElement('option');o.textContent='未检测到法语声音';select.append(o);}
+}
+function speak(){
+ stop();const text=window.TCF_GRAMMAR_TARGET?.()?.fr||'';render(text);
+ if(!text){status.textContent='请先选择练习词条。';return;}
+ if(!synth){status.textContent='当前浏览器不支持朗读。';return;}
+ populate();if(!voices.length){status.textContent='未检测到法语声音。请在系统添加法语语音，或换一个浏览器重试。';return;}
+ const id=run;let boundary=false;utterance=new SpeechSynthesisUtterance(text);utterance.voice=voices.find(v=>v.voiceURI===select.value)||voices[0];utterance.lang=utterance.voice.lang;utterance.rate=Number(get('frenchRate').value);
+ utterance.onstart=()=>{if(id===run)status.textContent='正在朗读；支持读词位置的声音会同步高亮。';};
+ utterance.onboundary=e=>{if(id!==run||e.name==='sentence')return;const token=tokens.find(t=>e.charIndex>=t.start&&e.charIndex<t.end);if(!token)return;boundary=true;clearMark();active=token.span;active.style.background='#ffe277';active.style.color='#202030';active.setAttribute('aria-current','true');status.textContent='正在朗读 · 黄色标注当前词语';};
+ utterance.onend=()=>{if(id!==run)return;clearMark();utterance=null;status.textContent=boundary?'朗读完成。':'朗读完成。这个声音未提供读词位置，无法逐词同步高亮；可换一个声音试听。';};
+ utterance.onerror=e=>{if(id!==run)return;clearMark();if(!['canceled','interrupted'].includes(e.error))status.textContent='朗读失败（'+e.error+'），请换一个声音重试。';};
  synth.speak(utterance);
-};
-box.querySelector('#stopFrench').onclick=()=>{stop();status.textContent='已停止朗读。';};
-['next','prev','random','shuffle'].forEach(id=>document.getElementById(id)?.addEventListener('click',stop));
-document.querySelectorAll('[data-module]').forEach(e=>e.addEventListener('click',stop));
+}
+opener.onclick=()=>{if(!panel.hidden){close();return;}panel.hidden=false;opener.setAttribute('aria-expanded','true');speak();};
+get('speakFrench').onclick=speak;get('stopFrench').onclick=()=>{stop();status.textContent='已停止朗读。';};get('closeFrenchSpeech').onclick=close;
+populate();synth?.addEventListener('voiceschanged',populate);
+new MutationObserver(close).observe(document.querySelector('#prompt'),{childList:true,subtree:true,characterData:true});
+document.querySelectorAll('[data-module]').forEach(e=>e.addEventListener('click',close));
 window.addEventListener('pagehide',stop);
 })();
 </script>
 </body></html>
-
