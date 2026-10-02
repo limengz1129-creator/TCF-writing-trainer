@@ -1,0 +1,27 @@
+{
+  "method": "Reference practice levels. Words use existing BonTCF vocabulary lists when matched, missing words are context estimates; phrases use reviewed whole-expression estimates. Not an official TCF grade.",
+  "sources": [
+    "Saved BonTCF A2/B1/B2/C1/C2 vocabulary lists",
+    "https://www.coe.int/en/web/common-european-framework-reference-languages/reference-level-descriptions"
+  ],
+  "counts": {
+    "5": {
+      "A2": 273,
+      "A1": 82,
+      "B2": 255,
+      "B1": 435,
+      "C1": 58,
+      "C2": 30
+    },
+    "6": {
+      "A2": 279,
+      "B1": 567,
+      "A1": 58,
+      "B2": 237,
+      "C1": 10
+    }
+  },
+  "entries": 2284,
+  "unassigned": 0,
+  "phraseC2Note": "No reviewed phrase is labelled C2; the C2 filter remains available and displays zero when appropriate."
+}
