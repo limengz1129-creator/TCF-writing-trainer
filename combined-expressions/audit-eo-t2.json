@@ -1,0 +1,21 @@
+{
+  "eoT2": {
+    "questionRows": 1517,
+    "baseQuestions": 875,
+    "scenarioQuestions": 642,
+    "words": 314,
+    "phrases": 245
+  },
+  "overlap": {
+    "5": 145,
+    "6": 25
+  },
+  "added": {
+    "5": 169,
+    "6": 220
+  },
+  "totals": {
+    "5": 739,
+    "6": 576
+  }
+}
