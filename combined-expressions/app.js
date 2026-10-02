@@ -1,6 +1,6 @@
 const MERGED_ID_ALIASES={...PATTERN_ID_ALIASES,...USAGE_ID_ALIASES};
 'use strict';
-const KEY='TCF-COMBINED-EXPRESSIONS-v1',names=['动词搭配','固定句型','动词固定用法','动词变位','口语 T2 提问框架'];
+const KEY='TCF-COMBINED-EXPRESSIONS-v1',names=['动词搭配','固定句型','动词固定用法','动词变位','口语 T2 提问框架','未覆盖词汇','未覆盖词组'];
 const $=id=>document.getElementById(id);
 let state={version:1,app:'tcf-combined',records:{},module:0,current:null,source:'',patternSource:''};
 let mode=0,current=null,order=null;
@@ -108,7 +108,7 @@ SOURCE_NAMES.forEach((n,p)=>$('errSource').add(new Option(n,String(p))));for(con
 function download(blob,name){const u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(u),1000);}
 $('export').onclick=()=>{saveDraft();download(new Blob([JSON.stringify({...state,vocabulary:window.COMBINED_VOCAB?.getWords()||[]},null,2)],{type:'application/json'}),'TCF-综合表达-进度与单词本.json');};
 $('import').onclick=()=>$('file').click();$('file').onchange=async e=>{try{const f=e.target.files[0];if(!f)return;const x=JSON.parse(await f.text());if(x.app!=='tcf-combined'||x.version!==1||!x.records||typeof x.records!=='object'||Array.isArray(x.records))throw Error('请选择本综合网页导出的进度文件。');for(const [id,r] of Object.entries(x.records)){if(!DATA.some(t=>t.id===(MERGED_ID_ALIASES[id]||id))||!r||typeof r.draft!=='string'||!['attempts','correct','wrong'].every(k=>Number.isInteger(r[k])&&r[k]>=0)||(r.error&&(typeof r.error.answer!=='string'||typeof r.error.resolved!=='boolean'||!Number.isInteger(r.error.count))))throw Error('进度文件内容不正确。');}if(x.vocabulary&&!window.COMBINED_VOCAB?.validateWords(x.vocabulary))throw Error('单词本内容不正确。');if(x.vocabulary&&!window.COMBINED_VOCAB.importWords(x.vocabulary))throw Error('单词本未能保存，请导出当前记录备份。');state.records={...state.records,...migratePatternRecords(x.records,state.patternMergeHistory)};persist();mode==='errors'?errors():Number.isInteger(mode)?show(current):window.COMBINED_VOCAB.render();$('toast').textContent='进度与单词本已导入。';}catch(err){$('toast').textContent=err.message;}e.target.value='';};
-window.COMBINED_UI={openVocabulary:()=>setModule('vocab'),closeVocabulary:()=>setModule([0,1,2,3,4,'errors'].includes(state.vocabularyReturnView)?state.vocabularyReturnView:0),source:()=>current?current.origins.map(p=>SOURCE_NAMES[p]).join(' / '):'TCF 综合表达'};
+window.COMBINED_UI={openVocabulary:()=>setModule('vocab'),closeVocabulary:()=>setModule([0,1,2,3,4,5,6,'errors'].includes(state.vocabularyReturnView)?state.vocabularyReturnView:0),source:()=>current?current.origins.map(p=>SOURCE_NAMES[p]).join(' / '):'TCF 综合表达'};
 window.TRAINER_TEST={DATA,grade,variants,answerDifference,getState:()=>state,setModule,filtered,show};
-const restoreId=state.current;const restoreMode=[0,1,2,3,4,'errors','vocab'].includes(state.module)?state.module:0;setModule(restoreMode);if(Number.isInteger(restoreMode)){const item=filtered().find(x=>x.id===restoreId);if(item)show(item);}
+const restoreId=state.current;const restoreMode=[0,1,2,3,4,5,6,'errors','vocab'].includes(state.module)?state.module:0;setModule(restoreMode);if(Number.isInteger(restoreMode)){const item=filtered().find(x=>x.id===restoreId);if(item)show(item);}
 
