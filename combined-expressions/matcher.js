@@ -326,8 +326,8 @@ function grade(input,item){
 
 return {grade,variants,norm,stripSlots,normalizeSlots};
 })()];
-function variants(item){return [...new Set(item.members.flatMap(m=>SOURCE_MATCHERS[m.sourceIndex].variants(m)))];}
-function grade(input,item){return {ok:item.members.some(m=>SOURCE_MATCHERS[m.sourceIndex].grade(input,m).ok),cores:variants(item)};}
+function variants(item){if(item.module===3)return [item.fr];return [...new Set(item.members.flatMap(m=>SOURCE_MATCHERS[m.sourceIndex].variants(m)))];}
+function grade(input,item){if(item.module===3){const norm=s=>s.normalize('NFC').toLowerCase().replace(/[’‘]/g,"'").replace(/[.,!?;:]/g,' ').replace(/\s+/g,' ').trim();return {ok:(item.acceptedFr||[item.fr]).some(fr=>norm(input)===norm(fr)),cores:[item.fr]};}return {ok:item.members.some(m=>SOURCE_MATCHERS[m.sourceIndex].grade(input,m).ok),cores:variants(item)};}
 
 
 function differenceAlignment(input,target){
@@ -347,7 +347,7 @@ function differenceAlignment(input,target){
  return {distance:dp[a.length][b.length],input:input,target:target,inputRuns:runs(a,wrong),targetRuns:runs(b,missing)};
 }
 function answerDifference(input,item){
- if(grade(input,item).ok)return null;
+ if(grade(input,item).ok)return null;if(item.module===3){const norm=s=>s.normalize('NFC').toLowerCase().replace(/[’‘]/g,"'").replace(/[.,!?;:]/g,' ').replace(/\s+/g,' ').trim();return {...differenceAlignment(norm(input).slice(0,500),norm(item.fr)),core:false};}
  const candidates=[];
  for(const member of item.members){
   const matcher=SOURCE_MATCHERS[member.sourceIndex];
