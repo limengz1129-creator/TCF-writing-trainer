@@ -6,7 +6,7 @@
 
 [打开综合练习网页](https://limengz1129-creator.github.io/TCF-writing-trainer/combined-expressions/)
 
-动词搭配 1,042 条、固定句型 371 条、动词固定用法 330 条，共 1,743 条练习。固定句型按写作 T1 / T2 / T3、口语 T2 / T3 分成五个独立子模块，可从下拉菜单选择。另含错题本和可导出 Excel 的单词本。
+动词搭配 1,042 条、固定句型 322 条、动词固定用法 330 条，共 1,694 条练习。固定句型支持“全部来源”混合练习，也可从下拉菜单选择写作 T1 / T2 / T3、口语 T2 / T3；已合并 49 条重复写法。另含错题本和可导出 Excel 的单词本。
 
 [查看来源与去重对应清单](https://limengz1129-creator.github.io/TCF-writing-trainer/combined-expressions/audit.json)
 
@@ -47,6 +47,29 @@
 | --- | --- |
 | 口语 Tâche 2 | [打开表达默写](https://limengz1129-creator.github.io/TCF-writing-trainer/eo-tache2-expressions/) |
 | 口语 Tâche 3 | [打开表达默写](https://limengz1129-creator.github.io/TCF-writing-trainer/eo-tache3-expressions/) |
+
+## Piper 法语朗读 · 以后新网页复用
+
+目前 11 个练习网页使用 **Piper · fr_FR-siwis-medium（siwis 法语声音）**。
+
+**这是预先生成音频、网页播放的方案，没有在线 TTS API 接口。下面的播放器和音频索引是静态资源地址，不能把任意新文字传进去直接生成语音。** 以后新网页已有的相同原文可复用音频；新的法语原文需先用 Piper 生成音频并登记索引。
+
+| 资源 | 地址 |
+| --- | --- |
+| Piper 引擎与 Python API 文档 | https://github.com/OHF-Voice/piper1-gpl |
+| 咱们使用的法语模型（含模型、配置和模型说明） | https://huggingface.co/rhasspy/piper-voices/tree/main/fr/fr_FR/siwis/medium |
+| 通用网页播放器 | https://limengz1129-creator.github.io/TCF-writing-trainer/piper-player.js |
+| 通用音频索引 | https://limengz1129-creator.github.io/TCF-writing-trainer/piper-audio/manifest.json |
+| 音频方案、来源授权及重新生成说明 | [piper-audio/README.md](piper-audio/README.md) |
+| 批量提取、生成及高亮对齐脚本 | [tools/piper/all/](tools/piper/all/) |
+| 综合练习页的原播放器 | [combined-expressions/piper-player.js](combined-expressions/piper-player.js) |
+| 综合练习页音频索引 | https://limengz1129-creator.github.io/TCF-writing-trainer/combined-expressions/piper-audio/manifest.json |
+
+以后继续开发时，可直接告诉开发者：“复用本仓库的 Piper 法语 siwis 朗读方案，参考上面这些地址与生成说明。”
+
+通用播放器需要默写框 `#answer` 或 `#answerBox`，并通过 `window.TCF_GRAMMAR_TARGET = () => ({ fr: 当前法语原文 })` 提供朗读内容。引用播放器前先准备这个函数；原文必须与音频索引里的文字完全对应。切换练习时也要通知播放器停止旧音频。综合页使用自己的播放器及索引格式，请参照对应文件。
+
+网页播放不调用付费语音 API，也不需要 API key。模型与数据来源、授权说明见上面的音频 README。
 
 ## 进度保存
 
