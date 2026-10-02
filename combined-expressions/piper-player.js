@@ -43,7 +43,7 @@ async function play(){
  catch{if(!panel.hidden)status.textContent='音频已就绪，请点击播放器的播放按钮试听。';}
 }
 async function open(){
- const text=window.TCF_GRAMMAR_TARGET?.()?.fr||'';
+ const text=window.TCF_SPEECH_TARGET?.()?.fr||window.TCF_GRAMMAR_TARGET?.()?.fr||'';
  panel.hidden=false;opener.setAttribute('aria-expanded','true');original.textContent=text;
  status.textContent='正在加载 Piper 法语音频……';
  const request=++version;
