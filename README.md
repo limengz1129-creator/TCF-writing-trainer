@@ -6,7 +6,7 @@
 
 [打开综合练习网页](https://limengz1129-creator.github.io/TCF-writing-trainer/combined-expressions/)
 
-动词搭配 1,042 条、固定句型 322 条、动词固定用法 330 条，共 1,694 条练习。固定句型支持“全部来源”混合练习，也可从下拉菜单选择写作 T1 / T2 / T3、口语 T2 / T3；已合并 49 条重复写法。另含错题本和可导出 Excel 的单词本。
+动词搭配 1,042 条、固定句型 322 条、动词固定用法 285 条，共 1,649 条练习。固定句型支持“全部来源”混合练习，也可从下拉菜单选择写作 T1 / T2 / T3、口语 T2 / T3；固定句型已合并 49 条重复写法，动词固定用法已合并 45 条重复写法并优先保留完整表达。另含错题本和可导出 Excel 的单词本。
 
 [查看来源与去重对应清单](https://limengz1129-creator.github.io/TCF-writing-trainer/combined-expressions/audit.json)
 

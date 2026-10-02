@@ -1,0 +1,2544 @@
+{
+  "before": 330,
+  "mergedGroups": 45,
+  "removed": 45,
+  "after": 285,
+  "groups": [
+    {
+      "id": "2-2",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-2",
+          "fr": "participer à quelque chose",
+          "zh": "参加某事",
+          "origins": [
+            0,
+            1,
+            4
+          ]
+        },
+        {
+          "id": "2-236",
+          "fr": "participer à + nom",
+          "zh": "参加／参与……／参加……",
+          "origins": [
+            2,
+            3
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "2-3",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "participer à quelque chose",
+          "zh": "参加某事",
+          "example": "Nous nous promènerons le long du lac pour admirer les paysages, puis nous participerons à une découverte des champignons avec un guide.",
+          "source": "第09题 · 第149段",
+          "row": 3
+        },
+        {
+          "sourceIndex": 1,
+          "id": "2-3",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "participer à quelque chose",
+          "zh": "参加某事",
+          "example": "Récemment, j’ai participé à une émission locale consacrée aux initiatives écologiques.",
+          "source": "第12题 · 第195段",
+          "row": 3
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-3",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "participer à quelque chose",
+          "zh": "参加某事",
+          "example": "Beaucoup de parents demandent progressivement à leurs enfants de participer à la vie de la maison.",
+          "source": 1249,
+          "row": 3
+        },
+        {
+          "sourceIndex": 2,
+          "id": "2-91",
+          "module": 2,
+          "category": "动词 + à + 名词",
+          "fr": "participer à + nom",
+          "zh": "参加／参与……",
+          "example": "Même une petite contribution peut donc être utile et permettre à chacun de participer à un effort de solidarité.",
+          "source": "第62篇 · Word第342段",
+          "row": 91
+        },
+        {
+          "sourceIndex": 3,
+          "id": "2-18",
+          "module": 2,
+          "category": "参与",
+          "fr": "participer à + nom",
+          "zh": "参加……",
+          "example": "Combien de personnes peuvent participer ?\n可以有多少人参加？",
+          "source": "第 0 层：17 个全题库跨主题万能问题；6. 人数 / 容量；Word第50段",
+          "row": 18
+        }
+      ]
+    },
+    {
+      "id": "2-3",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-3",
+          "fr": "bénéficier de quelque chose",
+          "zh": "享受／受益于某事／受益于／享有某事／从某事物中受益",
+          "origins": [
+            0,
+            1,
+            4
+          ]
+        },
+        {
+          "id": "2-161",
+          "fr": "bénéficier de + nom",
+          "zh": "受益于／享有……",
+          "origins": [
+            2
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "2-4",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "bénéficier de quelque chose",
+          "zh": "享受／受益于某事",
+          "example": "Le billet coûte 20 euros par adulte ; une réservation anticipée en ligne permet toutefois de bénéficier d’une réduction de 10 %.",
+          "source": "第03题 · 第53段",
+          "row": 4
+        },
+        {
+          "sourceIndex": 1,
+          "id": "2-5",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "bénéficier de quelque chose",
+          "zh": "受益于／享有某事",
+          "example": "Cette cohabitation a été enrichissante pour nous : elle apportait de la compagnie, et je bénéficiais d’échanges sincères et d’un logement accessible.",
+          "source": "第69题 · 第1147段",
+          "row": 5
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-9",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "bénéficier de quelque chose",
+          "zh": "从某事物中受益",
+          "example": "Les universités devraient-elles bénéficier de plus de financements ?",
+          "source": 653,
+          "row": 9
+        },
+        {
+          "sourceIndex": 2,
+          "id": "2-16",
+          "module": 2,
+          "category": "动词 + de + 名词",
+          "fr": "bénéficier de + nom",
+          "zh": "受益于／享有……",
+          "example": "D’autre part, tous les enfants ne bénéficient pas du même accompagnement à la maison.",
+          "source": "第03篇 · Word第18段",
+          "row": 16
+        }
+      ]
+    },
+    {
+      "id": "2-4",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-4",
+          "fr": "profiter de quelque chose",
+          "zh": "享受／利用某事／享受、利用某事物",
+          "origins": [
+            0,
+            1,
+            4
+          ]
+        },
+        {
+          "id": "2-178",
+          "fr": "profiter de + nom",
+          "zh": "充分利用／享受……／享受／利用……",
+          "origins": [
+            2,
+            3
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "2-5",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "profiter de quelque chose",
+          "zh": "享受／利用某事",
+          "example": "Véritable vitrine culturelle de notre ville, le musée propose aussi un atelier interactif dont nous pourrons profiter.",
+          "source": "第10题 · 第165段",
+          "row": 5
+        },
+        {
+          "sourceIndex": 1,
+          "id": "2-4",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "profiter de quelque chose",
+          "zh": "享受／利用某事",
+          "example": "Mon meilleur souvenir reste une randonnée près d’un village, où j’ai pu profiter du calme au cœur de la nature.",
+          "source": "第27题 · 第442段",
+          "row": 4
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-8",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "profiter de quelque chose",
+          "zh": "享受、利用某事物",
+          "example": "Pour profiter de la vie, il faut travailler moins.",
+          "source": 323,
+          "row": 8
+        },
+        {
+          "sourceIndex": 2,
+          "id": "2-33",
+          "module": 2,
+          "category": "动词 + de + 名词",
+          "fr": "profiter de + nom",
+          "zh": "充分利用／享受……",
+          "example": "Parallèlement, il faudrait que les apprenants restent suffisamment disciplinés et motivés afin de profiter pleinement de cette flexibilité.",
+          "source": "第08篇 · Word第46段",
+          "row": 33
+        },
+        {
+          "sourceIndex": 3,
+          "id": "2-17",
+          "module": 2,
+          "category": "享受",
+          "fr": "profiter de + nom",
+          "zh": "享受／利用……",
+          "example": "Combien de temps faut-il prévoir pour bien profiter du séjour ?\n想好好游玩的话，大概要安排多久？",
+          "source": "第 1 层：旅行与住宿大主题通用问题；2. 行程 / 时长；Word第65段",
+          "row": 17
+        }
+      ]
+    },
+    {
+      "id": "2-5",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-5",
+          "fr": "disposer de quelque chose",
+          "zh": "拥有可使用的某物／拥有、可支配某物",
+          "origins": [
+            0,
+            1,
+            4
+          ]
+        },
+        {
+          "id": "2-195",
+          "fr": "disposer de + nom",
+          "zh": "拥有／可以支配……",
+          "origins": [
+            2
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "2-6",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "disposer de quelque chose",
+          "zh": "拥有可使用的某物",
+          "example": "Pour découvrir notre ville, tu disposeras de plusieurs moyens de transport particulièrement pratiques.",
+          "source": "第19题 · 第309段",
+          "row": 6
+        },
+        {
+          "sourceIndex": 1,
+          "id": "2-6",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "disposer de quelque chose",
+          "zh": "拥有可使用的某物",
+          "example": "Après la présentation des règles, nous disposions de deux heures pour cuisiner.",
+          "source": "第45题 · 第735段",
+          "row": 6
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-28",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "disposer de quelque chose",
+          "zh": "拥有、可支配某物",
+          "example": "L’entreprise, de son côté, peut disposer d’une main-d’œuvre plus qualifiée.",
+          "source": 389,
+          "row": 28
+        },
+        {
+          "sourceIndex": 2,
+          "id": "2-50",
+          "module": 2,
+          "category": "动词 + de + 名词",
+          "fr": "disposer de + nom",
+          "zh": "拥有／可以支配……",
+          "example": "D’autre part, lorsqu’une personne consacre trop de temps à son travail, elle dispose de moins de temps pour sa famille, ses amis ou ses loisirs.",
+          "source": "第16篇 · Word第90段",
+          "row": 50
+        }
+      ]
+    },
+    {
+      "id": "2-7",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-7",
+          "fr": "répondre à quelque chose",
+          "zh": "满足某种需求／回应某事／回答／回应某事／回应、满足某事",
+          "origins": [
+            0,
+            1,
+            4
+          ]
+        },
+        {
+          "id": "2-230",
+          "fr": "répondre à + nom",
+          "zh": "满足／回应……",
+          "origins": [
+            2
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "2-8",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "répondre à quelque chose",
+          "zh": "满足某种需求／回应某事",
+          "example": "J’ai pris connaissance de votre annonce et je possède un vélo qui pourrait répondre à votre recherche.",
+          "source": "第28题 · 第455段",
+          "row": 8
+        },
+        {
+          "sourceIndex": 1,
+          "id": "2-7",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "répondre à quelque chose",
+          "zh": "回答／回应某事",
+          "example": "J’ai été invité à présenter le projet et à répondre aux questions de l’animateur.",
+          "source": "第12题 · 第195段",
+          "row": 7
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-6",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "répondre à quelque chose",
+          "zh": "回应、满足某事",
+          "example": "Il est essentiel de répondre aux besoins fondamentaux de la population et de garantir à chacun des conditions de vie dignes.",
+          "source": 657,
+          "row": 6
+        },
+        {
+          "sourceIndex": 2,
+          "id": "2-85",
+          "module": 2,
+          "category": "动词 + à + 名词",
+          "fr": "répondre à + nom",
+          "zh": "满足／回应……",
+          "example": "Dans certains contextes, elle peut donc répondre à des objectifs pratiques.",
+          "source": "第58篇 · Word第321段",
+          "row": 85
+        }
+      ]
+    },
+    {
+      "id": "2-9",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-9",
+          "fr": "s’occuper de quelque chose",
+          "zh": "负责／处理某事／负责、照料某事",
+          "origins": [
+            0,
+            4
+          ]
+        },
+        {
+          "id": "2-155",
+          "fr": "s’occuper de + nom",
+          "zh": "照料／负责……",
+          "origins": [
+            2
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "2-10",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "s’occuper de quelque chose",
+          "zh": "负责／处理某事",
+          "example": "Thomas s’occuperait des décorations, tandis qu’Anna préparerait la playlist.",
+          "source": "第07题 · 第118段",
+          "row": 10
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-27",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "s'occuper de quelque chose",
+          "zh": "负责、照料某事",
+          "example": "Celui-ci doit alors non seulement s’occuper de ses élèves, mais aussi communiquer régulièrement avec les parents et parfois faire face à leurs critiques.",
+          "source": 441,
+          "row": 27
+        },
+        {
+          "sourceIndex": 2,
+          "id": "2-10",
+          "module": 2,
+          "category": "自反动词 + de",
+          "fr": "s’occuper de + nom",
+          "zh": "照料／负责……",
+          "example": "Lorsqu’il s’occupe d’un chien ou d’un chat, par exemple, il doit lui donner à manger et à boire, le promener et veiller régulièrement à son bien-être.",
+          "source": "第02篇 · Word第12段",
+          "row": 10
+        }
+      ]
+    },
+    {
+      "id": "2-12",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-12",
+          "fr": "correspondre à quelque chose",
+          "zh": "符合／对应某事／符合某事",
+          "origins": [
+            0,
+            1
+          ]
+        },
+        {
+          "id": "2-171",
+          "fr": "correspondre à + nom",
+          "zh": "符合／对应……",
+          "origins": [
+            2
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "2-13",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "correspondre à quelque chose",
+          "zh": "符合／对应某事",
+          "example": "Le loyer est de 1000 euros par mois, charges comprises, ce qui correspond à mon budget.",
+          "source": "第67题 · 第1110段",
+          "row": 13
+        },
+        {
+          "sourceIndex": 1,
+          "id": "2-25",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "correspondre à quelque chose",
+          "zh": "符合某事",
+          "example": "Les prestations fournies ne correspondaient pas à celles annoncées à la réservation.",
+          "source": "第72题 · 第1192段",
+          "row": 25
+        },
+        {
+          "sourceIndex": 2,
+          "id": "2-26",
+          "module": 2,
+          "category": "动词 + à + 名词",
+          "fr": "correspondre à + nom",
+          "zh": "符合／对应……",
+          "example": "Certains jeunes accordent beaucoup d’importance à leur style et aiment choisir des tenues qui correspondent à leurs goûts.",
+          "source": "第06篇 · Word第34段",
+          "row": 26
+        }
+      ]
+    },
+    {
+      "id": "2-13",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-13",
+          "fr": "contribuer à quelque chose",
+          "zh": "为某事出力／出资／有助于、促成某事",
+          "origins": [
+            0,
+            4
+          ]
+        },
+        {
+          "id": "2-194",
+          "fr": "contribuer à + nom",
+          "zh": "有助于／促进……",
+          "origins": [
+            2
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "2-14",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "contribuer à quelque chose",
+          "zh": "为某事出力／出资",
+          "example": "J’ai créé une cagnotte en ligne ; vous pourrez y contribuer avant le 20 novembre.",
+          "source": "第30题 · 第490段",
+          "row": 14
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-4",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "contribuer à quelque chose",
+          "zh": "有助于、促成某事",
+          "example": "Cette expérience peut donc contribuer à son épanouissement personnel.",
+          "source": 1236,
+          "row": 4
+        },
+        {
+          "sourceIndex": 2,
+          "id": "2-49",
+          "module": 2,
+          "category": "动词 + à + 名词",
+          "fr": "contribuer à + nom",
+          "zh": "有助于／促进……",
+          "example": "D’une part, le travail peut contribuer à la réalisation de soi.",
+          "source": "第16篇 · Word第89段",
+          "row": 49
+        }
+      ]
+    },
+    {
+      "id": "2-26",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-26",
+          "fr": "souhaiter faire quelque chose",
+          "zh": "希望做某事",
+          "origins": [
+            0,
+            1
+          ]
+        },
+        {
+          "id": "2-240",
+          "fr": "souhaiter + infinitif",
+          "zh": "希望做……",
+          "origins": [
+            3
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "2-27",
+          "module": 2,
+          "category": "动词＋不定式",
+          "fr": "souhaiter faire quelque chose",
+          "zh": "希望做某事",
+          "example": "Je souhaiterais rencontrer une personne patiente, intéressée par des échanges culturels, pour progresser au-delà des exercices scolaires.",
+          "source": "第52题 · 第855段",
+          "row": 27
+        },
+        {
+          "sourceIndex": 1,
+          "id": "2-36",
+          "module": 2,
+          "category": "动词＋不定式",
+          "fr": "souhaiter faire quelque chose",
+          "zh": "希望做某事",
+          "example": "Je souhaitais reprendre une activité régulière et découvrir un environnement soutenant ma motivation.",
+          "source": "第66题 · 第1096段",
+          "row": 36
+        },
+        {
+          "sourceIndex": 3,
+          "id": "2-5",
+          "module": 2,
+          "category": "偏好与愿望",
+          "fr": "souhaiter + infinitif",
+          "zh": "希望做……",
+          "example": "Quels conseils donneriez-vous à quelqu’un qui souhaite essayer ?\n对于想尝试的人，您会给什么建议？",
+          "source": "社交聚会与个人生活；Word第783段",
+          "row": 5
+        }
+      ]
+    },
+    {
+      "id": "2-37",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-37",
+          "fr": "conseiller à quelqu’un de faire quelque chose",
+          "zh": "建议某人做某事",
+          "origins": [
+            0,
+            1,
+            4
+          ]
+        },
+        {
+          "id": "2-242",
+          "fr": "conseiller à quelqu’un de + infinitif",
+          "zh": "建议某人做……",
+          "origins": [
+            3
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "2-38",
+          "module": 2,
+          "category": "动词＋人＋不定式",
+          "fr": "conseiller à quelqu’un de faire quelque chose",
+          "zh": "建议某人做某事",
+          "example": "Pour venir, je te conseille de prendre le train jusqu’à Blois, puis de rejoindre le château en taxi.",
+          "source": "第16题 · 第262段",
+          "row": 38
+        },
+        {
+          "sourceIndex": 1,
+          "id": "2-57",
+          "module": 2,
+          "category": "动词＋人＋不定式",
+          "fr": "conseiller à quelqu’un de faire quelque chose",
+          "zh": "建议某人做某事",
+          "example": "Il a répondu à mes questions sur ses personnages et m’a conseillé de lire davantage avant de me lancer dans l’écriture.",
+          "source": "第15题 · 第245段",
+          "row": 57
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-67",
+          "module": 2,
+          "category": "动词＋人＋不定式",
+          "fr": "conseiller à quelqu'un de faire quelque chose",
+          "zh": "建议某人做某事",
+          "example": "Par exemple, une personne âgée peut conseiller à un jeune de rester toute sa vie dans la même entreprise parce qu’elle considère la stabilité comme une priorité absolue.",
+          "source": 1181,
+          "row": 67
+        },
+        {
+          "sourceIndex": 3,
+          "id": "2-7",
+          "module": 2,
+          "category": "建议",
+          "fr": "conseiller à quelqu’un de + infinitif",
+          "zh": "建议某人做……",
+          "example": "Quels quartiers me conseilleriez-vous pour quelqu’un qui vient de s’installer au Québec ?\n对于刚到魁北克的人，您比较推荐哪些区域？",
+          "source": "B4｜住宅交接与看管通用问题；2. 哪些区域更适合刚到的人；Word第600段",
+          "row": 7
+        }
+      ]
+    },
+    {
+      "id": "2-39",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-39",
+          "fr": "permettre à quelqu’un de faire quelque chose",
+          "zh": "让／使某人能够做某事／使某人能做某事／使某人能够做某事",
+          "origins": [
+            0,
+            1,
+            4
+          ]
+        },
+        {
+          "id": "2-154",
+          "fr": "permettre à quelqu’un de + infinitif",
+          "zh": "使某人能够做……",
+          "origins": [
+            2
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "2-40",
+          "module": 2,
+          "category": "动词＋人＋不定式",
+          "fr": "permettre à quelqu’un de faire quelque chose",
+          "zh": "让／使某人能够做某事",
+          "example": "Tu auras ta propre chambre très lumineuse, ce qui te permettra de séjourner confortablement sans frais d’hébergement.",
+          "source": "第15题 · 第246段",
+          "row": 40
+        },
+        {
+          "sourceIndex": 1,
+          "id": "2-60",
+          "module": 2,
+          "category": "动词＋人＋不定式",
+          "fr": "permettre à quelqu’un de faire quelque chose",
+          "zh": "使某人能做某事",
+          "example": "J’ai également demandé aux enseignants de préciser leurs attentes, ce qui m’a permis de mieux préparer les travaux.",
+          "source": "第01题 · 第21段",
+          "row": 60
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-61",
+          "module": 2,
+          "category": "动词＋人＋不定式",
+          "fr": "permettre à quelqu'un de faire quelque chose",
+          "zh": "使某人能够做某事",
+          "example": "Cette proximité peut donc renforcer les liens familiaux et permettre à chacun de se sentir davantage soutenu.",
+          "source": 1242,
+          "row": 61
+        },
+        {
+          "sourceIndex": 2,
+          "id": "2-9",
+          "module": 2,
+          "category": "动词 + de + 不定式",
+          "fr": "permettre à quelqu’un de + infinitif",
+          "zh": "使某人能够做……",
+          "example": "D’une part, avoir un animal domestique peut permettre à un enfant de développer le sens des responsabilités.",
+          "source": "第02篇 · Word第12段",
+          "row": 9
+        }
+      ]
+    },
+    {
+      "id": "2-40",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-40",
+          "fr": "aider quelqu’un à faire quelque chose",
+          "zh": "帮助某人做某事",
+          "origins": [
+            0,
+            1,
+            4
+          ]
+        },
+        {
+          "id": "2-150",
+          "fr": "aider quelqu’un à + infinitif",
+          "zh": "帮助某人做……",
+          "origins": [
+            2,
+            3
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "2-41",
+          "module": 2,
+          "category": "动词＋人＋不定式",
+          "fr": "aider quelqu’un à faire quelque chose",
+          "zh": "帮助某人做某事",
+          "example": "En échange, je pourrais aider mon partenaire à apprendre le chinois, ma langue maternelle.",
+          "source": "第51题 · 第839段",
+          "row": 41
+        },
+        {
+          "sourceIndex": 1,
+          "id": "2-61",
+          "module": 2,
+          "category": "动词＋人＋不定式",
+          "fr": "aider quelqu’un à faire quelque chose",
+          "zh": "帮助某人做某事",
+          "example": "J’accompagne une dame pour ses courses et l’aide à comprendre certains courriers.",
+          "source": "第39题 · 第638段",
+          "row": 61
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-62",
+          "module": 2,
+          "category": "动词＋人＋不定式",
+          "fr": "aider quelqu'un à faire quelque chose",
+          "zh": "帮助某人做某事",
+          "example": "De plus, l’entreprise pourrait organiser des activités de bienvenue afin d’aider les nouveaux employés à créer des liens avec leurs collègues.",
+          "source": 358,
+          "row": 62
+        },
+        {
+          "sourceIndex": 2,
+          "id": "2-5",
+          "module": 2,
+          "category": "动词 + à + 不定式",
+          "fr": "aider quelqu’un à + infinitif",
+          "zh": "帮助某人做……",
+          "example": "Parallèlement, il faudrait que les parents trouvent un équilibre entre l’encadrement et la liberté, afin d’aider leurs enfants à devenir progressivement autonomes et responsables.",
+          "source": "第01篇 · Word第9段",
+          "row": 5
+        },
+        {
+          "sourceIndex": 3,
+          "id": "2-14",
+          "module": 2,
+          "category": "帮助",
+          "fr": "aider quelqu’un à + infinitif",
+          "zh": "帮助某人做……",
+          "example": "Est-ce que votre agence peut m’aider dans les démarches administratives et me fournir des informations à jour sur les formalités d’entrée ?\n你们旅行社可以协助我办理行政手续，并提供最新的入境信息吗？",
+          "source": "第 2 层 B4：旅游景点参观通用问题；2. 旅行社行政协助 / 最新信息；Word第218段",
+          "row": 14
+        }
+      ]
+    },
+    {
+      "id": "2-42",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-42",
+          "fr": "accompagner quelqu’un dans quelque chose",
+          "zh": "在某项工作／过程里陪伴、指导某人",
+          "origins": [
+            0
+          ]
+        },
+        {
+          "id": "2-189",
+          "fr": "accompagner quelqu’un dans + nom",
+          "zh": "在……方面陪伴／支持某人",
+          "origins": [
+            2
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "2-43",
+          "module": 2,
+          "category": "动词＋人＋不定式",
+          "fr": "accompagner quelqu’un dans quelque chose",
+          "zh": "在某项工作／过程里陪伴、指导某人",
+          "example": "Mon responsable prend aussi le temps de m’accompagner dans mes premières missions.",
+          "source": "第50题 · 第822段",
+          "row": 43
+        },
+        {
+          "sourceIndex": 2,
+          "id": "2-44",
+          "module": 2,
+          "category": "动词 + dans",
+          "fr": "accompagner quelqu’un dans + nom",
+          "zh": "在……方面陪伴／支持某人",
+          "example": "Les élèves y sont souvent davantage surveillés et les enseignants peuvent être plus présents pour les accompagner dans leur apprentissage.",
+          "source": "第14篇 · Word第77段",
+          "row": 44
+        }
+      ]
+    },
+    {
+      "id": "2-45",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-45",
+          "fr": "donner envie à quelqu’un de faire quelque chose",
+          "zh": "使某人想做某事／让某人想做某事",
+          "origins": [
+            0,
+            1
+          ]
+        },
+        {
+          "id": "2-185",
+          "fr": "donner envie à quelqu’un de + infinitif",
+          "zh": "使某人想做……",
+          "origins": [
+            2
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "2-46",
+          "module": 2,
+          "category": "动词＋人＋不定式",
+          "fr": "donner envie à quelqu’un de faire quelque chose",
+          "zh": "使某人想做某事",
+          "example": "J’espère que mon témoignage donnera envie à d’autres personnes de se lancer, à leur rythme.",
+          "source": "第48题 · 第790段",
+          "row": 46
+        },
+        {
+          "sourceIndex": 1,
+          "id": "2-45",
+          "module": 2,
+          "category": "动词＋不定式",
+          "fr": "donner envie à quelqu’un de faire quelque chose",
+          "zh": "让某人想做某事",
+          "example": "Le dépaysement m’a donné envie de poursuivre mes découvertes.",
+          "source": "第26题 · 第428段",
+          "row": 45,
+          "cores": [
+            "donner envie à de",
+            "donner à envie de"
+          ],
+          "usage": "完整结构：donner envie à quelqu’un de faire quelque chose。也可说 donner à quelqu’un envie de faire quelque chose；用代词时：cela me donne envie de…"
+        },
+        {
+          "sourceIndex": 2,
+          "id": "2-40",
+          "module": 2,
+          "category": "动词 + de + 不定式",
+          "fr": "donner envie à quelqu’un de + infinitif",
+          "zh": "使某人想做……",
+          "example": "Parallèlement, il faudrait que les parents sachent respecter leurs goûts et leur proposent des livres adaptés afin de leur donner progressivement envie de lire.",
+          "source": "第11篇 · Word第63段",
+          "row": 40,
+          "cores": [
+            "donner envie à de",
+            "donner à envie de"
+          ],
+          "usage": "donner envie à quelqu’un de… 与 donner à quelqu’un envie de… 两种词序均可；à 引出某人，de 引出动作。"
+        }
+      ]
+    },
+    {
+      "id": "2-55",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-55",
+          "fr": "accorder de l’importance à quelque chose",
+          "zh": "重视某事",
+          "origins": [
+            0,
+            4
+          ]
+        },
+        {
+          "id": "2-168",
+          "fr": "accorder de l’importance à + nom",
+          "zh": "重视……",
+          "origins": [
+            2
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "2-56",
+          "module": 2,
+          "category": "动词＋人＋介词宾语",
+          "fr": "accorder de l’importance à quelque chose",
+          "zh": "重视某事",
+          "example": "Ce qui me touche surtout, c’est l’importance accordée aux liens familiaux.",
+          "source": "第41题 · 第672段",
+          "row": 56
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-19",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "accorder de l'importance à quelque chose",
+          "zh": "重视某事",
+          "example": "Toutefois, la situation évolue progressivement, car de plus en plus de personnes commencent à accorder de l’importance à leur santé et à la qualité de ce qu’elles mangent.",
+          "source": 1032,
+          "row": 19
+        },
+        {
+          "sourceIndex": 2,
+          "id": "2-23",
+          "module": 2,
+          "category": "动词 + à + 名词",
+          "fr": "accorder de l’importance à + nom",
+          "zh": "重视……",
+          "example": "D’autre part, accorder trop d’importance aux marques peut rendre les inégalités économiques particulièrement visibles.",
+          "source": "第05篇 · Word第29段",
+          "row": 23
+        }
+      ]
+    },
+    {
+      "id": "2-59",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-59",
+          "fr": "transformer quelque chose en quelque chose",
+          "zh": "把某物转化为另一物／把某物变为另一物／把某物变成某物",
+          "origins": [
+            0,
+            1,
+            4
+          ]
+        },
+        {
+          "id": "2-213",
+          "fr": "transformer quelque chose en + nom",
+          "zh": "把……转变成……",
+          "origins": [
+            2
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "2-60",
+          "module": 2,
+          "category": "动词＋人＋介词宾语",
+          "fr": "transformer quelque chose en quelque chose",
+          "zh": "把某物转化为另一物",
+          "example": "Mon travail consiste à transformer des données complexes en informations utiles pour orienter les décisions de l’entreprise.",
+          "source": "第50题 · 第822段",
+          "row": 60
+        },
+        {
+          "sourceIndex": 1,
+          "id": "2-78",
+          "module": 2,
+          "category": "动词＋宾语＋介词",
+          "fr": "transformer quelque chose en quelque chose",
+          "zh": "把某物变为另一物",
+          "example": "Une écrivaine y expliquait comment elle transformait ses souvenirs en fiction, sans simplement raconter sa vie.",
+          "source": "第15题 · 第244段",
+          "row": 78
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-71",
+          "module": 2,
+          "category": "宾语＋补语",
+          "fr": "transformer quelque chose en quelque chose",
+          "zh": "把某物变成某物",
+          "example": "Toutefois, il ne faut pas transformer cette volonté en obsession.",
+          "source": 1058,
+          "row": 71
+        },
+        {
+          "sourceIndex": 2,
+          "id": "2-68",
+          "module": 2,
+          "category": "动词 + en",
+          "fr": "transformer quelque chose en + nom",
+          "zh": "把……转变成……",
+          "example": "Certains peuvent ainsi développer progressivement leurs compétences et même transformer leur passion en activité professionnelle.",
+          "source": "第31篇 · Word第171段",
+          "row": 68
+        }
+      ]
+    },
+    {
+      "id": "2-84",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-84",
+          "fr": "se familiariser avec quelque chose",
+          "zh": "熟悉某事／熟悉某事物",
+          "origins": [
+            1,
+            4
+          ]
+        },
+        {
+          "id": "2-186",
+          "fr": "se familiariser avec + nom",
+          "zh": "熟悉……",
+          "origins": [
+            2
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 1,
+          "id": "2-8",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "se familiariser avec quelque chose",
+          "zh": "熟悉某事",
+          "example": "Certes, je dois encore me familiariser avec des logiciels.",
+          "source": "第59题 · 第977段",
+          "row": 8
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-11",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "se familiariser avec quelque chose",
+          "zh": "熟悉某事物",
+          "example": "Il faut donc du temps pour se familiariser avec les codes sociaux du pays d’accueil.",
+          "source": 65,
+          "row": 11
+        },
+        {
+          "sourceIndex": 2,
+          "id": "2-41",
+          "module": 2,
+          "category": "自反动词 + avec",
+          "fr": "se familiariser avec + nom",
+          "zh": "熟悉……",
+          "example": "Par exemple, un enfant qui apprend le français peut regarder des émissions en français afin de se familiariser avec la prononciation et d’enrichir son vocabulaire.",
+          "source": "第12篇 · Word第66段",
+          "row": 41
+        }
+      ]
+    },
+    {
+      "id": "2-88",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-88",
+          "fr": "nuire à quelque chose",
+          "zh": "损害／妨碍某事／损害某事物",
+          "origins": [
+            1,
+            4
+          ]
+        },
+        {
+          "id": "2-158",
+          "fr": "nuire à + nom",
+          "zh": "损害……",
+          "origins": [
+            2
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 1,
+          "id": "2-12",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "nuire à quelque chose",
+          "zh": "损害／妨碍某事",
+          "example": "Cette habitude nuisait à ma concentration et limitait le temps consacré à mes proches.",
+          "source": "第35题 · 第572段",
+          "row": 12
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-7",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "nuire à quelque chose",
+          "zh": "损害某事物",
+          "example": "Toutefois, son utilisation excessive peut nuire à la concentration.",
+          "source": 374,
+          "row": 7
+        },
+        {
+          "sourceIndex": 2,
+          "id": "2-13",
+          "module": 2,
+          "category": "动词 + à + 名词",
+          "fr": "nuire à + nom",
+          "zh": "损害……",
+          "example": "Dans ce cas, la présence d’un animal à la maison peut devenir problématique et même nuire à leur santé.",
+          "source": "第02篇 · Word第13段",
+          "row": 13
+        }
+      ]
+    },
+    {
+      "id": "2-93",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-93",
+          "fr": "faire partie de quelque chose",
+          "zh": "属于／是其中一员／是……的一部分／是其中一员",
+          "origins": [
+            1,
+            4
+          ]
+        },
+        {
+          "id": "2-210",
+          "fr": "faire partie de + nom",
+          "zh": "是……的一部分",
+          "origins": [
+            2
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 1,
+          "id": "2-21",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "faire partie de quelque chose",
+          "zh": "属于／是其中一员",
+          "example": "Je fais partie d’une association de quartier qui propose soutien scolaire, jeux et sorties aux enfants.",
+          "source": "第40题 · 第653段",
+          "row": 21
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-31",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "faire partie de quelque chose",
+          "zh": "是……的一部分／是其中一员",
+          "example": "Dans certaines entreprises, le mentorat peut faire partie des critères d’évaluation du leadership, notamment lorsqu’un employé souhaite accéder à un poste à responsabilités.",
+          "source": 417,
+          "row": 31
+        },
+        {
+          "sourceIndex": 2,
+          "id": "2-65",
+          "module": 2,
+          "category": "动词 + de + 名词",
+          "fr": "faire partie de + nom",
+          "zh": "是……的一部分",
+          "example": "Elle peut donc faire partie d’une alimentation équilibrée.",
+          "source": "第29篇 · Word第159段",
+          "row": 65
+        }
+      ]
+    },
+    {
+      "id": "2-94",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-94",
+          "fr": "tenir compte de quelque chose",
+          "zh": "考虑某事／考虑到某事",
+          "origins": [
+            1,
+            4
+          ]
+        },
+        {
+          "id": "2-204",
+          "fr": "tenir compte de + nom",
+          "zh": "考虑……",
+          "origins": [
+            2
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 1,
+          "id": "2-22",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "tenir compte de quelque chose",
+          "zh": "考虑某事",
+          "example": "Le poste représente un défi intellectuel : il faut vérifier les données, expliquer ses choix et tenir compte des besoins des utilisateurs.",
+          "source": "第59题 · 第976段",
+          "row": 22
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-16",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "tenir compte de quelque chose",
+          "zh": "考虑到某事",
+          "example": "Toutefois, il faut tenir compte de leur capacité de compréhension.",
+          "source": 502,
+          "row": 16
+        },
+        {
+          "sourceIndex": 2,
+          "id": "2-59",
+          "module": 2,
+          "category": "动词 + de + 名词",
+          "fr": "tenir compte de + nom",
+          "zh": "考虑……",
+          "example": "Parallèlement, il faudrait que les employeurs tiennent compte de la santé, du confort et des préférences de l’ensemble des salariés.",
+          "source": "第23篇 · Word第127段",
+          "row": 59
+        }
+      ]
+    },
+    {
+      "id": "2-100",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-100",
+          "fr": "prévoir quelque chose",
+          "zh": "预先准备／计划某事",
+          "origins": [
+            1
+          ]
+        },
+        {
+          "id": "2-262",
+          "fr": "prévoir + nom",
+          "zh": "预留／准备某物",
+          "origins": [
+            3
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 1,
+          "id": "2-30",
+          "module": 2,
+          "category": "动词＋直接宾语",
+          "fr": "prévoir quelque chose",
+          "zh": "预先准备／计划某事",
+          "example": "Je prévoirais une réserve financière et testerais mes recettes auprès de clients potentiels avant de quitter mon emploi.",
+          "source": "第33题 · 第540段",
+          "row": 30
+        },
+        {
+          "sourceIndex": 3,
+          "id": "2-33",
+          "module": 2,
+          "category": "准备",
+          "fr": "prévoir + nom",
+          "zh": "预留／准备某物",
+          "example": "Y a-t-il des frais supplémentaires à prévoir ?\n还有没有需要额外支付的费用？",
+          "source": "第 0 层：17 个全题库跨主题万能问题；1. 价格 / 费用；Word第35段",
+          "row": 33
+        }
+      ]
+    },
+    {
+      "id": "2-105",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-105",
+          "fr": "apprendre à faire quelque chose",
+          "zh": "学会做某事／学习做某事",
+          "origins": [
+            1,
+            4
+          ]
+        },
+        {
+          "id": "2-206",
+          "fr": "apprendre à + infinitif",
+          "zh": "学会做……",
+          "origins": [
+            2
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 1,
+          "id": "2-37",
+          "module": 2,
+          "category": "动词＋不定式",
+          "fr": "apprendre à faire quelque chose",
+          "zh": "学会做某事",
+          "example": "Progressivement, j’ai appris à gérer les imprévus et à demander de l’aide.",
+          "source": "第34题 · 第556段",
+          "row": 37
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-40",
+          "module": 2,
+          "category": "动词＋不定式",
+          "fr": "apprendre à faire quelque chose",
+          "zh": "学习做某事",
+          "example": "Il ne s’agit donc pas de renoncer à Internet, mais plutôt d’apprendre à l’utiliser avec discernement.",
+          "source": 896,
+          "row": 40
+        },
+        {
+          "sourceIndex": 2,
+          "id": "2-61",
+          "module": 2,
+          "category": "动词 + à + 不定式",
+          "fr": "apprendre à + infinitif",
+          "zh": "学会做……",
+          "example": "De plus, ils peuvent gagner leur propre argent et apprendre à le gérer de manière plus responsable.",
+          "source": "第26篇 · Word第142段",
+          "row": 61
+        }
+      ]
+    },
+    {
+      "id": "2-108",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-108",
+          "fr": "éviter de faire quelque chose",
+          "zh": "避免做某事",
+          "origins": [
+            1,
+            4
+          ]
+        },
+        {
+          "id": "2-198",
+          "fr": "éviter de + infinitif",
+          "zh": "避免做……",
+          "origins": [
+            2
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 1,
+          "id": "2-44",
+          "module": 2,
+          "category": "动词＋不定式",
+          "fr": "éviter de faire quelque chose",
+          "zh": "避免做某事",
+          "example": "Avant de commencer, une animatrice a expliqué comment trier les objets ramassés et éviter de perturber les zones fragiles.",
+          "source": "第42题 · 第687段",
+          "row": 44
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-37",
+          "module": 2,
+          "category": "动词＋不定式",
+          "fr": "éviter de faire quelque chose",
+          "zh": "避免做某事",
+          "example": "Certaines personnes pensent qu’il faut éviter de travailler avec un membre de sa famille.",
+          "source": 340,
+          "row": 37
+        },
+        {
+          "sourceIndex": 2,
+          "id": "2-53",
+          "module": 2,
+          "category": "动词 + de + 不定式",
+          "fr": "éviter de + infinitif",
+          "zh": "避免做……",
+          "example": "Parallèlement, il faudrait que les entreprises adaptent réellement la charge de travail afin d’éviter d’augmenter la pression sur les employés.",
+          "source": "第18篇 · Word第101段",
+          "row": 53
+        }
+      ]
+    },
+    {
+      "id": "2-109",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-109",
+          "fr": "contribuer à faire quelque chose",
+          "zh": "有助于／为做某事贡献力量／有助于做某事",
+          "origins": [
+            1,
+            4
+          ]
+        },
+        {
+          "id": "2-170",
+          "fr": "contribuer à + infinitif",
+          "zh": "有助于做……",
+          "origins": [
+            2
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 1,
+          "id": "2-46",
+          "module": 2,
+          "category": "动词＋不定式",
+          "fr": "contribuer à faire quelque chose",
+          "zh": "有助于／为做某事贡献力量",
+          "example": "Grâce à un engagement et à des activités accessibles, nous contribuons à rendre notre quartier plus solidaire.",
+          "source": "第40题 · 第656段",
+          "row": 46
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-46",
+          "module": 2,
+          "category": "动词＋不定式",
+          "fr": "contribuer à faire quelque chose",
+          "zh": "有助于做某事",
+          "example": "De plus, l’immigration peut contribuer à répondre à certains besoins sur le marché du travail.",
+          "source": 73,
+          "row": 46
+        },
+        {
+          "sourceIndex": 2,
+          "id": "2-25",
+          "module": 2,
+          "category": "动词 + à + 不定式",
+          "fr": "contribuer à + infinitif",
+          "zh": "有助于做……",
+          "example": "D’une part, l’uniforme scolaire peut contribuer à réduire les inégalités économiques entre les élèves.",
+          "source": "第06篇 · Word第33段",
+          "row": 25
+        }
+      ]
+    },
+    {
+      "id": "2-121",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-121",
+          "fr": "obliger quelqu’un à faire quelque chose",
+          "zh": "迫使某人做某事",
+          "origins": [
+            1,
+            4
+          ]
+        },
+        {
+          "id": "2-188",
+          "fr": "obliger quelqu’un à + infinitif",
+          "zh": "强迫某人做……",
+          "origins": [
+            2
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 1,
+          "id": "2-65",
+          "module": 2,
+          "category": "动词＋人＋不定式",
+          "fr": "obliger quelqu’un à faire quelque chose",
+          "zh": "迫使某人做某事",
+          "example": "Une sauce trop épaisse m’a obligé à ajuster ma préparation.",
+          "source": "第45题 · 第735段",
+          "row": 65
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-65",
+          "module": 2,
+          "category": "动词＋人＋不定式",
+          "fr": "obliger quelqu'un à faire quelque chose",
+          "zh": "迫使某人做某事",
+          "example": "Il faut obliger les enfants à faire du sport.",
+          "source": 1097,
+          "row": 65
+        },
+        {
+          "sourceIndex": 2,
+          "id": "2-43",
+          "module": 2,
+          "category": "动词 + à + 不定式",
+          "fr": "obliger quelqu’un à + infinitif",
+          "zh": "强迫某人做……",
+          "example": "Il ne suffit donc pas de les obliger à lire.",
+          "source": "第13篇 · Word第72段",
+          "row": 43
+        }
+      ]
+    },
+    {
+      "id": "2-122",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-122",
+          "fr": "empêcher quelqu’un de faire quelque chose",
+          "zh": "阻止某人做某事",
+          "origins": [
+            1,
+            4
+          ]
+        },
+        {
+          "id": "2-148",
+          "fr": "empêcher quelqu’un de + infinitif",
+          "zh": "阻止某人做……",
+          "origins": [
+            2
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 1,
+          "id": "2-66",
+          "module": 2,
+          "category": "动词＋人＋不定式",
+          "fr": "empêcher quelqu’un de faire quelque chose",
+          "zh": "阻止某人做某事",
+          "example": "Au début, la prononciation et les règles grammaticales me semblaient complexes, tandis que le manque de vocabulaire m’empêchait de participer aux conversations.",
+          "source": "第04题 · 第65段",
+          "row": 66
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-68",
+          "module": 2,
+          "category": "动词＋人＋不定式",
+          "fr": "empêcher quelqu'un de faire quelque chose",
+          "zh": "阻止某人做某事",
+          "example": "La situation financière d’une famille ne devrait pas empêcher un jeune de poursuivre ses études.",
+          "source": 656,
+          "row": 68
+        },
+        {
+          "sourceIndex": 2,
+          "id": "2-3",
+          "module": 2,
+          "category": "动词 + de + 不定式",
+          "fr": "empêcher quelqu’un de + infinitif",
+          "zh": "阻止某人做……",
+          "example": "D’autre part, une autorité excessive peut empêcher les enfants de développer leur autonomie et leur indépendance.",
+          "source": "第01篇 · Word第8段",
+          "row": 3
+        }
+      ]
+    },
+    {
+      "id": "2-143",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-143",
+          "fr": "avoir du mal à faire quelque chose",
+          "zh": "做某事有困难",
+          "origins": [
+            1,
+            4
+          ]
+        },
+        {
+          "id": "2-176",
+          "fr": "avoir du mal à + infinitif",
+          "zh": "做……有困难",
+          "origins": [
+            2
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 1,
+          "id": "2-93",
+          "module": 2,
+          "category": "情绪与形容词结构",
+          "fr": "avoir du mal à faire quelque chose",
+          "zh": "做某事有困难",
+          "example": "Au début, j’avais du mal à organiser les étapes.",
+          "source": "第46题 · 第752段",
+          "row": 93
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-54",
+          "module": 2,
+          "category": "动词＋不定式",
+          "fr": "avoir du mal à faire quelque chose",
+          "zh": "做某事有困难",
+          "example": "Au début, il peut avoir du mal à coordonner ses mouvements ou à parcourir une certaine distance.",
+          "source": 1100,
+          "row": 54
+        },
+        {
+          "sourceIndex": 2,
+          "id": "2-31",
+          "module": 2,
+          "category": "动词 + à + 不定式",
+          "fr": "avoir du mal à + infinitif",
+          "zh": "做……有困难",
+          "example": "Sans professeur à ses côtés, un élève peut se décourager plus facilement ou avoir du mal à corriger ses erreurs.",
+          "source": "第08篇 · Word第45段",
+          "row": 31
+        }
+      ]
+    },
+    {
+      "id": "2-299",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-149",
+          "fr": "risquer de + infinitif",
+          "zh": "有可能做……",
+          "origins": [
+            2
+          ]
+        },
+        {
+          "id": "2-299",
+          "fr": "risquer de faire quelque chose",
+          "zh": "可能会做某事、有某风险",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 2,
+          "id": "2-4",
+          "module": 2,
+          "category": "动词 + de + 不定式",
+          "fr": "risquer de + infinitif",
+          "zh": "有可能做……",
+          "example": "Si les parents prennent toutes les décisions à leur place et interviennent constamment dans leur vie quotidienne, les enfants risquent de devenir trop dépendants.",
+          "source": "第01篇 · Word第8段",
+          "row": 4
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-36",
+          "module": 2,
+          "category": "动词＋不定式",
+          "fr": "risquer de faire quelque chose",
+          "zh": "可能会做某事、有某风险",
+          "example": "On peut citer le cas d’une famille qui ne parvient plus à payer son loyer et qui risque de perdre son logement.",
+          "source": 1151,
+          "row": 36
+        }
+      ]
+    },
+    {
+      "id": "2-313",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-160",
+          "fr": "être obligé de + infinitif",
+          "zh": "被要求／不得不做……",
+          "origins": [
+            2
+          ]
+        },
+        {
+          "id": "2-313",
+          "fr": "être obligé de faire quelque chose",
+          "zh": "不得不做某事",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 2,
+          "id": "2-15",
+          "module": 2,
+          "category": "动词 + de + 不定式",
+          "fr": "être obligé de + infinitif",
+          "zh": "被要求／不得不做……",
+          "example": "Lorsqu’un enfant sait qu’il doit rendre un devoir le lendemain, il est obligé de planifier son travail, de réviser plus régulièrement et de respecter ses échéances.",
+          "source": "第03篇 · Word第17段",
+          "row": 15
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-58",
+          "module": 2,
+          "category": "动词＋不定式",
+          "fr": "être obligé de faire quelque chose",
+          "zh": "不得不做某事",
+          "example": "Par exemple, après avoir quitté le bureau, un employé peut encore être obligé de répondre à des courriels professionnels le soir.",
+          "source": 796,
+          "row": 58
+        }
+      ]
+    },
+    {
+      "id": "2-303",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-163",
+          "fr": "veiller à + infinitif",
+          "zh": "注意确保做……",
+          "origins": [
+            2
+          ]
+        },
+        {
+          "id": "2-303",
+          "fr": "veiller à faire quelque chose",
+          "zh": "注意确保做某事",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 2,
+          "id": "2-18",
+          "module": 2,
+          "category": "动词 + à + 不定式",
+          "fr": "veiller à + infinitif",
+          "zh": "注意确保做……",
+          "example": "Parallèlement, il faudrait que les écoles veillent à limiter leur quantité afin que chaque élève puisse progresser dans des conditions plus équitables.",
+          "source": "第03篇 · Word第19段",
+          "row": 18
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-44",
+          "module": 2,
+          "category": "动词＋不定式",
+          "fr": "veiller à faire quelque chose",
+          "zh": "注意确保做某事",
+          "example": "Il faudrait donc que les parents veillent à choisir des contenus adaptés à l’âge de leurs enfants et à maintenir un équilibre entre les jeux vidéo, les études et les autres activités.",
+          "source": 963,
+          "row": 44
+        }
+      ]
+    },
+    {
+      "id": "2-289",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-165",
+          "fr": "être exposé à + nom",
+          "zh": "接触到／暴露于……",
+          "origins": [
+            2
+          ]
+        },
+        {
+          "id": "2-289",
+          "fr": "être exposé à quelque chose",
+          "zh": "暴露于某风险或环境",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 2,
+          "id": "2-20",
+          "module": 2,
+          "category": "被动结构 + à",
+          "fr": "être exposé à + nom",
+          "zh": "接触到／暴露于……",
+          "example": "Ils peuvent facilement être exposés à des contenus violents ou destinés aux adultes.",
+          "source": "第04篇 · Word第22段",
+          "row": 20
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-23",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "être exposé à quelque chose",
+          "zh": "暴露于某风险或环境",
+          "example": "Ils peuvent être exposés à des contenus inappropriés, violents ou destinés aux adultes.",
+          "source": 522,
+          "row": 23
+        }
+      ]
+    },
+    {
+      "id": "2-287",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-166",
+          "fr": "avoir accès à + nom",
+          "zh": "可以使用／接触……",
+          "origins": [
+            2
+          ]
+        },
+        {
+          "id": "2-287",
+          "fr": "avoir accès à quelque chose",
+          "zh": "能够接触或使用某物",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 2,
+          "id": "2-21",
+          "module": 2,
+          "category": "动词 + à + 名词",
+          "fr": "avoir accès à + nom",
+          "zh": "可以使用／接触……",
+          "example": "Les parents doivent donc fixer certaines limites et superviser les contenus auxquels leurs enfants ont accès.",
+          "source": "第04篇 · Word第22段",
+          "row": 21
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-21",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "avoir accès à quelque chose",
+          "zh": "能够接触或使用某物",
+          "example": "De plus, la télémédecine permet d’avoir accès à un choix plus large de professionnels de santé, y compris ceux qui vivent dans d’autres régions.",
+          "source": 1092,
+          "row": 21
+        }
+      ]
+    },
+    {
+      "id": "2-279",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-173",
+          "fr": "accéder à + nom",
+          "zh": "获得／访问……",
+          "origins": [
+            2
+          ]
+        },
+        {
+          "id": "2-279",
+          "fr": "accéder à quelque chose",
+          "zh": "获得／进入／访问某事物或某处",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 2,
+          "id": "2-28",
+          "module": 2,
+          "category": "动词 + à + 名词",
+          "fr": "accéder à + nom",
+          "zh": "获得／访问……",
+          "example": "Grâce aux tablettes et aux ordinateurs, les enfants peuvent accéder facilement à de nombreuses ressources éducatives, rechercher des informations, regarder des vidéos pédagogiques ou encore apprendre une langue étrangère.",
+          "source": "第07篇 · Word第39段",
+          "row": 28
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-5",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "accéder à quelque chose",
+          "zh": "获得／进入／访问某事物或某处",
+          "example": "Certaines personnes décident de partir à l’étranger afin d’accéder à davantage d’opportunités, d’acquérir une expérience internationale ou de développer de nouvelles compétences.",
+          "source": 125,
+          "row": 5
+        }
+      ]
+    },
+    {
+      "id": "2-177",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-177",
+          "fr": "adapter quelque chose à + nom",
+          "zh": "根据……调整某事，使其适合……",
+          "origins": [
+            2
+          ]
+        },
+        {
+          "id": "2-321",
+          "fr": "adapter quelque chose à quelque chose",
+          "zh": "使某事适应某事",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 2,
+          "id": "2-32",
+          "module": 2,
+          "category": "动词 + à + 名词",
+          "fr": "adapter quelque chose à + nom",
+          "zh": "根据……调整某事，使其适合……",
+          "example": "Or, un enseignant peut expliquer pourquoi il s’est trompé et adapter son enseignement à ses difficultés.",
+          "source": "第08篇 · Word第45段",
+          "row": 32
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-77",
+          "module": 2,
+          "category": "宾语＋补语",
+          "fr": "adapter quelque chose à quelque chose",
+          "zh": "使某事适应某事",
+          "example": "Il est donc préférable d’adapter la vérité à l’âge et à la maturité de l’enfant, plutôt que de tout lui révéler brutalement.",
+          "source": 610,
+          "row": 77
+        }
+      ]
+    },
+    {
+      "id": "2-280",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-199",
+          "fr": "dépendre de + nom",
+          "zh": "取决于……",
+          "origins": [
+            2
+          ]
+        },
+        {
+          "id": "2-280",
+          "fr": "dépendre de quelque chose",
+          "zh": "取决于某事物",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 2,
+          "id": "2-54",
+          "module": 2,
+          "category": "动词 + de + 名词",
+          "fr": "dépendre de + nom",
+          "zh": "取决于……",
+          "example": "Pour conclure, il me semble que le bien-être au travail dépend de plusieurs facteurs complémentaires.",
+          "source": "第19篇 · Word第106段",
+          "row": 54
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-10",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "dépendre de quelque chose",
+          "zh": "取决于某事物",
+          "example": "En définitive, le choix devrait dépendre de la situation familiale, des objectifs et des besoins de chaque personne.",
+          "source": 143,
+          "row": 10
+        }
+      ]
+    },
+    {
+      "id": "2-310",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-201",
+          "fr": "avoir besoin de + infinitif",
+          "zh": "需要做……",
+          "origins": [
+            2
+          ]
+        },
+        {
+          "id": "2-310",
+          "fr": "avoir besoin de faire quelque chose",
+          "zh": "需要做某事",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 2,
+          "id": "2-56",
+          "module": 2,
+          "category": "动词 + de + 不定式",
+          "fr": "avoir besoin de + infinitif",
+          "zh": "需要做……",
+          "example": "Ils n’ont plus besoin de quitter leur lieu de travail pour chercher à manger et peuvent ainsi gagner du temps et de l’énergie.",
+          "source": "第21篇 · Word第115段",
+          "row": 56
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-55",
+          "module": 2,
+          "category": "动词＋不定式",
+          "fr": "avoir besoin de faire quelque chose",
+          "zh": "需要做某事",
+          "example": "Elles peuvent donc avoir besoin de continuer à travailler afin de gagner leur vie et de bénéficier d’une certaine sécurité financière.",
+          "source": 309,
+          "row": 55
+        }
+      ]
+    },
+    {
+      "id": "2-312",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-208",
+          "fr": "être capable de + infinitif",
+          "zh": "有能力做……",
+          "origins": [
+            2
+          ]
+        },
+        {
+          "id": "2-312",
+          "fr": "être capable de faire quelque chose",
+          "zh": "有能力做某事",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 2,
+          "id": "2-63",
+          "module": 2,
+          "category": "形容词 + de + 不定式",
+          "fr": "être capable de + infinitif",
+          "zh": "有能力做……",
+          "example": "Or, de nombreux recruteurs recherchent des candidats capables d’être rapidement opérationnels.",
+          "source": "第27篇 · Word第148段",
+          "row": 63
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-57",
+          "module": 2,
+          "category": "动词＋不定式",
+          "fr": "être capable de faire quelque chose",
+          "zh": "有能力做某事",
+          "example": "Le sexe ne devrait pas être le principal critère pour déterminer si une personne est capable de diriger une équipe.",
+          "source": 351,
+          "row": 57
+        }
+      ]
+    },
+    {
+      "id": "2-329",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-211",
+          "fr": "pousser quelqu’un à + infinitif",
+          "zh": "促使某人做……",
+          "origins": [
+            2
+          ]
+        },
+        {
+          "id": "2-329",
+          "fr": "pousser quelqu’un à faire quelque chose",
+          "zh": "促使某人做某事",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 2,
+          "id": "2-66",
+          "module": 2,
+          "category": "动词 + à + 不定式",
+          "fr": "pousser quelqu’un à + infinitif",
+          "zh": "促使某人做……",
+          "example": "D’une part, le rythme de travail très soutenu pousse de nombreuses personnes à choisir des solutions rapides.",
+          "source": "第30篇 · Word第164段",
+          "row": 66
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-86",
+          "module": 2,
+          "category": "动词＋人＋不定式",
+          "fr": "pousser quelqu’un à faire quelque chose",
+          "zh": "促使某人做某事",
+          "example": "Cette sensation d’excitation peut les pousser à rejouer encore et encore.",
+          "source": 1077,
+          "row": 86
+        }
+      ]
+    },
+    {
+      "id": "2-278",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-212",
+          "fr": "faire face à + nom",
+          "zh": "应对／面对……",
+          "origins": [
+            2
+          ]
+        },
+        {
+          "id": "2-278",
+          "fr": "faire face à quelque chose",
+          "zh": "面对、应对某事",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 2,
+          "id": "2-67",
+          "module": 2,
+          "category": "动词 + à + 名词",
+          "fr": "faire face à + nom",
+          "zh": "应对／面对……",
+          "example": "Une formation permet d’apprendre différentes techniques, tandis que l’expérience acquise sur le terrain aide à travailler de manière plus efficace et à faire face à des situations variées.",
+          "source": "第31篇 · Word第170段",
+          "row": 67
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-2",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "faire face à quelque chose",
+          "zh": "面对、应对某事",
+          "example": "Cela étant dit, il faut reconnaître que les personnes plus âgées ont généralement davantage d’expérience pour faire face aux difficultés de la vie quotidienne.",
+          "source": 20,
+          "row": 2
+        }
+      ]
+    },
+    {
+      "id": "2-328",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-216",
+          "fr": "être susceptible de + infinitif",
+          "zh": "有可能做……",
+          "origins": [
+            2
+          ]
+        },
+        {
+          "id": "2-328",
+          "fr": "être susceptible de faire quelque chose",
+          "zh": "可能做某事",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 2,
+          "id": "2-71",
+          "module": 2,
+          "category": "动词 + de + 不定式",
+          "fr": "être susceptible de + infinitif",
+          "zh": "有可能做……",
+          "example": "Les élèves sachant qu’ils sont surveillés peuvent être moins susceptibles de commettre des actes de violence.",
+          "source": "第38篇 · Word第209段",
+          "row": 71
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-85",
+          "module": 2,
+          "category": "动词＋不定式",
+          "fr": "être susceptible de faire quelque chose",
+          "zh": "可能做某事",
+          "example": "Par exemple, à l’école, un enfant qui comprend la valeur de l’honnêteté sera moins susceptible de tricher à un examen ou de mentir à son professeur pour éviter une punition.",
+          "source": 609,
+          "row": 85
+        }
+      ]
+    },
+    {
+      "id": "2-295",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-220",
+          "fr": "permettre de + infinitif",
+          "zh": "能够／使……成为可能／使……能够做",
+          "origins": [
+            2,
+            3
+          ]
+        },
+        {
+          "id": "2-295",
+          "fr": "permettre de faire quelque chose",
+          "zh": "使做某事成为可能",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 2,
+          "id": "2-75",
+          "module": 2,
+          "category": "动词 + de + 不定式",
+          "fr": "permettre de + infinitif",
+          "zh": "能够／使……成为可能",
+          "example": "D’une part, voyager seul permet d’organiser son séjour selon ses propres envies et de découvrir les lieux à son propre rythme.",
+          "source": "第46篇 · Word第252段",
+          "row": 75
+        },
+        {
+          "sourceIndex": 3,
+          "id": "2-15",
+          "module": 2,
+          "category": "允许",
+          "fr": "permettre de + infinitif",
+          "zh": "使……能够做",
+          "example": "Est-ce que ce type d’activité permet facilement de rencontrer de nouvelles personnes ?\n这类活动容易认识新朋友吗？",
+          "source": "第 1 层：社交聚会与个人生活大主题通用问题；8. 社交；Word第780段",
+          "row": 15
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-32",
+          "module": 2,
+          "category": "动词＋不定式",
+          "fr": "permettre de faire quelque chose",
+          "zh": "使做某事成为可能",
+          "example": "Les réseaux sociaux permettent de rencontrer de nouveaux amis plus facilement.",
+          "source": 929,
+          "row": 32
+        }
+      ]
+    },
+    {
+      "id": "2-305",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-229",
+          "fr": "servir à + infinitif",
+          "zh": "用于做……",
+          "origins": [
+            2
+          ]
+        },
+        {
+          "id": "2-305",
+          "fr": "servir à faire quelque chose",
+          "zh": "用于做某事",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 2,
+          "id": "2-84",
+          "module": 2,
+          "category": "动词 + à + 不定式",
+          "fr": "servir à + infinitif",
+          "zh": "用于做……",
+          "example": "Elle peut aussi servir à se nourrir, à gérer la faune ou à protéger certaines propriétés.",
+          "source": "第58篇 · Word第321段",
+          "row": 84
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-47",
+          "module": 2,
+          "category": "动词＋不定式",
+          "fr": "servir à faire quelque chose",
+          "zh": "用于做某事",
+          "example": "De plus, les réseaux sociaux peuvent servir à conserver des souvenirs personnels.",
+          "source": 953,
+          "row": 47
+        }
+      ]
+    },
+    {
+      "id": "2-301",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-247",
+          "fr": "commencer à + infinitif",
+          "zh": "开始做……",
+          "origins": [
+            3
+          ]
+        },
+        {
+          "id": "2-301",
+          "fr": "commencer à faire quelque chose",
+          "zh": "开始做某事",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 3,
+          "id": "2-13",
+          "module": 2,
+          "category": "开始",
+          "fr": "commencer à + infinitif",
+          "zh": "开始做……",
+          "example": "Au bout de combien de temps peut-on commencer à voir de vrais progrès ?\n大概学多久以后可以看到明显进步？",
+          "source": "第 2 层 B1｜课程与技能培训通用问题；11. 实际进步；Word第1189段",
+          "row": 13
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-39",
+          "module": 2,
+          "category": "动词＋不定式",
+          "fr": "commencer à faire quelque chose",
+          "zh": "开始做某事",
+          "example": "Prenons l’exemple d’une personne âgée qui commence à apprendre une langue étrangère comme le français.",
+          "source": 394,
+          "row": 39
+        }
+      ]
+    },
+    {
+      "id": "2-286",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-248",
+          "fr": "faire attention à + nom",
+          "zh": "注意……",
+          "origins": [
+            3
+          ]
+        },
+        {
+          "id": "2-286",
+          "fr": "faire attention à quelque chose",
+          "zh": "注意某事",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 3,
+          "id": "2-16",
+          "module": 2,
+          "category": "注意",
+          "fr": "faire attention à + nom",
+          "zh": "注意……",
+          "example": "Faut-il faire attention à la manière de stocker la nourriture ?\n需要特别注意食物的存放方式吗？",
+          "source": "第 2 层 B4：旅游景点参观通用问题；4. 食物储存安全；Word第234段",
+          "row": 16
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-20",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "faire attention à quelque chose",
+          "zh": "注意某事",
+          "example": "Il faut également faire attention à la qualité des aliments et maintenir une activité physique régulière.",
+          "source": 1029,
+          "row": 20
+        }
+      ]
+    },
+    {
+      "id": "2-292",
+      "reason": "相同结构，仅名词／不定式占位写法不同",
+      "originals": [
+        {
+          "id": "2-250",
+          "fr": "s’intéresser à + nom",
+          "zh": "对……感兴趣",
+          "origins": [
+            3
+          ]
+        },
+        {
+          "id": "2-292",
+          "fr": "s'intéresser à quelque chose",
+          "zh": "对某事感兴趣",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 3,
+          "id": "2-20",
+          "module": 2,
+          "category": "兴趣",
+          "fr": "s’intéresser à + nom",
+          "zh": "对……感兴趣",
+          "example": "Depuis quand vous intéressez-vous à cette activité ?\n您从什么时候开始对这项活动感兴趣的？",
+          "source": "第 2 层 B4｜个人生活兴趣通用问题；2. 兴趣起源；Word第881段",
+          "row": 20
+        },
+        {
+          "sourceIndex": 4,
+          "id": "2-26",
+          "module": 2,
+          "category": "动词＋介词＋名词",
+          "fr": "s'intéresser à quelque chose",
+          "zh": "对某事感兴趣",
+          "example": "Certaines personnes choisissent de ne pas s’intéresser à la politique.",
+          "source": 1142,
+          "row": 26
+        }
+      ]
+    }
+  ]
+}
