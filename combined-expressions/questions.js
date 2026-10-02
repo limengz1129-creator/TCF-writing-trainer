@@ -1,8 +1,11 @@
 'use strict';
 const questionModeBar=document.createElement('div');questionModeBar.id='questionModeBar';questionModeBar.className='hidden';
-questionModeBar.innerHTML='<label for="questionMode">练习卡片模式</label><select id="questionMode"><option value="framework">框架默写</option><option value="example">例句默写</option></select><label for="questionExample" id="questionExampleLabel">本框架的例句</label><select id="questionExample"></select>';
+questionModeBar.innerHTML='<p class="note">练习卡片模式</p><div class="tabs" role="group" aria-label="练习卡片模式"><button type="button" data-question-mode="framework">框架默写</button><button type="button" data-question-mode="example">例句默写</button></div><input type="hidden" id="questionMode"><label for="questionExample" id="questionExampleLabel">本框架的例句</label><select id="questionExample"></select>';
 $('prompt').before(questionModeBar);
 $('questionMode').value=state.questionMode==='example'?'example':'framework';
+function syncQuestionModeButtons(){questionModeBar.querySelectorAll('[data-question-mode]').forEach(b=>{const active=b.dataset.questionMode===$('questionMode').value;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});}
+syncQuestionModeButtons();
+questionModeBar.querySelectorAll('[data-question-mode]').forEach(b=>b.onclick=()=>{if(b.dataset.questionMode===$('questionMode').value)return;$('questionMode').value=b.dataset.questionMode;$('questionMode').onchange();syncQuestionModeButtons();});
 const qNorm=s=>s.normalize('NFC').toLowerCase().replace(/[’‘]/g,"'").replace(/[.,!?;:+…\-]/g,' ').replace(/\s+/g,' ').trim();
 function questionCores(x){
  if(x.kind==='example')return [x.fr];
@@ -20,7 +23,7 @@ buildSource=function(){if(mode!==4)return qSource();$('sourceFilter').replaceChi
 const qList=list;
 list=function(){if(mode!==4)return qList();const groups=new Map();for(const x of filtered()){if(!groups.has(x.number))groups.set(x.number,[]);groups.get(x.number).push(x);}$('list').replaceChildren();$('listCount').textContent=groups.size+' 项框架 · '+filtered().length+($('questionMode').value==='example'?' 条例句':' 条框架');for(const [n,xs] of groups){const framework=QUESTION_ITEMS.find(x=>x.number===n&&x.kind==='framework'),b=document.createElement('button'),small=document.createElement('small');b.className='item'+(current?.number===n?' active':'');b.textContent=n+'. '+framework.zh;small.textContent=framework.category+(xs[0].kind==='example'?' · '+xs.length+' 条例句':'');b.append(small);b.onclick=()=>show(xs.find(x=>x.id===state.questionLastExamples?.[n])||xs[0]);$('list').append(b);}stats();};
 const qShow=show;
-show=function(x){qShow(x);questionModeBar.classList.toggle('hidden',mode!==4);if(x?.module!==4)return;
+show=function(x){qShow(x);syncQuestionModeButtons();questionModeBar.classList.toggle('hidden',mode!==4);if(x?.module!==4)return;
  $('moduleTitle').textContent='口语 T2 提问框架 · 第 '+x.number+' 项';$('rule').textContent=x.kind==='framework'?'默写法语框架核心，占位部分可省略。斜线列出的变体可写其中一种；保留重音、介词和疑问结构。':'根据中文默写完整例句；忽略大小写、标点和多余空格，重音、词语与变位须正确。';
  const exampleMode=x.kind==='example';$('questionExample').classList.toggle('hidden',!exampleMode);$('questionExampleLabel').classList.toggle('hidden',!exampleMode);
  const xs=filtered().filter(t=>t.number===x.number&&t.kind==='example');$('questionExample').replaceChildren(...xs.map((t,i)=>new Option('例句 '+(i+1)+' · '+t.members[0].source,t.id)));$('questionExample').value=x.id;
