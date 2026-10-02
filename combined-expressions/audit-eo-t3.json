@@ -1,0 +1,79 @@
+{
+  "eoT3": {
+    "passages": 507,
+    "documents": 169,
+    "words": 691,
+    "phrases": 660
+  },
+  "overlap": {
+    "5": 297,
+    "6": 85
+  },
+  "added": {
+    "5": 394,
+    "6": 575
+  },
+  "totals": {
+    "5": 1133,
+    "6": 1151
+  },
+  "sourceCheck": [
+    {
+      "path": "eo-tache3-corpus/data.js",
+      "unchanged": true
+    },
+    {
+      "path": "eo-tache3-corpus/data-1.js",
+      "unchanged": true
+    },
+    {
+      "path": "eo-tache3-corpus/data-2.js",
+      "unchanged": true
+    },
+    {
+      "path": "eo-tache3-corpus/data-3.js",
+      "unchanged": true
+    },
+    {
+      "path": "eo-tache3-corpus/data-4.js",
+      "unchanged": true
+    },
+    {
+      "path": "eo-tache3-corpus/data-5.js",
+      "unchanged": true
+    },
+    {
+      "path": "eo-tache3-corpus/data-6.js",
+      "unchanged": true
+    },
+    {
+      "path": "eo-tache3-corpus/data-7.js",
+      "unchanged": true
+    },
+    {
+      "path": "eo-tache3-corpus/data-8.js",
+      "unchanged": true
+    },
+    {
+      "path": "eo-tache3-corpus/data-9.js",
+      "unchanged": true
+    }
+  ],
+  "candidateCounts": {
+    "words": 735,
+    "phrases": 1903
+  },
+  "verification": {
+    "attestedOnly": true,
+    "originalThreeModulesChecked": true,
+    "preservedAllPreviousTargetIdsAndFrench": true,
+    "preservedPreviousMembersAndAcceptedForms": true,
+    "meaningsBySelectedSource": true
+  },
+  "selectionNotes": [
+    "复用已提取的507个段落；不重新处理3141个原稿段落/问题。",
+    "词汇按词元合并；排除误标的动词、地名、数词和不构成独立主题词的拆分结果。",
+    "词组保留完整可理解的主题表达，合并原稿中出现的单复数词形；未选入通用句子片段和残缺解析跨度。",
+    "原三个表达模块已经覆盖的内容不另建卡；前四个未覆盖模块中的相同项只补口语T3来源。"
+  ]
+}

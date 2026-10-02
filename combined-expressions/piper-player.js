@@ -38,7 +38,7 @@ async function load(text){
   if(q)link={...q,pack:'../question-audio/'+q.pack};
  }
  if(!link){
-  if(!topicManifestPromise)topicManifestPromise=readJson(new URL('../topic-audio/manifest.json?v=eo-t2-1',root)).catch(e=>{topicManifestPromise=null;throw e;});
+  if(!topicManifestPromise)topicManifestPromise=readJson(new URL('../topic-audio/manifest.json?v=eo-t3-1',root)).catch(e=>{topicManifestPromise=null;throw e;});
   const extra=await topicManifestPromise,t=extra.entries[text];
   if(t)link={...t,pack:'../topic-audio/'+t.pack};
  }
