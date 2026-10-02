@@ -43,8 +43,19 @@ $('random').onclick=()=>{const rs=filtered();if(!rs.length)return;if(mode===3){c
 const oldBuildSource=buildSource;buildSource=function(){oldBuildSource();if(mode===3)$('sourceNote').textContent='一个动词一张卡，只练五个稿子里出现过的人称与时态。同一组合跨句子、跨来源只练一次。';};
 const originalFiltered=filtered;filtered=function(){return originalFiltered().filter(x=>mode!==3||(!$('verbPerson').value||$('verbPerson').value!=='il'&&$('verbPerson').value!=='ils'||($('verbPerson').value==='il'?['il','elle','on']:['ils','elles']).includes(x.person)));};
 // Grouped person options must include all three/five actual pronouns.
-const originalScoped=scoped;filtered=function(){if(mode!==3)return originalFiltered();let rs=originalScoped().filter(x=>(!$('category').value||x.tense===$('category').value)&&(!$('verbLemma').value||x.lemma===$('verbLemma').value)&&x.zh.toLowerCase().includes($('search').value.trim().toLowerCase()));const p=$('verbPerson').value;if(p)rs=rs.filter(x=>p==='无主语'?x.person==='无主语人称变化':p==='il'?['il','elle','on'].includes(x.person):p==='ils'?['ils','elles'].includes(x.person):x.person===p);const f=$('status').value;if(f)rs=rs.filter(x=>{const r=state.records[x.id];return f==='new'?!r?.attempts:f==='wrong'?r?.error&&!r.error.resolved:r?.last===true;});if(order)rs.sort((a,b)=>order.indexOf(a.id)-order.indexOf(b.id));return rs;};
-const oldSetModule=setModule;setModule=function(m,fresh=false){if(m===3&&fresh){$('verbLemma').value='';$('verbPerson').value='';}oldSetModule(m,fresh);cardUi(m===3);document.querySelector('label[for=search]').textContent=m===3?'搜索动词原形':'搜索中文';$('search').placeholder=m===3?'输入动词原形':'输入中文关键词';if(m!==3)cards.classList.add('hidden');};
+$('verbGroup').value=String(state.verbGroup||'');
+const oldBuildVerbFilters=buildVerbFilters;
+buildVerbFilters=function(){
+ if(mode!==3)return oldBuildVerbFilters();
+ $('verbFilters').classList.remove('hidden');
+ const previous=$('verbLemma').value,group=$('verbGroup').value;
+ const lemmas=[...new Set(scoped().filter(x=>!group||VERB_GROUPS[x.lemma]===Number(group)).map(x=>x.lemma))].sort((a,b)=>a.localeCompare(b,'fr'));
+ $('verbLemma').replaceChildren(new Option('全部动词',''),...lemmas.map(x=>new Option(x,x)));
+ if(lemmas.includes(previous))$('verbLemma').value=previous;
+};
+$('verbGroup').onchange=()=>{saveDraft();state.verbGroup=$('verbGroup').value;order=null;buildVerbFilters();show(filtered()[0]||null);persist();};
+const originalScoped=scoped;filtered=function(){if(mode!==3)return originalFiltered();let rs=originalScoped().filter(x=>(!$('verbGroup').value||VERB_GROUPS[x.lemma]===Number($('verbGroup').value))&&(!$('category').value||x.tense===$('category').value)&&(!$('verbLemma').value||x.lemma===$('verbLemma').value)&&x.zh.toLowerCase().includes($('search').value.trim().toLowerCase()));const p=$('verbPerson').value;if(p)rs=rs.filter(x=>p==='无主语'?x.person==='无主语人称变化':p==='il'?['il','elle','on'].includes(x.person):p==='ils'?['ils','elles'].includes(x.person):x.person===p);const f=$('status').value;if(f)rs=rs.filter(x=>{const r=state.records[x.id];return f==='new'?!r?.attempts:f==='wrong'?r?.error&&!r.error.resolved:r?.last===true;});if(order)rs.sort((a,b)=>order.indexOf(a.id)-order.indexOf(b.id));return rs;};
+const oldSetModule=setModule;setModule=function(m,fresh=false){if(m===3&&fresh){$('verbGroup').value='';state.verbGroup='';$('verbLemma').value='';$('verbPerson').value='';}oldSetModule(m,fresh);cardUi(m===3);document.querySelector('label[for=search]').textContent=m===3?'搜索动词原形':'搜索中文';$('search').placeholder=m===3?'输入动词原形':'输入中文关键词';if(m!==3)cards.classList.add('hidden');};
 $('search').placeholder='输入动词原形';
 window.VERB_CARDS_TEST={cardRows,cardLemmas,rowCheck,inputs:()=>verbCardInputs,getLemma:()=>verbCardLemma};
-if(mode===3){buildSource();document.querySelector('label[for=search]').textContent='搜索动词原形';const id=CONJUGATION_PERSON_IDS[restoreId]?.[0]||current?.id;show(filtered().find(x=>x.id===id)||filtered()[0]||null);}else cards.classList.add('hidden');
+if(mode===3){buildVerbFilters();buildSource();document.querySelector('label[for=search]').textContent='搜索动词原形';const id=CONJUGATION_PERSON_IDS[restoreId]?.[0]||current?.id;show(filtered().find(x=>x.id===id)||filtered()[0]||null);}else cards.classList.add('hidden');
