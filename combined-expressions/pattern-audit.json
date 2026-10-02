@@ -1,0 +1,2000 @@
+{
+  "before": 371,
+  "mergedGroups": 39,
+  "removed": 49,
+  "after": 322,
+  "groups": [
+    {
+      "id": "1-3",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-3",
+          "fr": "Madame, Monsieur,",
+          "zh": "女士、先生：（正式信件称呼）",
+          "origins": [
+            0
+          ]
+        },
+        {
+          "id": "1-90",
+          "fr": "Madame, Monsieur,",
+          "zh": "女士、先生：（正式信件称呼）",
+          "origins": [
+            1
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "1-4",
+          "module": 1,
+          "category": "称呼与问候",
+          "fr": "Madame, Monsieur,",
+          "zh": "女士、先生：（正式信件称呼）",
+          "example": "Madame, Monsieur,",
+          "source": "第25题 · 第404段",
+          "row": 4
+        },
+        {
+          "sourceIndex": 1,
+          "id": "1-6",
+          "module": 1,
+          "category": "称呼与开头",
+          "fr": "Madame, Monsieur,",
+          "zh": "女士、先生：（正式信件称呼）",
+          "example": "Madame, Monsieur,",
+          "source": "第63题 · 第1045段",
+          "row": 6
+        }
+      ]
+    },
+    {
+      "id": "1-10",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-10",
+          "fr": "Je viens de + infinitif.",
+          "zh": "我刚刚……（最近过去时）",
+          "origins": [
+            0
+          ]
+        },
+        {
+          "id": "1-91",
+          "fr": "Je viens de + infinitif.",
+          "zh": "我刚刚……（最近过去时）",
+          "origins": [
+            1
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "1-11",
+          "module": 1,
+          "category": "说明来意",
+          "fr": "Je viens de + infinitif.",
+          "zh": "我刚刚……（最近过去时）",
+          "example": "Je viens de passer un entretien chez Google pour un poste d’analyste de données et je voulais te raconter cette expérience.",
+          "source": "第38题 · 第620段",
+          "row": 11
+        },
+        {
+          "sourceIndex": 1,
+          "id": "1-7",
+          "module": 1,
+          "category": "称呼与开头",
+          "fr": "Je viens de + infinitif.",
+          "zh": "我刚刚……（最近过去时）",
+          "example": "Je viens de terminer ma première semaine à l’Université de Montréal et je voulais te raconter mes impressions.",
+          "source": "第08题 · 第129段",
+          "row": 7
+        }
+      ]
+    },
+    {
+      "id": "1-22",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-22",
+          "fr": "Je serais ravi de + infinitif.",
+          "zh": "我会非常高兴……",
+          "origins": [
+            0
+          ]
+        },
+        {
+          "id": "1-172",
+          "fr": "Je serais ravi de + infinitif.",
+          "zh": "我会很高兴……。（礼貌表达）",
+          "origins": [
+            1
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "1-23",
+          "module": 1,
+          "category": "邀请与提议",
+          "fr": "Je serais ravi de + infinitif.",
+          "zh": "我会非常高兴……",
+          "example": "Passionné de randonnée, de cinéma et de gastronomie, je serais ravi de discuter de ces sujets ou de l’actualité.",
+          "source": "第51题 · 第838段",
+          "row": 23
+        },
+        {
+          "sourceIndex": 1,
+          "id": "1-88",
+          "module": 1,
+          "category": "建议与请求",
+          "fr": "Je serais ravi de + infinitif.",
+          "zh": "我会很高兴……。（礼貌表达）",
+          "example": "Je serais ravi de proposer une visite samedi ou dimanche, selon vos disponibilités.",
+          "source": "第56题 · 第923段",
+          "row": 88
+        }
+      ]
+    },
+    {
+      "id": "1-47",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-47",
+          "fr": "L’essentiel est de + infinitif.",
+          "zh": "最重要的是……",
+          "origins": [
+            0
+          ]
+        },
+        {
+          "id": "1-136",
+          "fr": "L’essentiel est de + infinitif.",
+          "zh": "最重要的是……",
+          "origins": [
+            1
+          ]
+        },
+        {
+          "id": "1-342",
+          "fr": "L'essentiel est de ...",
+          "zh": "关键在于……",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "1-48",
+          "module": 1,
+          "category": "建议与说明",
+          "fr": "L’essentiel est de + infinitif.",
+          "zh": "最重要的是……",
+          "example": "L’essentiel est de choisir une activité que tu apprécies afin qu’elle devienne une habitude durable.",
+          "source": "第49题 · 第806段",
+          "row": 48
+        },
+        {
+          "sourceIndex": 1,
+          "id": "1-52",
+          "module": 1,
+          "category": "观点与论证",
+          "fr": "L’essentiel est de + infinitif.",
+          "zh": "最重要的是……",
+          "example": "À mon avis, l’essentiel est de choisir une démarche réaliste, adaptée à son quotidien.",
+          "source": "第43题 · 第705段",
+          "row": 52
+        },
+        {
+          "sourceIndex": 4,
+          "id": "1-46",
+          "module": 1,
+          "category": "结尾总结",
+          "fr": "L'essentiel est de ...",
+          "zh": "关键在于……",
+          "example": "L’essentiel est de posséder les compétences nécessaires pour exercer correctement son métier.",
+          "source": 552,
+          "row": 46
+        }
+      ]
+    },
+    {
+      "id": "1-55",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-55",
+          "fr": "à condition de + infinitif",
+          "zh": "只要……／条件是……（同一主语）",
+          "origins": [
+            0
+          ]
+        },
+        {
+          "id": "1-137",
+          "fr": "à condition de + infinitif",
+          "zh": "条件是……／只要……；主语一致",
+          "origins": [
+            1
+          ]
+        },
+        {
+          "id": "1-216",
+          "fr": "… à condition de + infinitif",
+          "zh": "……，条件是……。（后接不定式）",
+          "origins": [
+            2
+          ]
+        },
+        {
+          "id": "1-368",
+          "fr": "À condition de ..., ...",
+          "zh": "只要……（不定式）",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "1-56",
+          "module": 1,
+          "category": "条件与让步",
+          "fr": "à condition de + infinitif",
+          "zh": "只要……／条件是……（同一主语）",
+          "example": "L’entrée est gratuite, à condition de s’inscrire au préalable sur le site de la bibliothèque, car les places sont limitées.",
+          "source": "第02题 · 第37段",
+          "row": 56
+        },
+        {
+          "sourceIndex": 1,
+          "id": "1-53",
+          "module": 1,
+          "category": "条件与让步",
+          "fr": "à condition de + infinitif",
+          "zh": "条件是……／只要……；主语一致",
+          "example": "Tout quitter pour voyager pendant un an peut être une bonne idée, à condition de préparer le départ et le retour.",
+          "source": "第31题 · 第507段",
+          "row": 53
+        },
+        {
+          "sourceIndex": 2,
+          "id": "1-33",
+          "module": 1,
+          "category": "限制条件",
+          "fr": "… à condition de + infinitif",
+          "zh": "……，条件是……。（后接不定式）",
+          "example": "Pour conclure, il me semble que les distributeurs peuvent être utiles, à condition de proposer principalement des boissons plus saines.",
+          "source": "第09篇 · Word第52段",
+          "row": 33
+        },
+        {
+          "sourceIndex": 4,
+          "id": "1-72",
+          "module": 1,
+          "category": "条件与建议",
+          "fr": "À condition de ..., ...",
+          "zh": "只要……（不定式）",
+          "example": "Une femme peut parfaitement exercer ces professions à condition de posséder les compétences et la formation nécessaires.",
+          "source": 593,
+          "row": 72
+        }
+      ]
+    },
+    {
+      "id": "1-56",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-56",
+          "fr": "à condition que + subjonctif",
+          "zh": "条件是……（从句用虚拟式）",
+          "origins": [
+            0
+          ]
+        },
+        {
+          "id": "1-200",
+          "fr": "… à condition que…",
+          "zh": "……，条件是……。（后接虚拟式）",
+          "origins": [
+            2
+          ]
+        },
+        {
+          "id": "1-339",
+          "fr": "À condition que ..., ...",
+          "zh": "条件是……（虚拟式）",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "1-57",
+          "module": 1,
+          "category": "条件与让步",
+          "fr": "à condition que + subjonctif",
+          "zh": "条件是……（从句用虚拟式）",
+          "example": "Les animaux sont les bienvenus, à condition que leur présence convienne à chacun.",
+          "source": "第24题 · 第390段",
+          "row": 57
+        },
+        {
+          "sourceIndex": 2,
+          "id": "1-17",
+          "module": 1,
+          "category": "限制条件",
+          "fr": "… à condition que…",
+          "zh": "……，条件是……。（后接虚拟式）",
+          "example": "Pour conclure, il me semble qu’un animal peut être bénéfique pour un enfant, à condition que l’enfant soit suffisamment responsable.",
+          "source": "第02篇 · Word第14段",
+          "row": 17
+        },
+        {
+          "sourceIndex": 4,
+          "id": "1-43",
+          "module": 1,
+          "category": "建议与条件",
+          "fr": "À condition que ..., ...",
+          "zh": "条件是……（虚拟式）",
+          "example": "Ces moments de détente peuvent ainsi contribuer à leur équilibre émotionnel, à condition que le temps passé devant l’écran reste raisonnable.",
+          "source": 711,
+          "row": 43
+        }
+      ]
+    },
+    {
+      "id": "1-57",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-57",
+          "fr": "Bien que + subjonctif, ...",
+          "zh": "虽然……，但是……",
+          "origins": [
+            0
+          ]
+        },
+        {
+          "id": "1-138",
+          "fr": "bien que + subjonctif",
+          "zh": "虽然……；从句用虚拟式",
+          "origins": [
+            1
+          ]
+        },
+        {
+          "id": "1-325",
+          "fr": "Bien que ..., ...",
+          "zh": "虽然……（虚拟式）",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "1-58",
+          "module": 1,
+          "category": "条件与让步",
+          "fr": "Bien que + subjonctif, ...",
+          "zh": "虽然……，但是……",
+          "example": "Bien que le billet soit assez cher, la vue spectaculaire sur la ville et ses environs en vaut la peine.",
+          "source": "第15题 · 第245段",
+          "row": 58
+        },
+        {
+          "sourceIndex": 1,
+          "id": "1-54",
+          "module": 1,
+          "category": "条件与让步",
+          "fr": "bien que + subjonctif",
+          "zh": "虽然……；从句用虚拟式",
+          "example": "Parmi les films projetés, Titanic reste celui qui m’a le plus marqué, bien que je connaisse les grandes lignes de l’histoire.",
+          "source": "第11题 · 第179段",
+          "row": 54
+        },
+        {
+          "sourceIndex": 4,
+          "id": "1-29",
+          "module": 1,
+          "category": "让步比较",
+          "fr": "Bien que ..., ...",
+          "zh": "虽然……（虚拟式）",
+          "example": "Bien que certaines tâches puissent être automatisées, d’autres nécessiteront toujours des compétences et des qualités humaines.",
+          "source": 436,
+          "row": 29
+        }
+      ]
+    },
+    {
+      "id": "1-58",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-58",
+          "fr": "Même si + indicatif, ...",
+          "zh": "即使／虽然……，……。（从句用直陈式）",
+          "origins": [
+            0
+          ]
+        },
+        {
+          "id": "1-139",
+          "fr": "même si + indicatif",
+          "zh": "虽然／即使……；从句用直陈式",
+          "origins": [
+            1
+          ]
+        },
+        {
+          "id": "1-324",
+          "fr": "Même si ..., ...",
+          "zh": "即使……（直陈式）",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "1-59",
+          "module": 1,
+          "category": "条件与让步",
+          "fr": "Même si + indicatif, ...",
+          "zh": "即使／虽然……，……。（从句用直陈式）",
+          "example": "Même si le trajet est assez long, les paysages promettent d’être magnifiques.",
+          "source": "第46题 · 第755段",
+          "row": 59
+        },
+        {
+          "sourceIndex": 1,
+          "id": "1-55",
+          "module": 1,
+          "category": "条件与让步",
+          "fr": "même si + indicatif",
+          "zh": "虽然／即使……；从句用直陈式",
+          "example": "Même si mes premiers accords étaient hésitants, j’ai ressenti une satisfaction en jouant une courte mélodie.",
+          "source": "第16题 · 第262段",
+          "row": 55
+        },
+        {
+          "sourceIndex": 4,
+          "id": "1-28",
+          "module": 1,
+          "category": "让步比较",
+          "fr": "Même si ..., ...",
+          "zh": "即使……（直陈式）",
+          "example": "Une personne peut donc se sentir aimée et soutenue même si elle ne vit pas en couple.",
+          "source": 1271,
+          "row": 28
+        }
+      ]
+    },
+    {
+      "id": "1-59",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-59",
+          "fr": "Malgré + nom, ...",
+          "zh": "尽管……，……",
+          "origins": [
+            0
+          ]
+        },
+        {
+          "id": "1-140",
+          "fr": "Malgré + nom, ...",
+          "zh": "尽管……，……",
+          "origins": [
+            1
+          ]
+        },
+        {
+          "id": "1-326",
+          "fr": "Malgré ..., ...",
+          "zh": "尽管……（后接名词）",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "1-60",
+          "module": 1,
+          "category": "条件与让步",
+          "fr": "Malgré + nom, ...",
+          "zh": "尽管……，……",
+          "example": "Malgré la pluie, ce séjour m’a ressourcé.",
+          "source": "第37题 · 第605段",
+          "row": 60
+        },
+        {
+          "sourceIndex": 1,
+          "id": "1-56",
+          "module": 1,
+          "category": "条件与让步",
+          "fr": "Malgré + nom, ...",
+          "zh": "尽管……，……",
+          "example": "Malgré l’affluence, cette visite a constitué un moment d’évasion.",
+          "source": "第10题 · 第166段",
+          "row": 56
+        },
+        {
+          "sourceIndex": 4,
+          "id": "1-30",
+          "module": 1,
+          "category": "让步比较",
+          "fr": "Malgré ..., ...",
+          "zh": "尽管……（后接名词）",
+          "example": "Les qualités humaines resteront donc indispensables malgré les progrès technologiques.",
+          "source": 435,
+          "row": 30
+        }
+      ]
+    },
+    {
+      "id": "1-60",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-60",
+          "fr": "Si + imparfait, conditionnel.",
+          "zh": "如果能……，就会……（假设／委婉请求）",
+          "origins": [
+            0
+          ]
+        },
+        {
+          "id": "1-148",
+          "fr": "Si + imparfait, conditionnel.",
+          "zh": "如果……，就会……。（未完成过去时＋条件式）",
+          "origins": [
+            1
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "1-61",
+          "module": 1,
+          "category": "条件与让步",
+          "fr": "Si + imparfait, conditionnel.",
+          "zh": "如果能……，就会……（假设／委婉请求）",
+          "example": "Si vous pouviez arriver à 9h30 pour décorer la salle, votre aide serait précieuse.",
+          "source": "第13题 · 第214段",
+          "row": 61
+        },
+        {
+          "sourceIndex": 1,
+          "id": "1-64",
+          "module": 1,
+          "category": "条件与让步",
+          "fr": "Si + imparfait, conditionnel.",
+          "zh": "如果……，就会……。（未完成过去时＋条件式）",
+          "example": "Si je suivais une voie semblable, j’avancerais par étapes et chercherais des conseils sur place.",
+          "source": "第33题 · 第542段",
+          "row": 64
+        }
+      ]
+    },
+    {
+      "id": "1-62",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-62",
+          "fr": "afin que + subjonctif",
+          "zh": "以便……（从句用虚拟式）",
+          "origins": [
+            0
+          ]
+        },
+        {
+          "id": "1-152",
+          "fr": "afin que + subjonctif",
+          "zh": "以便……；从句用虚拟式",
+          "origins": [
+            1
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "1-63",
+          "module": 1,
+          "category": "目的与衔接",
+          "fr": "afin que + subjonctif",
+          "zh": "以便……（从句用虚拟式）",
+          "example": "Confirme-moi tes disponibilités afin que je réserve nos places avant qu’elles ne soient toutes prises.",
+          "source": "第01题 · 第22段",
+          "row": 63
+        },
+        {
+          "sourceIndex": 1,
+          "id": "1-68",
+          "module": 1,
+          "category": "目的与原因",
+          "fr": "afin que + subjonctif",
+          "zh": "以便……；从句用虚拟式",
+          "example": "Dans ma famille, nous plaçons plusieurs plats au centre de la table afin que chacun puisse les goûter.",
+          "source": "第44题 · 第719段",
+          "row": 68
+        }
+      ]
+    },
+    {
+      "id": "1-63",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-63",
+          "fr": "pour que + subjonctif",
+          "zh": "为了让……／以便……",
+          "origins": [
+            0
+          ]
+        },
+        {
+          "id": "1-153",
+          "fr": "pour que + subjonctif",
+          "zh": "以便……；从句用虚拟式",
+          "origins": [
+            1
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "1-64",
+          "module": 1,
+          "category": "目的与衔接",
+          "fr": "pour que + subjonctif",
+          "zh": "为了让……／以便……",
+          "example": "Pour que Thomas ne se doute de rien, arrivons à 17h30 et gardons le secret.",
+          "source": "第05题 · 第86段",
+          "row": 64
+        },
+        {
+          "sourceIndex": 1,
+          "id": "1-69",
+          "module": 1,
+          "category": "目的与原因",
+          "fr": "pour que + subjonctif",
+          "zh": "以便……；从句用虚拟式",
+          "example": "Dis-moi avant vendredi si tu es disponible pour que je garde ta place.",
+          "source": "第55题 · 第905段",
+          "row": 69
+        }
+      ]
+    },
+    {
+      "id": "1-64",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-64",
+          "fr": "afin de + infinitif",
+          "zh": "为了……（不定式表达目的）",
+          "origins": [
+            0
+          ]
+        },
+        {
+          "id": "1-151",
+          "fr": "afin de + infinitif",
+          "zh": "为了……；不定式表目的",
+          "origins": [
+            1
+          ]
+        },
+        {
+          "id": "1-195",
+          "fr": "… afin de + infinitif",
+          "zh": "……，以便……。（同一动作主体）",
+          "origins": [
+            2
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "1-65",
+          "module": 1,
+          "category": "目的与衔接",
+          "fr": "afin de + infinitif",
+          "zh": "为了……（不定式表达目的）",
+          "example": "Bats les œufs avec la crème, puis fais-les cuire lentement à feu doux en remuant afin d’obtenir une texture onctueuse.",
+          "source": "第36题 · 第588段",
+          "row": 65
+        },
+        {
+          "sourceIndex": 1,
+          "id": "1-67",
+          "module": 1,
+          "category": "目的与原因",
+          "fr": "afin de + infinitif",
+          "zh": "为了……；不定式表目的",
+          "example": "J’ai donc organisé des séances régulières avec deux autres apprenants afin de maintenir un rythme et de confronter nos solutions.",
+          "source": "第07题 · 第115段",
+          "row": 67
+        },
+        {
+          "sourceIndex": 2,
+          "id": "1-12",
+          "module": 1,
+          "category": "目的表达",
+          "fr": "… afin de + infinitif",
+          "zh": "……，以便……。（同一动作主体）",
+          "example": "Parallèlement, il faudrait que les parents trouvent un équilibre entre l’encadrement et la liberté, afin d’aider leurs enfants à devenir progressivement autonomes et responsables.",
+          "source": "第01篇 · Word第9段",
+          "row": 12
+        }
+      ]
+    },
+    {
+      "id": "1-67",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-67",
+          "fr": "avant de + infinitif",
+          "zh": "在做……之前",
+          "origins": [
+            0
+          ]
+        },
+        {
+          "id": "1-106",
+          "fr": "Avant de + infinitif, ...",
+          "zh": "在做……之前，……",
+          "origins": [
+            1
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "1-68",
+          "module": 1,
+          "category": "目的与衔接",
+          "fr": "avant de + infinitif",
+          "zh": "在做……之前",
+          "example": "Après un déjeuner sur place, nous essaierons les activités aquatiques, avant de nous détendre dans les espaces verts.",
+          "source": "第17题 · 第278段",
+          "row": 68
+        },
+        {
+          "sourceIndex": 1,
+          "id": "1-22",
+          "module": 1,
+          "category": "时间与叙事",
+          "fr": "Avant de + infinitif, ...",
+          "zh": "在做……之前，……",
+          "example": "Avant de commencer, une animatrice a expliqué comment trier les objets ramassés et éviter de perturber les zones fragiles.",
+          "source": "第42题 · 第687段",
+          "row": 22
+        }
+      ]
+    },
+    {
+      "id": "1-68",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-68",
+          "fr": "En + participe présent, ...",
+          "zh": "通过……／在……时（副动词）",
+          "origins": [
+            0
+          ]
+        },
+        {
+          "id": "1-156",
+          "fr": "En + participe présent, ...",
+          "zh": "通过……／在……时，……。（副动词）",
+          "origins": [
+            1
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "1-69",
+          "module": 1,
+          "category": "目的与衔接",
+          "fr": "En + participe présent, ...",
+          "zh": "通过……／在……时（副动词）",
+          "example": "En vous inscrivant avant le 15 janvier sur le site de l’événement, vous bénéficierez d’une réduction de 10 %.",
+          "source": "第04题 · 第69段",
+          "row": 69
+        },
+        {
+          "sourceIndex": 1,
+          "id": "1-72",
+          "module": 1,
+          "category": "目的与原因",
+          "fr": "En + participe présent, ...",
+          "zh": "通过……／在……时，……。（副动词）",
+          "example": "Cette activité m’a montré qu’on pouvait consommer autrement, en donnant une nouvelle vie à ce qui semblait inutile.",
+          "source": "第24题 · 第395段",
+          "row": 72
+        }
+      ]
+    },
+    {
+      "id": "1-69",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-69",
+          "fr": "tout en + participe présent",
+          "zh": "同时……（兼顾两个行为）",
+          "origins": [
+            0
+          ]
+        },
+        {
+          "id": "1-157",
+          "fr": "tout en + participe présent",
+          "zh": "同时……／兼顾……",
+          "origins": [
+            1
+          ]
+        },
+        {
+          "id": "1-218",
+          "fr": "… tout en + participe présent",
+          "zh": "……，同时……。（同一主体）",
+          "origins": [
+            2
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "1-70",
+          "module": 1,
+          "category": "目的与衔接",
+          "fr": "tout en + participe présent",
+          "zh": "同时……（兼顾两个行为）",
+          "example": "Je recherche une personne respectueuse et ordonnée, appréciant le calme en semaine tout en aimant partager quelques moments conviviaux le week-end.",
+          "source": "第24题 · 第390段",
+          "row": 70
+        },
+        {
+          "sourceIndex": 1,
+          "id": "1-73",
+          "module": 1,
+          "category": "目的与原因",
+          "fr": "tout en + participe présent",
+          "zh": "同时……／兼顾……",
+          "example": "Cette fête m’a plu parce qu’elle renforçait les liens familiaux tout en transmettant notre patrimoine.",
+          "source": "第23题 · 第380段",
+          "row": 73
+        },
+        {
+          "sourceIndex": 2,
+          "id": "1-35",
+          "module": 1,
+          "category": "同步行动",
+          "fr": "… tout en + participe présent",
+          "zh": "……，同时……。（同一主体）",
+          "example": "À condition de varier suffisamment leur alimentation, ils peuvent couvrir une grande partie de leurs besoins nutritionnels tout en limitant la consommation de produits trop gras.",
+          "source": "第10篇 · Word第55段",
+          "row": 35
+        }
+      ]
+    },
+    {
+      "id": "1-71",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-71",
+          "fr": "plutôt que de + infinitif",
+          "zh": "与其……，不如……",
+          "origins": [
+            0
+          ]
+        },
+        {
+          "id": "1-158",
+          "fr": "plutôt que de + infinitif",
+          "zh": "而不是……",
+          "origins": [
+            1
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "1-72",
+          "module": 1,
+          "category": "目的与衔接",
+          "fr": "plutôt que de + infinitif",
+          "zh": "与其……，不如……",
+          "example": "Prenez le temps de rencontrer les habitants, plutôt que d’enchaîner les visites : c’est ainsi que votre voyage prendra son sens.",
+          "source": "第43题 · 第706段",
+          "row": 72
+        },
+        {
+          "sourceIndex": 1,
+          "id": "1-74",
+          "module": 1,
+          "category": "目的与原因",
+          "fr": "plutôt que de + infinitif",
+          "zh": "而不是……",
+          "example": "Je notais les expressions dans leur contexte, plutôt que de mémoriser des mots isolés.",
+          "source": "第04题 · 第66段",
+          "row": 74
+        }
+      ]
+    },
+    {
+      "id": "1-72",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-72",
+          "fr": "plutôt que de + infinitif / plutôt qu’à + infinitif",
+          "zh": "而不是做……（保留前面动词所需的 de／à）",
+          "origins": [
+            0
+          ]
+        },
+        {
+          "id": "1-159",
+          "fr": "plutôt que de + infinitif / plutôt qu’à + infinitif",
+          "zh": "而不是做……（保留前面动词所需的 de／à）",
+          "origins": [
+            1
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "1-73",
+          "module": 1,
+          "category": "目的与衔接",
+          "fr": "plutôt que de + infinitif / plutôt qu’à + infinitif",
+          "zh": "而不是做……（保留前面动词所需的 de／à）",
+          "example": "Quant aux professeurs, ils sont compétents, disponibles et nous encouragent à discuter plutôt qu’à mémoriser les cours.",
+          "source": "第54题 · 第889段",
+          "row": 73,
+          "cores": [
+            "plutôt que de",
+            "plutôt qu’à"
+          ]
+        },
+        {
+          "sourceIndex": 1,
+          "id": "1-75",
+          "module": 1,
+          "category": "目的与原因",
+          "fr": "plutôt que de + infinitif / plutôt qu’à + infinitif",
+          "zh": "而不是做……（保留前面动词所需的 de／à）",
+          "example": "Pourtant, cette méthode me plaît, car elle nous encourage à analyser les idées plutôt qu’à simplement les mémoriser.",
+          "source": "第08题 · 第130段",
+          "row": 75,
+          "cores": [
+            "plutôt que de",
+            "plutôt qu’à"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1-75",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-75",
+          "fr": "compte tenu de + nom",
+          "zh": "考虑到……／鉴于……",
+          "origins": [
+            0
+          ]
+        },
+        {
+          "id": "1-163",
+          "fr": "Compte tenu de + nom, ...",
+          "zh": "考虑到……，……",
+          "origins": [
+            1
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "1-76",
+          "module": 1,
+          "category": "目的与衔接",
+          "fr": "compte tenu de + nom",
+          "zh": "考虑到……／鉴于……",
+          "example": "Le pass adulte ne coûte que 20 euros pour la semaine, un tarif particulièrement avantageux compte tenu de la diversité du programme.",
+          "source": "第01题 · 第21段",
+          "row": 76
+        },
+        {
+          "sourceIndex": 1,
+          "id": "1-79",
+          "module": 1,
+          "category": "目的与原因",
+          "fr": "Compte tenu de + nom, ...",
+          "zh": "考虑到……，……",
+          "example": "Compte tenu du prix du billet, ces défaillances me semblent regrettables.",
+          "source": "第17题 · 第282段",
+          "row": 79
+        }
+      ]
+    },
+    {
+      "id": "1-78",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-78",
+          "fr": "J’ai hâte de + infinitif.",
+          "zh": "我迫不及待想……",
+          "origins": [
+            0
+          ]
+        },
+        {
+          "id": "1-182",
+          "fr": "J’ai hâte de + infinitif.",
+          "zh": "我迫不及待想……",
+          "origins": [
+            1
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "1-79",
+          "module": 1,
+          "category": "结尾与感谢",
+          "fr": "J’ai hâte de + infinitif.",
+          "zh": "我迫不及待想……",
+          "example": "J’ai hâte de t’y retrouver !",
+          "source": "第16题 · 第263段",
+          "row": 79
+        },
+        {
+          "sourceIndex": 1,
+          "id": "1-98",
+          "module": 1,
+          "category": "投诉与结尾",
+          "fr": "J’ai hâte de + infinitif.",
+          "zh": "我迫不及待想……",
+          "example": "J’y trouve un environnement stimulant et j’ai hâte d’approfondir mon domaine d’études.",
+          "source": "第08题 · 第132段",
+          "row": 98
+        }
+      ]
+    },
+    {
+      "id": "1-80",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-80",
+          "fr": "Je reste à votre disposition pour + infinitif.",
+          "zh": "我随时愿意……／如有需要，我可……",
+          "origins": [
+            0
+          ]
+        },
+        {
+          "id": "1-181",
+          "fr": "Je reste à votre disposition pour + infinitif.",
+          "zh": "如有需要，我随时愿意……",
+          "origins": [
+            1
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "1-81",
+          "module": 1,
+          "category": "结尾与感谢",
+          "fr": "Je reste à votre disposition pour + infinitif.",
+          "zh": "我随时愿意……／如有需要，我可……",
+          "example": "Je reste à votre disposition pour intervenir et répondre aux questions des élèves.",
+          "source": "第55题 · 第908段",
+          "row": 81
+        },
+        {
+          "sourceIndex": 1,
+          "id": "1-97",
+          "module": 1,
+          "category": "投诉与结尾",
+          "fr": "Je reste à votre disposition pour + infinitif.",
+          "zh": "如有需要，我随时愿意……",
+          "example": "Je reste à votre disposition pour préciser les conditions de location et répondre à vos questions.",
+          "source": "第56题 · 第923段",
+          "row": 97
+        }
+      ]
+    },
+    {
+      "id": "1-84",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-84",
+          "fr": "Cordialement,",
+          "zh": "此致／谨致问候（正式结尾）",
+          "origins": [
+            0
+          ]
+        },
+        {
+          "id": "1-184",
+          "fr": "Cordialement,",
+          "zh": "此致／谨致问候（正式结尾）",
+          "origins": [
+            1
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 0,
+          "id": "1-85",
+          "module": 1,
+          "category": "结尾与感谢",
+          "fr": "Cordialement,",
+          "zh": "此致／谨致问候（正式结尾）",
+          "example": "Cordialement,",
+          "source": "第25题 · 第408段",
+          "row": 85
+        },
+        {
+          "sourceIndex": 1,
+          "id": "1-100",
+          "module": 1,
+          "category": "投诉与结尾",
+          "fr": "Cordialement,",
+          "zh": "此致／谨致问候（正式结尾）",
+          "example": "Cordialement,",
+          "source": "第63题 · 第1050段",
+          "row": 100
+        }
+      ]
+    },
+    {
+      "id": "1-105",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-105",
+          "fr": "Après avoir + participe passé, ...",
+          "zh": "在已经……之后，……。（主语须一致）",
+          "origins": [
+            1
+          ]
+        },
+        {
+          "id": "1-226",
+          "fr": "Après avoir + participe passé, …",
+          "zh": "在完成……之后，……",
+          "origins": [
+            2
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 1,
+          "id": "1-21",
+          "module": 1,
+          "category": "时间与叙事",
+          "fr": "Après avoir + participe passé, ...",
+          "zh": "在已经……之后，……。（主语须一致）",
+          "example": "Après avoir économisé et préparé les étapes, je suis parti en France, puis j’ai poursuivi mon aventure aux États-Unis.",
+          "source": "第34题 · 第555段",
+          "row": 21
+        },
+        {
+          "sourceIndex": 2,
+          "id": "1-43",
+          "module": 1,
+          "category": "正面论证",
+          "fr": "Après avoir + participe passé, …",
+          "zh": "在完成……之后，……",
+          "example": "Après avoir travaillé plusieurs heures, quelques minutes de repos peuvent les aider à retrouver leur énergie, à mieux se concentrer et à être plus efficaces pendant l’après-midi.",
+          "source": "第17篇 · Word第94段",
+          "row": 43
+        }
+      ]
+    },
+    {
+      "id": "1-131",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-131",
+          "fr": "À mes yeux, ...",
+          "zh": "在我看来，……",
+          "origins": [
+            1
+          ]
+        },
+        {
+          "id": "1-348",
+          "fr": "À mes yeux, ...",
+          "zh": "依我看来……",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 1,
+          "id": "1-47",
+          "module": 1,
+          "category": "观点与论证",
+          "fr": "À mes yeux, ...",
+          "zh": "在我看来，……",
+          "example": "À mes yeux, cette fête a été une réussite, car elle a transformé des relations anonymes en entraide.",
+          "source": "第20题 · 第330段",
+          "row": 47
+        },
+        {
+          "sourceIndex": 4,
+          "id": "1-52",
+          "module": 1,
+          "category": "观点与立场",
+          "fr": "À mes yeux, ...",
+          "zh": "依我看来……",
+          "example": "À mes yeux, je dirais qu’elle reste assez inégale.",
+          "source": 1032,
+          "row": 52
+        }
+      ]
+    },
+    {
+      "id": "1-142",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-142",
+          "fr": "Certes, ..., mais ...",
+          "zh": "诚然……，但是……",
+          "origins": [
+            1
+          ]
+        },
+        {
+          "id": "1-323",
+          "fr": "Certes, ... mais ...",
+          "zh": "固然……，但是……",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 1,
+          "id": "1-58",
+          "module": 1,
+          "category": "条件与让步",
+          "fr": "Certes, ..., mais ...",
+          "zh": "诚然……，但是……",
+          "example": "Certes, les devoirs demandent un effort quotidien, mais je sens que je m’exprime avec davantage d’aisance.",
+          "source": "第05题 · 第82段",
+          "row": 58
+        },
+        {
+          "sourceIndex": 4,
+          "id": "1-27",
+          "module": 1,
+          "category": "让步比较",
+          "fr": "Certes, ... mais ...",
+          "zh": "固然……，但是……",
+          "example": "Certains métiers pourraient certes être remplacés, mais le travail humain restera indispensable dans de nombreux domaines.",
+          "source": 432,
+          "row": 27
+        }
+      ]
+    },
+    {
+      "id": "1-144",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-144",
+          "fr": "En revanche, ...",
+          "zh": "不过／相比之下，……",
+          "origins": [
+            1
+          ]
+        },
+        {
+          "id": "1-243",
+          "fr": "En revanche, …",
+          "zh": "相比之下／然而，……",
+          "origins": [
+            2
+          ]
+        },
+        {
+          "id": "1-328",
+          "fr": "En revanche, ...",
+          "zh": "相比之下／然而……",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 1,
+          "id": "1-60",
+          "module": 1,
+          "category": "条件与让步",
+          "fr": "En revanche, ...",
+          "zh": "不过／相比之下，……",
+          "example": "En revanche, l’isolement devant l’écran réduisait parfois ma motivation.",
+          "source": "第07题 · 第115段",
+          "row": 60
+        },
+        {
+          "sourceIndex": 2,
+          "id": "1-60",
+          "module": 1,
+          "category": "相反观点",
+          "fr": "En revanche, …",
+          "zh": "相比之下／然而，……",
+          "example": "En revanche, le livre numérique peut sembler plus impersonnel.",
+          "source": "第37篇 · Word第204段",
+          "row": 60
+        },
+        {
+          "sourceIndex": 4,
+          "id": "1-32",
+          "module": 1,
+          "category": "让步比较",
+          "fr": "En revanche, ...",
+          "zh": "相比之下／然而……",
+          "example": "Les enfants, en revanche, ont davantage tendance à essayer, à se tromper puis à recommencer.",
+          "source": 618,
+          "row": 32
+        }
+      ]
+    },
+    {
+      "id": "1-146",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-146",
+          "fr": "Cependant, ...",
+          "zh": "但是，……",
+          "origins": [
+            1
+          ]
+        },
+        {
+          "id": "1-311",
+          "fr": "Cependant, ...",
+          "zh": "不过……",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 1,
+          "id": "1-62",
+          "module": 1,
+          "category": "条件与让步",
+          "fr": "Cependant, ...",
+          "zh": "但是，……",
+          "example": "Cependant, partir implique des contraintes réelles.",
+          "source": "第03题 · 第51段",
+          "row": 62
+        },
+        {
+          "sourceIndex": 4,
+          "id": "1-15",
+          "module": 1,
+          "category": "组织论点",
+          "fr": "Cependant, ...",
+          "zh": "不过……",
+          "example": "Cependant, cela dépend beaucoup du lieu où l’on habite.",
+          "source": 781,
+          "row": 15
+        }
+      ]
+    },
+    {
+      "id": "1-154",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-154",
+          "fr": "sans + infinitif",
+          "zh": "不……／无需……",
+          "origins": [
+            1
+          ]
+        },
+        {
+          "id": "1-231",
+          "fr": "… sans + infinitif",
+          "zh": "……，而不……。（同一主体）",
+          "origins": [
+            2
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 1,
+          "id": "1-70",
+          "module": 1,
+          "category": "目的与原因",
+          "fr": "sans + infinitif",
+          "zh": "不……／无需……",
+          "example": "Les effets visuels accompagnaient la musique sans détourner l’attention de sa voix.",
+          "source": "第13题 · 第212段",
+          "row": 70
+        },
+        {
+          "sourceIndex": 2,
+          "id": "1-48",
+          "module": 1,
+          "category": "避免代价",
+          "fr": "… sans + infinitif",
+          "zh": "……，而不……。（同一主体）",
+          "example": "Parallèlement, il faudrait que les entreprises améliorent les conditions de travail sans augmenter excessivement la charge imposée aux employés.",
+          "source": "第22篇 · Word第122段",
+          "row": 48
+        }
+      ]
+    },
+    {
+      "id": "1-161",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-161",
+          "fr": "Grâce à + nom, ...",
+          "zh": "多亏／得益于……，……",
+          "origins": [
+            1
+          ]
+        },
+        {
+          "id": "1-318",
+          "fr": "Grâce à ..., ...",
+          "zh": "得益于……",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 1,
+          "id": "1-77",
+          "module": 1,
+          "category": "目的与原因",
+          "fr": "Grâce à + nom, ...",
+          "zh": "多亏／得益于……，……",
+          "example": "Grâce à l’aide de mes partenaires, j’ai trouvé un rythme efficace.",
+          "source": "第46题 · 第752段",
+          "row": 77
+        },
+        {
+          "sourceIndex": 4,
+          "id": "1-22",
+          "module": 1,
+          "category": "因果目的",
+          "fr": "Grâce à ..., ...",
+          "zh": "得益于……",
+          "example": "Elles peuvent s’acquérir progressivement grâce à la formation et à l’expérience.",
+          "source": 366,
+          "row": 22
+        }
+      ]
+    },
+    {
+      "id": "1-193",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-193",
+          "fr": "Pour conclure, il me semble que…",
+          "zh": "总而言之，在我看来……",
+          "origins": [
+            2
+          ]
+        },
+        {
+          "id": "1-341",
+          "fr": "Pour conclure, il me semble que ...",
+          "zh": "总之，我认为……",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 2,
+          "id": "1-10",
+          "module": 1,
+          "category": "结尾立场",
+          "fr": "Pour conclure, il me semble que…",
+          "zh": "总而言之，在我看来……",
+          "example": "Pour conclure, il me semble qu’une certaine autorité parentale est nécessaire, mais qu’elle ne doit jamais devenir excessive.",
+          "source": "第01篇 · Word第9段",
+          "row": 10
+        },
+        {
+          "sourceIndex": 4,
+          "id": "1-45",
+          "module": 1,
+          "category": "结尾总结",
+          "fr": "Pour conclure, il me semble que ...",
+          "zh": "总之，我认为……",
+          "example": "Pour conclure, il me semble que changer de métier reste possible à tout âge.",
+          "source": 411,
+          "row": 45
+        }
+      ]
+    },
+    {
+      "id": "1-194",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-194",
+          "fr": "Parallèlement, il faudrait que…",
+          "zh": "与此同时，应当……。（后接虚拟式）",
+          "origins": [
+            2
+          ]
+        },
+        {
+          "id": "1-344",
+          "fr": "Parallèlement, il faudrait que ...",
+          "zh": "与此同时，应当……（虚拟式）",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 2,
+          "id": "1-11",
+          "module": 1,
+          "category": "结尾建议",
+          "fr": "Parallèlement, il faudrait que…",
+          "zh": "与此同时，应当……。（后接虚拟式）",
+          "example": "Parallèlement, il faudrait que les parents trouvent un équilibre entre l’encadrement et la liberté, afin d’aider leurs enfants à devenir progressivement autonomes et responsables.",
+          "source": "第01篇 · Word第9段",
+          "row": 11
+        },
+        {
+          "sourceIndex": 4,
+          "id": "1-48",
+          "module": 1,
+          "category": "结尾总结",
+          "fr": "Parallèlement, il faudrait que ...",
+          "zh": "与此同时，应当……（虚拟式）",
+          "example": "Parallèlement, il faudrait que chacun sache gérer son stress afin d’en faire un moteur plutôt qu’un obstacle.",
+          "source": 1109,
+          "row": 48
+        }
+      ]
+    },
+    {
+      "id": "1-197",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-197",
+          "fr": "Par exemple, …",
+          "zh": "例如，……",
+          "origins": [
+            2
+          ]
+        },
+        {
+          "id": "1-316",
+          "fr": "Par exemple, ...",
+          "zh": "例如……",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 2,
+          "id": "1-14",
+          "module": 1,
+          "category": "举例说明",
+          "fr": "Par exemple, …",
+          "zh": "例如，……",
+          "example": "Par exemple, certains chiens peuvent mordre lorsqu’ils se sentent menacés ou stressés.",
+          "source": "第02篇 · Word第13段",
+          "row": 14
+        },
+        {
+          "sourceIndex": 4,
+          "id": "1-20",
+          "module": 1,
+          "category": "举例说明",
+          "fr": "Par exemple, ...",
+          "zh": "例如……",
+          "example": "J’ai, par exemple, une amie qui vit en Chine, alors que je vis à l’étranger.",
+          "source": 1265,
+          "row": 20
+        }
+      ]
+    },
+    {
+      "id": "1-198",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-198",
+          "fr": "De plus, …",
+          "zh": "此外，……",
+          "origins": [
+            2
+          ]
+        },
+        {
+          "id": "1-306",
+          "fr": "De plus, ...",
+          "zh": "此外……",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 2,
+          "id": "1-15",
+          "module": 1,
+          "category": "递进补充",
+          "fr": "De plus, …",
+          "zh": "此外，……",
+          "example": "De plus, les chats et les chiens perdent souvent leurs poils, ce qui peut provoquer des allergies chez certains enfants.",
+          "source": "第02篇 · Word第13段",
+          "row": 15
+        },
+        {
+          "sourceIndex": 4,
+          "id": "1-10",
+          "module": 1,
+          "category": "组织论点",
+          "fr": "De plus, ...",
+          "zh": "此外……",
+          "example": "De plus, la télévision peut jouer un véritable rôle éducatif.",
+          "source": 712,
+          "row": 10
+        }
+      ]
+    },
+    {
+      "id": "1-199",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-199",
+          "fr": "Dans ce cas, …",
+          "zh": "在这种情况下，……",
+          "origins": [
+            2
+          ]
+        },
+        {
+          "id": "1-353",
+          "fr": "Dans ce cas, ...",
+          "zh": "在这种情况下……",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 2,
+          "id": "1-16",
+          "module": 1,
+          "category": "情境后果",
+          "fr": "Dans ce cas, …",
+          "zh": "在这种情况下，……",
+          "example": "Dans ce cas, la présence d’un animal à la maison peut devenir problématique et même nuire à leur santé.",
+          "source": "第02篇 · Word第13段",
+          "row": 16
+        },
+        {
+          "sourceIndex": 4,
+          "id": "1-57",
+          "module": 1,
+          "category": "组织与递进",
+          "fr": "Dans ce cas, ...",
+          "zh": "在这种情况下……",
+          "example": "Dans ce cas, changer d’appareil répond donc à un besoin professionnel réel.",
+          "source": 974,
+          "row": 57
+        }
+      ]
+    },
+    {
+      "id": "1-215",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-215",
+          "fr": "Il faut reconnaître que…",
+          "zh": "必须承认……",
+          "origins": [
+            2
+          ]
+        },
+        {
+          "id": "1-349",
+          "fr": "Il faut reconnaître que ...",
+          "zh": "必须承认……",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 2,
+          "id": "1-32",
+          "module": 1,
+          "category": "让步承认",
+          "fr": "Il faut reconnaître que…",
+          "zh": "必须承认……",
+          "example": "D’autre part, il faut reconnaître qu’une consommation excessive de boissons sucrées peut avoir des effets négatifs sur la santé.",
+          "source": "第09篇 · Word第51段",
+          "row": 32
+        },
+        {
+          "sourceIndex": 4,
+          "id": "1-53",
+          "module": 1,
+          "category": "观点与立场",
+          "fr": "Il faut reconnaître que ...",
+          "zh": "必须承认……",
+          "example": "Cela étant dit, il faut reconnaître que la sieste doit être encadrée.",
+          "source": 337,
+          "row": 53
+        }
+      ]
+    },
+    {
+      "id": "1-217",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-217",
+          "fr": "Il est tout à fait possible de…",
+          "zh": "完全可以……",
+          "origins": [
+            2
+          ]
+        },
+        {
+          "id": "1-364",
+          "fr": "Il est tout à fait possible de ...",
+          "zh": "完全有可能……",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 2,
+          "id": "1-34",
+          "module": 1,
+          "category": "可行性论证",
+          "fr": "Il est tout à fait possible de…",
+          "zh": "完全可以……",
+          "example": "D’une part, il est tout à fait possible d’avoir une alimentation équilibrée sans consommer systématiquement de viande.",
+          "source": "第10篇 · Word第55段",
+          "row": 34
+        },
+        {
+          "sourceIndex": 4,
+          "id": "1-68",
+          "module": 1,
+          "category": "比较与选择",
+          "fr": "Il est tout à fait possible de ...",
+          "zh": "完全有可能……",
+          "example": "À mes yeux, je dirais qu’il est tout à fait possible de vivre sans voiture aujourd’hui, notamment dans les grandes villes.",
+          "source": 781,
+          "row": 68
+        }
+      ]
+    },
+    {
+      "id": "1-225",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-225",
+          "fr": "À l’inverse, …",
+          "zh": "相反，……",
+          "origins": [
+            2
+          ]
+        },
+        {
+          "id": "1-327",
+          "fr": "À l'inverse, ...",
+          "zh": "相反……",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 2,
+          "id": "1-42",
+          "module": 1,
+          "category": "对比辨析",
+          "fr": "À l’inverse, …",
+          "zh": "相反，……",
+          "example": "À l’inverse, un enfant qui reste principalement à la maison risque d’avoir moins d’occasions d’interagir avec des jeunes de son âge.",
+          "source": "第15篇 · Word第83段",
+          "row": 42
+        },
+        {
+          "sourceIndex": 4,
+          "id": "1-31",
+          "module": 1,
+          "category": "让步比较",
+          "fr": "À l'inverse, ...",
+          "zh": "相反……",
+          "example": "À l’inverse, les produits de saison peuvent être cultivés dans des conditions plus naturelles.",
+          "source": 833,
+          "row": 31
+        }
+      ]
+    },
+    {
+      "id": "1-233",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-233",
+          "fr": "… non seulement…, mais aussi…",
+          "zh": "……不仅……，也……",
+          "origins": [
+            2
+          ]
+        },
+        {
+          "id": "1-329",
+          "fr": "Non seulement ..., mais aussi ...",
+          "zh": "不仅……而且……",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 2,
+          "id": "1-50",
+          "module": 1,
+          "category": "双重考量",
+          "fr": "… non seulement…, mais aussi…",
+          "zh": "……不仅……，也……",
+          "example": "Parallèlement, il faudrait que les recruteurs évaluent les jeunes candidats de manière globale, en tenant compte non seulement de leurs diplômes, mais aussi de leurs compétences et de leur expérience.",
+          "source": "第27篇 · Word第149段",
+          "row": 50
+        },
+        {
+          "sourceIndex": 4,
+          "id": "1-33",
+          "module": 1,
+          "category": "让步比较",
+          "fr": "Non seulement ..., mais aussi ...",
+          "zh": "不仅……而且……",
+          "example": "Ils permettent non seulement de gagner sa vie, mais jouent également un rôle important dans la société.",
+          "source": 289,
+          "row": 33
+        }
+      ]
+    },
+    {
+      "id": "1-235",
+      "reason": "相同表达：仅大小写、标点、省略号或语法占位标签不同",
+      "originals": [
+        {
+          "id": "1-235",
+          "fr": "Par ailleurs, …",
+          "zh": "另外，……",
+          "origins": [
+            2
+          ]
+        },
+        {
+          "id": "1-307",
+          "fr": "Par ailleurs, ...",
+          "zh": "另外……",
+          "origins": [
+            4
+          ]
+        }
+      ],
+      "members": [
+        {
+          "sourceIndex": 2,
+          "id": "1-52",
+          "module": 1,
+          "category": "补充论证",
+          "fr": "Par ailleurs, …",
+          "zh": "另外，……",
+          "example": "Par ailleurs, les emballages en plastique utilisés dans ces restaurants augmentent la quantité de déchets et contribuent à la pollution.",
+          "source": "第28篇 · Word第155段",
+          "row": 52
+        },
+        {
+          "sourceIndex": 4,
+          "id": "1-11",
+          "module": 1,
+          "category": "组织论点",
+          "fr": "Par ailleurs, ...",
+          "zh": "另外……",
+          "example": "Par ailleurs, l’ambiance de travail constitue également un facteur important.",
+          "source": 261,
+          "row": 11
+        }
+      ]
+    }
+  ]
+}

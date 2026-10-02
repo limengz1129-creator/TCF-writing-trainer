@@ -1,9 +1,36 @@
 'use strict';
 const KEY='TCF-COMBINED-EXPRESSIONS-v1',names=['动词搭配','固定句型','动词固定用法'];
 const $=id=>document.getElementById(id);
-let state={version:1,app:'tcf-combined',records:{},module:0,current:null,source:'',patternSource:'0'};
+let state={version:1,app:'tcf-combined',records:{},module:0,current:null,source:'',patternSource:''};
 let mode=0,current=null,order=null;
 try{const x=JSON.parse(localStorage.getItem(KEY));if(x?.app==='tcf-combined'&&x.version===1&&x.records)state={...state,...x};}catch(e){}
+function migratePatternRecords(records,history={}){
+ const result={...records};
+ for(const [oldId,id] of Object.entries(PATTERN_ID_ALIASES)){
+  const old=result[oldId];if(!old)continue;
+  history[oldId]=old;
+  const current=result[id];
+  if(!current)result[id]={...old};
+  else {
+   const errors=[current.error,old.error].filter(Boolean);
+   const error=errors.length?{...(errors.find(e=>!e.resolved)||errors[0]),count:errors.reduce((n,e)=>n+e.count,0),resolved:errors.every(e=>e.resolved)}:null;
+   result[id]={...current,draft:current.draft||old.draft,attempts:current.attempts+old.attempts,correct:current.correct+old.correct,wrong:current.wrong+old.wrong,last:current.attempts?current.last:old.last,error};
+  }
+  delete result[oldId];
+ }
+ return result;
+}
+function migratePatternState(){
+ state.patternMergeHistory=state.patternMergeHistory||{};
+ state.records=migratePatternRecords(state.records,state.patternMergeHistory);
+ state.current=PATTERN_ID_ALIASES[state.current]||state.current;
+ for(const p of Object.values(state.practicePositions||{})){
+  p.id=PATTERN_ID_ALIASES[p.id]||p.id;
+  if(p.order)p.order=[...new Set(p.order.map(id=>PATTERN_ID_ALIASES[id]||id))];
+ }
+}
+migratePatternState();
+
 function persist(){state.module=mode;state.current=current?.id||null;try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){$('toast').textContent='浏览器未能保存进度，请导出备份。';}}
 function rec(id=current?.id){return state.records[id]||(state.records[id]={draft:'',attempts:0,correct:0,wrong:0,last:null,error:null});}
 function saveDraft(){if(current){rec().draft=$('answer').value;persist();}}
@@ -15,9 +42,9 @@ function filtered(){let rs=scoped().filter(x=>(!$('category').value||categoriesF
 function errorItems(){return DATA.filter(x=>state.records[x.id]?.error&&($('showResolved').checked||!state.records[x.id].error.resolved)&&(!$('errModule').value||x.module===Number($('errModule').value))&&belongs(x,$('errSource').value));}
 function stats(){const rs=mode==='errors'?errorItems():filtered();$('total').textContent=rs.length;$('done').textContent=rs.filter(x=>state.records[x.id]?.attempts).length;$('pending').textContent=rs.filter(x=>state.records[x.id]?.error&&!state.records[x.id].error.resolved).length;$('errCount').textContent=Object.values(state.records).filter(r=>r.error&&!r.error.resolved).length;}
 function list(){const rs=filtered();$('list').replaceChildren();$('listCount').textContent=rs.length+' 条表达';const frag=document.createDocumentFragment();for(const x of rs){const b=document.createElement('button');b.className='item'+(current?.id===x.id?' active':'');b.textContent=x.zh;const s=document.createElement('small'),r=state.records[x.id];s.textContent=x.origins.map(p=>SOURCE_NAMES[p]).join(' / ')+' · '+categoriesFor(x).join(' / ')+(r?.error&&!r.error.resolved?' · 待复习':r?.last?' · 已答对':'');b.append(s);b.onclick=()=>show(x);frag.append(b);}$('list').append(frag);stats();}
-function show(x){saveDraft();current=x;$('practice').classList.toggle('hidden',!x);if(!x){$('toast').textContent='这个筛选下暂无表达。';list();persist();return;}$('toast').textContent='';$('prompt').textContent=x.zh;$('position').textContent=x.origins.map(p=>SOURCE_NAMES[p]).join(' / ')+' · '+categoriesFor(x).join(' / ')+' · '+(filtered().findIndex(t=>t.id===x.id)+1)+' / '+filtered().length;$('answer').value=rec().draft;$('feedback').classList.add('hidden');$('reference').classList.add('hidden');$('reveal').textContent='显示答案';$('moduleTitle').textContent=names[x.module]+(x.module===1?' · '+SOURCE_NAMES[Number(selectedSource())]:'');$('rule').textContent=x.module===0?'核对完整搭配；忽略大小写、标点和多余空格，保留重音。':'只核对核心表达。占位词可省略；qqch / qch、qqn / qn、qqch ou qqn / qch ou qn 均可。核心词、时态、介词和重音须正确。';list();persist();}
+function show(x){saveDraft();current=x;$('practice').classList.toggle('hidden',!x);if(!x){$('toast').textContent='这个筛选下暂无表达。';list();persist();return;}$('toast').textContent='';$('prompt').textContent=x.zh;$('position').textContent=x.origins.map(p=>SOURCE_NAMES[p]).join(' / ')+' · '+categoriesFor(x).join(' / ')+' · '+(filtered().findIndex(t=>t.id===x.id)+1)+' / '+filtered().length;$('answer').value=rec().draft;$('feedback').classList.add('hidden');$('reference').classList.add('hidden');$('reveal').textContent='显示答案';$('moduleTitle').textContent=names[x.module]+(x.module===1?' · '+(selectedSource()===''?'全部来源':SOURCE_NAMES[Number(selectedSource())]):'');$('rule').textContent=x.module===0?'核对完整搭配；忽略大小写、标点和多余空格，保留重音。':'只核对核心表达。占位词可省略；qqch / qch、qqn / qn、qqch ou qqn / qch ou qn 均可。核心词、时态、介词和重音须正确。';list();persist();}
 function rebuildCategories(){const previous=$('category').value;$('category').replaceChildren(new Option('全部分类',''));for(const c of [...new Set(scoped().flatMap(categoriesFor))])$('category').add(new Option(c,c));if([...$('category').options].some(o=>o.value===previous))$('category').value=previous;}
-function buildSource(){const desired=mode===1?state.patternSource:state.source;$('sourceFilter').replaceChildren();if(mode!==1)$('sourceFilter').add(new Option('全部来源',''));SOURCE_NAMES.forEach((n,p)=>{const count=DATA.filter(x=>x.module===mode&&x.origins.includes(p)).length;$('sourceFilter').add(new Option(n+' · '+count+' 条',String(p)));});$('sourceFilter').value=[...$('sourceFilter').options].some(o=>o.value===desired)?desired:mode===1?'0':'';$('sourceNote').textContent=mode===1?'固定句型按来源分别练习，下拉菜单一次选择一个子模块。':'同一表达只练一次；显示并保留所有来源。也可按来源筛选。';}
+function buildSource(){const desired=mode===1?state.patternSource:state.source;$('sourceFilter').replaceChildren();$('sourceFilter').add(new Option('全部来源',''));SOURCE_NAMES.forEach((n,p)=>{const count=DATA.filter(x=>x.module===mode&&x.origins.includes(p)).length;$('sourceFilter').add(new Option(n+' · '+count+' 条',String(p)));});$('sourceFilter').value=[...$('sourceFilter').options].some(o=>o.value===desired)?desired:'';$('sourceNote').textContent=mode===1?'固定句型已跨来源去重：可选择全部来源，也可只练写作／口语中的一个任务。所有原写法与出处保留在答案中。':'同一表达只练一次；显示并保留所有来源。也可按来源筛选。';}
 function rememberPractice(){if(!Number.isInteger(mode)||!current)return;state.practicePositions=state.practicePositions||{};state.practicePositions[mode]={id:current?.id||null,source:selectedSource(),category:$('category').value,status:$('status').value,search:$('search').value,order:order?[...order]:null,listScroll:$('list').scrollTop,pageScroll:window.scrollY};}
 function setModule(m,fresh=false){
  saveDraft();
@@ -72,9 +99,10 @@ $('prev').onclick=()=>move(-1);$('next').onclick=()=>move(1);$('random').onclick
 SOURCE_NAMES.forEach((n,p)=>$('errSource').add(new Option(n,String(p))));for(const id of ['errModule','errSource','showResolved'])$(id).onchange=errors;
 function download(blob,name){const u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(u),1000);}
 $('export').onclick=()=>{saveDraft();download(new Blob([JSON.stringify({...state,vocabulary:window.COMBINED_VOCAB?.getWords()||[]},null,2)],{type:'application/json'}),'TCF-综合表达-进度与单词本.json');};
-$('import').onclick=()=>$('file').click();$('file').onchange=async e=>{try{const f=e.target.files[0];if(!f)return;const x=JSON.parse(await f.text());if(x.app!=='tcf-combined'||x.version!==1||!x.records||typeof x.records!=='object'||Array.isArray(x.records))throw Error('请选择本综合网页导出的进度文件。');for(const [id,r] of Object.entries(x.records)){if(!DATA.some(t=>t.id===id)||!r||typeof r.draft!=='string'||!['attempts','correct','wrong'].every(k=>Number.isInteger(r[k])&&r[k]>=0)||(r.error&&(typeof r.error.answer!=='string'||typeof r.error.resolved!=='boolean'||!Number.isInteger(r.error.count))))throw Error('进度文件内容不正确。');}if(x.vocabulary&&!window.COMBINED_VOCAB?.validateWords(x.vocabulary))throw Error('单词本内容不正确。');if(x.vocabulary&&!window.COMBINED_VOCAB.importWords(x.vocabulary))throw Error('单词本未能保存，请导出当前记录备份。');state.records={...state.records,...x.records};persist();mode==='errors'?errors():Number.isInteger(mode)?show(current):window.COMBINED_VOCAB.render();$('toast').textContent='进度与单词本已导入。';}catch(err){$('toast').textContent=err.message;}e.target.value='';};
+$('import').onclick=()=>$('file').click();$('file').onchange=async e=>{try{const f=e.target.files[0];if(!f)return;const x=JSON.parse(await f.text());if(x.app!=='tcf-combined'||x.version!==1||!x.records||typeof x.records!=='object'||Array.isArray(x.records))throw Error('请选择本综合网页导出的进度文件。');for(const [id,r] of Object.entries(x.records)){if(!DATA.some(t=>t.id===(PATTERN_ID_ALIASES[id]||id))||!r||typeof r.draft!=='string'||!['attempts','correct','wrong'].every(k=>Number.isInteger(r[k])&&r[k]>=0)||(r.error&&(typeof r.error.answer!=='string'||typeof r.error.resolved!=='boolean'||!Number.isInteger(r.error.count))))throw Error('进度文件内容不正确。');}if(x.vocabulary&&!window.COMBINED_VOCAB?.validateWords(x.vocabulary))throw Error('单词本内容不正确。');if(x.vocabulary&&!window.COMBINED_VOCAB.importWords(x.vocabulary))throw Error('单词本未能保存，请导出当前记录备份。');state.records={...state.records,...migratePatternRecords(x.records,state.patternMergeHistory)};persist();mode==='errors'?errors():Number.isInteger(mode)?show(current):window.COMBINED_VOCAB.render();$('toast').textContent='进度与单词本已导入。';}catch(err){$('toast').textContent=err.message;}e.target.value='';};
 window.COMBINED_UI={openVocabulary:()=>setModule('vocab'),closeVocabulary:()=>setModule([0,1,2,'errors'].includes(state.vocabularyReturnView)?state.vocabularyReturnView:0),source:()=>current?current.origins.map(p=>SOURCE_NAMES[p]).join(' / '):'TCF 综合表达'};
 window.TRAINER_TEST={DATA,grade,variants,answerDifference,getState:()=>state,setModule,filtered,show};
 const restoreId=state.current;const restoreMode=[0,1,2,'errors','vocab'].includes(state.module)?state.module:0;setModule(restoreMode);if(Number.isInteger(restoreMode)){const item=filtered().find(x=>x.id===restoreId);if(item)show(item);}
+
 
 
