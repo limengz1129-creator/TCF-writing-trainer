@@ -6,7 +6,7 @@ box.innerHTML='<button type="button" id="openFrenchSpeech" aria-expanded="false"
 document.querySelector('#answer').before(box);
 const get=id=>box.querySelector('#'+id),panel=get('frenchSpeechPanel'),opener=get('openFrenchSpeech'),original=get('speechOriginal'),status=get('speechStatus'),audio=get('piperAudio'),rate=get('frenchRate');
 const root=new URL('piper-audio/',document.baseURI);
-let version=0,blobUrl=null,entry=null,spans=[],active=null,frame=0,manifestPromise=null;
+let version=0,blobUrl=null,entry=null,spans=[],active=null,frame=0,manifestPromise=null,questionManifestPromise=null;
 const packs=new Map();
 function mark(time){
  const current=entry?.timing.find(t=>time>=t.start&&time<t.end);
@@ -30,7 +30,13 @@ function render(text,timing){
 async function readJson(url){const response=await fetch(url);if(!response.ok)throw Error('音频文件加载失败');return response.json();}
 async function load(text){
  if(!manifestPromise)manifestPromise=readJson(new URL('manifest.json',root)).catch(e=>{manifestPromise=null;throw e;});
- const manifest=await manifestPromise,link=manifest.entries[text];
+ const manifest=await manifestPromise;
+ let link=manifest.entries[text];
+ if(!link){
+  if(!questionManifestPromise)questionManifestPromise=readJson(new URL('../question-audio/manifest.json?v=1',root)).catch(e=>{questionManifestPromise=null;throw e;});
+  const extra=await questionManifestPromise,q=extra.entries[text];
+  if(q)link={...q,pack:'../question-audio/'+q.pack};
+ }
  if(!link)throw Error('当前词条尚未生成 Piper 音频');
  let promise=packs.get(link.pack);
  if(!promise){promise=readJson(new URL(link.pack,root)).catch(e=>{packs.delete(link.pack);throw e;});packs.set(link.pack,promise);if(packs.size>3)packs.delete(packs.keys().next().value);}
@@ -73,3 +79,4 @@ new MutationObserver(close).observe(document.querySelector('#prompt'),{childList
 document.querySelectorAll('[data-module]').forEach(e=>e.addEventListener('click',close));
 window.addEventListener('pagehide',close);
 })();
+
