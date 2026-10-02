@@ -7,39 +7,39 @@
     "口语 T3"
   ],
   "passages": 3141,
-  "occurrences": 9882,
-  "unique": 2302,
+  "occurrences": 9852,
+  "unique": 2292,
   "policy": "按动词原形、时态、人称（同形人称共同列出）及实际变位去重；复合时态保留助动词与过去分词，单独的分词另列，不把动词原形作为变位。原句仅挖空提取的变位，原稿未改。",
   "counts": [
     {
       "source": 0,
       "passages": 471,
-      "occurrences": 1034,
-      "unique": 497
+      "occurrences": 1030,
+      "unique": 494
     },
     {
       "source": 1,
       "passages": 398,
-      "occurrences": 1282,
-      "unique": 765
+      "occurrences": 1276,
+      "unique": 761
     },
     {
       "source": 2,
       "passages": 248,
-      "occurrences": 1266,
-      "unique": 280
+      "occurrences": 1263,
+      "unique": 278
     },
     {
       "source": 3,
       "passages": 1517,
-      "occurrences": 1809,
-      "unique": 520
+      "occurrences": 1807,
+      "unique": 518
     },
     {
       "source": 4,
       "passages": 507,
-      "occurrences": 4491,
-      "unique": 1003
+      "occurrences": 4476,
+      "unique": 999
     }
   ],
   "coverage": [
@@ -1854,7 +1854,7 @@
       "sourceIndex": 0,
       "documentId": 42,
       "part": 3,
-      "occurrences": 5
+      "occurrences": 4
     },
     {
       "index": 259,
@@ -1903,7 +1903,7 @@
       "sourceIndex": 0,
       "documentId": 43,
       "part": 3,
-      "occurrences": 7
+      "occurrences": 6
     },
     {
       "index": 266,
@@ -2001,7 +2001,7 @@
       "sourceIndex": 0,
       "documentId": 45,
       "part": 3,
-      "occurrences": 7
+      "occurrences": 6
     },
     {
       "index": 280,
@@ -2386,7 +2386,7 @@
       "sourceIndex": 0,
       "documentId": 53,
       "part": 4,
-      "occurrences": 6
+      "occurrences": 5
     },
     {
       "index": 335,
@@ -3807,7 +3807,7 @@
       "sourceIndex": 1,
       "documentId": 14,
       "part": 3,
-      "occurrences": 9
+      "occurrences": 8
     },
     {
       "index": 538,
@@ -4059,7 +4059,7 @@
       "sourceIndex": 1,
       "documentId": 20,
       "part": 5,
-      "occurrences": 5
+      "occurrences": 4
     },
     {
       "index": 574,
@@ -4353,7 +4353,7 @@
       "sourceIndex": 1,
       "documentId": 28,
       "part": 3,
-      "occurrences": 6
+      "occurrences": 5
     },
     {
       "index": 616,
@@ -4500,7 +4500,7 @@
       "sourceIndex": 1,
       "documentId": 32,
       "part": 4,
-      "occurrences": 6
+      "occurrences": 5
     },
     {
       "index": 637,
@@ -4822,7 +4822,7 @@
       "sourceIndex": 1,
       "documentId": 41,
       "part": 3,
-      "occurrences": 7
+      "occurrences": 6
     },
     {
       "index": 683,
@@ -5669,7 +5669,7 @@
       "sourceIndex": 1,
       "documentId": 61,
       "part": 3,
-      "occurrences": 9
+      "occurrences": 8
     },
     {
       "index": 804,
@@ -6467,7 +6467,7 @@
       "sourceIndex": 2,
       "documentId": 13,
       "part": 1,
-      "occurrences": 6
+      "occurrences": 5
     },
     {
       "index": 918,
@@ -6873,7 +6873,7 @@
       "sourceIndex": 2,
       "documentId": 27,
       "part": 3,
-      "occurrences": 5
+      "occurrences": 4
     },
     {
       "index": 976,
@@ -7685,7 +7685,7 @@
       "sourceIndex": 2,
       "documentId": 56,
       "part": 3,
-      "occurrences": 4
+      "occurrences": 3
     },
     {
       "index": 1092,
@@ -10149,7 +10149,7 @@
       "sourceIndex": 3,
       "documentId": "raw-326",
       "part": 1,
-      "occurrences": 1
+      "occurrences": 0
     },
     {
       "index": 1444,
@@ -15623,7 +15623,7 @@
       "sourceIndex": 3,
       "documentId": "c-233",
       "part": 1,
-      "occurrences": 2
+      "occurrences": 1
     },
     {
       "index": 2226,
@@ -19417,7 +19417,7 @@
       "sourceIndex": 4,
       "documentId": "2-13",
       "part": 3,
-      "occurrences": 11
+      "occurrences": 10
     },
     {
       "index": 2768,
@@ -19543,7 +19543,7 @@
       "sourceIndex": 4,
       "documentId": "2-22",
       "part": 2,
-      "occurrences": 9
+      "occurrences": 8
     },
     {
       "index": 2786,
@@ -19725,7 +19725,7 @@
       "sourceIndex": 4,
       "documentId": "3-03",
       "part": 3,
-      "occurrences": 14
+      "occurrences": 13
     },
     {
       "index": 2812,
@@ -20285,7 +20285,7 @@
       "sourceIndex": 4,
       "documentId": "4-01",
       "part": 3,
-      "occurrences": 11
+      "occurrences": 9
     },
     {
       "index": 2892,
@@ -20411,7 +20411,7 @@
       "sourceIndex": 4,
       "documentId": "4-07",
       "part": 3,
-      "occurrences": 13
+      "occurrences": 11
     },
     {
       "index": 2910,
@@ -20425,7 +20425,7 @@
       "sourceIndex": 4,
       "documentId": "4-08",
       "part": 2,
-      "occurrences": 10
+      "occurrences": 8
     },
     {
       "index": 2912,
@@ -20453,7 +20453,7 @@
       "sourceIndex": 4,
       "documentId": "4-11",
       "part": 1,
-      "occurrences": 13
+      "occurrences": 11
     },
     {
       "index": 2916,
@@ -20467,7 +20467,7 @@
       "sourceIndex": 4,
       "documentId": "4-09",
       "part": 3,
-      "occurrences": 12
+      "occurrences": 11
     },
     {
       "index": 2918,
@@ -20495,7 +20495,7 @@
       "sourceIndex": 4,
       "documentId": "4-11",
       "part": 3,
-      "occurrences": 12
+      "occurrences": 11
     },
     {
       "index": 2922,
@@ -20621,7 +20621,7 @@
       "sourceIndex": 4,
       "documentId": "5-03",
       "part": 1,
-      "occurrences": 9
+      "occurrences": 8
     },
     {
       "index": 2940,
@@ -21874,7 +21874,7 @@
       "sourceIndex": 4,
       "documentId": "9-02",
       "part": 2,
-      "occurrences": 8
+      "occurrences": 7
     },
     {
       "index": 3119,
@@ -22035,7 +22035,7 @@
     "https://spacy.io/models/fr/",
     "https://github.com/bretttolbert/verbecc"
   ],
-  "notes": "形容词同形的过去分词仅在提取到动词／分词结构时列出；être＋过去分词的状态与被动用法以中性标签展示。 已复核动词原形与时态的变位表一致性，另核对命令式从句与并列命令式；同形人称保留可用人称集合。",
+  "notes": "形容词同形的过去分词仅在提取到动词／分词结构时列出；être＋过去分词的状态与被动用法以中性标签展示。 排除 l’offre、l’herbe、les diplômes 等名词同形误识别。",
   "reviewedCorrections": [
     {
       "before": {
@@ -23867,6 +23867,638 @@
         ],
         "note": "原句中的并列命令式"
       }
+    }
+  ],
+  "removedNounHomographs": [
+    {
+      "lemma": "offrir",
+      "tense": "直陈式现在时",
+      "person": "il / elle / on",
+      "fr": "offre",
+      "sentence": "De plus, pendant les périodes de forte demande,l’offre de logements peut être plus limitée. ",
+      "blank": "De plus, pendant les périodes de forte demande,l’____ de logements peut être plus limitée. ",
+      "zh": "另一方面，这类住房可能比较昂贵，尤其是在旅游地区。此外，在需求旺盛的时期，可供选择的住房可能更加有限。因此，旅行者需要提前规划行程并尽早预订。",
+      "sourceIndex": 2,
+      "documentId": 56,
+      "topic": "短租的便利与局限",
+      "part": 3,
+      "passageIndex": 1091,
+      "spans": [
+        [
+          140,
+          145
+        ]
+      ],
+      "note": "原文主语：l’"
+    },
+    {
+      "lemma": "cuiter",
+      "tense": "直陈式现在时",
+      "person": "il / elle / on",
+      "fr": "cuite",
+      "sentence": "À Xi’an, l’armée de terre cuite témoigne d’un patrimoine exceptionnel. ",
+      "blank": "À Xi’an, l’armée de terre ____ témoigne d’un patrimoine exceptionnel. ",
+      "zh": "在北京，故宫和长城能让你更好地了解帝国历史。在西安，兵马俑展示了非凡的文化遗产。上海以传统街区和现代建筑，提供另一种视角。",
+      "sourceIndex": 0,
+      "documentId": 42,
+      "topic": "向朋友介绍自己的国家和文化",
+      "part": 3,
+      "passageIndex": 258,
+      "spans": [
+        [
+          128,
+          133
+        ]
+      ],
+      "note": "原文主语：l’"
+    },
+    {
+      "lemma": "cuiter",
+      "tense": "直陈式现在时",
+      "person": "il / elle / on",
+      "fr": "cuite",
+      "sentence": "À Xi’an, l’armée de terre cuite permet de remonter le temps. ",
+      "blank": "À Xi’an, l’armée de terre ____ permet de remonter le temps. ",
+      "zh": "在北京，故宫展现帝国历史，长城则带来壮观的全景。在西安，兵马俑让人仿佛回到过去。上海也展示了传统与现代如何和谐共存。",
+      "sourceIndex": 0,
+      "documentId": 43,
+      "topic": "介绍本国文化并吸引他人来访",
+      "part": 3,
+      "passageIndex": 265,
+      "spans": [
+        [
+          149,
+          154
+        ]
+      ],
+      "note": "原文主语：l’"
+    },
+    {
+      "lemma": "aider",
+      "tense": "直陈式现在时",
+      "person": "je / il / elle / on",
+      "fr": "aide",
+      "sentence": "Nous commençons par un échauffement, puis travaillons différents groupes musculaires avec l’aide d’un entraîneur. ",
+      "blank": "Nous commençons par un échauffement, puis travaillons différents groupes musculaires avec l’____ d’un entraîneur. ",
+      "zh": "我每周二和周四18点去，每次一小时。我们先热身，再在教练帮助下训练不同肌群。设备现代化，建议有针对性，因此可以不断进步，而不会感到无所适从。",
+      "sourceIndex": 0,
+      "documentId": 45,
+      "topic": "介绍自己的运动项目及相关信息",
+      "part": 3,
+      "passageIndex": 279,
+      "spans": [
+        [
+          159,
+          163
+        ]
+      ],
+      "note": ""
+    },
+    {
+      "lemma": "aider",
+      "tense": "直陈式现在时",
+      "person": "je / il / elle / on",
+      "fr": "aide",
+      "sentence": "Avec l’aide d’un mentor expérimenté, il pourrait progressivement acquérir de nouvelles compétences et prendre en charge des projets plus complexes. ",
+      "blank": "Avec l’____ d’un mentor expérimenté, il pourrait progressivement acquérir de nouvelles compétences et prendre en charge des projets plus complexes. ",
+      "zh": "最后，企业可以建立导师制度，指导和帮助新员工。起初，新员工通常只能完成相对简单的任务；有经验的导师帮助后，他可以逐渐掌握新技能，负责更复杂的项目。遇到不熟悉的任务时，导师可以给他建议，让他不至于迷失方向。某种程度上，导师就像他的指南针。这种指导帮助他找到方向，并逐步承担更多责任。",
+      "sourceIndex": 4,
+      "documentId": "2-13",
+      "topic": "职业与职场 · 技能培训学习与职业转型",
+      "part": 3,
+      "passageIndex": 2767,
+      "spans": [
+        [
+          223,
+          227
+        ]
+      ],
+      "note": ""
+    },
+    {
+      "lemma": "aider",
+      "tense": "直陈式现在时",
+      "person": "je / il / elle / on",
+      "fr": "aide",
+      "sentence": "Aujourd’hui, de nombreux employés peuvent effectuer certaines tâches depuis chez eux à l’aide d’un ordinateur et d’Internet. ",
+      "blank": "Aujourd’hui, de nombreux employés peuvent effectuer certaines tâches depuis chez eux à l’____ d’un ordinateur et d’Internet. ",
+      "zh": "首先，数字工具在工作生活中可以节省大量时间，尤其得益于远程办公。如今，许多员工可以借助电脑和互联网在家完成某些任务。他们还可以参加视频会议，或与同事交换文件，而不必每次都去办公室。这让他们能够避免某些每日乘公交、地铁或汽车的出行，特别是在高峰时段。对于住得离工作地点较远的人，节省下来的通勤时间可能相当可观。因此，数字工具使人能够更高效地安排一天。",
+      "sourceIndex": 4,
+      "documentId": "5-03",
+      "topic": "科技与网络 · 远程办公与工作效率",
+      "part": 1,
+      "passageIndex": 2939,
+      "spans": [
+        [
+          225,
+          229
+        ]
+      ],
+      "note": ""
+    },
+    {
+      "lemma": "écrire",
+      "tense": "直陈式现在时",
+      "person": "il / elle / on",
+      "fr": "écrit",
+      "sentence": "Les professeurs sont bienveillants et nous font travailler l’expression orale autant que l’écrit, ce qui favorise nos progrès. ",
+      "blank": "Les professeurs sont bienveillants et nous font travailler l’expression orale autant que l’____, ce qui favorise nos progrès. ",
+      "zh": "老师们友善，让我们同时练习口语和写作，促进了我们的进步。通过水平测试，可以进入适合的班级。",
+      "sourceIndex": 0,
+      "documentId": 53,
+      "topic": "介绍语言学校课程与相关信息",
+      "part": 4,
+      "passageIndex": 334,
+      "spans": [
+        [
+          91,
+          96
+        ]
+      ],
+      "note": "原文主语：l’"
+    },
+    {
+      "lemma": "herber",
+      "tense": "直陈式现在时",
+      "person": "je / il / elle / on",
+      "fr": "herbe",
+      "sentence": "Les spectateurs s’encourageaient à participer, et des familles partageaient leur pique-nique sur l’herbe. ",
+      "blank": "Les spectateurs s’encourageaient à participer, et des familles partageaient leur pique-nique sur l’____. ",
+      "zh": "我们到达时，几位当地艺术家已在热情的观众面前演出。我们先听爵士乐队，然后伴着节奏更强的歌曲跳舞。观众互相鼓励参与，一些家庭在草地上分享野餐。我喜欢这种温暖的气氛，让人能享受音乐，而不觉得必须消费。",
+      "sourceIndex": 1,
+      "documentId": 14,
+      "topic": "分享参加音乐节的经历",
+      "part": 3,
+      "passageIndex": 537,
+      "spans": [
+        [
+          271,
+          276
+        ]
+      ],
+      "note": ""
+    },
+    {
+      "lemma": "entraider",
+      "tense": "直陈式现在时",
+      "person": "je / il / elle / on",
+      "fr": "entraide",
+      "sentence": "À mes yeux, cette fête a été une réussite, car elle a transformé des relations anonymes en entraide. ",
+      "blank": "À mes yeux, cette fête a été une réussite, car elle a transformé des relations anonymes en ____. ",
+      "zh": "在我看来，聚会很成功，因为它把互不相识的关系变成了互助。我们决定春天再举办。共享的几个小时改变了社区生活。",
+      "sourceIndex": 1,
+      "documentId": 20,
+      "topic": "分享参加邻里聚会的经历",
+      "part": 5,
+      "passageIndex": 573,
+      "spans": [
+        [
+          91,
+          99
+        ]
+      ],
+      "note": ""
+    },
+    {
+      "lemma": "entraider",
+      "tense": "直陈式现在时",
+      "person": "je / il / elle / on",
+      "fr": "entraide",
+      "sentence": "J’apprécie aussi la convivialité des habitants : les voisins discutent et l’entraide fait partie du quotidien. ",
+      "blank": "J’apprécie aussi la convivialité des habitants : les voisins discutent et l’____ fait partie du quotidien. ",
+      "zh": "我也喜欢居民的友善：邻居聊天，互助是日常生活的一部分。刚到时，他们告诉我商店在哪里，还提出帮我打理花园。",
+      "sourceIndex": 1,
+      "documentId": 32,
+      "topic": "分享搬到乡村生活的原因与好处",
+      "part": 4,
+      "passageIndex": 636,
+      "spans": [
+        [
+          76,
+          84
+        ]
+      ],
+      "note": ""
+    },
+    {
+      "lemma": "entraider",
+      "tense": "直陈式现在时",
+      "person": "je / il / elle / on",
+      "fr": "entraide",
+      "sentence": "J’ai apprécié l’entraide : chacun avançait à son rythme, tandis que les déchets lourds étaient transportés ensemble.",
+      "blank": "J’ai apprécié l’____ : chacun avançait à son rythme, tandis que les déchets lourds étaient transportés ensemble.",
+      "zh": "戴着手套、带着袋子，我们收集瓶子、包装和被丢弃的小物品。组织者事先说明了安全要求和分类。我喜欢互助：每个人按自己的节奏前进，重垃圾则共同搬运。",
+      "sourceIndex": 1,
+      "documentId": 41,
+      "topic": "分享环保清洁行动经历及意义",
+      "part": 3,
+      "passageIndex": 682,
+      "spans": [
+        [
+          204,
+          212
+        ]
+      ],
+      "note": ""
+    },
+    {
+      "lemma": "entraider",
+      "tense": "直陈式现在时",
+      "person": "je / il / elle / on",
+      "fr": "entraide",
+      "sentence": "De plus, cette situation peut être bénéfique pour les deux générations, car elle facilite l’entraide familiale. ",
+      "blank": "De plus, cette situation peut être bénéfique pour les deux générations, car elle facilite l’____ familiale. ",
+      "zh": "此外，这种情况对两代人都可能有益，因为它便利了家庭互助。父母能更多享受孩子的陪伴，年轻成年人也能帮他们处理日常事务。例如，如果父母开始出现健康问题或购物困难，子女可以陪同、准备一些饭菜，或帮助办理行政手续。因此，这种接近能够加强家庭纽带，让每个人都感到获得更多支持。",
+      "sourceIndex": 4,
+      "documentId": "9-02",
+      "topic": "家庭与人际 · 与父母同住的经济互助与依赖风险",
+      "part": 2,
+      "passageIndex": 3118,
+      "spans": [
+        [
+          92,
+          100
+        ]
+      ],
+      "note": ""
+    },
+    {
+      "lemma": "guider",
+      "tense": "直陈式现在时",
+      "person": "je / il / elle / on",
+      "fr": "guide",
+      "sentence": "À l’arrivée, le guide nous a présenté le programme et répondu à nos questions. ",
+      "blank": "À l’arrivée, le ____ nous a présenté le programme et répondu à nos questions. ",
+      "zh": "到达后，导游介绍安排并回答问题。在蒙特利尔，我们探索不同街区、品尝地方美食。在魁北克，我喜欢在古老街道散步。讲解让参观更有深度，而不是把它变成一连串照片。",
+      "sourceIndex": 1,
+      "documentId": 28,
+      "topic": "分享通过旅行社赴加拿大度假的经历",
+      "part": 3,
+      "passageIndex": 615,
+      "spans": [
+        [
+          16,
+          21
+        ]
+      ],
+      "note": ""
+    },
+    {
+      "lemma": "enclore",
+      "tense": "过去分词",
+      "person": "无主语人称变化",
+      "fr": "enclos",
+      "sentence": "Le premier jour, j’ai nourri les animaux, nettoyé leurs enclos et observé leurs habitudes. ",
+      "blank": "Le premier jour, j’ai nourri les animaux, nettoyé leurs ____ et observé leurs habitudes. ",
+      "zh": "第一天，我喂动物、清理围栏，并观察它们的习惯。它们的安静让我惊讶，但养殖者解释，必须尊重它们的节奏、留意反应。我理解了照顾动物需要的不只是喜爱。",
+      "sourceIndex": 1,
+      "documentId": 61,
+      "topic": "向朋友分享农场工作经历与感受",
+      "part": 3,
+      "passageIndex": 803,
+      "spans": [
+        [
+          56,
+          62
+        ]
+      ],
+      "note": "过去分词；注意原文中的阴阳性与单复数配合。"
+    },
+    {
+      "lemma": "attraire",
+      "tense": "直陈式现在时",
+      "person": "il / elle / on",
+      "fr": "attrait",
+      "sentence": "Certains considèrent que la lecture joue un rôle essentiel dans leur développement, tandis que d’autres estiment qu’il peut être difficile de leur donner le goût de lire face à l’attrait des écrans.",
+      "blank": "Certains considèrent que la lecture joue un rôle essentiel dans leur développement, tandis que d’autres estiment qu’il peut être difficile de leur donner le goût de lire face à l’____ des écrans.",
+      "zh": "如今，关于如何鼓励孩子经常阅读这一问题引发了很多讨论。有些人认为，阅读在儿童成长中发挥着重要作用；而另一些人则认为，面对屏幕的吸引力，让孩子真正喜欢上阅读可能比较困难。",
+      "sourceIndex": 2,
+      "documentId": 13,
+      "topic": "儿童阅读的利弊",
+      "part": 1,
+      "passageIndex": 917,
+      "spans": [
+        [
+          295,
+          302
+        ]
+      ],
+      "note": ""
+    },
+    {
+      "lemma": "diplômer",
+      "tense": "过去分词",
+      "person": "无主语人称变化",
+      "fr": "diplômés",
+      "sentence": "D’autre part, les jeunes diplômés manquent souvent d’expérience professionnelle. ",
+      "blank": "D’autre part, les jeunes ____ manquent souvent d’expérience professionnelle. ",
+      "zh": "另一方面，年轻毕业生往往缺乏职业经验。然而，许多招聘人员希望找到能够迅速上手工作的候选人。经验可以培养实际技能、人际交往能力以及解决具体问题的能力，因此也能帮助年轻人更顺利地进入职场。",
+      "sourceIndex": 2,
+      "documentId": 27,
+      "topic": "学历与经验对就业的作用",
+      "part": 3,
+      "passageIndex": 975,
+      "spans": [
+        [
+          25,
+          33
+        ]
+      ],
+      "note": "过去分词；注意原文中的阴阳性与单复数配合。"
+    },
+    {
+      "lemma": "diplômer",
+      "tense": "过去分词",
+      "person": "无主语人称变化",
+      "fr": "diplômés",
+      "sentence": "De plus, les jeunes diplômés doivent faire face à une forte concurrence sur le marché du travail. ",
+      "blank": "De plus, les jeunes ____ doivent faire face à une forte concurrence sur le marché du travail. ",
+      "zh": "此外，应届毕业生在劳动市场上面临激烈竞争。每年有许多学生完成学业，但与其专业相符的职位可能有限。某些岗位的招聘者不仅看学位水平，也看学校声誉。例如，学士学位持有人可能与硕士甚至博士竞争。有些年轻人还会选择继续深造，以增加就业机会。因此，仅有毕业文凭已不总能让人脱颖而出。",
+      "sourceIndex": 4,
+      "documentId": "2-22",
+      "topic": "职业与职场 · 求职竞争就业门槛与绩效",
+      "part": 2,
+      "passageIndex": 2785,
+      "spans": [
+        [
+          20,
+          28
+        ]
+      ],
+      "note": "过去分词；注意原文中的阴阳性与单复数配合。"
+    },
+    {
+      "lemma": "offrir",
+      "tense": "直陈式现在时",
+      "person": "je / il / elle / on",
+      "fr": "offre",
+      "sentence": "Est-il possible d’adapter l’offre à mes besoins ou à mes préférences ?",
+      "blank": "Est-il possible d’adapter l’____ à mes besoins ou à mes préférences ?",
+      "zh": "可以根据我的需求或者偏好进行调整吗？",
+      "sourceIndex": 3,
+      "documentId": "raw-326",
+      "topic": "消费餐饮与生活服务 · 大主题通用问题",
+      "part": 1,
+      "passageIndex": 1443,
+      "spans": [
+        [
+          28,
+          33
+        ]
+      ],
+      "note": ""
+    },
+    {
+      "lemma": "diplômer",
+      "tense": "直陈式现在时",
+      "person": "tu",
+      "fr": "diplômes",
+      "sentence": "Quels diplômes ou quelles certifications possédez-vous dans l’enseignement du français ?",
+      "blank": "Quels ____ ou quelles certifications possédez-vous dans l’enseignement du français ?",
+      "zh": "您在法语教学方面有哪些学历或者证书？",
+      "sourceIndex": 3,
+      "documentId": "c-233",
+      "topic": "教育与培训 · 课程与技能培训 · 咨询法语私教经验与收费",
+      "part": 1,
+      "passageIndex": 2225,
+      "spans": [
+        [
+          6,
+          14
+        ]
+      ],
+      "note": ""
+    },
+    {
+      "lemma": "élever",
+      "tense": "直陈式现在时",
+      "person": "je / il / elle / on",
+      "fr": "élève",
+      "sentence": "En quelque sorte, il joue le rôle d’un mentor : il peut encadrer et guider l’élève tout au long de son apprentissage. ",
+      "blank": "En quelque sorte, il joue le rôle d’un mentor : il peut encadrer et guider l’____ tout au long de son apprentissage. ",
+      "zh": "然而，必须承认互联网有局限。即使能找到海量信息，这些资源也不能总是替代教师的个性化指导。学生犯错时，教师可以纠正、解释错误原因，并针对其困难调整教学。某种程度上，教师扮演导师角色，在整个学习过程中给予指导，就像指南针一样帮助学生不在海量网络信息中迷路。",
+      "sourceIndex": 4,
+      "documentId": "3-03",
+      "topic": "教育与儿童 · 学科知识逻辑与教学方式",
+      "part": 3,
+      "passageIndex": 2811,
+      "spans": [
+        [
+          445,
+          450
+        ]
+      ],
+      "note": ""
+    },
+    {
+      "lemma": "importer",
+      "tense": "直陈式现在时",
+      "person": "je / il / elle / on",
+      "fr": "importe",
+      "sentence": "Tout d’abord, on peut télécharger un livre en quelques secondes et y accéder presque n’importe où et n’importe quand. ",
+      "blank": "Tout d’abord, on peut télécharger un livre en quelques secondes et y accéder presque n’____ où et n’importe quand. ",
+      "zh": "尽管如此，必须承认电子书在可获取性和便携性方面有真正优势。首先，人们几秒内就能下载一本书，几乎随时随地阅读。此外，一台设备便可存储数百本书，而不必实际搬运。例如，旅行时带一台电子阅读器比带好几本厚书方便得多。因此，数字媒介可以使阅读更容易获得，尤其适合经常移动的人。",
+      "sourceIndex": 4,
+      "documentId": "4-01",
+      "topic": "媒体与文化 · 实体媒介记忆与当下体验",
+      "part": 3,
+      "passageIndex": 2891,
+      "spans": [
+        [
+          230,
+          237
+        ]
+      ],
+      "note": ""
+    },
+    {
+      "lemma": "importer",
+      "tense": "直陈式现在时",
+      "person": "je / il / elle / on",
+      "fr": "importe",
+      "sentence": "Les nouvelles technologies offrent donc de nombreuses alternatives et permettent d’accéder aux contenus n’importe où et n’importe quand. ",
+      "blank": "Les nouvelles technologies offrent donc de nombreuses alternatives et permettent d’accéder aux contenus n’____ où et n’importe quand. ",
+      "zh": "尽管如此，必须承认电视如今已不再必不可少。随着互联网发展，手机和电脑能以更灵活的方式获取同类内容。例如，想学法语的人不一定要守着电视节目，可以随时随地用手机看法语视频或上网课。新技术提供了很多替代选择，使人任何时间、任何地点都能接触内容。",
+      "sourceIndex": 4,
+      "documentId": "4-07",
+      "topic": "媒体与文化 · 电视的教育休闲与儿童保护",
+      "part": 3,
+      "passageIndex": 2909,
+      "spans": [
+        [
+          597,
+          604
+        ]
+      ],
+      "note": ""
+    },
+    {
+      "lemma": "importer",
+      "tense": "直陈式现在时",
+      "person": "je / il / elle / on",
+      "fr": "importe",
+      "sentence": "Cette manière de s’informer est souvent plus rapide et plus flexible, puisqu’on peut accéder aux informations n’importe où et n’importe quand. ",
+      "blank": "Cette manière de s’informer est souvent plus rapide et plus flexible, puisqu’on peut accéder aux informations n’____ où et n’importe quand. ",
+      "zh": "此外，了解新闻已不必依靠电视。借助互联网，如今可以用手机、社交媒体或不同数字平台查看时事。这通常更快、更灵活，因为信息随时随地可得。例如，员工在地铁通勤时就能用手机浏览主要新闻，不必等晚间电视新闻。因此，新技术深刻改变了我们的获取信息方式。",
+      "sourceIndex": 4,
+      "documentId": "4-08",
+      "topic": "媒体与文化 · 新闻获取方式知识与公共参与",
+      "part": 2,
+      "passageIndex": 2911,
+      "spans": [
+        [
+          342,
+          349
+        ]
+      ],
+      "note": ""
+    },
+    {
+      "lemma": "importer",
+      "tense": "直陈式现在时",
+      "person": "je / il / elle / on",
+      "fr": "importe",
+      "sentence": "Grâce à mon téléphone portable, je peux consulter les principales actualités n’importe où et n’importe quand, sans avoir besoin d’attendre le journal télévisé ou une émission de radio. ",
+      "blank": "Grâce à mon téléphone portable, je peux consulter les principales actualités n’____ où et n’importe quand, sans avoir besoin d’attendre le journal télévisé ou une émission de radio. ",
+      "zh": "首先，我偏好社交媒体，因为它能让人快速、灵活地获取信息。借助手机，我可以随时随地看主要新闻，不必等待电视新闻或广播。例如，早晨坐公交时，我可以拿出手机，在社交平台查看世界发生了什么。即使日程繁忙，这种便利也让我保持知情。",
+      "sourceIndex": 4,
+      "documentId": "4-11",
+      "topic": "媒体与文化 · 新闻获取方式知识与公共参与",
+      "part": 1,
+      "passageIndex": 2915,
+      "spans": [
+        [
+          193,
+          200
+        ]
+      ],
+      "note": ""
+    },
+    {
+      "lemma": "importer",
+      "tense": "直陈式现在时",
+      "person": "je / il / elle / on",
+      "fr": "importe",
+      "sentence": "Grâce à mon téléphone portable, je peux consulter les principales actualités n’importe où et n’importe quand, sans avoir besoin d’attendre le journal télévisé ou une émission de radio. ",
+      "blank": "Grâce à mon téléphone portable, je peux consulter les principales actualités n’importe où et n’____ quand, sans avoir besoin d’attendre le journal télévisé ou une émission de radio. ",
+      "zh": "首先，我偏好社交媒体，因为它能让人快速、灵活地获取信息。借助手机，我可以随时随地看主要新闻，不必等待电视新闻或广播。例如，早晨坐公交时，我可以拿出手机，在社交平台查看世界发生了什么。即使日程繁忙，这种便利也让我保持知情。",
+      "sourceIndex": 4,
+      "documentId": "4-11",
+      "topic": "媒体与文化 · 新闻获取方式知识与公共参与",
+      "part": 1,
+      "passageIndex": 2915,
+      "spans": [
+        [
+          209,
+          216
+        ]
+      ],
+      "note": ""
+    },
+    {
+      "lemma": "importer",
+      "tense": "直陈式现在时",
+      "person": "il / elle / on",
+      "fr": "importe",
+      "sentence": "Tout d’abord, on peut télécharger un livre en quelques secondes et y accéder presque n’importe où et n’importe quand. ",
+      "blank": "Tout d’abord, on peut télécharger un livre en quelques secondes et y accéder presque n’importe où et n’____ quand. ",
+      "zh": "尽管如此，必须承认电子书在可获取性和便携性方面有真正优势。首先，人们几秒内就能下载一本书，几乎随时随地阅读。此外，一台设备便可存储数百本书，而不必实际搬运。例如，旅行时带一台电子阅读器比带好几本厚书方便得多。因此，数字媒介可以使阅读更容易获得，尤其适合经常移动的人。",
+      "sourceIndex": 4,
+      "documentId": "4-01",
+      "topic": "媒体与文化 · 实体媒介记忆与当下体验",
+      "part": 3,
+      "passageIndex": 2891,
+      "spans": [
+        [
+          246,
+          253
+        ]
+      ],
+      "note": "原文主语：n’"
+    },
+    {
+      "lemma": "importer",
+      "tense": "直陈式现在时",
+      "person": "il / elle / on",
+      "fr": "importe",
+      "sentence": "Les nouvelles technologies offrent donc de nombreuses alternatives et permettent d’accéder aux contenus n’importe où et n’importe quand. ",
+      "blank": "Les nouvelles technologies offrent donc de nombreuses alternatives et permettent d’accéder aux contenus n’importe où et n’____ quand. ",
+      "zh": "尽管如此，必须承认电视如今已不再必不可少。随着互联网发展，手机和电脑能以更灵活的方式获取同类内容。例如，想学法语的人不一定要守着电视节目，可以随时随地用手机看法语视频或上网课。新技术提供了很多替代选择，使人任何时间、任何地点都能接触内容。",
+      "sourceIndex": 4,
+      "documentId": "4-07",
+      "topic": "媒体与文化 · 电视的教育休闲与儿童保护",
+      "part": 3,
+      "passageIndex": 2909,
+      "spans": [
+        [
+          613,
+          620
+        ]
+      ],
+      "note": "原文主语：n’"
+    },
+    {
+      "lemma": "importer",
+      "tense": "直陈式现在时",
+      "person": "il / elle / on",
+      "fr": "importe",
+      "sentence": "Cette manière de s’informer est souvent plus rapide et plus flexible, puisqu’on peut accéder aux informations n’importe où et n’importe quand. ",
+      "blank": "Cette manière de s’informer est souvent plus rapide et plus flexible, puisqu’on peut accéder aux informations n’importe où et n’____ quand. ",
+      "zh": "此外，了解新闻已不必依靠电视。借助互联网，如今可以用手机、社交媒体或不同数字平台查看时事。这通常更快、更灵活，因为信息随时随地可得。例如，员工在地铁通勤时就能用手机浏览主要新闻，不必等晚间电视新闻。因此，新技术深刻改变了我们的获取信息方式。",
+      "sourceIndex": 4,
+      "documentId": "4-08",
+      "topic": "媒体与文化 · 新闻获取方式知识与公共参与",
+      "part": 2,
+      "passageIndex": 2911,
+      "spans": [
+        [
+          358,
+          365
+        ]
+      ],
+      "note": "原文主语：n’"
+    },
+    {
+      "lemma": "importer",
+      "tense": "直陈式现在时",
+      "person": "il / elle / on",
+      "fr": "importe",
+      "sentence": "N’importe qui peut publier du contenu en ligne, ce qui favorise parfois la diffusion d’informations trompeuses, exagérées ou même complètement fausses. ",
+      "blank": "N’____ qui peut publier du contenu en ligne, ce qui favorise parfois la diffusion d’informations trompeuses, exagérées ou même complètement fausses. ",
+      "zh": "尽管如此，必须承认网上信息不一定可靠。任何人都可以发布内容，有时助长误导、夸张甚至完全虚假的信息传播。例如，社交媒体上的一条消息可能在来源未核实时被转发数千次。因此，在相信或分享信息前，核实来源并培养批判性思维至关重要。",
+      "sourceIndex": 4,
+      "documentId": "4-09",
+      "topic": "媒体与文化 · 内容可靠性健康建议与核实来源",
+      "part": 3,
+      "passageIndex": 2917,
+      "spans": [
+        [
+          122,
+          129
+        ]
+      ],
+      "note": "依据原句从句主语与语气核对"
+    },
+    {
+      "lemma": "importer",
+      "tense": "直陈式现在时",
+      "person": "il / elle / on",
+      "fr": "importe",
+      "sentence": "N’importe qui peut publier ou partager du contenu sans nécessairement vérifier sa source. ",
+      "blank": "N’____ qui peut publier ou partager du contenu sans nécessairement vérifier sa source. ",
+      "zh": "尽管如此，必须承认社交媒体上的信息不总是可靠。任何人都能发布或分享内容，未必会核实来源，因此虚假或误导消息可能迅速传播。例如，社交媒体出现重大新闻时，我更愿意先查其他媒体或公认可靠的来源，再相信或转发。因此，交叉核对来源并培养批判性思维非常重要。",
+      "sourceIndex": 4,
+      "documentId": "4-11",
+      "topic": "媒体与文化 · 内容可靠性健康建议与核实来源",
+      "part": 3,
+      "passageIndex": 2921,
+      "spans": [
+        [
+          123,
+          130
+        ]
+      ],
+      "note": "依据原句从句主语与语气核对"
     }
   ]
 }
