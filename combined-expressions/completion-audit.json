@@ -1,0 +1,512 @@
+{
+  "reviewed": 1042,
+  "completed": 29,
+  "unchanged": 1013,
+  "policy": "逐条核查法语与中文，结合原例句；补全未写明的补语，完整表达和可独立使用的表达保留。数量、顺序、来源与记录 ID 不变。",
+  "references": [
+    "https://www.larousse.fr/dictionnaires/francais/éprouver/30614",
+    "https://www.larousse.fr/dictionnaires/francais/contribuer/18921",
+    "https://www.larousse.fr/dictionnaires/francais/preuve/63855"
+  ],
+  "entries": [
+    {
+      "id": "0-112",
+      "before": "faire cuire à feu doux",
+      "after": "faire cuire quelque chose à feu doux",
+      "explanation": "用小火烹煮某物；quelque chose 是被烹煮的食物，à feu doux 表示烹调方式。",
+      "sources": [
+        0
+      ],
+      "sourceRows": [
+        {
+          "sourceIndex": 0,
+          "row": 113,
+          "fr": "faire cuire à feu doux",
+          "example": "Bats les œufs avec la crème, puis fais-les cuire lentement à feu doux en remuant afin d’obtenir une texture onctueuse."
+        }
+      ]
+    },
+    {
+      "id": "0-754",
+      "before": "être satisfait de",
+      "after": "être satisfait de quelque chose",
+      "explanation": "de 后接满意的对象，本条原例句使用名词。",
+      "sources": [
+        3
+      ],
+      "sourceRows": [
+        {
+          "sourceIndex": 3,
+          "row": 53,
+          "fr": "être satisfait de",
+          "example": "Est-ce que les anciens élèves sont généralement satisfaits de la formation ?\n以前的学生通常对这门课程满意吗？"
+        },
+        {
+          "sourceIndex": 3,
+          "row": 78,
+          "fr": "être satisfait de",
+          "example": "Est-ce que les parents sont généralement satisfaits de ces activités ?\n家长们通常对这些活动满意吗？"
+        }
+      ]
+    },
+    {
+      "id": "0-826",
+      "before": "éprouver des difficultés à",
+      "after": "éprouver des difficultés à faire quelque chose",
+      "explanation": "à 后接动词不定式，表示做某事有困难。",
+      "sources": [
+        4
+      ],
+      "sourceRows": [
+        {
+          "sourceIndex": 4,
+          "row": 37,
+          "fr": "éprouver des difficultés à",
+          "example": "Lorsqu’une personne ne maîtrise pas suffisamment la langue du pays d’accueil, elle peut éprouver des difficultés à accomplir certaines démarches administratives, à communiquer dans son environnement professionnel ou simplement à interagir avec les habitants."
+        }
+      ]
+    },
+    {
+      "id": "0-919",
+      "before": "attirer l'attention du public sur",
+      "after": "attirer l'attention du public sur quelque chose",
+      "explanation": "sur 后接公众关注的事情或议题。",
+      "sources": [
+        4
+      ],
+      "sourceRows": [
+        {
+          "sourceIndex": 4,
+          "row": 140,
+          "fr": "attirer l'attention du public sur",
+          "example": "Tout d’abord, grâce à leur notoriété, les célébrités peuvent attirer l’attention du public sur certaines questions politiques ou sociales."
+        }
+      ]
+    },
+    {
+      "id": "0-1014",
+      "before": "jouer un rôle essentiel dans",
+      "after": "jouer un rôle essentiel dans quelque chose",
+      "explanation": "dans 后接发挥作用的领域或过程。",
+      "sources": [
+        4
+      ],
+      "sourceRows": [
+        {
+          "sourceIndex": 4,
+          "row": 239,
+          "fr": "jouer un rôle essentiel dans",
+          "example": "De plus, les autorités peuvent jouer un rôle essentiel dans l’insertion professionnelle des immigrants."
+        }
+      ]
+    },
+    {
+      "id": "0-1015",
+      "before": "constituer un obstacle majeur à",
+      "after": "constituer un obstacle majeur à quelque chose",
+      "explanation": "à 后接受到阻碍的事情或过程。",
+      "sources": [
+        4
+      ],
+      "sourceRows": [
+        {
+          "sourceIndex": 4,
+          "row": 240,
+          "fr": "constituer un obstacle majeur à",
+          "example": "Tout d’abord, le sentiment d’isolement peut constituer un obstacle majeur à l’adaptation."
+        }
+      ]
+    },
+    {
+      "id": "0-1016",
+      "before": "constituer un véritable atout pour",
+      "after": "constituer un véritable atout pour quelqu’un / quelque chose",
+      "explanation": "pour 后接受益的人、群体或事物。",
+      "sources": [
+        4
+      ],
+      "sourceRows": [
+        {
+          "sourceIndex": 4,
+          "row": 241,
+          "fr": "constituer un véritable atout pour",
+          "example": "Pour conclure, il me semble que l’immigration peut constituer un véritable atout pour le pays d’accueil, puisqu’elle favorise la diversité culturelle et permet de répondre à certains besoins économiques."
+        }
+      ]
+    },
+    {
+      "id": "0-1018",
+      "before": "avoir des conséquences négatives sur",
+      "after": "avoir des conséquences négatives sur quelqu’un / quelque chose",
+      "explanation": "sur 后接受到影响的人或事物。",
+      "sources": [
+        4
+      ],
+      "sourceRows": [
+        {
+          "sourceIndex": 4,
+          "row": 243,
+          "fr": "avoir des conséquences négatives sur",
+          "example": "À mes yeux, je dirais qu’un développement touristique excessif peut effectivement avoir des conséquences négatives sur certaines régions, notamment sur l’environnement et le coût de la vie."
+        }
+      ]
+    },
+    {
+      "id": "0-1019",
+      "before": "apporter une contribution importante à",
+      "after": "apporter une contribution importante à quelque chose",
+      "explanation": "à 后接贡献所涉及的事业、领域或对象。",
+      "sources": [
+        4
+      ],
+      "sourceRows": [
+        {
+          "sourceIndex": 4,
+          "row": 244,
+          "fr": "apporter une contribution importante à",
+          "example": "Tout d’abord, certains métiers particulièrement difficiles exigent des compétences très spécialisées et peuvent apporter une contribution importante à la société."
+        }
+      ]
+    },
+    {
+      "id": "0-1022",
+      "before": "trouver un équilibre entre",
+      "after": "trouver un équilibre entre une chose et une autre",
+      "explanation": "entre 后列出平衡的两个方面，使用 entre A et B。",
+      "sources": [
+        4
+      ],
+      "sourceRows": [
+        {
+          "sourceIndex": 4,
+          "row": 247,
+          "fr": "trouver un équilibre entre",
+          "example": "L’essentiel est donc de trouver un équilibre entre l’adaptation à la culture du pays d’accueil et la préservation de sa propre identité culturelle."
+        }
+      ]
+    },
+    {
+      "id": "0-1023",
+      "before": "remettre en question",
+      "after": "remettre en question quelque chose",
+      "explanation": "直接接被质疑或重新审视的对象，不额外加介词。",
+      "sources": [
+        4
+      ],
+      "sourceRows": [
+        {
+          "sourceIndex": 4,
+          "row": 248,
+          "fr": "remettre en question",
+          "example": "En effet, ils sont généralement plus disposés à découvrir de nouvelles cultures, à accepter de nouvelles habitudes et à remettre en question leurs propres repères."
+        }
+      ]
+    },
+    {
+      "id": "0-1024",
+      "before": "avoir du mal à",
+      "after": "avoir du mal à faire quelque chose",
+      "explanation": "à 后接动词不定式，表示做某事有困难。",
+      "sources": [
+        4
+      ],
+      "sourceRows": [
+        {
+          "sourceIndex": 4,
+          "row": 249,
+          "fr": "avoir du mal à",
+          "example": "Au début, elle peut avoir du mal à créer de nouvelles relations et à reconstruire un cercle social."
+        }
+      ]
+    },
+    {
+      "id": "0-1025",
+      "before": "faire face à",
+      "after": "faire face à quelque chose",
+      "explanation": "à 后接需要面对或应对的事情、处境。",
+      "sources": [
+        4
+      ],
+      "sourceRows": [
+        {
+          "sourceIndex": 4,
+          "row": 250,
+          "fr": "faire face à",
+          "example": "En effet, avoir étudié ou travaillé dans un autre pays montre souvent qu’une personne a été capable de s’adapter à un nouvel environnement, de faire face à des situations inconnues et de sortir de sa zone de confort."
+        }
+      ]
+    },
+    {
+      "id": "0-1026",
+      "before": "profiter de",
+      "after": "profiter de quelque chose",
+      "explanation": "本条为 de 后接名词的享受／利用结构；利用某事去做某事可说 profiter de quelque chose pour faire quelque chose。",
+      "sources": [
+        4
+      ],
+      "sourceRows": [
+        {
+          "sourceIndex": 4,
+          "row": 251,
+          "fr": "profiter de",
+          "example": "Cette flexibilité lui permet donc de personnaliser davantage son voyage et de profiter de son séjour selon ses propres priorités."
+        }
+      ]
+    },
+    {
+      "id": "0-1027",
+      "before": "bénéficier de",
+      "after": "bénéficier de quelque chose",
+      "explanation": "de 后接获得的利益、支持、服务等名词。",
+      "sources": [
+        4
+      ],
+      "sourceRows": [
+        {
+          "sourceIndex": 4,
+          "row": 252,
+          "fr": "bénéficier de",
+          "example": "Les nouveaux arrivants peuvent, par exemple, rejoindre des associations locales, participer à des activités de quartier ou bénéficier de programmes d’accompagnement."
+        }
+      ]
+    },
+    {
+      "id": "0-1028",
+      "before": "contribuer à",
+      "after": "contribuer à quelque chose / contribuer à faire quelque chose",
+      "explanation": "à 后可以接名词，也可以接动词不定式；原例句是 contribuer à répondre。",
+      "sources": [
+        4
+      ],
+      "sourceRows": [
+        {
+          "sourceIndex": 4,
+          "row": 253,
+          "fr": "contribuer à",
+          "example": "De plus, l’immigration peut contribuer à répondre à certains besoins sur le marché du travail."
+        }
+      ]
+    },
+    {
+      "id": "0-1029",
+      "before": "nuire à",
+      "after": "nuire à quelqu’un / quelque chose",
+      "explanation": "à 后接受到损害的人或事物。",
+      "sources": [
+        4
+      ],
+      "sourceRows": [
+        {
+          "sourceIndex": 4,
+          "row": 254,
+          "fr": "nuire à",
+          "example": "À long terme, cette situation peut devenir une véritable source de stress et nuire à l’équilibre entre la vie professionnelle et la vie personnelle."
+        }
+      ]
+    },
+    {
+      "id": "0-1030",
+      "before": "faciliter l'accès à",
+      "after": "faciliter l'accès à quelque chose",
+      "explanation": "à 后接更容易获得或进入的资源、服务、领域等。",
+      "sources": [
+        4
+      ],
+      "sourceRows": [
+        {
+          "sourceIndex": 4,
+          "row": 255,
+          "fr": "faciliter l'accès à",
+          "example": "La maîtrise de la langue peut donc faciliter l’accès à l’emploi et favoriser une insertion durable sur le marché du travail."
+        }
+      ]
+    },
+    {
+      "id": "0-1031",
+      "before": "accorder de l'importance à",
+      "after": "accorder de l'importance à quelqu’un / quelque chose",
+      "explanation": "à 后接被重视的人或事物。",
+      "sources": [
+        4
+      ],
+      "sourceRows": [
+        {
+          "sourceIndex": 4,
+          "row": 256,
+          "fr": "accorder de l'importance à",
+          "example": "Toutefois, la situation évolue progressivement, car de plus en plus de personnes commencent à accorder de l’importance à leur santé et à la qualité de ce qu’elles mangent."
+        }
+      ]
+    },
+    {
+      "id": "0-1032",
+      "before": "faire preuve de",
+      "after": "faire preuve de quelque chose",
+      "explanation": "de 后接品质或态度，如 persévérance、prudence；不是任意具体物品。",
+      "sources": [
+        4
+      ],
+      "sourceRows": [
+        {
+          "sourceIndex": 4,
+          "row": 257,
+          "fr": "faire preuve de",
+          "example": "Ils doivent s’entraîner intensivement, faire preuve de persévérance et apprendre à surmonter les difficultés."
+        }
+      ]
+    },
+    {
+      "id": "0-1033",
+      "before": "avoir tendance à",
+      "after": "avoir tendance à faire quelque chose",
+      "explanation": "à 后接动词不定式，表示倾向于做某事。",
+      "sources": [
+        4
+      ],
+      "sourceRows": [
+        {
+          "sourceIndex": 4,
+          "row": 258,
+          "fr": "avoir tendance à",
+          "example": "Par exemple, lorsqu’un élève obtient de mauvais résultats ou rencontre des problèmes de comportement à l’école, certains parents peuvent avoir tendance à en tenir l’enseignant responsable."
+        }
+      ]
+    },
+    {
+      "id": "0-1034",
+      "before": "être exposé à",
+      "after": "être exposé à quelque chose",
+      "explanation": "à 后接接触到的内容、环境或风险。",
+      "sources": [
+        4
+      ],
+      "sourceRows": [
+        {
+          "sourceIndex": 4,
+          "row": 259,
+          "fr": "être exposé à",
+          "example": "Sur Internet, ils peuvent être exposés à des contenus inappropriés ou violents, mais aussi à de fausses informations."
+        }
+      ]
+    },
+    {
+      "id": "0-1035",
+      "before": "être confronté à",
+      "after": "être confronté à quelque chose",
+      "explanation": "à 后接面对的问题、困难或情况。",
+      "sources": [
+        4
+      ],
+      "sourceRows": [
+        {
+          "sourceIndex": 4,
+          "row": 260,
+          "fr": "être confronté à",
+          "example": "Lorsque nous travaillons avec des collègues locaux, participons à des activités ou rejoignons une association, nous sommes régulièrement confrontés à d’autres normes sociales, à d’autres habitudes et à d’autres façons de voir les choses."
+        }
+      ]
+    },
+    {
+      "id": "0-1036",
+      "before": "devenir une source de",
+      "after": "devenir une source de quelque chose",
+      "explanation": "de 后接产生的影响、感受或资源等名词。",
+      "sources": [
+        4
+      ],
+      "sourceRows": [
+        {
+          "sourceIndex": 4,
+          "row": 261,
+          "fr": "devenir une source de",
+          "example": "Ces contraintes peuvent, elles aussi, devenir une source de stress au quotidien."
+        }
+      ]
+    },
+    {
+      "id": "0-1037",
+      "before": "constituer une source de",
+      "after": "constituer une source de quelque chose",
+      "explanation": "de 后接产生的影响、感受或资源等名词。",
+      "sources": [
+        4
+      ],
+      "sourceRows": [
+        {
+          "sourceIndex": 4,
+          "row": 262,
+          "fr": "constituer une source de",
+          "example": "De plus, les différences culturelles peuvent parfois constituer une source de malentendus."
+        }
+      ]
+    },
+    {
+      "id": "0-1038",
+      "before": "devenir une véritable source de",
+      "after": "devenir une véritable source de quelque chose",
+      "explanation": "de 后接产生的影响、感受或资源等名词。",
+      "sources": [
+        4
+      ],
+      "sourceRows": [
+        {
+          "sourceIndex": 4,
+          "row": 263,
+          "fr": "devenir une véritable source de",
+          "example": "À l’inverse, des conflits permanents ou une mauvaise communication peuvent devenir une véritable source de stress."
+        }
+      ]
+    },
+    {
+      "id": "0-1039",
+      "before": "avoir des effets négatifs sur",
+      "after": "avoir des effets négatifs sur quelqu’un / quelque chose",
+      "explanation": "sur 后接受到负面影响的人或事物。",
+      "sources": [
+        4
+      ],
+      "sourceRows": [
+        {
+          "sourceIndex": 4,
+          "row": 264,
+          "fr": "avoir des effets négatifs sur",
+          "example": "Le manque d’activité physique peut également avoir des effets négatifs sur leur santé."
+        }
+      ]
+    },
+    {
+      "id": "0-1040",
+      "before": "jouer un rôle important dans",
+      "after": "jouer un rôle important dans quelque chose",
+      "explanation": "dans 后接发挥作用的领域或过程。",
+      "sources": [
+        4
+      ],
+      "sourceRows": [
+        {
+          "sourceIndex": 4,
+          "row": 265,
+          "fr": "jouer un rôle important dans",
+          "example": "Cela montre que l’intérêt que l’on porte à son métier peut jouer un rôle important dans le développement d’une carrière."
+        }
+      ]
+    },
+    {
+      "id": "0-1042",
+      "before": "permettre à quelqu’un de mieux comprendre",
+      "after": "permettre à quelqu’un de mieux comprendre quelque chose",
+      "explanation": "à quelqu’un 表示受益者；de 后接不定式 mieux comprendre，后面直接接理解的内容。",
+      "sources": [
+        4
+      ],
+      "sourceRows": [
+        {
+          "sourceIndex": 4,
+          "row": 267,
+          "fr": "permettre à quelqu’un de mieux comprendre",
+          "example": "Par exemple, le fait d’échanger régulièrement avec des personnes issues de milieux culturels différents peut lui permettre de mieux comprendre leurs habitudes et leurs valeurs."
+        }
+      ]
+    }
+  ]
+}
