@@ -54,6 +54,7 @@ async function load(text){
   return {data,offset:item.offset};
  }));
 }
+window.TCF_PIPER_AUDIO={load,stop:close};
 async function play(request=version){
  try{await audio.play();}
  catch{if(request===version&&!panel.hidden)status.textContent='音频已就绪，请点击播放器的播放按钮试听。';}
@@ -95,3 +96,4 @@ for(const selector of ['#prompt','#promptText','#promptZh','#position','#topicCo
 document.querySelectorAll('[data-module],[data-view]').forEach(e=>e.addEventListener('click',close));
 window.addEventListener('pagehide',close);
 })();
+
