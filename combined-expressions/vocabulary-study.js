@@ -28,7 +28,7 @@
   $('studyCaption').textContent='当前筛选 '+filtered().length+' 个词条；本批 '+rows.length+' 个。';
   for(const [i,x] of rows.entries()){
    const tr=document.createElement('tr'),zh=document.createElement('td'),fr=document.createElement('td'),text=document.createElement('span'),level=document.createElement('small'),play=document.createElement('button');
-   zh.textContent=(i+1)+'. '+topicMeaning(x);level.textContent='参考等级 '+x.niveau;zh.append(level);text.textContent=x.fr;text.lang='fr';text.style.cssText='font-size:1.15rem;margin-right:12px';play.type='button';play.textContent='🔊 发音';play.setAttribute('aria-label','朗读 '+x.fr);play.onclick=()=>pronounce(x);fr.append(text,play);tr.append(zh,fr);$('studyRows').append(tr);
+   zh.textContent=(i+1)+'. '+topicMeaning(x);level.textContent='参考等级 '+x.niveau;zh.append(level);const noun=window.TCF_STUDY_NOUNS?.hint(x);if(noun){const tag=document.createElement('small');tag.textContent=noun.label;tag.style.cssText='font-weight:600;color:'+(noun.gender==='f'?'#92265a':noun.gender==='m'?'#17497a':'#455468');if(noun.note)tag.title=noun.note;zh.append(tag);}text.textContent=x.fr;text.lang='fr';text.style.cssText='font-size:1.15rem;margin-right:12px';play.type='button';play.textContent='🔊 发音';play.setAttribute('aria-label','朗读 '+x.fr);play.onclick=()=>pronounce(x);fr.append(text,play);tr.append(zh,fr);$('studyRows').append(tr);
   }
   $('studyNext').disabled=!rows.length;
  }
