@@ -122,8 +122,8 @@
     "t3": 507
   },
   "sentences": 4008,
-  "usedSentences": 2833,
-  "total": 317,
+  "usedSentences": 2866,
+  "total": 420,
   "categories": [
     {
       "category": "Élision 省音",
@@ -142,8 +142,8 @@
       "count": 27
     },
     {
-      "category": "介词冠词及小词组合",
-      "count": 59
+      "category": "小词语法自动化训练",
+      "count": 162
     },
     {
       "category": "多音节长词专项",
@@ -151,11 +151,11 @@
     }
   ],
   "sourceCounts": {
-    "t2": 172,
-    "t3": 289
+    "t2": 209,
+    "t3": 358
   },
-  "uniqueIds": 317,
-  "uniqueCategoryFocus": 317,
+  "uniqueIds": 420,
+  "uniqueCategoryFocus": 420,
   "excluded": [
     "Groupes rythmiques",
     "Intonation",
@@ -165,5 +165,126 @@
     "obligatory": "https://vitrinelinguistique.oqlf.gouv.qc.ca/23549/la-prononciation/liaisons/contextes-de-liaisons-obligatoires",
     "optional": "https://vitrinelinguistique.oqlf.gouv.qc.ca/23550/la-prononciation/liaisons/contextes-de-liaisons-facultatives",
     "forbidden": "https://vitrinelinguistique.oqlf.gouv.qc.ca/23552/la-prononciation/liaisons/contextes-de-liaisons-interdites"
+  },
+  "smallwords": {
+    "goal": "把我已经懂的语法小词结构练成口语条件反射。",
+    "retainedIds": [
+      "flow-20293864bd15b3cf",
+      "flow-4572b701039edbbf",
+      "flow-90089b7cbefdc4ee",
+      "flow-dfce8e34be6ec20e",
+      "flow-5352833ca565ffad",
+      "flow-32fd5d6de2a12c8f",
+      "flow-78dc52dd5ccc35c8",
+      "flow-21981fb3183327d4",
+      "flow-db31a100d396d50a",
+      "flow-299545b468177f16",
+      "flow-ce756569a5886cae",
+      "flow-ab523c912c1ff70f",
+      "flow-a8c0f4cf0517d486",
+      "flow-78adbcfaa6cb8717",
+      "flow-30490cb05d767f70",
+      "flow-22fd506d4238fedd",
+      "flow-6315cc97eebb7e74",
+      "flow-4beb7ba23eced17b",
+      "flow-a9166d3b0cbba7cd",
+      "flow-3f5c261f58364271",
+      "flow-316ca74afb6e0e02",
+      "flow-ea1e6780e991ab5a",
+      "flow-8ccfa09a7277bc8f",
+      "flow-879c292dc04b4527",
+      "flow-84e560215e62b0e6",
+      "flow-75c3e8cd58e53eaf",
+      "flow-d7213bf84063f455",
+      "flow-b0fb632dcd930932",
+      "flow-a0bd3a90a51a2b24",
+      "flow-47238cd54dbc3eff",
+      "flow-1ea6163fd30b8a68",
+      "flow-604bb705a47064d2",
+      "flow-40eb42b51ada80e0",
+      "flow-bda66e8b37240cfe",
+      "flow-f312936996fa2854",
+      "flow-6a8eb9eea5be0dc6",
+      "flow-920e1edfef58f944",
+      "flow-f26362800c3d0aa6",
+      "flow-62d3e49307833688",
+      "flow-d918d97d669a6a5c",
+      "flow-584e5b6e70d687ad",
+      "flow-4e869cd13ad32f76",
+      "flow-c3ab336f34842eb6",
+      "flow-5d23612ea14e0d55",
+      "flow-87e99e724c4d9b11",
+      "flow-3d736dd6428fab33",
+      "flow-285768a3b5abc220",
+      "flow-e827d16a3098ea8b",
+      "flow-9a0d6ef490b087c0",
+      "flow-d22cdcd751b412d4",
+      "flow-cf89caa2fde6779d",
+      "flow-3426c307c6a491e0",
+      "flow-27a32736703c92d5",
+      "flow-c15bb523a87ba395",
+      "flow-b23e9dfa8c368fe9",
+      "flow-eb315ff2131ce83f",
+      "flow-78e86e45080aa170",
+      "flow-73fb3c7e3336d623",
+      "flow-14ed6eb1c9cbd1c1"
+    ],
+    "groups": [
+      {
+        "group": "A",
+        "type": "A. 并列结构中的介词重复",
+        "count": 12
+      },
+      {
+        "group": "B",
+        "type": "B. 固定连接结构",
+        "count": 16
+      },
+      {
+        "group": "C",
+        "type": "C. 动词固定搭配",
+        "count": 24
+      },
+      {
+        "group": "D",
+        "type": "D. 原因、结果与目的",
+        "count": 8
+      },
+      {
+        "group": "E",
+        "type": "E. 数量表达后的 de",
+        "count": 14
+      },
+      {
+        "group": "F",
+        "type": "F. en / y 代词语块",
+        "count": 8
+      },
+      {
+        "group": "G",
+        "type": "G. 否定与不定式",
+        "count": 9
+      },
+      {
+        "group": "H",
+        "type": "H. 冠词缩合与复合介词",
+        "count": 71
+      }
+    ],
+    "notFound": [
+      "pour apprendre"
+    ],
+    "notInvented": [
+      "faute de",
+      "aboutir à",
+      "conduire à",
+      "la majorité des",
+      "une minorité de",
+      "en avoir besoin",
+      "s’y habituer",
+      "s’y adapter",
+      "plutôt que d’ + infinitif"
+    ],
+    "prepositionRule": "https://vitrinelinguistique.oqlf.gouv.qc.ca/21101/la-syntaxe/les-prepositions/preposition-devant-un-nom/repetition-des-prepositions-obligatoire-facultative-ou-omise"
   }
 }

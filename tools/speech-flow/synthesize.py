@@ -27,7 +27,7 @@ def main():
  def flush():
   nonlocal pack,size,number
   if not pack:return
-  name=f'pack-{number:02}.json';(root/name).write_text(json.dumps(pack,ensure_ascii=False,separators=(',',':')))
+  name=f'{sys.argv[2] if len(sys.argv)>2 else "pack"}-{number:02}.json';(root/name).write_text(json.dumps(pack,ensure_ascii=False,separators=(',',':')))
   for id,r in pack.items():manifest['entries'][r['text']]={'pack':name,'id':id}
   number+=1;pack={};size=0
  for x in tasks:
