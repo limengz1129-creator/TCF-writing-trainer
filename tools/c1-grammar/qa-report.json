@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "checks": [
+    "Home: 8 categories and mixed challenge",
+    "All 8 categories: counts, 2-column overview, learn/practice/review switching",
+    "Canonical shared ID: notes, mastery and edits across 2 categories; save/cancel; reload persistence",
+    "Generated exercise validation: all 7 types; each cloze has an actual blank",
+    "Wrong/correct answers, ranked review, 3-second oral timer and hesitation self-rating",
+    "Mixed challenge hides category before reveal",
+    "Native export/import retains C1 data; all 11 original module routes remain usable",
+    "Source-only star filters; desktop and 390px mobile overview/dialog have no overflow"
+  ],
+  "exerciseCounts": {
+    "zh-fr": 365,
+    "fr-zh": 365,
+    "oral": 576,
+    "cloze": 266,
+    "select": 263,
+    "transform": 22,
+    "correct": 6
+  },
+  "browser": "Google Chrome",
+  "pageErrors": []
+}
