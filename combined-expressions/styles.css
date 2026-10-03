@@ -5,3 +5,11 @@
 
 
 .answer-difference{margin-top:16px;padding-top:14px;border-top:1px solid #e2bcc0;white-space:normal;color:var(--ink)}.diff-legend{font-size:13px;color:#635766;margin:0 0 12px}.diff-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.diff-grid strong{font-size:13px}.diff-line{margin-top:6px;padding:14px;border-radius:9px;background:white;border:1px solid var(--line);font-size:21px;line-height:1.8;white-space:pre-wrap;overflow-wrap:anywhere;min-height:68px}.diff-line mark{color:inherit;border-radius:3px;padding:1px 0;box-decoration-break:clone;-webkit-box-decoration-break:clone}.diff-line .diff-wrong{background:#ffc8ce;color:#8c182b;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}.diff-line .diff-required{background:#c6efd3;color:#175531;border-bottom:2px solid #28834c}.answer-difference .note{margin:12px 0 0}@media(max-width:650px){.diff-grid{grid-template-columns:1fr}.diff-line{font-size:19px}}
+
+/* Scroll the entire sidebar, including lower filters and progress controls. */
+.layout>aside{max-height:calc(100vh - 30px);max-height:calc(100dvh - 30px);overflow-y:scroll;overflow-x:hidden;scrollbar-gutter:stable;overscroll-behavior-y:contain;scrollbar-width:auto;scrollbar-color:#9ca5e6 #f1f3fb;min-width:0}
+.layout>aside .list{max-height:none;overflow:visible}
+.layout>aside::-webkit-scrollbar{width:10px}
+.layout>aside::-webkit-scrollbar-track{background:#f1f3fb;border-radius:8px}
+.layout>aside::-webkit-scrollbar-thumb{background:#9ca5e6;border:2px solid #f1f3fb;border-radius:8px}
+@media(max-width:800px){.layout>aside{max-height:70vh;max-height:70dvh}}
