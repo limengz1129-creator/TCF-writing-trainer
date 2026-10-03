@@ -29,7 +29,7 @@ function render(text,timing){
 }
 async function readJson(url){const response=await fetch(url);if(!response.ok)throw Error('音频文件加载失败');return response.json();}
 async function load(text){
- if(!manifestPromise)manifestPromise=readJson(new URL('manifest.json?v=siwis-subject-1',root)).catch(e=>{manifestPromise=null;throw e;});
+ if(!manifestPromise)manifestPromise=readJson(new URL('manifest.json?v=t2-inversion-1',root)).catch(e=>{manifestPromise=null;throw e;});
  const manifest=await manifestPromise;
  let link=manifest.entries[text];
  if(!link){
