@@ -44,7 +44,7 @@
  }
  const oldShow=show;show=function(x){oldShow(x);sync();};
  const oldSet=setModule;setModule=function(m,fresh=false){if(m===5&&fresh)s.enabled=false;stop();oldSet(m,fresh);sync();};
- for(const id of ['batchSingle','batchReturn','batchEnable']){const old=$(id).onclick;$(id).onclick=()=>{s.enabled=false;stop();old();sync(false);persist();};}
+ for(const id of ['batchSingle','batchReturn','batchEnable']){const old=$(id).onclick;$(id).onclick=()=>{s.enabled=false;stop();if(mode===5)$('batchSize').value=state.vocabularyBatch.size;old();sync(false);persist();};}
  const oldStart=$('batchStart').onclick;$('batchStart').onclick=()=>active()?start(true):oldStart();
  document.querySelectorAll('[data-batch-size]').forEach(b=>{const old=b.onclick;b.onclick=()=>{if(active()){$('batchSize').value=b.dataset.batchSize;start(true);}else old();};});
  button.onclick=()=>{s.enabled=true;state.vocabularyBatch.enabled=false;$('batchSize').value=s.size;sync();persist();};
