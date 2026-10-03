@@ -1,0 +1,169 @@
+{
+  "primaryUrls": [
+    "https://limengz1129-creator.github.io/TCF-writing-trainer/tache2/",
+    "https://limengz1129-creator.github.io/TCF-writing-trainer/eo-tache3-corpus/"
+  ],
+  "inputFiles": [
+    {
+      "path": "tache2/data1.js",
+      "sha256": "c79f86e72446f2f75b87183311c14c67a056075c8168477753ed2014cb7ae36e"
+    },
+    {
+      "path": "tache2/data2.js",
+      "sha256": "bf06d750a4b35969830a8bbea944f47c0252bf8ef93fa8a58c52f879dbf6c9ab"
+    },
+    {
+      "path": "tache2/data3.js",
+      "sha256": "d7e618477d37361a6ad55d128b3e21820877be9b39b02d8fcfa642b5a11cfc6c"
+    },
+    {
+      "path": "tache2/data4.js",
+      "sha256": "2574e8d077a495f505a5d1f8461965dcc354e982933eba2c22a105e24888f037"
+    },
+    {
+      "path": "tache2/data5.js",
+      "sha256": "467585a538cc08d8b1cf3391f108b10cf228b24aa27444303222792ef644eb35"
+    },
+    {
+      "path": "tache2/data6.js",
+      "sha256": "6b2e8f740cbd4cd7c07efa7e1c09aa1432e858782f1cc9fc74e8abbc621b9944"
+    },
+    {
+      "path": "tache2/cfix1.js",
+      "sha256": "ddb99b7f9be8584b81efd567f27f80bca5c78f24fb9e3696a3fe7aaea8a5ac75"
+    },
+    {
+      "path": "tache2/cfix2.js",
+      "sha256": "ca611eef4b14691e7030f4636c8102f55acbfc6e3dabad713e4a48e3994a7062"
+    },
+    {
+      "path": "tache2/cfix3.js",
+      "sha256": "9b7cc3a8d0e61a2e59e91c92a7efe63fc85730b177533d644651670bbb6e0da4"
+    },
+    {
+      "path": "tache2/cfix4.js",
+      "sha256": "b57efb4b4913a94f736cb2da702dbc49e68836a10426ec2f207b31f778d6c15e"
+    },
+    {
+      "path": "tache2/cfix5.js",
+      "sha256": "b60be3f2be9976fd4699891bc864eacc6e9cdb1479ff4c419e560cf04063bd68"
+    },
+    {
+      "path": "tache2/cfix6.js",
+      "sha256": "091738f5c2eac617eab50a150cf05b4b175d334af752f2143ec05e403881bdbf"
+    },
+    {
+      "path": "tache2/cfix7.js",
+      "sha256": "156d217a4c76688f6a9cc36615d4edb097812d260cd9d83b00c953dc7fab20da"
+    },
+    {
+      "path": "tache2/cfix8.js",
+      "sha256": "1f936f442fc085eaa315d9ab934c597e8ae17b7f80014142ee9cc4d2cf9dc135"
+    },
+    {
+      "path": "tache2/cfix9.js",
+      "sha256": "a496c3a12f7129bbf6350c0b1e7bbd82e03a5d2b8483ef0cb6de8b106c6691db"
+    },
+    {
+      "path": "tache2/cfix10.js",
+      "sha256": "be66b258e4d2fa09a7910e8b1f1e7df3bf626a623978f6c2c10e958ad406a439"
+    },
+    {
+      "path": "tache2/cfix11.js",
+      "sha256": "78a6b740a8c112153cb66604bca981b943224565f564d5943b1d211ecf7b3aec"
+    },
+    {
+      "path": "tache2/cfix12.js",
+      "sha256": "1cc541d3a7d273d4827462dd024afdd46c887879aada9864006eb807b1ee887c"
+    },
+    {
+      "path": "eo-tache3-corpus/data.js",
+      "sha256": "20f955224c195aea7fe721027fedfb2da51cac2294ccce85d94c7e19e46e9ac2"
+    },
+    {
+      "path": "eo-tache3-corpus/data-1.js",
+      "sha256": "37bb2d7577cc115e616f30db8a8ad60ea700d038b21941fe112696920448823c"
+    },
+    {
+      "path": "eo-tache3-corpus/data-2.js",
+      "sha256": "b31e0f19d91b072357c5be6a91dc7f688eaa3ccdaea4b0efa32ef32c7b7d6cfb"
+    },
+    {
+      "path": "eo-tache3-corpus/data-3.js",
+      "sha256": "99cefa9a9537d388474b73ab9bbdb642bab43a60c1ef85b2b1e437baf54bd124"
+    },
+    {
+      "path": "eo-tache3-corpus/data-4.js",
+      "sha256": "8212a42309510c90697b6adb65287a8128884489999ae07e37810a44febbc20c"
+    },
+    {
+      "path": "eo-tache3-corpus/data-5.js",
+      "sha256": "1bd464daf4bbbdcb2c29a3b0cca71cd157df272466f3223d0e141af59d9790c8"
+    },
+    {
+      "path": "eo-tache3-corpus/data-6.js",
+      "sha256": "e831062d41cc79d141141546dd8984de32b86985249b522a2626b2408c5f81fb"
+    },
+    {
+      "path": "eo-tache3-corpus/data-7.js",
+      "sha256": "2c499861706a2df23705dafa29297199a244ea4e7717a9eb4226f5af8d235377"
+    },
+    {
+      "path": "eo-tache3-corpus/data-8.js",
+      "sha256": "336e829a8a0d4b7f54546f38855996a18fa545139c0dbd6e042f65f79ca83230"
+    },
+    {
+      "path": "eo-tache3-corpus/data-9.js",
+      "sha256": "c6628462254c32b4fbb8fa602ecd3f46a791b0348f3342954016d9a49969aade"
+    }
+  ],
+  "units": {
+    "t2": 1517,
+    "t3": 507
+  },
+  "sentences": 4008,
+  "usedSentences": 2833,
+  "total": 317,
+  "categories": [
+    {
+      "category": "Élision 省音",
+      "count": 35
+    },
+    {
+      "category": "Enchaînement 语流衔接",
+      "count": 28
+    },
+    {
+      "category": "Liaison 联诵",
+      "count": 45
+    },
+    {
+      "category": "高频功能词语音块",
+      "count": 27
+    },
+    {
+      "category": "介词冠词及小词组合",
+      "count": 59
+    },
+    {
+      "category": "多音节长词专项",
+      "count": 123
+    }
+  ],
+  "sourceCounts": {
+    "t2": 172,
+    "t3": 289
+  },
+  "uniqueIds": 317,
+  "uniqueCategoryFocus": 317,
+  "excluded": [
+    "Groupes rythmiques",
+    "Intonation",
+    "泛化音位训练"
+  ],
+  "rules": {
+    "obligatory": "https://vitrinelinguistique.oqlf.gouv.qc.ca/23549/la-prononciation/liaisons/contextes-de-liaisons-obligatoires",
+    "optional": "https://vitrinelinguistique.oqlf.gouv.qc.ca/23550/la-prononciation/liaisons/contextes-de-liaisons-facultatives",
+    "forbidden": "https://vitrinelinguistique.oqlf.gouv.qc.ca/23552/la-prononciation/liaisons/contextes-de-liaisons-interdites"
+  }
+}
