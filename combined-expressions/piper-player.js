@@ -6,6 +6,7 @@ box.innerHTML='<button type="button" id="openFrenchSpeech" aria-expanded="false"
 document.querySelector('#answer').before(box);
 const get=id=>box.querySelector('#'+id),panel=get('frenchSpeechPanel'),opener=get('openFrenchSpeech'),original=get('speechOriginal'),status=get('speechStatus'),audio=get('piperAudio'),rate=get('frenchRate');
 const root=new URL('piper-audio/',document.baseURI);
+let browserSpeaking=false;
 let version=0,blobUrl=null,entry=null,spans=[],active=null,frame=0,manifestPromise=null,questionManifestPromise=null,topicManifestPromise=null;
 const packs=new Map();
 function mark(time){
@@ -17,7 +18,7 @@ function mark(time){
  if(active){active.style.background='#ffe277';active.style.color='#202030';active.setAttribute('aria-current','true');}
 }
 function loop(){mark(audio.currentTime);if(!audio.paused&&!audio.ended)frame=requestAnimationFrame(loop);}
-function stop(){audio.pause();if(audio.readyState)audio.currentTime=0;cancelAnimationFrame(frame);mark(-1);}
+function stop(){if(browserSpeaking){window.speechSynthesis?.cancel();browserSpeaking=false;}audio.pause();if(audio.readyState)audio.currentTime=0;cancelAnimationFrame(frame);mark(-1);}
 function close(){
  version++;stop();panel.hidden=true;opener.setAttribute('aria-expanded','false');
  audio.removeAttribute('src');audio.load();if(blobUrl)URL.revokeObjectURL(blobUrl);blobUrl=null;entry=null;original.replaceChildren();
@@ -58,7 +59,7 @@ async function open(){
  const text=window.TCF_SPEECH_TARGET?.()?.fr||window.TCF_GRAMMAR_TARGET?.()?.fr||'';
  panel.hidden=false;opener.setAttribute('aria-expanded','true');original.textContent=text;
  status.textContent='正在加载 Piper 法语音频……';
- const request=++version;
+ const request=++version;stop();entry=null;
  if(!text){status.textContent='请先选择练习词条。';return;}
  try{
   const data=await load(text);if(request!==version)return;
@@ -68,7 +69,7 @@ async function open(){
   blobUrl=URL.createObjectURL(new Blob([bytes],{type:'audio/mpeg'}));audio.src=blobUrl;audio.playbackRate=Number(rate.value);audio.preservesPitch=true;
   status.textContent=data.alignment==='word'?'音频已就绪 · 黄色高亮当前词语':'音频已就绪 · 当前表达按整句高亮';
   await play();
- }catch(e){if(request===version)status.textContent=e.message+'。请检查网络后收起重试。';}
+ }catch(e){if(request!==version)return;if(window.TCF_CONJUGATION_SPEECH?.()&&window.speechSynthesis&&window.SpeechSynthesisUtterance){const u=new SpeechSynthesisUtterance(text);u.lang='fr-FR';u.voice=window.speechSynthesis.getVoices().find(v=>/^fr/i.test(v.lang))||null;u.rate=Number(rate.value)||1;browserSpeaking=true;status.textContent='使用浏览器法语朗读：'+text;u.onend=()=>{if(request===version){browserSpeaking=false;status.textContent='朗读完成，可以重听。';}};u.onerror=()=>{if(request===version){browserSpeaking=false;status.textContent='浏览器法语朗读不可用，请检查系统法语语音。';}};window.speechSynthesis.speak(u);}else status.textContent=e.message+'。请检查网络后收起重试。';}
 }
 opener.onclick=()=>panel.hidden?open():close();
 get('speakFrench').onclick=()=>{if(entry){stop();play();}else open();};

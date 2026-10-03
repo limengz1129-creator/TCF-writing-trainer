@@ -13,3 +13,6 @@
 .layout>aside::-webkit-scrollbar-track{background:#f1f3fb;border-radius:8px}
 .layout>aside::-webkit-scrollbar-thumb{background:#9ca5e6;border:2px solid #f1f3fb;border-radius:8px}
 @media(max-width:800px){.layout>aside{max-height:70vh;max-height:70dvh}}
+
+.conjugation-table th:first-child{width:36%}.conjugation-table th:nth-child(2){width:38%}.conjugation-table th:nth-child(3){width:26%}.conjugation-table td{line-height:1.7}.conjugation-meaning{font-size:1rem}
+@media(max-width:600px){.conjugation-table th:first-child{width:32%}.conjugation-table th:nth-child(2){width:40%}.conjugation-table th:nth-child(3){width:28%}}
