@@ -1,0 +1,89 @@
+{
+  "uniqueRealErrors": 1127,
+  "specialties": [
+    129,
+    129,
+    12,
+    170,
+    169,
+    130,
+    62,
+    326
+  ],
+  "originals": 171,
+  "originalsWithErrors": 170,
+  "teaching": 308,
+  "teachingByType": {
+    "rule_example": 155,
+    "training_example": 153
+  },
+  "excluded": {
+    "待核音": 430,
+    "表达优化（不计错误）": 25
+  },
+  "detailLinks": 1431,
+  "unmappedDetails": 0,
+  "wordCanonicalLinks": 1127,
+  "wordDuplicateErrorsAvoided": 1134,
+  "wordSupplementLinks": [
+    {
+      "teachingId": "oral-teaching-48292f8528d35165",
+      "canonicalId": "oral-error-0577",
+      "source": [
+        "TCF_口语错题本_1_主谓一致与动词变位_更新版(2).docx · 表 5 行 4"
+      ]
+    },
+    {
+      "teachingId": "oral-teaching-a7de9bd634af9351",
+      "canonicalId": "oral-error-0025",
+      "source": [
+        "TCF_口语错题本_1_主谓一致与动词变位_更新版(2).docx · 表 5 行 5"
+      ]
+    },
+    {
+      "teachingId": "oral-teaching-5f9659e30594dd49",
+      "canonicalId": "oral-error-0586",
+      "source": [
+        "TCF_口语错题本_1_主谓一致与动词变位_更新版(2).docx · 表 5 行 13"
+      ]
+    },
+    {
+      "teachingId": "oral-teaching-5fe5a7d666248416",
+      "canonicalId": "oral-error-0086",
+      "source": [
+        "TCF_口语错题本_4_冠词缩合与高频介词_更新版(2).docx · 表 6 行 6"
+      ]
+    },
+    {
+      "teachingId": "oral-teaching-364ba784145b64f8",
+      "canonicalId": "oral-error-0086",
+      "source": [
+        "TCF_口语错题本_4_冠词缩合与高频介词_更新版(2).docx · 段 46"
+      ]
+    },
+    {
+      "teachingId": "oral-teaching-01d0fa0a7edb9697",
+      "canonicalId": "oral-error-0952",
+      "source": [
+        "TCF_口语错题本_6_阴阳性与单复数配合_更新版(2).docx · 表 7 行 3"
+      ]
+    },
+    {
+      "teachingId": "oral-teaching-cb0dbfcc63c26008",
+      "canonicalId": "oral-error-0952",
+      "source": [
+        "TCF_口语错题本_6_阴阳性与单复数配合_更新版(2).docx · 段 55"
+      ]
+    }
+  ],
+  "allWorksheetRows": {
+    "高频与优先项": 95,
+    "完整错误明细": 1891,
+    "去重错误模式（主表）": 1132,
+    "固定搭配": 173,
+    "偶发与自我修正": 1491,
+    "171条审核清单": 176,
+    "171条原稿": 176
+  },
+  "wordParagraphs": 949
+}

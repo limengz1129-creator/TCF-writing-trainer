@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "checks": [
+    "4 entry points",
+    "French voice selection and no English fallback (mocked speech engine), hidden answers, editing and notes",
+    "Review prioritizes marked wrong and shared counters",
+    "All eight categories overview, training and canonical real-error modes",
+    "Search, reload and cross-entry state persistence",
+    "171 originals, local original-specific occurrence corrections and reveal retention",
+    "430 audio uncertainties and 25 optimizations separated",
+    "Correction, cloze and Chinese-to-French modes",
+    "Existing export/import includes oral notes, edits and counters",
+    "Desktop 1440 and mobile 390: no horizontal overflow",
+    "All existing module entry points still operate",
+    "No JavaScript page errors"
+  ],
+  "audio": "Mocked French engine; audible playback requires system French voice"
+}
