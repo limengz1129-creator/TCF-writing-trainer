@@ -32,19 +32,18 @@
  const active=()=>supported()&&study().enabled;
  const sig=()=>JSON.stringify([selectedSource(),$('category').value,$('status').value,$('search').value,mode===5?state.topicOverlap||'':'',state.topicLevels?.[mode]||'',mode===3?$('verbGroup').value:'',mode===3?$('verbLemma').value:'',mode===3?$('verbPerson').value:'']);
  const audio=$('studyAudio');let request=0,url=null;
- let browserSpeaking=false;
- function stop(){request++;if(browserSpeaking){window.speechSynthesis?.cancel();browserSpeaking=false;}audio.pause();audio.removeAttribute('src');audio.load();audio.hidden=true;if(url)URL.revokeObjectURL(url);url=null;}
+ function stop(){request++;audio.pause();audio.removeAttribute('src');audio.load();audio.hidden=true;if(url)URL.revokeObjectURL(url);url=null;}
  async function pronounce(x){
   stop();window.TCF_AUDIO?.stop();const token=request;const spoken=display(x);$('studyStatus').textContent='正在加载 '+spoken+' 的法语发音……';
   try{const data=await window.TCF_AUDIO.load(spoken);if(token!==request||!active())return;
    url=URL.createObjectURL(new Blob([Uint8Array.from(atob(data.audio),c=>c.charCodeAt(0))],{type:'audio/mpeg'}));audio.src=url;audio.hidden=false;audio.playbackRate=Number($('frenchRate')?.value||1);
    $('studyStatus').textContent='正在朗读：'+spoken;
    try{await audio.play();}catch{if(token===request)$('studyStatus').textContent='音频已就绪，请点击播放器播放：'+spoken;}
-  }catch(e){if(token!==request)return;if(mode===3&&window.speechSynthesis&&window.SpeechSynthesisUtterance){const utterance=new SpeechSynthesisUtterance(spoken);utterance.lang='fr-FR';const voice=window.speechSynthesis.getVoices().find(v=>v.lang.toLowerCase().startsWith('fr'));if(voice)utterance.voice=voice;utterance.rate=Number($('frenchRate')?.value||1);utterance.onend=()=>{if(token===request){browserSpeaking=false;$('studyStatus').textContent='朗读完成：'+spoken;}};utterance.onerror=()=>{if(token===request){browserSpeaking=false;$('studyStatus').textContent='浏览器法语朗读不可用，请检查系统法语语音。';}};browserSpeaking=true;$('studyStatus').textContent='使用浏览器法语朗读：'+spoken;window.speechSynthesis.speak(utterance);}else $('studyStatus').textContent=e.message+'，请点击发音按钮重试。';}
+  }catch(e){if(token!==request)return;$('studyStatus').textContent=e.message+'，请点击发音按钮重试。';}
  }
  audio.addEventListener('error',()=>{$('studyStatus').textContent='音频播放失败，请重试。';});
  audio.addEventListener('ended',()=>{$('studyStatus').textContent='朗读完成，可点击词条重听。';});
- function render(){stop();$('studyRows').replaceChildren();$('studyStatus').textContent=mode===3?'发音朗读完整的主语＋变位；没有对应录音时使用浏览器法语朗读。学习不会计入默写成绩。':'复用现有 Piper 法语音频。学习不会计入默写成绩或错题。';
+ function render(){stop();$('studyRows').replaceChildren();$('studyStatus').textContent=mode===3?'使用 Piper · fr_FR-siwis-medium 朗读完整的主语＋变位。学习不会计入默写成绩。':'复用现有 Piper 法语音频。学习不会计入默写成绩或错题。';
   const rows=study().ids.map(id=>DATA.find(x=>x.id===id)).filter(Boolean);
   $('studyCaption').textContent='当前筛选 '+filtered().length+' 个词条；本批 '+rows.length+' 个。';
   for(const [i,x] of rows.entries()){
