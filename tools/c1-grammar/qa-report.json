@@ -3,6 +3,7 @@
   "checks": [
     "Home: 8 categories and mixed challenge",
     "All 8 categories: counts, 2-column overview, learn/practice/review switching",
+    "French speech controls: overview/cards/revealed answers; French voice, normal/slow/stop; no answer leak; missing voice guidance (speech API mocked)",
     "Canonical shared ID: notes, mastery and edits across 2 categories; save/cancel; reload persistence",
     "Generated exercise validation: all 7 types; each cloze has an actual blank",
     "Wrong/correct answers, ranked review, 3-second oral timer and hesitation self-rating",

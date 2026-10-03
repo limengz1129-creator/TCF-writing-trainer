@@ -7,6 +7,7 @@ const checks=[];
  await new Promise(r=>server.listen(0,'127.0.0.1',r));
  const browser=await chromium.launch({headless:true,executablePath:process.env.TCF_CHROME_PATH,args:['--no-sandbox']});
  const page=await browser.newPage({viewport:{width:1440,height:1000}});page.on('pageerror',e=>errors.push(e.stack));
+ await page.addInitScript(()=>{window.SpeechSynthesisUtterance=class {constructor(text){this.text=text;}};window.__c1Spoken=[];window.__c1Cancelled=0;Object.defineProperty(window,'speechSynthesis',{configurable:true,value:{getVoices:()=>[{lang:'en-US'},{lang:'fr-FR',name:'Test French'}],cancel:()=>window.__c1Cancelled++,speak:u=>{window.__c1Spoken.push({text:u.text,lang:u.lang,rate:u.rate});u.onstart?.();u.onend?.();}}});});
  await page.goto(`http://127.0.0.1:${server.address().port}/combined-expressions/`);
  await page.locator('[data-module="9"]').click();
  assert.equal(await page.locator('[data-c1-category]').count(),8);checks.push('Home: 8 categories and mixed challenge');
@@ -22,6 +23,18 @@ const checks=[];
   }
  }
  checks.push('All 8 categories: counts, 2-column overview, learn/practice/review switching');
+
+ await page.locator('.c1-audio').first().getByRole('button',{name:'🔊 法语朗读',exact:true}).click();
+ await page.locator('.c1-audio').first().getByRole('button',{name:'🐢 慢速',exact:true}).click();
+ assert.deepEqual(await page.evaluate(()=>window.__c1Spoken.map(x=>[x.lang,x.rate])),[['fr-FR',1],['fr-FR',.75]]);
+ await page.locator('.c1-audio').first().getByRole('button',{name:'停止',exact:true}).click();assert((await page.locator('.c1-audio').first().innerText()).includes('已停止'));
+ await page.locator('[data-c1-view="learn"]').click();assert(await page.locator('.c1-entry .c1-audio').count()>0);
+ await page.locator('[data-c1-view="practice"]').click();assert.equal(await page.locator('#c1Exercise .c1-audio').count(),0);
+ await page.getByRole('button',{name:'显示答案',exact:true}).click();assert(await page.locator('#c1Exercise .c1-audio').count()>0);
+ await page.evaluate(()=>{speechSynthesis.getVoices=()=>[];});await page.locator('#c1Exercise .c1-audio').first().getByRole('button',{name:'🔊 法语朗读',exact:true}).click();assert((await page.locator('#c1Exercise .c1-audio').first().innerText()).includes('添加法语语音'));
+ await page.evaluate(()=>{speechSynthesis.getVoices=()=>[{lang:'fr-FR'}];});
+ checks.push('French speech controls: overview/cards/revealed answers; French voice, normal/slow/stop; no answer leak; missing voice guidance (speech API mocked)');
+
  // A genuine shared entry between subjunctive and concession.
  await page.selectOption('#c1Category','0');await page.fill('#c1Search','Bien que');
  const shared=await page.locator('.c1-table tbody tr').first().getAttribute('data-c1-id');
