@@ -49,6 +49,7 @@ async function load(text){
  if(!data||data.text!==text)throw Error('音频与当前原文不一致');
  return data;
 }
+window.TCF_AUDIO={load,stop:close};
 async function play(){
  try{await audio.play();}
  catch{if(!panel.hidden)status.textContent='音频已就绪，请点击播放器的播放按钮试听。';}
