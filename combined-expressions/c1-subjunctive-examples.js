@@ -89,7 +89,7 @@
   const p=document.createElement('p');p.className='note';p.textContent='每个主动掌握句型都配完整例句。优先复用现有 TCF 语料原句；没有对应原句时，使用语料库里已经出现的主题词、搭配和论点生成“迁移例句”，并明确标记。';
   sec.append(h,p);
   for(const g of GROUPS){const det=document.createElement('details');det.open=['A1 · 愿望 / 意愿 / 期待','A2 · 必要性 / 建议 / 评价','A4 · 目的'].includes(g.title);const s=document.createElement('summary');s.textContent=g.title+' · '+g.items.length+' 个';det.append(s,table(g.items));sec.append(det);}
-  const ch=document.createElement('h3');ch.textContent='C · Subjonctif passé · 少量主动输出';const cp=document.createElement('p');cp.className='note';cp.textContent='现有语料库里没有成体系的过去虚拟式原句，因此这一小组明确作为“迁移例句”：词汇和论点尽量沿用你的现有语料，不冒充原句。';sec.append(ch,cp,table(C.map(x=>[...x,'迁移例句'])));
+  /* C · Subjonctif passé is intentionally hidden during sprint phase. Data remains in C for future re-enable. */
   const anchor=d.querySelector('#c1-practice')||d.querySelector('#c1-frames');anchor?.before(sec);
  }
  function watch(){const d=$('c1CourseDialog');if(!d){setTimeout(watch,100);return;}new MutationObserver(()=>setTimeout(add,0)).observe(d,{childList:true,subtree:true});d.addEventListener('toggle',add);d.addEventListener('click',()=>setTimeout(add,0));add();}
