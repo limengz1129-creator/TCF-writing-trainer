@@ -1,0 +1,31 @@
+/* Scoped to batch reading: single-item typography and spacing stay intact. */
+.compact-study{font-size:14px;line-height:1.35}
+.compact-study h2{font-size:19px;margin:12px 0 6px}
+.compact-study .batch-table{table-layout:fixed;font-size:14px;line-height:1.35}
+.compact-study .batch-table th,.compact-study .batch-table td{padding:7px 9px;line-height:1.35}
+.compact-study .batch-table th:first-child{width:25%}
+.compact-study .batch-table th:nth-child(2){width:75%}
+.compact-study .batch-table small{font-size:12px;margin-top:3px}
+.compact-study .batch-table tr:nth-child(even){background:#f8f9fd}
+.compact-study .batch-table caption{margin:7px 0;font-weight:600;color:#515cdd}
+.compact-lemma{display:block;font-size:14px;margin-top:3px}
+.compact-tense{margin:0 0 3px;display:flex;flex-wrap:wrap;align-items:baseline;gap:3px 12px}
+.compact-tense-label{font-size:12px;color:#626b82;flex-basis:100%}
+.compact-form{display:flex;flex-wrap:wrap;gap:3px 5px;align-items:baseline;max-width:100%}
+.compact-french{font-size:14px;overflow-wrap:anywhere}
+.compact-study button{font-size:12px;line-height:1.3;padding:3px 6px;border-radius:5px}
+.compact-study .row{gap:6px;margin:10px 0}
+.compact-study .row button{padding:6px 10px;font-size:13px}
+.compact-examples{font-size:12px;margin-top:3px;color:#626b82}
+.compact-examples p{margin:3px 0;white-space:pre-wrap}
+.item-tools{display:flex;flex-wrap:wrap;gap:5px;align-items:baseline}
+.item-note{flex-basis:100%;white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px;color:#52685e}
+.item-note:empty{display:none}
+.item-tools-panel{flex-basis:100%;width:100%;border:1px solid #dce1ef;padding:8px;border-radius:7px;background:#fff}
+.item-tools-panel label{margin:4px 0;font-size:13px}
+.item-tools-panel input,.item-tools-panel textarea{width:100%;font-size:14px;padding:6px;min-height:0;line-height:1.4}
+.compact-study .item-tools{display:inline-flex;gap:3px}
+.compact-study .item-tools button{font-size:11px;padding:2px 5px}
+.compact-study .item-tools-panel{min-width:min(290px,100%)}
+#singleItemTools{margin:12px 0}
+@media(max-width:600px){.compact-study .batch-table th:first-child{width:28%}.compact-study .batch-table th:nth-child(2){width:72%}.compact-study .batch-table th,.compact-study .batch-table td{padding:6px 5px}.compact-study .compact-french{font-size:13px}}
