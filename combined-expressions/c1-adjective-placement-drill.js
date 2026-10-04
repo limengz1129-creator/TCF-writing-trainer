@@ -90,6 +90,19 @@
    DES.forEach((q,i)=>{const tr=document.createElement('tr');const zh=E('td','',q.zh);const fr=document.createElement('td');const line=E('div','c1-adj-fill');line.append(document.createTextNode(q.pre));const input=document.createElement('input');input.type='text';input.placeholder='________';input.value=load()['d'+i]?.v||'';line.append(input,document.createTextNode(q.post));const row=E('div','c1-row-actions');const ck=E('button','','检查');const au=E('button','c1-audio-mini','🔊 整句朗读');ck.type=au.type='button';const fb=E('div','c1-adj-fb hidden');ck.onclick=()=>{const ok=right(q,input.value);fb.replaceChildren(E('div',ok?'ok':'bad',ok?'✓ 正确':'✗ 正确答案：'+q.a),E('p','',q.note));fb.classList.remove('hidden');const st=load();st['d'+i]={v:input.value,ok};save(st)};au.onclick=()=>say(q.pre+q.a+q.post);input.oninput=()=>{const st=load();st['d'+i]={v:input.value};save(st);fb.className='c1-adj-fb hidden'};row.append(ck,au);fr.append(line,row,fb);tr.append(zh,fr);bb.append(tr)});table.append(bb);const sc2=E('div','c1-adj-scroll');sc2.append(table);s2.append(sc2);wrap.append(s2);
    host.insertAdjacentElement('afterend',wrap);
  }
- function watch(){const d=$('c1CourseDialog');if(!d)return;new MutationObserver(()=>{if(d.open&&d.querySelector('h2')?.textContent.includes('#2 L’adjectif'))setTimeout(addOverview,0)}).observe(d,{childList:true,subtree:true});d.addEventListener('toggle',()=>{if(d.open&&d.querySelector('h2')?.textContent.includes('#2 L’adjectif'))setTimeout(addOverview,0)})}
+ function maybeBuild(){
+  const d=$('c1CourseDialog');
+  if(!d)return;
+  const h=d.querySelector('h2');
+  if(h?.textContent.includes('#2 L’adjectif'))setTimeout(addOverview,0);
+ }
+ function watch(){
+  const d=$('c1CourseDialog');
+  if(!d){setTimeout(watch,120);return;}
+  new MutationObserver(maybeBuild).observe(d,{childList:true,subtree:true});
+  d.addEventListener('toggle',maybeBuild);
+  d.addEventListener('click',()=>setTimeout(maybeBuild,0));
+  maybeBuild();
+ }
  setTimeout(watch,0);
 })();
