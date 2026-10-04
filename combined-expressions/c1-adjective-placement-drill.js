@@ -43,7 +43,7 @@
   {zh:'更好的解决方案',pre:'chercher ',post:'',a:'de meilleures solutions',note:'des solutions → de meilleures solutions。'},
   {zh:'新的工作机会',pre:'créer ',post:'',a:"de nouvelles possibilités d’emploi",alts:["de nouvelles possibilités d'emploi"],note:'复数不定冠词 des 在 nouvelles 前通常变 de。'},
   {zh:'重要的变化',pre:'connaître ',post:'',a:"d’importants changements",alts:["d'importants changements"],note:'元音开头的前置形容词前用 d’。'},
-  {zh:'长期困难（复数）',pre:'faire face à ',post:'',a:'de longues difficultés',note:'复数不定冠词 des + longues → de longues…'},
+  {zh:'长期失业可能造成负面影响。',pre:'',post:' peuvent avoir des effets négatifs.',a:'De longues périodes de chômage',type:'des → de',note:'des périodes → de longues périodes；long 在时间名词前是高频搭配。'},
   {zh:'一些严重问题',pre:'rencontrer ',post:'',a:'de graves problèmes',note:'des problèmes → de graves problèmes。'},
   {zh:'一些真正的机会',pre:'offrir ',post:'',a:'de réelles possibilités',note:'des possibilités → de réelles possibilités。'}
  ];
