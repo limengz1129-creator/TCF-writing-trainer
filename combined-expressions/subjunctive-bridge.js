@@ -99,15 +99,16 @@
   if(m===3){ensureTierFilter();$('subjunctiveTier').value=state.subjunctiveTier||'';syncNote();}
   ensureReturnButton();
  };
- function syncNote(){
+ function syncNote(reviewMode){
   if(mode!==3||!$('sourceNote'))return;
   const label=tierLabel()||($('category')?.value==='虚拟式现在时'?'全部虚拟式现在时':'');
   if(!label)return;
   const top=topVerbsForCurrentTier(5).map((x,i)=>(i+1)+'. '+x.lemma+'（'+x.occurrences+' 次 / '+x.sources.size+' 来源）').join(' · ');
-  $('sourceNote').textContent=label+'。默认按五任务真实语料中的虚拟式现在时出现频率从高到低；同频再看来源覆盖与变位覆盖。Top 5：'+top+'。';
+  const random=reviewMode==='random'||!!order;
+  $('sourceNote').textContent=label+'。'+(random?'当前：随机顺序复习。':'当前：按 TCF 实战频率从高到低依次复习；同频再看来源覆盖与变位覆盖。Top 5：'+top+'。');
  }
  $('category')?.addEventListener('change',()=>{if(mode===3&&state.subjunctiveTier&&$('category').value!=='虚拟式现在时'){state.subjunctiveTier='';if($('subjunctiveTier'))$('subjunctiveTier').value='';show(filtered()[0]||null);buildSource();syncNote();persist();}});
- function openTier(tier){
+ function openTier(tier,reviewMode='frequency'){
   // 专项入口必须从“全部五任务来源”开始，避免继承其它模块/上一次练习的残留筛选。
   state.source='';
   state.subjunctiveReturn=true;
@@ -115,7 +116,7 @@
   setModule(3,true);
   window.__openingSubjunctiveBridge=false;
   state.subjunctiveTier=tier==='b1'||tier==='b2'?tier:'';
-  state.subjunctiveSort='frequency';
+  state.subjunctiveSort=reviewMode==='random'?'frequency':'frequency';
   buildSource();
   if($('sourceFilter'))$('sourceFilter').value='';
   if($('status'))$('status').value='';
@@ -127,8 +128,13 @@
   if($('subjunctiveTier'))$('subjunctiveTier').value=state.subjunctiveTier;
   if($('subjunctiveSort'))$('subjunctiveSort').value='frequency';
   order=null;
+  if(reviewMode==='random'){
+   const ids=filtered().map(x=>x.id);
+   for(let i=ids.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[ids[i],ids[j]]=[ids[j],ids[i]];}
+   order=ids;
+  }
   show(filtered()[0]||null);
-  syncNote();ensureReturnButton();persist();
+  syncNote(reviewMode);ensureReturnButton();persist();
   $('practice')?.scrollIntoView({behavior:'smooth',block:'start'});
  }
  function addPanel(){
@@ -143,11 +149,20 @@
   const row=document.createElement('div');row.className='c1-actions';
   const mk=(label,tier,primary=false)=>{const b=document.createElement('button');b.type='button';b.textContent=label;if(primary)b.className='primary';b.onclick=()=>{d.close();openTier(tier)};return b;};
   row.append(mk('猛攻 B1 · 24 动词 / 41 变位','b1',true),mk('猛攻 B2 · 30 动词 / 36 变位','b2'),mk('练全部虚拟式现在时 · 81 / 106',''));
+  const review=document.createElement('div');review.className='c1-lesson-card';
+  const rh=document.createElement('h4');rh.textContent='复习模式';
+  const rp=document.createElement('p');rp.className='note';rp.textContent='先选复习范围，再选择“按高频顺序依次复习”或“随机顺序复习”。';
+  const rsel=document.createElement('select');rsel.id='subjunctiveReviewTier';
+  rsel.append(new Option('B1 · 24 动词 / 41 变位','b1'),new Option('B2 · 30 动词 / 36 变位','b2'),new Option('全部虚拟式现在时 · 81 / 106',''));
+  const ractions=document.createElement('div');ractions.className='c1-actions';
+  const seq=document.createElement('button');seq.type='button';seq.className='primary';seq.textContent='按高频顺序依次复习';seq.onclick=()=>{d.close();openTier(rsel.value,'frequency');};
+  const rnd=document.createElement('button');rnd.type='button';rnd.textContent='随机顺序复习';rnd.onclick=()=>{d.close();openTier(rsel.value,'random');};
+  ractions.append(seq,rnd);review.append(rh,rp,rsel,ractions);
   const details=document.createElement('details');const sum=document.createElement('summary');sum.textContent='查看 B1 / B2 动词名单';const body=document.createElement('p');body.className='note';body.textContent='B1：'+B1.join(' · ')+'\n\nB2：'+B2.join(' · ');details.append(sum,body);
   const rank=document.createElement('details');const rsum=document.createElement('summary');rsum.textContent='查看 TCF 实战频率 Top 15';const rb=document.createElement('p');rb.className='note';
   rb.textContent=[...FREQ.values()].sort((a,b)=>b.occurrences-a.occurrences||b.sources.size-a.sources.size||b.forms.size-a.forms.size||a.lemma.localeCompare(b.lemma,'fr')).slice(0,15).map((x,i)=>(i+1)+'. '+x.lemma+' · '+x.occurrences+' 次 · '+x.sources.size+' 个任务来源 · '+x.forms.size+' 个变位形式').join('\n');
   rank.append(rsum,rb);
-  sec.append(title,p,p2,row,details,rank);
+  sec.append(title,p,p2,row,review,details,rank);
   anchor.after(sec);
  }
  const mo=new MutationObserver(()=>setTimeout(addPanel,0));
