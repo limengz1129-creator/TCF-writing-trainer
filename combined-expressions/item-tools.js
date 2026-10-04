@@ -1,8 +1,9 @@
 'use strict';
 // One record per original item ID; both views read and write the same DATA object.
 (()=>{
+ function editedForms(x,fr){return x.module===3&&x.tense.includes('虚拟式')?[...new Set([fr,conjugationForm(x,fr),conjugationForm({...x,tense:''},fr)])]:[fr];}
  const bases=new Map();
- for(const x of DATA){bases.set(x.id,{fr:x.fr,zh:x.zh,acceptedFr:x.acceptedFr});const custom=state.records[x.id]?.custom;if(custom){x.fr=custom.fr??x.fr;if(x.module!==3)x.zh=custom.zh??x.zh;if(custom.fr)x.acceptedFr=[custom.fr];}}
+ for(const x of DATA){bases.set(x.id,{fr:x.fr,zh:x.zh,acceptedFr:x.acceptedFr});const custom=state.records[x.id]?.custom;if(custom){x.fr=custom.fr??x.fr;if(x.module!==3)x.zh=custom.zh??x.zh;if(custom.fr)x.acceptedFr=editedForms(x,custom.fr);}}
  const baseMeaning=conjugationMeaning;
  conjugationMeaning=function(x){return state.records[x.id]?.custom?.zh??baseMeaning(x);};
  const baseTopicMeaning=topicMeaning;
@@ -20,7 +21,7 @@
   function close(){panel.classList.add('hidden');if(singleVerb&&!content.textContent)box.classList.add('hidden');}
   function open(){box.classList.remove('hidden');panel.replaceChildren();panel.classList.remove('hidden');}
   note.onclick=()=>{open();const text=field('词条笔记',rec(x.id).note||'',true);panel.append(button('保存笔记',()=>{rec(x.id).note=text.value;persist();onSave();}),button('取消',close));text.focus();};
-  edit.onclick=()=>{open();const zh=field('中文',x.module===3?conjugationMeaning(x):topicMeaning(x)),fr=field(x.module===3?'法语变位（不含主语）':'法语',x.fr);panel.append(button('保存修改',()=>{if(!fr.value.trim()){fr.setCustomValidity('法语不能为空');fr.reportValidity();return;}rec(x.id).custom={...(rec(x.id).custom||{}),fr:fr.value.trim(),zh:zh.value.trim()};x.fr=fr.value.trim();if(x.module!==3)x.zh=zh.value.trim();x.acceptedFr=[x.fr];persist();onSave();}),button('取消',close));zh.focus();};
+  edit.onclick=()=>{open();const zh=field('中文',x.module===3?conjugationMeaning(x):topicMeaning(x)),fr=field(x.module===3?'法语变位（不含主语）':'法语',x.fr);panel.append(button('保存修改',()=>{if(!fr.value.trim()){fr.setCustomValidity('法语不能为空');fr.reportValidity();return;}rec(x.id).custom={...(rec(x.id).custom||{}),fr:fr.value.trim(),zh:zh.value.trim()};x.fr=fr.value.trim();if(x.module!==3)x.zh=zh.value.trim();x.acceptedFr=editedForms(x,x.fr);persist();onSave();}),button('取消',close));zh.focus();};
  }
  function singleTools(){if(![3,5,6].includes(mode)||!current)return;if(mode===3){for(const row of document.querySelectorAll('#verbCards [data-form-id]')){const x=DATA.find(x=>x.id===row.dataset.formId);if(x)mount(row,x);}}else{let box=$('singleItemTools');if(!box){box=document.createElement('div');box.id='singleItemTools';$('prompt').after(box);}box.replaceChildren();mount(box,current);}}
  const baseShow=show;show=function(x){baseShow(x);singleTools();};
