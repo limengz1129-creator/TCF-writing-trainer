@@ -3,7 +3,22 @@
  const B1=['être','avoir','pouvoir','faire','prendre','venir','savoir','falloir','mettre','apprendre','choisir','devenir','tenir','connaître','répondre','réduire','proposer','rester','trouver','développer','améliorer','protéger','établir','utiliser'];
  const B2=['adapter','limiter','offrir','organiser','préparer','privilégier','renforcer','respecter','accompagner','communiquer','comparer','constituer','contrôler','convenir','donner','douter','encadrer','envisager','garantir','imposer','laisser','passer','présenter','prévoir','profiter','remplacer','sentir','souhaiter','veiller','vérifier'];
  const TIERS={b1:new Set(B1),b2:new Set(B2)};
+ function buildFrequencyStats(){
+  const map=new Map();
+  for(const x of DATA.filter(x=>x.module===3&&x.tense==='虚拟式现在时')){
+   let st=map.get(x.lemma);
+   if(!st){st={lemma:x.lemma,occurrences:0,sources:new Set(),forms:new Set(),persons:new Set()};map.set(x.lemma,st);}
+   const members=Array.isArray(x.members)?x.members:[];
+   st.occurrences+=members.length||1;
+   for(const m of members)if(Number.isInteger(m.sourceIndex))st.sources.add(m.sourceIndex);
+   st.forms.add(x.fr);
+   if(x.person)st.persons.add(x.person);
+  }
+  return map;
+ }
+ const FREQ=buildFrequencyStats();
  state.subjunctiveTier=state.subjunctiveTier||'';
+ state.subjunctiveSort=state.subjunctiveSort||'frequency';
  state.subjunctiveReturn=!!state.subjunctiveReturn;
  const $=id=>document.getElementById(id);
  function tierLabel(){return state.subjunctiveTier==='b1'?'B1 核心必熟 · 24 动词 / 41 变位':state.subjunctiveTier==='b2'?'B2 高频扩展 · 30 动词 / 36 变位':'';}
@@ -29,6 +44,31 @@
    b.classList.remove('hidden');
   }else if(b)b.classList.add('hidden');
  }
+ function compareFrequency(a,b){
+  const A=FREQ.get(a.lemma)||{occurrences:0,sources:new Set(),forms:new Set()};
+  const B=FREQ.get(b.lemma)||{occurrences:0,sources:new Set(),forms:new Set()};
+  return B.occurrences-A.occurrences
+   ||B.sources.size-A.sources.size
+   ||B.forms.size-A.forms.size
+   ||a.lemma.localeCompare(b.lemma,'fr')
+   ||String(a.person||'').localeCompare(String(b.person||''),'fr');
+ }
+ function topVerbsForCurrentTier(limit=10){
+  const allowed=state.subjunctiveTier&&TIERS[state.subjunctiveTier]?TIERS[state.subjunctiveTier]:null;
+  return [...FREQ.values()]
+   .filter(x=>!allowed||allowed.has(x.lemma))
+   .sort((a,b)=>b.occurrences-a.occurrences||b.sources.size-a.sources.size||b.forms.size-a.forms.size||a.lemma.localeCompare(b.lemma,'fr'))
+   .slice(0,limit);
+ }
+ function ensureSortFilter(){
+  const box=$('verbFilters');if(!box||$('subjunctiveSort'))return;
+  const label=document.createElement('label');label.htmlFor='subjunctiveSort';label.textContent='虚拟式排序';
+  const sel=document.createElement('select');sel.id='subjunctiveSort';
+  sel.append(new Option('TCF 实战频率 ↓','frequency'),new Option('原数据顺序','original'));
+  sel.value=state.subjunctiveSort||'frequency';
+  sel.onchange=()=>{state.subjunctiveSort=sel.value;order=null;show(filtered()[0]||null);syncNote();persist();};
+  box.prepend(sel);box.prepend(label);
+ }
  function ensureTierFilter(){
   const box=$('verbFilters');if(!box||$('subjunctiveTier'))return;
   const label=document.createElement('label');label.htmlFor='subjunctiveTier';label.textContent='虚拟式专项猛攻';
@@ -45,10 +85,13 @@
    const allowed=TIERS[state.subjunctiveTier];
    rs=rs.filter(x=>x.tense==='虚拟式现在时'&&allowed.has(x.lemma));
   }
+  if(mode===3&&state.subjunctiveSort==='frequency'&&$('category')?.value==='虚拟式现在时'&&!order){
+   rs=[...rs].sort(compareFrequency);
+  }
   return rs;
  };
  const baseBuildVerbFilters=buildVerbFilters;
- buildVerbFilters=function(){baseBuildVerbFilters();if(mode===3){ensureTierFilter();$('subjunctiveTier').value=state.subjunctiveTier||'';}};
+ buildVerbFilters=function(){baseBuildVerbFilters();if(mode===3){ensureTierFilter();ensureSortFilter();$('subjunctiveTier').value=state.subjunctiveTier||'';$('subjunctiveSort').value=state.subjunctiveSort||'frequency';}};
  const baseSetModule=setModule;
  setModule=function(m,fresh=false){
   if(m===3&&fresh&&!window.__openingSubjunctiveBridge)state.subjunctiveTier='';
@@ -58,8 +101,10 @@
  };
  function syncNote(){
   if(mode!==3||!$('sourceNote'))return;
-  const label=tierLabel();
-  if(label)$('sourceNote').textContent=label+'。只调用 613 动词库中真实出现过的虚拟式现在时人称 / 变位；不要求机械补齐六个人称。';
+  const label=tierLabel()||($('category')?.value==='虚拟式现在时'?'全部虚拟式现在时':'');
+  if(!label)return;
+  const top=topVerbsForCurrentTier(5).map((x,i)=>(i+1)+'. '+x.lemma+'（'+x.occurrences+' 次 / '+x.sources.size+' 来源）').join(' · ');
+  $('sourceNote').textContent=label+'。默认按五任务真实语料中的虚拟式现在时出现频率从高到低；同频再看来源覆盖与变位覆盖。Top 5：'+top+'。';
  }
  $('category')?.addEventListener('change',()=>{if(mode===3&&state.subjunctiveTier&&$('category').value!=='虚拟式现在时'){state.subjunctiveTier='';if($('subjunctiveTier'))$('subjunctiveTier').value='';show(filtered()[0]||null);buildSource();syncNote();persist();}});
  function openTier(tier){
@@ -70,6 +115,7 @@
   setModule(3,true);
   window.__openingSubjunctiveBridge=false;
   state.subjunctiveTier=tier==='b1'||tier==='b2'?tier:'';
+  state.subjunctiveSort='frequency';
   buildSource();
   if($('sourceFilter'))$('sourceFilter').value='';
   if($('status'))$('status').value='';
@@ -79,6 +125,7 @@
   buildVerbFilters();
   $('category').value='虚拟式现在时';
   if($('subjunctiveTier'))$('subjunctiveTier').value=state.subjunctiveTier;
+  if($('subjunctiveSort'))$('subjunctiveSort').value='frequency';
   order=null;
   show(filtered()[0]||null);
   syncNote();ensureReturnButton();persist();
@@ -97,12 +144,15 @@
   const mk=(label,tier,primary=false)=>{const b=document.createElement('button');b.type='button';b.textContent=label;if(primary)b.className='primary';b.onclick=()=>{d.close();openTier(tier)};return b;};
   row.append(mk('猛攻 B1 · 24 动词 / 41 变位','b1',true),mk('猛攻 B2 · 30 动词 / 36 变位','b2'),mk('练全部虚拟式现在时 · 81 / 106',''));
   const details=document.createElement('details');const sum=document.createElement('summary');sum.textContent='查看 B1 / B2 动词名单';const body=document.createElement('p');body.className='note';body.textContent='B1：'+B1.join(' · ')+'\n\nB2：'+B2.join(' · ');details.append(sum,body);
-  sec.append(title,p,p2,row,details);
+  const rank=document.createElement('details');const rsum=document.createElement('summary');rsum.textContent='查看 TCF 实战频率 Top 15';const rb=document.createElement('p');rb.className='note';
+  rb.textContent=[...FREQ.values()].sort((a,b)=>b.occurrences-a.occurrences||b.sources.size-a.sources.size||b.forms.size-a.forms.size||a.lemma.localeCompare(b.lemma,'fr')).slice(0,15).map((x,i)=>(i+1)+'. '+x.lemma+' · '+x.occurrences+' 次 · '+x.sources.size+' 个任务来源 · '+x.forms.size+' 个变位形式').join('\n');
+  rank.append(rsum,rb);
+  sec.append(title,p,p2,row,details,rank);
   anchor.after(sec);
  }
  const mo=new MutationObserver(()=>setTimeout(addPanel,0));
  function watch(){const d=$('c1CourseDialog');if(!d){setTimeout(watch,100);return;}mo.observe(d,{childList:true,subtree:true});d.addEventListener('toggle',addPanel);d.addEventListener('click',()=>setTimeout(addPanel,0));addPanel();}
  setTimeout(watch,0);
  setTimeout(ensureReturnButton,0);
- window.C1_SUBJUNCTIVE_BRIDGE={B1,B2,open:openTier,back:returnToSubjunctiveCourse};
+ window.C1_SUBJUNCTIVE_BRIDGE={B1,B2,FREQ,open:openTier,back:returnToSubjunctiveCourse};
 })();
