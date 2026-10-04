@@ -1,6 +1,7 @@
 'use strict';
 (()=>{
  const MODULE=9, data=C1_GRAMMAR_DATA, entries=data.entries, byId=new Map(entries.map(e=>[e.id,e]));
+ data.categories[0]='虚拟式触发结构（主动输出）';
  const n=s=>String(s||'').normalize('NFC').toLowerCase().replace(/[’‘]/g,"'").replace(/[.!?;,：。！？]/g,'').replace(/\s+/g,' ').trim();
  const el=(tag,cls='',text='')=>{const x=document.createElement(tag);x.className=cls;x.textContent=text;return x;};
  const button=(text,fn,cls='')=>{const x=el('button',cls,text);x.type='button';x.onclick=fn;return x;};
@@ -40,7 +41,14 @@
  const lines=id=>$(id).value.split('\n').map(s=>s.trim());
  $('c1EditForm').onsubmit=event=>{event.preventDefault();if(!editing)return;const r=record(editing.id),fr=lines('c1EditExamples'),zh=lines('c1EditTranslations');r.userEditedContent={chinese:$('c1EditChinese').value.trim(),french:$('c1EditFrench').value.trim(),examples:fr.map((s,i)=>({french:s,chinese:zh[i]||'',sourceFile:'用户编辑'})).filter(x=>x.french),translations:zh.filter(Boolean),rule:lines('c1EditRule').filter(Boolean),function:lines('c1EditFunction').filter(Boolean),commonErrors:lines('c1EditErrors').filter(Boolean),notes:lines('c1EditNotes').filter(Boolean),tags:$('c1EditTags').value.split(/[,，]/).map(s=>s.trim()).filter(Boolean)};syncAdapter(editing);editing=null;dialog.close();save();rebuildQueue();render();renderList();};
  function syncAdapter(e){const x=DATA.find(x=>x.id===e.id),v=effective(e);if(x){x.fr=v.french;x.zh=v.chinese;if(x.members[0]){x.members[0].fr=v.french;x.members[0].zh=v.chinese;}}}
- function matches(e){const u=ui(),v=effective(e),r=record(e.id);return (u.category===null||e.memberships.some(m=>m.category===u.category&&(!u.subcategory||m.subcategory===u.subcategory)))&&(!u.priority||e.priority===Number(u.priority))&&(!u.status||(u.status==='favorite'?r.favorite:u.status==='note'?r.userNote.trim():r.masteryStatus===u.status))&&(!u.search||n([v.chinese,v.french,...v.tags,...v.rule].join(' ')).includes(n(u.search)));}
+ function activeSubjunctiveEntry(e){
+  if(e.category!==0)return true;
+  if(e.kind==='structure'&&/subjonctif/i.test(e.french))return true;
+  if(e.kind==='collocation'&&/subjonctif/i.test(e.french))return true;
+  if(e.subcategory==='结尾组合'&&/subjonctif/i.test(e.french))return true;
+  return false;
+ }
+ function matches(e){const u=ui(),v=effective(e),r=record(e.id);return activeSubjunctiveEntry(e)&&(u.category===null||e.memberships.some(m=>m.category===u.category&&(!u.subcategory||m.subcategory===u.subcategory)))&&(!u.priority||e.priority===Number(u.priority))&&(!u.status||(u.status==='favorite'?r.favorite:u.status==='note'?r.userNote.trim():r.masteryStatus===u.status))&&(!u.search||n([v.chinese,v.french,...v.tags,...v.rule].join(' ')).includes(n(u.search)));}
  function pool(){return entries.filter(matches);}
  function reviewSort(items){return [...items].sort((a,b)=>{
   const rank=e=>{const r=record(e.id);return r.masteryStatus==='unknown'?0:r.masteryStatus==='weak'?1:rec(e.id).error&&!rec(e.id).error.resolved?2:r.hesitations>=2?3:r.favorite?4:r.userNote.trim()?5:r.streak>=3?7:6;};
