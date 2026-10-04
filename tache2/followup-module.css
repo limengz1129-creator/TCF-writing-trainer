@@ -13,3 +13,14 @@
 .t2-fu-fr{font-size:18px;line-height:1.65;margin:12px 0 6px;font-weight:650}.t2-fu-zh{margin:0;color:#69716c;font-size:13px;line-height:1.6}.t2-fu-sub{display:block;margin-top:7px;color:#85908a}
 .t2-fu-empty{padding:30px;border:1px dashed #cbd6d0;border-radius:14px;background:#f8faf9;text-align:center;color:#69716c}
 @media(max-width:650px){.t2-fu-backdrop{padding:0}.t2-fu-modal{min-height:100vh;border-radius:0;border:0}.t2-fu-head{padding:16px}.t2-fu-guide{margin:12px 16px 0}.t2-fu-tabs{padding:12px 16px 0;display:grid;grid-template-columns:1fr}.t2-fu-items{padding:12px 16px 18px}.t2-fu-top{flex-direction:column}.t2-fu-actions{width:100%}}
+.t2-fu-manage{display:flex;justify-content:flex-end;margin-bottom:2px}
+.t2-fu-pencil{border:1px solid #cbd5d0;background:#fff;color:#355b4f;border-radius:8px;padding:6px 9px;font-weight:800;cursor:pointer}
+.t2-fu-pencil:hover{background:#eef5f2}
+.t2-fu-delete{border:1px solid #e1c1bd;background:#fff;color:#9d3d35;border-radius:8px;padding:6px 9px;font-weight:700;cursor:pointer}
+.t2-fu-delete:hover{background:#fde8e5}
+.t2-fu-edit-form{border:1px solid #b8cbc2;background:#f8fbfa;border-radius:14px;padding:16px;margin-bottom:12px}
+.t2-fu-edit-form h3{margin:0 0 10px;font-size:17px}
+.t2-fu-edit-form label{display:block;font-size:13px;font-weight:700;color:#42504a;margin:9px 0}
+.t2-fu-edit-input{display:block;width:100%;margin-top:5px;border:1px solid #c7d3cd;border-radius:9px;padding:10px 11px;background:#fff;color:#1f2421;font:inherit;box-sizing:border-box}
+textarea.t2-fu-edit-input{min-height:72px;resize:vertical;line-height:1.55}
+.t2-fu-edit-actions{display:flex;gap:8px;margin-top:12px}
