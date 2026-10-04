@@ -60,6 +60,7 @@
   ],
   lessons:[
    {h:'1. 不定冠词 un / une / des',b:'第一次引入、不特定的一个或一些对象。口语里不要把所有复数名词都机械理解成 des；先判断是不是“不特定的一些”。',ex:'rejoindre des associations locales · participer à des activités de quartier'},
+   {h:'1A. 复数不定冠词 des 在前置形容词前通常变 de',b:'标准法语中，复数不定冠词 des 后如果紧跟一个前置形容词，通常改为 de / d’。这条规则只针对“不定冠词 des”；如果 des 是 de + les 的缩合，则不能机械改成 de。',ex:'des amis → de nouveaux amis · des possibilités → de nouvelles possibilités · des avantages → de nombreux avantages · des conséquences → de graves conséquences'},
    {h:'2. 定冠词 le / la / les',b:'用于明确对象、已经知道的对象，也常用于泛指一个类别或抽象概念。TCF Tâche 3 大量抽象论证都依赖这一层。',ex:'la barrière linguistique · la maîtrise de la langue · le marché du travail'},
    {h:'3. 部分冠词 du / de la / de l’',b:'表示不可数事物的不确定数量。注意 du 也可能只是 de + le 的缩合，两种来源必须区分。',ex:'du café（部分冠词） ≠ le fonctionnement du marché du travail（de + le）'},
    {h:'4. 数量表达后用 de / d’',b:'TCF 高频数量表达中，beaucoup / peu / un peu / assez / trop / plus / moins / autant / davantage / suffisamment / combien 等后面一般直接接 de / d’ + nom。无论后面是可数还是不可数名词，通常都不再保留 un / une / des / du / de la / de l’.',ex:'beaucoup de personnes · beaucoup d’enfants · beaucoup d’argent · plus de possibilités · moins de stress · combien d’activités'},
