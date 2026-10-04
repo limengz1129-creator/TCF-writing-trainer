@@ -50,6 +50,23 @@ const UNIVERSAL_REACTIONS={
   ]
 };
 const $=(s,r=document)=>r.querySelector(s);
+const EDIT_KEY='tcf-tache2-open-close-edits-v1';
+function readEdits(){try{const v=JSON.parse(localStorage.getItem(EDIT_KEY)||'{}');return v&&typeof v==='object'?v:{};}catch{return{};}}
+function writeEdits(v){localStorage.setItem(EDIT_KEY,JSON.stringify(v));}
+function getThemeItems(theme,kind){
+  const edits=readEdits(),saved=edits?.[theme]?.[kind];
+  if(Array.isArray(saved))return saved;
+  const base=DATA[theme]?.[kind]?.items;
+  return Array.isArray(base)?base.map(x=>({...x})):[];
+}
+function saveThemeItems(theme,kind,items){
+  const edits=readEdits();
+  edits[theme]=edits[theme]||{};
+  edits[theme][kind]=items;
+  writeEdits(edits);
+}
+function itemId(item,i){return item.id||('base-'+i);}
+
 function currentTheme(){
   const v=$('#themeFilter')?.value||'';
   return v || window.TCF_T2_TRAINER?.current()?.theme || '';
@@ -66,24 +83,71 @@ function emptyState(wrap,theme,kind){
   box.append(h,p);wrap.append(box);
 }
 function show(kind){
-  const theme=currentTheme(),isReaction=kind==='reaction',d=isReaction?UNIVERSAL_REACTIONS:DATA[theme]?.[kind];
+  const theme=currentTheme(),isReaction=kind==='reaction';
   $('#t2OCModalTitle').textContent=isReaction?UNIVERSAL_REACTIONS.title:(kind==='opening'?'开头模块':'结尾模块');
   $('#t2OCModalSub').textContent=isReaction?UNIVERSAL_REACTIONS.subtitle:((theme||'未选择大主题')+' · TCF Canada 口语 Tâche 2 '+(kind==='opening'?'通用开场':'通用收尾'));
   const wrap=$('#t2OCItems');wrap.replaceChildren();
-  if(!d){emptyState(wrap,theme,kind);}
-  else d.items.forEach((item,i)=>{
+
+  if(isReaction){
+    renderCards(wrap,UNIVERSAL_REACTIONS.items,{editable:false});
+  }else{
+    if(!theme){emptyState(wrap,theme,kind);}
+    else{
+      const items=getThemeItems(theme,kind);
+      const tools=document.createElement('div');tools.className='t2-oc-manage';
+      const add=document.createElement('button');add.type='button';add.className='btn primary';add.textContent='＋ 新增'+(kind==='opening'?'开头':'结尾');
+      add.onclick=()=>openEditor({theme,kind,index:-1});
+      tools.append(add);wrap.append(tools);
+      if(items.length)renderCards(wrap,items,{editable:true,theme,kind});
+      else emptyState(wrap,theme,kind);
+    }
+  }
+  $('#t2OCBackdrop').classList.add('open');document.body.style.overflow='hidden';
+}
+function renderCards(wrap,items,opt){
+  items.forEach((item,i)=>{
     const card=document.createElement('article');card.className='t2-oc-card';
     const top=document.createElement('div');top.className='t2-oc-card-top';
     const tag=document.createElement('span');tag.className='t2-oc-tag';tag.textContent=(i+1)+'. '+item.tag;
     const actions=document.createElement('div');actions.className='t2-oc-actions';
     const audio=document.createElement('button');audio.type='button';audio.className='btn ghost';audio.textContent='🔊 发音';audio.onclick=()=>speak(item.fr);
     const copy=document.createElement('button');copy.type='button';copy.className='btn ghost';copy.textContent='复制';copy.onclick=async()=>{try{await navigator.clipboard.writeText(item.fr);copy.textContent='已复制';setTimeout(()=>copy.textContent='复制',1000);}catch{}};
-    actions.append(audio,copy);top.append(tag,actions);
+    actions.append(audio,copy);
+    if(opt.editable){
+      const edit=document.createElement('button');edit.type='button';edit.className='t2-oc-pencil';edit.textContent='✎';edit.title='编辑这条';edit.setAttribute('aria-label','编辑 '+item.tag);edit.onclick=()=>openEditor({theme:opt.theme,kind:opt.kind,index:i});
+      const del=document.createElement('button');del.type='button';del.className='t2-oc-delete';del.textContent='删除';del.onclick=()=>deleteItem(opt.theme,opt.kind,i);
+      actions.append(edit,del);
+    }
+    top.append(tag,actions);
     const fr=document.createElement('p');fr.className='t2-oc-fr';fr.lang='fr';fr.textContent=item.fr;
     const zh=document.createElement('p');zh.className='t2-oc-zh';zh.textContent=item.zh;
     card.append(top,fr,zh);wrap.append(card);
   });
-  $('#t2OCBackdrop').classList.add('open');document.body.style.overflow='hidden';
+}
+function openEditor({theme,kind,index}){
+  const items=getThemeItems(theme,kind),existing=index>=0?items[index]:{tag:'',fr:'',zh:''};
+  const form=document.createElement('form');form.className='t2-oc-edit-form';
+  form.innerHTML='<h3>'+(index>=0?'编辑':'新增')+(kind==='opening'?'开头':'结尾')+'</h3>';
+  const fields=[['场景标签','tag',existing.tag||''],['法语句子','fr',existing.fr||''],['中文说明','zh',existing.zh||'']];
+  const inputs={};
+  for(const [labelText,key,val] of fields){
+    const label=document.createElement('label');label.textContent=labelText;
+    const input=key==='tag'?document.createElement('input'):document.createElement('textarea');
+    input.value=val;input.required=true;input.className='t2-oc-edit-input';input.lang=key==='fr'?'fr':(key==='zh'?'zh-CN':'');
+    inputs[key]=input;label.append(input);form.append(label);
+  }
+  const actions=document.createElement('div');actions.className='t2-oc-edit-actions';
+  const save=document.createElement('button');save.type='submit';save.className='btn primary';save.textContent='保存';
+  const cancel=document.createElement('button');cancel.type='button';cancel.className='btn ghost';cancel.textContent='取消';
+  actions.append(save,cancel);form.append(actions);
+  const wrap=$('#t2OCItems');wrap.prepend(form);inputs.tag.focus();
+  cancel.onclick=()=>form.remove();
+  form.onsubmit=e=>{e.preventDefault();const next={tag:inputs.tag.value.trim(),fr:inputs.fr.value.trim(),zh:inputs.zh.value.trim(),id:existing.id||('u-'+Date.now())};if(!next.tag||!next.fr||!next.zh)return;if(index>=0)items[index]=next;else items.push(next);saveThemeItems(theme,kind,items);show(kind);};
+}
+function deleteItem(theme,kind,index){
+  const items=getThemeItems(theme,kind),item=items[index];if(!item)return;
+  if(!confirm('删除这条'+(kind==='opening'?'开头':'结尾')+'吗？'))return;
+  items.splice(index,1);saveThemeItems(theme,kind,items);show(kind);
 }
 function close(){const b=$('#t2OCBackdrop');if(b)b.classList.remove('open');document.body.style.overflow='';if('speechSynthesis' in window)speechSynthesis.cancel();}
 function updateEntry(){
