@@ -37,7 +37,7 @@
   const label=tierLabel();
   if(label)$('sourceNote').textContent=label+'。只调用 613 动词库中真实出现过的虚拟式现在时人称 / 变位；不要求机械补齐六个人称。';
  }
- $('category')?.addEventListener('change',()=>{if(mode===3&&state.subjunctiveTier&&$('category').value!=='虚拟式现在时'){state.subjunctiveTier='';if($('subjunctiveTier'))$('subjunctiveTier').value='';syncNote();persist();}});
+ $('category')?.addEventListener('change',()=>{if(mode===3&&state.subjunctiveTier&&$('category').value!=='虚拟式现在时'){state.subjunctiveTier='';if($('subjunctiveTier'))$('subjunctiveTier').value='';show(filtered()[0]||null);buildSource();syncNote();persist();}});
  function openTier(tier){
   window.__openingSubjunctiveBridge=true;
   setModule(3,true);
