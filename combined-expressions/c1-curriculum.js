@@ -49,7 +49,10 @@
   quick:[
    ['泛指类别','les jeunes · la technologie · le télétravail'],
    ['一个 / 一些','un avantage · une solution · des activités'],
-   ['数量表达','beaucoup de · peu de · plus de · assez de + nom'],
+   ['数量表达','beaucoup de · peu de · un peu de · assez de · trop de · plus de · moins de · autant de · davantage de · suffisamment de · combien de'],
+   ['TCF 高频 de 类','beaucoup de · peu de · un peu de · assez de · trop de · plus de · moins de · autant de · davantage de · suffisamment de · combien de'],
+   ['不加 de 的高频量词','plusieurs + nom · quelques + nom · certains/certaines + nom'],
+   ['群体比例表达','la plupart des + nom · la majorité des + nom'],
    ['否定','pas de + nom（但定冠词表达类别时通常保留）'],
    ['缩合','à + le = au · à + les = aux · de + le = du · de + les = des'],
    ['高频搭配','profiter de · avoir besoin de · participer à · faire face à'],
@@ -59,10 +62,12 @@
    {h:'1. 不定冠词 un / une / des',b:'第一次引入、不特定的一个或一些对象。口语里不要把所有复数名词都机械理解成 des；先判断是不是“不特定的一些”。',ex:'rejoindre des associations locales · participer à des activités de quartier'},
    {h:'2. 定冠词 le / la / les',b:'用于明确对象、已经知道的对象，也常用于泛指一个类别或抽象概念。TCF Tâche 3 大量抽象论证都依赖这一层。',ex:'la barrière linguistique · la maîtrise de la langue · le marché du travail'},
    {h:'3. 部分冠词 du / de la / de l’',b:'表示不可数事物的不确定数量。注意 du 也可能只是 de + le 的缩合，两种来源必须区分。',ex:'du café（部分冠词） ≠ le fonctionnement du marché du travail（de + le）'},
-   {h:'4. 数量表达后用 de',b:'beaucoup / peu / assez / trop / plus / moins 等数量表达后，一般使用 de + nom。这个结构要整体自动化。',ex:'beaucoup de personnes · beaucoup de jeunes · plus de possibilités'},
-   {h:'5. 否定后的 de',b:'不定冠词、部分冠词在很多否定句中变为 de / d’：J’ai une voiture → Je n’ai pas de voiture。但定冠词表达类别时通常保留：Je n’aime pas le bruit。',ex:'Il y a des activités → Il n’y a pas d’activités.'},
-   {h:'6. 缩合冠词',b:'à + le → au；à + les → aux；de + le → du；de + les → des。à la / à l’ / de la / de l’ 不缩合。',ex:'participer au festival · profiter du séjour · profiter des ressources disponibles'},
-   {h:'7. 固定搭配决定介词，再决定冠词',b:'先记整个动词结构，再处理后面的名词。不要临场分成三步拼装。',ex:'profiter de quelque chose → profiter des ressources disponibles'}
+   {h:'4. 数量表达后用 de / d’',b:'TCF 高频数量表达中，beaucoup / peu / un peu / assez / trop / plus / moins / autant / davantage / suffisamment / combien 等后面一般直接接 de / d’ + nom。无论后面是可数还是不可数名词，通常都不再保留 un / une / des / du / de la / de l’.',ex:'beaucoup de personnes · beaucoup d’enfants · beaucoup d’argent · plus de possibilités · moins de stress · combien d’activités'},
+   {h:'5. 数量表达的两个重要对比',b:'第一，plusieurs / quelques / certains / certaines 后面直接接名词，不加 de。第二，la plupart / la majorité 表示“某群体中的大多数”时通常接 des。',ex:'plusieurs personnes · quelques difficultés · certaines personnes · la plupart des jeunes · la majorité des participants'},
+   {h:'6. 特指群体时可以出现 des',b:'beaucoup de + nom 是默认泛指结构；但如果意思是“某个已经明确群体中的很多”，de + les 会缩合成 des。不要把 beaucoup des 当成普通数量结构使用。',ex:'beaucoup de jeunes（很多年轻人） · beaucoup des étudiants que j’ai interrogés（我采访过的那些学生中的很多人）'},
+   {h:'7. 否定后的 de',b:'不定冠词、部分冠词在很多否定句中变为 de / d’：J’ai une voiture → Je n’ai pas de voiture。但定冠词表达类别时通常保留：Je n’aime pas le bruit。',ex:'Il y a des activités → Il n’y a pas d’activités.'},
+   {h:'8. 缩合冠词',b:'à + le → au；à + les → aux；de + le → du；de + les → des。à la / à l’ / de la / de l’ 不缩合。',ex:'participer au festival · profiter du séjour · profiter des ressources disponibles'},
+   {h:'9. 固定搭配决定介词，再决定冠词',b:'先记整个动词结构，再处理后面的名词。不要临场分成三步拼装。',ex:'profiter de quelque chose → profiter des ressources disponibles'}
   ],
   errors:[
    {bad:'beaucoup des enfants',good:"beaucoup d’enfants",why:'一般泛指“很多孩子”时，数量表达 beaucoup 后直接接 de / d’。'},
@@ -85,6 +90,8 @@
   ],
   practice:[
    {level:'Level 1 · 识别',q:'beaucoup ___ personnes',a:'de',note:'数量表达 beaucoup 后用 de。'},
+   {level:'Level 1 · 识别',q:'plusieurs ___ personnes',a:'plusieurs personnes',note:'plusieurs 后直接接名词，不加 de。'},
+   {level:'Level 1 · 识别',q:'la plupart ___ jeunes',a:'la plupart des jeunes',note:'la plupart des + nom。'},
    {level:'Level 1 · 识别',q:'profiter ___ séjour',a:'du',note:'profiter de + le séjour → du séjour。'},
    {level:'Level 2 · 改错',q:'beaucoup des jeunes utilisent les réseaux sociaux.',a:'beaucoup de jeunes utilisent les réseaux sociaux.',note:'泛指数量：beaucoup de + nom。'},
    {level:'Level 2 · 改错',q:'Il n’y a pas des activités pour les enfants.',a:"Il n’y a pas d’activités pour les enfants.",note:'否定中的不定冠词 des 通常变 de / d’。'},
