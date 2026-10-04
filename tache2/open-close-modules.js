@@ -51,6 +51,7 @@ const UNIVERSAL_REACTIONS={
 };
 const $=(s,r=document)=>r.querySelector(s);
 const EDIT_KEY='tcf-tache2-open-close-edits-v1';
+const REACTION_KEY='tcf-tache2-reaction-edits-v1';
 function readEdits(){try{const v=JSON.parse(localStorage.getItem(EDIT_KEY)||'{}');return v&&typeof v==='object'?v:{};}catch{return{};}}
 function writeEdits(v){localStorage.setItem(EDIT_KEY,JSON.stringify(v));}
 function getThemeItems(theme,kind){
@@ -66,6 +67,11 @@ function saveThemeItems(theme,kind,items){
   writeEdits(edits);
 }
 function itemId(item,i){return item.id||('base-'+i);}
+function getReactionItems(){
+  try{const saved=JSON.parse(localStorage.getItem(REACTION_KEY)||'null');if(Array.isArray(saved))return saved;}catch{}
+  return UNIVERSAL_REACTIONS.items.map(x=>({...x}));
+}
+function saveReactionItems(items){localStorage.setItem(REACTION_KEY,JSON.stringify(items));}
 
 function currentTheme(){
   const v=$('#themeFilter')?.value||'';
@@ -89,7 +95,13 @@ function show(kind){
   const wrap=$('#t2OCItems');wrap.replaceChildren();
 
   if(isReaction){
-    renderCards(wrap,UNIVERSAL_REACTIONS.items,{editable:false});
+    const items=getReactionItems();
+    const tools=document.createElement('div');tools.className='t2-oc-manage';
+    const add=document.createElement('button');add.type='button';add.className='btn primary';add.textContent='＋ 新增反应句';
+    add.onclick=()=>openEditor({theme:'',kind:'reaction',index:-1});
+    tools.append(add);wrap.append(tools);
+    if(items.length)renderCards(wrap,items,{editable:true,theme:'',kind:'reaction'});
+    else emptyState(wrap,'','reaction');
   }else{
     if(!theme){emptyState(wrap,theme,kind);}
     else{
@@ -125,10 +137,12 @@ function renderCards(wrap,items,opt){
   });
 }
 function openEditor({theme,kind,index}){
-  const items=getThemeItems(theme,kind),existing=index>=0?items[index]:{tag:'',fr:'',zh:''};
+  const isReaction=kind==='reaction';
+  const items=isReaction?getReactionItems():getThemeItems(theme,kind),existing=index>=0?items[index]:{tag:'',fr:'',zh:''};
   const form=document.createElement('form');form.className='t2-oc-edit-form';
-  form.innerHTML='<h3>'+(index>=0?'编辑':'新增')+(kind==='opening'?'开头':'结尾')+'</h3>';
-  const fields=[['场景标签','tag',existing.tag||''],['法语句子','fr',existing.fr||''],['中文说明','zh',existing.zh||'']];
+  const kindName=isReaction?'反应句':(kind==='opening'?'开头':'结尾');
+  form.innerHTML='<h3>'+(index>=0?'编辑':'新增')+kindName+'</h3>';
+  const fields=[[isReaction?'分类标签':'场景标签','tag',existing.tag||''],['法语句子','fr',existing.fr||''],['中文说明','zh',existing.zh||'']];
   const inputs={};
   for(const [labelText,key,val] of fields){
     const label=document.createElement('label');label.textContent=labelText;
@@ -142,12 +156,14 @@ function openEditor({theme,kind,index}){
   actions.append(save,cancel);form.append(actions);
   const wrap=$('#t2OCItems');wrap.prepend(form);inputs.tag.focus();
   cancel.onclick=()=>form.remove();
-  form.onsubmit=e=>{e.preventDefault();const next={tag:inputs.tag.value.trim(),fr:inputs.fr.value.trim(),zh:inputs.zh.value.trim(),id:existing.id||('u-'+Date.now())};if(!next.tag||!next.fr||!next.zh)return;if(index>=0)items[index]=next;else items.push(next);saveThemeItems(theme,kind,items);show(kind);};
+  form.onsubmit=e=>{e.preventDefault();const next={tag:inputs.tag.value.trim(),fr:inputs.fr.value.trim(),zh:inputs.zh.value.trim(),id:existing.id||('u-'+Date.now())};if(!next.tag||!next.fr||!next.zh)return;if(index>=0)items[index]=next;else items.push(next);if(isReaction)saveReactionItems(items);else saveThemeItems(theme,kind,items);show(kind);};
 }
 function deleteItem(theme,kind,index){
-  const items=getThemeItems(theme,kind),item=items[index];if(!item)return;
-  if(!confirm('删除这条'+(kind==='opening'?'开头':'结尾')+'吗？'))return;
-  items.splice(index,1);saveThemeItems(theme,kind,items);show(kind);
+  const isReaction=kind==='reaction';
+  const items=isReaction?getReactionItems():getThemeItems(theme,kind),item=items[index];if(!item)return;
+  const label=isReaction?'反应句':(kind==='opening'?'开头':'结尾');
+  if(!confirm('删除这条'+label+'吗？'))return;
+  items.splice(index,1);if(isReaction)saveReactionItems(items);else saveThemeItems(theme,kind,items);show(kind);
 }
 function close(){const b=$('#t2OCBackdrop');if(b)b.classList.remove('open');document.body.style.overflow='';if('speechSynthesis' in window)speechSynthesis.cancel();}
 function updateEntry(){
