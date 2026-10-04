@@ -29,3 +29,13 @@
 .compact-study .item-tools-panel{min-width:min(290px,100%)}
 #singleItemTools{margin:12px 0}
 @media(max-width:600px){.compact-study .batch-table th:first-child{width:28%}.compact-study .batch-table th:nth-child(2){width:72%}.compact-study .batch-table th,.compact-study .batch-table td{padding:6px 5px}.compact-study .compact-french{font-size:13px}}
+
+/* Single verb tools occupy the full row, never the narrow pronoun column. */
+#verbCards .verb-form-row>.item-tools{grid-column:1/-1;min-width:0;width:100%;align-items:stretch}
+#verbCards .verb-row-actions button,#singleItemTools>.item-tools>button{white-space:nowrap;flex:0 0 auto}
+#verbCards .item-tools-panel,#singleItemTools .item-tools-panel{padding:12px;max-width:100%;background:#f8f9fd}
+#verbCards .item-tools-panel label,#singleItemTools .item-tools-panel label{display:block;font-size:14px;margin:0 0 10px}
+#verbCards .item-tools-panel input,#singleItemTools .item-tools-panel input{display:block;margin-top:5px;border:1px solid #ccd2e3;border-radius:7px;padding:9px}
+#verbCards .item-tools-panel textarea,#singleItemTools .item-tools-panel textarea{display:block;margin-top:5px;min-height:80px;padding:9px;font-size:15px}
+#verbCards .item-tools-panel>button,#singleItemTools .item-tools-panel>button{margin-right:8px;white-space:nowrap}
+#verbCards .item-note,#singleItemTools .item-note{padding:8px 12px;background:#f3f5fd;border-radius:7px;font-size:14px;line-height:1.5}
