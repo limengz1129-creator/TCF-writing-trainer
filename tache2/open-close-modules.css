@@ -16,3 +16,15 @@
 
 .t2-oc-entry-actions{grid-template-columns:1fr 1fr}
 .t2-oc-reaction-btn{grid-column:1/-1}
+
+.t2-oc-manage{display:flex;justify-content:flex-end;margin-bottom:2px}
+.t2-oc-pencil{border:1px solid #cbd5d0;background:#fff;color:#355b4f;border-radius:8px;padding:6px 9px;font-weight:800;cursor:pointer}
+.t2-oc-pencil:hover{background:#eef5f2}
+.t2-oc-delete{border:1px solid #e1c1bd;background:#fff;color:#9d3d35;border-radius:8px;padding:6px 9px;font-weight:700;cursor:pointer}
+.t2-oc-delete:hover{background:#fde8e5}
+.t2-oc-edit-form{border:1px solid #b8cbc2;background:#f8fbfa;border-radius:14px;padding:16px;margin-bottom:12px}
+.t2-oc-edit-form h3{margin:0 0 10px;font-size:17px}
+.t2-oc-edit-form label{display:block;font-size:13px;font-weight:700;color:#42504a;margin:9px 0}
+.t2-oc-edit-input{display:block;width:100%;margin-top:5px;border:1px solid #c7d3cd;border-radius:9px;padding:10px 11px;background:#fff;color:#1f2421;font:inherit;box-sizing:border-box}
+textarea.t2-oc-edit-input{min-height:86px;resize:vertical;line-height:1.55}
+.t2-oc-edit-actions{display:flex;gap:8px;margin-top:12px}
