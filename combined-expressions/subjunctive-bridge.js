@@ -85,7 +85,7 @@
    const allowed=TIERS[state.subjunctiveTier];
    rs=rs.filter(x=>x.tense==='虚拟式现在时'&&allowed.has(x.lemma));
   }
-  if(mode===3&&state.subjunctiveSort==='frequency'&&$('category')?.value==='虚拟式现在时'&&!order){
+  if(mode===3&&state.subjunctiveSort==='frequency'&&!order&&(state.subjunctiveTier||$('category')?.value==='虚拟式现在时')){
    rs=[...rs].sort(compareFrequency);
   }
   return rs;
