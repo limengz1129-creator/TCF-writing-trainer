@@ -32,6 +32,22 @@
   {zh:'我们没有足够的时间准备。',pre:'Nous n’avons pas assez ',post:' pour nous préparer.',a:'de temps',type:'数量表达 + de',note:'assez de + nom；即使 temps 不可数，也不保留 du。'},
   {zh:'政府的作用是提供一个公平的框架。',pre:'Le rôle ',post:' est de fournir un cadre équitable.',a:'du gouvernement',type:'de + le = du',note:'le rôle de + le gouvernement → du gouvernement。'},
   {zh:'我采访过的那些学生中，很多人支持这个措施。',pre:'Beaucoup ',post:' soutiennent cette mesure.',a:"des étudiants que j’ai interrogés",alts:["des étudiants que j'ai interrogés"],type:'特指群体：de + les = des',note:'这里指“我采访过的那些学生中的很多人”，所以 de + les → des；不是普通的 beaucoup de + nom。'}
+  ,{zh:'很多人认为公共交通应该更便宜。',pre:'',post:' pensent que les transports publics devraient être moins chers.',a:'Plusieurs personnes',type:'量词：不加 de',note:'plusieurs + nom，后面直接接名词，不加 de。'}
+  ,{zh:'这个方案还存在一些困难。',pre:'Cette solution présente encore ',post:'.',a:'quelques difficultés',type:'量词：不加 de',note:'quelques + nom，后面直接接名词，不加 de。'}
+  ,{zh:'大多数年轻人使用社交媒体。',pre:'',post:' utilisent les réseaux sociaux.',a:'La plupart des jeunes',type:'群体比例：des',note:'la plupart de + les jeunes → la plupart des jeunes。'}
+  ,{zh:'大多数参与者对这个活动感到满意。',pre:'',post:' sont satisfaits de cette activité.',a:'La majorité des participants',type:'群体比例：des',note:'la majorité de + les participants → la majorité des participants。'}
+
+  ,{zh:'年轻人应该参加这个节日。',pre:'Les jeunes devraient participer ',post:'.',a:'au festival',type:'à + le = au',note:'participer à + le festival → participer au festival。'}
+  ,{zh:'新移民应该参加当地活动。',pre:'Les nouveaux arrivants devraient participer ',post:'.',a:'aux activités locales',type:'à + les = aux',note:'participer à + les activités → participer aux activités。'}
+  ,{zh:'新移民必须适应劳动力市场。',pre:'Les nouveaux arrivants doivent s’adapter ',post:'.',a:'au marché du travail',type:'à + le = au',note:'s’adapter à + le marché du travail → au marché du travail。'}
+  ,{zh:'每个人都应该能够获得公共资源。',pre:'Tout le monde devrait avoir accès ',post:'.',a:'aux ressources publiques',type:'à + les = aux',note:'avoir accès à + les ressources → aux ressources publiques。'}
+
+  ,{zh:'积极参与当地生活有助于融入。',pre:'Participer ',post:' facilite l’intégration.',a:'à la vie locale',type:'à + la：不缩合',note:'à + la 保持 à la，不发生缩合。'}
+  ,{zh:'移民需要适应当地社会。',pre:'Les immigrants doivent s’adapter ',post:'.',a:'à la société locale',type:'à + la：不缩合',note:'à + la société → à la société；不能变成 au。'}
+  ,{zh:'所有孩子都应该能够接受教育。',pre:'Tous les enfants devraient avoir accès ',post:'.',a:"à l’éducation",alts:["à l'education","à l’éducation"],type:'à + l’：不缩合',note:'à + l’ 保持 à l’，不发生缩合。'}
+  ,{zh:'人们经常谈论生活质量。',pre:'On parle souvent ',post:'.',a:'de la qualité de vie',type:'de + la：不缩合',note:'de + la 保持 de la，不发生缩合。'}
+  ,{zh:'年轻人可以从这次经历中受益。',pre:'Les jeunes peuvent profiter ',post:'.',a:"de l’expérience",alts:["de l'experience","de l’expérience"],type:'de + l’：不缩合',note:'de + l’ 保持 de l’，不发生缩合。'}
+  ,{zh:'我们应该讨论教育的重要性。',pre:'Nous devrions discuter ',post:'.',a:"de l’importance de l’éducation",alts:["de l'importance de l'education","de l’importance de l’éducation"],type:'de + l’：不缩合',note:'de + l’ 保持 de l’，不发生缩合；这里两个元音开头名词都使用 de l’。'}
  ];
  const $=id=>document.getElementById(id);
  const E=(tag,cls='',txt='')=>{const e=document.createElement(tag);e.className=cls;e.textContent=txt;return e};
@@ -50,8 +66,8 @@
   const host=$('c1-practice');if(!host||$('c1ArticlePartitiveDrill'))return;
   const wrap=E('section','c1-partitive-drill');wrap.id='c1ArticlePartitiveDrill';
   const head=E('div','c1-partitive-head');
-  const title=E('div');title.append(E('div','eyebrow','#3 Les articles · 30 题专项训练'),E('h3','','部分冠词 vs de 缩合'),E('p','note','中文提示 → 法语核心词块填空。只挖空冠词 / de 结构，不做整句默写。检查后再看来源和规则。'));
-  const stat=E('div','c1-partitive-stat','0 / 30 已检查');stat.id='c1PartitiveStat';head.append(title,stat);wrap.append(head);
+  const title=E('div');title.append(E('div','eyebrow','#3 Les articles · 44 题专项训练'),E('h3','','部分冠词 vs de 缩合'),E('p','note','中文提示 → 法语核心词块填空。只挖空冠词 / de 结构，不做整句默写。检查后再看来源和规则。'));
+  const stat=E('div','c1-partitive-stat','0 / 44 已检查');stat.id='c1PartitiveStat';head.append(title,stat);wrap.append(head);
   const tools=E('div','c1-partitive-tools');
   const checkAll=E('button','primary','检查全部');const reveal=E('button','','显示全部答案');const mistakes=E('button','','只练错题');const reset=E('button','','重置本专项');
   [checkAll,reveal,mistakes,reset].forEach(b=>{b.type='button';tools.append(b)});wrap.append(tools);
@@ -80,11 +96,11 @@
    tr.append(zh,fr);tb.append(tr);
   });
   table.append(tb);scroller.append(table);wrap.append(scroller);
-  function updateStat(){const st=load();const vals=Object.values(st);const checked=vals.filter(x=>x?.checked).length;const right=vals.filter(x=>x?.checked&&x?.ok).length;const el=$('c1PartitiveStat');if(el)el.textContent=checked+' / 30 已检查 · '+right+' 正确'}
+  function updateStat(){const st=load();const vals=Object.values(st);const checked=vals.filter(x=>x?.checked).length;const right=vals.filter(x=>x?.checked&&x?.ok).length;const el=$('c1PartitiveStat');if(el)el.textContent=checked+' / 44 已检查 · '+right+' 正确'}
   checkAll.onclick=()=>{tb.querySelectorAll('tr').forEach((tr,i)=>{const input=tr.querySelector('input');const q=Q[i];const ok=isRight(q,input.value);feedbackInto(tr.querySelector('.c1-row-feedback'),q,ok);tr.classList.toggle('is-right',ok);tr.classList.toggle('is-wrong',!ok);const st=load();st[i]={value:input.value,checked:true,ok};save(st)});updateStat()};
   reveal.onclick=()=>{tb.querySelectorAll('tr').forEach((tr,i)=>{const input=tr.querySelector('input');input.value=Q[i].a;feedbackInto(tr.querySelector('.c1-row-feedback'),Q[i],true);tr.classList.add('is-right');tr.classList.remove('is-wrong');const st=load();st[i]={value:input.value,checked:true,ok:true};save(st)});updateStat()};
-  let onlyWrong=false;mistakes.onclick=()=>{onlyWrong=!onlyWrong;const st=load();tb.querySelectorAll('tr').forEach((tr,i)=>{tr.hidden=onlyWrong&&!(st[i]?.checked&&!st[i]?.ok)});mistakes.textContent=onlyWrong?'显示全部 30 题':'只练错题'};
-  reset.onclick=()=>{if(!confirm('确定重置这 30 题的填写与错题记录吗？'))return;localStorage.removeItem(KEY);tb.querySelectorAll('tr').forEach(tr=>{tr.hidden=false;tr.classList.remove('is-right','is-wrong');tr.querySelector('input').value='';tr.querySelector('.c1-row-feedback').classList.add('hidden')});onlyWrong=false;mistakes.textContent='只练错题';updateStat()};
+  let onlyWrong=false;mistakes.onclick=()=>{onlyWrong=!onlyWrong;const st=load();tb.querySelectorAll('tr').forEach((tr,i)=>{tr.hidden=onlyWrong&&!(st[i]?.checked&&!st[i]?.ok)});mistakes.textContent=onlyWrong?'显示全部 44 题':'只练错题'};
+  reset.onclick=()=>{if(!confirm('确定重置这 44 题的填写与错题记录吗？'))return;localStorage.removeItem(KEY);tb.querySelectorAll('tr').forEach(tr=>{tr.hidden=false;tr.classList.remove('is-right','is-wrong');tr.querySelector('input').value='';tr.querySelector('.c1-row-feedback').classList.add('hidden')});onlyWrong=false;mistakes.textContent='只练错题';updateStat()};
   updateStat();
   host.insertAdjacentElement('afterend',wrap);
  }
