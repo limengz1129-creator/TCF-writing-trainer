@@ -12,7 +12,7 @@
  const study=()=>mode===3?state.conjugationStudy:mode===6?state.phraseStudy:state.vocabularyStudy;
  const reviewState=()=>mode===3?state.conjugationStudyReview:mode===6?state.phraseStudyReview:state.vocabularyStudyReview;
  const batchState=()=>mode===3?state.conjugationStudyBatch||(state.conjugationStudyBatch={}):mode===6?state.phraseBatch:state.vocabularyBatch;
- const maximum=()=>DATA.filter(x=>x.module===(mode===6?6:5)).length;
+ const maximum=()=>mode===3?DATA.filter(x=>x.module===3).length:DATA.filter(x=>x.module===(mode===6?6:5)).length;
  const meaning=x=>x.module===3?'原形：'+x.lemma+' · 第 '+VERB_GROUPS[x.lemma]+' 组\n人称：'+x.person+'\n时态：'+x.tense:topicMeaning(x);
  const display=x=>x.module===3?conjugationForm(x):x.fr;
  const heading=()=>mode===3?'动词变位':'未覆盖'+label();
@@ -30,7 +30,7 @@
  view.innerHTML='<h2>未覆盖词汇 · 学习模式</h2><p class="note">直接学习中文与法语，点击词条旁的按钮听发音。</p><table class="batch-table"><caption id="studyCaption"></caption><thead><tr><th scope="col">中文意思</th><th scope="col">法语词条</th></tr></thead><tbody id="studyRows"></tbody></table><audio id="studyAudio" controls preload="none" hidden style="width:100%;margin-top:12px"></audio><p id="studyStatus" role="status" aria-live="polite" class="note"></p><div class="row"><button id="studyReviewStart" type="button" class="primary">复习这一批</button><button id="studyNext" type="button">下一批</button><button id="studyStop" type="button">停止发音</button></div>';
  $('batchView').before(view);
  const active=()=>supported()&&study().enabled;
- const sig=()=>JSON.stringify([selectedSource(),$('category').value,$('status').value,$('search').value,mode===5?state.topicOverlap||'':'',state.topicLevels?.[mode]||'',mode===3?$('verbGroup').value:'',mode===3?$('verbLemma').value:'',mode===3?$('verbPerson').value:'']);
+ const sig=()=>JSON.stringify([selectedSource(),$('category').value,$('status').value,$('search').value,mode===5?state.topicOverlap||'':'',state.topicLevels?.[mode]||'',mode===3?$('verbGroup').value:'',mode===3?$('verbLemma').value:'',mode===3?$('verbPerson').value:'',mode===3?state.subjunctiveTier||'':'',mode===3?state.subjunctiveSort||'':'']);
  const audio=$('studyAudio');let request=0,url=null;
  function stop(){request++;audio.pause();audio.removeAttribute('src');audio.load();audio.hidden=true;if(url)URL.revokeObjectURL(url);url=null;}
  async function pronounce(x){
@@ -56,7 +56,12 @@
   $('batchSize').setCustomValidity('');study().size=n;if(reset||study().scope!==sig()){study().used=[];study().scope=sig();}
   const pool=filtered(),used=new Set(study().used),rows=pool.filter(x=>!used.has(x.id)).slice(0,n);
   if(!rows.length&&pool.length&&!reset){$('studyStatus').textContent='当前筛选已全部学完。点击“开始这一批”可重新开始。';return;}
-  reviewState().enabled=false;study().ids=rows.map(x=>x.id);study().used=[...new Set([...study().used,...study().ids])];study().enabled=true;sync(false);render();if(!pool.length)$('studyStatus').textContent='当前筛选没有词条，请调整筛选条件。';persist();
+  reviewState().enabled=false;study().ids=rows.map(x=>x.id);study().used=[...new Set([...study().used,...study().ids])];study().enabled=true;sync(false);
+  view.classList.remove('hidden');$('practice').classList.add('hidden');$('batchView').classList.add('hidden');render();
+  if(!pool.length)$('studyStatus').textContent='当前筛选没有词条，请调整筛选条件。';
+  else $('studyStatus').textContent=(mode===3&&state.subjunctiveTier?'已按当前 '+state.subjunctiveTier.toUpperCase()+' 专项筛选生成本批 '+rows.length+' 个变位。':'已生成本批 '+rows.length+' 个词条。');
+  persist();
+  setTimeout(()=>view.scrollIntoView({behavior:'smooth',block:'start'}),0);
  }
  function sync(refresh=true){for(const section of [view,review]){section.querySelector('table').classList.toggle('conjugation-table',mode===3);const head=section.querySelector('thead tr');head.querySelector('.conjugation-meaning-heading')?.remove();if(mode===3){const th=document.createElement('th');th.scope='col';th.className='conjugation-meaning-heading';th.textContent='中文词义（原形）';head.append(th);}}view.querySelector('h2').textContent=heading()+' · 学习模式';review.querySelector('h2').textContent=heading()+' · 复习模式';view.querySelectorAll('th')[0].textContent=mode===3?'动词原形 · 人称 · 时态':'中文意思';review.querySelectorAll('th')[0].textContent=mode===3?'动词原形 · 人称 · 时态':'中文意思';view.querySelectorAll('th')[1].textContent=mode===3?'主语＋法语变位':'法语'+label();$('batchControls').classList.toggle('hidden',!supported());$('batchEnable').classList.toggle('hidden',mode===3);$('batchSingle').textContent=mode===3?'原有变位练习':'逐条练习';if(mode===3)$('batchModeLabel').textContent='动词变位练习方式';route.classList.toggle('hidden',mode!==3);syncRoute();for(const el of [$('batchSize'),$('batchStart'),...document.querySelectorAll('[data-batch-size]')])el.disabled=reviewing();reviewButton.classList.toggle('hidden',!supported());reviewButton.disabled=!study().ids.length;reviewButton.classList.toggle('primary',reviewing());reviewButton.setAttribute('aria-pressed',String(reviewing()));review.classList.toggle('hidden',!reviewing());if(reviewing()){$('batchView').classList.add('hidden');$('practice').classList.add('hidden');for(const id of ['batchSingle','batchEnable']){$(id).classList.remove('primary');$(id).setAttribute('aria-pressed','false');}$('batchSize').value=study().size;if(refresh)renderReview();}button.classList.toggle('hidden',!supported());button.classList.toggle('primary',active());button.setAttribute('aria-pressed',String(active()));view.classList.toggle('hidden',!active());
   if(active()){$('batchSize').max=maximum();$('batchView').classList.add('hidden');$('practice').classList.add('hidden');for(const id of ['batchSingle','batchEnable']){$(id).classList.remove('primary');$(id).setAttribute('aria-pressed','false');}
