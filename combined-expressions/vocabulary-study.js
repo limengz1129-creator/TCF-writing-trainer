@@ -70,8 +70,21 @@
  const oldShow=show;show=function(x){oldShow(x);sync();};
  const oldSet=setModule;setModule=function(m,fresh=false){if([3,5,6].includes(m)&&fresh){state[m===3?'conjugationStudy':m===6?'phraseStudy':'vocabularyStudy'].enabled=false;state[m===3?'conjugationStudyReview':m===6?'phraseStudyReview':'vocabularyStudyReview'].enabled=false;}stop();oldSet(m,fresh);sync();};
  for(const id of ['batchSingle','batchReturn','batchEnable']){const old=$(id).onclick;$(id).onclick=()=>{study().enabled=false;reviewState().enabled=false;stop();if(mode===3){show(current||filtered()[0]||null);persist();}else{if(supported())$('batchSize').value=batchState().size;old();}sync(false);persist();};}
- const oldStart=$('batchStart').onclick;$('batchStart').onclick=()=>active()?start(true):oldStart();
- document.querySelectorAll('[data-batch-size]').forEach(b=>{const old=b.onclick;b.onclick=()=>{if(active()){$('batchSize').value=b.dataset.batchSize;start(true);}else old();};});
+ const oldStart=$('batchStart').onclick;$('batchStart').onclick=()=>{
+  if(mode===3){
+   reviewState().enabled=false;study().enabled=true;batchState().enabled=false;
+   start(true);return;
+  }
+  active()?start(true):oldStart();
+ };
+ document.querySelectorAll('[data-batch-size]').forEach(b=>{const old=b.onclick;b.onclick=()=>{
+  if(mode===3){
+   $('batchSize').value=b.dataset.batchSize;
+   reviewState().enabled=false;study().enabled=true;batchState().enabled=false;
+   start(true);return;
+  }
+  if(active()){$('batchSize').value=b.dataset.batchSize;start(true);}else old();
+ };});
  button.onclick=()=>{reviewState().enabled=false;study().enabled=true;batchState().enabled=false;$('batchSize').value=study().size;sync();persist();};
  $('studyReviewStart').onclick=enterReview;$('studyReviewReturn').onclick=button.onclick;
  $('studyNext').onclick=()=>start(false);$('studyStop').onclick=()=>{stop();$('studyStatus').textContent='已停止朗读。';};
