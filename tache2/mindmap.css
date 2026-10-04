@@ -33,3 +33,7 @@
 .mindmap-entry-title{font-weight:800;color:#285b4c;font-size:14px;margin-bottom:4px}
 .mindmap-entry-desc{font-size:12px;line-height:1.45;color:#69716c;margin-bottom:9px}
 .mindmap-entry-btn{width:100%;padding:10px 11px}
+
+.t2-mm-floating{position:fixed;right:28px;bottom:86px;z-index:9990;border:0;border-radius:999px;padding:13px 18px;background:#285b4c;color:#fff;font-weight:800;box-shadow:0 8px 24px rgba(28,55,43,.22);cursor:pointer}
+.t2-mm-floating:hover{transform:translateY(-1px);box-shadow:0 10px 28px rgba(28,55,43,.28)}
+@media(max-width:760px){.t2-mm-floating{right:16px;bottom:78px;padding:11px 15px}}
