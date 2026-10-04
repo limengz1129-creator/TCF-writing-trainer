@@ -13,3 +13,6 @@
 .t2-oc-theme-status{font-size:12px!important;color:#285b4c!important;font-weight:700;margin:0 0 10px!important}
 .t2-oc-empty{padding:30px 22px;border:1px dashed #cbd6d0;border-radius:14px;background:#f8faf9;text-align:center}
 .t2-oc-empty h3{margin:0 0 8px;font-size:18px}.t2-oc-empty p{margin:0;color:#69716c;line-height:1.7}
+
+.t2-oc-entry-actions{grid-template-columns:1fr 1fr}
+.t2-oc-reaction-btn{grid-column:1/-1}
