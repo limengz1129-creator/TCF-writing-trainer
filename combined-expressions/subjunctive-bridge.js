@@ -39,16 +39,24 @@
  }
  $('category')?.addEventListener('change',()=>{if(mode===3&&state.subjunctiveTier&&$('category').value!=='虚拟式现在时'){state.subjunctiveTier='';if($('subjunctiveTier'))$('subjunctiveTier').value='';show(filtered()[0]||null);buildSource();syncNote();persist();}});
  function openTier(tier){
+  // 专项入口必须从“全部五任务来源”开始，避免继承其它模块/上一次练习的残留筛选。
+  state.source='';
   window.__openingSubjunctiveBridge=true;
   setModule(3,true);
   window.__openingSubjunctiveBridge=false;
   state.subjunctiveTier=tier==='b1'||tier==='b2'?tier:'';
+  buildSource();
+  if($('sourceFilter'))$('sourceFilter').value='';
+  if($('status'))$('status').value='';
+  if($('search'))$('search').value='';
+  if($('verbLemma'))$('verbLemma').value='';
+  if($('verbPerson'))$('verbPerson').value='';
   buildVerbFilters();
   $('category').value='虚拟式现在时';
   if($('subjunctiveTier'))$('subjunctiveTier').value=state.subjunctiveTier;
   order=null;
   show(filtered()[0]||null);
-  buildSource();syncNote();persist();
+  syncNote();persist();
   $('practice')?.scrollIntoView({behavior:'smooth',block:'start'});
  }
  function addPanel(){
