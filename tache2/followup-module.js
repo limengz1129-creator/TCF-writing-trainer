@@ -1,6 +1,12 @@
 (()=>{
 'use strict';
 const $=(s,r=document)=>r.querySelector(s);
+const FU_EDIT_KEY='tcf-tache2-followup-edits-v1';
+let currentMode='universal';
+function readFU(){try{const v=JSON.parse(localStorage.getItem(FU_EDIT_KEY)||'{}');return v&&typeof v==='object'?v:{};}catch{return{};}}
+function writeFU(v){localStorage.setItem(FU_EDIT_KEY,JSON.stringify(v));}
+function storageKey(mode,theme){return mode==='universal'?'universal':'theme::'+theme;}
+
 const UNIVERSAL=[
  {cat:'时间',trigger:'对方提到时间 / 时长',fr:'Et combien de temps cela prend-il ?',zh:'那大概要花多长时间？'},
  {cat:'时间',trigger:'对方给出一个时间',fr:'Et à quelle heure vaut-il mieux y aller ?',zh:'那最好几点去？'},
@@ -71,6 +77,40 @@ function themeFollowups(theme){
  }
  return chosen;
 }
+function getFollowups(mode,theme){
+ const edits=readFU(),key=storageKey(mode,theme);
+ if(Array.isArray(edits[key]))return edits[key];
+ const base=mode==='universal'?UNIVERSAL:themeFollowups(theme);
+ return base.map(x=>({...x}));
+}
+function saveFollowups(mode,theme,items){
+ const edits=readFU();edits[storageKey(mode,theme)]=items;writeFU(edits);
+}
+function editFollowup(mode,theme,index){
+ const items=getFollowups(mode,theme),existing=index>=0?items[index]:{cat:'',trigger:'',fr:'',zh:'',sub:mode==='theme'?'自定义':''};
+ const form=document.createElement('form');form.className='t2-fu-edit-form';
+ form.innerHTML='<h3>'+(index>=0?'编辑追问':'新增追问')+'</h3>';
+ const defs=[['分类','cat',existing.cat||''],['触发提示','trigger',existing.trigger||''],['法语追问','fr',existing.fr||''],['中文意思','zh',existing.zh||'']];
+ const inputs={};
+ for(const [labelText,key,val] of defs){
+   const label=document.createElement('label');label.textContent=labelText;
+   const input=(key==='fr'||key==='zh'||key==='trigger')?document.createElement('textarea'):document.createElement('input');
+   input.className='t2-fu-edit-input';input.value=val;input.required=true;if(key==='fr')input.lang='fr';if(key==='zh')input.lang='zh-CN';
+   inputs[key]=input;label.append(input);form.append(label);
+ }
+ const actions=document.createElement('div');actions.className='t2-fu-edit-actions';
+ const save=document.createElement('button');save.type='submit';save.className='btn primary';save.textContent='保存';
+ const cancel=document.createElement('button');cancel.type='button';cancel.className='btn ghost';cancel.textContent='取消';
+ actions.append(save,cancel);form.append(actions);
+ const wrap=$('#t2FUItems');wrap.prepend(form);inputs.cat.focus();
+ cancel.onclick=()=>form.remove();
+ form.onsubmit=e=>{e.preventDefault();const next={...existing,cat:inputs.cat.value.trim(),trigger:inputs.trigger.value.trim(),fr:inputs.fr.value.trim(),zh:inputs.zh.value.trim(),id:existing.id||('u-'+Date.now())};if(!next.cat||!next.trigger||!next.fr||!next.zh)return;if(index>=0)items[index]=next;else items.push(next);saveFollowups(mode,theme,items);render(mode);};
+}
+function deleteFollowup(mode,theme,index){
+ const items=getFollowups(mode,theme);if(!items[index])return;
+ if(!confirm('删除这条追问吗？'))return;
+ items.splice(index,1);saveFollowups(mode,theme,items);render(mode);
+}
 function speak(text){
  if(!('speechSynthesis' in window))return;
  speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='fr-FR';u.rate=.92;speechSynthesis.speak(u);
@@ -80,7 +120,7 @@ function copyBtn(text){
  b.onclick=async()=>{try{await navigator.clipboard.writeText(text);b.textContent='已复制';setTimeout(()=>b.textContent='复制',900);}catch{}};
  return b;
 }
-function card(item,i){
+function card(item,i,mode,theme){
  const el=document.createElement('article');el.className='t2-fu-card';
  const top=document.createElement('div');top.className='t2-fu-top';
  const left=document.createElement('div');left.className='t2-fu-labels';
@@ -89,7 +129,10 @@ function card(item,i){
  left.append(num,trig);
  const actions=document.createElement('div');actions.className='t2-fu-actions';
  const audio=document.createElement('button');audio.type='button';audio.className='btn ghost';audio.textContent='🔊 发音';audio.onclick=()=>speak(item.fr);
- actions.append(audio,copyBtn(item.fr));top.append(left,actions);
+ actions.append(audio,copyBtn(item.fr));
+ const edit=document.createElement('button');edit.type='button';edit.className='t2-fu-pencil';edit.textContent='✎';edit.title='编辑这条';edit.setAttribute('aria-label','编辑追问 '+item.fr);edit.onclick=()=>editFollowup(mode,theme,i);
+ const del=document.createElement('button');del.type='button';del.className='t2-fu-delete';del.textContent='删除';del.onclick=()=>deleteFollowup(mode,theme,i);
+ actions.append(edit,del);top.append(left,actions);
  const fr=document.createElement('p');fr.className='t2-fu-fr';fr.lang='fr';fr.textContent=item.fr;
  const zh=document.createElement('p');zh.className='t2-fu-zh';zh.textContent=item.zh;
  el.append(top,fr,zh);
@@ -97,21 +140,22 @@ function card(item,i){
  return el;
 }
 function render(mode){
+ currentMode=mode;
  const theme=currentTheme(),wrap=$('#t2FUItems');wrap.replaceChildren();
  $('#t2FUTabUniversal').classList.toggle('active',mode==='universal');
  $('#t2FUTabTheme').classList.toggle('active',mode==='theme');
  if(mode==='universal'){
-   $('#t2FUSubtitle').textContent='全题目通用 · 30 个核心追问模板';
-   UNIVERSAL.forEach((x,i)=>wrap.append(card(x,i)));
+   $('#t2FUSubtitle').textContent='全题目通用 · 核心追问模板';
  }else{
    $('#t2FUSubtitle').textContent=(theme||'未选择大主题')+' · 从你现有 Tâche 2 语料库筛选';
-   if(!theme){
-     wrap.innerHTML='<div class="t2-fu-empty">请先选择一个大主题。</div>';return;
-   }
-   const rows=themeFollowups(theme);
-   if(!rows.length){wrap.innerHTML='<div class="t2-fu-empty">当前主题暂未筛选到合适的专属追问。</div>';return;}
-   rows.forEach((x,i)=>wrap.append(card(x,i)));
+   if(!theme){wrap.innerHTML='<div class="t2-fu-empty">请先选择一个大主题。</div>';return;}
  }
+ const tools=document.createElement('div');tools.className='t2-fu-manage';
+ const add=document.createElement('button');add.type='button';add.className='btn primary';add.textContent='＋ 新增追问';add.onclick=()=>editFollowup(mode,theme,-1);
+ tools.append(add);wrap.append(tools);
+ const rows=getFollowups(mode,theme);
+ if(!rows.length){const empty=document.createElement('div');empty.className='t2-fu-empty';empty.textContent='当前没有追问，可以点击“＋ 新增追问”自己添加。';wrap.append(empty);return;}
+ rows.forEach((x,i)=>wrap.append(card(x,i,mode,theme)));
 }
 function open(){
  $('#t2FUBackdrop').classList.add('open');document.body.style.overflow='hidden';render('universal');
