@@ -145,34 +145,36 @@
  [{level:'Level 1 · 结构',q:'s’adapter ___ la vie locale',a:'à',note:'固定搭配。'}]));
 
  add(13,mk('#13 Constructions impersonnelles · 无人称结构','A 必须掌握 · 讲解深度 ④ · 第二阶段',
- [['必要','il faut / il faudrait'],['建议','il vaut mieux'],['评价','il est important / essentiel / nécessaire'],['可能','il est possible de / que'],['TCF价值','论证开头、建议、结尾非常高频']],
+ [['必要','il faut / il faudrait'],['建议','il vaut mieux'],['评价','il est important / essentiel / nécessaire'],['不定式判断','il ne suffit pas de · il convient de · il est difficile de'],['可能','il est possible de / que'],['TCF价值','论证开头、建议、结尾非常高频']],
  [
   {h:'1. il 不指具体的人',b:'这些结构用于客观表达必要性、建议和评价。',ex:'Il faut agir. · Il est important de rester prudent.'},
   {h:'2. 同主语常用 de + infinitif',b:'Il est important de respecter les règles.',ex:'Il est essentiel de trouver un équilibre.'},
   {h:'3. 不同主语常用 que + 从句',b:'Il est important que les autorités prennent des mesures.',ex:'Il faudrait que chacun fasse un effort.'},
-  {h:'4. il vaut mieux + infinitif',b:'表达“最好……”，后面直接接不定式。',ex:'Il vaut mieux comparer les prix.'}
+  {h:'4. il vaut mieux + infinitif',b:'表达“最好……”，后面直接接不定式。',ex:'Il vaut mieux comparer les prix.'},
+  {h:'5. 高频非虚拟式无人称结构',b:'Il ne suffit pas de / Il convient de / Il est difficile de 后面接 infinitif。它们以前混在虚拟式专项里，现在归回本模块。',ex:'Il ne suffit pas d’apprendre la langue. · Il convient de sensibiliser le public. · Il est difficile de trouver un équilibre.'}
  ],
  [],
  [{src:'口语 Tâche 3',fr:'Il ne faut pas généraliser.',zh:'不能一概而论。',focus:'il faut 非人称结构'}],
- [['Il faudrait que + subj.','Il faudrait que chacun participe.'],['Il vaut mieux + inf','Il vaut mieux réserver.'],['Il est important de + inf','Il est important de vérifier.']],
- [{level:'Level 1 · 结构',q:'最好提前预订。',a:'Il vaut mieux réserver à l’avance.',note:'il vaut mieux + inf。'}]));
+ [['Il faudrait que + subj.','Il faudrait que chacun participe.'],['Il vaut mieux + inf','Il vaut mieux réserver.'],['Il est important de + inf','Il est important de vérifier.'],['Il ne suffit pas de + inf','Il ne suffit pas de connaître la règle.'],['Il convient de + inf','Il convient de sensibiliser le public.'],['Il est difficile de + inf','Il est difficile de trouver un équilibre.']],
+ [{level:'Level 1 · 结构',q:'最好提前预订。',a:'Il vaut mieux réserver à l’avance.',note:'il vaut mieux + inf。'},{level:'Level 2 · 归类',q:'“仅仅学习语言是不够的”',a:'Il ne suffit pas d’apprendre la langue.',note:'这里是不定式，不是虚拟式。'}]));
 
  add(14,mk('#14 L’indicatif · 直陈式与核心时态','A 必须掌握 · 讲解深度 ④ · 第三阶段',
- [['présent','当前事实、习惯、观点'],['passé composé','完成的过去事件'],['imparfait','过去背景、状态、重复习惯'],['futur','未来计划、预测'],['T2重点','先判断题目时间框架再提问']],
+ [['présent','当前事实、习惯、观点'],['判断句','Il est vrai que · Il est évident que · Il faut reconnaître que · Il est indéniable que + indicatif'],['passé composé','完成的过去事件'],['imparfait','过去背景、状态、重复习惯'],['futur','未来计划、预测'],['T2重点','先判断题目时间框架再提问']],
  [
   {h:'1. présent 是口语主干',b:'观点、事实、常规服务、当前情况都主要用现在时。',ex:'Quels services proposez-vous ?'},
-  {h:'2. passé composé 讲已完成经历',b:'强调事件发生和完成。',ex:'Qu’est-ce que tu as préféré ?'},
-  {h:'3. imparfait 讲背景与持续状态',b:'过去环境、人物状态、习惯。',ex:'Comment étaient tes collègues ?'},
-  {h:'4. futur / futur proche 讲计划',b:'Tâche 2 未来安排很常见。',ex:'Quand allez-vous partir ? · Que ferez-vous sur place ?'},
-  {h:'5. T2 时态先于句型',b:'先判断场景是现在、过去经历还是未来计划，再选问题形式。',ex:'présent / passé composé + imparfait / futur'}
+  {h:'2. 高频判断结构后接直陈式',b:'Il est vrai que / Il est évident que / Il faut reconnaître que / Il est indéniable que 表达对事实或判断的肯定，主动输出时接 indicatif。它们以前混在虚拟式专项里，现在归回直陈式模块。',ex:'Il est vrai que les réseaux sociaux facilitent la communication. · Il faut reconnaître que le télétravail présente aussi des limites.'},
+  {h:'3. passé composé 讲已完成经历',b:'强调事件发生和完成。',ex:'Qu’est-ce que tu as préféré ?'},
+  {h:'4. imparfait 讲背景与持续状态',b:'过去环境、人物状态、习惯。',ex:'Comment étaient tes collègues ?'},
+  {h:'5. futur / futur proche 讲计划',b:'Tâche 2 未来安排很常见。',ex:'Quand allez-vous partir ? · Que ferez-vous sur place ?'},
+  {h:'6. T2 时态先于句型',b:'先判断场景是现在、过去经历还是未来计划，再选问题形式。',ex:'présent / passé composé + imparfait / futur'}
  ],
  [],
  [
   {src:'口语 Tâche 2',fr:'Qu’est-ce que tu as préféré ?',zh:'你最喜欢什么？',focus:'passé composé'},
   {src:'口语 Tâche 2',fr:'Comment étaient tes collègues ?',zh:'你的同事当时怎么样？',focus:'imparfait'}
  ],
- [['过去事件','passé composé'],['过去背景','imparfait'],['未来计划','futur / aller + inf']],
- [{level:'Level 1 · 判断',q:'描述过去工作的环境 → 用什么时态？',a:'imparfait',note:'背景/状态。'}]));
+ [['肯定判断 + indicatif','Il est vrai que… · Il est évident que…'],['承认事实 + indicatif','Il faut reconnaître que… · Il est indéniable que…'],['过去事件','passé composé'],['过去背景','imparfait'],['未来计划','futur / aller + inf']],
+ [{level:'Level 1 · 判断',q:'描述过去工作的环境 → 用什么时态？',a:'imparfait',note:'背景/状态。'},{level:'Level 2 · 归类',q:'“必须承认远程办公也有局限。”',a:'Il faut reconnaître que le télétravail présente aussi des limites.',note:'这里用 indicatif，不是 subjonctif。'}]));
 
  add(17,mk('#17 L’impératif · 命令式','C 次要 · 讲解深度 ② · 第四阶段',
  [['用途','建议、指令、操作'],['形式','tu / nous / vous'],['TCF策略','会高频形式即可，不做大量专项']],
