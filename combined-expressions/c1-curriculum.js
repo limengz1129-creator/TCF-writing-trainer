@@ -15,7 +15,7 @@
   {n:12,name:'La forme pronominale 代词式动词',p:'A',d:4,stage:2},
   {n:13,name:'Constructions impersonnelles 无人称结构',p:'A',d:4,stage:2},
   {n:14,name:"L’indicatif 直陈式 / 时态",p:'A',d:4,stage:3},
-  {n:15,name:'Le subjonctif 虚拟式',p:'A',d:4,stage:1,existing:0,ready:true},
+  {n:15,name:'Le subjonctif 虚拟式',p:'A',d:4,stage:1,ready:true},
   {n:16,name:'Le conditionnel 条件式',p:'A',d:4,stage:1,existing:1,ready:true},
   {n:17,name:"L’impératif 命令式",p:'C',d:2,stage:4},
   {n:18,name:"L’infinitif 不定式",p:'A',d:4,stage:2},
@@ -201,29 +201,39 @@
    ]
   },
   15:{
-   title:'#15 Le subjonctif · 虚拟式',meta:'A C1 高收益结构 · 讲解深度 ④ · 第一阶段同步',
+   title:'#15 Le subjonctif · 虚拟式',meta:'A C1 主动输出核心 · 讲解深度 ④ · 仅服务口语 / 写作',
    quick:[
-    ['必要 / 建议','il faut que · il faudrait que · il est important que'],
-    ['让步','bien que + subjonctif'],
-    ['目的','pour que / afin que + subjonctif'],
-    ['条件','à condition que + subjonctif'],
-    ['同主语简化','pour / afin de · à condition de + infinitif'],
-    ['高频变位','soit / soient · puisse / puissent · fasse / fassent · prenne / prennent · sache / sachions']
+    ['A1 愿望 / 意愿','Je souhaiterais que · Je voudrais que · J’aimerais que · Je préférerais que'],
+    ['A2 必要 / 建议 / 评价','Il faut que · Il faudrait que · Il est important / essentiel / nécessaire / souhaitable / préférable que'],
+    ['A3 要求 / 建议 / 措施','demander que · proposer que · recommander que · exiger que · insister pour que'],
+    ['A4 目的','pour que · afin que'],
+    ['A5 让步 / 对立','bien que（核心） · quoique（扩展）'],
+    ['A6 条件 / 限制','à condition que · à moins que · pourvu que（扩展）'],
+    ['A7 时间','avant que · jusqu’à ce que'],
+    ['A8 情感 / 怀疑 / 不确定','regretter que · être surpris que · douter que · il est possible que · je ne pense / crois pas que'],
+    ['B 变位猛攻','不重复造题：B1 24 个核心 · B2 30 个扩展 → 直接调用 613 动词变位库'],
+    ['C 过去虚拟式','avoir / être au subjonctif présent + participe passé · 少量主动掌握']
    ],
    lessons:[
-    {h:'1. 虚拟式不是“高级装饰”',b:'在 TCF 里它最有价值的地方，是把建议、必要性、目的、让步和条件表达得自然准确。',ex:'Il faudrait que les entreprises établissent des règles claires.'},
-    {h:'2. il faut / il faudrait que 后用虚拟式',b:'主句用了条件式 faudrait，并不改变从句需要虚拟式。不要再叠加 devoir。',ex:'Il faudrait que les autorités prennent des mesures.'},
-    {h:'3. bien que 后用虚拟式',b:'bien que 表示让步；même si 通常接直陈式，两者不要混。',ex:'Bien qu’il s’agisse d’un emploi à temps partiel, ils peuvent développer des compétences utiles.'},
-    {h:'4. pour que 表目的',b:'两边主语不同时常用 pour que + subjonctif；同主语时更自然地用 pour + infinitif。',ex:'Pour que les immigrants puissent mieux s’intégrer…'},
-    {h:'5. à condition que 表条件',b:'à condition que 后用虚拟式；同一主语时可改成 à condition de + infinitif。',ex:'à condition que sa durée reste raisonnable'},
-    {h:'6. 优先背高频不规则形式',b:'不用一次背完所有动词。先把 être / avoir / pouvoir / faire / prendre / savoir 等你语料里反复出现的形式练熟。',ex:'soit · aient · puissent · fassent · prennent · sachions'}
+    {h:'A0. TCF C1 的目标不是“堆虚拟式”',b:'只训练口语和写作真正会主动调用的结构。重点是：语义触发正确、从句变位稳定、能自然迁移到论证和建议中。',ex:'Il faudrait que les autorités prennent des mesures adaptées.'},
+    {h:'A1. 愿望 / 意愿 / 期待',b:'表达个人期待时，Je souhaiterais que 很适合较正式的口语和写作；Je voudrais / J’aimerais que 更自然直接。',ex:'Je souhaiterais que les autorités prennent davantage de mesures.'},
+    {h:'A2. 必要性 / 建议 / 评价',b:'这是 TCF 论证最高收益的一组。Il faudrait que、Il serait souhaitable que 特别适合正文建议和结尾。',ex:'Il serait souhaitable que les écoles proposent des activités plus diversifiées.'},
+    {h:'A3. 要求 / 建议 / 措施',b:'当主语是人、机构或组织时，可用 demander / proposer / recommander / exiger que。比只会无人称 Il faut que 更有句式变化。',ex:'Je propose que les autorités mettent en place des mesures concrètes.'},
+    {h:'A4. 目的',b:'主语不同时优先用 pour que / afin que + subjonctif；同主语时通常用 pour / afin de + infinitif。',ex:'Les autorités devraient agir pour que chacun puisse bénéficier des mêmes possibilités.'},
+    {h:'A5. 让步 / 对立',b:'bien que + subjonctif 是主动输出核心；même si 通常接 indicatif，必须对比记忆。quoique 只作为表达变化。',ex:'Bien que cette solution soit efficace, elle présente certaines limites.'},
+    {h:'A6. 条件 / 限制',b:'à condition que 是核心；à moins que 很适合表达“除非”；pourvu que 认识并会少量主动使用即可。',ex:'Cette mesure peut être utile à condition qu’elle reste accessible à tous.'},
+    {h:'A7. 时间',b:'avant que / jusqu’à ce que 后用虚拟式。注意 après que 在规范现代法语中接 indicatif，不要机械类推。',ex:'Il vaut mieux agir avant que la situation ne devienne plus difficile.'},
+    {h:'A8. 情感 / 怀疑 / 不确定',b:'精选用于主动输出：regretter que、être surpris que、douter que、il est possible que、je ne pense / crois pas que。它们能让判断更谨慎。',ex:'Je ne pense pas qu’un diplôme soit la seule condition nécessaire pour réussir.'},
+    {h:'B. 变位不在这里重复刷',b:'B1 / B2 直接调用“动词变位 613”中的真实语料变位。B1 只要求高频人称自动化；B2 按现有语料稳定掌握，不要求每个动词机械背齐 6 个人称。',ex:'B1：24 个动词 / 41 个现有变位 · B2：30 个动词 / 36 个现有变位'},
+    {h:'C. 过去虚拟式只做少量主动输出',b:'结构：avoir / être 的现在虚拟式 + participe passé。用于对已经发生的事情表达情感、评价、遗憾或态度。',ex:'Je suis contente qu’il ait réussi. · Je regrette qu’ils soient partis.'}
    ],
    errors:[
-    {bad:'il faudrait les autorités prennent…',good:'il faudrait que les autorités prennent…',why:'从句必须由 que 引出。'},
-    {bad:'Bien qu’ils sont…',good:'Bien qu’ils soient…',why:'bien que 后用虚拟式。'},
-    {bad:'il faudrait que les autorités doivent…',good:'il faudrait que les autorités prennent des mesures',why:'il faudrait que 已经表达建议，从句直接用虚拟式，不叠加 devoir。'},
-    {bad:'à condition que nous pouvons…',good:'à condition que nous puissions…',why:'à condition que 后用虚拟式。'},
-    {bad:'il faut que nous reconnaissons…',good:'il faut que nous reconnaissions…',why:'reconnaître 的 nous 虚拟式为 reconnaissions。'}
+    {bad:'Bien qu’ils sont motivés…',good:'Bien qu’ils soient motivés…',why:'bien que 后用虚拟式。'},
+    {bad:'Même s’ils soient motivés…',good:'Même s’ils sont motivés…',why:'même si 通常接直陈式，不和 bien que 混用。'},
+    {bad:'Il faudrait que les autorités doivent agir.',good:'Il faudrait que les autorités agissent.',why:'Il faudrait que 已经表达建议，从句直接用虚拟式，不再叠加 devoir。'},
+    {bad:'Je souhaiterais que le gouvernement prend des mesures.',good:'Je souhaiterais que le gouvernement prenne des mesures.',why:'souhaiter que 表愿望，从句用虚拟式。'},
+    {bad:'À condition que nous pouvons…',good:'À condition que nous puissions…',why:'à condition que 后用虚拟式。'},
+    {bad:'Après qu’il soit arrivé…',good:'Après qu’il est arrivé… / Après qu’il est arrivé, …',why:'主动输出时把 après que 与 avant que 区分：après que 接 indicatif。'}
    ],
    corpus:[
     {src:'口语 Tâche 3',fr:'Parallèlement, il faudrait que les entreprises établissent des règles claires afin de trouver un équilibre.',zh:'与此同时，企业应制定明确规则，以找到平衡。',focus:'il faudrait que + subjonctif'},
@@ -231,20 +241,34 @@
     {src:'口语 Tâche 3',fr:'La sieste peut être bénéfique, à condition que sa durée reste raisonnable.',zh:'午睡可以有益，条件是时间保持合理。',focus:'à condition que + subjonctif'}
    ],
    frames:[
-    ['Il faudrait que + sujet + subjonctif','Il faudrait que les autorités prennent…'],
-    ['Bien que + subjonctif','Bien qu’il soit difficile…'],
-    ['Pour que + subjonctif','Pour que les jeunes puissent…'],
-    ['À condition que + subjonctif','À condition que la durée reste raisonnable…'],
-    ['同主语：pour / à condition de + infinitif','pour progresser · à condition de le faire avec modération']
+    ['愿望 / 意愿','Je souhaiterais que… · Je voudrais que… · J’aimerais que… · Je préférerais que…'],
+    ['必要 / 建议','Il faut que… · Il faudrait que… · Il serait souhaitable que… · Il est essentiel que…'],
+    ['要求 / 措施','Je propose que… · Il est recommandé que… · exiger que… · insister pour que…'],
+    ['目的','pour que… · afin que…'],
+    ['让步','bien que…（核心） · quoique…（扩展）'],
+    ['条件 / 限制','à condition que… · à moins que… · pourvu que…'],
+    ['时间','avant que… · jusqu’à ce que…'],
+    ['怀疑 / 不确定','douter que… · il est possible que… · je ne pense / crois pas que…'],
+    ['情感','être content(e) que… · regretter que… · être surpris(e) que…'],
+    ['同主语简化','pour / afin de + infinitif · avant de + infinitif'],
+    ['过去虚拟式','que + sujet + ait / soit / aient / soient + participe passé']
    ],
    practice:[
-    {level:'Level 1 · 识别',q:'Bien que les personnes âgées ___ utiliser ces outils… (pouvoir)',a:'puissent',note:'bien que + 虚拟式。'},
-    {level:'Level 1 · 识别',q:'Il faudrait que les autorités ___ des mesures. (prendre)',a:'prennent',note:'prendre 的 ils/elles 虚拟式 = prennent。'},
-    {level:'Level 2 · 改错',q:'Bien qu’ils sont motivés…',a:'Bien qu’ils soient motivés…',note:'être → soient。'},
-    {level:'Level 2 · 改错',q:'Il faudrait que nous devons agir.',a:'Il faudrait que nous agissions.',note:'避免 il faudrait que + devoir 叠加。'},
-    {level:'Level 3 · 结构',q:'为了让新移民更好地融入',a:'pour que les nouveaux arrivants puissent mieux s’intégrer',note:'不同主语时用 pour que。'},
-    {level:'Level 4 · 中文 → 法语',q:'条件是时间保持合理。',a:'À condition que sa durée reste raisonnable.',note:'你的 Tâche 3 高频结构。'},
-    {level:'Level 5 · 口语迁移',q:'与此同时，企业应制定明确规则。',a:'Parallèlement, il faudrait que les entreprises établissent des règles claires.',note:'建议型 C1 结尾结构。'}
+    {level:'A1 · 愿望',q:'我希望有关部门采取更多措施。',a:'Je souhaiterais que les autorités prennent davantage de mesures.',note:'souhaiter que + subjonctif。'},
+    {level:'A2 · 建议',q:'企业最好为员工提供更多培训。',a:'Il serait souhaitable que les entreprises proposent davantage de formations à leurs employés.',note:'高收益 C1 建议结构。'},
+    {level:'A2 · 必要性',q:'每个人都必须意识到这个问题。',a:'Il faut que chacun soit conscient de ce problème.',note:'être → soit。'},
+    {level:'A3 · 措施',q:'我建议学校提供更多活动。',a:'Je propose que les écoles proposent davantage d’activités.',note:'proposer que + subjonctif。'},
+    {level:'A4 · 目的',q:'为了让年轻人能够更好地融入。',a:'Pour que les jeunes puissent mieux s’intégrer.',note:'pour que + pouvoir au subjonctif。'},
+    {level:'A5 · 让步',q:'虽然这项措施有效，但它也有局限。',a:'Bien que cette mesure soit efficace, elle présente aussi certaines limites.',note:'bien que + subjonctif。'},
+    {level:'A5 · 对比',q:'即使这项措施有效，它也有局限。',a:'Même si cette mesure est efficace, elle présente certaines limites.',note:'même si + indicatif。'},
+    {level:'A6 · 条件',q:'前提是这种做法保持合理。',a:'À condition que cette pratique reste raisonnable.',note:'à condition que + subjonctif。'},
+    {level:'A6 · 限制',q:'除非政府采取行动，否则情况很难改善。',a:'À moins que le gouvernement n’agisse, la situation risque de rester difficile.',note:'à moins que + subjonctif；ne explétif 可出现。'},
+    {level:'A7 · 时间',q:'最好在情况恶化之前采取行动。',a:'Il vaut mieux agir avant que la situation ne s’aggrave.',note:'avant que + subjonctif。'},
+    {level:'A8 · 不确定',q:'我不认为文凭是成功的唯一条件。',a:'Je ne pense pas qu’un diplôme soit la seule condition nécessaire pour réussir.',note:'否定观点 + subjonctif。'},
+    {level:'A8 · 可能性',q:'有可能某些职业会消失。',a:'Il est possible que certains métiers disparaissent.',note:'il est possible que + subjonctif。'},
+    {level:'C · 过去虚拟式',q:'我很高兴他已经成功了。',a:'Je suis contente qu’il ait réussi.',note:'ait + participe passé。'},
+    {level:'C · 过去虚拟式',q:'我很遗憾他们已经离开了。',a:'Je regrette qu’ils soient partis.',note:'soient + participe passé；partir 用 être。'},
+    {level:'C · 过去虚拟式',q:'我们很高兴已经找到了解决办法。',a:'Nous sommes contents d’avoir trouvé une solution.',note:'同主语时这里更自然用 de + infinitif passé；不要为了虚拟式而硬套。'}
    ]
   },
   16:{
