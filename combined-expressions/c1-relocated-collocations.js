@@ -39,7 +39,11 @@
    const fr=document.createElement('td');const strong=document.createElement('strong');strong.textContent=e.french;
    const b=document.createElement('button');b.type='button';b.className='c1-audio-mini';b.textContent='🔊';b.onclick=()=>speak(e.french);fr.append(strong,document.createTextNode(' '),b);
    const ex=document.createElement('td');
-   const sample=e.examples?.find(x=>x.french)?.french||'';
+   const preferredSample={
+    'c1-d83371b2df02db43':'Il se peut que nous devions prendre des mesures supplémentaires pour résoudre ce problème.',
+    'c1-0ebe5ea405f8af79':'Il est possible que le gouvernement doive intervenir davantage dans certaines situations.'
+   };
+   const sample=preferredSample[e.id]||e.examples?.find(x=>x.french)?.french||'';
    ex.textContent=sample;
    if(sample){const sb=document.createElement('button');sb.type='button';sb.className='c1-audio-mini';sb.textContent='🔊';sb.onclick=()=>speak(sample);ex.append(document.createTextNode(' '),sb);}
    r.append(zh,fr,ex);body.append(r);
