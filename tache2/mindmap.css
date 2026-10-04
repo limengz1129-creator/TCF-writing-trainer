@@ -28,3 +28,8 @@
 .t2-mm-empty{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);padding:18px;color:#79817d;background:#fff;border:1px dashed #cdd4d0;border-radius:14px}
 .t2-mm-toast{position:fixed;left:50%;bottom:32px;transform:translateX(-50%);z-index:10000;background:#233029;color:#fff;padding:9px 13px;border-radius:9px;font-size:13px;opacity:0;pointer-events:none;transition:opacity .18s}.t2-mm-toast.show{opacity:1}
 @media(max-width:760px){.t2-mm-backdrop{padding:0}.t2-mm-modal{border-radius:0;border:0}.t2-mm-head{padding:11px 12px}.t2-mm-toolbar{padding:8px}.t2-mm-help{display:none}.t2-mm-title{font-size:17px}}
+
+.mindmap-entry-card{margin:4px 0 12px;padding:13px;border:1px solid #cfe0d8;background:#f3f8f5;border-radius:14px}
+.mindmap-entry-title{font-weight:800;color:#285b4c;font-size:14px;margin-bottom:4px}
+.mindmap-entry-desc{font-size:12px;line-height:1.45;color:#69716c;margin-bottom:9px}
+.mindmap-entry-btn{width:100%;padding:10px 11px}
