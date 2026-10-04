@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#ffffff">
   <title>TCF Tâche 2 口语提问训练器</title>
   <link rel="stylesheet" href="styles.css?v=sidebar-scroll-1">
-  <link rel="stylesheet" href="mindmap.css?v=1">
+  <link rel="stylesheet" href="mindmap.css?v=2">
 <script src="../noun-data.js?v=2"></script><script src="../nouns.js?v=2"></script></head>
 <body>
 <header class="topbar">
@@ -32,6 +32,11 @@
     <div class="side-actions">
       <button id="randomBtn" class="btn secondary" type="button">🎲 随机抽题</button>
       <button id="reviewOnlyBtn" class="btn ghost" type="button" aria-pressed="false">只看待复习</button>
+    </div>
+    <div class="mindmap-entry-card">
+      <div class="mindmap-entry-title">🧠 大主题思维导图</div>
+      <div class="mindmap-entry-desc">为当前大主题自由添加、拖动和编辑节点，修改会自动保存。</div>
+      <button id="mindmapLaunch" class="btn primary mindmap-entry-btn" type="button">打开当前主题思维导图</button>
     </div>
     <div id="questionList" class="question-list"></div>
   </aside>
@@ -113,7 +118,7 @@
 <script src="question-editor.js?v=1"></script>
 <script src="question-notes.js?v=1"></script>
 <script src="study-review.js?v=speech-2"></script>
-<script src="mindmap.js?v=1"></script>
+<script src="mindmap.js?v=2"></script>
 </body>
 </html>
 
