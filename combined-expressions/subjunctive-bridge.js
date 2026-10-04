@@ -4,8 +4,31 @@
  const B2=['adapter','limiter','offrir','organiser','préparer','privilégier','renforcer','respecter','accompagner','communiquer','comparer','constituer','contrôler','convenir','donner','douter','encadrer','envisager','garantir','imposer','laisser','passer','présenter','prévoir','profiter','remplacer','sentir','souhaiter','veiller','vérifier'];
  const TIERS={b1:new Set(B1),b2:new Set(B2)};
  state.subjunctiveTier=state.subjunctiveTier||'';
+ state.subjunctiveReturn=!!state.subjunctiveReturn;
  const $=id=>document.getElementById(id);
  function tierLabel(){return state.subjunctiveTier==='b1'?'B1 核心必熟 · 24 动词 / 41 变位':state.subjunctiveTier==='b2'?'B2 高频扩展 · 30 动词 / 36 变位':'';}
+ function returnToSubjunctiveCourse(){
+  state.subjunctiveReturn=false;
+  state.subjunctiveTier='';
+  persist();
+  setModule(9,true);
+  setTimeout(()=>{
+   window.C1_COURSE?.openLesson?.(15);
+   setTimeout(()=>document.getElementById('c1-subjunctive-b')?.scrollIntoView({behavior:'smooth',block:'start'}),80);
+  },0);
+ }
+ function ensureReturnButton(){
+  const box=$('practiceFilters');if(!box)return;
+  let b=$('subjunctiveBackBtn');
+  if(mode===3&&state.subjunctiveReturn){
+   if(!b){
+    b=document.createElement('button');b.id='subjunctiveBackBtn';b.type='button';b.className='primary';
+    b.textContent='← 返回虚拟式专项';b.onclick=returnToSubjunctiveCourse;
+    box.prepend(b);
+   }
+   b.classList.remove('hidden');
+  }else if(b)b.classList.add('hidden');
+ }
  function ensureTierFilter(){
   const box=$('verbFilters');if(!box||$('subjunctiveTier'))return;
   const label=document.createElement('label');label.htmlFor='subjunctiveTier';label.textContent='虚拟式专项猛攻';
@@ -31,6 +54,7 @@
   if(m===3&&fresh&&!window.__openingSubjunctiveBridge)state.subjunctiveTier='';
   baseSetModule(m,fresh);
   if(m===3){ensureTierFilter();$('subjunctiveTier').value=state.subjunctiveTier||'';syncNote();}
+  ensureReturnButton();
  };
  function syncNote(){
   if(mode!==3||!$('sourceNote'))return;
@@ -41,6 +65,7 @@
  function openTier(tier){
   // 专项入口必须从“全部五任务来源”开始，避免继承其它模块/上一次练习的残留筛选。
   state.source='';
+  state.subjunctiveReturn=true;
   window.__openingSubjunctiveBridge=true;
   setModule(3,true);
   window.__openingSubjunctiveBridge=false;
@@ -56,7 +81,7 @@
   if($('subjunctiveTier'))$('subjunctiveTier').value=state.subjunctiveTier;
   order=null;
   show(filtered()[0]||null);
-  syncNote();persist();
+  syncNote();ensureReturnButton();persist();
   $('practice')?.scrollIntoView({behavior:'smooth',block:'start'});
  }
  function addPanel(){
@@ -78,5 +103,6 @@
  const mo=new MutationObserver(()=>setTimeout(addPanel,0));
  function watch(){const d=$('c1CourseDialog');if(!d){setTimeout(watch,100);return;}mo.observe(d,{childList:true,subtree:true});d.addEventListener('toggle',addPanel);d.addEventListener('click',()=>setTimeout(addPanel,0));addPanel();}
  setTimeout(watch,0);
- window.C1_SUBJUNCTIVE_BRIDGE={B1,B2,open:openTier};
+ setTimeout(ensureReturnButton,0);
+ window.C1_SUBJUNCTIVE_BRIDGE={B1,B2,open:openTier,back:returnToSubjunctiveCourse};
 })();
