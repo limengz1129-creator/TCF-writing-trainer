@@ -212,7 +212,6 @@
     ['A7 时间','avant que · jusqu’à ce que'],
     ['A8 情感 / 怀疑 / 不确定','regretter que · être surpris que · douter que · il est possible que · je ne pense / crois pas que'],
     ['B 变位猛攻','不重复造题：B1 24 个核心 · B2 30 个扩展 → 直接调用 613 动词变位库'],
-    ['C 过去虚拟式','avoir / être au subjonctif présent + participe passé · 少量主动掌握']
    ],
    lessons:[
     {h:'A0. TCF C1 的目标不是“堆虚拟式”',b:'只训练口语和写作真正会主动调用的结构。重点是：语义触发正确、从句变位稳定、能自然迁移到论证和建议中。',ex:'Il faudrait que les autorités prennent des mesures adaptées.'},
@@ -225,7 +224,7 @@
     {h:'A7. 时间',b:'avant que / jusqu’à ce que 后用虚拟式。注意 après que 在规范现代法语中接 indicatif，不要机械类推。',ex:'Il vaut mieux agir avant que la situation ne devienne plus difficile.'},
     {h:'A8. 情感 / 怀疑 / 不确定',b:'精选用于主动输出：regretter que、être surpris que、douter que、il est possible que、je ne pense / crois pas que。它们能让判断更谨慎。',ex:'Je ne pense pas qu’un diplôme soit la seule condition nécessaire pour réussir.'},
     {h:'B. 变位不在这里重复刷',b:'B1 / B2 直接调用“动词变位 613”中的真实语料变位。B1 只要求高频人称自动化；B2 按现有语料稳定掌握，不要求每个动词机械背齐 6 个人称。',ex:'B1：24 个动词 / 41 个现有变位 · B2：30 个动词 / 36 个现有变位'},
-    {h:'C. 过去虚拟式只做少量主动输出',b:'结构：avoir / être 的现在虚拟式 + participe passé。用于对已经发生的事情表达情感、评价、遗憾或态度。',ex:'Je suis contente qu’il ait réussi. · Je regrette qu’ils soient partis.'}
+    {h:'冲刺策略',b:'当前冲刺阶段只学 A 高频触发结构 + B 高频虚拟式现在时变位。过去虚拟式暂时隐藏，不进入当前学习路径。',ex:'A + B = 当前拿分主线'}
    ],
    errors:[
     {bad:'Bien qu’ils sont motivés…',good:'Bien qu’ils soient motivés…',why:'bien que 后用虚拟式。'},
@@ -251,8 +250,13 @@
     ['怀疑 / 不确定','douter que… · il est possible que… · je ne pense / crois pas que…'],
     ['情感','être content(e) que… · regretter que… · être surpris(e) que…'],
     ['同主语简化','pour / afin de + infinitif · avant de + infinitif'],
-    ['过去虚拟式','que + sujet + ait / soit / aient / soient + participe passé']
    ],
+   archivedSubjonctifPasse:{
+    hidden:true,
+    reason:'冲刺阶段暂不学习；保留供未来恢复',
+    quick:'avoir / être au subjonctif présent + participe passé',
+    examples:['Je suis contente qu’il ait réussi.','Je regrette qu’ils soient partis.']
+   },
    practice:[
     {level:'A1 · 愿望',q:'我希望有关部门采取更多措施。',a:'Je souhaiterais que les autorités prennent davantage de mesures.',note:'souhaiter que + subjonctif。'},
     {level:'A2 · 建议',q:'企业最好为员工提供更多培训。',a:'Il serait souhaitable que les entreprises proposent davantage de formations à leurs employés.',note:'高收益 C1 建议结构。'},
@@ -266,9 +270,6 @@
     {level:'A7 · 时间',q:'最好在情况恶化之前采取行动。',a:'Il vaut mieux agir avant que la situation ne s’aggrave.',note:'avant que + subjonctif。'},
     {level:'A8 · 不确定',q:'我不认为文凭是成功的唯一条件。',a:'Je ne pense pas qu’un diplôme soit la seule condition nécessaire pour réussir.',note:'否定观点 + subjonctif。'},
     {level:'A8 · 可能性',q:'有可能某些职业会消失。',a:'Il est possible que certains métiers disparaissent.',note:'il est possible que + subjonctif。'},
-    {level:'C · 过去虚拟式',q:'我很高兴他已经成功了。',a:'Je suis contente qu’il ait réussi.',note:'ait + participe passé。'},
-    {level:'C · 过去虚拟式',q:'我很遗憾他们已经离开了。',a:'Je regrette qu’ils soient partis.',note:'soient + participe passé；partir 用 être。'},
-    {level:'C · 过去虚拟式',q:'我们很高兴已经找到了解决办法。',a:'Nous sommes contents d’avoir trouvé une solution.',note:'同主语时这里更自然用 de + infinitif passé；不要为了虚拟式而硬套。'}
    ]
   },
   16:{
