@@ -10,3 +10,6 @@
 .t2-oc-actions .btn{padding:6px 9px;font-size:12px}.t2-oc-fr{font-size:18px;line-height:1.65;margin:13px 0 8px;font-weight:650}
 .t2-oc-zh{margin:0;color:#69716c;font-size:13px;line-height:1.6}.t2-oc-note{margin:0 24px 22px;padding:13px 14px;background:#f3f7f5;border-radius:12px;color:#56635d;font-size:13px;line-height:1.6}
 @media(max-width:650px){.t2-oc-backdrop{padding:0}.t2-oc-modal{min-height:100vh;border-radius:0;border:0}.t2-oc-head{padding:16px}.t2-oc-items{padding:14px 16px}.t2-oc-note{margin:0 16px 16px}.t2-oc-card-top{align-items:flex-start;flex-direction:column}.t2-oc-actions{width:100%}}
+.t2-oc-theme-status{font-size:12px!important;color:#285b4c!important;font-weight:700;margin:0 0 10px!important}
+.t2-oc-empty{padding:30px 22px;border:1px dashed #cbd6d0;border-radius:14px;background:#f8faf9;text-align:center}
+.t2-oc-empty h3{margin:0 0 8px;font-size:18px}.t2-oc-empty p{margin:0;color:#69716c;line-height:1.7}
