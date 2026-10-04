@@ -24,10 +24,10 @@
  ]));
 
  add(2,mk('#2 L’adjectif · 形容词与数词','A 必须掌握 · 讲解深度 ④ · 第三阶段',
- [['配合','形容词与所修饰名词性数配合'],['位置','大多数后置；一批高频形容词常前置'],['意义变化','部分形容词前后位置会改变语义'],['重点','bon / mauvais / meilleur / grand / petit / nouveau / vieux / jeune'],['数词','基数词不配合；premier / deuxième 等序数词要配合']],
+ [['配合','形容词与所修饰名词性数配合'],['位置','大多数后置；一批高频形容词常前置'],['意义变化','部分形容词前后位置会改变语义'],['重点','bon / mauvais / meilleur / grand / petit / nouveau / vieux / jeune'],['数词','基数词不配合；premier / deuxième 等序数词要配合'],['TCF 高频主动掌握 18 项','bon · mauvais · meilleur · grand · petit · jeune · nouveau · dernier · principal · seul · même · autre · nombreux · certain · propre · fort · faible · grave']],
  [
   {h:'1. 配合优先于位置',b:'先保证性数一致，再考虑前置后置。',ex:'une solution efficace · des solutions efficaces'},
-  {h:'2. 高频前置形容词',b:'bon, mauvais, grand, petit, beau, jeune, vieux, nouveau, premier 等在口语里非常常见。',ex:'une bonne idée · une nouvelle méthode · un grand avantage'},
+  {h:'2. 高频前置形容词',b:'优先主动掌握 TCF 口语/写作中最常用的一组：bon, mauvais, meilleur, grand, petit, jeune, nouveau, dernier, principal, seul, même, autre, nombreux, certain, propre，以及高频搭配中的 fort, faible, grave。其余词保留为速览认识即可。',ex:'une bonne idée · une meilleure qualité de vie · une nouvelle méthode · la principale raison · de nombreux avantages · de graves conséquences'},
   {h:'3. 不是所有“评价词”都前置',b:'fiable、important、utile 等通常后置；不要把前置规律机械扩大。',ex:'une source fiable · un rôle important'},
   {h:'4. 比较级形容词也要配合',b:'meilleur / meilleure / meilleurs / meilleures。',ex:'une meilleure solution'},
   {h:'5. 形容词作表语时仍配合主语',b:'être / sembler / paraître / devenir 等后面的形容词与主语一致。',ex:'Elles semblent motivées.'}
