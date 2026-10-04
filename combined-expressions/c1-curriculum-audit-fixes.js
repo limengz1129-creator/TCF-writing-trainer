@@ -41,7 +41,6 @@
  addFrame(27,'Comme nous le savons, + proposition','Comme nous le savons, cette question est complexe.');
  addPractice(27,'Level 2 · 改错','Comme le nous savons…','Comme nous le savons…','固定语序。');
 
- addLesson(3,'8. quantité + de：不可数名词也不保留冠词','beaucoup de + nom 后不再保留部分冠词或定冠词。','beaucoup d’argent · beaucoup de temps');
  addErr(3,"beaucoup de l’argent","beaucoup d’argent","数量表达 beaucoup de 后直接接名词。");
  addPractice(3,'Level 2 · 改错',"beaucoup de l’argent","beaucoup d’argent","数量表达后去掉冠词。");
 
