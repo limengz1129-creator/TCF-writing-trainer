@@ -13,7 +13,7 @@
  const reviewState=()=>mode===3?state.conjugationStudyReview:mode===6?state.phraseStudyReview:state.vocabularyStudyReview;
  const batchState=()=>mode===3?state.conjugationStudyBatch||(state.conjugationStudyBatch={}):mode===6?state.phraseBatch:state.vocabularyBatch;
  const maximum=()=>mode===3?new Set(DATA.filter(x=>x.module===3).map(x=>x.lemma)).size:DATA.filter(x=>x.module===(mode===6?6:5)).length;
- const meaning=x=>x.module===3?'原形：'+x.lemma+' · 第 '+VERB_GROUPS[x.lemma]+' 组\n人称：'+x.person+'\n时态：'+x.tense:topicMeaning(x);
+ const meaning=x=>x.module===3?'原形：'+x.lemma+' · 第 '+VERB_GROUPS[x.lemma]+' 组\n人称：'+subjunctivePersonLabel(x)+'\n时态：'+x.tense:topicMeaning(x);
  const display=x=>x.module===3?conjugationForm(x):x.fr;
  const heading=()=>mode===3?'动词变位':'未覆盖'+label();
  const label=()=>mode===3?'动词变位':mode===6?'词组':'词汇';
@@ -45,7 +45,7 @@
  audio.addEventListener('error',()=>{$('studyStatus').textContent='音频播放失败，请重试。';});
  audio.addEventListener('ended',()=>{$('studyStatus').textContent='朗读完成，可点击词条重听。';});
  // A batch is a list of words, or complete verb groups, in filtered() order.
- function units(){const pool=filtered();if(mode!==3)return pool.map(x=>({key:x.id,rows:[x]}));const groups=new Map();for(const x of pool){if(!groups.has(x.lemma))groups.set(x.lemma,{key:x.lemma,rows:[]});groups.get(x.lemma).rows.push(x);}return [...groups.values()];}
+ function units(){const pool=filtered();if(mode!==3)return pool.map(x=>({key:x.id,rows:[x]}));const groups=new Map();for(const x of pool){if(!groups.has(x.lemma))groups.set(x.lemma,{key:x.lemma,rows:[]});groups.get(x.lemma).rows.push(x);}return [...groups.values()].map(u=>({...u,rows:orderSubjunctivePersons(u.rows)}));}
  function currentUnits(){const ids=new Set(study().ids);return units().map(u=>({...u,rows:u.rows.filter(x=>ids.has(x.id))})).filter(u=>u.rows.length);}
  function batchKey(){return JSON.stringify([study().scope,study().ids]);}
  function render(){
@@ -87,7 +87,7 @@
   study().size=n;const pool=units();
   let offset=reset||changed?0:(study().offset||0)+delta*n;
   offset=Math.max(0,Math.min(offset,Math.max(0,Math.floor((pool.length-1)/n)*n)));
-  study().offset=offset;study().scope=sig();study().savedFilters=Object.fromEntries(['sourceFilter','category','status','search','verbGroup','verbLemma','verbPerson'].map(id=>[id,$(id).value]));study().savedOrder=order?order.slice():null;study().layoutVersion=2;
+  study().offset=offset;study().scope=sig();study().savedFilters=Object.fromEntries(['sourceFilter','category','status','search','verbGroup','verbLemma','verbPerson'].map(id=>[id,$(id).value]));study().savedOrder=order?order.slice():null;study().layoutVersion=2;study().subjunctiveDataVersion=1;
   const rows=pool.slice(offset,offset+n);
   reviewState().enabled=false;batchState().enabled=false;study().ids=rows.flatMap(u=>u.rows.map(x=>x.id));study().enabled=true;
   sync(false);view.classList.remove('hidden');$('practice').classList.add('hidden');$('batchView').classList.add('hidden');render();persist();
@@ -95,7 +95,7 @@
  }
  function sync(refresh=true){for(const section of [view,review]){section.querySelector('table').classList.toggle('conjugation-table',mode===3);const head=section.querySelector('thead tr');head.querySelector('.conjugation-meaning-heading')?.remove();if(mode===3){const th=document.createElement('th');th.scope='col';th.className='conjugation-meaning-heading';th.textContent='中文词义（原形）';head.append(th);}}view.querySelector('h2').textContent=heading()+' · 批量列表学习';review.querySelector('h2').textContent=heading()+' · 复习模式';view.querySelectorAll('th')[0].textContent=mode===3?'动词原形 · 人称 · 时态':'中文意思';review.querySelectorAll('th')[0].textContent=mode===3?'动词原形 · 人称 · 时态':'中文意思';view.querySelectorAll('th')[1].textContent=mode===3?'主语＋法语变位':'法语'+label();$('batchControls').classList.toggle('hidden',!supported());$('batchEnable').classList.toggle('hidden',mode===3);$('batchSingle').textContent='单条学习 / 练习';if(mode===3)$('batchModeLabel').textContent='动词变位练习方式';route.classList.toggle('hidden',mode!==3);syncRoute();for(const el of [$('batchSize'),$('batchStart'),...document.querySelectorAll('[data-batch-size]')])el.disabled=reviewing();reviewButton.classList.toggle('hidden',!supported());reviewButton.disabled=!study().ids.length;reviewButton.classList.toggle('primary',reviewing());reviewButton.setAttribute('aria-pressed',String(reviewing()));review.classList.toggle('hidden',!reviewing());if(reviewing()){$('batchView').classList.add('hidden');$('practice').classList.add('hidden');for(const id of ['batchSingle','batchEnable']){$(id).classList.remove('primary');$(id).setAttribute('aria-pressed','false');}$('batchSize').value=study().size;if(refresh)renderReview();}button.classList.toggle('hidden',!supported());button.classList.toggle('primary',active());button.setAttribute('aria-pressed',String(active()));view.classList.toggle('hidden',!active());
   if(active()){$('batchSize').max=maximum();$('batchView').classList.add('hidden');$('practice').classList.add('hidden');for(const id of ['batchSingle','batchEnable']){$(id).classList.remove('primary');$(id).setAttribute('aria-pressed','false');}
-   $('batchSize').value=study().size;if(refresh){if(study().scope!==sig()||study().layoutVersion!==2||!study().ids.length)start(true);else render();}}
+   $('batchSize').value=study().size;if(refresh){if(mode===3&&study().subjunctiveDataVersion!==1&&study().ids.some(id=>DATA.find(x=>x.id===id)?.tense.includes('虚拟式'))){start(false,0);return;}if(study().scope!==sig()||study().layoutVersion!==2||!study().ids.length)start(true);else render();}}
  }
  const oldShow=show;show=function(x){oldShow(x);sync();};
  const oldSet=setModule;setModule=function(m,fresh=false){if([3,5,6].includes(m)&&fresh){state[m===3?'conjugationStudy':m===6?'phraseStudy':'vocabularyStudy'].enabled=false;state[m===3?'conjugationStudyReview':m===6?'phraseStudyReview':'vocabularyStudyReview'].enabled=false;}stop();oldSet(m,fresh);sync();};
@@ -105,7 +105,7 @@
  button.onclick=()=>{reviewState().enabled=false;study().enabled=true;batchState().enabled=false;$('batchSize').value=study().size;sync();persist();};
  $('studyReviewStart').onclick=enterReview;$('studyReviewReturn').onclick=button.onclick;
  $('studyPrev').onclick=()=>start(false,-1);$('studyNext').onclick=()=>start(false);$('studyComplete').onclick=()=>{study().completed=study().completed||{};study().completed[batchKey()]=new Date().toISOString();for(const id of study().ids)rec(id).studyCompletedAt=study().completed[batchKey()];persist();render();};$('studyStop').onclick=()=>{stop();$('studyStatus').textContent='已停止朗读。';};
- const route=document.createElement('div');route.id='conjugationStudyRoute';route.className='hidden';route.innerHTML='<strong>学习分类方式</strong><div class="row"><button id="conjugationByTense" type="button">按时态学习</button><button id="conjugationByGroup" type="button">按动词组别学习</button></div><label id="conjugationStudyFilterLabel" for="conjugationStudyFilter">时态</label><select id="conjugationStudyFilter"></select><p class="note">每批数量按动词计算；同一个动词的已收录人称／时态合并在一个紧凑区块中。复习可写主语＋变位，兼容旧版只写变位。中文列为动词原形词义；命令式、分词不强加主语。</p>';$('batchModeLabel').after(route);
+ const route=document.createElement('div');route.id='conjugationStudyRoute';route.className='hidden';route.innerHTML='<strong>学习分类方式</strong><div class="row"><button id="conjugationByTense" type="button">按时态学习</button><button id="conjugationByGroup" type="button">按动词组别学习</button></div><label id="conjugationStudyFilterLabel" for="conjugationStudyFilter">时态</label><select id="conjugationStudyFilter"></select><p class="note">每批数量按动词计算；同一个动词的人称／时态合并在一个紧凑区块中；虚拟式固定按 je → tu → il → nous → vous → ils 排列。复习可写主语＋变位，兼容旧版只写变位。中文列为动词原形词义；命令式、分词不强加主语。</p>';$('batchModeLabel').after(route);
  state.conjugationStudyRoute=state.conjugationStudyRoute==='group'?'group':'tense';
  function syncRoute(){if(mode!==3)return;const group=state.conjugationStudyRoute==='group';$('conjugationByTense').classList.toggle('primary',!group);$('conjugationByGroup').classList.toggle('primary',group);$('conjugationStudyFilterLabel').textContent=group?'动词组别':'时态';const target=$(group?'verbGroup':'category'),select=$('conjugationStudyFilter');select.replaceChildren(...Array.from(target.options).map(o=>new Option(o.value?o.textContent:group?'全部三组动词':'全部时态',o.value)));select.value=target.value;select.disabled=reviewing();$('conjugationByTense').disabled=reviewing();$('conjugationByGroup').disabled=reviewing();}
  function chooseRoute(group){state.conjugationStudyRoute=group?'group':'tense';const opposite=$(group?'category':'verbGroup');opposite.value='';opposite.dispatchEvent(new Event('change'));syncRoute();persist();}

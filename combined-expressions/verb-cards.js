@@ -9,6 +9,7 @@ for(const [oldId,newId] of Object.entries(DICTIONARY_ROW_ALIASES)){
  state.conjugationAgreementHistory[oldId]=old;
  if(!target)state.records[newId]=old;
  else{for(const k of ['attempts','correct','wrong'])target[k]=(target[k]||0)+(old[k]||0);if(!target.draft&&old.draft)target.draft=old.draft;if(old.error&&!old.error.resolved)target.error=old.error;}
+ if(oldId==='v-d79de73ac942e8b6'&&old.note){const r=state.records[newId];if(!r.note)r.note=old.note;else if(!r.note.includes(old.note))r.note+='\n（原 soient polis 词条笔记）'+old.note;}
  delete state.records[oldId];
 }
 if(DICTIONARY_ROW_ALIASES[state.current])state.current=DICTIONARY_ROW_ALIASES[state.current];
@@ -19,10 +20,10 @@ const oldConjugationIds=new Set(Object.keys(CONJUGATION_PERSON_IDS));
 state.conjugationLegacyHistory=state.conjugationLegacyHistory||{};
 for(const id of oldConjugationIds){if(state.records[id]){state.conjugationLegacyHistory[id]=state.records[id];delete state.records[id];}}
 for(const p of Object.values(state.practicePositions||{}))if(CONJUGATION_PERSON_IDS[p.id])p.id=CONJUGATION_PERSON_IDS[p.id][0];
-function cardRows(lemma=verbCardLemma){return filtered().filter(x=>x.lemma===lemma);}
+function cardRows(lemma=verbCardLemma){return orderSubjunctivePersons(filtered().filter(x=>x.lemma===lemma));}
 function cardLemmas(){return [...new Set(filtered().map(x=>x.lemma))];}
 function selectCardRow(x){current=x;$('answer').value=rec(x.id).draft;persist();}
-function cardInputLabel(x){return (x.person==='无主语人称变化'?(x.tense.includes('副动词')?'en':'分词'):x.person)+' _____（'+x.tense+'）';}
+function cardInputLabel(x){return (x.person==='无主语人称变化'?(x.tense.includes('副动词')?'en':'分词'):subjunctivePersonLabel(x))+' _____（'+x.tense+'）';}
 function cardUi(active){
  cards.classList.toggle('hidden',!active);$('answer').classList.toggle('hidden',active);document.querySelector('label[for="answer"]').classList.toggle('hidden',active);$('conjugationContext').classList.add('hidden');
  const keyboard=document.querySelector('[aria-label="法语特殊字符键盘"]');if(keyboard)keyboard.classList.toggle('hidden',active);
@@ -32,11 +33,11 @@ function rowCheck(x){const box=verbCardInputs.get(x.id);if(!box)return;selectCar
 function rowReference(x,node){const details=document.createElement('details'),summary=document.createElement('summary'),text=document.createElement('p');summary.textContent='原文例句与中文参考';const refs=x.members.filter(m=>selectedSource()===''||m.sourceIndex===Number(selectedSource()));text.textContent=refs.slice(0,3).map(m=>SOURCE_NAMES[m.sourceIndex]+' · '+m.source+'\n'+m.example+'\n'+m.zh).join('\n\n');details.append(summary,text);node.append(details);}
 function renderVerbCard(x){
  if(!x){cards.replaceChildren();return;}
- verbCardLemma=x.lemma;cardUi(true);$('moduleTitle').textContent='动词变位 · '+x.lemma;$('prompt').textContent='按下面的主语与语气／时态，填写同一个动词在稿子中出现过的变位。';$('position').textContent='第 '+(cardLemmas().indexOf(x.lemma)+1)+' / '+cardLemmas().length+' 个动词 · 本卡 '+cardRows(x.lemma).length+' 个去重变位';$('rule').textContent='每行可写主语＋变位，也兼容旧版只写变位。复合时态填写助动词＋过去分词。按词典模式合并 il／elle／on、ils／elles；过去分词的阴阳性配合不单独出题，也不据此判错。';$('feedback').classList.add('hidden');$('reference').classList.add('hidden');cards.replaceChildren();verbCardInputs.clear();
+ verbCardLemma=x.lemma;cardUi(true);$('moduleTitle').textContent='动词变位 · '+x.lemma;$('prompt').textContent='按下面的主语与语气／时态填写变位；虚拟式含重点主动输出补充。';$('position').textContent='第 '+(cardLemmas().indexOf(x.lemma)+1)+' / '+cardLemmas().length+' 个动词 · 本卡 '+cardRows(x.lemma).length+' 个变位';$('rule').textContent='每行可写主语＋变位，也兼容旧版只写变位。复合时态填写助动词＋过去分词。按词典模式合并 il／elle／on、ils／elles；过去分词的阴阳性配合不单独出题，也不据此判错。';$('feedback').classList.add('hidden');$('reference').classList.add('hidden');cards.replaceChildren();verbCardInputs.clear();
  const keyboard=document.createElement('div');keyboard.className='verb-keyboard';const hint=document.createElement('span');hint.textContent='点击输入框后插入：';keyboard.append(hint);for(const letter of ['à','â','ç','é','è','ê','ë','î','ï','ô','œ','ù','û','ü','’']){const b=document.createElement('button');b.type='button';b.textContent=letter;b.onmousedown=e=>e.preventDefault();b.onclick=()=>{const target=verbCardInputs.get(current?.id)?.input;if(!target)return;const start=target.selectionStart,end=target.selectionEnd;target.setRangeText(letter,start,end,'end');target.dispatchEvent(new Event('input'));target.focus();};keyboard.append(b);}cards.append(keyboard);
  for(const row of cardRows(x.lemma)){
   const section=document.createElement('div');section.className='verb-form-row';section.dataset.formId=row.id;const label=document.createElement('label'),input=document.createElement('input'),tense=document.createElement('span'),actions=document.createElement('div'),feedback=document.createElement('div');
-  input.id='form-'+row.id;input.type='text';input.autocomplete='off';input.spellcheck=false;input.lang='fr';input.value=rec(row.id).draft;input.setAttribute('aria-label',cardInputLabel(row));label.htmlFor=input.id;label.textContent=row.person==='无主语人称变化'?(row.tense.includes('副动词')?'en':'分词'):row.person;tense.className='verb-tense';tense.textContent=row.tense+' · 中文词义：'+conjugationMeaning(row);actions.className='verb-row-actions';feedback.className='feedback hidden';
+  input.id='form-'+row.id;input.type='text';input.autocomplete='off';input.spellcheck=false;input.lang='fr';input.value=rec(row.id).draft;input.setAttribute('aria-label',cardInputLabel(row));label.htmlFor=input.id;label.textContent=row.person==='无主语人称变化'?(row.tense.includes('副动词')?'en':'分词'):subjunctivePersonLabel(row);if(row.tense.includes('虚拟式')){label.style.fontSize='14px';label.style.whiteSpace='nowrap';section.style.gridTemplateColumns='90px minmax(100px,1fr)';}tense.className='verb-tense';tense.textContent=row.tense+' · 中文词义：'+conjugationMeaning(row);actions.className='verb-row-actions';feedback.className='feedback hidden';
   input.onfocus=()=>{selectCardRow(row);for(const b of verbCardInputs.values())b.section.classList.toggle('selected',b.input===input);};input.oninput=()=>{rec(row.id).draft=input.value;if(current?.id===row.id)$('answer').value=input.value;persist();};input.onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();rowCheck(row);}};
   const checkButton=document.createElement('button');checkButton.textContent='核对';checkButton.onclick=()=>rowCheck(row);
   const reveal=document.createElement('button');reveal.textContent='看答案';reveal.onclick=()=>{selectCardRow(row);feedback.className='feedback';feedback.textContent='正确变位：'+conjugationForm(row)+'\n中文词义：'+conjugationMeaning(row);rowReference(row,feedback);};
@@ -52,7 +53,7 @@ $('reveal').onclick=()=>{if(mode!==3)return originalReveal();for(const x of card
 $('clear').onclick=()=>{if(mode!==3)return originalClear();for(const [id,b] of verbCardInputs){b.input.value='';b.feedback.classList.add('hidden');rec(id).draft='';}$('answer').value='';persist();};
 move=function(d){if(mode!==3)return originalMove(d);const ls=cardLemmas(),i=ls.indexOf(verbCardLemma)+d;if(i>=0&&i<ls.length)show(cardRows(ls[i])[0]);else $('toast').textContent='已到当前动词列表边界。';};$('prev').onclick=()=>move(-1);$('next').onclick=()=>move(1);
 $('random').onclick=()=>{const rs=filtered();if(!rs.length)return;if(mode===3){const ls=cardLemmas();show(cardRows(ls[Math.floor(Math.random()*ls.length)])[0]);}else show(rs[Math.floor(Math.random()*rs.length)]);};
-const oldBuildSource=buildSource;buildSource=function(){oldBuildSource();if(mode===3)$('sourceNote').textContent='一个动词一张卡，只练五个稿子里出现过的人称与时态。同一组合跨句子、跨来源只练一次；阴阳性变体合并。';};
+const oldBuildSource=buildSource;buildSource=function(){oldBuildSource();if(mode===3)$('sourceNote').textContent='一个动词一张卡。虚拟式按 TCF 主动输出需要补齐重点人称；其他时态保留原语料范围。同一组合跨来源只练一次；阴阳性变体合并。';};
 const originalFiltered=filtered;filtered=function(){return originalFiltered().filter(x=>mode!==3||(!$('verbPerson').value||$('verbPerson').value!=='il'&&$('verbPerson').value!=='ils'||($('verbPerson').value==='il'?['il','elle','on']:['ils','elles']).includes(x.person)));};
 // Grouped person options must include all three/five actual pronouns.
 $('verbGroup').value=String(state.verbGroup||'');
@@ -71,3 +72,4 @@ const oldSetModule=setModule;setModule=function(m,fresh=false){if(m===3&&fresh){
 $('search').placeholder='输入动词原形';
 window.VERB_CARDS_TEST={cardRows,cardLemmas,rowCheck,inputs:()=>verbCardInputs,getLemma:()=>verbCardLemma};
 if(mode===3){buildVerbFilters();buildSource();document.querySelector('label[for=search]').textContent='搜索动词原形';const id=DICTIONARY_ROW_ALIASES[restoreId]||CONJUGATION_PERSON_IDS[restoreId]?.[0]||current?.id;show(filtered().find(x=>x.id===id)||filtered()[0]||null);}else cards.classList.add('hidden');
+

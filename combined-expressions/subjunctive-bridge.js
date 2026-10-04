@@ -5,7 +5,7 @@
  const TIERS={b1:new Set(B1),b2:new Set(B2)};
  function buildFrequencyStats(){
   const map=new Map();
-  for(const x of DATA.filter(x=>x.module===3&&x.tense==='虚拟式现在时')){
+  for(const x of DATA.filter(x=>x.module===3&&x.tense==='虚拟式现在时'&&!x.supplemental)){
    let st=map.get(x.lemma);
    if(!st){st={lemma:x.lemma,occurrences:0,sources:new Set(),forms:new Set(),persons:new Set()};map.set(x.lemma,st);}
    const members=Array.isArray(x.members)?x.members:[];
@@ -17,11 +17,16 @@
   return map;
  }
  const FREQ=buildFrequencyStats();
+ // Added person rows never count as empirical occurrences. New verbs use whole-corpus coverage only as a zero-frequency tie breaker.
+ for(const x of DATA.filter(x=>x.module===3&&x.tense==='虚拟式现在时'))if(!FREQ.has(x.lemma))FREQ.set(x.lemma,{lemma:x.lemma,occurrences:0,sources:new Set(),forms:new Set(),persons:new Set()});
+ const corpusCoverage=lemma=>DATA.filter(x=>x.module===3&&x.lemma===lemma&&!x.supplemental).reduce((n,x)=>n+x.members.length,0);
+ function counts(tier=''){const rows=DATA.filter(x=>x.module===3&&x.tense==='虚拟式现在时'&&(!tier||TIERS[tier].has(x.lemma)));return {verbs:new Set(rows.map(x=>x.lemma)).size,forms:rows.length};}
+ function countText(tier=''){const c=counts(tier);return c.verbs+' 动词 / '+c.forms+' 变位';}
  state.subjunctiveTier=state.subjunctiveTier||'';
  state.subjunctiveSort=state.subjunctiveSort||'frequency';
  state.subjunctiveReturn=!!state.subjunctiveReturn;
  const $=id=>document.getElementById(id);
- function tierLabel(){return state.subjunctiveTier==='b1'?'B1 核心必熟 · 24 动词 / 41 变位':state.subjunctiveTier==='b2'?'B2 高频扩展 · 30 动词 / 36 变位':'';}
+ function tierLabel(){return state.subjunctiveTier==='b1'?'B1 核心必熟 · '+countText('b1'):state.subjunctiveTier==='b2'?'B2 高频扩展 · '+countText('b2'):'';}
  function returnToSubjunctiveCourse(){
   state.subjunctiveReturn=false;
   state.subjunctiveTier='';
@@ -50,8 +55,9 @@
   return B.occurrences-A.occurrences
    ||B.sources.size-A.sources.size
    ||B.forms.size-A.forms.size
+   ||(!A.occurrences&&!B.occurrences?corpusCoverage(b.lemma)-corpusCoverage(a.lemma):0)
    ||a.lemma.localeCompare(b.lemma,'fr')
-   ||String(a.person||'').localeCompare(String(b.person||''),'fr');
+   ||SUBJUNCTIVE_PERSON_ORDER.indexOf(a.person)-SUBJUNCTIVE_PERSON_ORDER.indexOf(b.person);
  }
  function topVerbsForCurrentTier(limit=10){
   const allowed=state.subjunctiveTier&&TIERS[state.subjunctiveTier]?TIERS[state.subjunctiveTier]:null;
@@ -88,7 +94,7 @@
   if(mode===3&&state.subjunctiveSort==='frequency'&&!order&&(state.subjunctiveTier||$('category')?.value==='虚拟式现在时')){
    rs=[...rs].sort(compareFrequency);
   }
-  return rs;
+  return mode===3?orderSubjunctivePersons(rs):rs;
  };
  const baseBuildVerbFilters=buildVerbFilters;
  buildVerbFilters=function(){baseBuildVerbFilters();if(mode===3){ensureTierFilter();ensureSortFilter();$('subjunctiveTier').value=state.subjunctiveTier||'';$('subjunctiveSort').value=state.subjunctiveSort||'frequency';}};
@@ -144,16 +150,16 @@
   const anchor=d.querySelector('#c1-frames');if(!anchor)return;
   const sec=document.createElement('section');sec.className='c1-course-section';sec.id='c1-subjunctive-b';
   const title=document.createElement('h3');title.textContent='B · 虚拟式动词变位专项猛攻';
-  const p=document.createElement('p');p.className='note';p.textContent='不在 #15 重复造一套变位题。这里直接调用“动词变位 613”同一份数据：B1 先练到自动化，B2 再稳定扩展；全部 81 个动词 / 106 个变位留给后续有余力时继续。';
-  const p2=document.createElement('p');p2.className='note';p2.textContent='B1 / B2 都按你五个任务真实语料里已经出现过的人称来练，不要求每个动词机械背齐 je / tu / il / nous / vous / ils 六格。';
+  const p=document.createElement('p');p.className='note';p.textContent='这里直接调用动词变位模块的同一份数据。B1 先练到自动化，B2 再稳定扩展；全部虚拟式现在时：'+countText()+'。原稿频次不因补充人称而增加。';
+  const p2=document.createElement('p');p2.className='note';p2.textContent='原稿数据与 TCF 主动输出补充共用词条库。重点补齐 nous 和 il / ils，互动高频动词补齐六组；低频动词保留原有范围。falloir 为无人称动词，仅 qu’il faille。';
   const row=document.createElement('div');row.className='c1-actions';
   const mk=(label,tier,primary=false)=>{const b=document.createElement('button');b.type='button';b.textContent=label;if(primary)b.className='primary';b.onclick=()=>{d.close();openTier(tier)};return b;};
-  row.append(mk('猛攻 B1 · 24 动词 / 41 变位','b1',true),mk('猛攻 B2 · 30 动词 / 36 变位','b2'),mk('练全部虚拟式现在时 · 81 / 106',''));
+  row.append(mk('猛攻 B1 · '+countText('b1'),'b1',true),mk('猛攻 B2 · '+countText('b2'),'b2'),mk('练全部虚拟式现在时 · '+countText(),''));
   const review=document.createElement('div');review.className='c1-lesson-card';
   const rh=document.createElement('h4');rh.textContent='复习模式';
   const rp=document.createElement('p');rp.className='note';rp.textContent='先选复习范围，再选择“按高频顺序依次复习”或“随机顺序复习”。';
   const rsel=document.createElement('select');rsel.id='subjunctiveReviewTier';
-  rsel.append(new Option('B1 · 24 动词 / 41 变位','b1'),new Option('B2 · 30 动词 / 36 变位','b2'),new Option('全部虚拟式现在时 · 81 / 106',''));
+  rsel.append(new Option('B1 · '+countText('b1'),'b1'),new Option('B2 · '+countText('b2'),'b2'),new Option('全部虚拟式现在时 · '+countText(),''));
   const ractions=document.createElement('div');ractions.className='c1-actions';
   const seq=document.createElement('button');seq.type='button';seq.className='primary';seq.textContent='按高频顺序依次复习';seq.onclick=()=>{d.close();openTier(rsel.value,'frequency');};
   const rnd=document.createElement('button');rnd.type='button';rnd.textContent='随机顺序复习';rnd.onclick=()=>{d.close();openTier(rsel.value,'random');};
@@ -171,3 +177,4 @@
  setTimeout(ensureReturnButton,0);
  window.C1_SUBJUNCTIVE_BRIDGE={B1,B2,FREQ,open:openTier,back:returnToSubjunctiveCourse};
 })();
+
