@@ -1,6 +1,6 @@
 # TCF Canada 写作 Tâche 1 · 7–10月真题迁移改写版
 
-3篇独立迁移稿；原72篇正文保留。词数按网页现有空格分词方式计算，称呼和落款计入。
+3篇独立迁移稿；原72篇正文保留。词数按网页现有规则计算：空格分词，排除独立标点，称呼和落款计入。
 
 ## 真题迁移01｜向朋友描述新餐厅用餐体验
 
@@ -24,7 +24,7 @@ Vous avez dîné dans un nouveau restaurant. Écrivez un message à votre ami po
 
 新增记忆负担：**低**。主体描述沿用第32题；主要调整为过去时并删除邀请与订位。菜品选择、繁忙时的服务和最后的体验评价为适度改写。
 
-### C1目标优化答案（120 mots）
+### C1目标优化答案（116 mots）
 
 Salut Thomas,
 
@@ -78,7 +78,7 @@ Vous avez récemment déménagé dans une nouvelle ville. Invitez votre amie à 
 
 新增记忆负担：**低**。大部分句块直接保留；更换收信人，并压缩景点描述、补充接站句。无需新增整套地点或活动素材。
 
-### C1目标优化答案（118 mots）
+### C1目标优化答案（115 mots）
 
 Salut Anna,
 
@@ -132,7 +132,7 @@ Vous avez lu une annonce sur un site internet qui propose l’aide aux personnes
 
 新增记忆负担：**低**。两篇已有语料直接重组；主要新增的是明确回应广告的开头衔接，未增加陌生兴趣、职业或理由。
 
-### C1目标优化答案（119 mots）
+### C1目标优化答案（118 mots）
 
 Bonjour,
 
