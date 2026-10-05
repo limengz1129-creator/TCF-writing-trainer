@@ -163,22 +163,27 @@
       "month": "2026-09",
       "title": "邀请朋友来度假并推荐当地景点",
       "prompt": "Vous avez récemment déménagé dans une nouvelle ville. Invitez votre amie à venir passer les vacances chez vous.",
-      "candidates": [
+      "status": "migrated",
+      "reason": "按BonTCF任务标准，以现有语料迁移改写并正式纳入。",
+      "migration_id": 74,
+      "sources": [
         15,
-        63
-      ],
-      "status": "pending",
-      "reason": "原题只要求搬到新城市后邀请朋友来家度假，未要求推荐景点；第15题要求描述景点，第63题介绍搬迁生活但不邀请。暂不凭同标题判断。"
+        63,
+        66
+      ]
     },
     {
       "month": "2026-09",
       "title": "向朋友介绍新餐厅",
       "prompt": "Vous avez dîné dans un nouveau restaurant. Écrivez un message à votre ami pour lui décrire le restaurant : l’ambiance, la décoration, les plats et le service.",
-      "candidates": [
-        32
-      ],
-      "status": "pending",
-      "reason": "原题描述已经用餐后的体验；第32题是邀请朋友去新餐厅，任务不同。按用户要求暂不纳入。"
+      "status": "migrated",
+      "reason": "按BonTCF任务标准，以现有语料迁移改写并正式纳入。",
+      "migration_id": 73,
+      "sources": [
+        32,
+        6,
+        37
+      ]
     },
     {
       "month": "2026-09",
@@ -313,12 +318,13 @@
       "month": "2026-08",
       "title": "寻找语言交流伙伴并介绍自己",
       "prompt": "Vous avez lu une annonce sur un site internet qui propose l’aide aux personnes qui souhaitent apprendre le français et les aider à trouver des personnes avec lesquelles elles peuvent pratiquer le français et qui leur permettront d’améliorer leur niveau. Envoyez un courriel pour répondre à cette annonce tout en vous présentant et en expliquant pourquoi vouloir pratiquer cette langue.",
-      "candidates": [
+      "status": "migrated",
+      "reason": "按BonTCF任务标准，以现有语料迁移改写并正式纳入。",
+      "migration_id": 75,
+      "sources": [
         51,
         52
-      ],
-      "status": "pending",
-      "reason": "第51题最接近，包含回复广告、自我介绍与练法语动机；第52题也要求写邮件自我介绍并由平台推荐交流伙伴，两篇任务重叠，需要人工选定。"
+      ]
     },
     {
       "month": "2026-08",
@@ -441,5 +447,9 @@
       "github_id": 62,
       "status": "confirmed"
     }
-  ]
+  ],
+  "resolved_at": "2026-10-05",
+  "migrated_records": 3,
+  "unique_training_articles": 32,
+  "pending_records": 0
 }
