@@ -1,10 +1,10 @@
 (() => {
   'use strict';
   const key = 'tcf-vocabulary-v1:' + location.pathname.replace(/index\.html$/, '').replace(/\/$/, '');
-  let words = [], editing = null, selected = '';
+  let words = [], editing = null, selected = '', selectedRange = null, selectedInReference = false;
   try { words = JSON.parse(localStorage.getItem(key) || '[]'); if (!Array.isArray(words)) words = []; } catch (_) {}
   const style = document.createElement('style');
-  style.textContent = `.vb-launch{position:fixed;right:16px;bottom:18px;z-index:9000;background:#17624e;color:white;border:0;border-radius:24px;padding:13px 20px;box-shadow:0 3px 16px #0003;cursor:pointer}.vb-dialog{border:0;border-radius:16px;width:min(760px,92vw);max-height:88vh;padding:24px;color:#18312d;background:#fff;box-sizing:border-box}.vb-dialog::backdrop{background:#0007}.vb-dialog button{cursor:pointer;padding:8px 12px;border:1px solid #b8cec6;border-radius:8px;background:#eef7f2;color:#18312d}.vb-dialog input,.vb-dialog textarea{display:block;width:100%;box-sizing:border-box;padding:9px;border:1px solid #a9bdb4;border-radius:7px;margin:5px 0 12px;font:inherit}.vb-dialog h2{margin:0}.vb-head,.vb-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:14px}.vb-head h2{flex:1}.vb-list{list-style:none;padding:0}.vb-list li{border-top:1px solid #dce8e2;padding:14px 0}.vb-word{font-weight:bold;overflow-wrap:anywhere}.vb-meaning,.vb-note{white-space:pre-wrap;overflow-wrap:anywhere;margin:5px 0}.vb-note,.vb-help{font-size:14px;color:#52685e}.vb-select{position:fixed;z-index:9100;border:0;border-radius:20px;padding:10px 16px;background:#17624e;color:white;cursor:pointer;box-shadow:0 2px 12px #0003}.vb-status{min-height:22px;color:#17624e}.vb-list button{margin:5px 8px 0 0}@media(max-width:500px){.vb-dialog{padding:16px}.vb-launch{right:10px;bottom:10px}}`;
+  style.textContent = `.vb-launch{position:fixed;right:16px;bottom:18px;z-index:9000;background:#17624e;color:white;border:0;border-radius:24px;padding:13px 20px;box-shadow:0 3px 16px #0003;cursor:pointer}.vb-dialog{border:0;border-radius:16px;width:min(760px,92vw);max-height:88vh;padding:24px;color:#18312d;background:#fff;box-sizing:border-box}.vb-dialog::backdrop{background:#0007}.vb-dialog button{cursor:pointer;padding:8px 12px;border:1px solid #b8cec6;border-radius:8px;background:#eef7f2;color:#18312d}.vb-dialog input,.vb-dialog textarea{display:block;width:100%;box-sizing:border-box;padding:9px;border:1px solid #a9bdb4;border-radius:7px;margin:5px 0 12px;font:inherit}.vb-dialog h2{margin:0}.vb-head,.vb-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:14px}.vb-head h2{flex:1}.vb-list{list-style:none;padding:0}.vb-list li{border-top:1px solid #dce8e2;padding:14px 0}.vb-word{font-weight:bold;overflow-wrap:anywhere}.vb-meaning,.vb-note{white-space:pre-wrap;overflow-wrap:anywhere;margin:5px 0}.vb-note,.vb-help{font-size:14px;color:#52685e}.vb-select-menu{position:fixed;z-index:9100;display:flex;gap:6px;padding:5px;background:#fff;border:1px solid #d8e2de;border-radius:12px;box-shadow:0 3px 16px #0003}.vb-select-menu[hidden]{display:none}.vb-select-menu button{border:0;border-radius:9px;padding:9px 12px;cursor:pointer;white-space:nowrap}.vb-select-add{background:#17624e;color:white}.vb-select-highlight{background:#fff08a;color:#4b3d00}.vb-status{min-height:22px;color:#17624e}.vb-list button{margin:5px 8px 0 0}@media(max-width:500px){.vb-dialog{padding:16px}.vb-launch{right:10px;bottom:10px}}`;
   document.head.append(style);
   const launch = document.createElement('button'); launch.className = 'vb-launch'; document.body.append(launch);
   const dialog = document.createElement('dialog'); dialog.className = 'vb-dialog';
@@ -38,17 +38,60 @@
     const entry = {id: editing || String(Date.now()) + Math.random().toString(16).slice(2), french, chinese: field('chinese').value.trim(), note: field('note').value.trim(), source: old?.source || document.title, date: old?.date || new Date().toISOString().slice(0,10)};
     if (persist(old ? words.map(w => w.id === editing ? entry : w) : [...words,entry])) { reset(); status.textContent = '已保存：' + french; }
   };
-  const add = document.createElement('button'); add.className = 'vb-select'; add.textContent = '加入单词本'; add.hidden = true; document.body.append(add);
+  const selectMenu = document.createElement('div'); selectMenu.className = 'vb-select-menu'; selectMenu.hidden = true;
+  const add = document.createElement('button'); add.type = 'button'; add.className = 'vb-select-add'; add.textContent = '加入单词本';
+  const highlight = document.createElement('button'); highlight.type = 'button'; highlight.className = 'vb-select-highlight'; highlight.textContent = '黄色高亮';
+  selectMenu.append(add, highlight); document.body.append(selectMenu);
+
   document.addEventListener('mouseup', e => {
-    if (dialog.contains(e.target) || e.target === add || e.target === launch) return;
-    const target = e.target; const text = (target instanceof HTMLTextAreaElement || target instanceof HTMLInputElement) ? target.value.slice(target.selectionStart || 0,target.selectionEnd || 0) : window.getSelection()?.toString();
-    selected = (text || '').trim(); add.hidden = !selected || selected.length > 500;
-    if (!add.hidden) { add.style.left = Math.max(8,Math.min(e.clientX,innerWidth-155)) + 'px'; add.style.top = Math.max(8,Math.min(e.clientY+12,innerHeight-50)) + 'px'; }
+    if (dialog.contains(e.target) || selectMenu.contains(e.target) || e.target === launch) return;
+    const target = e.target;
+    const sel = window.getSelection();
+    const text = (target instanceof HTMLTextAreaElement || target instanceof HTMLInputElement)
+      ? target.value.slice(target.selectionStart || 0,target.selectionEnd || 0)
+      : sel?.toString();
+
+    selected = (text || '').trim();
+    selectedRange = null;
+    selectedInReference = false;
+
+    if (selected && selected.length <= 500 && sel && sel.rangeCount && !(target instanceof HTMLTextAreaElement) && !(target instanceof HTMLInputElement)) {
+      const r = sel.getRangeAt(0);
+      let node = r.commonAncestorContainer;
+      if (node.nodeType === 3) node = node.parentElement;
+      const p = node?.closest?.('.ref-fr');
+      if (p && p.contains(r.startContainer) && p.contains(r.endContainer)) {
+        selectedRange = r.cloneRange();
+        selectedInReference = true;
+      }
+    }
+
+    selectMenu.hidden = !selected || selected.length > 500;
+    highlight.hidden = !selectedInReference;
+    if (!selectMenu.hidden) {
+      const menuWidth = selectedInReference ? 230 : 125;
+      selectMenu.style.left = Math.max(8,Math.min(e.clientX,innerWidth-menuWidth-8)) + 'px';
+      selectMenu.style.top = Math.max(8,Math.min(e.clientY+12,innerHeight-58)) + 'px';
+    }
   });
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') add.hidden = true; });
-  document.addEventListener('scroll', () => { add.hidden = true; }, true);
-  add.onmousedown = e => e.preventDefault();
-  add.onclick = () => { const text = selected; add.hidden = true; reset(); field('french').value = text; dialog.showModal(); status.textContent = '填写中文意思后保存。'; field('chinese').focus(); render(); };
+
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') selectMenu.hidden = true; });
+  document.addEventListener('scroll', () => { selectMenu.hidden = true; }, true);
+  selectMenu.onmousedown = e => e.preventDefault();
+
+  add.onclick = () => {
+    const text = selected; selectMenu.hidden = true; reset(); field('french').value = text;
+    dialog.showModal(); status.textContent = '填写中文意思后保存。'; field('chinese').focus(); render();
+  };
+
+  highlight.onclick = () => {
+    if (!selectedRange || !selectedInReference) return;
+    const range = selectedRange.cloneRange();
+    selectMenu.hidden = true;
+    document.dispatchEvent(new CustomEvent('tcf-highlight-selection',{detail:{range}}));
+    const sel = window.getSelection(); if (sel) sel.removeAllRanges();
+    selectedRange = null; selectedInReference = false;
+  };
   function xml(s) { return String(s ?? '').replace(/[\x00-\x08\x0B\x0C\x0E-\x1F]/g,'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
   function workbook(rows) {
     const enc = new TextEncoder();
