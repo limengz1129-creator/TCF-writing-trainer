@@ -60,10 +60,23 @@ const UNIVERSAL_SUBJUNCTIVE={
     {tag:'带家人一起',fr:'J’aimerais que + personne + subjonctif. Est-ce que c’est possible ?',zh:'我希望某人能够……，可以吗？例：Au fait, j’aimerais que mon fils puisse y aller avec moi. Est-ce que c’est possible ?'}
   ]
 };
+const UNIVERSAL_CONDITIONAL={
+  title:'条件句模版',
+  subtitle:'全题目通用 · TCF Canada 口语 Tâche 2 条件式礼貌提问',
+  items:[
+    {tag:'最万能 · 礼貌询问信息',fr:'Pourriez-vous me dire si… ?',zh:'您能告诉我是否……吗？几乎所有题都能用。例：Pourriez-vous me dire si le petit-déjeuner est inclus ?'},
+    {tag:'想知道是否……',fr:'J’aimerais savoir si…',zh:'我想知道是否……。特别适合接 yes/no 类问题。例：J’aimerais savoir si je pourrais venir avec mon fils.'},
+    {tag:'想了解……',fr:'Je voudrais savoir…',zh:'我想了解……。后面既可以接 si，也可以接疑问词。例：Je voudrais savoir combien cela coûterait. / Je voudrais savoir s’il serait possible de réserver à l’avance.'},
+    {tag:'是否可以做……',fr:'Est-ce qu’il serait possible de + infinitif… ?',zh:'是否可以……？特别适合问“可不可以做某件事”。例：Est-ce qu’il serait possible de modifier la réservation ?'},
+    {tag:'是否有……',fr:'Y aurait-il… ?',zh:'会不会有／是否有……？适合问设施、服务、选择。例：Y aurait-il des activités adaptées aux enfants ?'}
+  ]
+};
+
 const $=(s,r=document)=>r.querySelector(s);
 const EDIT_KEY='tcf-tache2-open-close-edits-v1';
 const REACTION_KEY='tcf-tache2-reaction-edits-v1';
 const SUBJUNCTIVE_KEY='tcf-tache2-subjunctive-edits-v1';
+const CONDITIONAL_KEY='tcf-tache2-conditional-edits-v1';
 function readEdits(){try{const v=JSON.parse(localStorage.getItem(EDIT_KEY)||'{}');return v&&typeof v==='object'?v:{};}catch{return{};}}
 function writeEdits(v){localStorage.setItem(EDIT_KEY,JSON.stringify(v));}
 function getThemeItems(theme,kind){
@@ -89,6 +102,11 @@ function getSubjunctiveItems(){
   return UNIVERSAL_SUBJUNCTIVE.items.map(x=>({...x}));
 }
 function saveSubjunctiveItems(items){localStorage.setItem(SUBJUNCTIVE_KEY,JSON.stringify(items));}
+function getConditionalItems(){
+  try{const saved=JSON.parse(localStorage.getItem(CONDITIONAL_KEY)||'null');if(Array.isArray(saved))return saved;}catch{}
+  return UNIVERSAL_CONDITIONAL.items.map(x=>({...x}));
+}
+function saveConditionalItems(items){localStorage.setItem(CONDITIONAL_KEY,JSON.stringify(items));}
 
 function currentTheme(){
   const v=$('#themeFilter')?.value||'';
@@ -106,9 +124,9 @@ function emptyState(wrap,theme,kind){
   box.append(h,p);wrap.append(box);
 }
 function show(kind){
-  const theme=currentTheme(),isReaction=kind==='reaction',isSubjunctive=kind==='subjunctive';
-  $('#t2OCModalTitle').textContent=isReaction?UNIVERSAL_REACTIONS.title:(isSubjunctive?UNIVERSAL_SUBJUNCTIVE.title:(kind==='opening'?'开头模块':'结尾模块'));
-  $('#t2OCModalSub').textContent=isReaction?UNIVERSAL_REACTIONS.subtitle:(isSubjunctive?UNIVERSAL_SUBJUNCTIVE.subtitle:((theme||'未选择大主题')+' · TCF Canada 口语 Tâche 2 '+(kind==='opening'?'通用开场':'通用收尾')));
+  const theme=currentTheme(),isReaction=kind==='reaction',isSubjunctive=kind==='subjunctive',isConditional=kind==='conditional';
+  $('#t2OCModalTitle').textContent=isReaction?UNIVERSAL_REACTIONS.title:(isSubjunctive?UNIVERSAL_SUBJUNCTIVE.title:(isConditional?UNIVERSAL_CONDITIONAL.title:(kind==='opening'?'开头模块':'结尾模块')));
+  $('#t2OCModalSub').textContent=isReaction?UNIVERSAL_REACTIONS.subtitle:(isSubjunctive?UNIVERSAL_SUBJUNCTIVE.subtitle:(isConditional?UNIVERSAL_CONDITIONAL.subtitle:((theme||'未选择大主题')+' · TCF Canada 口语 Tâche 2 '+(kind==='opening'?'通用开场':'通用收尾'))));
   const wrap=$('#t2OCItems');wrap.replaceChildren();
 
   if(isReaction){
@@ -127,6 +145,14 @@ function show(kind){
     tools.append(add);wrap.append(tools);
     if(items.length)renderCards(wrap,items,{editable:true,theme:'',kind:'subjunctive'});
     else emptyState(wrap,'','subjunctive');
+  }else if(isConditional){
+    const items=getConditionalItems();
+    const tools=document.createElement('div');tools.className='t2-oc-manage';
+    const add=document.createElement('button');add.type='button';add.className='btn primary';add.textContent='＋ 新增条件句';
+    add.onclick=()=>openEditor({theme:'',kind:'conditional',index:-1});
+    tools.append(add);wrap.append(tools);
+    if(items.length)renderCards(wrap,items,{editable:true,theme:'',kind:'conditional'});
+    else emptyState(wrap,'','conditional');
   }else{
     if(!theme){emptyState(wrap,theme,kind);}
     else{
@@ -162,12 +188,12 @@ function renderCards(wrap,items,opt){
   });
 }
 function openEditor({theme,kind,index}){
-  const isReaction=kind==='reaction',isSubjunctive=kind==='subjunctive';
-  const items=isReaction?getReactionItems():(isSubjunctive?getSubjunctiveItems():getThemeItems(theme,kind)),existing=index>=0?items[index]:{tag:'',fr:'',zh:''};
+  const isReaction=kind==='reaction',isSubjunctive=kind==='subjunctive',isConditional=kind==='conditional';
+  const items=isReaction?getReactionItems():(isSubjunctive?getSubjunctiveItems():(isConditional?getConditionalItems():getThemeItems(theme,kind))),existing=index>=0?items[index]:{tag:'',fr:'',zh:''};
   const form=document.createElement('form');form.className='t2-oc-edit-form';
-  const kindName=isReaction?'反应句':(isSubjunctive?'虚拟句':(kind==='opening'?'开头':'结尾'));
+  const kindName=isReaction?'反应句':(isSubjunctive?'虚拟句':(isConditional?'条件句':(kind==='opening'?'开头':'结尾')));
   form.innerHTML='<h3>'+(index>=0?'编辑':'新增')+kindName+'</h3>';
-  const fields=[[(isReaction||isSubjunctive)?'分类标签':'场景标签','tag',existing.tag||''],['法语句子','fr',existing.fr||''],['中文说明','zh',existing.zh||'']];
+  const fields=[[(isReaction||isSubjunctive||isConditional)?'分类标签':'场景标签','tag',existing.tag||''],['法语句子','fr',existing.fr||''],['中文说明','zh',existing.zh||'']];
   const inputs={};
   for(const [labelText,key,val] of fields){
     const label=document.createElement('label');label.textContent=labelText;
@@ -181,14 +207,14 @@ function openEditor({theme,kind,index}){
   actions.append(save,cancel);form.append(actions);
   const wrap=$('#t2OCItems');wrap.prepend(form);inputs.tag.focus();
   cancel.onclick=()=>form.remove();
-  form.onsubmit=e=>{e.preventDefault();const next={tag:inputs.tag.value.trim(),fr:inputs.fr.value.trim(),zh:inputs.zh.value.trim(),id:existing.id||('u-'+Date.now())};if(!next.tag||!next.fr||!next.zh)return;if(index>=0)items[index]=next;else items.push(next);if(isReaction)saveReactionItems(items);else if(isSubjunctive)saveSubjunctiveItems(items);else saveThemeItems(theme,kind,items);show(kind);};
+  form.onsubmit=e=>{e.preventDefault();const next={tag:inputs.tag.value.trim(),fr:inputs.fr.value.trim(),zh:inputs.zh.value.trim(),id:existing.id||('u-'+Date.now())};if(!next.tag||!next.fr||!next.zh)return;if(index>=0)items[index]=next;else items.push(next);if(isReaction)saveReactionItems(items);else if(isSubjunctive)saveSubjunctiveItems(items);else if(isConditional)saveConditionalItems(items);else saveThemeItems(theme,kind,items);show(kind);};
 }
 function deleteItem(theme,kind,index){
-  const isReaction=kind==='reaction',isSubjunctive=kind==='subjunctive';
-  const items=isReaction?getReactionItems():(isSubjunctive?getSubjunctiveItems():getThemeItems(theme,kind)),item=items[index];if(!item)return;
-  const label=isReaction?'反应句':(isSubjunctive?'虚拟句':(kind==='opening'?'开头':'结尾'));
+  const isReaction=kind==='reaction',isSubjunctive=kind==='subjunctive',isConditional=kind==='conditional';
+  const items=isReaction?getReactionItems():(isSubjunctive?getSubjunctiveItems():(isConditional?getConditionalItems():getThemeItems(theme,kind))),item=items[index];if(!item)return;
+  const label=isReaction?'反应句':(isSubjunctive?'虚拟句':(isConditional?'条件句':(kind==='opening'?'开头':'结尾')));
   if(!confirm('删除这条'+label+'吗？'))return;
-  items.splice(index,1);if(isReaction)saveReactionItems(items);else if(isSubjunctive)saveSubjunctiveItems(items);else saveThemeItems(theme,kind,items);show(kind);
+  items.splice(index,1);if(isReaction)saveReactionItems(items);else if(isSubjunctive)saveSubjunctiveItems(items);else if(isConditional)saveConditionalItems(items);else saveThemeItems(theme,kind,items);show(kind);
 }
 function close(){const b=$('#t2OCBackdrop');if(b)b.classList.remove('open');document.body.style.overflow='';if('speechSynthesis' in window)speechSynthesis.cancel();}
 function updateEntry(){
@@ -199,7 +225,7 @@ function updateEntry(){
 function build(){
   const sidebar=$('.sidebar');if(!sidebar)return;
   const box=document.createElement('section');box.className='t2-oc-entry';
-  box.innerHTML='<strong>口语完整结构</strong><p>开头和结尾按当前大主题显示；反应句库和虚拟句模版为全部题目通用。</p><p id="t2OCThemeStatus" class="t2-oc-theme-status"></p><div class="t2-oc-entry-actions"><button type="button" class="btn secondary" data-oc="opening">开头模块</button><button type="button" class="btn secondary" data-oc="closing">结尾模块</button><button type="button" class="btn secondary t2-oc-reaction-btn" data-oc="reaction">回答后反应句库</button><button type="button" class="btn secondary t2-oc-reaction-btn" data-oc="subjunctive">虚拟句模版</button></div>';
+  box.innerHTML='<strong>口语完整结构</strong><p>开头和结尾按当前大主题显示；反应句库、虚拟句模版和条件句模版为全部题目通用。</p><p id="t2OCThemeStatus" class="t2-oc-theme-status"></p><div class="t2-oc-entry-actions"><button type="button" class="btn secondary" data-oc="opening">开头模块</button><button type="button" class="btn secondary" data-oc="closing">结尾模块</button><button type="button" class="btn secondary t2-oc-reaction-btn" data-oc="reaction">回答后反应句库</button><button type="button" class="btn secondary t2-oc-reaction-btn" data-oc="subjunctive">虚拟句模版</button><button type="button" class="btn secondary t2-oc-reaction-btn" data-oc="conditional">条件句模版</button></div>';
   const controls=$('.t2-study-controls');
   if(controls)controls.after(box);else sidebar.prepend(box);
   box.querySelectorAll('[data-oc]').forEach(b=>b.onclick=()=>show(b.dataset.oc));
