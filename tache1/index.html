@@ -21,7 +21,7 @@
 <label class="answer-label" for="answer"><span id="answerLabel">默写全文</span><span id="wordCount">0 / 120 mots</span></label><textarea id="answer" spellcheck="false" autocomplete="off" placeholder="先独立写完，再检查答案……"></textarea><div class="row"><button id="check" class="primary">检查答案</button><button id="reveal">显示原稿</button><button id="clear">清空当前草稿</button></div><div id="toast" role="status"></div><div id="result" class="hidden" aria-live="polite"><div class="score" id="score"></div><p class="note">按原稿逐词核对：红色为漏写或不同的原稿词，黄色为你多写或替换的词。匹配度是默写参考，不是 C1 考试评分。</p><div class="comparison"><div><h3>你的默写</h3><div id="userDiff" class="diff"></div></div><div><h3>原稿对照</h3><div id="refDiff" class="diff"></div></div></div></div><div id="reference" class="hidden reference-block"></div>
 <details id="phraseOverview" class="phrase-overview" open>
   <summary>本篇语块概览 · 10–15 条</summary>
-  <p class="note">直接从本篇最终法语原文截取；优先记任务核心表达，不另外改写成第二套说法。</p>
+  <p class="note">直接从本篇最终法语原文截取；每条尽量控制在 2–6 个词，记可直接复用的小语块，不另外改写成第二套说法。</p>
   <div id="phraseList"></div>
 </details>
 <div class="row"><button id="prevTopic">← 上一题</button><button id="nextTopic">下一题 →</button></div><p class="note">法语原稿完整保留上传 Word；中文已按法语逐句详细翻译，并按原稿空行对齐段落。大小写、标点和排版差异不计入词汇匹配，重音与词形差异会标出。Ctrl / ⌘ + Enter 检查答案。</p></section><section id="emptyScope" class="card hidden"><p>当前真题范围没有符合筛选的题目。请调整大主题、子分类、搜索或待复习筛选。</p></section></main>
@@ -67,52 +67,90 @@ function uniqPhrases(items){
 }
 function phraseData(r){
   const body=(r.paragraphs||[]).filter(p=>wc(p)>=5);
-  const sentences=body.flatMap((p,pi)=>sentenceParts(p).map(s=>({text:s,pi})));
-  const clauses=[];
-  for(const s of sentences){
-    const parts=s.text.split(/[,;:]/).map(x=>x.trim()).filter(Boolean);
-    for(const p of parts){
-      const n=wc(p);
-      if(n>=4&&n<=22) clauses.push({text:p,pi:s.pi});
-    }
+  const text=body.join(' ');
+  const items=[];
+
+  function add(type,phrase){
+    const clean=(phrase||'').trim().replace(/^[,;:.!?\s]+|[,;:.!?\s]+$/g,'');
+    const n=wc(clean);
+    if(n>=2&&n<=6)items.push({type,text:clean});
   }
-  const reusableRe=/(afin que|pour que|à condition de|bien que|même si|ce qui|je souhaiterais|j’aimerais|nous pourrions|vous pourriez|il serait|grâce à|au lieu de|comme |connaissant |permet(?:tra|tent| de)?|bénéfici|réserv|propos|découvr|particip|profiter|se déroul|situé|accessible)/i;
-  const connectorRe=/\b(Tout d’abord|Ensuite|De plus|Par ailleurs|En outre|Enfin|Cependant|Toutefois|Ainsi|Après|Avant|Grâce à|Au lieu de|À condition de|Bien que|Même si|Afin que|Pour que)\b/gi;
 
-  let core=uniqPhrases(clauses
-    .filter(x=>wc(x.text)>=6)
-    .sort((a,b)=>Math.abs(wc(a.text)-11)-Math.abs(wc(b.text)-11)))
-    .slice(0,8);
+  const patterns=[
+    // 高频语法 / 连接结构
+    ['links',/\bà condition de\b/gi],
+    ['links',/\bafin que\b/gi],
+    ['links',/\bpour que\b/gi],
+    ['links',/\bgrâce à(?:ux)?\b/gi],
+    ['links',/\bau lieu de\b/gi],
+    ['links',/\bbien que\b/gi],
+    ['links',/\bmême si\b/gi],
+    ['links',/\bpar ailleurs\b/gi],
+    ['links',/\ben outre\b/gi],
+    ['links',/\btout d’abord\b/gi],
+    ['links',/\bde plus\b/gi],
+    ['links',/\bainsi\b/gi],
+    ['links',/\btoutefois\b/gi],
 
-  let frames=uniqPhrases(clauses.filter(x=>reusableRe.test(x.text)))
-    .filter(x=>!core.some(y=>norm(y.text)===norm(x.text))).slice(0,2);
+    // 高频动词搭配 / 句型骨架
+    ['frames',/\bcommen(?:cerons|çons|ce|cer|cé|ceraient?) par\b/gi],
+    ['frames',/\bse termin(?:era|e|ent|er) vers\b/gi],
+    ['frames',/\bpermet(?:tra|tent|tre|t) de\b/gi],
+    ['frames',/\bje (?:vous |t['’])?invite à\b/gi],
+    ['frames',/\bje souhaiterais que\b/gi],
+    ['frames',/\bj’aimerais que\b/gi],
+    ['frames',/\bnous pourrions\b/gi],
+    ['frames',/\bmerci de confirmer\b/gi],
+    ['frames',/\bafin que je puisse\b/gi],
+    ['frames',/\bavoir besoin de\b/gi],
+    ['frames',/\bprofiter de\b/gi],
+    ['frames',/\bbénéficier d['’]une?\b/gi],
 
-  const short=clauses.filter(x=>wc(x.text)>=3&&wc(x.text)<=9);
-  let collocations=uniqPhrases([
-    ...short.filter(x=>reusableRe.test(x.text)),
-    ...short
-  ]).filter(x=>!core.concat(frames).some(y=>norm(y.text)===norm(x.text))).slice(0,3);
+    // 常见动词 + 补语：截取 2–6 词
+    ['collocations',/\b(?:réserver|confirmer|découvrir|visiter|organiser|préparer|proposer|partager|décrire|présenter|choisir|recommander|apporter|passer|prendre|faire|garder|adapter|atteindre|affronter|servir|gérer|moderniser|remplacer|ajouter)\s+(?:nos|notre|votre|vos|mes|mon|ma|ses|son|sa|les|des|un|une|du|de la|de l['’])?\s*[\p{L}’'\-]+(?:\s+[\p{L}’'\-]+){0,3}/giu],
 
-  const connectors=[];
-  for(const p of body){
-    connectorRe.lastIndex=0;
+    // 名词短语：冠词 + 形容词/名词，最多6词
+    ['core',/\b(?:un|une|le|la|les|des|du|de la|de l['’]|au|aux|notre|votre|vos|nos|mes|mon|ma|ses|son|sa)\s+[\p{L}’'\-]+(?:\s+[\p{L}’'\-]+){0,4}/giu]
+  ];
+
+  for(const [type,re] of patterns){
+    re.lastIndex=0;
     let m;
-    while((m=connectorRe.exec(p))){
-      connectors.push({text:m[0],pi:body.indexOf(p)});
-    }
+    while((m=re.exec(text))) add(type,m[0]);
   }
-  let links=uniqPhrases(connectors)
-    .filter(x=>!core.concat(frames,collocations).some(y=>norm(y.text)===norm(x.text))).slice(0,2);
 
-  let total=core.length+collocations.length+frames.length+links.length;
-  if(total<10){
-    const used=core.concat(collocations,frames,links);
-    const fill=uniqPhrases(clauses).filter(x=>!used.some(y=>norm(y.text)===norm(x.text)));
-    while(total<10&&fill.length){
-      core.push(fill.shift()); total++;
-    }
+  // 从逗号/句号切开的原文片段里补充简短语块
+  const fragments=text.split(/[,.!?;:]/).map(x=>x.trim()).filter(Boolean);
+  for(const frag of fragments){
+    const words=frag.match(/[\p{L}\p{N}]+(?:[’'\-][\p{L}\p{N}]+)*/gu)||[];
+    if(words.length>=2&&words.length<=6)add('core',frag);
   }
-  if(core.length>8) core=core.slice(0,8);
+
+  const seen=new Set();
+  const unique=items.filter(x=>{
+    const k=norm(x.text);
+    if(seen.has(k))return false;
+    seen.add(k);return true;
+  });
+
+  function take(type,n){
+    return unique.filter(x=>x.type===type).slice(0,n);
+  }
+
+  let links=take('links',2);
+  let frames=take('frames',2);
+  let collocations=take('collocations',3);
+  let core=take('core',8)
+    .filter(x=>!links.concat(frames,collocations).some(y=>norm(y.text)===norm(x.text)));
+
+  // 补到至少10条，但仍保持每条2–6词
+  const used=()=>new Set(core.concat(collocations,frames,links).map(x=>norm(x.text)));
+  for(const x of unique){
+    if(core.length+collocations.length+frames.length+links.length>=10)break;
+    if(!used().has(norm(x.text)))core.push(x);
+  }
+  core=core.slice(0,8);
+
   return {core,collocations,frames,links}
 }
 function renderPhraseOverview(){
