@@ -1,0 +1,445 @@
+{
+  "source": "BonTCF 月度真题 · 写作 Tâche 1",
+  "verified_at": "2026-10-05",
+  "monthly_counts": {
+    "2026-07": 11,
+    "2026-08": 17,
+    "2026-09": 13,
+    "2026-10": 4
+  },
+  "confirmed_records": 42,
+  "unique_articles": 29,
+  "months_by_article": {
+    "2": [
+      "2026.07",
+      "2026.08",
+      "2026.09"
+    ],
+    "3": [
+      "2026.08",
+      "2026.09"
+    ],
+    "8": [
+      "2026.10"
+    ],
+    "9": [
+      "2026.10"
+    ],
+    "10": [
+      "2026.08"
+    ],
+    "11": [
+      "2026.07"
+    ],
+    "15": [
+      "2026.08",
+      "2026.09"
+    ],
+    "16": [
+      "2026.08",
+      "2026.09",
+      "2026.10"
+    ],
+    "19": [
+      "2026.08"
+    ],
+    "20": [
+      "2026.07",
+      "2026.08"
+    ],
+    "21": [
+      "2026.07"
+    ],
+    "22": [
+      "2026.09"
+    ],
+    "24": [
+      "2026.08"
+    ],
+    "26": [
+      "2026.09"
+    ],
+    "28": [
+      "2026.08"
+    ],
+    "30": [
+      "2026.08"
+    ],
+    "37": [
+      "2026.08",
+      "2026.09"
+    ],
+    "38": [
+      "2026.07"
+    ],
+    "44": [
+      "2026.08"
+    ],
+    "45": [
+      "2026.07"
+    ],
+    "50": [
+      "2026.08"
+    ],
+    "51": [
+      "2026.07"
+    ],
+    "54": [
+      "2026.07"
+    ],
+    "56": [
+      "2026.09"
+    ],
+    "62": [
+      "2026.07",
+      "2026.09"
+    ],
+    "64": [
+      "2026.08"
+    ],
+    "66": [
+      "2026.09",
+      "2026.10"
+    ],
+    "68": [
+      "2026.07",
+      "2026.09"
+    ],
+    "69": [
+      "2026.07"
+    ]
+  },
+  "records": [
+    {
+      "month": "2026-10",
+      "title": "邀请朋友参加生日聚会并介绍安排",
+      "prompt": "Écrivez un message à vos amis pour les inviter à votre anniversaire et leur raconter comment va se dérouler votre fête.",
+      "github_id": 8,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-10",
+      "title": "向朋友介绍自己的公寓",
+      "prompt": "Vous partez en voyage et vous laissez votre appartement à un ami qui veut venir rester chez-vous pendant vos vacances. Vous lui envoyez un message pour décrire votre appartement (immeuble, logement, accès...).",
+      "github_id": 66,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-10",
+      "title": "邀请朋友共度一天并介绍安排",
+      "prompt": "Vous avez envie de passer une journée avec votre ami(e). Vous écrivez à votre ami(e). Vous l'invitez et vous décrivez le programme de la journée (heure, lieu du rendez-vous, activités, etc.)",
+      "github_id": 9,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-10",
+      "title": "向朋友介绍尚博尔城堡的位置和交通",
+      "prompt": "Vous avez invité votre ami Cédric à votre mariage au Château de Chambord et il vous a répondu qu’il ne connaît pas ce château. Décrivez-le à votre ami (lieu, localisation, transports, etc.).",
+      "github_id": 16,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-09",
+      "title": "计划与朋友共度周末",
+      "prompt": "Écrivez un message à votre ami(e) pour l’inviter à venir passer le week-end prochain avec vous en indiquant (activités, lieu, etc.).",
+      "github_id": 56,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-09",
+      "title": "邀请朋友来度假并推荐当地景点",
+      "prompt": "Rédigez un message pour inviter votre ami(e) à passer ses vacances dans votre ville en précisant les lieux et les endroits à visiter.",
+      "github_id": 15,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-09",
+      "title": "请朋友协助筹办活动",
+      "prompt": "Vous voulez organiser une fête. Écrivez un message à vos amis pour les inviter et leur demander de vous aider à l’organiser (lieu, date, thème, etc.).",
+      "github_id": 62,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-09",
+      "title": "邀请朋友来度假并推荐当地景点",
+      "prompt": "Vous avez récemment déménagé dans une nouvelle ville. Invitez votre amie à venir passer les vacances chez vous.",
+      "candidates": [
+        15,
+        63
+      ],
+      "status": "pending",
+      "reason": "原题只要求搬到新城市后邀请朋友来家度假，未要求推荐景点；第15题要求描述景点，第63题介绍搬迁生活但不邀请。暂不凭同标题判断。"
+    },
+    {
+      "month": "2026-09",
+      "title": "向朋友介绍新餐厅",
+      "prompt": "Vous avez dîné dans un nouveau restaurant. Écrivez un message à votre ami pour lui décrire le restaurant : l’ambiance, la décoration, les plats et le service.",
+      "candidates": [
+        32
+      ],
+      "status": "pending",
+      "reason": "原题描述已经用餐后的体验；第32题是邀请朋友去新餐厅，任务不同。按用户要求暂不纳入。"
+    },
+    {
+      "month": "2026-09",
+      "title": "向朋友讲述乡间周末经历",
+      "prompt": "Vous avez passé un week-end à la campagne. Écrivez un message à votre ami(e) pour lui décrire ce qui s’est passé.",
+      "github_id": 37,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-09",
+      "title": "邀请朋友参加图书馆作家见面会",
+      "prompt": "La bibliothèque de votre ville organise une rencontre avec un écrivain. Écrivez un message à votre ami(e) pour l’inviter à cet événement.",
+      "github_id": 2,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-09",
+      "title": "向朋友说明假期看护房屋和花园的事项",
+      "prompt": "Votre ami Cédric a accepté de garder votre maison et jardin pendant vos vacances. Écrivez un message pour lui dire ce qu’il doit faire.",
+      "github_id": 68,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-09",
+      "title": "向朋友介绍找到的度假酒店",
+      "prompt": "Vous partez en vacances avec vos amis, vous avez trouvé un hôtel. Vous écrivez un message à vos amis pour décrire cet hôtel (localisation, prix, équipements, etc.) et vous leur proposez de réserver cet hôtel.",
+      "github_id": 22,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-09",
+      "title": "向朋友介绍尚博尔城堡的位置和交通",
+      "prompt": "Vous avez invité votre ami Cédric à votre mariage au Château de Chambord et il vous a répondu qu’il ne connaît pas ce château. Décrivez-le à votre ami (lieu, localisation, transports, etc.).",
+      "github_id": 16,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-09",
+      "title": "邀请朋友参加音乐活动并提供详情",
+      "prompt": "Vous écrivez une lettre à votre ami pour l’inviter à un festival de musique dans votre ville. Vous mentionnez les détails importants tels que le lieu, la date, les artistes invités et toutes les informations pratiques nécessaires.",
+      "github_id": 3,
+      "status": "confirmed",
+      "reason": "均为邀请朋友参加音乐演出并提供地点、日期、艺人与实用信息；活动形式存在变体。"
+    },
+    {
+      "month": "2026-09",
+      "title": "介绍出租公寓及周边信息",
+      "prompt": "Vous avez publié une annonce pour la location de votre appartement à Montréal. Écrivez un courriel pour répondre à une personne intéressée en lui fournissant des informations sur l’appartement (caractéristiques, loyer, quartier, etc.).",
+      "github_id": 26,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-09",
+      "title": "向朋友介绍自己的公寓",
+      "prompt": "Vous partez en voyage et vous laissez votre appartement à un ami qui veut venir rester chez-vous pendant vos vacances. Vous lui envoyez un message pour décrire votre appartement (immeuble, logement, accès...).",
+      "github_id": 66,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-08",
+      "title": "介绍城市交通方式",
+      "prompt": "Salut ! Comment vas-tu ? Je vais bientôt venir passer un week-end dans ta ville. Est-ce que tu peux me donner des informations sur les moyens de transport possibles pour visiter […] Vous répondez à Anna. Dans votre message, vous décrivez les différents moyens de transport possibles dans votre ville (métro, tramway, vélo, etc.)",
+      "github_id": 19,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-08",
+      "title": "向朋友介绍城市交通信息",
+      "prompt": "Votre ami Mehdi vient de d’emménager dans votre ville et cherche des renseignements sur les moyens de transports. Écrivez un message en lui donnant les informations nécessaires (types de transport, abonnement, tarif, etc.).",
+      "github_id": 20,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-08",
+      "title": "描述新工作及工作环境",
+      "prompt": "Vous avez trouvé un nouveau travail Vous écrivez à votre ami(e) francophone pour lui annoncer la nouvelle Vous décrivez votre poste, vos collègues et votre lieu de travail.",
+      "github_id": 50,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-08",
+      "title": "邀请朋友参加图书馆作家见面会",
+      "prompt": "Rédigez un message à un ami pour l’inviter à une rencontre avec un écrivain organisée par la bibliothèque de votre ville.",
+      "github_id": 2,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-08",
+      "title": "邀请朋友参加音乐活动并提供详情",
+      "prompt": "Vous écrivez une lettre à votre ami pour l’inviter à un festival de musique dans votre ville. Vous mentionnez les détails importants tels que le lieu, la date, les artistes invités et toutes les informations pratiques nécessaires.",
+      "github_id": 3,
+      "status": "confirmed",
+      "reason": "均为邀请朋友参加音乐演出并提供实用信息。"
+    },
+    {
+      "month": "2026-08",
+      "title": "向朋友介绍健身房及实用信息",
+      "prompt": "Votre ami veut se mettre au sport. Vous lui envoyez un message pour lui conseiller une salle de sport située dans votre quartier (localisation, prix, type d’activités, etc.).",
+      "github_id": 44,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-08",
+      "title": "向朋友介绍健身房及实用信息",
+      "prompt": "« Salut, j’ai entendu dire que tu vas dans une super salle de sport. Tu peux m’en parler ? » Vous lui répondez dans un message et vous donnez des détails sur cette salle (ambiance, équipements, prix, etc.).",
+      "github_id": 44,
+      "status": "confirmed",
+      "reason": "同为向朋友介绍健身房和实用信息，包括设施、费用，回应与主动推荐属于同一任务变体。"
+    },
+    {
+      "month": "2026-08",
+      "title": "邀请朋友来度假并推荐当地景点",
+      "prompt": "Rédigez un message pour inviter votre ami(e) à passer ses vacances dans votre ville en précisant les lieux et les endroits à visiter.",
+      "github_id": 15,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-08",
+      "title": "邀请朋友参观喜爱的城市景点",
+      "prompt": "Vous souhaitez inviter vos amis à découvrir un lieu touristique que vous appréciez particulièrement. Dans un message amical, présentez ce lieu, expliquez pourquoi vous l’aimez et proposez une date, une heure et un hébergement pour cette visite.",
+      "github_id": 10,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-08",
+      "title": "回复求购信息并介绍待售自行车",
+      "prompt": "Je cherche un vélo en bon état et bon marché. Contactez-moi par courriel : mathieu@gmail.com Vous avez un vélo à vendre. Vous écrivez un courriel pour décrire votre vélo et proposer un prix. Vous lui donnez un rendez-vous pour essayer le vélo.",
+      "github_id": 28,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-08",
+      "title": "寻找语言交流伙伴并介绍自己",
+      "prompt": "Vous avez lu une annonce sur un site internet qui propose l’aide aux personnes qui souhaitent apprendre le français et les aider à trouver des personnes avec lesquelles elles peuvent pratiquer le français et qui leur permettront d’améliorer leur niveau. Envoyez un courriel pour répondre à cette annonce tout en vous présentant et en expliquant pourquoi vouloir pratiquer cette langue.",
+      "candidates": [
+        51,
+        52
+      ],
+      "status": "pending",
+      "reason": "第51题最接近，包含回复广告、自我介绍与练法语动机；第52题也要求写邮件自我介绍并由平台推荐交流伙伴，两篇任务重叠，需要人工选定。"
+    },
+    {
+      "month": "2026-08",
+      "title": "自我介绍并分享城中喜爱的地点",
+      "prompt": "le journal “Bienvenue” compte publier un article qui parle des habitants de notre ville. Écrivez nous un message qui sera diffusé dans ce numéro. Vous êtes récemment installé dans cette ville, et il vous est demandé de vous présenter et décrire ensuite tous vos lieux préférés au sein de cette ville.",
+      "github_id": 64,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-08",
+      "title": "介绍城市交通方式",
+      "prompt": "Je suis votre amie Anna et je compte passer un weekend dans votre ville. Donnez-moi des informations sur les moyens de transport pour explorer la ville. Répondez à Anna dans un message.",
+      "github_id": 19,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-08",
+      "title": "向朋友介绍尚博尔城堡的位置和交通",
+      "prompt": "Vous avez invité votre ami Cédric à votre mariage au Château de Chambord et il vous a répondu qu’il ne connaît pas ce château. Décrivez-le à votre ami (lieu, localisation, transports, etc.).",
+      "github_id": 16,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-08",
+      "title": "向朋友讲述乡间周末经历",
+      "prompt": "Vous avez passé un week-end à la campagne. Écrivez un message à votre ami(e) pour lui décrire ce qui s’est passé.",
+      "github_id": 37,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-08",
+      "title": "提议朋友们合买生日礼物",
+      "prompt": "Votre ami(e) va fêter son anniversaire. Écrivez un message à vos amis pour lui acheter un cadeau commun.",
+      "github_id": 30,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-08",
+      "title": "发布合租广告介绍住房并寻找室友",
+      "prompt": "Vous habitez dans un grand appartement et vous recherchez un colocataire. Décrivez le type de colocation que vous proposez ainsi que les caractéristiques de votre appartement.",
+      "github_id": 24,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-07",
+      "title": "介绍自己的运动项目及相关信息",
+      "prompt": "« Salut ! Je sais que tu fais du sport depuis le mois dernier. Ça m’intéresse beaucoup et j’aimerais bien venir avec toi. Tu peux m’en dire plus ? À bientôt ! Camille » Vous répondez à votre ami Camille. Dans votre message, vous décrivez votre activité sportive et vous donnez des informations utiles (lieu, durée, prix, etc.).",
+      "github_id": 45,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-07",
+      "title": "向帮忙搬家的朋友说明安排",
+      "prompt": "Vous allez déménager et vos amis ont accepté de vous aider. Dans un message, vous leur donnez les informations concernant le déménagement (jours, heures, lieu, organisation, etc.).",
+      "github_id": 69,
+      "status": "confirmed",
+      "reason": "朋友已同意帮忙，对应第69题；第70题尚需请求帮助，第71题单纯讲述，无已同意帮忙的设定。"
+    },
+    {
+      "month": "2026-07",
+      "title": "向朋友分享求职面试经历",
+      "prompt": "Écrivez une lettre à votre ami pour lui raconter votre entretien d’emploi (entreprise, salaire, type d’emploi)",
+      "github_id": 38,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-07",
+      "title": "向朋友介绍大学校园生活",
+      "prompt": "Vous êtes nouveau dans une université. Décrivez à vos amis comment cela se passe avec (les profs, autres étudiants, les activités et autres).",
+      "github_id": 54,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-07",
+      "title": "寻找语言交流伙伴并介绍自己",
+      "prompt": "echange-linguistique.fr Vous avez envie de pratiquer le français de manière conviviale? Trouvez une personne dans votre ville qui souhaite communiquer en français! Envoyez votre demande à [adresse email] Vous répondez à cette annonce. Présentez-vous, décrivez vos centres d’intérêt et expliquez pourquoi vous cherchez une personne avec qui parler en français.",
+      "github_id": 51,
+      "status": "confirmed",
+      "reason": "与第51题原题完全一致，含网站、广告、兴趣与动机要求；可唯一对应。"
+    },
+    {
+      "month": "2026-07",
+      "title": "邀请朋友参加图书馆作家见面会",
+      "prompt": "La bibliothèque de votre quartier organise une activité. Elle compte inviter un auteur. Écrire un message à votre ami pour l’inviter (Lieu, date activités,)",
+      "github_id": 2,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-07",
+      "title": "向朋友说明假期看护房屋和花园的事项",
+      "prompt": "Votre ami Cédric a accepté de garder votre maison et jardin pendant vos vacances. Écrivez un message pour lui dire ce qu’il doit faire.",
+      "github_id": 68,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-07",
+      "title": "邀请朋友参加文化出游",
+      "prompt": "Vous souhaitez proposer une sortie culturelle à vos amis. Vous leur écrivez un message pour leur décrire votre projet de sortie (date, lieu, activités, etc.)",
+      "github_id": 11,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-07",
+      "title": "向朋友推荐酒店并介绍实用信息",
+      "prompt": "« Bonjour, ça y est, j’ai obtenu mon visa pour le Canada. Je vais arriver le 3 mars. Est-ce que tu pourras m’aider à trouver un hôtel pour la première semaine ? Merci d’avance pour ton aide. » Matthias. Vous avez trouvé un hôtel pour Matthias. Vous lui écrivez un courriel. Dans ce message, vous décrivez l’hôtel et vous lui donnez toutes les informations utiles (situation, tarif…).",
+      "github_id": 21,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-07",
+      "title": "向朋友介绍城市交通信息",
+      "prompt": "Votre ami Mehdi vient d’emménager dans votre ville et cherche des renseignements sur les moyens de transports. Écrivez un message en lui donnant les informations nécessaires (types de transport, abonnement, tarif, etc.).",
+      "github_id": 20,
+      "status": "confirmed"
+    },
+    {
+      "month": "2026-07",
+      "title": "请朋友协助筹办活动",
+      "prompt": "Vous organisez un événement. Écrivez une lettre à vos amis pour les inviter à cet événement et pour leur demander de vous aider dans l’organisation (en précisant la date, le lieu, l’horaire…).",
+      "github_id": 62,
+      "status": "confirmed"
+    }
+  ]
+}
