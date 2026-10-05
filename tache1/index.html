@@ -92,6 +92,21 @@ function phraseData(r){
     ['links',/\bainsi\b/gi],
     ['links',/\btoutefois\b/gi],
 
+    // 时间 / 地点 / 地址表达
+    ['timeplace',/\b(?:le|du)\s+\d{1,2}\s+[\p{L}’'\-]+\b/giu],
+    ['timeplace',/\b(?:à|vers)\s+\d{1,2}h(?:\d{2})?\b/gi],
+    ['timeplace',/\bavant le\s+\d{1,2}\s+[\p{L}’'\-]+\b/giu],
+    ['timeplace',/\baprès\s+(?:un|une|le|la|les|du|de la|de l['’])?\s*[\p{L}’'\-]+(?:\s+[\p{L}’'\-]+){0,3}/giu],
+    ['timeplace',/\bdevant\s+(?:le|la|les|un|une)\s+[\p{L}’'\-]+(?:\s+[\p{L}’'\-]+){0,3}/giu],
+    ['timeplace',/\b(?:rue|avenue|boulevard|place)\s+(?:du|de la|de l['’]|des)?\s*[\p{L}’'\-]+(?:\s+[\p{L}’'\-]+){0,2}/giu],
+    ['timeplace',/\ben plein centre-ville\b/gi],
+    ['timeplace',/\bau centre-ville\b/gi],
+    ['timeplace',/\bprès du centre-ville\b/gi],
+    ['timeplace',/\bà proximité\b/gi],
+    ['timeplace',/\bsitué(?:e|s|es)? à proximité\b/gi],
+    ['timeplace',/\bdans ma ville\b/gi],
+    ['timeplace',/\bdans le quartier\b/gi],
+
     // 高频动词搭配 / 句型骨架
     ['frames',/\bcommen(?:cerons|çons|ce|cer|cé|ceraient?) par\b/gi],
     ['frames',/\bse termin(?:era|e|ent|er) vers\b/gi],
@@ -139,21 +154,24 @@ function phraseData(r){
 
   // 不设每篇数量上限；先保留结构性最强的语块，再去除跨分类重复。
   let links=take('links');
-  let frames=take('frames')
+  let timeplace=take('timeplace')
     .filter(x=>!links.some(y=>norm(y.text)===norm(x.text)));
+  let frames=take('frames')
+    .filter(x=>!links.concat(timeplace).some(y=>norm(y.text)===norm(x.text)));
   let collocations=take('collocations')
-    .filter(x=>!links.concat(frames).some(y=>norm(y.text)===norm(x.text)));
+    .filter(x=>!links.concat(timeplace,frames).some(y=>norm(y.text)===norm(x.text)));
   let core=take('core')
-    .filter(x=>!links.concat(frames,collocations).some(y=>norm(y.text)===norm(x.text)));
+    .filter(x=>!links.concat(timeplace,frames,collocations).some(y=>norm(y.text)===norm(x.text)));
 
-  return {core,collocations,frames,links}
+  return {core,collocations,frames,links,timeplace}
 }
 function renderPhraseOverview(){
   const d=phraseData(current),sections=[
     ['核心内容语块','核心',d.core],
     ['高频固定搭配','搭配',d.collocations],
     ['句型框架','句型',d.frames],
-    ['连接词 / 衔接块','连接',d.links]
+    ['连接词 / 衔接块','连接',d.links],
+    ['时间 / 地点 / 地址表达','时间地点',d.timeplace]
   ];
   $('phraseList').innerHTML=sections.filter(([, ,a])=>a.length).map(([title,tag,a])=>
     `<section class="phrase-section"><h3>${title}</h3><div class="phrase-grid">${a.map(x=>`<div class="phrase-item"><span class="phrase-tag">${tag}</span>${esc(x.text)}</div>`).join('')}</div></section>`
