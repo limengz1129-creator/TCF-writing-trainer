@@ -1820,10 +1820,10 @@
     "https://www.dictionnaire-academie.fr/conjuguer/A9F0145",
     "https://www.laits.utexas.edu/tex/gr/tas2.html"
   ],
-  "finalSubjunctiveVerbs": 96,
-  "finalPresentVerbs": 95,
-  "finalSubjunctiveRows": 390,
-  "finalPresentRows": 377,
+  "finalSubjunctiveVerbs": 106,
+  "finalPresentVerbs": 105,
+  "finalSubjunctiveRows": 450,
+  "finalPresentRows": 437,
   "correctedAdjectiveMisclassifications": 1,
   "personOrder": [
     "je",
@@ -1833,5 +1833,444 @@
     "vous",
     "ils"
   ],
-  "notes": "新增人称与原稿变位共用原有 DATA / records；原有正确词条 ID 不变。polir 误分类 ID 通过 DICTIONARY_ROW_ALIASES 映射至 être/ils，历史记录保留。新增人称不计入虚拟式原稿频次。"
+  "notes": "新增人称与原稿变位共用原有 DATA / records；原有正确词条 ID 不变。polir 误分类 ID 通过 DICTIONARY_ROW_ALIASES 映射至 être/ils，历史记录保留。新增人称不计入虚拟式原稿频次。",
+  "followupAddition": {
+    "verbs": [
+      "expliquer",
+      "aider",
+      "participer",
+      "contribuer",
+      "soutenir",
+      "réussir",
+      "vivre",
+      "changer",
+      "accepter",
+      "assurer"
+    ],
+    "addedRows": 60,
+    "addedNousRows": 10,
+    "reason": "用户确认新增第一优先级10个实战动词",
+    "additions": [
+      {
+        "lemma": "expliquer",
+        "person": "je",
+        "form": "explique",
+        "meaning": "解释",
+        "reason": "TCF 实战补充：J’aimerais que vous m’expliquiez les conditions."
+      },
+      {
+        "lemma": "expliquer",
+        "person": "tu",
+        "form": "expliques",
+        "meaning": "解释",
+        "reason": "TCF 实战补充：J’aimerais que vous m’expliquiez les conditions."
+      },
+      {
+        "lemma": "expliquer",
+        "person": "il",
+        "form": "explique",
+        "meaning": "解释",
+        "reason": "TCF 实战补充：J’aimerais que vous m’expliquiez les conditions."
+      },
+      {
+        "lemma": "expliquer",
+        "person": "nous",
+        "form": "expliquions",
+        "meaning": "解释",
+        "reason": "TCF 实战补充：J’aimerais que vous m’expliquiez les conditions."
+      },
+      {
+        "lemma": "expliquer",
+        "person": "vous",
+        "form": "expliquiez",
+        "meaning": "解释",
+        "reason": "TCF 实战补充：J’aimerais que vous m’expliquiez les conditions."
+      },
+      {
+        "lemma": "expliquer",
+        "person": "ils",
+        "form": "expliquent",
+        "meaning": "解释",
+        "reason": "TCF 实战补充：J’aimerais que vous m’expliquiez les conditions."
+      },
+      {
+        "lemma": "aider",
+        "person": "je",
+        "form": "aide",
+        "meaning": "帮助",
+        "reason": "TCF 实战补充：Il est important que nous aidions les personnes âgées."
+      },
+      {
+        "lemma": "aider",
+        "person": "tu",
+        "form": "aides",
+        "meaning": "帮助",
+        "reason": "TCF 实战补充：Il est important que nous aidions les personnes âgées."
+      },
+      {
+        "lemma": "aider",
+        "person": "il",
+        "form": "aide",
+        "meaning": "帮助",
+        "reason": "TCF 实战补充：Il est important que nous aidions les personnes âgées."
+      },
+      {
+        "lemma": "aider",
+        "person": "nous",
+        "form": "aidions",
+        "meaning": "帮助",
+        "reason": "TCF 实战补充：Il est important que nous aidions les personnes âgées."
+      },
+      {
+        "lemma": "aider",
+        "person": "vous",
+        "form": "aidiez",
+        "meaning": "帮助",
+        "reason": "TCF 实战补充：Il est important que nous aidions les personnes âgées."
+      },
+      {
+        "lemma": "aider",
+        "person": "ils",
+        "form": "aident",
+        "meaning": "帮助",
+        "reason": "TCF 实战补充：Il est important que nous aidions les personnes âgées."
+      },
+      {
+        "lemma": "participer",
+        "person": "je",
+        "form": "participe",
+        "meaning": "参与",
+        "reason": "TCF 实战补充：Il faut que nous participions davantage à la vie locale."
+      },
+      {
+        "lemma": "participer",
+        "person": "tu",
+        "form": "participes",
+        "meaning": "参与",
+        "reason": "TCF 实战补充：Il faut que nous participions davantage à la vie locale."
+      },
+      {
+        "lemma": "participer",
+        "person": "il",
+        "form": "participe",
+        "meaning": "参与",
+        "reason": "TCF 实战补充：Il faut que nous participions davantage à la vie locale."
+      },
+      {
+        "lemma": "participer",
+        "person": "nous",
+        "form": "participions",
+        "meaning": "参与",
+        "reason": "TCF 实战补充：Il faut que nous participions davantage à la vie locale."
+      },
+      {
+        "lemma": "participer",
+        "person": "vous",
+        "form": "participiez",
+        "meaning": "参与",
+        "reason": "TCF 实战补充：Il faut que nous participions davantage à la vie locale."
+      },
+      {
+        "lemma": "participer",
+        "person": "ils",
+        "form": "participent",
+        "meaning": "参与",
+        "reason": "TCF 实战补充：Il faut que nous participions davantage à la vie locale."
+      },
+      {
+        "lemma": "contribuer",
+        "person": "je",
+        "form": "contribue",
+        "meaning": "作出贡献",
+        "reason": "TCF 实战补充：Il est essentiel que chacun contribue à la protection de l’environnement."
+      },
+      {
+        "lemma": "contribuer",
+        "person": "tu",
+        "form": "contribues",
+        "meaning": "作出贡献",
+        "reason": "TCF 实战补充：Il est essentiel que chacun contribue à la protection de l’environnement."
+      },
+      {
+        "lemma": "contribuer",
+        "person": "il",
+        "form": "contribue",
+        "meaning": "作出贡献",
+        "reason": "TCF 实战补充：Il est essentiel que chacun contribue à la protection de l’environnement."
+      },
+      {
+        "lemma": "contribuer",
+        "person": "nous",
+        "form": "contribuions",
+        "meaning": "作出贡献",
+        "reason": "TCF 实战补充：Il est essentiel que chacun contribue à la protection de l’environnement."
+      },
+      {
+        "lemma": "contribuer",
+        "person": "vous",
+        "form": "contribuiez",
+        "meaning": "作出贡献",
+        "reason": "TCF 实战补充：Il est essentiel que chacun contribue à la protection de l’environnement."
+      },
+      {
+        "lemma": "contribuer",
+        "person": "ils",
+        "form": "contribuent",
+        "meaning": "作出贡献",
+        "reason": "TCF 实战补充：Il est essentiel que chacun contribue à la protection de l’environnement."
+      },
+      {
+        "lemma": "soutenir",
+        "person": "je",
+        "form": "soutienne",
+        "meaning": "支持",
+        "reason": "TCF 实战补充：Il faudrait que le gouvernement soutienne les familles."
+      },
+      {
+        "lemma": "soutenir",
+        "person": "tu",
+        "form": "soutiennes",
+        "meaning": "支持",
+        "reason": "TCF 实战补充：Il faudrait que le gouvernement soutienne les familles."
+      },
+      {
+        "lemma": "soutenir",
+        "person": "il",
+        "form": "soutienne",
+        "meaning": "支持",
+        "reason": "TCF 实战补充：Il faudrait que le gouvernement soutienne les familles."
+      },
+      {
+        "lemma": "soutenir",
+        "person": "nous",
+        "form": "soutenions",
+        "meaning": "支持",
+        "reason": "TCF 实战补充：Il faudrait que le gouvernement soutienne les familles."
+      },
+      {
+        "lemma": "soutenir",
+        "person": "vous",
+        "form": "souteniez",
+        "meaning": "支持",
+        "reason": "TCF 实战补充：Il faudrait que le gouvernement soutienne les familles."
+      },
+      {
+        "lemma": "soutenir",
+        "person": "ils",
+        "form": "soutiennent",
+        "meaning": "支持",
+        "reason": "TCF 实战补充：Il faudrait que le gouvernement soutienne les familles."
+      },
+      {
+        "lemma": "réussir",
+        "person": "je",
+        "form": "réussisse",
+        "meaning": "成功；做到",
+        "reason": "TCF 实战补充：Il est important que nous réussissions à trouver un équilibre."
+      },
+      {
+        "lemma": "réussir",
+        "person": "tu",
+        "form": "réussisses",
+        "meaning": "成功；做到",
+        "reason": "TCF 实战补充：Il est important que nous réussissions à trouver un équilibre."
+      },
+      {
+        "lemma": "réussir",
+        "person": "il",
+        "form": "réussisse",
+        "meaning": "成功；做到",
+        "reason": "TCF 实战补充：Il est important que nous réussissions à trouver un équilibre."
+      },
+      {
+        "lemma": "réussir",
+        "person": "nous",
+        "form": "réussissions",
+        "meaning": "成功；做到",
+        "reason": "TCF 实战补充：Il est important que nous réussissions à trouver un équilibre."
+      },
+      {
+        "lemma": "réussir",
+        "person": "vous",
+        "form": "réussissiez",
+        "meaning": "成功；做到",
+        "reason": "TCF 实战补充：Il est important que nous réussissions à trouver un équilibre."
+      },
+      {
+        "lemma": "réussir",
+        "person": "ils",
+        "form": "réussissent",
+        "meaning": "成功；做到",
+        "reason": "TCF 实战补充：Il est important que nous réussissions à trouver un équilibre."
+      },
+      {
+        "lemma": "vivre",
+        "person": "je",
+        "form": "vive",
+        "meaning": "生活",
+        "reason": "TCF 实战补充：Il est essentiel que nous vivions dans un environnement sain."
+      },
+      {
+        "lemma": "vivre",
+        "person": "tu",
+        "form": "vives",
+        "meaning": "生活",
+        "reason": "TCF 实战补充：Il est essentiel que nous vivions dans un environnement sain."
+      },
+      {
+        "lemma": "vivre",
+        "person": "il",
+        "form": "vive",
+        "meaning": "生活",
+        "reason": "TCF 实战补充：Il est essentiel que nous vivions dans un environnement sain."
+      },
+      {
+        "lemma": "vivre",
+        "person": "nous",
+        "form": "vivions",
+        "meaning": "生活",
+        "reason": "TCF 实战补充：Il est essentiel que nous vivions dans un environnement sain."
+      },
+      {
+        "lemma": "vivre",
+        "person": "vous",
+        "form": "viviez",
+        "meaning": "生活",
+        "reason": "TCF 实战补充：Il est essentiel que nous vivions dans un environnement sain."
+      },
+      {
+        "lemma": "vivre",
+        "person": "ils",
+        "form": "vivent",
+        "meaning": "生活",
+        "reason": "TCF 实战补充：Il est essentiel que nous vivions dans un environnement sain."
+      },
+      {
+        "lemma": "changer",
+        "person": "je",
+        "form": "change",
+        "meaning": "改变",
+        "reason": "TCF 实战补充：Il faut que nous changions certaines habitudes."
+      },
+      {
+        "lemma": "changer",
+        "person": "tu",
+        "form": "changes",
+        "meaning": "改变",
+        "reason": "TCF 实战补充：Il faut que nous changions certaines habitudes."
+      },
+      {
+        "lemma": "changer",
+        "person": "il",
+        "form": "change",
+        "meaning": "改变",
+        "reason": "TCF 实战补充：Il faut que nous changions certaines habitudes."
+      },
+      {
+        "lemma": "changer",
+        "person": "nous",
+        "form": "changions",
+        "meaning": "改变",
+        "reason": "TCF 实战补充：Il faut que nous changions certaines habitudes."
+      },
+      {
+        "lemma": "changer",
+        "person": "vous",
+        "form": "changiez",
+        "meaning": "改变",
+        "reason": "TCF 实战补充：Il faut que nous changions certaines habitudes."
+      },
+      {
+        "lemma": "changer",
+        "person": "ils",
+        "form": "changent",
+        "meaning": "改变",
+        "reason": "TCF 实战补充：Il faut que nous changions certaines habitudes."
+      },
+      {
+        "lemma": "accepter",
+        "person": "je",
+        "form": "accepte",
+        "meaning": "接受",
+        "reason": "TCF 实战补充：Il faut que nous acceptions les différences."
+      },
+      {
+        "lemma": "accepter",
+        "person": "tu",
+        "form": "acceptes",
+        "meaning": "接受",
+        "reason": "TCF 实战补充：Il faut que nous acceptions les différences."
+      },
+      {
+        "lemma": "accepter",
+        "person": "il",
+        "form": "accepte",
+        "meaning": "接受",
+        "reason": "TCF 实战补充：Il faut que nous acceptions les différences."
+      },
+      {
+        "lemma": "accepter",
+        "person": "nous",
+        "form": "acceptions",
+        "meaning": "接受",
+        "reason": "TCF 实战补充：Il faut que nous acceptions les différences."
+      },
+      {
+        "lemma": "accepter",
+        "person": "vous",
+        "form": "acceptiez",
+        "meaning": "接受",
+        "reason": "TCF 实战补充：Il faut que nous acceptions les différences."
+      },
+      {
+        "lemma": "accepter",
+        "person": "ils",
+        "form": "acceptent",
+        "meaning": "接受",
+        "reason": "TCF 实战补充：Il faut que nous acceptions les différences."
+      },
+      {
+        "lemma": "assurer",
+        "person": "je",
+        "form": "assure",
+        "meaning": "确保；保障",
+        "reason": "TCF 实战补充：Il est essentiel que les autorités assurent un accès équitable aux soins."
+      },
+      {
+        "lemma": "assurer",
+        "person": "tu",
+        "form": "assures",
+        "meaning": "确保；保障",
+        "reason": "TCF 实战补充：Il est essentiel que les autorités assurent un accès équitable aux soins."
+      },
+      {
+        "lemma": "assurer",
+        "person": "il",
+        "form": "assure",
+        "meaning": "确保；保障",
+        "reason": "TCF 实战补充：Il est essentiel que les autorités assurent un accès équitable aux soins."
+      },
+      {
+        "lemma": "assurer",
+        "person": "nous",
+        "form": "assurions",
+        "meaning": "确保；保障",
+        "reason": "TCF 实战补充：Il est essentiel que les autorités assurent un accès équitable aux soins."
+      },
+      {
+        "lemma": "assurer",
+        "person": "vous",
+        "form": "assuriez",
+        "meaning": "确保；保障",
+        "reason": "TCF 实战补充：Il est essentiel que les autorités assurent un accès équitable aux soins."
+      },
+      {
+        "lemma": "assurer",
+        "person": "ils",
+        "form": "assurent",
+        "meaning": "确保；保障",
+        "reason": "TCF 实战补充：Il est essentiel que les autorités assurent un accès équitable aux soins."
+      }
+    ]
+  }
 }
