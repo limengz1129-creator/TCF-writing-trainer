@@ -21,7 +21,7 @@
 <label class="answer-label" for="answer"><span id="answerLabel">默写全文</span><span id="wordCount">0 / 120 mots</span></label><textarea id="answer" spellcheck="false" autocomplete="off" placeholder="先独立写完，再检查答案……"></textarea><div class="row"><button id="check" class="primary">检查答案</button><button id="reveal">显示原稿</button><button id="clear">清空当前草稿</button></div><div id="toast" role="status"></div><div id="result" class="hidden" aria-live="polite"><div class="score" id="score"></div><p class="note">按原稿逐词核对：红色为漏写或不同的原稿词，黄色为你多写或替换的词。匹配度是默写参考，不是 C1 考试评分。</p><div class="comparison"><div><h3>你的默写</h3><div id="userDiff" class="diff"></div></div><div><h3>原稿对照</h3><div id="refDiff" class="diff"></div></div></div></div><div id="reference" class="hidden reference-block"></div>
 <details id="phraseOverview" class="phrase-overview" open>
   <summary>本篇语块概览</summary>
-  <p class="note">直接从本篇最终法语原文截取；每条尽量控制在 2–6 个词。只要值得记、能直接复用，就尽量保留，不限制每篇数量。</p>
+  <p class="note">直接从本篇最终法语原文截取；每条尽量控制在 2–6 个词。优先保留和本题主题强相关、能直接复用的短语块；数量不设硬上限。</p>
   <div id="phraseList"></div>
 </details>
 <div class="row"><button id="prevTopic">← 上一题</button><button id="nextTopic">下一题 →</button></div><p class="note">法语原稿完整保留上传 Word；中文已按法语逐句详细翻译，并按原稿空行对齐段落。大小写、标点和排版差异不计入词汇匹配，重音与词形差异会标出。Ctrl / ⌘ + Enter 检查答案。</p></section><section id="emptyScope" class="card hidden"><p>当前真题范围没有符合筛选的题目。请调整大主题、子分类、搜索或待复习筛选。</p></section></main>
@@ -67,79 +67,95 @@ function uniqPhrases(items){
 }
 function phraseData(r){
   const body=(r.paragraphs||[]).filter(p=>wc(p)>=5);
-  const text=body.join(' ');
+  const zhBody=(r.paragraphZh||[]);
   const items=[];
 
-  function add(type,phrase){
+  function sentencePartsWithIndex(text){
+    return (text.match(/[^.!?。！？]+[.!?。！？]?/g)||[]).map(s=>s.trim()).filter(Boolean)
+  }
+  function zhHint(pi,si){
+    const z=zhBody[pi]||'';
+    if(!z)return '';
+    const zs=sentencePartsWithIndex(z);
+    return zs[si]||z;
+  }
+  function add(type,phrase,pi=0,si=0){
     const clean=(phrase||'').trim().replace(/^[,;:.!?\s]+|[,;:.!?\s]+$/g,'');
     const n=wc(clean);
-    if(n>=2&&n<=6)items.push({type,text:clean});
+    if(n>=2&&n<=6)items.push({type,text:clean,pi,si,zh:zhHint(pi,si)});
   }
 
-  const patterns=[
-    // 高频语法 / 连接结构
-    ['links',/\bà condition de\b/gi],
-    ['links',/\bafin que\b/gi],
-    ['links',/\bpour que\b/gi],
-    ['links',/\bgrâce à(?:ux)?\b/gi],
-    ['links',/\bau lieu de\b/gi],
-    ['links',/\bbien que\b/gi],
-    ['links',/\bmême si\b/gi],
-    ['links',/\bpar ailleurs\b/gi],
-    ['links',/\ben outre\b/gi],
-    ['links',/\btout d’abord\b/gi],
-    ['links',/\bde plus\b/gi],
-    ['links',/\bainsi\b/gi],
-    ['links',/\btoutefois\b/gi],
+  const generalFrameRe=/(je vous invite à|je t['’]invite à|merci de confirmer|afin que je puisse|je souhaiterais que|j’aimerais que|nous pourrions|il serait|à condition de|afin que|pour que|bien que|même si|par ailleurs|en outre|tout d’abord|de plus|ainsi|toutefois)/i;
 
-    // 时间 / 地点 / 地址表达
-    ['timeplace',/\b(?:le|du)\s+\d{1,2}\s+[\p{L}’'\-]+\b/giu],
-    ['timeplace',/\b(?:à|vers)\s+\d{1,2}h(?:\d{2})?\b/gi],
-    ['timeplace',/\bavant le\s+\d{1,2}\s+[\p{L}’'\-]+\b/giu],
-    ['timeplace',/\baprès\s+(?:un|une|le|la|les|du|de la|de l['’])?\s*[\p{L}’'\-]+(?:\s+[\p{L}’'\-]+){0,3}/giu],
-    ['timeplace',/\bdevant\s+(?:le|la|les|un|une)\s+[\p{L}’'\-]+(?:\s+[\p{L}’'\-]+){0,3}/giu],
-    ['timeplace',/\b(?:rue|avenue|boulevard|place)\s+(?:du|de la|de l['’]|des)?\s*[\p{L}’'\-]+(?:\s+[\p{L}’'\-]+){0,2}/giu],
-    ['timeplace',/\ben plein centre-ville\b/gi],
-    ['timeplace',/\bau centre-ville\b/gi],
-    ['timeplace',/\bprès du centre-ville\b/gi],
-    ['timeplace',/\bà proximité\b/gi],
-    ['timeplace',/\bsitué(?:e|s|es)? à proximité\b/gi],
-    ['timeplace',/\bdans ma ville\b/gi],
-    ['timeplace',/\bdans le quartier\b/gi],
+  body.forEach((p,pi)=>{
+    const sents=sentencePartsWithIndex(p);
+    sents.forEach((s,si)=>{
+      const text=s;
 
-    // 高频动词搭配 / 句型骨架
-    ['frames',/\bcommen(?:cerons|çons|ce|cer|cé|ceraient?) par\b/gi],
-    ['frames',/\bse termin(?:era|e|ent|er) vers\b/gi],
-    ['frames',/\bpermet(?:tra|tent|tre|t) de\b/gi],
-    ['frames',/\bje (?:vous |t['’])?invite à\b/gi],
-    ['frames',/\bje souhaiterais que\b/gi],
-    ['frames',/\bj’aimerais que\b/gi],
-    ['frames',/\bnous pourrions\b/gi],
-    ['frames',/\bmerci de confirmer\b/gi],
-    ['frames',/\bafin que je puisse\b/gi],
-    ['frames',/\bavoir besoin de\b/gi],
-    ['frames',/\bprofiter de\b/gi],
-    ['frames',/\bbénéficier d['’]une?\b/gi],
+      // 1) 主题名词短语：优先保留名词及其修饰成分
+      const nounRes=[
+        /\b(?:un|une|le|la|les|des|du|de la|de l['’]|au|aux)\s+[\p{L}’'\-]+(?:\s+[\p{L}’'\-]+){0,4}/giu,
+        /\b[\p{L}’'\-]+\s+(?:historique|culturel(?:le)?|local(?:e|es|aux)?|municipal(?:e)?|traditionnel(?:le)?|moderne|ancien(?:ne|nes|s)?|contemporain(?:e|es|s)?|gratuit(?:e)?|guidé(?:e)?|sportif(?:ve)?|professionnel(?:le)?|italien(?:ne)?|artistique|touristique|familial(?:e)?|chaleureux|élégant(?:e)?|convivial(?:e)?)/giu
+      ];
+      for(const re of nounRes){
+        re.lastIndex=0; let m;
+        while((m=re.exec(text))){
+          if(!generalFrameRe.test(m[0])) add('theme',m[0],pi,si);
+        }
+      }
 
-    // 常见动词 + 补语：截取 2–6 词
-    ['collocations',/\b(?:réserver|confirmer|découvrir|visiter|organiser|préparer|proposer|partager|décrire|présenter|choisir|recommander|apporter|passer|prendre|faire|garder|adapter|atteindre|affronter|servir|gérer|moderniser|remplacer|ajouter)\s+(?:nos|notre|votre|vos|mes|mon|ma|ses|son|sa|les|des|un|une|du|de la|de l['’])?\s*[\p{L}’'\-]+(?:\s+[\p{L}’'\-]+){0,3}/giu],
+      // 2) 主题动词搭配：动词 + 实义对象
+      const verbRe=/\b(?:visiter|découvrir|contempler|déguster|assister à|participer à|organiser|préparer|servir|proposer|présenter|décrire|recommander|réserver|choisir|remplacer|ajouter|gérer|atteindre|affronter|adapter|partager|passer|prendre|faire|profiter de|bénéficier de)\s+(?:un|une|le|la|les|des|du|de la|de l['’]|au|aux|notre|votre|vos|nos|mes|mon|ma|ses|son|sa)?\s*[\p{L}’'\-]+(?:\s+[\p{L}’'\-]+){0,3}/giu;
+      verbRe.lastIndex=0; let vm;
+      while((vm=verbRe.exec(text))){
+        if(!generalFrameRe.test(vm[0])) add('theme',vm[0],pi,si);
+      }
 
-    // 名词短语：冠词 + 形容词/名词，最多6词
-    ['core',/\b(?:un|une|le|la|les|des|du|de la|de l['’]|au|aux|notre|votre|vos|nos|mes|mon|ma|ses|son|sa)\s+[\p{L}’'\-]+(?:\s+[\p{L}’'\-]+){0,4}/giu]
-  ];
+      // 3) 句型框架
+      const framePatterns=[
+        /\bcommen(?:cerons|çons|ce|cer|cé|ceraient?) par\b/gi,
+        /\bse termin(?:era|e|ent|er) vers\b/gi,
+        /\bpermet(?:tra|tent|tre|t) de\b/gi,
+        /\bje (?:vous |t['’])?invite à\b/gi,
+        /\bje souhaiterais que\b/gi,
+        /\bj’aimerais que\b/gi,
+        /\bnous pourrions\b/gi,
+        /\bmerci de confirmer\b/gi,
+        /\bafin que je puisse\b/gi,
+        /\bavoir besoin de\b/gi
+      ];
+      for(const re of framePatterns){re.lastIndex=0;let m;while((m=re.exec(text)))add('frames',m[0],pi,si)}
 
-  for(const [type,re] of patterns){
-    re.lastIndex=0;
-    let m;
-    while((m=re.exec(text))) add(type,m[0]);
-  }
+      // 4) 高频固定搭配
+      const collocPatterns=[
+        /\b(?:prendre|garder|gagner|donner|faire|avoir|mettre)\s+(?:un|une|le|la|les|des|du|de la|de l['’])?\s*[\p{L}’'\-]+(?:\s+[\p{L}’'\-]+){0,2}/giu,
+        /\b(?:être|se trouver|se situer)\s+(?:à|dans|près de|au|aux)\s+[\p{L}’'\-]+(?:\s+[\p{L}’'\-]+){0,2}/giu
+      ];
+      for(const re of collocPatterns){re.lastIndex=0;let m;while((m=re.exec(text)))add('collocations',m[0],pi,si)}
 
-  // 从逗号/句号切开的原文片段里补充简短语块
-  const fragments=text.split(/[,.!?;:]/).map(x=>x.trim()).filter(Boolean);
-  for(const frag of fragments){
-    const words=frag.match(/[\p{L}\p{N}]+(?:[’'\-][\p{L}\p{N}]+)*/gu)||[];
-    if(words.length>=2&&words.length<=6)add('core',frag);
-  }
+      // 5) 连接词 / 衔接块
+      const linkRe=/\b(Tout d’abord|Ensuite|De plus|Par ailleurs|En outre|Enfin|Cependant|Toutefois|Ainsi|Après|Avant|Grâce à|Grâce aux|Au lieu de|À condition de|Bien que|Même si|Afin que|Pour que)\b/gi;
+      linkRe.lastIndex=0; let lm;
+      while((lm=linkRe.exec(text)))add('links',lm[0],pi,si);
+
+      // 6) 时间 / 地点 / 地址表达
+      const timePlaceRes=[
+        /\b(?:le|du)\s+\d{1,2}\s+[\p{L}’'\-]+\b/giu,
+        /\b(?:à|vers)\s+\d{1,2}h(?:\d{2})?\b/gi,
+        /\bavant le\s+\d{1,2}\s+[\p{L}’'\-]+\b/giu,
+        /\bdevant\s+(?:le|la|les|un|une)\s+[\p{L}’'\-]+(?:\s+[\p{L}’'\-]+){0,3}/giu,
+        /\b(?:rue|avenue|boulevard|place)\s+(?:du|de la|de l['’]|des)?\s*[\p{L}’'\-]+(?:\s+[\p{L}’'\-]+){0,2}/giu,
+        /\ben plein centre-ville\b/gi,
+        /\bau centre-ville\b/gi,
+        /\bprès du centre-ville\b/gi,
+        /\bà proximité\b/gi,
+        /\bsitué(?:e|s|es)? à proximité\b/gi,
+        /\bdans ma ville\b/gi,
+        /\bdans le quartier\b/gi
+      ];
+      for(const re of timePlaceRes){re.lastIndex=0;let m;while((m=re.exec(text)))add('timeplace',m[0],pi,si)}
+    })
+  });
 
   const seen=new Set();
   const unique=items.filter(x=>{
@@ -148,33 +164,29 @@ function phraseData(r){
     seen.add(k);return true;
   });
 
-  function take(type){
-    return unique.filter(x=>x.type===type);
-  }
+  function take(type){return unique.filter(x=>x.type===type)}
 
-  // 不设每篇数量上限；先保留结构性最强的语块，再去除跨分类重复。
   let links=take('links');
-  let timeplace=take('timeplace')
-    .filter(x=>!links.some(y=>norm(y.text)===norm(x.text)));
-  let frames=take('frames')
-    .filter(x=>!links.concat(timeplace).some(y=>norm(y.text)===norm(x.text)));
-  let collocations=take('collocations')
-    .filter(x=>!links.concat(timeplace,frames).some(y=>norm(y.text)===norm(x.text)));
-  let core=take('core')
-    .filter(x=>!links.concat(timeplace,frames,collocations).some(y=>norm(y.text)===norm(x.text)));
+  let timeplace=take('timeplace').filter(x=>!links.some(y=>norm(y.text)===norm(x.text)));
+  let frames=take('frames').filter(x=>!links.concat(timeplace).some(y=>norm(y.text)===norm(x.text)));
+  let collocations=take('collocations').filter(x=>!links.concat(timeplace,frames).some(y=>norm(y.text)===norm(x.text)));
+  let theme=take('theme').filter(x=>!links.concat(timeplace,frames,collocations).some(y=>norm(y.text)===norm(x.text)));
 
-  return {core,collocations,frames,links,timeplace}
+  // 主题语块优先：去掉过于通用的功能性表达
+  theme=theme.filter(x=>!generalFrameRe.test(x.text));
+
+  return {theme,collocations,frames,links,timeplace}
 }
 function renderPhraseOverview(){
   const d=phraseData(current),sections=[
-    ['核心内容语块','核心',d.core],
+    ['主题语块','主题',d.theme],
     ['高频固定搭配','搭配',d.collocations],
     ['句型框架','句型',d.frames],
     ['连接词 / 衔接块','连接',d.links],
     ['时间 / 地点 / 地址表达','时间地点',d.timeplace]
   ];
   $('phraseList').innerHTML=sections.filter(([, ,a])=>a.length).map(([title,tag,a])=>
-    `<section class="phrase-section"><h3>${title}</h3><div class="phrase-grid">${a.map(x=>`<div class="phrase-item"><span class="phrase-tag">${tag}</span>${esc(x.text)}</div>`).join('')}</div></section>`
+    `<section class="phrase-section"><h3>${title}</h3><div class="phrase-grid">${a.map(x=>`<div class="phrase-item"><div><span class="phrase-tag">${tag}</span>${esc(x.text)}</div>${x.zh?`<div class="note" style="margin-top:4px">${esc(x.zh)}</div>`:''}</div>`).join('')}</div></section>`
   ).join('');
 }
 function renderReference(){
