@@ -207,6 +207,13 @@ if(!window.__tcfHighlightListenerAdded){
     p.normalize();
     setRefData(Number(p.dataset.refIndex),{html:p.innerHTML});
   });
+  document.addEventListener('tcf-clear-paragraph-highlight',e=>{
+    const p=e.detail?.paragraph;
+    if(!p||!p.classList?.contains('ref-fr'))return;
+    p.querySelectorAll('.hl').forEach(x=>x.replaceWith(...x.childNodes));
+    p.normalize();
+    setRefData(Number(p.dataset.refIndex),{html:p.innerHTML});
+  });
   window.__tcfHighlightListenerAdded=true;
 }
 function unit(){const sel=selected();if(mode==='paragraph'&&sel.length&&!sel.includes(index))index=sel[0];document.body.classList.toggle('paragraph',mode==='paragraph');$('sentencePanel').classList.toggle('hidden',mode!=='paragraph');document.querySelectorAll('.mode').forEach(b=>{b.classList.toggle('active',b.dataset.mode===mode);b.setAttribute('aria-pressed',b.dataset.mode===mode)});$('answerLabel').textContent=mode==='full'?'默写全文':sel.length?`默写第 ${index+1} 段`:'请先选择想练的段落';$('answer').value=mode==='full'?rec().full||'':sel.length?rec().paragraphDrafts[index]||'':'';$('answer').disabled=mode==='paragraph'&&!sel.length;for(const id of ['check','reveal','clear'])$(id).disabled=mode==='paragraph'&&!sel.length;$('result').classList.add('hidden');$('reference').classList.add('hidden');$('reveal').textContent='显示原稿';$('toast').textContent=storageOK?'':'浏览器保存不可用，请导出进度。';drawChoices();prompt();renderPhraseOverview();count()}
