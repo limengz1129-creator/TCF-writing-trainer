@@ -20,8 +20,8 @@
 <div class="row" aria-label="提示方式"><label for="hint">提示</label><select id="hint" style="width:auto"><option value="zh">完整中文翻译</option><option value="first">句首提示</option><option value="none">无提示</option></select></div><div id="prompt" class="prompt"></div><p id="zhNote" class="note hidden">黄色高亮为当前练习段的完整中文译文；点击其他中文段落即可切换。</p>
 <label class="answer-label" for="answer"><span id="answerLabel">默写全文</span><span id="wordCount">0 / 120 mots</span></label><textarea id="answer" spellcheck="false" autocomplete="off" placeholder="先独立写完，再检查答案……"></textarea><div class="row"><button id="check" class="primary">检查答案</button><button id="reveal">显示原稿</button><button id="clear">清空当前草稿</button></div><div id="toast" role="status"></div><div id="result" class="hidden" aria-live="polite"><div class="score" id="score"></div><p class="note">按原稿逐词核对：红色为漏写或不同的原稿词，黄色为你多写或替换的词。匹配度是默写参考，不是 C1 考试评分。</p><div class="comparison"><div><h3>你的默写</h3><div id="userDiff" class="diff"></div></div><div><h3>原稿对照</h3><div id="refDiff" class="diff"></div></div></div></div><div id="reference" class="hidden reference-block"></div>
 <details id="phraseOverview" class="phrase-overview" open>
-  <summary>本篇语块概览 · 10–15 条</summary>
-  <p class="note">直接从本篇最终法语原文截取；每条尽量控制在 2–6 个词，记可直接复用的小语块，不另外改写成第二套说法。</p>
+  <summary>本篇语块概览</summary>
+  <p class="note">直接从本篇最终法语原文截取；每条尽量控制在 2–6 个词。只要值得记、能直接复用，就尽量保留，不限制每篇数量。</p>
   <div id="phraseList"></div>
 </details>
 <div class="row"><button id="prevTopic">← 上一题</button><button id="nextTopic">下一题 →</button></div><p class="note">法语原稿完整保留上传 Word；中文已按法语逐句详细翻译，并按原稿空行对齐段落。大小写、标点和排版差异不计入词汇匹配，重音与词形差异会标出。Ctrl / ⌘ + Enter 检查答案。</p></section><section id="emptyScope" class="card hidden"><p>当前真题范围没有符合筛选的题目。请调整大主题、子分类、搜索或待复习筛选。</p></section></main>
@@ -133,23 +133,18 @@ function phraseData(r){
     seen.add(k);return true;
   });
 
-  function take(type,n){
-    return unique.filter(x=>x.type===type).slice(0,n);
+  function take(type){
+    return unique.filter(x=>x.type===type);
   }
 
-  let links=take('links',2);
-  let frames=take('frames',2);
-  let collocations=take('collocations',3);
-  let core=take('core',8)
+  // 不设每篇数量上限；先保留结构性最强的语块，再去除跨分类重复。
+  let links=take('links');
+  let frames=take('frames')
+    .filter(x=>!links.some(y=>norm(y.text)===norm(x.text)));
+  let collocations=take('collocations')
+    .filter(x=>!links.concat(frames).some(y=>norm(y.text)===norm(x.text)));
+  let core=take('core')
     .filter(x=>!links.concat(frames,collocations).some(y=>norm(y.text)===norm(x.text)));
-
-  // 补到至少10条，但仍保持每条2–6词
-  const used=()=>new Set(core.concat(collocations,frames,links).map(x=>norm(x.text)));
-  for(const x of unique){
-    if(core.length+collocations.length+frames.length+links.length>=10)break;
-    if(!used().has(norm(x.text)))core.push(x);
-  }
-  core=core.slice(0,8);
 
   return {core,collocations,frames,links}
 }
