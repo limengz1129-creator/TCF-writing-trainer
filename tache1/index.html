@@ -20,12 +20,6 @@
     .ref-note-label{font-size:12px;color:#6b7280;margin-bottom:5px}
     .ref-note{width:100%;min-height:42px;resize:vertical;border:1px solid #d7dbe7;border-radius:8px;padding:7px 9px;font-size:12.5px;line-height:1.5;background:#fffdf4;box-sizing:border-box}
     .hl{background:#fff08a;border-radius:2px;padding:0 1px}
-    .ref-toolbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:8px 0 14px}
-    .ref-toolbar button{padding:6px 10px;border:1px solid #d6d9e5;border-radius:8px;background:#fff;cursor:pointer;font-size:13px}
-    .ref-toolbar .hint{font-size:12px;color:#6b7280}
-
-    .ref-toolbar button.active{background:#fff3a6;border-color:#e7c94d}
-    .ref-toolbar .mode-state{font-size:12px;color:#8a6d00;font-weight:600}
   </style><script src="../noun-data.js?v=2"></script><script src="../nouns.js?v=2"></script></head><body><header><div><div class="eyebrow">TCF Canada · Expression écrite · Tâche 1</div><h1>写作默写练习</h1><p class="muted">72 篇 C1 目标稿 · 每篇 120 mots · 全文 / 自选逐段<br>真题集训另含 3 篇迁移改写版</p></div><div class="stats"><div><strong id="done">0</strong><span class="muted">已熟练</span></div><div><strong id="review">0</strong><span class="muted">待复习</span></div><div><strong id="attempts">0</strong><span class="muted">检查次数</span></div></div></header>
 <main class="layout"><aside><div class="row exam-scope" aria-label="题库范围"><button id="allScope" class="active" aria-pressed="true">全部72题</button><button id="recentScope" aria-pressed="false">🔥 7–10月真题集训</button></div><p id="scopeNote" class="note hidden">2026年7–10月 · 29篇原库匹配稿 + 3篇真题迁移改写版 · 全部45条记录已处理</p><label for="major">大主题</label><select id="major"></select><label for="minor">子分类</label><select id="minor"></select><label for="search">搜索题目</label><input id="search" type="search" placeholder="中文 / Français"><div class="row"><button id="random">随机抽题</button><button id="reviewOnly" aria-pressed="false">待复习</button></div><div id="listCount" class="muted"></div><nav id="list" aria-label="题目列表"></nav><div class="footer-tools"><button id="export">导出进度</button> <button id="import">导入进度</button><input type="file" id="importFile" accept="application/json,.json" hidden><p class="note">草稿与熟练度保存在当前浏览器；导出后可转移到其他设备。</p></div></aside>
 <section class="card" id="practiceCard"><div id="category" class="eyebrow"></div><h2 id="title"></h2><div id="examMonths" class="exam-months hidden"></div><details id="migrationInfo" class="hidden"><summary>真题迁移改写版 · 语料来源与记忆负担</summary><div id="migrationDetails" class="note"></div></details><details id="questionDetails" open><summary>网站法语原题</summary><p id="question"></p></details><div class="row" aria-label="熟练度"><button class="status" data-status="mastered">已熟练</button><button class="status" data-status="review">待复习</button><button class="status" data-status="new">未标记</button></div>
@@ -176,96 +170,44 @@ function renderReference(){
     ? current.paragraphs.map((fr,i)=>({fr,zh:current.paragraphZh?.[i]||'',i}))
     : [{fr:current.paragraphs[index]||'',zh:current.paragraphZh?.[index]||'',i:index}];
 
-  $('reference').innerHTML=
-    `<div class="ref-toolbar">
-      <button type="button" id="hlModeBtn">开启高亮模式</button>
-      <button type="button" id="hlClearBtn">清除本段高亮</button>
-      <span class="mode-state" id="hlModeState">高亮模式：关闭</span>
-      <span class="hint">开启后，直接拖选法语文字，松开鼠标即可高亮；关闭后恢复单词本选词。</span>
-    </div>`+
-    rows.map(({fr,zh,i})=>{
-      const d=getRefData(i);
-      return `<div class="ref-pair" data-ref-index="${i}">
-        <p class="ref-fr" data-ref-index="${i}">${safeHighlightedHtml(fr,d.html)}</p>
-        <div class="ref-note-wrap">
-          <div class="ref-note-label">我的笔记</div>
-          <textarea class="ref-note" data-ref-index="${i}" placeholder="记语法、词汇、易错点……">${esc(d.note)}</textarea>
-        </div>
-        <p class="ref-zh">${esc(zh)}</p>
-      </div>`
-    }).join('');
+  $('reference').innerHTML=rows.map(({fr,zh,i})=>{
+    const d=getRefData(i);
+    return `<div class="ref-pair" data-ref-index="${i}">
+      <p class="ref-fr" data-ref-index="${i}">${safeHighlightedHtml(fr,d.html)}</p>
+      <div class="ref-note-wrap">
+        <div class="ref-note-label">我的笔记</div>
+        <textarea class="ref-note" data-ref-index="${i}" placeholder="记语法、词汇、易错点……">${esc(d.note)}</textarea>
+      </div>
+      <p class="ref-zh">${esc(zh)}</p>
+    </div>`
+  }).join('');
 
   $('reference').querySelectorAll('.ref-note').forEach(el=>{
     el.addEventListener('input',()=>setRefData(Number(el.dataset.refIndex),{note:el.value}))
   });
+}
 
-  let highlightMode=false;
+if(!window.__tcfHighlightListenerAdded){
+  document.addEventListener('tcf-highlight-selection',e=>{
+    const r=e.detail?.range;
+    if(!r)return;
+    let node=r.commonAncestorContainer;
+    if(node.nodeType===3)node=node.parentElement;
+    const p=node?.closest?.('.ref-fr');
+    if(!p||!p.contains(r.startContainer)||!p.contains(r.endContainer))return;
 
-  function setHighlightMode(on){
-    highlightMode=on;
-    const b=$('hlModeBtn'),s=$('hlModeState');
-    b.textContent=on?'关闭高亮模式':'开启高亮模式';
-    b.classList.toggle('active',on);
-    s.textContent=on?'高亮模式：已开启':'高亮模式：关闭';
-  }
-
-  $('hlModeBtn').onclick=(e)=>{
-    e.preventDefault();
-    e.stopPropagation();
-    setHighlightMode(!highlightMode);
-    const sel=window.getSelection(); if(sel)sel.removeAllRanges();
-  };
-
-  $('reference').querySelectorAll('.ref-fr').forEach(p=>{
-    p.addEventListener('mouseup',(e)=>{
-      if(!highlightMode)return;
-      e.preventDefault();
-      e.stopPropagation();
-
-      const sel=window.getSelection();
-      if(!sel||sel.rangeCount===0||sel.isCollapsed)return;
-      const r=sel.getRangeAt(0);
-      if(!p.contains(r.commonAncestorContainer))return;
-
-      try{
-        const mark=document.createElement('span');mark.className='hl';
-        r.surroundContents(mark);
-      }catch{
-        const frag=r.extractContents();
-        const mark=document.createElement('span');mark.className='hl';mark.appendChild(frag);r.insertNode(mark);
-      }
-      setRefData(Number(p.dataset.refIndex),{html:p.innerHTML});
-      sel.removeAllRanges();
-    },true);
-
-    // 高亮模式下阻止现有单词本/词汇弹窗接管选词事件。
-    ['click','dblclick','contextmenu'].forEach(type=>{
-      p.addEventListener(type,(e)=>{
-        if(highlightMode){
-          e.stopImmediatePropagation();
-          e.stopPropagation();
-        }
-      },true);
-    });
-  });
-
-  $('hlClearBtn').onclick=(e)=>{
-    e.preventDefault();
-    e.stopPropagation();
-    const sel=window.getSelection();
-    let p=null;
-    if(sel&&sel.rangeCount){
-      let n=sel.getRangeAt(0).commonAncestorContainer;
-      if(n.nodeType===3)n=n.parentElement;
-      p=n?.closest?.('.ref-fr')||null;
+    try{
+      const mark=document.createElement('span');mark.className='hl';
+      r.surroundContents(mark);
+    }catch{
+      const frag=r.extractContents();
+      const mark=document.createElement('span');mark.className='hl';
+      mark.appendChild(frag);r.insertNode(mark);
     }
-    p=p||$('reference').querySelector('.ref-fr');
-    if(!p)return;
-    p.querySelectorAll('.hl').forEach(x=>x.replaceWith(...x.childNodes));
     p.normalize();
     setRefData(Number(p.dataset.refIndex),{html:p.innerHTML});
-    if(sel)sel.removeAllRanges();
-  };
+  });
+  window.__tcfHighlightListenerAdded=true;
 }
 function unit(){const sel=selected();if(mode==='paragraph'&&sel.length&&!sel.includes(index))index=sel[0];document.body.classList.toggle('paragraph',mode==='paragraph');$('sentencePanel').classList.toggle('hidden',mode!=='paragraph');document.querySelectorAll('.mode').forEach(b=>{b.classList.toggle('active',b.dataset.mode===mode);b.setAttribute('aria-pressed',b.dataset.mode===mode)});$('answerLabel').textContent=mode==='full'?'默写全文':sel.length?`默写第 ${index+1} 段`:'请先选择想练的段落';$('answer').value=mode==='full'?rec().full||'':sel.length?rec().paragraphDrafts[index]||'':'';$('answer').disabled=mode==='paragraph'&&!sel.length;for(const id of ['check','reveal','clear'])$(id).disabled=mode==='paragraph'&&!sel.length;$('result').classList.add('hidden');$('reference').classList.add('hidden');$('reveal').textContent='显示原稿';$('toast').textContent=storageOK?'':'浏览器保存不可用，请导出进度。';drawChoices();prompt();renderPhraseOverview();count()}
 function showTopic(r){saveDraft();current=r;index=0;rec();$('category').textContent=categoryText(r);$('title').textContent=r.title;showMonths();$('question').textContent=r.prompt;document.querySelectorAll('.status').forEach(b=>{b.classList.toggle('active',b.dataset.status===rec().status);b.setAttribute('aria-pressed',b.dataset.status===rec().status)});unit();renderList();persist()}
