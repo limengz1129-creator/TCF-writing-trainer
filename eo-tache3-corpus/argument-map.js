@@ -70,7 +70,7 @@
     const b=document.createElement('button');
     b.className='source-jump';
     b.textContent=id+' · 去学习原论段';
-    b.onclick=()=>window.CORPUS_OPEN_PARAGRAPH?.(id);
+    b.onclick=()=>{sessionStorage.setItem('tcf-eo-t3-return-argument-map','1');window.CORPUS_OPEN_PARAGRAPH?.(id);};
     return b;
   }
   function render() {
