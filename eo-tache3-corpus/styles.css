@@ -36,3 +36,10 @@
 .quick-overview-card h3{margin:0 0 6px;font-size:16px}
 .quick-overview-card p{margin:0;color:#636b80}
 @media(max-width:800px){.argument-group-grid,.quick-overview-grid{grid-template-columns:1fr}.mother-list-row{grid-template-columns:42px 1fr}.mother-list-row em{grid-column:2}}
+
+/* Restore original drill-down interaction for all mother arguments */
+.argument-source-hint{margin-top:14px}
+.scene-chain{width:100%;text-align:left}
+.scene-chain strong,.scene-chain span,.scene-chain em{display:block}
+.scene-chain .logic-zh{margin-top:6px}
+.scene-chain em{margin-top:10px;color:var(--blue);font-size:13px;font-style:normal}
