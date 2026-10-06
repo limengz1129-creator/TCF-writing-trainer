@@ -1,5 +1,5 @@
 {
-  "status": "validated-awaiting-publish",
+  "status": "complete",
   "expectedMonthlyCounts": {
     "2026-07": 11,
     "2026-08": 17,
@@ -654,7 +654,7 @@
       "recordId": "2026-10-04"
     }
   ],
-  "deployed": false,
+  "deployed": true,
   "verifiedMonths": [
     "2026-07",
     "2026-08",
@@ -686,5 +686,16 @@
       150
     ],
     "bilingualParagraphAlignment": true
+  },
+  "deployment": {
+    "verifiedCommit": "529af5e5a818e28241039134f8b90449f6ecd726",
+    "url": "https://limengz1129-creator.github.io/TCF-writing-trainer/tache2-ee/",
+    "checks": [
+      "45 monthly records, no omissions",
+      "72 original articles unchanged",
+      "32 exam answers: 27 direct and 5 migrations",
+      "legacy progress restoration and filters passed",
+      "online bilingual paragraphs and persistent paragraph notes verified"
+    ]
   }
 }
