@@ -66,11 +66,11 @@
     const z=document.createElement('small'); z.textContent=zh;
     el.append(f,z); return el;
   }
-  function sourceButton(id) {
+  function sourceButton(id, sceneIndex) {
     const b=document.createElement('button');
     b.className='source-jump';
     b.textContent=id+' · 去学习原论段';
-    b.onclick=()=>{sessionStorage.setItem('tcf-eo-t3-return-argument-map','1');window.CORPUS_OPEN_PARAGRAPH?.(id);};
+    b.onclick=()=>{sessionStorage.setItem('tcf-eo-t3-return-argument-map','1');sessionStorage.setItem('tcf-eo-t3-argument-return-state',JSON.stringify({mode:'scene',sceneIndex}));window.CORPUS_OPEN_PARAGRAPH?.(id);};
     return b;
   }
   function render() {
@@ -136,7 +136,7 @@
       const words=document.createElement('div'); words.className='argument-words';
       s.words.forEach(x=>words.append(chip(x[0],x[1]))); stage.append(words);
       const srcTitle=document.createElement('h3'); srcTitle.textContent='对应原论段'; stage.append(srcTitle);
-      const src=document.createElement('div'); src.className='source-jumps'; s.sourceIds.forEach(id=>src.append(sourceButton(id))); stage.append(src);
+      const src=document.createElement('div'); src.className='source-jumps'; s.sourceIds.forEach(id=>src.append(sourceButton(id,i))); stage.append(src);
     }
 
     modes.onclick=e=>{
@@ -144,6 +144,8 @@
       modes.querySelectorAll('button').forEach(x=>x.classList.toggle('active',x===b));
       b.dataset.mode==='map'?renderMap():b.dataset.mode==='chain'?renderChain():renderQuick();
     };
+    const savedReturn=sessionStorage.getItem('tcf-eo-t3-argument-return-state');
+    if(savedReturn){try{const r=JSON.parse(savedReturn);sessionStorage.removeItem('tcf-eo-t3-argument-return-state');if(r.mode==='scene'&&Number.isInteger(r.sceneIndex)&&SAMPLE.scenes[r.sceneIndex]){modes.querySelectorAll('button').forEach(x=>x.classList.toggle('active',x.dataset.mode==='chain'));renderScene(r.sceneIndex);return;}}catch{sessionStorage.removeItem('tcf-eo-t3-argument-return-state');}}
     renderMap();
   }
 
