@@ -1,257 +1,64 @@
 'use strict';
 (() => {
-  const GROUPS = [
-    {title:'1. 语言与沟通', items:[
-      ['01','语言障碍影响日常自主生活'],
-      ['02','语言能力促进社交与社会融入'],
-      ['03','真实语言环境提高语言能力'],
-      ['04','语言能力与职业融入']
-    ]},
-    {title:'2. 文化适应与身份', items:[
-      ['05','了解当地文化促进适应'],
-      ['06','跨文化接触拓宽视野'],
-      ['07','亲身体验比远程了解更深入'],
-      ['08','长期海外生活可能淡化原有文化'],
-      ['09','母语与传统维持文化身份'],
-      ['10','同胞圈与当地社会之间保持平衡']
-    ]},
-    {title:'3. 社交、孤独与归属感', items:[
-      ['11','远离亲友容易产生孤独，但陪伴能提供支持'],
-      ['12','主动参加活动建立社交网络与归属感']
-    ]},
-    {title:'4. 就业与职业', items:[
-      ['13','了解当地就业市场和职场规范'],
-      ['14','培训、人脉与就业支持提高就业竞争力'],
-      ['15','海外经历提升职业竞争力，但不是万能']
-    ]},
-    {title:'5. 移民政策与融入责任', items:[
-      ['16','移民既补充劳动力，也增加公共资源压力'],
-      ['17','融入是个人与接收社会的共同责任']
-    ]},
-    {title:'6. 家庭、教育与个人成长', items:[
-      ['18','孩子和学校可以成为全家融入的桥梁'],
-      ['19','移民中的教育机会、儿童语言与社交'],
-      ['20','年龄与生活经验也能帮助适应'],
-      ['21','独自解决问题培养自主性与责任感'],
-      ['22','独自旅行带来个人自由']
-    ]},
-    {title:'7. 旅行成本与交通', items:[
-      ['23','旅行受金钱与时间限制，但可通过规划降低门槛'],
-      ['24','交通方式是速度、价格与旅途体验之间的取舍'],
-      ['25','跨境流动更自由能增加机会，但仍需要安全管控']
-    ]},
-    {title:'8. 旅游经济、环境与文化传播', items:[
-      ['26','旅游业有经济收益，也有环境和住房代价'],
-      ['27','亲身旅行、城市与美食体验可以理解并传播文化'],
-      ['28','媒体、艺术与国际交流也能传播文化']
-    ]}
-  ];
+  const GROUPS=[{"title":"1. 语言与沟通","items":[["01","语言障碍影响日常自主生活"],["02","语言能力促进社交与社会融入"],["03","真实语言环境提高语言能力"],["04","语言能力与职业融入"]]},{"title":"2. 文化适应与身份","items":[["05","了解当地文化促进适应"],["06","跨文化接触拓宽视野"],["07","亲身体验比远程了解更深入"],["08","长期海外生活可能淡化原有文化"],["09","母语与传统维持文化身份"],["10","同胞圈与当地社会之间保持平衡"]]},{"title":"3. 社交、孤独与归属感","items":[["11","远离亲友容易产生孤独，但陪伴能提供支持"],["12","主动参加活动建立社交网络与归属感"]]},{"title":"4. 就业与职业","items":[["13","了解当地就业市场和职场规范"],["14","培训、人脉与就业支持提高就业竞争力"],["15","海外经历提升职业竞争力，但不是万能"]]},{"title":"5. 移民政策与融入责任","items":[["16","移民既补充劳动力，也增加公共资源压力"],["17","融入是个人与接收社会的共同责任"]]},{"title":"6. 家庭、教育与个人成长","items":[["18","孩子和学校可以成为全家融入的桥梁"],["19","移民中的教育机会、儿童语言与社交"],["20","年龄与生活经验也能帮助适应"],["21","独自解决问题培养自主性与责任感"],["22","独自旅行带来个人自由"]]},{"title":"7. 旅行成本与交通","items":[["23","旅行受金钱与时间限制，但可通过规划降低门槛"],["24","交通方式是速度、价格与旅途体验之间的取舍"],["25","跨境流动更自由能增加机会，但仍需要安全管控"]]},{"title":"8. 旅游经济、环境与文化传播","items":[["26","旅游业有经济收益，也有环境和住房代价"],["27","亲身旅行、城市与美食体验可以理解并传播文化"],["28","媒体、艺术与国际交流也能传播文化"]]}];
+  const QUICK=[["语言与沟通","障碍 / 融入 / 练语言 / 职场"],["文化适应与身份","适应 / 开放 / 亲身体验 / 母语 / 平衡"],["社交与归属","孤独 / 活动 / 归属感"],["就业与职业","市场 / 培训 / 海外经历"],["政策与责任","劳动力 / 公共压力 / 共同努力"],["家庭与成长","孩子 / 教育 / 自主 / 自由"],["旅行条件","金钱 / 时间 / 交通 / 边境"],["旅游传播","经济 / 环境 / 城市 / 美食 / 媒体"]];
+  const M={"10":{"t":"同胞圈与当地社会之间保持平衡","fr":"liens avec les compatriotes → soutien affectif / culturel → cercle trop fermé → moins d’échanges locaux → intégration ralentie → trouver un équilibre","zh":"同胞关系 → 情感/文化支持 → 圈子过于封闭 → 当地交流减少 → 融入变慢 → 找到平衡","ids":["1-06-3","1-07-3"],"sc":[["支持","compatriotes → soutien affectif → sentiment de sécurité","同胞 → 情感支持 → 安全感"],["开放","diversifier son réseau social → pratiquer la langue locale → comprendre les codes sociaux → s’intégrer","扩大社交圈 → 练当地语言 → 理解规则 → 融入"]]},"11":{"t":"远离亲友容易产生孤独，但陪伴能提供支持","fr":"éloignement des proches → cercle social limité → manque de soutien → isolement → sentiment de solitude → adaptation plus difficile","zh":"远离亲友 → 社交圈有限 → 缺乏支持 → 孤立 → 孤独 → 更难适应","ids":["1-01-1","1-06-1","1-15-3","1-18-2","1-23-3"],"sc":[["孤独链","éloignement des proches → manque de soutien → isolement → solitude","远离亲友 → 缺支持 → 孤立 → 孤独"],["支持链","famille / amis / compagnons → partager les difficultés → s’encourager → chercher des solutions","家人/朋友/同伴 → 分享困难 → 互相鼓励 → 一起解决"]]},"12":{"t":"主动参加活动建立社交网络与归属感","fr":"participer à des activités → rencontrer régulièrement des personnes → créer des liens → développer son réseau social → renforcer son sentiment d’appartenance","zh":"参加活动 → 经常接触人 → 建立关系 → 扩大社交网络 → 增强归属感","ids":["1-07-2","1-08-3","1-12-3","1-17-3","1-19-1"],"sc":[["社区版","association / bénévolat / quartier → rencontres → liens → intégration","协会 / 志愿服务 / 社区 → 认识人 → 建立关系 → 融入"],["学校版","vie étudiante / projets de groupe → camarades → réseau social → appartenance","校园生活 / 小组项目 → 同学 → 社交网络 → 归属感"]]},"13":{"t":"了解当地就业市场和职场规范","fr":"connaître le marché du travail → comprendre les attentes des employeurs → se familiariser avec les codes professionnels → s’adapter → insertion professionnelle","zh":"了解就业市场 → 理解雇主期待 → 熟悉职场规则 → 适应 → 职业融入","ids":["1-07-1","1-10-2","1-12-2","1-13-2","1-17-2"],"sc":[["求职准备","offres d’emploi → compétences recherchées → adapter son CV → répondre aux attentes","招聘信息 → 所需技能 → 调整简历 → 满足雇主要求"],["职场适应","réunions / communication / travail en équipe → confiance → intégration","会议 / 沟通 / 团队合作 → 信任 → 融入"]]},"14":{"t":"培训、人脉与就业支持提高就业竞争力","fr":"formation / accompagnement → nouvelles compétences → mieux comprendre les attentes → mieux valoriser son profil → augmenter ses chances de trouver un emploi","zh":"培训/支持 → 新技能 → 更懂雇主要求 → 更好展示自己 → 提高就业机会","ids":["1-11-3","1-13-3"],"sc":[["政府支持","formation professionnelle → orientation → accompagnement → accès au marché du travail","职业培训 → 指导 → 求职支持 → 进入就业市场"],["自主求职","atelier de recherche d’emploi → réseau professionnel → CV → employabilité","求职工作坊 → 人脉 → 简历 → 就业竞争力"]]},"15":{"t":"海外经历提升职业竞争力，但不是万能","fr":"expérience à l’étranger → adaptation → compétences interculturelles → valeur ajoutée sur le CV → opportunités professionnelles","zh":"海外经历 → 适应力 → 跨文化能力 → 简历加分 → 职业机会","ids":["1-14-1","1-14-3","1-16-2"],"sc":[["优势链","expérience internationale → adaptation → compétences → profil professionnel renforcé","国际经历 → 适应 → 技能 → 履历增强"],["限制链","expérience internationale ≠ garantie → compétences + expérience + motivation + travail en équipe","国际经历不等于成功 → 专业能力 + 经验 + 动力 + 团队合作"]]},"16":{"t":"移民既补充劳动力，也增加公共资源压力","fr":"vieillissement de la population → manque de main-d’œuvre → immigration → répondre aux besoins du marché / mais pression sur les ressources","zh":"人口老龄化 → 劳动力短缺 → 移民补充市场需求 / 但增加公共资源压力","ids":["1-09-2","1-09-3"],"sc":[["收益链","pénurie de main-d’œuvre → immigration → combler les besoins → secteurs essentiels","劳动力短缺 → 移民 → 填补需求 → 维持关键行业"],["压力链","population ↑ → logements / services publics ↑ → pression sur les infrastructures","人口增加 → 住房/公共服务需求上升 → 基础设施压力"]]},"17":{"t":"融入是个人与接收社会的共同责任","fr":"efforts personnels + soutien du pays d’accueil → autonomie → insertion sociale et culturelle","zh":"个人努力 + 接收国支持 → 自主 → 社会文化融入","ids":["1-01-3","1-11-1","1-11-2","1-19-3"],"sc":[["个人责任","apprendre la langue → connaître les coutumes → participer à la vie sociale → créer des liens","学语言 → 熟悉习俗 → 参与社会生活 → 建立关系"],["社会责任","cours de langue / ateliers culturels / accompagnement → surmonter les difficultés → intégration","语言课 / 文化工作坊 / 支持项目 → 克服困难 → 融入"]]},"18":{"t":"孩子和学校可以成为全家融入的桥梁","fr":"enfants à l’école → langue + culture + codes sociaux → partager à la maison → parents mieux informés → intégration familiale","zh":"孩子上学 → 学语言、文化和社会规则 → 回家分享 → 父母更了解环境 → 全家融入","ids":["1-18-3","1-19-2"],"sc":[["孩子版","école locale → langue / codes sociaux → relations avec les camarades","当地学校 → 语言/社会规则 → 同学关系"],["家长版","activités scolaires → rencontrer d’autres familles → mieux comprendre la société locale","学校活动 → 认识其他家庭 → 更懂当地社会"]]},"19":{"t":"移民中的教育机会、儿童语言与社交","fr":"vivre à l’étranger → nouvelles perspectives éducatives → langue locale → réussite scolaire + intégration sociale","zh":"海外生活 → 新教育机会 → 当地语言 → 学业成功 + 社会融入","ids":["1-16-1","1-30-1","1-30-2"],"sc":[["教育机会","environnement international → plusieurs langues → méthodes différentes → perspectives élargies","国际环境 → 多语言 → 不同教学方法 → 更广前景"],["学业与社交","langue locale → comprendre les cours / activités → réussir à l’école / se faire des amis","当地语言 → 听课/活动 → 学业成功/交朋友"]]},"20":{"t":"年龄与生活经验也能帮助适应","fr":"davantage d’expérience → mieux gérer les difficultés quotidiennes → budget / logement / démarches → meilleure capacité pratique","zh":"更多生活经验 → 更能处理日常困难 → 预算/住房/手续 → 更强实际应对能力","ids":["1-02-3"],"sc":[["生活经验","gérer un budget → chercher un logement → accomplir des démarches → faire face aux difficultés","管理预算 → 找住房 → 办手续 → 应对困难"]]},"21":{"t":"独自解决问题培养自主性与责任感","fr":"faire face seul aux difficultés → prendre ses propres décisions → sortir de sa zone de confort → gagner en autonomie → renforcer sa capacité d’adaptation","zh":"独自面对困难 → 自己做决定 → 走出舒适区 → 提高自主性 → 增强适应力","ids":["1-18-1","1-23-1"],"badge":"⭐ 高频迁移","sc":[["独自移民","chercher un logement → démarches administratives → gérer son budget → devenir plus autonome","找住房 → 办手续 → 管理预算 → 更独立"],["独自旅行","organiser ses déplacements → gérer les imprévus → adapter son programme → compétences pratiques","安排交通 → 处理意外 → 调整行程 → 实用能力"]]},"22":{"t":"独自旅行带来个人自由","fr":"organiser son itinéraire selon ses envies → modifier son programme librement → avancer à son propre rythme → personnaliser son voyage → liberté personnelle","zh":"按自己意愿安排行程 → 自由改计划 → 按自己节奏 → 个性化旅行 → 个人自由","ids":["1-23-2"],"sc":[["自由版","itinéraire personnel → programme flexible → propre rythme → liberté personnelle","个人路线 → 灵活行程 → 自己节奏 → 个人自由"]]},"23":{"t":"旅行受金钱与时间限制，但可通过规划降低门槛","fr":"coût + contraintes de temps → accès inégal au voyage → solutions économiques / basse saison → voyage plus accessible","zh":"成本 + 时间限制 → 旅行机会不平等 → 经济方案/淡季 → 更容易旅行","ids":["1-22-3","1-26-1","1-26-2","1-26-3"],"sc":[["限制链","transport + hébergement + repas + activités → budget important → contraintes de temps","交通 + 住宿 + 餐饮 + 活动 → 预算高 → 时间限制"],["解决链","compagnies à bas prix → hébergement moins coûteux → basse saison → budget adapté","廉价航空 → 便宜住宿 → 淡季 → 合理预算"]]},"24":{"t":"交通方式是速度、价格与旅途体验之间的取舍","fr":"avion = rapidité → bus = prix → train = expérience du trajet","zh":"飞机 = 速度 → 大巴 = 价格 → 火车 = 旅途体验","ids":["1-27-1","1-27-2","1-27-3"],"sc":[["飞机","longue distance → gagner du temps → priorité à la rapidité","长途 → 节省时间 → 重视速度"],["大巴","budget limité → prix abordable → solution économique","预算有限 → 价格实惠 → 经济方案"],["火车","paysages → se détendre → profiter du trajet → expérience touristique","风景 → 放松 → 享受旅途 → 旅游体验"]]},"25":{"t":"跨境流动更自由能增加机会，但仍需要安全管控","fr":"coopération internationale → moins de formalités → mobilité accrue → études / emploi facilités → mais contrôle nécessaire","zh":"国际合作 → 手续减少 → 流动增加 → 学习/工作更方便 → 但仍需管控","ids":["1-20-1","1-20-2","1-20-3"],"sc":[["便利链","coopération → simplifier les déplacements → liberté de circulation","合作 → 简化出行 → 更自由流动"],["机会链","démarches simplifiées → études / travail à l’étranger → plus d’opportunités","手续简化 → 海外学习/工作 → 更多机会"],["安全链","absence de frontières → contrôle plus difficile → sécurité → mécanismes de contrôle","无边境 → 更难监管 → 安全风险 → 管控机制"]]},"26":{"t":"旅游业有经济收益，也有环境和住房代价","fr":"tourisme → revenus / emplois → mais déchets / pollution / pression sur le logement","zh":"旅游业 → 收入/就业 → 但也带来垃圾、污染和住房压力","ids":["1-21-2","1-21-3","1-24-1","1-24-2"],"badge":"正反论证","sc":[["经济收益","plus de touristes → dépenses → revenus → croissance économique","游客增加 → 消费 → 收入 → 经济增长"],["就业","plus de demande → recrutement → création d’emplois","需求增加 → 招聘 → 创造就业"],["环境","surtourisme → déchets → pollution → protection","过度旅游 → 垃圾 → 污染 → 保护措施"],["住房","locations touristiques → moins de logements → hausse des loyers","旅游短租 → 住房减少 → 房租上涨"]]},"27":{"t":"亲身旅行、城市与美食体验可以理解并传播文化","fr":"expérience directe → découvrir monuments / traditions / cuisine → mieux comprendre la culture → partager son expérience → rayonnement culturel","zh":"亲身体验 → 古迹/传统/美食 → 理解文化 → 分享经历 → 文化传播","ids":["1-21-1","1-24-3","1-25-1","1-25-2","1-25-3","1-31-1","1-31-2"],"sc":[["旅游传播","visiter des lieux → découvrir des traditions → partager son expérience → échanges interculturels","参观景点 → 了解传统 → 分享经历 → 跨文化交流"],["城市版","Pékin / Shanghai → histoire / modernité → différentes facettes du pays","北京/上海 → 历史/现代 → 国家不同面貌"],["美食版","gastronomie → spécialités locales → moment convivial → culture locale","美食 → 地方特色 → 共餐体验 → 当地文化"]]},"28":{"t":"媒体、艺术与国际交流也能传播文化","fr":"médias / artistes / échanges internationaux → accès à d’autres cultures → curiosité → connaissances culturelles → vision plus large du pays","zh":"媒体/艺术家/国际交流 → 接触其他文化 → 产生兴趣 → 获得文化知识 → 更全面理解国家","ids":["1-28-1","1-28-2","1-31-3","1-32-1","1-32-2","1-32-3"],"sc":[["数字媒体","réseaux sociaux / documentaires / vidéos → culture sans voyager","社交媒体 / 纪录片 / 视频 → 不旅行也能了解文化"],["艺术传播","artistes / films → traditions / valeurs → rayonnement culturel","艺术家 / 电影 → 传统/价值观 → 文化传播"],["跨国工作","collaboration internationale → habitudes professionnelles → compréhension culturelle","跨国合作 → 工作习惯 → 文化理解"],["多来源","livres + films + documentaires + artistes → vision plus complète","书籍 + 电影 + 纪录片 + 艺术家 → 更完整认识"]]},"01":{"t":"语言障碍影响日常自主生活","fr":"barrière linguistique → difficultés quotidiennes → accomplir des démarches / communiquer → gagner en autonomie → trouver ses repères","zh":"语言障碍 → 日常生活困难 → 办手续/沟通 → 提高自主性 → 适应新环境","ids":["1-01-2","1-10-1","1-12-1","1-17-1"],"sc":[["日常生活","faire ses courses → aller à la banque → accomplir des démarches → gagner en autonomie","购物 → 银行 → 办手续 → 提高自主性"],["新移民","exprimer ses besoins → communiquer avec les habitants → créer des liens → trouver ses repères","表达需求 → 与居民沟通 → 建立关系 → 适应环境"]]},"02":{"t":"语言能力促进社交与社会融入","fr":"maîtriser la langue locale → communiquer spontanément → créer des liens → élargir son réseau social → sentiment d’appartenance","zh":"掌握当地语言 → 自然交流 → 建立关系 → 扩大社交圈 → 归属感","ids":["1-05-2","1-08-1","1-29-2"],"sc":[["正向链","parler la langue locale → participer à des activités → créer des liens → sentiment d’appartenance","说当地语言 → 参加活动 → 建立关系 → 归属感"],["反向链","peur de faire des erreurs → rester en retrait → communiquer moins → difficulté à se faire des amis","害怕犯错 → 退缩 → 减少交流 → 难交朋友"]]},"03":{"t":"真实语言环境提高语言能力","fr":"situations réelles → utiliser la langue quotidiennement → pratiquer régulièrement → acquérir une plus grande aisance à l’oral → renforcer ses compétences linguistiques","zh":"真实场景 → 每天使用 → 持续练习 → 口语更自如 → 提高语言能力","ids":["1-02-1","1-14-2","1-15-1","1-22-1"],"sc":[["旅行版","restaurant / demander son chemin / habitants → locuteurs natifs → aisance à l’oral","点餐 / 问路 / 当地居民 → 母语者交流 → 口语更流利"],["海外生活版","travail / commerces / relations sociales → pratique quotidienne → compétences linguistiques","工作 / 商店 / 社交 → 每天练习 → 提高语言能力"]]},"04":{"t":"语言能力与职业融入","fr":"maîtrise de la langue → réussir un entretien → comprendre les consignes → communiquer avec les collègues → insertion professionnelle","zh":"掌握语言 → 面试 → 理解指令 → 同事沟通 → 职业融入","ids":["1-05-1","1-13-1","1-29-1"],"sc":[["求职版","maîtrise de la langue → entretien → mettre en valeur ses compétences → accès à l’emploi","语言能力 → 面试 → 展示能力 → 获得工作"],["职场文化版","échanges professionnels → comprendre les codes du travail → mieux collaborer → culture professionnelle","职场交流 → 理解规则 → 更好合作 → 理解职业文化"]]},"05":{"t":"了解当地文化促进适应","fr":"découvrir les coutumes et les codes sociaux → comprendre les différences → éviter les malentendus → adapter son comportement → mieux s’intégrer","zh":"了解习俗和社会规则 → 理解差异 → 避免误解 → 调整行为 → 更好融入","ids":["1-02-2","1-03-1","1-03-2","1-05-3","1-08-2","1-10-3"],"sc":[["日常文化","coutumes → valeurs → fêtes locales → mode de vie","习俗 → 价值观 → 当地节庆 → 生活方式"],["社会互动","différences culturelles → malentendus → comprendre les codes sociaux → adaptation","文化差异 → 误解 → 理解社会规则 → 适应"]]},"06":{"t":"跨文化接触拓宽视野","fr":"nouvelles cultures → échanges → remettre en question ses préjugés → éviter les stéréotypes → élargir sa vision du monde","zh":"接触新文化 → 交流 → 反思偏见 → 避免刻板印象 → 拓宽视野","ids":["1-09-1","1-15-2","1-16-3","1-22-2"],"badge":"⭐ 超高复用","sc":[["海外生活版","autres modes de vie → autres façons de penser → remettre en question ses repères → ouverture d’esprit","其他生活方式 → 不同思维方式 → 反思原有观念 → 思想更开放"],["旅行版","idées préconçues → réalité sur place → mieux comprendre les différences → remettre en question ses préjugés → éviter les stéréotypes","先入之见 → 亲眼看到现实 → 理解差异 → 反思偏见 → 减少刻板印象"],["多元文化社会版","diversité culturelle → traditions / langues / modes de vie → échanges entre communautés → ouverture d’esprit","文化多样性 → 不同传统、语言和生活方式 → 社群交流 → 思想开放"]]},"07":{"t":"亲身体验比远程了解更深入","fr":"connaissances théoriques → expérience directe → observer → communiquer → participer → compréhension plus concrète","zh":"理论知识 → 亲身体验 → 观察 → 交流 → 参与 → 更具体深入地理解","ids":["1-28-3","1-29-3"],"sc":[["远程了解","livres / documentaires / vidéos → connaissances culturelles → compréhension plus théorique","书籍 / 纪录片 / 视频 → 文化知识 → 更偏理论"],["亲身体验","voyager → observer la vie quotidienne → communiquer avec les habitants → immersion culturelle","旅行 → 观察日常生活 → 与居民交流 → 文化沉浸"]]},"08":{"t":"长期海外生活可能淡化原有文化","fr":"utiliser surtout la langue locale → moins pratiquer sa langue maternelle → perdre certains réflexes → adopter de nouvelles habitudes → distance culturelle","zh":"更多使用当地语言 → 母语使用减少 → 原有习惯变弱 → 接受新习惯 → 文化距离增加","ids":["1-04-1","1-04-2"],"sc":[["语言版","langue locale → moins utiliser la langue maternelle → perdre certains réflexes linguistiques","当地语言 → 母语使用减少 → 语言习惯变弱"],["生活习惯版","horaires / alimentation / fêtes locales → nouvelles habitudes → traditions d’origine moins présentes","作息 / 饮食 / 节庆 → 新习惯 → 原有传统淡化"]]},"09":{"t":"母语与传统维持文化身份","fr":"langue maternelle → fêtes / traditions / cuisine → liens familiaux / communautaires → préserver ses racines → identité culturelle","zh":"母语 → 节日/传统/饮食 → 家庭/社区联系 → 保留文化根源 → 文化身份","ids":["1-03-3","1-04-3","1-06-2","1-30-3"],"sc":[["家庭版","parler la langue maternelle → grands-parents → histoire familiale → préserver la culture","说母语 → 与祖辈交流 → 家族历史 → 保留文化"],["社区版","compatriotes → langue commune → fêtes traditionnelles → sentiment d’appartenance","同胞 → 共同语言 → 传统节日 → 归属感"]]}};
+  const $=id=>document.getElementById(id);
+  let currentId=null;
 
-  const QUICK = [
-    ['语言与沟通','障碍 / 融入 / 练语言 / 职场'],
-    ['文化适应与身份','适应 / 开放 / 亲身体验 / 母语 / 平衡'],
-    ['社交与归属','孤独 / 活动 / 归属感'],
-    ['就业与职业','市场 / 培训 / 海外经历'],
-    ['政策与责任','劳动力 / 公共压力 / 共同努力'],
-    ['家庭与成长','孩子 / 教育 / 自主 / 自由'],
-    ['旅行条件','金钱 / 时间 / 交通 / 边境'],
-    ['旅游传播','经济 / 环境 / 城市 / 美食 / 媒体']
-  ];
-
-  const SAMPLE = {
-    number: '06',
-    title: '跨文化接触拓宽视野',
-    badge: '⭐ 超高复用',
-    coreFr: 'nouvelles cultures → échanges → remettre en question ses préjugés → éviter les stéréotypes → élargir sa vision du monde',
-    coreZh: '接触新文化 → 交流 → 反思偏见 → 避免刻板印象 → 拓宽视野',
-    quick: '新文化 → 交流 → 反思偏见 → 少刻板印象 → 视野更开阔',
-    scenes: [
-      {
-        title: '海外生活版',
-        fr: 'autres modes de vie → autres façons de penser → remettre en question ses repères → ouverture d’esprit',
-        zh: '其他生活方式 → 不同思维方式 → 反思原有观念 → 思想更开放',
-        words: [
-          ['favoriser l’ouverture d’esprit','促进思想开放'],
-          ['être confronté à de nouvelles cultures','接触新的文化'],
-          ['découvrir d’autres modes de vie','了解其他生活方式'],
-          ['découvrir différentes façons de penser','了解不同思维方式'],
-          ['remettre en question ses propres repères','反思自己原有的观念'],
-          ['élargir sa vision du monde','拓宽世界观'],
-          ['sortir de sa zone de confort','走出舒适区'],
-          ['contribuer à son épanouissement personnel','有助于个人成长']
-        ],
-        sourceIds: ['1-15-2','1-16-3']
-      },
-      {
-        title: '旅行版',
-        fr: 'idées préconçues → réalité sur place → mieux comprendre les différences → remettre en question ses préjugés → éviter les stéréotypes',
-        zh: '先入之见 → 亲眼看到现实 → 理解差异 → 反思偏见 → 减少刻板印象',
-        words: [
-          ['avoir des idées préconçues','有先入之见'],
-          ['être confronté à de nouvelles cultures','接触新的文化'],
-          ['faire connaissance avec des personnes issues de milieux différents','认识不同背景的人'],
-          ['mieux comprendre les différences culturelles','更好理解文化差异'],
-          ['remettre en question ses préjugés','反思自己的偏见'],
-          ['se rendre compte sur place que la réalité est plus complexe','到当地后发现现实更复杂'],
-          ['éviter certains stéréotypes','避免某些刻板印象'],
-          ['élargir sa vision du monde','拓宽世界观']
-        ],
-        sourceIds: ['1-22-2']
-      },
-      {
-        title: '多元文化社会版',
-        fr: 'diversité culturelle → traditions / langues / modes de vie → échanges entre communautés → ouverture d’esprit',
-        zh: '文化多样性 → 不同传统、语言和生活方式 → 社群交流 → 思想开放',
-        words: [
-          ['contribuer à la diversité culturelle','促进文化多样性'],
-          ['apporter ses traditions, sa langue et son mode de vie','带来自己的传统、语言和生活方式'],
-          ['découvrir d’autres cultures','了解其他文化'],
-          ['favoriser une plus grande ouverture d’esprit','促进更加开放的心态'],
-          ['participer à des festivals et à des événements culturels','参加节庆和文化活动'],
-          ['favoriser les échanges entre des personnes issues de milieux différents','促进不同背景人群之间的交流']
-        ],
-        sourceIds: ['1-09-1']
-      }
-    ]
-  };
-
-  const $ = id => document.getElementById(id);
-  let currentView='overview';
-
-  function chip(fr, zh) {
-    const el=document.createElement('div');
-    el.className='argument-word';
-    const f=document.createElement('strong'); f.lang='fr'; f.textContent=fr;
-    const z=document.createElement('small'); z.textContent=zh;
-    el.append(f,z); return el;
-  }
-  function sourceButton(id, sceneIndex) {
-    const b=document.createElement('button');
-    b.className='source-jump';
-    b.textContent=id+' · 去学习原论段';
-    b.onclick=()=>{sessionStorage.setItem('tcf-eo-t3-return-argument-map','1');sessionStorage.setItem('tcf-eo-t3-argument-return-state',JSON.stringify({mode:'scene',sceneIndex}));window.CORPUS_OPEN_PARAGRAPH?.(id);};
+  function sourceButton(id,motherId){
+    const b=document.createElement('button'); b.className='source-jump'; b.textContent=id+' · 去学习原论段';
+    b.onclick=()=>{sessionStorage.setItem('tcf-eo-t3-return-argument-map','1');sessionStorage.setItem('tcf-eo-t3-argument-return-state',JSON.stringify({mode:'detail',motherId}));window.CORPUS_OPEN_PARAGRAPH?.(id);};
     return b;
   }
 
   function renderOverview(stage){
-    currentView='overview';
-    stage.replaceChildren();
-    const intro=document.createElement('section');
-    intro.className='argument-overview-intro';
-    intro.innerHTML='<p class="eyebrow">旅行与移民 · 总思维导图</p><h2>96 个原始论段 → 28 个核心母论点</h2><p class="note">先看全局，再点击母论点进入逻辑链。#06 已接入完整详情，其余节点先作为总图结构展示。</p>';
-    stage.append(intro);
-
-    const grid=document.createElement('div');
-    grid.className='argument-group-grid';
-    GROUPS.forEach(group=>{
-      const section=document.createElement('section');
-      section.className='argument-group-card';
-      const h=document.createElement('h3'); h.textContent=group.title; section.append(h);
-      const items=document.createElement('div'); items.className='argument-node-list';
-      group.items.forEach(([id,title])=>{
-        const b=document.createElement('button');
-        b.className='argument-node';
-        b.innerHTML='<span class="node-num">#'+id+'</span><span class="node-title">'+title+'</span>';
-        if(id==='06'){b.classList.add('ready'); b.title='已接入完整详情'; b.onclick=()=>renderDetail(stage);}
-        else {b.onclick=()=>{document.getElementById('argumentToast').textContent='#'+id+' 已进入总图；完整逻辑链详情会在下一阶段批量接入。';};}
-        items.append(b);
-      });
-      section.append(items); grid.append(section);
-    });
-    stage.append(grid);
-    const toast=document.createElement('p'); toast.id='argumentToast'; toast.className='note'; stage.append(toast);
+    currentId=null; stage.replaceChildren();
+    const intro=document.createElement('section'); intro.className='argument-overview-intro';
+    intro.innerHTML='<p class="eyebrow">旅行与移民 · 总思维导图</p><h2>96 个原始论段 → 28 个核心母论点</h2><p class="note">点击任意母论点，可查看对应的小思维导图、核心法语逻辑链、场景链和原论段。</p>'; stage.append(intro);
+    const grid=document.createElement('div'); grid.className='argument-group-grid';
+    GROUPS.forEach(group=>{const section=document.createElement('section');section.className='argument-group-card';const h=document.createElement('h3');h.textContent=group.title;section.append(h);const items=document.createElement('div');items.className='argument-node-list';
+      group.items.forEach(([id,title])=>{const b=document.createElement('button');b.className='argument-node ready';b.innerHTML='<span class="node-num">#'+id+'</span><span class="node-title">'+title+'</span>';b.onclick=()=>renderDetail(stage,id);items.append(b);});
+      section.append(items);grid.append(section);
+    }); stage.append(grid);
   }
 
   function renderList(stage){
-    currentView='list';
-    stage.replaceChildren();
-    const list=document.createElement('div'); list.className='mother-list';
-    GROUPS.forEach(group=>{
-      const h=document.createElement('h3'); h.textContent=group.title; list.append(h);
-      group.items.forEach(([id,title])=>{
-        const row=document.createElement('button'); row.className='mother-list-row';
-        row.innerHTML='<span>#'+id+'</span><strong>'+title+'</strong><em>'+(id==='06'?'查看完整详情 ›':'已纳入总图')+'</em>';
-        if(id==='06')row.onclick=()=>renderDetail(stage);
-        list.append(row);
-      });
-    });
-    stage.append(list);
+    currentId=null; stage.replaceChildren(); const list=document.createElement('div');list.className='mother-list';
+    GROUPS.forEach(group=>{const h=document.createElement('h3');h.textContent=group.title;list.append(h);group.items.forEach(([id,title])=>{const row=document.createElement('button');row.className='mother-list-row';row.innerHTML='<span>#'+id+'</span><strong>'+title+'</strong><em>查看思维导图与逻辑链 ›</em>';row.onclick=()=>renderDetail(stage,id);list.append(row);});});stage.append(list);
   }
 
   function renderQuick(stage){
-    currentView='quick';
-    stage.replaceChildren();
-    const wrap=document.createElement('div'); wrap.className='quick-overview-grid';
-    QUICK.forEach(([title,keywords])=>{
-      const card=document.createElement('section'); card.className='quick-overview-card';
-      card.innerHTML='<h3>'+title+'</h3><p>'+keywords+'</p>'; wrap.append(card);
-    });
-    stage.append(wrap);
+    currentId=null; stage.replaceChildren(); const wrap=document.createElement('div');wrap.className='quick-overview-grid';
+    QUICK.forEach(([title,keywords])=>{const card=document.createElement('section');card.className='quick-overview-card';card.innerHTML='<h3>'+title+'</h3><p>'+keywords+'</p>';wrap.append(card);});stage.append(wrap);
   }
 
-  function renderDetail(stage){
-    currentView='detail';
-    stage.replaceChildren();
-    const back=document.createElement('button'); back.className='back-to-map'; back.textContent='← 返回 28 个母论点总图'; back.onclick=()=>renderOverview(stage); stage.append(back);
+  function renderDetail(stage,id){
+    const d=M[id]; if(!d)return; currentId=id; stage.replaceChildren();
+    const back=document.createElement('button');back.className='back-to-map';back.textContent='← 返回 28 个母论点总图';back.onclick=()=>renderOverview(stage);stage.append(back);
+    const head=document.createElement('div');head.className='argument-head';head.innerHTML='<div><p class="eyebrow">旅行与移民 · 母论点详情</p><h2>#'+id+' '+d.t+(d.badge?' <span class="argument-badge">'+d.badge+'</span>':'')+'</h2></div>';stage.append(head);
 
-    const head=document.createElement('div'); head.className='argument-head';
-    head.innerHTML='<div><p class="eyebrow">旅行与移民 · 母论点详情</p><h2>#'+SAMPLE.number+' '+SAMPLE.title+' <span class="argument-badge">'+SAMPLE.badge+'</span></h2></div>';
-    stage.append(head);
+    const mini=document.createElement('section');mini.className='argument-core';
+    mini.innerHTML='<p class="argument-label">🧠 母论点小思维导图</p><div class="mother-node active"><strong>#'+id+' '+d.t+'</strong><small>向下展开为 '+d.sc.length+' 条场景 / 论证分支</small></div>';stage.append(mini);
+    const branches=document.createElement('div');branches.className='scene-grid';
+    d.sc.forEach(([title,fr,zh])=>{const c=document.createElement('div');c.className='scene-node static';c.innerHTML='<span>'+title+'</span><strong>'+title+'</strong><small lang="fr">'+fr+'</small><small class="logic-zh">'+zh+'</small>';branches.append(c);});stage.append(branches);
 
-    const core=document.createElement('section'); core.className='argument-core';
-    core.innerHTML='<p class="argument-label">核心法语逻辑链</p><div class="logic-fr" lang="fr">'+SAMPLE.coreFr+'</div><div class="logic-zh">'+SAMPLE.coreZh+'</div>';
-    stage.append(core);
+    const core=document.createElement('section');core.className='argument-core';
+    core.innerHTML='<p class="argument-label">🔗 核心法语逻辑链</p><div class="logic-fr" lang="fr">'+d.fr+'</div><div class="logic-zh">'+d.zh+'</div>';stage.append(core);
 
-    const branches=document.createElement('div'); branches.className='scene-list';
-    SAMPLE.scenes.forEach((s,i)=>{
-      const card=document.createElement('button'); card.className='scene-chain';
-      card.innerHTML='<strong>'+s.title+'</strong><span class="logic-fr compact" lang="fr">'+s.fr+'</span><span class="logic-zh">'+s.zh+'</span><em>点击展开主题词组 ›</em>';
-      card.onclick=()=>renderScene(stage,i); branches.append(card);
-    });
-    stage.append(branches);
-  }
-
-  function renderScene(stage,i){
-    const s=SAMPLE.scenes[i]; currentView='scene'; stage.replaceChildren();
-    const back=document.createElement('button'); back.className='back-to-map'; back.textContent='← 返回 #06 核心逻辑链'; back.onclick=()=>renderDetail(stage); stage.append(back);
-    const top=document.createElement('section'); top.className='argument-core';
-    top.innerHTML='<p class="argument-label">'+s.title+'</p><div class="logic-fr" lang="fr">'+s.fr+'</div><div class="logic-zh">'+s.zh+'</div>'; stage.append(top);
-    const title=document.createElement('h3'); title.textContent='主题词汇 / 词组'; stage.append(title);
-    const words=document.createElement('div'); words.className='argument-words'; s.words.forEach(x=>words.append(chip(x[0],x[1]))); stage.append(words);
-    const srcTitle=document.createElement('h3'); srcTitle.textContent='对应原论段'; stage.append(srcTitle);
-    const src=document.createElement('div'); src.className='source-jumps'; s.sourceIds.forEach(id=>src.append(sourceButton(id,i))); stage.append(src);
+    const h=document.createElement('h3');h.textContent='对应原论段';stage.append(h);
+    const src=document.createElement('div');src.className='source-jumps';d.ids.forEach(x=>src.append(sourceButton(x,id)));stage.append(src);
   }
 
   function render(){
-    const root=$('argumentMapView'); if(!root) return;
-    root.replaceChildren();
-
-    const toolbar=document.createElement('div'); toolbar.className='argument-modes';
-    [['overview','🧠 总思维导图'],['list','🔗 母论点列表'],['quick','⚡ 极简总览']].forEach(([k,label],i)=>{
-      const b=document.createElement('button'); b.dataset.mode=k; b.textContent=label; if(i===0)b.classList.add('active'); toolbar.append(b);
-    });
-    root.append(toolbar);
-
-    const stage=document.createElement('div'); stage.id='argumentStage'; root.append(stage);
-
-    toolbar.onclick=e=>{
-      const b=e.target.closest('button[data-mode]'); if(!b)return;
-      toolbar.querySelectorAll('button').forEach(x=>x.classList.toggle('active',x===b));
-      b.dataset.mode==='overview'?renderOverview(stage):b.dataset.mode==='list'?renderList(stage):renderQuick(stage);
-    };
-
-    const savedReturn=sessionStorage.getItem('tcf-eo-t3-argument-return-state');
-    if(savedReturn){
-      try{
-        const r=JSON.parse(savedReturn); sessionStorage.removeItem('tcf-eo-t3-argument-return-state');
-        if(r.mode==='scene'&&Number.isInteger(r.sceneIndex)&&SAMPLE.scenes[r.sceneIndex]){
-          toolbar.querySelectorAll('button').forEach(x=>x.classList.remove('active'));
-          renderScene(stage,r.sceneIndex); return;
-        }
-      }catch{sessionStorage.removeItem('tcf-eo-t3-argument-return-state');}
-    }
+    const root=$('argumentMapView');if(!root)return;root.replaceChildren();
+    const toolbar=document.createElement('div');toolbar.className='argument-modes';
+    [['overview','🧠 总思维导图'],['list','🔗 母论点列表'],['quick','⚡ 极简总览']].forEach(([k,label],i)=>{const b=document.createElement('button');b.dataset.mode=k;b.textContent=label;if(i===0)b.classList.add('active');toolbar.append(b);});root.append(toolbar);
+    const stage=document.createElement('div');stage.id='argumentStage';root.append(stage);
+    toolbar.onclick=e=>{const b=e.target.closest('button[data-mode]');if(!b)return;toolbar.querySelectorAll('button').forEach(x=>x.classList.toggle('active',x===b));b.dataset.mode==='overview'?renderOverview(stage):b.dataset.mode==='list'?renderList(stage):renderQuick(stage);};
+    const saved=sessionStorage.getItem('tcf-eo-t3-argument-return-state');
+    if(saved){try{const r=JSON.parse(saved);sessionStorage.removeItem('tcf-eo-t3-argument-return-state');if(r.mode==='detail'&&M[r.motherId]){toolbar.querySelectorAll('button').forEach(x=>x.classList.remove('active'));renderDetail(stage,r.motherId);return;}}catch{sessionStorage.removeItem('tcf-eo-t3-argument-return-state');}}
     renderOverview(stage);
   }
-
   window.CORPUS_ARGUMENT_MAP={render};
 })();
