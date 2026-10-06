@@ -28,7 +28,7 @@
     const m=window.TCF_EE3_EXAMS.metadata[topic.id];
     const text=topic.paragraphs.map(p=>p.answer).join(' ').toLocaleLowerCase('fr');
     const candidates=[...(m?.sourceIds||[topic.id]).flatMap(id=>themed[id]||[]),...extraNouns];
-    const nouns=[...new Set(candidates)].filter(n=>text.includes(n.toLocaleLowerCase('fr')));
+    const nouns=[...new Set(candidates)].filter(n=>text.includes(n.toLocaleLowerCase('fr').replace(/^(?:le |la |les |un |une |des |l[’'])/,'')));
     const abstracts=['un avantage','des avantages','une responsabilité','une priorité','un équilibre','des conséquences','une mesure','des risques'].filter(n=>text.includes(n));
     $('themeVocabulary').innerHTML='<h3>主题词汇 / 名词词组</h3>'+ (nouns.length?nouns.map(n=>`<span class="noun-chip">${escape(n)}</span>`).join(''):'<p class="muted">本篇暂无已整理的主题名词词组。</p>')+(abstracts.length?'<h3>论证词汇 / 抽象名词</h3>'+abstracts.map(n=>`<span class="noun-chip">${escape(n)}</span>`).join(''):'');
   }

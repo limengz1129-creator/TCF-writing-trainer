@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "status": "implementation_verified; publish_pending",
+  "status": "complete; published_and_verified",
   "repository": "limengz1129-creator/TCF-writing-trainer",
   "targetPage": "https://limengz1129-creator.github.io/TCF-writing-trainer/",
   "monthlyCounts": {
@@ -794,7 +794,23 @@
     "materialReview": "complete"
   },
   "deployment": {
-    "status": "pending",
-    "target": "https://limengz1129-creator.github.io/TCF-writing-trainer/"
+    "status": "success",
+    "target": "https://limengz1129-creator.github.io/TCF-writing-trainer/",
+    "implementationCommit": "68382247304251f3ddca01138059014c8cbc567f",
+    "successfulPagesRun": 37409508122,
+    "verifiedAt": "2026-10-06T03:37:46.975Z",
+    "onlineChecks": {
+      "examScopeCount": 36,
+      "monthlyCounts": {
+        "2026-07": 11,
+        "2026-08": 17,
+        "2026-09": 13,
+        "2026-10": 4
+      },
+      "originalPromptAndMaterials": "shown complete; live JSON byte-equivalent after JSON parse",
+      "bilingualOrder": "French → note → Chinese, 4 paragraphs",
+      "notesAfterReload": "verified; temporary test note restored",
+      "highlightsAndVocabulary": "DOM integration tests passed; shared vocabulary.js unchanged"
+    }
   }
 }
