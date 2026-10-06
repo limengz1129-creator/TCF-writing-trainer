@@ -76,21 +76,55 @@
     stage.append(core);
 
     const mapTitle=document.createElement('h3'); mapTitle.textContent='🧠 场景化思维导图'; stage.append(mapTitle);
-    const branches=document.createElement('div'); branches.className='scene-grid';
-    d.sc.forEach(([title,fr,zh])=>{
-      const c=document.createElement('div'); c.className='scene-node static';
-      c.innerHTML='<span>场景 / 分支</span><strong>'+title+'</strong><small lang="fr">'+fr+'</small><small class="logic-zh">'+zh+'</small>';
-      branches.append(c);
+    const branches=document.createElement('div'); branches.className='scene-list';
+    d.sc.forEach(([title,fr,zh],sceneIndex)=>{
+      const card=document.createElement('button'); card.className='scene-chain';
+      card.innerHTML='<strong>'+title+'</strong><span class="logic-fr compact" lang="fr">'+fr+'</span><span class="logic-zh">'+zh+'</span><em>点击进入这个场景的词组与原论段 ›</em>';
+      card.onclick=()=>renderScene(stage,id,sceneIndex);
+      branches.append(card);
     });
     stage.append(branches);
 
+    const srcHint=document.createElement('p'); srcHint.className='note argument-source-hint';
+    srcHint.textContent='先选一个场景分支，再看该场景可复用词组和对应原论段。';
+    stage.append(srcHint);
+  }
+
+  function renderScene(stage,id,sceneIndex){
+    const d=M[id]; if(!d||!d.sc[sceneIndex])return;
+    const [title,fr,zh]=d.sc[sceneIndex];
+    stage.replaceChildren();
+
+    const back=document.createElement('button'); back.className='back-to-map';
+    back.textContent='← 返回 #'+id+' 核心逻辑链';
+    back.onclick=()=>renderDetail(stage,id);
+    stage.append(back);
+
+    const head=document.createElement('div'); head.className='argument-head';
+    head.innerHTML='<div><p class="eyebrow">旅行与移民 · #'+id+' · 场景分支</p><h2>'+title+'</h2></div>';
+    stage.append(head);
+
+    const chain=document.createElement('section'); chain.className='argument-core';
+    chain.innerHTML='<p class="argument-label">场景法语逻辑链</p><div class="logic-fr" lang="fr">'+fr+'</div><div class="logic-zh">'+zh+'</div>';
+    stage.append(chain);
+
     const wordTitle=document.createElement('h3'); wordTitle.textContent='主题词汇 / 词组'; stage.append(wordTitle);
     const words=document.createElement('div'); words.className='argument-words';
-    d.w.forEach(([fr,zh])=>words.append(phraseChip(fr,zh))); stage.append(words);
+    d.w.forEach(([wordFr,wordZh])=>words.append(phraseChip(wordFr,wordZh)));
+    stage.append(words);
 
     const srcTitle=document.createElement('h3'); srcTitle.textContent='对应原论段'; stage.append(srcTitle);
     const src=document.createElement('div'); src.className='source-jumps';
-    d.ids.forEach(x=>src.append(sourceButton(x,id))); stage.append(src);
+    d.ids.forEach(x=>{
+      const b=document.createElement('button'); b.className='source-jump'; b.textContent=x+' · 去学习原论段';
+      b.onclick=()=>{
+        sessionStorage.setItem('tcf-eo-t3-return-argument-map','1');
+        sessionStorage.setItem('tcf-eo-t3-argument-return-state',JSON.stringify({mode:'scene',motherId:id,sceneIndex}));
+        window.CORPUS_OPEN_PARAGRAPH?.(x);
+      };
+      src.append(b);
+    });
+    stage.append(src);
   }
 
   function render(){
@@ -112,6 +146,10 @@
     if(saved){
       try{
         const r=JSON.parse(saved); sessionStorage.removeItem('tcf-eo-t3-argument-return-state');
+        if(r.mode==='scene'&&M[r.motherId]&&Number.isInteger(r.sceneIndex)&&M[r.motherId].sc[r.sceneIndex]){
+          toolbar.querySelectorAll('button').forEach(x=>x.classList.remove('active'));
+          renderScene(stage,r.motherId,r.sceneIndex); return;
+        }
         if(r.mode==='detail'&&M[r.motherId]){
           toolbar.querySelectorAll('button').forEach(x=>x.classList.remove('active'));
           renderDetail(stage,r.motherId); return;
