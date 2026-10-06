@@ -1,0 +1,190 @@
+[
+  {
+    "id": 73,
+    "major": "学习与语言",
+    "minor": "海外留学经历与评价",
+    "title": "向 Julie 分享一年留学经历",
+    "prompt": "\"Chers internautes, J'ai 19 ans, je vais bientôt partir à l'étranger pour continuer mes études. J'aimerais bien lire les témoignages et avis des étudiants qui ont déjà fait des études loin de chez eux. Merci de me répondre. Julie\" Vous avez fait des études à l'étranger pendant un an. Vous écrivez une réponse sur le forum. Vous racontez votre séjour à l'étranger, vous dites si vous avez aimé ou non cette expérience et vous dites pourquoi.",
+    "promptZh": "Réponse à Julie sur un forum",
+    "answer": "Bonjour Julie,\n\nAyant passé une année d’études à New York, j’ai apprécié cette expérience. Au début, le rythme des cours, les différences culturelles et la solitude m’ont déstabilisé. Je craignais surtout de prendre la parole, tant les échanges me semblaient rapides.\n\nPour surmonter ces difficultés, j’ai rejoint un groupe d’étudiants internationaux et organisé des révisions avec mes camarades. J’ai également demandé aux enseignants de préciser leurs attentes, ce qui m’a permis de mieux préparer les travaux. Progressivement, j’ai trouvé mes repères et gagné en confiance.\n\nCe séjour m’a offert bien davantage qu’un progrès linguistique : j’ai découvert de nouvelles méthodes d’apprentissage et appris à gérer seul mon quotidien. Certes, il faut prévoir un budget et accepter quelques moments de découragement. Toutefois, avec une préparation sérieuse et la volonté d’aller vers les autres, cette expérience peut devenir une formidable occasion de grandir. Ne laisse donc pas la peur décider à ta place !",
+    "paragraphs": [
+      "Bonjour Julie,",
+      "Ayant passé une année d’études à New York, j’ai apprécié cette expérience. Au début, le rythme des cours, les différences culturelles et la solitude m’ont déstabilisé. Je craignais surtout de prendre la parole, tant les échanges me semblaient rapides.",
+      "Pour surmonter ces difficultés, j’ai rejoint un groupe d’étudiants internationaux et organisé des révisions avec mes camarades. J’ai également demandé aux enseignants de préciser leurs attentes, ce qui m’a permis de mieux préparer les travaux. Progressivement, j’ai trouvé mes repères et gagné en confiance.",
+      "Ce séjour m’a offert bien davantage qu’un progrès linguistique : j’ai découvert de nouvelles méthodes d’apprentissage et appris à gérer seul mon quotidien. Certes, il faut prévoir un budget et accepter quelques moments de découragement. Toutefois, avec une préparation sérieuse et la volonté d’aller vers les autres, cette expérience peut devenir une formidable occasion de grandir. Ne laisse donc pas la peur décider à ta place !"
+    ],
+    "translation": "朱莉，你好：\n\n我曾在纽约留学一年，我很喜欢这段经历。起初，课程节奏、文化差异和孤独感让我不知所措。我尤其害怕发言，因为交流在我看来太快了。\n\n为了克服这些困难，我加入了国际学生小组，并和同学组织复习。我也请老师明确他们的要求，这让我能更好地准备作业。渐渐地，我熟悉了环境，增强了信心。\n\n这段生活给我的远不止语言上的进步：我发现了新的学习方法，也学会了独自管理日常生活。当然，必须准备预算，并接受偶尔的灰心时刻。不过，只要认真地准备，并愿意主动接近他人，这段经历就能成为非常棒的成长机会。所以，别让恐惧替你做决定！",
+    "paragraphZh": [
+      "朱莉，你好：",
+      "我曾在纽约留学一年，我很喜欢这段经历。起初，课程节奏、文化差异和孤独感让我不知所措。我尤其害怕发言，因为交流在我看来太快了。",
+      "为了克服这些困难，我加入了国际学生小组，并和同学组织复习。我也请老师明确他们的要求，这让我能更好地准备作业。渐渐地，我熟悉了环境，增强了信心。",
+      "这段生活给我的远不止语言上的进步：我发现了新的学习方法，也学会了独自管理日常生活。当然，必须准备预算，并接受偶尔的灰心时刻。不过，只要认真地准备，并愿意主动接近他人，这段经历就能成为非常棒的成长机会。所以，别让恐惧替你做决定！"
+    ],
+    "isMigration": true,
+    "migrationLabel": "真题迁移01",
+    "sources": [
+      1
+    ],
+    "task": "明确回应 Julie 的论坛求助，分享一年留学经历及评价。",
+    "reuse": "留学经历、困难、解决办法、收获和结尾建议。",
+    "memoryBurden": "低",
+    "memoryExplanation": "新增称呼 Julie；将担忧回应改成明确的个人评价，沿用 apprécier。",
+    "wordCount": 150,
+    "months": [
+      "2026.08"
+    ]
+  },
+  {
+    "id": 74,
+    "major": "文化艺术活动",
+    "minor": "艺术展览与舞台演出",
+    "title": "与朋友观看演出并分享喜爱原因",
+    "prompt": "Vous êtes allés voir un spectacle (film, pièce de théâtre, concert, etc.) avec des amis. Vous l’avez aimé. Sur votre blog, vous racontez votre soirée et vous expliquez pourquoi vous avez aimé le spectacle.",
+    "promptZh": "Blog après un spectacle avec des amis",
+    "answer": "Une soirée théâtrale inoubliable\n\nSamedi, j’ai assisté avec des amis à une représentation de la troupe installée dans notre ville. Le spectacle se tenait dans un petit théâtre dont la proximité avec la scène favorisait une complicité avec le public.\n\nDès les premières minutes, j’ai été captivé par la mise en scène et le talent des comédiens. Avec quelques accessoires seulement, ils transformaient le décor et faisaient surgir des univers différents. La pièce racontait les retrouvailles d’une famille, mêlant humour et tensions autour de souvenirs contradictoires.\n\nCe qui m’a particulièrement touché, c’est la justesse des dialogues : chaque personnage avait ses raisons, sans que l’histoire impose une réponse simpliste. Après la représentation, les artistes ont échangé avec les spectateurs sur leur travail.\n\nMalgré une attente longue à l’entrée, cette expérience en valait la peine. Elle a renforcé mon intérêt pour le spectacle vivant. Je retournerai découvrir les créations de cette troupe.",
+    "paragraphs": [
+      "Une soirée théâtrale inoubliable",
+      "Samedi, j’ai assisté avec des amis à une représentation de la troupe installée dans notre ville. Le spectacle se tenait dans un petit théâtre dont la proximité avec la scène favorisait une complicité avec le public.",
+      "Dès les premières minutes, j’ai été captivé par la mise en scène et le talent des comédiens. Avec quelques accessoires seulement, ils transformaient le décor et faisaient surgir des univers différents. La pièce racontait les retrouvailles d’une famille, mêlant humour et tensions autour de souvenirs contradictoires.",
+      "Ce qui m’a particulièrement touché, c’est la justesse des dialogues : chaque personnage avait ses raisons, sans que l’histoire impose une réponse simpliste. Après la représentation, les artistes ont échangé avec les spectateurs sur leur travail.",
+      "Malgré une attente longue à l’entrée, cette expérience en valait la peine. Elle a renforcé mon intérêt pour le spectacle vivant. Je retournerai découvrir les créations de cette troupe."
+    ],
+    "translation": "难忘的戏剧之夜\n\n周六，我和朋友一起观看了一个落户我们城市的剧团的演出。演出在小剧场举行，观众与舞台的近距离促进了彼此的亲近与默契。\n\n从最初几分钟起，我就被舞台呈现和演员的才能吸引。他们仅用几件道具便变换布景，创造出不同的世界。戏剧讲述一个家庭的重聚，在相互矛盾的回忆中交织着幽默和紧张。\n\n尤其打动我的是对白的恰到好处：每个角色都有自己的理由，故事没有强加过于简单的答案。演出后，艺术家与观众交流了他们的工作。\n\n尽管入口处等候很久，这次体验依然值得。它增强了我对现场表演的兴趣。我会再去欣赏这个剧团的作品。",
+    "paragraphZh": [
+      "难忘的戏剧之夜",
+      "周六，我和朋友一起观看了一个落户我们城市的剧团的演出。演出在小剧场举行，观众与舞台的近距离促进了彼此的亲近与默契。",
+      "从最初几分钟起，我就被舞台呈现和演员的才能吸引。他们仅用几件道具便变换布景，创造出不同的世界。戏剧讲述一个家庭的重聚，在相互矛盾的回忆中交织着幽默和紧张。",
+      "尤其打动我的是对白的恰到好处：每个角色都有自己的理由，故事没有强加过于简单的答案。演出后，艺术家与观众交流了他们的工作。",
+      "尽管入口处等候很久，这次体验依然值得。它增强了我对现场表演的兴趣。我会再去欣赏这个剧团的作品。"
+    ],
+    "isMigration": true,
+    "migrationLabel": "真题迁移02",
+    "sources": [
+      9
+    ],
+    "task": "博客讲述与朋友观看演出的夜晚，说明喜欢原因。",
+    "reuse": "剧团、舞台、演员、剧情、对话与观后评价。",
+    "memoryBurden": "低",
+    "memoryExplanation": "增加 avec des amis；其余复用原文，删除少量程度修饰。",
+    "wordCount": 150,
+    "months": [
+      "2026.07"
+    ]
+  },
+  {
+    "id": 75,
+    "major": "聚会·节庆·社区",
+    "minor": "节日与庆祝经历",
+    "title": "分享一次难忘家庭庆祝活动",
+    "prompt": "Vous avez participé à un événement qui vous a marqué (anniversaire, mariage, etc...). Racontez votre souvenir.",
+    "promptZh": "Raconter un souvenir marquant",
+    "answer": "Ma plus belle fête\n\nJe souhaite raconter le Nouvel An chinois célébré récemment chez mes grands-parents. Cette fête reste précieuse, car la famille a pu se retrouver après une séparation prolongée.\n\nAuparavant, nous avions décoré la maison de lanternes rouges et préparé les ingrédients du dîner. Le jour venu, petits et grands ont confectionné des raviolis ensemble. Les gestes maladroits des enfants provoquaient des rires, tandis que les adultes leur expliquaient les traditions.\n\nLe soir, nous avons partagé un repas, échangé des vœux et assisté à un spectacle dans le quartier. Mon meilleur souvenir reste la conversation avec ma grand-mère, qui racontait les célébrations de son enfance.\n\nCe que je retiens de cette fête, c’est l’importance de transmettre notre histoire sans transformer les traditions en obligations. Les plats et les décorations ont leur place, mais ce sont les liens familiaux qui donnent à cette célébration son sens.",
+    "paragraphs": [
+      "Ma plus belle fête",
+      "Je souhaite raconter le Nouvel An chinois célébré récemment chez mes grands-parents. Cette fête reste précieuse, car la famille a pu se retrouver après une séparation prolongée.",
+      "Auparavant, nous avions décoré la maison de lanternes rouges et préparé les ingrédients du dîner. Le jour venu, petits et grands ont confectionné des raviolis ensemble. Les gestes maladroits des enfants provoquaient des rires, tandis que les adultes leur expliquaient les traditions.",
+      "Le soir, nous avons partagé un repas, échangé des vœux et assisté à un spectacle dans le quartier. Mon meilleur souvenir reste la conversation avec ma grand-mère, qui racontait les célébrations de son enfance.",
+      "Ce que je retiens de cette fête, c’est l’importance de transmettre notre histoire sans transformer les traditions en obligations. Les plats et les décorations ont leur place, mais ce sont les liens familiaux qui donnent à cette célébration son sens."
+    ],
+    "translation": "我最美好的节庆\n\n我想讲述最近在祖父母家庆祝的中国新年。这次聚会仍很珍贵，因为家人在长时间分离后得以重聚。\n\n事先，我们用红灯笼装饰了房子，并准备晚餐食材。当天，大小家庭成员一起包饺子。孩子们笨拙的动作引来笑声，而大人向他们解释传统。\n\n晚上，我们共享一顿饭、交换祝愿，并观看社区表演。最美好的回忆仍是与祖母的谈话，她讲了自己童年的庆祝活动。\n\n这次聚会让我记住的是传承我们的历史很重要，但不应把传统变成义务。菜肴和装饰都有其位置，不过赋予庆祝意义的是家庭纽带。",
+    "paragraphZh": [
+      "我最美好的节庆",
+      "我想讲述最近在祖父母家庆祝的中国新年。这次聚会仍很珍贵，因为家人在长时间分离后得以重聚。",
+      "事先，我们用红灯笼装饰了房子，并准备晚餐食材。当天，大小家庭成员一起包饺子。孩子们笨拙的动作引来笑声，而大人向他们解释传统。",
+      "晚上，我们共享一顿饭、交换祝愿，并观看社区表演。最美好的回忆仍是与祖母的谈话，她讲了自己童年的庆祝活动。",
+      "这次聚会让我记住的是传承我们的历史很重要，但不应把传统变成义务。菜肴和装饰都有其位置，不过赋予庆祝意义的是家庭纽带。"
+    ],
+    "isMigration": true,
+    "migrationLabel": "真题迁移03",
+    "sources": [
+      22
+    ],
+    "task": "讲述一次令人难忘的活动及回忆。",
+    "reuse": "春节、准备、聚餐、家庭回忆和评价。",
+    "memoryBurden": "低",
+    "memoryExplanation": "删除原稿的比赛背景；没有新增法语表达。",
+    "wordCount": 147,
+    "months": [
+      "2026.08"
+    ]
+  },
+  {
+    "id": 76,
+    "major": "旅行与探索",
+    "minor": "最美/最难忘旅行",
+    "title": "博客分享最喜爱的旅行回忆",
+    "prompt": "Écrivez un article de blog sur le souvenir de voyage que vous avez le plus aimé.",
+    "promptZh": "Blog sur le souvenir de voyage préféré",
+    "answer": "Mon voyage le plus mémorable\n\nJe souhaite raconter mon voyage aux États-Unis, effectué en mai. Pendant deux semaines, j’ai découvert San Francisco et plusieurs parcs naturels, avant de rejoindre le Grand Canyon.\n\nLe moment qui m’a marqué reste notre arrivée avant le lever du soleil. Peu à peu, les premiers rayons ont illuminé les falaises, offrant un spectacle à couper le souffle. Face à ce paysage grandiose, j’ai ressenti un calme profond. Après une randonnée, nous avons échangé avec d’autres voyageurs sur leurs découvertes.\n\nCe séjour a été spécial parce qu’il m’a permis de sortir de ma zone de confort. J’ai organisé les trajets, communiqué en langue étrangère et appris à gérer les imprévus.\n\nAu-delà des lieux visités, je retiens les rencontres et la confiance acquise. Je garde le souvenir de ce matin au Grand Canyon. Il rappelle combien la nature peut être impressionnante et inspirante.",
+    "paragraphs": [
+      "Mon voyage le plus mémorable",
+      "Je souhaite raconter mon voyage aux États-Unis, effectué en mai. Pendant deux semaines, j’ai découvert San Francisco et plusieurs parcs naturels, avant de rejoindre le Grand Canyon.",
+      "Le moment qui m’a marqué reste notre arrivée avant le lever du soleil. Peu à peu, les premiers rayons ont illuminé les falaises, offrant un spectacle à couper le souffle. Face à ce paysage grandiose, j’ai ressenti un calme profond. Après une randonnée, nous avons échangé avec d’autres voyageurs sur leurs découvertes.",
+      "Ce séjour a été spécial parce qu’il m’a permis de sortir de ma zone de confort. J’ai organisé les trajets, communiqué en langue étrangère et appris à gérer les imprévus.",
+      "Au-delà des lieux visités, je retiens les rencontres et la confiance acquise. Je garde le souvenir de ce matin au Grand Canyon. Il rappelle combien la nature peut être impressionnante et inspirante."
+    ],
+    "translation": "我最难忘的旅行\n\n我想讲述五月的美国旅行。两周内，我游览了旧金山和几个自然公园，然后前往大峡谷。\n\n让我印象深刻的时刻仍是我们在日出前到达。最初的阳光逐渐照亮峭壁，带来令人屏息的景象。面对壮丽风景，我感到深深的平静。徒步后，我们与其他旅行者交流各自的发现。\n\n这次旅程之所以特别，是因为它让我走出舒适区。我安排路线、用外语交流，并学会处理意外情况。\n\n除了参观的地方，我记住的还有相遇和获得的信心。我仍记得大峡谷的那个早晨，它提醒我大自然可以多么震撼、多么激发灵感。",
+    "paragraphZh": [
+      "我最难忘的旅行",
+      "我想讲述五月的美国旅行。两周内，我游览了旧金山和几个自然公园，然后前往大峡谷。",
+      "让我印象深刻的时刻仍是我们在日出前到达。最初的阳光逐渐照亮峭壁，带来令人屏息的景象。面对壮丽风景，我感到深深的平静。徒步后，我们与其他旅行者交流各自的发现。",
+      "这次旅程之所以特别，是因为它让我走出舒适区。我安排路线、用外语交流，并学会处理意外情况。",
+      "除了参观的地方，我记住的还有相遇和获得的信心。我仍记得大峡谷的那个早晨，它提醒我大自然可以多么震撼、多么激发灵感。"
+    ],
+    "isMigration": true,
+    "migrationLabel": "真题迁移04",
+    "sources": [
+      30
+    ],
+    "task": "博客讲述最喜爱的旅行回忆。",
+    "reuse": "美国旅行、Grand Canyon、日出、徒步、收获和评价。",
+    "memoryBurden": "低",
+    "memoryExplanation": "去掉 Air Tropiques 比赛背景；使用熟悉的 souhaiter raconter。",
+    "wordCount": 146,
+    "months": [
+      "2026.09",
+      "2026.10"
+    ]
+  },
+  {
+    "id": 77,
+    "major": "实用事务信息",
+    "minor": "活动筹办与场地安排",
+    "title": "向音乐学校推荐百人庆典场地",
+    "prompt": "La direction d’une école de musique cherche un endroit où organiser une fête pour 100 personnes. Écrivez un courriel pour les informer que vous avez trouvé un local (lieu, tarifs, service, etc…).",
+    "promptZh": "Courriel à la direction d’une école de musique",
+    "answer": "Monsieur le Directeur,\n\nJe vous confirme que j’ai trouvé un lieu adapté à la fête de votre école de musique. J’ai visité la salle du restaurant italien Le Coin, située au premier étage, au centre-ville.\n\nElle peut accueillir cent invités assis, conformément à nos besoins. Son aménagement permettrait de réunir les participants autour d’un repas en conservant un espace pour les animations. Le restaurant propose des menus variés à vingt euros par personne, soit deux mille euros pour les convives.\n\nJ’ai particulièrement apprécié la cuisine authentique et les spécialités du jour. Le responsable nous a également proposé un karaoké gratuit, ce qui créerait une ambiance conviviale. Le service et l’installation des tables seraient assurés par son équipe.\n\nCe lieu me paraît intéressant par sa capacité, sa localisation et son tarif. Si vous approuvez cette proposition, je pourrais demander une confirmation écrite des prestations et organiser la réservation.\n\nCordialement,\n\nMarc",
+    "paragraphs": [
+      "Monsieur le Directeur,",
+      "Je vous confirme que j’ai trouvé un lieu adapté à la fête de votre école de musique. J’ai visité la salle du restaurant italien Le Coin, située au premier étage, au centre-ville.",
+      "Elle peut accueillir cent invités assis, conformément à nos besoins. Son aménagement permettrait de réunir les participants autour d’un repas en conservant un espace pour les animations. Le restaurant propose des menus variés à vingt euros par personne, soit deux mille euros pour les convives.",
+      "J’ai particulièrement apprécié la cuisine authentique et les spécialités du jour. Le responsable nous a également proposé un karaoké gratuit, ce qui créerait une ambiance conviviale. Le service et l’installation des tables seraient assurés par son équipe.",
+      "Ce lieu me paraît intéressant par sa capacité, sa localisation et son tarif. Si vous approuvez cette proposition, je pourrais demander une confirmation écrite des prestations et organiser la réservation.",
+      "Cordialement,",
+      "Marc"
+    ],
+    "translation": "主任先生：\n\n我向您确认，已找到适合贵音乐学校庆典的场所。我参观了市中心 Le Coin 意大利餐厅位于第一楼层的活动厅。\n\n活动厅可容纳100位宾客就座，符合我们的需求。布局可以让参加者围桌用餐，同时保留活动空间。餐厅提供多样套餐，每人20欧元，即宾客餐费共2000欧元。\n\n我尤其喜欢正宗菜肴和当日特色菜。负责人还为我们提供免费卡拉OK，这会营造友好氛围。服务和桌子布置将由其团队承担。\n\n从容量、位置和价格看，这里很有吸引力。如果您批准，我可以要求书面确认服务内容，并安排预订。\n\n此致问候，\n\n马克",
+    "paragraphZh": [
+      "主任先生：",
+      "我向您确认，已找到适合贵音乐学校庆典的场所。我参观了市中心 Le Coin 意大利餐厅位于第一楼层的活动厅。",
+      "活动厅可容纳100位宾客就座，符合我们的需求。布局可以让参加者围桌用餐，同时保留活动空间。餐厅提供多样套餐，每人20欧元，即宾客餐费共2000欧元。",
+      "我尤其喜欢正宗菜肴和当日特色菜。负责人还为我们提供免费卡拉OK，这会营造友好氛围。服务和桌子布置将由其团队承担。",
+      "从容量、位置和价格看，这里很有吸引力。如果您批准，我可以要求书面确认服务内容，并安排预订。",
+      "此致问候，",
+      "马克"
+    ],
+    "isMigration": true,
+    "migrationLabel": "真题迁移05",
+    "sources": [
+      51
+    ],
+    "task": "给音乐学校负责人发邮件，说明找到百人活动场地及地点、价格、服务。",
+    "reuse": "餐厅、位置、百人容量、菜单、价格、服务与预订。",
+    "memoryBurden": "低",
+    "memoryExplanation": "必要新增 école de musique；删除年终背景，其余场地信息沿用。",
+    "wordCount": 149,
+    "months": [
+      "2026.08"
+    ]
+  }
+]

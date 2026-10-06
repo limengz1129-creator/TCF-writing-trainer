@@ -1,0 +1,690 @@
+{
+  "status": "validated-awaiting-publish",
+  "expectedMonthlyCounts": {
+    "2026-07": 11,
+    "2026-08": 17,
+    "2026-09": 13,
+    "2026-10": 4
+  },
+  "verifiedFullPrompts": [
+    {
+      "month": "2026-07",
+      "ordinal": 1,
+      "prompt": "«Tout quitter pour changer de vie? Il y a deux ans, nous avons décidé de changer de vie. Paul a quitté son poste de banquier à Paris et nous avons ouvert une boulangerie à Calgary! Que pensez-vous de cette décision? Avez-vous déjà vécu un grand changement, professionnel ou personnel? Paul et Naïma » vous avez lu ce message sur un forum internet. Vous répondez à Paul et Naïma. Dans votre message, vous donnez votre opinion sur le choix de Paul et de Naïma et vous racontez comment vous feriez si vous étiez à leur place.",
+      "task": "Répondre sur un forum à Paul et Naïma",
+      "requirements": [
+        "opinion sur leur choix",
+        "expliquer ce que l’on ferait à leur place"
+      ],
+      "wordRange": "120-150",
+      "articleId": 33,
+      "matchType": "direct",
+      "recordId": "2026-07-01"
+    },
+    {
+      "month": "2026-07",
+      "ordinal": 2,
+      "prompt": "Vous vous apprêtez à passer un entretien dans une entreprise canadienne. Écrivez un message à un ami canadien pour lui demander de vous décrire les conditions de travail (horaire, durée, etc.).",
+      "task": "Message à un ami canadien avant un entretien",
+      "requirements": [
+        "demander les conditions de travail",
+        "horaire",
+        "durée"
+      ],
+      "wordRange": "120-150",
+      "articleId": 54,
+      "matchType": "direct",
+      "recordId": "2026-07-02"
+    },
+    {
+      "month": "2026-07",
+      "ordinal": 3,
+      "prompt": "Sur le forum d’Air Tropiques, racontez votre meilleur voyage afin de gagner 2 tickets de voyage pour le plus bel article. Il faut décrire ce voyage et pourquoi vous l’avez aimé.",
+      "task": "Article sur le forum d’Air Tropiques",
+      "requirements": [
+        "décrire le meilleur voyage",
+        "expliquer pourquoi il a plu"
+      ],
+      "wordRange": "120-150",
+      "articleId": 30,
+      "matchType": "direct",
+      "recordId": "2026-07-03"
+    },
+    {
+      "month": "2026-07",
+      "ordinal": 4,
+      "prompt": "Vous avez décidé de ne plus utiliser les réseaux sociaux ( twitter Instagram Facebook et autres). Écrivez un message à vos amis en citant les raisons derrière cette décision.",
+      "task": "Message aux amis",
+      "requirements": [
+        "annoncer l’arrêt des réseaux sociaux",
+        "expliquer les raisons"
+      ],
+      "wordRange": "120-150",
+      "articleId": 35,
+      "matchType": "direct",
+      "recordId": "2026-07-04"
+    },
+    {
+      "month": "2026-07",
+      "ordinal": 5,
+      "prompt": "écrivez un message à vos amis pour leur raconter à propos d’une fête à laquelle vous avez assisté en famille.",
+      "task": "Message aux amis",
+      "requirements": [
+        "raconter une fête à laquelle on a assisté en famille"
+      ],
+      "wordRange": "120-150",
+      "articleId": 21,
+      "matchType": "direct",
+      "recordId": "2026-07-05"
+    },
+    {
+      "month": "2026-07",
+      "ordinal": 6,
+      "prompt": "vous avez assisté à un évènement appelé «La semaine du goût», écrire dans un blog pour raconter votre expérience (Date, lieu, activités)",
+      "task": "Blog sur La semaine du goût",
+      "requirements": [
+        "expérience",
+        "date",
+        "lieu",
+        "activités"
+      ],
+      "wordRange": "120-150",
+      "articleId": 47,
+      "matchType": "direct",
+      "recordId": "2026-07-06"
+    },
+    {
+      "month": "2026-07",
+      "ordinal": 7,
+      "prompt": "Vous faites une réclamation par rapport aux mauvaises prestations d’une agence de voyage suite à un voyage mal organisé. Exprimez votre mécontentement.",
+      "task": "Réclamation à une agence de voyage",
+      "requirements": [
+        "mauvaises prestations",
+        "mécontentement"
+      ],
+      "wordRange": "120-150",
+      "articleId": 72,
+      "matchType": "direct",
+      "recordId": "2026-07-07"
+    },
+    {
+      "month": "2026-07",
+      "ordinal": 8,
+      "prompt": "Vous UNE SOIRÉE POUR SAUVER LA PLANÈTE! Venez nombreux samedi à la soirée organisée par les étudiants de l’université Paul Valéry pour l’avenir de la planète. CONFÉRENCES DE SPÉCIALISTES DE L’ENVIRONNEMENT, DÉBATS ET CONCERTS. ENTRÉE LIBRE. Vous avez assisté à cette soirée. Vous écrivez un message à vos amis pour leur raconter la soirée. Vous leur expliquez pourquoi c’était interessant",
+      "task": "Message aux amis après la soirée écologique",
+      "requirements": [
+        "soirée à l’université Paul Valéry",
+        "conférences, débats et concerts",
+        "raconter et expliquer l’intérêt"
+      ],
+      "wordRange": "120-150",
+      "articleId": 38,
+      "matchType": "direct",
+      "recordId": "2026-07-08"
+    },
+    {
+      "month": "2026-07",
+      "ordinal": 9,
+      "prompt": "Vous êtes allés voir un spectacle (film, pièce de théâtre, concert, etc.) avec des amis. Vous l’avez aimé. Sur votre blog, vous racontez votre soirée et vous expliquez pourquoi vous avez aimé le spectacle.",
+      "task": "Blog après un spectacle avec des amis",
+      "requirements": [
+        "raconter la soirée",
+        "expliquer pourquoi le spectacle a plu"
+      ],
+      "wordRange": "120-150",
+      "articleId": 74,
+      "matchType": "migration",
+      "recordId": "2026-07-09"
+    },
+    {
+      "month": "2026-07",
+      "ordinal": 10,
+      "prompt": "Exprimez votre admiration pour une personnalité, célèbre ou non, en vous appuyant sur ses actions spécifiques. Rédigez un article de blog en détaillant les actions remarquables de cette personne et expliquez pourquoi vous l’aimez.",
+      "task": "Article de blog sur une personnalité admirée",
+      "requirements": [
+        "actions spécifiques remarquables",
+        "raisons de l’admiration"
+      ],
+      "wordRange": "120-150",
+      "articleId": 50,
+      "matchType": "direct",
+      "recordId": "2026-07-10"
+    },
+    {
+      "month": "2026-07",
+      "ordinal": 11,
+      "prompt": "Vous avez assisté à un événement sportif. Racontez votre expérience sur le journal de votre site web (environnement, préparatifs, supporters, etc).",
+      "task": "Journal du site web après un événement sportif",
+      "requirements": [
+        "expérience",
+        "environnement",
+        "préparatifs",
+        "supporters"
+      ],
+      "wordRange": "120-150",
+      "articleId": 68,
+      "matchType": "direct",
+      "recordId": "2026-07-11"
+    },
+    {
+      "month": "2026-08",
+      "ordinal": 1,
+      "prompt": "Vous avez participé à la fête des voisins de votre quartier. Vous écrivez un article sur votre blog. Vous racontez l’événement et vous expliquez pourquoi vous avez aimé y participer.",
+      "task": "Article de blog sur la fête des voisins",
+      "requirements": [
+        "raconter l’événement",
+        "raisons de l’appréciation"
+      ],
+      "wordRange": "120-150",
+      "articleId": 20,
+      "matchType": "direct",
+      "recordId": "2026-08-01"
+    },
+    {
+      "month": "2026-08",
+      "ordinal": 2,
+      "prompt": "Exprimez votre admiration pour une personnalité, célèbre ou non, en vous appuyant sur ses actions spécifiques. Rédigez un article de blog en détaillant les actions remarquables de cette personne et expliquez pourquoi vous l’aimez.",
+      "task": "Article de blog sur une personnalité admirée",
+      "requirements": [
+        "actions spécifiques remarquables",
+        "raisons de l’admiration"
+      ],
+      "wordRange": "120-150",
+      "articleId": 50,
+      "matchType": "direct",
+      "recordId": "2026-08-02"
+    },
+    {
+      "month": "2026-08",
+      "ordinal": 3,
+      "prompt": "\"Chers internautes, J'ai 19 ans, je vais bientôt partir à l'étranger pour continuer mes études. J'aimerais bien lire les témoignages et avis des étudiants qui ont déjà fait des études loin de chez eux. Merci de me répondre. Julie\" Vous avez fait des études à l'étranger pendant un an. Vous écrivez une réponse sur le forum. Vous racontez votre séjour à l'étranger, vous dites si vous avez aimé ou non cette expérience et vous dites pourquoi.",
+      "task": "Réponse à Julie sur un forum",
+      "requirements": [
+        "séjour d’études d’un an",
+        "appréciation et raisons"
+      ],
+      "wordRange": "120-150",
+      "articleId": 73,
+      "matchType": "migration",
+      "recordId": "2026-08-03"
+    },
+    {
+      "month": "2026-08",
+      "ordinal": 4,
+      "prompt": "Rédigez un article de blog relatant votre expérience lors de l’événement « La Semaine du Goût », auquel vous avez participé.",
+      "task": "Blog sur La Semaine du Goût",
+      "requirements": [
+        "raconter l’expérience"
+      ],
+      "wordRange": "120-150",
+      "articleId": 47,
+      "matchType": "direct",
+      "recordId": "2026-08-04"
+    },
+    {
+      "month": "2026-08",
+      "ordinal": 5,
+      "prompt": "Sur votre blog, parlez de votre dernière visite à un restaurant (l'endroit, la nourriture, le service, etc.). Racontez ce que vous avez vécu et dites ce qui vous a vraiment plu.",
+      "task": "Blog sur la dernière visite au restaurant",
+      "requirements": [
+        "endroit",
+        "nourriture",
+        "service",
+        "expérience et appréciation"
+      ],
+      "wordRange": "120-150",
+      "articleId": 48,
+      "matchType": "direct",
+      "recordId": "2026-08-05"
+    },
+    {
+      "month": "2026-08",
+      "ordinal": 6,
+      "prompt": "Vous avez participé à un événement qui vous a marqué (anniversaire, mariage, etc...). Racontez votre souvenir.",
+      "task": "Raconter un souvenir marquant",
+      "requirements": [
+        "événement marquant",
+        "souvenir"
+      ],
+      "wordRange": "120-150",
+      "articleId": 75,
+      "matchType": "migration",
+      "recordId": "2026-08-06"
+    },
+    {
+      "month": "2026-08",
+      "ordinal": 7,
+      "prompt": "Vous avez lu un débat sur un forum au sujet des formations en ligne. Écrivez un message pour raconter votre propre expérience (cours de langue, formation professionnelle, etc.). Dites ce que vous avez apprécié et ce que vous avez moins aimé.",
+      "task": "Message sur un forum de formations en ligne",
+      "requirements": [
+        "expérience personnelle",
+        "points appréciés",
+        "points moins appréciés"
+      ],
+      "wordRange": "120-150",
+      "articleId": 7,
+      "matchType": "direct",
+      "recordId": "2026-08-07"
+    },
+    {
+      "month": "2026-08",
+      "ordinal": 8,
+      "prompt": "Vous avez participé à un concours pour gagner un séjour de deux semaines dans votre ville préférée. Le thème de ce concours est “Mon artiste préféré”. Écrivez un article de blog pour parler de votre artiste préféré.",
+      "task": "Article de blog pour le concours Mon artiste préféré",
+      "requirements": [
+        "présenter l’artiste préféré"
+      ],
+      "wordRange": "120-150",
+      "articleId": 49,
+      "matchType": "direct",
+      "recordId": "2026-08-08"
+    },
+    {
+      "month": "2026-08",
+      "ordinal": 9,
+      "prompt": "Vous avez assisté à un festival (de musique, de cinéma, de gastronomie…) mais vous avez été déçu. Rédigez un article sur votre blog dans lequel vous expliquez ce qui ne vous a pas plu.",
+      "task": "Blog sur un festival décevant",
+      "requirements": [
+        "festival",
+        "expliquer la déception"
+      ],
+      "wordRange": "120-150",
+      "articleId": 17,
+      "matchType": "direct",
+      "recordId": "2026-08-09"
+    },
+    {
+      "month": "2026-08",
+      "ordinal": 10,
+      "prompt": "Écrivez un message à vos amis pour leur partager votre expérience de travail temporaire effectué durant les vacances d’été.",
+      "task": "Message aux amis sur un travail temporaire estival",
+      "requirements": [
+        "travail temporaire",
+        "vacances d’été",
+        "expérience"
+      ],
+      "wordRange": "120-150",
+      "articleId": 60,
+      "matchType": "direct",
+      "recordId": "2026-08-10"
+    },
+    {
+      "month": "2026-08",
+      "ordinal": 11,
+      "prompt": "Vous avez été invité(e) à une fête en famille. Vous envoyez un message à vos amis pour raconter cette fête. Vous expliquez ce que vous avez le plus aimé.",
+      "task": "Message aux amis sur une fête en famille",
+      "requirements": [
+        "raconter la fête",
+        "ce qui a le plus plu"
+      ],
+      "wordRange": "120-150",
+      "articleId": 21,
+      "matchType": "direct",
+      "recordId": "2026-08-11"
+    },
+    {
+      "month": "2026-08",
+      "ordinal": 12,
+      "prompt": "Vous venez d’assister au concert de votre artiste favori. Vous écrivez un article sur votre blog personnel, pour partager cette expérience et inciter vos amis et les autres à assister à son prochain concert.",
+      "task": "Blog après le concert de l’artiste favori",
+      "requirements": [
+        "partager l’expérience",
+        "inciter à assister au prochain concert"
+      ],
+      "wordRange": "120-150",
+      "articleId": 13,
+      "matchType": "direct",
+      "recordId": "2026-08-12"
+    },
+    {
+      "month": "2026-08",
+      "ordinal": 13,
+      "prompt": "Vous avez assisté à une fête de voisins du quartier, écrivez un blog pour montrer pourquoi vous avez aimé cette fête.",
+      "task": "Blog sur la fête des voisins",
+      "requirements": [
+        "expliquer pourquoi la fête a plu"
+      ],
+      "wordRange": "120-150",
+      "articleId": 20,
+      "matchType": "direct",
+      "recordId": "2026-08-13"
+    },
+    {
+      "month": "2026-08",
+      "ordinal": 14,
+      "prompt": "Dans votre blog, racontez votre expérience de l’apprentissage d’une langue étrangère (vous écrivez sur un forum internet en racontant votre expérience en apprenant une langue étrangère).",
+      "task": "Blog/forum sur l’apprentissage d’une langue",
+      "requirements": [
+        "raconter l’expérience d’apprentissage"
+      ],
+      "wordRange": "120-150",
+      "articleId": 4,
+      "matchType": "direct",
+      "recordId": "2026-08-14"
+    },
+    {
+      "month": "2026-08",
+      "ordinal": 15,
+      "prompt": "Votre direction est à la recherche d’une salle pour la fête de fin d’année, capable d’accueillir 100 invités. Rédigez un message à la direction pour lui dire que vous avez trouvé un local idéal (lieu, tarifs, services, etc.).",
+      "task": "Message à la direction sur un local",
+      "requirements": [
+        "fête de fin d’année",
+        "100 invités",
+        "lieu",
+        "tarifs",
+        "services"
+      ],
+      "wordRange": "120-150",
+      "articleId": 51,
+      "matchType": "direct",
+      "recordId": "2026-08-15"
+    },
+    {
+      "month": "2026-08",
+      "ordinal": 16,
+      "prompt": "La direction d’une école de musique cherche un endroit où organiser une fête pour 100 personnes. Écrivez un courriel pour les informer que vous avez trouvé un local (lieu, tarifs, service, etc…).",
+      "task": "Courriel à la direction d’une école de musique",
+      "requirements": [
+        "fête pour 100 personnes",
+        "lieu",
+        "tarifs",
+        "service"
+      ],
+      "wordRange": "120-150",
+      "articleId": 77,
+      "matchType": "migration",
+      "recordId": "2026-08-16"
+    },
+    {
+      "month": "2026-08",
+      "ordinal": 17,
+      "prompt": "Une troupe de théâtre s'est installée dans votre ville, et vous avez assisté à l'un de ses spectacles. Rédigez un article de blog pour décrire cette expérience.",
+      "task": "Blog après le spectacle d’une troupe installée en ville",
+      "requirements": [
+        "troupe de théâtre",
+        "spectacle",
+        "expérience"
+      ],
+      "wordRange": "120-150",
+      "articleId": 9,
+      "matchType": "direct",
+      "recordId": "2026-08-17"
+    },
+    {
+      "month": "2026-09",
+      "ordinal": 1,
+      "prompt": "Vous avez décidé de laisser tout derrière vous pour voyager pendant un an. Rédigez un article de blog pour partager cette aventure unique.",
+      "task": "Blog sur une aventure de voyage d’un an",
+      "requirements": [
+        "tout laisser derrière soi",
+        "voyager un an",
+        "partager l’aventure"
+      ],
+      "wordRange": "120-150",
+      "articleId": 34,
+      "matchType": "direct",
+      "recordId": "2026-09-01"
+    },
+    {
+      "month": "2026-09",
+      "ordinal": 2,
+      "prompt": "Vous avez participé à un concours pour gagner un séjour de deux semaines dans votre ville préférée. Le thème de ce concours est “Mon artiste préféré”. Écrivez un article de blog pour parler de votre artiste préféré.",
+      "task": "Article de blog pour le concours Mon artiste préféré",
+      "requirements": [
+        "présenter l’artiste préféré"
+      ],
+      "wordRange": "120-150",
+      "articleId": 49,
+      "matchType": "direct",
+      "recordId": "2026-09-02"
+    },
+    {
+      "month": "2026-09",
+      "ordinal": 3,
+      "prompt": "Vous avez participé à une compétition sportive, racontez votre expérience sur un site internet et donnez votre avis (lieu, date, organisation).",
+      "task": "Site internet sur une compétition sportive",
+      "requirements": [
+        "participation",
+        "expérience",
+        "avis",
+        "lieu",
+        "date",
+        "organisation"
+      ],
+      "wordRange": "120-150",
+      "articleId": 67,
+      "matchType": "direct",
+      "recordId": "2026-09-03"
+    },
+    {
+      "month": "2026-09",
+      "ordinal": 4,
+      "prompt": "« Que pensez-vous de l’installation d’une télévision dans la chambre ? » Partagez votre avis dans un article de blog.",
+      "task": "Blog d’opinion sur la télévision dans la chambre",
+      "requirements": [
+        "avis argumenté"
+      ],
+      "wordRange": "120-150",
+      "articleId": 36,
+      "matchType": "direct",
+      "recordId": "2026-09-04"
+    },
+    {
+      "month": "2026-09",
+      "ordinal": 5,
+      "prompt": "Racontez dans un blog votre expérience de l’apprentissage d’une langue étrangère (vous écrivez sur un forum internet en racontant votre expérience en apprenant une langue étrangère).",
+      "task": "Blog/forum sur l’apprentissage d’une langue",
+      "requirements": [
+        "expérience personnelle"
+      ],
+      "wordRange": "120-150",
+      "articleId": 4,
+      "matchType": "direct",
+      "recordId": "2026-09-05"
+    },
+    {
+      "month": "2026-09",
+      "ordinal": 6,
+      "prompt": "Votre direction est à la recherche d’une salle pour la fête de fin d’année, capable d’accueillir 100 invités. Rédigez un message à la direction pour lui dire que vous avez trouvé un local idéal (lieu, tarifs, services, etc.).",
+      "task": "Message à la direction sur un local",
+      "requirements": [
+        "fête de fin d’année",
+        "100 invités",
+        "lieu",
+        "tarifs",
+        "services"
+      ],
+      "wordRange": "120-150",
+      "articleId": 51,
+      "matchType": "direct",
+      "recordId": "2026-09-06"
+    },
+    {
+      "month": "2026-09",
+      "ordinal": 7,
+      "prompt": "Vous avez participé à un événement nommé “La semaine du goût”. Écrivez un article de blog pour raconter cette expérience.",
+      "task": "Blog sur La semaine du goût",
+      "requirements": [
+        "raconter l’expérience"
+      ],
+      "wordRange": "120-150",
+      "articleId": 47,
+      "matchType": "direct",
+      "recordId": "2026-09-07"
+    },
+    {
+      "month": "2026-09",
+      "ordinal": 8,
+      "prompt": "Suite à un voyage récent effectué avec une agence de voyages, vous êtes insatisfait(e) des prestations reçues. Rédigez un courriel de réclamation en exprimant votre mécontentement. Décrivez les problèmes rencontrés et demandez une solution de la part de l’agence.",
+      "task": "Courriel de réclamation à l’agence",
+      "requirements": [
+        "mécontentement",
+        "problèmes",
+        "demander une solution"
+      ],
+      "wordRange": "120-150",
+      "articleId": 72,
+      "matchType": "direct",
+      "recordId": "2026-09-08"
+    },
+    {
+      "month": "2026-09",
+      "ordinal": 9,
+      "prompt": "Vous êtes parti(e) travailler à l’étranger. Vous envoyez un message à vos amis pour raconter cette nouvelle expérience professionnelle. Vous expliquez ce que vous avez le plus aimé.",
+      "task": "Message aux amis sur le travail à l’étranger",
+      "requirements": [
+        "nouvelle expérience professionnelle",
+        "ce qui a le plus plu"
+      ],
+      "wordRange": "120-150",
+      "articleId": 58,
+      "matchType": "direct",
+      "recordId": "2026-09-09"
+    },
+    {
+      "month": "2026-09",
+      "ordinal": 10,
+      "prompt": "Dans votre blog, racontez votre expérience de l’apprentissage d’une langue étrangère (vous écrivez sur un forum internet en racontant votre expérience en apprenant une langue étrangère).",
+      "task": "Blog/forum sur l’apprentissage d’une langue",
+      "requirements": [
+        "raconter l’expérience d’apprentissage"
+      ],
+      "wordRange": "120-150",
+      "articleId": 4,
+      "matchType": "direct",
+      "recordId": "2026-09-10"
+    },
+    {
+      "month": "2026-09",
+      "ordinal": 11,
+      "prompt": "Sur votre blog, parlez de votre dernière visite à un restaurant (l'endroit, la nourriture, le service, etc.). Racontez ce que vous avez vécu et dites ce qui vous a vraiment plu.",
+      "task": "Blog sur la dernière visite au restaurant",
+      "requirements": [
+        "endroit",
+        "nourriture",
+        "service",
+        "expérience et appréciation"
+      ],
+      "wordRange": "120-150",
+      "articleId": 48,
+      "matchType": "direct",
+      "recordId": "2026-09-11"
+    },
+    {
+      "month": "2026-09",
+      "ordinal": 12,
+      "prompt": "Vous venez de commencer les cours à l’Université de Montréal. Écrivez un message à votre ami pour lui raconter votre première semaine à l’université. Vous donnez votre opinion sur l'université et sur les cours.",
+      "task": "Message à un ami sur la première semaine à l’Université de Montréal",
+      "requirements": [
+        "première semaine",
+        "opinion sur l’université",
+        "opinion sur les cours"
+      ],
+      "wordRange": "120-150",
+      "articleId": 8,
+      "matchType": "direct",
+      "recordId": "2026-09-12"
+    },
+    {
+      "month": "2026-09",
+      "ordinal": 13,
+      "prompt": "Écrivez un article de blog sur le souvenir de voyage que vous avez le plus aimé.",
+      "task": "Blog sur le souvenir de voyage préféré",
+      "requirements": [
+        "souvenir de voyage préféré"
+      ],
+      "wordRange": "120-150",
+      "articleId": 76,
+      "matchType": "migration",
+      "recordId": "2026-09-13"
+    },
+    {
+      "month": "2026-10",
+      "ordinal": 1,
+      "prompt": "Répondez en commentaire à une publication sur Facebook au sujet des études à l’étranger en citant les avantages et les inconvénients de cette expérience.",
+      "task": "Commentaire Facebook sur les études à l’étranger",
+      "requirements": [
+        "avantages",
+        "inconvénients"
+      ],
+      "wordRange": "120-150",
+      "articleId": 3,
+      "matchType": "direct",
+      "recordId": "2026-10-01"
+    },
+    {
+      "month": "2026-10",
+      "ordinal": 2,
+      "prompt": "Écrivez un article de blog sur le souvenir de voyage que vous avez le plus aimé.",
+      "task": "Blog sur le souvenir de voyage préféré",
+      "requirements": [
+        "souvenir de voyage préféré"
+      ],
+      "wordRange": "120-150",
+      "articleId": 76,
+      "matchType": "migration",
+      "recordId": "2026-10-02"
+    },
+    {
+      "month": "2026-10",
+      "ordinal": 3,
+      "prompt": "Dans le cadre de votre travail, vous avez participé à une journée de formation professionnelle. Votre entreprise vous demande d'écrire un article pour partager cette expérience avec vos collègues. Vous présentez cette journée et vous expliquez ce que vous en avez pensé.",
+      "task": "Article destiné aux collègues après une formation professionnelle",
+      "requirements": [
+        "présenter la journée",
+        "partager l’expérience",
+        "avis"
+      ],
+      "wordRange": "120-150",
+      "articleId": 62,
+      "matchType": "direct",
+      "recordId": "2026-10-03"
+    },
+    {
+      "month": "2026-10",
+      "ordinal": 4,
+      "prompt": "Dans votre blog, racontez votre expérience de l’apprentissage d’une langue étrangère (vous écrivez sur un forum internet en racontant votre expérience en apprenant une langue étrangère).",
+      "task": "Blog/forum sur l’apprentissage d’une langue",
+      "requirements": [
+        "raconter l’expérience d’apprentissage"
+      ],
+      "wordRange": "120-150",
+      "articleId": 4,
+      "matchType": "direct",
+      "recordId": "2026-10-04"
+    }
+  ],
+  "deployed": false,
+  "verifiedMonths": [
+    "2026-07",
+    "2026-08",
+    "2026-09",
+    "2026-10"
+  ],
+  "summary": {
+    "monthlyCounts": {
+      "2026-07": 11,
+      "2026-08": 17,
+      "2026-09": 13,
+      "2026-10": 4
+    },
+    "monthlyRecords": 45,
+    "uniqueExactPrompts": 38,
+    "answerArticles": 32,
+    "directArticles": 27,
+    "migrationArticles": 5,
+    "missing": 0
+  },
+  "completedSourceVerification": true,
+  "validation": {
+    "original72Unchanged": true,
+    "legacyKeyUnchanged": "tcf-writing-tache2-ee-v1",
+    "monthlyCoverageVerified": true,
+    "runtimeChecksPassed": true,
+    "migrationsWordRange": [
+      146,
+      150
+    ],
+    "bilingualParagraphAlignment": true
+  }
+}
