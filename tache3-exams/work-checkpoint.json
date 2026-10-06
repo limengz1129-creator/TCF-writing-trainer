@@ -1,0 +1,800 @@
+{
+  "schemaVersion": 2,
+  "status": "implementation_verified; publish_pending",
+  "repository": "limengz1129-creator/TCF-writing-trainer",
+  "targetPage": "https://limengz1129-creator.github.io/TCF-writing-trainer/",
+  "monthlyCounts": {
+    "2026-07": 11,
+    "2026-08": 17,
+    "2026-09": 13,
+    "2026-10": 4
+  },
+  "totalMonthlyRecords": 45,
+  "exactDistinctOriginals": 41,
+  "records": [
+    {
+      "month": "2026-07",
+      "ordinal": 1,
+      "zhTitle": "工作舒适度与效率的关系",
+      "prompt": "Le bien-être au travail.",
+      "document1": "Nous avons installé dans l’entreprise des bureaux réglables en hauteur afin que les employés puissent choisir la position qui leur convient le mieux. Ils se disent satisfaits, plus productifs et plus efficaces, par exemple lors de négociations téléphoniques. Le climat social s’est également amélioré et les échanges entre collègues sont plus fréquents. Lorie, responsable.",
+      "document2": "De nos jours, les entreprises cherchent à accroître constamment leur productivité et leur efficacité, tandis que les employés passent davantage de temps au travail. Elles essaient de les inciter à travailler plus tout en leur donnant l’impression qu’elles se soucient de leur santé. Pour ma part, je souhaite accomplir mon travail pendant mes horaires normaux, sans devoir faire d’heures supplémentaires. Florian, ingénieur.",
+      "recordId": "2026-07-01",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Recovered from complete browser tool outputs already read in this conversation; not fetched again.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-07",
+      "contentSha256": "5fef85675eb3f65915f894426e86f7c9a4725447ea141985076b08b1d8388233"
+    },
+    {
+      "month": "2026-07",
+      "ordinal": 2,
+      "zhTitle": "联网设备的便利与风险",
+      "prompt": "Les objets connectés",
+      "document1": "Les objets connectés ont révolutionné notre façon de vivre en offrant des possibilités inédites de contrôle à distance. Imaginez pouvoir gérer les appareils de votre foyer ou de votre entreprise, même lorsque vous êtes loin de chez vous. Grâce à ces technologies innovantes, vous pouvez désormais allumer ou éteindre les lumières, régler le chauffage, surveiller la sécurité de votre domicile, ou encore contrôler les appareils électroménagers, tout cela depuis votre smartphone ou votre tablette.",
+      "document2": "Les objets connectés exposent notre vie privée et notre sécurité à des risques considérables. Les données personnelles collectées peuvent être exploitées à des fins malveillantes, compromettant ainsi notre intimité. Les failles de sécurité dans ces appareils permettent à des cybercriminels d’accéder à nos informations sensibles.",
+      "recordId": "2026-07-02",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Recovered from complete browser tool outputs already read in this conversation; not fetched again.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-07",
+      "contentSha256": "221c3bf07aea8886cfea18631d05bc726a9853ad8a70f1e73836ffab6e13a413"
+    },
+    {
+      "month": "2026-07",
+      "ordinal": 3,
+      "zhTitle": "孩子在家接受教育的利弊",
+      "prompt": "L’école à domicile",
+      "document1": "De nombreuses raisons poussent les parents à choisir l’instruction à domicile. Elle permet d’adopter une pédagogie plus individualisée, de consacrer davantage de temps aux difficultés de l’enfant et de lui proposer des activités éducatives. L’enfant apprend à son rythme, approfondit les sujets qui le passionnent et ne subit pas la pression des autres élèves. L’évaluation est également différente : au lieu de notes parfois décourageantes, les parents peuvent assurer un suivi continu des connaissances, avec moins de stress lié aux contrôles et aux devoirs.",
+      "document2": "La scolarisation à domicile représente toutefois un véritable défi. Elle demande beaucoup de temps, une bonne organisation et des moyens financiers. Le matériel, les livres, les manuels et les sorties sont à la charge de la famille, et l’un des parents doit souvent mettre son emploi entre parenthèses. Cette solution coûte donc généralement plus cher que l’école publique. Enfin, l’enfant ne côtoie pas quotidiennement des camarades comme il le ferait dans un établissement scolaire.",
+      "recordId": "2026-07-03",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Recovered from complete browser tool outputs already read in this conversation; not fetched again.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-07",
+      "contentSha256": "0031054acf62955c7b30774f76f16dbdb1ca28445db436d8bd79cc6b5522a83b"
+    },
+    {
+      "month": "2026-07",
+      "ordinal": 4,
+      "zhTitle": "简历照片的利弊",
+      "prompt": "Les photos sur le CV, pour ou contre ?",
+      "document1": "La photo sur un CV est inutile, car les diplômes et l’expérience professionnelle sont les éléments les plus importants. Elle ne devrait pas être obligatoire, puisqu’elle peut influencer les employeurs et entraîner des discriminations, notamment fondées sur l’apparence ou la couleur de peau.",
+      "document2": "Christophe estime que la photo ne doit pas être un critère de sélection, mais qu’elle peut être utile pour certains métiers, comme celui d’hôte ou d’hôtesse d’accueil. Elle donne une première idée du candidat. Toutefois, sauf demande particulière de l’employeur, il reste opposé à son inclusion : les compétences et l’expérience devraient être les seuls critères de sélection.",
+      "recordId": "2026-07-04",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Recovered from complete browser tool outputs already read in this conversation; not fetched again.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-07",
+      "contentSha256": "2b7d4ba2850ad94e984dd80a64d5b049e1fca12b4c293d0dc222d6a6eb8f0abc"
+    },
+    {
+      "month": "2026-07",
+      "ordinal": 5,
+      "zhTitle": "市中心限行的利弊",
+      "prompt": "L’interdiction des voitures en ville",
+      "document1": "De plus en plus de grandes villes dans le monde souhaitent diminuer ou interdire l’usage de la voiture, jugée trop polluante. Limiter la circulation, c’est d’abord une question de santé publique. C’est également un moyen de faire des économies d’énergie. À Paris, par exemple, il y a une politique très active pour augmenter l’usage du vélo, fermer de grandes voies de circulation et développer les transports en commun. Alors, à pied ou à vélo, pourrait-on envisager que nos villes se transforment en paradis pour piétons ? D’après Ouest-France",
+      "document2": "Interdire les voitures en ville, est-ce une bonne chose ? La voiture est un moyen de transport indispensable. Beaucoup de gens ne peuvent pas se déplacer autrement. Les personnes malades et âgées, par exemple, sont incapables de prendre les transports en commun. De plus, le prix des logements ayant beaucoup augmenté dans les villes, beaucoup de familles ont dû déménager et ont donc besoin d’utiliser leur voiture pour aller travailler ou faire leurs courses.",
+      "recordId": "2026-07-05",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Recovered from complete browser tool outputs already read in this conversation; not fetched again.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-07",
+      "contentSha256": "5ef5550bc836a51f61d246f2b0948726c7cf2c9c5c3c12e9d9492ed6505207f4"
+    },
+    {
+      "month": "2026-07",
+      "ordinal": 6,
+      "zhTitle": "城市艺术的利弊",
+      "prompt": "L’art urbain",
+      "document1": "L’art urbain, véritable symbole de créativité et d’expression, colore nos rues et éveille nos sens. Ses œuvres audacieuses transforment les villes en galeries à ciel ouvert, où chaque passant peut être émerveillé et inspiré. L’art urbain donne une voix à ceux qui n’ont peut-être pas la possibilité de s’exprimer autrement et offre une perspective unique sur notre société. Célébrons cette forme d’art qui égaie nos espaces urbains et nous rappelle la beauté de la diversité créative. Banksy, artiste britannique.",
+      "document2": "Certains considèrent que ces expressions artistiques, souvent réalisées sans autorisation préalable, dégradent les bâtiments et les quartiers, les transformant en véritables zones de dégradation visuelle. De plus, cette forme d’art peut également être perçue comme un moyen de s’approprier illégalement l’espace public, privant ainsi les citoyens de leur droit à un environnement esthétique respectueux.",
+      "recordId": "2026-07-06",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Recovered from complete browser tool outputs already read in this conversation; not fetched again.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-07",
+      "contentSha256": "59874544dedb9ed18656d2f1f5fbe6ab0cf36603ccc5d7ddee956cf5cb1ea7a5"
+    },
+    {
+      "month": "2026-07",
+      "ordinal": 7,
+      "zhTitle": "快餐的利弊",
+      "prompt": "La restauration rapide",
+      "document1": "Thomas : « Je trouve la restauration rapide très pratique lorsque je suis pressé. Selon moi, les chaînes de fast-food ont fait des efforts pour proposer des choix plus sains. J’apprécie particulièrement la possibilité de commander en ligne et de récupérer rapidement ma commande, ce qui m’aide à mieux gérer mes journées chargées. »",
+      "document2": "Lina : « J’ai eu une mauvaise expérience avec la restauration rapide. Les aliments étaient souvent de qualité médiocre et trop gras. J’ai aussi été déçue par le manque de choix végétariens et sains dans la plupart des fast-foods. Pour moi, il vaut mieux prendre le temps de préparer chez soi un repas sain et équilibré. »",
+      "recordId": "2026-07-07",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Recovered from complete browser tool outputs already read in this conversation; not fetched again.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-07",
+      "contentSha256": "1375618394bcc1d14bd922ede96bba6f3c2d1b1cb48df2f619591512533113d5"
+    },
+    {
+      "month": "2026-07",
+      "ordinal": 8,
+      "zhTitle": "家庭作业的利弊",
+      "prompt": "Les devoirs à la maison",
+      "document1": "Grâce aux devoirs à la maison après l’école, seul face à lui-même, l’enfant apprend à devenir autonome. Les devoirs sont également un moyen de rapprocher parents et enfants : réciter une poésie, faire un exercice de mathématiques, c’est souvent un moment de complicité familiale. Enfin, il ne faut pas oublier que les parents ont, eux aussi, un devoir d’éducation. En revanche, parce que la journée à l’école est déjà longue, il ne faut pas que l’enfant passe plus d’un quart d’heure par soir à faire ses devoirs. Valérie, mère de famille",
+      "document2": "J’enseigne à l’école primaire et je ne donne pas de devoirs à la maison. Les devoirs sont une source de stress et de fatigue pour l’enfant. Les élèves ne viennent pas tous du même milieu ; les familles n’ont pas toutes le temps ou les connaissances nécessaires pour faire travailler leur enfant. Certains disent que les devoirs créent un lien entre la famille et l’école. Mais quel lien ? C’est bien souvent un moment d’énervement partagé… Et l’autonomie, elle s’acquiert à l’école, avec des outils pédagogiques pensés par l’école. Pas avec les devoirs à la maison ! Isabelle, enseignante.",
+      "recordId": "2026-07-08",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Recovered from complete browser tool outputs already read in this conversation; not fetched again.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-07",
+      "contentSha256": "f15309aa8d256ccc178c01f5b5c43742feff3d7204551300dceaff7de5528e8f"
+    },
+    {
+      "month": "2026-07",
+      "ordinal": 9,
+      "zhTitle": "职场友谊与职业边界",
+      "prompt": "Les relations amicales au travail",
+      "document1": "Les amitiés entre collègues au travail peuvent être extrêmement bénéfiques. Elles favorisent un climat de travail agréable et une ambiance positive au sein de l’équipe. Avoir des amis parmi ses collègues permet de renforcer les liens professionnels et de créer un sentiment de camaraderie. Cela peut contribuer à une meilleure communication, une collaboration plus étroite et une résolution plus efficace des problèmes. De plus, partager des moments de convivialité en dehors du travail, comme des déjeuners ou des activités après le bureau peut renforcer les liens et créer une dynamique de groupe solide.",
+      "document2": "Il est important de trouver un équilibre entre amitié et professionnalisme au travail. Les amitiés excessivement proches peuvent parfois créer des tensions ou des conflits lorsque des décisions professionnelles doivent être prises. De plus, les amitiés exclusives entre certains collègues peuvent exclure les autres membres de l’équipe, ce qui peut nuire à la cohésion et à la collaboration. Il est essentiel de maintenir des limites claires et de veiller à ce que les amitiés ne compromettent pas le professionnalisme, la hiérarchie ou la productivité au sein de l’organisation.",
+      "recordId": "2026-07-09",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Recovered from complete browser tool outputs already read in this conversation; not fetched again.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-07",
+      "contentSha256": "df47409edbeb279a928afb062d64b3af06b573a07c55a0afd79d791a32128a5f"
+    },
+    {
+      "month": "2026-07",
+      "ordinal": 10,
+      "zhTitle": "成年人合租的利弊",
+      "prompt": "Vivre en colocation : pour ou contre ?",
+      "document1": "La vie en colocation offre de nombreux avantages. Partager un logement avec d’autres personnes permet de réduire les dépenses, que ce soit le loyer, les factures ou les frais généraux. De plus, cela favorise les interactions sociales et les échanges culturels. Vivre avec des colocataires permet de rencontrer des individus de différents horizons, de nouer des amitiés et de partager des expériences enrichissantes.",
+      "document2": "La colocation peut cependant présenter des défis. Les différences de personnalité et de mode de vie entre les colocataires peuvent entraîner des tensions. La gestion des responsabilités et des tâches ménagères peut également être source de conflits. De plus, la colocation peut limiter l’intimité et l’espace personnel. Il est important d’établir une communication ouverte et respectueuse, ainsi que des règles de vie commune, pour favoriser une cohabitation harmonieuse.",
+      "recordId": "2026-07-10",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Recovered from complete browser tool outputs already read in this conversation; not fetched again.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-07",
+      "contentSha256": "b425bd3dfae5556eb98250def771ad86f89e2959e9d4d3db0c8d657ac1d8d70d"
+    },
+    {
+      "month": "2026-07",
+      "ordinal": 11,
+      "zhTitle": "学校无肉菜单的利弊",
+      "prompt": "Menus sans viande à la cantine scolaire.",
+      "document1": "De plus en plus d’écoles proposent un menu sans viande à la cantine au moins deux fois par semaine. Certaines études montrent que les enfants consomment trop de protéines animales. Pour des raisons de santé, les écoles remplacent donc la viande par des produits comme le soja, les céréales ou les légumes, moins gras et utiles à la croissance. Ces menus coûtent aussi moins cher aux familles et plaisent à de nombreux parents et enfants.",
+      "document2": "La suppression de la viande dans les cantines ne plaît pas à tout le monde. La viande coûte cher et, pour certains enfants de familles en difficulté, la cantine est le seul endroit où ils peuvent en manger. Les producteurs locaux sont également mécontents, car une partie de leur production est destinée aux cantines et cette décision entraîne une perte financière. Enfin, beaucoup d’enfants disent préférer les steaks de bœuf aux steaks de soja, qu’ils trouvent peu savoureux.",
+      "recordId": "2026-07-11",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Recovered from complete browser tool outputs already read in this conversation; not fetched again.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-07",
+      "contentSha256": "d018d2e0c981af435e83b668b35fd850cd412eb658d146c6063db4f819958b8d"
+    },
+    {
+      "month": "2026-08",
+      "ordinal": 1,
+      "zhTitle": "校园饮料自动售货机的利弊",
+      "prompt": "L’utilisation Des Distributeurs Automatiques Au Sein Des Établissements Scolaires, Pour ou Contre ?",
+      "document1": "De plus en plus de collèges et lycées décident d’interdire les distributeurs automatiques de snacks et de boissons sucrées à l’intérieur des établissements. L’objectif est de protéger la santé des élèves. En effet, le pourcentage d’adolescents obèses est en augmentation et l’école doit avoir un rôle éducatif pour lutter contre ce phénomène. Une canette de soda de 33 centilitres, par exemple, contient 7 ou 8 morceaux de sucre. Or les jeunes doivent comprendre que ces produits sucrés sont mauvais pour leur santé. Ainsi, il est urgent d’interdire tous ces distributeurs qui les invitent à consommer des bonbons et des sodas entre les cours. D’après ecolesdifferentes.free.fr",
+      "document2": "L’interdiction des distributeurs automatiques de snacks et de boissons dans les établissements scolaires ne plaît pas à tout le monde. Les industriels qui commercialisent ces produits expliquent que la présence de ces machines a de nombreux effets positifs. Les boissons chaudes, par exemple, permettent aux élèves de se réchauffer pendant les pauses en hiver. De plus, comme ces machines se trouvent à l’intérieur des lycées, les élèves ne sortent pas de l’établissement pour acheter quelque chose à manger. Ils peuvent ainsi rester concentrés sur leurs cours. Enfin, pour ceux qui n’ont pas la possibilité de prendre un petit déjeuner chez eux, ces distributeurs sont très pratiques et utiles. D’après institutdanone.org",
+      "recordId": "2026-08-01",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Recovered from complete browser tool outputs already read in this conversation; not fetched again.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-08",
+      "contentSha256": "5eb601d6fa7314676614c4e3163b239dd930c050f756a17ff67481d72e5d29f0"
+    },
+    {
+      "month": "2026-08",
+      "ordinal": 2,
+      "zhTitle": "成年人合租的利弊",
+      "prompt": "Vivre En Colocation : Pour Ou Contre ?",
+      "document1": "Il y a ceux qui aiment les plateaux télé et ceux qui ne supportent pas de manger tout seuls. Pour ces derniers, le mieux est la colocation. En effet, vivre en colocation permet d’avoir de réels moments d’échange, que ce soit pendant les repas ou à d’autres moments. Par exemple, en jouant à des jeux de société. Autre élément important : la vaisselle et toutes les autres tâches ménagères se font aussi à plusieurs. Vivre avec d’autres personnes permet d’ouvrir son esprit, de découvrir d’autres façons de vivre, de créer des liens uniques, de partager des expériences et de se rendre des services l’un l’autre.",
+      "document2": "Il peut être difficile de vivre en colocation quand, certains soirs, vous aimeriez bien vous retrouver au calme et seul. Vous devrez également accepter le fait de recevoir des amis qui ne sont pas forcément les vôtres, et veiller à ce que les tours du ménage soient bien respectés, au lieu de devoir tout faire vous-même (ou de laisser l’autre tout faire à votre place). Autrement dit, vous allez devoir vous montrer diplomate sur bien des points. À moins, bien entendu, de tomber sur le colocataire parfait.",
+      "recordId": "2026-08-02",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Recovered from complete browser tool outputs already read in this conversation; not fetched again.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-08",
+      "contentSha256": "9f88774346f3e201ac95ce81216cd850619f55e12ec68cf6a0329f9c0b2bc672"
+    },
+    {
+      "month": "2026-08",
+      "ordinal": 3,
+      "zhTitle": "帮助贫困者的方式",
+      "prompt": "L'aide aux personnes pauvres",
+      "document1": "Tous les ans, en hiver, je donne un peu de mon temps et de mon argent pour aider les personnes qui vivent dans la rue et ont froid. Pour moi, c'est important de se soucier de ceux qui sont dans le besoin. Je trouve très important de donner quelques dollars à ces personnes ou aux associations qui peuvent les aider. Et puis, cette action me donne l'impression d'être utile, au moins une fois dans l'année ! C'est un geste de solidarité qui est à la portée de tout le monde.",
+      "document2": "Pierre, 65 ans : Plutôt que de donner de l'argent à des personnes pauvres, il vaudrait mieux revoir notre mode de vie. C'est pourquoi je préfère m'engager au quotidien dans une association de mon quartier, où je suis bénévole. Les sans domicile fixe ont besoin d'un logement et d'un travail et pas seulement d'argent. Il faut les aider à devenir autonomes. C'est le but d'oganismes qui aident ceux qui sont dans la rue à trouver un emploi. Donner de l'argent est un acte inutile qui sert seulement à apaiser notre conscience.",
+      "recordId": "2026-08-03",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Recovered from complete browser tool outputs already read in this conversation; not fetched again.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-08",
+      "contentSha256": "20a6a12cd7aad7fe8104ee60b1569afc98b82928db68339509d9ad9916ac1c06"
+    },
+    {
+      "month": "2026-08",
+      "ordinal": 4,
+      "zhTitle": "城市艺术的利弊",
+      "prompt": "L’art Urbain : Pour Ou Contre ?",
+      "document1": "Grâce à l’art, la curiosité des citadins est attisée dans l’espace urbain. Que ce soit par une peinture ou un spectacle de rue, l’atmosphère éphémère ainsi créée offre une interaction entre des artistes peu connus et un public hétéroclite, parfois peu habitué à côtoyer cette forme d’art. Les villes d’aujourd’hui n’ont plus la même vocation que celles d’hier. Plus qu’un lieu de résidence, la ville se réinvente, s’enrichit de la diversité de sa population, s’agence différemment et s’ouvre sur le monde. Les espaces verts se créent et les murs se parent de couleurs grâce au street art. Cela débouche sur des lieux où la qualité de vie est privilégiée, tout en respectant la nature et l’environnement.",
+      "document2": "Mais à une plus large échelle, cela n’est pas aussi évident. Les graffitis peuvent être perçus comme une dégradation de la communauté, une pollution visuelle ou une preuve de la rupture sociale. On les considère comme du vandalisme qui défigure les biens publics. Le débat sur les avantages et les inconvénients des graffitis fait rage parmi les artistes, les législateurs et les membres de la communauté.",
+      "recordId": "2026-08-04",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Recovered from complete browser tool outputs already read in this conversation; not fetched again.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-08",
+      "contentSha256": "0c9f701165ee6bf3cd648d544b573f99a8105a7f568751a4f3c2cb9158dbf641"
+    },
+    {
+      "month": "2026-08",
+      "ordinal": 5,
+      "zhTitle": "独自旅行与结伴旅行的取舍",
+      "prompt": "Voyage seul ou voyage accompagné ?",
+      "document1": "Voyager seul est une expérience riche et singulière qui présente de nombreux attraits. Tout d'abord, cela offre une liberté totale d'organiser son parcours et ses activités selon ses envies sans avoir à se plier aux contraintes d'un groupe. On découvre ainsi les lieux visités à son propre rythme, en prenant tout le temps nécessaire pour s'imprégner pleinement de leur atmosphère unique. Surtout, voyager en solo permet de sortir de sa zone de confort et de faire d'inestimables rencontres avec les populations locales ou d'autres voyageurs, favorisant ainsi l'ouverture d'esprit et l'enrichissement personnel.",
+      "document2": "S'il comporte des avantages certains, le voyage en solo n'est pas exempt d'inconvénients que l'on ne saurait négliger. Outre le sentiment de solitude qui peut parfois s'installer, l'absence d'un compagnon de route prive le voyageur d'un soutien précieux en cas d'imprévu ou de situation délicate. De plus, certaines activités comme l'exploration de sites reculés ou de régions au climat rude gagnent à être réalisées en groupe pour des raisons évidentes de sécurité. Enfin, partager ses découvertes et ses émotions avec un proche ou des amis demeure l'un des plaisirs uniques du voyage accompagné.",
+      "recordId": "2026-08-05",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Recovered from complete browser tool outputs already read in this conversation; not fetched again.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-08",
+      "contentSha256": "6edf3bd28e187281e06d8bb899dec28b97b2745343e8bbd0229f1f2ba85fbc17"
+    },
+    {
+      "month": "2026-08",
+      "ordinal": 6,
+      "zhTitle": "儿童阅读的引导方式",
+      "prompt": "La lecture pour les enfants",
+      "document1": "Avec l’avancée technologique et les produits high-tech qui envahissent de plus en plus notre quotidien, nos enfants oublient la lecture et s’intéressent davantage aux jeux vidéo, aux sports, à la musique... Contrairement à nous les adultes, dont beaucoup d’entre nous ont lu des milliers de pages, la génération actuelle est toujours occupée par les réseaux sociaux et le gaming ou prend du plaisir à pratiquer du sport qui attire davantage de jeunes grâce aux stars internationales du football, du tennis, de l’athlétisme... alors avec tout ça, pourquoi devons-nous forcer les enfants à lire un bouquin ? Et comme le dit un proverbe, “le goût de la lecture ne peut pas s’imposer”... il faut laisser l’enfant choisir ce qu’il veut lire et surtout ne pas l’obliger à lire quand il n’a pas envie.",
+      "document2": "L’amour de la lecture se transmet de génération en génération bien que, ces dernières années, on ne trouve plus beaucoup de bouquins entre les mains des enfants, laissant la place aux smartphones et aux tablettes. En apprenant à lire régulièrement, l’enfant acquiert le langage plus aisément tout en développant sa capacité d’audition et de concentration. De plus, et pour prendre du plaisir ensemble, les parents peuvent consacrer quotidiennement 10 minutes à leurs enfants pour lire des bouquins ; une activité qui renforcera à coup sûr la complicité parent-enfant.",
+      "recordId": "2026-08-06",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Recovered from complete browser tool outputs already read in this conversation; not fetched again.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-08",
+      "contentSha256": "a1d21a849970edc283055bf90513c607f10592b9e4053dfe41708212776ffb5d"
+    },
+    {
+      "month": "2026-08",
+      "ordinal": 7,
+      "zhTitle": "自制产品的利弊",
+      "prompt": "Les Produits Faits Maison : Pour Ou Contre ?",
+      "document1": "Préparer soi-même des produits bio à la maison permet de maîtriser totalement les ingrédients utilisés, ce qui assure des solutions plus adaptées et meilleures pour la santé. Cela aide aussi à limiter les déchets plastiques en utilisant des contenants réutilisables. Par ailleurs, cela permet d’économiser sur le long terme et d’apprendre des savoir-faire créatifs, tout en adoptant un mode de vie plus responsable.",
+      "document2": "Faire des produits bio chez soi présente certains inconvénients. Des erreurs dans les recettes peuvent rendre les produits inefficaces ou causer des réactions. De plus, chercher et préparer les ingrédients demande du temps et de l’énergie. Ces produits n’ont pas toujours de garanties de sécurité ou de conservation, ce qui peut favoriser les bactéries. Enfin, les ingrédients de qualité coûtent cher au départ, ce qui peut décourager certaines personnes.",
+      "recordId": "2026-08-07",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Recovered from complete browser tool outputs already read in this conversation; not fetched again.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-08",
+      "contentSha256": "2c43476f41351e0b748a9108ef5176bae21abd9bb89803cd85309f98b0247ace"
+    },
+    {
+      "month": "2026-08",
+      "ordinal": 8,
+      "zhTitle": "狩猎的利弊",
+      "prompt": "La Chasse aux Animaux : Pour ou Contre ?",
+      "document1": "“Je suis de ceux qui n’arrivent pas à comprendre comment l’on peut prendre du plaisir à tuer des animaux. Je suis de ceux qui n’arrivent pas à comprendre comment on peut prétendre aimer la nature alors qu’on la détruit” Gala 29 ans",
+      "document2": "“Les gens chassent pour différentes raisons : la subsistance, le commerce, la conservation et l’aménagement de la faune, la protection de la propriété, l’exercice, le loisir et le prestige.” David, Journaliste de la FRM",
+      "recordId": "2026-08-08",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Recovered from complete browser tool outputs already read in this conversation; not fetched again.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-08",
+      "contentSha256": "313b9d0546b80fe4210aa16fc409ca106e18820d482f85a1ade1885e420ebfb6"
+    },
+    {
+      "month": "2026-08",
+      "ordinal": 9,
+      "zhTitle": "城市与乡村生活的取舍",
+      "prompt": "La vie à la campagne : pour ou contre ?",
+      "document1": "À mon avis, vivre en ville offre de nombreuses possibilités de divertissement. Il est facile d’aller au cinéma, de déjeuner dans un restaurant ou encore de faire du shopping. Tout est à proximité, ce qui évite de parcourir de longues distances pour se distraire. Il suffit de marcher un peu ou de prendre un taxi si le trajet est plus long. De plus, la ville propose une grande diversité d’événements culturels : musées, théâtres, opéras… Il y en a pour tous les goûts !",
+      "document2": "Dernièrement, j’ai décidé de quitter la ville pour vivre à la campagne, car j’avais besoin de me rapprocher de la nature et de profiter du calme. Désormais, au lieu de fréquenter quotidiennement les bars ou les restaurants, j’invite des amis à boire un verre sur la terrasse de ma maison ou j’organise de temps en temps un barbecue dans mon jardin. Un autre élément important a motivé ma décision : le coût du logement. Les prix des habitations sont bien plus abordables à la campagne qu’en ville.",
+      "recordId": "2026-08-09",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Recovered from complete browser tool outputs already read in this conversation; not fetched again.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-08",
+      "contentSha256": "e74f567794244d57c033de6f63098e2b7644eb67798fa41115e8625e94441e89"
+    },
+    {
+      "month": "2026-08",
+      "ordinal": 10,
+      "zhTitle": "公共交通免费政策的利弊",
+      "prompt": "La gratuité des transports en commun : pour ou contre ?",
+      "document1": "Les transports en commun gratuits, c’est une très bonne idée. Cela permet de diminuer le nombre de voitures en ville et d’éviter les bouchons. C’est aussi une bonne mesure pour réduire la pollution et donc les risques de maladies respiratoires. Dans ma ville, il y a des transports en commun gratuits. On observe que les gens utilisent plus souvent les transports publics depuis que la gratuité est en place. Cette mesure a aussi profité aux commerçants : les gens reviennent faire leurs achats dans le centre-ville et vont moins dans les hypermarchés.",
+      "document2": "L’idée n’est pas bonne. D’une part, cela coûterait cher aux villes. Or, il me semble que la ville de Toulouse a d’autres problèmes à régler en priorité. Par exemple, il faudrait d’abord réaménager les espaces verts, cela profiterait à tout le monde. D’autre part, il vaudrait mieux réorganiser les transports publics au lieu de les rendre gratuits. Aujourd’hui, les gens préfèrent prendre leur voiture parce que la ville manque de transports publics dans certains quartiers éloignés. Enfin, selon moi, il faut garder les transports publics payants. Les gens respecteront davantage les équipements s’ils participent à leur financement en payant un titre de transport.",
+      "recordId": "2026-08-10",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Recovered from complete browser tool outputs already read in this conversation; not fetched again.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-08",
+      "contentSha256": "2d8f3d87b041afd09c3ea8d40d95fedd08b6f131f875a0961d5b49b8f693c646"
+    },
+    {
+      "month": "2026-08",
+      "ordinal": 11,
+      "zhTitle": "市中心限行的利弊",
+      "prompt": "L’interdiction des Voitures dans les Centres-Villes",
+      "document1": "Avec des taux de pollution alarmantes constatés dans plusieurs endroits dans le monde, plusieurs villes ont réussi leur pari d’interdire la circulation de voitures en zones urbaines. La capitale de la Norvège, Oslo, a récemment opté pour cette solution et s’en félicite estimant que c’est une décision bénéfique pour tout le monde. Après un certain temps, les accidents diminueront, la dépendance au pétrole baissera et la qualité d’air sera meilleure.",
+      "document2": "Beaucoup de villes se lancent dans des projets d’interdiction de voitures en zone urbaine sans mettre en place les outils et les infrastructures nécessaires pour réussir cette transition. Certes, en diminuant les voitures, on aura moins d’embouteillages, de stress et surtout un air beaucoup moins pollué, mais en contrepartie, il faut prévoir entre- autres de gigantesques parkings pour garer les voitures, opter davantage pour le transport en commun (métros et bus) et prévoir des autorisations de circulation pour certains corps de métiers (comme la police, les urgentistes, les livreurs, …)",
+      "recordId": "2026-08-11",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Recovered from complete browser tool outputs already read in this conversation; not fetched again.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-08",
+      "contentSha256": "e21c11fd84e0dd96788533dec1440c07b077108ac67e317633974d2c60445e50"
+    },
+    {
+      "month": "2026-08",
+      "ordinal": 12,
+      "zhTitle": "电子游戏的益处与风险",
+      "prompt": "Les Jeux Vidéo : Pour ou contre ?",
+      "document1": "les enfants, jusqu’à l’âge de l’adolescence, jouent d’une manière régulière aux jeux vidéo et à force, ils peuvent développer des pensée négatives et des comportements agressifs. En effet, une étude récente, menée sur des enfants âgés de 9 à 18 ans jouant fréquemment aux jeux vidéo, a révélé que le fait de jouer à des jeux de violence augmente considérablement un comportement agressif. Et selon Diego Gentil, ce phénomène est inévitable quelque soit le degré de vigilance des parents!",
+      "document2": "On parle tout le temps des effets négatifs des jeux vidéo, mais ces derniers peuvent également avoir quelques avantages pour le fonctionnement du cerveau et pour la santé d’une manière générale. si on prend, par exemple, leur rapport pour le cerveau, les jeux vidéo permettent d’améliorer plusieurs fonctions cognitives telles que l’amélioration de la concentration, de la création et de la capacité d’analyse. Ceci peut paraitre évident, dans la mesure où lorsqu’on y joue, on doit toujours trouver des solutions à des situations plus au moins complexes (surtout pour les jeux de stratégie).",
+      "recordId": "2026-08-12",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Recovered from complete browser tool outputs already read in this conversation; not fetched again.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-08",
+      "contentSha256": "4db47c96288cab67a0b8e9bdeda3742c89cbeec1550ba674b2cafeea59635103"
+    },
+    {
+      "month": "2026-08",
+      "ordinal": 13,
+      "zhTitle": "校园饮料自动售货机的利弊",
+      "prompt": "L’utilisation des distributeurs automatiques au sein des établissements scolaires, pour ou contre ?",
+      "document1": "Opinion 1 : « Je suis en faveur des distributeurs de boissons dans les lycées. Premièrement, ils offrent une commodité supplémentaire pour les élèves, notamment pour ceux qui n’ont pas le temps de passer à la cafétéria pendant les pauses. Deuxièmement, s’ils sont bien gérés, ces distributeurs peuvent offrir une gamme de boissons saines, comme de l’eau, du jus de fruits pur et des boissons aux fruits sans sucre ajouté. Ces distributeurs peuvent être une source de revenus supplémentaire pour l’école, qui peut être réinvestie dans l’amélioration des infrastructures ou des programmes scolaires. »",
+      "document2": "« Je suis contre l’installation de distributeurs de boissons dans les lycées. Ma principale préoccupation est liée à la santé des élèves. Malheureusement, beaucoup de ces distributeurs sont remplis de boissons sucrées et de sodas qui contribuent à l’obésité infantile et à d’autres problèmes de santé comme le diabète. Même les jus de fruits, qui peuvent sembler sains, contiennent souvent beaucoup de sucre. Les écoles devraient être des lieux qui encouragent des habitudes alimentaires saines et je crains que la présence de ces distributeurs n’encourage une consommation excessive de boissons sucrées. »",
+      "recordId": "2026-08-13",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Recovered from complete browser tool outputs already read in this conversation; not fetched again.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-08",
+      "contentSha256": "02e7d2bc8837ca37747340eb126c83e6e4f31d686985431ad54f585aeb0dcf76"
+    },
+    {
+      "month": "2026-08",
+      "ordinal": 14,
+      "zhTitle": "业余厨师与专业厨师",
+      "prompt": "Cuisinier amateur ou cuisinier professionnel ?",
+      "document1": "Les amateurs peuvent réussir certaines recettes, mais ils manquent encore de compétences et de techniques. La formation et l’expérience restent donc nécessaires pour devenir un véritable cuisinier.",
+      "document2": "De nombreux cuisiniers ont appris leur métier sur Internet et ont connu le succès sur les réseaux sociaux. C’est notamment le cas d’une amatrice devenue professionnelle, qui a publié plusieurs livres destinés aux personnes qui cuisinent à la maison.",
+      "recordId": "2026-08-14",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Recovered from complete browser tool outputs already read in this conversation; not fetched again.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-08",
+      "contentSha256": "ff310b2d7eb47d35b7ea3962a9d5174ebc7d872a0a906baf9b1ec68cbf0d22ea"
+    },
+    {
+      "month": "2026-08",
+      "ordinal": 15,
+      "zhTitle": "儿童使用数字技术的利弊",
+      "prompt": "Utilisation des nouvelles technologies dans les écoles : pour ou contre ?",
+      "document1": "Jean : Je suis fermement convaincu que l’intégration des nouvelles technologies dans les écoles est cruciale pour préparer les élèves à un avenir numérique. Je pense que l’usage des tablettes et des ordinateurs stimule non seulement l’engagement des élèves mais enrichit également leur expérience éducative en leur offrant un accès facile à une variété de ressources, encourageant ainsi leur créativité et leur autonomie.",
+      "document2": "Sara : Je suis sceptique quant à l’usage intensif des technologies dans l’enseignement. Je crois que cela peut réduire les interactions humaines essentielles et favoriser une dépendance préoccupante aux écrans. À mon avis, les méthodes d’enseignement traditionnelles et le contact direct entre enseignants et élèves restent indispensables pour un développement équilibré et complet des compétences des jeunes.",
+      "recordId": "2026-08-15",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Recovered from complete browser tool outputs already read in this conversation; not fetched again.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-08",
+      "contentSha256": "1747df5d5d9fa2df4a64e05595f1c19b28c1b1b9ee6e352693c97514a8c27b0c"
+    },
+    {
+      "month": "2026-08",
+      "ordinal": 16,
+      "zhTitle": "父母管教方式的利弊",
+      "prompt": "La sévérité envers les enfants",
+      "document1": "Je vais bientôt avoir 22 ans et j’habite chez mes parents. Malgré ma majorité, mes parents restent autoritaires avec moi. Lorsque j’étais mineure et que je sortais avec des amies, je n’avais pas le droit de dormir dehors ni même de dépasser 21 h. Aujourd’hui, peu de choses ont changé. Certes, j’ai le droit de veiller plus tard, mais ma mère ne cesse de m’appeler sur mon téléphone portable jusqu’à ce que je sois de retour chez nous.",
+      "document2": "Les parents ont parfois peur d’être trop sévères avec leurs enfants. Ils craignent qu’à cause d’un excès d’autorité, leurs enfants ne s’épanouissent pas et manquent de personnalité plus tard. Même si, par amour, les parents acceptent tout ce que leurs enfants demandent, cela pourrait avoir des effets négatifs lorsqu’ils passent à l’âge adulte. En effet, pour vivre en communauté, il est nécessaire de respecter certaines règles.",
+      "recordId": "2026-08-16",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Recovered from complete browser tool outputs already read in this conversation; not fetched again.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-08",
+      "contentSha256": "51c518fb80fef886b9c228df741d59ffe3c3ba936703896370f544661b3a1754"
+    },
+    {
+      "month": "2026-08",
+      "ordinal": 17,
+      "zhTitle": "广告对儿童的影响",
+      "prompt": "L’influence de la publicité sur les enfants : pour ou contre ?",
+      "document1": "Une étude a révélé que les enfants sont constamment exposés à de nombreuses publicités, que ce soit à la télévision, dans les magazines ou sur Internet, et ce, à un âge où ils sont vulnérables à l’influence publicitaire. Les enfants sont particulièrement ciblés par des publicités pour des produits alimentaires peu sains, des jouets, des jeux vidéo et d’autres produits, ce qui peut influencer leurs choix de consommation et leurs demandes envers leurs parents.",
+      "document2": "Un article de recherche publié dans une revue scientifique souligne que les enfants ont des capacités cognitives limitées pour comprendre et interpréter les messages publicitaires, et qu’ils ne sont généralement pas conscients du caractère persuasif de la publicité. Toutefois, d’autres facteurs, tels que l’éducation parentale et les influences sociales et culturelles, ont un rôle plus important dans les choix de consommation des enfants que la publicité elle-même.",
+      "recordId": "2026-08-17",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Recovered from complete browser tool outputs already read in this conversation; not fetched again.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-08",
+      "contentSha256": "b2abf159faecdc352d1416c3e23cd86874bde4bb68db87c472c92224aa535604"
+    },
+    {
+      "month": "2026-09",
+      "ordinal": 1,
+      "zhTitle": "工作对生活的作用",
+      "prompt": "Le Travail : Favorable Ou Défavorable ?",
+      "document1": "Opinion 1 : Stéphane, entrepreneur « Je suis convaincu que le travail est absolument favorable pour l’individu et la société. Le travail permet non seulement d’assurer son propre moyen de subsistance, mais également de contribuer au développement économique de la société. De plus, il favorise l’autonomie et la confiance en soi, encourage le sens des responsabilités et offre une opportunité d’épanouissement personnel et professionnel. Il peut même aider à forger notre identité et notre place dans la société. »",
+      "document2": "Opinion 2 : Laura, sociologue « Le travail, dans sa forme actuelle, peut avoir des aspects défavorables. Dans de nombreux cas, le travail est associé à un stress intense, à des horaires rigides et à un déséquilibre entre la vie professionnelle et la vie privée. Il peut être une source d’épuisement professionnel, surtout lorsque la charge de travail est excessive et que la reconnaissance est faible. De plus, certaines formes de travail peuvent être aliénantes, lorsque les travailleurs ne se sentent pas impliqués ou valorisés dans ce qu’ils font. Il est donc essentiel de repenser nos rapports au travail pour en faire une expérience plus équilibrée et enrichissante. »",
+      "recordId": "2026-09-01",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Recovered from complete browser tool outputs already read in this conversation; not fetched again.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-09",
+      "contentSha256": "a684385f86b432239a75033f518641bc5fa38639293dcab315a8d14c6176f438"
+    },
+    {
+      "month": "2026-09",
+      "ordinal": 2,
+      "zhTitle": "狩猎的利弊",
+      "prompt": "La chasse aux animaux : pour ou contre ?",
+      "document1": "Je suis de ceux qui n’arrivent pas à comprendre comment l’on peut prendre du plaisir à tuer des animaux. Je suis de ceux qui n’arrivent pas à comprendre comment on peut prétendre aimer la nature alors qu’on la détruit. Gala, 29 ans",
+      "document2": "« Les gens chassent pour différentes raisons : la subsistance, le commerce, la conservation et l’aménagement de la faune, la protection de la propriété, l’exercice, le loisir et le prestige. » David, journaliste de la FRM",
+      "recordId": "2026-09-02",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Recovered from complete browser tool outputs already read in this conversation; not fetched again.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-09",
+      "contentSha256": "0e0619d42f36b3ce75a3b5fbc7e3d78de55780c117cc2b68595fb6d8c35fb6f2"
+    },
+    {
+      "month": "2026-09",
+      "ordinal": 3,
+      "zhTitle": "学校无肉菜单的利弊",
+      "prompt": "Menus sans viande à la cantine scolaire",
+      "document1": "De plus en plus d’écoles décident de mettre en place un menu sans viande dans les cantines, au moins deux fois par semaine. Certaines études ont montré que les enfants consomment trop de protéines animales. C’est donc une question de santé : les écoles ont choisi de remplacer la viande par d’autres produits (soja, céréales, légumes), moins gras et utiles à la croissance des enfants. Ces menus sans viande à la cantine reviennent moins cher aux familles. Cette idée plaît beaucoup aux parents comme aux enfants.",
+      "document2": "La décision de supprimer la viande dans les cantines ne plaît pas à tout le monde. En effet, c’est un produit cher : la cantine est le seul endroit où les enfants de familles en difficulté peuvent manger. Les producteurs locaux de viande sont également mécontents : une partie de leur production est réservée aux cantines, il s’agit donc d’une perte financière. Enfin, beaucoup d’enfants interrogés déclarent tout de même préférer les steaks de bœuf aux steaks de soja qui, selon eux, ont peu de goût.",
+      "recordId": "2026-09-03",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Complete authenticated browser dialog, immediately saved before continuing.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-09",
+      "contentSha256": "aab9a24ba44c3c64ef5eb3908748ac06e1f7fdd698aff96feb7c39dfae70ab35"
+    },
+    {
+      "month": "2026-09",
+      "ordinal": 4,
+      "zhTitle": "大型体育赛事的投入与影响",
+      "prompt": "L'organisation des événements sportifs",
+      "document1": "L’État devrait organiser de grands événements sportifs comme les Jeux Olympiques, la Coupe du Monde ou la Coupe d’Afrique. Ces compétitions sont des occasions uniques de mettre en valeur notre culture et d’attirer l’attention du monde entier. Elles favorisent aussi l’économie en créant des emplois et en modernisant les infrastructures, ce qui profite à long terme à toute la population.",
+      "document2": "Il faut dire que ces grands événements sportifs représentent des dépenses considérables pour l’État. Au lieu d’investir dans des compétitions coûteuses, je pense que les fonds publics devraient être prioritairement alloués à des secteurs essentiels comme la santé et l’éducation. De plus, de nombreux pays ayant accueilli ces événements se sont retrouvés endettés, sans bénéfices réels pour leurs citoyens.",
+      "recordId": "2026-09-04",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Complete authenticated browser dialog, immediately saved before continuing.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-09",
+      "contentSha256": "4c33b440869d83464f2f1b30259b7c3580615c3674dfb0de51ba313ad7c0d74e"
+    },
+    {
+      "month": "2026-09",
+      "ordinal": 5,
+      "zhTitle": "肉食与素食的选择",
+      "prompt": "Le végétarisme en Europe",
+      "document1": "Le végétarisme présente plusieurs avantages importants. Tout d’abord, il favorise la santé : manger des légumes et des fruits réduit les risques de maladies comme les problèmes cardiaques. De plus, le végétarisme aide à protéger l’environnement en diminuant la pollution liée à la production de viande. Enfin, ce choix respecte la vie animale, une valeur partagée par de plus en plus d’Européens.",
+      "document2": "Le végétarisme n’est pas adapté à tous. Certaines personnes ont besoin de la viande pour obtenir des nutriments essentiels comme le fer et les protéines. En Europe, les habitudes alimentaires traditionnelles incluent souvent la viande, et il peut être difficile de changer ces pratiques. De plus, suivre un régime végétarien demande parfois plus de temps et de connaissances pour équilibrer les repas, ce qui n’est pas toujours pratique.",
+      "recordId": "2026-09-05",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Complete authenticated browser dialog, immediately saved before continuing.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-09",
+      "contentSha256": "81ef20646720b6afde2d4af87e6c7f7b4ee0d54a8202e2c23891edf2609e1a7b"
+    },
+    {
+      "month": "2026-09",
+      "ordinal": 6,
+      "zhTitle": "儿童使用数字技术的利弊",
+      "prompt": "Utilisation des nouvelles technologies dans les écoles : pour ou contre ?",
+      "document1": "Jean : Je suis fermement convaincu que l’intégration des nouvelles technologies dans les écoles est cruciale pour préparer les élèves à un avenir numérique. Je pense que l’usage des tablettes et des ordinateurs stimule non seulement l’engagement des élèves mais enrichit également leur expérience éducative en leur offrant un accès facile à une variété de ressources, encourageant ainsi leur créativité et autonomie.",
+      "document2": "Sara : Je suis sceptique quant à l’usage intensif des technologies dans l’enseignement. Je crois que cela peut réduire les interactions humaines essentielles et favoriser une dépendance préoccupante aux écrans. À mon avis, les méthodes d’enseignement traditionnelles et le contact direct entre enseignants et élèves restent indispensables pour un développement équilibré et complet des compétences des jeunes.",
+      "recordId": "2026-09-06",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Complete authenticated browser dialog, immediately saved before continuing.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-09",
+      "contentSha256": "a7dd7c7548fafda19f8bcb1d4a589afa1217ca96fa4c6ff67138d95e7daa20e4"
+    },
+    {
+      "month": "2026-09",
+      "ordinal": 7,
+      "zhTitle": "城市艺术的利弊",
+      "prompt": "L’art Urbain : Pour Ou Contre ?",
+      "document1": "Grâce à l’art, la curiosité des citadins est attisée dans l’espace urbain. Que ce soit par une peinture ou un spectacle de rue, l’atmosphère éphémère ainsi créée offre une interaction entre des artistes peu connus et un public hétéroclite, parfois peu habitué à côtoyer cette forme d’art. Les villes d’aujourd’hui n’ont plus la même vocation que celles d’hier. Plus qu’un lieu de résidence, la ville se réinvente, s’enrichit de la diversité de sa population, s’agence différemment et s’ouvre sur le monde. Les espaces verts se créent et les murs se parent de couleurs grâce au street art. Cela débouche sur des lieux où la qualité de vie est privilégiée, tout en respectant la nature et l’environnement.",
+      "document2": "Mais à une plus large échelle, cela n’est pas aussi évident. Les graffitis peuvent être perçus comme une dégradation de la communauté, une pollution visuelle ou une preuve de la rupture sociale. On les considère comme du vandalisme qui défigure les biens publics. Le débat sur les avantages et les inconvénients des graffitis fait rage parmi les artistes, les législateurs et les membres de la communauté.",
+      "recordId": "2026-09-07",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Complete authenticated browser dialog, immediately saved before continuing.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-09",
+      "contentSha256": "0c9f701165ee6bf3cd648d544b573f99a8105a7f568751a4f3c2cb9158dbf641"
+    },
+    {
+      "month": "2026-09",
+      "ordinal": 8,
+      "zhTitle": "快餐的利弊",
+      "prompt": "La Restauration Rapide",
+      "document1": "Les restaurants rapides proposent des plats équilibrés et variés, et ils respectent les normes d’hygiène et les variétés de produits qui sont bons, et c’est le client qui compose son menu, donc il en est responsable.",
+      "document2": "Les spécialistes affirment que manger régulièrement dans des restaurants de fast-food, qui proposent de la restauration rapide, est dangereux pour la santé. La nourriture servie est souvent la même : frites, hamburgers et boissons sucrées. Ces aliments contiennent une grande quantité de calories, bien trop pour un seul repas. De plus, la plupart des produits dans ces restaurants sont emballés dans du plastique. Par conséquent, manger dans un fast-food augmente la production de déchets plastiques, ce qui est nuisible pour l’environnement.",
+      "recordId": "2026-09-08",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Complete authenticated browser dialog, immediately saved before continuing.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-09",
+      "contentSha256": "f55df47300c50a0ec1282579715645861bd0518e3a3097f59768cad1193c04c6"
+    },
+    {
+      "month": "2026-09",
+      "ordinal": 9,
+      "zhTitle": "电子游戏的益处与风险",
+      "prompt": "Les Jeux Vidéo, Pour ou Contre ?",
+      "document1": "Des études ont montré que certaines zones du cerveau de l’adulte peuvent être développées en jouant aux jeux vidéo. Ainsi, il peut être intéressant de jouer aux jeux vidéo, car ils permettent, par exemple, d’améliorer la capacité d’analyse, la capacité à faire des choix et la rapidité de réaction. C’est une bonne nouvelle, car la répartition des joueurs par âge montre que 83 % des joueurs sont des adultes. Cependant, il convient de rester prudent, car certains jeux vidéo ne favorisent pas ce type d’amélioration sur le cerveau.",
+      "document2": "Pendant trois ans, des enfants âgés de 8 à 17 ans ont participé à une étude sur les jeux vidéo. Les résultats de cette étude montrent que les enfants qui jouent beaucoup aux jeux vidéo sont plus violents, plus nerveux et plus stressés que ceux qui ne jouent pas ou peu. Ceux qui jouent beaucoup ont également moins de bons résultats à l’école. Il est donc conseillé aux parents d’être vigilants et de limiter l’usage de ces jeux par leurs enfants.",
+      "recordId": "2026-09-09",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Complete authenticated browser dialog, immediately saved before continuing.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-09",
+      "contentSha256": "26763946d416cad65063fb552bd48083d932aeaffbf6515210d47b2c6ad19898"
+    },
+    {
+      "month": "2026-09",
+      "ordinal": 10,
+      "zhTitle": "业余厨师与专业厨师",
+      "prompt": "Cuisinier amateur ou cuisinier professionnel ?",
+      "document1": "Les amateurs peuvent réussir certaines recettes, mais ils manquent encore de compétences et de techniques. La formation et l’expérience restent donc nécessaires pour devenir un véritable cuisinier.\n",
+      "document2": "De nombreux cuisiniers ont appris leur métier sur Internet et ont connu le succès sur les réseaux sociaux. C’est notamment le cas d’une amatrice devenue professionnelle, qui a publié plusieurs livres destinés aux personnes qui cuisinent à la maison.",
+      "recordId": "2026-09-10",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Complete authenticated browser dialog, immediately saved before continuing.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-09",
+      "contentSha256": "2e39cbac8ad13ddf7dada39fc73a920875dab5253b4eb5509f0e0d731d3bc8c3"
+    },
+    {
+      "month": "2026-09",
+      "ordinal": 11,
+      "zhTitle": "独自旅行与结伴旅行的取舍",
+      "prompt": "Voyage seul ou voyage accompagné ?",
+      "document1": "Voyager seul est une expérience riche et singulière qui présente de nombreux attraits. Tout d'abord, cela offre une liberté totale d'organiser son parcours et ses activités selon ses envies sans avoir à se plier aux contraintes d'un groupe. On découvre ainsi les lieux visités à son propre rythme, en prenant tout le temps nécessaire pour s'imprégner pleinement de leur atmosphère unique. Surtout, voyager en solo permet de sortir de sa zone de confort et de faire d'inestimables rencontres avec les populations locales ou d'autres voyageurs, favorisant ainsi l'ouverture d'esprit et l'enrichissement personnel.",
+      "document2": "S'il comporte des avantages certains, le voyage en solo n'est pas exempt d'inconvénients que l'on ne saurait négliger. Outre le sentiment de solitude qui peut parfois s'installer, l'absence d'un compagnon de route prive le voyageur d'un soutien précieux en cas d'imprévu ou de situation délicate. De plus, certaines activités comme l'exploration de sites reculés ou de régions au climat rude gagnent à être réalisées en groupe pour des raisons évidentes de sécurité. Enfin, partager ses découvertes et ses émotions avec un proche ou des amis demeure l'un des plaisirs uniques du voyage accompagné.",
+      "recordId": "2026-09-11",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Complete authenticated browser dialog, immediately saved before continuing.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-09",
+      "contentSha256": "6edf3bd28e187281e06d8bb899dec28b97b2745343e8bbd0229f1f2ba85fbc17"
+    },
+    {
+      "month": "2026-09",
+      "ordinal": 12,
+      "zhTitle": "儿童饲养宠物的利弊",
+      "prompt": "Les animaux de compagnie pour les enfants",
+      "document1": "Offrir un animal de compagnie à un enfant présente de nombreux avantages, comme le soulignent beaucoup de psychologues. Pour des enfants qui n’ont pas de frères et/ou de sœurs, l’animal est un compagnon qui leur évitera la solitude. Grâce à lui, un enfant prendra confiance en lui et apprendra vite qu’un animal est un être vivant qui a besoin d’attention et de respect. En sa présence, l’enfant se sentira en sécurité et pourra agir de manière autonome, sans l’aide de ses parents.",
+      "document2": "Beaucoup d’enfants demandent, un jour ou l’autre, un animal à leurs parents, le plus souvent un chien ou un chat. Mais même si vous avez envie de faire plaisir à votre enfant, il vaut mieux réfléchir sérieusement avant d’acheter un animal domestique. L’animal devient un nouveau membre de la famille et représente un engagement sur de nombreuses années. Or, avoir un animal coûte souvent très cher, et c’est une grande responsabilité. On ne peut pas le traiter comme un jouet que l’on met à la poubelle quand l’enfant s’en désintéresse.",
+      "recordId": "2026-09-12",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Complete authenticated browser dialog, immediately saved before continuing.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-09",
+      "contentSha256": "9e6efddbaaf4cc84d918305f5ca956d74826f45213f805614d3f53f38752a10e"
+    },
+    {
+      "month": "2026-09",
+      "ordinal": 13,
+      "zhTitle": "与父母同住的利弊",
+      "prompt": "Vivre chez ses parents, pour ou contre ?",
+      "document1": "Les avantages : penser à l’avenir, avoir les vêtements propres, être en confort surtout que l’argent n’est pas toujours suffisant. Vivre avec ses parents pendant la période des études permet aux jeunes d’économiser les frais de logement, des plats faits maison et une certaine stabilité psychique, tels les adolescents qui vivent avec leurs parents leur permettent d’économiser leur argent pour des projets de vie (ils ne payent ni le loyer ni la nourriture) (pour ne pas payer le loyer qui coûte cher, le ménage est fait, les vêtements sont propres). Favorise que les jeunes vivent avec leurs parents avec le témoignage de deux jeunes, la jeune fille disait que le loyer est très cher et étudier loin de chez soi revient plus cher. Le deuxième jeune trouve que vivre avec ses parents est plus bénéfique pour lui par exemple : la bouffe est bonne, les vêtements toujours propres et y a pas de place pour la solitude.",
+      "document2": "Les inconvénients : manque de liberté. Vivre seuls leur permet d’être indépendants, les adolescents qui vivent avec leurs parents s’ennuient car leurs parents décident à leur place et sont toujours dépendants des parents [...] un avis d’un certain monsieur qui a 25 ans et il a perdu son job, donc il était dans l’obligation de rentrer vivre avec ses parents, et maintenant il a perdu son espace d’intimité... contre la vie des jeunes avec leurs parents, un témoignage d’un jeune qui considère revenir chez ses parents, c’est revenir en arrière.",
+      "recordId": "2026-09-13",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Complete authenticated browser dialog, immediately saved before continuing.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-09",
+      "contentSha256": "ec802cb54c6e4f63fa2584974a9d22f1e5b0c32470d39866b1c4147ddfcc9916"
+    },
+    {
+      "month": "2026-10",
+      "ordinal": 1,
+      "zhTitle": "儿童使用数字技术的利弊",
+      "prompt": "Les nouvelles technologies pour les enfants",
+      "document1": "Les enfants de l’école primaire peuvent utiliser la technologie pour trouver des vidéos sur les sujets qu’ils ont étudiés à l’école ou pour jouer à des jeux qui amélioreront leur aisance en mathématiques, leur compréhension de la lecture ou leurs compétences en dactylographie.",
+      "document2": "Les nouvelles technologies encouragent les enfants à être sédentaires. C’est une préoccupation majeure pour les parents. Cela ne mène à aucun jeu libre créatif, à aucune interaction sociale face à face, ni à aucun effort physique ! Pourquoi ne pas essayer certaines de ces activités amusantes pour encourager vos enfants à ranger leurs appareils ?",
+      "recordId": "2026-10-01",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Complete authenticated browser dialog, immediately saved before continuing.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-10",
+      "contentSha256": "7795954a448678721a076f9c2c6ffbaff4387c0abcdcc7500b8cd209718c6cd8"
+    },
+    {
+      "month": "2026-10",
+      "ordinal": 2,
+      "zhTitle": "与父母同住的利弊",
+      "prompt": "Vivre chez ses parents, pour ou contre ?",
+      "document1": "Les avantages : penser à l’avenir, avoir les vêtements propres, être en confort surtout que l’argent n’est pas toujours suffisant. Vivre avec ses parents pendant la période des études permet aux jeunes d’économiser les frais de logement, des plats faits maison et une certaine stabilité psychique, tels les adolescents qui vivent avec leurs parents leur permettent d’économiser leur argent pour des projets de vie (ils ne payent ni le loyer ni la nourriture) (pour ne pas payer le loyer qui coûte cher, le ménage est fait, les vêtements sont propres). Favorise que les jeunes vivent avec leurs parents avec le témoignage de deux jeunes, la jeune fille disait que le loyer est très cher et étudier loin de chez soi revient plus cher. Le deuxième jeune trouve que vivre avec ses parents est plus bénéfique pour lui par exemple : la bouffe est bonne, les vêtements toujours propres et y a pas de place pour la solitude.",
+      "document2": "Les inconvénients : manque de liberté. Vivre seuls leur permet d’être indépendants, les adolescents qui vivent avec leurs parents s’ennuient car leurs parents décident à leur place et sont toujours dépendants des parents [...] un avis d’un certain monsieur qui a 25 ans et il a perdu son job, donc il était dans l’obligation de rentrer vivre avec ses parents, et maintenant il a perdu son espace d’intimité... contre la vie des jeunes avec leurs parents, un témoignage d’un jeune qui considère revenir chez ses parents, c’est revenir en arrière.",
+      "recordId": "2026-10-02",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Complete authenticated browser dialog, immediately saved before continuing.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-10",
+      "contentSha256": "ec802cb54c6e4f63fa2584974a9d22f1e5b0c32470d39866b1c4147ddfcc9916"
+    },
+    {
+      "month": "2026-10",
+      "ordinal": 3,
+      "zhTitle": "成年人合租的利弊",
+      "prompt": "La colocation : Pour ou contre ?",
+      "document1": "Il y a ceux qui aiment les plateaux télé et ceux qui ne supportent pas de manger tout seuls. Pour ces derniers, le mieux est la colocation. En effet, vivre en colocation permet d'avoir de réels moments d'échange, que ce soit pendant les repas ou à d'autres moments, par exemple en jouant à des jeux de société. Autre élément important, la vaisselle et toutes les autres tâches ménagères se font aussi à plusieurs. Vivre avec d'autres personnes permet d'ouvrir son esprit, de découvrir d'autres façons de vivre, de créer des liens uniques, de partager des expériences et de se rendre des services l'un l'autre. D'après etudiant.aujourdhui.fr",
+      "document2": "Il peut être difficile de vivre en colocation quand, certains soirs, vous aimeriez bien vous retrouver au calme et seul. Vous devrez également accepter le fait de recevoir des amis qui ne sont pas forcément les vôtres, et veiller à ce que les tours du ménage soient bien respectés, au lieu de devoir tout faire vous-même (ou de laisser l'autre tout faire à votre place). Autrement dit, vous allez devoir vous montrer diplomate sur bien des points. À moins, bien entendu, de tomber sur le colocataire parfait. D'après nrj.fr",
+      "recordId": "2026-10-03",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Complete authenticated browser dialog, immediately saved before continuing.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-10",
+      "contentSha256": "8d4637d369c6ec0b8527833afe44ea2041d772d97f599a61475dfe6e1518d158"
+    },
+    {
+      "month": "2026-10",
+      "ordinal": 4,
+      "zhTitle": "业余厨师与专业厨师",
+      "prompt": "Cuisinier amateur ou cuisinier professionnel ?",
+      "document1": "Les amateurs peuvent réussir certaines recettes, mais ils manquent encore de compétences et de techniques. La formation et l’expérience restent donc nécessaires pour devenir un véritable cuisinier.\n",
+      "document2": "De nombreux cuisiniers ont appris leur métier sur Internet et ont connu le succès sur les réseaux sociaux. C’est notamment le cas d’une amatrice devenue professionnelle, qui a publié plusieurs livres destinés aux personnes qui cuisinent à la maison.",
+      "recordId": "2026-10-04",
+      "wordRange": {
+        "min": 120,
+        "max": 180
+      },
+      "source": "BonTCF writing Tâche 3 monthly archive",
+      "provenance": "Complete authenticated browser dialog, immediately saved before continuing.",
+      "sourceUrl": "https://www.bontcf.com/practice/writing/tache-3/archive?view=history&month=2026-10",
+      "contentSha256": "2e39cbac8ad13ddf7dada39fc73a920875dab5253b4eb5509f0e0d731d3bc8c3"
+    }
+  ],
+  "matching": {
+    "independentTasks": 36,
+    "directArticles": 4,
+    "migrationArticles": 32,
+    "unprocessedRecords": 0
+  },
+  "validation": {
+    "sourceRecords": 45,
+    "fullMaterials": 90,
+    "wordRange": "120–180",
+    "oldCorpusFiles": "unchanged",
+    "storageKeys": "preserved",
+    "tests": "passed",
+    "materialReview": "complete"
+  },
+  "deployment": {
+    "status": "pending",
+    "target": "https://limengz1129-creator.github.io/TCF-writing-trainer/"
+  }
+}
