@@ -1,5 +1,63 @@
 'use strict';
 (() => {
+  const GROUPS = [
+    {title:'1. 语言与沟通', items:[
+      ['01','语言障碍影响日常自主生活'],
+      ['02','语言能力促进社交与社会融入'],
+      ['03','真实语言环境提高语言能力'],
+      ['04','语言能力与职业融入']
+    ]},
+    {title:'2. 文化适应与身份', items:[
+      ['05','了解当地文化促进适应'],
+      ['06','跨文化接触拓宽视野'],
+      ['07','亲身体验比远程了解更深入'],
+      ['08','长期海外生活可能淡化原有文化'],
+      ['09','母语与传统维持文化身份'],
+      ['10','同胞圈与当地社会之间保持平衡']
+    ]},
+    {title:'3. 社交、孤独与归属感', items:[
+      ['11','远离亲友容易产生孤独，但陪伴能提供支持'],
+      ['12','主动参加活动建立社交网络与归属感']
+    ]},
+    {title:'4. 就业与职业', items:[
+      ['13','了解当地就业市场和职场规范'],
+      ['14','培训、人脉与就业支持提高就业竞争力'],
+      ['15','海外经历提升职业竞争力，但不是万能']
+    ]},
+    {title:'5. 移民政策与融入责任', items:[
+      ['16','移民既补充劳动力，也增加公共资源压力'],
+      ['17','融入是个人与接收社会的共同责任']
+    ]},
+    {title:'6. 家庭、教育与个人成长', items:[
+      ['18','孩子和学校可以成为全家融入的桥梁'],
+      ['19','移民中的教育机会、儿童语言与社交'],
+      ['20','年龄与生活经验也能帮助适应'],
+      ['21','独自解决问题培养自主性与责任感'],
+      ['22','独自旅行带来个人自由']
+    ]},
+    {title:'7. 旅行成本与交通', items:[
+      ['23','旅行受金钱与时间限制，但可通过规划降低门槛'],
+      ['24','交通方式是速度、价格与旅途体验之间的取舍'],
+      ['25','跨境流动更自由能增加机会，但仍需要安全管控']
+    ]},
+    {title:'8. 旅游经济、环境与文化传播', items:[
+      ['26','旅游业有经济收益，也有环境和住房代价'],
+      ['27','亲身旅行、城市与美食体验可以理解并传播文化'],
+      ['28','媒体、艺术与国际交流也能传播文化']
+    ]}
+  ];
+
+  const QUICK = [
+    ['语言与沟通','障碍 / 融入 / 练语言 / 职场'],
+    ['文化适应与身份','适应 / 开放 / 亲身体验 / 母语 / 平衡'],
+    ['社交与归属','孤独 / 活动 / 归属感'],
+    ['就业与职业','市场 / 培训 / 海外经历'],
+    ['政策与责任','劳动力 / 公共压力 / 共同努力'],
+    ['家庭与成长','孩子 / 教育 / 自主 / 自由'],
+    ['旅行条件','金钱 / 时间 / 交通 / 边境'],
+    ['旅游传播','经济 / 环境 / 城市 / 美食 / 媒体']
+  ];
+
   const SAMPLE = {
     number: '06',
     title: '跨文化接触拓宽视野',
@@ -7,7 +65,6 @@
     coreFr: 'nouvelles cultures → échanges → remettre en question ses préjugés → éviter les stéréotypes → élargir sa vision du monde',
     coreZh: '接触新文化 → 交流 → 反思偏见 → 避免刻板印象 → 拓宽视野',
     quick: '新文化 → 交流 → 反思偏见 → 少刻板印象 → 视野更开阔',
-    sources: ['1-09-1','1-15-2','1-16-3','1-22-2'],
     scenes: [
       {
         title: '海外生活版',
@@ -59,6 +116,8 @@
   };
 
   const $ = id => document.getElementById(id);
+  let currentView='overview';
+
   function chip(fr, zh) {
     const el=document.createElement('div');
     el.className='argument-word';
@@ -73,80 +132,125 @@
     b.onclick=()=>{sessionStorage.setItem('tcf-eo-t3-return-argument-map','1');sessionStorage.setItem('tcf-eo-t3-argument-return-state',JSON.stringify({mode:'scene',sceneIndex}));window.CORPUS_OPEN_PARAGRAPH?.(id);};
     return b;
   }
-  function render() {
+
+  function renderOverview(stage){
+    currentView='overview';
+    stage.replaceChildren();
+    const intro=document.createElement('section');
+    intro.className='argument-overview-intro';
+    intro.innerHTML='<p class="eyebrow">旅行与移民 · 总思维导图</p><h2>96 个原始论段 → 28 个核心母论点</h2><p class="note">先看全局，再点击母论点进入逻辑链。#06 已接入完整详情，其余节点先作为总图结构展示。</p>';
+    stage.append(intro);
+
+    const grid=document.createElement('div');
+    grid.className='argument-group-grid';
+    GROUPS.forEach(group=>{
+      const section=document.createElement('section');
+      section.className='argument-group-card';
+      const h=document.createElement('h3'); h.textContent=group.title; section.append(h);
+      const items=document.createElement('div'); items.className='argument-node-list';
+      group.items.forEach(([id,title])=>{
+        const b=document.createElement('button');
+        b.className='argument-node';
+        b.innerHTML='<span class="node-num">#'+id+'</span><span class="node-title">'+title+'</span>';
+        if(id==='06'){b.classList.add('ready'); b.title='已接入完整详情'; b.onclick=()=>renderDetail(stage);}
+        else {b.onclick=()=>{document.getElementById('argumentToast').textContent='#'+id+' 已进入总图；完整逻辑链详情会在下一阶段批量接入。';};}
+        items.append(b);
+      });
+      section.append(items); grid.append(section);
+    });
+    stage.append(grid);
+    const toast=document.createElement('p'); toast.id='argumentToast'; toast.className='note'; stage.append(toast);
+  }
+
+  function renderList(stage){
+    currentView='list';
+    stage.replaceChildren();
+    const list=document.createElement('div'); list.className='mother-list';
+    GROUPS.forEach(group=>{
+      const h=document.createElement('h3'); h.textContent=group.title; list.append(h);
+      group.items.forEach(([id,title])=>{
+        const row=document.createElement('button'); row.className='mother-list-row';
+        row.innerHTML='<span>#'+id+'</span><strong>'+title+'</strong><em>'+(id==='06'?'查看完整详情 ›':'已纳入总图')+'</em>';
+        if(id==='06')row.onclick=()=>renderDetail(stage);
+        list.append(row);
+      });
+    });
+    stage.append(list);
+  }
+
+  function renderQuick(stage){
+    currentView='quick';
+    stage.replaceChildren();
+    const wrap=document.createElement('div'); wrap.className='quick-overview-grid';
+    QUICK.forEach(([title,keywords])=>{
+      const card=document.createElement('section'); card.className='quick-overview-card';
+      card.innerHTML='<h3>'+title+'</h3><p>'+keywords+'</p>'; wrap.append(card);
+    });
+    stage.append(wrap);
+  }
+
+  function renderDetail(stage){
+    currentView='detail';
+    stage.replaceChildren();
+    const back=document.createElement('button'); back.className='back-to-map'; back.textContent='← 返回 28 个母论点总图'; back.onclick=()=>renderOverview(stage); stage.append(back);
+
+    const head=document.createElement('div'); head.className='argument-head';
+    head.innerHTML='<div><p class="eyebrow">旅行与移民 · 母论点详情</p><h2>#'+SAMPLE.number+' '+SAMPLE.title+' <span class="argument-badge">'+SAMPLE.badge+'</span></h2></div>';
+    stage.append(head);
+
+    const core=document.createElement('section'); core.className='argument-core';
+    core.innerHTML='<p class="argument-label">核心法语逻辑链</p><div class="logic-fr" lang="fr">'+SAMPLE.coreFr+'</div><div class="logic-zh">'+SAMPLE.coreZh+'</div>';
+    stage.append(core);
+
+    const branches=document.createElement('div'); branches.className='scene-list';
+    SAMPLE.scenes.forEach((s,i)=>{
+      const card=document.createElement('button'); card.className='scene-chain';
+      card.innerHTML='<strong>'+s.title+'</strong><span class="logic-fr compact" lang="fr">'+s.fr+'</span><span class="logic-zh">'+s.zh+'</span><em>点击展开主题词组 ›</em>';
+      card.onclick=()=>renderScene(stage,i); branches.append(card);
+    });
+    stage.append(branches);
+  }
+
+  function renderScene(stage,i){
+    const s=SAMPLE.scenes[i]; currentView='scene'; stage.replaceChildren();
+    const back=document.createElement('button'); back.className='back-to-map'; back.textContent='← 返回 #06 核心逻辑链'; back.onclick=()=>renderDetail(stage); stage.append(back);
+    const top=document.createElement('section'); top.className='argument-core';
+    top.innerHTML='<p class="argument-label">'+s.title+'</p><div class="logic-fr" lang="fr">'+s.fr+'</div><div class="logic-zh">'+s.zh+'</div>'; stage.append(top);
+    const title=document.createElement('h3'); title.textContent='主题词汇 / 词组'; stage.append(title);
+    const words=document.createElement('div'); words.className='argument-words'; s.words.forEach(x=>words.append(chip(x[0],x[1]))); stage.append(words);
+    const srcTitle=document.createElement('h3'); srcTitle.textContent='对应原论段'; stage.append(srcTitle);
+    const src=document.createElement('div'); src.className='source-jumps'; s.sourceIds.forEach(id=>src.append(sourceButton(id,i))); stage.append(src);
+  }
+
+  function render(){
     const root=$('argumentMapView'); if(!root) return;
     root.replaceChildren();
 
-    const head=document.createElement('div'); head.className='argument-head';
-    head.innerHTML='<div><p class="eyebrow">旅行与移民 · 论点地图交互样板</p><h2>#'+SAMPLE.number+' '+SAMPLE.title+' <span class="argument-badge">'+SAMPLE.badge+'</span></h2><p class="note">先用一个母论点验证交互；确认后再把全部 28 个节点接入。</p></div>';
-    root.append(head);
-
-    const modes=document.createElement('div'); modes.className='argument-modes';
-    [['map','🧠 思维导图'],['chain','🔗 法语逻辑链'],['quick','⚡ 极简速记']].forEach(([k,label],i)=>{
-      const b=document.createElement('button'); b.dataset.mode=k; b.textContent=label; if(i===0)b.classList.add('active'); modes.append(b);
+    const toolbar=document.createElement('div'); toolbar.className='argument-modes';
+    [['overview','🧠 总思维导图'],['list','🔗 母论点列表'],['quick','⚡ 极简总览']].forEach(([k,label],i)=>{
+      const b=document.createElement('button'); b.dataset.mode=k; b.textContent=label; if(i===0)b.classList.add('active'); toolbar.append(b);
     });
-    root.append(modes);
+    root.append(toolbar);
 
     const stage=document.createElement('div'); stage.id='argumentStage'; root.append(stage);
 
-    function renderMap(){
-      stage.replaceChildren();
-      const map=document.createElement('div'); map.className='argument-map-sample';
-      const center=document.createElement('button'); center.className='mother-node active';
-      center.innerHTML='<strong>#06 '+SAMPLE.title+'</strong><small>'+SAMPLE.badge+' · 点击场景链继续展开</small>';
-      map.append(center);
-      const branches=document.createElement('div'); branches.className='scene-grid';
-      SAMPLE.scenes.forEach((s,i)=>{
-        const card=document.createElement('button'); card.className='scene-node';
-        card.innerHTML='<span>场景 '+(i+1)+'</span><strong>'+s.title+'</strong><small lang="fr">'+s.fr+'</small>';
-        card.onclick=()=>renderScene(i);
-        branches.append(card);
-      });
-      map.append(branches); stage.append(map);
-    }
-
-    function renderChain(){
-      stage.replaceChildren();
-      const core=document.createElement('section'); core.className='argument-core';
-      core.innerHTML='<p class="argument-label">核心法语逻辑链</p><div class="logic-fr" lang="fr">'+SAMPLE.coreFr+'</div><div class="logic-zh">'+SAMPLE.coreZh+'</div>';
-      stage.append(core);
-      const branches=document.createElement('div'); branches.className='scene-list';
-      SAMPLE.scenes.forEach((s,i)=>{
-        const card=document.createElement('button'); card.className='scene-chain';
-        card.innerHTML='<strong>'+s.title+'</strong><span class="logic-fr compact" lang="fr">'+s.fr+'</span><span class="logic-zh">'+s.zh+'</span><em>点击展开主题词组 ›</em>';
-        card.onclick=()=>renderScene(i); branches.append(card);
-      });
-      stage.append(branches);
-    }
-
-    function renderQuick(){
-      stage.replaceChildren();
-      const q=document.createElement('section'); q.className='quick-card';
-      q.innerHTML='<p class="argument-label">考前极简速记</p><div class="quick-memory">'+SAMPLE.quick+'</div><p class="logic-fr" lang="fr">'+SAMPLE.coreFr+'</p><p class="logic-zh">'+SAMPLE.coreZh+'</p>';
-      stage.append(q);
-    }
-
-    function renderScene(i){
-      const s=SAMPLE.scenes[i]; stage.replaceChildren();
-      const back=document.createElement('button'); back.className='back-to-map'; back.textContent='← 返回核心逻辑链'; back.onclick=renderChain; stage.append(back);
-      const top=document.createElement('section'); top.className='argument-core';
-      top.innerHTML='<p class="argument-label">'+s.title+'</p><div class="logic-fr" lang="fr">'+s.fr+'</div><div class="logic-zh">'+s.zh+'</div>';
-      stage.append(top);
-      const title=document.createElement('h3'); title.textContent='主题词汇 / 词组'; stage.append(title);
-      const words=document.createElement('div'); words.className='argument-words';
-      s.words.forEach(x=>words.append(chip(x[0],x[1]))); stage.append(words);
-      const srcTitle=document.createElement('h3'); srcTitle.textContent='对应原论段'; stage.append(srcTitle);
-      const src=document.createElement('div'); src.className='source-jumps'; s.sourceIds.forEach(id=>src.append(sourceButton(id,i))); stage.append(src);
-    }
-
-    modes.onclick=e=>{
+    toolbar.onclick=e=>{
       const b=e.target.closest('button[data-mode]'); if(!b)return;
-      modes.querySelectorAll('button').forEach(x=>x.classList.toggle('active',x===b));
-      b.dataset.mode==='map'?renderMap():b.dataset.mode==='chain'?renderChain():renderQuick();
+      toolbar.querySelectorAll('button').forEach(x=>x.classList.toggle('active',x===b));
+      b.dataset.mode==='overview'?renderOverview(stage):b.dataset.mode==='list'?renderList(stage):renderQuick(stage);
     };
+
     const savedReturn=sessionStorage.getItem('tcf-eo-t3-argument-return-state');
-    if(savedReturn){try{const r=JSON.parse(savedReturn);sessionStorage.removeItem('tcf-eo-t3-argument-return-state');if(r.mode==='scene'&&Number.isInteger(r.sceneIndex)&&SAMPLE.scenes[r.sceneIndex]){modes.querySelectorAll('button').forEach(x=>x.classList.toggle('active',x.dataset.mode==='chain'));renderScene(r.sceneIndex);return;}}catch{sessionStorage.removeItem('tcf-eo-t3-argument-return-state');}}
-    renderMap();
+    if(savedReturn){
+      try{
+        const r=JSON.parse(savedReturn); sessionStorage.removeItem('tcf-eo-t3-argument-return-state');
+        if(r.mode==='scene'&&Number.isInteger(r.sceneIndex)&&SAMPLE.scenes[r.sceneIndex]){
+          toolbar.querySelectorAll('button').forEach(x=>x.classList.remove('active'));
+          renderScene(stage,r.sceneIndex); return;
+        }
+      }catch{sessionStorage.removeItem('tcf-eo-t3-argument-return-state');}
+    }
+    renderOverview(stage);
   }
 
   window.CORPUS_ARGUMENT_MAP={render};
