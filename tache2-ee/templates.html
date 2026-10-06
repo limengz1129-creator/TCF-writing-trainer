@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f7f8fc">
+<title>EE · TCF 写作 Tâche 2 · 模板自动化训练</title>
+<style>
+:root{--ink:#24304b;--muted:#6d7487;--blue:#515cdd;--line:#e4e7f0;--bg:#f7f8fc;--red:#c73f55;--gold:#9b6b00;--green:#26764f;--soft:#fafbff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+button,input,select,textarea{font:inherit}
+button{cursor:pointer;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);padding:9px 14px}
+button:hover{border-color:var(--blue)}
+button.active,.primary{background:var(--blue);border-color:var(--blue);color:#fff}
+a{color:var(--blue);text-decoration:none}
+header{max-width:1450px;margin:auto;padding:28px 28px 18px}
+h1{font-size:29px;margin:4px 0} h2{font-size:23px;margin:8px 0} h3{font-size:18px;margin:10px 0}
+p{margin:8px 0}.muted,.note{color:var(--muted);font-size:13px}
+.topline{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.badge{display:inline-block;border-radius:999px;padding:3px 9px;font-size:12px;background:#eef0ff;color:#414cc4;margin-right:6px}
+.badge.a{background:#eceeff;color:#4450c7}.badge.b{background:#eaf7ef;color:#246344}.badge.c{background:#fff1de;color:#875b13}.badge.plugin{background:#f6eafb;color:#71468a}
+main{max-width:1450px;margin:auto;padding:0 28px 40px}
+.nav{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.hero{background:linear-gradient(135deg,#fff,#f2f4ff)}
+.template-card{position:relative}
+.template-card .reuse{font-weight:700;color:#4450c7}
+.skeleton{display:grid;gap:8px;margin-top:12px}
+.block{border-left:4px solid #cdd2e6;padding:9px 11px;background:#fbfcff;border-radius:8px}
+.block.fixed{border-left-color:var(--red);background:#fff6f7}.block.shared{border-left-color:var(--blue);background:#f5f6ff}.block.slot{border-left-color:#d7aa27;background:#fffaf0}.block.free{border-left-color:var(--green);background:#f4fbf7}
+.legend{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}.legend span{font-size:12px;border-radius:999px;padding:3px 8px}
+.legend .fixed{background:#fff0f2;color:#9c2e43}.legend .shared{background:#eef0ff;color:#404bc1}.legend .slot{background:#fff4d8;color:#805f00}.legend .free{background:#eaf8ef;color:#276846}
+.section{display:none}.section.active{display:block}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:12px 0}
+select,input[type=search]{padding:9px 10px;border:1px solid var(--line);border-radius:9px;background:#fff;color:var(--ink)}
+textarea{width:100%;min-height:120px;border:1px solid #ccd2e3;border-radius:10px;padding:12px;resize:vertical;line-height:1.8}
+.chunk-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:10px}
+.chunk{border:1px solid var(--line);border-radius:12px;padding:13px;background:#fff}
+.chunk .zh{font-weight:700;margin-bottom:6px}.chunk .fr{background:#f7f8fd;border-radius:8px;padding:9px 10px;margin:8px 0}
+.chunk input{width:100%;padding:9px;border:1px solid var(--line);border-radius:8px}
+.ok{color:#26764f;font-weight:700}.bad{color:#aa394c;font-weight:700}
+.slotbox{max-width:900px}.promptbox{background:#f4f6ff;border-left:4px solid #8b95eb;border-radius:8px;padding:13px;margin:12px 0}
+.smalltable{width:100%;border-collapse:collapse;margin-top:12px}.smalltable th,.smalltable td{border-bottom:1px solid var(--line);text-align:left;vertical-align:top;padding:9px}.smalltable th{font-size:13px;color:var(--muted)}
+.plugin-card ul{margin:8px 0 0 20px;padding:0}.plugin-card li{margin:5px 0}
+.exam-list{display:grid;gap:12px}.exam{background:#fff;border:1px solid var(--line);border-radius:14px;padding:15px}.exam .prompt{white-space:pre-wrap;background:#fafbff;padding:11px;border-radius:9px;margin:10px 0}
+.exam .guide{border-top:1px dashed var(--line);margin-top:10px;padding-top:10px}
+.hidden{display:none!important}
+.progress{display:flex;gap:12px;flex-wrap:wrap}.progress strong{font-size:21px}
+.kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#eef0f5;border-radius:5px;padding:1px 5px}
+@media(max-width:700px){header,main{padding-left:15px;padding-right:15px}.chunk-list{grid-template-columns:1fr}h1{font-size:24px}.smalltable{font-size:13px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="topline"><a href="./">← 返回 Tâche 2</a><span class="badge">EE</span><span class="muted">TCF Canada · Expression écrite · Tâche 2</span></div>
+  <h1>🧩 Tâche 2 模板自动化训练</h1>
+  <p class="muted">Culala 母模板 A → B/C 最小改造 → 功能插件 → 2026 年 7–10 月真题迁移</p>
+</header>
+<main>
+  <section class="card hero">
+    <h2>训练路线</h2>
+    <p><strong>先背熟 A，再学 B/C 的差异，最后只补少量插件。</strong>目标不是背三篇死模板，而是形成“看到题目 → 判断类型 → 调用骨架 → 替换槽位 → 完成真题”的自动化。</p>
+    <div class="progress"><div><strong id="masteredCount">0</strong><div class="muted">已掌握句块</div></div><div><strong id="totalCount">0</strong><div class="muted">核心句块</div></div><div><strong id="attemptCount">0</strong><div class="muted">练习次数</div></div></div>
+  </section>
+
+  <div class="nav" aria-label="模板训练导航">
+    <button class="navbtn active" data-section="overview">1. 模板速览</button>
+    <button class="navbtn" data-section="chunks">2. 句块背诵</button>
+    <button class="navbtn" data-section="slots">3. 填槽变形</button>
+    <button class="navbtn" data-section="plugins">4. 插件速练</button>
+    <button class="navbtn" data-section="migration">5. 🔥 7–10月真题迁移</button>
+  </div>
+
+  <section id="overview" class="section active">
+    <div class="legend"><span class="fixed">红：固定骨架，优先背熟</span><span class="shared">蓝：A/B/C 可复用</span><span class="slot">黄：真题决定的槽位</span><span class="free">绿：临场自由素材</span></div>
+    <div class="grid">
+      <article class="card template-card">
+        <div><span class="badge a">A</span><strong>经历分享 / 活动体验</strong></div>
+        <p class="reuse">母模板：Culala</p>
+        <div class="skeleton">
+          <div class="block fixed"><strong>标题 / 问候</strong><br>Une expérience enrichissante<br>Bonjour chers internautes / Salut chers amis,</div>
+          <div class="block shared"><strong>引出经历</strong><br>J’espère que vous allez bien ! J’ai récemment eu l’opportunité de <span class="slot">[expérience]</span>, et je voulais / j’aimerais partager avec vous cette expérience exceptionnelle.</div>
+          <div class="block shared"><strong>描述活动 / 环境</strong><br>L’événement était organisé par <span class="slot">[organisateur]</span> et proposait diverses activités, telles que <span class="slot">[activité 1]</span>, <span class="slot">[activité 2]</span> et <span class="slot">[activité 3]</span>. L’ambiance était <span class="slot">[adjectif]</span>, et <span class="free">[description]</span>.</div>
+          <div class="block shared"><strong>亮点 + 感受</strong><br>Ce qui m’a le plus marqué, c’est <span class="slot">[point fort]</span>. Si je n’avais pas tenté cette expérience, je n’aurais jamais imaginé à quel point elle pouvait être <span class="slot">[adjectif]</span>.</div>
+          <div class="block shared"><strong>推荐 / 价值</strong><br>Alors, je vous recommande vivement de <span class="slot">[action]</span>. C’est une excellente occasion de découvrir <span class="slot">[thème]</span> et de profiter d’un moment <span class="slot">[adjectif]</span>.</div>
+          <div class="block fixed"><strong>结尾</strong><br>Merci de m’avoir lu.<br>À très bientôt !<br><span class="slot">[prénom]</span></div>
+        </div>
+      </article>
+
+      <article class="card template-card">
+        <div><span class="badge b">B</span><strong>体验评价 / 对象评价</strong></div>
+        <p><span class="reuse">优先继承 A</span>；只有评价逻辑不同。</p>
+        <div class="skeleton">
+          <div class="block shared">J’ai récemment eu l’opportunité de <span class="slot">[tester / découvrir / séjourner dans…]</span>.</div>
+          <div class="block shared">Ce qui m’a le plus marqué, c’est <span class="slot">[point positif]</span>.</div>
+          <div class="block free">J’ai particulièrement apprécié <span class="slot">[qualité / service / aspect]</span>.</div>
+          <div class="block free">Cependant, j’ai été un peu déçu(e) par <span class="slot">[point négatif]</span>.</div>
+          <div class="block shared">Malgré ce petit inconvénient, je vous recommande vivement de <span class="slot">[action]</span>.</div>
+          <div class="block shared">C’est une excellente occasion de <span class="slot">[bénéfice / découverte]</span>.</div>
+        </div>
+        <p class="note">B 不是全新模板：核心仍是“经历 → 亮点 → 评价 → 推荐”，只是增加正反评价。</p>
+      </article>
+
+      <article class="card template-card">
+        <div><span class="badge c">C</span><strong>回应 / 建议 / 实用事务</strong></div>
+        <p><span class="reuse">尽量复用 A 的推荐、价值和结尾语块</span>，主体改成回应任务。</p>
+        <div class="skeleton">
+          <div class="block fixed">Bonjour <span class="slot">[prénom / Madame / Monsieur]</span>,</div>
+          <div class="block free">J’ai bien reçu ton / votre message concernant <span class="slot">[sujet]</span>.</div>
+          <div class="block free">À ta place, je commencerais par <span class="slot">[conseil 1]</span>.</div>
+          <div class="block free">Ensuite, il serait préférable de <span class="slot">[conseil 2]</span>.</div>
+          <div class="block shared">Je te / vous recommande vivement de <span class="slot">[action]</span>.</div>
+          <div class="block shared">C’est une excellente occasion de <span class="slot">[bénéfice]</span>.</div>
+          <div class="block fixed">J’espère que ces conseils / informations te / vous seront utiles.<br>À bientôt / Bien cordialement,</div>
+        </div>
+        <p class="note">如果题目是询问信息、投诉、解释决定或纯观点，使用下面的“功能插件”，而不是再背 D/E/F。</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="chunks" class="section">
+    <div class="card">
+      <h2>核心句块背诵</h2>
+      <p>先看中文独立写法语，再点“检查”。句块只记一次；B/C 复用 A 时不会重复增加记忆量。</p>
+      <div class="toolbar"><select id="chunkFilter"><option value="all">全部</option><option value="A">A 母模板</option><option value="B">B 新增/变形</option><option value="C">C 新增/变形</option><option value="shared">跨模板共用</option></select><button id="randomChunk">随机一个</button><button id="resetChunkFilter">显示全部</button></div>
+      <div id="chunkList" class="chunk-list"></div>
+    </div>
+  </section>
+
+  <section id="slots" class="section">
+    <div class="card slotbox">
+      <h2>填槽 + 变形训练</h2>
+      <p>训练“固定骨架不变，题目内容替换”。先自己写，再显示参考答案。</p>
+      <div class="toolbar"><button id="nextSlot" class="primary">随机下一题</button><button id="showSlot">显示参考</button></div>
+      <div id="slotPrompt" class="promptbox"></div>
+      <textarea id="slotAnswer" placeholder="在这里写完整法语句子……"></textarea>
+      <div id="slotReference" class="promptbox hidden"></div>
+    </div>
+  </section>
+
+  <section id="plugins" class="section">
+    <div class="card">
+      <h2>功能插件速练</h2>
+      <p>插件不是新模板。每个插件只补 2–4 个功能句，插入 A/B/C 即可。</p>
+      <div id="pluginGrid" class="grid"></div>
+    </div>
+  </section>
+
+  <section id="migration" class="section">
+    <div class="card">
+      <h2>🔥 2026 年 7–10 月真题迁移</h2>
+      <p>直接读取当前 Tâche 2 页面里的 7–10 月真题，不另造题库。先判断模板，再看引导；冲刺时使用“盲写模式”。</p>
+      <div class="toolbar">
+        <select id="monthFilter"><option value="">全部月份</option><option value="2026-07">2026.07</option><option value="2026-08">2026.08</option><option value="2026-09">2026.09</option><option value="2026-10">2026.10</option></select>
+        <select id="templateFilter"><option value="">全部模板</option><option value="A">A</option><option value="B">B</option><option value="C">C</option></select>
+        <select id="migrationMode"><option value="identify">识别模式</option><option value="guided">引导迁移</option><option value="blind">盲写模式</option></select>
+        <button id="randomExam">随机真题</button>
+      </div>
+      <div id="examCount" class="muted"></div>
+      <div id="examList" class="exam-list"></div>
+    </div>
+  </section>
+</main>
+
+<script>
+const CORE_CHUNKS=[
+{id:'a1',groups:['A','shared'],zh:'我最近有机会……',fr:"J’ai récemment eu l’opportunité de…",note:'A 母模板核心；B 也优先复用。'},
+{id:'a2',groups:['A','shared'],zh:'我想和大家分享这次非凡的经历。',fr:"Je voulais / j’aimerais partager avec vous cette expérience exceptionnelle.",note:'经历型引入。'},
+{id:'a3',groups:['A'],zh:'这个活动由……组织，并提供了各种活动，例如……',fr:"L’événement était organisé par… et proposait diverses activités, telles que…",note:'仅适合真正的活动/事件；地点、服务类要换名词。'},
+{id:'a4',groups:['A','B','shared'],zh:'最让我印象深刻的是……',fr:"Ce qui m’a le plus marqué, c’est…",note:'A/B 高频共用。'},
+{id:'a5',groups:['A'],zh:'如果我没有尝试这次经历，我绝不会想到它竟然如此……',fr:"Si je n’avais pas tenté cette expérience, je n’aurais jamais imaginé à quel point elle pouvait être…",note:'适合积极经历，不强行用于投诉/纯观点。'},
+{id:'a6',groups:['A','B','C','shared'],zh:'我强烈推荐你/你们……',fr:"Je te / vous recommande vivement de…",note:'三模板最值得自动化的共用句块。'},
+{id:'a7',groups:['A','B','C','shared'],zh:'这是一个……的绝佳机会。',fr:"C’est une excellente occasion de…",note:'三模板可迁移。'},
+{id:'a8',groups:['A','B','shared'],zh:'享受一段……的时光。',fr:"profiter d’un moment…",note:'A/B 很自然。'},
+{id:'a9',groups:['A'],zh:'谢谢你读完我的分享。',fr:"Merci de m’avoir lu.",note:'博客/论坛类结尾。'},
+{id:'b1',groups:['B'],zh:'我尤其喜欢……',fr:"J’ai particulièrement apprécié…",note:'B 的正面评价补充。'},
+{id:'b2',groups:['B'],zh:'不过，我对……有一点失望。',fr:"Cependant, j’ai été un peu déçu(e) par…",note:'负面评价插件核心。'},
+{id:'b3',groups:['B'],zh:'唯一的缺点在于……',fr:"Le seul point négatif concerne…",note:'轻度负评，适合不想把语气写太重时。'},
+{id:'b4',groups:['B'],zh:'另一方面，……仍有改进空间。',fr:"En revanche, … pourrait être amélioré.",note:'服务/课程/场所评价。'},
+{id:'c1',groups:['C'],zh:'我收到了你关于……的消息。',fr:"J’ai bien reçu ton / votre message concernant…",note:'回应型开头。'},
+{id:'c2',groups:['C'],zh:'如果我是你，我会先……',fr:"À ta place, je commencerais par…",note:'建议类。'},
+{id:'c3',groups:['C'],zh:'然后，最好……',fr:"Ensuite, il serait préférable de…",note:'建议类第二步。'},
+{id:'c4',groups:['C'],zh:'希望这些建议/信息对你有帮助。',fr:"J’espère que ces conseils / informations te / vous seront utiles.",note:'回应类结尾。'}
+];
+
+const PLUGINS=[
+{name:'负面评价',for:'B',phrases:["Cependant, j’ai été un peu déçu(e) par…","Le seul point négatif concerne…","En revanche, … pourrait être amélioré."]},
+{name:'人物 / 艺术家',for:'B',phrases:["La personne que j’admire particulièrement est…","Ce que j’apprécie le plus chez lui / elle, c’est…","Ce qui m’a le plus marqué, c’est…"]},
+{name:'询问信息',for:'C',phrases:["J’aimerais savoir si…","Pourrais-tu me préciser… ?","Peux-tu également me dire… ?"]},
+{name:'解释决定 / 理由',for:'C',phrases:["J’ai récemment décidé de…","Cette décision s’explique par plusieurs raisons.","Tout d’abord… De plus… Enfin…"]},
+{name:'表达观点',for:'C',phrases:["À mon avis,…","Je pense que…","Certes…, mais…","Tout dépend de…"]},
+{name:'投诉 / 要求解决',for:'C',phrases:["Malheureusement,…","Je suis particulièrement mécontent(e) de…","Je souhaiterais donc que…","Je vous remercie de bien vouloir proposer une solution."]},
+{name:'场地 / 实用事务',for:'C',phrases:["J’ai trouvé un lieu adapté à…","Il peut accueillir…","Le tarif est de…","Si vous êtes d’accord, je peux organiser la réservation."]}
+];
+
+const SLOT_TASKS=[
+{type:'A',cn:'参加一个美食节',base:"J’ai récemment eu l’opportunité de [____].",ref:"J’ai récemment eu l’opportunité de participer à une fête gastronomique."},
+{type:'A',cn:'参加一场职业培训',base:"J’ai récemment eu l’opportunité de [____].",ref:"J’ai récemment eu l’opportunité de participer à une journée de formation professionnelle."},
+{type:'B',cn:'入住一家市中心酒店',base:"J’ai récemment eu l’opportunité de [____].",ref:"J’ai récemment eu l’opportunité de séjourner dans un hôtel situé en centre-ville."},
+{type:'B',cn:'最让我印象深刻的是服务质量',base:"Ce qui m’a le plus marqué, c’est [____].",ref:"Ce qui m’a le plus marqué, c’est la qualité du service."},
+{type:'B',cn:'推荐大家去发现这家餐厅',base:"Je vous recommande vivement de [____].",ref:"Je vous recommande vivement de découvrir ce restaurant."},
+{type:'C',cn:'如果我是你，我会先了解工作时间',base:"À ta place, je commencerais par [____].",ref:"À ta place, je commencerais par me renseigner sur les horaires de travail."},
+{type:'C',cn:'我想知道合同持续多长时间',base:"J’aimerais savoir [____].",ref:"J’aimerais savoir combien de temps dure le contrat."},
+{type:'C',cn:'我强烈建议你提前准备预算',base:"Je te recommande vivement de [____].",ref:"Je te recommande vivement de préparer ton budget à l’avance."}
+];
+
+const CLASSIFY={
+3:{t:'B',p:['表达观点'],reuse:['C’est une excellente occasion de…']},
+4:{t:'A',p:[],reuse:["J’ai récemment eu l’opportunité de…","Ce qui m’a le plus marqué, c’est…","C’est une excellente occasion de…"]},
+7:{t:'B',p:['负面评价'],reuse:["J’ai récemment eu l’opportunité de…","Ce qui m’a le plus marqué, c’est…"]},
+8:{t:'A',p:[],reuse:["J’ai récemment eu l’opportunité de…","Ce qui m’a le plus marqué, c’est…"]},
+9:{t:'A',p:[],reuse:["J’ai récemment eu l’opportunité de…","Ce qui m’a le plus marqué, c’est…"]},
+13:{t:'A',p:[],reuse:["J’ai récemment eu l’opportunité de…","Ce qui m’a le plus marqué, c’est…","Je vous recommande vivement de…"]},
+17:{t:'B',p:['负面评价'],reuse:["J’ai récemment eu l’opportunité de…","Ce qui m’a le plus marqué, c’est…"]},
+20:{t:'A',p:[],reuse:["J’ai récemment eu l’opportunité de…","Ce qui m’a le plus marqué, c’est…","Je vous recommande vivement de…"]},
+21:{t:'A',p:[],reuse:["J’ai récemment eu l’opportunité de…","Ce qui m’a le plus marqué, c’est…"]},
+30:{t:'A',p:[],reuse:["J’ai récemment eu l’opportunité de…","Ce qui m’a le plus marqué, c’est…","C’est une excellente occasion de…"]},
+33:{t:'C',p:['表达观点'],reuse:["Je te / vous recommande vivement de…","C’est une excellente occasion de…"]},
+34:{t:'A',p:[],reuse:["J’ai récemment eu l’opportunité de…","Ce qui m’a le plus marqué, c’est…"]},
+35:{t:'C',p:['解释决定 / 理由'],reuse:[]},
+36:{t:'C',p:['表达观点'],reuse:[]},
+38:{t:'A',p:[],reuse:["J’ai récemment eu l’opportunité de…","Ce qui m’a le plus marqué, c’est…"]},
+47:{t:'A',p:[],reuse:["J’ai récemment eu l’opportunité de…","L’événement était organisé par… et proposait diverses activités…","Ce qui m’a le plus marqué, c’est…","Je vous recommande vivement de…"]},
+48:{t:'B',p:[],reuse:["J’ai récemment eu l’opportunité de…","Ce qui m’a le plus marqué, c’est…","Je vous recommande vivement de…"]},
+49:{t:'B',p:['人物 / 艺术家'],reuse:["Ce qui m’a le plus marqué, c’est…"]},
+50:{t:'B',p:['人物 / 艺术家'],reuse:["Ce qui m’a le plus marqué, c’est…"]},
+51:{t:'C',p:['场地 / 实用事务'],reuse:["Je te / vous recommande vivement de…"]},
+54:{t:'C',p:['询问信息'],reuse:[]},
+58:{t:'A',p:[],reuse:["J’ai récemment eu l’opportunité de…","Ce qui m’a le plus marqué, c’est…"]},
+60:{t:'A',p:[],reuse:["J’ai récemment eu l’opportunité de…","Ce qui m’a le plus marqué, c’est…"]},
+62:{t:'A',p:[],reuse:["J’ai récemment eu l’opportunité de…","Ce qui m’a le plus marqué, c’est…"]},
+67:{t:'A',p:[],reuse:["J’ai récemment eu l’opportunité de…","Ce qui m’a le plus marqué, c’est…"]},
+68:{t:'A',p:[],reuse:["J’ai récemment eu l’opportunité de…","L’événement était organisé par… et proposait diverses activités…","Ce qui m’a le plus marqué, c’est…"]},
+72:{t:'C',p:['投诉 / 要求解决'],reuse:[]},
+73:{t:'A',p:[],reuse:["J’ai récemment eu l’opportunité de…","Ce qui m’a le plus marqué, c’est…","C’est une excellente occasion de…"]},
+74:{t:'A',p:[],reuse:["J’ai récemment eu l’opportunité de…","Ce qui m’a le plus marqué, c’est…"]},
+75:{t:'A',p:[],reuse:["J’ai récemment eu l’opportunité de…","Ce qui m’a le plus marqué, c’est…"]},
+76:{t:'A',p:[],reuse:["J’ai récemment eu l’opportunité de…","Ce qui m’a le plus marqué, c’est…"]},
+77:{t:'C',p:['场地 / 实用事务'],reuse:["Je te / vous recommande vivement de…"]}
+};
+
+const KEY='tcf-t2-template-training-v1';
+let state={mastered:{},attempts:0};
+try{const x=JSON.parse(localStorage.getItem(KEY));if(x)state={...state,...x}}catch(e){}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){};updateStats()}
+function esc(s){return String(s??'').replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+function norm(s){return String(s).normalize('NFC').toLowerCase().replace(/[’]/g,"'").replace(/[\s.,!?;:…/()-]+/g,' ').trim()}
+function updateStats(){document.getElementById('masteredCount').textContent=Object.values(state.mastered).filter(Boolean).length;document.getElementById('totalCount').textContent=CORE_CHUNKS.length;document.getElementById('attemptCount').textContent=state.attempts}
+
+document.querySelectorAll('.navbtn').forEach(function(btn){btn.addEventListener('click',function(){document.querySelectorAll('.navbtn').forEach(function(b){b.classList.toggle('active',b===btn)});document.querySelectorAll('.section').forEach(function(s){s.classList.toggle('active',s.id===btn.dataset.section)});if(btn.dataset.section==='migration')renderExams()})});
+
+function renderChunks(){
+ const filter=document.getElementById('chunkFilter').value;
+ const list=CORE_CHUNKS.filter(function(x){return filter==='all'||x.groups.includes(filter)});
+ document.getElementById('chunkList').innerHTML=list.map(function(x){
+  const tags=x.groups.filter(function(g){return g!=='shared'}).map(function(g){return '<span class="badge '+g.toLowerCase()+'">'+g+'</span>'}).join('');
+  return '<div class="chunk" data-id="'+x.id+'"><div>'+tags+(x.groups.includes('shared')?'<span class="badge">共用</span>':'')+'</div><div class="zh">'+esc(x.zh)+'</div><input class="chunkInput" placeholder="先默写法语……"><div class="toolbar"><button class="checkChunk">检查</button><button class="showChunk">显示答案</button><button class="masterChunk '+(state.mastered[x.id]?'active':'')+'">'+(state.mastered[x.id]?'✓ 已掌握':'标记已掌握')+'</button></div><div class="fr hidden">'+esc(x.fr)+'</div><div class="note">'+esc(x.note)+'</div><div class="feedback note"></div></div>'
+ }).join('');
+ document.querySelectorAll('.checkChunk').forEach(function(b){b.onclick=function(){const box=b.closest('.chunk'),id=box.dataset.id,x=CORE_CHUNKS.find(function(i){return i.id===id}),v=box.querySelector('.chunkInput').value;state.attempts++;box.querySelector('.feedback').innerHTML=norm(v)===norm(x.fr)?'<span class="ok">✓ 基本一致</span>':'<span class="bad">暂未一致，点“显示答案”对照。</span>';save()}});
+ document.querySelectorAll('.showChunk').forEach(function(b){b.onclick=function(){b.closest('.chunk').querySelector('.fr').classList.toggle('hidden')}});
+ document.querySelectorAll('.masterChunk').forEach(function(b){b.onclick=function(){const id=b.closest('.chunk').dataset.id;state.mastered[id]=!state.mastered[id];save();renderChunks()}});
+}
+document.getElementById('chunkFilter').onchange=renderChunks;
+document.getElementById('resetChunkFilter').onclick=function(){document.getElementById('chunkFilter').value='all';renderChunks()};
+document.getElementById('randomChunk').onclick=function(){const x=CORE_CHUNKS[Math.floor(Math.random()*CORE_CHUNKS.length)];document.getElementById('chunkFilter').value='all';renderChunks();setTimeout(function(){const el=document.querySelector('.chunk[data-id="'+x.id+'"]');if(el)el.scrollIntoView({behavior:'smooth',block:'center'})},30)};
+
+let slotIndex=0;
+function renderSlot(){const x=SLOT_TASKS[slotIndex];document.getElementById('slotPrompt').innerHTML='<span class="badge '+x.type.toLowerCase()+'">'+x.type+'</span><strong>'+esc(x.cn)+'</strong><br><span class="muted">'+esc(x.base)+'</span>';document.getElementById('slotAnswer').value='';document.getElementById('slotReference').textContent=x.ref;document.getElementById('slotReference').classList.add('hidden')}
+document.getElementById('nextSlot').onclick=function(){slotIndex=Math.floor(Math.random()*SLOT_TASKS.length);state.attempts++;save();renderSlot()};
+document.getElementById('showSlot').onclick=function(){document.getElementById('slotReference').classList.remove('hidden')};
+
+function renderPlugins(){document.getElementById('pluginGrid').innerHTML=PLUGINS.map(function(p){return '<article class="card plugin-card"><div><span class="badge plugin">插件</span><span class="badge '+p.for.toLowerCase()+'">'+p.for+'</span></div><h3>'+esc(p.name)+'</h3><ul>'+p.phrases.map(function(q){return '<li>'+esc(q)+'</li>'}).join('')+'</ul></article>'}).join('')}
+
+let EXAMS=[];
+async function loadExams(){
+ try{
+  const r=await fetch('./index.html?templateSync=1',{cache:'no-store'});
+  const s=await r.text();
+  const start=s.indexOf('const EXAM_RECORDS=')+'const EXAM_RECORDS='.length;
+  const end=s.indexOf(',RECENT_MONTHS=',start);
+  if(start>20&&end>start)EXAMS=JSON.parse(s.slice(start,end));
+ }catch(e){}
+ renderExams();
+}
+function renderExams(){
+ const root=document.getElementById('examList');
+ if(!EXAMS.length){root.innerHTML='<p class="note">正在读取 7–10 月真题；如果暂时为空，请刷新一次页面。</p>';return}
+ const m=document.getElementById('monthFilter').value,t=document.getElementById('templateFilter').value,mode=document.getElementById('migrationMode').value;
+ let rows=EXAMS.filter(function(x){const c=CLASSIFY[x.articleId]||{t:'A',p:[],reuse:[]};return (!m||x.month===m)&&(!t||c.t===t)});
+ document.getElementById('examCount').textContent='当前 '+rows.length+' 条月度真题记录（同一原题跨月出现会保留月度记录）';
+ root.innerHTML=rows.map(function(x){
+   const c=CLASSIFY[x.articleId]||{t:'A',p:[],reuse:[]};
+   const hidden=mode==='blind';
+   const plugins=c.p.length?c.p.map(function(p){return '<span class="badge plugin">'+esc(p)+'</span>'}).join(''):'<span class="muted">无需额外插件</span>';
+   const reuse=c.reuse.length?'<ul>'+c.reuse.map(function(q){return '<li>'+esc(q)+'</li>'}).join('')+'</ul>':'<span class="muted">本题以 C 功能句为主，不强行套 A。</span>';
+   return '<article class="exam"><div><span class="badge">'+esc(x.month)+'</span><span class="muted">第 '+x.ordinal+' 题</span></div><div class="prompt">'+esc(x.prompt)+'</div><div class="guide '+(hidden?'hidden':'')+'"><div><span class="badge '+c.t.toLowerCase()+'">推荐 '+c.t+'</span>'+plugins+'</div>'+(mode==='guided'?'<p><strong>优先复用 Culala A：</strong></p>'+reuse+'<p class="note">只替换题目槽位；语义不合适的句块不要硬套。</p>':'')+'</div>'+(hidden?'<button class="revealGuide">写完后看推荐模板</button>':'')+'</article>'
+ }).join('');
+ root.querySelectorAll('.revealGuide').forEach(function(b){b.onclick=function(){b.previousElementSibling.classList.remove('hidden');b.remove()}});
+}
+document.getElementById('monthFilter').onchange=renderExams;
+document.getElementById('templateFilter').onchange=renderExams;
+document.getElementById('migrationMode').onchange=renderExams;
+document.getElementById('randomExam').onclick=function(){const cards=[...document.querySelectorAll('.exam')];if(cards.length){cards[Math.floor(Math.random()*cards.length)].scrollIntoView({behavior:'smooth',block:'center'})}};
+
+renderChunks();renderPlugins();renderSlot();updateStats();loadExams();
+</script>
+</body>
+</html>
