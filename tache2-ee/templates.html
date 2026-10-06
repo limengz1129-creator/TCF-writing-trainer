@@ -67,10 +67,11 @@ textarea{width:100%;min-height:120px;border:1px solid #ccd2e3;border-radius:10px
 
   <div class="nav" aria-label="模板训练导航">
     <button class="navbtn active" data-section="overview">1. 模板速览</button>
-    <button class="navbtn" data-section="chunks">2. 句块背诵</button>
-    <button class="navbtn" data-section="slots">3. 填槽变形</button>
-    <button class="navbtn" data-section="plugins">4. 插件速练</button>
-    <button class="navbtn" data-section="migration">5. 🔥 7–10月真题迁移</button>
+    <button class="navbtn" data-section="memorizeA">2. ⭐ 模板A整篇背诵</button>
+    <button class="navbtn" data-section="chunks">3. 句块背诵</button>
+    <button class="navbtn" data-section="slots">4. 填槽变形</button>
+    <button class="navbtn" data-section="plugins">5. 插件速练</button>
+    <button class="navbtn" data-section="migration">6. 🔥 7–10月真题迁移</button>
   </div>
 
   <section id="overview" class="section active">
@@ -160,6 +161,49 @@ textarea{width:100%;min-height:120px;border:1px solid #ccd2e3;border-radius:10px
     </div>
   </section>
 
+  <section id="memorizeA" class="section">
+    <div class="card">
+      <div class="topline"><span class="badge a">A</span><h2 style="margin:0">Culala 模板 A · 整篇学习背诵</h2></div>
+      <p><strong>目标：把模板 A 从标题到署名整篇背下来。</strong>这里保留 Culala 第 3 页的完整骨架与槽位，不把它拆散成零碎句子。先整篇熟悉，再分段背，最后全文默写。</p>
+      <div class="toolbar">
+        <button class="amode active" data-amode="study">① 全文学习</button>
+        <button class="amode" data-amode="paragraph">② 分段背诵</button>
+        <button class="amode" data-amode="full">③ 全文默写</button>
+      </div>
+
+      <div id="aStudy">
+        <div class="toolbar">
+          <button id="aHideFrench">隐藏法语</button>
+          <button id="aToggleZh">隐藏中文</button>
+          <button id="aToggleSlots">隐藏槽位提示</button>
+        </div>
+        <p class="note">建议第一轮：法语 + 中文一起看；第二轮：隐藏法语，只看中文回忆；第三轮：进入“分段背诵”；最后做“全文默写”。</p>
+        <div id="aFullStudy"></div>
+      </div>
+
+      <div id="aParagraph" class="hidden">
+        <div class="toolbar"><button id="aPrevPara">← 上一段</button><span id="aParaCounter" class="muted"></span><button id="aNextPara">下一段 →</button><button id="aRandomPara">随机段落</button></div>
+        <div id="aParaZh" class="promptbox"></div>
+        <textarea id="aParaInput" spellcheck="false" placeholder="只看中文，把这一整段模板写出来……"></textarea>
+        <div class="toolbar"><button id="aCheckPara" class="primary">检查这一段</button><button id="aRevealPara">显示原文</button><button id="aClearPara">清空</button></div>
+        <div id="aParaScore" class="note"></div>
+        <div id="aParaRef" class="promptbox hidden"></div>
+      </div>
+
+      <div id="aFullRecall" class="hidden">
+        <div class="promptbox">
+          <strong>全文中文结构提示</strong><br>
+          标题：一次丰富的经历<br>
+          问候网友 → 最近有机会经历某件事，想分享这次特别的经历 → 活动由谁组织、有哪些活动、氛围如何 → 最让我印象深刻的亮点 + 如果没有尝试就不会想到它如此有收获 → 强烈推荐 + 这是发现某主题并享受难忘时光的好机会 → 感谢阅读 → 礼貌结尾 → 署名
+        </div>
+        <textarea id="aFullInput" style="min-height:420px" spellcheck="false" placeholder="从标题开始，完整默写模板 A……"></textarea>
+        <div class="toolbar"><button id="aCheckFull" class="primary">检查全文</button><button id="aRevealFull">显示完整模板</button><button id="aClearFull">清空</button></div>
+        <div id="aFullScore" class="note"></div>
+        <div id="aFullRef" class="promptbox hidden" style="white-space:pre-wrap"></div>
+      </div>
+    </div>
+  </section>
+
   <section id="chunks" class="section">
     <div class="card">
       <h2>核心句块背诵</h2>
@@ -205,6 +249,86 @@ textarea{width:100%;min-height:120px;border:1px solid #ccd2e3;border-radius:10px
 </main>
 
 <script>
+const A_TEMPLATE_PARAS=[
+{fr:"Une expérience enrichissante",zh:"标题：一次丰富的经历"},
+{fr:"Bonjour chers internautes,",zh:"亲爱的网友们，大家好："},
+{fr:"J’espère que vous allez bien ! J’ai récemment eu l’opportunité de [expérience], et je voulais / j’aimerais partager avec vous cette expérience exceptionnelle.",zh:"希望大家一切都好！我最近有机会[经历]，我想和大家分享这次非凡的经历。"},
+{fr:"L’événement était organisé par [organisateur] et proposait diverses activités, telles que [activité 1], [activité 2] et [activité 3]. L’ambiance était [conviviale], et [description simple].",zh:"这个活动由[组织者]组织，并提供了各种活动，例如[活动1]、[活动2]和[活动3]。氛围[融洽/友好]，并且[简单描述]。"},
+{fr:"Ce qui m’a le plus marqué, c’est [point fort]. Si je n’avais pas tenté l’expérience, je n’aurais jamais imaginé à quel point elle pouvait être [enrichissante].",zh:"最让我印象深刻的是[亮点]。如果我没有尝试这次经历，我绝不会想到它竟然可以如此[有收获]。"},
+{fr:"Alors, je vous recommande vivement d’[assister à un événement comme celui-ci]. C’est une excellente occasion de découvrir [thème de l’expérience] et de profiter d’un moment [inoubliable].",zh:"所以，我强烈推荐大家[参加这样的活动]。这是发现[经历主题]并享受一段[难忘]时光的绝佳机会。"},
+{fr:"Merci de m’avoir lu.",zh:"谢谢大家读完我的分享。"},
+{fr:"À très bientôt !",zh:"很快再见！"},
+{fr:"[prénom]",zh:"[名字 / 署名]"}
+];
+const A_TEMPLATE_FULL=A_TEMPLATE_PARAS.map(function(x){return x.fr}).join("\n\n");
+let aParaIndex=0,aFrenchHidden=false,aZhHidden=false,aSlotsHidden=false;
+
+function slotify(s){
+  const safe=esc(s);
+  if(aSlotsHidden) return safe.replace(/\[[^\]]+\]/g,'[……]');
+  return safe.replace(/\[([^\]]+)\]/g,'<span style="background:#fff0a8;border-radius:4px;padding:1px 4px">[$1]</span>');
+}
+function renderAStudy(){
+  const root=document.getElementById('aFullStudy');
+  if(!root)return;
+  root.innerHTML=A_TEMPLATE_PARAS.map(function(p,i){
+    return '<div class="ref-pair"><div class="muted">第 '+(i+1)+' 段</div>'+
+      '<div class="ref-fr '+(aFrenchHidden?'hidden':'')+'">'+slotify(p.fr)+'</div>'+
+      '<div class="ref-zh '+(aZhHidden?'hidden':'')+'">'+esc(p.zh)+'</div></div>';
+  }).join('');
+  document.getElementById('aHideFrench').textContent=aFrenchHidden?'显示法语':'隐藏法语';
+  document.getElementById('aToggleZh').textContent=aZhHidden?'显示中文':'隐藏中文';
+  document.getElementById('aToggleSlots').textContent=aSlotsHidden?'显示槽位提示':'隐藏槽位提示';
+}
+function wordScore(input,ref){
+  const A=norm(input).split(' ').filter(Boolean),B=norm(ref).split(' ').filter(Boolean);
+  if(!B.length)return 0;
+  const dp=Array.from({length:A.length+1},function(){return new Uint16Array(B.length+1)});
+  for(let i=A.length-1;i>=0;i--)for(let j=B.length-1;j>=0;j--)dp[i][j]=A[i]===B[j]?1+dp[i+1][j+1]:Math.max(dp[i+1][j],dp[i][j+1]);
+  return Math.round(100*dp[0][0]/B.length);
+}
+function renderAPara(){
+  const p=A_TEMPLATE_PARAS[aParaIndex];
+  document.getElementById('aParaCounter').textContent='第 '+(aParaIndex+1)+' / '+A_TEMPLATE_PARAS.length+' 段';
+  document.getElementById('aParaZh').innerHTML='<strong>'+esc(p.zh)+'</strong>';
+  document.getElementById('aParaRef').textContent=p.fr;
+  document.getElementById('aParaRef').classList.add('hidden');
+  document.getElementById('aParaScore').textContent='';
+  document.getElementById('aParaInput').value='';
+}
+function setAMode(mode){
+  document.querySelectorAll('.amode').forEach(function(b){b.classList.toggle('active',b.dataset.amode===mode)});
+  document.getElementById('aStudy').classList.toggle('hidden',mode!=='study');
+  document.getElementById('aParagraph').classList.toggle('hidden',mode!=='paragraph');
+  document.getElementById('aFullRecall').classList.toggle('hidden',mode!=='full');
+  if(mode==='paragraph')renderAPara();
+}
+document.querySelectorAll('.amode').forEach(function(b){b.onclick=function(){setAMode(b.dataset.amode)}});
+document.getElementById('aHideFrench').onclick=function(){aFrenchHidden=!aFrenchHidden;renderAStudy()};
+document.getElementById('aToggleZh').onclick=function(){aZhHidden=!aZhHidden;renderAStudy()};
+document.getElementById('aToggleSlots').onclick=function(){aSlotsHidden=!aSlotsHidden;renderAStudy()};
+document.getElementById('aPrevPara').onclick=function(){aParaIndex=(aParaIndex-1+A_TEMPLATE_PARAS.length)%A_TEMPLATE_PARAS.length;renderAPara()};
+document.getElementById('aNextPara').onclick=function(){aParaIndex=(aParaIndex+1)%A_TEMPLATE_PARAS.length;renderAPara()};
+document.getElementById('aRandomPara').onclick=function(){aParaIndex=Math.floor(Math.random()*A_TEMPLATE_PARAS.length);renderAPara()};
+document.getElementById('aRevealPara').onclick=function(){document.getElementById('aParaRef').classList.remove('hidden')};
+document.getElementById('aClearPara').onclick=function(){document.getElementById('aParaInput').value='';document.getElementById('aParaScore').textContent=''};
+document.getElementById('aCheckPara').onclick=function(){
+  const p=A_TEMPLATE_PARAS[aParaIndex],score=wordScore(document.getElementById('aParaInput').value,p.fr);
+  state.attempts++;save();
+  document.getElementById('aParaScore').innerHTML='与模板原文词序匹配度：<strong>'+score+'%</strong>（这是背诵核对，不是 TCF 评分）';
+  document.getElementById('aParaRef').classList.remove('hidden');
+};
+document.getElementById('aRevealFull').onclick=function(){document.getElementById('aFullRef').textContent=A_TEMPLATE_FULL;document.getElementById('aFullRef').classList.remove('hidden')};
+document.getElementById('aClearFull').onclick=function(){document.getElementById('aFullInput').value='';document.getElementById('aFullScore').textContent='';document.getElementById('aFullRef').classList.add('hidden')};
+document.getElementById('aCheckFull').onclick=function(){
+  const score=wordScore(document.getElementById('aFullInput').value,A_TEMPLATE_FULL);
+  state.attempts++;save();
+  document.getElementById('aFullScore').innerHTML='整篇模板词序匹配度：<strong>'+score+'%</strong>（槽位内容也按当前模板骨架核对）';
+  document.getElementById('aFullRef').textContent=A_TEMPLATE_FULL;
+  document.getElementById('aFullRef').classList.remove('hidden');
+};
+renderAStudy();
+
 const CORE_CHUNKS=[
 {id:'a1',groups:['A','shared'],zh:'我最近有机会……',fr:"J’ai récemment eu l’opportunité de…",note:'A 母模板核心；B 也优先复用。'},
 {id:'a2',groups:['A','shared'],zh:'我想和大家分享这次非凡的经历。',fr:"Je voulais / j’aimerais partager avec vous cette expérience exceptionnelle.",note:'经历型引入。'},
