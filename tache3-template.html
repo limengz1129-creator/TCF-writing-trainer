@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f7f8fc">
+<title>EE · TCF 写作 Tâche 3 · Culala 模板训练</title>
+<style>
+:root{--ink:#24304b;--muted:#6d7487;--blue:#1a789e;--line:#dfe5eb;--bg:#f7f8fc;--red:#ba2f36;--green:#4c7d2b;--yellow:#fff1a8}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 system-ui,-apple-system,"Segoe UI",sans-serif}
+button,input,select,textarea{font:inherit}button{cursor:pointer;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);padding:9px 14px}button:hover{border-color:var(--blue)}button.active,.primary{background:var(--blue);border-color:var(--blue);color:#fff}
+a{color:var(--blue);text-decoration:none}header,main{max-width:1450px;margin:auto;padding-left:28px;padding-right:28px}header{padding-top:28px;padding-bottom:16px}
+h1{font-size:29px;margin:4px 0}h2{font-size:23px;margin:8px 0}h3{font-size:18px;margin:8px 0}p{margin:8px 0}.muted,.note{color:var(--muted);font-size:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:14px}.hero{background:linear-gradient(135deg,#fff,#eef8fb)}
+.nav{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 20px}.section{display:none}.section.active{display:block}.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:12px 0}
+.badge{display:inline-block;border-radius:999px;padding:3px 9px;font-size:12px;background:#e8f3f7;color:#14627f;margin-right:6px}.slot{background:var(--yellow);padding:1px 3px;border-radius:3px;color:#7b4e00}.source{color:var(--red)}.free{color:var(--green)}
+.template{font-size:18px;line-height:2.05}.template p{margin:13px 0}.zh{color:#566079;background:#fafbfd;border-left:3px solid #d9e1e7;padding:9px 11px;border-radius:7px}
+textarea{width:100%;min-height:150px;padding:14px;border:1px solid #cad3dc;border-radius:10px;resize:vertical;line-height:1.85}.fullbox{min-height:430px}
+.prompt{background:#f1f7fa;border-left:4px solid #6aadc5;padding:12px;border-radius:8px;margin:10px 0;white-space:pre-wrap}.ref{background:#fafbfd;border:1px solid var(--line);border-radius:10px;padding:12px;white-space:pre-wrap}.hidden{display:none!important}
+.segment{border-top:1px solid var(--line);padding:14px 0}.segment:first-child{border-top:0}.counter{font-size:13px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}.mini{border:1px solid var(--line);border-radius:12px;padding:13px;background:#fff}
+.exam{border:1px solid var(--line);border-radius:14px;padding:15px;background:#fff;margin:12px 0}.doc{background:#fafbfd;padding:12px;border-radius:9px;margin:8px 0}.slotgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.slotgrid>div{background:#f8fafb;border:1px solid var(--line);border-radius:10px;padding:10px}
+label{font-weight:600;font-size:14px}select{padding:9px;border:1px solid var(--line);border-radius:9px;background:#fff}
+.kicker{font-size:13px;color:var(--muted)}.score{font-weight:700;color:var(--blue)}
+@media(max-width:760px){header,main{padding-left:15px;padding-right:15px}.slotgrid{grid-template-columns:1fr}.template{font-size:16px}h1{font-size:24px}}
+</style>
+</head>
+<body>
+<header>
+<div><a href="./">← 返回写作 Tâche 3</a></div>
+<div class="kicker">TCF Canada · Expression écrite · Tâche 3</div>
+<h1>🧩 Culala 写作 Tâche 3 模板训练</h1>
+<p class="muted">先把母模板整篇背熟，再用 2026 年 7–10 月真题训练材料提取、槽位替换和灵活迁移。</p>
+</header>
+<main>
+<section class="card hero">
+<h2>学习路线</h2>
+<p><strong>模板学习 → 整篇背诵 → 分段默写 → 槽位替换 → 7–10 月真题迁移</strong></p>
+<p class="note">本页以你提供的 Culala「写作 3 模板 V2.0」为母模板。按我们的确认，只把 <code>il ne faut pas négliger que…</code> 改成 <code>il ne faut pas négliger le fait que…</code>；结论中的 <code>bien que</code> 结构继续保留 Culala 原版思路。</p>
+</section>
+
+<div class="nav">
+<button class="navbtn active" data-sec="study">1. 模板全文学习</button>
+<button class="navbtn" data-sec="memorize">2. ⭐ 整篇背诵</button>
+<button class="navbtn" data-sec="slots">3. 槽位替换</button>
+<button class="navbtn" data-sec="migration">4. 🔥 7–10月真题迁移</button>
+</div>
+
+<section id="study" class="section active">
+<div class="card">
+<h2>Culala V2.0 · 母模板</h2>
+<div class="toolbar"><button id="toggleZh">隐藏中文</button><button id="toggleSlots">隐藏槽位提示</button></div>
+<div id="templateStudy" class="template"></div>
+</div>
+<div class="card">
+<h3>颜色怎么读</h3>
+<p><span class="source">红色槽位</span>：必须从两份材料提取或紧扣材料；<span class="free">绿色槽位</span>：自己的论证、例子或结论收益；黄色底色：需要替换的主题/观点槽位。</p>
+<p class="note">这一步的目的不是自由发挥，而是先分清“固定骨架”和“考试当天需要替换的内容”。</p>
+</div>
+</section>
+
+<section id="memorize" class="section">
+<div class="card">
+<h2>⭐ 模板整篇背诵</h2>
+<div class="toolbar"><button class="amode active" data-mode="read">① 全文学习</button><button class="amode" data-mode="para">② 分段背诵</button><button class="amode" data-mode="full">③ 全文默写</button></div>
+<div id="readMode"><div id="readText" class="template"></div></div>
+<div id="paraMode" class="hidden">
+<div class="toolbar"><button id="prevPara">← 上一段</button><span id="paraCounter" class="counter"></span><button id="nextPara">下一段 →</button><button id="randomPara">随机段落</button></div>
+<div id="paraZh" class="prompt"></div>
+<textarea id="paraInput" placeholder="只看中文，把这一整段模板默写出来……"></textarea>
+<div class="toolbar"><button id="checkPara" class="primary">检查这一段</button><button id="revealPara">显示原文</button><button id="clearPara">清空</button></div>
+<div id="paraScore" class="note"></div><div id="paraRef" class="ref hidden"></div>
+</div>
+<div id="fullMode" class="hidden">
+<div class="prompt"><strong>全文结构提示：</strong>
+标题 → 引入争议 → 材料观点 1 + 1–2 个理由 → 材料观点 2 + 1–2 个理由 → 自己的平衡立场 → 支持观点 1 的论据 + 例子 → 支持观点 2 的论据 + 例子 → bien que 结论 + 保持平衡 + 好处</div>
+<textarea id="fullInput" class="fullbox" placeholder="从标题开始，把模板完整默写出来……"></textarea>
+<div class="toolbar"><button id="checkFull" class="primary">检查全文</button><button id="revealFull">显示完整模板</button><button id="clearFull">清空</button></div>
+<div id="fullScore" class="note"></div><div id="fullRef" class="ref hidden"></div>
+</div>
+</div>
+</section>
+
+<section id="slots" class="section">
+<div class="card">
+<h2>槽位替换训练</h2>
+<p>这里不练新作文，只练“固定骨架 + 不同题目内容”。尤其强化观点 1 / 观点 2、材料理由、自己的论据和 <code>bien que</code> 主谓一致。</p>
+<div class="grid" id="slotCards"></div>
+</div>
+</section>
+
+<section id="migration" class="section">
+<div class="card">
+<h2>🔥 2026 年 7–10 月真题灵活迁移</h2>
+<p>直接读取当前仓库中的 T3 真题数据，不另造题。每题先看两份材料，自己提取槽位，再展开“模板映射”。</p>
+<div class="toolbar"><label>月份 <select id="month"><option value="">全部</option><option value="2026-07">2026.07</option><option value="2026-08">2026.08</option><option value="2026-09">2026.09</option><option value="2026-10">2026.10</option></select></label><label>模式 <select id="migMode"><option value="identify">识别/提取</option><option value="guided">引导迁移</option><option value="blind">盲写</option></select></label><button id="randomExam">随机一题</button></div>
+<div id="examCount" class="note"></div><div id="examList"></div>
+</div>
+</section>
+</main>
+
+<script src="tache3-exams/exam-data.js?v=1"></script>
+<script>
+const P=[
+{fr:"[主题] : vers un équilibre nécessaire",zh:"[主题]：走向必要的平衡"},
+{fr:"De nos jours, [主题] suscite de vives discussions au sein de l’opinion publique. Certaines personnes considèrent qu’il est essentiel de privilégier [观点 1], en raison de [从观点 1 中挑 1-2 个理由]. D’autres, en revanche, estiment qu’il vaut certainement mieux mettre davantage l’accent sur [观点 2], pour/par souci de [从观点 2 中挑 1-2 个理由].",zh:"如今，[主题]在公众舆论中引发热烈讨论。一些人认为有必要优先考虑[观点1]，因为[从材料1挑1–2个理由]。另一些人则认为，更应该强调[观点2]，出于[从材料2挑1–2个理由]的考虑。"},
+{fr:"À mon avis, il est essentiel de parvenir à un juste milieu en reconnaissant la validité de ces deux opinions opposées. D’une part, il faut reconnaître que [论据 1：支持观点 1 的理由，可以自己原创，也可以抄材料里的观点]. À titre d’exemple, [例子 1]. Néanmoins, d’autre part, il ne faut pas négliger le fait que [论据 2：观点 2 也有道理的理由，可以自己原创，也可以抄材料里的观点]. Comme illustration, [例子 2].",zh:"在我看来，承认这两种相反观点的合理性并找到一个恰当的中间点是必要的。一方面，应该承认[论据1：支持观点1的理由，可原创或取自材料]。例如，[例子1]。不过，另一方面，也不能忽视这样一个事实：[论据2：观点2也有道理的理由，可原创或取自材料]。例如，[例子2]。"},
+{fr:"En conclusion, bien que [主题或观点] [soit/soient parfois indispensable(s) ou puisse/puissent présenter des avantages pratiques / économiques / sanitaires / importants et indéniable(s)], il est fondamental de maintenir un équilibre [entre [观点 1] et [观点 2] ou en faisant …], afin de favoriser/garantir/profiter de [取得平衡带来的好处].",zh:"总之，尽管[主题或观点]有时不可或缺，或能够带来实际/经济/健康/重要且不可否认的优势，但保持[观点1与观点2之间的平衡，或通过某种具体做法取得平衡]仍然至关重要，从而[获得平衡带来的好处]。"}
+];
+const FULL=P.map(x=>x.fr).join("\n\n");
+let showZh=true,showSlots=true,pi=0;
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const mark=s=>{
+ let x=esc(s);
+ if(!showSlots)x=x.replace(/\[[^\]]+\]/g,'[……]');
+ else x=x.replace(/\[([^\]]+)\]/g,'<span class="slot">[$1]</span>');
+ return x;
+};
+function renderStudy(){
+ document.getElementById('templateStudy').innerHTML=P.map((p,i)=>'<div class="segment"><div>'+mark(p.fr)+'</div>'+(showZh?'<div class="zh">'+esc(p.zh)+'</div>':'')+'</div>').join('');
+ document.getElementById('readText').innerHTML=P.map(p=>'<div class="segment"><div>'+mark(p.fr)+'</div>'+(showZh?'<div class="zh">'+esc(p.zh)+'</div>':'')+'</div>').join('');
+ document.getElementById('toggleZh').textContent=showZh?'隐藏中文':'显示中文';
+ document.getElementById('toggleSlots').textContent=showSlots?'隐藏槽位提示':'显示槽位提示';
+}
+function norm(s){return String(s).normalize('NFC').toLowerCase().replace(/[’]/g,"'").replace(/[\s.,!?;:…/()\[\]-]+/g,' ').trim()}
+function score(a,b){const A=norm(a).split(' ').filter(Boolean),B=norm(b).split(' ').filter(Boolean);const d=Array.from({length:A.length+1},()=>new Uint16Array(B.length+1));for(let i=A.length-1;i>=0;i--)for(let j=B.length-1;j>=0;j--)d[i][j]=A[i]===B[j]?1+d[i+1][j+1]:Math.max(d[i+1][j],d[i][j+1]);return B.length?Math.round(100*d[0][0]/B.length):0}
+function renderPara(){const p=P[pi];document.getElementById('paraCounter').textContent='第 '+(pi+1)+' / '+P.length+' 段';document.getElementById('paraZh').textContent=p.zh;document.getElementById('paraRef').textContent=p.fr;document.getElementById('paraRef').classList.add('hidden');document.getElementById('paraInput').value='';document.getElementById('paraScore').textContent=''}
+document.querySelectorAll('.navbtn').forEach(b=>b.onclick=()=>{document.querySelectorAll('.navbtn').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('.section').forEach(x=>x.classList.toggle('active',x.id===b.dataset.sec));if(b.dataset.sec==='migration')renderExams()});
+document.querySelectorAll('.amode').forEach(b=>b.onclick=()=>{document.querySelectorAll('.amode').forEach(x=>x.classList.toggle('active',x===b));document.getElementById('readMode').classList.toggle('hidden',b.dataset.mode!=='read');document.getElementById('paraMode').classList.toggle('hidden',b.dataset.mode!=='para');document.getElementById('fullMode').classList.toggle('hidden',b.dataset.mode!=='full');if(b.dataset.mode==='para')renderPara()});
+document.getElementById('toggleZh').onclick=()=>{showZh=!showZh;renderStudy()};document.getElementById('toggleSlots').onclick=()=>{showSlots=!showSlots;renderStudy()};
+document.getElementById('prevPara').onclick=()=>{pi=(pi-1+P.length)%P.length;renderPara()};document.getElementById('nextPara').onclick=()=>{pi=(pi+1)%P.length;renderPara()};document.getElementById('randomPara').onclick=()=>{pi=Math.floor(Math.random()*P.length);renderPara()};
+document.getElementById('revealPara').onclick=()=>document.getElementById('paraRef').classList.remove('hidden');document.getElementById('clearPara').onclick=()=>{document.getElementById('paraInput').value='';document.getElementById('paraScore').textContent=''};
+document.getElementById('checkPara').onclick=()=>{document.getElementById('paraScore').innerHTML='模板匹配度：<span class="score">'+score(document.getElementById('paraInput').value,P[pi].fr)+'%</span>（背诵核对，不是 TCF 评分）';document.getElementById('paraRef').classList.remove('hidden')};
+document.getElementById('revealFull').onclick=()=>{document.getElementById('fullRef').textContent=FULL;document.getElementById('fullRef').classList.remove('hidden')};document.getElementById('clearFull').onclick=()=>{document.getElementById('fullInput').value='';document.getElementById('fullScore').textContent='';document.getElementById('fullRef').classList.add('hidden')};
+document.getElementById('checkFull').onclick=()=>{document.getElementById('fullScore').innerHTML='整篇模板匹配度：<span class="score">'+score(document.getElementById('fullInput').value,FULL)+'%</span>';document.getElementById('fullRef').textContent=FULL;document.getElementById('fullRef').classList.remove('hidden')};
+
+const slotDrills=[
+['主题+观点','把任意题目的核心争议压缩成：[主题] / [观点1] / [观点2]。','重点：观点1和观点2必须能对应两份材料，而不是自己重新发明两个立场。'],
+['材料理由','分别从材料1、材料2各挑 1–2 个最能代表作者立场的理由。','第一段的理由优先来自原材料；不要把自己的例子混进材料摘要。'],
+['自己的论据','为观点1和观点2各准备一个你能自然展开的理由。','可以复用材料，但第二段允许加入自己的论证。'],
+['例子','给两个论据各配一个很短、很具体的例子。','例子不宜过长，功能是证明论据，不是另写一个故事。'],
+['bien que 结论','根据主语单复数选择 soit/soient、puisse/puissent，并注意 indispensable(s)、indéniable(s)。','保留 Culala 的 bien que 思路，通过槽位训练解决一致问题。']
+];
+document.getElementById('slotCards').innerHTML=slotDrills.map(x=>'<div class="mini"><h3>'+esc(x[0])+'</h3><p>'+esc(x[1])+'</p><p class="note">'+esc(x[2])+'</p></div>').join('');
+
+function allRecords(){
+ const E=window.TCF_EE3_EXAMS;if(!E||!E.metadata)return[];
+ const out=[];Object.values(E.metadata).forEach(m=>{(m.records||[]).forEach(r=>out.push({...r,meta:m}))});return out.sort((a,b)=>(a.recordId||'').localeCompare(b.recordId||''));
+}
+function renderExams(){
+ const month=document.getElementById('month').value,mode=document.getElementById('migMode').value;
+ let rows=allRecords().filter(r=>!month||r.month===month);
+ document.getElementById('examCount').textContent='当前 '+rows.length+' 条月度真题记录';
+ document.getElementById('examList').innerHTML=rows.map(r=>{
+  const m=r.meta;
+  const guide=mode==='blind'?'':('<div class="slotgrid"><div><strong>模板槽位：观点1</strong><br>'+esc(m.material1Core||'请从材料1提取')+'</div><div><strong>模板槽位：观点2</strong><br>'+esc(m.material2Core||'请从材料2提取')+'</div></div>'+
+  (mode==='guided'?'<div class="prompt"><strong>建议的平衡立场：</strong> '+esc(m.personalPosition||'请自己形成平衡立场')+'\n\n<strong>中央问题：</strong> '+esc(m.centralQuestion||'')+'</div>':''));
+  return '<article class="exam"><div><span class="badge">'+esc(r.month)+'</span> 第 '+r.ordinal+' 题 · '+esc(r.zhTitle||r.prompt||'')+'</div><h3>'+esc(r.prompt||'')+'</h3><div class="doc"><strong>Document 1</strong><br>'+esc(r.document1||'')+'</div><div class="doc"><strong>Document 2</strong><br>'+esc(r.document2||'')+'</div>'+guide+(mode==='blind'?'<button class="showGuide">写完后看模板映射</button>':'')+'</article>'
+ }).join('');
+ document.querySelectorAll('.showGuide').forEach((b,i)=>b.onclick=()=>{const r=rows[i],m=r.meta;const d=document.createElement('div');d.className='prompt';d.innerHTML='<strong>观点1：</strong>'+esc(m.material1Core||'')+'<br><strong>观点2：</strong>'+esc(m.material2Core||'')+'<br><strong>参考立场：</strong>'+esc(m.personalPosition||'');b.replaceWith(d)});
+}
+document.getElementById('month').onchange=renderExams;document.getElementById('migMode').onchange=renderExams;document.getElementById('randomExam').onclick=()=>{const cards=[...document.querySelectorAll('.exam')];if(cards.length)cards[Math.floor(Math.random()*cards.length)].scrollIntoView({behavior:'smooth',block:'center'})};
+renderStudy();
+</script>
+</body></html>
