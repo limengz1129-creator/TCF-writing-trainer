@@ -147,7 +147,7 @@ function renderStudy(){
 function norm(s){return String(s).normalize('NFC').toLowerCase().replace(/[’]/g,"'").replace(/[\s.,!?;:…/()\[\]-]+/g,' ').trim()}
 function score(a,b){const A=norm(a).split(' ').filter(Boolean),B=norm(b).split(' ').filter(Boolean);const d=Array.from({length:A.length+1},()=>new Uint16Array(B.length+1));for(let i=A.length-1;i>=0;i--)for(let j=B.length-1;j>=0;j--)d[i][j]=A[i]===B[j]?1+d[i+1][j+1]:Math.max(d[i+1][j],d[i][j+1]);return B.length?Math.round(100*d[0][0]/B.length):0}
 function renderPara(){const p=P[pi];document.getElementById('paraCounter').textContent='第 '+(pi+1)+' / '+P.length+' 段';document.getElementById('paraZh').textContent=p.zh;document.getElementById('paraRef').textContent=p.fr;document.getElementById('paraRef').classList.add('hidden');document.getElementById('paraInput').value='';document.getElementById('paraScore').textContent=''}
-document.querySelectorAll('.navbtn').forEach(b=>b.onclick=()=>{document.querySelectorAll('.navbtn').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('.section').forEach(x=>x.classList.toggle('active',x.id===b.dataset.sec));if(b.dataset.sec==='migration'){syncMigrationFilterState();renderExams()}if(b.dataset.sec==='oralReuse')renderReuse()});
+document.querySelectorAll('.navbtn').forEach(b=>b.onclick=()=>{document.querySelectorAll('.navbtn').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('.section').forEach(x=>x.classList.toggle('active',x.id===b.dataset.sec));if(b.dataset.sec==='migration'){syncMigrationFilterState();renderExams();setTimeout(applyMigrationDomFilters,0)}if(b.dataset.sec==='oralReuse')renderReuse()});
 document.querySelectorAll('.amode').forEach(b=>b.onclick=()=>{document.querySelectorAll('.amode').forEach(x=>x.classList.toggle('active',x===b));document.getElementById('readMode').classList.toggle('hidden',b.dataset.mode!=='read');document.getElementById('paraMode').classList.toggle('hidden',b.dataset.mode!=='para');document.getElementById('fullMode').classList.toggle('hidden',b.dataset.mode!=='full');if(b.dataset.mode==='para')renderPara()});
 document.getElementById('toggleZh').onclick=()=>{showZh=!showZh;renderStudy()};document.getElementById('toggleSlots').onclick=()=>{showSlots=!showSlots;renderStudy()};
 document.getElementById('prevPara').onclick=()=>{pi=(pi-1+P.length)%P.length;renderPara()};document.getElementById('nextPara').onclick=()=>{pi=(pi+1)%P.length;renderPara()};document.getElementById('randomPara').onclick=()=>{pi=Math.floor(Math.random()*P.length);renderPara()};
@@ -290,8 +290,8 @@ function renderExams(){
  const topic=migrationFilterState.topic;
  const mode=migrationFilterState.mode;
  const normTopic=s=>String(s||'').replace(/\s+/g,'').trim();
- let rows=allRecords().filter(r=>(!month||r.month===month)&&(!topic||normTopic(examTopicSection(r.meta))===normTopic(topic)));
- document.getElementById('examCount').textContent='当前 '+rows.length+' 条月度真题记录'+(topic?' · '+topic:'')+(month?' · '+month:'');
+ let rows=allRecords();
+ document.getElementById('examCount').textContent='当前 '+rows.length+' 条月度真题记录';
  document.getElementById('examList').innerHTML=rows.map(r=>{
   const m=r.meta;
   const fc=frenchSlotCores(m);
@@ -305,7 +305,7 @@ function renderExams(){
     '<div class="slotgrid"><div><strong>材料 1 核心</strong><br><span class="badge">FR</span> '+esc(fc.one||'À extraire du document 1')+'<br><span class="badge">中</span> '+esc(m.material1Core||'请从材料1提取')+'</div><div><strong>材料 2 核心</strong><br><span class="badge">FR</span> '+esc(fc.two||'À extraire du document 2')+'<br><span class="badge">中</span> '+esc(m.material2Core||'请从材料2提取')+'</div></div>'+
     reuseBlock+(mode==='guided'?'<div class="prompt"><strong>中央问题：</strong> '+esc(m.centralQuestion||'')+'</div>':'')
   );
-  return '<article class="exam"><div><span class="badge">'+esc(r.month)+'</span> 第 '+r.ordinal+' 题 · '+esc(r.zhTitle||r.prompt||'')+'</div><h3>'+esc(r.prompt||'')+'</h3><div class="doc"><strong>Document 1</strong><br>'+esc(r.document1||'')+'</div><div class="doc"><strong>Document 2</strong><br>'+esc(r.document2||'')+'</div>'+guide+(mode==='blind'?'<button class="showGuide">写完后看模板映射</button>':'')+'</article>'
+  return '<article class="exam" data-month="'+esc(r.month)+'" data-topic="'+esc(examTopicSection(m))+'"><div><span class="badge">'+esc(r.month)+'</span> 第 '+r.ordinal+' 题 · '+esc(r.zhTitle||r.prompt||'')+'</div><h3>'+esc(r.prompt||'')+'</h3><div class="doc"><strong>Document 1</strong><br>'+esc(r.document1||'')+'</div><div class="doc"><strong>Document 2</strong><br>'+esc(r.document2||'')+'</div>'+guide+(mode==='blind'?'<button class="showGuide">写完后看模板映射</button>':'')+'</article>'
  }).join('');
  document.querySelectorAll('.showGuide').forEach((b,i)=>b.onclick=()=>{const r=rows[i],m=r.meta,fc=frenchSlotCores(m),reuse=reuseForTopic(m.topicId);const d=document.createElement('div');d.className='prompt';d.innerHTML='<strong>材料1核心：</strong><br><span class="badge">FR</span> '+esc(fc.one||'')+'<br><span class="badge">中</span> '+esc(m.material1Core||'')+'<br><br><strong>材料2核心：</strong><br><span class="badge">FR</span> '+esc(fc.two||'')+'<br><span class="badge">中</span> '+esc(m.material2Core||'')+(reuse?'<br><br><strong>♻️ 口语 T3 复用论据1：</strong><br>'+esc(reuse.arg1.final)+'<br><small>'+esc(reuseSourcesText(reuse.arg1))+'</small><br><br><strong>♻️ 口语 T3 复用论据2：</strong><br>'+esc(reuse.arg2.final)+'<br><small>'+esc(reuseSourcesText(reuse.arg2))+'</small>'+fullDraftHtml(m,reuse):'');b.replaceWith(d)});
 }
@@ -382,9 +382,26 @@ document.getElementById('reuseLevel').onchange=renderReuse;
 document.getElementById('reuseSearch').oninput=renderReuse;
 document.getElementById('reuseRandom').onclick=()=>{const cards=[...document.querySelectorAll('.reuse-card')];if(cards.length)cards[Math.floor(Math.random()*cards.length)].scrollIntoView({behavior:'smooth',block:'center'})};
 
+function applyMigrationDomFilters(){
+ const monthEl=document.getElementById('month');
+ const topicEl=document.getElementById('migTopic');
+ const month=monthEl?String(monthEl.value||'').trim():'';
+ const topic=topicEl?String(topicEl.value||'').trim():'';
+ const cards=[...document.querySelectorAll('#examList .exam')];
+ let visible=0;
+ cards.forEach(card=>{
+   const okMonth=!month||card.dataset.month===month;
+   const okTopic=!topic||card.dataset.topic===topic;
+   const show=okMonth&&okTopic;
+   card.style.display=show?'':'none';
+   if(show)visible++;
+ });
+ const count=document.getElementById('examCount');
+ if(count)count.textContent='当前 '+visible+' 条月度真题记录'+(month?' · '+month:'')+(topic?' · '+topic:'');
+}
 ['month','migTopic','migMode'].forEach(id=>{
  const el=document.getElementById(id);
- const apply=()=>{syncMigrationFilterState();renderExams();};
+ const apply=()=>{syncMigrationFilterState();renderExams();setTimeout(applyMigrationDomFilters,0);};
  el.addEventListener('change',apply);
  el.addEventListener('input',apply);
  el.addEventListener('blur',apply);
@@ -394,7 +411,7 @@ document.getElementById('reuseRandom').onclick=()=>{const cards=[...document.que
 document.getElementById('randomExam').onclick=()=>{const cards=[...document.querySelectorAll('.exam')];if(cards.length)cards[Math.floor(Math.random()*cards.length)].scrollIntoView({behavior:'smooth',block:'center'})};
 renderStudy();
 syncMigrationFilterState();
-setTimeout(()=>{if(document.getElementById('migration').classList.contains('active'))renderExams()},0);
-window.addEventListener('pageshow',()=>{syncMigrationFilterState();if(document.getElementById('migration').classList.contains('active'))renderExams()});
+setTimeout(()=>{if(document.getElementById('migration').classList.contains('active')){renderExams();applyMigrationDomFilters()}},0);
+window.addEventListener('pageshow',()=>{syncMigrationFilterState();if(document.getElementById('migration').classList.contains('active')){renderExams();setTimeout(applyMigrationDomFilters,0)}});const examListObserver=new MutationObserver(()=>applyMigrationDomFilters());examListObserver.observe(document.getElementById('examList'),{childList:true});
 </script>
 </body></html>
