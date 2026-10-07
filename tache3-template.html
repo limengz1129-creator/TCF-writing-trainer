@@ -274,8 +274,12 @@ function examTopicSection(meta){
  return direct[meta.topicId]||"";
 }
 function renderExams(){
- const month=document.getElementById('month').value,topic=document.getElementById('migTopic').value,mode=document.getElementById('migMode').value;
- let rows=allRecords().filter(r=>(!month||r.month===month)&&(!topic||examTopicSection(r.meta)===topic));
+ const month=document.getElementById('month').value;
+ const topicEl=document.getElementById('migTopic');
+ const topic=topicEl&&topicEl.selectedIndex>0?topicEl.options[topicEl.selectedIndex].textContent.trim():'';
+ const mode=document.getElementById('migMode').value;
+ const normTopic=s=>String(s||'').replace(/\s+/g,'').trim();
+ let rows=allRecords().filter(r=>(!month||r.month===month)&&(!topic||normTopic(examTopicSection(r.meta))===normTopic(topic)));
  document.getElementById('examCount').textContent='当前 '+rows.length+' 条月度真题记录'+(topic?' · '+topic:'')+(month?' · '+month:'');
  document.getElementById('examList').innerHTML=rows.map(r=>{
   const m=r.meta;
