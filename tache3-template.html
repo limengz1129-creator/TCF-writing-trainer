@@ -211,7 +211,8 @@ function renderReuse(){
 document.getElementById('reuseLevel').onchange=renderReuse;
 document.getElementById('reuseSearch').oninput=renderReuse;
 document.getElementById('reuseRandom').onclick=()=>{const cards=[...document.querySelectorAll('.reuse-card')];if(cards.length)cards[Math.floor(Math.random()*cards.length)].scrollIntoView({behavior:'smooth',block:'center'})};
-\ndocument.getElementById('month').onchange=renderExams;document.getElementById('migMode').onchange=renderExams;document.getElementById('randomExam').onclick=()=>{const cards=[...document.querySelectorAll('.exam')];if(cards.length)cards[Math.floor(Math.random()*cards.length)].scrollIntoView({behavior:'smooth',block:'center'})};
+
+document.getElementById('month').onchange=renderExams;document.getElementById('migMode').onchange=renderExams;document.getElementById('randomExam').onclick=()=>{const cards=[...document.querySelectorAll('.exam')];if(cards.length)cards[Math.floor(Math.random()*cards.length)].scrollIntoView({behavior:'smooth',block:'center'})};
 renderStudy();
 </script>
 </body></html>
