@@ -20,6 +20,60 @@
   const TRIGGERS=[
     ['il faudrait que',112],['il serait souhaitable que',5],['il est souhaitable que',5],['il faut que',4]
   ];
+  const SUBJUNCTIVE_VERBS=[
+    ['savoir','知道；懂得',32,[['sache',17],['sachent',9],['sachions',6]]],
+    ['pouvoir','能够；可以',16,[['puissent',11],['puisse',5]]],
+    ['apprendre','学习；学会',10,[['apprennent',5],['apprenne',3],['apprenions',2]]],
+    ['mettre','放置；实施',9,[['mettent',9]]],
+    ['trouver','找到；找到平衡',6,[['trouvent',5],['trouve',1]]],
+    ['prendre','采取；养成',6,[['prennent',3],['prenne',3]]],
+    ['être','是；处于',5,[['soit',4],['soient',1]]],
+    ['développer','发展；培养',5,[['développent',3],['développe',2]]],
+    ['continuer','继续',5,[['continuent',5]]],
+    ['profiter','利用；享受',4,[['profitent',3],['profite',1]]],
+    ['tenir','考虑；重视（tenir compte de）',4,[['tenions',3],['tiennent',1]]],
+    ['choisir','选择',4,[['choisisse',3],['choisissent',1]]],
+    ['rester','保持；仍然',3,[['restent',2],['reste',1]]],
+    ['renforcer','加强；强化',3,[['renforcent',3]]],
+    ['offrir','提供',3,[['offrent',3]]],
+    ['garantir','保证；保障',3,[['garantissent',3]]],
+    ['participer','参加；参与',2,[['participent',2]]],
+    ['s’impliquer','参与；投入',2,[['s’impliquent',2]]],
+    ['faire','做；进行',2,[['fassent',1],['fasse',1]]],
+    ['améliorer','改善；提高',2,[['améliorent',2]]],
+    ['établir','建立；制定',2,[['établissent',2]]],
+    ['privilégier','优先选择；重视',2,[['privilégient',2]]],
+    ['accorder','给予；重视',2,[['accordent',1],['accorde',1]]],
+    ['évaluer','评估',2,[['évaluent',2]]],
+    ['soutenir','支持',2,[['soutiennent',2]]],
+    ['proposer','提供；提出',1,[['proposent',1]]],
+    ['anticiper','预判；提前考虑',1,[['anticipent',1]]],
+    ['se familiariser','熟悉',1,[['se familiarisent',1]]],
+    ['chercher','设法；寻找',1,[['cherche',1]]],
+    ['se préparer','做好准备',1,[['se préparent',1]]],
+    ['reconnaître','承认；认可',1,[['reconnaissions',1]]],
+    ['respecter','尊重',1,[['respections',1]]],
+    ['créer','创造；营造',1,[['créent',1]]],
+    ['travailler','工作；努力',1,[['travaillent',1]]],
+    ['encadrer','指导；监管',1,[['encadrent',1]]],
+    ['guider','引导',1,[['guident',1]]],
+    ['pratiquer','练习；实践',1,[['pratique',1]]],
+    ['répartir','分配',1,[['répartisse',1]]],
+    ['correspondre','符合；适合',1,[['corresponde',1]]],
+    ['vérifier','核实；检查',1,[['vérifie',1]]],
+    ['demander','询问；征求',1,[['demande',1]]],
+    ['sélectionner','筛选；选择',1,[['sélectionnent',1]]],
+    ['avoir','有；具有',1,[['n’ait',1]]],
+    ['répondre','回应；满足（需求）',1,[['réponde',1]]],
+    ['assumer','承担',1,[['assument',1]]],
+    ['devenir','变成；成为',1,[['devienne',1]]],
+    ['adopter','采取；养成',1,[['adopte',1]]],
+    ['encourager','鼓励',1,[['encouragent',1]]],
+    ['utiliser','使用',1,[['utilisent',1]]],
+    ['sensibiliser','提高意识；使认识到',1,[['sensibilisent',1]]],
+    ['s’agir','涉及；指的是',1,[['s’agisse',1]]],
+    ['souhaiter','希望',1,[['souhaitent',1]]]
+  ];
   const VIRTUAL={
     '旅行与移民':{count:22,subjects:['les nouveaux arrivants','les autorités','chacun','les personnes vivant à l’étranger'],actions:['participent davantage à la vie locale','s’impliquent davantage dans la vie locale','fassent l’effort de se familiariser avec…','mettent en place des politiques adaptées','proposent davantage de programmes…','développent un réseau social plus diversifié'],examples:[
       'il faudrait que les nouveaux arrivants participent davantage à la vie locale afin de développer un véritable sentiment d’appartenance à la société d’accueil.',
@@ -219,6 +273,32 @@
     const details=document.createElement('details');details.innerHTML='<summary>③ 说完以后，再看原稿完整语块</summary>';const ex=document.createElement('div');ex.className='virtual-examples';x.examples.forEach(t=>{const p=document.createElement('p');p.className='virtual-example';p.textContent=t;ex.append(p)});details.append(ex);box.append(details);
     const row=document.createElement('div');row.className='row';const reset=document.createElement('button');reset.textContent='清空重拼';reset.onclick=()=>{state.virtualSubject='';state.virtualAction='';render();};const another=document.createElement('button');another.className='primary';another.textContent='换一个主题';another.onclick=()=>{state.virtualSubject='';state.virtualAction='';if(!$('topic').value){const ts=Object.keys(VIRTUAL).filter(t=>t!==state.virtualTopic);state.virtualTopic=ts[Math.floor(Math.random()*ts.length)];}render();};row.append(reset,another);box.append(row);root.append(box);
   }
+  function renderVerbFrequency(root){
+    root.innerHTML='<div class="framework-intro"><h2>虚拟式动词频率榜</h2><p class="muted">基于 126 个含虚拟式建议结构的结尾逐句统计，共 52 个动词原形、163 次虚拟式动词出现。默认按频率从高到低排列。每个实际变位旁边都标注中文意思，方便直接背“变位 + 含义”。</p></div>';
+    const tiers=[['第一梯队 · 必须自动化',v=>v[2]>=6],['第二梯队 · 高频熟练',v=>v[2]>=3&&v[2]<6],['第三梯队 · 熟悉即可',v=>v[2]<3]];
+    for(const [title,test] of tiers){
+      const section=document.createElement('section');section.className='verb-tier';
+      const h=document.createElement('h3');h.textContent=title;section.append(h);
+      const table=document.createElement('div');table.className='verb-frequency-table';
+      for(const [lemma,zh,count,forms] of SUBJUNCTIVE_VERBS.filter(test)){
+        const row=document.createElement('article');row.className='verb-frequency-row';
+        const rank=SUBJUNCTIVE_VERBS.findIndex(v=>v[0]===lemma)+1;
+        const head=document.createElement('div');head.className='verb-rank';
+        head.innerHTML='<span>'+rank+'</span><div><strong>'+lemma+'</strong><small>'+zh+'</small></div><b>'+count+' 次</b>';
+        const formBox=document.createElement('div');formBox.className='verb-form-list';
+        for(const [form,n] of forms){
+          const chip=document.createElement('span');chip.className='verb-form-chip';
+          chip.innerHTML='<strong>'+form+'</strong><small>'+zh+' · '+n+' 次</small>';
+          formBox.append(chip);
+        }
+        row.append(head,formBox);table.append(row);
+      }
+      section.append(table);root.append(section);
+    }
+    const note=document.createElement('div');note.className='framework-callout';
+    note.innerHTML='<b>最优先：</b> savoir 32 · pouvoir 16 · apprendre 10 · mettre 9 · trouver 6 · prendre 6。前 6 个合计 79 次。';
+    root.append(note);
+  }
   function renderOriginals(root){
     const topic=$('topic')?.value||'',term=($('search')?.value||'').trim().toLocaleLowerCase('fr');
     const rows=DATA.filter(x=>(!topic||x.topic===topic)&&(!term||[x.question,x.opening,x.closing,x.openingType,x.closingType].join(' ').toLocaleLowerCase('fr').includes(term)));
@@ -241,10 +321,10 @@
     const root=$('frameworkView');if(!root)return;
     root.replaceChildren();
     const nav=document.createElement('div');nav.className='framework-mode-tabs';
-    [['opening','开头框架地图'],['openingDrill','10 秒开头训练'],['closing','结尾框架地图'],['closingDrill','10 秒结尾训练'],['virtual','结尾虚拟式主题库'],['virtualDrill','虚拟式拼句训练'],['originals','169 题原始首尾']].forEach(([m,label])=>{const b=document.createElement('button');b.textContent=label;b.classList.toggle('active',state.mode===m);b.onclick=()=>{state.mode=m;render();};nav.append(b);});
+    [['opening','开头框架地图'],['openingDrill','10 秒开头训练'],['closing','结尾框架地图'],['closingDrill','10 秒结尾训练'],['virtual','结尾虚拟式主题库'],['verbFreq','虚拟式动词频率榜'],['virtualDrill','虚拟式拼句训练'],['originals','169 题原始首尾']].forEach(([m,label])=>{const b=document.createElement('button');b.textContent=label;b.classList.toggle('active',state.mode===m);b.onclick=()=>{state.mode=m;render();};nav.append(b);});
     root.append(nav);
     const stage=document.createElement('div');stage.id='frameworkStage';root.append(stage);
-    if(state.mode==='opening')renderOpening(stage);else if(state.mode==='openingDrill')renderOpeningDrill(stage);else if(state.mode==='closing')renderClosing(stage);else if(state.mode==='closingDrill')renderClosingDrill(stage);else if(state.mode==='virtual')renderVirtual(stage);else if(state.mode==='virtualDrill')renderVirtualDrill(stage);else renderOriginals(stage);
+    if(state.mode==='opening')renderOpening(stage);else if(state.mode==='openingDrill')renderOpeningDrill(stage);else if(state.mode==='closing')renderClosing(stage);else if(state.mode==='closingDrill')renderClosingDrill(stage);else if(state.mode==='virtual')renderVirtual(stage);else if(state.mode==='verbFreq')renderVerbFrequency(stage);else if(state.mode==='virtualDrill')renderVirtualDrill(stage);else renderOriginals(stage);
   }
-  window.CORPUS_OPENING_CLOSING={render,setMode:m=>{if(['opening','openingDrill','closing','closingDrill','virtual','virtualDrill','originals'].includes(m))state.mode=m;},getMode:()=>state.mode,getMeta:()=>({openings:DATA.length||169,closings:DATA.length||169,openingTypes:7,closingTypes:4,subjunctive:DATA.filter(x=>x.subjunctiveTail).length||126})};
+  window.CORPUS_OPENING_CLOSING={render,setMode:m=>{if(['opening','openingDrill','closing','closingDrill','virtual','verbFreq','virtualDrill','originals'].includes(m))state.mode=m;},getMode:()=>state.mode,getMeta:()=>({openings:DATA.length||169,closings:DATA.length||169,openingTypes:7,closingTypes:4,subjunctive:DATA.filter(x=>x.subjunctiveTail).length||126})};
 })();
