@@ -4,7 +4,25 @@
   const $=id=>document.getElementById(id);
   const topicData=()=>TOPICS[$('topic')?.value]||TOPICS['旅行与移民'];
 
-  function phraseChip(fr,zh){const el=document.createElement('div');el.className='argument-word';const f=document.createElement('strong');f.lang='fr';f.textContent=fr;const z=document.createElement('small');z.textContent=zh;el.append(f,z);return el;}
+  function speakArgumentPhrase(text,button){
+    if(!('speechSynthesis' in window)){button.textContent='不支持';button.disabled=true;return;}
+    window.speechSynthesis.cancel();
+    const u=new SpeechSynthesisUtterance(text);u.lang='fr-FR';u.rate=.86;u.pitch=1;
+    const voices=window.speechSynthesis.getVoices();
+    u.voice=voices.find(v=>/^fr-FR$/i.test(v.lang))||voices.find(v=>/^fr/i.test(v.lang))||null;
+    const oldText=button.textContent;button.textContent='🔊';button.disabled=true;button.classList.add('playing');
+    const done=()=>{button.textContent=oldText;button.disabled=false;button.classList.remove('playing');};
+    u.onend=done;u.onerror=done;window.speechSynthesis.speak(u);
+  }
+  function phraseChip(fr,zh){
+    const el=document.createElement('div');el.className='argument-word';
+    const text=document.createElement('div');text.className='argument-word-text';
+    const f=document.createElement('strong');f.lang='fr';f.textContent=fr;
+    const z=document.createElement('small');z.textContent=zh;text.append(f,z);
+    const audio=document.createElement('button');audio.type='button';audio.className='argument-word-audio';audio.textContent='🔊';audio.title='朗读 '+fr;audio.setAttribute('aria-label','朗读 '+fr);
+    audio.onclick=e=>{e.stopPropagation();speakArgumentPhrase(fr,audio);};
+    el.append(text,audio);return el;
+  }
   function sourceButton(id,motherId,sceneIndex,topic){const b=document.createElement('button');b.className='source-jump';b.textContent=id+' · 去学习原论段';b.onclick=()=>{sessionStorage.setItem('tcf-eo-t3-return-argument-map','1');sessionStorage.setItem('tcf-eo-t3-argument-return-state',JSON.stringify({mode:'scene',topic,motherId,sceneIndex}));window.CORPUS_OPEN_PARAGRAPH?.(id);};return b;}
 
   function renderOverview(stage,D){
