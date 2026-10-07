@@ -97,3 +97,19 @@
 .source-context-btn,.topic-context-btn{font-size:12px;padding:7px 10px}
 .topic-context-btn{margin-top:12px}
 @media(max-width:700px){.framework-sample-row{grid-template-columns:1fr}.source-context-btn{justify-self:start}}
+
+/* Audited original opening/closing corpus */
+.original-framework-list{display:grid;gap:12px;margin-top:14px}
+.original-framework-card{border:1px solid var(--line);border-radius:14px;padding:16px;background:#fbfcff}
+.original-framework-head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:start}
+.original-framework-head strong,.original-framework-head small{display:block}
+.original-framework-head strong{font-size:15px;line-height:1.55;margin-top:3px}
+.original-badges{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.original-framework-card details{margin:10px 0}
+.original-text{white-space:pre-wrap;line-height:1.75;padding:12px 14px;background:#fff;border:1px solid #edf0f6;border-radius:9px}
+.virtual-all-list{display:grid;gap:10px;margin-top:12px}
+.virtual-source-item{padding:12px;border:1px solid #e7eaf3;border-radius:10px;background:#fff}
+.virtual-source-item p{font-size:14px;line-height:1.7;margin:8px 0}
+.virtual-source-head{font-size:13px;line-height:1.5}
+.exact-tail{font-size:16px}
+@media(max-width:800px){.original-framework-head{grid-template-columns:1fr}.original-badges{justify-content:flex-start}}
