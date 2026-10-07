@@ -93,7 +93,7 @@ label{font-weight:600;font-size:14px}select{padding:9px;border:1px solid var(--l
 <div class="card">
 <h2>🔥 2026 年 7–10 月真题灵活迁移</h2>
 <p>直接读取当前仓库中的 T3 真题数据，不另造题。材料概括严格跟真题；自己的论证统一调用「口语 T3 观点复用」；并自动合成为 120–180 词的完整 Culala 稿。</p>
-<div class="toolbar"><label>月份 <select id="month" onchange="renderExams()" oninput="renderExams()"><option value="">全部</option><option value="2026-07">2026.07</option><option value="2026-08">2026.08</option><option value="2026-09">2026.09</option><option value="2026-10">2026.10</option></select></label><label>大话题 <select id="migTopic" onchange="renderExams(this.value)" oninput="renderExams(this.value)"><option value="">全部主题</option><option value="教育、家庭与儿童成长">教育、家庭与儿童成长</option><option value="工作、就业与职场">工作、就业与职场</option><option value="饮食、购物与日常消费">饮食、购物与日常消费</option><option value="科技、媒体与信息环境">科技、媒体与信息环境</option><option value="交通、城市与环境治理">交通、城市与环境治理</option><option value="住房、居住与代际生活">住房、居住与代际生活</option><option value="公共利益、文化与社会伦理">公共利益、文化与社会伦理</option></select></label><label>模式 <select id="migMode" onchange="renderExams()" oninput="renderExams()"><option value="identify">识别/提取</option><option value="guided">引导迁移</option><option value="blind">盲写</option></select></label><button id="randomExam">随机一题</button></div>
+<div class="toolbar"><label>月份 <select id="month"><option value="">全部</option><option value="2026-07">2026.07</option><option value="2026-08">2026.08</option><option value="2026-09">2026.09</option><option value="2026-10">2026.10</option></select></label><label>大话题 <select id="migTopic"><option value="">全部主题</option><option value="教育、家庭与儿童成长">教育、家庭与儿童成长</option><option value="工作、就业与职场">工作、就业与职场</option><option value="饮食、购物与日常消费">饮食、购物与日常消费</option><option value="科技、媒体与信息环境">科技、媒体与信息环境</option><option value="交通、城市与环境治理">交通、城市与环境治理</option><option value="住房、居住与代际生活">住房、居住与代际生活</option><option value="公共利益、文化与社会伦理">公共利益、文化与社会伦理</option></select></label><label>模式 <select id="migMode"><option value="identify">识别/提取</option><option value="guided">引导迁移</option><option value="blind">盲写</option></select></label><button id="randomExam">随机一题</button></div>
 <div id="examCount" class="note"></div><div id="examList"></div>
 </div>
 </section>
@@ -147,7 +147,7 @@ function renderStudy(){
 function norm(s){return String(s).normalize('NFC').toLowerCase().replace(/[’]/g,"'").replace(/[\s.,!?;:…/()\[\]-]+/g,' ').trim()}
 function score(a,b){const A=norm(a).split(' ').filter(Boolean),B=norm(b).split(' ').filter(Boolean);const d=Array.from({length:A.length+1},()=>new Uint16Array(B.length+1));for(let i=A.length-1;i>=0;i--)for(let j=B.length-1;j>=0;j--)d[i][j]=A[i]===B[j]?1+d[i+1][j+1]:Math.max(d[i+1][j],d[i][j+1]);return B.length?Math.round(100*d[0][0]/B.length):0}
 function renderPara(){const p=P[pi];document.getElementById('paraCounter').textContent='第 '+(pi+1)+' / '+P.length+' 段';document.getElementById('paraZh').textContent=p.zh;document.getElementById('paraRef').textContent=p.fr;document.getElementById('paraRef').classList.add('hidden');document.getElementById('paraInput').value='';document.getElementById('paraScore').textContent=''}
-document.querySelectorAll('.navbtn').forEach(b=>b.onclick=()=>{document.querySelectorAll('.navbtn').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('.section').forEach(x=>x.classList.toggle('active',x.id===b.dataset.sec));if(b.dataset.sec==='migration')renderExams();if(b.dataset.sec==='oralReuse')renderReuse()});
+document.querySelectorAll('.navbtn').forEach(b=>b.onclick=()=>{document.querySelectorAll('.navbtn').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('.section').forEach(x=>x.classList.toggle('active',x.id===b.dataset.sec));if(b.dataset.sec==='migration'){syncMigrationFilterState();renderExams()}if(b.dataset.sec==='oralReuse')renderReuse()});
 document.querySelectorAll('.amode').forEach(b=>b.onclick=()=>{document.querySelectorAll('.amode').forEach(x=>x.classList.toggle('active',x===b));document.getElementById('readMode').classList.toggle('hidden',b.dataset.mode!=='read');document.getElementById('paraMode').classList.toggle('hidden',b.dataset.mode!=='para');document.getElementById('fullMode').classList.toggle('hidden',b.dataset.mode!=='full');if(b.dataset.mode==='para')renderPara()});
 document.getElementById('toggleZh').onclick=()=>{showZh=!showZh;renderStudy()};document.getElementById('toggleSlots').onclick=()=>{showSlots=!showSlots;renderStudy()};
 document.getElementById('prevPara').onclick=()=>{pi=(pi-1+P.length)%P.length;renderPara()};document.getElementById('nextPara').onclick=()=>{pi=(pi+1)%P.length;renderPara()};document.getElementById('randomPara').onclick=()=>{pi=Math.floor(Math.random()*P.length);renderPara()};
@@ -273,14 +273,22 @@ function examTopicSection(meta){
  };
  return direct[meta.topicId]||"";
 }
-let currentMigTopic='';
-function renderExams(topicOverride){
- const month=document.getElementById('month').value;
- const topicEl=document.getElementById('migTopic');
- if(typeof topicOverride==='string') currentMigTopic=topicOverride;
- else if(topicEl) currentMigTopic=topicEl.value||currentMigTopic||'';
- const topic=currentMigTopic;
- const mode=document.getElementById('migMode').value;
+const migrationFilterState={month:'',topic:'',mode:'identify'};
+function selectedValue(id){
+ const el=document.getElementById(id);
+ if(!el)return '';
+ const opt=el.options&&el.selectedIndex>=0?el.options[el.selectedIndex]:null;
+ return String((opt&&opt.value)||el.value||'').trim();
+}
+function syncMigrationFilterState(){
+ migrationFilterState.month=selectedValue('month');
+ migrationFilterState.topic=selectedValue('migTopic');
+ migrationFilterState.mode=selectedValue('migMode')||'identify';
+}
+function renderExams(){
+ const month=migrationFilterState.month;
+ const topic=migrationFilterState.topic;
+ const mode=migrationFilterState.mode;
  const normTopic=s=>String(s||'').replace(/\s+/g,'').trim();
  let rows=allRecords().filter(r=>(!month||r.month===month)&&(!topic||normTopic(examTopicSection(r.meta))===normTopic(topic)));
  document.getElementById('examCount').textContent='当前 '+rows.length+' 条月度真题记录'+(topic?' · '+topic:'')+(month?' · '+month:'');
@@ -374,9 +382,19 @@ document.getElementById('reuseLevel').onchange=renderReuse;
 document.getElementById('reuseSearch').oninput=renderReuse;
 document.getElementById('reuseRandom').onclick=()=>{const cards=[...document.querySelectorAll('.reuse-card')];if(cards.length)cards[Math.floor(Math.random()*cards.length)].scrollIntoView({behavior:'smooth',block:'center'})};
 
-['month','migTopic','migMode'].forEach(id=>{const el=document.getElementById(id);el.onchange=renderExams;el.oninput=renderExams;});document.addEventListener('change',e=>{const id=e.target&&e.target.id;if(id==='migTopic')renderExams(e.target.value);else if(['month','migMode'].includes(id))renderExams()});document.addEventListener('input',e=>{const id=e.target&&e.target.id;if(id==='migTopic')renderExams(e.target.value);else if(['month','migMode'].includes(id))renderExams()});document.getElementById('randomExam').onclick=()=>{const cards=[...document.querySelectorAll('.exam')];if(cards.length)cards[Math.floor(Math.random()*cards.length)].scrollIntoView({behavior:'smooth',block:'center'})};
+['month','migTopic','migMode'].forEach(id=>{
+ const el=document.getElementById(id);
+ const apply=()=>{syncMigrationFilterState();renderExams();};
+ el.addEventListener('change',apply);
+ el.addEventListener('input',apply);
+ el.addEventListener('blur',apply);
+ el.addEventListener('keyup',apply);
+ el.addEventListener('pointerup',()=>setTimeout(apply,0));
+});
+document.getElementById('randomExam').onclick=()=>{const cards=[...document.querySelectorAll('.exam')];if(cards.length)cards[Math.floor(Math.random()*cards.length)].scrollIntoView({behavior:'smooth',block:'center'})};
 renderStudy();
-setTimeout(()=>{const t=document.getElementById('migTopic');if(t)currentMigTopic=t.value||'';if(document.getElementById('migration').classList.contains('active'))renderExams(currentMigTopic)},0);
-window.addEventListener('pageshow',()=>{const t=document.getElementById('migTopic');if(t)currentMigTopic=t.value||'';if(document.getElementById('migration').classList.contains('active'))renderExams(currentMigTopic)});
+syncMigrationFilterState();
+setTimeout(()=>{if(document.getElementById('migration').classList.contains('active'))renderExams()},0);
+window.addEventListener('pageshow',()=>{syncMigrationFilterState();if(document.getElementById('migration').classList.contains('active'))renderExams()});
 </script>
 </body></html>
