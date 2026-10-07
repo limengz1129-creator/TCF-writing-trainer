@@ -65,7 +65,7 @@
       'il faudrait que les parents sachent encourager chacun de leurs enfants selon ses propres qualités afin de favoriser une relation fraternelle plus équilibrée et plus harmonieuse.'
     ]}
   };
-  const state={mode:'opening',openingDrill:null,openingChoice:null,virtualSubject:'',virtualAction:'',virtualTopic:''};
+  const state={mode:'opening',openingDrill:null,openingChoice:null,closingDrill:null,closingChoice:null,virtualSubject:'',virtualAction:'',virtualTopic:''};
   const $=id=>document.getElementById(id);
   const q=(topic,n)=>{const x=CORPUS.find(p=>p.topic===topic&&p.questionNumber===n);return x?.question||'';};
   function tag(text){const s=document.createElement('span');s.className='framework-tag';s.textContent=text;return s;}
@@ -138,6 +138,59 @@
     }
     const row=document.createElement('div');row.className='row';const next=document.createElement('button');next.className='primary';next.textContent='下一题';next.onclick=()=>{nextOpeningQuestion();render();};const reveal=document.createElement('button');reveal.textContent='直接看推荐';reveal.onclick=()=>{state.openingChoice=openingTypeFor(x.q);render();};row.append(next,reveal);box.append(row);root.append(box);
   }
+
+  function closingTypeFor(question){
+    const s=question.toLocaleLowerCase('fr');
+    if(/vaut-il mieux|\\bou\\b.*\\?|plus .* que|aussi .* que|préférence entre|concilier|équilibre/.test(s))return '平衡 / 双边收束型';
+    if(/toujours|jamais|indispensable|suffisant|impossible|il faut|tout le monde|tous les|toutes les|à chaque fois|le plus important|doit être|doivent être|devrait|devraient|interdire|gratuit pour tous/.test(s))return '重申立场 + 让步 / 边界型';
+    if(/quel travail souhaiteriez|votre matière préférée|lequel préférez|préférez-vous|recommanderiez-vous|dans votre pays/.test(s))return '直接总结立场型';
+    if(/selon vous|à votre avis|est-il possible|peut-on|dépend|à tout âge|après 50 ans|en restant célibataire/.test(s))return '因人而异 / 条件取决型';
+    return '重申立场 + 让步 / 边界型';
+  }
+  function nextClosingQuestion(){
+    const selected=$('topic')?.value||'';
+    const pool=uniqueQuestions().filter(x=>!selected||x.topic===selected);
+    if(!pool.length)return null;
+    let next=pool[Math.floor(Math.random()*pool.length)];
+    if(pool.length>1&&state.closingDrill&&next.id===state.closingDrill.id)next=pool[(pool.indexOf(next)+1)%pool.length];
+    state.closingDrill=next;state.closingChoice=null;return next;
+  }
+  function closingTail(topic){
+    const x=VIRTUAL[topic];
+    if(!x)return null;
+    return {
+      subject:x.subjects[0],
+      action:x.actions[0],
+      example:x.examples[0]
+    };
+  }
+  function renderClosingDrill(root){
+    if(!state.closingDrill)nextClosingQuestion();
+    const x=state.closingDrill;
+    root.innerHTML='<div class="framework-intro"><h2>10 秒结尾收束训练</h2><p class="muted">看到题目后，先判断最后应该怎样“收回来”：直接总结、让步边界、双边平衡，还是因人而异。这里的“推荐”是为了形成考场快速反应，不代表其他收束方式一定错误。</p></div>';
+    if(!x){root.innerHTML+='<p class="empty">当前筛选下没有原题。</p>';return;}
+    const box=document.createElement('article');box.className='drill-card';
+    box.innerHTML='<div class="drill-meta">'+x.topic+' · 第 '+x.n+' 题</div><div class="drill-question">'+x.q+'</div><p class="note">你会用哪一种结尾收束？</p>';
+    const choices=document.createElement('div');choices.className='drill-choices closing-choices';
+    for(const t of CLOSING){const b=document.createElement('button');b.textContent=t.title;b.onclick=()=>{state.closingChoice=t.title;render();};choices.append(b);}
+    box.append(choices);
+    if(state.closingChoice){
+      const recommend=closingTypeFor(x.q),chosen=state.closingChoice,meta=CLOSING.find(t=>t.title===recommend);
+      const fb=document.createElement('div');fb.className='drill-feedback '+(chosen===recommend?'ok':'review');
+      fb.innerHTML='<strong>'+(chosen===recommend?'✓ 推荐收束一致':'更推荐：'+recommend)+'</strong><p>你选的是：'+chosen+'</p><p><b>收束逻辑：</b>'+meta.logic+'</p><div class="framework-chain">'+meta.skeleton+'</div>';
+      box.append(fb);
+      const tail=closingTail(x.topic);
+      if(tail){
+        const link=document.createElement('div');link.className='closing-tail';
+        link.innerHTML='<p><b>再接一层虚拟式尾句：</b></p><div class="sentence-builder">Parallèlement, il faudrait que '+tail.subject+' '+tail.action+' afin de…</div><details><summary>看同主题原稿完整语块</summary><p class="virtual-example">'+tail.example+'</p></details>';
+        box.append(link);
+      }
+    }
+    const row=document.createElement('div');row.className='row';
+    const next=document.createElement('button');next.className='primary';next.textContent='下一题';next.onclick=()=>{nextClosingQuestion();render();};
+    const reveal=document.createElement('button');reveal.textContent='直接看推荐';reveal.onclick=()=>{state.closingChoice=closingTypeFor(x.q);render();};
+    row.append(next,reveal);box.append(row);root.append(box);
+  }
   function renderVirtualDrill(root){
     const selected=$('topic')?.value||'';
     const topics=selected&&VIRTUAL[selected]?[selected]:Object.keys(VIRTUAL);
@@ -160,10 +213,10 @@
     const root=$('frameworkView');if(!root)return;
     root.replaceChildren();
     const nav=document.createElement('div');nav.className='framework-mode-tabs';
-    [['opening','开头框架地图'],['openingDrill','10 秒开头训练'],['closing','结尾框架地图'],['virtual','结尾虚拟式主题库'],['virtualDrill','虚拟式拼句训练']].forEach(([m,label])=>{const b=document.createElement('button');b.textContent=label;b.classList.toggle('active',state.mode===m);b.onclick=()=>{state.mode=m;render();};nav.append(b);});
+    [['opening','开头框架地图'],['openingDrill','10 秒开头训练'],['closing','结尾框架地图'],['closingDrill','10 秒结尾训练'],['virtual','结尾虚拟式主题库'],['virtualDrill','虚拟式拼句训练']].forEach(([m,label])=>{const b=document.createElement('button');b.textContent=label;b.classList.toggle('active',state.mode===m);b.onclick=()=>{state.mode=m;render();};nav.append(b);});
     root.append(nav);
     const stage=document.createElement('div');stage.id='frameworkStage';root.append(stage);
-    if(state.mode==='opening')renderOpening(stage);else if(state.mode==='openingDrill')renderOpeningDrill(stage);else if(state.mode==='closing')renderClosing(stage);else if(state.mode==='virtual')renderVirtual(stage);else renderVirtualDrill(stage);
+    if(state.mode==='opening')renderOpening(stage);else if(state.mode==='openingDrill')renderOpeningDrill(stage);else if(state.mode==='closing')renderClosing(stage);else if(state.mode==='closingDrill')renderClosingDrill(stage);else if(state.mode==='virtual')renderVirtual(stage);else renderVirtualDrill(stage);
   }
   window.CORPUS_OPENING_CLOSING={render,getMeta:()=>({openings:169,closings:169,openingTypes:7,closingTypes:4,subjunctive:126})};
 })();
