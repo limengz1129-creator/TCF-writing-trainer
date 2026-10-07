@@ -65,7 +65,7 @@
       'il faudrait que les parents sachent encourager chacun de leurs enfants selon ses propres qualités afin de favoriser une relation fraternelle plus équilibrée et plus harmonieuse.'
     ]}
   };
-  const state={mode:'opening'};
+  const state={mode:'opening',openingDrill:null,openingChoice:null,virtualSubject:'',virtualAction:'',virtualTopic:''};
   const $=id=>document.getElementById(id);
   const q=(topic,n)=>{const x=CORPUS.find(p=>p.topic===topic&&p.questionNumber===n);return x?.question||'';};
   function tag(text){const s=document.createElement('span');s.className='framework-tag';s.textContent=text;return s;}
@@ -93,14 +93,77 @@
     const grid=document.createElement('div');grid.className='framework-grid';
     for(const topic of topics){const x=VIRTUAL[topic],c=document.createElement('article');c.className='framework-card virtual-card';c.innerHTML='<div class="framework-card-head"><h3>'+topic+'</h3><strong>'+x.count+' 个</strong></div><p><b>高频主语</b></p><div class="framework-tags subjects"></div><p><b>高频虚拟式动作</b></p><div class="framework-tags actions"></div><details><summary>看原稿中的完整结尾语块</summary><div class="virtual-examples"></div></details>';x.subjects.forEach(t=>c.querySelector('.subjects').append(tag(t)));x.actions.forEach(t=>c.querySelector('.actions').append(tag(t)));for(const ex of x.examples){const p=document.createElement('p');p.className='virtual-example';p.textContent=ex;c.querySelector('.virtual-examples').append(p);}grid.append(c);}root.append(grid);
   }
+
+  function uniqueQuestions(){
+    const seen=new Set(),out=[];
+    for(const x of CORPUS){
+      if(seen.has(x.questionId))continue;
+      seen.add(x.questionId);out.push({id:x.questionId,topic:x.topic,n:x.questionNumber,q:x.question});
+    }
+    return out;
+  }
+  function openingTypeFor(question){
+    const s=question.toLocaleLowerCase('fr');
+    if(/\\bcomment se\\b|de quelle manière/.test(s))return '方法 / 解决方案型';
+    if(/quelles sont les trois|quels impacts et quels risques|quelles formes d’engagement/.test(s))return '列举 / 多因素型';
+    if(/votre matière préférée|quel travail souhaiteriez|lequel préférez|préférez-vous|dans votre pays|recommanderiez-vous/.test(s))return '个人 / 偏好 / 具体回答型';
+    if(/^pourquoi|pour quelles raisons|comment expliquez-vous/.test(s.trim()))return '原因 / 动机 / 解释型';
+    if(/vaut-il mieux|\\bou\\b.*\\?|plus .* que|aussi .* que|préférence entre/.test(s))return '比较 / 选择 / 权衡型';
+    if(/toujours|jamais|indispensable|suffisant|impossible|il faut|tout le monde|tous les|toutes les|à chaque fois|le plus important|doit être|doivent être/.test(s))return '绝对化 / 必要性 / 边界型';
+    return '普通观点 / 同意不同意型';
+  }
+  function nextOpeningQuestion(){
+    const selected=$('topic')?.value||'';
+    const pool=uniqueQuestions().filter(x=>!selected||x.topic===selected);
+    if(!pool.length)return null;
+    let next=pool[Math.floor(Math.random()*pool.length)];
+    if(pool.length>1&&state.openingDrill&&next.id===state.openingDrill.id)next=pool[(pool.indexOf(next)+1)%pool.length];
+    state.openingDrill=next;state.openingChoice=null;return next;
+  }
+  function renderOpeningDrill(root){
+    if(!state.openingDrill)nextOpeningQuestion();
+    const x=state.openingDrill;
+    root.innerHTML='<div class="framework-intro"><h2>10 秒开头选框架</h2><p class="muted">先只判断“这是什么题型”，不要急着说完整答案。选完后再看推荐框架和母骨架。部分题可以有两种合理处理方式，这里给的是最适合快速起手的推荐。</p></div>';
+    if(!x){root.innerHTML+='<p class="empty">当前筛选下没有原题。</p>';return;}
+    const box=document.createElement('article');box.className='drill-card';
+    box.innerHTML='<div class="drill-meta">'+x.topic+' · 第 '+x.n+' 题</div><div class="drill-question">'+x.q+'</div><p class="note">你会用哪一种开头？</p>';
+    const choices=document.createElement('div');choices.className='drill-choices';
+    for(const t of OPENING){const b=document.createElement('button');b.textContent=t.title;b.onclick=()=>{state.openingChoice=t.title;render();};choices.append(b);}
+    box.append(choices);
+    if(state.openingChoice){
+      const recommend=openingTypeFor(x.q),chosen=state.openingChoice,meta=OPENING.find(t=>t.title===recommend);
+      const fb=document.createElement('div');fb.className='drill-feedback '+(chosen===recommend?'ok':'review');
+      fb.innerHTML='<strong>'+(chosen===recommend?'✓ 推荐框架一致':'推荐优先用：'+recommend)+'</strong><p>你选的是：'+chosen+'</p><p><b>判断逻辑：</b>'+meta.logic+'</p><div class="framework-chain">'+meta.skeleton+'</div>';
+      box.append(fb);
+    }
+    const row=document.createElement('div');row.className='row';const next=document.createElement('button');next.className='primary';next.textContent='下一题';next.onclick=()=>{nextOpeningQuestion();render();};const reveal=document.createElement('button');reveal.textContent='直接看推荐';reveal.onclick=()=>{state.openingChoice=openingTypeFor(x.q);render();};row.append(next,reveal);box.append(row);root.append(box);
+  }
+  function renderVirtualDrill(root){
+    const selected=$('topic')?.value||'';
+    const topics=selected&&VIRTUAL[selected]?[selected]:Object.keys(VIRTUAL);
+    let topic=selected&&VIRTUAL[selected]?selected:state.virtualTopic;if(!topic||!VIRTUAL[topic])topic=topics[Math.floor(Math.random()*topics.length)];state.virtualTopic=topic;const x=VIRTUAL[topic];
+    root.innerHTML='<div class="framework-intro"><h2>结尾虚拟式拼句训练</h2><p class="muted">训练单位不是整段结尾，而是：<b>主题 → 主语 → 虚拟式动作 → 目的 / 边界</b>。先点一个主语，再点一个动作，自己大声补完后半句。</p></div>';
+    const box=document.createElement('article');box.className='drill-card virtual-drill';
+    box.innerHTML='<div class="drill-meta">'+topic+'</div><div class="drill-question">Parallèlement, il faudrait que…</div><p><b>① 选主语</b></p>';
+    const subjects=document.createElement('div');subjects.className='drill-choices compact';
+    x.subjects.forEach(s=>{const b=document.createElement('button');b.textContent=s;b.classList.toggle('active',state.virtualSubject===s);b.onclick=()=>{state.virtualSubject=s;render();};subjects.append(b)});box.append(subjects);
+    const p=document.createElement('p');p.innerHTML='<b>② 选虚拟式动作</b>';box.append(p);
+    const actions=document.createElement('div');actions.className='drill-choices compact';
+    x.actions.forEach(a=>{const b=document.createElement('button');b.textContent=a;b.classList.toggle('active',state.virtualAction===a);b.onclick=()=>{state.virtualAction=a;render();};actions.append(b)});box.append(actions);
+    if(state.virtualSubject||state.virtualAction){
+      const built=document.createElement('div');built.className='sentence-builder';built.textContent='Parallèlement, il faudrait que '+(state.virtualSubject||'…')+' '+(state.virtualAction||'…')+' afin de…';box.append(built);
+    }
+    const details=document.createElement('details');details.innerHTML='<summary>③ 说完以后，再看原稿完整语块</summary>';const ex=document.createElement('div');ex.className='virtual-examples';x.examples.forEach(t=>{const p=document.createElement('p');p.className='virtual-example';p.textContent=t;ex.append(p)});details.append(ex);box.append(details);
+    const row=document.createElement('div');row.className='row';const reset=document.createElement('button');reset.textContent='清空重拼';reset.onclick=()=>{state.virtualSubject='';state.virtualAction='';render();};const another=document.createElement('button');another.className='primary';another.textContent='换一个主题';another.onclick=()=>{state.virtualSubject='';state.virtualAction='';if(!$('topic').value){const ts=Object.keys(VIRTUAL).filter(t=>t!==state.virtualTopic);state.virtualTopic=ts[Math.floor(Math.random()*ts.length)];}render();};row.append(reset,another);box.append(row);root.append(box);
+  }
   function render(){
     const root=$('frameworkView');if(!root)return;
     root.replaceChildren();
     const nav=document.createElement('div');nav.className='framework-mode-tabs';
-    [['opening','开头框架地图'],['closing','结尾框架地图'],['virtual','结尾虚拟式主题库']].forEach(([m,label])=>{const b=document.createElement('button');b.textContent=label;b.classList.toggle('active',state.mode===m);b.onclick=()=>{state.mode=m;render();};nav.append(b);});
+    [['opening','开头框架地图'],['openingDrill','10 秒开头训练'],['closing','结尾框架地图'],['virtual','结尾虚拟式主题库'],['virtualDrill','虚拟式拼句训练']].forEach(([m,label])=>{const b=document.createElement('button');b.textContent=label;b.classList.toggle('active',state.mode===m);b.onclick=()=>{state.mode=m;render();};nav.append(b);});
     root.append(nav);
     const stage=document.createElement('div');stage.id='frameworkStage';root.append(stage);
-    if(state.mode==='opening')renderOpening(stage);else if(state.mode==='closing')renderClosing(stage);else renderVirtual(stage);
+    if(state.mode==='opening')renderOpening(stage);else if(state.mode==='openingDrill')renderOpeningDrill(stage);else if(state.mode==='closing')renderClosing(stage);else if(state.mode==='virtual')renderVirtual(stage);else renderVirtualDrill(stage);
   }
   window.CORPUS_OPENING_CLOSING={render,getMeta:()=>({openings:169,closings:169,openingTypes:7,closingTypes:4,subjunctive:126})};
 })();
