@@ -113,3 +113,20 @@
 .virtual-source-head{font-size:13px;line-height:1.5}
 .exact-tail{font-size:16px}
 @media(max-width:800px){.original-framework-head{grid-template-columns:1fr}.original-badges{justify-content:flex-start}}
+
+/* Subjunctive verb frequency ranking */
+.verb-tier{margin:22px 0 28px}
+.verb-tier h3{font-size:16px;margin:0 0 10px}
+.verb-frequency-table{display:grid;gap:9px}
+.verb-frequency-row{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:#fbfcff}
+.verb-rank{display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:10px;align-items:center}
+.verb-rank>span{font-weight:800;color:#6267ad;font-size:14px}
+.verb-rank strong,.verb-rank small{display:block}
+.verb-rank strong{font-size:16px}
+.verb-rank small{font-size:12px;margin-top:2px}
+.verb-rank>b{font-size:13px;color:var(--blue)}
+.verb-form-list{display:flex;flex-wrap:wrap;gap:7px;margin:10px 0 0 44px}
+.verb-form-chip{display:inline-flex;flex-direction:column;padding:7px 10px;border:1px solid #dde1ef;border-radius:10px;background:#fff}
+.verb-form-chip strong{font-size:14px}
+.verb-form-chip small{font-size:11px;color:var(--muted);margin-top:2px}
+@media(max-width:700px){.verb-form-list{margin-left:0}.verb-rank{grid-template-columns:28px minmax(0,1fr) auto}}
