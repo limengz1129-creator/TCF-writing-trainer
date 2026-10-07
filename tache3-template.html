@@ -187,6 +187,8 @@ function frenchSlotCores(m){
   }
   return {one,two};
 }
+function reuseForTopic(topicId){return (window.TCF_EE3_ORAL_REUSE||[]).find(x=>String(x.id)===String(topicId))}
+function reuseSourcesText(arg){return (arg&&arg.sources||[]).map(id=>'口语 T3 '+id).join(' · ')}
 function renderExams(){
  const month=document.getElementById('month').value,mode=document.getElementById('migMode').value;
  let rows=allRecords().filter(r=>!month||r.month===month);
@@ -194,11 +196,19 @@ function renderExams(){
  document.getElementById('examList').innerHTML=rows.map(r=>{
   const m=r.meta;
   const fc=frenchSlotCores(m);
-  const guide=mode==='blind'?'':('<div class="slotgrid"><div><strong>模板槽位：观点1</strong><br><span class="badge">FR</span> '+esc(fc.one||'À extraire du document 1')+'<br><span class="badge">中</span> '+esc(m.material1Core||'请从材料1提取')+'</div><div><strong>模板槽位：观点2</strong><br><span class="badge">FR</span> '+esc(fc.two||'À extraire du document 2')+'<br><span class="badge">中</span> '+esc(m.material2Core||'请从材料2提取')+'</div></div>'+
-  (mode==='guided'?'<div class="prompt"><strong>建议的平衡立场：</strong> '+esc(m.personalPosition||'请自己形成平衡立场')+'\n\n<strong>中央问题：</strong> '+esc(m.centralQuestion||'')+'</div>':''));
+  const reuse=reuseForTopic(m.topicId);
+  const reuseBlock=reuse?(
+    '<div class="reuse-arg"><strong>♻️ 自己的论据 1</strong><span class="reuse-mode '+(reuse.arg1.mode==='exact'?'exact':'')+'">'+(reuse.arg1.mode==='exact'?'✅ 口语原句直接复用':'♻️ 旧语料最小改写')+'</span><div class="reuse-fr" lang="fr">'+esc(reuse.arg1.final)+'</div><div class="source-line">'+esc(reuseSourcesText(reuse.arg1))+'</div></div>'+
+    '<div class="reuse-arg"><strong>♻️ 自己的论据 2 / 限制</strong><span class="reuse-mode '+(reuse.arg2.mode==='exact'?'exact':'')+'">'+(reuse.arg2.mode==='exact'?'✅ 口语原句直接复用':'♻️ 旧语料最小改写')+'</span><div class="reuse-fr" lang="fr">'+esc(reuse.arg2.final)+'</div><div class="source-line">'+esc(reuseSourcesText(reuse.arg2))+'</div></div>'+
+    ((reuse.newMemory||[]).length?'<div class="new-memory"><strong>本题真正新增：</strong> '+reuse.newMemory.map(v=>'<code>'+esc(v)+'</code>').join(' · ')+'</div>':'<div class="new-memory none"><strong>新增背诵：</strong>≈ 0</div>')
+  ):'<div class="prompt">暂无口语 T3 复用映射，请按材料自行形成论据。</div>';
+  const guide=mode==='blind'?'':(
+    '<div class="slotgrid"><div><strong>材料 1 核心</strong><br><span class="badge">FR</span> '+esc(fc.one||'À extraire du document 1')+'<br><span class="badge">中</span> '+esc(m.material1Core||'请从材料1提取')+'</div><div><strong>材料 2 核心</strong><br><span class="badge">FR</span> '+esc(fc.two||'À extraire du document 2')+'<br><span class="badge">中</span> '+esc(m.material2Core||'请从材料2提取')+'</div></div>'+
+    (mode==='guided'?reuseBlock+'<div class="prompt"><strong>中央问题：</strong> '+esc(m.centralQuestion||'')+'</div>':'')
+  );
   return '<article class="exam"><div><span class="badge">'+esc(r.month)+'</span> 第 '+r.ordinal+' 题 · '+esc(r.zhTitle||r.prompt||'')+'</div><h3>'+esc(r.prompt||'')+'</h3><div class="doc"><strong>Document 1</strong><br>'+esc(r.document1||'')+'</div><div class="doc"><strong>Document 2</strong><br>'+esc(r.document2||'')+'</div>'+guide+(mode==='blind'?'<button class="showGuide">写完后看模板映射</button>':'')+'</article>'
  }).join('');
- document.querySelectorAll('.showGuide').forEach((b,i)=>b.onclick=()=>{const r=rows[i],m=r.meta,fc=frenchSlotCores(m);const d=document.createElement('div');d.className='prompt';d.innerHTML='<strong>观点1：</strong><br><span class="badge">FR</span> '+esc(fc.one||'')+'<br><span class="badge">中</span> '+esc(m.material1Core||'')+'<br><br><strong>观点2：</strong><br><span class="badge">FR</span> '+esc(fc.two||'')+'<br><span class="badge">中</span> '+esc(m.material2Core||'')+'<br><br><strong>参考立场：</strong>'+esc(m.personalPosition||'');b.replaceWith(d)});
+ document.querySelectorAll('.showGuide').forEach((b,i)=>b.onclick=()=>{const r=rows[i],m=r.meta,fc=frenchSlotCores(m),reuse=reuseForTopic(m.topicId);const d=document.createElement('div');d.className='prompt';d.innerHTML='<strong>材料1核心：</strong><br><span class="badge">FR</span> '+esc(fc.one||'')+'<br><span class="badge">中</span> '+esc(m.material1Core||'')+'<br><br><strong>材料2核心：</strong><br><span class="badge">FR</span> '+esc(fc.two||'')+'<br><span class="badge">中</span> '+esc(m.material2Core||'')+(reuse?'<br><br><strong>♻️ 口语 T3 复用论据1：</strong><br>'+esc(reuse.arg1.final)+'<br><small>'+esc(reuseSourcesText(reuse.arg1))+'</small><br><br><strong>♻️ 口语 T3 复用论据2：</strong><br>'+esc(reuse.arg2.final)+'<br><small>'+esc(reuseSourcesText(reuse.arg2))+'</small>':'');b.replaceWith(d)});
 }
 
 function oralById(id){return (window.CORPUS||CORPUS||[]).find(x=>x.id===id)}
