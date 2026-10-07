@@ -121,11 +121,13 @@ label{font-weight:600;font-size:14px}select{padding:9px;border:1px solid var(--l
 <section id="slotFill" class="section">
 <div class="card">
 <h2>🧩 Culala 槽位填空训练</h2>
-<p>只保留 Culala 固定骨架，把考试当天需要替换的内容挖空。红色槽位来自真题材料；绿色槽位优先调用口语 T3 复用语料；黄色槽位是主题或结尾平衡表达。</p>
+<p>覆盖 2026 年 7–10 月全部 36 道独立真题。只保留 Culala 固定骨架，把考试当天需要替换的内容挖空。红色槽位来自真题材料；绿色槽位优先调用口语 T3 复用语料；黄色槽位是主题或结尾平衡表达。</p>
 <div class="slotfill-legend"><span class="lg-source">材料槽位</span><span class="lg-reuse">口语 T3 复用槽位</span><span class="lg-conclusion">主题 / 结尾槽位</span></div>
 <div class="toolbar">
+<label>大话题 <select id="slotFillTopic"><option value="">全部主题</option><option value="教育、家庭与儿童成长">教育、家庭与儿童成长</option><option value="工作、就业与职场">工作、就业与职场</option><option value="饮食、购物与日常消费">饮食、购物与日常消费</option><option value="科技、媒体与信息环境">科技、媒体与信息环境</option><option value="交通、城市与环境治理">交通、城市与环境治理</option><option value="住房、居住与代际生活">住房、居住与代际生活</option><option value="公共利益、文化与社会伦理">公共利益、文化与社会伦理</option></select></label>
+<label>题目 <select id="slotFillQuestion"></select></label>
 <label>提示模式 <select id="slotFillMode"><option value="hint">中文提示</option><option value="blind">无提示</option></select></label>
-<button id="slotFillReset">重新开始</button>
+<button id="slotFillPrev">← 上一题</button><button id="slotFillNext">下一题 →</button><button id="slotFillRandom">随机一题</button><button id="slotFillReset">重新开始</button>
 </div>
 <div id="slotFillTitle" class="note"></div>
 <div id="slotFillPractice"></div>
@@ -323,66 +325,98 @@ function renderExams(){
 }
 
 
-const SLOT_FILL_SAMPLE={
- id:1001,
- title:"Le bien-être au travail",
- zhTitle:"工作舒适度与效率的关系",
- parts:[
-  {type:"text",fr:"De nos jours, "},
-  {type:"slot",kind:"conclusion",answer:"le bien-être au travail",hint:"工作中的幸福感 / 工作舒适度"},
-  {type:"text",fr:" suscite de vives discussions au sein de l’opinion publique. Certaines personnes considèrent qu’il est essentiel de privilégier "},
-  {type:"slot",kind:"source",answer:"l’amélioration des conditions de travail",hint:"改善工作条件"},
-  {type:"text",fr:", en raison de "},
-  {type:"slot",kind:"source",answer:"leurs effets positifs sur le confort, la concentration et l’efficacité des employés",hint:"舒适、专注和效率"},
-  {type:"text",fr:". D’autres, en revanche, estiment qu’il vaut certainement mieux mettre davantage l’accent sur "},
-  {type:"slot",kind:"source",answer:"la limitation de la charge de travail",hint:"限制工作负担"},
-  {type:"text",fr:", pour "},
-  {type:"slot",kind:"source",answer:"protéger la santé et l’équilibre entre la vie professionnelle et la vie personnelle",hint:"保护健康和工作生活平衡"},
-  {type:"text",fr:"."},
-
-  {type:"break"},
-
-  {type:"text",fr:"À mon avis, il est essentiel de parvenir à un juste milieu en reconnaissant la validité de ces deux opinions opposées. D’une part, il faut reconnaître que "},
-  {type:"slot",kind:"reuse",answer:"de bonnes conditions de travail peuvent permettre aux employés de récupérer de l’énergie, de mieux se concentrer et d’être plus efficaces",hint:"良好的工作条件能帮助员工恢复精力、集中注意力并提高效率"},
-  {type:"text",fr:". À titre d’exemple, "},
-  {type:"slot",kind:"reuse",answer:"un environnement de travail plus agréable peut également améliorer leur satisfaction",hint:"更舒适的工作环境还能提高员工满意度"},
-  {type:"text",fr:". Néanmoins, d’autre part, il ne faut pas négliger le fait que "},
-  {type:"slot",kind:"reuse",answer:"une lourde charge de travail et le fait de rester constamment joignable peuvent devenir une véritable source de stress",hint:"繁重工作量和一直保持联系会成为压力来源"},
-  {type:"text",fr:". Comme illustration, "},
-  {type:"slot",kind:"reuse",answer:"cela peut rendre plus difficile l’équilibre entre la vie professionnelle et la vie personnelle",hint:"这会让工作和个人生活的平衡更难维持"},
-  {type:"text",fr:"."},
-
-  {type:"break"},
-
-  {type:"text",fr:"En conclusion, bien que "},
-  {type:"slot",kind:"conclusion",answer:"de bonnes conditions de travail puissent présenter des avantages importants",hint:"良好的工作条件具有重要优势"},
-  {type:"text",fr:", il est fondamental de maintenir un équilibre "},
-  {type:"slot",kind:"conclusion",answer:"entre l’efficacité et le bien-être des employés",hint:"在效率与员工福祉之间"},
-  {type:"text",fr:", afin de "},
-  {type:"slot",kind:"conclusion",answer:"favoriser à la fois la productivité et la santé au travail",hint:"同时保障效率和健康"},
-  {type:"text",fr:"."}
- ]
-};
 function slotKindClass(k){return k==='source'?'source-slot':k==='reuse'?'reuse-slot':'conclusion-slot'}
+function slotFillItems(){
+ const E=window.TCF_EE3_EXAMS||{};
+ return (window.TCF_EE3_ORAL_REUSE||[]).map(reuse=>{
+   const meta=E.metadata&&E.metadata[String(reuse.id)];
+   if(!meta)return null;
+   return {id:reuse.id,reuse,meta,topic:MIG_TOPIC_BY_ID[reuse.id]||'',title:draftTitle(meta),zhTitle:reuse.title};
+ }).filter(Boolean);
+}
+function splitZhForSlots(s){
+ const parts=String(s||'').split(/[。！？]/).map(x=>x.trim()).filter(Boolean);
+ return {first:parts[0]||s||'',rest:parts.slice(1).join('；')||parts[0]||s||''};
+}
+function slotFillParts(item){
+ const {meta,reuse,title,zhTitle}=item;
+ const slots=CULALA_SLOTS[reuse.id]||["une première approche","ses avantages pratiques","une seconde approche","ses limites possibles","favoriser une solution équilibrée"];
+ const a1=splitArg(reuse.arg1.final),a2=splitArg(reuse.arg2.final);
+ const z1=splitZhForSlots(reuseZh(reuse.id,1)),z2=splitZhForSlots(reuseZh(reuse.id,2));
+ const ex1=a1.example||"cette approche peut apporter des bénéfices concrets dans la vie quotidienne";
+ const ex2=a2.example||"une application trop rigide peut au contraire créer de nouvelles difficultés";
+ const topicAnswer=title.charAt(0).toLowerCase()+title.slice(1);
+ return [
+  {type:"text",fr:"De nos jours, "},
+  {type:"slot",kind:"conclusion",answer:topicAnswer,hint:zhTitle},
+  {type:"text",fr:" suscite de vives discussions au sein de l’opinion publique. Certaines personnes considèrent qu’il est essentiel de privilégier "},
+  {type:"slot",kind:"source",answer:slots[0],hint:"观点 1："+(meta.material1Core||"材料 1 核心")},
+  {type:"text",fr:", en raison de "},
+  {type:"slot",kind:"source",answer:slots[1],hint:"观点 1 理由："+(meta.material1Core||"材料 1 理由")},
+  {type:"text",fr:". D’autres, en revanche, estiment qu’il vaut certainement mieux mettre davantage l’accent sur "},
+  {type:"slot",kind:"source",answer:slots[2],hint:"观点 2："+(meta.material2Core||"材料 2 核心")},
+  {type:"text",fr:", pour "},
+  {type:"slot",kind:"source",answer:slots[3],hint:"观点 2 理由："+(meta.material2Core||"材料 2 理由")},
+  {type:"text",fr:"."},
+  {type:"break"},
+  {type:"text",fr:"À mon avis, il est essentiel de parvenir à un juste milieu en reconnaissant la validité de ces deux opinions opposées. D’une part, il faut reconnaître que "},
+  {type:"slot",kind:"reuse",answer:a1.reason,hint:z1.first},
+  {type:"text",fr:". À titre d’exemple, "},
+  {type:"slot",kind:"reuse",answer:ex1,hint:z1.rest},
+  {type:"text",fr:". Néanmoins, d’autre part, il ne faut pas négliger le fait que "},
+  {type:"slot",kind:"reuse",answer:a2.reason,hint:z2.first},
+  {type:"text",fr:". Comme illustration, "},
+  {type:"slot",kind:"reuse",answer:ex2,hint:z2.rest},
+  {type:"text",fr:"."},
+  {type:"break"},
+  {type:"text",fr:"En conclusion, bien que "},
+  {type:"slot",kind:"conclusion",answer:"chaque approche puisse présenter des avantages importants",hint:"两种做法都可能具有重要优势"},
+  {type:"text",fr:", il est fondamental de maintenir un équilibre "},
+  {type:"slot",kind:"conclusion",answer:"entre "+slots[0]+" et "+slots[2],hint:"在本题两种主要做法之间保持平衡"},
+  {type:"text",fr:", afin de "},
+  {type:"slot",kind:"conclusion",answer:slots[4],hint:"取得平衡后的好处"},
+  {type:"text",fr:"."}
+ ];
+}
+function refreshSlotFillQuestionOptions(keepId){
+ const topic=document.getElementById('slotFillTopic').value;
+ const all=slotFillItems().filter(x=>!topic||x.topic===topic);
+ const sel=document.getElementById('slotFillQuestion');
+ const prev=keepId||Number(sel.value)||null;
+ sel.innerHTML=all.map(x=>'<option value="'+x.id+'">写作 '+x.id+' · '+esc(x.zhTitle)+'</option>').join('');
+ if(prev&&all.some(x=>x.id===Number(prev)))sel.value=String(prev);
+ return all;
+}
+function currentSlotFillItem(){
+ const id=Number(document.getElementById('slotFillQuestion').value);
+ return slotFillItems().find(x=>x.id===id)||slotFillItems()[0]||null;
+}
 function renderSlotFill(){
+ const item=currentSlotFillItem();
+ if(!item){document.getElementById('slotFillPractice').innerHTML='<div class="note">暂无题目。</div>';return;}
  const mode=document.getElementById('slotFillMode').value;
- document.getElementById('slotFillTitle').textContent='样板：写作 1001 · '+SLOT_FILL_SAMPLE.zhTitle+' / '+SLOT_FILL_SAMPLE.title;
+ document.getElementById('slotFillTitle').textContent='当前：写作 '+item.id+' · '+item.zhTitle+' / '+item.title+' · '+item.topic;
+ const parts=slotFillParts(item);
  let slotIndex=0,html='<div class="slotfill-card">';
- for(const p of SLOT_FILL_SAMPLE.parts){
+ for(const p of parts){
    if(p.type==='break'){html+='</div><div class="slotfill-card">';continue;}
    if(p.type==='text'){html+='<span class="slotfill-line">'+esc(p.fr)+'</span>';continue;}
    const i=slotIndex++;
    html+='<input class="slot-input '+slotKindClass(p.kind)+'" data-slot-index="'+i+'" data-answer="'+esc(p.answer)+'" placeholder="填写法语">';
-   if(mode==='hint') html+='<div class="slot-hint">提示：'+esc(p.hint)+'</div>';
+   if(mode==='hint')html+='<div class="slot-hint">提示：'+esc(p.hint)+'</div>';
  }
  html+='</div><div class="slotfill-actions"><button id="checkSlotFill" class="primary">检查全部</button><button id="revealSlotFill">显示全部答案</button><button id="clearSlotFill">清空</button></div><div id="slotFillResult" class="note"></div>';
  document.getElementById('slotFillPractice').innerHTML=html;
  document.getElementById('checkSlotFill').onclick=checkSlotFill;
  document.getElementById('revealSlotFill').onclick=revealSlotFill;
  document.getElementById('clearSlotFill').onclick=()=>{document.querySelectorAll('#slotFillPractice .slot-input').forEach(x=>{x.value='';x.classList.remove('slot-correct','slot-wrong')});document.getElementById('slotFillResult').textContent=''};
- document.querySelectorAll('#slotFillPractice .slot-input').forEach(inp=>{
-   inp.addEventListener('dblclick',()=>{inp.value=inp.dataset.answer;inp.classList.remove('slot-wrong');inp.classList.add('slot-correct')});
- });
+ document.querySelectorAll('#slotFillPractice .slot-input').forEach(inp=>inp.addEventListener('dblclick',()=>{inp.value=inp.dataset.answer;inp.classList.remove('slot-wrong');inp.classList.add('slot-correct')}));
+}
+function moveSlotFill(step){
+ const sel=document.getElementById('slotFillQuestion');
+ if(!sel.options.length)return;
+ sel.selectedIndex=(sel.selectedIndex+step+sel.options.length)%sel.options.length;
+ renderSlotFill();
 }
 function checkSlotFill(){
  let ok=0,total=0;
@@ -398,8 +432,14 @@ function revealSlotFill(){
  document.querySelectorAll('#slotFillPractice .slot-input').forEach(inp=>{inp.value=inp.dataset.answer;inp.classList.remove('slot-wrong');inp.classList.add('slot-correct')});
  document.getElementById('slotFillResult').textContent='已显示全部标准答案。';
 }
+document.getElementById('slotFillTopic').onchange=()=>{refreshSlotFillQuestionOptions();renderSlotFill()};
+document.getElementById('slotFillQuestion').onchange=renderSlotFill;
 document.getElementById('slotFillMode').onchange=renderSlotFill;
+document.getElementById('slotFillPrev').onclick=()=>moveSlotFill(-1);
+document.getElementById('slotFillNext').onclick=()=>moveSlotFill(1);
+document.getElementById('slotFillRandom').onclick=()=>{const sel=document.getElementById('slotFillQuestion');if(sel.options.length){sel.selectedIndex=Math.floor(Math.random()*sel.options.length);renderSlotFill()}};
 document.getElementById('slotFillReset').onclick=renderSlotFill;
+refreshSlotFillQuestionOptions(1001);
 
 const ORAL_REUSE_ZH={
 20:["同事之间的友好关系可以让工作环境更愉快，减轻日常压力，并促进团队内部的沟通与互助。","然而，关系过于亲密有时会让公平、客观的决策变得更困难。因此，有必要保持一定界限，以维护专业性和团队凝聚力。"],
