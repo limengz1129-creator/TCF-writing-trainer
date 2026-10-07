@@ -10,10 +10,10 @@
     {title:'方法 / 解决方案型',count:3,recognize:'Comment… ? / De quelle manière… ?',logic:'提出目标 → 概括几种可行做法 → 正文逐项展开',skeleton:'À mes yeux, plusieurs démarches peuvent faciliter / permettre de…',chunks:['plusieurs démarches peuvent faciliter…','il existe plusieurs moyens de…','une première solution consiste à…','une autre possibilité serait de…'],samples:[['旅行与移民',12],['职业与职场',13],['媒体与文化',9]]}
   ];
   const CLOSING=[
-    {title:'直接总结立场型',count:9,logic:'一句重申最终判断，适合答案本身已经非常明确的题。',skeleton:'Pour conclure, il me semble que …',chunks:['Pour conclure, il me semble que…','En définitive…','Dans l’ensemble…']},
-    {title:'重申立场 + 让步 / 边界型',count:84,logic:'重申主要立场 → 用 Toutefois / Cependant 限制绝对化 → 保留 nuance。',skeleton:'Pour conclure, il me semble que X. Toutefois, …',chunks:['Toutefois…','Cependant…','ne suffit pas à lui seul','il serait exagéré d’affirmer que…']},
-    {title:'平衡 / 双边收束型',count:70,logic:'A 与 B 都保留 → 找平衡 → 常接 tout en / entre… et…',skeleton:'L’essentiel est de trouver un équilibre entre A et B.',chunks:['trouver un équilibre entre… et…','tout en…','à la fois… et…','sans pour autant…']},
-    {title:'因人而异 / 条件取决型',count:6,logic:'拒绝唯一答案 → 说明选择取决于个人情况、需求、目标或资源。',skeleton:'Il n’existe pas une seule solution idéale. Le choix dépend de la situation, des besoins et des priorités de chacun.',chunks:['le choix dépend de…','en fonction de…','selon les besoins de chacun','il n’existe pas une seule solution idéale']}
+    {title:'直接总结立场型',count:9,logic:'一句重申最终判断，适合答案本身已经非常明确的题。',skeleton:'Pour conclure, il me semble que …',chunks:['Pour conclure, il me semble que…','En définitive…','Dans l’ensemble…'],samples:[['旅行与移民',16],['旅行与移民',17],['职业与职场',25]]},
+    {title:'重申立场 + 让步 / 边界型',count:84,logic:'重申主要立场 → 用 Toutefois / Cependant 限制绝对化 → 保留 nuance。',skeleton:'Pour conclure, il me semble que X. Toutefois, …',chunks:['Toutefois…','Cependant…','ne suffit pas à lui seul','il serait exagéré d’affirmer que…'],samples:[['旅行与移民',15],['饮食与健康',4],['社会与公共事务',9]]},
+    {title:'平衡 / 双边收束型',count:70,logic:'A 与 B 都保留 → 找平衡 → 常接 tout en / entre… et…',skeleton:'L’essentiel est de trouver un équilibre entre A et B.',chunks:['trouver un équilibre entre… et…','tout en…','à la fois… et…','sans pour autant…'],samples:[['旅行与移民',3],['旅行与移民',18],['家庭与人际',4]]},
+    {title:'因人而异 / 条件取决型',count:6,logic:'拒绝唯一答案 → 说明选择取决于个人情况、需求、目标或资源。',skeleton:'Il n’existe pas une seule solution idéale. Le choix dépend de la situation, des besoins et des priorités de chacun.',chunks:['le choix dépend de…','en fonction de…','selon les besoins de chacun','il n’existe pas une seule solution idéale'],samples:[['旅行与移民',18],['职业与职场',7],['饮食与健康',16]]}
   ];
   const TRIGGERS=[
     ['il faudrait que',112],['il serait souhaitable que',5],['il est souhaitable que',5],['il faut que',4]
@@ -71,7 +71,7 @@
   function tag(text){const s=document.createElement('span');s.className='framework-tag';s.textContent=text;return s;}
   function sampleList(samples){
     const d=document.createElement('div');d.className='framework-samples';
-    for(const [topic,n] of samples){const p=document.createElement('p');p.append(tag(topic+' · 第 '+n+' 题'),document.createTextNode(' '+q(topic,n)) );d.append(p);}
+    for(const [topic,n] of samples){const p=document.createElement('div');p.className='framework-sample-row';const text=document.createElement('p');text.append(tag(topic+' · 第 '+n+' 题'),document.createTextNode(' '+q(topic,n)));const b=document.createElement('button');b.className='source-context-btn';b.textContent='进入原题语境 →';b.onclick=()=>window.CORPUS_OPEN_QUESTION?.(topic,n,state.mode);p.append(text,b);d.append(p);}
     return d;
   }
   function renderOpening(root){
@@ -82,7 +82,7 @@
   function renderClosing(root){
     root.innerHTML='<div class="framework-intro"><h2>结尾框架地图</h2><p class="muted">169 个结尾全部抽取后，主体收束逻辑可以压成 4 类。建议把“虚拟式建议句”看成横跨 4 类结尾的最后一层，而不是单独的第 5 类。</p></div>';
     const grid=document.createElement('div');grid.className='framework-grid';
-    for(const x of CLOSING){const c=document.createElement('article');c.className='framework-card';c.innerHTML='<div class="framework-card-head"><h3>'+x.title+'</h3><strong>'+x.count+' 篇</strong></div><p><b>逻辑：</b>'+x.logic+'</p><div class="framework-chain">'+x.skeleton+'</div><div class="framework-tags"></div>';x.chunks.forEach(t=>c.querySelector('.framework-tags').append(tag(t)));grid.append(c);}root.append(grid);
+    for(const x of CLOSING){const c=document.createElement('article');c.className='framework-card';c.innerHTML='<div class="framework-card-head"><h3>'+x.title+'</h3><strong>'+x.count+' 篇</strong></div><p><b>逻辑：</b>'+x.logic+'</p><div class="framework-chain">'+x.skeleton+'</div><div class="framework-tags"></div><details><summary>看代表原题</summary></details>';x.chunks.forEach(t=>c.querySelector('.framework-tags').append(tag(t)));c.querySelector('details').append(sampleList(x.samples||[]));grid.append(c);}root.append(grid);
     const note=document.createElement('div');note.className='framework-callout';note.innerHTML='<b>高频收尾组合：</b> Pour conclure → 重申立场 → Toutefois / équilibre / dépend de… → <b>Parallèlement + 虚拟式建议</b>';root.append(note);
   }
   function renderVirtual(root){
@@ -91,7 +91,7 @@
     const stats=document.createElement('div');stats.className='framework-trigger-row';TRIGGERS.forEach(([t,n])=>{const x=document.createElement('div');x.className='framework-stat';x.innerHTML='<strong>'+n+'</strong><small>'+t+'</small>';stats.append(x)});root.append(stats);
     const topics=current&&VIRTUAL[current]?[current]:Object.keys(VIRTUAL);
     const grid=document.createElement('div');grid.className='framework-grid';
-    for(const topic of topics){const x=VIRTUAL[topic],c=document.createElement('article');c.className='framework-card virtual-card';c.innerHTML='<div class="framework-card-head"><h3>'+topic+'</h3><strong>'+x.count+' 个</strong></div><p><b>高频主语</b></p><div class="framework-tags subjects"></div><p><b>高频虚拟式动作</b></p><div class="framework-tags actions"></div><details><summary>看原稿中的完整结尾语块</summary><div class="virtual-examples"></div></details>';x.subjects.forEach(t=>c.querySelector('.subjects').append(tag(t)));x.actions.forEach(t=>c.querySelector('.actions').append(tag(t)));for(const ex of x.examples){const p=document.createElement('p');p.className='virtual-example';p.textContent=ex;c.querySelector('.virtual-examples').append(p);}grid.append(c);}root.append(grid);
+    for(const topic of topics){const x=VIRTUAL[topic],c=document.createElement('article');c.className='framework-card virtual-card';c.innerHTML='<div class="framework-card-head"><h3>'+topic+'</h3><strong>'+x.count+' 个</strong></div><p><b>高频主语</b></p><div class="framework-tags subjects"></div><p><b>高频虚拟式动作</b></p><div class="framework-tags actions"></div><details><summary>看原稿中的完整结尾语块</summary><div class="virtual-examples"></div></details><button class="topic-context-btn">进入该主题原题列表 →</button>';x.subjects.forEach(t=>c.querySelector('.subjects').append(tag(t)));x.actions.forEach(t=>c.querySelector('.actions').append(tag(t)));for(const ex of x.examples){const p=document.createElement('p');p.className='virtual-example';p.textContent=ex;c.querySelector('.virtual-examples').append(p);}c.querySelector('.topic-context-btn').onclick=()=>window.CORPUS_OPEN_TOPIC_QUESTIONS?.(topic,state.mode);grid.append(c);}root.append(grid);
   }
 
   function uniqueQuestions(){
@@ -136,7 +136,7 @@
       fb.innerHTML='<strong>'+(chosen===recommend?'✓ 推荐框架一致':'推荐优先用：'+recommend)+'</strong><p>你选的是：'+chosen+'</p><p><b>判断逻辑：</b>'+meta.logic+'</p><div class="framework-chain">'+meta.skeleton+'</div>';
       box.append(fb);
     }
-    const row=document.createElement('div');row.className='row';const next=document.createElement('button');next.className='primary';next.textContent='下一题';next.onclick=()=>{nextOpeningQuestion();render();};const reveal=document.createElement('button');reveal.textContent='直接看推荐';reveal.onclick=()=>{state.openingChoice=openingTypeFor(x.q);render();};row.append(next,reveal);box.append(row);root.append(box);
+    const row=document.createElement('div');row.className='row';const next=document.createElement('button');next.className='primary';next.textContent='下一题';next.onclick=()=>{nextOpeningQuestion();render();};const reveal=document.createElement('button');reveal.textContent='直接看推荐';reveal.onclick=()=>{state.openingChoice=openingTypeFor(x.q);render();};const context=document.createElement('button');context.textContent='进入这道原题语境';context.onclick=()=>window.CORPUS_OPEN_QUESTION?.(x.topic,x.n,state.mode);row.append(next,reveal,context);box.append(row);root.append(box);
   }
 
   function closingTypeFor(question){
@@ -189,7 +189,7 @@
     const row=document.createElement('div');row.className='row';
     const next=document.createElement('button');next.className='primary';next.textContent='下一题';next.onclick=()=>{nextClosingQuestion();render();};
     const reveal=document.createElement('button');reveal.textContent='直接看推荐';reveal.onclick=()=>{state.closingChoice=closingTypeFor(x.q);render();};
-    row.append(next,reveal);box.append(row);root.append(box);
+    const context=document.createElement('button');context.textContent='进入这道原题语境';context.onclick=()=>window.CORPUS_OPEN_QUESTION?.(x.topic,x.n,state.mode);row.append(next,reveal,context);box.append(row);root.append(box);
   }
   function renderVirtualDrill(root){
     const selected=$('topic')?.value||'';
@@ -218,5 +218,5 @@
     const stage=document.createElement('div');stage.id='frameworkStage';root.append(stage);
     if(state.mode==='opening')renderOpening(stage);else if(state.mode==='openingDrill')renderOpeningDrill(stage);else if(state.mode==='closing')renderClosing(stage);else if(state.mode==='closingDrill')renderClosingDrill(stage);else if(state.mode==='virtual')renderVirtual(stage);else renderVirtualDrill(stage);
   }
-  window.CORPUS_OPENING_CLOSING={render,getMeta:()=>({openings:169,closings:169,openingTypes:7,closingTypes:4,subjunctive:126})};
+  window.CORPUS_OPENING_CLOSING={render,setMode:m=>{if(['opening','openingDrill','closing','closingDrill','virtual','virtualDrill'].includes(m))state.mode=m;},getMode:()=>state.mode,getMeta:()=>({openings:169,closings:169,openingTypes:7,closingTypes:4,subjunctive:126})};
 })();
