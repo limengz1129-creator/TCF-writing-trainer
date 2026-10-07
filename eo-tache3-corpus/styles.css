@@ -81,3 +81,8 @@
 .sentence-builder{margin:16px 0;padding:16px 18px;border-left:4px solid #858ded;border-radius:10px;background:#f3f5fd;font-size:18px;font-weight:700;line-height:1.7}
 .virtual-drill details{margin-top:16px}
 @media(max-width:800px){.drill-choices,.drill-choices.compact{grid-template-columns:1fr}.drill-question{font-size:19px}}
+
+/* Closing drill */
+.closing-choices button{min-height:70px}
+.closing-tail{margin-top:16px;padding-top:14px;border-top:1px solid var(--line)}
+.closing-tail .sentence-builder{margin-top:8px}
