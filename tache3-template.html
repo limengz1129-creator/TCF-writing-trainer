@@ -147,7 +147,7 @@ function renderStudy(){
 function norm(s){return String(s).normalize('NFC').toLowerCase().replace(/[’]/g,"'").replace(/[\s.,!?;:…/()\[\]-]+/g,' ').trim()}
 function score(a,b){const A=norm(a).split(' ').filter(Boolean),B=norm(b).split(' ').filter(Boolean);const d=Array.from({length:A.length+1},()=>new Uint16Array(B.length+1));for(let i=A.length-1;i>=0;i--)for(let j=B.length-1;j>=0;j--)d[i][j]=A[i]===B[j]?1+d[i+1][j+1]:Math.max(d[i+1][j],d[i][j+1]);return B.length?Math.round(100*d[0][0]/B.length):0}
 function renderPara(){const p=P[pi];document.getElementById('paraCounter').textContent='第 '+(pi+1)+' / '+P.length+' 段';document.getElementById('paraZh').textContent=p.zh;document.getElementById('paraRef').textContent=p.fr;document.getElementById('paraRef').classList.add('hidden');document.getElementById('paraInput').value='';document.getElementById('paraScore').textContent=''}
-document.querySelectorAll('.navbtn').forEach(b=>b.onclick=()=>{document.querySelectorAll('.navbtn').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('.section').forEach(x=>x.classList.toggle('active',x.id===b.dataset.sec));if(b.dataset.sec==='migration'){syncMigrationFilterState();renderExams();setTimeout(applyMigrationDomFilters,0)}if(b.dataset.sec==='oralReuse')renderReuse()});
+document.querySelectorAll('.navbtn').forEach(b=>b.onclick=()=>{document.querySelectorAll('.navbtn').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('.section').forEach(x=>x.classList.toggle('active',x.id===b.dataset.sec));if(b.dataset.sec==='migration')renderExams();if(b.dataset.sec==='oralReuse')renderReuse()});
 document.querySelectorAll('.amode').forEach(b=>b.onclick=()=>{document.querySelectorAll('.amode').forEach(x=>x.classList.toggle('active',x===b));document.getElementById('readMode').classList.toggle('hidden',b.dataset.mode!=='read');document.getElementById('paraMode').classList.toggle('hidden',b.dataset.mode!=='para');document.getElementById('fullMode').classList.toggle('hidden',b.dataset.mode!=='full');if(b.dataset.mode==='para')renderPara()});
 document.getElementById('toggleZh').onclick=()=>{showZh=!showZh;renderStudy()};document.getElementById('toggleSlots').onclick=()=>{showSlots=!showSlots;renderStudy()};
 document.getElementById('prevPara').onclick=()=>{pi=(pi-1+P.length)%P.length;renderPara()};document.getElementById('nextPara').onclick=()=>{pi=(pi+1)%P.length;renderPara()};document.getElementById('randomPara').onclick=()=>{pi=Math.floor(Math.random()*P.length);renderPara()};
@@ -262,36 +262,33 @@ function fullDraftHtml(meta,reuse){
 
 function reuseForTopic(topicId){return (window.TCF_EE3_ORAL_REUSE||[]).find(x=>String(x.id)===String(topicId))}
 function reuseSourcesText(arg){return (arg&&arg.sources||[]).map(id=>'口语 T3 '+id).join(' · ')}
-function examTopicSection(meta){
- const mig=migrationForTopic(meta.topicId);
- if(mig&&mig.section)return mig.section;
- const direct={
-  20:"工作、就业与职场",
-  43:"交通、城市与环境治理",
-  58:"公共利益、文化与社会伦理",
-  61:"公共利益、文化与社会伦理"
- };
- return direct[meta.topicId]||"";
+function examTopicSection(meta){return MIG_TOPIC_BY_ID[meta.topicId]||""}
+const MIG_TOPIC_BY_ID={
+20:"工作、就业与职场",43:"交通、城市与环境治理",58:"公共利益、文化与社会伦理",61:"公共利益、文化与社会伦理",
+1001:"工作、就业与职场",1002:"科技、媒体与信息环境",1003:"教育、家庭与儿童成长",1004:"工作、就业与职场",1005:"交通、城市与环境治理",1006:"公共利益、文化与社会伦理",1007:"饮食、购物与日常消费",1008:"教育、家庭与儿童成长",1009:"住房、居住与代际生活",1010:"教育、家庭与儿童成长",1011:"教育、家庭与儿童成长",1012:"住房、居住与代际生活",1013:"公共利益、文化与社会伦理",1014:"公共利益、文化与社会伦理",1015:"交通、城市与环境治理",1016:"教育、家庭与儿童成长",1017:"饮食、购物与日常消费",1018:"住房、居住与代际生活",1019:"交通、城市与环境治理",1020:"科技、媒体与信息环境",1021:"教育、家庭与儿童成长",1022:"饮食、购物与日常消费",1023:"教育、家庭与儿童成长",1024:"教育、家庭与儿童成长",1025:"科技、媒体与信息环境",1026:"工作、就业与职场",1027:"饮食、购物与日常消费",1028:"饮食、购物与日常消费",1029:"科技、媒体与信息环境",1030:"教育、家庭与儿童成长",1031:"住房、居住与代际生活",1032:"教育、家庭与儿童成长"
+};
+function currentMigrationFilters(){
+ const p=new URLSearchParams(location.search);
+ return {month:p.get('month')||'',topic:p.get('topic')||'',mode:document.getElementById('migMode').value||'identify'};
 }
-const migrationFilterState={month:'',topic:'',mode:'identify'};
-function selectedValue(id){
- const el=document.getElementById(id);
- if(!el)return '';
- const opt=el.options&&el.selectedIndex>=0?el.options[el.selectedIndex]:null;
- return String((opt&&opt.value)||el.value||'').trim();
+function setMigrationFilterParam(key,value){
+ const p=new URLSearchParams(location.search);
+ if(value)p.set(key,value);else p.delete(key);
+ p.set('view','migration');
+ location.search=p.toString();
 }
-function syncMigrationFilterState(){
- migrationFilterState.month=selectedValue('month');
- migrationFilterState.topic=selectedValue('migTopic');
- migrationFilterState.mode=selectedValue('migMode')||'identify';
+function restoreMigrationFiltersFromUrl(){
+ const p=new URLSearchParams(location.search);
+ const month=p.get('month')||'',topic=p.get('topic')||'';
+ const monthEl=document.getElementById('month'),topicEl=document.getElementById('migTopic');
+ if(monthEl)monthEl.value=month;
+ if(topicEl)topicEl.value=topic;
 }
 function renderExams(){
- const month=migrationFilterState.month;
- const topic=migrationFilterState.topic;
- const mode=migrationFilterState.mode;
- const normTopic=s=>String(s||'').replace(/\s+/g,'').trim();
- let rows=allRecords();
- document.getElementById('examCount').textContent='当前 '+rows.length+' 条月度真题记录';
+ const filters=currentMigrationFilters();
+ const month=filters.month,topic=filters.topic,mode=filters.mode;
+ let rows=allRecords().filter(r=>(!month||r.month===month)&&(!topic||MIG_TOPIC_BY_ID[r.meta.topicId]===topic));
+ document.getElementById('examCount').textContent='当前 '+rows.length+' 条月度真题记录'+(month?' · '+month:'')+(topic?' · '+topic:'');
  document.getElementById('examList').innerHTML=rows.map(r=>{
   const m=r.meta;
   const fc=frenchSlotCores(m);
@@ -305,7 +302,7 @@ function renderExams(){
     '<div class="slotgrid"><div><strong>材料 1 核心</strong><br><span class="badge">FR</span> '+esc(fc.one||'À extraire du document 1')+'<br><span class="badge">中</span> '+esc(m.material1Core||'请从材料1提取')+'</div><div><strong>材料 2 核心</strong><br><span class="badge">FR</span> '+esc(fc.two||'À extraire du document 2')+'<br><span class="badge">中</span> '+esc(m.material2Core||'请从材料2提取')+'</div></div>'+
     reuseBlock+(mode==='guided'?'<div class="prompt"><strong>中央问题：</strong> '+esc(m.centralQuestion||'')+'</div>':'')
   );
-  return '<article class="exam" data-month="'+esc(r.month)+'" data-topic="'+esc(examTopicSection(m))+'"><div><span class="badge">'+esc(r.month)+'</span> 第 '+r.ordinal+' 题 · '+esc(r.zhTitle||r.prompt||'')+'</div><h3>'+esc(r.prompt||'')+'</h3><div class="doc"><strong>Document 1</strong><br>'+esc(r.document1||'')+'</div><div class="doc"><strong>Document 2</strong><br>'+esc(r.document2||'')+'</div>'+guide+(mode==='blind'?'<button class="showGuide">写完后看模板映射</button>':'')+'</article>'
+  return '<article class="exam" data-month="'+esc(r.month)+'" data-topic="'+esc(MIG_TOPIC_BY_ID[m.topicId]||'')+'"><div><span class="badge">'+esc(r.month)+'</span> 第 '+r.ordinal+' 题 · '+esc(r.zhTitle||r.prompt||'')+'</div><h3>'+esc(r.prompt||'')+'</h3><div class="doc"><strong>Document 1</strong><br>'+esc(r.document1||'')+'</div><div class="doc"><strong>Document 2</strong><br>'+esc(r.document2||'')+'</div>'+guide+(mode==='blind'?'<button class="showGuide">写完后看模板映射</button>':'')+'</article>'
  }).join('');
  document.querySelectorAll('.showGuide').forEach((b,i)=>b.onclick=()=>{const r=rows[i],m=r.meta,fc=frenchSlotCores(m),reuse=reuseForTopic(m.topicId);const d=document.createElement('div');d.className='prompt';d.innerHTML='<strong>材料1核心：</strong><br><span class="badge">FR</span> '+esc(fc.one||'')+'<br><span class="badge">中</span> '+esc(m.material1Core||'')+'<br><br><strong>材料2核心：</strong><br><span class="badge">FR</span> '+esc(fc.two||'')+'<br><span class="badge">中</span> '+esc(m.material2Core||'')+(reuse?'<br><br><strong>♻️ 口语 T3 复用论据1：</strong><br>'+esc(reuse.arg1.final)+'<br><small>'+esc(reuseSourcesText(reuse.arg1))+'</small><br><br><strong>♻️ 口语 T3 复用论据2：</strong><br>'+esc(reuse.arg2.final)+'<br><small>'+esc(reuseSourcesText(reuse.arg2))+'</small>'+fullDraftHtml(m,reuse):'');b.replaceWith(d)});
 }
@@ -382,36 +379,16 @@ document.getElementById('reuseLevel').onchange=renderReuse;
 document.getElementById('reuseSearch').oninput=renderReuse;
 document.getElementById('reuseRandom').onclick=()=>{const cards=[...document.querySelectorAll('.reuse-card')];if(cards.length)cards[Math.floor(Math.random()*cards.length)].scrollIntoView({behavior:'smooth',block:'center'})};
 
-function applyMigrationDomFilters(){
- const monthEl=document.getElementById('month');
- const topicEl=document.getElementById('migTopic');
- const month=monthEl?String(monthEl.value||'').trim():'';
- const topic=topicEl?String(topicEl.value||'').trim():'';
- const cards=[...document.querySelectorAll('#examList .exam')];
- let visible=0;
- cards.forEach(card=>{
-   const okMonth=!month||card.dataset.month===month;
-   const okTopic=!topic||card.dataset.topic===topic;
-   const show=okMonth&&okTopic;
-   card.style.display=show?'':'none';
-   if(show)visible++;
- });
- const count=document.getElementById('examCount');
- if(count)count.textContent='当前 '+visible+' 条月度真题记录'+(month?' · '+month:'')+(topic?' · '+topic:'');
-}
-['month','migTopic','migMode'].forEach(id=>{
- const el=document.getElementById(id);
- const apply=()=>{syncMigrationFilterState();renderExams();setTimeout(applyMigrationDomFilters,0);};
- el.addEventListener('change',apply);
- el.addEventListener('input',apply);
- el.addEventListener('blur',apply);
- el.addEventListener('keyup',apply);
- el.addEventListener('pointerup',()=>setTimeout(apply,0));
-});
+document.getElementById('month').addEventListener('change',e=>setMigrationFilterParam('month',e.target.value));
+document.getElementById('migTopic').addEventListener('change',e=>setMigrationFilterParam('topic',e.target.value));
+document.getElementById('migMode').addEventListener('change',renderExams);
 document.getElementById('randomExam').onclick=()=>{const cards=[...document.querySelectorAll('.exam')];if(cards.length)cards[Math.floor(Math.random()*cards.length)].scrollIntoView({behavior:'smooth',block:'center'})};
 renderStudy();
-syncMigrationFilterState();
-setTimeout(()=>{if(document.getElementById('migration').classList.contains('active')){renderExams();applyMigrationDomFilters()}},0);
-window.addEventListener('pageshow',()=>{syncMigrationFilterState();if(document.getElementById('migration').classList.contains('active')){renderExams();setTimeout(applyMigrationDomFilters,0)}});const examListObserver=new MutationObserver(()=>applyMigrationDomFilters());examListObserver.observe(document.getElementById('examList'),{childList:true});
+restoreMigrationFiltersFromUrl();
+if(new URLSearchParams(location.search).get('view')==='migration'){
+ document.querySelectorAll('.navbtn').forEach(x=>x.classList.toggle('active',x.dataset.sec==='migration'));
+ document.querySelectorAll('.section').forEach(x=>x.classList.toggle('active',x.id==='migration'));
+ renderExams();
+}
 </script>
 </body></html>
