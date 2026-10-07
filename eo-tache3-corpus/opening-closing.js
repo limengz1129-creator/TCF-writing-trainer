@@ -1,19 +1,21 @@
 'use strict';
 (() => {
+  const DATA=Array.isArray(window.CORPUS_OPENING_CLOSING_DATA)?window.CORPUS_OPENING_CLOSING_DATA:[];
+  const DATA_BY_ID=new Map(DATA.map(x=>[x.id,x]));
   const OPENING=[
-    {title:'普通观点 / 同意不同意型',count:94,recognize:'Qu’en pensez-vous ? / Êtes-vous d’accord ? / Partagez-vous cet avis ?',logic:'改写题目 → 明确总体立场 → 必要时加一个轻微限制',skeleton:'De nos jours, la question de savoir si … suscite beaucoup de débats. → À mes yeux, je dirais que …',chunks:['la question de savoir si…','suscite beaucoup de débats','À mes yeux, je dirais que…','dans l’ensemble…'],samples:[['旅行与移民',1],['职业与职场',1],['科技与网络',2]]},
-    {title:'绝对化 / 必要性 / 边界型',count:46,recognize:'toujours / jamais / indispensable / suffisant / impossible / il faut / le plus important',logic:'承认合理部分 → 拒绝绝对化 → 补充条件或其他因素',skeleton:'X joue effectivement un rôle important → Toutefois, il serait exagéré d’affirmer que X suffit à lui seul → d’autres facteurs doivent également être pris en compte.',chunks:['ne suffit pas à lui seul','il serait exagéré d’affirmer que…','cela ne signifie pas pour autant que…','d’autres facteurs jouent également un rôle essentiel'],samples:[['旅行与移民',5],['饮食与健康',9],['社会与公共事务',9]]},
-    {title:'比较 / 选择 / 权衡型',count:8,recognize:'A ou B / vaut-il mieux / plus… que / plutôt que',logic:'A 的优势 → B 的优势 → 不做绝对化选择 / 说明取决条件',skeleton:'Les deux possibilités présentent des avantages et des inconvénients. → Le choix dépend surtout de…',chunks:['les deux possibilités présentent…','à l’inverse…','tandis que…','le choix dépend surtout de…'],samples:[['旅行与移民',18],['职业与职场',12],['环境与城市',3]]},
+    {title:'普通观点 / 同意不同意型',count:97,recognize:'Qu’en pensez-vous ? / Êtes-vous d’accord ? / Partagez-vous cet avis ?',logic:'改写题目 → 明确总体立场 → 必要时加一个轻微限制',skeleton:'De nos jours, la question de savoir si … suscite beaucoup de débats. → À mes yeux, je dirais que …',chunks:['la question de savoir si…','suscite beaucoup de débats','À mes yeux, je dirais que…','dans l’ensemble…'],samples:[['旅行与移民',1],['职业与职场',1],['科技与网络',2]]},
+    {title:'绝对化 / 必要性 / 边界型',count:42,recognize:'toujours / jamais / indispensable / suffisant / impossible / il faut / le plus important',logic:'承认合理部分 → 拒绝绝对化 → 补充条件或其他因素',skeleton:'X joue effectivement un rôle important → Toutefois, il serait exagéré d’affirmer que X suffit à lui seul → d’autres facteurs doivent également être pris en compte.',chunks:['ne suffit pas à lui seul','il serait exagéré d’affirmer que…','cela ne signifie pas pour autant que…','d’autres facteurs jouent également un rôle essentiel'],samples:[['旅行与移民',5],['饮食与健康',9],['社会与公共事务',9]]},
+    {title:'比较 / 选择 / 权衡型',count:12,recognize:'A ou B / vaut-il mieux / plus… que / plutôt que',logic:'A 的优势 → B 的优势 → 不做绝对化选择 / 说明取决条件',skeleton:'Les deux possibilités présentent des avantages et des inconvénients. → Le choix dépend surtout de…',chunks:['les deux possibilités présentent…','à l’inverse…','tandis que…','le choix dépend surtout de…'],samples:[['旅行与移民',18],['职业与职场',12],['环境与城市',3]]},
     {title:'原因 / 动机 / 解释型',count:6,recognize:'Pourquoi… ? / Pour quelles raisons… ? / Comment expliquez-vous cela ?',logic:'直接说明有多个原因 → 提前报出 2–3 个主要原因',skeleton:'Plusieurs raisons peuvent expliquer ce phénomène, notamment A, B et C.',chunks:['plusieurs raisons peuvent expliquer…','peut être motivé par…','notamment…','plusieurs facteurs entrent en jeu'],samples:[['旅行与移民',27],['职业与职场',24],['环境与城市',9]]},
     {title:'个人 / 偏好 / 具体回答型',count:7,recognize:'votre pays / votre matière préférée / quel travail / lequel préférez-vous',logic:'直接回答自己的选择 → 给出 2–3 个理由，不必硬套“社会争议”',skeleton:'À titre personnel, je préfère / je choisirais …, principalement parce que A et B.',chunks:['à titre personnel…','je préfère…','mon choix se porte sur…','principalement parce que…'],samples:[['旅行与移民',25],['职业与职场',25],['教育与儿童',2]]},
-    {title:'列举 / 多因素型',count:5,recognize:'trois principales choses / quels impacts / quels risques / quelles formes',logic:'直接报数量或维度 → A / B / C',skeleton:'À mes yeux, il faut surtout prendre en compte trois éléments : A, B et C.',chunks:['trois éléments principaux','plusieurs facteurs doivent être pris en compte','on peut distinguer…','notamment A, B et C'],samples:[['旅行与移民',17],['科技与网络',15],['社会与公共事务',1]]},
-    {title:'方法 / 解决方案型',count:3,recognize:'Comment… ? / De quelle manière… ?',logic:'提出目标 → 概括几种可行做法 → 正文逐项展开',skeleton:'À mes yeux, plusieurs démarches peuvent faciliter / permettre de…',chunks:['plusieurs démarches peuvent faciliter…','il existe plusieurs moyens de…','une première solution consiste à…','une autre possibilité serait de…'],samples:[['旅行与移民',12],['职业与职场',13],['媒体与文化',9]]}
+    {title:'列举 / 多因素型',count:3,recognize:'trois principales choses / quels impacts / quels risques / quelles formes',logic:'直接报数量或维度 → A / B / C',skeleton:'À mes yeux, il faut surtout prendre en compte trois éléments : A, B et C.',chunks:['trois éléments principaux','plusieurs facteurs doivent être pris en compte','on peut distinguer…','notamment A, B et C'],samples:[['旅行与移民',17],['科技与网络',15],['社会与公共事务',1]]},
+    {title:'方法 / 解决方案型',count:2,recognize:'Comment… ? / De quelle manière… ?',logic:'提出目标 → 概括几种可行做法 → 正文逐项展开',skeleton:'À mes yeux, plusieurs démarches peuvent faciliter / permettre de…',chunks:['plusieurs démarches peuvent faciliter…','il existe plusieurs moyens de…','une première solution consiste à…','une autre possibilité serait de…'],samples:[['旅行与移民',12],['职业与职场',13],['媒体与文化',9]]}
   ];
   const CLOSING=[
-    {title:'直接总结立场型',count:9,logic:'一句重申最终判断，适合答案本身已经非常明确的题。',skeleton:'Pour conclure, il me semble que …',chunks:['Pour conclure, il me semble que…','En définitive…','Dans l’ensemble…'],samples:[['旅行与移民',16],['旅行与移民',17],['职业与职场',25]]},
-    {title:'重申立场 + 让步 / 边界型',count:84,logic:'重申主要立场 → 用 Toutefois / Cependant 限制绝对化 → 保留 nuance。',skeleton:'Pour conclure, il me semble que X. Toutefois, …',chunks:['Toutefois…','Cependant…','ne suffit pas à lui seul','il serait exagéré d’affirmer que…'],samples:[['旅行与移民',15],['饮食与健康',4],['社会与公共事务',9]]},
-    {title:'平衡 / 双边收束型',count:70,logic:'A 与 B 都保留 → 找平衡 → 常接 tout en / entre… et…',skeleton:'L’essentiel est de trouver un équilibre entre A et B.',chunks:['trouver un équilibre entre… et…','tout en…','à la fois… et…','sans pour autant…'],samples:[['旅行与移民',3],['旅行与移民',18],['家庭与人际',4]]},
-    {title:'因人而异 / 条件取决型',count:6,logic:'拒绝唯一答案 → 说明选择取决于个人情况、需求、目标或资源。',skeleton:'Il n’existe pas une seule solution idéale. Le choix dépend de la situation, des besoins et des priorités de chacun.',chunks:['le choix dépend de…','en fonction de…','selon les besoins de chacun','il n’existe pas une seule solution idéale'],samples:[['旅行与移民',18],['职业与职场',7],['饮食与健康',16]]}
+    {title:'直接总结立场型',count:10,logic:'一句重申最终判断，适合答案本身已经非常明确的题。',skeleton:'Pour conclure, il me semble que …',chunks:['Pour conclure, il me semble que…','En définitive…','Dans l’ensemble…'],samples:[['旅行与移民',16],['旅行与移民',17],['职业与职场',25]]},
+    {title:'重申立场 + 让步 / 边界型',count:88,logic:'重申主要立场 → 用 Toutefois / Cependant 限制绝对化 → 保留 nuance。',skeleton:'Pour conclure, il me semble que X. Toutefois, …',chunks:['Toutefois…','Cependant…','ne suffit pas à lui seul','il serait exagéré d’affirmer que…'],samples:[['旅行与移民',15],['饮食与健康',4],['社会与公共事务',9]]},
+    {title:'平衡 / 双边收束型',count:66,logic:'A 与 B 都保留 → 找平衡 → 常接 tout en / entre… et…',skeleton:'L’essentiel est de trouver un équilibre entre A et B.',chunks:['trouver un équilibre entre… et…','tout en…','à la fois… et…','sans pour autant…'],samples:[['旅行与移民',3],['旅行与移民',18],['家庭与人际',4]]},
+    {title:'因人而异 / 条件取决型',count:5,logic:'拒绝唯一答案 → 说明选择取决于个人情况、需求、目标或资源。',skeleton:'Il n’existe pas une seule solution idéale. Le choix dépend de la situation, des besoins et des priorités de chacun.',chunks:['le choix dépend de…','en fonction de…','selon les besoins de chacun','il n’existe pas une seule solution idéale'],samples:[['旅行与移民',18],['职业与职场',7],['饮食与健康',16]]}
   ];
   const TRIGGERS=[
     ['il faudrait que',112],['il serait souhaitable que',5],['il est souhaitable que',5],['il faut que',4]
@@ -69,20 +71,26 @@
   const $=id=>document.getElementById(id);
   const q=(topic,n)=>{const x=CORPUS.find(p=>p.topic===topic&&p.questionNumber===n);return x?.question||'';};
   function tag(text){const s=document.createElement('span');s.className='framework-tag';s.textContent=text;return s;}
-  function sampleList(samples){
+  function rowsByType(kind,title){return DATA.filter(x=>(kind==='opening'?x.openingType:x.closingType)===title);}
+  function sampleList(kind,title){
     const d=document.createElement('div');d.className='framework-samples';
-    for(const [topic,n] of samples){const p=document.createElement('div');p.className='framework-sample-row';const text=document.createElement('p');text.append(tag(topic+' · 第 '+n+' 题'),document.createTextNode(' '+q(topic,n)));const b=document.createElement('button');b.className='source-context-btn';b.textContent='进入原题语境 →';b.onclick=()=>window.CORPUS_OPEN_QUESTION?.(topic,n,state.mode);p.append(text,b);d.append(p);}
+    for(const x of rowsByType(kind,title).slice(0,3)){
+      const p=document.createElement('div');p.className='framework-sample-row';
+      const text=document.createElement('p');text.append(tag(x.topic+' · 第 '+x.n+' 题'),document.createTextNode(' '+x.question));
+      const b=document.createElement('button');b.className='source-context-btn';b.textContent='进入原题语境 →';b.onclick=()=>window.CORPUS_OPEN_QUESTION?.(x.topic,x.n,state.mode);
+      p.append(text,b);d.append(p);
+    }
     return d;
   }
   function renderOpening(root){
     root.innerHTML='<div class="framework-intro"><h2>开头框架地图</h2><p class="muted">148 页 · 169 个开头已全部抽取并按功能去重。目标不是背 169 段，而是做到：看到题目 → 10 秒判断题型 → 调用母框架 → 填入立场。</p></div>';
     const grid=document.createElement('div');grid.className='framework-grid';
-    for(const x of OPENING){const c=document.createElement('article');c.className='framework-card';c.innerHTML='<div class="framework-card-head"><h3>'+x.title+'</h3><strong>'+x.count+' 题</strong></div><p><b>识别：</b>'+x.recognize+'</p><p><b>中文逻辑：</b>'+x.logic+'</p><div class="framework-chain">'+x.skeleton+'</div><div class="framework-tags"></div><details><summary>看代表原题</summary></details>';x.chunks.forEach(t=>c.querySelector('.framework-tags').append(tag(t)));c.querySelector('details').append(sampleList(x.samples));grid.append(c);}root.append(grid);
+    for(const x of OPENING){const c=document.createElement('article');c.className='framework-card';c.innerHTML='<div class="framework-card-head"><h3>'+x.title+'</h3><strong>'+x.count+' 题</strong></div><p><b>识别：</b>'+x.recognize+'</p><p><b>中文逻辑：</b>'+x.logic+'</p><div class="framework-chain">'+x.skeleton+'</div><div class="framework-tags"></div><details><summary>看代表原题</summary></details>';x.chunks.forEach(t=>c.querySelector('.framework-tags').append(tag(t)));c.querySelector('details').append(sampleList('opening',x.title));grid.append(c);}root.append(grid);
   }
   function renderClosing(root){
     root.innerHTML='<div class="framework-intro"><h2>结尾框架地图</h2><p class="muted">169 个结尾全部抽取后，主体收束逻辑可以压成 4 类。建议把“虚拟式建议句”看成横跨 4 类结尾的最后一层，而不是单独的第 5 类。</p></div>';
     const grid=document.createElement('div');grid.className='framework-grid';
-    for(const x of CLOSING){const c=document.createElement('article');c.className='framework-card';c.innerHTML='<div class="framework-card-head"><h3>'+x.title+'</h3><strong>'+x.count+' 篇</strong></div><p><b>逻辑：</b>'+x.logic+'</p><div class="framework-chain">'+x.skeleton+'</div><div class="framework-tags"></div><details><summary>看代表原题</summary></details>';x.chunks.forEach(t=>c.querySelector('.framework-tags').append(tag(t)));c.querySelector('details').append(sampleList(x.samples||[]));grid.append(c);}root.append(grid);
+    for(const x of CLOSING){const c=document.createElement('article');c.className='framework-card';c.innerHTML='<div class="framework-card-head"><h3>'+x.title+'</h3><strong>'+x.count+' 篇</strong></div><p><b>逻辑：</b>'+x.logic+'</p><div class="framework-chain">'+x.skeleton+'</div><div class="framework-tags"></div><details><summary>看代表原题</summary></details>';x.chunks.forEach(t=>c.querySelector('.framework-tags').append(tag(t)));c.querySelector('details').append(sampleList('closing',x.title));grid.append(c);}root.append(grid);
     const note=document.createElement('div');note.className='framework-callout';note.innerHTML='<b>高频收尾组合：</b> Pour conclure → 重申立场 → Toutefois / équilibre / dépend de… → <b>Parallèlement + 虚拟式建议</b>';root.append(note);
   }
   function renderVirtual(root){
@@ -91,17 +99,19 @@
     const stats=document.createElement('div');stats.className='framework-trigger-row';TRIGGERS.forEach(([t,n])=>{const x=document.createElement('div');x.className='framework-stat';x.innerHTML='<strong>'+n+'</strong><small>'+t+'</small>';stats.append(x)});root.append(stats);
     const topics=current&&VIRTUAL[current]?[current]:Object.keys(VIRTUAL);
     const grid=document.createElement('div');grid.className='framework-grid';
-    for(const topic of topics){const x=VIRTUAL[topic],c=document.createElement('article');c.className='framework-card virtual-card';c.innerHTML='<div class="framework-card-head"><h3>'+topic+'</h3><strong>'+x.count+' 个</strong></div><p><b>高频主语</b></p><div class="framework-tags subjects"></div><p><b>高频虚拟式动作</b></p><div class="framework-tags actions"></div><details><summary>看原稿中的完整结尾语块</summary><div class="virtual-examples"></div></details><button class="topic-context-btn">进入该主题原题列表 →</button>';x.subjects.forEach(t=>c.querySelector('.subjects').append(tag(t)));x.actions.forEach(t=>c.querySelector('.actions').append(tag(t)));for(const ex of x.examples){const p=document.createElement('p');p.className='virtual-example';p.textContent=ex;c.querySelector('.virtual-examples').append(p);}c.querySelector('.topic-context-btn').onclick=()=>window.CORPUS_OPEN_TOPIC_QUESTIONS?.(topic,state.mode);grid.append(c);}root.append(grid);
+    for(const topic of topics){
+      const x=VIRTUAL[topic],exactRows=DATA.filter(r=>r.topic===topic&&r.subjunctiveTail);
+      const c=document.createElement('article');c.className='framework-card virtual-card';
+      c.innerHTML='<div class="framework-card-head"><h3>'+topic+'</h3><strong>'+exactRows.length+' 个</strong></div><p><b>高频主语</b></p><div class="framework-tags subjects"></div><p><b>高频虚拟式动作</b></p><div class="framework-tags actions"></div><details><summary>先看精选高频语块</summary><div class="virtual-examples"></div></details><details class="all-virtual"><summary>查看该主题全部 '+exactRows.length+' 个原稿虚拟式结尾</summary><div class="virtual-all-list"></div></details><button class="topic-context-btn">进入该主题原题列表 →</button>';
+      x.subjects.forEach(t=>c.querySelector('.subjects').append(tag(t)));x.actions.forEach(t=>c.querySelector('.actions').append(tag(t)));
+      for(const ex of x.examples){const p=document.createElement('p');p.className='virtual-example';p.textContent=ex;c.querySelector('.virtual-examples').append(p);}
+      const all=c.querySelector('.virtual-all-list');
+      for(const r of exactRows){const item=document.createElement('div');item.className='virtual-source-item';const h=document.createElement('div');h.className='virtual-source-head';h.append(tag('第 '+r.n+' 题'),document.createTextNode(' '+r.question));const p=document.createElement('p');p.textContent=r.subjunctiveTail;const b=document.createElement('button');b.className='source-context-btn';b.textContent='进入原题语境 →';b.onclick=()=>window.CORPUS_OPEN_QUESTION?.(r.topic,r.n,state.mode);item.append(h,p,b);all.append(item);}
+      c.querySelector('.topic-context-btn').onclick=()=>window.CORPUS_OPEN_TOPIC_QUESTIONS?.(topic,state.mode);grid.append(c);
+    }root.append(grid);
   }
 
-  function uniqueQuestions(){
-    const seen=new Set(),out=[];
-    for(const x of CORPUS){
-      if(seen.has(x.questionId))continue;
-      seen.add(x.questionId);out.push({id:x.questionId,topic:x.topic,n:x.questionNumber,q:x.question});
-    }
-    return out;
-  }
+  function uniqueQuestions(){return DATA.map(x=>({id:x.id,topic:x.topic,n:x.n,q:x.question}));}
   function openingTypeFor(question){
     const s=question.toLocaleLowerCase('fr');
     if(/\\bcomment se\\b|de quelle manière/.test(s))return '方法 / 解决方案型';
@@ -131,12 +141,12 @@
     for(const t of OPENING){const b=document.createElement('button');b.textContent=t.title;b.onclick=()=>{state.openingChoice=t.title;render();};choices.append(b);}
     box.append(choices);
     if(state.openingChoice){
-      const recommend=openingTypeFor(x.q),chosen=state.openingChoice,meta=OPENING.find(t=>t.title===recommend);
+      const recommend=DATA_BY_ID.get(x.id)?.openingType||openingTypeFor(x.q),chosen=state.openingChoice,meta=OPENING.find(t=>t.title===recommend);
       const fb=document.createElement('div');fb.className='drill-feedback '+(chosen===recommend?'ok':'review');
       fb.innerHTML='<strong>'+(chosen===recommend?'✓ 推荐框架一致':'推荐优先用：'+recommend)+'</strong><p>你选的是：'+chosen+'</p><p><b>判断逻辑：</b>'+meta.logic+'</p><div class="framework-chain">'+meta.skeleton+'</div>';
       box.append(fb);
     }
-    const row=document.createElement('div');row.className='row';const next=document.createElement('button');next.className='primary';next.textContent='下一题';next.onclick=()=>{nextOpeningQuestion();render();};const reveal=document.createElement('button');reveal.textContent='直接看推荐';reveal.onclick=()=>{state.openingChoice=openingTypeFor(x.q);render();};const context=document.createElement('button');context.textContent='进入这道原题语境';context.onclick=()=>window.CORPUS_OPEN_QUESTION?.(x.topic,x.n,state.mode);row.append(next,reveal,context);box.append(row);root.append(box);
+    const row=document.createElement('div');row.className='row';const next=document.createElement('button');next.className='primary';next.textContent='下一题';next.onclick=()=>{nextOpeningQuestion();render();};const reveal=document.createElement('button');reveal.textContent='直接看推荐';reveal.onclick=()=>{state.openingChoice=DATA_BY_ID.get(x.id)?.openingType||openingTypeFor(x.q);render();};const context=document.createElement('button');context.textContent='进入这道原题语境';context.onclick=()=>window.CORPUS_OPEN_QUESTION?.(x.topic,x.n,state.mode);row.append(next,reveal,context);box.append(row);root.append(box);
   }
 
   function closingTypeFor(question){
@@ -175,20 +185,20 @@
     for(const t of CLOSING){const b=document.createElement('button');b.textContent=t.title;b.onclick=()=>{state.closingChoice=t.title;render();};choices.append(b);}
     box.append(choices);
     if(state.closingChoice){
-      const recommend=closingTypeFor(x.q),chosen=state.closingChoice,meta=CLOSING.find(t=>t.title===recommend);
+      const recommend=DATA_BY_ID.get(x.id)?.closingType||closingTypeFor(x.q),chosen=state.closingChoice,meta=CLOSING.find(t=>t.title===recommend);
       const fb=document.createElement('div');fb.className='drill-feedback '+(chosen===recommend?'ok':'review');
       fb.innerHTML='<strong>'+(chosen===recommend?'✓ 推荐收束一致':'更推荐：'+recommend)+'</strong><p>你选的是：'+chosen+'</p><p><b>收束逻辑：</b>'+meta.logic+'</p><div class="framework-chain">'+meta.skeleton+'</div>';
       box.append(fb);
-      const tail=closingTail(x.topic);
+      const exact=DATA_BY_ID.get(x.id),tail=exact?.subjunctiveTail?{exact:true,example:exact.subjunctiveTail}:closingTail(x.topic);
       if(tail){
         const link=document.createElement('div');link.className='closing-tail';
-        link.innerHTML='<p><b>再接一层虚拟式尾句：</b></p><div class="sentence-builder">Parallèlement, il faudrait que '+tail.subject+' '+tail.action+' afin de…</div><details><summary>看同主题原稿完整语块</summary><p class="virtual-example">'+tail.example+'</p></details>';
+        link.innerHTML=tail.exact?'<p><b>这道题原稿的虚拟式尾句：</b></p><div class="sentence-builder exact-tail">'+tail.example+'</div>':'<p><b>这道题没有固定虚拟式尾句，可用同主题语块迁移：</b></p><div class="sentence-builder">Parallèlement, il faudrait que '+tail.subject+' '+tail.action+' afin de…</div><details><summary>看同主题原稿完整语块</summary><p class="virtual-example">'+tail.example+'</p></details>';
         box.append(link);
       }
     }
     const row=document.createElement('div');row.className='row';
     const next=document.createElement('button');next.className='primary';next.textContent='下一题';next.onclick=()=>{nextClosingQuestion();render();};
-    const reveal=document.createElement('button');reveal.textContent='直接看推荐';reveal.onclick=()=>{state.closingChoice=closingTypeFor(x.q);render();};
+    const reveal=document.createElement('button');reveal.textContent='直接看推荐';reveal.onclick=()=>{state.closingChoice=DATA_BY_ID.get(x.id)?.closingType||closingTypeFor(x.q);render();};
     const context=document.createElement('button');context.textContent='进入这道原题语境';context.onclick=()=>window.CORPUS_OPEN_QUESTION?.(x.topic,x.n,state.mode);row.append(next,reveal,context);box.append(row);root.append(box);
   }
   function renderVirtualDrill(root){
@@ -209,14 +219,32 @@
     const details=document.createElement('details');details.innerHTML='<summary>③ 说完以后，再看原稿完整语块</summary>';const ex=document.createElement('div');ex.className='virtual-examples';x.examples.forEach(t=>{const p=document.createElement('p');p.className='virtual-example';p.textContent=t;ex.append(p)});details.append(ex);box.append(details);
     const row=document.createElement('div');row.className='row';const reset=document.createElement('button');reset.textContent='清空重拼';reset.onclick=()=>{state.virtualSubject='';state.virtualAction='';render();};const another=document.createElement('button');another.className='primary';another.textContent='换一个主题';another.onclick=()=>{state.virtualSubject='';state.virtualAction='';if(!$('topic').value){const ts=Object.keys(VIRTUAL).filter(t=>t!==state.virtualTopic);state.virtualTopic=ts[Math.floor(Math.random()*ts.length)];}render();};row.append(reset,another);box.append(row);root.append(box);
   }
+  function renderOriginals(root){
+    const topic=$('topic')?.value||'',term=($('search')?.value||'').trim().toLocaleLowerCase('fr');
+    const rows=DATA.filter(x=>(!topic||x.topic===topic)&&(!term||[x.question,x.opening,x.closing,x.openingType,x.closingType].join(' ').toLocaleLowerCase('fr').includes(term)));
+    root.innerHTML='<div class="framework-intro"><h2>169 题原始首尾语料</h2><p class="muted">这里保留 148 页原稿中逐题抽取的完整开头和完整结尾。每题的开头类型、结尾类型已经固定保存，训练时不再现场猜分类。</p></div><p class="note">当前显示 '+rows.length+' / 169 题</p>';
+    const list=document.createElement('div');list.className='original-framework-list';
+    for(const x of rows){
+      const card=document.createElement('article');card.className='original-framework-card';
+      const head=document.createElement('div');head.className='original-framework-head';
+      const title=document.createElement('div');title.innerHTML='<small>'+x.topic+' · 第 '+x.n+' 题</small><strong>'+x.question+'</strong>';
+      const badges=document.createElement('div');badges.className='original-badges';badges.append(tag('开头：'+x.openingType),tag('结尾：'+x.closingType));if(x.subjunctiveTail)badges.append(tag('虚拟式结尾'));
+      head.append(title,badges);card.append(head);
+      const od=document.createElement('details');od.innerHTML='<summary>查看原稿完整开头</summary><p class="original-text">'+x.opening+'</p>';
+      const cd=document.createElement('details');cd.innerHTML='<summary>查看原稿完整结尾</summary><p class="original-text">'+x.closing+'</p>';
+      const b=document.createElement('button');b.className='source-context-btn';b.textContent='进入原题主体语境 →';b.onclick=()=>window.CORPUS_OPEN_QUESTION?.(x.topic,x.n,state.mode);
+      card.append(od,cd,b);list.append(card);
+    }
+    root.append(list);
+  }
   function render(){
     const root=$('frameworkView');if(!root)return;
     root.replaceChildren();
     const nav=document.createElement('div');nav.className='framework-mode-tabs';
-    [['opening','开头框架地图'],['openingDrill','10 秒开头训练'],['closing','结尾框架地图'],['closingDrill','10 秒结尾训练'],['virtual','结尾虚拟式主题库'],['virtualDrill','虚拟式拼句训练']].forEach(([m,label])=>{const b=document.createElement('button');b.textContent=label;b.classList.toggle('active',state.mode===m);b.onclick=()=>{state.mode=m;render();};nav.append(b);});
+    [['opening','开头框架地图'],['openingDrill','10 秒开头训练'],['closing','结尾框架地图'],['closingDrill','10 秒结尾训练'],['virtual','结尾虚拟式主题库'],['virtualDrill','虚拟式拼句训练'],['originals','169 题原始首尾']].forEach(([m,label])=>{const b=document.createElement('button');b.textContent=label;b.classList.toggle('active',state.mode===m);b.onclick=()=>{state.mode=m;render();};nav.append(b);});
     root.append(nav);
     const stage=document.createElement('div');stage.id='frameworkStage';root.append(stage);
-    if(state.mode==='opening')renderOpening(stage);else if(state.mode==='openingDrill')renderOpeningDrill(stage);else if(state.mode==='closing')renderClosing(stage);else if(state.mode==='closingDrill')renderClosingDrill(stage);else if(state.mode==='virtual')renderVirtual(stage);else renderVirtualDrill(stage);
+    if(state.mode==='opening')renderOpening(stage);else if(state.mode==='openingDrill')renderOpeningDrill(stage);else if(state.mode==='closing')renderClosing(stage);else if(state.mode==='closingDrill')renderClosingDrill(stage);else if(state.mode==='virtual')renderVirtual(stage);else if(state.mode==='virtualDrill')renderVirtualDrill(stage);else renderOriginals(stage);
   }
-  window.CORPUS_OPENING_CLOSING={render,setMode:m=>{if(['opening','openingDrill','closing','closingDrill','virtual','virtualDrill'].includes(m))state.mode=m;},getMode:()=>state.mode,getMeta:()=>({openings:169,closings:169,openingTypes:7,closingTypes:4,subjunctive:126})};
+  window.CORPUS_OPENING_CLOSING={render,setMode:m=>{if(['opening','openingDrill','closing','closingDrill','virtual','virtualDrill','originals'].includes(m))state.mode=m;},getMode:()=>state.mode,getMeta:()=>({openings:DATA.length||169,closings:DATA.length||169,openingTypes:7,closingTypes:4,subjunctive:DATA.filter(x=>x.subjunctiveTail).length||126})};
 })();
