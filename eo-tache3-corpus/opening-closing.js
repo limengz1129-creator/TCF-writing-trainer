@@ -273,8 +273,36 @@
     const details=document.createElement('details');details.innerHTML='<summary>③ 说完以后，再看原稿完整语块</summary>';const ex=document.createElement('div');ex.className='virtual-examples';x.examples.forEach(t=>{const p=document.createElement('p');p.className='virtual-example';p.textContent=t;ex.append(p)});details.append(ex);box.append(details);
     const row=document.createElement('div');row.className='row';const reset=document.createElement('button');reset.textContent='清空重拼';reset.onclick=()=>{state.virtualSubject='';state.virtualAction='';render();};const another=document.createElement('button');another.className='primary';another.textContent='换一个主题';another.onclick=()=>{state.virtualSubject='';state.virtualAction='';if(!$('topic').value){const ts=Object.keys(VIRTUAL).filter(t=>t!==state.virtualTopic);state.virtualTopic=ts[Math.floor(Math.random()*ts.length)];}render();};row.append(reset,another);box.append(row);root.append(box);
   }
+  const NOUS_SUBJ_FORMS=new Set(['sachions','apprenions','tenions','reconnaissions','respections']);
+  function subjunctivePhrase(form){
+    if(NOUS_SUBJ_FORMS.has(form))return {fr:'que nous '+form,subject:'我们'};
+    if(/ent$/.test(form))return {fr:'qu’ils '+form,subject:'他们'};
+    return {fr:'qu’il '+form,subject:'他 / 它'};
+  }
+  function speakFrenchPhrase(text,button){
+    if(!('speechSynthesis' in window)){button.textContent='浏览器不支持朗读';button.disabled=true;return;}
+    window.speechSynthesis.cancel();
+    const u=new SpeechSynthesisUtterance(text);u.lang='fr-FR';u.rate=.86;u.pitch=1;
+    const voices=window.speechSynthesis.getVoices();
+    u.voice=voices.find(v=>/^fr-FR$/i.test(v.lang))||voices.find(v=>/^fr/i.test(v.lang))||null;
+    const old=button.textContent;button.textContent='🔊 正在播放';button.disabled=true;
+    const done=()=>{button.textContent=old;button.disabled=false;};
+    u.onend=done;u.onerror=done;window.speechSynthesis.speak(u);
+  }
+  function exampleForVerb(forms){
+    for(const row of DATA){
+      if(!row.subjunctiveTail)continue;
+      const hit=forms.some(([form])=>row.subjunctiveTail.toLocaleLowerCase('fr').includes(form.toLocaleLowerCase('fr')));
+      if(!hit)continue;
+      let s=row.subjunctiveTail.replace(/^Parallèlement,\s*/,'').trim();
+      const cut=s.search(/\s+afin de\s+/i);if(cut>0)s=s.slice(0,cut).trim();
+      if(s.length>180)s=s.slice(0,177).trim()+'…';
+      return s;
+    }
+    return '';
+  }
   function renderVerbFrequency(root){
-    root.innerHTML='<div class="framework-intro"><h2>虚拟式动词频率榜</h2><p class="muted">基于 126 个含虚拟式建议结构的结尾逐句统计，共 52 个动词原形、163 次虚拟式动词出现。默认按频率从高到低排列。每个实际变位旁边都标注中文意思，方便直接背“变位 + 含义”。</p></div>';
+    root.innerHTML='<div class="framework-intro"><h2>虚拟式动词频率榜</h2><p class="muted">基于 126 个含虚拟式建议结构的结尾逐句统计，共 52 个动词原形、163 次虚拟式动词出现。默认按频率从高到低排列。每个变位都按 <b>que + 主语 + 虚拟式</b> 展示，并附中文与独立法语朗读。</p></div>';
     const tiers=[['第一梯队 · 必须自动化',v=>v[2]>=6],['第二梯队 · 高频熟练',v=>v[2]>=3&&v[2]<6],['第三梯队 · 熟悉即可',v=>v[2]<3]];
     for(const [title,test] of tiers){
       const section=document.createElement('section');section.className='verb-tier';
@@ -287,11 +315,20 @@
         head.innerHTML='<span>'+rank+'</span><div><strong>'+lemma+'</strong><small>'+zh+'</small></div><b>'+count+' 次</b>';
         const formBox=document.createElement('div');formBox.className='verb-form-list';
         for(const [form,n] of forms){
-          const chip=document.createElement('span');chip.className='verb-form-chip';
-          chip.innerHTML='<strong>'+form+'</strong><small>'+zh+' · '+n+' 次</small>';
-          formBox.append(chip);
+          const phrase=subjunctivePhrase(form),chip=document.createElement('div');chip.className='verb-form-chip';
+          const words=document.createElement('div');words.className='verb-form-words';
+          const fr=document.createElement('strong');fr.lang='fr';fr.textContent=phrase.fr;
+          const cn=document.createElement('small');cn.textContent=phrase.subject+zh+' · '+n+' 次';
+          words.append(fr,cn);
+          const audio=document.createElement('button');audio.type='button';audio.className='verb-audio';audio.textContent='🔊';audio.title='朗读 '+phrase.fr;audio.setAttribute('aria-label','朗读 '+phrase.fr);audio.onclick=()=>speakFrenchPhrase(phrase.fr,audio);
+          chip.append(words,audio);formBox.append(chip);
         }
-        row.append(head,formBox);table.append(row);
+        const example=exampleForVerb(forms);
+        row.append(head,formBox);
+        if(example){
+          const ex=document.createElement('div');ex.className='verb-example';const lab=document.createElement('span');lab.textContent='原稿搭配';const txt=document.createElement('span');txt.lang='fr';txt.textContent=example;ex.append(lab,txt);row.append(ex);
+        }
+        table.append(row);
       }
       section.append(table);root.append(section);
     }
