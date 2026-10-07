@@ -97,9 +97,31 @@ label{font-weight:600;font-size:14px}select{padding:9px;border:1px solid var(--l
 <div id="examCount" class="note"></div><div id="examList"></div>
 </div>
 </section>
+
+<section id="oralReuse" class="section">
+<div class="card">
+<h2>♻️ 口语 T3 → 写作 T3 观点复用</h2>
+<p>这个模块只处理<strong>自己的论证部分</strong>，不改动上面的「🔥 7–10 月真题迁移」。优先直接复用你口语 Tâche 3 已经背过的句块；不能直接照搬时，只用原语料中的词汇、词组和句型做最小改写。</p>
+<div class="reuse-summary">
+<span class="badge">A = 直接句块复用</span>
+<span class="badge">B / B+ = 旧语料重组</span>
+<span class="badge">C/B = 需要少量新内容</span>
+</div>
+<div class="reuse-controls">
+<label>复用等级 <select id="reuseLevel"><option value="">全部</option><option value="A">A</option><option value="A/B+">A/B+</option><option value="B+">B+</option><option value="B">B</option><option value="C/B">C/B</option></select></label>
+<label>搜索 <input id="reuseSearch" type="search" placeholder="题目 / 来源编号 / 新增词组"></label>
+<button id="reuseRandom">随机一题</button>
+</div>
+<div id="reuseCount" class="note"></div>
+<div id="reuseList"></div>
+</div>
+</section>
 </main>
 
 <script src="tache3-exams/exam-data.js?v=1"></script>
+<script src="eo-tache3-corpus/data.js"></script>
+<script src="eo-tache3-corpus/data-1.js"></script><script src="eo-tache3-corpus/data-2.js"></script><script src="eo-tache3-corpus/data-3.js"></script><script src="eo-tache3-corpus/data-4.js"></script><script src="eo-tache3-corpus/data-5.js"></script><script src="eo-tache3-corpus/data-6.js"></script><script src="eo-tache3-corpus/data-7.js"></script><script src="eo-tache3-corpus/data-8.js"></script><script src="eo-tache3-corpus/data-9.js"></script>
+<script src="tache3-oral-reuse-data.js?v=2"></script>
 <script>
 const P=[
 {fr:"[主题] : vers un équilibre nécessaire",zh:"[主题]：走向必要的平衡"},
