@@ -20,7 +20,7 @@ textarea{width:100%;min-height:150px;padding:14px;border:1px solid #cad3dc;borde
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}.mini{border:1px solid var(--line);border-radius:12px;padding:13px;background:#fff}
 .exam{border:1px solid var(--line);border-radius:14px;padding:15px;background:#fff;margin:12px 0}.doc{background:#fafbfd;padding:12px;border-radius:9px;margin:8px 0}.slotgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.slotgrid>div{background:#f8fafb;border:1px solid var(--line);border-radius:10px;padding:10px}
 label{font-weight:600;font-size:14px}select{padding:9px;border:1px solid var(--line);border-radius:9px;background:#fff}
-.kicker{font-size:13px;color:var(--muted)}.score{font-weight:700;color:var(--blue)}.reuse-controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:12px 0}.reuse-card{border:1px solid var(--line);border-radius:14px;padding:15px;background:#fff;margin:12px 0}.reuse-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap}.reuse-level{font-weight:800;border-radius:999px;padding:4px 10px;font-size:12px;background:#edf4f7;color:#16627e}.reuse-level.level-a{background:#eaf5e7;color:#3c6d25}.reuse-level.level-b{background:#fff6dd;color:#8a651b}.reuse-level.level-c{background:#fdebea;color:#a33d42}.reuse-arg{margin-top:12px;padding:12px;border:1px solid var(--line);border-radius:11px;background:#fafbfd}.reuse-mode{display:inline-block;margin-left:6px;font-size:11px;border-radius:999px;padding:2px 7px;background:#eef2f5;color:#55616b}.reuse-mode.exact{background:#e9f6ea;color:#39732e}.reuse-fr{font-size:16px;line-height:1.85;margin:8px 0}.source-line{font-size:12px;color:var(--muted);margin-top:6px}.source-paragraph{margin-top:8px;padding:10px;border-left:3px solid #cbd9df;background:#f7fafb;border-radius:6px;white-space:pre-wrap}.new-memory{margin-top:12px;padding:10px;border-radius:9px;background:#fff8e8}.new-memory.none{background:#eef7ec;color:#3d6d30}.reuse-summary{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 14px}.reuse-summary .badge{margin:0}.reuse-note{font-size:12px;color:var(--muted)}
+.kicker{font-size:13px;color:var(--muted)}.score{font-weight:700;color:var(--blue)}.reuse-controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:12px 0}.reuse-card{border:1px solid var(--line);border-radius:14px;padding:15px;background:#fff;margin:12px 0}.reuse-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap}.reuse-level{font-weight:800;border-radius:999px;padding:4px 10px;font-size:12px;background:#edf4f7;color:#16627e}.reuse-level.level-a{background:#eaf5e7;color:#3c6d25}.reuse-level.level-b{background:#fff6dd;color:#8a651b}.reuse-level.level-c{background:#fdebea;color:#a33d42}.reuse-arg{margin-top:12px;padding:12px;border:1px solid var(--line);border-radius:11px;background:#fafbfd}.reuse-mode{display:inline-block;margin-left:6px;font-size:11px;border-radius:999px;padding:2px 7px;background:#eef2f5;color:#55616b}.reuse-mode.exact{background:#e9f6ea;color:#39732e}.reuse-fr{font-size:16px;line-height:1.85;margin:8px 0}.source-line{font-size:12px;color:var(--muted);margin-top:6px}.source-paragraph{margin-top:8px;padding:10px;border-left:3px solid #cbd9df;background:#f7fafb;border-radius:6px;white-space:pre-wrap}.new-memory{margin-top:12px;padding:10px;border-radius:9px;background:#fff8e8}.new-memory.none{background:#eef7ec;color:#3d6d30}.reuse-summary{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 14px}.reuse-summary .badge{margin:0}.reuse-note{font-size:12px;color:var(--muted)}.full-draft{margin-top:12px;border:1px solid var(--line);border-radius:11px;background:#fff}.full-draft summary{cursor:pointer;padding:10px 12px;font-weight:700;color:var(--blue)}.full-draft-body{padding:0 12px 12px}.full-draft-fr{font-size:16px;line-height:1.9;white-space:pre-wrap}.full-draft-zh{margin-top:10px;color:#566079;background:#fafbfd;border-left:3px solid #d9e1e7;padding:10px 12px;border-radius:7px;white-space:pre-wrap}.word-pill{display:inline-block;margin-left:8px;border-radius:999px;padding:2px 8px;background:#eef3f6;color:#5a6872;font-size:11px;font-weight:600}
 @media(max-width:760px){header,main{padding-left:15px;padding-right:15px}.slotgrid{grid-template-columns:1fr}.template{font-size:16px}h1{font-size:24px}}
 </style>
 </head>
@@ -92,7 +92,7 @@ label{font-weight:600;font-size:14px}select{padding:9px;border:1px solid var(--l
 <section id="migration" class="section">
 <div class="card">
 <h2>🔥 2026 年 7–10 月真题灵活迁移</h2>
-<p>直接读取当前仓库中的 T3 真题数据，不另造题。每题先看两份材料，自己提取槽位，再展开“模板映射”。</p>
+<p>直接读取当前仓库中的 T3 真题数据，不另造题。材料概括严格跟真题；自己的论证统一调用「口语 T3 观点复用」；并自动合成为 120–180 词的完整 Culala 稿。</p>
 <div class="toolbar"><label>月份 <select id="month"><option value="">全部</option><option value="2026-07">2026.07</option><option value="2026-08">2026.08</option><option value="2026-09">2026.09</option><option value="2026-10">2026.10</option></select></label><label>模式 <select id="migMode"><option value="identify">识别/提取</option><option value="guided">引导迁移</option><option value="blind">盲写</option></select></label><button id="randomExam">随机一题</button></div>
 <div id="examCount" class="note"></div><div id="examList"></div>
 </div>
@@ -187,6 +187,44 @@ function frenchSlotCores(m){
   }
   return {one,two};
 }
+
+const DIRECT_FULL_ENDINGS={
+20:{fr:"En conclusion, bien que les relations amicales puissent améliorer l’ambiance au travail, il est fondamental de maintenir un équilibre entre amitié et professionnalisme afin de préserver la cohésion de l’équipe.",zh:"总之，尽管职场友谊可以改善工作氛围，但在友谊与专业性之间保持平衡仍然至关重要，从而维护团队凝聚力。"},
+43:{fr:"En conclusion, bien que la limitation de la circulation puisse apporter des avantages environnementaux importants, il est fondamental de l’accompagner de transports publics efficaces et de solutions adaptées aux besoins essentiels.",zh:"总之，尽管限制汽车通行可以带来重要的环保收益，但仍必须配套高效的公共交通，并为必要出行提供合适方案。"},
+58:{fr:"En conclusion, bien que la chasse puisse parfois répondre à certains besoins pratiques, il est fondamental de l’encadrer strictement et de distinguer ces besoins du simple loisir afin de mieux protéger les animaux.",zh:"总之，尽管狩猎有时可以满足某些实际需要，但仍必须对其严格监管，并把这些需要与单纯娱乐区分开来，从而更好地保护动物。"},
+61:{fr:"En conclusion, bien que les grands événements sportifs puissent présenter des avantages culturels et économiques, il est fondamental d’évaluer leurs coûts et leurs bénéfices à long terme avant d’engager des fonds publics.",zh:"总之，尽管大型体育赛事可能带来文化和经济收益，但在投入公共资金之前，仍必须评估其成本和长期收益。"}
+};
+function countFrenchWords(s){return (String(s).match(/\b[A-Za-zÀ-ÿŒœÆæÇç’'-]+\b/g)||[]).length}
+function migrationForTopic(id){const E=window.TCF_EE3_EXAMS;return E&&E.migrations?E.migrations.find(x=>String(x.id)===String(id)):null}
+function buildFullDraft(meta,reuse){
+ const mig=migrationForTopic(meta.topicId);
+ let introFr='',introZh='',endFr='',endZh='';
+ if(mig){
+   introFr=(mig.paragraphs&&mig.paragraphs[0]&&mig.paragraphs[0].answer)||meta.summaryFr||'';
+   introZh=(mig.translations&&mig.translations[0])||(mig.paragraphs&&mig.paragraphs[0]&&mig.paragraphs[0].hintZh)||meta.summaryZh||'';
+   const last=(mig.paragraphs||[])[(mig.paragraphs||[]).length-1]||{};
+   endFr=last.answer||'';
+   endZh=(mig.translations||[])[(mig.translations||[]).length-1]||last.hintZh||'';
+ }else{
+   introFr=meta.summaryFr||'';
+   introZh=meta.summaryZh||'';
+   const e=DIRECT_FULL_ENDINGS[meta.topicId]||{fr:"En conclusion, il est fondamental de rechercher un équilibre raisonnable afin de profiter des avantages de chaque approche tout en limitant leurs risques.",zh:"总之，应当寻求合理的平衡，在利用不同做法优势的同时限制其风险。"};
+   endFr=e.fr;endZh=e.zh;
+ }
+ const a1Fr=reuse?reuse.arg1.final:'';
+ const a2Fr=reuse?reuse.arg2.final:'';
+ const a1Zh=reuse?reuseZh(reuse.id,1):'';
+ const a2Zh=reuse?reuseZh(reuse.id,2):'';
+ const fr=[introFr,a1Fr,a2Fr,endFr].filter(Boolean).join("\n\n");
+ const zh=[introZh,a1Zh,a2Zh,endZh].filter(Boolean).join("\n\n");
+ return {fr,zh,words:countFrenchWords(fr)};
+}
+function fullDraftHtml(meta,reuse){
+ if(!reuse)return '';
+ const d=buildFullDraft(meta,reuse);
+ return '<details class="full-draft"><summary>📄 完整 Culala 稿 <span class="word-pill">'+d.words+' mots</span></summary><div class="full-draft-body"><div class="full-draft-fr" lang="fr">'+esc(d.fr)+'</div><div class="full-draft-zh">'+esc(d.zh)+'</div><p class="reuse-note">材料概括沿用真题；自己的论证与「口语 T3 观点复用」保持一致。词数不含标题。</p></div></details>';
+}
+
 function reuseForTopic(topicId){return (window.TCF_EE3_ORAL_REUSE||[]).find(x=>String(x.id)===String(topicId))}
 function reuseSourcesText(arg){return (arg&&arg.sources||[]).map(id=>'口语 T3 '+id).join(' · ')}
 function renderExams(){
@@ -200,7 +238,7 @@ function renderExams(){
   const reuseBlock=reuse?(
     '<div class="reuse-arg"><strong>♻️ 自己的论据 1</strong><span class="reuse-mode '+(reuse.arg1.mode==='exact'?'exact':'')+'">'+(reuse.arg1.mode==='exact'?'✅ 口语原句直接复用':'♻️ 旧语料最小改写')+'</span><div class="reuse-fr" lang="fr">'+esc(reuse.arg1.final)+'</div><div class="zh">'+esc(reuseZh(reuse.id,1))+'</div><div class="source-line">'+esc(reuseSourcesText(reuse.arg1))+'</div></div>'+
     '<div class="reuse-arg"><strong>♻️ 自己的论据 2 / 限制</strong><span class="reuse-mode '+(reuse.arg2.mode==='exact'?'exact':'')+'">'+(reuse.arg2.mode==='exact'?'✅ 口语原句直接复用':'♻️ 旧语料最小改写')+'</span><div class="reuse-fr" lang="fr">'+esc(reuse.arg2.final)+'</div><div class="zh">'+esc(reuseZh(reuse.id,2))+'</div><div class="source-line">'+esc(reuseSourcesText(reuse.arg2))+'</div></div>'+
-    ((reuse.newMemory||[]).length?'<div class="new-memory"><strong>本题真正新增：</strong> '+reuse.newMemory.map(v=>'<code>'+esc(v)+'</code>').join(' · ')+'</div>':'<div class="new-memory none"><strong>新增背诵：</strong>≈ 0</div>')
+    ((reuse.newMemory||[]).length?'<div class="new-memory"><strong>本题真正新增：</strong> '+reuse.newMemory.map(v=>'<code>'+esc(v)+'</code>').join(' · ')+'</div>':'<div class="new-memory none"><strong>新增背诵：</strong>≈ 0</div>')+fullDraftHtml(m,reuse)
   ):'<div class="prompt">暂无口语 T3 复用映射，请按材料自行形成论据。</div>';
   const guide=mode==='blind'?'':(
     '<div class="slotgrid"><div><strong>材料 1 核心</strong><br><span class="badge">FR</span> '+esc(fc.one||'À extraire du document 1')+'<br><span class="badge">中</span> '+esc(m.material1Core||'请从材料1提取')+'</div><div><strong>材料 2 核心</strong><br><span class="badge">FR</span> '+esc(fc.two||'À extraire du document 2')+'<br><span class="badge">中</span> '+esc(m.material2Core||'请从材料2提取')+'</div></div>'+
@@ -208,7 +246,7 @@ function renderExams(){
   );
   return '<article class="exam"><div><span class="badge">'+esc(r.month)+'</span> 第 '+r.ordinal+' 题 · '+esc(r.zhTitle||r.prompt||'')+'</div><h3>'+esc(r.prompt||'')+'</h3><div class="doc"><strong>Document 1</strong><br>'+esc(r.document1||'')+'</div><div class="doc"><strong>Document 2</strong><br>'+esc(r.document2||'')+'</div>'+guide+(mode==='blind'?'<button class="showGuide">写完后看模板映射</button>':'')+'</article>'
  }).join('');
- document.querySelectorAll('.showGuide').forEach((b,i)=>b.onclick=()=>{const r=rows[i],m=r.meta,fc=frenchSlotCores(m),reuse=reuseForTopic(m.topicId);const d=document.createElement('div');d.className='prompt';d.innerHTML='<strong>材料1核心：</strong><br><span class="badge">FR</span> '+esc(fc.one||'')+'<br><span class="badge">中</span> '+esc(m.material1Core||'')+'<br><br><strong>材料2核心：</strong><br><span class="badge">FR</span> '+esc(fc.two||'')+'<br><span class="badge">中</span> '+esc(m.material2Core||'')+(reuse?'<br><br><strong>♻️ 口语 T3 复用论据1：</strong><br>'+esc(reuse.arg1.final)+'<br><small>'+esc(reuseSourcesText(reuse.arg1))+'</small><br><br><strong>♻️ 口语 T3 复用论据2：</strong><br>'+esc(reuse.arg2.final)+'<br><small>'+esc(reuseSourcesText(reuse.arg2))+'</small>':'');b.replaceWith(d)});
+ document.querySelectorAll('.showGuide').forEach((b,i)=>b.onclick=()=>{const r=rows[i],m=r.meta,fc=frenchSlotCores(m),reuse=reuseForTopic(m.topicId);const d=document.createElement('div');d.className='prompt';d.innerHTML='<strong>材料1核心：</strong><br><span class="badge">FR</span> '+esc(fc.one||'')+'<br><span class="badge">中</span> '+esc(m.material1Core||'')+'<br><br><strong>材料2核心：</strong><br><span class="badge">FR</span> '+esc(fc.two||'')+'<br><span class="badge">中</span> '+esc(m.material2Core||'')+(reuse?'<br><br><strong>♻️ 口语 T3 复用论据1：</strong><br>'+esc(reuse.arg1.final)+'<br><small>'+esc(reuseSourcesText(reuse.arg1))+'</small><br><br><strong>♻️ 口语 T3 复用论据2：</strong><br>'+esc(reuse.arg2.final)+'<br><small>'+esc(reuseSourcesText(reuse.arg2))+'</small>'+fullDraftHtml(m,reuse):'');b.replaceWith(d)});
 }
 
 const ORAL_REUSE_ZH={
