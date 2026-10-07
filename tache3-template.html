@@ -654,6 +654,16 @@ function draftSelectionOffsets(el,range){
  return {start,end};
 }
 let pendingDraftHighlight=null;
+if(!document.getElementById('draftStarPop')){
+ const draftStar=document.createElement('button');
+ draftStar.type='button';
+ draftStar.id='draftStarPop';
+ draftStar.className='draft-star-pop';
+ draftStar.title='高亮选中文字';
+ draftStar.setAttribute('aria-label','高亮选中文字');
+ draftStar.textContent='⭐';
+ document.body.appendChild(draftStar);
+}
 function hideDraftStar(){
  const star=document.getElementById('draftStarPop');
  if(star)star.style.display='none';
@@ -748,5 +758,4 @@ if(new URLSearchParams(location.search).get('view')==='migration'){
  renderExams();
 }
 </script>
-<button type="button" id="draftStarPop" class="draft-star-pop" title="高亮选中文字" aria-label="高亮选中文字">⭐</button>
 </body></html>
