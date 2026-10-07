@@ -20,7 +20,7 @@ textarea{width:100%;min-height:150px;padding:14px;border:1px solid #cad3dc;borde
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}.mini{border:1px solid var(--line);border-radius:12px;padding:13px;background:#fff}
 .exam{border:1px solid var(--line);border-radius:14px;padding:15px;background:#fff;margin:12px 0}.doc{background:#fafbfd;padding:12px;border-radius:9px;margin:8px 0}.slotgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.slotgrid>div{background:#f8fafb;border:1px solid var(--line);border-radius:10px;padding:10px}
 label{font-weight:600;font-size:14px}select{padding:9px;border:1px solid var(--line);border-radius:9px;background:#fff}
-.kicker{font-size:13px;color:var(--muted)}.score{font-weight:700;color:var(--blue)}
+.kicker{font-size:13px;color:var(--muted)}.score{font-weight:700;color:var(--blue)}.reuse-controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:12px 0}.reuse-card{border:1px solid var(--line);border-radius:14px;padding:15px;background:#fff;margin:12px 0}.reuse-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap}.reuse-level{font-weight:800;border-radius:999px;padding:4px 10px;font-size:12px;background:#edf4f7;color:#16627e}.reuse-level.level-a{background:#eaf5e7;color:#3c6d25}.reuse-level.level-b{background:#fff6dd;color:#8a651b}.reuse-level.level-c{background:#fdebea;color:#a33d42}.reuse-arg{margin-top:12px;padding:12px;border:1px solid var(--line);border-radius:11px;background:#fafbfd}.reuse-mode{display:inline-block;margin-left:6px;font-size:11px;border-radius:999px;padding:2px 7px;background:#eef2f5;color:#55616b}.reuse-mode.exact{background:#e9f6ea;color:#39732e}.reuse-fr{font-size:16px;line-height:1.85;margin:8px 0}.source-line{font-size:12px;color:var(--muted);margin-top:6px}.source-paragraph{margin-top:8px;padding:10px;border-left:3px solid #cbd9df;background:#f7fafb;border-radius:6px;white-space:pre-wrap}.new-memory{margin-top:12px;padding:10px;border-radius:9px;background:#fff8e8}.new-memory.none{background:#eef7ec;color:#3d6d30}.reuse-summary{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 14px}.reuse-summary .badge{margin:0}.reuse-note{font-size:12px;color:var(--muted)}
 @media(max-width:760px){header,main{padding-left:15px;padding-right:15px}.slotgrid{grid-template-columns:1fr}.template{font-size:16px}h1{font-size:24px}}
 </style>
 </head>
@@ -42,7 +42,7 @@ label{font-weight:600;font-size:14px}select{padding:9px;border:1px solid var(--l
 <button class="navbtn active" data-sec="study">1. 模板全文学习</button>
 <button class="navbtn" data-sec="memorize">2. ⭐ 整篇背诵</button>
 <button class="navbtn" data-sec="slots">3. 槽位替换</button>
-<button class="navbtn" data-sec="migration">4. 🔥 7–10月真题迁移</button>
+<button class="navbtn" data-sec="migration">4. 🔥 7–10月真题迁移</button>\n<button class="navbtn" data-sec="oralReuse">5. ♻️ 口语 T3 观点复用</button>
 </div>
 
 <section id="study" class="section active">
@@ -124,7 +124,7 @@ function renderStudy(){
 function norm(s){return String(s).normalize('NFC').toLowerCase().replace(/[’]/g,"'").replace(/[\s.,!?;:…/()\[\]-]+/g,' ').trim()}
 function score(a,b){const A=norm(a).split(' ').filter(Boolean),B=norm(b).split(' ').filter(Boolean);const d=Array.from({length:A.length+1},()=>new Uint16Array(B.length+1));for(let i=A.length-1;i>=0;i--)for(let j=B.length-1;j>=0;j--)d[i][j]=A[i]===B[j]?1+d[i+1][j+1]:Math.max(d[i+1][j],d[i][j+1]);return B.length?Math.round(100*d[0][0]/B.length):0}
 function renderPara(){const p=P[pi];document.getElementById('paraCounter').textContent='第 '+(pi+1)+' / '+P.length+' 段';document.getElementById('paraZh').textContent=p.zh;document.getElementById('paraRef').textContent=p.fr;document.getElementById('paraRef').classList.add('hidden');document.getElementById('paraInput').value='';document.getElementById('paraScore').textContent=''}
-document.querySelectorAll('.navbtn').forEach(b=>b.onclick=()=>{document.querySelectorAll('.navbtn').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('.section').forEach(x=>x.classList.toggle('active',x.id===b.dataset.sec));if(b.dataset.sec==='migration')renderExams()});
+document.querySelectorAll('.navbtn').forEach(b=>b.onclick=()=>{document.querySelectorAll('.navbtn').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('.section').forEach(x=>x.classList.toggle('active',x.id===b.dataset.sec));if(b.dataset.sec==='migration')renderExams();if(b.dataset.sec==='oralReuse')renderReuse()});
 document.querySelectorAll('.amode').forEach(b=>b.onclick=()=>{document.querySelectorAll('.amode').forEach(x=>x.classList.toggle('active',x===b));document.getElementById('readMode').classList.toggle('hidden',b.dataset.mode!=='read');document.getElementById('paraMode').classList.toggle('hidden',b.dataset.mode!=='para');document.getElementById('fullMode').classList.toggle('hidden',b.dataset.mode!=='full');if(b.dataset.mode==='para')renderPara()});
 document.getElementById('toggleZh').onclick=()=>{showZh=!showZh;renderStudy()};document.getElementById('toggleSlots').onclick=()=>{showSlots=!showSlots;renderStudy()};
 document.getElementById('prevPara').onclick=()=>{pi=(pi-1+P.length)%P.length;renderPara()};document.getElementById('nextPara').onclick=()=>{pi=(pi+1)%P.length;renderPara()};document.getElementById('randomPara').onclick=()=>{pi=Math.floor(Math.random()*P.length);renderPara()};
@@ -177,7 +177,40 @@ function renderExams(){
  }).join('');
  document.querySelectorAll('.showGuide').forEach((b,i)=>b.onclick=()=>{const r=rows[i],m=r.meta,fc=frenchSlotCores(m);const d=document.createElement('div');d.className='prompt';d.innerHTML='<strong>观点1：</strong><br><span class="badge">FR</span> '+esc(fc.one||'')+'<br><span class="badge">中</span> '+esc(m.material1Core||'')+'<br><br><strong>观点2：</strong><br><span class="badge">FR</span> '+esc(fc.two||'')+'<br><span class="badge">中</span> '+esc(m.material2Core||'')+'<br><br><strong>参考立场：</strong>'+esc(m.personalPosition||'');b.replaceWith(d)});
 }
-document.getElementById('month').onchange=renderExams;document.getElementById('migMode').onchange=renderExams;document.getElementById('randomExam').onclick=()=>{const cards=[...document.querySelectorAll('.exam')];if(cards.length)cards[Math.floor(Math.random()*cards.length)].scrollIntoView({behavior:'smooth',block:'center'})};
+
+function oralById(id){return (window.CORPUS||CORPUS||[]).find(x=>x.id===id)}
+function reuseLevelClass(level){return level.startsWith('A')?'level-a':level.startsWith('C')?'level-c':'level-b'}
+function renderReuse(){
+ const data=window.TCF_EE3_ORAL_REUSE||[];
+ const level=document.getElementById('reuseLevel').value;
+ const q=(document.getElementById('reuseSearch').value||'').trim().toLowerCase();
+ let rows=data.filter(x=>!level||x.level===level).filter(x=>{
+   if(!q)return true;
+   const src=[...(x.arg1.sources||[]),...(x.arg2.sources||[])].join(' ');
+   const nm=(x.newMemory||[]).join(' ');
+   return [x.title,x.level,src,nm,x.arg1.final,x.arg2.final].join(' ').toLowerCase().includes(q);
+ });
+ document.getElementById('reuseCount').textContent='当前 '+rows.length+' / '+data.length+' 道独立写作题';
+ const modeLabel=m=>m==='exact'?'✅ 原口语句块直接复用':'♻️ 旧语料最小改写';
+ const sourceHtml=ids=>ids.map(id=>{
+   const x=oralById(id);
+   if(!x)return '<div class="source-line">来源：口语 T3 '+esc(id)+'</div>';
+   return '<details><summary class="source-line">来源：口语 T3 '+esc(id)+' · '+esc(x.question)+'</summary><div class="source-paragraph">'+esc(x.fr)+'</div></details>';
+ }).join('');
+ document.getElementById('reuseList').innerHTML=rows.map(x=>{
+   const mem=(x.newMemory||[]).length
+     ? '<div class="new-memory"><strong>本题真正需要新增记忆：</strong> '+x.newMemory.map(v=>'<code>'+esc(v)+'</code>').join(' · ')+'</div>'
+     : '<div class="new-memory none"><strong>新增背诵：</strong>≈ 0；优先直接复用已有口语语料。</div>';
+   return '<article class="reuse-card" data-reuse-id="'+x.id+'"><div class="reuse-head"><div><span class="badge">写作 '+x.id+'</span><h3>'+esc(x.title)+'</h3></div><span class="reuse-level '+reuseLevelClass(x.level)+'">'+esc(x.level)+'</span></div>'+
+    '<div class="reuse-arg"><strong>观点 1</strong><span class="reuse-mode '+(x.arg1.mode==='exact'?'exact':'')+'">'+modeLabel(x.arg1.mode)+'</span><div class="reuse-fr" lang="fr">'+esc(x.arg1.final)+'</div>'+sourceHtml(x.arg1.sources||[])+'</div>'+
+    '<div class="reuse-arg"><strong>观点 2 / 限制</strong><span class="reuse-mode '+(x.arg2.mode==='exact'?'exact':'')+'">'+modeLabel(x.arg2.mode)+'</span><div class="reuse-fr" lang="fr">'+esc(x.arg2.final)+'</div>'+sourceHtml(x.arg2.sources||[])+'</div>'+mem+
+    '<p class="reuse-note">绿色“直接复用”只用于可直接从口语原文截取的句块；黄色“旧语料最小改写”表示不强行照搬，而是尽量只使用你口语库已有的表达。</p></article>'
+ }).join('');
+}
+document.getElementById('reuseLevel').onchange=renderReuse;
+document.getElementById('reuseSearch').oninput=renderReuse;
+document.getElementById('reuseRandom').onclick=()=>{const cards=[...document.querySelectorAll('.reuse-card')];if(cards.length)cards[Math.floor(Math.random()*cards.length)].scrollIntoView({behavior:'smooth',block:'center'})};
+\ndocument.getElementById('month').onchange=renderExams;document.getElementById('migMode').onchange=renderExams;document.getElementById('randomExam').onclick=()=>{const cards=[...document.querySelectorAll('.exam')];if(cards.length)cards[Math.floor(Math.random()*cards.length)].scrollIntoView({behavior:'smooth',block:'center'})};
 renderStudy();
 </script>
 </body></html>
