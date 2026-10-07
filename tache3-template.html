@@ -198,8 +198,8 @@ function renderExams(){
   const fc=frenchSlotCores(m);
   const reuse=reuseForTopic(m.topicId);
   const reuseBlock=reuse?(
-    '<div class="reuse-arg"><strong>♻️ 自己的论据 1</strong><span class="reuse-mode '+(reuse.arg1.mode==='exact'?'exact':'')+'">'+(reuse.arg1.mode==='exact'?'✅ 口语原句直接复用':'♻️ 旧语料最小改写')+'</span><div class="reuse-fr" lang="fr">'+esc(reuse.arg1.final)+'</div><div class="source-line">'+esc(reuseSourcesText(reuse.arg1))+'</div></div>'+
-    '<div class="reuse-arg"><strong>♻️ 自己的论据 2 / 限制</strong><span class="reuse-mode '+(reuse.arg2.mode==='exact'?'exact':'')+'">'+(reuse.arg2.mode==='exact'?'✅ 口语原句直接复用':'♻️ 旧语料最小改写')+'</span><div class="reuse-fr" lang="fr">'+esc(reuse.arg2.final)+'</div><div class="source-line">'+esc(reuseSourcesText(reuse.arg2))+'</div></div>'+
+    '<div class="reuse-arg"><strong>♻️ 自己的论据 1</strong><span class="reuse-mode '+(reuse.arg1.mode==='exact'?'exact':'')+'">'+(reuse.arg1.mode==='exact'?'✅ 口语原句直接复用':'♻️ 旧语料最小改写')+'</span><div class="reuse-fr" lang="fr">'+esc(reuse.arg1.final)+'</div><div class="zh">'+esc(reuseZh(reuse.id,1))+'</div><div class="source-line">'+esc(reuseSourcesText(reuse.arg1))+'</div></div>'+
+    '<div class="reuse-arg"><strong>♻️ 自己的论据 2 / 限制</strong><span class="reuse-mode '+(reuse.arg2.mode==='exact'?'exact':'')+'">'+(reuse.arg2.mode==='exact'?'✅ 口语原句直接复用':'♻️ 旧语料最小改写')+'</span><div class="reuse-fr" lang="fr">'+esc(reuse.arg2.final)+'</div><div class="zh">'+esc(reuseZh(reuse.id,2))+'</div><div class="source-line">'+esc(reuseSourcesText(reuse.arg2))+'</div></div>'+
     ((reuse.newMemory||[]).length?'<div class="new-memory"><strong>本题真正新增：</strong> '+reuse.newMemory.map(v=>'<code>'+esc(v)+'</code>').join(' · ')+'</div>':'<div class="new-memory none"><strong>新增背诵：</strong>≈ 0</div>')
   ):'<div class="prompt">暂无口语 T3 复用映射，请按材料自行形成论据。</div>';
   const guide=mode==='blind'?'':(
@@ -211,6 +211,45 @@ function renderExams(){
  document.querySelectorAll('.showGuide').forEach((b,i)=>b.onclick=()=>{const r=rows[i],m=r.meta,fc=frenchSlotCores(m),reuse=reuseForTopic(m.topicId);const d=document.createElement('div');d.className='prompt';d.innerHTML='<strong>材料1核心：</strong><br><span class="badge">FR</span> '+esc(fc.one||'')+'<br><span class="badge">中</span> '+esc(m.material1Core||'')+'<br><br><strong>材料2核心：</strong><br><span class="badge">FR</span> '+esc(fc.two||'')+'<br><span class="badge">中</span> '+esc(m.material2Core||'')+(reuse?'<br><br><strong>♻️ 口语 T3 复用论据1：</strong><br>'+esc(reuse.arg1.final)+'<br><small>'+esc(reuseSourcesText(reuse.arg1))+'</small><br><br><strong>♻️ 口语 T3 复用论据2：</strong><br>'+esc(reuse.arg2.final)+'<br><small>'+esc(reuseSourcesText(reuse.arg2))+'</small>':'');b.replaceWith(d)});
 }
 
+const ORAL_REUSE_ZH={
+20:["同事之间的友好关系可以让工作环境更愉快，减轻日常压力，并促进团队内部的沟通与互助。","然而，关系过于亲密有时会让公平、客观的决策变得更困难。因此，有必要保持一定界限，以维护专业性和团队凝聚力。"],
+43:["减少汽车通行可以降低道路上的车辆数量、限制污染，并逐步减少对化石能源的依赖。","然而，只有当公共交通网络足够完善且便利时，这类措施才真正有效。同时，也需要为确实必须使用汽车的人提供合适的解决方案。"],
+58:["保护动物和生物多样性应始终是优先事项，因为过度狩猎可能削弱某些物种并扰乱生态系统。","不过，并非所有狩猎都出于同样的目的。当狩猎是为了满足明确的实际需要时，与其把它当作单纯娱乐加以鼓励，不如对其进行严格监管。"],
+61:["大型体育赛事可以吸引游客、提升一个国家的国际知名度，并带动与旅游相关的部分经济活动。","然而，公共财政还必须满足医疗和教育等基本需求。因此，在投入巨额资金之前，政府应认真评估其长期收益。"],
+1001:["良好的工作条件可以帮助员工恢复精力、更好地集中注意力并提高效率。更舒适的工作环境也能提升员工满意度。","然而，繁重的工作量以及需要一直保持联系可能成为重要的压力来源，并让工作与个人生活之间的平衡更加难以维持。"],
+1002:["数字工具可以大大简化许多日常事务。它们能够集中多种实用服务，并帮助人们在家庭安排中节省时间。","然而，当联网设备的使用缺乏透明度时，可能侵犯个人隐私。用户并不总是知道哪些数据被收集，也不知道谁可以访问这些数据。"],
+1003:["孩子可以根据自己的学习节奏安排时间，并把更多时间投入到自己有困难的科目上。此外，借助互联网，他们可以接触大量教育资源，而不必每天外出上学。","此外，在家教育可能减少孩子与其他儿童之间的社交互动。在学校里，学生每天会花大量时间和同学相处。他们会学习沟通、团队合作、解决冲突，以及尊重性格不同的人。"],
+1004:["在面试中，外表可能影响招聘者的第一印象。因此，在某些情况下，一张照片可以快速提供一些视觉信息，尤其是对于接待类岗位。","然而，真正应该决定招聘结果的首先是能力、经验和职业素养。照片也可能让招聘者更容易根据外表作出判断，而不是依据候选人的真实能力。"],
+1005:["在大城市里，高效的公交和地铁网络可以减少人们对汽车的依赖，并鼓励居民更多使用公共交通。","然而，有些人，尤其是老年人、病人或住得离市中心很远的人，仍然可能依赖汽车。因此，交通限制必须考虑他们的实际需求。"],
+1006:["艺术可以丰富文化生活，也能让更多人在日常生活中接触不同形式的创作。","然而，表达自由并不意味着可以毫无限制地使用任何空间。人们也必须尊重他人的权利和公共场所。"],
+1007:["对于日程繁忙的人来说，快餐可以是一种实用的解决方案，因为他们并不总有时间和精力准备完整的一餐。","然而，一些快餐可能过于油腻、过咸，或者营养不均衡。因此，均衡饮食仍然是保持健康的重要条件。"],
+1008:["适量的家庭作业可以帮助学生安排学习、复习部分知识，并逐渐培养自主性。","然而，过多的作业可能成为压力和疲劳的来源。学生也需要时间休息、参加活动以及陪伴家人。"],
+1009:["共同居住可以帮助分担部分开支并减少孤独感，也能促进互助，让日常生活更有人情味。","然而，不同的生活习惯、家务分配以及缺乏隐私都可能成为冲突来源。因此，需要明确的共同规则和良好的沟通。"],
+1010:["减少过量的肉类摄入可能有益健康。合理安排的素食饮食也可以通过扁豆、豆类或豆腐等食物提供蛋白质。","然而，肉类同样能够提供蛋白质和某些营养成分。因此，必须确保餐食真正均衡，以满足儿童的营养需求。"],
+1011:["学校在健康教育中起着重要作用，因此可以鼓励学生选择营养质量更好的饮料和食品。","然而，自动售货机也可以满足一些实际需求，尤其是对长时间留在学校里的学生。更好的做法是在其中主要提供更健康的产品。"],
+1012:["合租可以促进交流、互助，也能让日常生活的安排更加集体化。","然而，每个人都有自己的生活习惯和隐私需求。因此，有必要明确分配家务，并就噪音、访客和公共空间制定共同规则。"],
+1013:["志愿服务和捐赠可以迅速满足困难群体的一些基本需求，例如食物、衣物或日常帮助。","然而，长期有效的帮助还应该让他们逐步恢复自主能力，例如获得住房、培训或就业机会。"],
+1014:["公共空间中的艺术可以让文化更容易接近大众，美化某些街区，并让艺术家接触更广泛的公众。","然而，这种自由必须尊重公共空间和他人财产。未经许可的创作可能被视为破坏行为，而不是艺术作品。"],
+1015:["此外，独自旅行可以带来更大的个人自由。旅行者可以按照自己的愿望安排行程，而不必不断顾及他人的偏好。","然而，必须承认，结伴旅行可以减轻孤独感并提供更多支持。和朋友或家人一起旅行时，人们可以分享经历，并共同享受愉快的时光。"],
+1016:["阅读可以丰富词汇、提高理解能力，并让孩子接触大量知识。因此，鼓励他们养成经常阅读的习惯是有益的。","然而，过于严格的强制可能降低他们的兴趣。更好的做法是给孩子一定的选书自由，并和父母一起创造愉快的阅读时光。"],
+1017:["自己制作某些产品可以更好地控制所使用的成分，也能减少一部分包装和垃圾。","然而，自制产品需要时间、知识，有时还需要前期投入。制作不当也可能带来安全或保存方面的问题。"],
+1018:["城市通常更容易获得公共交通、商店、各种服务以及不同的文化活动。","不过，也必须承认，住在乡村并不一定意味着完全没有压力。虽然生活节奏可能更慢、环境也更安静，但公共交通、商店或医疗机构等服务有时并不那么方便。"],
+1019:["公共交通免费可能鼓励更多人把车留在家里，改乘公交或地铁。这可以减少道路上的汽车数量，并降低交通造成的污染。","然而，如果公共交通网络本身不足，仅仅免费并不够。在一些地区，尤其是郊区或乡村，线路较少，班次也不一定符合居民的实际需要。"],
+1020:["此外，一些电子游戏可以培养逻辑推理和分析能力。为了推进游戏情节，孩子需要仔细观察线索、比较不同信息、提出假设并排除错误方向。","然而，也不能忽视电子游戏可能给孩子带来一些风险。有些游戏包含暴力场景或不适合他们年龄的内容。"],
+1021:["自动售货机对长时间待在学校里的学生来说很方便，让他们可以快速购买饮料或小吃。","然而，经常摄入含糖量或热量过高的食品可能损害健康。因此，学校应该优先提供更均衡的选择。"],
+1022:["借助互联网，如今人们可以按照自己的节奏学习很多技能，例如观看视频、参加在线课程，并反复练习同一内容。","然而，要把一项活动真正作为职业来做，还需要扎实的能力、经验，以及持续而严谨地工作的能力。"],
+1023:["数字工具让学生可以迅速接触大量教育资源、教学视频和在线课程，从而更加自主地学习。","然而，过度使用屏幕可能减少面对面互动、导致久坐生活方式，并让儿童接触不适合其年龄的内容。"],
+1024:["首先，必须承认，孩子并不总具备独立作出所有决定所需的成熟度。因此，父母有时需要设定一定限制来保护他们。","然而，过度权威可能对孩子的自主性产生负面影响。如果父母不断控制他们的选择并替他们作出所有决定，孩子可能更难学会独立。"],
+1025:["孩子并不总有足够的判断力去理解某些内容背后的意图，因此很容易受到影响，并想要模仿或获得自己看到的东西。","然而，家庭和教育同样起着关键作用。父母可以解释广告信息、设定一定限制，并帮助孩子逐渐培养批判性思维。"],
+1026:["工作可以让人维持生活、获得一定的经济安全感；如果一份工作还能帮助人发展能力并实现目标，它也可以促进个人成就感。","然而，繁重的工作量、长时间工作以及无法真正下班，都可能损害健康以及工作与个人生活之间的平衡。"],
+1027:["素食者可以通过扁豆、豆类或豆腐等不同食物获取蛋白质。只要饮食安排合理，即使不吃肉，也可以满足许多营养需求。","不过，也必须承认，肉类同样可以提供蛋白质和某些重要营养成分。对于一些人，尤其是经常运动的人来说，肉类可以是一种方便的蛋白质来源。"],
+1028:["对于时间有限、在漫长工作日之后想找简单解决方案的人来说，快餐可能比较方便。","然而，经常食用高脂肪或高热量食品可能损害健康，同时一次性包装也会增加垃圾数量。"],
+1029:["此外，一些电子游戏可以培养逻辑推理和分析能力。为了推进游戏情节，孩子需要仔细观察线索、比较不同信息、提出假设并排除错误方向。","然而，也不能忽视电子游戏可能给孩子带来一些风险。有些游戏包含暴力场景或不适合他们年龄的内容。"],
+1030:["饲养宠物也可以培养责任感。当一个人照顾狗或猫时，需要给它喂食、遛它、清理生活空间，并定期关注它的健康。","然而，宠物意味着长期责任，也会产生持续开支。因此，父母必须确认全家都愿意长期照顾它。"],
+1031:["25岁以后继续与父母同住，可以大幅减少房租、账单以及日常生活相关开支。年轻上班族因此能够存下更多钱。","然而，与父母同住太久可能加强依赖。如果一个成年人仍依靠父母做饭、打扫或支付部分开支，他就会减少学习独立管理生活的机会。"],
+1032:["新技术可以成为真正的学习工具，让孩子轻松接触大量教育资源、教学视频以及各种练习。","然而，长时间面对屏幕可能导致久坐生活方式，并减少用于体育活动、自由玩耍以及与他人面对面交流的时间。"]
+};
+function reuseZh(id,n){const a=ORAL_REUSE_ZH[id]||[];return a[n-1]||''}
 function oralById(id){return (window.CORPUS||CORPUS||[]).find(x=>x.id===id)}
 function reuseLevelClass(level){return level.startsWith('A')?'level-a':level.startsWith('C')?'level-c':'level-b'}
 function renderReuse(){
@@ -235,8 +274,8 @@ function renderReuse(){
      ? '<div class="new-memory"><strong>本题真正需要新增记忆：</strong> '+x.newMemory.map(v=>'<code>'+esc(v)+'</code>').join(' · ')+'</div>'
      : '<div class="new-memory none"><strong>新增背诵：</strong>≈ 0；优先直接复用已有口语语料。</div>';
    return '<article class="reuse-card" data-reuse-id="'+x.id+'"><div class="reuse-head"><div><span class="badge">写作 '+x.id+'</span><h3>'+esc(x.title)+'</h3></div><span class="reuse-level '+reuseLevelClass(x.level)+'">'+esc(x.level)+'</span></div>'+
-    '<div class="reuse-arg"><strong>观点 1</strong><span class="reuse-mode '+(x.arg1.mode==='exact'?'exact':'')+'">'+modeLabel(x.arg1.mode)+'</span><div class="reuse-fr" lang="fr">'+esc(x.arg1.final)+'</div>'+sourceHtml(x.arg1.sources||[])+'</div>'+
-    '<div class="reuse-arg"><strong>观点 2 / 限制</strong><span class="reuse-mode '+(x.arg2.mode==='exact'?'exact':'')+'">'+modeLabel(x.arg2.mode)+'</span><div class="reuse-fr" lang="fr">'+esc(x.arg2.final)+'</div>'+sourceHtml(x.arg2.sources||[])+'</div>'+mem+
+    '<div class="reuse-arg"><strong>观点 1</strong><span class="reuse-mode '+(x.arg1.mode==='exact'?'exact':'')+'">'+modeLabel(x.arg1.mode)+'</span><div class="reuse-fr" lang="fr">'+esc(x.arg1.final)+'</div><div class="zh">'+esc(reuseZh(x.id,1))+'</div>'+sourceHtml(x.arg1.sources||[])+'</div>'+
+    '<div class="reuse-arg"><strong>观点 2 / 限制</strong><span class="reuse-mode '+(x.arg2.mode==='exact'?'exact':'')+'">'+modeLabel(x.arg2.mode)+'</span><div class="reuse-fr" lang="fr">'+esc(x.arg2.final)+'</div><div class="zh">'+esc(reuseZh(x.id,2))+'</div>'+sourceHtml(x.arg2.sources||[])+'</div>'+mem+
     '<p class="reuse-note">绿色“直接复用”只用于可直接从口语原文截取的句块；黄色“旧语料最小改写”表示不强行照搬，而是尽量只使用你口语库已有的表达。</p></article>'
  }).join('');
 }
