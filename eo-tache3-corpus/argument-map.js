@@ -45,6 +45,7 @@
   const weakCss=document.createElement('style');
   weakCss.textContent='.argument-weak-marker{color:#c52535;font-size:16px;margin-left:8px;flex-shrink:0;vertical-align:middle}.argument-node .argument-weak-marker,.mother-list-row .argument-weak-marker{display:inline-block}';
   weakCss.textContent+=' .argument-node .node-title .argument-weak-marker{display:inline;margin-left:7px;white-space:nowrap;}';
+  weakCss.textContent+=' .scene-node > strong .argument-weak-marker{display:inline !important;position:static !important;float:none !important;margin-left:7px;vertical-align:baseline;white-space:nowrap}.scene-node > strong{display:block}.scene-node > strong .argument-weak-marker::before{content:none}';
   document.head.append(weakCss);
   function renderOverview(stage,D){
     stage.replaceChildren();
