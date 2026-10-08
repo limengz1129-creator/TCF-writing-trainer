@@ -25,16 +25,33 @@
   }
   function sourceButton(id,motherId,sceneIndex,topic){const b=document.createElement('button');b.className='source-jump';b.textContent=id+' · 去学习原论段';b.onclick=()=>{sessionStorage.setItem('tcf-eo-t3-return-argument-map','1');sessionStorage.setItem('tcf-eo-t3-argument-return-state',JSON.stringify({mode:'scene',topic,motherId,sceneIndex}));window.CORPUS_OPEN_PARAGRAPH?.(id);};return b;}
 
+  // 与主体论段共用熟练度记录，按母论点所关联的原论段汇总。
+  function weakCount(D,id){
+    const ids=D.M?.[Number(id)]?.ids||D.M?.[id]?.ids||[];
+    return ids.filter(pid=>window.CORPUS_PARAGRAPH_MASTERY?.(pid)==='weak').length;
+  }
+  function weakMarker(count){
+    if(!count)return null;
+    const el=document.createElement('span');
+    el.className='argument-weak-marker';
+    el.textContent='❓';
+    el.title='此母论点有 '+count+' 个不熟练的原论段';
+    el.setAttribute('aria-label',el.title);
+    return el;
+  }
+  const weakCss=document.createElement('style');
+  weakCss.textContent='.argument-weak-marker{color:#c52535;font-size:16px;margin-left:8px;flex-shrink:0;vertical-align:middle}.argument-node .argument-weak-marker,.mother-list-row .argument-weak-marker{display:inline-block}';
+  document.head.append(weakCss);
   function renderOverview(stage,D){
     stage.replaceChildren();
     const intro=document.createElement('section');intro.className='argument-overview-intro';
     intro.innerHTML='<p class="eyebrow">'+D.title+' · 总思维导图</p><h2>'+D.paragraphs+' 个原始论段 → '+D.mothers+' 个核心母论点</h2><p class="note">点击任意母论点，进入它自己的思维导图、法语逻辑链和极简速记。</p>';stage.append(intro);
     const grid=document.createElement('div');grid.className='argument-group-grid';
-    D.GROUPS.forEach(group=>{const section=document.createElement('section');section.className='argument-group-card';const h=document.createElement('h3');h.textContent=group.title;section.append(h);const items=document.createElement('div');items.className='argument-node-list';group.items.forEach(([id,title])=>{const b=document.createElement('button');b.className='argument-node ready';b.innerHTML='<span class="node-num">#'+id+'</span><span class="node-title">'+title+'</span>';b.onclick=()=>renderMother(stage,D,id,'map');items.append(b);});section.append(items);grid.append(section);});stage.append(grid);
+    D.GROUPS.forEach(group=>{const section=document.createElement('section');section.className='argument-group-card';const h=document.createElement('h3');h.textContent=group.title;section.append(h);const items=document.createElement('div');items.className='argument-node-list';group.items.forEach(([id,title])=>{const b=document.createElement('button');b.className='argument-node ready';b.innerHTML='<span class="node-num">#'+id+'</span><span class="node-title">'+title+'</span>';const warn=weakMarker(weakCount(D,id));if(warn)b.append(warn);b.onclick=()=>renderMother(stage,D,id,'map');items.append(b);});section.append(items);grid.append(section);});stage.append(grid);
   }
   function renderList(stage,D){
     stage.replaceChildren();const list=document.createElement('div');list.className='mother-list';
-    D.GROUPS.forEach(group=>{const h=document.createElement('h3');h.textContent=group.title;list.append(h);group.items.forEach(([id,title])=>{const row=document.createElement('button');row.className='mother-list-row';row.innerHTML='<span>#'+id+'</span><strong>'+title+'</strong><em>查看完整详情 ›</em>';row.onclick=()=>renderMother(stage,D,id,'map');list.append(row);});});stage.append(list);
+    D.GROUPS.forEach(group=>{const h=document.createElement('h3');h.textContent=group.title;list.append(h);group.items.forEach(([id,title])=>{const row=document.createElement('button');row.className='mother-list-row';row.innerHTML='<span>#'+id+'</span><strong>'+title+'</strong><em>查看完整详情 ›</em>';const warn=weakMarker(weakCount(D,id));if(warn)row.append(warn);row.onclick=()=>renderMother(stage,D,id,'map');list.append(row);});});stage.append(list);
   }
   function renderQuickOverview(stage,D){
     stage.replaceChildren();const wrap=document.createElement('div');wrap.className='quick-overview-grid';
@@ -43,7 +60,7 @@
   function renderMother(stage,D,id,mode='map'){
     const d=D.M[id];if(!d)return;stage.replaceChildren();
     const back=document.createElement('button');back.className='back-to-map';back.textContent='← 返回 '+D.mothers+' 个母论点总图';back.onclick=()=>renderOverview(stage,D);stage.append(back);
-    const head=document.createElement('div');head.className='argument-head';head.innerHTML='<div><p class="eyebrow">'+D.title+' · 母论点详情</p><h2>#'+id+' '+d.t+(d.badge?' <span class="argument-badge">'+d.badge+'</span>':'')+'</h2></div>';stage.append(head);
+    const head=document.createElement('div');head.className='argument-head';head.innerHTML='<div><p class="eyebrow">'+D.title+' · 母论点详情</p><h2>#'+id+' '+d.t+(d.badge?' <span class="argument-badge">'+d.badge+'</span>':'')+'</h2></div>';const warn=weakMarker(weakCount(D,id));if(warn)head.querySelector('h2')?.append(warn);stage.append(head);
     const modes=document.createElement('div');modes.className='argument-modes mother-modes';[['map','🧠 思维导图'],['chain','🔗 法语逻辑链'],['quick','⚡ 极简速记']].forEach(([k,label])=>{const b=document.createElement('button');b.dataset.motherMode=k;b.textContent=label;b.classList.toggle('active',k===mode);modes.append(b);});stage.append(modes);
     const body=document.createElement('div');body.className='mother-stage';stage.append(body);
     const showMap=()=>{body.replaceChildren();const map=document.createElement('div');map.className='argument-map-sample';const center=document.createElement('button');center.className='mother-node active';center.innerHTML='<strong>#'+id+' '+d.t+'</strong><small>'+(d.badge?d.badge+' · ':'')+'点击下面场景链继续展开</small>';map.append(center);const branches=document.createElement('div');branches.className='scene-grid';d.scenes.forEach((s,i)=>{const card=document.createElement('button');card.className='scene-node';card.innerHTML='<span>场景 '+(i+1)+'</span><strong>'+s.title+'</strong><small lang="fr">'+s.fr+'</small>';card.onclick=()=>renderScene(stage,D,id,i);branches.append(card);});map.append(branches);body.append(map);};
