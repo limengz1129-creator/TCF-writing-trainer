@@ -44,13 +44,14 @@
   }
   const weakCss=document.createElement('style');
   weakCss.textContent='.argument-weak-marker{color:#c52535;font-size:16px;margin-left:8px;flex-shrink:0;vertical-align:middle}.argument-node .argument-weak-marker,.mother-list-row .argument-weak-marker{display:inline-block}';
+  weakCss.textContent+=' .argument-node .node-title .argument-weak-marker{display:inline;margin-left:7px;white-space:nowrap;}';
   document.head.append(weakCss);
   function renderOverview(stage,D){
     stage.replaceChildren();
     const intro=document.createElement('section');intro.className='argument-overview-intro';
     intro.innerHTML='<p class="eyebrow">'+D.title+' · 总思维导图</p><h2>'+D.paragraphs+' 个原始论段 → '+D.mothers+' 个核心母论点</h2><p class="note">点击任意母论点，进入它自己的思维导图、法语逻辑链和极简速记。</p>';stage.append(intro);
     const grid=document.createElement('div');grid.className='argument-group-grid';
-    D.GROUPS.forEach(group=>{const section=document.createElement('section');section.className='argument-group-card';const h=document.createElement('h3');h.textContent=group.title;section.append(h);const items=document.createElement('div');items.className='argument-node-list';group.items.forEach(([id,title])=>{const b=document.createElement('button');b.className='argument-node ready';b.innerHTML='<span class="node-num">#'+id+'</span><span class="node-title">'+title+'</span>';const warn=weakMarker(weakCount(D,id));if(warn)b.append(warn);b.onclick=()=>renderMother(stage,D,id,'map');items.append(b);});section.append(items);grid.append(section);});stage.append(grid);
+    D.GROUPS.forEach(group=>{const section=document.createElement('section');section.className='argument-group-card';const h=document.createElement('h3');h.textContent=group.title;section.append(h);const items=document.createElement('div');items.className='argument-node-list';group.items.forEach(([id,title])=>{const b=document.createElement('button');b.className='argument-node ready';b.innerHTML='<span class="node-num">#'+id+'</span><span class="node-title">'+title+'</span>';const warn=weakMarker(weakCount(D,id));if(warn){const titleSpan=b.querySelector('.node-title');titleSpan.append(warn);}b.onclick=()=>renderMother(stage,D,id,'map');items.append(b);});section.append(items);grid.append(section);});stage.append(grid);
   }
   function renderList(stage,D){
     stage.replaceChildren();const list=document.createElement('div');list.className='mother-list';
