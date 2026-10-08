@@ -15,6 +15,7 @@ function markedLine(node,text,tokens,set,cls){let cursor=0;tokens.forEach((t,i)=
 function renderDifference(container,input,target){const diff=compare(input,target),box=document.createElement('div');box.className='answer-difference';const legend=document.createElement('p');legend.className='diff-legend';legend.textContent='红色：写错／多写　绿色：原文中需要补上／替换的词';const grid=document.createElement('div');grid.className='diff-grid';for(const [label,text,tokens,marks,cls]of[['你的答案',input,diff.a,diff.wrong,'diff-wrong'],['原文答案',target,diff.b,diff.missing,'diff-required']]){const section=document.createElement('div'),h=document.createElement('strong'),line=document.createElement('div');h.textContent=label;line.className='diff-line';markedLine(line,text,tokens,marks,cls);section.append(h,line);grid.append(section);}box.append(legend,grid);container.append(box);return diff;}
 // 独立于默写评分的熟练度标记；旧进度默认保持“未标记”。
 const masteryOf=id=>['fluent','weak'].includes(state.records[id]?.mastery)?state.records[id].mastery:'unset';
+window.CORPUS_PARAGRAPH_MASTERY=id=>masteryOf('p:'+id);
 const masteryText={fluent:'✅ 熟练',weak:'🟠 不熟练',unset:'⚪ 未标记'};
 const masteryFilter=document.createElement('select');
 masteryFilter.id='masteryFilter';
