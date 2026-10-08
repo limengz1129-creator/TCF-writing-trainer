@@ -27,7 +27,9 @@
 
   // 与主体论段共用熟练度记录，按母论点所关联的原论段汇总。
   function weakCount(D,id){
-    const ids=D.M?.[Number(id)]?.ids||D.M?.[id]?.ids||[];
+    const mother=D.M?.[id]||D.M?.[Number(id)];
+    if(!mother)return 0;
+    const ids=[...new Set([...(mother.ids||[]),...(mother.scenes||[]).flatMap(scene=>scene.sourceIds||[])])];
     return ids.filter(pid=>window.CORPUS_PARAGRAPH_MASTERY?.(pid)==='weak').length;
   }
   function weakMarker(count){
