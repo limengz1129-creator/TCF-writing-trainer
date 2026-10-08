@@ -23,7 +23,7 @@
     audio.onclick=e=>{e.stopPropagation();speakArgumentPhrase(fr,audio);};
     el.append(text,audio);return el;
   }
-  function sourceButton(id,motherId,sceneIndex,topic){const b=document.createElement('button');b.className='source-jump';b.textContent=id+' · 去学习原论段';b.onclick=()=>{sessionStorage.setItem('tcf-eo-t3-return-argument-map','1');sessionStorage.setItem('tcf-eo-t3-argument-return-state',JSON.stringify({mode:'scene',topic,motherId,sceneIndex}));window.CORPUS_OPEN_PARAGRAPH?.(id);};return b;}
+  function sourceButton(id,motherId,sceneIndex,topic){const b=document.createElement('button');b.className='source-jump';b.textContent=id+' · 去学习原论段';if(window.CORPUS_PARAGRAPH_MASTERY?.(id)==='weak'){const marker=document.createElement('span');marker.className='argument-weak-marker';marker.textContent='❓';marker.title='此原论段不熟练';marker.setAttribute('aria-label','此原论段不熟练');b.append(marker);}b.onclick=()=>{sessionStorage.setItem('tcf-eo-t3-return-argument-map','1');sessionStorage.setItem('tcf-eo-t3-argument-return-state',JSON.stringify({mode:'scene',topic,motherId,sceneIndex}));window.CORPUS_OPEN_PARAGRAPH?.(id);};return b;}
 
   // 与主体论段共用熟练度记录，按母论点所关联的原论段汇总。
   function weakCount(D,id){
