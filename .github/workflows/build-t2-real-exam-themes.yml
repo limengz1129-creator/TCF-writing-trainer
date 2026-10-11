@@ -1,24 +1,20 @@
-name: Build one T2 real-exam theme
+name: Build all remaining T2 real-exam themes
 on:
   push:
     branches: [main]
     paths:
-      - 'tache2/real-exams/source/*.json.gz.b64'
+      - 'tache2/real-exams/source/build-all.trigger'
   workflow_dispatch:
-    inputs:
-      slug:
-        description: Theme slug
-        required: true
 permissions:
   contents: write
 concurrency:
-  group: t2-real-exam-theme-build
+  group: t2-real-exam-theme-build-all
   cancel-in-progress: false
 jobs:
   build:
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v6
         with:
@@ -26,63 +22,17 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: '3.11'
-      - name: Select changed theme
-        id: pick
-        shell: bash
-        run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            SLUG="${{ inputs.slug }}"
-          else
-            FILE=$(git diff --name-only HEAD^ HEAD | grep '^tache2/real-exams/source/.*\.json\.gz\.b64$' | head -1)
-            SLUG=$(basename "$FILE" .json.gz.b64)
-          fi
-          test -n "$SLUG"
-          test -f "tache2/real-exams/source/$SLUG.json.gz.b64"
-          echo "slug=$SLUG" >> "$GITHUB_OUTPUT"
-          echo "Building $SLUG"
-      - name: Install translation, Piper and ffmpeg
+      - name: Install NLLB, Piper and ffmpeg
         run: |
           sudo apt-get update
           sudo apt-get install -y ffmpeg
           python -m pip install --upgrade pip
-          python -m pip install "transformers<5" sentencepiece sacremoses piper-tts
+          python -m pip install "transformers<5" sentencepiece piper-tts
           python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
       - name: Download Piper fr_FR-siwis-medium
         run: |
           mkdir -p .piper-model
           curl -L --fail --retry 3 -o .piper-model/fr_FR-siwis-medium.onnx https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx
           curl -L --fail --retry 3 -o .piper-model/fr_FR-siwis-medium.onnx.json https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx.json
-      - name: Build theme data and static Piper audio
-        run: python tools/piper/real-exam-themes/build.py --source "tache2/real-exams/source/${{ steps.pick.outputs.slug }}.json.gz.b64" --piper-model .piper-model/fr_FR-siwis-medium.onnx
-      - name: Validate generated theme
-        shell: bash
-        run: |
-          SLUG="${{ steps.pick.outputs.slug }}"
-          python - "$SLUG" <<'PY'
-          import json, pathlib, sys
-          slug=sys.argv[1]
-          root=pathlib.Path("tache2/real-exams")
-          x=json.loads((root/"data"/f"{slug}.json").read_text())
-          assert x["count"]==len(x["entries"])
-          assert all(len(q["rows"])==15 for q in x["entries"])
-          assert all(r.get("zh") for q in x["entries"] for r in q["rows"])
-          m=json.loads((root/"piper-audio"/"themes"/"manifest.json").read_text())
-          fr={r["fr"] for q in x["entries"] for r in q["rows"]}
-          assert fr.issubset(set(m["targets"]))
-          print("Validated",slug,x["count"],"questions",x["count"]*15,"rows",len(fr),"unique Piper texts")
-          PY
-      - name: Commit this completed theme
-        shell: bash
-        run: |
-          SLUG="${{ steps.pick.outputs.slug }}"
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "tache2/real-exams/data/$SLUG.json" tache2/real-exams/data/themes.json tache2/real-exams/piper-audio/themes/
-          if git diff --cached --quiet; then
-            echo "No generated changes"
-          else
-            git commit -m "Complete T2 real-exam theme: $SLUG"
-            git fetch origin main
-            git rebase origin/main
-            git push
-          fi
+      - name: Build, validate and push one checkpoint per theme
+        run: python tools/piper/real-exam-themes/build.py --all --git-checkpoints --piper-model .piper-model/fr_FR-siwis-medium.onnx
