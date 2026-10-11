@@ -1,0 +1,47 @@
+name: Generate family vocabulary Piper audio
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/generate-family-vocab-piper.yml'
+      - 'tools/piper/family-vocab/generate.py'
+      - 'tache2/real-exams/vocab/family.json'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  generate:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+      - name: Install Piper and ffmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          python -m pip install --upgrade pip
+          python -m pip install piper-tts
+      - name: Download fr_FR-siwis-medium
+        run: |
+          mkdir -p .piper-model
+          curl -L --fail --retry 3 -o .piper-model/fr_FR-siwis-medium.onnx https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx
+          curl -L --fail --retry 3 -o .piper-model/fr_FR-siwis-medium.onnx.json https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx.json
+      - name: Generate family vocabulary audio
+        run: python tools/piper/family-vocab/generate.py --model .piper-model/fr_FR-siwis-medium.onnx
+      - name: Commit generated audio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tache2/real-exams/piper-audio-family-vocab/
+          if git diff --cached --quiet; then
+            echo "No audio changes"
+          else
+            git commit -m "Generate Piper siwis audio for family vocabulary"
+            git fetch origin main
+            git rebase origin/main
+            git push
+          fi
