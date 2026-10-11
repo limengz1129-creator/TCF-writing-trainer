@@ -107,8 +107,8 @@ def apply_theme(slug,model):
 def main():
     ap=argparse.ArgumentParser();ap.add_argument("--piper-model",required=True);args=ap.parse_args()
     git("config","user.name","github-actions[bot]");git("config","user.email","41898282+github-actions[bot]@users.noreply.github.com")
+    patches=load_patches()
     for slug in ORDER:
-        assert (OPT/f"{slug}.json").exists(),f"missing optimized patch: {slug}"
-        apply_theme(slug,args.piper_model)
+        apply_theme(slug,patches[slug],args.piper_model)
 
 if __name__=="__main__":main()
