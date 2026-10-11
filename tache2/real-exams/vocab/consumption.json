@@ -1,0 +1,1244 @@
+{
+  "theme": "consumption",
+  "title": "消费餐饮与生活服务",
+  "target": "TCF Canada 口语 Tâche 2 · C1",
+  "version": 1,
+  "principle": "约100个高价值词/词块，以最终真题为基础；词块与真实套用问法绑定，优先训练中文→法语主动调用。",
+  "scenarios": [
+    {
+      "id": "furniture",
+      "name": "二手家具 / 商品"
+    },
+    {
+      "id": "clothing",
+      "name": "服装 / 租赁"
+    },
+    {
+      "id": "gift",
+      "name": "礼物选择"
+    },
+    {
+      "id": "restaurant",
+      "name": "餐厅 / 聚餐"
+    },
+    {
+      "id": "vegetarian",
+      "name": "素食 / 食品"
+    },
+    {
+      "id": "chef",
+      "name": "上门厨师 / 家庭聚餐"
+    },
+    {
+      "id": "delivery",
+      "name": "配送 / 售后"
+    },
+    {
+      "id": "online",
+      "name": "线上二手交易"
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": 1,
+      "fr": "un meuble",
+      "zh": "家具",
+      "scenario": "furniture",
+      "priority": 5,
+      "exampleFr": "Quels meubles vendez-vous exactement ?",
+      "exampleZh": "您具体卖哪些家具？"
+    },
+    {
+      "id": 2,
+      "fr": "du mobilier",
+      "zh": "家具用品",
+      "scenario": "furniture",
+      "priority": 4,
+      "exampleFr": "Je souhaite vendre mon mobilier avant mon départ.",
+      "exampleZh": "我想在离开前卖掉家具。"
+    },
+    {
+      "id": 3,
+      "fr": "l’état général",
+      "zh": "整体状况",
+      "scenario": "furniture",
+      "priority": 5,
+      "exampleFr": "Dans quel état sont les meubles ?",
+      "exampleZh": "这些家具整体状况怎么样？"
+    },
+    {
+      "id": 4,
+      "fr": "une trace d’usure",
+      "zh": "使用痕迹",
+      "scenario": "furniture",
+      "priority": 5,
+      "exampleFr": "Les meubles présentent-ils des défauts ou des traces d’usure ?",
+      "exampleZh": "家具有缺陷或使用痕迹吗？"
+    },
+    {
+      "id": 5,
+      "fr": "un défaut",
+      "zh": "瑕疵 / 缺陷",
+      "scenario": "furniture",
+      "priority": 5,
+      "exampleFr": "Les meubles présentent-ils des défauts ou des traces d’usure ?",
+      "exampleZh": "家具有缺陷或使用痕迹吗？"
+    },
+    {
+      "id": 6,
+      "fr": "les dimensions",
+      "zh": "尺寸",
+      "scenario": "furniture",
+      "priority": 5,
+      "exampleFr": "Le meuble qui m’intéresse fait quelles dimensions ?",
+      "exampleZh": "我感兴趣的家具尺寸是多少？"
+    },
+    {
+      "id": 7,
+      "fr": "un modèle plus petit",
+      "zh": "更小的款式",
+      "scenario": "furniture",
+      "priority": 4,
+      "exampleFr": "Avez-vous un modèle un peu plus petit ?",
+      "exampleZh": "您有小一点的款式吗？"
+    },
+    {
+      "id": 8,
+      "fr": "voir sur place",
+      "zh": "现场查看",
+      "scenario": "furniture",
+      "priority": 5,
+      "exampleFr": "Puis-je venir voir les meubles sur place avant de me décider ?",
+      "exampleZh": "我决定前可以现场看看家具吗？"
+    },
+    {
+      "id": 9,
+      "fr": "examiner un article",
+      "zh": "查看商品",
+      "scenario": "furniture",
+      "priority": 4,
+      "exampleFr": "Quand puis-je venir examiner les meubles sur place ?",
+      "exampleZh": "我什么时候可以来现场查看家具？"
+    },
+    {
+      "id": 10,
+      "fr": "se décider",
+      "zh": "做决定",
+      "scenario": "furniture",
+      "priority": 4,
+      "exampleFr": "Puis-je venir voir les meubles sur place avant de me décider ?",
+      "exampleZh": "我决定前可以现场看看家具吗？"
+    },
+    {
+      "id": 11,
+      "fr": "le prix",
+      "zh": "价格",
+      "scenario": "furniture",
+      "priority": 5,
+      "exampleFr": "Combien coûte ce meuble ?",
+      "exampleZh": "这件家具多少钱？"
+    },
+    {
+      "id": 12,
+      "fr": "être négociable",
+      "zh": "可以议价",
+      "scenario": "furniture",
+      "priority": 5,
+      "exampleFr": "Le prix peut-il être négocié ?",
+      "exampleZh": "价格可以商量吗？"
+    },
+    {
+      "id": 13,
+      "fr": "faire un prix",
+      "zh": "给优惠价",
+      "scenario": "furniture",
+      "priority": 5,
+      "exampleFr": "Est-ce que vous faites un prix si j’achète plusieurs meubles ?",
+      "exampleZh": "如果我买多件家具，可以优惠吗？"
+    },
+    {
+      "id": 14,
+      "fr": "acheter plusieurs articles",
+      "zh": "买多件商品",
+      "scenario": "furniture",
+      "priority": 4,
+      "exampleFr": "Est-ce que vous faites un prix si j’achète plusieurs meubles ?",
+      "exampleZh": "如果我买多件家具，可以优惠吗？"
+    },
+    {
+      "id": 15,
+      "fr": "la livraison à domicile",
+      "zh": "送货上门",
+      "scenario": "furniture",
+      "priority": 5,
+      "exampleFr": "Proposez-vous la livraison à domicile ?",
+      "exampleZh": "您提供送货上门吗？"
+    },
+    {
+      "id": 16,
+      "fr": "les frais de livraison",
+      "zh": "运费",
+      "scenario": "furniture",
+      "priority": 5,
+      "exampleFr": "Les frais de livraison sont-ils compris dans le prix ?",
+      "exampleZh": "运费包含在价格里吗？"
+    },
+    {
+      "id": 17,
+      "fr": "être compris dans le prix",
+      "zh": "包含在价格中",
+      "scenario": "furniture",
+      "priority": 5,
+      "exampleFr": "Les frais de livraison sont-ils compris dans le prix ?",
+      "exampleZh": "运费包含在价格里吗？"
+    },
+    {
+      "id": 18,
+      "fr": "le montage",
+      "zh": "组装",
+      "scenario": "furniture",
+      "priority": 4,
+      "exampleFr": "Le montage ou l’installation sont-ils inclus ?",
+      "exampleZh": "组装或安装包含吗？"
+    },
+    {
+      "id": 19,
+      "fr": "l’installation",
+      "zh": "安装",
+      "scenario": "furniture",
+      "priority": 4,
+      "exampleFr": "Le montage ou l’installation sont-ils inclus ?",
+      "exampleZh": "组装或安装包含吗？"
+    },
+    {
+      "id": 20,
+      "fr": "réserver un article",
+      "zh": "预留商品",
+      "scenario": "furniture",
+      "priority": 5,
+      "exampleFr": "Pourriez-vous me réserver le meuble pendant quelques jours ?",
+      "exampleZh": "您能帮我把这件家具留几天吗？"
+    },
+    {
+      "id": 21,
+      "fr": "un costume",
+      "zh": "服装 / 戏服",
+      "scenario": "clothing",
+      "priority": 5,
+      "exampleFr": "Qu’est-ce que vous proposez comme costumes ?",
+      "exampleZh": "您提供哪些服装？"
+    },
+    {
+      "id": 22,
+      "fr": "une taille",
+      "zh": "尺码",
+      "scenario": "clothing",
+      "priority": 5,
+      "exampleFr": "Vous avez quelles tailles disponibles ?",
+      "exampleZh": "有哪些尺码？"
+    },
+    {
+      "id": 23,
+      "fr": "essayer un vêtement",
+      "zh": "试穿",
+      "scenario": "clothing",
+      "priority": 5,
+      "exampleFr": "Puis-je essayer le costume avant de le louer ?",
+      "exampleZh": "租之前可以试穿吗？"
+    },
+    {
+      "id": 24,
+      "fr": "louer un costume",
+      "zh": "租服装",
+      "scenario": "clothing",
+      "priority": 5,
+      "exampleFr": "Pour combien de temps peut-on louer un costume ?",
+      "exampleZh": "可以租这套服装多久？"
+    },
+    {
+      "id": 25,
+      "fr": "la durée de location",
+      "zh": "租期",
+      "scenario": "clothing",
+      "priority": 4,
+      "exampleFr": "Pour combien de temps peut-on louer un costume ?",
+      "exampleZh": "可以租多久？"
+    },
+    {
+      "id": 26,
+      "fr": "un tarif journalier",
+      "zh": "日租价",
+      "scenario": "clothing",
+      "priority": 4,
+      "exampleFr": "Combien coûte la location par jour ?",
+      "exampleZh": "每天租金是多少？"
+    },
+    {
+      "id": 27,
+      "fr": "une caution",
+      "zh": "押金",
+      "scenario": "clothing",
+      "priority": 5,
+      "exampleFr": "Une caution est-elle demandée ?",
+      "exampleZh": "需要交押金吗？"
+    },
+    {
+      "id": 28,
+      "fr": "un contrat de location",
+      "zh": "租赁合同",
+      "scenario": "clothing",
+      "priority": 5,
+      "exampleFr": "Un contrat de location est-il à signer ?",
+      "exampleZh": "需要签租赁合同吗？"
+    },
+    {
+      "id": 29,
+      "fr": "rendre un article",
+      "zh": "归还商品",
+      "scenario": "clothing",
+      "priority": 4,
+      "exampleFr": "Comment se passe le retour du costume ?",
+      "exampleZh": "服装怎么归还？"
+    },
+    {
+      "id": 30,
+      "fr": "rendre en retard",
+      "zh": "逾期归还",
+      "scenario": "clothing",
+      "priority": 4,
+      "exampleFr": "Que se passe-t-il si je rends le costume en retard ?",
+      "exampleZh": "如果我逾期归还会怎样？"
+    },
+    {
+      "id": 31,
+      "fr": "être abîmé(e)",
+      "zh": "损坏",
+      "scenario": "clothing",
+      "priority": 5,
+      "exampleFr": "Et si le costume est abîmé, quels frais dois-je payer ?",
+      "exampleZh": "如果服装损坏，我要付哪些费用？"
+    },
+    {
+      "id": 32,
+      "fr": "des frais supplémentaires",
+      "zh": "额外费用",
+      "scenario": "clothing",
+      "priority": 5,
+      "exampleFr": "Et si le costume est abîmé, quels frais dois-je payer ?",
+      "exampleZh": "如果服装损坏，我要付哪些额外费用？"
+    },
+    {
+      "id": 33,
+      "fr": "réserver à l’avance",
+      "zh": "提前预订",
+      "scenario": "clothing",
+      "priority": 5,
+      "exampleFr": "Vaut-il mieux réserver le costume à l’avance ?",
+      "exampleZh": "最好提前预订吗？"
+    },
+    {
+      "id": 34,
+      "fr": "des vêtements d’occasion",
+      "zh": "二手衣服",
+      "scenario": "clothing",
+      "priority": 5,
+      "exampleFr": "Je vends un stock de vêtements d’occasion pour enfants.",
+      "exampleZh": "我在卖一批儿童二手衣服。"
+    },
+    {
+      "id": 35,
+      "fr": "être en stock",
+      "zh": "有库存",
+      "scenario": "clothing",
+      "priority": 4,
+      "exampleFr": "Combien de vêtements as-tu encore en stock ?",
+      "exampleZh": "你还有多少衣服有库存？"
+    },
+    {
+      "id": 36,
+      "fr": "une tache",
+      "zh": "污渍",
+      "scenario": "clothing",
+      "priority": 4,
+      "exampleFr": "Certains articles ont-ils des taches ou des défauts ?",
+      "exampleZh": "有些衣服有污渍或瑕疵吗？"
+    },
+    {
+      "id": 37,
+      "fr": "retourner un article",
+      "zh": "退货",
+      "scenario": "clothing",
+      "priority": 5,
+      "exampleFr": "Puis-je retourner un vêtement s’il ne convient pas ?",
+      "exampleZh": "如果不合适，我可以退货吗？"
+    },
+    {
+      "id": 38,
+      "fr": "être remboursé(e)",
+      "zh": "退款",
+      "scenario": "clothing",
+      "priority": 5,
+      "exampleFr": "Et s’il y a un problème avec l’article, puis-je être remboursée ?",
+      "exampleZh": "如果商品有问题，可以退款吗？"
+    },
+    {
+      "id": 39,
+      "fr": "un cadeau",
+      "zh": "礼物",
+      "scenario": "gift",
+      "priority": 5,
+      "exampleFr": "Quel cadeau lui offrir ?",
+      "exampleZh": "该送她什么礼物？"
+    },
+    {
+      "id": 40,
+      "fr": "les goûts",
+      "zh": "喜好",
+      "scenario": "gift",
+      "priority": 5,
+      "exampleFr": "Qu’est-ce qu’elle aime en général ?",
+      "exampleZh": "她一般喜欢什么？"
+    },
+    {
+      "id": 41,
+      "fr": "la personnalité",
+      "zh": "性格",
+      "scenario": "gift",
+      "priority": 5,
+      "exampleFr": "Comment décrirais-tu sa personnalité ?",
+      "exampleZh": "你会怎么形容她的性格？"
+    },
+    {
+      "id": 42,
+      "fr": "une activité sportive",
+      "zh": "体育活动",
+      "scenario": "gift",
+      "priority": 4,
+      "exampleFr": "Elle fait de la randonnée ou d’autres activités sportives ?",
+      "exampleZh": "她徒步或做其他运动吗？"
+    },
+    {
+      "id": 43,
+      "fr": "la randonnée",
+      "zh": "徒步",
+      "scenario": "gift",
+      "priority": 4,
+      "exampleFr": "Elle fait de la randonnée ou d’autres activités sportives ?",
+      "exampleZh": "她会徒步吗？"
+    },
+    {
+      "id": 44,
+      "fr": "faire plaisir à quelqu’un",
+      "zh": "让某人开心",
+      "scenario": "gift",
+      "priority": 5,
+      "exampleFr": "Tu crois qu’une robe lui ferait plaisir ?",
+      "exampleZh": "你觉得一条裙子会让她开心吗？"
+    },
+    {
+      "id": 45,
+      "fr": "convenir à quelqu’un",
+      "zh": "适合某人",
+      "scenario": "gift",
+      "priority": 5,
+      "exampleFr": "Et une paire de chaussures de randonnée, ça lui conviendrait ?",
+      "exampleZh": "一双徒步鞋适合她吗？"
+    },
+    {
+      "id": 46,
+      "fr": "quelque chose de pratique",
+      "zh": "实用的东西",
+      "scenario": "gift",
+      "priority": 4,
+      "exampleFr": "Elle préfère plutôt quelque chose de pratique ou de plus élégant ?",
+      "exampleZh": "她更喜欢实用的还是优雅的东西？"
+    },
+    {
+      "id": 47,
+      "fr": "quelque chose d’élégant",
+      "zh": "优雅的东西",
+      "scenario": "gift",
+      "priority": 4,
+      "exampleFr": "Elle préfère plutôt quelque chose de pratique ou de plus élégant ?",
+      "exampleZh": "她更喜欢实用的还是优雅的东西？"
+    },
+    {
+      "id": 48,
+      "fr": "éviter d’acheter",
+      "zh": "避免购买",
+      "scenario": "gift",
+      "priority": 4,
+      "exampleFr": "Y a-t-il quelque chose qu’elle possède déjà et que je devrais éviter d’acheter ?",
+      "exampleZh": "她已经有的东西里，有什么我最好别再买吗？"
+    },
+    {
+      "id": 49,
+      "fr": "un budget raisonnable",
+      "zh": "合理预算",
+      "scenario": "gift",
+      "priority": 5,
+      "exampleFr": "Combien te semblerait raisonnable pour son cadeau ?",
+      "exampleZh": "你觉得礼物多少预算合理？"
+    },
+    {
+      "id": 50,
+      "fr": "un emballage cadeau",
+      "zh": "礼物包装",
+      "scenario": "gift",
+      "priority": 4,
+      "exampleFr": "Tu penses qu’il vaut mieux ajouter une carte ou faire un emballage spécial ?",
+      "exampleZh": "你觉得加卡片还是做特别包装更好？"
+    },
+    {
+      "id": 51,
+      "fr": "une carte",
+      "zh": "卡片",
+      "scenario": "gift",
+      "priority": 3,
+      "exampleFr": "Tu penses qu’il vaut mieux ajouter une carte ou faire un emballage spécial ?",
+      "exampleZh": "你觉得加卡片还是做特别包装更好？"
+    },
+    {
+      "id": 52,
+      "fr": "un restaurant",
+      "zh": "餐厅",
+      "scenario": "restaurant",
+      "priority": 5,
+      "exampleFr": "Où se trouve exactement ce nouveau restaurant ?",
+      "exampleZh": "这家新餐厅具体在哪里？"
+    },
+    {
+      "id": 53,
+      "fr": "une cuisine",
+      "zh": "菜系",
+      "scenario": "restaurant",
+      "priority": 5,
+      "exampleFr": "Qu’est-ce que le restaurant propose comme cuisine ?",
+      "exampleZh": "这家餐厅是什么菜系？"
+    },
+    {
+      "id": 54,
+      "fr": "un plat",
+      "zh": "菜品",
+      "scenario": "restaurant",
+      "priority": 5,
+      "exampleFr": "Qu’est-ce que tu me recommanderais comme plat ?",
+      "exampleZh": "你会推荐我吃什么菜？"
+    },
+    {
+      "id": 55,
+      "fr": "un plat signature",
+      "zh": "招牌菜",
+      "scenario": "restaurant",
+      "priority": 4,
+      "exampleFr": "Qu’est-ce que tu me recommanderais comme plat ?",
+      "exampleZh": "你会推荐我吃什么招牌菜？"
+    },
+    {
+      "id": 56,
+      "fr": "décrire un plat",
+      "zh": "描述一道菜",
+      "scenario": "restaurant",
+      "priority": 4,
+      "exampleFr": "Tu peux me décrire ce plat un peu plus en détail ?",
+      "exampleZh": "你能更详细描述一下这道菜吗？"
+    },
+    {
+      "id": 57,
+      "fr": "un plat végétarien",
+      "zh": "素食菜",
+      "scenario": "vegetarian",
+      "priority": 5,
+      "exampleFr": "Comme je suis végétarienne, est-ce qu’on trouve des plats végétariens ?",
+      "exampleZh": "因为我是素食者，有素食菜吗？"
+    },
+    {
+      "id": 58,
+      "fr": "être végétarien(ne)",
+      "zh": "吃素 / 素食者",
+      "scenario": "vegetarian",
+      "priority": 5,
+      "exampleFr": "Comme je suis végétarienne, est-ce qu’on trouve des plats végétariens ?",
+      "exampleZh": "因为我是素食者，有素食菜吗？"
+    },
+    {
+      "id": 59,
+      "fr": "l’ambiance",
+      "zh": "氛围",
+      "scenario": "restaurant",
+      "priority": 5,
+      "exampleFr": "Comment était l’ambiance ?",
+      "exampleZh": "氛围怎么样？"
+    },
+    {
+      "id": 60,
+      "fr": "le service",
+      "zh": "服务",
+      "scenario": "restaurant",
+      "priority": 5,
+      "exampleFr": "Et le service, tu l’as trouvé comment ?",
+      "exampleZh": "你觉得服务怎么样？"
+    },
+    {
+      "id": 61,
+      "fr": "prévoir par personne",
+      "zh": "按人均预算",
+      "scenario": "restaurant",
+      "priority": 5,
+      "exampleFr": "Combien faut-il prévoir par personne ?",
+      "exampleZh": "每个人大概要预算多少？"
+    },
+    {
+      "id": 62,
+      "fr": "réserver une table",
+      "zh": "订桌",
+      "scenario": "restaurant",
+      "priority": 5,
+      "exampleFr": "Comment se passe la réservation d’une table ?",
+      "exampleZh": "怎么订桌？"
+    },
+    {
+      "id": 63,
+      "fr": "les horaires d’ouverture",
+      "zh": "营业时间",
+      "scenario": "restaurant",
+      "priority": 4,
+      "exampleFr": "À quelles heures le restaurant est-il ouvert ?",
+      "exampleZh": "餐厅几点营业？"
+    },
+    {
+      "id": 64,
+      "fr": "recommander un restaurant",
+      "zh": "推荐餐厅",
+      "scenario": "restaurant",
+      "priority": 4,
+      "exampleFr": "Tu me conseillerais vraiment ce restaurant ?",
+      "exampleZh": "你真的会推荐这家餐厅吗？"
+    },
+    {
+      "id": 65,
+      "fr": "un repas d’anniversaire",
+      "zh": "生日聚餐",
+      "scenario": "restaurant",
+      "priority": 5,
+      "exampleFr": "Qu’est-ce que vous proposez comme menus pour un anniversaire ?",
+      "exampleZh": "生日聚餐有哪些菜单？"
+    },
+    {
+      "id": 66,
+      "fr": "la disponibilité",
+      "zh": "可订情况",
+      "scenario": "restaurant",
+      "priority": 5,
+      "exampleFr": "Avez-vous encore de la disponibilité pour la date de l’anniversaire ?",
+      "exampleZh": "生日当天还有位置吗？"
+    },
+    {
+      "id": 67,
+      "fr": "accueillir des personnes",
+      "zh": "接待人数",
+      "scenario": "restaurant",
+      "priority": 4,
+      "exampleFr": "Jusqu’à combien de personnes pouvez-vous accueillir pour ce repas ?",
+      "exampleZh": "这顿饭最多能接待多少人？"
+    },
+    {
+      "id": 68,
+      "fr": "un tarif de groupe",
+      "zh": "团体价",
+      "scenario": "restaurant",
+      "priority": 4,
+      "exampleFr": "Proposez-vous un tarif de groupe ?",
+      "exampleZh": "有团体价吗？"
+    },
+    {
+      "id": 69,
+      "fr": "annuler une réservation",
+      "zh": "取消预订",
+      "scenario": "restaurant",
+      "priority": 5,
+      "exampleFr": "Puis-je annuler ou modifier la réservation en cas de problème ?",
+      "exampleZh": "有问题时可以取消或修改预订吗？"
+    },
+    {
+      "id": 70,
+      "fr": "modifier une réservation",
+      "zh": "修改预订",
+      "scenario": "restaurant",
+      "priority": 5,
+      "exampleFr": "Puis-je annuler ou modifier la réservation en cas de problème ?",
+      "exampleZh": "有问题时可以修改预订吗？"
+    },
+    {
+      "id": 71,
+      "fr": "une restriction alimentaire",
+      "zh": "饮食限制",
+      "scenario": "chef",
+      "priority": 5,
+      "exampleFr": "Les allergies ou restrictions alimentaires peuvent-elles être prises en compte ?",
+      "exampleZh": "过敏或饮食限制可以考虑进去吗？"
+    },
+    {
+      "id": 72,
+      "fr": "prendre en compte",
+      "zh": "考虑到",
+      "scenario": "chef",
+      "priority": 5,
+      "exampleFr": "Les allergies ou restrictions alimentaires peuvent-elles être prises en compte ?",
+      "exampleZh": "过敏或饮食限制可以考虑进去吗？"
+    },
+    {
+      "id": 73,
+      "fr": "un chef à domicile",
+      "zh": "上门厨师",
+      "scenario": "chef",
+      "priority": 5,
+      "exampleFr": "Depuis quand travaillez-vous comme chef à domicile ?",
+      "exampleZh": "您做上门厨师多久了？"
+    },
+    {
+      "id": 74,
+      "fr": "des produits frais",
+      "zh": "新鲜食材",
+      "scenario": "chef",
+      "priority": 5,
+      "exampleFr": "Utilisez-vous des produits frais et de saison ?",
+      "exampleZh": "您使用新鲜时令食材吗？"
+    },
+    {
+      "id": 75,
+      "fr": "des produits de saison",
+      "zh": "时令食材",
+      "scenario": "chef",
+      "priority": 4,
+      "exampleFr": "Utilisez-vous des produits frais et de saison ?",
+      "exampleZh": "您使用新鲜时令食材吗？"
+    },
+    {
+      "id": 76,
+      "fr": "les ingrédients",
+      "zh": "食材",
+      "scenario": "chef",
+      "priority": 5,
+      "exampleFr": "Qui s’occupe d’acheter les ingrédients ?",
+      "exampleZh": "谁负责买食材？"
+    },
+    {
+      "id": 77,
+      "fr": "du matériel professionnel",
+      "zh": "专业设备",
+      "scenario": "chef",
+      "priority": 4,
+      "exampleFr": "Vous apportez votre propre matériel professionnel ?",
+      "exampleZh": "您会带自己的专业设备吗？"
+    },
+    {
+      "id": 78,
+      "fr": "le service à table",
+      "zh": "桌边服务",
+      "scenario": "chef",
+      "priority": 4,
+      "exampleFr": "Le service à table est-il compris ?",
+      "exampleZh": "包含桌边服务吗？"
+    },
+    {
+      "id": 79,
+      "fr": "le nettoyage",
+      "zh": "清洁",
+      "scenario": "chef",
+      "priority": 4,
+      "exampleFr": "Le nettoyage de la cuisine est-il inclus après le repas ?",
+      "exampleZh": "饭后厨房清洁包含吗？"
+    },
+    {
+      "id": 80,
+      "fr": "un tarif par personne",
+      "zh": "人均收费",
+      "scenario": "chef",
+      "priority": 5,
+      "exampleFr": "Quel est votre tarif par personne ?",
+      "exampleZh": "您每人收费多少？"
+    },
+    {
+      "id": 81,
+      "fr": "la livraison",
+      "zh": "配送",
+      "scenario": "delivery",
+      "priority": 5,
+      "exampleFr": "Combien coûte la livraison ?",
+      "exampleZh": "配送费多少？"
+    },
+    {
+      "id": 82,
+      "fr": "une zone de livraison",
+      "zh": "配送区域",
+      "scenario": "delivery",
+      "priority": 4,
+      "exampleFr": "Quelles zones desservez-vous pour la livraison ?",
+      "exampleZh": "你们配送哪些区域？"
+    },
+    {
+      "id": 83,
+      "fr": "un créneau de livraison",
+      "zh": "配送时段",
+      "scenario": "delivery",
+      "priority": 5,
+      "exampleFr": "Quels créneaux sont disponibles ?",
+      "exampleZh": "有哪些配送时段？"
+    },
+    {
+      "id": 84,
+      "fr": "livrer le week-end",
+      "zh": "周末配送",
+      "scenario": "delivery",
+      "priority": 4,
+      "exampleFr": "Livrez-vous aussi le week-end ?",
+      "exampleZh": "周末也配送吗？"
+    },
+    {
+      "id": 85,
+      "fr": "la livraison gratuite",
+      "zh": "免运费",
+      "scenario": "delivery",
+      "priority": 5,
+      "exampleFr": "À partir de quel montant la livraison est-elle gratuite ?",
+      "exampleZh": "满多少金额免运费？"
+    },
+    {
+      "id": 86,
+      "fr": "la livraison sans contact",
+      "zh": "无接触配送",
+      "scenario": "delivery",
+      "priority": 4,
+      "exampleFr": "Proposez-vous la livraison sans contact ?",
+      "exampleZh": "提供无接触配送吗？"
+    },
+    {
+      "id": 87,
+      "fr": "un retard de livraison",
+      "zh": "配送延误",
+      "scenario": "delivery",
+      "priority": 5,
+      "exampleFr": "À qui dois-je m’adresser si la livraison est en retard ?",
+      "exampleZh": "配送延误我该联系谁？"
+    },
+    {
+      "id": 88,
+      "fr": "arriver abîmé(e)",
+      "zh": "送达时损坏",
+      "scenario": "delivery",
+      "priority": 4,
+      "exampleFr": "Comment ça se passe si un produit arrive abîmé ?",
+      "exampleZh": "商品送到时损坏怎么办？"
+    },
+    {
+      "id": 89,
+      "fr": "une plateforme",
+      "zh": "平台",
+      "scenario": "online",
+      "priority": 5,
+      "exampleFr": "Tu utilises quelle plateforme pour vendre tes objets ?",
+      "exampleZh": "你用哪个平台卖东西？"
+    },
+    {
+      "id": 90,
+      "fr": "créer un compte",
+      "zh": "创建账号",
+      "scenario": "online",
+      "priority": 5,
+      "exampleFr": "Comment se passe la création du compte ?",
+      "exampleZh": "怎么创建账号？"
+    },
+    {
+      "id": 91,
+      "fr": "publier une annonce",
+      "zh": "发布广告",
+      "scenario": "online",
+      "priority": 5,
+      "exampleFr": "Comment t’y prends-tu pour rédiger et publier une annonce ?",
+      "exampleZh": "你怎么写并发布广告？"
+    },
+    {
+      "id": 92,
+      "fr": "rédiger une annonce",
+      "zh": "撰写广告",
+      "scenario": "online",
+      "priority": 5,
+      "exampleFr": "Comment t’y prends-tu pour rédiger et publier une annonce ?",
+      "exampleZh": "你怎么写并发布广告？"
+    },
+    {
+      "id": 93,
+      "fr": "fixer le prix",
+      "zh": "定价",
+      "scenario": "online",
+      "priority": 5,
+      "exampleFr": "Comment fixes-tu le prix de tes objets ?",
+      "exampleZh": "你怎么给物品定价？"
+    },
+    {
+      "id": 94,
+      "fr": "rendre une annonce visible",
+      "zh": "提高广告曝光",
+      "scenario": "online",
+      "priority": 4,
+      "exampleFr": "Qu’est-ce que tu fais pour rendre tes annonces plus visibles ?",
+      "exampleZh": "你怎么让广告更容易被看到？"
+    },
+    {
+      "id": 95,
+      "fr": "un acheteur",
+      "zh": "买家",
+      "scenario": "online",
+      "priority": 5,
+      "exampleFr": "Comment restes-tu en contact avec les acheteurs ?",
+      "exampleZh": "你怎么和买家保持联系？"
+    },
+    {
+      "id": 96,
+      "fr": "un mode de paiement sûr",
+      "zh": "安全的付款方式",
+      "scenario": "online",
+      "priority": 5,
+      "exampleFr": "Quel mode de paiement te paraît le plus sûr ?",
+      "exampleZh": "你觉得哪种付款方式最安全？"
+    },
+    {
+      "id": 97,
+      "fr": "remettre en main propre",
+      "zh": "当面交货",
+      "scenario": "online",
+      "priority": 5,
+      "exampleFr": "Tu préfères remettre l’objet en main propre ou l’envoyer ?",
+      "exampleZh": "你更愿意当面交货还是邮寄？"
+    },
+    {
+      "id": 98,
+      "fr": "annuler au dernier moment",
+      "zh": "最后一刻取消",
+      "scenario": "online",
+      "priority": 4,
+      "exampleFr": "Que fais-tu si l’acheteur annule au dernier moment ?",
+      "exampleZh": "买家最后一刻取消怎么办？"
+    },
+    {
+      "id": 99,
+      "fr": "éviter les arnaques",
+      "zh": "避免诈骗",
+      "scenario": "online",
+      "priority": 5,
+      "exampleFr": "Comment éviter les arnaques selon toi ?",
+      "exampleZh": "你觉得怎么避免诈骗？"
+    },
+    {
+      "id": 100,
+      "fr": "être clairement étiqueté(e)",
+      "zh": "标签清楚",
+      "scenario": "vegetarian",
+      "priority": 4,
+      "exampleFr": "Les produits sont-ils clairement étiquetés pour les végétariens ?",
+      "exampleZh": "产品是否清楚标明适合素食者？"
+    },
+    {
+      "id": 101,
+      "fr": "des protéines végétales",
+      "zh": "植物蛋白",
+      "scenario": "vegetarian",
+      "priority": 4,
+      "exampleFr": "Trouve-t-on facilement du tofu, des légumineuses ou d’autres protéines végétales ?",
+      "exampleZh": "容易买到豆腐、豆类或其他植物蛋白吗？"
+    },
+    {
+      "id": 102,
+      "fr": "être abordable",
+      "zh": "价格实惠",
+      "scenario": "vegetarian",
+      "priority": 5,
+      "exampleFr": "Et les produits végétariens au supermarché, sont-ils abordables ?",
+      "exampleZh": "超市的素食产品价格实惠吗？"
+    },
+    {
+      "id": 103,
+      "fr": "demander un plat sans viande",
+      "zh": "要求无肉菜",
+      "scenario": "vegetarian",
+      "priority": 4,
+      "exampleFr": "Peut-on facilement demander un plat sans viande au restaurant ?",
+      "exampleZh": "餐厅里容易要求无肉菜吗？"
+    }
+  ],
+  "patterns": [
+    {
+      "id": 1,
+      "pattern": "Dans quel état est/sont + objet ?",
+      "zh": "……状况怎么样？",
+      "exampleFr": "Dans quel état sont les meubles ?",
+      "exampleZh": "家具状况怎么样？",
+      "scenario": "furniture"
+    },
+    {
+      "id": 2,
+      "pattern": "Présente-t-il / elle des défauts ou des traces d’usure ?",
+      "zh": "有瑕疵或使用痕迹吗？",
+      "exampleFr": "Les meubles présentent-ils des défauts ou des traces d’usure ?",
+      "exampleZh": "家具有瑕疵或使用痕迹吗？",
+      "scenario": "furniture"
+    },
+    {
+      "id": 3,
+      "pattern": "Quelles dimensions fait + objet ?",
+      "zh": "……尺寸是多少？",
+      "exampleFr": "Le meuble qui m’intéresse fait quelles dimensions ?",
+      "exampleZh": "我感兴趣的家具尺寸是多少？",
+      "scenario": "furniture"
+    },
+    {
+      "id": 4,
+      "pattern": "Puis-je venir voir + objet + sur place ?",
+      "zh": "可以现场看吗？",
+      "exampleFr": "Puis-je venir voir les meubles sur place avant de me décider ?",
+      "exampleZh": "决定前可以现场看家具吗？",
+      "scenario": "furniture"
+    },
+    {
+      "id": 5,
+      "pattern": "Combien coûte + objet ?",
+      "zh": "……多少钱？",
+      "exampleFr": "Combien coûte ce meuble ?",
+      "exampleZh": "这件家具多少钱？",
+      "scenario": "furniture"
+    },
+    {
+      "id": 6,
+      "pattern": "Le prix est-il négociable ?",
+      "zh": "价格可以商量吗？",
+      "exampleFr": "Le prix peut-il être négocié ?",
+      "exampleZh": "价格可以商量吗？",
+      "scenario": "furniture"
+    },
+    {
+      "id": 7,
+      "pattern": "Faites-vous un prix si j’en achète plusieurs ?",
+      "zh": "买多件有优惠吗？",
+      "exampleFr": "Est-ce que vous faites un prix si j’achète plusieurs meubles ?",
+      "exampleZh": "买多件家具有优惠吗？",
+      "scenario": "furniture"
+    },
+    {
+      "id": 8,
+      "pattern": "Proposez-vous la livraison à domicile ?",
+      "zh": "提供送货上门吗？",
+      "exampleFr": "Proposez-vous la livraison à domicile ?",
+      "exampleZh": "提供送货上门吗？",
+      "scenario": "delivery"
+    },
+    {
+      "id": 9,
+      "pattern": "Les frais de livraison sont-ils compris ?",
+      "zh": "运费包含吗？",
+      "exampleFr": "Les frais de livraison sont-ils compris dans le prix ?",
+      "exampleZh": "运费包含在价格中吗？",
+      "scenario": "delivery"
+    },
+    {
+      "id": 10,
+      "pattern": "Quels moyens de paiement acceptez-vous ?",
+      "zh": "接受哪些付款方式？",
+      "exampleFr": "Quels moyens de paiement acceptez-vous ?",
+      "exampleZh": "接受哪些付款方式？",
+      "scenario": "furniture"
+    },
+    {
+      "id": 11,
+      "pattern": "Pourriez-vous me réserver + objet ?",
+      "zh": "能帮我预留……吗？",
+      "exampleFr": "Pourriez-vous me réserver le meuble pendant quelques jours ?",
+      "exampleZh": "能帮我预留这件家具几天吗？",
+      "scenario": "furniture"
+    },
+    {
+      "id": 12,
+      "pattern": "Puis-je essayer + vêtement + avant de le louer/acheter ?",
+      "zh": "租/买前可以试穿吗？",
+      "exampleFr": "Puis-je essayer le costume avant de le louer ?",
+      "exampleZh": "租之前可以试穿吗？",
+      "scenario": "clothing"
+    },
+    {
+      "id": 13,
+      "pattern": "Pour combien de temps peut-on louer + objet ?",
+      "zh": "可以租多久？",
+      "exampleFr": "Pour combien de temps peut-on louer un costume ?",
+      "exampleZh": "可以租这套服装多久？",
+      "scenario": "clothing"
+    },
+    {
+      "id": 14,
+      "pattern": "Que se passe-t-il si je rends + objet + en retard ?",
+      "zh": "逾期归还会怎样？",
+      "exampleFr": "Que se passe-t-il si je rends le costume en retard ?",
+      "exampleZh": "逾期归还会怎样？",
+      "scenario": "clothing"
+    },
+    {
+      "id": 15,
+      "pattern": "Puis-je être remboursé(e) ?",
+      "zh": "可以退款吗？",
+      "exampleFr": "Et s’il y a un problème avec l’article, puis-je être remboursée ?",
+      "exampleZh": "商品有问题可以退款吗？",
+      "scenario": "clothing"
+    },
+    {
+      "id": 16,
+      "pattern": "Qu’est-ce qu’il/elle aime en général ?",
+      "zh": "他/她一般喜欢什么？",
+      "exampleFr": "Qu’est-ce qu’elle aime en général ?",
+      "exampleZh": "她一般喜欢什么？",
+      "scenario": "gift"
+    },
+    {
+      "id": 17,
+      "pattern": "Comment décrirais-tu sa personnalité ?",
+      "zh": "你会怎么形容她的性格？",
+      "exampleFr": "Comment décrirais-tu sa personnalité ?",
+      "exampleZh": "你会怎么形容她的性格？",
+      "scenario": "gift"
+    },
+    {
+      "id": 18,
+      "pattern": "Ça lui conviendrait ?",
+      "zh": "这适合她吗？",
+      "exampleFr": "Et une paire de chaussures de randonnée, ça lui conviendrait ?",
+      "exampleZh": "一双徒步鞋适合她吗？",
+      "scenario": "gift"
+    },
+    {
+      "id": 19,
+      "pattern": "Combien te semblerait raisonnable pour + cadeau ?",
+      "zh": "礼物预算多少合理？",
+      "exampleFr": "Combien te semblerait raisonnable pour son cadeau ?",
+      "exampleZh": "你觉得礼物多少预算合理？",
+      "scenario": "gift"
+    },
+    {
+      "id": 20,
+      "pattern": "Qu’est-ce que + restaurant + propose comme cuisine ?",
+      "zh": "餐厅是什么菜系？",
+      "exampleFr": "Qu’est-ce que le restaurant propose comme cuisine ?",
+      "exampleZh": "这家餐厅是什么菜系？",
+      "scenario": "restaurant"
+    },
+    {
+      "id": 21,
+      "pattern": "Qu’est-ce que tu me recommanderais comme plat ?",
+      "zh": "你推荐什么菜？",
+      "exampleFr": "Qu’est-ce que tu me recommanderais comme plat ?",
+      "exampleZh": "你会推荐我吃什么菜？",
+      "scenario": "restaurant"
+    },
+    {
+      "id": 22,
+      "pattern": "Comment as-tu trouvé + lieu/service ?",
+      "zh": "你觉得……怎么样？",
+      "exampleFr": "Comment as-tu trouvé ce restaurant dans l’ensemble ?",
+      "exampleZh": "你整体觉得这家餐厅怎么样？",
+      "scenario": "restaurant"
+    },
+    {
+      "id": 23,
+      "pattern": "Combien faut-il prévoir par personne ?",
+      "zh": "人均大概要多少？",
+      "exampleFr": "Combien faut-il prévoir par personne ?",
+      "exampleZh": "每个人大概要预算多少？",
+      "scenario": "restaurant"
+    },
+    {
+      "id": 24,
+      "pattern": "Comment se passe la réservation ?",
+      "zh": "怎么预订？",
+      "exampleFr": "Comment se passe la réservation d’une table ?",
+      "exampleZh": "怎么订桌？",
+      "scenario": "restaurant"
+    },
+    {
+      "id": 25,
+      "pattern": "Avez-vous encore de la disponibilité pour + date ?",
+      "zh": "某天还有位置吗？",
+      "exampleFr": "Avez-vous encore de la disponibilité pour la date de l’anniversaire ?",
+      "exampleZh": "生日当天还有位置吗？",
+      "scenario": "restaurant"
+    },
+    {
+      "id": 26,
+      "pattern": "Pouvez-vous adapter + menu + aux besoins de + personne ?",
+      "zh": "可以按需求调整菜单吗？",
+      "exampleFr": "Pouvez-vous adapter le menu aux goûts de ma famille ?",
+      "exampleZh": "菜单可以按家人的口味调整吗？",
+      "scenario": "chef"
+    },
+    {
+      "id": 27,
+      "pattern": "Les allergies ou restrictions peuvent-elles être prises en compte ?",
+      "zh": "过敏/忌口能考虑吗？",
+      "exampleFr": "Les allergies ou restrictions alimentaires peuvent-elles être prises en compte ?",
+      "exampleZh": "过敏或饮食限制可以考虑进去吗？",
+      "scenario": "chef"
+    },
+    {
+      "id": 28,
+      "pattern": "À partir de quel montant + service + est-il gratuit ?",
+      "zh": "满多少金额免费？",
+      "exampleFr": "À partir de quel montant la livraison est-elle gratuite ?",
+      "exampleZh": "满多少金额免运费？",
+      "scenario": "delivery"
+    },
+    {
+      "id": 29,
+      "pattern": "Que se passe-t-il si je ne suis pas chez moi ?",
+      "zh": "我不在家时怎么办？",
+      "exampleFr": "Que se passe-t-il si je ne suis pas chez moi au moment de la livraison ?",
+      "exampleZh": "配送时我不在家怎么办？",
+      "scenario": "delivery"
+    },
+    {
+      "id": 30,
+      "pattern": "Quelle plateforme utilises-tu pour + infinitif ?",
+      "zh": "你用哪个平台……？",
+      "exampleFr": "Tu utilises quelle plateforme pour vendre tes objets ?",
+      "exampleZh": "你用哪个平台卖东西？",
+      "scenario": "online"
+    },
+    {
+      "id": 31,
+      "pattern": "Comment se passe la création du compte ?",
+      "zh": "账号怎么创建？",
+      "exampleFr": "Comment se passe la création du compte ?",
+      "exampleZh": "账号怎么创建？",
+      "scenario": "online"
+    },
+    {
+      "id": 32,
+      "pattern": "Comment t’y prends-tu pour publier une annonce ?",
+      "zh": "你怎么发布广告？",
+      "exampleFr": "Comment t’y prends-tu pour rédiger et publier une annonce ?",
+      "exampleZh": "你怎么写并发布广告？",
+      "scenario": "online"
+    },
+    {
+      "id": 33,
+      "pattern": "Quel mode de paiement te paraît le plus sûr ?",
+      "zh": "哪种付款方式最安全？",
+      "exampleFr": "Quel mode de paiement te paraît le plus sûr ?",
+      "exampleZh": "你觉得哪种付款方式最安全？",
+      "scenario": "online"
+    },
+    {
+      "id": 34,
+      "pattern": "Comment éviter les arnaques ?",
+      "zh": "怎么避免诈骗？",
+      "exampleFr": "Comment éviter les arnaques selon toi ?",
+      "exampleZh": "你觉得怎么避免诈骗？",
+      "scenario": "online"
+    }
+  ]
+}
