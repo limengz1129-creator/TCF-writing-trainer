@@ -1,0 +1,45 @@
+name: Repair education Piper audio
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tache2/real-exams/source/education-piper.trigger'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  repair:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+      - name: Install Piper and ffmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          python -m pip install --upgrade pip
+          python -m pip install piper-tts
+      - name: Download Piper fr_FR-siwis-medium
+        run: |
+          mkdir -p .piper-model
+          curl -L --fail --retry 3 -o .piper-model/fr_FR-siwis-medium.onnx https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx
+          curl -L --fail --retry 3 -o .piper-model/fr_FR-siwis-medium.onnx.json https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx.json
+      - name: Generate missing education audio
+        run: python tools/piper/education-missing/generate.py
+      - name: Commit repaired audio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tache2/real-exams/piper-audio/themes/manifest.json tache2/real-exams/piper-audio/themes/education-patch-001.json
+          if git diff --cached --quiet; then
+            echo "No changes needed"
+          else
+            git commit -m "Repair missing education Piper audio"
+            git push origin main
+          fi
