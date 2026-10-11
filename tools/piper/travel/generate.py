@@ -19,6 +19,19 @@ def load_texts():
                 t=row["fr"].strip()
                 if t and t not in texts:
                     texts.append(t)
+
+    vocab_path=DATA_DIR/"vocab"/"travel.json"
+    if vocab_path.exists():
+        vocab=json.loads(vocab_path.read_text(encoding="utf-8"))
+        for item in vocab.get("vocabulary",[]):
+            for key in ("fr","exampleFr"):
+                t=str(item.get(key,"")).strip()
+                if t and t not in texts:
+                    texts.append(t)
+        for item in vocab.get("patterns",[]):
+            t=str(item.get("exampleFr","")).strip()
+            if t and t not in texts:
+                texts.append(t)
     return texts
 
 def synthesize(voice,text):
@@ -38,7 +51,7 @@ def main():
     ap.add_argument("--model",required=True)
     args=ap.parse_args()
     texts=load_texts()
-    print(f"{len(texts)} unique travel questions")
+    print(f"{len(texts)} unique travel questions / vocabulary targets")
     OUT.mkdir(parents=True,exist_ok=True)
     for old in OUT.glob("pack-*.json"):
         old.unlink()
