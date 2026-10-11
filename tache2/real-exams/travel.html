@@ -37,7 +37,7 @@ button,select{font:inherit}.wrap{max-width:1460px;margin:auto;padding:24px 18px 
     <button class="btn primary" data-mode="chain">▶ 整题连练</button>
   </div>
 
-  <div class="summary" id="summary"></div>
+  <div class="summary" id="summary"></div>\n  <div id="speechStatus" class="muted" role="status" aria-live="polite" style="min-height:1.4em;font-size:12px;margin:-4px 0 10px"></div>
 
   <section id="tableMode" class="mode-panel active">
     <div id="headArea"></div>
@@ -82,7 +82,7 @@ button,select{font:inherit}.wrap{max-width:1460px;margin:auto;padding:24px 18px 
   </section>
 </div>
 
-<script>window.T2_TRAVEL=[];</script>
+<script src="../browser-speech.js?v=stable-2"></script>\n<script>window.T2_TRAVEL=[];</script>
 <script src="travel-data-1.js?v=1"></script><script src="travel-data-2.js?v=1"></script><script src="travel-data-3.js?v=1"></script>
 <script src="travel-data-4.js?v=1"></script><script src="travel-data-5.js?v=1"></script><script src="travel-data-6.js?v=1"></script>
 <script src="travel-data-7.js?v=1"></script><script src="travel-data-8.js?v=1"></script><script src="travel-data-9.js?v=1"></script>
@@ -93,7 +93,12 @@ let state={index:0,mode:'table',single:0,chain:0,progress:{}};
 try{state={...state,...JSON.parse(localStorage.getItem(KEY)||'{}')}}catch(e){}
 const $=id=>document.getElementById(id),save=()=>localStorage.setItem(KEY,JSON.stringify(state)),cur=()=>D[state.index]||D[0];
 const rowKey=(q,r)=>q.month+'-'+q.number+'-'+r.n,prog=(q,r)=>state.progress[rowKey(q,r)]||(state.progress[rowKey(q,r)]={status:'new',favorite:false});
-function speak(text){if(!window.speechSynthesis)return;const s=window.speechSynthesis;s.cancel();const u=new SpeechSynthesisUtterance(text),vs=s.getVoices().filter(v=>/^fr[-_]/i.test(v.lang));u.voice=vs.find(v=>/^fr-CA$/i.test(v.lang))||vs.find(v=>/^fr-FR$/i.test(v.lang))||vs[0]||null;u.lang=u.voice?.lang||'fr-FR';u.rate=.92;s.speak(u)}
+function speak(text){
+ const status=$('speechStatus');
+ if(window.TCF_T2_SPEECH?.speak)return window.TCF_T2_SPEECH.speak(text,status,.92);
+ if(status)status.textContent='稳定法语语音层尚未加载，请刷新页面后重试。';
+ return false;
+}
 function timeClass(t){return /过去/.test(t)?'past':/将来|条件/.test(t)?'future':'present'}
 function renderSelects(){
  const months=[...new Set(D.map(x=>x.month))];$('monthSelect').innerHTML=months.map(m=>'<option>'+m+'</option>').join('');
