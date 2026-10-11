@@ -1,24 +1,45 @@
-name: Build remaining T2 real-exam themes
+name: Build one T2 real-exam theme
 on:
   push:
     branches: [main]
     paths:
-      - '.github/workflows/build-t2-real-exam-themes.yml'
-      - 'tools/piper/real-exam-themes/build.py'
-      - 'tache2/real-exams/source/themes-source*.b64'
+      - 'tache2/real-exams/source/*.json.gz.b64'
   workflow_dispatch:
+    inputs:
+      slug:
+        description: Theme slug
+        required: true
 permissions:
   contents: write
+concurrency:
+  group: t2-real-exam-theme-build
+  cancel-in-progress: false
 jobs:
   build:
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v6
+        with:
+          fetch-depth: 2
       - uses: actions/setup-python@v6
         with:
           python-version: '3.11'
+      - name: Select changed theme
+        id: pick
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            SLUG="${{ inputs.slug }}"
+          else
+            FILE=$(git diff --name-only HEAD^ HEAD | grep '^tache2/real-exams/source/.*\.json\.gz\.b64$' | head -1)
+            SLUG=$(basename "$FILE" .json.gz.b64)
+          fi
+          test -n "$SLUG"
+          test -f "tache2/real-exams/source/$SLUG.json.gz.b64"
+          echo "slug=$SLUG" >> "$GITHUB_OUTPUT"
+          echo "Building $SLUG"
       - name: Install translation, Piper and ffmpeg
         run: |
           sudo apt-get update
@@ -31,34 +52,36 @@ jobs:
           mkdir -p .piper-model
           curl -L --fail --retry 3 -o .piper-model/fr_FR-siwis-medium.onnx https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx
           curl -L --fail --retry 3 -o .piper-model/fr_FR-siwis-medium.onnx.json https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx.json
-      - name: Build Chinese translations and static Piper audio
-        run: python tools/piper/real-exam-themes/build.py --piper-model .piper-model/fr_FR-siwis-medium.onnx
-      - name: Validate generated theme mapping
+      - name: Build theme data and static Piper audio
+        run: python tools/piper/real-exam-themes/build.py --source "tache2/real-exams/source/${{ steps.pick.outputs.slug }}.json.gz.b64" --piper-model .piper-model/fr_FR-siwis-medium.onnx
+      - name: Validate generated theme
+        shell: bash
         run: |
-          python - <<'PY'
-          import json, pathlib
-          root=pathlib.Path("tache2/real-exams/data")
-          expected={"housing":33,"social":17,"education":17,"consumption":19,"transport":13,"family":5,"sport":9,"health":10,"culture":12,"work":9}
-          for slug,n in expected.items():
-              x=json.loads((root/f"{slug}.json").read_text())
-              assert x["count"]==n,(slug,x["count"])
-              assert len(x["entries"])==n
-              assert all(len(q["rows"])==15 for q in x["entries"])
-              assert all(r.get("zh") for q in x["entries"] for r in q["rows"])
-          m=json.loads(pathlib.Path("tache2/real-exams/piper-audio/themes/manifest.json").read_text())
-          allfr={r["fr"] for slug in expected for q in json.loads((root/f"{slug}.json").read_text())["entries"] for r in q["rows"]}
-          assert set(m["targets"])==allfr
-          print("Validated",sum(expected.values()),"questions",sum(n*15 for n in expected.values()),"rows",len(allfr),"unique Piper clips")
+          SLUG="${{ steps.pick.outputs.slug }}"
+          python - "$SLUG" <<'PY'
+          import json, pathlib, sys
+          slug=sys.argv[1]
+          root=pathlib.Path("tache2/real-exams")
+          x=json.loads((root/"data"/f"{slug}.json").read_text())
+          assert x["count"]==len(x["entries"])
+          assert all(len(q["rows"])==15 for q in x["entries"])
+          assert all(r.get("zh") for q in x["entries"] for r in q["rows"])
+          m=json.loads((root/"piper-audio"/"themes"/"manifest.json").read_text())
+          fr={r["fr"] for q in x["entries"] for r in q["rows"]}
+          assert fr.issubset(set(m["targets"]))
+          print("Validated",slug,x["count"],"questions",x["count"]*15,"rows",len(fr),"unique Piper texts")
           PY
-      - name: Commit generated study data and audio
+      - name: Commit this completed theme
+        shell: bash
         run: |
+          SLUG="${{ steps.pick.outputs.slug }}"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add tache2/real-exams/data/ tache2/real-exams/piper-audio/themes/
+          git add "tache2/real-exams/data/$SLUG.json" tache2/real-exams/data/themes.json tache2/real-exams/piper-audio/themes/
           if git diff --cached --quiet; then
             echo "No generated changes"
           else
-            git commit -m "Build remaining T2 real-exam themes with Piper audio"
+            git commit -m "Complete T2 real-exam theme: $SLUG"
             git fetch origin main
             git rebase origin/main
             git push
