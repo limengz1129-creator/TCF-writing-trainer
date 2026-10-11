@@ -1,0 +1,1155 @@
+{
+  "theme": "transport",
+  "title": "交通与车辆",
+  "target": "TCF Canada 口语 Tâche 2 · C1",
+  "version": 1,
+  "principle": "约100个高价值词/词块，以最终真题为基础；词块与真实套用问法绑定，优先训练中文→法语主动调用。",
+  "scenarios": [
+    {
+      "id": "car",
+      "name": "汽车租赁"
+    },
+    {
+      "id": "public",
+      "name": "公共交通"
+    },
+    {
+      "id": "bike",
+      "name": "自行车 / 骑行"
+    },
+    {
+      "id": "rideshare",
+      "name": "拼车"
+    },
+    {
+      "id": "airport",
+      "name": "机场接人"
+    },
+    {
+      "id": "parcel",
+      "name": "寄包裹"
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": 1,
+      "fr": "louer une voiture",
+      "zh": "租车",
+      "scenario": "car",
+      "priority": 5,
+      "exampleFr": "Vous souhaitez louer une voiture pour vos vacances.",
+      "exampleZh": "您想为假期租一辆车。"
+    },
+    {
+      "id": 2,
+      "fr": "une agence de location",
+      "zh": "租车公司",
+      "scenario": "car",
+      "priority": 5,
+      "exampleFr": "Je travaille dans une agence de location de voitures au Québec.",
+      "exampleZh": "我在魁北克一家租车公司工作。"
+    },
+    {
+      "id": 3,
+      "fr": "un modèle de voiture",
+      "zh": "车型",
+      "scenario": "car",
+      "priority": 5,
+      "exampleFr": "Quel type de voiture me conseilleriez-vous ?",
+      "exampleZh": "您建议我选什么车型？"
+    },
+    {
+      "id": 4,
+      "fr": "l’état du véhicule",
+      "zh": "车辆状况",
+      "scenario": "car",
+      "priority": 5,
+      "exampleFr": "Dans quel état sont les véhicules proposés ?",
+      "exampleZh": "提供的车辆状况怎么样？"
+    },
+    {
+      "id": 5,
+      "fr": "le tarif journalier",
+      "zh": "日租价",
+      "scenario": "car",
+      "priority": 5,
+      "exampleFr": "Quel est le tarif par jour ?",
+      "exampleZh": "每天多少钱？"
+    },
+    {
+      "id": 6,
+      "fr": "une réduction longue durée",
+      "zh": "长租优惠",
+      "scenario": "car",
+      "priority": 4,
+      "exampleFr": "Proposez-vous une réduction pour une location plus longue ?",
+      "exampleZh": "长期租赁有优惠吗？"
+    },
+    {
+      "id": 7,
+      "fr": "une assurance",
+      "zh": "保险",
+      "scenario": "car",
+      "priority": 5,
+      "exampleFr": "L’assurance est-elle comprise dans le prix ?",
+      "exampleZh": "保险包含在价格里吗？"
+    },
+    {
+      "id": 8,
+      "fr": "être couvert(e)",
+      "zh": "受保险保障",
+      "scenario": "car",
+      "priority": 4,
+      "exampleFr": "Qu’est-ce qui est couvert par l’assurance ?",
+      "exampleZh": "保险覆盖哪些情况？"
+    },
+    {
+      "id": 9,
+      "fr": "les documents demandés",
+      "zh": "所需证件",
+      "scenario": "car",
+      "priority": 5,
+      "exampleFr": "Quels documents faut-il présenter pour louer une voiture ?",
+      "exampleZh": "租车需要出示哪些文件？"
+    },
+    {
+      "id": 10,
+      "fr": "un permis de conduire",
+      "zh": "驾照",
+      "scenario": "car",
+      "priority": 5,
+      "exampleFr": "Quels documents faut-il présenter pour louer une voiture ?",
+      "exampleZh": "租车需要出示哪些文件？"
+    },
+    {
+      "id": 11,
+      "fr": "une condition de location",
+      "zh": "租赁条件",
+      "scenario": "car",
+      "priority": 5,
+      "exampleFr": "Quelles sont les conditions de location ?",
+      "exampleZh": "租赁条件有哪些？"
+    },
+    {
+      "id": 12,
+      "fr": "une limite de kilométrage",
+      "zh": "里程限制",
+      "scenario": "car",
+      "priority": 4,
+      "exampleFr": "Y a-t-il une limite de kilométrage ?",
+      "exampleZh": "有里程限制吗？"
+    },
+    {
+      "id": 13,
+      "fr": "une voiture électrique",
+      "zh": "电动车",
+      "scenario": "car",
+      "priority": 4,
+      "exampleFr": "Proposez-vous des voitures électriques ?",
+      "exampleZh": "你们提供电动车吗？"
+    },
+    {
+      "id": 14,
+      "fr": "une borne de recharge",
+      "zh": "充电桩",
+      "scenario": "car",
+      "priority": 4,
+      "exampleFr": "Où peut-on recharger la voiture électrique ?",
+      "exampleZh": "电动车在哪里充电？"
+    },
+    {
+      "id": 15,
+      "fr": "le paiement",
+      "zh": "付款",
+      "scenario": "car",
+      "priority": 5,
+      "exampleFr": "Quels moyens de paiement acceptez-vous ?",
+      "exampleZh": "接受哪些付款方式？"
+    },
+    {
+      "id": 16,
+      "fr": "la restitution du véhicule",
+      "zh": "还车",
+      "scenario": "car",
+      "priority": 5,
+      "exampleFr": "Comment se passe la restitution du véhicule ?",
+      "exampleZh": "还车流程怎样？"
+    },
+    {
+      "id": 17,
+      "fr": "les conditions d’annulation",
+      "zh": "取消条件",
+      "scenario": "car",
+      "priority": 4,
+      "exampleFr": "Quelles sont les conditions d’annulation ?",
+      "exampleZh": "取消条件是什么？"
+    },
+    {
+      "id": 18,
+      "fr": "les transports en commun",
+      "zh": "公共交通",
+      "scenario": "public",
+      "priority": 5,
+      "exampleFr": "Quels types de transports en commun sont disponibles ?",
+      "exampleZh": "有哪些公共交通？"
+    },
+    {
+      "id": 19,
+      "fr": "une ligne",
+      "zh": "线路",
+      "scenario": "public",
+      "priority": 5,
+      "exampleFr": "Quelles sont les principales lignes ?",
+      "exampleZh": "主要有哪些线路？"
+    },
+    {
+      "id": 20,
+      "fr": "un arrêt",
+      "zh": "站点",
+      "scenario": "public",
+      "priority": 4,
+      "exampleFr": "Où se trouve l’arrêt le plus proche ?",
+      "exampleZh": "最近的站点在哪里？"
+    },
+    {
+      "id": 21,
+      "fr": "une fréquence",
+      "zh": "班次频率",
+      "scenario": "public",
+      "priority": 5,
+      "exampleFr": "À quelle fréquence passent les bus ?",
+      "exampleZh": "公交多久一班？"
+    },
+    {
+      "id": 22,
+      "fr": "le premier départ",
+      "zh": "首班车",
+      "scenario": "public",
+      "priority": 4,
+      "exampleFr": "À quelle heure passe le premier bus ?",
+      "exampleZh": "首班车几点？"
+    },
+    {
+      "id": 23,
+      "fr": "le dernier départ",
+      "zh": "末班车",
+      "scenario": "public",
+      "priority": 4,
+      "exampleFr": "À quelle heure passe le dernier bus ?",
+      "exampleZh": "末班车几点？"
+    },
+    {
+      "id": 24,
+      "fr": "un billet",
+      "zh": "车票",
+      "scenario": "public",
+      "priority": 5,
+      "exampleFr": "Où est-ce que je peux acheter les billets ?",
+      "exampleZh": "在哪里可以买票？"
+    },
+    {
+      "id": 25,
+      "fr": "un ticket à l’unité",
+      "zh": "单程票",
+      "scenario": "public",
+      "priority": 4,
+      "exampleFr": "Combien coûte un billet simple ?",
+      "exampleZh": "单程票多少钱？"
+    },
+    {
+      "id": 26,
+      "fr": "un abonnement",
+      "zh": "交通月票 / 通票",
+      "scenario": "public",
+      "priority": 5,
+      "exampleFr": "Quel abonnement serait le plus avantageux ?",
+      "exampleZh": "哪种通票最划算？"
+    },
+    {
+      "id": 27,
+      "fr": "un pass journalier",
+      "zh": "日票",
+      "scenario": "public",
+      "priority": 4,
+      "exampleFr": "Proposez-vous un pass à la journée ?",
+      "exampleZh": "有日票吗？"
+    },
+    {
+      "id": 28,
+      "fr": "un pass hebdomadaire",
+      "zh": "周票",
+      "scenario": "public",
+      "priority": 4,
+      "exampleFr": "Existe-t-il un pass pour une semaine ?",
+      "exampleZh": "有周票吗？"
+    },
+    {
+      "id": 29,
+      "fr": "un tarif étudiant",
+      "zh": "学生优惠价",
+      "scenario": "public",
+      "priority": 5,
+      "exampleFr": "Un tarif étudiant est-il proposé ?",
+      "exampleZh": "有学生优惠价吗？"
+    },
+    {
+      "id": 30,
+      "fr": "une carte de transport",
+      "zh": "交通卡",
+      "scenario": "public",
+      "priority": 5,
+      "exampleFr": "Faut-il une carte de transport ?",
+      "exampleZh": "需要交通卡吗？"
+    },
+    {
+      "id": 31,
+      "fr": "acheter un billet",
+      "zh": "购票",
+      "scenario": "public",
+      "priority": 5,
+      "exampleFr": "Où est-ce que je peux acheter les billets ?",
+      "exampleZh": "在哪里可以买票？"
+    },
+    {
+      "id": 32,
+      "fr": "faire une correspondance",
+      "zh": "换乘",
+      "scenario": "public",
+      "priority": 5,
+      "exampleFr": "Le même billet permet-il de faire une correspondance ?",
+      "exampleZh": "同一张票可以换乘吗？"
+    },
+    {
+      "id": 33,
+      "fr": "une application officielle",
+      "zh": "官方 App",
+      "scenario": "public",
+      "priority": 4,
+      "exampleFr": "Existe-t-il une application officielle pour consulter les horaires ?",
+      "exampleZh": "有官方 App 查看时刻吗？"
+    },
+    {
+      "id": 34,
+      "fr": "consulter les horaires",
+      "zh": "查看时刻表",
+      "scenario": "public",
+      "priority": 5,
+      "exampleFr": "Existe-t-il une application officielle pour consulter les horaires ?",
+      "exampleZh": "有官方应用可以查看时刻吗？"
+    },
+    {
+      "id": 35,
+      "fr": "un retard",
+      "zh": "延误",
+      "scenario": "public",
+      "priority": 5,
+      "exampleFr": "Comment ça se passe en cas de retard ou d’interruption du service ?",
+      "exampleZh": "延误或服务中断时怎么办？"
+    },
+    {
+      "id": 36,
+      "fr": "une interruption de service",
+      "zh": "服务中断",
+      "scenario": "public",
+      "priority": 4,
+      "exampleFr": "Comment ça se passe en cas de retard ou d’interruption du service ?",
+      "exampleZh": "延误或服务中断时怎么办？"
+    },
+    {
+      "id": 37,
+      "fr": "être en sécurité le soir",
+      "zh": "晚上出行安全",
+      "scenario": "public",
+      "priority": 4,
+      "exampleFr": "Est-ce qu’on peut les prendre sans problème le soir ?",
+      "exampleZh": "晚上乘公共交通安全吗？"
+    },
+    {
+      "id": 38,
+      "fr": "un nouvel arrivant",
+      "zh": "新居民",
+      "scenario": "public",
+      "priority": 4,
+      "exampleFr": "Vous venez d’arriver dans ma ville.",
+      "exampleZh": "您刚到我的城市。"
+    },
+    {
+      "id": 39,
+      "fr": "circuler en ville",
+      "zh": "在城里出行",
+      "scenario": "public",
+      "priority": 5,
+      "exampleFr": "Vous souhaitez circuler en ville.",
+      "exampleZh": "您想在城里出行。"
+    },
+    {
+      "id": 40,
+      "fr": "un vélo",
+      "zh": "自行车",
+      "scenario": "bike",
+      "priority": 5,
+      "exampleFr": "Vous voulez en louer un.",
+      "exampleZh": "您想租一辆自行车。"
+    },
+    {
+      "id": 41,
+      "fr": "louer un vélo",
+      "zh": "租自行车",
+      "scenario": "bike",
+      "priority": 5,
+      "exampleFr": "Je suis employé dans une agence de location de vélos.",
+      "exampleZh": "我在自行车租赁公司工作。"
+    },
+    {
+      "id": 42,
+      "fr": "un modèle de vélo",
+      "zh": "自行车型号",
+      "scenario": "bike",
+      "priority": 5,
+      "exampleFr": "C’est quel modèle exactement ?",
+      "exampleZh": "具体是什么型号？"
+    },
+    {
+      "id": 43,
+      "fr": "la taille du cadre",
+      "zh": "车架尺寸",
+      "scenario": "bike",
+      "priority": 5,
+      "exampleFr": "Le cadre fait quelle taille ?",
+      "exampleZh": "车架多大？"
+    },
+    {
+      "id": 44,
+      "fr": "l’état du vélo",
+      "zh": "自行车状况",
+      "scenario": "bike",
+      "priority": 5,
+      "exampleFr": "Dans quel état est-il actuellement ?",
+      "exampleZh": "这辆车现在状况怎样？"
+    },
+    {
+      "id": 45,
+      "fr": "une réparation",
+      "zh": "维修",
+      "scenario": "bike",
+      "priority": 4,
+      "exampleFr": "Tu as déjà dû faire des réparations importantes dessus ?",
+      "exampleZh": "之前做过大的维修吗？"
+    },
+    {
+      "id": 46,
+      "fr": "un accessoire",
+      "zh": "配件",
+      "scenario": "bike",
+      "priority": 4,
+      "exampleFr": "Qu’est-ce qui est inclus comme accessoires avec le vélo ?",
+      "exampleZh": "自行车包含哪些配件？"
+    },
+    {
+      "id": 47,
+      "fr": "un casque",
+      "zh": "头盔",
+      "scenario": "bike",
+      "priority": 5,
+      "exampleFr": "Le casque est-il fourni ?",
+      "exampleZh": "提供头盔吗？"
+    },
+    {
+      "id": 48,
+      "fr": "un vélo électrique",
+      "zh": "电动自行车",
+      "scenario": "bike",
+      "priority": 5,
+      "exampleFr": "Proposez-vous des vélos électriques ?",
+      "exampleZh": "提供电动自行车吗？"
+    },
+    {
+      "id": 49,
+      "fr": "l’autonomie",
+      "zh": "续航",
+      "scenario": "bike",
+      "priority": 5,
+      "exampleFr": "Quelle est l’autonomie du vélo électrique ?",
+      "exampleZh": "电动车续航多少？"
+    },
+    {
+      "id": 50,
+      "fr": "recharger",
+      "zh": "充电",
+      "scenario": "bike",
+      "priority": 4,
+      "exampleFr": "Où peut-on le recharger ?",
+      "exampleZh": "在哪里可以充电？"
+    },
+    {
+      "id": 51,
+      "fr": "faire un essai",
+      "zh": "试骑 / 试用",
+      "scenario": "bike",
+      "priority": 5,
+      "exampleFr": "Je peux l’essayer avant de me décider ?",
+      "exampleZh": "决定前可以试骑吗？"
+    },
+    {
+      "id": 52,
+      "fr": "une piste cyclable",
+      "zh": "自行车道",
+      "scenario": "bike",
+      "priority": 5,
+      "exampleFr": "Y a-t-il beaucoup de pistes cyclables ?",
+      "exampleZh": "有很多自行车道吗？"
+    },
+    {
+      "id": 53,
+      "fr": "circuler à vélo",
+      "zh": "骑车出行",
+      "scenario": "bike",
+      "priority": 5,
+      "exampleFr": "Vous souhaitez circuler à vélo.",
+      "exampleZh": "您想骑自行车出行。"
+    },
+    {
+      "id": 54,
+      "fr": "garer son vélo",
+      "zh": "停自行车",
+      "scenario": "bike",
+      "priority": 4,
+      "exampleFr": "Où peut-on garer son vélo en sécurité ?",
+      "exampleZh": "哪里可以安全停车？"
+    },
+    {
+      "id": 55,
+      "fr": "un antivol",
+      "zh": "自行车锁",
+      "scenario": "bike",
+      "priority": 4,
+      "exampleFr": "Quel type d’antivol me conseillerais-tu ?",
+      "exampleZh": "你建议我用什么锁？"
+    },
+    {
+      "id": 56,
+      "fr": "les règles de circulation",
+      "zh": "交通规则",
+      "scenario": "bike",
+      "priority": 5,
+      "exampleFr": "Quelles règles faut-il respecter à vélo ?",
+      "exampleZh": "骑车要遵守哪些规则？"
+    },
+    {
+      "id": 57,
+      "fr": "partager un trajet",
+      "zh": "拼车 / 共享行程",
+      "scenario": "rideshare",
+      "priority": 5,
+      "exampleFr": "Je propose de partager des allers-retours avec ma voiture.",
+      "exampleZh": "我提议共享往返行程。"
+    },
+    {
+      "id": 58,
+      "fr": "un aller-retour",
+      "zh": "往返",
+      "scenario": "rideshare",
+      "priority": 5,
+      "exampleFr": "Je propose de partager des allers-retours avec ma voiture.",
+      "exampleZh": "我提供往返拼车。"
+    },
+    {
+      "id": 59,
+      "fr": "un trajet",
+      "zh": "行程 / 路线",
+      "scenario": "rideshare",
+      "priority": 5,
+      "exampleFr": "Quel trajet fais-tu exactement ?",
+      "exampleZh": "你具体走哪条路线？"
+    },
+    {
+      "id": 60,
+      "fr": "un point de rendez-vous",
+      "zh": "集合地点",
+      "scenario": "rideshare",
+      "priority": 5,
+      "exampleFr": "Où est le point de rendez-vous ?",
+      "exampleZh": "集合地点在哪里？"
+    },
+    {
+      "id": 61,
+      "fr": "une heure de départ",
+      "zh": "出发时间",
+      "scenario": "rideshare",
+      "priority": 5,
+      "exampleFr": "À quelle heure pars-tu ?",
+      "exampleZh": "你几点出发？"
+    },
+    {
+      "id": 62,
+      "fr": "une heure de retour",
+      "zh": "返程时间",
+      "scenario": "rideshare",
+      "priority": 4,
+      "exampleFr": "À quelle heure reviens-tu ?",
+      "exampleZh": "你几点回来？"
+    },
+    {
+      "id": 63,
+      "fr": "partager les frais",
+      "zh": "分摊费用",
+      "scenario": "rideshare",
+      "priority": 5,
+      "exampleFr": "Comment partage-t-on les frais ?",
+      "exampleZh": "费用怎么分摊？"
+    },
+    {
+      "id": 64,
+      "fr": "être flexible",
+      "zh": "时间灵活",
+      "scenario": "rideshare",
+      "priority": 4,
+      "exampleFr": "Les horaires sont-ils flexibles ?",
+      "exampleZh": "时间灵活吗？"
+    },
+    {
+      "id": 65,
+      "fr": "annuler un trajet",
+      "zh": "取消行程",
+      "scenario": "rideshare",
+      "priority": 4,
+      "exampleFr": "Que se passe-t-il si je dois annuler le trajet ?",
+      "exampleZh": "如果我需要取消行程怎么办？"
+    },
+    {
+      "id": 66,
+      "fr": "rester en contact",
+      "zh": "保持联系",
+      "scenario": "rideshare",
+      "priority": 4,
+      "exampleFr": "Comment restons-nous en contact en cas de changement ?",
+      "exampleZh": "有变化时我们怎么保持联系？"
+    },
+    {
+      "id": 67,
+      "fr": "un bagage",
+      "zh": "行李",
+      "scenario": "airport",
+      "priority": 5,
+      "exampleFr": "Combien de bagages auront-ils ?",
+      "exampleZh": "他们会有多少件行李？"
+    },
+    {
+      "id": 68,
+      "fr": "aller chercher quelqu’un",
+      "zh": "去接某人",
+      "scenario": "airport",
+      "priority": 5,
+      "exampleFr": "Je ne pourrai pas aller chercher mes parents à l’aéroport.",
+      "exampleZh": "我没法去机场接父母。"
+    },
+    {
+      "id": 69,
+      "fr": "un vol",
+      "zh": "航班",
+      "scenario": "airport",
+      "priority": 5,
+      "exampleFr": "Quel est leur numéro de vol ?",
+      "exampleZh": "他们的航班号是多少？"
+    },
+    {
+      "id": 70,
+      "fr": "un numéro de vol",
+      "zh": "航班号",
+      "scenario": "airport",
+      "priority": 5,
+      "exampleFr": "Quel est leur numéro de vol ?",
+      "exampleZh": "他们的航班号是多少？"
+    },
+    {
+      "id": 71,
+      "fr": "un aéroport",
+      "zh": "机场",
+      "scenario": "airport",
+      "priority": 5,
+      "exampleFr": "À quel aéroport arrivent-ils ?",
+      "exampleZh": "他们到哪个机场？"
+    },
+    {
+      "id": 72,
+      "fr": "un terminal",
+      "zh": "航站楼",
+      "scenario": "airport",
+      "priority": 4,
+      "exampleFr": "À quel terminal arrivent-ils ?",
+      "exampleZh": "他们到哪个航站楼？"
+    },
+    {
+      "id": 73,
+      "fr": "une heure d’arrivée",
+      "zh": "到达时间",
+      "scenario": "airport",
+      "priority": 5,
+      "exampleFr": "À quelle heure leur vol arrive-t-il ?",
+      "exampleZh": "航班几点到？"
+    },
+    {
+      "id": 74,
+      "fr": "une description physique",
+      "zh": "外貌描述",
+      "scenario": "airport",
+      "priority": 5,
+      "exampleFr": "Comment puis-je les reconnaître ?",
+      "exampleZh": "我怎么认出他们？"
+    },
+    {
+      "id": 75,
+      "fr": "reconnaître quelqu’un",
+      "zh": "认出某人",
+      "scenario": "airport",
+      "priority": 5,
+      "exampleFr": "Comment puis-je les reconnaître ?",
+      "exampleZh": "我怎么认出他们？"
+    },
+    {
+      "id": 76,
+      "fr": "un numéro de téléphone",
+      "zh": "电话号码",
+      "scenario": "airport",
+      "priority": 4,
+      "exampleFr": "Quel numéro puis-je appeler ?",
+      "exampleZh": "我可以打哪个号码？"
+    },
+    {
+      "id": 77,
+      "fr": "un lieu de rendez-vous",
+      "zh": "碰面地点",
+      "scenario": "airport",
+      "priority": 4,
+      "exampleFr": "Où dois-je les retrouver dans l’aéroport ?",
+      "exampleZh": "我在机场哪里和他们碰面？"
+    },
+    {
+      "id": 78,
+      "fr": "un retard de vol",
+      "zh": "航班延误",
+      "scenario": "airport",
+      "priority": 5,
+      "exampleFr": "Que dois-je faire si le vol est retardé ?",
+      "exampleZh": "如果航班延误我该怎么办？"
+    },
+    {
+      "id": 79,
+      "fr": "un parking d’aéroport",
+      "zh": "机场停车场",
+      "scenario": "airport",
+      "priority": 4,
+      "exampleFr": "Où puis-je me garer à l’aéroport ?",
+      "exampleZh": "机场哪里可以停车？"
+    },
+    {
+      "id": 80,
+      "fr": "un paquet",
+      "zh": "包裹",
+      "scenario": "parcel",
+      "priority": 5,
+      "exampleFr": "Je dois poster un paquet.",
+      "exampleZh": "我需要寄一个包裹。"
+    },
+    {
+      "id": 81,
+      "fr": "poster un paquet",
+      "zh": "寄包裹",
+      "scenario": "parcel",
+      "priority": 5,
+      "exampleFr": "Je dois poster un paquet mais je ne peux pas y aller.",
+      "exampleZh": "我需要寄包裹但没法去。"
+    },
+    {
+      "id": 82,
+      "fr": "un délai",
+      "zh": "截止时间 / 时限",
+      "scenario": "parcel",
+      "priority": 5,
+      "exampleFr": "Quel est le délai pour l’envoyer ?",
+      "exampleZh": "最晚什么时候寄？"
+    },
+    {
+      "id": 83,
+      "fr": "un bureau de poste",
+      "zh": "邮局",
+      "scenario": "parcel",
+      "priority": 5,
+      "exampleFr": "Où dois-je déposer le paquet ?",
+      "exampleZh": "我应该去哪里寄包裹？"
+    },
+    {
+      "id": 84,
+      "fr": "la taille du colis",
+      "zh": "包裹尺寸",
+      "scenario": "parcel",
+      "priority": 5,
+      "exampleFr": "Le paquet est-il volumineux ?",
+      "exampleZh": "包裹很大吗？"
+    },
+    {
+      "id": 85,
+      "fr": "le poids",
+      "zh": "重量",
+      "scenario": "parcel",
+      "priority": 5,
+      "exampleFr": "Combien pèse le paquet ?",
+      "exampleZh": "包裹多重？"
+    },
+    {
+      "id": 86,
+      "fr": "le contenu",
+      "zh": "内容物",
+      "scenario": "parcel",
+      "priority": 4,
+      "exampleFr": "Qu’est-ce qu’il y a dans le paquet ?",
+      "exampleZh": "包裹里有什么？"
+    },
+    {
+      "id": 87,
+      "fr": "être fragile",
+      "zh": "易碎",
+      "scenario": "parcel",
+      "priority": 5,
+      "exampleFr": "Est-ce qu’il contient quelque chose de fragile ?",
+      "exampleZh": "里面有易碎物品吗？"
+    },
+    {
+      "id": 88,
+      "fr": "l’emballage",
+      "zh": "包装",
+      "scenario": "parcel",
+      "priority": 5,
+      "exampleFr": "Le paquet est-il déjà bien emballé ?",
+      "exampleZh": "包裹已经包装好了吗？"
+    },
+    {
+      "id": 89,
+      "fr": "être lourd à porter",
+      "zh": "搬运起来很重",
+      "scenario": "parcel",
+      "priority": 4,
+      "exampleFr": "Est-ce qu’il est lourd à porter ?",
+      "exampleZh": "它搬起来重吗？"
+    },
+    {
+      "id": 90,
+      "fr": "les frais de port",
+      "zh": "邮费",
+      "scenario": "parcel",
+      "priority": 5,
+      "exampleFr": "Combien coûtent les frais de port ?",
+      "exampleZh": "邮费多少？"
+    },
+    {
+      "id": 91,
+      "fr": "suivre un colis",
+      "zh": "跟踪包裹",
+      "scenario": "parcel",
+      "priority": 5,
+      "exampleFr": "Est-ce qu’on peut suivre le colis ?",
+      "exampleZh": "可以追踪包裹吗？"
+    },
+    {
+      "id": 92,
+      "fr": "une signature à la réception",
+      "zh": "签收",
+      "scenario": "parcel",
+      "priority": 4,
+      "exampleFr": "Faut-il une signature à la réception ?",
+      "exampleZh": "需要签收吗？"
+    },
+    {
+      "id": 93,
+      "fr": "les coordonnées du destinataire",
+      "zh": "收件人信息",
+      "scenario": "parcel",
+      "priority": 5,
+      "exampleFr": "As-tu bien les coordonnées du destinataire ?",
+      "exampleZh": "你有完整的收件人信息吗？"
+    },
+    {
+      "id": 94,
+      "fr": "un destinataire",
+      "zh": "收件人",
+      "scenario": "parcel",
+      "priority": 4,
+      "exampleFr": "As-tu bien les coordonnées du destinataire ?",
+      "exampleZh": "你有完整的收件人信息吗？"
+    }
+  ],
+  "patterns": [
+    {
+      "id": 1,
+      "pattern": "Quel type de véhicule me conseilleriez-vous ?",
+      "zh": "您建议什么车型？",
+      "exampleFr": "Quel type de voiture me conseilleriez-vous ?",
+      "exampleZh": "您建议我选什么车型？",
+      "scenario": "car"
+    },
+    {
+      "id": 2,
+      "pattern": "Quel est le tarif par jour ?",
+      "zh": "每天多少钱？",
+      "exampleFr": "Quel est le tarif par jour ?",
+      "exampleZh": "每天多少钱？",
+      "scenario": "car"
+    },
+    {
+      "id": 3,
+      "pattern": "L’assurance est-elle comprise dans le prix ?",
+      "zh": "保险包含吗？",
+      "exampleFr": "L’assurance est-elle comprise dans le prix ?",
+      "exampleZh": "保险包含在价格里吗？",
+      "scenario": "car"
+    },
+    {
+      "id": 4,
+      "pattern": "Quels documents faut-il présenter ?",
+      "zh": "需要出示哪些文件？",
+      "exampleFr": "Quels documents faut-il présenter pour louer une voiture ?",
+      "exampleZh": "租车需要出示哪些文件？",
+      "scenario": "car"
+    },
+    {
+      "id": 5,
+      "pattern": "Y a-t-il une limite de kilométrage ?",
+      "zh": "有里程限制吗？",
+      "exampleFr": "Y a-t-il une limite de kilométrage ?",
+      "exampleZh": "有里程限制吗？",
+      "scenario": "car"
+    },
+    {
+      "id": 6,
+      "pattern": "Comment se passe la restitution ?",
+      "zh": "归还流程怎样？",
+      "exampleFr": "Comment se passe la restitution du véhicule ?",
+      "exampleZh": "还车流程怎样？",
+      "scenario": "car"
+    },
+    {
+      "id": 7,
+      "pattern": "Quels types de transports sont disponibles ?",
+      "zh": "有哪些交通方式？",
+      "exampleFr": "Quels types de transports en commun sont disponibles ?",
+      "exampleZh": "有哪些公共交通？",
+      "scenario": "public"
+    },
+    {
+      "id": 8,
+      "pattern": "À quelle fréquence passe + transport ?",
+      "zh": "多久一班？",
+      "exampleFr": "À quelle fréquence passent les bus ?",
+      "exampleZh": "公交多久一班？",
+      "scenario": "public"
+    },
+    {
+      "id": 9,
+      "pattern": "À quelle heure passe le premier / dernier + transport ?",
+      "zh": "首/末班几点？",
+      "exampleFr": "À quelle heure passe le dernier bus ?",
+      "exampleZh": "末班车几点？",
+      "scenario": "public"
+    },
+    {
+      "id": 10,
+      "pattern": "Combien coûte un billet simple ?",
+      "zh": "单程票多少钱？",
+      "exampleFr": "Combien coûte un billet simple ?",
+      "exampleZh": "单程票多少钱？",
+      "scenario": "public"
+    },
+    {
+      "id": 11,
+      "pattern": "Un tarif étudiant est-il proposé ?",
+      "zh": "有学生优惠吗？",
+      "exampleFr": "Un tarif étudiant est-il proposé ?",
+      "exampleZh": "有学生优惠价吗？",
+      "scenario": "public"
+    },
+    {
+      "id": 12,
+      "pattern": "Où puis-je acheter les billets ?",
+      "zh": "在哪里购票？",
+      "exampleFr": "Où est-ce que je peux acheter les billets ?",
+      "exampleZh": "在哪里可以买票？",
+      "scenario": "public"
+    },
+    {
+      "id": 13,
+      "pattern": "Le même billet permet-il une correspondance ?",
+      "zh": "同一张票能换乘吗？",
+      "exampleFr": "Le même billet permet-il de faire une correspondance ?",
+      "exampleZh": "同一张票可以换乘吗？",
+      "scenario": "public"
+    },
+    {
+      "id": 14,
+      "pattern": "Existe-t-il une application pour consulter les horaires ?",
+      "zh": "有 App 看时刻吗？",
+      "exampleFr": "Existe-t-il une application officielle pour consulter les horaires ?",
+      "exampleZh": "有官方 App 查看时刻吗？",
+      "scenario": "public"
+    },
+    {
+      "id": 15,
+      "pattern": "Que se passe-t-il en cas de retard ?",
+      "zh": "延误时怎么办？",
+      "exampleFr": "Comment ça se passe en cas de retard ou d’interruption du service ?",
+      "exampleZh": "延误或服务中断时怎么办？",
+      "scenario": "public"
+    },
+    {
+      "id": 16,
+      "pattern": "Quel abonnement serait le plus avantageux ?",
+      "zh": "哪种通票最划算？",
+      "exampleFr": "Si je les utilise tous les jours, quel abonnement serait le plus avantageux ?",
+      "exampleZh": "如果每天用，哪种通票最划算？",
+      "scenario": "public"
+    },
+    {
+      "id": 17,
+      "pattern": "C’est quel modèle exactement ?",
+      "zh": "具体是什么型号？",
+      "exampleFr": "C’est quel modèle exactement ?",
+      "exampleZh": "具体是什么型号？",
+      "scenario": "bike"
+    },
+    {
+      "id": 18,
+      "pattern": "Le cadre fait quelle taille ?",
+      "zh": "车架多大？",
+      "exampleFr": "Le cadre fait quelle taille ?",
+      "exampleZh": "车架多大？",
+      "scenario": "bike"
+    },
+    {
+      "id": 19,
+      "pattern": "Dans quel état est-il actuellement ?",
+      "zh": "现在状况怎样？",
+      "exampleFr": "Dans quel état est-il actuellement ?",
+      "exampleZh": "现在状况怎样？",
+      "scenario": "bike"
+    },
+    {
+      "id": 20,
+      "pattern": "Qu’est-ce qui est inclus comme accessoires ?",
+      "zh": "包含哪些配件？",
+      "exampleFr": "Qu’est-ce qui est inclus comme accessoires avec le vélo ?",
+      "exampleZh": "自行车包含哪些配件？",
+      "scenario": "bike"
+    },
+    {
+      "id": 21,
+      "pattern": "Je peux l’essayer avant de me décider ?",
+      "zh": "决定前可以试吗？",
+      "exampleFr": "Je peux l’essayer avant de me décider ?",
+      "exampleZh": "决定前可以试骑吗？",
+      "scenario": "bike"
+    },
+    {
+      "id": 22,
+      "pattern": "Quel trajet fais-tu exactement ?",
+      "zh": "你具体走哪条路线？",
+      "exampleFr": "Quel trajet fais-tu exactement ?",
+      "exampleZh": "你具体走哪条路线？",
+      "scenario": "rideshare"
+    },
+    {
+      "id": 23,
+      "pattern": "Comment partage-t-on les frais ?",
+      "zh": "费用怎么分摊？",
+      "exampleFr": "Comment partage-t-on les frais ?",
+      "exampleZh": "费用怎么分摊？",
+      "scenario": "rideshare"
+    },
+    {
+      "id": 24,
+      "pattern": "Que se passe-t-il si je dois annuler ?",
+      "zh": "如果取消怎么办？",
+      "exampleFr": "Que se passe-t-il si je dois annuler le trajet ?",
+      "exampleZh": "如果我需要取消行程怎么办？",
+      "scenario": "rideshare"
+    },
+    {
+      "id": 25,
+      "pattern": "Quel est leur numéro de vol ?",
+      "zh": "航班号是多少？",
+      "exampleFr": "Quel est leur numéro de vol ?",
+      "exampleZh": "他们的航班号是多少？",
+      "scenario": "airport"
+    },
+    {
+      "id": 26,
+      "pattern": "À quel terminal arrivent-ils ?",
+      "zh": "到哪个航站楼？",
+      "exampleFr": "À quel terminal arrivent-ils ?",
+      "exampleZh": "他们到哪个航站楼？",
+      "scenario": "airport"
+    },
+    {
+      "id": 27,
+      "pattern": "Comment puis-je les reconnaître ?",
+      "zh": "我怎么认出他们？",
+      "exampleFr": "Comment puis-je les reconnaître ?",
+      "exampleZh": "我怎么认出他们？",
+      "scenario": "airport"
+    },
+    {
+      "id": 28,
+      "pattern": "Que dois-je faire si le vol est retardé ?",
+      "zh": "航班延误怎么办？",
+      "exampleFr": "Que dois-je faire si le vol est retardé ?",
+      "exampleZh": "如果航班延误我该怎么办？",
+      "scenario": "airport"
+    },
+    {
+      "id": 29,
+      "pattern": "Quel est le délai pour l’envoyer ?",
+      "zh": "最晚什么时候寄？",
+      "exampleFr": "Quel est le délai pour l’envoyer ?",
+      "exampleZh": "最晚什么时候寄？",
+      "scenario": "parcel"
+    },
+    {
+      "id": 30,
+      "pattern": "Combien pèse le paquet ?",
+      "zh": "包裹多重？",
+      "exampleFr": "Combien pèse le paquet ?",
+      "exampleZh": "包裹多重？",
+      "scenario": "parcel"
+    },
+    {
+      "id": 31,
+      "pattern": "Qu’est-ce qu’il y a dans le paquet ?",
+      "zh": "包裹里有什么？",
+      "exampleFr": "Qu’est-ce qu’il y a dans le paquet ?",
+      "exampleZh": "包裹里有什么？",
+      "scenario": "parcel"
+    },
+    {
+      "id": 32,
+      "pattern": "Est-ce qu’il contient quelque chose de fragile ?",
+      "zh": "有易碎品吗？",
+      "exampleFr": "Est-ce qu’il contient quelque chose de fragile ?",
+      "exampleZh": "里面有易碎物品吗？",
+      "scenario": "parcel"
+    },
+    {
+      "id": 33,
+      "pattern": "Combien coûtent les frais de port ?",
+      "zh": "邮费多少？",
+      "exampleFr": "Combien coûtent les frais de port ?",
+      "exampleZh": "邮费多少？",
+      "scenario": "parcel"
+    },
+    {
+      "id": 34,
+      "pattern": "Est-ce qu’on peut suivre le colis ?",
+      "zh": "可以跟踪包裹吗？",
+      "exampleFr": "Est-ce qu’on peut suivre le colis ?",
+      "exampleZh": "可以追踪包裹吗？",
+      "scenario": "parcel"
+    }
+  ]
+}
