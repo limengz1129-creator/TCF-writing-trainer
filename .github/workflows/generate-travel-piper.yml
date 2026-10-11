@@ -41,5 +41,7 @@ jobs:
             echo "No audio changes"
           else
             git commit -m "Generate Piper siwis audio for travel T2 study"
+            git fetch origin main
+            git rebase origin/main
             git push
           fi
