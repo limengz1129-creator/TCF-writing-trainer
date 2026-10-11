@@ -59,7 +59,13 @@ def nllb_translate(texts):
 
 def load_source(slug):
     p=SOURCE/f"{slug}.json.gz.b64"
-    raw=gzip.decompress(base64.b64decode(p.read_text(encoding="utf-8").strip()))
+    if p.exists():
+        encoded=p.read_text(encoding="utf-8").strip()
+    else:
+        parts=sorted(SOURCE.glob(f"{slug}.part*.b64"))
+        assert parts, f"Missing source checkpoint for {slug}"
+        encoded="".join(x.read_text(encoding="utf-8").strip() for x in parts)
+    raw=gzip.decompress(base64.b64decode(encoded))
     obj=json.loads(raw.decode("utf-8"))
     assert obj["slug"]==slug and obj["count"]==EXPECTED[slug]==len(obj["entries"])
     assert all(len(q["rows"])==15 for q in obj["entries"])
@@ -139,7 +145,7 @@ def build_one(slug,model_path,known,do_git):
 def main():
     ap=argparse.ArgumentParser();ap.add_argument("--piper-model",required=True);ap.add_argument("--all",action="store_true");ap.add_argument("--slug");ap.add_argument("--git-checkpoints",action="store_true");args=ap.parse_args()
     slugs=ORDER if args.all else [args.slug]
-    assert all(slugs) and all((SOURCE/f"{s}.json.gz.b64").exists() for s in slugs), "Missing per-theme source checkpoint"
+    assert all(slugs) and all((SOURCE/f"{s}.json.gz.b64").exists() or list(SOURCE.glob(f"{s}.part*.b64")) for s in slugs), "Missing per-theme source checkpoint"
     known=trusted_translations()
     if args.git_checkpoints:
         git("config","user.name","github-actions[bot]");git("config","user.email","41898282+github-actions[bot]@users.noreply.github.com")
