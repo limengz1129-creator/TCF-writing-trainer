@@ -3,15 +3,13 @@
   "rows": 2469,
   "lemmas": 613,
   "uniqueTargets": 2461,
-  "coveredBefore": 1965,
-  "missingBefore": 496,
-  "generated": 496,
+  "coveredBefore": 2461,
+  "missingBefore": 0,
+  "brokenBefore": 0,
+  "brokenReasonsBefore": {},
+  "generated": 0,
   "missingAfter": 0,
-  "repairPacks": [
-    "conj-repair-00.json",
-    "conj-repair-01.json",
-    "conj-repair-02.json"
-  ],
-  "missingLemmasBefore": 255,
+  "repairPacks": [],
+  "missingLemmasBefore": 0,
   "status": "ok"
 }
