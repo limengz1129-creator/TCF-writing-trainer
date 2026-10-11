@@ -37,7 +37,7 @@ button,select{font:inherit}.wrap{max-width:1460px;margin:auto;padding:24px 18px 
     <button class="btn primary" data-mode="chain">▶ 整题连练</button>
   </div>
 
-  <div class="summary" id="summary"></div>\n  <div id="speechStatus" class="muted" role="status" aria-live="polite" style="min-height:1.4em;font-size:12px;margin:-4px 0 10px"></div>
+  <div class="summary" id="summary"></div>\n  <div id="speechStatus" class="muted" role="status" aria-live="polite" style="min-height:1.4em;font-size:12px;margin:-4px 0 10px">🔊 Piper · fr_FR-siwis-medium（静态预生成音频，不使用浏览器 TTS）</div>
 
   <section id="tableMode" class="mode-panel active">
     <div id="headArea"></div>
@@ -95,8 +95,8 @@ const $=id=>document.getElementById(id),save=()=>localStorage.setItem(KEY,JSON.s
 const rowKey=(q,r)=>q.month+'-'+q.number+'-'+r.n,prog=(q,r)=>state.progress[rowKey(q,r)]||(state.progress[rowKey(q,r)]={status:'new',favorite:false});
 function speak(text){
  const status=$('speechStatus');
- if(window.TCF_T2_SPEECH?.speak)return window.TCF_T2_SPEECH.speak(text,status,.92);
- if(status)status.textContent='稳定法语语音层尚未加载，请刷新页面后重试。';
+ if(window.TCF_TRAVEL_PIPER?.play)return window.TCF_TRAVEL_PIPER.play(text,status,1);
+ if(status)status.textContent='Piper siwis 播放器尚未加载，请刷新页面后重试。';
  return false;
 }
 function timeClass(t){return /过去/.test(t)?'past':/将来|条件/.test(t)?'future':'present'}
@@ -125,12 +125,12 @@ function renderRows(){
 function renderSummary(){const q=cur();let m=0,r=0,f=0;q.rows.forEach(x=>{const p=prog(q,x);if(p.status==='mastered')m++;if(p.status==='review')r++;if(p.favorite)f++});$('summary').innerHTML='<span class="pill">'+q.month+' · 第 '+q.number+' 题</span><span class="pill">15 个提问</span><span class="pill">✅ '+m+' 已掌握</span><span class="pill">🟡 '+r+' 待复习</span><span class="pill">★ '+f+' 收藏</span>'}
 function renderSingle(){const q=cur(),r=q.rows[Math.max(0,Math.min(state.single,14))],p=prog(q,r);state.single=r.n-1;$('singleMeta').textContent=r.n+' / 15 · '+r.dimension+' → '+r.sub+' · '+r.timeline;$('singleZh').textContent=r.zh;$('singleFr').textContent=r.fr;$('singleFr').classList.add('hidden');$('singleReveal').textContent='显示法语';$('singleFav').textContent=p.favorite?'★ 已收藏':'☆ 收藏'}
 function renderChain(){const q=cur(),r=q.rows[Math.max(0,Math.min(state.chain,14))];state.chain=r.n-1;$('chainTitle').textContent=q.month+' · 第 '+q.number+' 题 · 整题连练';$('chainMeta').textContent=r.n+' / 15 · '+r.dimension+' → '+r.sub+' · '+r.timeline;$('chainZh').textContent=r.zh;$('chainFr').textContent=r.fr;$('chainFr').classList.add('hidden');$('chainReveal').textContent='显示法语';$('chainBar').style.width=(r.n/15*100)+'%'}
-function mode(m){state.mode=m;save();document.querySelectorAll('.mode-panel').forEach(x=>x.classList.remove('active'));$(m+'Mode').classList.add('active');if(m==='single')renderSingle();if(m==='chain')renderChain()}
+function mode(m){window.TCF_TRAVEL_PIPER?.stop();state.mode=m;save();document.querySelectorAll('.mode-panel').forEach(x=>x.classList.remove('active'));$(m+'Mode').classList.add('active');if(m==='single')renderSingle();if(m==='chain')renderChain()}
 function render(){renderSelects();head();renderRows();renderSummary();mode(state.mode||'table')}
-$('monthSelect').onchange=()=>{state.index=D.findIndex(x=>x.month===$('monthSelect').value);state.single=state.chain=0;save();render()};
-$('questionSelect').onchange=()=>{state.index=+$('questionSelect').value;state.single=state.chain=0;save();render()};
-$('prevQ').onclick=()=>{state.index=(state.index-1+D.length)%D.length;state.single=state.chain=0;save();render()};
-$('nextQ').onclick=()=>{state.index=(state.index+1)%D.length;state.single=state.chain=0;save();render()};
+$('monthSelect').onchange=()=>{window.TCF_TRAVEL_PIPER?.stop();state.index=D.findIndex(x=>x.month===$('monthSelect').value);state.single=state.chain=0;save();render()};
+$('questionSelect').onchange=()=>{window.TCF_TRAVEL_PIPER?.stop();state.index=+$('questionSelect').value;state.single=state.chain=0;save();render()};
+$('prevQ').onclick=()=>{window.TCF_TRAVEL_PIPER?.stop();state.index=(state.index-1+D.length)%D.length;state.single=state.chain=0;save();render()};
+$('nextQ').onclick=()=>{window.TCF_TRAVEL_PIPER?.stop();state.index=(state.index+1)%D.length;state.single=state.chain=0;save();render()};
 document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>mode(b.dataset.mode));
 $('singleReveal').onclick=()=>{$('singleFr').classList.toggle('hidden');$('singleReveal').textContent=$('singleFr').classList.contains('hidden')?'显示法语':'隐藏法语'};
 $('singleAudio').onclick=()=>speak(cur().rows[state.single].fr);$('singlePrev').onclick=()=>{state.single=(state.single+14)%15;save();renderSingle()};$('singleNext').onclick=()=>{state.single=(state.single+1)%15;save();renderSingle()};
