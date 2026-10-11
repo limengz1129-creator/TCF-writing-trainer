@@ -1,0 +1,35 @@
+name: Sync optimized T2 Word wording
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tache2/real-exams/optimized/build-all.trigger'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: t2-optimized-word-sync
+  cancel-in-progress: false
+jobs:
+  sync:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+      - name: Install Piper and ffmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          python -m pip install --upgrade pip
+          python -m pip install piper-tts
+      - name: Download Piper fr_FR-siwis-medium
+        run: |
+          mkdir -p .piper-model
+          curl -L --fail --retry 3 -o .piper-model/fr_FR-siwis-medium.onnx https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx
+          curl -L --fail --retry 3 -o .piper-model/fr_FR-siwis-medium.onnx.json https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx.json
+      - name: Apply exact optimized Word questions and checkpoint each theme
+        run: python tools/piper/real-exam-themes/apply_variety.py --piper-model .piper-model/fr_FR-siwis-medium.onnx
