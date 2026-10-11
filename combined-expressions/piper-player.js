@@ -27,9 +27,9 @@ function render(text,timing){
  for(const t of timing){original.append(document.createTextNode(text.slice(cursor,t.from)));const el=document.createElement('span');el.textContent=text.slice(t.from,t.to);original.append(el);spans.push({from:t.from,to:t.to,el});cursor=t.to;}
  original.append(document.createTextNode(text.slice(cursor)));
 }
-async function readJson(url){const response=await fetch(url);if(!response.ok)throw Error('音频文件加载失败');return response.json();}
+async function readJson(url,fresh=false){const response=await fetch(url,fresh?{cache:'no-store'}:undefined);if(!response.ok)throw Error('音频文件加载失败');return response.json();}
 async function load(text){
- if(!manifestPromise)manifestPromise=readJson(new URL('manifest.json?v=conj-repair-1',root)).catch(e=>{manifestPromise=null;throw e;});
+ if(!manifestPromise)manifestPromise=readJson(new URL('manifest.json?v=conj-audit-2',root),true).catch(e=>{manifestPromise=null;throw e;});
  const manifest=await manifestPromise;
  let link=manifest.entries[text];
  if(!link){
