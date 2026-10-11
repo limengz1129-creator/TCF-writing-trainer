@@ -58,7 +58,13 @@ def model_translate(texts):
     return result
 
 def load_source():
-    raw=base64.b64decode(SOURCE.read_text().strip())
+    source_dir=REAL/"source"
+    parts=sorted(source_dir.glob("themes-source.part*.b64"))
+    if parts:
+        encoded="".join(p.read_text().strip() for p in parts)
+    else:
+        encoded=SOURCE.read_text().strip()
+    raw=base64.b64decode(encoded)
     return json.loads(gzip.decompress(raw).decode("utf-8"))
 
 def synthesize(voice,text):
