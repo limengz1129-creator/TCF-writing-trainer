@@ -1,0 +1,1273 @@
+{
+  "theme": "education",
+  "title": "教育与培训",
+  "target": "TCF Canada 口语 Tâche 2 · C1",
+  "version": 1,
+  "principle": "约100个高价值词/词块，以17道最终真题为基础；词块与真实套用问法绑定，优先训练中文→法语主动调用。",
+  "scenarios": [
+    {
+      "id": "general",
+      "name": "课程 / 报名 / 费用"
+    },
+    {
+      "id": "teacher",
+      "name": "老师 / 教学"
+    },
+    {
+      "id": "private",
+      "name": "私教 / 预约 / 时间"
+    },
+    {
+      "id": "language",
+      "name": "语言学习 / 法语培训"
+    },
+    {
+      "id": "music",
+      "name": "音乐课"
+    },
+    {
+      "id": "photo",
+      "name": "摄影课"
+    },
+    {
+      "id": "art",
+      "name": "绘画 / 戏剧"
+    },
+    {
+      "id": "cooking",
+      "name": "烹饪课"
+    },
+    {
+      "id": "school",
+      "name": "儿童学校 / 入学"
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": 1,
+      "fr": "un cours",
+      "zh": "课程",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Qu’est-ce qu’on fait concrètement pendant le cours ?",
+      "exampleZh": "课程中具体做什么？"
+    },
+    {
+      "id": 2,
+      "fr": "suivre un cours",
+      "zh": "上课 / 学一门课",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Tu as suivi cette formation pendant toute l’année ?",
+      "exampleZh": "你整年都参加这项培训吗？"
+    },
+    {
+      "id": 3,
+      "fr": "s’inscrire à un cours",
+      "zh": "报名课程",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Comment faut-il s’inscrire à ce type de cours ?",
+      "exampleZh": "这种课程要怎么报名？"
+    },
+    {
+      "id": 4,
+      "fr": "une inscription",
+      "zh": "报名",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Comment se passe l’inscription ?",
+      "exampleZh": "报名流程是怎样的？"
+    },
+    {
+      "id": 5,
+      "fr": "les horaires de cours",
+      "zh": "上课时间",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "À quelle heure a lieu le cours ?",
+      "exampleZh": "课程几点开始？"
+    },
+    {
+      "id": 6,
+      "fr": "la fréquence des cours",
+      "zh": "上课频率",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Combien de fois par semaine les cours ont-ils lieu ?",
+      "exampleZh": "每周上几次课？"
+    },
+    {
+      "id": 7,
+      "fr": "un créneau",
+      "zh": "时间段",
+      "scenario": "private",
+      "priority": 5,
+      "exampleFr": "Quels créneaux avez-vous de disponibles ?",
+      "exampleZh": "您有哪些可约的时间段？"
+    },
+    {
+      "id": 8,
+      "fr": "modifier l’horaire",
+      "zh": "调整时间",
+      "scenario": "general",
+      "priority": 4,
+      "exampleFr": "Peut-on modifier l’horaire en cas d’imprévu ?",
+      "exampleZh": "如果有突发情况，可以调整时间吗？"
+    },
+    {
+      "id": 9,
+      "fr": "déplacer un cours",
+      "zh": "改期",
+      "scenario": "private",
+      "priority": 4,
+      "exampleFr": "Peut-on déplacer un cours en cas d’imprévu ?",
+      "exampleZh": "如果有突发情况，可以改课吗？"
+    },
+    {
+      "id": 10,
+      "fr": "la durée du cours",
+      "zh": "课时时长",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Combien de temps dure un cours ?",
+      "exampleZh": "一节课多长时间？"
+    },
+    {
+      "id": 11,
+      "fr": "la durée de la formation",
+      "zh": "培训时长",
+      "scenario": "language",
+      "priority": 5,
+      "exampleFr": "Combien de temps dure la formation ?",
+      "exampleZh": "培训持续多久？"
+    },
+    {
+      "id": 12,
+      "fr": "le tarif mensuel",
+      "zh": "月费",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Quel est le tarif mensuel du cours ?",
+      "exampleZh": "课程月费是多少？"
+    },
+    {
+      "id": 13,
+      "fr": "le tarif de la formation",
+      "zh": "培训费用",
+      "scenario": "language",
+      "priority": 5,
+      "exampleFr": "Quel est le tarif de la formation ?",
+      "exampleZh": "培训费用是多少？"
+    },
+    {
+      "id": 14,
+      "fr": "bénéficier d’une réduction",
+      "zh": "享受折扣",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Est-ce que je peux bénéficier d’une réduction si je m’inscris pour plusieurs mois ?",
+      "exampleZh": "如果报名几个月，可以享受折扣吗？"
+    },
+    {
+      "id": 15,
+      "fr": "un forfait",
+      "zh": "套餐",
+      "scenario": "language",
+      "priority": 4,
+      "exampleFr": "Proposez-vous un forfait ou une réduction pour une formation plus longue ?",
+      "exampleZh": "较长培训有套餐或折扣吗？"
+    },
+    {
+      "id": 16,
+      "fr": "réserver plusieurs cours",
+      "zh": "一次预订多节课",
+      "scenario": "private",
+      "priority": 4,
+      "exampleFr": "Y a-t-il une réduction si je réserve plusieurs cours ?",
+      "exampleZh": "如果我预订多节课，有折扣吗？"
+    },
+    {
+      "id": 17,
+      "fr": "un cours d’essai",
+      "zh": "试听课",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Puis-je faire un cours d’essai avant de m’inscrire ?",
+      "exampleZh": "报名之前可以试听吗？"
+    },
+    {
+      "id": 18,
+      "fr": "faire un cours d’essai",
+      "zh": "试听",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Serait-il possible de faire un premier cours d’essai ?",
+      "exampleZh": "可以先试听一次吗？"
+    },
+    {
+      "id": 19,
+      "fr": "un débutant / une débutante",
+      "zh": "初学者",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Le cours est-il adapté aux débutants ?",
+      "exampleZh": "课程适合初学者吗？"
+    },
+    {
+      "id": 20,
+      "fr": "être adapté aux débutants",
+      "zh": "适合初学者",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Le cours est-il adapté à quelqu’un qui débute ?",
+      "exampleZh": "课程适合刚开始学的人吗？"
+    },
+    {
+      "id": 21,
+      "fr": "un test de niveau",
+      "zh": "分级测试",
+      "scenario": "language",
+      "priority": 5,
+      "exampleFr": "Est-ce qu’un test de niveau est prévu avant de commencer ?",
+      "exampleZh": "开始前有分级测试吗？"
+    },
+    {
+      "id": 22,
+      "fr": "passer un test de niveau",
+      "zh": "参加分级测试",
+      "scenario": "language",
+      "priority": 5,
+      "exampleFr": "Un test de niveau est-il prévu avant l’entrée ?",
+      "exampleZh": "入学前有分级测试吗？"
+    },
+    {
+      "id": 23,
+      "fr": "un niveau",
+      "zh": "水平",
+      "scenario": "language",
+      "priority": 5,
+      "exampleFr": "À quels niveaux s’adressent vos formations ?",
+      "exampleZh": "你们的培训面向哪些水平？"
+    },
+    {
+      "id": 24,
+      "fr": "une formation",
+      "zh": "培训",
+      "scenario": "language",
+      "priority": 5,
+      "exampleFr": "Quelles formules de formation en français proposez-vous ?",
+      "exampleZh": "你们提供哪些法语培训形式？"
+    },
+    {
+      "id": 25,
+      "fr": "une formule de formation",
+      "zh": "培训形式",
+      "scenario": "language",
+      "priority": 4,
+      "exampleFr": "Quelles formules de formation en français proposez-vous ?",
+      "exampleZh": "你们提供哪些法语培训形式？"
+    },
+    {
+      "id": 26,
+      "fr": "un cours particulier",
+      "zh": "一对一私教课",
+      "scenario": "private",
+      "priority": 5,
+      "exampleFr": "Comment organisez-vous généralement vos cours particuliers ?",
+      "exampleZh": "您通常怎么安排一对一课程？"
+    },
+    {
+      "id": 27,
+      "fr": "un cours individuel",
+      "zh": "个人课",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Vous proposez plutôt des cours individuels, en groupe, ou les deux ?",
+      "exampleZh": "你们主要提供个人课、团体课，还是两者都有？"
+    },
+    {
+      "id": 28,
+      "fr": "un cours en groupe",
+      "zh": "团体课",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Les cours se font-ils en groupe ?",
+      "exampleZh": "课程是团体形式吗？"
+    },
+    {
+      "id": 29,
+      "fr": "un petit groupe",
+      "zh": "小组课",
+      "scenario": "private",
+      "priority": 4,
+      "exampleFr": "Elle donne uniquement des cours particuliers ou aussi des cours en petit groupe ?",
+      "exampleZh": "她只上一对一课，还是也教小组课？"
+    },
+    {
+      "id": 30,
+      "fr": "la taille du groupe",
+      "zh": "班级人数 / 小组规模",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Quelle est la taille des groupes ?",
+      "exampleZh": "每组有多少人？"
+    },
+    {
+      "id": 31,
+      "fr": "en présentiel",
+      "zh": "线下 / 面授",
+      "scenario": "private",
+      "priority": 5,
+      "exampleFr": "Les cours se font en présentiel, en ligne ou les deux ?",
+      "exampleZh": "课程是线下、线上，还是两者都有？"
+    },
+    {
+      "id": 32,
+      "fr": "en ligne",
+      "zh": "线上",
+      "scenario": "private",
+      "priority": 5,
+      "exampleFr": "Les cours se font en présentiel, en ligne ou les deux ?",
+      "exampleZh": "课程是线下、线上，还是两者都有？"
+    },
+    {
+      "id": 33,
+      "fr": "un professeur",
+      "zh": "老师",
+      "scenario": "teacher",
+      "priority": 5,
+      "exampleFr": "Comment trouves-tu le professeur ?",
+      "exampleZh": "你觉得老师怎么样？"
+    },
+    {
+      "id": 34,
+      "fr": "un enseignant / une enseignante",
+      "zh": "教师",
+      "scenario": "school",
+      "priority": 4,
+      "exampleFr": "Quelle formation ont les enseignants ?",
+      "exampleZh": "教师有什么资历？"
+    },
+    {
+      "id": 35,
+      "fr": "enseigner",
+      "zh": "教学",
+      "scenario": "teacher",
+      "priority": 5,
+      "exampleFr": "Depuis quand enseignez-vous le français ?",
+      "exampleZh": "您教法语多久了？"
+    },
+    {
+      "id": 36,
+      "fr": "l’expérience d’enseignement",
+      "zh": "教学经验",
+      "scenario": "teacher",
+      "priority": 5,
+      "exampleFr": "Depuis quand donnez-vous des cours de cuisine ?",
+      "exampleZh": "您教烹饪多久了？"
+    },
+    {
+      "id": 37,
+      "fr": "une formation professionnelle",
+      "zh": "专业培训背景",
+      "scenario": "teacher",
+      "priority": 4,
+      "exampleFr": "A-t-elle une formation ou une expérience professionnelle en cuisine ?",
+      "exampleZh": "她有烹饪方面的专业培训或工作经验吗？"
+    },
+    {
+      "id": 38,
+      "fr": "une certification",
+      "zh": "证书 / 资格认证",
+      "scenario": "teacher",
+      "priority": 4,
+      "exampleFr": "Quelle formation ou quelles certifications avez-vous ?",
+      "exampleZh": "您有什么培训背景或证书？"
+    },
+    {
+      "id": 39,
+      "fr": "une qualification",
+      "zh": "资历",
+      "scenario": "teacher",
+      "priority": 4,
+      "exampleFr": "Quelle formation a suivie le professeur ?",
+      "exampleZh": "老师接受过什么培训？"
+    },
+    {
+      "id": 40,
+      "fr": "une méthode d’enseignement",
+      "zh": "教学方法",
+      "scenario": "teacher",
+      "priority": 5,
+      "exampleFr": "Comment enseigne-t-il concrètement ?",
+      "exampleZh": "他具体怎么教？"
+    },
+    {
+      "id": 41,
+      "fr": "adapter le cours aux besoins de l’élève",
+      "zh": "根据学生需求调整课程",
+      "scenario": "private",
+      "priority": 5,
+      "exampleFr": "Adaptez-vous les cours aux besoins de chaque élève ?",
+      "exampleZh": "您会根据每个学生的需求调整课程吗？"
+    },
+    {
+      "id": 42,
+      "fr": "les besoins de chaque élève",
+      "zh": "每个学生的需求",
+      "scenario": "private",
+      "priority": 4,
+      "exampleFr": "Adaptez-vous les cours aux besoins de chaque élève ?",
+      "exampleZh": "您会根据每个学生的需求调整课程吗？"
+    },
+    {
+      "id": 43,
+      "fr": "travailler l’expression orale",
+      "zh": "练习口语表达",
+      "scenario": "language",
+      "priority": 5,
+      "exampleFr": "Vous travaillez beaucoup l’expression orale pendant les cours ?",
+      "exampleZh": "课堂上会大量练口语吗？"
+    },
+    {
+      "id": 44,
+      "fr": "l’expression orale",
+      "zh": "口语表达",
+      "scenario": "language",
+      "priority": 5,
+      "exampleFr": "L’oral occupe-t-il une place importante dans la formation ?",
+      "exampleZh": "口语在培训中占重要部分吗？"
+    },
+    {
+      "id": 45,
+      "fr": "préparer aux examens",
+      "zh": "备考",
+      "scenario": "language",
+      "priority": 5,
+      "exampleFr": "Est-ce que vous préparez aussi les élèves aux examens de français ?",
+      "exampleZh": "您也帮助学生准备法语考试吗？"
+    },
+    {
+      "id": 46,
+      "fr": "des exercices",
+      "zh": "练习",
+      "scenario": "teacher",
+      "priority": 4,
+      "exampleFr": "Est-ce que vous donnez du matériel ou des exercices à faire entre les cours ?",
+      "exampleZh": "课间会布置材料或练习吗？"
+    },
+    {
+      "id": 47,
+      "fr": "du matériel pédagogique",
+      "zh": "学习材料",
+      "scenario": "teacher",
+      "priority": 4,
+      "exampleFr": "Est-ce que vous donnez du matériel ou des exercices à faire entre les cours ?",
+      "exampleZh": "课间会提供学习材料或练习吗？"
+    },
+    {
+      "id": 48,
+      "fr": "un livre",
+      "zh": "书 / 教材",
+      "scenario": "teacher",
+      "priority": 3,
+      "exampleFr": "Dois-je acheter du matériel ou des livres particuliers ?",
+      "exampleZh": "我需要买特殊材料或书吗？"
+    },
+    {
+      "id": 49,
+      "fr": "le contenu du cours",
+      "zh": "课程内容",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Qu’est-ce qu’on fait concrètement pendant le cours ?",
+      "exampleZh": "课堂上具体做什么？"
+    },
+    {
+      "id": 50,
+      "fr": "un programme de cours",
+      "zh": "课程安排 / 课程内容",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Quels sont les principaux points travaillés pendant la formation ?",
+      "exampleZh": "培训主要学哪些内容？"
+    },
+    {
+      "id": 51,
+      "fr": "les principaux points travaillés",
+      "zh": "主要学习内容",
+      "scenario": "language",
+      "priority": 4,
+      "exampleFr": "Quels sont les principaux points travaillés pendant la formation ?",
+      "exampleZh": "培训主要学习哪些内容？"
+    },
+    {
+      "id": 52,
+      "fr": "un appareil photo",
+      "zh": "相机",
+      "scenario": "photo",
+      "priority": 5,
+      "exampleFr": "Dois-je apporter mon propre appareil photo ou du matériel particulier ?",
+      "exampleZh": "我需要带自己的相机或特殊器材吗？"
+    },
+    {
+      "id": 53,
+      "fr": "du matériel de photographie",
+      "zh": "摄影器材",
+      "scenario": "photo",
+      "priority": 4,
+      "exampleFr": "Dois-je apporter mon propre appareil photo ou du matériel particulier ?",
+      "exampleZh": "我需要带自己的相机或特殊器材吗？"
+    },
+    {
+      "id": 54,
+      "fr": "être disponible sur place",
+      "zh": "现场提供",
+      "scenario": "photo",
+      "priority": 5,
+      "exampleFr": "Est-ce que le matériel est disponible sur place ?",
+      "exampleZh": "器材现场有提供吗？"
+    },
+    {
+      "id": 55,
+      "fr": "un cours de photographie",
+      "zh": "摄影课",
+      "scenario": "photo",
+      "priority": 5,
+      "exampleFr": "Depuis quand enseigne-t-il la photographie ?",
+      "exampleZh": "他教摄影多久了？"
+    },
+    {
+      "id": 56,
+      "fr": "une association du quartier",
+      "zh": "社区协会",
+      "scenario": "photo",
+      "priority": 4,
+      "exampleFr": "Je prends des cours de photographie dans l’association du quartier.",
+      "exampleZh": "我在社区协会上摄影课。"
+    },
+    {
+      "id": 57,
+      "fr": "un cours de dessin",
+      "zh": "绘画课",
+      "scenario": "art",
+      "priority": 5,
+      "exampleFr": "Je prends des cours de dessin.",
+      "exampleZh": "我在上绘画课。"
+    },
+    {
+      "id": 58,
+      "fr": "du matériel de dessin",
+      "zh": "绘画材料",
+      "scenario": "art",
+      "priority": 5,
+      "exampleFr": "Dois-je apporter du matériel de dessin ?",
+      "exampleZh": "我需要自带绘画材料吗？"
+    },
+    {
+      "id": 59,
+      "fr": "fournir une partie du matériel",
+      "zh": "提供部分材料",
+      "scenario": "art",
+      "priority": 4,
+      "exampleFr": "L’école fournit-elle une partie du matériel ?",
+      "exampleZh": "学校会提供部分材料吗？"
+    },
+    {
+      "id": 60,
+      "fr": "un cours de théâtre",
+      "zh": "戏剧课",
+      "scenario": "art",
+      "priority": 5,
+      "exampleFr": "Quel jour a lieu le cours de théâtre ?",
+      "exampleZh": "戏剧课星期几上？"
+    },
+    {
+      "id": 61,
+      "fr": "faire du théâtre",
+      "zh": "参加戏剧活动",
+      "scenario": "art",
+      "priority": 4,
+      "exampleFr": "Je fais du théâtre chaque semaine.",
+      "exampleZh": "我每周参加戏剧活动。"
+    },
+    {
+      "id": 62,
+      "fr": "une école de musique",
+      "zh": "音乐学校",
+      "scenario": "music",
+      "priority": 5,
+      "exampleFr": "Je travaille à la réception d’une école de musique.",
+      "exampleZh": "我在音乐学校前台工作。"
+    },
+    {
+      "id": 63,
+      "fr": "un cours de musique",
+      "zh": "音乐课",
+      "scenario": "music",
+      "priority": 5,
+      "exampleFr": "Qu’est-ce que vous proposez comme cours de musique ?",
+      "exampleZh": "你们提供哪些音乐课？"
+    },
+    {
+      "id": 64,
+      "fr": "un instrument",
+      "zh": "乐器",
+      "scenario": "music",
+      "priority": 5,
+      "exampleFr": "Quels instruments peut-on y apprendre ?",
+      "exampleZh": "这里可以学哪些乐器？"
+    },
+    {
+      "id": 65,
+      "fr": "apprendre un instrument",
+      "zh": "学习乐器",
+      "scenario": "music",
+      "priority": 5,
+      "exampleFr": "Quels instruments peut-on y apprendre ?",
+      "exampleZh": "这里可以学哪些乐器？"
+    },
+    {
+      "id": 66,
+      "fr": "fournir les instruments",
+      "zh": "提供乐器",
+      "scenario": "music",
+      "priority": 4,
+      "exampleFr": "L’école fournit-elle les instruments ?",
+      "exampleZh": "学校提供乐器吗？"
+    },
+    {
+      "id": 67,
+      "fr": "avoir son propre instrument",
+      "zh": "有自己的乐器",
+      "scenario": "music",
+      "priority": 4,
+      "exampleFr": "Dois-je avoir mon propre instrument ?",
+      "exampleZh": "我需要有自己的乐器吗？"
+    },
+    {
+      "id": 68,
+      "fr": "donner des cours à domicile",
+      "zh": "上门授课",
+      "scenario": "music",
+      "priority": 4,
+      "exampleFr": "Je connais quelqu’un qui propose des cours de musique à domicile.",
+      "exampleZh": "我认识一个提供上门音乐课的人。"
+    },
+    {
+      "id": 69,
+      "fr": "un cours à domicile",
+      "zh": "上门课",
+      "scenario": "music",
+      "priority": 4,
+      "exampleFr": "Elle donne des cours de musique à domicile.",
+      "exampleZh": "她提供上门音乐课。"
+    },
+    {
+      "id": 70,
+      "fr": "un cours de cuisine",
+      "zh": "烹饪课",
+      "scenario": "cooking",
+      "priority": 5,
+      "exampleFr": "J’ai suivi un cours de cuisine.",
+      "exampleZh": "我上过烹饪课。"
+    },
+    {
+      "id": 71,
+      "fr": "un plat",
+      "zh": "菜品",
+      "scenario": "cooking",
+      "priority": 5,
+      "exampleFr": "Quels types de plats préparez-vous ?",
+      "exampleZh": "你们会做哪些菜？"
+    },
+    {
+      "id": 72,
+      "fr": "une recette",
+      "zh": "食谱",
+      "scenario": "cooking",
+      "priority": 5,
+      "exampleFr": "Les recettes sont-elles remises après le cours ?",
+      "exampleZh": "课后会发食谱吗？"
+    },
+    {
+      "id": 73,
+      "fr": "des ingrédients",
+      "zh": "食材",
+      "scenario": "cooking",
+      "priority": 5,
+      "exampleFr": "Dois-je apporter des ingrédients ou du matériel ?",
+      "exampleZh": "需要自带食材或工具吗？"
+    },
+    {
+      "id": 74,
+      "fr": "préparer un plat",
+      "zh": "做一道菜",
+      "scenario": "cooking",
+      "priority": 4,
+      "exampleFr": "Quels types de plats préparez-vous ?",
+      "exampleZh": "你们会做哪些菜？"
+    },
+    {
+      "id": 75,
+      "fr": "enseigner la cuisine",
+      "zh": "教授烹饪",
+      "scenario": "cooking",
+      "priority": 4,
+      "exampleFr": "Depuis quand donnez-vous des cours de cuisine ?",
+      "exampleZh": "您教烹饪多久了？"
+    },
+    {
+      "id": 76,
+      "fr": "une école de langue",
+      "zh": "语言学校",
+      "scenario": "language",
+      "priority": 5,
+      "exampleFr": "Je travaille à l’accueil dans une école de langue.",
+      "exampleZh": "我在语言学校前台工作。"
+    },
+    {
+      "id": 77,
+      "fr": "une formation en français",
+      "zh": "法语培训",
+      "scenario": "language",
+      "priority": 5,
+      "exampleFr": "Vous souhaitez suivre une formation en français.",
+      "exampleZh": "你希望参加法语培训。"
+    },
+    {
+      "id": 78,
+      "fr": "un cours du soir",
+      "zh": "夜校 / 晚间课程",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "J’ai pris des cours du soir à l’université pendant un an.",
+      "exampleZh": "我在大学上了一年的夜课。"
+    },
+    {
+      "id": 79,
+      "fr": "l’université",
+      "zh": "大学",
+      "scenario": "general",
+      "priority": 4,
+      "exampleFr": "J’ai pris des cours du soir à l’université pendant un an.",
+      "exampleZh": "我在大学上了一年的夜课。"
+    },
+    {
+      "id": 80,
+      "fr": "un semestre",
+      "zh": "学期",
+      "scenario": "school",
+      "priority": 5,
+      "exampleFr": "À quelle date commence le semestre ?",
+      "exampleZh": "学期什么时候开始？"
+    },
+    {
+      "id": 81,
+      "fr": "inscrire son enfant à l’école",
+      "zh": "给孩子报名入学",
+      "scenario": "school",
+      "priority": 5,
+      "exampleFr": "Puis-je encore inscrire mon enfant maintenant ?",
+      "exampleZh": "我现在还能给孩子报名吗？"
+    },
+    {
+      "id": 82,
+      "fr": "une école du quartier",
+      "zh": "社区学校",
+      "scenario": "school",
+      "priority": 5,
+      "exampleFr": "Qu’est-ce qu’on trouve comme écoles dans le quartier ?",
+      "exampleZh": "附近有哪些学校？"
+    },
+    {
+      "id": 83,
+      "fr": "un dossier d’inscription",
+      "zh": "报名材料",
+      "scenario": "school",
+      "priority": 5,
+      "exampleFr": "Qu’est-ce qu’il faut fournir comme documents pour l’inscription ?",
+      "exampleZh": "报名需要提供哪些文件？"
+    },
+    {
+      "id": 84,
+      "fr": "fournir des documents",
+      "zh": "提供文件",
+      "scenario": "school",
+      "priority": 5,
+      "exampleFr": "Qu’est-ce qu’il faut fournir comme documents pour l’inscription ?",
+      "exampleZh": "报名需要提供哪些文件？"
+    },
+    {
+      "id": 85,
+      "fr": "une activité extrascolaire",
+      "zh": "课外活动",
+      "scenario": "school",
+      "priority": 5,
+      "exampleFr": "Qu’est-ce qui est proposé comme activités extrascolaires ?",
+      "exampleZh": "有哪些课外活动？"
+    },
+    {
+      "id": 86,
+      "fr": "être bien encadré(e)",
+      "zh": "有良好监管",
+      "scenario": "school",
+      "priority": 5,
+      "exampleFr": "Les activités sont-elles bien encadrées et sécurisées ?",
+      "exampleZh": "活动有良好监管并且安全吗？"
+    },
+    {
+      "id": 87,
+      "fr": "être sécurisé(e)",
+      "zh": "安全有保障",
+      "scenario": "school",
+      "priority": 5,
+      "exampleFr": "Les activités sont-elles bien encadrées et sécurisées ?",
+      "exampleZh": "活动有良好监管并且安全吗？"
+    },
+    {
+      "id": 88,
+      "fr": "les frais d’inscription",
+      "zh": "报名费用",
+      "scenario": "school",
+      "priority": 4,
+      "exampleFr": "Quels frais faut-il prévoir pour l’inscription ?",
+      "exampleZh": "报名需要准备哪些费用？"
+    },
+    {
+      "id": 89,
+      "fr": "s’adapter à l’école",
+      "zh": "适应学校",
+      "scenario": "school",
+      "priority": 4,
+      "exampleFr": "Qu’est-ce qui aide le plus les nouveaux élèves à s’adapter ?",
+      "exampleZh": "什么最能帮助新生适应学校？"
+    },
+    {
+      "id": 90,
+      "fr": "un nouvel élève / une nouvelle élève",
+      "zh": "新生",
+      "scenario": "school",
+      "priority": 4,
+      "exampleFr": "Qu’est-ce qui aide le plus les nouveaux élèves à s’adapter ?",
+      "exampleZh": "什么最能帮助新生适应学校？"
+    },
+    {
+      "id": 91,
+      "fr": "le moyen le plus simple pour s’y rendre",
+      "zh": "最方便的到达方式",
+      "scenario": "general",
+      "priority": 4,
+      "exampleFr": "Quel est le moyen le plus simple pour s’y rendre ?",
+      "exampleZh": "怎么去最方便？"
+    },
+    {
+      "id": 92,
+      "fr": "prendre rendez-vous",
+      "zh": "预约",
+      "scenario": "private",
+      "priority": 5,
+      "exampleFr": "Comment puis-je la contacter pour fixer un premier rendez-vous ?",
+      "exampleZh": "我怎么联系她并约第一次见面？"
+    },
+    {
+      "id": 93,
+      "fr": "fixer un rendez-vous",
+      "zh": "确定预约时间",
+      "scenario": "private",
+      "priority": 4,
+      "exampleFr": "Comment puis-je la contacter pour fixer un premier rendez-vous ?",
+      "exampleZh": "我怎么联系她并约第一次见面？"
+    },
+    {
+      "id": 94,
+      "fr": "réserver un cours",
+      "zh": "预订课程",
+      "scenario": "private",
+      "priority": 5,
+      "exampleFr": "Comment puis-je réserver un cours avec vous ?",
+      "exampleZh": "我怎么预约您的课程？"
+    },
+    {
+      "id": 95,
+      "fr": "contacter le professeur",
+      "zh": "联系老师",
+      "scenario": "private",
+      "priority": 4,
+      "exampleFr": "Comment puis-je la contacter pour fixer un premier rendez-vous ?",
+      "exampleZh": "我怎么联系她并约第一次见面？"
+    },
+    {
+      "id": 96,
+      "fr": "un imprévu",
+      "zh": "突发情况",
+      "scenario": "general",
+      "priority": 4,
+      "exampleFr": "Peut-on modifier l’horaire en cas d’imprévu ?",
+      "exampleZh": "如果有突发情况，可以调整时间吗？"
+    },
+    {
+      "id": 97,
+      "fr": "être satisfait(e) du cours",
+      "zh": "对课程满意",
+      "scenario": "general",
+      "priority": 4,
+      "exampleFr": "Les participants sont-ils généralement satisfaits du cours ?",
+      "exampleZh": "参加者通常对课程满意吗？"
+    },
+    {
+      "id": 98,
+      "fr": "recommander une formation",
+      "zh": "推荐培训",
+      "scenario": "language",
+      "priority": 4,
+      "exampleFr": "Tu me conseillerais cette formation ?",
+      "exampleZh": "你会推荐这个培训吗？"
+    },
+    {
+      "id": 99,
+      "fr": "aimer le plus dans un cours",
+      "zh": "最喜欢课程里的……",
+      "scenario": "general",
+      "priority": 3,
+      "exampleFr": "Qu’est-ce que tu aimes le plus dans ce cours ?",
+      "exampleZh": "你最喜欢这门课的什么？"
+    },
+    {
+      "id": 100,
+      "fr": "un élève",
+      "zh": "学生",
+      "scenario": "teacher",
+      "priority": 4,
+      "exampleFr": "Avec quels niveaux d’élèves travaillez-vous habituellement ?",
+      "exampleZh": "您通常教哪些水平的学生？"
+    },
+    {
+      "id": 101,
+      "fr": "un participant / une participante",
+      "zh": "参加者",
+      "scenario": "general",
+      "priority": 4,
+      "exampleFr": "Les participants sont-ils généralement satisfaits du cours ?",
+      "exampleZh": "参加者通常对课程满意吗？"
+    },
+    {
+      "id": 102,
+      "fr": "un groupe",
+      "zh": "小组 / 班级",
+      "scenario": "general",
+      "priority": 4,
+      "exampleFr": "Vous étiez combien dans le groupe ?",
+      "exampleZh": "你们小组里有多少人？"
+    },
+    {
+      "id": 103,
+      "fr": "une réception / un accueil",
+      "zh": "前台 / 接待处",
+      "scenario": "school",
+      "priority": 3,
+      "exampleFr": "Je travaille à l’accueil dans une école de musique.",
+      "exampleZh": "我在音乐学校前台工作。"
+    },
+    {
+      "id": 104,
+      "fr": "une école",
+      "zh": "学校",
+      "scenario": "school",
+      "priority": 5,
+      "exampleFr": "Qu’est-ce qu’on trouve comme écoles dans le quartier ?",
+      "exampleZh": "附近有哪些学校？"
+    }
+  ],
+  "patterns": [
+    {
+      "id": 1,
+      "pattern": "À quelle heure a lieu + cours ?",
+      "zh": "课程几点上？",
+      "exampleFr": "À quelle heure a lieu le cours ?",
+      "exampleZh": "课程几点开始？",
+      "scenario": "general"
+    },
+    {
+      "id": 2,
+      "pattern": "Combien de fois par semaine + cours ?",
+      "zh": "每周上几次？",
+      "exampleFr": "Combien de fois par semaine les cours ont-ils lieu ?",
+      "exampleZh": "每周上几次课？",
+      "scenario": "general"
+    },
+    {
+      "id": 3,
+      "pattern": "Combien de temps dure + cours / formation ?",
+      "zh": "课程/培训持续多久？",
+      "exampleFr": "Combien de temps dure la formation ?",
+      "exampleZh": "培训持续多久？",
+      "scenario": "general"
+    },
+    {
+      "id": 4,
+      "pattern": "Peut-on modifier / déplacer + horaire ?",
+      "zh": "可以改时间吗？",
+      "exampleFr": "Peut-on modifier l’horaire en cas d’imprévu ?",
+      "exampleZh": "如果有突发情况，可以调整时间吗？",
+      "scenario": "private"
+    },
+    {
+      "id": 5,
+      "pattern": "Quel est le tarif + complément ?",
+      "zh": "费用是多少？",
+      "exampleFr": "Quel est le tarif mensuel du cours ?",
+      "exampleZh": "课程月费是多少？",
+      "scenario": "general"
+    },
+    {
+      "id": 6,
+      "pattern": "Y a-t-il / puis-je bénéficier d’une réduction ?",
+      "zh": "有折扣吗？",
+      "exampleFr": "Est-ce que je peux bénéficier d’une réduction si je m’inscris pour plusieurs mois ?",
+      "exampleZh": "如果报名几个月，可以享受折扣吗？",
+      "scenario": "general"
+    },
+    {
+      "id": 7,
+      "pattern": "Puis-je faire un cours d’essai avant de + infinitif ?",
+      "zh": "在……之前可以试听吗？",
+      "exampleFr": "Puis-je faire un cours d’essai avant de m’inscrire ?",
+      "exampleZh": "报名之前可以试听吗？",
+      "scenario": "general"
+    },
+    {
+      "id": 8,
+      "pattern": "Le cours est-il adapté aux débutants ?",
+      "zh": "课程适合初学者吗？",
+      "exampleFr": "Le cours est-il adapté aux débutants ?",
+      "exampleZh": "课程适合初学者吗？",
+      "scenario": "general"
+    },
+    {
+      "id": 9,
+      "pattern": "Est-ce qu’un test de niveau est prévu ?",
+      "zh": "有分级测试吗？",
+      "exampleFr": "Est-ce qu’un test de niveau est prévu avant de commencer ?",
+      "exampleZh": "开始前有分级测试吗？",
+      "scenario": "language"
+    },
+    {
+      "id": 10,
+      "pattern": "Comment se déroule ce test ?",
+      "zh": "这个测试怎么进行？",
+      "exampleFr": "Comment se déroule ce test ?",
+      "exampleZh": "这个测试怎么进行？",
+      "scenario": "language"
+    },
+    {
+      "id": 11,
+      "pattern": "À quels niveaux s’adressent + formation ?",
+      "zh": "培训面向哪些水平？",
+      "exampleFr": "À quels niveaux s’adressent vos formations ?",
+      "exampleZh": "你们的培训面向哪些水平？",
+      "scenario": "language"
+    },
+    {
+      "id": 12,
+      "pattern": "Vous proposez des cours individuels, en groupe, ou les deux ?",
+      "zh": "有个人课、团体课，还是两者都有？",
+      "exampleFr": "Vous proposez plutôt des cours individuels, en groupe, ou les deux ?",
+      "exampleZh": "你们提供个人课、团体课，还是两者都有？",
+      "scenario": "general"
+    },
+    {
+      "id": 13,
+      "pattern": "Quelle est la taille des groupes ?",
+      "zh": "每组有多少人？",
+      "exampleFr": "Quelle est la taille des groupes ?",
+      "exampleZh": "每组有多少人？",
+      "scenario": "general"
+    },
+    {
+      "id": 14,
+      "pattern": "Les cours se font-ils en présentiel, en ligne ou les deux ?",
+      "zh": "课程是线下、线上还是都有？",
+      "exampleFr": "Les cours se font en présentiel, en ligne ou les deux ?",
+      "exampleZh": "课程是线下、线上，还是两者都有？",
+      "scenario": "private"
+    },
+    {
+      "id": 15,
+      "pattern": "Depuis quand + enseigner ?",
+      "zh": "教了多久？",
+      "exampleFr": "Depuis quand enseignez-vous le français ?",
+      "exampleZh": "您教法语多久了？",
+      "scenario": "teacher"
+    },
+    {
+      "id": 16,
+      "pattern": "Quelle formation / certification avez-vous ?",
+      "zh": "您有什么培训背景/证书？",
+      "exampleFr": "Quelle formation ou quelles certifications avez-vous ?",
+      "exampleZh": "您有什么培训背景或证书？",
+      "scenario": "teacher"
+    },
+    {
+      "id": 17,
+      "pattern": "Comment + enseigner / organiser les cours ?",
+      "zh": "怎么教学/安排课程？",
+      "exampleFr": "Comment organisez-vous généralement vos cours particuliers ?",
+      "exampleZh": "您通常怎么安排一对一课程？",
+      "scenario": "teacher"
+    },
+    {
+      "id": 18,
+      "pattern": "Adaptez-vous les cours aux besoins de + élève ?",
+      "zh": "会根据学生需求调整吗？",
+      "exampleFr": "Adaptez-vous les cours aux besoins de chaque élève ?",
+      "exampleZh": "您会根据每个学生的需求调整课程吗？",
+      "scenario": "private"
+    },
+    {
+      "id": 19,
+      "pattern": "Vous travaillez beaucoup + compétence ?",
+      "zh": "会重点练……吗？",
+      "exampleFr": "Vous travaillez beaucoup l’expression orale pendant les cours ?",
+      "exampleZh": "课堂上会大量练口语吗？",
+      "scenario": "language"
+    },
+    {
+      "id": 20,
+      "pattern": "Préparez-vous aussi les élèves à + examen ?",
+      "zh": "也会帮助学生准备……吗？",
+      "exampleFr": "Est-ce que vous préparez aussi les élèves aux examens de français ?",
+      "exampleZh": "您也帮助学生准备法语考试吗？",
+      "scenario": "language"
+    },
+    {
+      "id": 21,
+      "pattern": "Qu’est-ce qu’on fait concrètement pendant + cours ?",
+      "zh": "课上具体做什么？",
+      "exampleFr": "Qu’est-ce qu’on fait concrètement pendant le cours ?",
+      "exampleZh": "课程中具体做什么？",
+      "scenario": "general"
+    },
+    {
+      "id": 22,
+      "pattern": "Dois-je apporter + matériel ?",
+      "zh": "需要自带材料/器材吗？",
+      "exampleFr": "Dois-je apporter mon propre appareil photo ou du matériel particulier ?",
+      "exampleZh": "我需要带自己的相机或特殊器材吗？",
+      "scenario": "photo"
+    },
+    {
+      "id": 23,
+      "pattern": "Le matériel est-il disponible / fourni sur place ?",
+      "zh": "器材现场提供吗？",
+      "exampleFr": "Est-ce que le matériel est disponible sur place ?",
+      "exampleZh": "器材现场有提供吗？",
+      "scenario": "general"
+    },
+    {
+      "id": 24,
+      "pattern": "Quels instruments peut-on apprendre ?",
+      "zh": "可以学哪些乐器？",
+      "exampleFr": "Quels instruments peut-on y apprendre ?",
+      "exampleZh": "这里可以学哪些乐器？",
+      "scenario": "music"
+    },
+    {
+      "id": 25,
+      "pattern": "L’école fournit-elle les instruments ?",
+      "zh": "学校提供乐器吗？",
+      "exampleFr": "L’école fournit-elle les instruments ?",
+      "exampleZh": "学校提供乐器吗？",
+      "scenario": "music"
+    },
+    {
+      "id": 26,
+      "pattern": "Quels types de plats préparez-vous ?",
+      "zh": "会做哪些菜？",
+      "exampleFr": "Quels types de plats préparez-vous ?",
+      "exampleZh": "你们会做哪些菜？",
+      "scenario": "cooking"
+    },
+    {
+      "id": 27,
+      "pattern": "Les recettes sont-elles remises après le cours ?",
+      "zh": "课后会发食谱吗？",
+      "exampleFr": "Les recettes sont-elles remises après le cours ?",
+      "exampleZh": "课后会发食谱吗？",
+      "scenario": "cooking"
+    },
+    {
+      "id": 28,
+      "pattern": "Qu’est-ce qu’il faut fournir comme documents pour l’inscription ?",
+      "zh": "报名要提供哪些材料？",
+      "exampleFr": "Qu’est-ce qu’il faut fournir comme documents pour l’inscription ?",
+      "exampleZh": "报名需要提供哪些文件？",
+      "scenario": "school"
+    },
+    {
+      "id": 29,
+      "pattern": "Puis-je encore inscrire mon enfant maintenant ?",
+      "zh": "现在还能给孩子报名吗？",
+      "exampleFr": "Puis-je encore inscrire mon enfant maintenant ?",
+      "exampleZh": "我现在还能给孩子报名吗？",
+      "scenario": "school"
+    },
+    {
+      "id": 30,
+      "pattern": "Qu’est-ce qui est proposé comme activités extrascolaires ?",
+      "zh": "有哪些课外活动？",
+      "exampleFr": "Qu’est-ce qui est proposé comme activités extrascolaires ?",
+      "exampleZh": "有哪些课外活动？",
+      "scenario": "school"
+    },
+    {
+      "id": 31,
+      "pattern": "Les activités sont-elles bien encadrées et sécurisées ?",
+      "zh": "活动有良好监管并且安全吗？",
+      "exampleFr": "Les activités sont-elles bien encadrées et sécurisées ?",
+      "exampleZh": "活动有良好监管并且安全吗？",
+      "scenario": "school"
+    },
+    {
+      "id": 32,
+      "pattern": "Comment se passe l’inscription ?",
+      "zh": "报名流程怎样？",
+      "exampleFr": "Comment se passe l’inscription ?",
+      "exampleZh": "报名流程是怎样的？",
+      "scenario": "general"
+    },
+    {
+      "id": 33,
+      "pattern": "Comment puis-je réserver un cours ?",
+      "zh": "怎么预约课程？",
+      "exampleFr": "Comment puis-je réserver un cours avec vous ?",
+      "exampleZh": "我怎么预约您的课程？",
+      "scenario": "private"
+    },
+    {
+      "id": 34,
+      "pattern": "Quels créneaux avez-vous de disponibles ?",
+      "zh": "您有哪些可约时间？",
+      "exampleFr": "Quels créneaux avez-vous de disponibles ?",
+      "exampleZh": "您有哪些可约的时间段？",
+      "scenario": "private"
+    },
+    {
+      "id": 35,
+      "pattern": "Comment puis-je vous / la contacter ?",
+      "zh": "我怎么联系您/她？",
+      "exampleFr": "Comment puis-je la contacter pour fixer un premier rendez-vous ?",
+      "exampleZh": "我怎么联系她并约第一次见面？",
+      "scenario": "private"
+    },
+    {
+      "id": 36,
+      "pattern": "Les participants sont-ils généralement satisfaits ?",
+      "zh": "参加者通常满意吗？",
+      "exampleFr": "Les participants sont-ils généralement satisfaits du cours ?",
+      "exampleZh": "参加者通常对课程满意吗？",
+      "scenario": "general"
+    }
+  ]
+}
