@@ -1,0 +1,1340 @@
+{
+  "theme": "social",
+  "title": "社交聚会与个人生活",
+  "target": "TCF Canada 口语 Tâche 2 · C1",
+  "version": 1,
+  "principle": "约100个高价值词/词块，以17道最终真题为基础；词块与真实套用问法绑定，优先训练中文→法语主动调用。",
+  "scenarios": [
+    {
+      "id": "daily",
+      "name": "朋友近况 / 日常生活"
+    },
+    {
+      "id": "party",
+      "name": "生日 / 聚会"
+    },
+    {
+      "id": "event",
+      "name": "节庆 / 活动组织"
+    },
+    {
+      "id": "food",
+      "name": "餐饮 / 饮食习惯"
+    },
+    {
+      "id": "club",
+      "name": "会员 / 借阅"
+    },
+    {
+      "id": "school",
+      "name": "学校活动 / 儿童"
+    },
+    {
+      "id": "dinner",
+      "name": "餐厅 / 同事聚餐"
+    },
+    {
+      "id": "wedding",
+      "name": "婚礼"
+    },
+    {
+      "id": "outing",
+      "name": "文化出行 / 城市"
+    },
+    {
+      "id": "sport",
+      "name": "体育活动"
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": 1,
+      "fr": "prendre des nouvelles",
+      "zh": "prendre de ses nouvelles / 询问近况",
+      "scenario": "daily",
+      "priority": 5,
+      "exampleFr": "Vous prenez de mes nouvelles et vous me posez des questions sur ma vie quotidienne.",
+      "exampleZh": "你询问我的近况，并问我日常生活方面的问题。"
+    },
+    {
+      "id": 2,
+      "fr": "la vie quotidienne",
+      "zh": "日常生活",
+      "scenario": "daily",
+      "priority": 5,
+      "exampleFr": "Vous me posez des questions sur ma vie quotidienne.",
+      "exampleZh": "你问我关于日常生活的问题。"
+    },
+    {
+      "id": 3,
+      "fr": "le temps libre",
+      "zh": "空闲时间",
+      "scenario": "daily",
+      "priority": 5,
+      "exampleFr": "Qu’est-ce que tu fais surtout pendant ton temps libre en ce moment ?",
+      "exampleZh": "你现在空闲时间主要做什么？"
+    },
+    {
+      "id": 4,
+      "fr": "une activité culturelle",
+      "zh": "文化活动",
+      "scenario": "daily",
+      "priority": 4,
+      "exampleFr": "Tu fais aussi des activités culturelles pendant ton temps libre ?",
+      "exampleZh": "你空闲时间也参加文化活动吗？"
+    },
+    {
+      "id": 5,
+      "fr": "jouer du piano",
+      "zh": "弹钢琴",
+      "scenario": "daily",
+      "priority": 3,
+      "exampleFr": "Tu joues toujours du piano ?",
+      "exampleZh": "你现在还弹钢琴吗？"
+    },
+    {
+      "id": 6,
+      "fr": "un niveau",
+      "zh": "水平",
+      "scenario": "daily",
+      "priority": 4,
+      "exampleFr": "Quel niveau as-tu maintenant ?",
+      "exampleZh": "你现在是什么水平？"
+    },
+    {
+      "id": 7,
+      "fr": "faire du sport",
+      "zh": "做运动",
+      "scenario": "daily",
+      "priority": 5,
+      "exampleFr": "À quelle fréquence en fais-tu ?",
+      "exampleZh": "你多久做一次？"
+    },
+    {
+      "id": 8,
+      "fr": "le week-end",
+      "zh": "周末",
+      "scenario": "daily",
+      "priority": 5,
+      "exampleFr": "Qu’est-ce que tu fais généralement le week-end ?",
+      "exampleZh": "你周末通常做什么？"
+    },
+    {
+      "id": 9,
+      "fr": "rester en contact avec",
+      "zh": "与……保持联系",
+      "scenario": "daily",
+      "priority": 5,
+      "exampleFr": "Comment restes-tu en contact avec tes parents ?",
+      "exampleZh": "你怎么和父母保持联系？"
+    },
+    {
+      "id": 10,
+      "fr": "à quelle fréquence",
+      "zh": "多久一次",
+      "scenario": "daily",
+      "priority": 5,
+      "exampleFr": "À quelle fréquence les appelles-tu ?",
+      "exampleZh": "你多久给他们打一次电话？"
+    },
+    {
+      "id": 11,
+      "fr": "l’ambiance au travail",
+      "zh": "工作氛围",
+      "scenario": "daily",
+      "priority": 4,
+      "exampleFr": "Comment trouves-tu l’ambiance au travail ?",
+      "exampleZh": "你觉得工作氛围怎么样？"
+    },
+    {
+      "id": 12,
+      "fr": "changer dans sa vie",
+      "zh": "生活发生变化",
+      "scenario": "daily",
+      "priority": 4,
+      "exampleFr": "Qu’est-ce qui a le plus changé dans ta vie depuis la dernière fois qu’on s’est vus ?",
+      "exampleZh": "自从上次见面后，你生活中变化最大的是什么？"
+    },
+    {
+      "id": 13,
+      "fr": "fêter son anniversaire",
+      "zh": "庆祝生日",
+      "scenario": "party",
+      "priority": 5,
+      "exampleFr": "Où as-tu fêté ton anniversaire ?",
+      "exampleZh": "你在哪里庆祝生日？"
+    },
+    {
+      "id": 14,
+      "fr": "une soirée",
+      "zh": "晚会 / 聚会",
+      "scenario": "party",
+      "priority": 5,
+      "exampleFr": "À quelle heure la soirée a-t-elle commencé ?",
+      "exampleZh": "聚会几点开始的？"
+    },
+    {
+      "id": 15,
+      "fr": "une fête d’anniversaire",
+      "zh": "生日聚会",
+      "scenario": "party",
+      "priority": 5,
+      "exampleFr": "J’organise ma fête d’anniversaire.",
+      "exampleZh": "我要组织生日聚会。"
+    },
+    {
+      "id": 16,
+      "fr": "un invité / une invitée",
+      "zh": "宾客",
+      "scenario": "party",
+      "priority": 5,
+      "exampleFr": "Combien de personnes seront invitées ?",
+      "exampleZh": "会邀请多少人？"
+    },
+    {
+      "id": 17,
+      "fr": "être présent(e)",
+      "zh": "到场 / 在场",
+      "scenario": "party",
+      "priority": 4,
+      "exampleFr": "Combien de personnes étaient présentes ?",
+      "exampleZh": "有多少人在场？"
+    },
+    {
+      "id": 18,
+      "fr": "prévoir des activités",
+      "zh": "安排活动",
+      "scenario": "party",
+      "priority": 4,
+      "exampleFr": "Quelles activités aviez-vous prévues ?",
+      "exampleZh": "你们安排了哪些活动？"
+    },
+    {
+      "id": 19,
+      "fr": "faire du karaoké",
+      "zh": "唱卡拉 OK",
+      "scenario": "party",
+      "priority": 3,
+      "exampleFr": "Tu as fait du karaoké ?",
+      "exampleZh": "你唱卡拉 OK 了吗？"
+    },
+    {
+      "id": 20,
+      "fr": "jouer à des jeux de société",
+      "zh": "玩桌游",
+      "scenario": "party",
+      "priority": 4,
+      "exampleFr": "Tu as aussi joué à des jeux de société ?",
+      "exampleZh": "你也玩桌游了吗？"
+    },
+    {
+      "id": 21,
+      "fr": "un gâteau",
+      "zh": "蛋糕",
+      "scenario": "party",
+      "priority": 4,
+      "exampleFr": "Vous aviez choisi quel type de gâteau ?",
+      "exampleZh": "你们选了什么蛋糕？"
+    },
+    {
+      "id": 22,
+      "fr": "préparer le gâteau",
+      "zh": "准备蛋糕",
+      "scenario": "party",
+      "priority": 3,
+      "exampleFr": "Qui a préparé le gâteau ?",
+      "exampleZh": "谁准备的蛋糕？"
+    },
+    {
+      "id": 23,
+      "fr": "recevoir un cadeau",
+      "zh": "收到礼物",
+      "scenario": "party",
+      "priority": 4,
+      "exampleFr": "Tu as reçu quoi comme cadeaux ?",
+      "exampleZh": "你收到了什么礼物？"
+    },
+    {
+      "id": 24,
+      "fr": "faire plaisir",
+      "zh": "让人开心",
+      "scenario": "party",
+      "priority": 4,
+      "exampleFr": "Lequel t’a fait le plus plaisir ?",
+      "exampleZh": "哪个礼物最让你开心？"
+    },
+    {
+      "id": 25,
+      "fr": "l’ambiance",
+      "zh": "氛围",
+      "scenario": "party",
+      "priority": 5,
+      "exampleFr": "Comment était l’ambiance pendant la soirée ?",
+      "exampleZh": "聚会期间的氛围怎么样？"
+    },
+    {
+      "id": 26,
+      "fr": "se terminer",
+      "zh": "结束",
+      "scenario": "party",
+      "priority": 4,
+      "exampleFr": "Comment la soirée s’est-elle terminée ?",
+      "exampleZh": "聚会最后是怎么结束的？"
+    },
+    {
+      "id": 27,
+      "fr": "une soirée d’ouverture",
+      "zh": "开业晚会",
+      "scenario": "event",
+      "priority": 4,
+      "exampleFr": "Quand aura lieu la soirée d’ouverture ?",
+      "exampleZh": "开业晚会什么时候举行？"
+    },
+    {
+      "id": 28,
+      "fr": "avoir lieu",
+      "zh": "举行",
+      "scenario": "event",
+      "priority": 5,
+      "exampleFr": "À quelle date aura lieu le festival ?",
+      "exampleZh": "节日在哪一天举行？"
+    },
+    {
+      "id": 29,
+      "fr": "s’y rendre",
+      "zh": "前往那里",
+      "scenario": "event",
+      "priority": 5,
+      "exampleFr": "Comment peut-on s’y rendre ?",
+      "exampleZh": "怎么去那里？"
+    },
+    {
+      "id": 30,
+      "fr": "se garer gratuitement",
+      "zh": "免费停车",
+      "scenario": "event",
+      "priority": 4,
+      "exampleFr": "Est-ce qu’on peut se garer gratuitement si je viens en voiture ?",
+      "exampleZh": "如果我开车来，可以免费停车吗？"
+    },
+    {
+      "id": 31,
+      "fr": "s’habiller",
+      "zh": "穿衣 / 着装",
+      "scenario": "event",
+      "priority": 5,
+      "exampleFr": "Comment faut-il s’habiller pour la soirée ?",
+      "exampleZh": "参加晚会应该怎么穿？"
+    },
+    {
+      "id": 32,
+      "fr": "une tenue appropriée",
+      "zh": "合适的着装",
+      "scenario": "event",
+      "priority": 4,
+      "exampleFr": "Vous me posez des questions sur l’événement (tenue appropriée, menu proposé, déroulement de la soirée, etc.).",
+      "exampleZh": "你询问活动的合适着装、菜单和流程等。"
+    },
+    {
+      "id": 33,
+      "fr": "un menu",
+      "zh": "菜单",
+      "scenario": "food",
+      "priority": 5,
+      "exampleFr": "Qu’est-ce qui sera proposé au menu ?",
+      "exampleZh": "菜单会提供什么？"
+    },
+    {
+      "id": 34,
+      "fr": "un menu végétarien",
+      "zh": "素食菜单",
+      "scenario": "food",
+      "priority": 5,
+      "exampleFr": "Comme je suis végétarienne, un menu végétarien sera-t-il prévu ?",
+      "exampleZh": "因为我是素食者，会有素食菜单吗？"
+    },
+    {
+      "id": 35,
+      "fr": "un menu pour enfants",
+      "zh": "儿童菜单",
+      "scenario": "food",
+      "priority": 4,
+      "exampleFr": "Et pour les enfants, un menu sera-t-il prévu ?",
+      "exampleZh": "孩子会有专门的菜单吗？"
+    },
+    {
+      "id": 36,
+      "fr": "discuter avec le chef",
+      "zh": "和主厨交流",
+      "scenario": "food",
+      "priority": 3,
+      "exampleFr": "Pourrai-je discuter un peu avec le chef ?",
+      "exampleZh": "我能和主厨聊一会儿吗？"
+    },
+    {
+      "id": 37,
+      "fr": "se dérouler",
+      "zh": "进行 / 展开",
+      "scenario": "event",
+      "priority": 5,
+      "exampleFr": "Comment la soirée va-t-elle se dérouler ?",
+      "exampleZh": "晚会会怎么进行？"
+    },
+    {
+      "id": 38,
+      "fr": "gratuit ou payant",
+      "zh": "免费还是收费",
+      "scenario": "event",
+      "priority": 5,
+      "exampleFr": "Le repas sera-t-il gratuit ou payant ?",
+      "exampleZh": "这顿饭免费还是收费？"
+    },
+    {
+      "id": 39,
+      "fr": "confirmer sa présence",
+      "zh": "确认出席",
+      "scenario": "event",
+      "priority": 5,
+      "exampleFr": "Dois-je confirmer ma présence à l’avance ?",
+      "exampleZh": "我需要提前确认出席吗？"
+    },
+    {
+      "id": 40,
+      "fr": "s’inscrire à l’avance",
+      "zh": "提前报名",
+      "scenario": "event",
+      "priority": 5,
+      "exampleFr": "Est-ce que je dois m’inscrire à l’avance pour aider à l’organisation ?",
+      "exampleZh": "我需要提前报名来帮忙组织吗？"
+    },
+    {
+      "id": 41,
+      "fr": "remplir des documents",
+      "zh": "填写文件",
+      "scenario": "event",
+      "priority": 4,
+      "exampleFr": "Quels documents dois-je remplir ?",
+      "exampleZh": "我需要填写哪些文件？"
+    },
+    {
+      "id": 42,
+      "fr": "aider à l’organisation",
+      "zh": "帮助组织",
+      "scenario": "event",
+      "priority": 4,
+      "exampleFr": "Est-ce que je dois m’inscrire à l’avance pour aider à l’organisation ?",
+      "exampleZh": "我需要提前报名来帮忙组织吗？"
+    },
+    {
+      "id": 43,
+      "fr": "faire sur place",
+      "zh": "在现场做……",
+      "scenario": "event",
+      "priority": 4,
+      "exampleFr": "Qu’est-ce que vous voulez que je fasse sur place ?",
+      "exampleZh": "您想让我在现场做什么？"
+    },
+    {
+      "id": 44,
+      "fr": "un bénévole / une bénévole",
+      "zh": "志愿者",
+      "scenario": "event",
+      "priority": 4,
+      "exampleFr": "Qui coordonne les bénévoles pendant le festival ?",
+      "exampleZh": "节日期间谁来协调志愿者？"
+    },
+    {
+      "id": 45,
+      "fr": "coordonner les bénévoles",
+      "zh": "协调志愿者",
+      "scenario": "event",
+      "priority": 4,
+      "exampleFr": "Qui coordonne les bénévoles pendant le festival ?",
+      "exampleZh": "节日期间谁来协调志愿者？"
+    },
+    {
+      "id": 46,
+      "fr": "une attestation de participation",
+      "zh": "参与证明",
+      "scenario": "event",
+      "priority": 3,
+      "exampleFr": "Une attestation de participation est-elle remise après le festival ?",
+      "exampleZh": "节日结束后会发参与证明吗？"
+    },
+    {
+      "id": 47,
+      "fr": "une habitude alimentaire",
+      "zh": "饮食习惯",
+      "scenario": "food",
+      "priority": 5,
+      "exampleFr": "Les habitudes alimentaires changent-elles beaucoup le week-end ?",
+      "exampleZh": "周末的饮食习惯变化大吗？"
+    },
+    {
+      "id": 48,
+      "fr": "un repas",
+      "zh": "一餐 / 饭",
+      "scenario": "food",
+      "priority": 5,
+      "exampleFr": "Combien de repas mange-t-on généralement par jour au Québec ?",
+      "exampleZh": "在魁北克一般一天吃几顿饭？"
+    },
+    {
+      "id": 49,
+      "fr": "le petit-déjeuner",
+      "zh": "早餐",
+      "scenario": "food",
+      "priority": 4,
+      "exampleFr": "Qu’est-ce que les Québécois prennent généralement au petit-déjeuner ?",
+      "exampleZh": "魁北克人早餐通常吃什么？"
+    },
+    {
+      "id": 50,
+      "fr": "déjeuner",
+      "zh": "吃午饭",
+      "scenario": "food",
+      "priority": 4,
+      "exampleFr": "À quelle heure déjeune-t-on généralement ?",
+      "exampleZh": "通常几点吃午饭？"
+    },
+    {
+      "id": 51,
+      "fr": "dîner",
+      "zh": "吃晚饭",
+      "scenario": "food",
+      "priority": 4,
+      "exampleFr": "À quelle heure dîne-t-on le soir ?",
+      "exampleZh": "晚上通常几点吃晚饭？"
+    },
+    {
+      "id": 52,
+      "fr": "un plat typique",
+      "zh": "典型菜肴",
+      "scenario": "food",
+      "priority": 5,
+      "exampleFr": "Qu’est-ce que tu me conseillerais de goûter comme plat typique ?",
+      "exampleZh": "你建议我尝什么典型菜？"
+    },
+    {
+      "id": 53,
+      "fr": "un dessert typique",
+      "zh": "典型甜点",
+      "scenario": "food",
+      "priority": 4,
+      "exampleFr": "Qu’est-ce qu’on mange souvent comme dessert typique ?",
+      "exampleZh": "通常会吃什么典型甜点？"
+    },
+    {
+      "id": 54,
+      "fr": "un plat végétarien",
+      "zh": "素食菜",
+      "scenario": "food",
+      "priority": 5,
+      "exampleFr": "Trouve-t-on facilement des plats végétariens ?",
+      "exampleZh": "容易找到素食菜吗？"
+    },
+    {
+      "id": 55,
+      "fr": "aller au restaurant",
+      "zh": "去餐厅吃饭",
+      "scenario": "food",
+      "priority": 4,
+      "exampleFr": "Les Québécois vont-ils souvent au restaurant ?",
+      "exampleZh": "魁北克人经常去餐厅吗？"
+    },
+    {
+      "id": 56,
+      "fr": "cuisiner à la maison",
+      "zh": "在家做饭",
+      "scenario": "food",
+      "priority": 4,
+      "exampleFr": "On cuisine beaucoup à la maison en général ?",
+      "exampleZh": "一般经常在家做饭吗？"
+    },
+    {
+      "id": 57,
+      "fr": "une ludothèque",
+      "zh": "游戏馆 / 玩具借阅馆",
+      "scenario": "club",
+      "priority": 4,
+      "exampleFr": "Quels sont les horaires d’ouverture de la ludothèque ?",
+      "exampleZh": "游戏馆开放时间是什么？"
+    },
+    {
+      "id": 58,
+      "fr": "les horaires d’ouverture",
+      "zh": "开放时间",
+      "scenario": "club",
+      "priority": 5,
+      "exampleFr": "Quels sont les horaires d’ouverture de la ludothèque ?",
+      "exampleZh": "游戏馆开放时间是什么？"
+    },
+    {
+      "id": 59,
+      "fr": "une inscription",
+      "zh": "报名 / 注册",
+      "scenario": "club",
+      "priority": 5,
+      "exampleFr": "Combien coûte l’inscription pour un adulte ?",
+      "exampleZh": "成人报名费多少钱？"
+    },
+    {
+      "id": 60,
+      "fr": "s’inscrire",
+      "zh": "报名 / 注册",
+      "scenario": "club",
+      "priority": 5,
+      "exampleFr": "Comment puis-je m’inscrire ?",
+      "exampleZh": "我怎么报名？"
+    },
+    {
+      "id": 61,
+      "fr": "une carte de membre",
+      "zh": "会员卡",
+      "scenario": "club",
+      "priority": 4,
+      "exampleFr": "Après l’inscription, vais-je recevoir une carte de membre ?",
+      "exampleZh": "报名后我会收到会员卡吗？"
+    },
+    {
+      "id": 62,
+      "fr": "emprunter un jeu",
+      "zh": "借游戏",
+      "scenario": "club",
+      "priority": 5,
+      "exampleFr": "Combien de jeux puis-je emprunter à la fois ?",
+      "exampleZh": "我一次可以借几个游戏？"
+    },
+    {
+      "id": 63,
+      "fr": "garder un jeu",
+      "zh": "保留 / 借用游戏",
+      "scenario": "club",
+      "priority": 4,
+      "exampleFr": "Combien de temps puis-je garder un jeu ?",
+      "exampleZh": "一个游戏我可以借多久？"
+    },
+    {
+      "id": 64,
+      "fr": "rendre un jeu",
+      "zh": "归还游戏",
+      "scenario": "club",
+      "priority": 4,
+      "exampleFr": "Que se passe-t-il si je rends un jeu en retard ?",
+      "exampleZh": "如果我逾期归还游戏会怎样？"
+    },
+    {
+      "id": 65,
+      "fr": "en retard",
+      "zh": "迟到 / 逾期",
+      "scenario": "club",
+      "priority": 5,
+      "exampleFr": "Que se passe-t-il si je rends un jeu en retard ?",
+      "exampleZh": "如果我逾期归还游戏会怎样？"
+    },
+    {
+      "id": 66,
+      "fr": "un jeu adapté à différents âges",
+      "zh": "适合不同年龄的游戏",
+      "scenario": "club",
+      "priority": 4,
+      "exampleFr": "Trouve-t-on des jeux adaptés à différents âges ?",
+      "exampleZh": "有适合不同年龄的游戏吗？"
+    },
+    {
+      "id": 67,
+      "fr": "encadrer les enfants",
+      "zh": "照看 / 指导儿童",
+      "scenario": "club",
+      "priority": 5,
+      "exampleFr": "Du personnel est-il présent pour encadrer et aider les enfants ?",
+      "exampleZh": "有工作人员照看并帮助孩子吗？"
+    },
+    {
+      "id": 68,
+      "fr": "une fête de l’école",
+      "zh": "学校庆典",
+      "scenario": "school",
+      "priority": 4,
+      "exampleFr": "À quelle date aura lieu la fête de l’école ?",
+      "exampleZh": "学校庆典在哪一天举行？"
+    },
+    {
+      "id": 69,
+      "fr": "un programme",
+      "zh": "节目安排",
+      "scenario": "school",
+      "priority": 5,
+      "exampleFr": "Quel est le programme prévu cette année ?",
+      "exampleZh": "今年安排了什么节目？"
+    },
+    {
+      "id": 70,
+      "fr": "une animation",
+      "zh": "娱乐活动 / 互动项目",
+      "scenario": "school",
+      "priority": 4,
+      "exampleFr": "Vaut-il mieux arriver un peu en avance pour certaines animations ?",
+      "exampleZh": "参加某些活动最好提前一点到吗？"
+    },
+    {
+      "id": 71,
+      "fr": "un atelier",
+      "zh": "工作坊",
+      "scenario": "school",
+      "priority": 5,
+      "exampleFr": "Comment se passe l’inscription de mon fils à un atelier ?",
+      "exampleZh": "我儿子怎么报名参加工作坊？"
+    },
+    {
+      "id": 72,
+      "fr": "être bien encadré(e)",
+      "zh": "有良好看护",
+      "scenario": "school",
+      "priority": 5,
+      "exampleFr": "Les activités seront-elles bien encadrées et sécurisées pour les enfants ?",
+      "exampleZh": "儿童活动有良好看护并且安全吗？"
+    },
+    {
+      "id": 73,
+      "fr": "être sécurisé(e)",
+      "zh": "安全有保障",
+      "scenario": "school",
+      "priority": 5,
+      "exampleFr": "Les activités seront-elles bien encadrées et sécurisées pour les enfants ?",
+      "exampleZh": "儿童活动有良好看护并且安全吗？"
+    },
+    {
+      "id": 74,
+      "fr": "être adapté(e) à tous les âges",
+      "zh": "适合所有年龄",
+      "scenario": "school",
+      "priority": 4,
+      "exampleFr": "Les activités sont-elles adaptées à tous les âges ?",
+      "exampleZh": "活动适合所有年龄吗？"
+    },
+    {
+      "id": 75,
+      "fr": "participer avec son enfant",
+      "zh": "和孩子一起参加",
+      "scenario": "school",
+      "priority": 4,
+      "exampleFr": "Les parents peuvent-ils participer à certaines activités avec leurs enfants ?",
+      "exampleZh": "家长可以和孩子一起参加某些活动吗？"
+    },
+    {
+      "id": 76,
+      "fr": "arriver en avance",
+      "zh": "提前到达",
+      "scenario": "school",
+      "priority": 4,
+      "exampleFr": "Vaut-il mieux arriver un peu en avance pour certaines animations ?",
+      "exampleZh": "参加某些活动最好提前一点到吗？"
+    },
+    {
+      "id": 77,
+      "fr": "un dîner entre collègues",
+      "zh": "同事聚餐",
+      "scenario": "dinner",
+      "priority": 4,
+      "exampleFr": "Je vous invite à un dîner entre collègues.",
+      "exampleZh": "我邀请你参加同事聚餐。"
+    },
+    {
+      "id": 78,
+      "fr": "un restaurant",
+      "zh": "餐厅",
+      "scenario": "dinner",
+      "priority": 5,
+      "exampleFr": "Où se trouve exactement le restaurant ?",
+      "exampleZh": "餐厅具体在哪里？"
+    },
+    {
+      "id": 79,
+      "fr": "une cuisine",
+      "zh": "菜系",
+      "scenario": "dinner",
+      "priority": 4,
+      "exampleFr": "Qu’est-ce qui sera proposé au menu ?",
+      "exampleZh": "菜单会提供什么？"
+    },
+    {
+      "id": 80,
+      "fr": "un prix par personne",
+      "zh": "人均价格",
+      "scenario": "dinner",
+      "priority": 5,
+      "exampleFr": "Combien coûte le repas par personne ?",
+      "exampleZh": "每个人这顿饭多少钱？"
+    },
+    {
+      "id": 81,
+      "fr": "venir avec quelqu’un",
+      "zh": "带人一起参加",
+      "scenario": "dinner",
+      "priority": 4,
+      "exampleFr": "Puis-je venir avec mon fils ?",
+      "exampleZh": "我可以带儿子一起来吗？"
+    },
+    {
+      "id": 82,
+      "fr": "une boisson",
+      "zh": "饮料",
+      "scenario": "dinner",
+      "priority": 4,
+      "exampleFr": "Qu’est-ce qu’on boit généralement pendant les repas ?",
+      "exampleZh": "吃饭时通常喝什么？"
+    },
+    {
+      "id": 83,
+      "fr": "une boisson sans alcool",
+      "zh": "无酒精饮料",
+      "scenario": "dinner",
+      "priority": 4,
+      "exampleFr": "Y aura-t-il aussi des boissons sans alcool ?",
+      "exampleZh": "也会有无酒精饮料吗？"
+    },
+    {
+      "id": 84,
+      "fr": "une décoration",
+      "zh": "装饰",
+      "scenario": "party",
+      "priority": 4,
+      "exampleFr": "Quel style de décoration voudrais-tu ?",
+      "exampleZh": "你想要什么风格的装饰？"
+    },
+    {
+      "id": 85,
+      "fr": "décorer",
+      "zh": "装饰",
+      "scenario": "party",
+      "priority": 3,
+      "exampleFr": "Quel style de décoration voudrais-tu ?",
+      "exampleZh": "你想要什么风格的装饰？"
+    },
+    {
+      "id": 86,
+      "fr": "réserver un lieu",
+      "zh": "预订场地",
+      "scenario": "party",
+      "priority": 4,
+      "exampleFr": "Faut-il réserver le lieu à l’avance ?",
+      "exampleZh": "需要提前预订场地吗？"
+    },
+    {
+      "id": 87,
+      "fr": "un budget",
+      "zh": "预算",
+      "scenario": "party",
+      "priority": 5,
+      "exampleFr": "Quel budget faudrait-il prévoir pour la fête ?",
+      "exampleZh": "这次聚会大概要准备多少预算？"
+    },
+    {
+      "id": 88,
+      "fr": "répartir les tâches",
+      "zh": "分工",
+      "scenario": "party",
+      "priority": 5,
+      "exampleFr": "Comment veux-tu répartir les tâches entre nous ?",
+      "exampleZh": "你想怎么分配我们之间的任务？"
+    },
+    {
+      "id": 89,
+      "fr": "un mariage",
+      "zh": "婚礼",
+      "scenario": "wedding",
+      "priority": 5,
+      "exampleFr": "Vous me posez des questions sur le mariage.",
+      "exampleZh": "你询问婚礼相关信息。"
+    },
+    {
+      "id": 90,
+      "fr": "se marier",
+      "zh": "结婚",
+      "scenario": "wedding",
+      "priority": 5,
+      "exampleFr": "Mon fils va se marier.",
+      "exampleZh": "我儿子要结婚了。"
+    },
+    {
+      "id": 91,
+      "fr": "une cérémonie",
+      "zh": "仪式",
+      "scenario": "wedding",
+      "priority": 4,
+      "exampleFr": "Comment va se dérouler la cérémonie ?",
+      "exampleZh": "仪式会怎么进行？"
+    },
+    {
+      "id": 92,
+      "fr": "un repas de mariage",
+      "zh": "婚宴",
+      "scenario": "wedding",
+      "priority": 4,
+      "exampleFr": "Où aura lieu le repas de mariage ?",
+      "exampleZh": "婚宴在哪里举行？"
+    },
+    {
+      "id": 93,
+      "fr": "un dress code",
+      "zh": "着装要求",
+      "scenario": "wedding",
+      "priority": 4,
+      "exampleFr": "Y a-t-il un dress code particulier ?",
+      "exampleZh": "有特别的着装要求吗？"
+    },
+    {
+      "id": 94,
+      "fr": "une carte d’invitation",
+      "zh": "邀请卡",
+      "scenario": "wedding",
+      "priority": 3,
+      "exampleFr": "Quand vais-je recevoir la carte d’invitation ?",
+      "exampleZh": "我什么时候会收到邀请卡？"
+    },
+    {
+      "id": 95,
+      "fr": "offrir un cadeau",
+      "zh": "送礼物",
+      "scenario": "wedding",
+      "priority": 5,
+      "exampleFr": "Quel cadeau me conseillerais-tu d’offrir ?",
+      "exampleZh": "你建议我送什么礼物？"
+    },
+    {
+      "id": 96,
+      "fr": "un cadeau commun",
+      "zh": "共同送的礼物",
+      "scenario": "wedding",
+      "priority": 3,
+      "exampleFr": "Est-ce qu’on prévoit un cadeau commun ?",
+      "exampleZh": "大家会准备共同礼物吗？"
+    },
+    {
+      "id": 97,
+      "fr": "confirmer sa participation",
+      "zh": "确认参加",
+      "scenario": "wedding",
+      "priority": 5,
+      "exampleFr": "Comment dois-je confirmer ma participation ?",
+      "exampleZh": "我该怎么确认参加？"
+    },
+    {
+      "id": 98,
+      "fr": "une sortie culturelle",
+      "zh": "文化出行",
+      "scenario": "outing",
+      "priority": 5,
+      "exampleFr": "Vous venez d’arriver au Canada. Demandez-moi des conseils pour faire une sortie culturelle bon marché.",
+      "exampleZh": "你刚到加拿大，向我询问如何进行一次便宜的文化出行。"
+    },
+    {
+      "id": 99,
+      "fr": "bon marché",
+      "zh": "便宜的 / 实惠的",
+      "scenario": "outing",
+      "priority": 5,
+      "exampleFr": "Vous voulez faire une sortie culturelle bon marché.",
+      "exampleZh": "你想进行一次经济实惠的文化出行。"
+    },
+    {
+      "id": 100,
+      "fr": "un tarif réduit",
+      "zh": "优惠价",
+      "scenario": "outing",
+      "priority": 5,
+      "exampleFr": "Y a-t-il un tarif réduit pour les nouveaux arrivants ?",
+      "exampleZh": "新来的人有优惠价吗？"
+    },
+    {
+      "id": 101,
+      "fr": "une réduction",
+      "zh": "折扣",
+      "scenario": "outing",
+      "priority": 4,
+      "exampleFr": "Est-ce qu’il y a des réductions ?",
+      "exampleZh": "有折扣吗？"
+    },
+    {
+      "id": 102,
+      "fr": "un site touristique",
+      "zh": "旅游景点",
+      "scenario": "outing",
+      "priority": 4,
+      "exampleFr": "Quels sites touristiques me conseillerais-tu en priorité ?",
+      "exampleZh": "你会优先推荐哪些旅游景点？"
+    },
+    {
+      "id": 103,
+      "fr": "un espace vert",
+      "zh": "绿地",
+      "scenario": "outing",
+      "priority": 3,
+      "exampleFr": "Qu’est-ce qu’on peut voir comme paysages ou espaces verts ?",
+      "exampleZh": "能看到哪些风景或绿地？"
+    },
+    {
+      "id": 104,
+      "fr": "un monument",
+      "zh": "纪念建筑 / 名胜",
+      "scenario": "outing",
+      "priority": 4,
+      "exampleFr": "Quels bâtiments ou monuments valent vraiment le détour ?",
+      "exampleZh": "哪些建筑或纪念性景点特别值得去？"
+    },
+    {
+      "id": 105,
+      "fr": "valoir le détour",
+      "zh": "值得专程去看",
+      "scenario": "outing",
+      "priority": 5,
+      "exampleFr": "Quels bâtiments ou monuments valent vraiment le détour ?",
+      "exampleZh": "哪些建筑或纪念性景点特别值得去？"
+    },
+    {
+      "id": 106,
+      "fr": "une activité sportive",
+      "zh": "体育活动",
+      "scenario": "sport",
+      "priority": 5,
+      "exampleFr": "Vous voulez pratiquer ce sport avec moi.",
+      "exampleZh": "你想和我一起参加这项运动。"
+    },
+    {
+      "id": 107,
+      "fr": "pratiquer un sport",
+      "zh": "参加一项运动",
+      "scenario": "sport",
+      "priority": 5,
+      "exampleFr": "Je pratique un sport depuis longtemps.",
+      "exampleZh": "我从事这项运动已经很久了。"
+    },
+    {
+      "id": 108,
+      "fr": "un débutant / une débutante",
+      "zh": "初学者",
+      "scenario": "sport",
+      "priority": 5,
+      "exampleFr": "Est-ce que cette activité est adaptée aux débutants ?",
+      "exampleZh": "这项活动适合初学者吗？"
+    },
+    {
+      "id": 109,
+      "fr": "un entraîneur",
+      "zh": "教练",
+      "scenario": "sport",
+      "priority": 5,
+      "exampleFr": "Y a-t-il un entraîneur pour les débutants ?",
+      "exampleZh": "有教练指导初学者吗？"
+    },
+    {
+      "id": 110,
+      "fr": "un équipement",
+      "zh": "装备",
+      "scenario": "sport",
+      "priority": 5,
+      "exampleFr": "Quel équipement faut-il prévoir ?",
+      "exampleZh": "需要准备什么装备？"
+    },
+    {
+      "id": 111,
+      "fr": "s’inscrire à une activité",
+      "zh": "报名参加活动",
+      "scenario": "sport",
+      "priority": 5,
+      "exampleFr": "Comment puis-je m’inscrire à cette activité ?",
+      "exampleZh": "我怎么报名参加这项活动？"
+    }
+  ],
+  "patterns": [
+    {
+      "id": 1,
+      "pattern": "Où / quand + événement + a-t-il lieu ?",
+      "zh": "活动在哪里/什么时候举行？",
+      "exampleFr": "À quelle date aura lieu le festival ?",
+      "exampleZh": "节日在哪一天举行？",
+      "scenario": "event"
+    },
+    {
+      "id": 2,
+      "pattern": "À quelle heure + commencer ?",
+      "zh": "几点开始？",
+      "exampleFr": "À quelle heure commencera la soirée ?",
+      "exampleZh": "晚会几点开始？",
+      "scenario": "event"
+    },
+    {
+      "id": 3,
+      "pattern": "Combien de temps + durer ?",
+      "zh": "持续多久？",
+      "exampleFr": "Combien de temps durera l’événement ?",
+      "exampleZh": "活动会持续多久？",
+      "scenario": "event"
+    },
+    {
+      "id": 4,
+      "pattern": "Combien de personnes + être présentes / invitées ?",
+      "zh": "有多少人参加/受邀？",
+      "exampleFr": "Combien de personnes étaient présentes ?",
+      "exampleZh": "有多少人在场？",
+      "scenario": "party"
+    },
+    {
+      "id": 5,
+      "pattern": "Qui sera là ?",
+      "zh": "谁会参加？",
+      "exampleFr": "Qui était là, plutôt ta famille, tes amis ou les deux ?",
+      "exampleZh": "谁参加了，是家人、朋友还是两者都有？",
+      "scenario": "party"
+    },
+    {
+      "id": 6,
+      "pattern": "Quelles activités + prévoir ?",
+      "zh": "安排了哪些活动？",
+      "exampleFr": "Quelles activités aviez-vous prévues ?",
+      "exampleZh": "你们安排了哪些活动？",
+      "scenario": "party"
+    },
+    {
+      "id": 7,
+      "pattern": "Comment était l’ambiance ?",
+      "zh": "氛围怎么样？",
+      "exampleFr": "Comment était l’ambiance pendant la soirée ?",
+      "exampleZh": "聚会期间氛围怎么样？",
+      "scenario": "party"
+    },
+    {
+      "id": 8,
+      "pattern": "Qu’est-ce que tu as préféré ?",
+      "zh": "你最喜欢什么？",
+      "exampleFr": "Qu’est-ce que tu as préféré pendant la soirée ?",
+      "exampleZh": "聚会中你最喜欢什么？",
+      "scenario": "party"
+    },
+    {
+      "id": 9,
+      "pattern": "Comment faut-il s’habiller ?",
+      "zh": "应该怎么穿？",
+      "exampleFr": "Comment faut-il s’habiller pour la soirée ?",
+      "exampleZh": "参加晚会应该怎么穿？",
+      "scenario": "event"
+    },
+    {
+      "id": 10,
+      "pattern": "Qu’est-ce qui sera proposé + complément ?",
+      "zh": "会提供什么？",
+      "exampleFr": "Qu’est-ce qui sera proposé au menu ?",
+      "exampleZh": "菜单会提供什么？",
+      "scenario": "food"
+    },
+    {
+      "id": 11,
+      "pattern": "Y aura-t-il / sera-t-il prévu + nom ?",
+      "zh": "会有……吗？",
+      "exampleFr": "Comme je suis végétarienne, un menu végétarien sera-t-il prévu ?",
+      "exampleZh": "因为我是素食者，会有素食菜单吗？",
+      "scenario": "food"
+    },
+    {
+      "id": 12,
+      "pattern": "Comment + événement + va-t-il se dérouler ?",
+      "zh": "活动会怎么进行？",
+      "exampleFr": "Comment la soirée va-t-elle se dérouler ?",
+      "exampleZh": "晚会会怎么进行？",
+      "scenario": "event"
+    },
+    {
+      "id": 13,
+      "pattern": "Est-ce gratuit ou payant ?",
+      "zh": "免费还是收费？",
+      "exampleFr": "La participation est-elle gratuite ou payante ?",
+      "exampleZh": "参加是免费还是收费？",
+      "scenario": "event"
+    },
+    {
+      "id": 14,
+      "pattern": "Dois-je confirmer ma présence à l’avance ?",
+      "zh": "我需要提前确认出席吗？",
+      "exampleFr": "Dois-je confirmer ma présence à l’avance ?",
+      "exampleZh": "我需要提前确认出席吗？",
+      "scenario": "event"
+    },
+    {
+      "id": 15,
+      "pattern": "Dois-je m’inscrire à l’avance ?",
+      "zh": "需要提前报名吗？",
+      "exampleFr": "Est-ce que je dois m’inscrire à l’avance pour aider à l’organisation ?",
+      "exampleZh": "我需要提前报名来帮忙组织吗？",
+      "scenario": "event"
+    },
+    {
+      "id": 16,
+      "pattern": "Qu’est-ce que je dois apporter ?",
+      "zh": "我需要带什么？",
+      "exampleFr": "Qu’est-ce que je dois apporter comme documents pour l’inscription ?",
+      "exampleZh": "报名需要带什么文件？",
+      "scenario": "club"
+    },
+    {
+      "id": 17,
+      "pattern": "Comment puis-je m’inscrire ?",
+      "zh": "我怎么报名？",
+      "exampleFr": "Comment puis-je m’inscrire ?",
+      "exampleZh": "我怎么报名？",
+      "scenario": "club"
+    },
+    {
+      "id": 18,
+      "pattern": "Combien coûte l’inscription pour + personne ?",
+      "zh": "……报名费多少钱？",
+      "exampleFr": "Combien coûte l’inscription pour un adulte ?",
+      "exampleZh": "成人报名费多少钱？",
+      "scenario": "club"
+    },
+    {
+      "id": 19,
+      "pattern": "Combien de + nom + puis-je emprunter ?",
+      "zh": "我可以借多少……？",
+      "exampleFr": "Combien de jeux puis-je emprunter à la fois ?",
+      "exampleZh": "我一次可以借几个游戏？",
+      "scenario": "club"
+    },
+    {
+      "id": 20,
+      "pattern": "Combien de temps puis-je garder + nom ?",
+      "zh": "我可以借多久？",
+      "exampleFr": "Combien de temps puis-je garder un jeu ?",
+      "exampleZh": "一个游戏我可以借多久？",
+      "scenario": "club"
+    },
+    {
+      "id": 21,
+      "pattern": "Que se passe-t-il si + situation ?",
+      "zh": "如果……会怎样？",
+      "exampleFr": "Que se passe-t-il si je rends un jeu en retard ?",
+      "exampleZh": "如果我逾期归还游戏会怎样？",
+      "scenario": "club"
+    },
+    {
+      "id": 22,
+      "pattern": "Les activités sont-elles adaptées à + public ?",
+      "zh": "活动适合……吗？",
+      "exampleFr": "Les activités sont-elles adaptées à tous les âges ?",
+      "exampleZh": "活动适合所有年龄吗？",
+      "scenario": "school"
+    },
+    {
+      "id": 23,
+      "pattern": "Les activités sont-elles bien encadrées et sécurisées ?",
+      "zh": "活动有良好看护并且安全吗？",
+      "exampleFr": "Les activités seront-elles bien encadrées et sécurisées pour les enfants ?",
+      "exampleZh": "儿童活动有良好看护并且安全吗？",
+      "scenario": "school"
+    },
+    {
+      "id": 24,
+      "pattern": "Puis-je venir avec + personne ?",
+      "zh": "我可以带……一起来吗？",
+      "exampleFr": "Puis-je venir avec mon fils ?",
+      "exampleZh": "我可以带儿子来吗？",
+      "scenario": "event"
+    },
+    {
+      "id": 25,
+      "pattern": "Qu’est-ce que tu fais pendant ton temps libre ?",
+      "zh": "你空闲时间做什么？",
+      "exampleFr": "Qu’est-ce que tu fais surtout pendant ton temps libre en ce moment ?",
+      "exampleZh": "你现在空闲时间主要做什么？",
+      "scenario": "daily"
+    },
+    {
+      "id": 26,
+      "pattern": "À quelle fréquence + verbe ?",
+      "zh": "多久一次？",
+      "exampleFr": "À quelle fréquence les appelles-tu ?",
+      "exampleZh": "你多久给他们打一次电话？",
+      "scenario": "daily"
+    },
+    {
+      "id": 27,
+      "pattern": "Comment trouves-tu + nom ?",
+      "zh": "你觉得……怎么样？",
+      "exampleFr": "Comment trouves-tu l’ambiance au travail ?",
+      "exampleZh": "你觉得工作氛围怎么样？",
+      "scenario": "daily"
+    },
+    {
+      "id": 28,
+      "pattern": "Qu’est-ce qui a le plus changé + complément ?",
+      "zh": "什么变化最大？",
+      "exampleFr": "Qu’est-ce qui a le plus changé dans ta vie depuis la dernière fois qu’on s’est vus ?",
+      "exampleZh": "自从上次见面后，你生活中变化最大的是什​​么？",
+      "scenario": "daily"
+    },
+    {
+      "id": 29,
+      "pattern": "Qu’est-ce que tu me conseillerais de goûter ?",
+      "zh": "你建议我尝什么？",
+      "exampleFr": "Qu’est-ce que tu me conseillerais de goûter comme plat typique ?",
+      "exampleZh": "你建议我尝什么典型菜？",
+      "scenario": "food"
+    },
+    {
+      "id": 30,
+      "pattern": "Trouve-t-on facilement + nom ?",
+      "zh": "容易找到……吗？",
+      "exampleFr": "Trouve-t-on facilement des plats végétariens ?",
+      "exampleZh": "容易找到素食菜吗？",
+      "scenario": "food"
+    },
+    {
+      "id": 31,
+      "pattern": "Quel budget faudrait-il prévoir ?",
+      "zh": "大概要准备多少预算？",
+      "exampleFr": "Quel budget faudrait-il prévoir pour la fête ?",
+      "exampleZh": "这次聚会大概要准备多少预算？",
+      "scenario": "party"
+    },
+    {
+      "id": 32,
+      "pattern": "Comment veux-tu répartir les tâches ?",
+      "zh": "你想怎么分工？",
+      "exampleFr": "Comment veux-tu répartir les tâches entre nous ?",
+      "exampleZh": "你想怎么分配我们之间的任务？",
+      "scenario": "party"
+    },
+    {
+      "id": 33,
+      "pattern": "Quel cadeau me conseillerais-tu d’offrir ?",
+      "zh": "你建议我送什么礼物？",
+      "exampleFr": "Quel cadeau me conseillerais-tu d’offrir ?",
+      "exampleZh": "你建议我送什么礼物？",
+      "scenario": "wedding"
+    },
+    {
+      "id": 34,
+      "pattern": "Y a-t-il un tarif réduit / des réductions ?",
+      "zh": "有优惠价/折扣吗？",
+      "exampleFr": "Y a-t-il un tarif réduit pour les nouveaux arrivants ?",
+      "exampleZh": "新来的人有优惠价吗？",
+      "scenario": "outing"
+    },
+    {
+      "id": 35,
+      "pattern": "Quel équipement faut-il prévoir ?",
+      "zh": "需要准备什么装备？",
+      "exampleFr": "Quel équipement faut-il prévoir ?",
+      "exampleZh": "需要准备什么装备？",
+      "scenario": "sport"
+    },
+    {
+      "id": 36,
+      "pattern": "Est-ce que cette activité est adaptée aux débutants ?",
+      "zh": "这项活动适合初学者吗？",
+      "exampleFr": "Est-ce que cette activité est adaptée aux débutants ?",
+      "exampleZh": "这项活动适合初学者吗？",
+      "scenario": "sport"
+    }
+  ]
+}
