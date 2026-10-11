@@ -5,7 +5,7 @@ on:
     paths:
       - '.github/workflows/build-t2-real-exam-themes.yml'
       - 'tools/piper/real-exam-themes/build.py'
-      - 'tache2/real-exams/source/themes-source.json.gz.b64'
+      - 'tache2/real-exams/source/themes-source*.b64'
   workflow_dispatch:
 permissions:
   contents: write
