@@ -1,0 +1,1356 @@
+{
+  "theme": "work",
+  "title": "工作与职业",
+  "target": "TCF Canada 口语 Tâche 2 · C1",
+  "version": 1,
+  "principle": "约100个高价值词/词块，以9道最终真题为基础；词块与真实套用问法绑定，优先训练中文→法语主动调用。",
+  "scenarios": [
+    {
+      "id": "job",
+      "name": "新工作 / 职场日常"
+    },
+    {
+      "id": "interview",
+      "name": "求职面试"
+    },
+    {
+      "id": "jobsearch",
+      "name": "求职 / 加拿大工作"
+    },
+    {
+      "id": "career",
+      "name": "职业发展 / 薪资"
+    },
+    {
+      "id": "transfer",
+      "name": "内部转岗 / 工作压力"
+    },
+    {
+      "id": "business",
+      "name": "开店 / 商业经营"
+    },
+    {
+      "id": "childcare",
+      "name": "接送孩子 / 兼职"
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": 1,
+      "fr": "un emploi",
+      "zh": "工作 / 职位",
+      "scenario": "job",
+      "priority": 5,
+      "exampleFr": "Vous me posez des questions sur mon nouvel emploi.",
+      "exampleZh": "你问我关于新工作的情况。"
+    },
+    {
+      "id": 2,
+      "fr": "être embauché(e)",
+      "zh": "被录用 / 入职",
+      "scenario": "job",
+      "priority": 5,
+      "exampleFr": "Je viens d’être embauché(e) dans une entreprise de la région de Toronto.",
+      "exampleZh": "我刚被多伦多地区的一家公司录用。"
+    },
+    {
+      "id": 3,
+      "fr": "une entreprise",
+      "zh": "公司",
+      "scenario": "job",
+      "priority": 5,
+      "exampleFr": "Je viens d’être embauché(e) dans une entreprise de la région de Toronto.",
+      "exampleZh": "我刚被一家企业录用。"
+    },
+    {
+      "id": 4,
+      "fr": "un nouvel emploi",
+      "zh": "新工作",
+      "scenario": "job",
+      "priority": 5,
+      "exampleFr": "Vous me posez des questions sur mon nouvel emploi.",
+      "exampleZh": "你问我关于新工作的情况。"
+    },
+    {
+      "id": 5,
+      "fr": "un collègue / une collègue",
+      "zh": "同事",
+      "scenario": "job",
+      "priority": 5,
+      "exampleFr": "Comment sont tes collègues ?",
+      "exampleZh": "你的同事怎么样？"
+    },
+    {
+      "id": 6,
+      "fr": "un manager / une manageuse",
+      "zh": "经理 / 管理者",
+      "scenario": "job",
+      "priority": 5,
+      "exampleFr": "Comment ça se passe avec ton manager ?",
+      "exampleZh": "你和经理相处得怎么样？"
+    },
+    {
+      "id": 7,
+      "fr": "un responsable",
+      "zh": "负责人",
+      "scenario": "job",
+      "priority": 4,
+      "exampleFr": "Qui est ton responsable direct ?",
+      "exampleZh": "你的直属负责人是谁？"
+    },
+    {
+      "id": 8,
+      "fr": "les locaux",
+      "zh": "办公场所",
+      "scenario": "job",
+      "priority": 4,
+      "exampleFr": "Comment sont les locaux de l’entreprise ?",
+      "exampleZh": "公司的办公场所怎么样？"
+    },
+    {
+      "id": 9,
+      "fr": "l’ambiance de travail",
+      "zh": "工作氛围",
+      "scenario": "job",
+      "priority": 5,
+      "exampleFr": "Comment trouves-tu l’ambiance au travail ?",
+      "exampleZh": "你觉得工作氛围怎么样？"
+    },
+    {
+      "id": 10,
+      "fr": "les conditions de travail",
+      "zh": "工作条件",
+      "scenario": "job",
+      "priority": 5,
+      "exampleFr": "Comment sont les conditions de travail dans ton entreprise ?",
+      "exampleZh": "你公司的工作条件怎么样？"
+    },
+    {
+      "id": 11,
+      "fr": "les avantages",
+      "zh": "福利",
+      "scenario": "job",
+      "priority": 5,
+      "exampleFr": "Quels avantages l’entreprise propose-t-elle ?",
+      "exampleZh": "公司提供哪些福利？"
+    },
+    {
+      "id": 12,
+      "fr": "une activité d’entreprise",
+      "zh": "公司活动",
+      "scenario": "job",
+      "priority": 4,
+      "exampleFr": "L’entreprise organise-t-elle des activités pour les employés ?",
+      "exampleZh": "公司会为员工组织活动吗？"
+    },
+    {
+      "id": 13,
+      "fr": "une tâche",
+      "zh": "任务",
+      "scenario": "job",
+      "priority": 5,
+      "exampleFr": "Quelles sont tes principales tâches ?",
+      "exampleZh": "你的主要任务是什么？"
+    },
+    {
+      "id": 14,
+      "fr": "une responsabilité",
+      "zh": "职责",
+      "scenario": "job",
+      "priority": 5,
+      "exampleFr": "Quelles sont tes principales responsabilités ?",
+      "exampleZh": "你的主要职责是什么？"
+    },
+    {
+      "id": 15,
+      "fr": "une mission",
+      "zh": "工作任务 / 职责",
+      "scenario": "job",
+      "priority": 4,
+      "exampleFr": "Quelles missions t’ont été confiées au début ?",
+      "exampleZh": "你刚开始被分配了哪些任务？"
+    },
+    {
+      "id": 16,
+      "fr": "la journée de travail",
+      "zh": "工作日",
+      "scenario": "job",
+      "priority": 5,
+      "exampleFr": "À quoi ressemble une journée de travail typique ?",
+      "exampleZh": "典型工作日是什么样？"
+    },
+    {
+      "id": 17,
+      "fr": "les horaires de travail",
+      "zh": "工作时间",
+      "scenario": "job",
+      "priority": 5,
+      "exampleFr": "Quels sont tes horaires de travail ?",
+      "exampleZh": "你的工作时间是什么？"
+    },
+    {
+      "id": 18,
+      "fr": "une pause déjeuner",
+      "zh": "午休",
+      "scenario": "job",
+      "priority": 4,
+      "exampleFr": "Combien de temps dure la pause déjeuner ?",
+      "exampleZh": "午休多长时间？"
+    },
+    {
+      "id": 19,
+      "fr": "faire la navette",
+      "zh": "通勤",
+      "scenario": "job",
+      "priority": 4,
+      "exampleFr": "Combien de temps te faut-il pour faire la navette ?",
+      "exampleZh": "你通勤需要多久？"
+    },
+    {
+      "id": 20,
+      "fr": "le trajet domicile-travail",
+      "zh": "上下班通勤路线",
+      "scenario": "job",
+      "priority": 4,
+      "exampleFr": "Combien de temps dure ton trajet domicile-travail ?",
+      "exampleZh": "你上下班通勤多久？"
+    },
+    {
+      "id": 21,
+      "fr": "une formation d’intégration",
+      "zh": "入职培训",
+      "scenario": "job",
+      "priority": 5,
+      "exampleFr": "As-tu reçu une formation d’intégration ?",
+      "exampleZh": "你接受入职培训了吗？"
+    },
+    {
+      "id": 22,
+      "fr": "une période d’intégration",
+      "zh": "融入期 / 适应期",
+      "scenario": "job",
+      "priority": 4,
+      "exampleFr": "Comment s’est passée ta période d’intégration ?",
+      "exampleZh": "你的适应期进行得怎么样？"
+    },
+    {
+      "id": 23,
+      "fr": "s’intégrer dans l’équipe",
+      "zh": "融入团队",
+      "scenario": "job",
+      "priority": 5,
+      "exampleFr": "Est-ce facile de s’intégrer dans l’équipe ?",
+      "exampleZh": "融入团队容易吗？"
+    },
+    {
+      "id": 24,
+      "fr": "une difficulté",
+      "zh": "困难",
+      "scenario": "job",
+      "priority": 5,
+      "exampleFr": "Quelle a été ta plus grande difficulté au début ?",
+      "exampleZh": "刚开始最大的困难是什么？"
+    },
+    {
+      "id": 25,
+      "fr": "une évolution professionnelle",
+      "zh": "职业发展",
+      "scenario": "career",
+      "priority": 5,
+      "exampleFr": "Quelles possibilités d’évolution existe-t-il dans l’entreprise ?",
+      "exampleZh": "公司里有哪些职业发展机会？"
+    },
+    {
+      "id": 26,
+      "fr": "une promotion",
+      "zh": "晋升",
+      "scenario": "career",
+      "priority": 5,
+      "exampleFr": "Y a-t-il des possibilités de promotion ?",
+      "exampleZh": "有晋升机会吗？"
+    },
+    {
+      "id": 27,
+      "fr": "une formation continue",
+      "zh": "继续培训 / 在职培训",
+      "scenario": "career",
+      "priority": 5,
+      "exampleFr": "L’entreprise propose-t-elle des formations continues ?",
+      "exampleZh": "公司提供在职培训吗？"
+    },
+    {
+      "id": 28,
+      "fr": "changer de service",
+      "zh": "换部门",
+      "scenario": "transfer",
+      "priority": 5,
+      "exampleFr": "Pourquoi voudrais-tu changer de service ?",
+      "exampleZh": "你为什么想换部门？"
+    },
+    {
+      "id": 29,
+      "fr": "un service",
+      "zh": "部门",
+      "scenario": "transfer",
+      "priority": 5,
+      "exampleFr": "Dans quel service travailles-tu actuellement ?",
+      "exampleZh": "你现在在哪个部门工作？"
+    },
+    {
+      "id": 30,
+      "fr": "un département",
+      "zh": "部门",
+      "scenario": "transfer",
+      "priority": 4,
+      "exampleFr": "Dans quel département aimerais-tu travailler ?",
+      "exampleZh": "你想去哪个部门？"
+    },
+    {
+      "id": 31,
+      "fr": "un transfert interne",
+      "zh": "内部转岗",
+      "scenario": "transfer",
+      "priority": 5,
+      "exampleFr": "Comment se passe un transfert interne dans l’entreprise ?",
+      "exampleZh": "公司内部转岗流程怎样？"
+    },
+    {
+      "id": 32,
+      "fr": "une mobilité interne",
+      "zh": "内部流动 / 转岗",
+      "scenario": "transfer",
+      "priority": 4,
+      "exampleFr": "La mobilité interne est-elle encouragée ?",
+      "exampleZh": "公司鼓励内部转岗吗？"
+    },
+    {
+      "id": 33,
+      "fr": "faire une demande",
+      "zh": "提出申请",
+      "scenario": "transfer",
+      "priority": 5,
+      "exampleFr": "À qui faut-il faire la demande pour changer de service ?",
+      "exampleZh": "想换部门需要向谁提出申请？"
+    },
+    {
+      "id": 34,
+      "fr": "les démarches",
+      "zh": "手续",
+      "scenario": "transfer",
+      "priority": 5,
+      "exampleFr": "Quelles démarches faut-il faire pour changer de service ?",
+      "exampleZh": "换部门需要办哪些手续？"
+    },
+    {
+      "id": 35,
+      "fr": "être refusé(e)",
+      "zh": "被拒绝",
+      "scenario": "transfer",
+      "priority": 4,
+      "exampleFr": "Que ferais-tu si ta demande était refusée ?",
+      "exampleZh": "如果申请被拒你会怎么办？"
+    },
+    {
+      "id": 36,
+      "fr": "la charge de travail",
+      "zh": "工作量",
+      "scenario": "transfer",
+      "priority": 5,
+      "exampleFr": "La charge de travail est-elle trop importante ?",
+      "exampleZh": "工作量是不是太大？"
+    },
+    {
+      "id": 37,
+      "fr": "le stress au travail",
+      "zh": "工作压力",
+      "scenario": "transfer",
+      "priority": 5,
+      "exampleFr": "Le travail est-il stressant dans ton service actuel ?",
+      "exampleZh": "你当前部门工作压力大吗？"
+    },
+    {
+      "id": 38,
+      "fr": "un entretien d’embauche",
+      "zh": "求职面试",
+      "scenario": "interview",
+      "priority": 5,
+      "exampleFr": "Vous allez à un entretien professionnel la semaine prochaine.",
+      "exampleZh": "你下周要去参加职业面试。"
+    },
+    {
+      "id": 39,
+      "fr": "réussir un entretien",
+      "zh": "成功通过面试",
+      "scenario": "interview",
+      "priority": 5,
+      "exampleFr": "Demandez-moi des conseils pour réussir votre entretien.",
+      "exampleZh": "向我询问如何成功通过面试的建议。"
+    },
+    {
+      "id": 40,
+      "fr": "se préparer à un entretien",
+      "zh": "准备面试",
+      "scenario": "interview",
+      "priority": 5,
+      "exampleFr": "Comment me préparer efficacement à l’entretien ?",
+      "exampleZh": "我怎么有效准备面试？"
+    },
+    {
+      "id": 41,
+      "fr": "se renseigner sur l’entreprise",
+      "zh": "了解公司信息",
+      "scenario": "interview",
+      "priority": 5,
+      "exampleFr": "Faut-il bien se renseigner sur l’entreprise avant l’entretien ?",
+      "exampleZh": "面试前需要充分了解公司吗？"
+    },
+    {
+      "id": 42,
+      "fr": "se renseigner sur le poste",
+      "zh": "了解职位信息",
+      "scenario": "interview",
+      "priority": 5,
+      "exampleFr": "Quelles informations dois-je connaître sur le poste ?",
+      "exampleZh": "关于职位我需要了解哪些信息？"
+    },
+    {
+      "id": 43,
+      "fr": "un CV",
+      "zh": "简历",
+      "scenario": "interview",
+      "priority": 5,
+      "exampleFr": "Dois-je apporter plusieurs copies de mon CV ?",
+      "exampleZh": "我需要带几份简历吗？"
+    },
+    {
+      "id": 44,
+      "fr": "une lettre de motivation",
+      "zh": "求职信",
+      "scenario": "interview",
+      "priority": 5,
+      "exampleFr": "Faut-il préparer une lettre de motivation ?",
+      "exampleZh": "需要准备求职信吗？"
+    },
+    {
+      "id": 45,
+      "fr": "une tenue professionnelle",
+      "zh": "职业着装",
+      "scenario": "interview",
+      "priority": 5,
+      "exampleFr": "Quelle tenue me conseillerais-tu pour l’entretien ?",
+      "exampleZh": "你建议面试穿什么？"
+    },
+    {
+      "id": 46,
+      "fr": "être ponctuel(le)",
+      "zh": "守时",
+      "scenario": "interview",
+      "priority": 5,
+      "exampleFr": "Combien de temps à l’avance devrais-je arriver ?",
+      "exampleZh": "我应该提前多久到？"
+    },
+    {
+      "id": 47,
+      "fr": "arriver en avance",
+      "zh": "提前到达",
+      "scenario": "interview",
+      "priority": 5,
+      "exampleFr": "Combien de temps à l’avance devrais-je arriver ?",
+      "exampleZh": "我应该提前多久到？"
+    },
+    {
+      "id": 48,
+      "fr": "la première impression",
+      "zh": "第一印象",
+      "scenario": "interview",
+      "priority": 5,
+      "exampleFr": "Comment faire une bonne première impression ?",
+      "exampleZh": "怎样留下好的第一印象？"
+    },
+    {
+      "id": 49,
+      "fr": "le langage corporel",
+      "zh": "肢体语言",
+      "scenario": "interview",
+      "priority": 4,
+      "exampleFr": "À quoi dois-je faire attention concernant le langage corporel ?",
+      "exampleZh": "肢体语言方面要注意什么？"
+    },
+    {
+      "id": 50,
+      "fr": "se présenter",
+      "zh": "自我介绍",
+      "scenario": "interview",
+      "priority": 5,
+      "exampleFr": "Comment devrais-je me présenter au début ?",
+      "exampleZh": "开始时我应该怎么自我介绍？"
+    },
+    {
+      "id": 51,
+      "fr": "présenter son parcours",
+      "zh": "介绍个人经历",
+      "scenario": "interview",
+      "priority": 5,
+      "exampleFr": "Comment présenter mon parcours de façon claire ?",
+      "exampleZh": "怎么清楚地介绍我的经历？"
+    },
+    {
+      "id": 52,
+      "fr": "la motivation",
+      "zh": "求职动机",
+      "scenario": "interview",
+      "priority": 5,
+      "exampleFr": "Comment répondre à une question sur ma motivation ?",
+      "exampleZh": "怎么回答关于求职动机的问题？"
+    },
+    {
+      "id": 53,
+      "fr": "une expérience professionnelle",
+      "zh": "工作经验",
+      "scenario": "interview",
+      "priority": 5,
+      "exampleFr": "Comment parler de mon expérience professionnelle ?",
+      "exampleZh": "怎么谈我的工作经验？"
+    },
+    {
+      "id": 54,
+      "fr": "un manque d’expérience",
+      "zh": "经验不足",
+      "scenario": "interview",
+      "priority": 4,
+      "exampleFr": "Comment répondre si on me reproche un manque d’expérience ?",
+      "exampleZh": "如果对方认为我经验不足，怎么回答？"
+    },
+    {
+      "id": 55,
+      "fr": "une qualité",
+      "zh": "优点",
+      "scenario": "interview",
+      "priority": 5,
+      "exampleFr": "Quelles qualités vaut-il mieux mettre en avant ?",
+      "exampleZh": "最好突出哪些优点？"
+    },
+    {
+      "id": 56,
+      "fr": "un défaut",
+      "zh": "缺点",
+      "scenario": "interview",
+      "priority": 5,
+      "exampleFr": "Comment parler de mes défauts sans me pénaliser ?",
+      "exampleZh": "怎么谈缺点又不让自己吃亏？"
+    },
+    {
+      "id": 57,
+      "fr": "mettre en avant",
+      "zh": "突出 / 强调",
+      "scenario": "interview",
+      "priority": 5,
+      "exampleFr": "Quelles qualités vaut-il mieux mettre en avant ?",
+      "exampleZh": "最好突出哪些优点？"
+    },
+    {
+      "id": 58,
+      "fr": "répondre à une question",
+      "zh": "回答问题",
+      "scenario": "interview",
+      "priority": 5,
+      "exampleFr": "Comment répondre aux questions difficiles ?",
+      "exampleZh": "怎么回答难题？"
+    },
+    {
+      "id": 59,
+      "fr": "poser des questions au recruteur",
+      "zh": "向招聘方提问",
+      "scenario": "interview",
+      "priority": 5,
+      "exampleFr": "Quelles questions puis-je poser au recruteur ?",
+      "exampleZh": "我可以问招聘方哪些问题？"
+    },
+    {
+      "id": 60,
+      "fr": "un recruteur / une recruteuse",
+      "zh": "招聘人员",
+      "scenario": "interview",
+      "priority": 5,
+      "exampleFr": "Quelles questions puis-je poser au recruteur ?",
+      "exampleZh": "我可以问招聘方哪些问题？"
+    },
+    {
+      "id": 61,
+      "fr": "parler du salaire",
+      "zh": "谈薪资",
+      "scenario": "interview",
+      "priority": 5,
+      "exampleFr": "À quel moment est-il préférable de parler du salaire ?",
+      "exampleZh": "什么时候谈薪资更合适？"
+    },
+    {
+      "id": 62,
+      "fr": "le salaire",
+      "zh": "薪资",
+      "scenario": "career",
+      "priority": 5,
+      "exampleFr": "Quel est le niveau de salaire pour ce type de poste ?",
+      "exampleZh": "这类岗位薪资水平怎样？"
+    },
+    {
+      "id": 63,
+      "fr": "une fourchette salariale",
+      "zh": "薪资范围",
+      "scenario": "career",
+      "priority": 4,
+      "exampleFr": "Quelle fourchette salariale peut-on espérer ?",
+      "exampleZh": "可以期待怎样的薪资范围？"
+    },
+    {
+      "id": 64,
+      "fr": "terminer l’entretien",
+      "zh": "结束面试",
+      "scenario": "interview",
+      "priority": 4,
+      "exampleFr": "Comment terminer l’entretien de manière professionnelle ?",
+      "exampleZh": "怎样专业地结束面试？"
+    },
+    {
+      "id": 65,
+      "fr": "envoyer un courriel de remerciement",
+      "zh": "发送感谢邮件",
+      "scenario": "interview",
+      "priority": 5,
+      "exampleFr": "Est-ce utile d’envoyer un courriel de remerciement après l’entretien ?",
+      "exampleZh": "面试后发感谢邮件有用吗？"
+    },
+    {
+      "id": 66,
+      "fr": "faire un suivi",
+      "zh": "后续跟进",
+      "scenario": "interview",
+      "priority": 5,
+      "exampleFr": "Quand faut-il faire un suivi après l’entretien ?",
+      "exampleZh": "面试后什么时候跟进合适？"
+    },
+    {
+      "id": 67,
+      "fr": "chercher un emploi",
+      "zh": "找工作",
+      "scenario": "jobsearch",
+      "priority": 5,
+      "exampleFr": "Vous cherchez un emploi.",
+      "exampleZh": "你在找工作。"
+    },
+    {
+      "id": 68,
+      "fr": "trouver un emploi",
+      "zh": "找到工作",
+      "scenario": "jobsearch",
+      "priority": 5,
+      "exampleFr": "Vous me demandez des conseils pour trouver un emploi.",
+      "exampleZh": "你问我如何找工作的建议。"
+    },
+    {
+      "id": 69,
+      "fr": "postuler à un poste",
+      "zh": "申请职位",
+      "scenario": "jobsearch",
+      "priority": 5,
+      "exampleFr": "Comment faut-il postuler à ce type de poste ?",
+      "exampleZh": "这类职位怎么申请？"
+    },
+    {
+      "id": 70,
+      "fr": "une candidature",
+      "zh": "求职申请",
+      "scenario": "jobsearch",
+      "priority": 5,
+      "exampleFr": "Comment envoyer sa candidature ?",
+      "exampleZh": "怎么提交求职申请？"
+    },
+    {
+      "id": 71,
+      "fr": "une offre d’emploi",
+      "zh": "招聘信息",
+      "scenario": "jobsearch",
+      "priority": 5,
+      "exampleFr": "Où peut-on trouver des offres d’emploi fiables ?",
+      "exampleZh": "哪里能找到可靠的招聘信息？"
+    },
+    {
+      "id": 72,
+      "fr": "un secteur d’activité",
+      "zh": "行业",
+      "scenario": "jobsearch",
+      "priority": 5,
+      "exampleFr": "Dans quels secteurs y a-t-il le plus d’emplois ?",
+      "exampleZh": "哪些行业工作机会最多？"
+    },
+    {
+      "id": 73,
+      "fr": "un emploi saisonnier",
+      "zh": "季节性工作",
+      "scenario": "jobsearch",
+      "priority": 4,
+      "exampleFr": "Quels emplois saisonniers sont disponibles pendant l’été ?",
+      "exampleZh": "夏季有哪些季节性工作？"
+    },
+    {
+      "id": 74,
+      "fr": "un contrat",
+      "zh": "合同",
+      "scenario": "jobsearch",
+      "priority": 5,
+      "exampleFr": "Quel type de contrat est généralement proposé ?",
+      "exampleZh": "通常提供什么类型的合同？"
+    },
+    {
+      "id": 75,
+      "fr": "un contrat à durée déterminée",
+      "zh": "固定期限合同",
+      "scenario": "jobsearch",
+      "priority": 4,
+      "exampleFr": "Est-ce plutôt un contrat à durée déterminée ?",
+      "exampleZh": "一般是固定期限合同吗？"
+    },
+    {
+      "id": 76,
+      "fr": "une exigence linguistique",
+      "zh": "语言要求",
+      "scenario": "jobsearch",
+      "priority": 5,
+      "exampleFr": "Quel niveau de langue est généralement demandé ?",
+      "exampleZh": "一般要求什么语言水平？"
+    },
+    {
+      "id": 77,
+      "fr": "une exigence d’expérience",
+      "zh": "经验要求",
+      "scenario": "jobsearch",
+      "priority": 5,
+      "exampleFr": "Faut-il déjà avoir de l’expérience ?",
+      "exampleZh": "需要已有经验吗？"
+    },
+    {
+      "id": 78,
+      "fr": "une région",
+      "zh": "地区",
+      "scenario": "jobsearch",
+      "priority": 4,
+      "exampleFr": "Quelles régions offrent le plus d’opportunités ?",
+      "exampleZh": "哪些地区机会更多？"
+    },
+    {
+      "id": 79,
+      "fr": "une ville",
+      "zh": "城市",
+      "scenario": "jobsearch",
+      "priority": 4,
+      "exampleFr": "Quelles villes me conseilleriez-vous pour travailler ?",
+      "exampleZh": "您建议去哪些城市工作？"
+    },
+    {
+      "id": 80,
+      "fr": "une opportunité",
+      "zh": "机会",
+      "scenario": "career",
+      "priority": 5,
+      "exampleFr": "Quelles opportunités de formation ou de promotion existent ?",
+      "exampleZh": "有哪些培训或晋升机会？"
+    },
+    {
+      "id": 81,
+      "fr": "une boutique",
+      "zh": "商店",
+      "scenario": "business",
+      "priority": 5,
+      "exampleFr": "J’ai une boutique.",
+      "exampleZh": "我有一家商店。"
+    },
+    {
+      "id": 82,
+      "fr": "ouvrir un magasin",
+      "zh": "开店",
+      "scenario": "business",
+      "priority": 5,
+      "exampleFr": "Vous rêvez d’avoir votre propre magasin.",
+      "exampleZh": "你梦想拥有自己的商店。"
+    },
+    {
+      "id": 83,
+      "fr": "les jours d’ouverture",
+      "zh": "营业日",
+      "scenario": "business",
+      "priority": 5,
+      "exampleFr": "Quels jours la boutique est-elle ouverte ?",
+      "exampleZh": "商店哪几天营业？"
+    },
+    {
+      "id": 84,
+      "fr": "les heures d’ouverture",
+      "zh": "营业时间",
+      "scenario": "business",
+      "priority": 5,
+      "exampleFr": "À quelles heures ouvrez-vous ?",
+      "exampleZh": "你们几点营业？"
+    },
+    {
+      "id": 85,
+      "fr": "un article",
+      "zh": "商品",
+      "scenario": "business",
+      "priority": 5,
+      "exampleFr": "Quels articles vendez-vous principalement ?",
+      "exampleZh": "你们主要卖什么商品？"
+    },
+    {
+      "id": 86,
+      "fr": "un produit qui se vend bien",
+      "zh": "畅销商品",
+      "scenario": "business",
+      "priority": 4,
+      "exampleFr": "Quels produits se vendent le mieux ?",
+      "exampleZh": "哪些商品卖得最好？"
+    },
+    {
+      "id": 87,
+      "fr": "la clientèle",
+      "zh": "顾客群体",
+      "scenario": "business",
+      "priority": 5,
+      "exampleFr": "Quel type de clientèle avez-vous ?",
+      "exampleZh": "你们的顾客主要是什么类型？"
+    },
+    {
+      "id": 88,
+      "fr": "une heure de pointe",
+      "zh": "高峰时段",
+      "scenario": "business",
+      "priority": 4,
+      "exampleFr": "À quels moments avez-vous le plus de clients ?",
+      "exampleZh": "什么时候顾客最多？"
+    },
+    {
+      "id": 89,
+      "fr": "fixer les prix",
+      "zh": "定价",
+      "scenario": "business",
+      "priority": 5,
+      "exampleFr": "Comment fixes-tu les prix de tes produits ?",
+      "exampleZh": "你怎么给商品定价？"
+    },
+    {
+      "id": 90,
+      "fr": "un fournisseur",
+      "zh": "供应商",
+      "scenario": "business",
+      "priority": 5,
+      "exampleFr": "Comment trouves-tu tes fournisseurs ?",
+      "exampleZh": "你怎么找供应商？"
+    },
+    {
+      "id": 91,
+      "fr": "se réapprovisionner",
+      "zh": "补货",
+      "scenario": "business",
+      "priority": 4,
+      "exampleFr": "À quelle fréquence dois-tu te réapprovisionner ?",
+      "exampleZh": "你多久需要补一次货？"
+    },
+    {
+      "id": 92,
+      "fr": "un employé / une employée",
+      "zh": "员工",
+      "scenario": "business",
+      "priority": 5,
+      "exampleFr": "Combien d’employés travaillent dans la boutique ?",
+      "exampleZh": "店里有多少员工？"
+    },
+    {
+      "id": 93,
+      "fr": "gérer un magasin",
+      "zh": "经营商店",
+      "scenario": "business",
+      "priority": 5,
+      "exampleFr": "Qu’est-ce qui est le plus difficile quand on gère un magasin ?",
+      "exampleZh": "经营商店最难的是什么？"
+    },
+    {
+      "id": 94,
+      "fr": "les coûts",
+      "zh": "成本",
+      "scenario": "business",
+      "priority": 5,
+      "exampleFr": "Quels sont les principaux coûts à prévoir ?",
+      "exampleZh": "主要需要考虑哪些成本？"
+    },
+    {
+      "id": 95,
+      "fr": "une dépense",
+      "zh": "支出",
+      "scenario": "business",
+      "priority": 4,
+      "exampleFr": "Quelles sont les dépenses les plus importantes ?",
+      "exampleZh": "最大的支出有哪些？"
+    },
+    {
+      "id": 96,
+      "fr": "être rentable",
+      "zh": "盈利",
+      "scenario": "business",
+      "priority": 4,
+      "exampleFr": "Combien de temps faut-il pour qu’un magasin devienne rentable ?",
+      "exampleZh": "一家店大概要多久才能盈利？"
+    },
+    {
+      "id": 97,
+      "fr": "un conseil pour se lancer",
+      "zh": "创业建议",
+      "scenario": "business",
+      "priority": 5,
+      "exampleFr": "Quel conseil donnerais-tu à quelqu’un qui veut se lancer ?",
+      "exampleZh": "你会给想开始创业的人什么建议？"
+    },
+    {
+      "id": 98,
+      "fr": "un projet de développement",
+      "zh": "发展计划",
+      "scenario": "business",
+      "priority": 4,
+      "exampleFr": "As-tu des projets de développement pour la boutique ?",
+      "exampleZh": "你的商店有发展计划吗？"
+    },
+    {
+      "id": 99,
+      "fr": "accompagner des enfants à l’école",
+      "zh": "送孩子上学",
+      "scenario": "childcare",
+      "priority": 5,
+      "exampleFr": "Je cherche quelqu’un pour accompagner mes enfants à l’école.",
+      "exampleZh": "我在找人送孩子上学。"
+    },
+    {
+      "id": 100,
+      "fr": "les jours de travail",
+      "zh": "工作日",
+      "scenario": "childcare",
+      "priority": 5,
+      "exampleFr": "Quels jours devrai-je travailler ?",
+      "exampleZh": "我需要哪几天工作？"
+    },
+    {
+      "id": 101,
+      "fr": "l’heure de départ",
+      "zh": "出发时间",
+      "scenario": "childcare",
+      "priority": 5,
+      "exampleFr": "À quelle heure faut-il partir le matin ?",
+      "exampleZh": "早上几点出发？"
+    },
+    {
+      "id": 102,
+      "fr": "l’heure de sortie de l’école",
+      "zh": "放学时间",
+      "scenario": "childcare",
+      "priority": 5,
+      "exampleFr": "À quelle heure les enfants sortent-ils de l’école ?",
+      "exampleZh": "孩子几点放学？"
+    },
+    {
+      "id": 103,
+      "fr": "un trajet scolaire",
+      "zh": "上学路线",
+      "scenario": "childcare",
+      "priority": 4,
+      "exampleFr": "Quel est le trajet jusqu’à l’école ?",
+      "exampleZh": "去学校的路线是什么？"
+    },
+    {
+      "id": 104,
+      "fr": "une urgence",
+      "zh": "紧急情况",
+      "scenario": "childcare",
+      "priority": 5,
+      "exampleFr": "Qui dois-je contacter en cas d’urgence ?",
+      "exampleZh": "紧急情况我该联系谁？"
+    },
+    {
+      "id": 105,
+      "fr": "une rémunération",
+      "zh": "报酬",
+      "scenario": "childcare",
+      "priority": 5,
+      "exampleFr": "Quelle est la rémunération prévue ?",
+      "exampleZh": "这份工作的报酬是多少？"
+    },
+    {
+      "id": 106,
+      "fr": "être payé(e)",
+      "zh": "领工资 / 被支付",
+      "scenario": "childcare",
+      "priority": 4,
+      "exampleFr": "À quelle fréquence serai-je payée ?",
+      "exampleZh": "我多久领一次工资？"
+    },
+    {
+      "id": 107,
+      "fr": "une date de début",
+      "zh": "开始日期",
+      "scenario": "childcare",
+      "priority": 5,
+      "exampleFr": "À partir de quelle date dois-je commencer ?",
+      "exampleZh": "我从哪天开始？"
+    }
+  ],
+  "patterns": [
+    {
+      "id": 1,
+      "pattern": "Quelles sont tes principales tâches ?",
+      "zh": "你的主要任务是什么？",
+      "exampleFr": "Quelles sont tes principales tâches ?",
+      "exampleZh": "你的主要任务是什么？",
+      "scenario": "job"
+    },
+    {
+      "id": 2,
+      "pattern": "Quels sont tes horaires de travail ?",
+      "zh": "你的工作时间是什么？",
+      "exampleFr": "Quels sont tes horaires de travail ?",
+      "exampleZh": "你的工作时间是什么？",
+      "scenario": "job"
+    },
+    {
+      "id": 3,
+      "pattern": "Comment sont tes collègues ?",
+      "zh": "你的同事怎么样？",
+      "exampleFr": "Comment sont tes collègues ?",
+      "exampleZh": "你的同事怎么样？",
+      "scenario": "job"
+    },
+    {
+      "id": 4,
+      "pattern": "Comment ça se passe avec ton manager ?",
+      "zh": "你和经理相处怎么样？",
+      "exampleFr": "Comment ça se passe avec ton manager ?",
+      "exampleZh": "你和经理相处怎么样？",
+      "scenario": "job"
+    },
+    {
+      "id": 5,
+      "pattern": "Quels avantages l’entreprise propose-t-elle ?",
+      "zh": "公司有哪些福利？",
+      "exampleFr": "Quels avantages l’entreprise propose-t-elle ?",
+      "exampleZh": "公司有哪些福利？",
+      "scenario": "job"
+    },
+    {
+      "id": 6,
+      "pattern": "As-tu reçu une formation d’intégration ?",
+      "zh": "有入职培训吗？",
+      "exampleFr": "As-tu reçu une formation d’intégration ?",
+      "exampleZh": "你接受入职培训了吗？",
+      "scenario": "job"
+    },
+    {
+      "id": 7,
+      "pattern": "Quelle a été ta plus grande difficulté ?",
+      "zh": "最大的困难是什么？",
+      "exampleFr": "Quelle a été ta plus grande difficulté au début ?",
+      "exampleZh": "刚开始最大的困难是什么？",
+      "scenario": "job"
+    },
+    {
+      "id": 8,
+      "pattern": "Quelles possibilités d’évolution existe-t-il ?",
+      "zh": "有哪些发展机会？",
+      "exampleFr": "Quelles possibilités d’évolution existe-t-il dans l’entreprise ?",
+      "exampleZh": "公司里有哪些职业发展机会？",
+      "scenario": "career"
+    },
+    {
+      "id": 9,
+      "pattern": "Pourquoi voudrais-tu changer de service ?",
+      "zh": "为什么想换部门？",
+      "exampleFr": "Pourquoi voudrais-tu changer de service ?",
+      "exampleZh": "你为什么想换部门？",
+      "scenario": "transfer"
+    },
+    {
+      "id": 10,
+      "pattern": "Comment se passe un transfert interne ?",
+      "zh": "内部转岗流程怎样？",
+      "exampleFr": "Comment se passe un transfert interne dans l’entreprise ?",
+      "exampleZh": "公司内部转岗流程怎样？",
+      "scenario": "transfer"
+    },
+    {
+      "id": 11,
+      "pattern": "À qui faut-il faire la demande ?",
+      "zh": "应该向谁申请？",
+      "exampleFr": "À qui faut-il faire la demande pour changer de service ?",
+      "exampleZh": "换部门需要向谁提出申请？",
+      "scenario": "transfer"
+    },
+    {
+      "id": 12,
+      "pattern": "Que ferais-tu si ta demande était refusée ?",
+      "zh": "如果被拒怎么办？",
+      "exampleFr": "Que ferais-tu si ta demande était refusée ?",
+      "exampleZh": "如果申请被拒你会怎么办？",
+      "scenario": "transfer"
+    },
+    {
+      "id": 13,
+      "pattern": "Comment me préparer efficacement à l’entretien ?",
+      "zh": "怎么有效准备面试？",
+      "exampleFr": "Comment me préparer efficacement à l’entretien ?",
+      "exampleZh": "我怎么有效准备面试？",
+      "scenario": "interview"
+    },
+    {
+      "id": 14,
+      "pattern": "Faut-il se renseigner sur l’entreprise avant l’entretien ?",
+      "zh": "面试前要了解公司吗？",
+      "exampleFr": "Faut-il bien se renseigner sur l’entreprise avant l’entretien ?",
+      "exampleZh": "面试前需要充分了解公司吗？",
+      "scenario": "interview"
+    },
+    {
+      "id": 15,
+      "pattern": "Dois-je apporter plusieurs copies de mon CV ?",
+      "zh": "要带多份简历吗？",
+      "exampleFr": "Dois-je apporter plusieurs copies de mon CV ?",
+      "exampleZh": "我需要带几份简历吗？",
+      "scenario": "interview"
+    },
+    {
+      "id": 16,
+      "pattern": "Quelle tenue me conseillerais-tu ?",
+      "zh": "你建议穿什么？",
+      "exampleFr": "Quelle tenue me conseillerais-tu pour l’entretien ?",
+      "exampleZh": "你建议面试穿什么？",
+      "scenario": "interview"
+    },
+    {
+      "id": 17,
+      "pattern": "Combien de temps à l’avance devrais-je arriver ?",
+      "zh": "应该提前多久到？",
+      "exampleFr": "Combien de temps à l’avance devrais-je arriver ?",
+      "exampleZh": "我应该提前多久到？",
+      "scenario": "interview"
+    },
+    {
+      "id": 18,
+      "pattern": "Comment faire une bonne première impression ?",
+      "zh": "怎么留下好第一印象？",
+      "exampleFr": "Comment faire une bonne première impression ?",
+      "exampleZh": "怎样留下好的第一印象？",
+      "scenario": "interview"
+    },
+    {
+      "id": 19,
+      "pattern": "Comment devrais-je me présenter au début ?",
+      "zh": "开始时怎么自我介绍？",
+      "exampleFr": "Comment devrais-je me présenter au début ?",
+      "exampleZh": "开始时我应该怎么自我介绍？",
+      "scenario": "interview"
+    },
+    {
+      "id": 20,
+      "pattern": "Comment répondre à une question sur ma motivation ?",
+      "zh": "怎么回答求职动机？",
+      "exampleFr": "Comment répondre à une question sur ma motivation ?",
+      "exampleZh": "怎么回答关于求职动机的问题？",
+      "scenario": "interview"
+    },
+    {
+      "id": 21,
+      "pattern": "Quelles qualités vaut-il mieux mettre en avant ?",
+      "zh": "最好突出哪些优点？",
+      "exampleFr": "Quelles qualités vaut-il mieux mettre en avant ?",
+      "exampleZh": "最好突出哪些优点？",
+      "scenario": "interview"
+    },
+    {
+      "id": 22,
+      "pattern": "Comment parler de mes défauts ?",
+      "zh": "怎么谈缺点？",
+      "exampleFr": "Comment parler de mes défauts sans me pénaliser ?",
+      "exampleZh": "怎么谈缺点又不让自己吃亏？",
+      "scenario": "interview"
+    },
+    {
+      "id": 23,
+      "pattern": "Quelles questions puis-je poser au recruteur ?",
+      "zh": "可以问招聘方什么？",
+      "exampleFr": "Quelles questions puis-je poser au recruteur ?",
+      "exampleZh": "我可以问招聘方哪些问题？",
+      "scenario": "interview"
+    },
+    {
+      "id": 24,
+      "pattern": "À quel moment parler du salaire ?",
+      "zh": "什么时候谈薪资？",
+      "exampleFr": "À quel moment est-il préférable de parler du salaire ?",
+      "exampleZh": "什么时候谈薪资更合适？",
+      "scenario": "interview"
+    },
+    {
+      "id": 25,
+      "pattern": "Est-ce utile d’envoyer un courriel de remerciement ?",
+      "zh": "有必要发感谢邮件吗？",
+      "exampleFr": "Est-ce utile d’envoyer un courriel de remerciement après l’entretien ?",
+      "exampleZh": "面试后发感谢邮件有用吗？",
+      "scenario": "interview"
+    },
+    {
+      "id": 26,
+      "pattern": "Où peut-on trouver des offres d’emploi fiables ?",
+      "zh": "哪里能找到可靠招聘信息？",
+      "exampleFr": "Où peut-on trouver des offres d’emploi fiables ?",
+      "exampleZh": "哪里能找到可靠的招聘信息？",
+      "scenario": "jobsearch"
+    },
+    {
+      "id": 27,
+      "pattern": "Dans quels secteurs y a-t-il le plus d’emplois ?",
+      "zh": "哪些行业机会多？",
+      "exampleFr": "Dans quels secteurs y a-t-il le plus d’emplois ?",
+      "exampleZh": "哪些行业工作机会最多？",
+      "scenario": "jobsearch"
+    },
+    {
+      "id": 28,
+      "pattern": "Quelles régions offrent le plus d’opportunités ?",
+      "zh": "哪些地区机会更多？",
+      "exampleFr": "Quelles régions offrent le plus d’opportunités ?",
+      "exampleZh": "哪些地区机会更多？",
+      "scenario": "jobsearch"
+    },
+    {
+      "id": 29,
+      "pattern": "Quel est le niveau de salaire ?",
+      "zh": "薪资水平怎样？",
+      "exampleFr": "Quel est le niveau de salaire pour ce type de poste ?",
+      "exampleZh": "这类岗位薪资水平怎样？",
+      "scenario": "career"
+    },
+    {
+      "id": 30,
+      "pattern": "Quel niveau de langue est demandé ?",
+      "zh": "需要什么语言水平？",
+      "exampleFr": "Quel niveau de langue est généralement demandé ?",
+      "exampleZh": "一般要求什么语言水平？",
+      "scenario": "jobsearch"
+    },
+    {
+      "id": 31,
+      "pattern": "Faut-il déjà avoir de l’expérience ?",
+      "zh": "需要已有经验吗？",
+      "exampleFr": "Faut-il déjà avoir de l’expérience ?",
+      "exampleZh": "需要已有经验吗？",
+      "scenario": "jobsearch"
+    },
+    {
+      "id": 32,
+      "pattern": "Quel type de contrat est proposé ?",
+      "zh": "通常是什么合同？",
+      "exampleFr": "Quel type de contrat est généralement proposé ?",
+      "exampleZh": "通常提供什么类型的合同？",
+      "scenario": "jobsearch"
+    },
+    {
+      "id": 33,
+      "pattern": "Comment envoyer sa candidature ?",
+      "zh": "怎么提交申请？",
+      "exampleFr": "Comment envoyer sa candidature ?",
+      "exampleZh": "怎么提交求职申请？",
+      "scenario": "jobsearch"
+    },
+    {
+      "id": 34,
+      "pattern": "Quels articles vendez-vous principalement ?",
+      "zh": "主要卖什么商品？",
+      "exampleFr": "Quels articles vendez-vous principalement ?",
+      "exampleZh": "你们主要卖什么商品？",
+      "scenario": "business"
+    },
+    {
+      "id": 35,
+      "pattern": "Quel type de clientèle avez-vous ?",
+      "zh": "顾客群体怎样？",
+      "exampleFr": "Quel type de clientèle avez-vous ?",
+      "exampleZh": "你们的顾客主要是什么类型？",
+      "scenario": "business"
+    },
+    {
+      "id": 36,
+      "pattern": "Comment fixes-tu les prix ?",
+      "zh": "怎么定价？",
+      "exampleFr": "Comment fixes-tu les prix de tes produits ?",
+      "exampleZh": "你怎么给商品定价？",
+      "scenario": "business"
+    },
+    {
+      "id": 37,
+      "pattern": "Comment trouves-tu tes fournisseurs ?",
+      "zh": "怎么找供应商？",
+      "exampleFr": "Comment trouves-tu tes fournisseurs ?",
+      "exampleZh": "你怎么找供应商？",
+      "scenario": "business"
+    },
+    {
+      "id": 38,
+      "pattern": "Quels sont les principaux coûts à prévoir ?",
+      "zh": "主要成本有哪些？",
+      "exampleFr": "Quels sont les principaux coûts à prévoir ?",
+      "exampleZh": "主要需要考虑哪些成本？",
+      "scenario": "business"
+    },
+    {
+      "id": 39,
+      "pattern": "Quel conseil donnerais-tu à quelqu’un qui veut se lancer ?",
+      "zh": "给创业者什么建议？",
+      "exampleFr": "Quel conseil donnerais-tu à quelqu’un qui veut se lancer ?",
+      "exampleZh": "你会给想开始创业的人什么建议？",
+      "scenario": "business"
+    },
+    {
+      "id": 40,
+      "pattern": "Quels jours devrai-je travailler ?",
+      "zh": "需要哪几天工作？",
+      "exampleFr": "Quels jours devrai-je travailler ?",
+      "exampleZh": "我需要哪几天工作？",
+      "scenario": "childcare"
+    },
+    {
+      "id": 41,
+      "pattern": "Quel est le trajet jusqu’à l’école ?",
+      "zh": "去学校路线怎样？",
+      "exampleFr": "Quel est le trajet jusqu’à l’école ?",
+      "exampleZh": "去学校的路线是什么？",
+      "scenario": "childcare"
+    },
+    {
+      "id": 42,
+      "pattern": "Qui dois-je contacter en cas d’urgence ?",
+      "zh": "紧急情况联系谁？",
+      "exampleFr": "Qui dois-je contacter en cas d’urgence ?",
+      "exampleZh": "紧急情况我该联系谁？",
+      "scenario": "childcare"
+    },
+    {
+      "id": 43,
+      "pattern": "Quelle est la rémunération prévue ?",
+      "zh": "报酬是多少？",
+      "exampleFr": "Quelle est la rémunération prévue ?",
+      "exampleZh": "这份工作的报酬是多少？",
+      "scenario": "childcare"
+    },
+    {
+      "id": 44,
+      "pattern": "À partir de quelle date dois-je commencer ?",
+      "zh": "从哪天开始？",
+      "exampleFr": "À partir de quelle date dois-je commencer ?",
+      "exampleZh": "我从哪天开始？",
+      "scenario": "childcare"
+    }
+  ]
+}
