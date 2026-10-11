@@ -1,0 +1,1324 @@
+{
+  "theme": "culture",
+  "title": "文化媒体与节庆",
+  "target": "TCF Canada 口语 Tâche 2 · C1",
+  "version": 1,
+  "principle": "约100个高价值词/词块，以12道最终真题为基础；词块与真实套用问法绑定，优先训练中文→法语主动调用。",
+  "scenarios": [
+    {
+      "id": "show",
+      "name": "演出 / 售票"
+    },
+    {
+      "id": "series",
+      "name": "电视剧 / 流媒体"
+    },
+    {
+      "id": "blog",
+      "name": "博客 / 内容创作"
+    },
+    {
+      "id": "press",
+      "name": "报纸 / 媒体"
+    },
+    {
+      "id": "festival",
+      "name": "节庆 / 音乐节"
+    },
+    {
+      "id": "concert",
+      "name": "音乐会"
+    },
+    {
+      "id": "holiday",
+      "name": "节日传统 / 新年"
+    },
+    {
+      "id": "cinema",
+      "name": "电影节 / 电影"
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": 1,
+      "fr": "un spectacle",
+      "zh": "演出",
+      "scenario": "show",
+      "priority": 5,
+      "exampleFr": "Quel type de spectacle est-ce exactement ?",
+      "exampleZh": "这到底是什么类型的演出？"
+    },
+    {
+      "id": 2,
+      "fr": "une place",
+      "zh": "票 / 座位",
+      "scenario": "show",
+      "priority": 5,
+      "exampleFr": "Je vous propose deux places pour un spectacle.",
+      "exampleZh": "我给你两张演出票。"
+    },
+    {
+      "id": 3,
+      "fr": "une billetterie",
+      "zh": "售票处",
+      "scenario": "show",
+      "priority": 5,
+      "exampleFr": "Je travaille à l’accueil d’une billetterie de spectacles.",
+      "exampleZh": "我在演出售票处工作。"
+    },
+    {
+      "id": 4,
+      "fr": "un billet",
+      "zh": "门票",
+      "scenario": "show",
+      "priority": 5,
+      "exampleFr": "Comment puis-je acheter les billets ?",
+      "exampleZh": "我怎么可以买票？"
+    },
+    {
+      "id": 5,
+      "fr": "acheter un billet",
+      "zh": "买票",
+      "scenario": "show",
+      "priority": 5,
+      "exampleFr": "Comment puis-je acheter les billets ?",
+      "exampleZh": "我怎么可以买票？"
+    },
+    {
+      "id": 6,
+      "fr": "réserver à l’avance",
+      "zh": "提前预订",
+      "scenario": "show",
+      "priority": 5,
+      "exampleFr": "Vaut-il mieux réserver à l’avance ?",
+      "exampleZh": "最好提前预订吗？"
+    },
+    {
+      "id": 7,
+      "fr": "annuler un billet",
+      "zh": "取消票",
+      "scenario": "show",
+      "priority": 4,
+      "exampleFr": "Peut-on annuler ou échanger un billet ?",
+      "exampleZh": "可以退票或换票吗？"
+    },
+    {
+      "id": 8,
+      "fr": "échanger un billet",
+      "zh": "换票",
+      "scenario": "show",
+      "priority": 4,
+      "exampleFr": "Peut-on annuler ou échanger un billet ?",
+      "exampleZh": "可以换票吗？"
+    },
+    {
+      "id": 9,
+      "fr": "un tarif réduit",
+      "zh": "优惠价",
+      "scenario": "show",
+      "priority": 5,
+      "exampleFr": "Y a-t-il des tarifs réduits ?",
+      "exampleZh": "有优惠票价吗？"
+    },
+    {
+      "id": 10,
+      "fr": "le prix du billet",
+      "zh": "票价",
+      "scenario": "show",
+      "priority": 5,
+      "exampleFr": "Combien coûte une place ?",
+      "exampleZh": "一张票多少钱？"
+    },
+    {
+      "id": 11,
+      "fr": "un moyen de paiement",
+      "zh": "付款方式",
+      "scenario": "show",
+      "priority": 5,
+      "exampleFr": "Quels moyens de paiement acceptez-vous ?",
+      "exampleZh": "接受哪些付款方式？"
+    },
+    {
+      "id": 12,
+      "fr": "une date",
+      "zh": "日期",
+      "scenario": "show",
+      "priority": 5,
+      "exampleFr": "À quelle date aura lieu le spectacle ?",
+      "exampleZh": "演出哪天举行？"
+    },
+    {
+      "id": 13,
+      "fr": "une heure de début",
+      "zh": "开始时间",
+      "scenario": "show",
+      "priority": 5,
+      "exampleFr": "À quelle heure commence le spectacle ?",
+      "exampleZh": "演出几点开始？"
+    },
+    {
+      "id": 14,
+      "fr": "une heure de fin",
+      "zh": "结束时间",
+      "scenario": "show",
+      "priority": 4,
+      "exampleFr": "À quelle heure se termine le spectacle ?",
+      "exampleZh": "演出几点结束？"
+    },
+    {
+      "id": 15,
+      "fr": "la durée",
+      "zh": "持续时间",
+      "scenario": "show",
+      "priority": 5,
+      "exampleFr": "Combien de temps dure le spectacle ?",
+      "exampleZh": "演出持续多久？"
+    },
+    {
+      "id": 16,
+      "fr": "un lieu de spectacle",
+      "zh": "演出地点",
+      "scenario": "show",
+      "priority": 5,
+      "exampleFr": "Où aura lieu le spectacle ?",
+      "exampleZh": "演出在哪里举行？"
+    },
+    {
+      "id": 17,
+      "fr": "s’y rendre",
+      "zh": "前往那里",
+      "scenario": "show",
+      "priority": 5,
+      "exampleFr": "Quel est le moyen le plus simple pour s’y rendre ?",
+      "exampleZh": "怎么去最方便？"
+    },
+    {
+      "id": 18,
+      "fr": "se garer",
+      "zh": "停车",
+      "scenario": "show",
+      "priority": 4,
+      "exampleFr": "Est-ce qu’on peut se garer facilement à proximité ?",
+      "exampleZh": "附近容易停车吗？"
+    },
+    {
+      "id": 19,
+      "fr": "un siège",
+      "zh": "座位",
+      "scenario": "show",
+      "priority": 5,
+      "exampleFr": "Quels types de places ou de sièges proposez-vous ?",
+      "exampleZh": "有哪些座位类型？"
+    },
+    {
+      "id": 20,
+      "fr": "une bonne visibilité",
+      "zh": "视野好",
+      "scenario": "show",
+      "priority": 4,
+      "exampleFr": "Est-ce qu’on voit bien la scène depuis ces places ?",
+      "exampleZh": "从这些座位看舞台清楚吗？"
+    },
+    {
+      "id": 21,
+      "fr": "un artiste",
+      "zh": "艺术家",
+      "scenario": "show",
+      "priority": 5,
+      "exampleFr": "Quels artistes participent au spectacle ?",
+      "exampleZh": "有哪些艺术家参加演出？"
+    },
+    {
+      "id": 22,
+      "fr": "un acteur / une actrice",
+      "zh": "演员",
+      "scenario": "series",
+      "priority": 5,
+      "exampleFr": "Qui sont les principaux acteurs ?",
+      "exampleZh": "主要演员是谁？"
+    },
+    {
+      "id": 23,
+      "fr": "une performance",
+      "zh": "表演",
+      "scenario": "show",
+      "priority": 4,
+      "exampleFr": "Comment as-tu trouvé la performance des acteurs ?",
+      "exampleZh": "你觉得演员的表演怎么样？"
+    },
+    {
+      "id": 24,
+      "fr": "un programme",
+      "zh": "节目单",
+      "scenario": "festival",
+      "priority": 5,
+      "exampleFr": "Quel est le programme prévu ?",
+      "exampleZh": "节目安排是什么？"
+    },
+    {
+      "id": 25,
+      "fr": "valoir le coup",
+      "zh": "值得",
+      "scenario": "show",
+      "priority": 5,
+      "exampleFr": "Est-ce que tu trouves que ce spectacle vaut vraiment le coup ?",
+      "exampleZh": "你觉得这个演出真的值得看吗？"
+    },
+    {
+      "id": 26,
+      "fr": "recommander",
+      "zh": "推荐",
+      "scenario": "show",
+      "priority": 5,
+      "exampleFr": "Quel spectacle me conseilleriez-vous ?",
+      "exampleZh": "您会推荐哪个演出？"
+    },
+    {
+      "id": 27,
+      "fr": "une série télévisée",
+      "zh": "电视剧",
+      "scenario": "series",
+      "priority": 5,
+      "exampleFr": "Vous voulez regarder une série télévisée.",
+      "exampleZh": "你想看一部电视剧。"
+    },
+    {
+      "id": 28,
+      "fr": "un type de série",
+      "zh": "剧集类型",
+      "scenario": "series",
+      "priority": 5,
+      "exampleFr": "Quel type de série me conseillerais-tu ?",
+      "exampleZh": "你会推荐什么类型的剧？"
+    },
+    {
+      "id": 29,
+      "fr": "une intrigue",
+      "zh": "剧情",
+      "scenario": "series",
+      "priority": 5,
+      "exampleFr": "De quoi parle l’intrigue ?",
+      "exampleZh": "剧情讲什么？"
+    },
+    {
+      "id": 30,
+      "fr": "un épisode",
+      "zh": "一集",
+      "scenario": "series",
+      "priority": 5,
+      "exampleFr": "Combien de temps dure un épisode ?",
+      "exampleZh": "一集多长时间？"
+    },
+    {
+      "id": 31,
+      "fr": "une saison",
+      "zh": "一季",
+      "scenario": "series",
+      "priority": 5,
+      "exampleFr": "Combien de saisons y a-t-il ?",
+      "exampleZh": "一共有几季？"
+    },
+    {
+      "id": 32,
+      "fr": "une plateforme de streaming",
+      "zh": "流媒体平台",
+      "scenario": "series",
+      "priority": 5,
+      "exampleFr": "Sur quelle plateforme peut-on regarder cette série ?",
+      "exampleZh": "这部剧在哪个平台能看？"
+    },
+    {
+      "id": 33,
+      "fr": "une chaîne",
+      "zh": "频道",
+      "scenario": "series",
+      "priority": 4,
+      "exampleFr": "Sur quelle chaîne est-elle diffusée ?",
+      "exampleZh": "在哪个频道播？"
+    },
+    {
+      "id": 34,
+      "fr": "être diffusé(e)",
+      "zh": "播出",
+      "scenario": "series",
+      "priority": 4,
+      "exampleFr": "Sur quelle chaîne est-elle diffusée ?",
+      "exampleZh": "在哪个频道播？"
+    },
+    {
+      "id": 35,
+      "fr": "un abonnement",
+      "zh": "订阅",
+      "scenario": "series",
+      "priority": 5,
+      "exampleFr": "Faut-il un abonnement pour la regarder ?",
+      "exampleZh": "看这部剧需要订阅吗？"
+    },
+    {
+      "id": 36,
+      "fr": "être gratuit(e)",
+      "zh": "免费",
+      "scenario": "series",
+      "priority": 4,
+      "exampleFr": "Est-ce que cette série est gratuite ?",
+      "exampleZh": "这部剧免费吗？"
+    },
+    {
+      "id": 37,
+      "fr": "des sous-titres",
+      "zh": "字幕",
+      "scenario": "series",
+      "priority": 5,
+      "exampleFr": "Y a-t-il des sous-titres en français ?",
+      "exampleZh": "有法语字幕吗？"
+    },
+    {
+      "id": 38,
+      "fr": "le niveau de langue",
+      "zh": "语言难度",
+      "scenario": "series",
+      "priority": 5,
+      "exampleFr": "Le niveau de langue est-il difficile ?",
+      "exampleZh": "语言难度大吗？"
+    },
+    {
+      "id": 39,
+      "fr": "être facile à suivre",
+      "zh": "容易跟上",
+      "scenario": "series",
+      "priority": 5,
+      "exampleFr": "Est-ce que la série est facile à suivre pour quelqu’un qui apprend le français ?",
+      "exampleZh": "学法语的人容易看懂吗？"
+    },
+    {
+      "id": 40,
+      "fr": "être populaire",
+      "zh": "受欢迎",
+      "scenario": "series",
+      "priority": 4,
+      "exampleFr": "Cette série est-elle populaire en ce moment ?",
+      "exampleZh": "这部剧现在受欢迎吗？"
+    },
+    {
+      "id": 41,
+      "fr": "comparer deux séries",
+      "zh": "比较两部剧",
+      "scenario": "series",
+      "priority": 5,
+      "exampleFr": "Entre les deux séries, laquelle me conseillerais-tu ?",
+      "exampleZh": "这两部剧你更推荐哪一部？"
+    },
+    {
+      "id": 42,
+      "fr": "un blog",
+      "zh": "博客",
+      "scenario": "blog",
+      "priority": 5,
+      "exampleFr": "J’ai un blog depuis longtemps.",
+      "exampleZh": "我做博客很多年了。"
+    },
+    {
+      "id": 43,
+      "fr": "créer un blog",
+      "zh": "创建博客",
+      "scenario": "blog",
+      "priority": 5,
+      "exampleFr": "Vous voulez créer un blog pour votre prochain voyage au Canada.",
+      "exampleZh": "你想为下次加拿大旅行创建博客。"
+    },
+    {
+      "id": 44,
+      "fr": "une plateforme de blog",
+      "zh": "博客平台",
+      "scenario": "blog",
+      "priority": 4,
+      "exampleFr": "Quelle plateforme utilises-tu pour ton blog ?",
+      "exampleZh": "你用什么平台做博客？"
+    },
+    {
+      "id": 45,
+      "fr": "un thème",
+      "zh": "主题",
+      "scenario": "blog",
+      "priority": 5,
+      "exampleFr": "Quel thème me conseillerais-tu pour mon blog ?",
+      "exampleZh": "你建议我的博客用什么主题？"
+    },
+    {
+      "id": 46,
+      "fr": "une rubrique",
+      "zh": "栏目",
+      "scenario": "blog",
+      "priority": 5,
+      "exampleFr": "Quelles rubriques faudrait-il prévoir ?",
+      "exampleZh": "应该设置哪些栏目？"
+    },
+    {
+      "id": 47,
+      "fr": "un type de contenu",
+      "zh": "内容类型",
+      "scenario": "blog",
+      "priority": 5,
+      "exampleFr": "Quels types de contenus fonctionnent le mieux ?",
+      "exampleZh": "哪些内容形式效果最好？"
+    },
+    {
+      "id": 48,
+      "fr": "publier",
+      "zh": "发布",
+      "scenario": "blog",
+      "priority": 5,
+      "exampleFr": "À quelle fréquence faudrait-il publier ?",
+      "exampleZh": "应该多久发布一次？"
+    },
+    {
+      "id": 49,
+      "fr": "le rythme de publication",
+      "zh": "发布频率",
+      "scenario": "blog",
+      "priority": 5,
+      "exampleFr": "Quel rythme de publication me conseillerais-tu ?",
+      "exampleZh": "你建议什么发布节奏？"
+    },
+    {
+      "id": 50,
+      "fr": "un article",
+      "zh": "文章",
+      "scenario": "blog",
+      "priority": 5,
+      "exampleFr": "Quelle longueur devrait faire un article ?",
+      "exampleZh": "一篇文章应该多长？"
+    },
+    {
+      "id": 51,
+      "fr": "une photo",
+      "zh": "照片",
+      "scenario": "blog",
+      "priority": 4,
+      "exampleFr": "Combien de photos faudrait-il mettre dans chaque article ?",
+      "exampleZh": "每篇文章放多少照片比较好？"
+    },
+    {
+      "id": 52,
+      "fr": "un lecteur / une lectrice",
+      "zh": "读者",
+      "scenario": "blog",
+      "priority": 4,
+      "exampleFr": "Quel type de lecteurs veux-tu viser ?",
+      "exampleZh": "你想面向什么样的读者？"
+    },
+    {
+      "id": 53,
+      "fr": "un commentaire",
+      "zh": "评论",
+      "scenario": "blog",
+      "priority": 4,
+      "exampleFr": "Comment encourager les lecteurs à laisser des commentaires ?",
+      "exampleZh": "怎么鼓励读者留言？"
+    },
+    {
+      "id": 54,
+      "fr": "interagir avec les lecteurs",
+      "zh": "与读者互动",
+      "scenario": "blog",
+      "priority": 5,
+      "exampleFr": "Comment peut-on interagir avec les lecteurs ?",
+      "exampleZh": "怎么和读者互动？"
+    },
+    {
+      "id": 55,
+      "fr": "promouvoir un blog",
+      "zh": "推广博客",
+      "scenario": "blog",
+      "priority": 5,
+      "exampleFr": "Comment faire connaître son blog ?",
+      "exampleZh": "怎么推广自己的博客？"
+    },
+    {
+      "id": 56,
+      "fr": "les réseaux sociaux",
+      "zh": "社交媒体",
+      "scenario": "blog",
+      "priority": 5,
+      "exampleFr": "Est-ce utile de partager les articles sur les réseaux sociaux ?",
+      "exampleZh": "把文章分享到社交媒体有用吗？"
+    },
+    {
+      "id": 57,
+      "fr": "un outil numérique",
+      "zh": "数字工具",
+      "scenario": "blog",
+      "priority": 4,
+      "exampleFr": "Quels outils me conseillerais-tu pour préparer le blog ?",
+      "exampleZh": "你建议用哪些工具准备博客？"
+    },
+    {
+      "id": 58,
+      "fr": "un journal",
+      "zh": "报纸",
+      "scenario": "press",
+      "priority": 5,
+      "exampleFr": "Vous souhaitez lire des journaux canadiens.",
+      "exampleZh": "你想读加拿大报纸。"
+    },
+    {
+      "id": 59,
+      "fr": "un kiosque à journaux",
+      "zh": "报刊亭",
+      "scenario": "press",
+      "priority": 4,
+      "exampleFr": "Je tiens un kiosque à journaux.",
+      "exampleZh": "我经营一家报刊亭。"
+    },
+    {
+      "id": 60,
+      "fr": "un quotidien",
+      "zh": "日报",
+      "scenario": "press",
+      "priority": 4,
+      "exampleFr": "Est-ce plutôt un quotidien ou un hebdomadaire ?",
+      "exampleZh": "这是日报还是周报？"
+    },
+    {
+      "id": 61,
+      "fr": "un hebdomadaire",
+      "zh": "周报",
+      "scenario": "press",
+      "priority": 4,
+      "exampleFr": "Est-ce plutôt un quotidien ou un hebdomadaire ?",
+      "exampleZh": "这是日报还是周报？"
+    },
+    {
+      "id": 62,
+      "fr": "un thème d’actualité",
+      "zh": "新闻主题",
+      "scenario": "press",
+      "priority": 5,
+      "exampleFr": "Quels journaux parlent surtout d’actualité internationale ?",
+      "exampleZh": "哪些报纸主要报道国际新闻？"
+    },
+    {
+      "id": 63,
+      "fr": "une rubrique",
+      "zh": "栏目",
+      "scenario": "press",
+      "priority": 4,
+      "exampleFr": "Quelles rubriques trouve-t-on dans ce journal ?",
+      "exampleZh": "这份报纸有哪些栏目？"
+    },
+    {
+      "id": 64,
+      "fr": "la fréquence de publication",
+      "zh": "出版频率",
+      "scenario": "press",
+      "priority": 4,
+      "exampleFr": "À quelle fréquence ce journal paraît-il ?",
+      "exampleZh": "这份报纸多久出版一次？"
+    },
+    {
+      "id": 65,
+      "fr": "un exemplaire",
+      "zh": "一份报纸",
+      "scenario": "press",
+      "priority": 4,
+      "exampleFr": "Combien coûte un exemplaire ?",
+      "exampleZh": "一份多少钱？"
+    },
+    {
+      "id": 66,
+      "fr": "un abonnement annuel",
+      "zh": "年度订阅",
+      "scenario": "press",
+      "priority": 4,
+      "exampleFr": "Combien coûte l’abonnement annuel ?",
+      "exampleZh": "年度订阅多少钱？"
+    },
+    {
+      "id": 67,
+      "fr": "une version numérique",
+      "zh": "电子版",
+      "scenario": "press",
+      "priority": 5,
+      "exampleFr": "Existe-t-il une version numérique ?",
+      "exampleZh": "有电子版吗？"
+    },
+    {
+      "id": 68,
+      "fr": "lire en ligne",
+      "zh": "在线阅读",
+      "scenario": "press",
+      "priority": 5,
+      "exampleFr": "Peut-on le lire en ligne ?",
+      "exampleZh": "可以在线阅读吗？"
+    },
+    {
+      "id": 69,
+      "fr": "un numéro d’essai",
+      "zh": "试读样刊",
+      "scenario": "press",
+      "priority": 4,
+      "exampleFr": "Puis-je lire un numéro d’essai avant de m’abonner ?",
+      "exampleZh": "订阅前可以先试读吗？"
+    },
+    {
+      "id": 70,
+      "fr": "un festival",
+      "zh": "节庆 / 节日活动",
+      "scenario": "festival",
+      "priority": 5,
+      "exampleFr": "J’organise un festival de musique dans votre ville.",
+      "exampleZh": "我在你所在的城市组织音乐节。"
+    },
+    {
+      "id": 71,
+      "fr": "un festival de musique",
+      "zh": "音乐节",
+      "scenario": "festival",
+      "priority": 5,
+      "exampleFr": "J’organise un festival de musique dans votre ville.",
+      "exampleZh": "我组织一个音乐节。"
+    },
+    {
+      "id": 72,
+      "fr": "un festival de cinéma",
+      "zh": "电影节",
+      "scenario": "festival",
+      "priority": 5,
+      "exampleFr": "J’organise un festival de cinéma francophone.",
+      "exampleZh": "我组织一个法语电影节。"
+    },
+    {
+      "id": 73,
+      "fr": "un concert",
+      "zh": "音乐会",
+      "scenario": "concert",
+      "priority": 5,
+      "exampleFr": "Je vous propose de m’accompagner à un concert de musique.",
+      "exampleZh": "我邀请你和我一起去音乐会。"
+    },
+    {
+      "id": 74,
+      "fr": "un type de musique",
+      "zh": "音乐类型",
+      "scenario": "concert",
+      "priority": 5,
+      "exampleFr": "Quel type de musique sera joué ?",
+      "exampleZh": "会演奏什么类型的音乐？"
+    },
+    {
+      "id": 75,
+      "fr": "un chanteur / une chanteuse",
+      "zh": "歌手",
+      "scenario": "concert",
+      "priority": 5,
+      "exampleFr": "Quels chanteurs ou groupes seront présents ?",
+      "exampleZh": "有哪些歌手或乐队参加？"
+    },
+    {
+      "id": 76,
+      "fr": "un groupe de musique",
+      "zh": "乐队",
+      "scenario": "concert",
+      "priority": 5,
+      "exampleFr": "Quels chanteurs ou groupes seront présents ?",
+      "exampleZh": "有哪些歌手或乐队参加？"
+    },
+    {
+      "id": 77,
+      "fr": "une chanson",
+      "zh": "歌曲",
+      "scenario": "concert",
+      "priority": 4,
+      "exampleFr": "Tu connais déjà certaines de leurs chansons ?",
+      "exampleZh": "你已经听过他们的一些歌吗？"
+    },
+    {
+      "id": 78,
+      "fr": "une scène",
+      "zh": "舞台",
+      "scenario": "festival",
+      "priority": 4,
+      "exampleFr": "Combien de scènes y aura-t-il ?",
+      "exampleZh": "会有几个舞台？"
+    },
+    {
+      "id": 79,
+      "fr": "un concert en plein air",
+      "zh": "露天音乐会",
+      "scenario": "festival",
+      "priority": 4,
+      "exampleFr": "Les concerts auront-ils lieu en plein air ?",
+      "exampleZh": "音乐会会在户外举行吗？"
+    },
+    {
+      "id": 80,
+      "fr": "un stand de restauration",
+      "zh": "餐饮摊位",
+      "scenario": "festival",
+      "priority": 4,
+      "exampleFr": "Y aura-t-il des stands de restauration ?",
+      "exampleZh": "会有餐饮摊位吗？"
+    },
+    {
+      "id": 81,
+      "fr": "un pass",
+      "zh": "通票",
+      "scenario": "festival",
+      "priority": 5,
+      "exampleFr": "Existe-t-il un pass pour plusieurs séances ?",
+      "exampleZh": "有多场通票吗？"
+    },
+    {
+      "id": 82,
+      "fr": "un feu d’artifice",
+      "zh": "烟花",
+      "scenario": "holiday",
+      "priority": 5,
+      "exampleFr": "Y aura-t-il un feu d’artifice ?",
+      "exampleZh": "会有烟花吗？"
+    },
+    {
+      "id": 83,
+      "fr": "le Nouvel An",
+      "zh": "新年",
+      "scenario": "holiday",
+      "priority": 5,
+      "exampleFr": "Vous allez passer le prochain Nouvel An au Canada.",
+      "exampleZh": "你将在加拿大过下一个新年。"
+    },
+    {
+      "id": 84,
+      "fr": "célébrer",
+      "zh": "庆祝",
+      "scenario": "holiday",
+      "priority": 5,
+      "exampleFr": "Comment les Canadiens célèbrent-ils le Nouvel An ?",
+      "exampleZh": "加拿大人怎么庆祝新年？"
+    },
+    {
+      "id": 85,
+      "fr": "une tradition",
+      "zh": "传统",
+      "scenario": "holiday",
+      "priority": 5,
+      "exampleFr": "Quelles traditions sont les plus courantes ?",
+      "exampleZh": "最常见的传统有哪些？"
+    },
+    {
+      "id": 86,
+      "fr": "un plat typique",
+      "zh": "典型菜肴",
+      "scenario": "holiday",
+      "priority": 5,
+      "exampleFr": "Quels plats typiques mange-t-on pour le Nouvel An ?",
+      "exampleZh": "新年通常吃哪些典型菜？"
+    },
+    {
+      "id": 87,
+      "fr": "une boisson",
+      "zh": "饮品",
+      "scenario": "holiday",
+      "priority": 4,
+      "exampleFr": "Qu’est-ce qu’on boit généralement pendant la fête ?",
+      "exampleZh": "节日期间一般喝什么？"
+    },
+    {
+      "id": 88,
+      "fr": "une tenue",
+      "zh": "着装",
+      "scenario": "holiday",
+      "priority": 4,
+      "exampleFr": "Comment faut-il s’habiller pour cette soirée ?",
+      "exampleZh": "这个晚上应该怎么穿？"
+    },
+    {
+      "id": 89,
+      "fr": "prévoir des vêtements chauds",
+      "zh": "准备保暖衣物",
+      "scenario": "holiday",
+      "priority": 4,
+      "exampleFr": "Faut-il prévoir des vêtements très chauds ?",
+      "exampleZh": "需要准备很暖的衣服吗？"
+    },
+    {
+      "id": 90,
+      "fr": "une activité en plein air",
+      "zh": "户外活动",
+      "scenario": "holiday",
+      "priority": 4,
+      "exampleFr": "Y a-t-il beaucoup d’activités en plein air ?",
+      "exampleZh": "有很多户外活动吗？"
+    },
+    {
+      "id": 91,
+      "fr": "rentrer chez soi",
+      "zh": "回家",
+      "scenario": "holiday",
+      "priority": 4,
+      "exampleFr": "Comment peut-on rentrer chez soi après minuit ?",
+      "exampleZh": "午夜后怎么回家？"
+    },
+    {
+      "id": 92,
+      "fr": "une activité familiale",
+      "zh": "家庭活动",
+      "scenario": "holiday",
+      "priority": 4,
+      "exampleFr": "Y a-t-il des activités adaptées aux familles ?",
+      "exampleZh": "有适合家庭的活动吗？"
+    },
+    {
+      "id": 93,
+      "fr": "une première expérience",
+      "zh": "首次体验",
+      "scenario": "holiday",
+      "priority": 4,
+      "exampleFr": "Qu’est-ce que tu me conseillerais pour une première expérience du Nouvel An au Canada ?",
+      "exampleZh": "第一次在加拿大过新年，你建议我做什么？"
+    },
+    {
+      "id": 94,
+      "fr": "un film",
+      "zh": "电影",
+      "scenario": "cinema",
+      "priority": 5,
+      "exampleFr": "Quels films seront présentés pendant le festival ?",
+      "exampleZh": "电影节会放哪些电影？"
+    },
+    {
+      "id": 95,
+      "fr": "un film francophone",
+      "zh": "法语电影",
+      "scenario": "cinema",
+      "priority": 5,
+      "exampleFr": "Le festival présente-t-il uniquement des films francophones ?",
+      "exampleZh": "电影节只放法语电影吗？"
+    },
+    {
+      "id": 96,
+      "fr": "un réalisateur / une réalisatrice",
+      "zh": "导演",
+      "scenario": "cinema",
+      "priority": 4,
+      "exampleFr": "Y aura-t-il des réalisateurs invités ?",
+      "exampleZh": "会有受邀导演吗？"
+    },
+    {
+      "id": 97,
+      "fr": "une projection",
+      "zh": "放映",
+      "scenario": "cinema",
+      "priority": 5,
+      "exampleFr": "À quelle heure commencent les projections ?",
+      "exampleZh": "放映几点开始？"
+    },
+    {
+      "id": 98,
+      "fr": "une séance",
+      "zh": "场次",
+      "scenario": "cinema",
+      "priority": 5,
+      "exampleFr": "Combien de séances y a-t-il par jour ?",
+      "exampleZh": "每天有几场？"
+    },
+    {
+      "id": 99,
+      "fr": "un invité",
+      "zh": "嘉宾",
+      "scenario": "cinema",
+      "priority": 4,
+      "exampleFr": "Y aura-t-il des invités ou des acteurs présents ?",
+      "exampleZh": "会有嘉宾或演员到场吗？"
+    },
+    {
+      "id": 100,
+      "fr": "une rencontre",
+      "zh": "交流活动",
+      "scenario": "cinema",
+      "priority": 4,
+      "exampleFr": "Y aura-t-il des rencontres avec les réalisateurs ?",
+      "exampleZh": "会有和导演的交流活动吗？"
+    },
+    {
+      "id": 101,
+      "fr": "un sous-titrage",
+      "zh": "字幕",
+      "scenario": "cinema",
+      "priority": 5,
+      "exampleFr": "Les films sont-ils sous-titrés ?",
+      "exampleZh": "电影有字幕吗？"
+    },
+    {
+      "id": 102,
+      "fr": "être sous-titré(e)",
+      "zh": "带字幕",
+      "scenario": "cinema",
+      "priority": 4,
+      "exampleFr": "Les films sont-ils sous-titrés ?",
+      "exampleZh": "电影有字幕吗？"
+    },
+    {
+      "id": 103,
+      "fr": "une séance spéciale",
+      "zh": "特别场次",
+      "scenario": "cinema",
+      "priority": 4,
+      "exampleFr": "Y a-t-il des séances spéciales avec des invités ?",
+      "exampleZh": "有嘉宾参加的特别场次吗？"
+    }
+  ],
+  "patterns": [
+    {
+      "id": 1,
+      "pattern": "À quelle date aura lieu + événement ?",
+      "zh": "活动哪天举行？",
+      "exampleFr": "À quelle date aura lieu le spectacle ?",
+      "exampleZh": "演出哪天举行？",
+      "scenario": "show"
+    },
+    {
+      "id": 2,
+      "pattern": "À quelle heure commence / se termine + événement ?",
+      "zh": "几点开始/结束？",
+      "exampleFr": "À quelle heure commence le spectacle ?",
+      "exampleZh": "演出几点开始？",
+      "scenario": "show"
+    },
+    {
+      "id": 3,
+      "pattern": "Combien de temps dure + événement ?",
+      "zh": "持续多久？",
+      "exampleFr": "Combien de temps dure le spectacle ?",
+      "exampleZh": "演出持续多久？",
+      "scenario": "show"
+    },
+    {
+      "id": 4,
+      "pattern": "Où aura lieu + événement ?",
+      "zh": "在哪里举行？",
+      "exampleFr": "Où aura lieu le spectacle ?",
+      "exampleZh": "演出在哪里举行？",
+      "scenario": "show"
+    },
+    {
+      "id": 5,
+      "pattern": "Quel est le moyen le plus simple pour s’y rendre ?",
+      "zh": "怎么去最方便？",
+      "exampleFr": "Quel est le moyen le plus simple pour s’y rendre ?",
+      "exampleZh": "怎么去最方便？",
+      "scenario": "show"
+    },
+    {
+      "id": 6,
+      "pattern": "Quel type de spectacle est-ce ?",
+      "zh": "是什么类型的演出？",
+      "exampleFr": "Quel type de spectacle est-ce exactement ?",
+      "exampleZh": "这到底是什么类型的演出？",
+      "scenario": "show"
+    },
+    {
+      "id": 7,
+      "pattern": "Quels artistes / acteurs participent ?",
+      "zh": "有哪些艺术家/演员？",
+      "exampleFr": "Quels artistes participent au spectacle ?",
+      "exampleZh": "有哪些艺术家参加演出？",
+      "scenario": "show"
+    },
+    {
+      "id": 8,
+      "pattern": "Quels types de places proposez-vous ?",
+      "zh": "有哪些座位类型？",
+      "exampleFr": "Quels types de places ou de sièges proposez-vous ?",
+      "exampleZh": "有哪些座位类型？",
+      "scenario": "show"
+    },
+    {
+      "id": 9,
+      "pattern": "Combien coûte une place ?",
+      "zh": "一张票多少钱？",
+      "exampleFr": "Combien coûte une place ?",
+      "exampleZh": "一张票多少钱？",
+      "scenario": "show"
+    },
+    {
+      "id": 10,
+      "pattern": "Y a-t-il des tarifs réduits ?",
+      "zh": "有优惠票吗？",
+      "exampleFr": "Y a-t-il des tarifs réduits ?",
+      "exampleZh": "有优惠票价吗？",
+      "scenario": "show"
+    },
+    {
+      "id": 11,
+      "pattern": "Vaut-il mieux réserver à l’avance ?",
+      "zh": "最好提前预订吗？",
+      "exampleFr": "Vaut-il mieux réserver à l’avance ?",
+      "exampleZh": "最好提前预订吗？",
+      "scenario": "show"
+    },
+    {
+      "id": 12,
+      "pattern": "Peut-on annuler ou échanger un billet ?",
+      "zh": "可以退票/换票吗？",
+      "exampleFr": "Peut-on annuler ou échanger un billet ?",
+      "exampleZh": "可以退票或换票吗？",
+      "scenario": "show"
+    },
+    {
+      "id": 13,
+      "pattern": "Quel type de série me conseillerais-tu ?",
+      "zh": "你推荐什么类型的剧？",
+      "exampleFr": "Quel type de série me conseillerais-tu ?",
+      "exampleZh": "你会推荐什么类型的剧？",
+      "scenario": "series"
+    },
+    {
+      "id": 14,
+      "pattern": "De quoi parle l’intrigue ?",
+      "zh": "剧情讲什么？",
+      "exampleFr": "De quoi parle l’intrigue ?",
+      "exampleZh": "剧情讲什么？",
+      "scenario": "series"
+    },
+    {
+      "id": 15,
+      "pattern": "Qui sont les principaux acteurs ?",
+      "zh": "主要演员是谁？",
+      "exampleFr": "Qui sont les principaux acteurs ?",
+      "exampleZh": "主要演员是谁？",
+      "scenario": "series"
+    },
+    {
+      "id": 16,
+      "pattern": "Combien de temps dure un épisode ?",
+      "zh": "一集多长？",
+      "exampleFr": "Combien de temps dure un épisode ?",
+      "exampleZh": "一集多长时间？",
+      "scenario": "series"
+    },
+    {
+      "id": 17,
+      "pattern": "Combien de saisons y a-t-il ?",
+      "zh": "有几季？",
+      "exampleFr": "Combien de saisons y a-t-il ?",
+      "exampleZh": "一共有几季？",
+      "scenario": "series"
+    },
+    {
+      "id": 18,
+      "pattern": "Sur quelle plateforme peut-on regarder + série ?",
+      "zh": "在哪个平台看？",
+      "exampleFr": "Sur quelle plateforme peut-on regarder cette série ?",
+      "exampleZh": "这部剧在哪个平台能看？",
+      "scenario": "series"
+    },
+    {
+      "id": 19,
+      "pattern": "Faut-il un abonnement ?",
+      "zh": "需要订阅吗？",
+      "exampleFr": "Faut-il un abonnement pour la regarder ?",
+      "exampleZh": "看这部剧需要订阅吗？",
+      "scenario": "series"
+    },
+    {
+      "id": 20,
+      "pattern": "Y a-t-il des sous-titres ?",
+      "zh": "有字幕吗？",
+      "exampleFr": "Y a-t-il des sous-titres en français ?",
+      "exampleZh": "有法语字幕吗？",
+      "scenario": "series"
+    },
+    {
+      "id": 21,
+      "pattern": "Le niveau de langue est-il difficile ?",
+      "zh": "语言难度大吗？",
+      "exampleFr": "Le niveau de langue est-il difficile ?",
+      "exampleZh": "语言难度大吗？",
+      "scenario": "series"
+    },
+    {
+      "id": 22,
+      "pattern": "Entre les deux, laquelle me conseillerais-tu ?",
+      "zh": "两个里面你推荐哪个？",
+      "exampleFr": "Entre les deux séries, laquelle me conseillerais-tu ?",
+      "exampleZh": "两部剧你更推荐哪部？",
+      "scenario": "series"
+    },
+    {
+      "id": 23,
+      "pattern": "Quelle plateforme utilises-tu pour + blog ?",
+      "zh": "你用哪个平台？",
+      "exampleFr": "Quelle plateforme utilises-tu pour ton blog ?",
+      "exampleZh": "你用什么平台做博客？",
+      "scenario": "blog"
+    },
+    {
+      "id": 24,
+      "pattern": "Quelles rubriques faudrait-il prévoir ?",
+      "zh": "应该设置哪些栏目？",
+      "exampleFr": "Quelles rubriques faudrait-il prévoir ?",
+      "exampleZh": "应该设置哪些栏目？",
+      "scenario": "blog"
+    },
+    {
+      "id": 25,
+      "pattern": "Quels types de contenus fonctionnent le mieux ?",
+      "zh": "哪些内容形式效果最好？",
+      "exampleFr": "Quels types de contenus fonctionnent le mieux ?",
+      "exampleZh": "哪些内容形式效果最好？",
+      "scenario": "blog"
+    },
+    {
+      "id": 26,
+      "pattern": "À quelle fréquence faudrait-il publier ?",
+      "zh": "多久发布一次？",
+      "exampleFr": "À quelle fréquence faudrait-il publier ?",
+      "exampleZh": "应该多久发布一次？",
+      "scenario": "blog"
+    },
+    {
+      "id": 27,
+      "pattern": "Comment faire connaître + blog ?",
+      "zh": "怎么推广博客？",
+      "exampleFr": "Comment faire connaître son blog ?",
+      "exampleZh": "怎么推广自己的博客？",
+      "scenario": "blog"
+    },
+    {
+      "id": 28,
+      "pattern": "Quel type de journal me conseilleriez-vous ?",
+      "zh": "您推荐什么报纸？",
+      "exampleFr": "Quel type de journal me conseilleriez-vous ?",
+      "exampleZh": "您推荐什么类型的报纸？",
+      "scenario": "press"
+    },
+    {
+      "id": 29,
+      "pattern": "Quel est le niveau de langue ?",
+      "zh": "语言难度怎样？",
+      "exampleFr": "Quel est le niveau de langue de ce journal ?",
+      "exampleZh": "这份报纸的语言难度怎样？",
+      "scenario": "press"
+    },
+    {
+      "id": 30,
+      "pattern": "Combien coûte un exemplaire ?",
+      "zh": "一份多少钱？",
+      "exampleFr": "Combien coûte un exemplaire ?",
+      "exampleZh": "一份多少钱？",
+      "scenario": "press"
+    },
+    {
+      "id": 31,
+      "pattern": "Existe-t-il une version numérique ?",
+      "zh": "有电子版吗？",
+      "exampleFr": "Existe-t-il une version numérique ?",
+      "exampleZh": "有电子版吗？",
+      "scenario": "press"
+    },
+    {
+      "id": 32,
+      "pattern": "Puis-je lire un numéro d’essai ?",
+      "zh": "可以试读吗？",
+      "exampleFr": "Puis-je lire un numéro d’essai avant de m’abonner ?",
+      "exampleZh": "订阅前可以试读吗？",
+      "scenario": "press"
+    },
+    {
+      "id": 33,
+      "pattern": "Quels chanteurs ou groupes seront présents ?",
+      "zh": "有哪些歌手或乐队？",
+      "exampleFr": "Quels chanteurs ou groupes seront présents ?",
+      "exampleZh": "有哪些歌手或乐队参加？",
+      "scenario": "concert"
+    },
+    {
+      "id": 34,
+      "pattern": "Quel type de musique sera joué ?",
+      "zh": "会演奏什么音乐？",
+      "exampleFr": "Quel type de musique sera joué ?",
+      "exampleZh": "会演奏什么类型的音乐？",
+      "scenario": "concert"
+    },
+    {
+      "id": 35,
+      "pattern": "Existe-t-il un pass pour plusieurs séances ?",
+      "zh": "有多场通票吗？",
+      "exampleFr": "Existe-t-il un pass pour plusieurs séances ?",
+      "exampleZh": "有多场通票吗？",
+      "scenario": "festival"
+    },
+    {
+      "id": 36,
+      "pattern": "Y aura-t-il des stands de restauration ?",
+      "zh": "有餐饮摊位吗？",
+      "exampleFr": "Y aura-t-il des stands de restauration ?",
+      "exampleZh": "会有餐饮摊位吗？",
+      "scenario": "festival"
+    },
+    {
+      "id": 37,
+      "pattern": "Quelles traditions sont les plus courantes ?",
+      "zh": "最常见的传统有哪些？",
+      "exampleFr": "Quelles traditions sont les plus courantes ?",
+      "exampleZh": "最常见的传统有哪些？",
+      "scenario": "holiday"
+    },
+    {
+      "id": 38,
+      "pattern": "Quels plats typiques mange-t-on ?",
+      "zh": "通常吃什么典型菜？",
+      "exampleFr": "Quels plats typiques mange-t-on pour le Nouvel An ?",
+      "exampleZh": "新年通常吃哪些典型菜？",
+      "scenario": "holiday"
+    },
+    {
+      "id": 39,
+      "pattern": "Comment faut-il s’habiller ?",
+      "zh": "应该怎么穿？",
+      "exampleFr": "Comment faut-il s’habiller pour cette soirée ?",
+      "exampleZh": "这个晚上应该怎么穿？",
+      "scenario": "holiday"
+    },
+    {
+      "id": 40,
+      "pattern": "Y a-t-il des activités adaptées aux familles ?",
+      "zh": "有适合家庭的活动吗？",
+      "exampleFr": "Y a-t-il des activités adaptées aux familles ?",
+      "exampleZh": "有适合家庭的活动吗？",
+      "scenario": "holiday"
+    },
+    {
+      "id": 41,
+      "pattern": "Quels films seront présentés ?",
+      "zh": "会放哪些电影？",
+      "exampleFr": "Quels films seront présentés pendant le festival ?",
+      "exampleZh": "电影节会放哪些电影？",
+      "scenario": "cinema"
+    },
+    {
+      "id": 42,
+      "pattern": "Les films sont-ils sous-titrés ?",
+      "zh": "电影有字幕吗？",
+      "exampleFr": "Les films sont-ils sous-titrés ?",
+      "exampleZh": "电影有字幕吗？",
+      "scenario": "cinema"
+    },
+    {
+      "id": 43,
+      "pattern": "Y aura-t-il des invités ou des acteurs présents ?",
+      "zh": "会有嘉宾或演员吗？",
+      "exampleFr": "Y aura-t-il des invités ou des acteurs présents ?",
+      "exampleZh": "会有嘉宾或演员到场吗？",
+      "scenario": "cinema"
+    },
+    {
+      "id": 44,
+      "pattern": "Y aura-t-il des rencontres avec les réalisateurs ?",
+      "zh": "会有和导演的交流吗？",
+      "exampleFr": "Y aura-t-il des rencontres avec les réalisateurs ?",
+      "exampleZh": "会有和导演的交流活动吗？",
+      "scenario": "cinema"
+    }
+  ]
+}
