@@ -1,0 +1,55 @@
+name: Repair conjugation Piper audio
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/piper/conjugation-missing/generate.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  repair:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+      - name: Install Piper and ffmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          python -m pip install --upgrade pip
+          python -m pip install piper-tts
+      - name: Download fr_FR-siwis-medium
+        run: |
+          mkdir -p .piper-model
+          curl -L --fail --retry 3 -o .piper-model/fr_FR-siwis-medium.onnx https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx
+          curl -L --fail --retry 3 -o .piper-model/fr_FR-siwis-medium.onnx.json https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx.json
+      - name: Generate only missing conjugation audio
+        run: python tools/piper/conjugation-missing/generate.py --model .piper-model/fr_FR-siwis-medium.onnx
+      - name: Validate zero missing targets
+        run: |
+          python - <<'PY'
+          import json
+          a=json.load(open('combined-expressions/conjugation-audio-audit.json'))
+          assert a['voice']=='fr_FR-siwis-medium'
+          assert a['missingAfter']==0
+          assert a['status']=='ok'
+          print(a)
+          PY
+      - name: Commit repaired audio coverage
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add combined-expressions/piper-audio/manifest.json combined-expressions/piper-audio/conj-repair-*.json combined-expressions/conjugation-audio-audit.json
+          if git diff --cached --quiet; then
+            echo "No missing conjugation audio"
+          else
+            git commit -m "Fill missing Piper audio for all conjugation forms"
+            git fetch origin main
+            git rebase origin/main
+            git push
+          fi
