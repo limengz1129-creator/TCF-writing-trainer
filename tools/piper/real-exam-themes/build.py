@@ -138,9 +138,13 @@ def build_one(slug,model_path,known,do_git):
     print(f"VALIDATED {slug}: {EXPECTED[slug]} questions, {EXPECTED[slug]*15} rows, Piper covered",flush=True)
     if do_git:
         git("add",str(data_path.relative_to(ROOT)),str(meta_path.relative_to(ROOT)),str(mf.relative_to(ROOT)),str((AUDIO/"README.md").relative_to(ROOT)),*[str(p.relative_to(ROOT)) for p in newpacks])
-        git("commit","-m",f"Complete T2 real-exam theme: {slug}")
-        git("push","origin","main")
-        print("PUSHED checkpoint",slug,flush=True)
+        diff=subprocess.run(["git","diff","--cached","--quiet"],cwd=ROOT)
+        if diff.returncode==0:
+            print("CHECKPOINT already complete; no new commit needed",slug,flush=True)
+        else:
+            git("commit","-m",f"Complete T2 real-exam theme: {slug}")
+            git("push","origin","main")
+            print("PUSHED checkpoint",slug,flush=True)
 
 def main():
     ap=argparse.ArgumentParser();ap.add_argument("--piper-model",required=True);ap.add_argument("--all",action="store_true");ap.add_argument("--slug");ap.add_argument("--git-checkpoints",action="store_true");args=ap.parse_args()
