@@ -31,8 +31,18 @@ def load_manifest():
 def git(*args):
     subprocess.run(["git",*args],cwd=ROOT,check=True)
 
-def apply_theme(slug,model):
-    patch=json.loads((OPT/f"{slug}.json").read_text(encoding="utf-8"))
+def load_patches():
+    parts=sorted(OPT.glob("all.part*.b64"))
+    assert parts, "missing optimized patch chunks"
+    encoded="".join(p.read_text(encoding="utf-8").strip() for p in parts)
+    raw=gzip.decompress(base64.b64decode(encoded))
+    patches=json.loads(raw.decode("utf-8"))
+    assert set(ORDER)==set(patches), (sorted(patches), ORDER)
+    for slug in ORDER:
+        assert len(patches[slug])==EXPECTED[slug]*15, (slug,len(patches[slug]),EXPECTED[slug]*15)
+    return patches
+
+def apply_theme(slug,patch,model):
     data_path=DATA/f"{slug}.json"
     obj=json.loads(data_path.read_text(encoding="utf-8"))
     expected=EXPECTED[slug]*15
