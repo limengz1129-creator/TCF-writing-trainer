@@ -764,6 +764,78 @@
       "priority": 4,
       "exampleFr": "Qu’est-ce qu’il faut fournir comme documents ?",
       "exampleZh": "报名需要提供哪些文件？"
+    },
+    {
+      "id": 83,
+      "fr": "l’heure de retour",
+      "zh": "返回时间",
+      "scenario": "childcare",
+      "priority": 4,
+      "exampleFr": "Tu pars à quelle heure, et tu rentres vers quelle heure ?",
+      "exampleZh": "你几点走，大概几点回来？"
+    },
+    {
+      "id": 84,
+      "fr": "la quantité à donner",
+      "zh": "每次要给的量",
+      "scenario": "pet",
+      "priority": 4,
+      "exampleFr": "Combien dois-je lui donner à chaque repas ?",
+      "exampleZh": "每顿应该给它多少？"
+    },
+    {
+      "id": 85,
+      "fr": "un repas adapté",
+      "zh": "合适的一餐",
+      "scenario": "routine",
+      "priority": 4,
+      "exampleFr": "Qu’est-ce qu’elle aime manger en général ?",
+      "exampleZh": "她一般喜欢吃什么？"
+    },
+    {
+      "id": 86,
+      "fr": "un jeu préféré",
+      "zh": "喜欢的游戏",
+      "scenario": "childcare",
+      "priority": 4,
+      "exampleFr": "À quoi est-ce qu’elle aime jouer ?",
+      "exampleZh": "她喜欢玩什么游戏？"
+    },
+    {
+      "id": 87,
+      "fr": "un endroit sûr",
+      "zh": "安全的地方",
+      "scenario": "childcare",
+      "priority": 4,
+      "exampleFr": "Puis-je l’emmener au parc ou faire une petite promenade avec elle ?",
+      "exampleZh": "我可以带她去公园或散步吗？"
+    },
+    {
+      "id": 88,
+      "fr": "un numéro d’urgence",
+      "zh": "紧急联系电话",
+      "scenario": "health",
+      "priority": 5,
+      "exampleFr": "Qui dois-je contacter en priorité en cas de problème ?",
+      "exampleZh": "出现问题时我应该先联系谁？"
+    },
+    {
+      "id": 89,
+      "fr": "une personne de confiance",
+      "zh": "可信赖的联系人",
+      "scenario": "health",
+      "priority": 4,
+      "exampleFr": "Qui dois-je contacter en priorité en cas de problème ?",
+      "exampleZh": "出现问题时我应该先联系谁？"
+    },
+    {
+      "id": 90,
+      "fr": "une activité adaptée à l’âge",
+      "zh": "适合年龄的活动",
+      "scenario": "after_school",
+      "priority": 5,
+      "exampleFr": "Pour quelles tranches d’âge ces activités sont-elles prévues ?",
+      "exampleZh": "这些活动适合哪些年龄段？"
     }
   ],
   "patterns": [
