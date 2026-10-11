@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - 'tools/piper/conjugation-missing/generate.py'
+      - '.github/workflows/repair-conjugation-piper.yml'
   workflow_dispatch:
 permissions:
   contents: write
