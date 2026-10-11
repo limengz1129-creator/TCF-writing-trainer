@@ -1,0 +1,1003 @@
+{
+  "theme": "family",
+  "title": "家庭儿童与宠物照护",
+  "target": "TCF Canada 口语 Tâche 2 · C1",
+  "version": 1,
+  "principle": "约100个高价值词/词块，以最终真题为基础；词块与真实套用问法绑定，优先训练中文→法语主动调用。",
+  "scenarios": [
+    {
+      "id": "childcare",
+      "name": "照看孩子"
+    },
+    {
+      "id": "pet",
+      "name": "照看宠物"
+    },
+    {
+      "id": "routine",
+      "name": "作息 / 饮食"
+    },
+    {
+      "id": "health",
+      "name": "健康 / 紧急"
+    },
+    {
+      "id": "after_school",
+      "name": "课后活动"
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": 1,
+      "fr": "garder un enfant",
+      "zh": "照看孩子",
+      "scenario": "childcare",
+      "priority": 5,
+      "exampleFr": "Pour quelles dates dois-je garder votre enfant ?",
+      "exampleZh": "我需要在哪些日期照看您的孩子？"
+    },
+    {
+      "id": 2,
+      "fr": "s’occuper d’un enfant",
+      "zh": "照顾孩子",
+      "scenario": "childcare",
+      "priority": 5,
+      "exampleFr": "Quels horaires dois-je prévoir chaque jour ?",
+      "exampleZh": "每天需要照顾到几点？"
+    },
+    {
+      "id": 3,
+      "fr": "pendant votre absence",
+      "zh": "在您不在的时候",
+      "scenario": "childcare",
+      "priority": 5,
+      "exampleFr": "Que dois-je faire s’il tombe malade pendant votre absence ?",
+      "exampleZh": "您不在时孩子生病怎么办？"
+    },
+    {
+      "id": 4,
+      "fr": "une garde d’enfant",
+      "zh": "儿童看护",
+      "scenario": "childcare",
+      "priority": 5,
+      "exampleFr": "Je souhaite que vous gardiez mon enfant pendant mon absence.",
+      "exampleZh": "我希望您在我不在时照看孩子。"
+    },
+    {
+      "id": 5,
+      "fr": "les horaires",
+      "zh": "时间安排",
+      "scenario": "childcare",
+      "priority": 5,
+      "exampleFr": "Quels horaires dois-je prévoir chaque jour ?",
+      "exampleZh": "每天需要安排哪些时间？"
+    },
+    {
+      "id": 6,
+      "fr": "une routine",
+      "zh": "固定作息",
+      "scenario": "routine",
+      "priority": 5,
+      "exampleFr": "Quelle routine dois-je respecter avec elle ?",
+      "exampleZh": "我需要遵守什么日常作息？"
+    },
+    {
+      "id": 7,
+      "fr": "respecter une habitude",
+      "zh": "遵守习惯",
+      "scenario": "routine",
+      "priority": 5,
+      "exampleFr": "Quelles habitudes particulières dois-je respecter ?",
+      "exampleZh": "我需要注意哪些特殊习惯？"
+    },
+    {
+      "id": 8,
+      "fr": "une habitude particulière",
+      "zh": "特殊习惯",
+      "scenario": "routine",
+      "priority": 4,
+      "exampleFr": "Quelles habitudes particulières dois-je respecter ?",
+      "exampleZh": "我需要注意哪些特殊习惯？"
+    },
+    {
+      "id": 9,
+      "fr": "l’heure du repas",
+      "zh": "吃饭时间",
+      "scenario": "routine",
+      "priority": 5,
+      "exampleFr": "Il mange généralement à quelles heures ?",
+      "exampleZh": "他通常几点吃饭？"
+    },
+    {
+      "id": 10,
+      "fr": "une habitude alimentaire",
+      "zh": "饮食习惯",
+      "scenario": "routine",
+      "priority": 5,
+      "exampleFr": "Qu’est-ce qu’il mange habituellement ?",
+      "exampleZh": "他通常吃什么？"
+    },
+    {
+      "id": 11,
+      "fr": "un aliment à éviter",
+      "zh": "需要避免的食物",
+      "scenario": "routine",
+      "priority": 5,
+      "exampleFr": "A-t-il des allergies alimentaires ou des aliments à éviter ?",
+      "exampleZh": "他有食物过敏或需要避免的食物吗？"
+    },
+    {
+      "id": 12,
+      "fr": "une allergie alimentaire",
+      "zh": "食物过敏",
+      "scenario": "health",
+      "priority": 5,
+      "exampleFr": "A-t-il des allergies alimentaires ou des aliments à éviter ?",
+      "exampleZh": "他有食物过敏吗？"
+    },
+    {
+      "id": 13,
+      "fr": "faire la sieste",
+      "zh": "午睡",
+      "scenario": "routine",
+      "priority": 5,
+      "exampleFr": "À quelle heure fait-il la sieste ou se couche-t-il ?",
+      "exampleZh": "他几点午睡或睡觉？"
+    },
+    {
+      "id": 14,
+      "fr": "se coucher",
+      "zh": "上床睡觉",
+      "scenario": "routine",
+      "priority": 5,
+      "exampleFr": "À quelle heure se couche-t-elle le soir ?",
+      "exampleZh": "她晚上几点睡？"
+    },
+    {
+      "id": 15,
+      "fr": "donner le bain",
+      "zh": "给孩子洗澡",
+      "scenario": "routine",
+      "priority": 4,
+      "exampleFr": "Combien de fois dois-je lui donner son bain ?",
+      "exampleZh": "我应该多久给她洗一次澡？"
+    },
+    {
+      "id": 16,
+      "fr": "un jouet préféré",
+      "zh": "最喜欢的玩具",
+      "scenario": "childcare",
+      "priority": 4,
+      "exampleFr": "Tu vas laisser quoi sur place pour elle, par exemple ses vêtements ou ses jouets préférés ?",
+      "exampleZh": "你会留下什么，比如她喜欢的衣服或玩具？"
+    },
+    {
+      "id": 17,
+      "fr": "un vêtement de rechange",
+      "zh": "备用衣物",
+      "scenario": "childcare",
+      "priority": 4,
+      "exampleFr": "Tu vas laisser quoi sur place pour elle, par exemple ses vêtements ou ses jouets préférés ?",
+      "exampleZh": "你会留下什么，比如她喜欢的衣服或玩具？"
+    },
+    {
+      "id": 18,
+      "fr": "emmener au parc",
+      "zh": "带去公园",
+      "scenario": "childcare",
+      "priority": 5,
+      "exampleFr": "Puis-je l’emmener au parc ou faire une promenade avec lui ?",
+      "exampleZh": "我可以带他去公园或散步吗？"
+    },
+    {
+      "id": 19,
+      "fr": "faire une promenade",
+      "zh": "散步",
+      "scenario": "childcare",
+      "priority": 5,
+      "exampleFr": "Puis-je l’emmener au parc ou faire une promenade avec lui ?",
+      "exampleZh": "我可以带他去公园或散步吗？"
+    },
+    {
+      "id": 20,
+      "fr": "jouer à",
+      "zh": "玩……",
+      "scenario": "childcare",
+      "priority": 5,
+      "exampleFr": "À quoi est-ce qu’elle aime jouer ?",
+      "exampleZh": "她喜欢玩什么？"
+    },
+    {
+      "id": 21,
+      "fr": "le caractère",
+      "zh": "性格",
+      "scenario": "childcare",
+      "priority": 5,
+      "exampleFr": "Comment décririez-vous son caractère ?",
+      "exampleZh": "您会怎么形容他的性格？"
+    },
+    {
+      "id": 22,
+      "fr": "être calme",
+      "zh": "性格安静",
+      "scenario": "childcare",
+      "priority": 4,
+      "exampleFr": "Comment décririez-vous son caractère ?",
+      "exampleZh": "您会怎么形容他的性格？"
+    },
+    {
+      "id": 23,
+      "fr": "être sociable",
+      "zh": "合群",
+      "scenario": "childcare",
+      "priority": 4,
+      "exampleFr": "Comment est-elle avec les autres quand tu n’es pas là ?",
+      "exampleZh": "你不在时她和别人相处怎么样？"
+    },
+    {
+      "id": 24,
+      "fr": "un problème de santé",
+      "zh": "健康问题",
+      "scenario": "health",
+      "priority": 5,
+      "exampleFr": "Est-ce qu’il y a un problème de santé ou un traitement dont je dois être au courant ?",
+      "exampleZh": "有没有我需要知道的健康问题或治疗？"
+    },
+    {
+      "id": 25,
+      "fr": "un traitement",
+      "zh": "治疗 / 用药方案",
+      "scenario": "health",
+      "priority": 5,
+      "exampleFr": "Est-ce qu’il y a un problème de santé ou un traitement dont je dois être au courant ?",
+      "exampleZh": "有没有我需要知道的健康问题或治疗？"
+    },
+    {
+      "id": 26,
+      "fr": "un médicament",
+      "zh": "药物",
+      "scenario": "health",
+      "priority": 5,
+      "exampleFr": "Dois-je lui donner des médicaments pendant votre absence ?",
+      "exampleZh": "您不在时我需要给他吃药吗？"
+    },
+    {
+      "id": 27,
+      "fr": "donner un médicament",
+      "zh": "给药",
+      "scenario": "health",
+      "priority": 5,
+      "exampleFr": "Dois-je lui donner des médicaments pendant votre absence ?",
+      "exampleZh": "您不在时我需要给他吃药吗？"
+    },
+    {
+      "id": 28,
+      "fr": "être au courant",
+      "zh": "知情",
+      "scenario": "health",
+      "priority": 4,
+      "exampleFr": "Il y a un problème de santé ou un médicament dont je dois être au courant ?",
+      "exampleZh": "有没有健康问题或药物是我需要知道的？"
+    },
+    {
+      "id": 29,
+      "fr": "un contact d’urgence",
+      "zh": "紧急联系人",
+      "scenario": "health",
+      "priority": 5,
+      "exampleFr": "Qui dois-je contacter en cas d’urgence ?",
+      "exampleZh": "紧急情况我该联系谁？"
+    },
+    {
+      "id": 30,
+      "fr": "en cas d’urgence",
+      "zh": "紧急情况下",
+      "scenario": "health",
+      "priority": 5,
+      "exampleFr": "Qui dois-je contacter en cas d’urgence ?",
+      "exampleZh": "紧急情况我该联系谁？"
+    },
+    {
+      "id": 31,
+      "fr": "tomber malade",
+      "zh": "生病",
+      "scenario": "health",
+      "priority": 5,
+      "exampleFr": "Que dois-je faire s’il tombe malade pendant votre absence ?",
+      "exampleZh": "您不在时他生病怎么办？"
+    },
+    {
+      "id": 32,
+      "fr": "se blesser",
+      "zh": "受伤",
+      "scenario": "health",
+      "priority": 5,
+      "exampleFr": "Que dois-je faire s’il tombe malade ou s’il se blesse ?",
+      "exampleZh": "如果它生病或受伤怎么办？"
+    },
+    {
+      "id": 33,
+      "fr": "une clé de secours",
+      "zh": "备用钥匙",
+      "scenario": "childcare",
+      "priority": 4,
+      "exampleFr": "Où puis-je trouver une clé de secours si j’en ai besoin ?",
+      "exampleZh": "如果需要，我在哪里能找到备用钥匙？"
+    },
+    {
+      "id": 34,
+      "fr": "s’occuper d’un animal",
+      "zh": "照顾宠物",
+      "scenario": "pet",
+      "priority": 5,
+      "exampleFr": "Pour quelles dates dois-je m’occuper de votre animal ?",
+      "exampleZh": "我需要在哪些日期照顾您的宠物？"
+    },
+    {
+      "id": 35,
+      "fr": "un animal de compagnie",
+      "zh": "宠物",
+      "scenario": "pet",
+      "priority": 5,
+      "exampleFr": "J’aimerais que vous vous occupiez de mon animal de compagnie.",
+      "exampleZh": "我希望您照顾我的宠物。"
+    },
+    {
+      "id": 36,
+      "fr": "nourrir un animal",
+      "zh": "喂宠物",
+      "scenario": "pet",
+      "priority": 5,
+      "exampleFr": "À quelles heures faut-il le nourrir ?",
+      "exampleZh": "几点需要喂它？"
+    },
+    {
+      "id": 37,
+      "fr": "la quantité de nourriture",
+      "zh": "食量",
+      "scenario": "pet",
+      "priority": 5,
+      "exampleFr": "Combien dois-je lui donner à chaque repas ?",
+      "exampleZh": "每顿应该给它多少？"
+    },
+    {
+      "id": 38,
+      "fr": "promener un animal",
+      "zh": "遛宠物",
+      "scenario": "pet",
+      "priority": 5,
+      "exampleFr": "À quelle fréquence faut-il le promener dans la journée ?",
+      "exampleZh": "一天要遛几次？"
+    },
+    {
+      "id": 39,
+      "fr": "une promenade quotidienne",
+      "zh": "每日散步",
+      "scenario": "pet",
+      "priority": 4,
+      "exampleFr": "À quelle fréquence faut-il le promener dans la journée ?",
+      "exampleZh": "一天要遛几次？"
+    },
+    {
+      "id": 40,
+      "fr": "un vétérinaire",
+      "zh": "兽医",
+      "scenario": "pet",
+      "priority": 5,
+      "exampleFr": "À quel vétérinaire dois-je m’adresser en cas de problème ?",
+      "exampleZh": "有问题时我该联系哪个兽医？"
+    },
+    {
+      "id": 41,
+      "fr": "les coordonnées du vétérinaire",
+      "zh": "兽医联系方式",
+      "scenario": "pet",
+      "priority": 4,
+      "exampleFr": "À quel vétérinaire dois-je m’adresser en cas de problème ?",
+      "exampleZh": "有问题时我该联系哪个兽医？"
+    },
+    {
+      "id": 42,
+      "fr": "un lieu à éviter",
+      "zh": "需要避开的地方",
+      "scenario": "pet",
+      "priority": 4,
+      "exampleFr": "Quels endroits dois-je éviter avec lui ?",
+      "exampleZh": "有哪些地方我不应该带它去？"
+    },
+    {
+      "id": 43,
+      "fr": "une règle de sortie",
+      "zh": "外出规则",
+      "scenario": "pet",
+      "priority": 4,
+      "exampleFr": "Quels endroits dois-je éviter avec lui ?",
+      "exampleZh": "有哪些外出限制？"
+    },
+    {
+      "id": 44,
+      "fr": "joindre quelqu’un rapidement",
+      "zh": "快速联系某人",
+      "scenario": "health",
+      "priority": 5,
+      "exampleFr": "Quel est le meilleur moyen de vous joindre rapidement pendant vos vacances ?",
+      "exampleZh": "度假期间怎么能最快联系到您？"
+    },
+    {
+      "id": 45,
+      "fr": "une activité après l’école",
+      "zh": "课后活动",
+      "scenario": "after_school",
+      "priority": 5,
+      "exampleFr": "Qu’est-ce qui est proposé comme activités après l’école dans le quartier ?",
+      "exampleZh": "社区里有哪些课后活动？"
+    },
+    {
+      "id": 46,
+      "fr": "une activité extrascolaire",
+      "zh": "课外活动",
+      "scenario": "after_school",
+      "priority": 5,
+      "exampleFr": "Qu’est-ce qui est proposé comme activités après l’école dans le quartier ?",
+      "exampleZh": "社区里有哪些课后活动？"
+    },
+    {
+      "id": 47,
+      "fr": "une tranche d’âge",
+      "zh": "年龄段",
+      "scenario": "after_school",
+      "priority": 5,
+      "exampleFr": "Pour quelles tranches d’âge ces activités sont-elles prévues ?",
+      "exampleZh": "这些活动适合哪些年龄段？"
+    },
+    {
+      "id": 48,
+      "fr": "la taille du groupe",
+      "zh": "小组人数",
+      "scenario": "after_school",
+      "priority": 5,
+      "exampleFr": "Quelle est la taille des groupes en général ?",
+      "exampleZh": "每组通常有多少孩子？"
+    },
+    {
+      "id": 49,
+      "fr": "un animateur / une animatrice",
+      "zh": "活动指导员",
+      "scenario": "after_school",
+      "priority": 5,
+      "exampleFr": "Qui encadre les activités ? Les animateurs sont-ils qualifiés ?",
+      "exampleZh": "谁负责活动？指导员有资质吗？"
+    },
+    {
+      "id": 50,
+      "fr": "être qualifié(e)",
+      "zh": "有资质",
+      "scenario": "after_school",
+      "priority": 4,
+      "exampleFr": "Les animateurs sont-ils qualifiés ?",
+      "exampleZh": "指导员有资质吗？"
+    },
+    {
+      "id": 51,
+      "fr": "encadrer une activité",
+      "zh": "监管 / 带领活动",
+      "scenario": "after_school",
+      "priority": 5,
+      "exampleFr": "Qui encadre les activités ?",
+      "exampleZh": "谁负责带领活动？"
+    },
+    {
+      "id": 52,
+      "fr": "assurer la sécurité",
+      "zh": "保障安全",
+      "scenario": "after_school",
+      "priority": 5,
+      "exampleFr": "Comment la sécurité des enfants est-elle assurée ?",
+      "exampleZh": "如何保障孩子安全？"
+    },
+    {
+      "id": 53,
+      "fr": "du matériel",
+      "zh": "材料 / 装备",
+      "scenario": "after_school",
+      "priority": 4,
+      "exampleFr": "Doit-on apporter du matériel ou prévoir une tenue particulière ?",
+      "exampleZh": "需要自带材料或准备特别服装吗？"
+    },
+    {
+      "id": 54,
+      "fr": "une tenue particulière",
+      "zh": "特别服装",
+      "scenario": "after_school",
+      "priority": 4,
+      "exampleFr": "Doit-on apporter du matériel ou prévoir une tenue particulière ?",
+      "exampleZh": "需要准备特别服装吗？"
+    },
+    {
+      "id": 55,
+      "fr": "inscrire son enfant",
+      "zh": "给孩子报名",
+      "scenario": "after_school",
+      "priority": 5,
+      "exampleFr": "Comment se passe l’inscription de mon enfant ?",
+      "exampleZh": "我的孩子怎么报名？"
+    },
+    {
+      "id": 56,
+      "fr": "des documents",
+      "zh": "报名材料",
+      "scenario": "after_school",
+      "priority": 5,
+      "exampleFr": "Qu’est-ce qu’il faut fournir comme documents ?",
+      "exampleZh": "需要提供哪些文件？"
+    },
+    {
+      "id": 57,
+      "fr": "le tarif de l’activité",
+      "zh": "活动费用",
+      "scenario": "after_school",
+      "priority": 5,
+      "exampleFr": "Quel est le tarif de l’activité ?",
+      "exampleZh": "活动费用是多少？"
+    },
+    {
+      "id": 58,
+      "fr": "une réduction",
+      "zh": "折扣",
+      "scenario": "after_school",
+      "priority": 4,
+      "exampleFr": "Proposez-vous une réduction si on inscrit plusieurs enfants ou à plusieurs activités ?",
+      "exampleZh": "多个孩子或多个活动有折扣吗？"
+    },
+    {
+      "id": 59,
+      "fr": "les retours des parents",
+      "zh": "家长反馈",
+      "scenario": "after_school",
+      "priority": 4,
+      "exampleFr": "Quels retours avez-vous généralement des parents ?",
+      "exampleZh": "家长通常有什么反馈？"
+    },
+    {
+      "id": 60,
+      "fr": "recommander une activité",
+      "zh": "推荐活动",
+      "scenario": "after_school",
+      "priority": 5,
+      "exampleFr": "Laquelle me conseilleriez-vous pour mon enfant ?",
+      "exampleZh": "您会推荐我的孩子参加哪项活动？"
+    },
+    {
+      "id": 61,
+      "fr": "les jours et horaires",
+      "zh": "日期和时间",
+      "scenario": "after_school",
+      "priority": 5,
+      "exampleFr": "Quels sont les jours et les horaires des activités ?",
+      "exampleZh": "活动通常哪几天、几点？"
+    },
+    {
+      "id": 62,
+      "fr": "la fréquence",
+      "zh": "频率",
+      "scenario": "after_school",
+      "priority": 4,
+      "exampleFr": "À quelle fréquence les enfants y participent-ils chaque semaine ?",
+      "exampleZh": "孩子每周参加几次？"
+    },
+    {
+      "id": 63,
+      "fr": "se dérouler",
+      "zh": "举行 / 进行",
+      "scenario": "after_school",
+      "priority": 4,
+      "exampleFr": "Où se déroulent les activités ?",
+      "exampleZh": "活动在哪里进行？"
+    },
+    {
+      "id": 64,
+      "fr": "une absence",
+      "zh": "不在场 / 离开",
+      "scenario": "childcare",
+      "priority": 4,
+      "exampleFr": "Je pars pour le week-end et je vous demande de garder ma fille.",
+      "exampleZh": "我周末离开，请你照看女儿。"
+    },
+    {
+      "id": 65,
+      "fr": "le week-end",
+      "zh": "周末",
+      "scenario": "childcare",
+      "priority": 4,
+      "exampleFr": "Tu seras absente quels jours exactement ce week-end ?",
+      "exampleZh": "这个周末你具体哪几天不在？"
+    },
+    {
+      "id": 66,
+      "fr": "rentrer",
+      "zh": "回来",
+      "scenario": "childcare",
+      "priority": 4,
+      "exampleFr": "Tu pars à quelle heure, et tu rentres vers quelle heure ?",
+      "exampleZh": "你几点走，大概几点回来？"
+    },
+    {
+      "id": 67,
+      "fr": "le repas",
+      "zh": "一餐",
+      "scenario": "routine",
+      "priority": 4,
+      "exampleFr": "Elle mange généralement à quelles heures ?",
+      "exampleZh": "她通常几点吃饭？"
+    },
+    {
+      "id": 68,
+      "fr": "une sieste",
+      "zh": "午睡",
+      "scenario": "routine",
+      "priority": 5,
+      "exampleFr": "À quelle heure fait-elle habituellement la sieste ?",
+      "exampleZh": "她通常几点午睡？"
+    },
+    {
+      "id": 69,
+      "fr": "le coucher",
+      "zh": "睡觉时间",
+      "scenario": "routine",
+      "priority": 4,
+      "exampleFr": "À quelle heure se couche-t-elle le soir ?",
+      "exampleZh": "她晚上几点睡？"
+    },
+    {
+      "id": 70,
+      "fr": "une allergie",
+      "zh": "过敏",
+      "scenario": "health",
+      "priority": 5,
+      "exampleFr": "Elle a des allergies ou des aliments à éviter ?",
+      "exampleZh": "她有过敏或需要避免的食物吗？"
+    },
+    {
+      "id": 71,
+      "fr": "une maladie",
+      "zh": "疾病",
+      "scenario": "health",
+      "priority": 4,
+      "exampleFr": "Que dois-je faire s’il tombe malade ?",
+      "exampleZh": "如果他生病怎么办？"
+    },
+    {
+      "id": 72,
+      "fr": "un accident",
+      "zh": "意外",
+      "scenario": "health",
+      "priority": 4,
+      "exampleFr": "Qui dois-je contacter en priorité en cas de problème ?",
+      "exampleZh": "出现问题时我应该先联系谁？"
+    },
+    {
+      "id": 73,
+      "fr": "une consigne",
+      "zh": "注意事项 / 指示",
+      "scenario": "childcare",
+      "priority": 4,
+      "exampleFr": "Quelles habitudes particulières dois-je respecter ?",
+      "exampleZh": "我需要遵守哪些特别注意事项？"
+    },
+    {
+      "id": 74,
+      "fr": "une priorité",
+      "zh": "优先顺序",
+      "scenario": "health",
+      "priority": 3,
+      "exampleFr": "Qui dois-je contacter en priorité en cas de problème ?",
+      "exampleZh": "出现问题时我应该优先联系谁？"
+    },
+    {
+      "id": 75,
+      "fr": "un enfant de trois ans",
+      "zh": "三岁孩子",
+      "scenario": "childcare",
+      "priority": 4,
+      "exampleFr": "Je vous demande de garder ma fille de 3 ans.",
+      "exampleZh": "我请你照看我三岁的女儿。"
+    },
+    {
+      "id": 76,
+      "fr": "une alimentation adaptée",
+      "zh": "适合孩子的饮食",
+      "scenario": "routine",
+      "priority": 4,
+      "exampleFr": "Qu’est-ce qu’elle aime manger en général ?",
+      "exampleZh": "她一般喜欢吃什么？"
+    },
+    {
+      "id": 77,
+      "fr": "un horaire régulier",
+      "zh": "规律时间表",
+      "scenario": "routine",
+      "priority": 4,
+      "exampleFr": "Quels horaires dois-je prévoir chaque jour ?",
+      "exampleZh": "每天要安排什么时间？"
+    },
+    {
+      "id": 78,
+      "fr": "une activité calme",
+      "zh": "安静的活动",
+      "scenario": "childcare",
+      "priority": 3,
+      "exampleFr": "Qu’est-ce qu’il aime faire comme activités ?",
+      "exampleZh": "他喜欢做什么活动？"
+    },
+    {
+      "id": 79,
+      "fr": "une activité en plein air",
+      "zh": "户外活动",
+      "scenario": "childcare",
+      "priority": 4,
+      "exampleFr": "Puis-je l’emmener au parc ou faire une promenade avec lui ?",
+      "exampleZh": "我可以带他去公园或散步吗？"
+    },
+    {
+      "id": 80,
+      "fr": "un parent d’élève",
+      "zh": "学生家长",
+      "scenario": "after_school",
+      "priority": 4,
+      "exampleFr": "Je suis parent d’élève.",
+      "exampleZh": "我是学生家长。"
+    },
+    {
+      "id": 81,
+      "fr": "un quartier",
+      "zh": "社区 / 街区",
+      "scenario": "after_school",
+      "priority": 4,
+      "exampleFr": "Qu’est-ce qui est proposé comme activités après l’école dans le quartier ?",
+      "exampleZh": "社区里有哪些课后活动？"
+    },
+    {
+      "id": 82,
+      "fr": "un dossier d’inscription",
+      "zh": "报名材料",
+      "scenario": "after_school",
+      "priority": 4,
+      "exampleFr": "Qu’est-ce qu’il faut fournir comme documents ?",
+      "exampleZh": "报名需要提供哪些文件？"
+    }
+  ],
+  "patterns": [
+    {
+      "id": 1,
+      "pattern": "Pour quelles dates dois-je garder / m’occuper de + personne/animal ?",
+      "zh": "需要照看到哪些日期？",
+      "exampleFr": "Pour quelles dates dois-je garder votre enfant ?",
+      "exampleZh": "我需要在哪些日期照看您的孩子？",
+      "scenario": "childcare"
+    },
+    {
+      "id": 2,
+      "pattern": "Quels horaires dois-je prévoir chaque jour ?",
+      "zh": "每天需要安排哪些时间？",
+      "exampleFr": "Quels horaires dois-je prévoir chaque jour ?",
+      "exampleZh": "每天需要安排哪些时间？",
+      "scenario": "childcare"
+    },
+    {
+      "id": 3,
+      "pattern": "Qu’est-ce qu’il/elle mange habituellement ?",
+      "zh": "他/她通常吃什么？",
+      "exampleFr": "Qu’est-ce qu’il mange habituellement ?",
+      "exampleZh": "他通常吃什么？",
+      "scenario": "routine"
+    },
+    {
+      "id": 4,
+      "pattern": "A-t-il / elle des allergies ou des aliments à éviter ?",
+      "zh": "有过敏或忌口吗？",
+      "exampleFr": "A-t-il des allergies alimentaires ou des aliments à éviter ?",
+      "exampleZh": "他有食物过敏或忌口吗？",
+      "scenario": "health"
+    },
+    {
+      "id": 5,
+      "pattern": "À quelle heure fait-il/elle la sieste ?",
+      "zh": "几点午睡？",
+      "exampleFr": "À quelle heure fait-elle habituellement la sieste ?",
+      "exampleZh": "她通常几点午睡？",
+      "scenario": "routine"
+    },
+    {
+      "id": 6,
+      "pattern": "À quelle heure se couche-t-il/elle ?",
+      "zh": "几点睡觉？",
+      "exampleFr": "À quelle heure se couche-t-elle le soir ?",
+      "exampleZh": "她晚上几点睡？",
+      "scenario": "routine"
+    },
+    {
+      "id": 7,
+      "pattern": "Qu’est-ce qu’il/elle aime faire comme activités ?",
+      "zh": "喜欢做什么活动？",
+      "exampleFr": "Qu’est-ce qu’il aime faire comme activités ?",
+      "exampleZh": "他喜欢做什么活动？",
+      "scenario": "childcare"
+    },
+    {
+      "id": 8,
+      "pattern": "Comment décririez-vous son caractère ?",
+      "zh": "您会怎么形容他的性格？",
+      "exampleFr": "Comment décririez-vous son caractère ?",
+      "exampleZh": "您会怎么形容他的性格？",
+      "scenario": "childcare"
+    },
+    {
+      "id": 9,
+      "pattern": "Quelles habitudes particulières dois-je respecter ?",
+      "zh": "需要注意哪些特殊习惯？",
+      "exampleFr": "Quelles habitudes particulières dois-je respecter ?",
+      "exampleZh": "我需要注意哪些特殊习惯？",
+      "scenario": "routine"
+    },
+    {
+      "id": 10,
+      "pattern": "Y a-t-il un problème de santé dont je dois être au courant ?",
+      "zh": "有需要知道的健康问题吗？",
+      "exampleFr": "Est-ce qu’il y a un problème de santé ou un traitement dont je dois être au courant ?",
+      "exampleZh": "有没有我需要知道的健康问题？",
+      "scenario": "health"
+    },
+    {
+      "id": 11,
+      "pattern": "Qui dois-je contacter en cas d’urgence ?",
+      "zh": "紧急情况联系谁？",
+      "exampleFr": "Qui dois-je contacter en cas d’urgence ?",
+      "exampleZh": "紧急情况我该联系谁？",
+      "scenario": "health"
+    },
+    {
+      "id": 12,
+      "pattern": "Puis-je l’emmener au parc ?",
+      "zh": "我可以带他去公园吗？",
+      "exampleFr": "Puis-je l’emmener au parc ou faire une promenade avec lui ?",
+      "exampleZh": "我可以带他去公园或散步吗？",
+      "scenario": "childcare"
+    },
+    {
+      "id": 13,
+      "pattern": "Que dois-je faire s’il/elle tombe malade ?",
+      "zh": "生病怎么办？",
+      "exampleFr": "Que dois-je faire s’il tombe malade pendant votre absence ?",
+      "exampleZh": "您不在时他生病怎么办？",
+      "scenario": "health"
+    },
+    {
+      "id": 14,
+      "pattern": "De quel animal s’agit-il ?",
+      "zh": "是什么宠物？",
+      "exampleFr": "De quel animal s’agit-il exactement ?",
+      "exampleZh": "具体是什么动物？",
+      "scenario": "pet"
+    },
+    {
+      "id": 15,
+      "pattern": "À quelles heures faut-il le nourrir ?",
+      "zh": "几点喂？",
+      "exampleFr": "À quelles heures faut-il le nourrir ?",
+      "exampleZh": "几点需要喂它？",
+      "scenario": "pet"
+    },
+    {
+      "id": 16,
+      "pattern": "Combien dois-je lui donner à chaque repas ?",
+      "zh": "每顿给多少？",
+      "exampleFr": "Combien dois-je lui donner à chaque repas ?",
+      "exampleZh": "每顿应该给它多少？",
+      "scenario": "pet"
+    },
+    {
+      "id": 17,
+      "pattern": "À quelle fréquence faut-il le promener ?",
+      "zh": "多久遛一次？",
+      "exampleFr": "À quelle fréquence faut-il le promener dans la journée ?",
+      "exampleZh": "一天要遛几次？",
+      "scenario": "pet"
+    },
+    {
+      "id": 18,
+      "pattern": "À quel vétérinaire dois-je m’adresser ?",
+      "zh": "有问题联系哪个兽医？",
+      "exampleFr": "À quel vétérinaire dois-je m’adresser en cas de problème ?",
+      "exampleZh": "有问题时我该联系哪个兽医？",
+      "scenario": "pet"
+    },
+    {
+      "id": 19,
+      "pattern": "Quel est le meilleur moyen de vous joindre rapidement ?",
+      "zh": "怎么最快联系您？",
+      "exampleFr": "Quel est le meilleur moyen de vous joindre rapidement pendant vos vacances ?",
+      "exampleZh": "度假期间怎么能最快联系到您？",
+      "scenario": "health"
+    },
+    {
+      "id": 20,
+      "pattern": "Qu’est-ce qui est proposé comme activités après l’école ?",
+      "zh": "有哪些课后活动？",
+      "exampleFr": "Qu’est-ce qui est proposé comme activités après l’école dans le quartier ?",
+      "exampleZh": "社区里有哪些课后活动？",
+      "scenario": "after_school"
+    },
+    {
+      "id": 21,
+      "pattern": "Pour quelles tranches d’âge ces activités sont-elles prévues ?",
+      "zh": "适合哪些年龄段？",
+      "exampleFr": "Pour quelles tranches d’âge ces activités sont-elles prévues ?",
+      "exampleZh": "这些活动适合哪些年龄段？",
+      "scenario": "after_school"
+    },
+    {
+      "id": 22,
+      "pattern": "Quelle est la taille des groupes ?",
+      "zh": "每组多少孩子？",
+      "exampleFr": "Quelle est la taille des groupes en général ?",
+      "exampleZh": "每组通常有多少孩子？",
+      "scenario": "after_school"
+    },
+    {
+      "id": 23,
+      "pattern": "Qui encadre les activités ?",
+      "zh": "谁带领活动？",
+      "exampleFr": "Qui encadre les activités ? Les animateurs sont-ils qualifiés ?",
+      "exampleZh": "谁负责活动？",
+      "scenario": "after_school"
+    },
+    {
+      "id": 24,
+      "pattern": "Comment la sécurité des enfants est-elle assurée ?",
+      "zh": "怎么保障孩子安全？",
+      "exampleFr": "Comment la sécurité des enfants est-elle assurée ?",
+      "exampleZh": "怎么保障孩子安全？",
+      "scenario": "after_school"
+    },
+    {
+      "id": 25,
+      "pattern": "Doit-on apporter du matériel ?",
+      "zh": "需要自带材料吗？",
+      "exampleFr": "Doit-on apporter du matériel ou prévoir une tenue particulière ?",
+      "exampleZh": "需要自带材料或特别服装吗？",
+      "scenario": "after_school"
+    },
+    {
+      "id": 26,
+      "pattern": "Comment se passe l’inscription de mon enfant ?",
+      "zh": "孩子怎么报名？",
+      "exampleFr": "Comment se passe l’inscription de mon enfant ?",
+      "exampleZh": "孩子怎么报名？",
+      "scenario": "after_school"
+    },
+    {
+      "id": 27,
+      "pattern": "Quel est le tarif de l’activité ?",
+      "zh": "活动多少钱？",
+      "exampleFr": "Quel est le tarif de l’activité ?",
+      "exampleZh": "活动费用是多少？",
+      "scenario": "after_school"
+    },
+    {
+      "id": 28,
+      "pattern": "Proposez-vous une réduction ?",
+      "zh": "有折扣吗？",
+      "exampleFr": "Proposez-vous une réduction si on inscrit plusieurs enfants ou à plusieurs activités ?",
+      "exampleZh": "多个孩子或活动有折扣吗？",
+      "scenario": "after_school"
+    },
+    {
+      "id": 29,
+      "pattern": "Quels retours avez-vous des parents ?",
+      "zh": "家长反馈如何？",
+      "exampleFr": "Quels retours avez-vous généralement des parents ?",
+      "exampleZh": "家长通常有什么反馈？",
+      "scenario": "after_school"
+    }
+  ]
+}
