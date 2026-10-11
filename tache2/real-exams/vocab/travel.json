@@ -1,0 +1,1212 @@
+{
+  "theme": "travel",
+  "title": "旅行与住宿",
+  "target": "TCF Canada 口语 Tâche 2 · C1",
+  "version": 1,
+  "principle": "约100个高价值词/词块，以27道最终真题为基础；词块与真实套用问法绑定，优先训练中文→法语主动调用。",
+  "scenarios": [
+    {
+      "id": "agency",
+      "name": "旅行社 / 选目的地"
+    },
+    {
+      "id": "hotel",
+      "name": "酒店订房"
+    },
+    {
+      "id": "city",
+      "name": "城市周末游"
+    },
+    {
+      "id": "sightseeing",
+      "name": "博物馆 / 景点"
+    },
+    {
+      "id": "cruise",
+      "name": "邮轮"
+    },
+    {
+      "id": "outdoor",
+      "name": "户外 / 山区 / 运动旅行"
+    },
+    {
+      "id": "family",
+      "name": "家庭旅行"
+    },
+    {
+      "id": "general",
+      "name": "通用"
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": 1,
+      "fr": "une destination",
+      "zh": "目的地",
+      "scenario": "agency",
+      "priority": 5,
+      "exampleFr": "Quelles destinations pourriez-vous me recommander au Canada ?",
+      "exampleZh": "您能推荐一些加拿大的目的地吗？"
+    },
+    {
+      "id": 2,
+      "fr": "choisir une destination",
+      "zh": "选择目的地",
+      "scenario": "agency",
+      "priority": 5,
+      "exampleFr": "Entre Montréal, Dakar, Bruxelles et Hanoï, quelle destination me conseilleriez-vous finalement ?",
+      "exampleZh": "在这些城市之间，您最后会建议我选择哪个目的地？"
+    },
+    {
+      "id": 3,
+      "fr": "recommander une destination",
+      "zh": "推荐目的地",
+      "scenario": "agency",
+      "priority": 5,
+      "exampleFr": "Quelles destinations pourriez-vous me recommander au Canada ?",
+      "exampleZh": "您能推荐一些加拿大的目的地吗？"
+    },
+    {
+      "id": 4,
+      "fr": "partir en vacances",
+      "zh": "去度假",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Quelle est la meilleure période de l’année pour partir au Canada ?",
+      "exampleZh": "一年中什么时候最适合去加拿大？"
+    },
+    {
+      "id": 5,
+      "fr": "un séjour",
+      "zh": "旅行 / 停留",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Combien de temps recommandes-tu pour ce séjour ?",
+      "exampleZh": "这次旅行你建议安排多久？"
+    },
+    {
+      "id": 6,
+      "fr": "passer un week-end",
+      "zh": "过一个周末",
+      "scenario": "city",
+      "priority": 5,
+      "exampleFr": "Quel budget faudrait-il prévoir pour un week-end dans cette région ?",
+      "exampleZh": "在这个地区过一个周末大概要准备多少预算？"
+    },
+    {
+      "id": 7,
+      "fr": "la durée du voyage",
+      "zh": "旅行时长",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Combien de temps ce voyage va-t-il durer ?",
+      "exampleZh": "这次旅行会持续多久？"
+    },
+    {
+      "id": 8,
+      "fr": "une durée idéale",
+      "zh": "理想时长",
+      "scenario": "agency",
+      "priority": 4,
+      "exampleFr": "Pourriez-vous me recommander une durée idéale pour ce voyage ?",
+      "exampleZh": "您能给我推荐一个适合这次旅行的理想时长吗？"
+    },
+    {
+      "id": 9,
+      "fr": "organiser un voyage",
+      "zh": "安排旅行",
+      "scenario": "agency",
+      "priority": 5,
+      "exampleFr": "Pourriez-vous m’expliquer comment se déroule le premier jour ?",
+      "exampleZh": "您能讲讲第一天是怎么安排的吗？"
+    },
+    {
+      "id": 10,
+      "fr": "un voyage organisé",
+      "zh": "跟团游",
+      "scenario": "agency",
+      "priority": 4,
+      "exampleFr": "Comment est-ce que tu réserves habituellement ce type de voyage ?",
+      "exampleZh": "你通常怎么预订这种旅行？"
+    },
+    {
+      "id": 11,
+      "fr": "la meilleure période",
+      "zh": "最佳时期",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Quelle est la meilleure période de l’année pour y aller ?",
+      "exampleZh": "一年中什么时候最适合去那里？"
+    },
+    {
+      "id": 12,
+      "fr": "les transports en commun",
+      "zh": "公共交通",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Quels moyens de transport en commun sont disponibles dans ces quatre villes ?",
+      "exampleZh": "这四个城市有哪些公共交通方式？"
+    },
+    {
+      "id": 13,
+      "fr": "un moyen de transport",
+      "zh": "交通方式",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Comment y es-tu allé ? Par exemple, en voiture ou par un autre moyen de transport ?",
+      "exampleZh": "你当时怎么去的？比如开车还是用其他交通方式？"
+    },
+    {
+      "id": 14,
+      "fr": "se déplacer sur place",
+      "zh": "在当地出行",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Comment peut-on se déplacer une fois sur place ?",
+      "exampleZh": "到了当地以后怎么出行？"
+    },
+    {
+      "id": 15,
+      "fr": "s’y rendre",
+      "zh": "前往那里",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Comment puis-je m’y rendre le plus facilement ?",
+      "exampleZh": "我怎样去那里最方便？"
+    },
+    {
+      "id": 16,
+      "fr": "y aller",
+      "zh": "去那里",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Comment puis-je y aller ? Par exemple, en bus ou en métro ?",
+      "exampleZh": "我怎么去那里？比如坐公交或地铁？"
+    },
+    {
+      "id": 17,
+      "fr": "être compris dans le prix",
+      "zh": "包含在价格中",
+      "scenario": "agency",
+      "priority": 5,
+      "exampleFr": "Le transport est-il compris dans le prix ou faut-il le prévoir séparément ?",
+      "exampleZh": "交通包含在价格里吗，还是需要另外安排？"
+    },
+    {
+      "id": 18,
+      "fr": "prévoir séparément",
+      "zh": "另外安排 / 支付",
+      "scenario": "agency",
+      "priority": 4,
+      "exampleFr": "Le transport est-il compris dans le prix ou faut-il le prévoir séparément ?",
+      "exampleZh": "交通包含在价格里吗，还是需要另外安排？"
+    },
+    {
+      "id": 19,
+      "fr": "la météo",
+      "zh": "天气",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Quelle est la météo à Bruxelles ?",
+      "exampleZh": "布鲁塞尔的天气怎么样？"
+    },
+    {
+      "id": 20,
+      "fr": "faire mauvais",
+      "zh": "天气不好",
+      "scenario": "outdoor",
+      "priority": 4,
+      "exampleFr": "Que se passe-t-il si le temps est mauvais : les activités sont-elles annulées ou reportées ?",
+      "exampleZh": "如果天气不好，活动会取消还是改期？"
+    },
+    {
+      "id": 21,
+      "fr": "un hébergement",
+      "zh": "住宿",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Quel type d’hébergement me conseillerais-tu dans cette région ?",
+      "exampleZh": "你会推荐我在这个地区住哪种住宿？"
+    },
+    {
+      "id": 22,
+      "fr": "une formule d’hébergement",
+      "zh": "住宿形式",
+      "scenario": "agency",
+      "priority": 5,
+      "exampleFr": "Quelles formules d’hébergement proposez-vous, par exemple un gîte ou un hôtel ?",
+      "exampleZh": "你们提供哪些住宿形式，比如民宿或酒店？"
+    },
+    {
+      "id": 23,
+      "fr": "un hôtel",
+      "zh": "酒店",
+      "scenario": "hotel",
+      "priority": 5,
+      "exampleFr": "Est-ce que tu connais un bon hôtel ou un logement à recommander ?",
+      "exampleZh": "你知道有什么不错的酒店或住宿可以推荐吗？"
+    },
+    {
+      "id": 24,
+      "fr": "une chambre",
+      "zh": "房间",
+      "scenario": "hotel",
+      "priority": 5,
+      "exampleFr": "Quels types de chambres sont disponibles ?",
+      "exampleZh": "有哪些房型可选？"
+    },
+    {
+      "id": 25,
+      "fr": "une chambre familiale",
+      "zh": "家庭房",
+      "scenario": "hotel",
+      "priority": 4,
+      "exampleFr": "Est-il possible d’avoir une chambre familiale ? Je vais y aller avec mon enfant.",
+      "exampleZh": "可以要一间家庭房吗？我要和孩子一起去。"
+    },
+    {
+      "id": 26,
+      "fr": "une chambre avec vue",
+      "zh": "景观房",
+      "scenario": "hotel",
+      "priority": 4,
+      "exampleFr": "Est-il possible d’avoir une chambre avec vue ou avec balcon ?",
+      "exampleZh": "可以要一间带景观或阳台的房间吗？"
+    },
+    {
+      "id": 27,
+      "fr": "une bonne insonorisation",
+      "zh": "良好的隔音",
+      "scenario": "hotel",
+      "priority": 4,
+      "exampleFr": "Comme j’ai du mal à dormir, pourriez-vous me proposer une chambre plus calme, avec une bonne insonorisation ?",
+      "exampleZh": "我睡眠不好，可以给我安排一间更安静、隔音更好的房间吗？"
+    },
+    {
+      "id": 28,
+      "fr": "le Wi-Fi gratuit",
+      "zh": "免费 Wi-Fi",
+      "scenario": "hotel",
+      "priority": 4,
+      "exampleFr": "Le Wi-Fi était-il gratuit dans l’hôtel ?",
+      "exampleZh": "酒店里有免费 Wi-Fi 吗？"
+    },
+    {
+      "id": 29,
+      "fr": "le petit-déjeuner",
+      "zh": "早餐",
+      "scenario": "hotel",
+      "priority": 4,
+      "exampleFr": "Quels menus sont disponibles pour le petit-déjeuner ? Comme je suis végétarienne, j’aimerais connaître les options.",
+      "exampleZh": "早餐有哪些菜单？我是素食者，想了解可选项。"
+    },
+    {
+      "id": 30,
+      "fr": "réserver une chambre",
+      "zh": "预订房间",
+      "scenario": "hotel",
+      "priority": 5,
+      "exampleFr": "Comment puis-je réserver ? En ligne ou par courriel ?",
+      "exampleZh": "我怎么预订？网上还是通过电子邮件？"
+    },
+    {
+      "id": 31,
+      "fr": "une activité",
+      "zh": "活动",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Quelles activités sont proposées pendant ce séjour ?",
+      "exampleZh": "这次旅行期间会安排哪些活动？"
+    },
+    {
+      "id": 32,
+      "fr": "une activité culturelle",
+      "zh": "文化活动",
+      "scenario": "city",
+      "priority": 4,
+      "exampleFr": "Y a-t-il des événements culturels particuliers à voir ?",
+      "exampleZh": "有没有特别值得看的文化活动？"
+    },
+    {
+      "id": 33,
+      "fr": "une activité en plein air",
+      "zh": "户外活动",
+      "scenario": "outdoor",
+      "priority": 4,
+      "exampleFr": "Quelles activités extérieures sont proposées selon la saison ?",
+      "exampleZh": "不同季节会提供哪些户外活动？"
+    },
+    {
+      "id": 34,
+      "fr": "visiter en priorité",
+      "zh": "优先参观",
+      "scenario": "sightseeing",
+      "priority": 5,
+      "exampleFr": "Quels lieux dois-je visiter en priorité ?",
+      "exampleZh": "我应该优先去哪些地方？"
+    },
+    {
+      "id": 35,
+      "fr": "ne pas manquer",
+      "zh": "不容错过",
+      "scenario": "sightseeing",
+      "priority": 5,
+      "exampleFr": "Quelles sont les principales attractions à ne pas manquer ?",
+      "exampleZh": "有哪些不能错过的主要项目？"
+    },
+    {
+      "id": 36,
+      "fr": "avoir du temps libre",
+      "zh": "有自由活动时间",
+      "scenario": "agency",
+      "priority": 5,
+      "exampleFr": "Est-ce qu’on a aussi du temps libre pendant le voyage ?",
+      "exampleZh": "旅行中也有自由活动时间吗？"
+    },
+    {
+      "id": 37,
+      "fr": "un guide",
+      "zh": "导游",
+      "scenario": "sightseeing",
+      "priority": 4,
+      "exampleFr": "Y a-t-il un guide ?",
+      "exampleZh": "有导游吗？"
+    },
+    {
+      "id": 38,
+      "fr": "être accompagné par un guide",
+      "zh": "由导游陪同",
+      "scenario": "outdoor",
+      "priority": 4,
+      "exampleFr": "Est-il possible d’être accompagné par un guide ou un entraîneur quand on débute ?",
+      "exampleZh": "初学者可以由导游或教练陪同吗？"
+    },
+    {
+      "id": 39,
+      "fr": "un restaurant",
+      "zh": "餐厅",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Tu connais un bon restaurant à me recommander ?",
+      "exampleZh": "你有推荐的好餐厅吗？"
+    },
+    {
+      "id": 40,
+      "fr": "une spécialité locale",
+      "zh": "当地特色",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Quelles spécialités locales me conseilleriez-vous de goûter ?",
+      "exampleZh": "您建议我品尝哪些当地特色？"
+    },
+    {
+      "id": 41,
+      "fr": "goûter une spécialité locale",
+      "zh": "品尝当地特色",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Quelles spécialités locales faudrait-il absolument goûter ?",
+      "exampleZh": "有哪些当地特色一定要尝？"
+    },
+    {
+      "id": 42,
+      "fr": "se restaurer sur place",
+      "zh": "在现场用餐",
+      "scenario": "sightseeing",
+      "priority": 5,
+      "exampleFr": "Peut-on se restaurer sur place ?",
+      "exampleZh": "可以在现场用餐吗？"
+    },
+    {
+      "id": 43,
+      "fr": "prévoir un budget",
+      "zh": "做预算",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Quel budget faudrait-il prévoir pour cette sortie ?",
+      "exampleZh": "这次出游大概要准备多少预算？"
+    },
+    {
+      "id": 44,
+      "fr": "un tarif réduit",
+      "zh": "优惠价",
+      "scenario": "sightseeing",
+      "priority": 5,
+      "exampleFr": "Est-ce qu’il y a un tarif réduit pour les enfants ?",
+      "exampleZh": "儿童票有折扣吗？"
+    },
+    {
+      "id": 45,
+      "fr": "bénéficier d’une réduction",
+      "zh": "享受折扣",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Est-ce que je pourrais bénéficier d’une réduction ?",
+      "exampleZh": "我可以享受折扣吗？"
+    },
+    {
+      "id": 46,
+      "fr": "réserver à l’avance",
+      "zh": "提前预订",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Faut-il réserver les activités longtemps à l’avance ?",
+      "exampleZh": "这些活动需要提前很久预订吗？"
+    },
+    {
+      "id": 47,
+      "fr": "réserver en ligne",
+      "zh": "在线预订",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Comment puis-je réserver ? En ligne ou par courriel ?",
+      "exampleZh": "我怎么预订？网上还是通过电子邮件？"
+    },
+    {
+      "id": 48,
+      "fr": "acheter les billets en ligne",
+      "zh": "在线买票",
+      "scenario": "sightseeing",
+      "priority": 5,
+      "exampleFr": "Peut-on acheter les billets en ligne pour éviter la file d’attente ?",
+      "exampleZh": "可以网上买票来避免排队吗？"
+    },
+    {
+      "id": 49,
+      "fr": "éviter la file d’attente",
+      "zh": "避免排队",
+      "scenario": "sightseeing",
+      "priority": 4,
+      "exampleFr": "Peut-on acheter les billets en ligne pour éviter la file d’attente ?",
+      "exampleZh": "可以网上买票来避免排队吗？"
+    },
+    {
+      "id": 50,
+      "fr": "éviter la foule",
+      "zh": "避开人群",
+      "scenario": "sightseeing",
+      "priority": 4,
+      "exampleFr": "À quel moment vaut-il mieux venir pour éviter la foule ?",
+      "exampleZh": "什么时候来比较能避开人群？"
+    },
+    {
+      "id": 51,
+      "fr": "les horaires d’ouverture",
+      "zh": "开放时间",
+      "scenario": "sightseeing",
+      "priority": 5,
+      "exampleFr": "Quels sont exactement les horaires d’ouverture ?",
+      "exampleZh": "具体的开放时间是什么？"
+    },
+    {
+      "id": 52,
+      "fr": "les horaires d’arrivée et de départ",
+      "zh": "入住 / 退房时间",
+      "scenario": "hotel",
+      "priority": 4,
+      "exampleFr": "Quels sont les horaires d’arrivée et de départ ?",
+      "exampleZh": "入住和退房时间是什么？"
+    },
+    {
+      "id": 53,
+      "fr": "un service de blanchisserie",
+      "zh": "洗衣服务",
+      "scenario": "hotel",
+      "priority": 3,
+      "exampleFr": "L’hôtel propose-t-il un service de blanchisserie ?",
+      "exampleZh": "酒店提供洗衣服务吗？"
+    },
+    {
+      "id": 54,
+      "fr": "une piscine extérieure",
+      "zh": "室外泳池",
+      "scenario": "hotel",
+      "priority": 3,
+      "exampleFr": "L’hôtel dispose-t-il d’une piscine extérieure ou couverte ?",
+      "exampleZh": "酒店有室外或室内泳池吗？"
+    },
+    {
+      "id": 55,
+      "fr": "une piscine couverte",
+      "zh": "室内泳池",
+      "scenario": "hotel",
+      "priority": 3,
+      "exampleFr": "L’hôtel dispose-t-il d’une piscine extérieure ou couverte ?",
+      "exampleZh": "酒店有室外或室内泳池吗？"
+    },
+    {
+      "id": 56,
+      "fr": "une salle de sport",
+      "zh": "健身房",
+      "scenario": "hotel",
+      "priority": 3,
+      "exampleFr": "L’hôtel dispose-t-il d’une salle de sport ?",
+      "exampleZh": "酒店有健身房吗？"
+    },
+    {
+      "id": 57,
+      "fr": "les moyens de paiement acceptés",
+      "zh": "可接受的付款方式",
+      "scenario": "hotel",
+      "priority": 4,
+      "exampleFr": "Quels sont les moyens de paiement acceptés ?",
+      "exampleZh": "接受哪些付款方式？"
+    },
+    {
+      "id": 58,
+      "fr": "les modalités de paiement",
+      "zh": "付款方式 / 付款条件",
+      "scenario": "sightseeing",
+      "priority": 4,
+      "exampleFr": "Quelles sont les modalités de paiement ?",
+      "exampleZh": "有哪些付款方式？"
+    },
+    {
+      "id": 59,
+      "fr": "un forfait",
+      "zh": "套餐",
+      "scenario": "agency",
+      "priority": 4,
+      "exampleFr": "Combien coûte le forfait pour ce voyage ?",
+      "exampleZh": "这次旅行套餐多少钱？"
+    },
+    {
+      "id": 60,
+      "fr": "être inclus dans le forfait",
+      "zh": "包含在套餐内",
+      "scenario": "agency",
+      "priority": 5,
+      "exampleFr": "Qu’est-ce qui est inclus dans le forfait ?",
+      "exampleZh": "套餐里包含什么？"
+    },
+    {
+      "id": 61,
+      "fr": "des frais supplémentaires",
+      "zh": "额外费用",
+      "scenario": "general",
+      "priority": 4,
+      "exampleFr": "Qu’est-ce qui est inclus dans le forfait ?",
+      "exampleZh": "套餐里包含什么？"
+    },
+    {
+      "id": 62,
+      "fr": "annuler une réservation",
+      "zh": "取消预订",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Que se passe-t-il si je dois annuler ma réservation ?",
+      "exampleZh": "如果我必须取消预订，会怎么样？"
+    },
+    {
+      "id": 63,
+      "fr": "modifier une réservation",
+      "zh": "修改预订",
+      "scenario": "general",
+      "priority": 4,
+      "exampleFr": "Est-il possible de modifier ou d’annuler la réservation si nécessaire ?",
+      "exampleZh": "如果需要，可以修改或取消预订吗？"
+    },
+    {
+      "id": 64,
+      "fr": "être remboursé(e)",
+      "zh": "获得退款",
+      "scenario": "general",
+      "priority": 4,
+      "exampleFr": "Que se passe-t-il si je dois annuler ma réservation ?",
+      "exampleZh": "如果我必须取消预订，会怎么样？"
+    },
+    {
+      "id": 65,
+      "fr": "les conditions d’annulation",
+      "zh": "取消条件",
+      "scenario": "general",
+      "priority": 4,
+      "exampleFr": "Que se passe-t-il si je dois annuler ma réservation ?",
+      "exampleZh": "如果我必须取消预订，会怎么样？"
+    },
+    {
+      "id": 66,
+      "fr": "être annulé",
+      "zh": "被取消",
+      "scenario": "outdoor",
+      "priority": 4,
+      "exampleFr": "Que se passe-t-il si le temps est mauvais : les activités sont-elles annulées ou reportées ?",
+      "exampleZh": "如果天气不好，活动会取消还是改期？"
+    },
+    {
+      "id": 67,
+      "fr": "être reporté",
+      "zh": "被延期",
+      "scenario": "outdoor",
+      "priority": 4,
+      "exampleFr": "Que se passe-t-il si le temps est mauvais : les activités sont-elles annulées ou reportées ?",
+      "exampleZh": "如果天气不好，活动会取消还是改期？"
+    },
+    {
+      "id": 68,
+      "fr": "une brochure",
+      "zh": "资料册",
+      "scenario": "sightseeing",
+      "priority": 3,
+      "exampleFr": "Y aurait-il une brochure que je pourrais consulter ?",
+      "exampleZh": "会有可以让我查看的宣传册吗？"
+    },
+    {
+      "id": 69,
+      "fr": "consulter une brochure",
+      "zh": "查看资料册",
+      "scenario": "sightseeing",
+      "priority": 3,
+      "exampleFr": "Y aurait-il une brochure que je pourrais consulter ?",
+      "exampleZh": "会有可以让我查看的宣传册吗？"
+    },
+    {
+      "id": 70,
+      "fr": "une galerie d’art",
+      "zh": "艺术馆",
+      "scenario": "sightseeing",
+      "priority": 3,
+      "exampleFr": "Quels endroits pourriez-vous me recommander ? Par exemple, un musée historique, une galerie d’art ou des monuments ?",
+      "exampleZh": "您能推荐哪些地方？比如历史博物馆、艺术馆或纪念建筑？"
+    },
+    {
+      "id": 71,
+      "fr": "un monument",
+      "zh": "纪念建筑 / 名胜",
+      "scenario": "sightseeing",
+      "priority": 3,
+      "exampleFr": "Quels endroits pourriez-vous me recommander ? Par exemple, un musée historique, une galerie d’art ou des monuments ?",
+      "exampleZh": "您能推荐哪些地方？比如历史博物馆、艺术馆或纪念建筑？"
+    },
+    {
+      "id": 72,
+      "fr": "un site touristique",
+      "zh": "旅游景点",
+      "scenario": "city",
+      "priority": 4,
+      "exampleFr": "Quels sites touristiques as-tu visités ?",
+      "exampleZh": "你参观了哪些旅游景点？"
+    },
+    {
+      "id": 73,
+      "fr": "un sentier",
+      "zh": "步道",
+      "scenario": "outdoor",
+      "priority": 4,
+      "exampleFr": "Où pourrions-nous faire une promenade sur un sentier calme ?",
+      "exampleZh": "有没有一条安静的步道适合我们散步？"
+    },
+    {
+      "id": 74,
+      "fr": "faire du camping",
+      "zh": "露营",
+      "scenario": "outdoor",
+      "priority": 4,
+      "exampleFr": "Peut-on faire du camping sur place ?",
+      "exampleZh": "可以在那里露营吗？"
+    },
+    {
+      "id": 75,
+      "fr": "chercher des champignons",
+      "zh": "采蘑菇",
+      "scenario": "outdoor",
+      "priority": 3,
+      "exampleFr": "Quelles activités pourriez-vous me recommander ? Par exemple, faire une promenade, chercher des champignons ou faire du camping ?",
+      "exampleZh": "您能推荐哪些活动？比如散步、采蘑菇或露营？"
+    },
+    {
+      "id": 76,
+      "fr": "un gîte",
+      "zh": "民宿 / 乡村旅馆",
+      "scenario": "hotel",
+      "priority": 4,
+      "exampleFr": "Quelles formules d’hébergement proposez-vous, par exemple un gîte ou un hôtel ?",
+      "exampleZh": "你们提供哪些住宿形式，比如民宿或酒店？"
+    },
+    {
+      "id": 77,
+      "fr": "un logement",
+      "zh": "住宿 / 住处",
+      "scenario": "hotel",
+      "priority": 5,
+      "exampleFr": "Dans quelle ville est-il plus facile de trouver un logement bien situé ?",
+      "exampleZh": "哪个城市更容易找到位置好的住宿？"
+    },
+    {
+      "id": 78,
+      "fr": "une vue sur la mer",
+      "zh": "海景",
+      "scenario": "hotel",
+      "priority": 4,
+      "exampleFr": "Est-il possible d’avoir une chambre avec vue sur la mer ?",
+      "exampleZh": "可以要一间海景房吗？"
+    },
+    {
+      "id": 79,
+      "fr": "une chambre plus calme",
+      "zh": "更安静的房间",
+      "scenario": "hotel",
+      "priority": 4,
+      "exampleFr": "Comme j’ai du mal à dormir, pourriez-vous me proposer une chambre plus calme, avec une bonne insonorisation ?",
+      "exampleZh": "我睡眠不好，可以给我一间更安静、隔音更好的房间吗？"
+    },
+    {
+      "id": 80,
+      "fr": "un plat végétarien",
+      "zh": "素食菜品",
+      "scenario": "general",
+      "priority": 4,
+      "exampleFr": "Comme je suis végétarienne, y a-t-il des plats végétariens ?",
+      "exampleZh": "因为我是素食者，有素食菜吗？"
+    },
+    {
+      "id": 81,
+      "fr": "un repas végétarien",
+      "zh": "素食餐",
+      "scenario": "general",
+      "priority": 4,
+      "exampleFr": "Comme je suis végétarienne, y a-t-il des repas végétariens ?",
+      "exampleZh": "因为我是素食者，有素食餐吗？"
+    },
+    {
+      "id": 82,
+      "fr": "être disponible en plusieurs langues",
+      "zh": "提供多种语言版本",
+      "scenario": "sightseeing",
+      "priority": 3,
+      "exampleFr": "Dans quelles langues l’audioguide est-il disponible ?",
+      "exampleZh": "语音导览提供哪些语言？"
+    },
+    {
+      "id": 83,
+      "fr": "un audioguide",
+      "zh": "语音导览",
+      "scenario": "sightseeing",
+      "priority": 4,
+      "exampleFr": "Proposez-vous un guide ou un audioguide pour découvrir les expositions ?",
+      "exampleZh": "有导游或语音导览来讲解展览吗？"
+    },
+    {
+      "id": 84,
+      "fr": "une séance",
+      "zh": "一场活动 / 课程",
+      "scenario": "outdoor",
+      "priority": 3,
+      "exampleFr": "Proposez-vous des cours ou des séances spécialement conçus pour les débutants ?",
+      "exampleZh": "有没有专门为初学者设计的课程或训练？"
+    },
+    {
+      "id": 85,
+      "fr": "être conçu pour les débutants",
+      "zh": "为初学者设计",
+      "scenario": "outdoor",
+      "priority": 4,
+      "exampleFr": "Proposez-vous des cours ou des séances spécialement conçus pour les débutants ?",
+      "exampleZh": "有没有专门为初学者设计的课程或训练？"
+    },
+    {
+      "id": 86,
+      "fr": "un entraîneur",
+      "zh": "教练",
+      "scenario": "outdoor",
+      "priority": 4,
+      "exampleFr": "Comme je suis débutante, est-ce que je peux être accompagnée par un guide ou un entraîneur ?",
+      "exampleZh": "因为我是初学者，可以有导游或教练陪同吗？"
+    },
+    {
+      "id": 87,
+      "fr": "être accompagné par un entraîneur",
+      "zh": "由教练陪同",
+      "scenario": "outdoor",
+      "priority": 4,
+      "exampleFr": "Est-il possible d’être accompagné par un guide ou un entraîneur quand on débute ?",
+      "exampleZh": "初学者可以由导游或教练陪同吗？"
+    },
+    {
+      "id": 88,
+      "fr": "une sortie à la campagne",
+      "zh": "郊外出游",
+      "scenario": "outdoor",
+      "priority": 4,
+      "exampleFr": "Combien de temps serait idéal pour cette sortie ?",
+      "exampleZh": "这次乡村出游安排多长时间比较理想？"
+    },
+    {
+      "id": 89,
+      "fr": "une ambiance animée",
+      "zh": "热闹的氛围",
+      "scenario": "city",
+      "priority": 4,
+      "exampleFr": "Comment est l’ambiance dans ce quartier le soir ?",
+      "exampleZh": "这个街区晚上氛围怎么样？"
+    },
+    {
+      "id": 90,
+      "fr": "une ambiance calme",
+      "zh": "安静的氛围",
+      "scenario": "city",
+      "priority": 4,
+      "exampleFr": "Où pourrais-je me promener au calme dans cette ville ?",
+      "exampleZh": "这个城市哪里适合安静地散步？"
+    },
+    {
+      "id": 91,
+      "fr": "être touristique",
+      "zh": "游客多 / 旅游型",
+      "scenario": "city",
+      "priority": 4,
+      "exampleFr": "Est-ce que cette période est très touristique ?",
+      "exampleZh": "这个时期游客很多吗？"
+    },
+    {
+      "id": 92,
+      "fr": "être bien desservi",
+      "zh": "交通便利",
+      "scenario": "city",
+      "priority": 4,
+      "exampleFr": "Quelle ville est la mieux desservie par le train ou l’avion ?",
+      "exampleZh": "哪个城市乘火车或飞机最方便？"
+    },
+    {
+      "id": 93,
+      "fr": "être facile à visiter à pied",
+      "zh": "适合步行游览",
+      "scenario": "city",
+      "priority": 4,
+      "exampleFr": "Est-ce que la ville est facile à visiter à pied ?",
+      "exampleZh": "这个城市适合步行游览吗？"
+    },
+    {
+      "id": 94,
+      "fr": "une assurance",
+      "zh": "保险",
+      "scenario": "agency",
+      "priority": 4,
+      "exampleFr": "Faut-il prévoir une assurance ou une protection particulière ?",
+      "exampleZh": "需要准备保险或其他特别保障吗？"
+    },
+    {
+      "id": 95,
+      "fr": "une protection particulière",
+      "zh": "特别保障",
+      "scenario": "agency",
+      "priority": 3,
+      "exampleFr": "Faut-il prévoir une assurance ou une protection particulière ?",
+      "exampleZh": "需要准备保险或其他特别保障吗？"
+    },
+    {
+      "id": 96,
+      "fr": "les démarches administratives",
+      "zh": "行政手续",
+      "scenario": "agency",
+      "priority": 4,
+      "exampleFr": "Faut-il que je fasse des démarches administratives particulières avant de partir ?",
+      "exampleZh": "出发前我需要办理特别的行政手续吗？"
+    },
+    {
+      "id": 97,
+      "fr": "louer une voiture",
+      "zh": "租车",
+      "scenario": "city",
+      "priority": 4,
+      "exampleFr": "Faut-il que je loue une voiture pour me déplacer plus facilement ?",
+      "exampleZh": "为了出行更方便，我需要租车吗？"
+    },
+    {
+      "id": 98,
+      "fr": "le matériel",
+      "zh": "装备",
+      "scenario": "outdoor",
+      "priority": 4,
+      "exampleFr": "Le matériel est-il fourni ou faut-il apporter le sien ?",
+      "exampleZh": "装备是提供的，还是需要自己带？"
+    },
+    {
+      "id": 99,
+      "fr": "un équipement",
+      "zh": "装备 / 设备",
+      "scenario": "outdoor",
+      "priority": 4,
+      "exampleFr": "Quel équipement faut-il prévoir pour faire de la randonnée ?",
+      "exampleZh": "徒步需要准备什么装备？"
+    },
+    {
+      "id": 100,
+      "fr": "les consignes de sécurité",
+      "zh": "安全规定",
+      "scenario": "outdoor",
+      "priority": 5,
+      "exampleFr": "Quelles consignes de sécurité faut-il respecter ?",
+      "exampleZh": "需要遵守哪些安全规定？"
+    },
+    {
+      "id": 101,
+      "fr": "faire son choix",
+      "zh": "做出选择",
+      "scenario": "agency",
+      "priority": 4,
+      "exampleFr": "Entre Montréal, Dakar, Bruxelles et Hanoï, quelle destination me conseilleriez-vous finalement ?",
+      "exampleZh": "在这些城市之间，您最后建议我选择哪个目的地？"
+    },
+    {
+      "id": 102,
+      "fr": "en fonction de…",
+      "zh": "根据……",
+      "scenario": "general",
+      "priority": 4,
+      "exampleFr": "Quelles activités extérieures sont proposées selon la saison ?",
+      "exampleZh": "不同季节会提供哪些户外活动？"
+    },
+    {
+      "id": 103,
+      "fr": "dans l’idéal",
+      "zh": "理想情况下",
+      "scenario": "general",
+      "priority": 4,
+      "exampleFr": "Quelle serait la durée idéale pour ce voyage ?",
+      "exampleZh": "这次旅行安排多长时间比较理想？"
+    }
+  ],
+  "patterns": [
+    {
+      "id": 1,
+      "pattern": "Pourriez-vous me recommander + nom ?",
+      "zh": "您能给我推荐……吗？",
+      "exampleFr": "Quelles destinations pourriez-vous me recommander au Canada ?",
+      "exampleZh": "您能推荐一些加拿大的目的地吗？",
+      "scenario": "agency"
+    },
+    {
+      "id": 2,
+      "pattern": "Que / Qu’est-ce que me conseilleriez-vous de + infinitif ?",
+      "zh": "您建议我做什么……？",
+      "exampleFr": "Quel musée me conseilleriez-vous de visiter en priorité ?",
+      "exampleZh": "您会建议我优先参观哪个博物馆？",
+      "scenario": "sightseeing"
+    },
+    {
+      "id": 3,
+      "pattern": "Où se trouve exactement + lieu ?",
+      "zh": "……具体在哪里？",
+      "exampleFr": "Où se trouve exactement ce musée ?",
+      "exampleZh": "这个博物馆具体在哪里？",
+      "scenario": "general"
+    },
+    {
+      "id": 4,
+      "pattern": "Comment puis-je y aller ?",
+      "zh": "我怎么去那里？",
+      "exampleFr": "Comment puis-je y aller ? Par exemple, en bus ou en métro ?",
+      "exampleZh": "我怎么去那里？比如坐公交或地铁？",
+      "scenario": "general"
+    },
+    {
+      "id": 5,
+      "pattern": "Comment puis-je m’y rendre + complément ?",
+      "zh": "我怎样前往那里？",
+      "exampleFr": "Comment puis-je m’y rendre le plus facilement ?",
+      "exampleZh": "我怎样去那里最方便？",
+      "scenario": "general"
+    },
+    {
+      "id": 6,
+      "pattern": "Comment peut-on se déplacer + lieu ?",
+      "zh": "在……怎么出行？",
+      "exampleFr": "Comment peut-on se déplacer une fois sur place ?",
+      "exampleZh": "到了当地以后怎么出行？",
+      "scenario": "general"
+    },
+    {
+      "id": 7,
+      "pattern": "Quels / Quelles + nom + sont disponibles ?",
+      "zh": "有哪些……可选？",
+      "exampleFr": "Quels types de chambres sont disponibles ?",
+      "exampleZh": "有哪些房型可选？",
+      "scenario": "hotel"
+    },
+    {
+      "id": 8,
+      "pattern": "Quelles activités sont proposées + complément ?",
+      "zh": "有哪些活动？",
+      "exampleFr": "Quelles activités sont proposées pendant ce séjour ?",
+      "exampleZh": "这次旅行期间有哪些活动？",
+      "scenario": "general"
+    },
+    {
+      "id": 9,
+      "pattern": "Y a-t-il + nom ?",
+      "zh": "有没有……？",
+      "exampleFr": "Y a-t-il un guide ?",
+      "exampleZh": "有导游吗？",
+      "scenario": "general"
+    },
+    {
+      "id": 10,
+      "pattern": "Est-ce que + nom + est adapté à + personne ?",
+      "zh": "……适合……吗？",
+      "exampleFr": "Est-ce que la randonnée est adaptée aux débutants ?",
+      "exampleZh": "徒步适合初学者吗？",
+      "scenario": "outdoor"
+    },
+    {
+      "id": 11,
+      "pattern": "Combien de temps + verbe ?",
+      "zh": "……多久？",
+      "exampleFr": "Combien de temps ce voyage va-t-il durer ?",
+      "exampleZh": "这次旅行会持续多久？",
+      "scenario": "general"
+    },
+    {
+      "id": 12,
+      "pattern": "Quelle est la meilleure période pour + infinitif ?",
+      "zh": "什么时候最适合……？",
+      "exampleFr": "Quelle est la meilleure période pour visiter cette ville ?",
+      "exampleZh": "什么时候最适合游览这个城市？",
+      "scenario": "general"
+    },
+    {
+      "id": 13,
+      "pattern": "Quel temps fait-il + lieu ?",
+      "zh": "……天气怎么样？",
+      "exampleFr": "Quel temps fait-il là-bas ?",
+      "exampleZh": "那里的天气怎么样？",
+      "scenario": "general"
+    },
+    {
+      "id": 14,
+      "pattern": "Quel temps faisait-il + période ?",
+      "zh": "当时天气怎么样？",
+      "exampleFr": "Quel temps faisait-il pendant ton séjour ?",
+      "exampleZh": "你旅行期间天气怎么样？",
+      "scenario": "general"
+    },
+    {
+      "id": 15,
+      "pattern": "Quel temps fera-t-il + période ?",
+      "zh": "天气将会怎样？",
+      "exampleFr": "Quel temps fera-t-il ce week-end ?",
+      "exampleZh": "这个周末天气会怎么样？",
+      "scenario": "general"
+    },
+    {
+      "id": 16,
+      "pattern": "Combien coûte + nom ?",
+      "zh": "……多少钱？",
+      "exampleFr": "Combien coûte l’entrée au musée pour un adulte ?",
+      "exampleZh": "成人博物馆门票多少钱？",
+      "scenario": "sightseeing"
+    },
+    {
+      "id": 17,
+      "pattern": "Quel budget faudrait-il prévoir pour + nom ?",
+      "zh": "大概要准备多少预算？",
+      "exampleFr": "Quel budget faudrait-il prévoir pour cette sortie ?",
+      "exampleZh": "这次出游大概要准备多少预算？",
+      "scenario": "general"
+    },
+    {
+      "id": 18,
+      "pattern": "Est-ce que + nom + est compris dans le prix ?",
+      "zh": "……包含在价格里吗？",
+      "exampleFr": "Le transport est-il compris dans le prix ou faut-il le prévoir séparément ?",
+      "exampleZh": "交通包含在价格里吗，还是需要另外安排？",
+      "scenario": "agency"
+    },
+    {
+      "id": 19,
+      "pattern": "Qu’est-ce qui est inclus dans + nom ?",
+      "zh": "……里面包含什么？",
+      "exampleFr": "Qu’est-ce qui est inclus dans le forfait ?",
+      "exampleZh": "套餐里包含什么？",
+      "scenario": "agency"
+    },
+    {
+      "id": 20,
+      "pattern": "Est-ce qu’il y a un tarif réduit pour + personne ?",
+      "zh": "……有优惠价吗？",
+      "exampleFr": "Est-ce qu’il y a un tarif réduit pour les enfants ?",
+      "exampleZh": "儿童票有折扣吗？",
+      "scenario": "family"
+    },
+    {
+      "id": 21,
+      "pattern": "Est-ce que je pourrais bénéficier d’une réduction ?",
+      "zh": "我可以享受折扣吗？",
+      "exampleFr": "Est-ce que je pourrais bénéficier d’une réduction ?",
+      "exampleZh": "我可以享受折扣吗？",
+      "scenario": "general"
+    },
+    {
+      "id": 22,
+      "pattern": "Comment puis-je réserver + nom ?",
+      "zh": "我怎么预订……？",
+      "exampleFr": "Comment puis-je réserver une visite au musée et payer le billet ?",
+      "exampleZh": "我怎么预订博物馆参观并支付门票？",
+      "scenario": "sightseeing"
+    },
+    {
+      "id": 23,
+      "pattern": "Faut-il réserver + nom + à l’avance ?",
+      "zh": "需要提前预订吗？",
+      "exampleFr": "Faut-il réserver les activités longtemps à l’avance ?",
+      "exampleZh": "这些活动需要提前很久预订吗？",
+      "scenario": "general"
+    },
+    {
+      "id": 24,
+      "pattern": "Peut-on + infinitif + en ligne ?",
+      "zh": "可以在线……吗？",
+      "exampleFr": "Peut-on acheter les billets en ligne pour éviter la file d’attente ?",
+      "exampleZh": "可以网上买票来避免排队吗？",
+      "scenario": "general"
+    },
+    {
+      "id": 25,
+      "pattern": "Est-il possible de + infinitif ?",
+      "zh": "可以……吗？",
+      "exampleFr": "Est-il possible de modifier ou d’annuler la réservation si nécessaire ?",
+      "exampleZh": "如果需要，可以修改或取消预订吗？",
+      "scenario": "general"
+    },
+    {
+      "id": 26,
+      "pattern": "Que se passe-t-il si + situation ?",
+      "zh": "如果……会怎么样？",
+      "exampleFr": "Que se passe-t-il si le temps est mauvais : les activités sont-elles annulées ou reportées ?",
+      "exampleZh": "如果天气不好，活动会取消还是改期？",
+      "scenario": "outdoor"
+    },
+    {
+      "id": 27,
+      "pattern": "S’il fait mauvais, + question au conditionnel ?",
+      "zh": "如果天气不好……？",
+      "exampleFr": "Que se passe-t-il si le temps est mauvais : les activités sont-elles annulées ou reportées ?",
+      "exampleZh": "如果天气不好，活动会取消还是改期？",
+      "scenario": "outdoor"
+    },
+    {
+      "id": 28,
+      "pattern": "Laquelle / Lequel + comparaison ?",
+      "zh": "哪一个……？",
+      "exampleFr": "Laquelle de ces villes est la plus touristique ?",
+      "exampleZh": "这些城市里哪个游客最多？",
+      "scenario": "city"
+    },
+    {
+      "id": 29,
+      "pattern": "Comment as-tu trouvé + nom ?",
+      "zh": "你觉得……怎么样？",
+      "exampleFr": "Comment as-tu trouvé l’hébergement ?",
+      "exampleZh": "你觉得那个住宿怎么样？",
+      "scenario": "general"
+    },
+    {
+      "id": 30,
+      "pattern": "Est-ce que tu me recommanderais + nom ?",
+      "zh": "你会推荐……吗？",
+      "exampleFr": "Est-ce que tu me recommanderais cette ville pour un week-end en famille ?",
+      "exampleZh": "你会推荐这个城市作为家庭周末游的目的地吗？",
+      "scenario": "city"
+    }
+  ]
+}
