@@ -1,0 +1,20 @@
+#t2xView{font-size:1rem;line-height:1.7;overflow-wrap:anywhere}
+#t2xControls input,#t2xControls select{width:100%;box-sizing:border-box}
+.t2x-actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0}
+.t2x-home{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:18px 0}
+.t2x-home button,.t2x-module-tile{white-space:pre-line;text-align:left;padding:18px;border:1px solid #d8ddef;border-radius:14px;background:#f7f8ff}
+.t2x-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:16px 0}
+.t2x-card{border:1px solid #dce1ee;border-radius:14px;padding:20px;margin:16px 0;background:#fff}
+.t2x-card h3{margin:4px 0 10px}.t2x-note{font-size:.9rem;color:#626b82}
+.t2x-intent{font-size:1.08rem;font-weight:650}.t2x-base{background:#f6f7fb;border-radius:10px;padding:12px;margin:10px 0}
+.t2x-rule{border-left:4px solid #515cdd;background:#f4f5ff;padding:12px;border-radius:8px}
+.t2x-form{border-top:1px solid #e5e8f1;padding:12px 0}.t2x-kind{display:inline-block;padding:2px 8px;border-radius:999px;background:#edf0ff;font-size:.82rem;margin-right:8px}
+.t2x-timeline{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:12px 0}.t2x-timeline div{background:#f7f8fb;padding:12px;border-radius:10px}
+.t2x-source{background:#fff8ef;border:1px solid #f0ddc4;border-radius:10px;padding:12px;margin-top:12px}
+.t2x-source .raw{color:#8b3d2d}.t2x-source .better{color:#1f6a3d}
+.t2x-train{border:1px solid #cfd6ec;border-radius:14px;padding:20px;background:#fbfcff}.t2x-train textarea{width:100%;min-height:90px;box-sizing:border-box}
+.t2x-answer{margin-top:12px;background:#f3f5ff;border-left:4px solid #515cdd;padding:12px;border-radius:8px}
+.t2x-badge{display:inline-block;padding:3px 9px;border-radius:999px;background:#eef1fb;margin-right:6px;font-size:.82rem}
+.t2x-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:14px 0}.t2x-metrics div{background:#f6f7fb;border-radius:12px;padding:12px;text-align:center}.t2x-metrics strong{display:block;font-size:1.3rem}
+.t2x-cat{margin:22px 0}.t2x-cat h3{margin-bottom:8px}
+@media(max-width:760px){.t2x-home,.t2x-grid{grid-template-columns:1fr}.t2x-timeline{grid-template-columns:1fr}.t2x-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.t2x-card,.t2x-train{padding:14px}}
