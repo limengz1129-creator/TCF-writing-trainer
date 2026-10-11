@@ -1,0 +1,1151 @@
+{
+  "theme": "sport",
+  "title": "体育户外与场馆",
+  "target": "TCF Canada 口语 Tâche 2 · C1",
+  "version": 1,
+  "principle": "约100个高价值词/词块，以最终真题为基础；词块与真实套用问法绑定，优先训练中文→法语主动调用。",
+  "scenarios": [
+    {
+      "id": "club",
+      "name": "体育俱乐部 / 健身房"
+    },
+    {
+      "id": "dance",
+      "name": "舞蹈"
+    },
+    {
+      "id": "yoga",
+      "name": "瑜伽"
+    },
+    {
+      "id": "race",
+      "name": "跑步赛事"
+    },
+    {
+      "id": "general",
+      "name": "报名 / 费用 / 组织"
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": 1,
+      "fr": "un club sportif",
+      "zh": "体育俱乐部",
+      "scenario": "club",
+      "priority": 5,
+      "exampleFr": "Où se trouve exactement votre club sportif ?",
+      "exampleZh": "您的体育俱乐部具体在哪里？"
+    },
+    {
+      "id": 2,
+      "fr": "une salle de sport",
+      "zh": "健身房",
+      "scenario": "club",
+      "priority": 5,
+      "exampleFr": "Où se trouve exactement la salle de sport ?",
+      "exampleZh": "健身房具体在哪里？"
+    },
+    {
+      "id": 3,
+      "fr": "une école de danse",
+      "zh": "舞蹈学校",
+      "scenario": "dance",
+      "priority": 5,
+      "exampleFr": "Où se trouve exactement votre école de danse ?",
+      "exampleZh": "您的舞蹈学校具体在哪里？"
+    },
+    {
+      "id": 4,
+      "fr": "un cours de sport",
+      "zh": "体育课程",
+      "scenario": "club",
+      "priority": 5,
+      "exampleFr": "Vous voulez vous inscrire à un cours de sport.",
+      "exampleZh": "您想报名体育课程。"
+    },
+    {
+      "id": 5,
+      "fr": "une séance",
+      "zh": "一次训练 / 一节课",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "À quelle fréquence proposez-vous les séances ?",
+      "exampleZh": "你们多久安排一次训练？"
+    },
+    {
+      "id": 6,
+      "fr": "une séance de yoga",
+      "zh": "瑜伽课",
+      "scenario": "yoga",
+      "priority": 5,
+      "exampleFr": "Quels sont les jours et les horaires des séances de yoga ?",
+      "exampleZh": "瑜伽课哪几天、几点？"
+    },
+    {
+      "id": 7,
+      "fr": "les horaires d’ouverture",
+      "zh": "开放时间",
+      "scenario": "club",
+      "priority": 5,
+      "exampleFr": "À quelles heures êtes-vous ouverts ?",
+      "exampleZh": "你们几点开放？"
+    },
+    {
+      "id": 8,
+      "fr": "les horaires du week-end",
+      "zh": "周末时间",
+      "scenario": "club",
+      "priority": 4,
+      "exampleFr": "Et le week-end, les horaires changent-ils ?",
+      "exampleZh": "周末时间会变吗？"
+    },
+    {
+      "id": 9,
+      "fr": "s’y rendre",
+      "zh": "前往那里",
+      "scenario": "club",
+      "priority": 5,
+      "exampleFr": "Quel est le moyen le plus simple pour m’y rendre ?",
+      "exampleZh": "怎么去最方便？"
+    },
+    {
+      "id": 10,
+      "fr": "un moyen de transport",
+      "zh": "交通方式",
+      "scenario": "club",
+      "priority": 4,
+      "exampleFr": "Quel est le moyen le plus simple pour y aller ?",
+      "exampleZh": "怎么去最方便？"
+    },
+    {
+      "id": 11,
+      "fr": "un style de danse",
+      "zh": "舞蹈类型",
+      "scenario": "dance",
+      "priority": 5,
+      "exampleFr": "Qu’est-ce que vous proposez comme styles de danse ?",
+      "exampleZh": "你们提供哪些舞蹈类型？"
+    },
+    {
+      "id": 12,
+      "fr": "un débutant / une débutante",
+      "zh": "初学者",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Les cours sont-ils adaptés aux débutants ?",
+      "exampleZh": "课程适合初学者吗？"
+    },
+    {
+      "id": 13,
+      "fr": "être adapté aux débutants",
+      "zh": "适合初学者",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Cette activité est-elle adaptée à une débutante comme moi ?",
+      "exampleZh": "这项活动适合像我这样的初学者吗？"
+    },
+    {
+      "id": 14,
+      "fr": "se préparer",
+      "zh": "做准备",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Dois-je préparer quelque chose avant de commencer ?",
+      "exampleZh": "开始前需要准备什么吗？"
+    },
+    {
+      "id": 15,
+      "fr": "une préparation particulière",
+      "zh": "特别准备",
+      "scenario": "yoga",
+      "priority": 4,
+      "exampleFr": "Dois-je faire une préparation particulière avant de commencer ?",
+      "exampleZh": "开始前需要特别准备吗？"
+    },
+    {
+      "id": 16,
+      "fr": "un professeur",
+      "zh": "老师",
+      "scenario": "dance",
+      "priority": 4,
+      "exampleFr": "Quelle formation ont suivie les professeurs ?",
+      "exampleZh": "老师有什么培训背景？"
+    },
+    {
+      "id": 17,
+      "fr": "un entraîneur",
+      "zh": "教练",
+      "scenario": "club",
+      "priority": 5,
+      "exampleFr": "Puis-je être accompagnée par un entraîneur au début ?",
+      "exampleZh": "刚开始时可以有教练指导吗？"
+    },
+    {
+      "id": 18,
+      "fr": "être accompagné(e) par un entraîneur",
+      "zh": "由教练陪同指导",
+      "scenario": "club",
+      "priority": 5,
+      "exampleFr": "Est-il possible d’être accompagné par un entraîneur quand on débute ?",
+      "exampleZh": "初学时可以由教练带吗？"
+    },
+    {
+      "id": 19,
+      "fr": "un cours individuel",
+      "zh": "个人课",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Vous proposez des cours individuels, en groupe, ou les deux ?",
+      "exampleZh": "你们提供个人课、团体课还是都有？"
+    },
+    {
+      "id": 20,
+      "fr": "un cours en groupe",
+      "zh": "团体课",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Vous proposez des cours individuels, en groupe, ou les deux ?",
+      "exampleZh": "你们提供个人课、团体课还是都有？"
+    },
+    {
+      "id": 21,
+      "fr": "une séance collective",
+      "zh": "团体训练",
+      "scenario": "general",
+      "priority": 4,
+      "exampleFr": "Les séances sont-elles collectives ?",
+      "exampleZh": "训练是集体的吗？"
+    },
+    {
+      "id": 22,
+      "fr": "un entraînement individuel",
+      "zh": "个人训练",
+      "scenario": "club",
+      "priority": 4,
+      "exampleFr": "Vous proposez plutôt des entraînements collectifs, individuels, ou les deux ?",
+      "exampleZh": "你们主要提供团体训练、个人训练，还是都有？"
+    },
+    {
+      "id": 23,
+      "fr": "la taille du groupe",
+      "zh": "小组人数",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Quelle est la taille des groupes en général ?",
+      "exampleZh": "每组通常有多少人？"
+    },
+    {
+      "id": 24,
+      "fr": "s’habiller",
+      "zh": "穿着",
+      "scenario": "dance",
+      "priority": 5,
+      "exampleFr": "Comment faut-il s’habiller pour les cours ?",
+      "exampleZh": "上课应该怎么穿？"
+    },
+    {
+      "id": 25,
+      "fr": "une tenue de sport",
+      "zh": "运动服",
+      "scenario": "dance",
+      "priority": 4,
+      "exampleFr": "Comment faut-il s’habiller pour les cours ?",
+      "exampleZh": "上课应该怎么穿？"
+    },
+    {
+      "id": 26,
+      "fr": "du matériel particulier",
+      "zh": "特殊装备",
+      "scenario": "general",
+      "priority": 4,
+      "exampleFr": "Dois-je apporter du matériel particulier ?",
+      "exampleZh": "需要自带特殊装备吗？"
+    },
+    {
+      "id": 27,
+      "fr": "un équipement",
+      "zh": "装备",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Quel autre équipement faut-il prévoir ?",
+      "exampleZh": "还需要准备什么装备？"
+    },
+    {
+      "id": 28,
+      "fr": "un tapis de yoga",
+      "zh": "瑜伽垫",
+      "scenario": "yoga",
+      "priority": 5,
+      "exampleFr": "Le tapis de yoga est-il fourni ou dois-je apporter le mien ?",
+      "exampleZh": "瑜伽垫提供还是要自带？"
+    },
+    {
+      "id": 29,
+      "fr": "être fourni(e)",
+      "zh": "被提供",
+      "scenario": "general",
+      "priority": 4,
+      "exampleFr": "Le tapis de yoga est-il fourni ou dois-je apporter le mien ?",
+      "exampleZh": "瑜伽垫提供吗？"
+    },
+    {
+      "id": 30,
+      "fr": "être disponible sur place",
+      "zh": "现场提供",
+      "scenario": "club",
+      "priority": 5,
+      "exampleFr": "Est-ce que le matériel est disponible sur place ?",
+      "exampleZh": "器材现场提供吗？"
+    },
+    {
+      "id": 31,
+      "fr": "le tarif des cours",
+      "zh": "课程费用",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Quel est le tarif des cours ?",
+      "exampleZh": "课程多少钱？"
+    },
+    {
+      "id": 32,
+      "fr": "le prix d’une séance",
+      "zh": "单次课程价格",
+      "scenario": "yoga",
+      "priority": 5,
+      "exampleFr": "Quel est le prix d’une séance ?",
+      "exampleZh": "一节课多少钱？"
+    },
+    {
+      "id": 33,
+      "fr": "le prix de l’abonnement",
+      "zh": "会员费",
+      "scenario": "club",
+      "priority": 5,
+      "exampleFr": "Quel est le prix de l’abonnement ?",
+      "exampleZh": "会员费多少钱？"
+    },
+    {
+      "id": 34,
+      "fr": "une réduction étudiante",
+      "zh": "学生优惠",
+      "scenario": "club",
+      "priority": 4,
+      "exampleFr": "Les étudiants ont-ils droit à une réduction ?",
+      "exampleZh": "学生有优惠吗？"
+    },
+    {
+      "id": 35,
+      "fr": "un moyen de paiement",
+      "zh": "付款方式",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Comment peut-on payer ?",
+      "exampleZh": "怎么付款？"
+    },
+    {
+      "id": 36,
+      "fr": "un cours d’essai",
+      "zh": "试听课",
+      "scenario": "dance",
+      "priority": 5,
+      "exampleFr": "Puis-je faire un cours d’essai avant de m’inscrire ?",
+      "exampleZh": "报名之前可以试听吗？"
+    },
+    {
+      "id": 37,
+      "fr": "une séance d’essai",
+      "zh": "体验课",
+      "scenario": "club",
+      "priority": 5,
+      "exampleFr": "Puis-je faire une séance d’essai avant de m’inscrire ?",
+      "exampleZh": "报名之前可以体验一次吗？"
+    },
+    {
+      "id": 38,
+      "fr": "s’inscrire",
+      "zh": "报名",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Comment se passe l’inscription ?",
+      "exampleZh": "怎么报名？"
+    },
+    {
+      "id": 39,
+      "fr": "une inscription",
+      "zh": "报名",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Quel est le prix de l’inscription ?",
+      "exampleZh": "报名费多少钱？"
+    },
+    {
+      "id": 40,
+      "fr": "le prix de l’inscription",
+      "zh": "报名费",
+      "scenario": "race",
+      "priority": 5,
+      "exampleFr": "Quel est le prix de l’inscription ?",
+      "exampleZh": "报名费用是多少？"
+    },
+    {
+      "id": 41,
+      "fr": "une date limite d’inscription",
+      "zh": "报名截止日期",
+      "scenario": "race",
+      "priority": 5,
+      "exampleFr": "Jusqu’à quand peut-on s’inscrire ?",
+      "exampleZh": "报名截止到什么时候？"
+    },
+    {
+      "id": 42,
+      "fr": "un sport",
+      "zh": "运动项目",
+      "scenario": "club",
+      "priority": 5,
+      "exampleFr": "Qu’est-ce qu’on peut pratiquer comme sport dans votre club ?",
+      "exampleZh": "你们俱乐部可以做哪些运动？"
+    },
+    {
+      "id": 43,
+      "fr": "une activité sportive",
+      "zh": "体育活动",
+      "scenario": "club",
+      "priority": 5,
+      "exampleFr": "Parmi ces activités, laquelle me conseilleriez-vous ?",
+      "exampleZh": "这些活动里您最推荐哪一个？"
+    },
+    {
+      "id": 44,
+      "fr": "recommander une activité",
+      "zh": "推荐项目",
+      "scenario": "club",
+      "priority": 5,
+      "exampleFr": "Parmi ces activités, laquelle me conseilleriez-vous ?",
+      "exampleZh": "这些活动里您最推荐哪一个？"
+    },
+    {
+      "id": 45,
+      "fr": "un programme",
+      "zh": "训练计划",
+      "scenario": "club",
+      "priority": 4,
+      "exampleFr": "Qu’est-ce que vous proposez comme activités ou programmes ?",
+      "exampleZh": "你们提供哪些活动或训练计划？"
+    },
+    {
+      "id": 46,
+      "fr": "un programme pour débutants",
+      "zh": "初学者计划",
+      "scenario": "club",
+      "priority": 4,
+      "exampleFr": "Ce programme est-il adapté à une débutante ?",
+      "exampleZh": "这个计划适合初学者吗？"
+    },
+    {
+      "id": 47,
+      "fr": "encadrer une séance",
+      "zh": "带领训练",
+      "scenario": "yoga",
+      "priority": 4,
+      "exampleFr": "Qui encadre les séances : un professeur ou un entraîneur ?",
+      "exampleZh": "谁来带训练，是老师还是教练？"
+    },
+    {
+      "id": 48,
+      "fr": "la sécurité des participants",
+      "zh": "参与者安全",
+      "scenario": "club",
+      "priority": 5,
+      "exampleFr": "Comment la sécurité des participants est-elle assurée ?",
+      "exampleZh": "怎么保障参与者安全？"
+    },
+    {
+      "id": 49,
+      "fr": "assurer la sécurité",
+      "zh": "保障安全",
+      "scenario": "club",
+      "priority": 5,
+      "exampleFr": "Comment la sécurité des participants est-elle assurée ?",
+      "exampleZh": "怎么保障参与者安全？"
+    },
+    {
+      "id": 50,
+      "fr": "une course à pied",
+      "zh": "跑步比赛",
+      "scenario": "race",
+      "priority": 5,
+      "exampleFr": "Je vais participer à une course à pied à Vancouver.",
+      "exampleZh": "我要参加温哥华的跑步比赛。"
+    },
+    {
+      "id": 51,
+      "fr": "participer à une course",
+      "zh": "参加比赛",
+      "scenario": "race",
+      "priority": 5,
+      "exampleFr": "Je vais participer à une course à pied à Vancouver.",
+      "exampleZh": "我要参加一场跑步比赛。"
+    },
+    {
+      "id": 52,
+      "fr": "la date de la course",
+      "zh": "比赛日期",
+      "scenario": "race",
+      "priority": 5,
+      "exampleFr": "Quand aura lieu la course exactement ?",
+      "exampleZh": "比赛具体什么时候举行？"
+    },
+    {
+      "id": 53,
+      "fr": "la durée de l’événement",
+      "zh": "赛事时长",
+      "scenario": "race",
+      "priority": 4,
+      "exampleFr": "En général, combien de temps dure l’événement ?",
+      "exampleZh": "赛事一般持续多久？"
+    },
+    {
+      "id": 54,
+      "fr": "le lieu de la course",
+      "zh": "比赛地点",
+      "scenario": "race",
+      "priority": 5,
+      "exampleFr": "Où aura lieu la course exactement ?",
+      "exampleZh": "比赛具体在哪里举行？"
+    },
+    {
+      "id": 55,
+      "fr": "un parcours",
+      "zh": "赛道 / 路线",
+      "scenario": "race",
+      "priority": 5,
+      "exampleFr": "Des points d’eau ou de ravitaillement sont-ils prévus sur le parcours ?",
+      "exampleZh": "赛道上有饮水或补给吗？"
+    },
+    {
+      "id": 56,
+      "fr": "la distance",
+      "zh": "距离",
+      "scenario": "race",
+      "priority": 5,
+      "exampleFr": "La course fait combien de kilomètres ?",
+      "exampleZh": "比赛多少公里？"
+    },
+    {
+      "id": 57,
+      "fr": "être accessible aux débutants",
+      "zh": "适合初学者",
+      "scenario": "race",
+      "priority": 5,
+      "exampleFr": "Cette course est-elle accessible aux débutants ?",
+      "exampleZh": "这场比赛适合初学者吗？"
+    },
+    {
+      "id": 58,
+      "fr": "un entraînement",
+      "zh": "训练",
+      "scenario": "race",
+      "priority": 5,
+      "exampleFr": "Comment devrais-je m’entraîner avant la course selon toi ?",
+      "exampleZh": "比赛前我该怎么训练？"
+    },
+    {
+      "id": 59,
+      "fr": "s’entraîner",
+      "zh": "训练",
+      "scenario": "race",
+      "priority": 5,
+      "exampleFr": "Comment devrais-je m’entraîner avant la course selon toi ?",
+      "exampleZh": "比赛前我该怎么训练？"
+    },
+    {
+      "id": 60,
+      "fr": "une période de préparation",
+      "zh": "准备周期",
+      "scenario": "race",
+      "priority": 4,
+      "exampleFr": "Combien de semaines de préparation me conseillerais-tu ?",
+      "exampleZh": "你建议准备几周？"
+    },
+    {
+      "id": 61,
+      "fr": "des chaussures de course",
+      "zh": "跑鞋",
+      "scenario": "race",
+      "priority": 4,
+      "exampleFr": "De quel équipement ai-je besoin pour la course ?",
+      "exampleZh": "比赛需要什么装备？"
+    },
+    {
+      "id": 62,
+      "fr": "une tenue de course",
+      "zh": "跑步服装",
+      "scenario": "race",
+      "priority": 4,
+      "exampleFr": "De quel équipement ai-je besoin pour la course ?",
+      "exampleZh": "比赛需要什么装备？"
+    },
+    {
+      "id": 63,
+      "fr": "un point d’eau",
+      "zh": "饮水点",
+      "scenario": "race",
+      "priority": 5,
+      "exampleFr": "Des points d’eau ou de ravitaillement sont-ils prévus sur le parcours ?",
+      "exampleZh": "赛道上有饮水点吗？"
+    },
+    {
+      "id": 64,
+      "fr": "un point de ravitaillement",
+      "zh": "补给站",
+      "scenario": "race",
+      "priority": 5,
+      "exampleFr": "Des points d’eau ou de ravitaillement sont-ils prévus sur le parcours ?",
+      "exampleZh": "赛道上有补给站吗？"
+    },
+    {
+      "id": 65,
+      "fr": "un service médical",
+      "zh": "医疗服务",
+      "scenario": "race",
+      "priority": 5,
+      "exampleFr": "Un service médical sera-t-il disponible en cas d’urgence ?",
+      "exampleZh": "紧急情况下有医疗服务吗？"
+    },
+    {
+      "id": 66,
+      "fr": "en cas d’urgence",
+      "zh": "紧急情况下",
+      "scenario": "race",
+      "priority": 5,
+      "exampleFr": "Un service médical sera-t-il disponible en cas d’urgence ?",
+      "exampleZh": "紧急情况下有医疗服务吗？"
+    },
+    {
+      "id": 67,
+      "fr": "une attestation",
+      "zh": "参与证明",
+      "scenario": "race",
+      "priority": 4,
+      "exampleFr": "Reçoit-on une attestation ou une médaille après la course ?",
+      "exampleZh": "比赛后会拿到证明或奖牌吗？"
+    },
+    {
+      "id": 68,
+      "fr": "une médaille",
+      "zh": "奖牌",
+      "scenario": "race",
+      "priority": 4,
+      "exampleFr": "Reçoit-on une attestation ou une médaille après la course ?",
+      "exampleZh": "比赛后会拿到证明或奖牌吗？"
+    },
+    {
+      "id": 69,
+      "fr": "faire son choix",
+      "zh": "做选择",
+      "scenario": "club",
+      "priority": 4,
+      "exampleFr": "Vous me posez des questions pour obtenir des informations et faire votre choix.",
+      "exampleZh": "您通过提问获取信息并做选择。"
+    },
+    {
+      "id": 70,
+      "fr": "un abonnement",
+      "zh": "会员订阅",
+      "scenario": "club",
+      "priority": 5,
+      "exampleFr": "Quel est le prix de l’abonnement ?",
+      "exampleZh": "会员费多少钱？"
+    },
+    {
+      "id": 71,
+      "fr": "un horaire",
+      "zh": "时间安排",
+      "scenario": "general",
+      "priority": 5,
+      "exampleFr": "Quels sont les jours et les horaires des séances de yoga ?",
+      "exampleZh": "瑜伽课哪几天、几点？"
+    },
+    {
+      "id": 72,
+      "fr": "une fréquence",
+      "zh": "频率",
+      "scenario": "general",
+      "priority": 4,
+      "exampleFr": "À quelle fréquence proposez-vous les séances ?",
+      "exampleZh": "你们多久安排一次训练？"
+    },
+    {
+      "id": 73,
+      "fr": "un lieu",
+      "zh": "地点",
+      "scenario": "general",
+      "priority": 4,
+      "exampleFr": "Où ont lieu les séances exactement ?",
+      "exampleZh": "训练具体在哪里举行？"
+    },
+    {
+      "id": 74,
+      "fr": "une formule de yoga",
+      "zh": "瑜伽形式",
+      "scenario": "yoga",
+      "priority": 4,
+      "exampleFr": "Quelles formules de yoga proposez-vous ?",
+      "exampleZh": "你们提供哪些瑜伽形式？"
+    },
+    {
+      "id": 75,
+      "fr": "une séance typique",
+      "zh": "典型一节课",
+      "scenario": "yoga",
+      "priority": 4,
+      "exampleFr": "Comment se déroule une séance typique ?",
+      "exampleZh": "一节典型训练怎么进行？"
+    },
+    {
+      "id": 76,
+      "fr": "se dérouler",
+      "zh": "进行",
+      "scenario": "yoga",
+      "priority": 4,
+      "exampleFr": "Comment se déroule une séance typique ?",
+      "exampleZh": "一节典型训练怎么进行？"
+    },
+    {
+      "id": 77,
+      "fr": "pratiquer un sport",
+      "zh": "进行体育运动",
+      "scenario": "club",
+      "priority": 5,
+      "exampleFr": "Qu’est-ce qu’on peut pratiquer comme sport dans votre club ?",
+      "exampleZh": "你们俱乐部可以做哪些运动？"
+    },
+    {
+      "id": 78,
+      "fr": "une activité adaptée",
+      "zh": "合适的活动",
+      "scenario": "club",
+      "priority": 4,
+      "exampleFr": "Cette activité est-elle adaptée à une débutante comme moi ?",
+      "exampleZh": "这项活动适合我这样的初学者吗？"
+    },
+    {
+      "id": 79,
+      "fr": "avoir droit à une réduction",
+      "zh": "有资格享受折扣",
+      "scenario": "club",
+      "priority": 4,
+      "exampleFr": "Les étudiants ont-ils droit à une réduction ?",
+      "exampleZh": "学生有优惠吗？"
+    },
+    {
+      "id": 80,
+      "fr": "payer par carte",
+      "zh": "刷卡付款",
+      "scenario": "general",
+      "priority": 4,
+      "exampleFr": "Comment peut-on payer ?",
+      "exampleZh": "怎么付款？"
+    },
+    {
+      "id": 81,
+      "fr": "payer en ligne",
+      "zh": "在线付款",
+      "scenario": "general",
+      "priority": 4,
+      "exampleFr": "Comment peut-on payer ?",
+      "exampleZh": "怎么付款？"
+    },
+    {
+      "id": 82,
+      "fr": "une salle équipée",
+      "zh": "设备齐全的健身房",
+      "scenario": "club",
+      "priority": 4,
+      "exampleFr": "Qu’est-ce qu’on trouve comme équipements dans la salle ?",
+      "exampleZh": "健身房里有哪些设备？"
+    },
+    {
+      "id": 83,
+      "fr": "un appareil de musculation",
+      "zh": "健身器械",
+      "scenario": "club",
+      "priority": 4,
+      "exampleFr": "Qu’est-ce qu’on trouve comme équipements dans la salle ?",
+      "exampleZh": "健身房里有哪些设备？"
+    },
+    {
+      "id": 84,
+      "fr": "une activité collective",
+      "zh": "集体活动",
+      "scenario": "club",
+      "priority": 4,
+      "exampleFr": "Les séances se font-elles individuellement ou en groupe ?",
+      "exampleZh": "训练是个人还是团体形式？"
+    },
+    {
+      "id": 85,
+      "fr": "une activité individuelle",
+      "zh": "个人活动",
+      "scenario": "club",
+      "priority": 4,
+      "exampleFr": "Les séances se font-elles individuellement ou en groupe ?",
+      "exampleZh": "训练是个人还是团体形式？"
+    },
+    {
+      "id": 86,
+      "fr": "commencer progressivement",
+      "zh": "循序渐进开始",
+      "scenario": "general",
+      "priority": 4,
+      "exampleFr": "Dois-je préparer quelque chose avant de commencer ?",
+      "exampleZh": "开始前需要准备什么？"
+    },
+    {
+      "id": 87,
+      "fr": "une condition physique",
+      "zh": "体能状况",
+      "scenario": "general",
+      "priority": 4,
+      "exampleFr": "Cette activité est-elle adaptée à une débutante comme moi ?",
+      "exampleZh": "这项活动适合我这样的初学者吗？"
+    },
+    {
+      "id": 88,
+      "fr": "une blessure",
+      "zh": "受伤",
+      "scenario": "race",
+      "priority": 4,
+      "exampleFr": "Un service médical sera-t-il disponible en cas d’urgence ?",
+      "exampleZh": "紧急情况下有医疗服务吗？"
+    },
+    {
+      "id": 89,
+      "fr": "un échauffement",
+      "zh": "热身",
+      "scenario": "general",
+      "priority": 4,
+      "exampleFr": "Dois-je préparer quelque chose avant de commencer ?",
+      "exampleZh": "开始前需要准备什么？"
+    },
+    {
+      "id": 90,
+      "fr": "une récupération",
+      "zh": "恢复",
+      "scenario": "general",
+      "priority": 3,
+      "exampleFr": "Comment se déroule une séance typique ?",
+      "exampleZh": "一节典型训练怎么进行？"
+    },
+    {
+      "id": 91,
+      "fr": "une inscription en ligne",
+      "zh": "线上报名",
+      "scenario": "general",
+      "priority": 4,
+      "exampleFr": "Comment se passe l’inscription ?",
+      "exampleZh": "怎么报名？"
+    },
+    {
+      "id": 92,
+      "fr": "une place disponible",
+      "zh": "可用名额",
+      "scenario": "general",
+      "priority": 4,
+      "exampleFr": "Comment se passe l’inscription ?",
+      "exampleZh": "怎么报名？"
+    },
+    {
+      "id": 93,
+      "fr": "un vestiaire",
+      "zh": "更衣室",
+      "scenario": "club",
+      "priority": 3,
+      "exampleFr": "Qu’est-ce qu’on trouve comme équipements dans la salle ?",
+      "exampleZh": "健身房里有哪些设施？"
+    },
+    {
+      "id": 94,
+      "fr": "une douche",
+      "zh": "淋浴设施",
+      "scenario": "club",
+      "priority": 3,
+      "exampleFr": "Qu’est-ce qu’on trouve comme équipements dans la salle ?",
+      "exampleZh": "健身房里有哪些设施？"
+    }
+  ],
+  "patterns": [
+    {
+      "id": 1,
+      "pattern": "Où se trouve exactement + lieu ?",
+      "zh": "……具体在哪里？",
+      "exampleFr": "Où se trouve exactement votre club sportif ?",
+      "exampleZh": "您的体育俱乐部具体在哪里？",
+      "scenario": "club"
+    },
+    {
+      "id": 2,
+      "pattern": "Quel est le moyen le plus simple pour s’y rendre ?",
+      "zh": "怎么去最方便？",
+      "exampleFr": "Quel est le moyen le plus simple pour m’y rendre ?",
+      "exampleZh": "怎么去最方便？",
+      "scenario": "club"
+    },
+    {
+      "id": 3,
+      "pattern": "À quelles heures êtes-vous ouverts ?",
+      "zh": "几点开放？",
+      "exampleFr": "À quelles heures êtes-vous ouverts ?",
+      "exampleZh": "你们几点开放？",
+      "scenario": "club"
+    },
+    {
+      "id": 4,
+      "pattern": "Et le week-end, les horaires changent-ils ?",
+      "zh": "周末时间会变吗？",
+      "exampleFr": "Et le week-end, les horaires changent-ils ?",
+      "exampleZh": "周末时间会变吗？",
+      "scenario": "club"
+    },
+    {
+      "id": 5,
+      "pattern": "Qu’est-ce que vous proposez comme + activité ?",
+      "zh": "提供哪些……？",
+      "exampleFr": "Qu’est-ce que vous proposez comme styles de danse ?",
+      "exampleZh": "你们提供哪些舞蹈类型？",
+      "scenario": "dance"
+    },
+    {
+      "id": 6,
+      "pattern": "Les cours sont-ils adaptés aux débutants ?",
+      "zh": "课程适合初学者吗？",
+      "exampleFr": "Les cours sont-ils adaptés aux débutants ?",
+      "exampleZh": "课程适合初学者吗？",
+      "scenario": "general"
+    },
+    {
+      "id": 7,
+      "pattern": "Dois-je préparer quelque chose avant de commencer ?",
+      "zh": "开始前要准备什么吗？",
+      "exampleFr": "Dois-je préparer quelque chose avant de commencer ?",
+      "exampleZh": "开始前需要准备什么吗？",
+      "scenario": "general"
+    },
+    {
+      "id": 8,
+      "pattern": "Vous proposez des cours individuels, en groupe, ou les deux ?",
+      "zh": "有个人课、团体课还是都有？",
+      "exampleFr": "Vous proposez des cours individuels, en groupe, ou les deux ?",
+      "exampleZh": "有个人课、团体课还是都有？",
+      "scenario": "general"
+    },
+    {
+      "id": 9,
+      "pattern": "Quelle est la taille des groupes ?",
+      "zh": "每组多少人？",
+      "exampleFr": "Quelle est la taille des groupes en général ?",
+      "exampleZh": "每组通常有多少人？",
+      "scenario": "general"
+    },
+    {
+      "id": 10,
+      "pattern": "Comment faut-il s’habiller ?",
+      "zh": "应该怎么穿？",
+      "exampleFr": "Comment faut-il s’habiller pour les cours ?",
+      "exampleZh": "上课应该怎么穿？",
+      "scenario": "dance"
+    },
+    {
+      "id": 11,
+      "pattern": "Dois-je apporter du matériel particulier ?",
+      "zh": "需要自带特殊装备吗？",
+      "exampleFr": "Dois-je apporter du matériel particulier ?",
+      "exampleZh": "需要自带特殊装备吗？",
+      "scenario": "general"
+    },
+    {
+      "id": 12,
+      "pattern": "Quel est le tarif des cours ?",
+      "zh": "课程多少钱？",
+      "exampleFr": "Quel est le tarif des cours ?",
+      "exampleZh": "课程多少钱？",
+      "scenario": "general"
+    },
+    {
+      "id": 13,
+      "pattern": "Puis-je faire un cours d’essai ?",
+      "zh": "可以试听吗？",
+      "exampleFr": "Puis-je faire un cours d’essai avant de m’inscrire ?",
+      "exampleZh": "报名之前可以试听吗？",
+      "scenario": "dance"
+    },
+    {
+      "id": 14,
+      "pattern": "Comment se passe l’inscription ?",
+      "zh": "怎么报名？",
+      "exampleFr": "Comment se passe l’inscription ?",
+      "exampleZh": "怎么报名？",
+      "scenario": "general"
+    },
+    {
+      "id": 15,
+      "pattern": "Quels sont les jours et les horaires ?",
+      "zh": "哪几天、几点？",
+      "exampleFr": "Quels sont les jours et les horaires des séances de yoga ?",
+      "exampleZh": "瑜伽课哪几天、几点？",
+      "scenario": "yoga"
+    },
+    {
+      "id": 16,
+      "pattern": "À quelle fréquence proposez-vous les séances ?",
+      "zh": "多久安排一次？",
+      "exampleFr": "À quelle fréquence proposez-vous les séances ?",
+      "exampleZh": "多久安排一次训练？",
+      "scenario": "yoga"
+    },
+    {
+      "id": 17,
+      "pattern": "Comment se déroule une séance typique ?",
+      "zh": "典型一节课怎么进行？",
+      "exampleFr": "Comment se déroule une séance typique ?",
+      "exampleZh": "典型一节课怎么进行？",
+      "scenario": "yoga"
+    },
+    {
+      "id": 18,
+      "pattern": "Qui encadre les séances ?",
+      "zh": "谁带训练？",
+      "exampleFr": "Qui encadre les séances : un professeur ou un entraîneur ?",
+      "exampleZh": "谁来带训练，是老师还是教练？",
+      "scenario": "yoga"
+    },
+    {
+      "id": 19,
+      "pattern": "Le matériel est-il fourni ?",
+      "zh": "器材提供吗？",
+      "exampleFr": "Le tapis de yoga est-il fourni ou dois-je apporter le mien ?",
+      "exampleZh": "瑜伽垫提供还是自带？",
+      "scenario": "yoga"
+    },
+    {
+      "id": 20,
+      "pattern": "Parmi ces activités, laquelle me conseilleriez-vous ?",
+      "zh": "这些活动里您推荐哪个？",
+      "exampleFr": "Parmi ces activités, laquelle me conseilleriez-vous ?",
+      "exampleZh": "这些活动里您推荐哪个？",
+      "scenario": "club"
+    },
+    {
+      "id": 21,
+      "pattern": "Est-il possible d’être accompagné par un entraîneur ?",
+      "zh": "可以由教练指导吗？",
+      "exampleFr": "Est-il possible d’être accompagné par un entraîneur quand on débute ?",
+      "exampleZh": "初学时可以由教练带吗？",
+      "scenario": "club"
+    },
+    {
+      "id": 22,
+      "pattern": "Comment la sécurité est-elle assurée ?",
+      "zh": "安全怎么保障？",
+      "exampleFr": "Comment la sécurité des participants est-elle assurée ?",
+      "exampleZh": "参与者安全怎么保障？",
+      "scenario": "club"
+    },
+    {
+      "id": 23,
+      "pattern": "Comment peut-on payer ?",
+      "zh": "怎么付款？",
+      "exampleFr": "Comment peut-on payer ?",
+      "exampleZh": "怎么付款？",
+      "scenario": "general"
+    },
+    {
+      "id": 24,
+      "pattern": "Quand aura lieu la course ?",
+      "zh": "比赛什么时候举行？",
+      "exampleFr": "Quand aura lieu la course exactement ?",
+      "exampleZh": "比赛具体什么时候举行？",
+      "scenario": "race"
+    },
+    {
+      "id": 25,
+      "pattern": "La course fait combien de kilomètres ?",
+      "zh": "比赛多少公里？",
+      "exampleFr": "La course fait combien de kilomètres ?",
+      "exampleZh": "比赛多少公里？",
+      "scenario": "race"
+    },
+    {
+      "id": 26,
+      "pattern": "Cette course est-elle accessible aux débutants ?",
+      "zh": "比赛适合初学者吗？",
+      "exampleFr": "Cette course est-elle accessible aux débutants ?",
+      "exampleZh": "比赛适合初学者吗？",
+      "scenario": "race"
+    },
+    {
+      "id": 27,
+      "pattern": "Combien de semaines de préparation me conseillerais-tu ?",
+      "zh": "建议准备几周？",
+      "exampleFr": "Combien de semaines de préparation me conseillerais-tu ?",
+      "exampleZh": "你建议准备几周？",
+      "scenario": "race"
+    },
+    {
+      "id": 28,
+      "pattern": "Comment devrais-je m’entraîner avant la course ?",
+      "zh": "赛前怎么训练？",
+      "exampleFr": "Comment devrais-je m’entraîner avant la course selon toi ?",
+      "exampleZh": "你建议我赛前怎么训练？",
+      "scenario": "race"
+    },
+    {
+      "id": 29,
+      "pattern": "De quel équipement ai-je besoin ?",
+      "zh": "需要什么装备？",
+      "exampleFr": "De quel équipement ai-je besoin pour la course ?",
+      "exampleZh": "比赛需要什么装备？",
+      "scenario": "race"
+    },
+    {
+      "id": 30,
+      "pattern": "Des points d’eau sont-ils prévus ?",
+      "zh": "有饮水点吗？",
+      "exampleFr": "Des points d’eau ou de ravitaillement sont-ils prévus sur le parcours ?",
+      "exampleZh": "赛道上有饮水或补给吗？",
+      "scenario": "race"
+    },
+    {
+      "id": 31,
+      "pattern": "Un service médical sera-t-il disponible ?",
+      "zh": "有医疗服务吗？",
+      "exampleFr": "Un service médical sera-t-il disponible en cas d’urgence ?",
+      "exampleZh": "紧急情况下有医疗服务吗？",
+      "scenario": "race"
+    },
+    {
+      "id": 32,
+      "pattern": "Quel est le prix de l’inscription ?",
+      "zh": "报名费多少钱？",
+      "exampleFr": "Quel est le prix de l’inscription ?",
+      "exampleZh": "报名费用是多少？",
+      "scenario": "race"
+    },
+    {
+      "id": 33,
+      "pattern": "Jusqu’à quand peut-on s’inscrire ?",
+      "zh": "报名截止到什么时候？",
+      "exampleFr": "Jusqu’à quand peut-on s’inscrire ?",
+      "exampleZh": "报名截止到什么时候？",
+      "scenario": "race"
+    },
+    {
+      "id": 34,
+      "pattern": "Reçoit-on une attestation ou une médaille ?",
+      "zh": "会拿到证明或奖牌吗？",
+      "exampleFr": "Reçoit-on une attestation ou une médaille après la course ?",
+      "exampleZh": "比赛后会拿到证明或奖牌吗？",
+      "scenario": "race"
+    }
+  ]
+}
