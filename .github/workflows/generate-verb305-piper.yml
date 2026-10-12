@@ -7,6 +7,9 @@ on:
       - 'tools/piper/verb305/generate.py'
       - '.github/workflows/generate-verb305-piper.yml'
   workflow_dispatch:
+concurrency:
+  group: verb305-piper-audio
+  cancel-in-progress: true
 permissions:
   contents: write
 jobs:
@@ -30,6 +33,10 @@ jobs:
           mkdir -p .piper-model
           curl -L --fail --retry 3 -o .piper-model/fr_FR-siwis-medium.onnx https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx
           curl -L --fail --retry 3 -o .piper-model/fr_FR-siwis-medium.onnx.json https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx.json
+      - name: Refresh to latest main before generating audio
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
       - name: Generate isolated Piper tracks
         run: python tools/piper/verb305/generate.py --model .piper-model/fr_FR-siwis-medium.onnx
       - name: Commit isolated audio
