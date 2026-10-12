@@ -20,3 +20,6 @@
 #tableAudio{width:100%;margin-top:12px;max-height:55px}
 .table-nav{margin:15px 0 0}
 @media(max-width:720px){.table-study{padding:9px}.table-study table{min-width:660px}.table-study td,.table-study th{padding:9px}.batch-audio{margin-left:4px}}
+
+/* Chinese glosses for French example sentences in both study views */
+.example-translation{font-size:.91rem;line-height:1.55;color:#626c7f;margin:5px 0 10px;overflow-wrap:anywhere}
