@@ -1,0 +1,1082 @@
+[
+ {
+  "id": 1,
+  "level": "P1",
+  "task": "T2",
+  "zh": "向某人提问",
+  "pattern": "poser une question à qn",
+  "speak": "poser une question à quelqu'un",
+  "example": "J'aimerais vous poser une question."
+ },
+ {
+  "id": 2,
+  "level": "P1",
+  "task": "T2",
+  "zh": "向某人询问某事",
+  "pattern": "demander qch à qn",
+  "speak": "demander quelque chose à quelqu'un",
+  "example": "Je voudrais vous demander quelques précisions."
+ },
+ {
+  "id": 3,
+  "level": "P1",
+  "task": "T3",
+  "zh": "找工作",
+  "pattern": "chercher un emploi",
+  "speak": "chercher un emploi",
+  "example": "Il est parfois difficile de chercher un emploi à l'étranger."
+ },
+ {
+  "id": 4,
+  "level": "P1",
+  "task": "T2",
+  "zh": "找到住房",
+  "pattern": "trouver un logement",
+  "speak": "trouver un logement",
+  "example": "Comment trouver un logement abordable ?"
+ },
+ {
+  "id": 5,
+  "level": "P1",
+  "task": "T2",
+  "zh": "选择活动",
+  "pattern": "choisir une activité",
+  "speak": "choisir une activité",
+  "example": "Quelle activité me conseillez-vous de choisir ?"
+ },
+ {
+  "id": 6,
+  "level": "P1",
+  "task": "T2",
+  "zh": "向某人提供、推荐",
+  "pattern": "proposer qch à qn",
+  "speak": "proposer quelque chose à quelqu'un",
+  "example": "Quelles activités proposez-vous aux participants ?"
+ },
+ {
+  "id": 7,
+  "level": "P1",
+  "task": "T2",
+  "zh": "组织活动",
+  "pattern": "organiser un événement",
+  "speak": "organiser un événement",
+  "example": "Qui organise cet événement ?"
+ },
+ {
+  "id": 8,
+  "level": "P1",
+  "task": "T2",
+  "zh": "预订房间",
+  "pattern": "réserver une chambre",
+  "speak": "réserver une chambre",
+  "example": "Peut-on réserver une chambre à l'avance ?"
+ },
+ {
+  "id": 9,
+  "level": "P1",
+  "task": "T2",
+  "zh": "支付费用",
+  "pattern": "payer les frais",
+  "speak": "payer les frais",
+  "example": "Quand faut-il payer les frais d'inscription ?"
+ },
+ {
+  "id": 10,
+  "level": "P1",
+  "task": "T2",
+  "zh": "获得信息",
+  "pattern": "obtenir des informations",
+  "speak": "obtenir des informations",
+  "example": "Comment puis-je obtenir plus d'informations ?"
+ },
+ {
+  "id": 11,
+  "level": "P1",
+  "task": "T3",
+  "zh": "做决定",
+  "pattern": "prendre une décision",
+  "speak": "prendre une décision",
+  "example": "Les jeunes doivent parfois prendre une décision difficile."
+ },
+ {
+  "id": 12,
+  "level": "P1",
+  "task": "T3",
+  "zh": "采取措施",
+  "pattern": "prendre des mesures",
+  "speak": "prendre des mesures",
+  "example": "Le gouvernement devrait prendre des mesures concrètes."
+ },
+ {
+  "id": 13,
+  "level": "P1",
+  "task": "T3",
+  "zh": "解决问题",
+  "pattern": "résoudre un problème",
+  "speak": "résoudre un problème",
+  "example": "Il est important de résoudre ce problème."
+ },
+ {
+  "id": 14,
+  "level": "P1",
+  "task": "T3",
+  "zh": "改善生活条件",
+  "pattern": "améliorer les conditions de vie",
+  "speak": "améliorer les conditions de vie",
+  "example": "Cette politique pourrait améliorer les conditions de vie."
+ },
+ {
+  "id": 15,
+  "level": "P1",
+  "task": "T3",
+  "zh": "促进个人发展",
+  "pattern": "favoriser le développement personnel",
+  "speak": "favoriser le développement personnel",
+  "example": "Vivre à l'étranger favorise le développement personnel."
+ },
+ {
+  "id": 16,
+  "level": "P1",
+  "task": "T3",
+  "zh": "加强社会联系",
+  "pattern": "renforcer les liens sociaux",
+  "speak": "renforcer les liens sociaux",
+  "example": "Les activités collectives renforcent les liens sociaux."
+ },
+ {
+  "id": 17,
+  "level": "P1",
+  "task": "T3",
+  "zh": "降低成本",
+  "pattern": "réduire les coûts",
+  "speak": "réduire les coûts",
+  "example": "Le télétravail peut réduire les coûts de transport."
+ },
+ {
+  "id": 18,
+  "level": "P1",
+  "task": "T3",
+  "zh": "鼓励某人做某事",
+  "pattern": "encourager qn à faire qch",
+  "speak": "encourager quelqu'un à faire quelque chose",
+  "example": "Les parents devraient encourager leurs enfants à lire."
+ },
+ {
+  "id": 19,
+  "level": "P1",
+  "task": "T3",
+  "zh": "帮助某人做某事",
+  "pattern": "aider qn à faire qch",
+  "speak": "aider quelqu'un à faire quelque chose",
+  "example": "Les associations aident les nouveaux arrivants à s'intégrer."
+ },
+ {
+  "id": 20,
+  "level": "P1",
+  "task": "T3",
+  "zh": "使某人能够做某事",
+  "pattern": "permettre à qn de faire qch",
+  "speak": "permettre à quelqu'un de faire quelque chose",
+  "example": "Internet permet aux étudiants d'apprendre à distance."
+ },
+ {
+  "id": 21,
+  "level": "P1",
+  "task": "T2",
+  "zh": "想做某事",
+  "pattern": "vouloir faire qch",
+  "speak": "vouloir faire quelque chose",
+  "example": "Je voudrais participer à cette activité."
+ },
+ {
+  "id": 22,
+  "level": "P1",
+  "task": "T2",
+  "zh": "能够做某事",
+  "pattern": "pouvoir faire qch",
+  "speak": "pouvoir faire quelque chose",
+  "example": "Puis-je annuler ma réservation ?"
+ },
+ {
+  "id": 23,
+  "level": "P1",
+  "task": "T2",
+  "zh": "必须、应当做某事",
+  "pattern": "devoir faire qch",
+  "speak": "devoir faire quelque chose",
+  "example": "Dois-je apporter une pièce d'identité ?"
+ },
+ {
+  "id": 24,
+  "level": "P1",
+  "task": "T3",
+  "zh": "更愿意做某事",
+  "pattern": "préférer faire qch",
+  "speak": "préférer faire quelque chose",
+  "example": "Je préfère communiquer en face à face."
+ },
+ {
+  "id": 25,
+  "level": "P1",
+  "task": "T2",
+  "zh": "会做某事（技能）",
+  "pattern": "savoir faire qch",
+  "speak": "savoir faire quelque chose",
+  "example": "Faut-il savoir conduire pour participer ?"
+ },
+ {
+  "id": 26,
+  "level": "P1",
+  "task": "T3",
+  "zh": "认为……",
+  "pattern": "penser que + indicatif",
+  "speak": "penser que + indicatif",
+  "example": "Je pense que cette expérience est enrichissante."
+ },
+ {
+  "id": 27,
+  "level": "P1",
+  "task": "T3",
+  "zh": "相信……",
+  "pattern": "croire que + indicatif",
+  "speak": "croire que + indicatif",
+  "example": "Je crois que l'éducation joue un rôle essentiel."
+ },
+ {
+  "id": 28,
+  "level": "P1",
+  "task": "T3",
+  "zh": "认为、判断……",
+  "pattern": "estimer que + indicatif",
+  "speak": "estimer que + indicatif",
+  "example": "J'estime que cette mesure est nécessaire."
+ },
+ {
+  "id": 29,
+  "level": "P1",
+  "task": "T2",
+  "zh": "觉得……",
+  "pattern": "trouver que + indicatif",
+  "speak": "trouver que + indicatif",
+  "example": "Je trouve que le programme est intéressant."
+ },
+ {
+  "id": 30,
+  "level": "P1",
+  "task": "T2",
+  "zh": "向某人解释某事",
+  "pattern": "expliquer qch à qn",
+  "speak": "expliquer quelque chose à quelqu'un",
+  "example": "Pourriez-vous m'expliquer les conditions ?"
+ },
+ {
+  "id": 31,
+  "level": "P1",
+  "task": "T2",
+  "zh": "与某人谈话",
+  "pattern": "parler à qn",
+  "speak": "parler à quelqu'un",
+  "example": "Puis-je parler au responsable ?"
+ },
+ {
+  "id": 32,
+  "level": "P1",
+  "task": "T2",
+  "zh": "回复某人 / 回答问题",
+  "pattern": "répondre à qn / à une question",
+  "speak": "répondre à quelqu'un / à une question",
+  "example": "Pourriez-vous répondre à cette question ?"
+ },
+ {
+  "id": 33,
+  "level": "P1",
+  "task": "T2",
+  "zh": "给某人打电话",
+  "pattern": "téléphoner à qn",
+  "speak": "téléphoner à quelqu'un",
+  "example": "Je peux vous téléphoner demain ?"
+ },
+ {
+  "id": 34,
+  "level": "P1",
+  "task": "T2",
+  "zh": "参加活动",
+  "pattern": "participer à une activité",
+  "speak": "participer à une activité",
+  "example": "Comment peut-on participer à cette activité ?"
+ },
+ {
+  "id": 35,
+  "level": "P1",
+  "task": "T2",
+  "zh": "出席会议",
+  "pattern": "assister à une réunion",
+  "speak": "assister à une réunion",
+  "example": "Faut-il s'inscrire pour assister à la réunion ?"
+ },
+ {
+  "id": 36,
+  "level": "P1",
+  "task": "T2",
+  "zh": "报名课程",
+  "pattern": "s'inscrire à un cours",
+  "speak": "s'inscrire à un cours",
+  "example": "Comment puis-je m'inscrire à ce cours ?"
+ },
+ {
+  "id": 37,
+  "level": "P1",
+  "task": "T2",
+  "zh": "对某事感兴趣",
+  "pattern": "s'intéresser à qch",
+  "speak": "s'intéresser à quelque chose",
+  "example": "Je m'intéresse beaucoup à ce programme."
+ },
+ {
+  "id": 38,
+  "level": "P1",
+  "task": "T3",
+  "zh": "需要某物",
+  "pattern": "avoir besoin de qch",
+  "speak": "avoir besoin de quelque chose",
+  "example": "Les étudiants ont besoin de soutien."
+ },
+ {
+  "id": 39,
+  "level": "P1",
+  "task": "T3",
+  "zh": "利用、享受某事",
+  "pattern": "profiter de qch",
+  "speak": "profiter de quelque chose",
+  "example": "Les jeunes peuvent profiter de nouvelles possibilités."
+ },
+ {
+  "id": 40,
+  "level": "P1",
+  "task": "T3",
+  "zh": "取决于某事",
+  "pattern": "dépendre de qch",
+  "speak": "dépendre de quelque chose",
+  "example": "Tout dépend de la situation personnelle."
+ },
+ {
+  "id": 41,
+  "level": "P2",
+  "task": "T3",
+  "zh": "关注、留意某事",
+  "pattern": "faire attention à qch",
+  "speak": "faire attention à quelque chose",
+  "example": "Il faudrait faire attention à la sécurité."
+ },
+ {
+  "id": 42,
+  "level": "P2",
+  "task": "T3",
+  "zh": "重视某事",
+  "pattern": "accorder de l'importance à qch",
+  "speak": "accorder de l'importance à quelque chose",
+  "example": "Il faut accorder davantage d'importance à l'éducation."
+ },
+ {
+  "id": 43,
+  "level": "P2",
+  "task": "T3",
+  "zh": "适应新环境",
+  "pattern": "s'adapter à un nouvel environnement",
+  "speak": "s'adapter à un nouvel environnement",
+  "example": "Les immigrants doivent s'adapter à un nouvel environnement."
+ },
+ {
+  "id": 44,
+  "level": "P2",
+  "task": "T3",
+  "zh": "习惯某事",
+  "pattern": "s'habituer à qch",
+  "speak": "s'habituer à quelque chose",
+  "example": "Il faut du temps pour s'habituer à une nouvelle culture."
+ },
+ {
+  "id": 45,
+  "level": "P2",
+  "task": "T3",
+  "zh": "面对困难",
+  "pattern": "faire face à des difficultés",
+  "speak": "faire face à des difficultés",
+  "example": "Les nouveaux arrivants font face à plusieurs difficultés."
+ },
+ {
+  "id": 46,
+  "level": "P2",
+  "task": "T3",
+  "zh": "为某事作贡献",
+  "pattern": "contribuer à qch",
+  "speak": "contribuer à quelque chose",
+  "example": "Le bénévolat contribue à la cohésion sociale."
+ },
+ {
+  "id": 47,
+  "level": "P2",
+  "task": "T3",
+  "zh": "有机会获得、使用某物",
+  "pattern": "avoir accès à qch",
+  "speak": "avoir accès à quelque chose",
+  "example": "Tout le monde devrait avoir accès à l'éducation."
+ },
+ {
+  "id": 48,
+  "level": "P2",
+  "task": "T3",
+  "zh": "求助于、采用某方式",
+  "pattern": "avoir recours à qch",
+  "speak": "avoir recours à quelque chose",
+  "example": "Certaines familles ont recours aux services publics."
+ },
+ {
+  "id": 49,
+  "level": "P2",
+  "task": "T3",
+  "zh": "放弃做某事",
+  "pattern": "renoncer à faire qch",
+  "speak": "renoncer à faire quelque chose",
+  "example": "Certains jeunes renoncent à partir à l'étranger."
+ },
+ {
+  "id": 50,
+  "level": "P2",
+  "task": "T3",
+  "zh": "成功做到某事",
+  "pattern": "réussir à faire qch",
+  "speak": "réussir à faire quelque chose",
+  "example": "On peut réussir à s'intégrer avec du temps."
+ },
+ {
+  "id": 51,
+  "level": "P2",
+  "task": "T3",
+  "zh": "学会做某事",
+  "pattern": "apprendre à faire qch",
+  "speak": "apprendre à faire quelque chose",
+  "example": "Les enfants apprennent à travailler en équipe."
+ },
+ {
+  "id": 52,
+  "level": "P2",
+  "task": "T2",
+  "zh": "开始做某事",
+  "pattern": "commencer à faire qch",
+  "speak": "commencer à faire quelque chose",
+  "example": "À quel âge peut-on commencer à apprendre le français ?"
+ },
+ {
+  "id": 53,
+  "level": "P2",
+  "task": "T3",
+  "zh": "继续做某事",
+  "pattern": "continuer à faire qch",
+  "speak": "continuer à faire quelque chose",
+  "example": "Il est essentiel de continuer à se former."
+ },
+ {
+  "id": 54,
+  "level": "P2",
+  "task": "T2",
+  "zh": "犹豫做某事",
+  "pattern": "hésiter à faire qch",
+  "speak": "hésiter à faire quelque chose",
+  "example": "N'hésitez pas à demander des renseignements."
+ },
+ {
+  "id": 55,
+  "level": "P2",
+  "task": "T2",
+  "zh": "邀请某人做某事",
+  "pattern": "inviter qn à faire qch",
+  "speak": "inviter quelqu'un à faire quelque chose",
+  "example": "Je voudrais vous inviter à cette activité."
+ },
+ {
+  "id": 56,
+  "level": "P2",
+  "task": "T2",
+  "zh": "建议某人做某事",
+  "pattern": "conseiller à qn de faire qch",
+  "speak": "conseiller à quelqu'un de faire quelque chose",
+  "example": "Que conseillez-vous aux débutants de préparer ?"
+ },
+ {
+  "id": 57,
+  "level": "P2",
+  "task": "T3",
+  "zh": "建议某人做某事",
+  "pattern": "recommander à qn de faire qch",
+  "speak": "recommander à quelqu'un de faire quelque chose",
+  "example": "Je recommande aux jeunes de voyager."
+ },
+ {
+  "id": 58,
+  "level": "P2",
+  "task": "T2",
+  "zh": "要求某人做某事",
+  "pattern": "demander à qn de faire qch",
+  "speak": "demander à quelqu'un de faire quelque chose",
+  "example": "On demande aux participants de s'inscrire."
+ },
+ {
+  "id": 59,
+  "level": "P2",
+  "task": "T3",
+  "zh": "教某人做某事",
+  "pattern": "apprendre à qn à faire qch",
+  "speak": "apprendre à quelqu'un à faire quelque chose",
+  "example": "Ce cours apprend aux enfants à coopérer."
+ },
+ {
+  "id": 60,
+  "level": "P2",
+  "task": "T3",
+  "zh": "向某人提供某物",
+  "pattern": "fournir qch à qn",
+  "speak": "fournir quelque chose à quelqu'un",
+  "example": "Le gouvernement fournit des informations aux immigrants."
+ },
+ {
+  "id": 61,
+  "level": "P2",
+  "task": "T3",
+  "zh": "给予某人某物",
+  "pattern": "offrir qch à qn",
+  "speak": "offrir quelque chose à quelqu'un",
+  "example": "Cette association offre un accompagnement aux familles."
+ },
+ {
+  "id": 62,
+  "level": "P2",
+  "task": "T2",
+  "zh": "向某人介绍某事",
+  "pattern": "présenter qch à qn",
+  "speak": "présenter quelque chose à quelqu'un",
+  "example": "Pourriez-vous me présenter le programme ?"
+ },
+ {
+  "id": 63,
+  "level": "P2",
+  "task": "T2",
+  "zh": "向某人指出、告知",
+  "pattern": "indiquer qch à qn",
+  "speak": "indiquer quelque chose à quelqu'un",
+  "example": "Pourriez-vous m'indiquer l'adresse exacte ?"
+ },
+ {
+  "id": 64,
+  "level": "P2",
+  "task": "T2",
+  "zh": "向某人展示某物",
+  "pattern": "montrer qch à qn",
+  "speak": "montrer quelque chose à quelqu'un",
+  "example": "Pouvez-vous me montrer les différentes options ?"
+ },
+ {
+  "id": 65,
+  "level": "P2",
+  "task": "T3",
+  "zh": "向某人传达、转交",
+  "pattern": "transmettre qch à qn",
+  "speak": "transmettre quelque chose à quelqu'un",
+  "example": "L'école transmet les informations aux parents."
+ },
+ {
+  "id": 66,
+  "level": "P2",
+  "task": "T2",
+  "zh": "给某人建议",
+  "pattern": "donner des conseils à qn",
+  "speak": "donner des conseils à quelqu'un",
+  "example": "Pourriez-vous me donner quelques conseils ?"
+ },
+ {
+  "id": 67,
+  "level": "P2",
+  "task": "T3",
+  "zh": "缺少时间",
+  "pattern": "manquer de temps",
+  "speak": "manquer de temps",
+  "example": "Beaucoup de parents manquent de temps."
+ },
+ {
+  "id": 68,
+  "level": "P2",
+  "task": "T3",
+  "zh": "遭受、患有某事",
+  "pattern": "souffrir de qch",
+  "speak": "souffrir de quelque chose",
+  "example": "Certaines personnes souffrent de l'isolement social."
+ },
+ {
+  "id": 69,
+  "level": "P2",
+  "task": "T2",
+  "zh": "负责、照顾",
+  "pattern": "s'occuper de qch / qn",
+  "speak": "s'occuper de quelque chose / quelqu'un",
+  "example": "Qui s'occupe de l'organisation ?"
+ },
+ {
+  "id": 70,
+  "level": "P2",
+  "task": "T3",
+  "zh": "使用某物",
+  "pattern": "se servir de qch",
+  "speak": "se servir de quelque chose",
+  "example": "Les étudiants peuvent se servir d'outils numériques."
+ },
+ {
+  "id": 71,
+  "level": "P2",
+  "task": "T2",
+  "zh": "拥有、具备某物",
+  "pattern": "disposer de qch",
+  "speak": "disposer de quelque chose",
+  "example": "Les participants disposent-ils de matériel sur place ?"
+ },
+ {
+  "id": 72,
+  "level": "P2",
+  "task": "T3",
+  "zh": "从某事中受益",
+  "pattern": "bénéficier de qch",
+  "speak": "bénéficier de quelque chose",
+  "example": "Les jeunes bénéficient de nouvelles expériences."
+ },
+ {
+  "id": 73,
+  "level": "P2",
+  "task": "T3",
+  "zh": "记得某事",
+  "pattern": "se souvenir de qch",
+  "speak": "se souvenir de quelque chose",
+  "example": "Je me souviens de cette expérience."
+ },
+ {
+  "id": 74,
+  "level": "P2",
+  "task": "T3",
+  "zh": "谈论某事",
+  "pattern": "parler de qch",
+  "speak": "parler de quelque chose",
+  "example": "J'aimerais parler de mon expérience à l'étranger."
+ },
+ {
+  "id": 75,
+  "level": "P2",
+  "task": "T3",
+  "zh": "讨论某事",
+  "pattern": "discuter de qch",
+  "speak": "discuter de quelque chose",
+  "example": "Nous devons discuter de cette question."
+ },
+ {
+  "id": 76,
+  "level": "P2",
+  "task": "T2",
+  "zh": "听说过某事",
+  "pattern": "entendre parler de qch",
+  "speak": "entendre parler de quelque chose",
+  "example": "J'en ai déjà entendu parler."
+ },
+ {
+  "id": 77,
+  "level": "P2",
+  "task": "T3",
+  "zh": "尝试做某事",
+  "pattern": "essayer de faire qch",
+  "speak": "essayer de faire quelque chose",
+  "example": "Il faut essayer de comprendre les autres."
+ },
+ {
+  "id": 78,
+  "level": "P2",
+  "task": "T3",
+  "zh": "决定做某事",
+  "pattern": "décider de faire qch",
+  "speak": "décider de faire quelque chose",
+  "example": "Certains jeunes décident de changer de carrière."
+ },
+ {
+  "id": 79,
+  "level": "P2",
+  "task": "T2",
+  "zh": "同意做某事",
+  "pattern": "accepter de faire qch",
+  "speak": "accepter de faire quelque chose",
+  "example": "Accepteriez-vous de participer à cet événement ?"
+ },
+ {
+  "id": 80,
+  "level": "P2",
+  "task": "T3",
+  "zh": "拒绝做某事",
+  "pattern": "refuser de faire qch",
+  "speak": "refuser de faire quelque chose",
+  "example": "Certains employés refusent de travailler à distance."
+ },
+ {
+  "id": 81,
+  "level": "P2",
+  "task": "T3",
+  "zh": "避免做某事",
+  "pattern": "éviter de faire qch",
+  "speak": "éviter de faire quelque chose",
+  "example": "Il faut éviter de gaspiller les ressources."
+ },
+ {
+  "id": 82,
+  "level": "P2",
+  "task": "T3",
+  "zh": "停止做某事",
+  "pattern": "arrêter de faire qch",
+  "speak": "arrêter de faire quelque chose",
+  "example": "Il est préférable d'arrêter de fumer."
+ },
+ {
+  "id": 83,
+  "level": "P2",
+  "task": "T2",
+  "zh": "完成做某事",
+  "pattern": "finir de faire qch",
+  "speak": "finir de faire quelque chose",
+  "example": "À quelle heure finit-on de travailler ?"
+ },
+ {
+  "id": 84,
+  "level": "P2",
+  "task": "T2",
+  "zh": "忘记做某事",
+  "pattern": "oublier de faire qch",
+  "speak": "oublier de faire quelque chose",
+  "example": "Il ne faut pas oublier de confirmer la réservation."
+ },
+ {
+  "id": 85,
+  "level": "P2",
+  "task": "T3",
+  "zh": "可能面临做某事的风险",
+  "pattern": "risquer de faire qch",
+  "speak": "risquer de faire quelque chose",
+  "example": "Sans préparation, on risque de rencontrer des difficultés."
+ },
+ {
+  "id": 86,
+  "level": "P2",
+  "task": "T3",
+  "zh": "想做某事",
+  "pattern": "avoir envie de faire qch",
+  "speak": "avoir envie de faire quelque chose",
+  "example": "J'ai envie de découvrir une autre culture."
+ },
+ {
+  "id": 87,
+  "level": "P2",
+  "task": "T3",
+  "zh": "害怕做某事",
+  "pattern": "avoir peur de faire qch",
+  "speak": "avoir peur de faire quelque chose",
+  "example": "Certains candidats ont peur de faire des erreurs."
+ },
+ {
+  "id": 88,
+  "level": "P2",
+  "task": "T3",
+  "zh": "不得不做某事",
+  "pattern": "être obligé de faire qch",
+  "speak": "être obligé de faire quelque chose",
+  "example": "Les familles sont parfois obligées de déménager."
+ },
+ {
+  "id": 89,
+  "level": "P2",
+  "task": "T3",
+  "zh": "有能力做某事",
+  "pattern": "être capable de faire qch",
+  "speak": "être capable de faire quelque chose",
+  "example": "Les étudiants sont capables d'apprendre en autonomie."
+ },
+ {
+  "id": 90,
+  "level": "P2",
+  "task": "T2",
+  "zh": "准备好做某事",
+  "pattern": "être prêt à faire qch",
+  "speak": "être prêt à faire quelque chose",
+  "example": "Êtes-vous prêt à commencer la formation ?"
+ },
+ {
+  "id": 91,
+  "level": "P3",
+  "task": "T3",
+  "zh": "使做某事成为可能（无人称对象）",
+  "pattern": "permettre de faire qch",
+  "speak": "permettre de faire quelque chose",
+  "example": "Cette solution permet de gagner du temps."
+ },
+ {
+  "id": 92,
+  "level": "P3",
+  "task": "T3",
+  "zh": "给某人做某事的机会",
+  "pattern": "donner à qn la possibilité de faire qch",
+  "speak": "donner à quelqu'un la possibilité de faire quelque chose",
+  "example": "Le télétravail donne aux parents la possibilité de mieux s'organiser."
+ },
+ {
+  "id": 93,
+  "level": "P3",
+  "task": "T3",
+  "zh": "给某人做某事的机会",
+  "pattern": "offrir à qn l'occasion de faire qch",
+  "speak": "offrir à quelqu'un l'occasion de faire quelque chose",
+  "example": "Les échanges offrent aux jeunes l'occasion de découvrir d'autres cultures."
+ },
+ {
+  "id": 94,
+  "level": "P3",
+  "task": "T3",
+  "zh": "促使某人做某事",
+  "pattern": "inciter qn à faire qch",
+  "speak": "inciter quelqu'un à faire quelque chose",
+  "example": "Les campagnes incitent les citoyens à recycler."
+ },
+ {
+  "id": 95,
+  "level": "P3",
+  "task": "T3",
+  "zh": "促使某人做某事",
+  "pattern": "pousser qn à faire qch",
+  "speak": "pousser quelqu'un à faire quelque chose",
+  "example": "Les difficultés financières poussent certains jeunes à travailler."
+ },
+ {
+  "id": 96,
+  "level": "P3",
+  "task": "T3",
+  "zh": "使某人逐渐做某事",
+  "pattern": "amener qn à faire qch",
+  "speak": "amener quelqu'un à faire quelque chose",
+  "example": "Cette expérience amène les étudiants à devenir plus autonomes."
+ },
+ {
+  "id": 97,
+  "level": "P3",
+  "task": "T3",
+  "zh": "导致某种结果",
+  "pattern": "conduire à qch",
+  "speak": "conduire à quelque chose",
+  "example": "L'isolement peut conduire à des problèmes de santé."
+ },
+ {
+  "id": 98,
+  "level": "P3",
+  "task": "T3",
+  "zh": "最终导致、取得某结果",
+  "pattern": "aboutir à qch",
+  "speak": "aboutir à quelque chose",
+  "example": "Ces efforts peuvent aboutir à des résultats durables."
+ },
+ {
+  "id": 99,
+  "level": "P3",
+  "task": "T3",
+  "zh": "表现为、转化为某结果",
+  "pattern": "se traduire par qch",
+  "speak": "se traduire par quelque chose",
+  "example": "Cette évolution se traduit par une baisse des coûts."
+ },
+ {
+  "id": 100,
+  "level": "P3",
+  "task": "T3",
+  "zh": "引发、造成某结果",
+  "pattern": "entraîner qch",
+  "speak": "entraîner quelque chose",
+  "example": "Le manque de sommeil entraîne des difficultés de concentration."
+ },
+ {
+  "id": 101,
+  "level": "P3",
+  "task": "T3",
+  "zh": "对某事产生影响",
+  "pattern": "avoir un impact sur qch",
+  "speak": "avoir un impact sur quelque chose",
+  "example": "Les réseaux sociaux ont un impact sur les relations humaines."
+ },
+ {
+  "id": 102,
+  "level": "P3",
+  "task": "T3",
+  "zh": "在某事中起作用",
+  "pattern": "jouer un rôle dans qch",
+  "speak": "jouer un rôle dans quelque chose",
+  "example": "L'éducation joue un rôle crucial dans l'intégration."
+ },
+ {
+  "id": 103,
+  "level": "P3",
+  "task": "T3",
+  "zh": "强调、侧重某事",
+  "pattern": "mettre l'accent sur qch",
+  "speak": "mettre l'accent sur quelque chose",
+  "example": "Il faudrait mettre l'accent sur la prévention."
+ },
+ {
+  "id": 104,
+  "level": "P3",
+  "task": "T3",
+  "zh": "建立、实施某措施",
+  "pattern": "mettre en place qch",
+  "speak": "mettre en place quelque chose",
+  "example": "Le gouvernement devrait mettre en place des mesures adaptées."
+ },
+ {
+  "id": 105,
+  "level": "P3",
+  "task": "T3",
+  "zh": "考虑到某事",
+  "pattern": "tenir compte de qch",
+  "speak": "tenir compte de quelque chose",
+  "example": "Il faut tenir compte des besoins de chacun."
+ },
+ {
+  "id": 106,
+  "level": "P3",
+  "task": "T3",
+  "zh": "把某事考虑在内",
+  "pattern": "prendre en compte qch",
+  "speak": "prendre en compte quelque chose",
+  "example": "Les entreprises doivent prendre en compte les contraintes familiales."
+ },
+ {
+  "id": 107,
+  "level": "P3",
+  "task": "T3",
+  "zh": "弥补、解决某问题",
+  "pattern": "remédier à qch",
+  "speak": "remédier à quelque chose",
+  "example": "Il faut remédier au manque de logements."
+ },
+ {
+  "id": 108,
+  "level": "P3",
+  "task": "T3",
+  "zh": "对抗、遏制某事",
+  "pattern": "lutter contre qch",
+  "speak": "lutter contre quelque chose",
+  "example": "Il faut lutter contre les discriminations."
+ },
+ {
+  "id": 109,
+  "level": "P3",
+  "task": "T3",
+  "zh": "提高某人对某事的认识",
+  "pattern": "sensibiliser qn à qch",
+  "speak": "sensibiliser quelqu'un à quelque chose",
+  "example": "Les écoles sensibilisent les enfants à l'environnement."
+ },
+ {
+  "id": 110,
+  "level": "P3",
+  "task": "T2",
+  "zh": "通知某人某事",
+  "pattern": "prévenir qn de qch",
+  "speak": "prévenir quelqu'un de quelque chose",
+  "example": "Pourriez-vous me prévenir d'un éventuel changement ?"
+ },
+ {
+  "id": 111,
+  "level": "P3",
+  "task": "T2",
+  "zh": "告知某人某事",
+  "pattern": "informer qn de qch",
+  "speak": "informer quelqu'un de quelque chose",
+  "example": "Pourriez-vous m'informer des conditions d'annulation ?"
+ },
+ {
+  "id": 112,
+  "level": "P3",
+  "task": "T3",
+  "zh": "说服某人做某事",
+  "pattern": "convaincre qn de faire qch",
+  "speak": "convaincre quelqu'un de faire quelque chose",
+  "example": "Il est difficile de convaincre tout le monde de changer ses habitudes."
+ },
+ {
+  "id": 113,
+  "level": "P3",
+  "task": "T3",
+  "zh": "阻止某人做某事",
+  "pattern": "empêcher qn de faire qch",
+  "speak": "empêcher quelqu'un de faire quelque chose",
+  "example": "Le manque de moyens empêche certains jeunes de poursuivre leurs études."
+ },
+ {
+  "id": 114,
+  "level": "P3",
+  "task": "T3",
+  "zh": "熟悉某事",
+  "pattern": "se familiariser avec qch",
+  "speak": "se familiariser avec quelque chose",
+  "example": "Les nouveaux arrivants doivent se familiariser avec les règles locales."
+ },
+ {
+  "id": 115,
+  "level": "P3",
+  "task": "T3",
+  "zh": "与某人沟通",
+  "pattern": "communiquer avec qn",
+  "speak": "communiquer avec quelqu'un",
+  "example": "Les outils numériques permettent de communiquer avec sa famille."
+ },
+ {
+  "id": 116,
+  "level": "P3",
+  "task": "T3",
+  "zh": "与某人保持联系",
+  "pattern": "rester en contact avec qn",
+  "speak": "rester en contact avec quelqu'un",
+  "example": "On peut rester en contact avec ses proches à distance."
+ },
+ {
+  "id": 117,
+  "level": "P3",
+  "task": "T3",
+  "zh": "专注于某事",
+  "pattern": "se concentrer sur qch",
+  "speak": "se concentrer sur quelque chose",
+  "example": "Les élèves doivent se concentrer sur leurs études."
+ },
+ {
+  "id": 118,
+  "level": "P3",
+  "task": "T3",
+  "zh": "依靠、以某事为基础",
+  "pattern": "s'appuyer sur qch",
+  "speak": "s'appuyer sur quelque chose",
+  "example": "Les décisions devraient s'appuyer sur des données fiables."
+ },
+ {
+  "id": 119,
+  "level": "P3",
+  "task": "T3",
+  "zh": "旨在做某事",
+  "pattern": "viser à faire qch",
+  "speak": "viser à faire quelque chose",
+  "example": "Cette politique vise à réduire les inégalités."
+ },
+ {
+  "id": 120,
+  "level": "P3",
+  "task": "T3",
+  "zh": "设法确保……",
+  "pattern": "faire en sorte que + subjonctif",
+  "speak": "faire en sorte que + subjonctif",
+  "example": "Il faut faire en sorte que chacun ait les mêmes chances."
+ }
+]
