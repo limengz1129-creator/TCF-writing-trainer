@@ -6,7 +6,8 @@
   "zh": "向某人提问",
   "pattern": "poser une question à qn",
   "speak": "poser une question à quelqu'un",
-  "example": "J'aimerais vous poser une question."
+  "example": "J'aimerais vous poser une question.",
+  "exampleZh": "我想向您提一个问题。"
  },
  {
   "id": 2,
@@ -15,7 +16,8 @@
   "zh": "向某人询问某事",
   "pattern": "demander qch à qn",
   "speak": "demander quelque chose à quelqu'un",
-  "example": "Je voudrais vous demander quelques précisions."
+  "example": "Je voudrais vous demander quelques précisions.",
+  "exampleZh": "我想向您询问一些具体情况。"
  },
  {
   "id": 3,
@@ -24,7 +26,8 @@
   "zh": "找工作",
   "pattern": "chercher un emploi",
   "speak": "chercher un emploi",
-  "example": "Il est parfois difficile de chercher un emploi à l'étranger."
+  "example": "Il est parfois difficile de chercher un emploi à l'étranger.",
+  "exampleZh": "在国外找工作有时很困难。"
  },
  {
   "id": 4,
@@ -33,7 +36,8 @@
   "zh": "找到住房",
   "pattern": "trouver un logement",
   "speak": "trouver un logement",
-  "example": "Comment trouver un logement abordable ?"
+  "example": "Comment trouver un logement abordable ?",
+  "exampleZh": "怎样才能找到价格合理的住房？"
  },
  {
   "id": 5,
@@ -42,7 +46,8 @@
   "zh": "选择活动",
   "pattern": "choisir une activité",
   "speak": "choisir une activité",
-  "example": "Quelle activité me conseillez-vous de choisir ?"
+  "example": "Quelle activité me conseillez-vous de choisir ?",
+  "exampleZh": "您建议我选择哪项活动？"
  },
  {
   "id": 6,
@@ -51,7 +56,8 @@
   "zh": "向某人提供、推荐",
   "pattern": "proposer qch à qn",
   "speak": "proposer quelque chose à quelqu'un",
-  "example": "Quelles activités proposez-vous aux participants ?"
+  "example": "Quelles activités proposez-vous aux participants ?",
+  "exampleZh": "您为参与者提供哪些活动？"
  },
  {
   "id": 7,
@@ -60,7 +66,8 @@
   "zh": "组织活动",
   "pattern": "organiser un événement",
   "speak": "organiser un événement",
-  "example": "Qui organise cet événement ?"
+  "example": "Qui organise cet événement ?",
+  "exampleZh": "谁组织这场活动？"
  },
  {
   "id": 8,
@@ -69,7 +76,8 @@
   "zh": "预订房间",
   "pattern": "réserver une chambre",
   "speak": "réserver une chambre",
-  "example": "Peut-on réserver une chambre à l'avance ?"
+  "example": "Peut-on réserver une chambre à l'avance ?",
+  "exampleZh": "可以提前预订房间吗？"
  },
  {
   "id": 9,
@@ -78,7 +86,8 @@
   "zh": "支付费用",
   "pattern": "payer les frais",
   "speak": "payer les frais",
-  "example": "Quand faut-il payer les frais d'inscription ?"
+  "example": "Quand faut-il payer les frais d'inscription ?",
+  "exampleZh": "什么时候需要支付报名费？"
  },
  {
   "id": 10,
@@ -87,7 +96,8 @@
   "zh": "获得信息",
   "pattern": "obtenir des informations",
   "speak": "obtenir des informations",
-  "example": "Comment puis-je obtenir plus d'informations ?"
+  "example": "Comment puis-je obtenir plus d'informations ?",
+  "exampleZh": "我怎样才能获取更多信息？"
  },
  {
   "id": 11,
@@ -96,7 +106,8 @@
   "zh": "做决定",
   "pattern": "prendre une décision",
   "speak": "prendre une décision",
-  "example": "Les jeunes doivent parfois prendre une décision difficile."
+  "example": "Les jeunes doivent parfois prendre une décision difficile.",
+  "exampleZh": "年轻人有时不得不做出艰难的决定。"
  },
  {
   "id": 12,
@@ -105,7 +116,8 @@
   "zh": "采取措施",
   "pattern": "prendre des mesures",
   "speak": "prendre des mesures",
-  "example": "Le gouvernement devrait prendre des mesures concrètes."
+  "example": "Le gouvernement devrait prendre des mesures concrètes.",
+  "exampleZh": "政府应该采取具体措施。"
  },
  {
   "id": 13,
@@ -114,7 +126,8 @@
   "zh": "解决问题",
   "pattern": "résoudre un problème",
   "speak": "résoudre un problème",
-  "example": "Il est important de résoudre ce problème."
+  "example": "Il est important de résoudre ce problème.",
+  "exampleZh": "解决这个问题很重要。"
  },
  {
   "id": 14,
@@ -123,7 +136,8 @@
   "zh": "改善生活条件",
   "pattern": "améliorer les conditions de vie",
   "speak": "améliorer les conditions de vie",
-  "example": "Cette politique pourrait améliorer les conditions de vie."
+  "example": "Cette politique pourrait améliorer les conditions de vie.",
+  "exampleZh": "这项政策可以改善生活条件。"
  },
  {
   "id": 15,
@@ -132,7 +146,8 @@
   "zh": "促进个人发展",
   "pattern": "favoriser le développement personnel",
   "speak": "favoriser le développement personnel",
-  "example": "Vivre à l'étranger favorise le développement personnel."
+  "example": "Vivre à l'étranger favorise le développement personnel.",
+  "exampleZh": "在国外生活有利于个人发展。"
  },
  {
   "id": 16,
@@ -141,7 +156,8 @@
   "zh": "加强社会联系",
   "pattern": "renforcer les liens sociaux",
   "speak": "renforcer les liens sociaux",
-  "example": "Les activités collectives renforcent les liens sociaux."
+  "example": "Les activités collectives renforcent les liens sociaux.",
+  "exampleZh": "集体活动能够加强社会联系。"
  },
  {
   "id": 17,
@@ -150,7 +166,8 @@
   "zh": "降低成本",
   "pattern": "réduire les coûts",
   "speak": "réduire les coûts",
-  "example": "Le télétravail peut réduire les coûts de transport."
+  "example": "Le télétravail peut réduire les coûts de transport.",
+  "exampleZh": "远程办公可以降低交通费用。"
  },
  {
   "id": 18,
@@ -159,7 +176,8 @@
   "zh": "鼓励某人做某事",
   "pattern": "encourager qn à faire qch",
   "speak": "encourager quelqu'un à faire quelque chose",
-  "example": "Les parents devraient encourager leurs enfants à lire."
+  "example": "Les parents devraient encourager leurs enfants à lire.",
+  "exampleZh": "父母应该鼓励孩子阅读。"
  },
  {
   "id": 19,
@@ -168,7 +186,8 @@
   "zh": "帮助某人做某事",
   "pattern": "aider qn à faire qch",
   "speak": "aider quelqu'un à faire quelque chose",
-  "example": "Les associations aident les nouveaux arrivants à s'intégrer."
+  "example": "Les associations aident les nouveaux arrivants à s'intégrer.",
+  "exampleZh": "这些协会帮助新移民融入社会。"
  },
  {
   "id": 20,
@@ -177,7 +196,8 @@
   "zh": "使某人能够做某事",
   "pattern": "permettre à qn de faire qch",
   "speak": "permettre à quelqu'un de faire quelque chose",
-  "example": "Internet permet aux étudiants d'apprendre à distance."
+  "example": "Internet permet aux étudiants d'apprendre à distance.",
+  "exampleZh": "互联网让学生能够远程学习。"
  },
  {
   "id": 21,
@@ -186,7 +206,8 @@
   "zh": "想做某事",
   "pattern": "vouloir faire qch",
   "speak": "vouloir faire quelque chose",
-  "example": "Je voudrais participer à cette activité."
+  "example": "Je voudrais participer à cette activité.",
+  "exampleZh": "我想参加这项活动。"
  },
  {
   "id": 22,
@@ -195,7 +216,8 @@
   "zh": "能够做某事",
   "pattern": "pouvoir faire qch",
   "speak": "pouvoir faire quelque chose",
-  "example": "Puis-je annuler ma réservation ?"
+  "example": "Puis-je annuler ma réservation ?",
+  "exampleZh": "我可以取消预订吗？"
  },
  {
   "id": 23,
@@ -204,7 +226,8 @@
   "zh": "必须、应当做某事",
   "pattern": "devoir faire qch",
   "speak": "devoir faire quelque chose",
-  "example": "Dois-je apporter une pièce d'identité ?"
+  "example": "Dois-je apporter une pièce d'identité ?",
+  "exampleZh": "我需要携带身份证件吗？"
  },
  {
   "id": 24,
@@ -213,7 +236,8 @@
   "zh": "更愿意做某事",
   "pattern": "préférer faire qch",
   "speak": "préférer faire quelque chose",
-  "example": "Je préfère communiquer en face à face."
+  "example": "Je préfère communiquer en face à face.",
+  "exampleZh": "我更喜欢面对面交流。"
  },
  {
   "id": 25,
@@ -222,7 +246,8 @@
   "zh": "会做某事（技能）",
   "pattern": "savoir faire qch",
   "speak": "savoir faire quelque chose",
-  "example": "Faut-il savoir conduire pour participer ?"
+  "example": "Faut-il savoir conduire pour participer ?",
+  "exampleZh": "参加活动必须会开车吗？"
  },
  {
   "id": 26,
@@ -231,7 +256,8 @@
   "zh": "认为……",
   "pattern": "penser que + indicatif",
   "speak": "penser que + indicatif",
-  "example": "Je pense que cette expérience est enrichissante."
+  "example": "Je pense que cette expérience est enrichissante.",
+  "exampleZh": "我认为这段经历很有收获。"
  },
  {
   "id": 27,
@@ -240,7 +266,8 @@
   "zh": "相信……",
   "pattern": "croire que + indicatif",
   "speak": "croire que + indicatif",
-  "example": "Je crois que l'éducation joue un rôle essentiel."
+  "example": "Je crois que l'éducation joue un rôle essentiel.",
+  "exampleZh": "我相信教育发挥着至关重要的作用。"
  },
  {
   "id": 28,
@@ -249,7 +276,8 @@
   "zh": "认为、判断……",
   "pattern": "estimer que + indicatif",
   "speak": "estimer que + indicatif",
-  "example": "J'estime que cette mesure est nécessaire."
+  "example": "J'estime que cette mesure est nécessaire.",
+  "exampleZh": "我认为这项措施是必要的。"
  },
  {
   "id": 29,
@@ -258,7 +286,8 @@
   "zh": "觉得……",
   "pattern": "trouver que + indicatif",
   "speak": "trouver que + indicatif",
-  "example": "Je trouve que le programme est intéressant."
+  "example": "Je trouve que le programme est intéressant.",
+  "exampleZh": "我觉得这个项目很有意思。"
  },
  {
   "id": 30,
@@ -267,7 +296,8 @@
   "zh": "向某人解释某事",
   "pattern": "expliquer qch à qn",
   "speak": "expliquer quelque chose à quelqu'un",
-  "example": "Pourriez-vous m'expliquer les conditions ?"
+  "example": "Pourriez-vous m'expliquer les conditions ?",
+  "exampleZh": "您能向我解释一下相关条件吗？"
  },
  {
   "id": 31,
@@ -276,7 +306,8 @@
   "zh": "与某人谈话",
   "pattern": "parler à qn",
   "speak": "parler à quelqu'un",
-  "example": "Puis-je parler au responsable ?"
+  "example": "Puis-je parler au responsable ?",
+  "exampleZh": "我可以和负责人谈谈吗？"
  },
  {
   "id": 32,
@@ -285,7 +316,8 @@
   "zh": "回复某人 / 回答问题",
   "pattern": "répondre à qn / à une question",
   "speak": "répondre à quelqu'un / à une question",
-  "example": "Pourriez-vous répondre à cette question ?"
+  "example": "Pourriez-vous répondre à cette question ?",
+  "exampleZh": "您能回答这个问题吗？"
  },
  {
   "id": 33,
@@ -294,7 +326,8 @@
   "zh": "给某人打电话",
   "pattern": "téléphoner à qn",
   "speak": "téléphoner à quelqu'un",
-  "example": "Je peux vous téléphoner demain ?"
+  "example": "Je peux vous téléphoner demain ?",
+  "exampleZh": "我明天可以给您打电话吗？"
  },
  {
   "id": 34,
@@ -303,7 +336,8 @@
   "zh": "参加活动",
   "pattern": "participer à une activité",
   "speak": "participer à une activité",
-  "example": "Comment peut-on participer à cette activité ?"
+  "example": "Comment peut-on participer à cette activité ?",
+  "exampleZh": "怎样才能参加这项活动？"
  },
  {
   "id": 35,
@@ -312,7 +346,8 @@
   "zh": "出席会议",
   "pattern": "assister à une réunion",
   "speak": "assister à une réunion",
-  "example": "Faut-il s'inscrire pour assister à la réunion ?"
+  "example": "Faut-il s'inscrire pour assister à la réunion ?",
+  "exampleZh": "参加会议需要报名吗？"
  },
  {
   "id": 36,
@@ -321,7 +356,8 @@
   "zh": "报名课程",
   "pattern": "s'inscrire à un cours",
   "speak": "s'inscrire à un cours",
-  "example": "Comment puis-je m'inscrire à ce cours ?"
+  "example": "Comment puis-je m'inscrire à ce cours ?",
+  "exampleZh": "我怎样才能报名这门课程？"
  },
  {
   "id": 37,
@@ -330,7 +366,8 @@
   "zh": "对某事感兴趣",
   "pattern": "s'intéresser à qch",
   "speak": "s'intéresser à quelque chose",
-  "example": "Je m'intéresse beaucoup à ce programme."
+  "example": "Je m'intéresse beaucoup à ce programme.",
+  "exampleZh": "我对这个项目很感兴趣。"
  },
  {
   "id": 38,
@@ -339,7 +376,8 @@
   "zh": "需要某物",
   "pattern": "avoir besoin de qch",
   "speak": "avoir besoin de quelque chose",
-  "example": "Les étudiants ont besoin de soutien."
+  "example": "Les étudiants ont besoin de soutien.",
+  "exampleZh": "学生需要支持。"
  },
  {
   "id": 39,
@@ -348,7 +386,8 @@
   "zh": "利用、享受某事",
   "pattern": "profiter de qch",
   "speak": "profiter de quelque chose",
-  "example": "Les jeunes peuvent profiter de nouvelles possibilités."
+  "example": "Les jeunes peuvent profiter de nouvelles possibilités.",
+  "exampleZh": "年轻人可以受益于新的机会。"
  },
  {
   "id": 40,
@@ -357,7 +396,8 @@
   "zh": "取决于某事",
   "pattern": "dépendre de qch",
   "speak": "dépendre de quelque chose",
-  "example": "Tout dépend de la situation personnelle."
+  "example": "Tout dépend de la situation personnelle.",
+  "exampleZh": "一切都取决于个人情况。"
  },
  {
   "id": 41,
@@ -366,7 +406,8 @@
   "zh": "关注、留意某事",
   "pattern": "faire attention à qch",
   "speak": "faire attention à quelque chose",
-  "example": "Il faudrait faire attention à la sécurité."
+  "example": "Il faudrait faire attention à la sécurité.",
+  "exampleZh": "应该注意安全。"
  },
  {
   "id": 42,
@@ -375,7 +416,8 @@
   "zh": "重视某事",
   "pattern": "accorder de l'importance à qch",
   "speak": "accorder de l'importance à quelque chose",
-  "example": "Il faut accorder davantage d'importance à l'éducation."
+  "example": "Il faut accorder davantage d'importance à l'éducation.",
+  "exampleZh": "应该更加重视教育。"
  },
  {
   "id": 43,
@@ -384,7 +426,8 @@
   "zh": "适应新环境",
   "pattern": "s'adapter à un nouvel environnement",
   "speak": "s'adapter à un nouvel environnement",
-  "example": "Les immigrants doivent s'adapter à un nouvel environnement."
+  "example": "Les immigrants doivent s'adapter à un nouvel environnement.",
+  "exampleZh": "移民必须适应新环境。"
  },
  {
   "id": 44,
@@ -393,7 +436,8 @@
   "zh": "习惯某事",
   "pattern": "s'habituer à qch",
   "speak": "s'habituer à quelque chose",
-  "example": "Il faut du temps pour s'habituer à une nouvelle culture."
+  "example": "Il faut du temps pour s'habituer à une nouvelle culture.",
+  "exampleZh": "适应新文化需要时间。"
  },
  {
   "id": 45,
@@ -402,7 +446,8 @@
   "zh": "面对困难",
   "pattern": "faire face à des difficultés",
   "speak": "faire face à des difficultés",
-  "example": "Les nouveaux arrivants font face à plusieurs difficultés."
+  "example": "Les nouveaux arrivants font face à plusieurs difficultés.",
+  "exampleZh": "新移民面临多种困难。"
  },
  {
   "id": 46,
@@ -411,7 +456,8 @@
   "zh": "为某事作贡献",
   "pattern": "contribuer à qch",
   "speak": "contribuer à quelque chose",
-  "example": "Le bénévolat contribue à la cohésion sociale."
+  "example": "Le bénévolat contribue à la cohésion sociale.",
+  "exampleZh": "志愿服务有助于社会凝聚力。"
  },
  {
   "id": 47,
@@ -420,7 +466,8 @@
   "zh": "有机会获得、使用某物",
   "pattern": "avoir accès à qch",
   "speak": "avoir accès à quelque chose",
-  "example": "Tout le monde devrait avoir accès à l'éducation."
+  "example": "Tout le monde devrait avoir accès à l'éducation.",
+  "exampleZh": "每个人都应该有机会接受教育。"
  },
  {
   "id": 48,
@@ -429,7 +476,8 @@
   "zh": "求助于、采用某方式",
   "pattern": "avoir recours à qch",
   "speak": "avoir recours à quelque chose",
-  "example": "Certaines familles ont recours aux services publics."
+  "example": "Certaines familles ont recours aux services publics.",
+  "exampleZh": "一些家庭会求助于公共服务。"
  },
  {
   "id": 49,
@@ -438,7 +486,8 @@
   "zh": "放弃做某事",
   "pattern": "renoncer à faire qch",
   "speak": "renoncer à faire quelque chose",
-  "example": "Certains jeunes renoncent à partir à l'étranger."
+  "example": "Certains jeunes renoncent à partir à l'étranger.",
+  "exampleZh": "一些年轻人放弃出国。"
  },
  {
   "id": 50,
@@ -447,7 +496,8 @@
   "zh": "成功做到某事",
   "pattern": "réussir à faire qch",
   "speak": "réussir à faire quelque chose",
-  "example": "On peut réussir à s'intégrer avec du temps."
+  "example": "On peut réussir à s'intégrer avec du temps.",
+  "exampleZh": "经过一段时间，人们能够成功融入新环境。"
  },
  {
   "id": 51,
@@ -456,7 +506,8 @@
   "zh": "学会做某事",
   "pattern": "apprendre à faire qch",
   "speak": "apprendre à faire quelque chose",
-  "example": "Les enfants apprennent à travailler en équipe."
+  "example": "Les enfants apprennent à travailler en équipe.",
+  "exampleZh": "孩子们学习团队合作。"
  },
  {
   "id": 52,
@@ -465,7 +516,8 @@
   "zh": "开始做某事",
   "pattern": "commencer à faire qch",
   "speak": "commencer à faire quelque chose",
-  "example": "À quel âge peut-on commencer à apprendre le français ?"
+  "example": "À quel âge peut-on commencer à apprendre le français ?",
+  "exampleZh": "从几岁开始可以学习法语？"
  },
  {
   "id": 53,
@@ -474,7 +526,8 @@
   "zh": "继续做某事",
   "pattern": "continuer à faire qch",
   "speak": "continuer à faire quelque chose",
-  "example": "Il est essentiel de continuer à se former."
+  "example": "Il est essentiel de continuer à se former.",
+  "exampleZh": "持续学习和培训至关重要。"
  },
  {
   "id": 54,
@@ -483,7 +536,8 @@
   "zh": "犹豫做某事",
   "pattern": "hésiter à faire qch",
   "speak": "hésiter à faire quelque chose",
-  "example": "N'hésitez pas à demander des renseignements."
+  "example": "N'hésitez pas à demander des renseignements.",
+  "exampleZh": "请随时询问信息，不必犹豫。"
  },
  {
   "id": 55,
@@ -492,7 +546,8 @@
   "zh": "邀请某人做某事",
   "pattern": "inviter qn à faire qch",
   "speak": "inviter quelqu'un à faire quelque chose",
-  "example": "Je voudrais vous inviter à cette activité."
+  "example": "Je voudrais vous inviter à cette activité.",
+  "exampleZh": "我想邀请您参加这项活动。"
  },
  {
   "id": 56,
@@ -501,7 +556,8 @@
   "zh": "建议某人做某事",
   "pattern": "conseiller à qn de faire qch",
   "speak": "conseiller à quelqu'un de faire quelque chose",
-  "example": "Que conseillez-vous aux débutants de préparer ?"
+  "example": "Que conseillez-vous aux débutants de préparer ?",
+  "exampleZh": "您建议初学者准备些什么？"
  },
  {
   "id": 57,
@@ -510,7 +566,8 @@
   "zh": "建议某人做某事",
   "pattern": "recommander à qn de faire qch",
   "speak": "recommander à quelqu'un de faire quelque chose",
-  "example": "Je recommande aux jeunes de voyager."
+  "example": "Je recommande aux jeunes de voyager.",
+  "exampleZh": "我建议年轻人去旅行。"
  },
  {
   "id": 58,
@@ -519,7 +576,8 @@
   "zh": "要求某人做某事",
   "pattern": "demander à qn de faire qch",
   "speak": "demander à quelqu'un de faire quelque chose",
-  "example": "On demande aux participants de s'inscrire."
+  "example": "On demande aux participants de s'inscrire.",
+  "exampleZh": "参与者被要求报名。"
  },
  {
   "id": 59,
@@ -528,7 +586,8 @@
   "zh": "教某人做某事",
   "pattern": "apprendre à qn à faire qch",
   "speak": "apprendre à quelqu'un à faire quelque chose",
-  "example": "Ce cours apprend aux enfants à coopérer."
+  "example": "Ce cours apprend aux enfants à coopérer.",
+  "exampleZh": "这门课程教孩子们如何合作。"
  },
  {
   "id": 60,
@@ -537,7 +596,8 @@
   "zh": "向某人提供某物",
   "pattern": "fournir qch à qn",
   "speak": "fournir quelque chose à quelqu'un",
-  "example": "Le gouvernement fournit des informations aux immigrants."
+  "example": "Le gouvernement fournit des informations aux immigrants.",
+  "exampleZh": "政府向移民提供信息。"
  },
  {
   "id": 61,
@@ -546,7 +606,8 @@
   "zh": "给予某人某物",
   "pattern": "offrir qch à qn",
   "speak": "offrir quelque chose à quelqu'un",
-  "example": "Cette association offre un accompagnement aux familles."
+  "example": "Cette association offre un accompagnement aux familles.",
+  "exampleZh": "这个协会为家庭提供支持。"
  },
  {
   "id": 62,
@@ -555,7 +616,8 @@
   "zh": "向某人介绍某事",
   "pattern": "présenter qch à qn",
   "speak": "présenter quelque chose à quelqu'un",
-  "example": "Pourriez-vous me présenter le programme ?"
+  "example": "Pourriez-vous me présenter le programme ?",
+  "exampleZh": "您能给我介绍一下这个项目吗？"
  },
  {
   "id": 63,
@@ -564,7 +626,8 @@
   "zh": "向某人指出、告知",
   "pattern": "indiquer qch à qn",
   "speak": "indiquer quelque chose à quelqu'un",
-  "example": "Pourriez-vous m'indiquer l'adresse exacte ?"
+  "example": "Pourriez-vous m'indiquer l'adresse exacte ?",
+  "exampleZh": "您能告诉我准确地址吗？"
  },
  {
   "id": 64,
@@ -573,7 +636,8 @@
   "zh": "向某人展示某物",
   "pattern": "montrer qch à qn",
   "speak": "montrer quelque chose à quelqu'un",
-  "example": "Pouvez-vous me montrer les différentes options ?"
+  "example": "Pouvez-vous me montrer les différentes options ?",
+  "exampleZh": "您能给我展示不同的选项吗？"
  },
  {
   "id": 65,
@@ -582,7 +646,8 @@
   "zh": "向某人传达、转交",
   "pattern": "transmettre qch à qn",
   "speak": "transmettre quelque chose à quelqu'un",
-  "example": "L'école transmet les informations aux parents."
+  "example": "L'école transmet les informations aux parents.",
+  "exampleZh": "学校向家长传递信息。"
  },
  {
   "id": 66,
@@ -591,7 +656,8 @@
   "zh": "给某人建议",
   "pattern": "donner des conseils à qn",
   "speak": "donner des conseils à quelqu'un",
-  "example": "Pourriez-vous me donner quelques conseils ?"
+  "example": "Pourriez-vous me donner quelques conseils ?",
+  "exampleZh": "您能给我一些建议吗？"
  },
  {
   "id": 67,
@@ -600,7 +666,8 @@
   "zh": "缺少时间",
   "pattern": "manquer de temps",
   "speak": "manquer de temps",
-  "example": "Beaucoup de parents manquent de temps."
+  "example": "Beaucoup de parents manquent de temps.",
+  "exampleZh": "许多家长缺少时间。"
  },
  {
   "id": 68,
@@ -609,7 +676,8 @@
   "zh": "遭受、患有某事",
   "pattern": "souffrir de qch",
   "speak": "souffrir de quelque chose",
-  "example": "Certaines personnes souffrent de l'isolement social."
+  "example": "Certaines personnes souffrent de l'isolement social.",
+  "exampleZh": "一些人遭受社会孤立的困扰。"
  },
  {
   "id": 69,
@@ -618,7 +686,8 @@
   "zh": "负责、照顾",
   "pattern": "s'occuper de qch / qn",
   "speak": "s'occuper de quelque chose / quelqu'un",
-  "example": "Qui s'occupe de l'organisation ?"
+  "example": "Qui s'occupe de l'organisation ?",
+  "exampleZh": "谁负责组织工作？"
  },
  {
   "id": 70,
@@ -627,7 +696,8 @@
   "zh": "使用某物",
   "pattern": "se servir de qch",
   "speak": "se servir de quelque chose",
-  "example": "Les étudiants peuvent se servir d'outils numériques."
+  "example": "Les étudiants peuvent se servir d'outils numériques.",
+  "exampleZh": "学生可以使用数字工具。"
  },
  {
   "id": 71,
@@ -636,7 +706,8 @@
   "zh": "拥有、具备某物",
   "pattern": "disposer de qch",
   "speak": "disposer de quelque chose",
-  "example": "Les participants disposent-ils de matériel sur place ?"
+  "example": "Les participants disposent-ils de matériel sur place ?",
+  "exampleZh": "参与者在现场有设备可用吗？"
  },
  {
   "id": 72,
@@ -645,7 +716,8 @@
   "zh": "从某事中受益",
   "pattern": "bénéficier de qch",
   "speak": "bénéficier de quelque chose",
-  "example": "Les jeunes bénéficient de nouvelles expériences."
+  "example": "Les jeunes bénéficient de nouvelles expériences.",
+  "exampleZh": "年轻人从新的经历中受益。"
  },
  {
   "id": 73,
@@ -654,7 +726,8 @@
   "zh": "记得某事",
   "pattern": "se souvenir de qch",
   "speak": "se souvenir de quelque chose",
-  "example": "Je me souviens de cette expérience."
+  "example": "Je me souviens de cette expérience.",
+  "exampleZh": "我记得这段经历。"
  },
  {
   "id": 74,
@@ -663,7 +736,8 @@
   "zh": "谈论某事",
   "pattern": "parler de qch",
   "speak": "parler de quelque chose",
-  "example": "J'aimerais parler de mon expérience à l'étranger."
+  "example": "J'aimerais parler de mon expérience à l'étranger.",
+  "exampleZh": "我想谈谈自己在国外的经历。"
  },
  {
   "id": 75,
@@ -672,7 +746,8 @@
   "zh": "讨论某事",
   "pattern": "discuter de qch",
   "speak": "discuter de quelque chose",
-  "example": "Nous devons discuter de cette question."
+  "example": "Nous devons discuter de cette question.",
+  "exampleZh": "我们必须讨论这个问题。"
  },
  {
   "id": 76,
@@ -681,7 +756,8 @@
   "zh": "听说过某事",
   "pattern": "entendre parler de qch",
   "speak": "entendre parler de quelque chose",
-  "example": "J'en ai déjà entendu parler."
+  "example": "J'en ai déjà entendu parler.",
+  "exampleZh": "我之前已经听说过这件事。"
  },
  {
   "id": 77,
@@ -690,7 +766,8 @@
   "zh": "尝试做某事",
   "pattern": "essayer de faire qch",
   "speak": "essayer de faire quelque chose",
-  "example": "Il faut essayer de comprendre les autres."
+  "example": "Il faut essayer de comprendre les autres.",
+  "exampleZh": "应该努力理解他人。"
  },
  {
   "id": 78,
@@ -699,7 +776,8 @@
   "zh": "决定做某事",
   "pattern": "décider de faire qch",
   "speak": "décider de faire quelque chose",
-  "example": "Certains jeunes décident de changer de carrière."
+  "example": "Certains jeunes décident de changer de carrière.",
+  "exampleZh": "一些年轻人决定转换职业。"
  },
  {
   "id": 79,
@@ -708,7 +786,8 @@
   "zh": "同意做某事",
   "pattern": "accepter de faire qch",
   "speak": "accepter de faire quelque chose",
-  "example": "Accepteriez-vous de participer à cet événement ?"
+  "example": "Accepteriez-vous de participer à cet événement ?",
+  "exampleZh": "您愿意参加这项活动吗？"
  },
  {
   "id": 80,
@@ -717,7 +796,8 @@
   "zh": "拒绝做某事",
   "pattern": "refuser de faire qch",
   "speak": "refuser de faire quelque chose",
-  "example": "Certains employés refusent de travailler à distance."
+  "example": "Certains employés refusent de travailler à distance.",
+  "exampleZh": "一些员工拒绝远程工作。"
  },
  {
   "id": 81,
@@ -726,7 +806,8 @@
   "zh": "避免做某事",
   "pattern": "éviter de faire qch",
   "speak": "éviter de faire quelque chose",
-  "example": "Il faut éviter de gaspiller les ressources."
+  "example": "Il faut éviter de gaspiller les ressources.",
+  "exampleZh": "应该避免浪费资源。"
  },
  {
   "id": 82,
@@ -735,7 +816,8 @@
   "zh": "停止做某事",
   "pattern": "arrêter de faire qch",
   "speak": "arrêter de faire quelque chose",
-  "example": "Il est préférable d'arrêter de fumer."
+  "example": "Il est préférable d'arrêter de fumer.",
+  "exampleZh": "最好戒烟。"
  },
  {
   "id": 83,
@@ -744,7 +826,8 @@
   "zh": "完成做某事",
   "pattern": "finir de faire qch",
   "speak": "finir de faire quelque chose",
-  "example": "À quelle heure finit-on de travailler ?"
+  "example": "À quelle heure finit-on de travailler ?",
+  "exampleZh": "几点下班？"
  },
  {
   "id": 84,
@@ -753,7 +836,8 @@
   "zh": "忘记做某事",
   "pattern": "oublier de faire qch",
   "speak": "oublier de faire quelque chose",
-  "example": "Il ne faut pas oublier de confirmer la réservation."
+  "example": "Il ne faut pas oublier de confirmer la réservation.",
+  "exampleZh": "不要忘记确认预订。"
  },
  {
   "id": 85,
@@ -762,7 +846,8 @@
   "zh": "可能面临做某事的风险",
   "pattern": "risquer de faire qch",
   "speak": "risquer de faire quelque chose",
-  "example": "Sans préparation, on risque de rencontrer des difficultés."
+  "example": "Sans préparation, on risque de rencontrer des difficultés.",
+  "exampleZh": "如果没有准备，就可能遇到困难。"
  },
  {
   "id": 86,
@@ -771,7 +856,8 @@
   "zh": "想做某事",
   "pattern": "avoir envie de faire qch",
   "speak": "avoir envie de faire quelque chose",
-  "example": "J'ai envie de découvrir une autre culture."
+  "example": "J'ai envie de découvrir une autre culture.",
+  "exampleZh": "我想了解另一种文化。"
  },
  {
   "id": 87,
@@ -780,7 +866,8 @@
   "zh": "害怕做某事",
   "pattern": "avoir peur de faire qch",
   "speak": "avoir peur de faire quelque chose",
-  "example": "Certains candidats ont peur de faire des erreurs."
+  "example": "Certains candidats ont peur de faire des erreurs.",
+  "exampleZh": "一些考生害怕犯错。"
  },
  {
   "id": 88,
@@ -789,7 +876,8 @@
   "zh": "不得不做某事",
   "pattern": "être obligé de faire qch",
   "speak": "être obligé de faire quelque chose",
-  "example": "Les familles sont parfois obligées de déménager."
+  "example": "Les familles sont parfois obligées de déménager.",
+  "exampleZh": "家庭有时不得不搬家。"
  },
  {
   "id": 89,
@@ -798,7 +886,8 @@
   "zh": "有能力做某事",
   "pattern": "être capable de faire qch",
   "speak": "être capable de faire quelque chose",
-  "example": "Les étudiants sont capables d'apprendre en autonomie."
+  "example": "Les étudiants sont capables d'apprendre en autonomie.",
+  "exampleZh": "学生能够自主学习。"
  },
  {
   "id": 90,
@@ -807,7 +896,8 @@
   "zh": "准备好做某事",
   "pattern": "être prêt à faire qch",
   "speak": "être prêt à faire quelque chose",
-  "example": "Êtes-vous prêt à commencer la formation ?"
+  "example": "Êtes-vous prêt à commencer la formation ?",
+  "exampleZh": "您准备好开始培训了吗？"
  },
  {
   "id": 91,
@@ -816,7 +906,8 @@
   "zh": "使做某事成为可能（无人称对象）",
   "pattern": "permettre de faire qch",
   "speak": "permettre de faire quelque chose",
-  "example": "Cette solution permet de gagner du temps."
+  "example": "Cette solution permet de gagner du temps.",
+  "exampleZh": "这个方案可以节省时间。"
  },
  {
   "id": 92,
@@ -825,7 +916,8 @@
   "zh": "给某人做某事的机会",
   "pattern": "donner à qn la possibilité de faire qch",
   "speak": "donner à quelqu'un la possibilité de faire quelque chose",
-  "example": "Le télétravail donne aux parents la possibilité de mieux s'organiser."
+  "example": "Le télétravail donne aux parents la possibilité de mieux s'organiser.",
+  "exampleZh": "远程办公让家长有机会更好地安排自己的生活。"
  },
  {
   "id": 93,
@@ -834,7 +926,8 @@
   "zh": "给某人做某事的机会",
   "pattern": "offrir à qn l'occasion de faire qch",
   "speak": "offrir à quelqu'un l'occasion de faire quelque chose",
-  "example": "Les échanges offrent aux jeunes l'occasion de découvrir d'autres cultures."
+  "example": "Les échanges offrent aux jeunes l'occasion de découvrir d'autres cultures.",
+  "exampleZh": "交流活动为年轻人提供了解其他文化的机会。"
  },
  {
   "id": 94,
@@ -843,7 +936,8 @@
   "zh": "促使某人做某事",
   "pattern": "inciter qn à faire qch",
   "speak": "inciter quelqu'un à faire quelque chose",
-  "example": "Les campagnes incitent les citoyens à recycler."
+  "example": "Les campagnes incitent les citoyens à recycler.",
+  "exampleZh": "宣传活动鼓励市民回收利用。"
  },
  {
   "id": 95,
@@ -852,7 +946,8 @@
   "zh": "促使某人做某事",
   "pattern": "pousser qn à faire qch",
   "speak": "pousser quelqu'un à faire quelque chose",
-  "example": "Les difficultés financières poussent certains jeunes à travailler."
+  "example": "Les difficultés financières poussent certains jeunes à travailler.",
+  "exampleZh": "经济困难迫使一些年轻人工作。"
  },
  {
   "id": 96,
@@ -861,7 +956,8 @@
   "zh": "使某人逐渐做某事",
   "pattern": "amener qn à faire qch",
   "speak": "amener quelqu'un à faire quelque chose",
-  "example": "Cette expérience amène les étudiants à devenir plus autonomes."
+  "example": "Cette expérience amène les étudiants à devenir plus autonomes.",
+  "exampleZh": "这段经历让学生变得更加独立。"
  },
  {
   "id": 97,
@@ -870,7 +966,8 @@
   "zh": "导致某种结果",
   "pattern": "conduire à qch",
   "speak": "conduire à quelque chose",
-  "example": "L'isolement peut conduire à des problèmes de santé."
+  "example": "L'isolement peut conduire à des problèmes de santé.",
+  "exampleZh": "孤独可能导致健康问题。"
  },
  {
   "id": 98,
@@ -879,7 +976,8 @@
   "zh": "最终导致、取得某结果",
   "pattern": "aboutir à qch",
   "speak": "aboutir à quelque chose",
-  "example": "Ces efforts peuvent aboutir à des résultats durables."
+  "example": "Ces efforts peuvent aboutir à des résultats durables.",
+  "exampleZh": "这些努力可以最终带来持久的成果。"
  },
  {
   "id": 99,
@@ -888,7 +986,8 @@
   "zh": "表现为、转化为某结果",
   "pattern": "se traduire par qch",
   "speak": "se traduire par quelque chose",
-  "example": "Cette évolution se traduit par une baisse des coûts."
+  "example": "Cette évolution se traduit par une baisse des coûts.",
+  "exampleZh": "这一变化表现为成本的下降。"
  },
  {
   "id": 100,
@@ -897,7 +996,8 @@
   "zh": "引发、造成某结果",
   "pattern": "entraîner qch",
   "speak": "entraîner quelque chose",
-  "example": "Le manque de sommeil entraîne des difficultés de concentration."
+  "example": "Le manque de sommeil entraîne des difficultés de concentration.",
+  "exampleZh": "睡眠不足会导致注意力难以集中。"
  },
  {
   "id": 101,
@@ -906,7 +1006,8 @@
   "zh": "对某事产生影响",
   "pattern": "avoir un impact sur qch",
   "speak": "avoir un impact sur quelque chose",
-  "example": "Les réseaux sociaux ont un impact sur les relations humaines."
+  "example": "Les réseaux sociaux ont un impact sur les relations humaines.",
+  "exampleZh": "社交网络影响人际关系。"
  },
  {
   "id": 102,
@@ -915,7 +1016,8 @@
   "zh": "在某事中起作用",
   "pattern": "jouer un rôle dans qch",
   "speak": "jouer un rôle dans quelque chose",
-  "example": "L'éducation joue un rôle crucial dans l'intégration."
+  "example": "L'éducation joue un rôle crucial dans l'intégration.",
+  "exampleZh": "教育在社会融入中发挥关键作用。"
  },
  {
   "id": 103,
@@ -924,7 +1026,8 @@
   "zh": "强调、侧重某事",
   "pattern": "mettre l'accent sur qch",
   "speak": "mettre l'accent sur quelque chose",
-  "example": "Il faudrait mettre l'accent sur la prévention."
+  "example": "Il faudrait mettre l'accent sur la prévention.",
+  "exampleZh": "应该着重强调预防。"
  },
  {
   "id": 104,
@@ -933,7 +1036,8 @@
   "zh": "建立、实施某措施",
   "pattern": "mettre en place qch",
   "speak": "mettre en place quelque chose",
-  "example": "Le gouvernement devrait mettre en place des mesures adaptées."
+  "example": "Le gouvernement devrait mettre en place des mesures adaptées.",
+  "exampleZh": "政府应该实施适当的措施。"
  },
  {
   "id": 105,
@@ -942,7 +1046,8 @@
   "zh": "考虑到某事",
   "pattern": "tenir compte de qch",
   "speak": "tenir compte de quelque chose",
-  "example": "Il faut tenir compte des besoins de chacun."
+  "example": "Il faut tenir compte des besoins de chacun.",
+  "exampleZh": "必须考虑每个人的需求。"
  },
  {
   "id": 106,
@@ -951,7 +1056,8 @@
   "zh": "把某事考虑在内",
   "pattern": "prendre en compte qch",
   "speak": "prendre en compte quelque chose",
-  "example": "Les entreprises doivent prendre en compte les contraintes familiales."
+  "example": "Les entreprises doivent prendre en compte les contraintes familiales.",
+  "exampleZh": "企业必须考虑家庭方面的限制。"
  },
  {
   "id": 107,
@@ -960,7 +1066,8 @@
   "zh": "弥补、解决某问题",
   "pattern": "remédier à qch",
   "speak": "remédier à quelque chose",
-  "example": "Il faut remédier au manque de logements."
+  "example": "Il faut remédier au manque de logements.",
+  "exampleZh": "必须解决住房短缺问题。"
  },
  {
   "id": 108,
@@ -969,7 +1076,8 @@
   "zh": "对抗、遏制某事",
   "pattern": "lutter contre qch",
   "speak": "lutter contre quelque chose",
-  "example": "Il faut lutter contre les discriminations."
+  "example": "Il faut lutter contre les discriminations.",
+  "exampleZh": "必须反对歧视。"
  },
  {
   "id": 109,
@@ -978,7 +1086,8 @@
   "zh": "提高某人对某事的认识",
   "pattern": "sensibiliser qn à qch",
   "speak": "sensibiliser quelqu'un à quelque chose",
-  "example": "Les écoles sensibilisent les enfants à l'environnement."
+  "example": "Les écoles sensibilisent les enfants à l'environnement.",
+  "exampleZh": "学校提高孩子们的环保意识。"
  },
  {
   "id": 110,
@@ -987,7 +1096,8 @@
   "zh": "通知某人某事",
   "pattern": "prévenir qn de qch",
   "speak": "prévenir quelqu'un de quelque chose",
-  "example": "Pourriez-vous me prévenir d'un éventuel changement ?"
+  "example": "Pourriez-vous me prévenir d'un éventuel changement ?",
+  "exampleZh": "您能在可能发生变化时通知我吗？"
  },
  {
   "id": 111,
@@ -996,7 +1106,8 @@
   "zh": "告知某人某事",
   "pattern": "informer qn de qch",
   "speak": "informer quelqu'un de quelque chose",
-  "example": "Pourriez-vous m'informer des conditions d'annulation ?"
+  "example": "Pourriez-vous m'informer des conditions d'annulation ?",
+  "exampleZh": "您能告知我取消预订的条件吗？"
  },
  {
   "id": 112,
@@ -1005,7 +1116,8 @@
   "zh": "说服某人做某事",
   "pattern": "convaincre qn de faire qch",
   "speak": "convaincre quelqu'un de faire quelque chose",
-  "example": "Il est difficile de convaincre tout le monde de changer ses habitudes."
+  "example": "Il est difficile de convaincre tout le monde de changer ses habitudes.",
+  "exampleZh": "说服所有人改变习惯很困难。"
  },
  {
   "id": 113,
@@ -1014,7 +1126,8 @@
   "zh": "阻止某人做某事",
   "pattern": "empêcher qn de faire qch",
   "speak": "empêcher quelqu'un de faire quelque chose",
-  "example": "Le manque de moyens empêche certains jeunes de poursuivre leurs études."
+  "example": "Le manque de moyens empêche certains jeunes de poursuivre leurs études.",
+  "exampleZh": "资源不足使一些年轻人无法继续学业。"
  },
  {
   "id": 114,
@@ -1023,7 +1136,8 @@
   "zh": "熟悉某事",
   "pattern": "se familiariser avec qch",
   "speak": "se familiariser avec quelque chose",
-  "example": "Les nouveaux arrivants doivent se familiariser avec les règles locales."
+  "example": "Les nouveaux arrivants doivent se familiariser avec les règles locales.",
+  "exampleZh": "新移民必须熟悉当地规定。"
  },
  {
   "id": 115,
@@ -1032,7 +1146,8 @@
   "zh": "与某人沟通",
   "pattern": "communiquer avec qn",
   "speak": "communiquer avec quelqu'un",
-  "example": "Les outils numériques permettent de communiquer avec sa famille."
+  "example": "Les outils numériques permettent de communiquer avec sa famille.",
+  "exampleZh": "数字工具使人们能够与家人交流。"
  },
  {
   "id": 116,
@@ -1041,7 +1156,8 @@
   "zh": "与某人保持联系",
   "pattern": "rester en contact avec qn",
   "speak": "rester en contact avec quelqu'un",
-  "example": "On peut rester en contact avec ses proches à distance."
+  "example": "On peut rester en contact avec ses proches à distance.",
+  "exampleZh": "我们可以远距离与亲友保持联系。"
  },
  {
   "id": 117,
@@ -1050,7 +1166,8 @@
   "zh": "专注于某事",
   "pattern": "se concentrer sur qch",
   "speak": "se concentrer sur quelque chose",
-  "example": "Les élèves doivent se concentrer sur leurs études."
+  "example": "Les élèves doivent se concentrer sur leurs études.",
+  "exampleZh": "学生应专注于学业。"
  },
  {
   "id": 118,
@@ -1059,7 +1176,8 @@
   "zh": "依靠、以某事为基础",
   "pattern": "s'appuyer sur qch",
   "speak": "s'appuyer sur quelque chose",
-  "example": "Les décisions devraient s'appuyer sur des données fiables."
+  "example": "Les décisions devraient s'appuyer sur des données fiables.",
+  "exampleZh": "决策应该以可靠的数据为依据。"
  },
  {
   "id": 119,
@@ -1068,7 +1186,8 @@
   "zh": "旨在做某事",
   "pattern": "viser à faire qch",
   "speak": "viser à faire quelque chose",
-  "example": "Cette politique vise à réduire les inégalités."
+  "example": "Cette politique vise à réduire les inégalités.",
+  "exampleZh": "这项政策旨在减少不平等。"
  },
  {
   "id": 120,
@@ -1077,6 +1196,7 @@
   "zh": "设法确保……",
   "pattern": "faire en sorte que + subjonctif",
   "speak": "faire en sorte que + subjonctif",
-  "example": "Il faut faire en sorte que chacun ait les mêmes chances."
+  "example": "Il faut faire en sorte que chacun ait les mêmes chances.",
+  "exampleZh": "应该设法确保每个人都有同样的机会。"
  }
 ]
