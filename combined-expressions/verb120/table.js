@@ -59,7 +59,7 @@ function render(){
   const phrase=document.createElement('span');phrase.className='batch-fr';phrase.lang='fr';phrase.textContent=x.pattern;
   const example=document.createElement('span');example.className='batch-fr';example.lang='fr';example.textContent=x.example;
   pattern.append(phrase,audioButton(spoken(x),'动词搭配'));
-  ex.append(example,audioButton(x.example,'法语例句'));
+  ex.append(example,audioButton(x.example,'法语例句'));const translation=document.createElement('div');translation.className='example-translation';translation.textContent=x.exampleZh||'';ex.append(translation);
   tr.append(zh,pattern,ex);rows.append(tr);
  }
  $('tableHeading').textContent='批量表格 · '+slice.length+' / 20 条';
