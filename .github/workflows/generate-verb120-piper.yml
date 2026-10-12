@@ -1,0 +1,47 @@
+name: Generate verb120 Piper siwis audio
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'combined-expressions/verb120/data.json'
+      - 'tools/piper/verb120/generate.py'
+      - '.github/workflows/generate-verb120-piper.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  generate:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Piper and ffmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          python -m pip install --upgrade pip
+          python -m pip install piper-tts
+      - name: Download fr_FR-siwis-medium
+        run: |
+          mkdir -p .piper-model
+          curl -L --fail --retry 3 -o .piper-model/fr_FR-siwis-medium.onnx https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx
+          curl -L --fail --retry 3 -o .piper-model/fr_FR-siwis-medium.onnx.json https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx.json
+      - name: Generate isolated verb120 audio
+        run: python tools/piper/verb120/generate.py --model .piper-model/fr_FR-siwis-medium.onnx
+      - name: Commit generated audio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add combined-expressions/verb120/piper-audio/
+          if git diff --cached --quiet; then
+            echo "Audio unchanged"
+          else
+            git commit -m "Generate Piper siwis audio for verb120 module"
+            git fetch origin main
+            git rebase origin/main
+            git push
+          fi
