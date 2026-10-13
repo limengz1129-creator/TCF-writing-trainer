@@ -1,9 +1,9 @@
-name: Generate pronominal50 preposition Piper audio
+name: Generate pronominal50 Piper audio
 on:
   push:
     branches: [main]
     paths:
-      - 'combined-expressions/verb120/preposition/data.json'
+      - 'combined-expressions/pronominal50/data.json'
       - 'tools/piper/pronominal50/generate.py'
       - '.github/workflows/generate-pronominal50-piper.yml'
   workflow_dispatch:
@@ -43,7 +43,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add combined-expressions/verb120/preposition/piper-audio/
+          git add combined-expressions/pronominal50/piper-audio/
           if git diff --cached --quiet; then
             echo "No audio changes"
           else
