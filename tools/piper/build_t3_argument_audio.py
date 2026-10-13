@@ -6,7 +6,6 @@ root=Path(__file__).resolve().parents[2]
 source=(root/"eo-tache3-corpus/argument-map.js").read_text(encoding="utf-8")
 start=source.index("const TOPICS=")+len("const TOPICS=")
 topics,_=json.JSONDecoder().raw_decode(source[start:])
-phrases=sorted({fr for topic in topics.values() for item in topic.get("MAP",{}).values() for scene in item.get("scenes",[]) for fr,zh in scene.get("words",[])})
 # The map schema may use a different key; recurse over the JSON tree to avoid omissions.
 def visit(obj):
     if isinstance(obj,dict):
@@ -36,4 +35,6 @@ with tempfile.TemporaryDirectory() as tmp:
             entries[phrase]={"pack":name,"id":key}
         (dest/name).write_text(json.dumps(pack,ensure_ascii=False),encoding="utf-8")
 (dest/"manifest.json").write_text(json.dumps({"voice":"fr_FR-siwis-medium","count":len(entries),"entries":entries},ensure_ascii=False),encoding="utf-8")
-print("Generated",len(entries),"Piper phrases")
+assert len(entries)==len(phrases)
+assert all((dest / record["pack"]).is_file() for record in entries.values())
+print("Generated and verified",len(entries),"Piper phrases")
