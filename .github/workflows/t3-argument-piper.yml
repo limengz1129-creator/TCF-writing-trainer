@@ -10,6 +10,9 @@ permissions:
 jobs:
   generate:
     runs-on: ubuntu-latest
+    concurrency:
+      group: piper-audio-main
+      cancel-in-progress: false
     timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
@@ -17,6 +20,8 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install piper-tts
+      - name: Check Piper executable
+        run: command -v piper && command -v ffmpeg
       - name: Download French siwis voice
         run: |
           curl -fL --retry 3 -o /tmp/fr_FR-siwis-medium.onnx https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx
@@ -29,6 +34,7 @@ jobs:
           git add eo-tache3-corpus/argument-audio/
           if ! git diff --cached --quiet; then
             git commit -m "Generate T3 argument vocabulary Piper recordings"
+            git pull --rebase
             git pull --rebase
             git push
           fi
