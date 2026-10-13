@@ -29,7 +29,16 @@ jobs:
       - name: Generate all 1549 vocabulary recordings
         run: python -u tools/piper/build_t3_argument_audio.py
       - name: Validate generated audio
-        run: python tools/piper/audit_all_pronunciation.py || test -f eo-tache3-corpus/argument-audio/manifest.json
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root=Path('eo-tache3-corpus/argument-audio')
+          entries=json.loads((root/'manifest.json').read_text())['entries']
+          assert len(entries)==1549, f'Expected 1549 phrases, found {len(entries)}'
+          assert all((root/e['pack']).is_file() for e in entries.values())
+          print(f'Validated {len(entries)} French Piper recordings')
+          PY
       - name: Commit audio packs
         run: |
           git config user.name github-actions[bot]
