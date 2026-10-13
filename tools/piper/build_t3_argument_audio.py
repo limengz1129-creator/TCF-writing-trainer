@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Generate exact-text Piper audio for T3 argument-map vocabulary."""
-import base64, json, subprocess, tempfile
+import base64, json, subprocess, tempfile, wave
+from piper import PiperVoice
 from pathlib import Path
 root=Path(__file__).resolve().parents[2]
 source=(root/"eo-tache3-corpus/argument-map.js").read_text(encoding="utf-8")
@@ -23,13 +24,15 @@ dest.mkdir(exist_ok=True)
 model=Path("/tmp/fr_FR-siwis-medium.onnx")
 if not model.exists(): raise SystemExit("Missing Piper model")
 entries={}
+voice=PiperVoice.load(str(model))
 with tempfile.TemporaryDirectory() as tmp:
     for offset in range(0,len(phrases),100):
         pack={}
         name=f"pack-{offset//100:03}.json"
         for i,phrase in enumerate(phrases[offset:offset+100]):
             wav=Path(tmp)/"voice.wav";mp3=Path(tmp)/"voice.mp3"
-            subprocess.run(["python","-m","piper","-m",str(model),"-f",str(wav),"--",phrase],text=True,check=True,stdout=subprocess.DEVNULL)
+            with wave.open(str(wav), "wb") as wav_file:
+                voice.synthesize_wav(phrase, wav_file)
             subprocess.run(["ffmpeg","-nostdin","-hide_banner","-loglevel","error","-y","-i",str(wav),"-codec:a","libmp3lame","-q:a","5",str(mp3)],check=True)
             key=str(i);pack[key]={"text":phrase,"audio":base64.b64encode(mp3.read_bytes()).decode("ascii")}
             entries[phrase]={"pack":name,"id":key}
