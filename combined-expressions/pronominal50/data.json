@@ -1,0 +1,502 @@
+[
+ {
+  "id": 1,
+  "level": "P1",
+  "task": "T3",
+  "pattern": "s'adapter à qch",
+  "zh": "适应某事",
+  "example": "Les nouveaux arrivants doivent s'adapter à un nouvel environnement.",
+  "exampleZh": "新移民必须适应新环境。",
+  "speak": "s'adapter à quelque chose"
+ },
+ {
+  "id": 2,
+  "level": "P1",
+  "task": "T2",
+  "pattern": "s'inscrire à qch",
+  "zh": "报名参加某事",
+  "example": "Comment puis-je m'inscrire à cette activité ?",
+  "exampleZh": "我怎样报名这项活动？",
+  "speak": "s'inscrire à quelque chose"
+ },
+ {
+  "id": 3,
+  "level": "P1",
+  "task": "T3",
+  "pattern": "s'intégrer dans qch",
+  "zh": "融入某个环境",
+  "example": "Il faut du temps pour s'intégrer dans une nouvelle société.",
+  "exampleZh": "融入一个新的社会需要时间。",
+  "speak": "s'intégrer dans quelque chose"
+ },
+ {
+  "id": 4,
+  "level": "P1",
+  "task": "T2",
+  "pattern": "se renseigner sur qch",
+  "zh": "了解某事的信息",
+  "example": "Je voudrais me renseigner sur les tarifs.",
+  "exampleZh": "我想了解一下收费标准。",
+  "speak": "se renseigner sur quelque chose"
+ },
+ {
+  "id": 5,
+  "level": "P1",
+  "task": "T2",
+  "pattern": "se rendre à un lieu",
+  "zh": "前往某地",
+  "example": "Comment peut-on se rendre au centre-ville ?",
+  "exampleZh": "怎样前往市中心？",
+  "speak": "se rendre à un lieu"
+ },
+ {
+  "id": 6,
+  "level": "P1",
+  "task": "T3",
+  "pattern": "se sentir à l'aise",
+  "zh": "感到自在",
+  "example": "Les jeunes doivent pouvoir se sentir à l'aise à l'école.",
+  "exampleZh": "年轻人应该能在学校感到自在。",
+  "speak": "se sentir à l'aise"
+ },
+ {
+  "id": 7,
+  "level": "P1",
+  "task": "T3",
+  "pattern": "se concentrer sur qch",
+  "zh": "专注于某事",
+  "example": "Les étudiants doivent se concentrer sur leurs études.",
+  "exampleZh": "学生应专注于学业。",
+  "speak": "se concentrer sur quelque chose"
+ },
+ {
+  "id": 8,
+  "level": "P1",
+  "task": "T3",
+  "pattern": "s'intéresser à qch",
+  "zh": "对某事感兴趣",
+  "example": "De plus en plus de jeunes s'intéressent à l'écologie.",
+  "exampleZh": "越来越多的年轻人对环保感兴趣。",
+  "speak": "s'intéresser à quelque chose"
+ },
+ {
+  "id": 9,
+  "level": "P1",
+  "task": "T3",
+  "pattern": "s'occuper de qn / qch",
+  "zh": "照顾某人或负责某事",
+  "example": "Les parents doivent s'occuper de leurs enfants.",
+  "exampleZh": "父母需要照顾孩子。",
+  "speak": "s'occuper de quelqu'un ou quelque chose"
+ },
+ {
+  "id": 10,
+  "level": "P1",
+  "task": "T3",
+  "pattern": "se souvenir de qch",
+  "zh": "记得某事",
+  "example": "Je me souviens de ma première expérience à l'étranger.",
+  "exampleZh": "我记得第一次出国的经历。",
+  "speak": "se souvenir de quelque chose"
+ },
+ {
+  "id": 11,
+  "level": "P1",
+  "task": "T3",
+  "pattern": "se rendre compte de qch",
+  "zh": "意识到某事",
+  "example": "Beaucoup de jeunes se rendent compte de l'importance des langues.",
+  "exampleZh": "许多年轻人意识到语言的重要性。",
+  "speak": "se rendre compte de quelque chose"
+ },
+ {
+  "id": 12,
+  "level": "P1",
+  "task": "T3",
+  "pattern": "s'habituer à qch",
+  "zh": "习惯某事",
+  "example": "Il faut du temps pour s'habituer à un autre mode de vie.",
+  "exampleZh": "适应另一种生活方式需要时间。",
+  "speak": "s'habituer à quelque chose"
+ },
+ {
+  "id": 13,
+  "level": "P1",
+  "task": "T3",
+  "pattern": "se préparer à qch",
+  "zh": "为某事做准备",
+  "example": "Les candidats se préparent à leur examen de français.",
+  "exampleZh": "考生们正在准备法语考试。",
+  "speak": "se préparer à quelque chose"
+ },
+ {
+  "id": 14,
+  "level": "P1",
+  "task": "T2",
+  "pattern": "se demander si + proposition",
+  "zh": "想知道是否",
+  "example": "Je me demande si cette activité est adaptée aux débutants.",
+  "exampleZh": "我想知道这项活动是否适合初学者。",
+  "speak": "se demander si"
+ },
+ {
+  "id": 15,
+  "level": "P1",
+  "task": "T3",
+  "pattern": "se développer",
+  "zh": "发展",
+  "example": "Les compétences linguistiques se développent avec la pratique.",
+  "exampleZh": "语言能力随着练习而提高。",
+  "speak": "se développer"
+ },
+ {
+  "id": 16,
+  "level": "P1",
+  "task": "T3",
+  "pattern": "se retrouver",
+  "zh": "再次相聚或发现自己身处某处",
+  "example": "Les familles peuvent se retrouver le week-end.",
+  "exampleZh": "家庭可以在周末团聚。",
+  "speak": "se retrouver"
+ },
+ {
+  "id": 17,
+  "level": "P1",
+  "task": "T3",
+  "pattern": "s'entraider",
+  "zh": "互相帮助",
+  "example": "Les étudiants peuvent s'entraider pendant leur formation.",
+  "exampleZh": "学生可以在培训期间互相帮助。",
+  "speak": "s'entraider"
+ },
+ {
+  "id": 18,
+  "level": "P1",
+  "task": "T3",
+  "pattern": "se rencontrer",
+  "zh": "见面相遇",
+  "example": "Les habitants se rencontrent lors des activités du quartier.",
+  "exampleZh": "居民们在社区活动中相遇。",
+  "speak": "se rencontrer"
+ },
+ {
+  "id": 19,
+  "level": "P1",
+  "task": "T3",
+  "pattern": "se connaître",
+  "zh": "互相认识",
+  "example": "Les élèves apprennent à se connaître grâce aux projets collectifs.",
+  "exampleZh": "学生通过集体项目逐渐彼此了解。",
+  "speak": "se connaître"
+ },
+ {
+  "id": 20,
+  "level": "P1",
+  "task": "T2",
+  "pattern": "se déplacer en + transport",
+  "zh": "乘某种交通工具出行",
+  "example": "Peut-on se déplacer en bus dans cette ville ?",
+  "exampleZh": "在这座城市可以乘公交出行吗？",
+  "speak": "se déplacer en"
+ },
+ {
+  "id": 21,
+  "level": "P2",
+  "task": "T3",
+  "pattern": "se familiariser avec qch",
+  "zh": "熟悉某事",
+  "example": "Les immigrants doivent se familiariser avec les règles locales.",
+  "exampleZh": "移民必须熟悉当地规则。",
+  "speak": "se familiariser avec quelque chose"
+ },
+ {
+  "id": 22,
+  "level": "P2",
+  "task": "T3",
+  "pattern": "s'engager dans qch",
+  "zh": "投身某事",
+  "example": "Les jeunes peuvent s'engager dans des projets associatifs.",
+  "exampleZh": "年轻人可以参与协会项目。",
+  "speak": "s'engager dans quelque chose"
+ },
+ {
+  "id": 23,
+  "level": "P2",
+  "task": "T3",
+  "pattern": "s'investir dans qch",
+  "zh": "积极投入某事",
+  "example": "Les parents devraient s'investir dans l'éducation de leurs enfants.",
+  "exampleZh": "父母应该积极参与孩子的教育。",
+  "speak": "s'investir dans quelque chose"
+ },
+ {
+  "id": 24,
+  "level": "P2",
+  "task": "T3",
+  "pattern": "se comparer à qn",
+  "zh": "拿自己与某人比较",
+  "example": "Certains jeunes se comparent constamment à leurs camarades.",
+  "exampleZh": "有些年轻人总拿自己与同学比较。",
+  "speak": "se comparer à quelqu'un"
+ },
+ {
+  "id": 25,
+  "level": "P2",
+  "task": "T3",
+  "pattern": "se passer de qch",
+  "zh": "没有某事物也能应付",
+  "example": "Il est difficile de se passer d'Internet aujourd'hui.",
+  "exampleZh": "如今很难离开互联网。",
+  "speak": "se passer de quelque chose"
+ },
+ {
+  "id": 26,
+  "level": "P2",
+  "task": "T3",
+  "pattern": "se servir de qch",
+  "zh": "使用某事物",
+  "example": "On peut se servir des outils numériques pour apprendre.",
+  "exampleZh": "可以使用数字工具来学习。",
+  "speak": "se servir de quelque chose"
+ },
+ {
+  "id": 27,
+  "level": "P2",
+  "task": "T3",
+  "pattern": "se méfier de qch",
+  "zh": "提防某事",
+  "example": "Il faut se méfier des fausses informations en ligne.",
+  "exampleZh": "必须提防网上的虚假信息。",
+  "speak": "se méfier de quelque chose"
+ },
+ {
+  "id": 28,
+  "level": "P2",
+  "task": "T3",
+  "pattern": "se fier à qn / qch",
+  "zh": "信任或依赖",
+  "example": "Les consommateurs peuvent se fier aux avis vérifiés.",
+  "exampleZh": "消费者可以参考经过核实的评价。",
+  "speak": "se fier à quelqu'un ou quelque chose"
+ },
+ {
+  "id": 29,
+  "level": "P2",
+  "task": "T3",
+  "pattern": "se battre pour qch",
+  "zh": "为某事奋斗",
+  "example": "Certaines associations se battent pour l'égalité des chances.",
+  "exampleZh": "一些协会为机会平等而奋斗。",
+  "speak": "se battre pour quelque chose"
+ },
+ {
+  "id": 30,
+  "level": "P2",
+  "task": "T3",
+  "pattern": "se protéger contre qch",
+  "zh": "保护自己免受某事影响",
+  "example": "Il faut se protéger contre les risques liés à Internet.",
+  "exampleZh": "应保护自己免受网络风险影响。",
+  "speak": "se protéger contre quelque chose"
+ },
+ {
+  "id": 31,
+  "level": "P2",
+  "task": "T3",
+  "pattern": "s'améliorer",
+  "zh": "进步改善",
+  "example": "Le niveau de français s'améliore avec la pratique régulière.",
+  "exampleZh": "经常练习能提高法语水平。",
+  "speak": "s'améliorer"
+ },
+ {
+  "id": 32,
+  "level": "P2",
+  "task": "T3",
+  "pattern": "s'épanouir",
+  "zh": "充分发展或获得成就感",
+  "example": "Les enfants ont besoin de temps libre pour s'épanouir.",
+  "exampleZh": "孩子需要空闲时间来全面发展。",
+  "speak": "s'épanouir"
+ },
+ {
+  "id": 33,
+  "level": "P2",
+  "task": "T3",
+  "pattern": "se reconvertir dans qch",
+  "zh": "转行到某领域",
+  "example": "Certains salariés choisissent de se reconvertir dans l'informatique.",
+  "exampleZh": "一些员工选择转行进入信息技术行业。",
+  "speak": "se reconvertir dans quelque chose"
+ },
+ {
+  "id": 34,
+  "level": "P2",
+  "task": "T3",
+  "pattern": "se lancer dans qch",
+  "zh": "开始投身某事",
+  "example": "De nombreux jeunes hésitent à se lancer dans l'entrepreneuriat.",
+  "exampleZh": "许多年轻人犹豫是否创业。",
+  "speak": "se lancer dans quelque chose"
+ },
+ {
+  "id": 35,
+  "level": "P2",
+  "task": "T2",
+  "pattern": "se joindre à qn / qch",
+  "zh": "加入某人或某活动",
+  "example": "Puis-je me joindre à votre groupe ?",
+  "exampleZh": "我可以加入你们的小组吗？",
+  "speak": "se joindre à quelqu'un ou quelque chose"
+ },
+ {
+  "id": 36,
+  "level": "P2",
+  "task": "T3",
+  "pattern": "se réunir",
+  "zh": "聚集开会",
+  "example": "Les habitants se réunissent pour discuter du projet.",
+  "exampleZh": "居民们聚在一起讨论这个项目。",
+  "speak": "se réunir"
+ },
+ {
+  "id": 37,
+  "level": "P2",
+  "task": "T3",
+  "pattern": "s'entendre avec qn",
+  "zh": "与某人相处融洽",
+  "example": "Il est important de bien s'entendre avec ses collègues.",
+  "exampleZh": "与同事相处融洽很重要。",
+  "speak": "s'entendre avec quelqu'un"
+ },
+ {
+  "id": 38,
+  "level": "P2",
+  "task": "T3",
+  "pattern": "se disputer avec qn",
+  "zh": "与某人争吵",
+  "example": "Les enfants peuvent parfois se disputer avec leurs camarades.",
+  "exampleZh": "孩子有时会和同学争吵。",
+  "speak": "se disputer avec quelqu'un"
+ },
+ {
+  "id": 39,
+  "level": "P2",
+  "task": "T2",
+  "pattern": "se présenter",
+  "zh": "自我介绍或到场",
+  "example": "Dois-je me présenter à l'accueil avant le cours ?",
+  "exampleZh": "上课前我需要到接待处报到吗？",
+  "speak": "se présenter"
+ },
+ {
+  "id": 40,
+  "level": "P2",
+  "task": "T3",
+  "pattern": "se détendre",
+  "zh": "放松",
+  "example": "Faire du sport permet de se détendre après le travail.",
+  "exampleZh": "运动能让人在工作后放松。",
+  "speak": "se détendre"
+ },
+ {
+  "id": 41,
+  "level": "P3",
+  "task": "T3",
+  "pattern": "se consacrer à qch",
+  "zh": "致力于某事",
+  "example": "Les bénévoles se consacrent à l'aide aux personnes âgées.",
+  "exampleZh": "志愿者致力于帮助老年人。",
+  "speak": "se consacrer à quelque chose"
+ },
+ {
+  "id": 42,
+  "level": "P3",
+  "task": "T3",
+  "pattern": "se préoccuper de qch",
+  "zh": "关心或担忧某事",
+  "example": "Les citoyens se préoccupent de plus en plus de l'environnement.",
+  "exampleZh": "市民越来越关心环境。",
+  "speak": "se préoccuper de quelque chose"
+ },
+ {
+  "id": 43,
+  "level": "P3",
+  "task": "T3",
+  "pattern": "s'interroger sur qch",
+  "zh": "思考质疑某事",
+  "example": "Il faut s'interroger sur les effets des réseaux sociaux.",
+  "exampleZh": "应该反思社交媒体的影响。",
+  "speak": "s'interroger sur quelque chose"
+ },
+ {
+  "id": 44,
+  "level": "P3",
+  "task": "T3",
+  "pattern": "se mobiliser pour qch",
+  "zh": "动员起来支持某事",
+  "example": "Les habitants se mobilisent pour protéger leur quartier.",
+  "exampleZh": "居民们动员起来保护社区。",
+  "speak": "se mobiliser pour quelque chose"
+ },
+ {
+  "id": 45,
+  "level": "P3",
+  "task": "T3",
+  "pattern": "se heurter à qch",
+  "zh": "遭遇障碍",
+  "example": "Les nouveaux arrivants se heurtent parfois à des obstacles administratifs.",
+  "exampleZh": "新移民有时会遇到行政手续方面的障碍。",
+  "speak": "se heurter à quelque chose"
+ },
+ {
+  "id": 46,
+  "level": "P3",
+  "task": "T3",
+  "pattern": "se traduire par qch",
+  "zh": "表现为或导致某结果",
+  "example": "Cette politique se traduit par une réduction des coûts.",
+  "exampleZh": "这项政策带来了成本下降。",
+  "speak": "se traduire par quelque chose"
+ },
+ {
+  "id": 47,
+  "level": "P3",
+  "task": "T3",
+  "pattern": "se distinguer de qch",
+  "zh": "与某事不同",
+  "example": "Ce système se distingue de celui des autres pays.",
+  "exampleZh": "这个制度与其他国家的不同。",
+  "speak": "se distinguer de quelque chose"
+ },
+ {
+  "id": 48,
+  "level": "P3",
+  "task": "T3",
+  "pattern": "se remettre en question",
+  "zh": "反思自己",
+  "example": "Les employés doivent parfois se remettre en question pour progresser.",
+  "exampleZh": "员工有时需要自我反思才能进步。",
+  "speak": "se remettre en question"
+ },
+ {
+  "id": 49,
+  "level": "P3",
+  "task": "T3",
+  "pattern": "se rendre utile",
+  "zh": "让自己发挥作用",
+  "example": "Le bénévolat permet aux jeunes de se rendre utiles.",
+  "exampleZh": "志愿工作让年轻人能够发挥作用。",
+  "speak": "se rendre utile"
+ },
+ {
+  "id": 50,
+  "level": "P3",
+  "task": "T3",
+  "pattern": "se fixer un objectif",
+  "zh": "给自己设定目标",
+  "example": "Pour réussir, il vaut mieux se fixer un objectif réaliste.",
+  "exampleZh": "为了成功，最好给自己设定现实的目标。",
+  "speak": "se fixer un objectif"
+ }
+]
