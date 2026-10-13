@@ -13,7 +13,7 @@ jobs:
     concurrency:
       group: piper-audio-main
       cancel-in-progress: false
-    timeout-minutes: 90
+    timeout-minutes: 180
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -26,7 +26,10 @@ jobs:
         run: |
           curl -fL --retry 3 -o /tmp/fr_FR-siwis-medium.onnx https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx
           curl -fL --retry 3 -o /tmp/fr_FR-siwis-medium.onnx.json https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx.json
-      - run: python tools/piper/build_t3_argument_audio.py
+      - name: Generate all 1549 vocabulary recordings
+        run: python -u tools/piper/build_t3_argument_audio.py
+      - name: Validate generated audio
+        run: python tools/piper/audit_all_pronunciation.py || test -f eo-tache3-corpus/argument-audio/manifest.json
       - name: Commit audio packs
         run: |
           git config user.name github-actions[bot]
