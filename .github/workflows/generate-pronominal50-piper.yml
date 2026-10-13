@@ -1,0 +1,54 @@
+name: Generate pronominal50 preposition Piper audio
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'combined-expressions/verb120/preposition/data.json'
+      - 'tools/piper/pronominal50/generate.py'
+      - '.github/workflows/generate-pronominal50-piper.yml'
+  workflow_dispatch:
+concurrency:
+  group: pronominal50-piper-audio
+  cancel-in-progress: true
+permissions:
+  contents: write
+jobs:
+  generate:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Piper and ffmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          python -m pip install --upgrade pip
+          python -m pip install piper-tts
+      - name: Download fr_FR-siwis-medium
+        run: |
+          mkdir -p .piper-model
+          curl -L --fail --retry 3 -o .piper-model/fr_FR-siwis-medium.onnx https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx
+          curl -L --fail --retry 3 -o .piper-model/fr_FR-siwis-medium.onnx.json https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx.json
+      - name: Refresh to latest main before generating audio
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+      - name: Generate isolated Piper tracks
+        run: python tools/piper/pronominal50/generate.py --model .piper-model/fr_FR-siwis-medium.onnx
+      - name: Commit isolated audio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add combined-expressions/verb120/preposition/piper-audio/
+          if git diff --cached --quiet; then
+            echo "No audio changes"
+          else
+            git commit -m "Generate Piper siwis audio for pronominal50 preposition drills"
+            git fetch origin main
+            git rebase origin/main
+            git push
+          fi
