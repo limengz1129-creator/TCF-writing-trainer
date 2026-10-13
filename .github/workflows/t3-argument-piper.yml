@@ -11,7 +11,7 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     concurrency:
-      group: piper-audio-main
+      group: piper-t3-argument-main
       cancel-in-progress: false
     timeout-minutes: 180
     steps:
