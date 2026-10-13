@@ -4,15 +4,29 @@
   const $=id=>document.getElementById(id);
   const topicData=()=>TOPICS[$('topic')?.value]||TOPICS['旅行与移民'];
 
-  function speakArgumentPhrase(text,button){
-    if(!('speechSynthesis' in window)){button.textContent='不支持';button.disabled=true;return;}
-    window.speechSynthesis.cancel();
-    const u=new SpeechSynthesisUtterance(text);u.lang='fr-FR';u.rate=.86;u.pitch=1;
-    const voices=window.speechSynthesis.getVoices();
-    u.voice=voices.find(v=>/^fr-FR$/i.test(v.lang))||voices.find(v=>/^fr/i.test(v.lang))||null;
-    const oldText=button.textContent;button.textContent='🔊';button.disabled=true;button.classList.add('playing');
-    const done=()=>{button.textContent=oldText;button.disabled=false;button.classList.remove('playing');};
-    u.onend=done;u.onerror=done;window.speechSynthesis.speak(u);
+  // Only play pre-generated French Piper siwis recordings; never use browser speechSynthesis.
+  let argumentAudioManifest=null, argumentAudioManifestPromise=null, activeArgumentAudio=null, activeArgumentButton=null, activeArgumentUrl=null;
+  async function speakArgumentPhrase(text,button){
+    if(activeArgumentAudio){activeArgumentAudio.pause();activeArgumentAudio=null;}
+    if(activeArgumentUrl){URL.revokeObjectURL(activeArgumentUrl);activeArgumentUrl=null;}
+    if(activeArgumentButton){activeArgumentButton.disabled=false;activeArgumentButton.textContent='🔊';}
+    activeArgumentButton=button;button.disabled=true;button.textContent='加载中';
+    try{
+      if(!argumentAudioManifestPromise)argumentAudioManifestPromise=fetch(new URL('argument-audio/manifest.json',document.baseURI)).then(r=>{if(!r.ok)throw Error('Piper 音频尚未部署');return r.json();}).catch(e=>{argumentAudioManifestPromise=null;throw e;});
+      argumentAudioManifest=await argumentAudioManifestPromise;
+      const entry=argumentAudioManifest.entries?.[text];
+      if(!entry)throw Error('该词组尚无 Piper 音频');
+      const response=await fetch(new URL('argument-audio/'+entry.pack,document.baseURI));
+      if(!response.ok)throw Error('Piper 音频包加载失败');
+      const item=(await response.json())[entry.id];
+      if(!item||item.text!==text)throw Error('Piper 音频与词组不匹配');
+      const bytes=Uint8Array.from(atob(item.audio),c=>c.charCodeAt(0));
+      activeArgumentUrl=URL.createObjectURL(new Blob([bytes],{type:'audio/mpeg'}));
+      const player=new Audio(activeArgumentUrl);activeArgumentAudio=player;
+      player.onended=()=>{button.disabled=false;button.textContent='🔊';};
+      player.onerror=()=>{button.disabled=false;button.textContent='音频错误';};
+      await player.play();button.textContent='播放中';
+    }catch(error){button.disabled=false;button.textContent='🔊';button.title=error.message+'（不使用浏览器 TTS）';window.alert(error.message+'。仅支持 Piper 法语音频，不会切换成英语发音。');}
   }
   function phraseChip(fr,zh){
     const el=document.createElement('div');el.className='argument-word';
