@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - 'combined-expressions/pronominal50/data.json'
+      - 'combined-expressions/pronominal50/drills.json'
       - 'tools/piper/pronominal50/generate.py'
       - '.github/workflows/generate-pronominal50-piper.yml'
   workflow_dispatch:
