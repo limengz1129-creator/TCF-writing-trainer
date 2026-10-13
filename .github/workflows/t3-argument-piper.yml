@@ -54,6 +54,5 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m "Generate T3 argument vocabulary Piper recordings"
             git pull --rebase
-            git pull --rebase
             git push
           fi
