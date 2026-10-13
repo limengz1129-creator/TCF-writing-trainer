@@ -1,0 +1,240 @@
+[
+ {
+  "id": 2,
+  "form": "pc",
+  "fr": "Je me suis inscrite à ce cours.",
+  "zh": "我报名了这门课程。",
+  "note": "inscrite：女性说话者，阴性单数加 e。"
+ },
+ {
+  "id": 3,
+  "form": "pc",
+  "fr": "Elle s'est bien intégrée dans sa nouvelle équipe.",
+  "zh": "她很好地融入了新团队。",
+  "note": "intégrée：elle 阴性单数。"
+ },
+ {
+  "id": 5,
+  "form": "pc",
+  "fr": "Je me suis rendue au centre culturel hier.",
+  "zh": "我昨天去了文化中心。",
+  "note": "rendue：女性主语加 e。"
+ },
+ {
+  "id": 6,
+  "form": "pc",
+  "fr": "Je me suis sentie à l'aise pendant l'entretien.",
+  "zh": "面试时我感到很自在。",
+  "note": "sentie：女性主语加 e。"
+ },
+ {
+  "id": 10,
+  "form": "pc",
+  "fr": "Je me suis souvenue de cette expérience.",
+  "zh": "我想起了这段经历。",
+  "note": "souvenue：女性主语加 e。"
+ },
+ {
+  "id": 11,
+  "form": "pc",
+  "fr": "Je me suis rendu compte que ce cours était utile.",
+  "zh": "我意识到这门课程很有用。",
+  "note": "rendu compte 固定结构：rendu 不与主语配合。"
+ },
+ {
+  "id": 12,
+  "form": "pc",
+  "fr": "Je me suis habituée à ce nouvel environnement.",
+  "zh": "我已经习惯了新环境。",
+  "note": "habituée：女性主语加 e。"
+ },
+ {
+  "id": 13,
+  "form": "pc",
+  "fr": "Je me suis préparée à cet examen.",
+  "zh": "我为这场考试做了准备。",
+  "note": "préparée：女性主语加 e。"
+ },
+ {
+  "id": 16,
+  "form": "pc",
+  "fr": "Nous nous sommes retrouvés après la formation.",
+  "zh": "我们在培训后再次相聚。",
+  "note": "retrouvés：nous 指男女混合群体；全女性用 retrouvées。"
+ },
+ {
+  "id": 18,
+  "form": "pc",
+  "fr": "On s'est rencontrés lors d'une activité culturelle.",
+  "zh": "我们是在一次文化活动中认识的。",
+  "note": "rencontrés：on 表示复数群体时可依实际指称配合。"
+ },
+ {
+  "id": 19,
+  "form": "pc",
+  "fr": "Nous nous sommes connus pendant nos études.",
+  "zh": "我们是在求学期间认识的。",
+  "note": "connus：相互认识，直接宾语在动词前；全女性用 connues。"
+ },
+ {
+  "id": 31,
+  "form": "pc",
+  "fr": "Mon niveau de français s'est amélioré.",
+  "zh": "我的法语水平提高了。",
+  "note": "amélioré：niveau 阳性单数。"
+ },
+ {
+  "id": 33,
+  "form": "pc",
+  "fr": "Elle s'est reconvertie dans l'informatique.",
+  "zh": "她转行进入了信息技术行业。",
+  "note": "reconvertie：elle 阴性单数。"
+ },
+ {
+  "id": 34,
+  "form": "pc",
+  "fr": "Elle s'est lancée dans un nouveau projet.",
+  "zh": "她开始投入一个新项目。",
+  "note": "lancée：elle 阴性单数。"
+ },
+ {
+  "id": 35,
+  "form": "pc",
+  "fr": "Je me suis jointe au groupe de bénévoles.",
+  "zh": "我加入了志愿者团队。",
+  "note": "jointe：女性主语加 e。"
+ },
+ {
+  "id": 38,
+  "form": "pc",
+  "fr": "Ils se sont disputés à propos du projet.",
+  "zh": "他们因为这个项目争吵了。",
+  "note": "disputés：ils 阳性复数。"
+ },
+ {
+  "id": 39,
+  "form": "pc",
+  "fr": "Je me suis présentée à l'accueil avant le cours.",
+  "zh": "我上课前到接待处报到了。",
+  "note": "présentée：女性说话者加 e。"
+ },
+ {
+  "id": 48,
+  "form": "pc",
+  "fr": "Elle s'est remise en question après cet échec.",
+  "zh": "这次失败之后她进行了自我反思。",
+  "note": "remise：elle 阴性单数。"
+ },
+ {
+  "id": 2,
+  "form": "neg",
+  "fr": "Je ne me suis pas encore inscrite à cette formation.",
+  "zh": "我还没有报名这项培训。",
+  "note": "否定复合过去时：ne + me + suis + pas + inscrite。"
+ },
+ {
+  "id": 3,
+  "form": "neg",
+  "fr": "Certains nouveaux arrivants ne s'intègrent pas facilement.",
+  "zh": "一些新移民不容易融入。",
+  "note": "ne + se + 动词现在时 + pas。"
+ },
+ {
+  "id": 4,
+  "form": "neg",
+  "fr": "Je ne me suis pas encore renseignée sur les tarifs.",
+  "zh": "我还没有了解收费标准。",
+  "note": "常见于 T2 询问信息；否定复合过去时。"
+ },
+ {
+  "id": 6,
+  "form": "neg",
+  "fr": "Je ne me sens pas encore à l'aise pour parler français.",
+  "zh": "我说法语时还不太自在。",
+  "note": "ne + me + sens + pas。"
+ },
+ {
+  "id": 7,
+  "form": "neg",
+  "fr": "Les élèves ne se concentrent pas suffisamment pendant le cours.",
+  "zh": "学生上课时不够专注。",
+  "note": "ne + se + concentrent + pas。"
+ },
+ {
+  "id": 8,
+  "form": "neg",
+  "fr": "Certains jeunes ne s'intéressent pas suffisamment à la politique.",
+  "zh": "一些年轻人对政治不够感兴趣。",
+  "note": "ne + se + intéressent + pas。"
+ },
+ {
+  "id": 10,
+  "form": "neg",
+  "fr": "Je ne me souviens plus du nom de l'organisateur.",
+  "zh": "我已经不记得组织者的名字了。",
+  "note": "ne ... plus 表示不再；souvenir de。"
+ },
+ {
+  "id": 11,
+  "form": "neg",
+  "fr": "Ils ne se rendent pas compte des difficultés des nouveaux arrivants.",
+  "zh": "他们没有意识到新移民的困难。",
+  "note": "ne + se + rendent + pas + compte。"
+ },
+ {
+  "id": 12,
+  "form": "neg",
+  "fr": "Certaines personnes ne s'habituent pas facilement à la vie à l'étranger.",
+  "zh": "有些人不容易适应国外生活。",
+  "note": "ne + se + habituent + pas。"
+ },
+ {
+  "id": 14,
+  "form": "neg",
+  "fr": "Je ne me demande pas si ce cours est intéressant, mais s'il convient à mon niveau.",
+  "zh": "我关心的不是这门课是否有趣，而是它是否适合我的水平。",
+  "note": "对比句可用；但考试中不必优先背这类否定句。"
+ },
+ {
+  "id": 17,
+  "form": "neg",
+  "fr": "Sans échanges réguliers, les habitants ne s'entraident pas suffisamment.",
+  "zh": "如果缺少定期交流，居民之间就不太会互相帮助。",
+  "note": "ne + s' + entraident + pas。"
+ },
+ {
+  "id": 25,
+  "form": "neg",
+  "fr": "Aujourd'hui, on ne peut plus se passer d'Internet.",
+  "zh": "如今人们已经离不开互联网。",
+  "note": "情态动词否定：ne peut plus + se passer。"
+ },
+ {
+  "id": 27,
+  "form": "neg",
+  "fr": "Certains consommateurs ne se méfient pas des fausses publicités.",
+  "zh": "一些消费者没有警惕虚假广告。",
+  "note": "ne + se + méfient + pas。"
+ },
+ {
+  "id": 28,
+  "form": "neg",
+  "fr": "Il ne faut pas se fier à toutes les informations sur Internet.",
+  "zh": "不能轻信网上的所有信息。",
+  "note": "否定落在 faut 前后；se fier 保持不定式。"
+ },
+ {
+  "id": 37,
+  "form": "neg",
+  "fr": "Certains collègues ne s'entendent pas très bien.",
+  "zh": "有些同事相处得不是很好。",
+  "note": "ne + s' + entendent + pas。"
+ },
+ {
+  "id": 39,
+  "form": "neg",
+  "fr": "Je ne me suis pas présentée à l'accueil hier.",
+  "zh": "我昨天没有到接待处报到。",
+  "note": "présentée：女性说话者加 e。"
+ }
+]
