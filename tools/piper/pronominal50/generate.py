@@ -21,7 +21,7 @@ def main():
     p=argparse.ArgumentParser();p.add_argument('--model',required=True);args=p.parse_args()
     items=json.loads(DATA.read_text(encoding='utf-8'))
     assert len(items)==50 and len({r['id'] for r in items})==50
-    strings=list(dict.fromkeys(spoken(s) for r in items for s in [r['pattern'],r.get('example','')] if s.strip()))
+    strings=list(dict.fromkeys(spoken(s) for r in items for s in [r.get('speak',r['pattern']),r.get('example','')] if s.strip()))
     print('Piper targets',len(strings),flush=True)
     OUT.mkdir(parents=True,exist_ok=True);voice=PiperVoice.load(args.model)
     manifest={'voice':'fr_FR-siwis-medium','count':len(strings),'version':1,'targets':{},'records':{}}
