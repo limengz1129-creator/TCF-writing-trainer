@@ -1,0 +1,34 @@
+name: Generate T3 argument-map Piper audio
+on:
+  push:
+    paths:
+      - 'tools/piper/build_t3_argument_audio.py'
+      - '.github/workflows/t3-argument-piper.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install piper-tts
+      - name: Download French siwis voice
+        run: |
+          curl -fL --retry 3 -o /tmp/fr_FR-siwis-medium.onnx https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx
+          curl -fL --retry 3 -o /tmp/fr_FR-siwis-medium.onnx.json https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx.json
+      - run: python tools/piper/build_t3_argument_audio.py
+      - name: Commit audio packs
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add eo-tache3-corpus/argument-audio/
+          if ! git diff --cached --quiet; then
+            git commit -m "Generate T3 argument vocabulary Piper recordings"
+            git pull --rebase
+            git push
+          fi
