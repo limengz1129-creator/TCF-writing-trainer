@@ -21,6 +21,21 @@ jobs:
         uses: actions/checkout@v6
       - name: Configure Pages
         uses: actions/configure-pages@v5
+      - name: Verify T3 Piper audio included in Pages deployment
+        run: |
+          python - <<'PY'
+          import json,base64
+          from pathlib import Path
+          root=Path('eo-tache3-corpus/argument-audio')
+          manifest=json.loads((root/'manifest.json').read_text(encoding='utf-8'))
+          entries=manifest['entries']
+          assert len(entries)==1549, f'Expected 1549, found {len(entries)}'
+          for i in range(16):
+              pack=root/f'pack-{i:03}.json'
+              assert pack.is_file(), f'Missing {pack}'
+              assert pack.stat().st_size>100, f'Empty {pack}'
+          print('Pages artifact includes 1549 indexed phrases and 16 Piper packs')
+          PY
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
