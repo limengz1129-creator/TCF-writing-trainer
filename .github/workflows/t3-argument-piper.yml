@@ -21,7 +21,11 @@ jobs:
           python-version: '3.11'
       - run: pip install piper-tts
       - name: Check Piper executable
-        run: command -v piper && command -v ffmpeg
+        run: |
+          python -m pip show piper-tts
+          python -c 'import piper; print(piper.__file__)'
+          command -v ffmpeg
+          python -m piper --help || true
       - name: Download French siwis voice
         run: |
           curl -fL --retry 3 -o /tmp/fr_FR-siwis-medium.onnx https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx
