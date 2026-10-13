@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Generate offline Piper siwis audio for the six example cards."""
-import base64, json, subprocess, tempfile
+import base64, json, subprocess, tempfile, wave
+from piper import PiperVoice
 from pathlib import Path
 
 root = Path(__file__).resolve().parents[2]
@@ -18,11 +19,13 @@ if not model.exists():
     raise SystemExit("Missing Piper model: " + str(model))
 entries = {}
 pack = {}
+voice = PiperVoice.load(str(model))
 with tempfile.TemporaryDirectory() as tmp:
     for i, sentence in enumerate(sentences):
         wav = Path(tmp) / f"{i}.wav"
         mp3 = Path(tmp) / f"{i}.mp3"
-        subprocess.run(["python", "-m", "piper", "-m", str(model), "-f", str(wav), "--", sentence], text=True, check=True)
+        with wave.open(str(wav), "wb") as wav_file:
+            voice.synthesize_wav(sentence, wav_file)
         subprocess.run(["ffmpeg", "-nostdin", "-hide_banner", "-loglevel", "error", "-y", "-i", str(wav), "-codec:a", "libmp3lame", "-q:a", "4", str(mp3)], check=True)
         key = str(i)
         entries[sentence] = {"pack": "audio-pack.json", "id": key}
