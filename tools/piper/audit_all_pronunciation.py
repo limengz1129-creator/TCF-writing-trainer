@@ -45,6 +45,8 @@ if argument.exists():
         else:
             recorded=json.loads(manifest.read_text(encoding="utf-8")).get("entries",{})
             missing=expected-set(recorded)
+            for pack in {e.get("pack") for e in recorded.values() if isinstance(e,dict)}:
+                if not pack or not (manifest.parent/pack).is_file():results.append({"path":str(manifest.relative_to(root)),"kind":"missing Piper audio pack","pack":pack})
             if missing:results.append({"path":str(manifest.relative_to(root)),"kind":"missing Piper entries","count":len(missing),"samples":sorted(missing)[:10]})
 six=root/"combined-expressions"/"example-six"
 six_manifest=six/"audio-manifest.json"
@@ -54,5 +56,7 @@ if (six/"index.html").exists():
     else:
         data=json.loads(six_manifest.read_text(encoding="utf-8"))
         if len(data.get("entries",{}))<6:results.append({"path":str(six_manifest.relative_to(root)),"kind":"incomplete six-example Piper audio"})
+        for pack in {e.get("pack") for e in data.get("entries",{}).values() if isinstance(e,dict)}:
+            if not pack or not (six/pack).is_file():results.append({"path":str(six_manifest.relative_to(root)),"kind":"missing six-example audio pack","pack":pack})
 print(json.dumps({"total":len(results),"findings":results},ensure_ascii=False,indent=2))
 sys.exit(1 if results else 0)
