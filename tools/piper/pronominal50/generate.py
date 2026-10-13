@@ -6,6 +6,7 @@ from piper import PiperVoice
 ROOT=Path(__file__).resolve().parents[3]
 DATA=ROOT/'combined-expressions/pronominal50/data.json'
 OUT=ROOT/'combined-expressions/pronominal50/piper-audio'
+DRILLS=ROOT/'combined-expressions/pronominal50/drills.json'
 def spoken(s):
     s=re.sub(r'\bqch\b','quelque chose',s,flags=re.I)
     s=re.sub(r'\bqn\b',"quelqu'un",s,flags=re.I)
@@ -21,7 +22,9 @@ def main():
     p=argparse.ArgumentParser();p.add_argument('--model',required=True);args=p.parse_args()
     items=json.loads(DATA.read_text(encoding='utf-8'))
     assert len(items)==50 and len({r['id'] for r in items})==50
-    strings=list(dict.fromkeys(spoken(s) for r in items for s in [r.get('speak',r['pattern']),r.get('example','')] if s.strip()))
+    drills=json.loads(DRILLS.read_text(encoding='utf-8'))
+    assert len(drills)==34
+    strings=list(dict.fromkeys([spoken(s) for r in items for s in [r.get('speak',r['pattern']),r.get('example','')] if s.strip()]+[spoken(r['fr']) for r in drills]))
     print('Piper targets',len(strings),flush=True)
     OUT.mkdir(parents=True,exist_ok=True);voice=PiperVoice.load(args.model)
     manifest={'voice':'fr_FR-siwis-medium','count':len(strings),'version':1,'targets':{},'records':{}}
