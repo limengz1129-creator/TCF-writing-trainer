@@ -16,9 +16,28 @@
  D.categories.forEach(c=>E('t2xCategory').add(new Option(c,c)));
  const view=el('section','','hidden');view.id='t2xView';E('practice').before(view);
 
+ // T2 transformation uses pre-generated Piper fr_FR-siwis-medium MP3, never browser TTS.
+ let piperManifestPromise=null,activeAudio=null,playSerial=0;
+ function stopAudio(){playSerial++;if(activeAudio){activeAudio.pause();activeAudio.removeAttribute('src');activeAudio.load();activeAudio=null;}}
+ function getPiperManifest(){
+   if(!piperManifestPromise)piperManifestPromise=fetch('t2-transform-audio/manifest.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Piper 音频索引尚未发布');return r.json();}).catch(err=>{piperManifestPromise=null;throw err;});
+   return piperManifestPromise;
+ }
  function audio(text){
    const wrap=el('span','','t2x-actions'),status=el('span','','t2x-note');
-   wrap.append(btn('🔊 法语',()=>{const s=window.speechSynthesis;if(!s){status.textContent='浏览器不支持朗读';return;}const vs=s.getVoices().filter(v=>/^fr[-_]/i.test(v.lang));if(!vs.length){status.textContent='请先启用法语语音';return;}s.cancel();const q=new SpeechSynthesisUtterance(text);q.voice=vs.find(v=>/^fr-CA$/i.test(v.lang))||vs.find(v=>/^fr-FR$/i.test(v.lang))||vs[0];q.lang=q.voice.lang;s.speak(q);status.textContent='正在朗读';q.onend=()=>status.textContent='朗读完成';}),status);return wrap;
+   wrap.append(btn('🔊 Piper 法语',async()=>{
+     stopAudio();const request=playSerial;status.textContent='正在加载 Piper 法语音频…';
+     try{
+       const manifest=await getPiperManifest();if(request!==playSerial)return;
+       const filename=manifest.entries?.[text];
+       if(!filename)throw Error('当前法语句子缺少 Piper 音频');
+       const player=new Audio(new URL('t2-transform-audio/'+filename,document.baseURI).href);
+       activeAudio=player;player.preload='auto';
+       player.onended=()=>{if(activeAudio===player)status.textContent='朗读完成';};
+       player.onerror=()=>{if(activeAudio===player)status.textContent='Piper 音频加载失败';};
+       await player.play();if(request===playSerial)status.textContent='Piper · siwis 正在朗读';
+     }catch(err){if(request===playSerial)status.textContent=err?.message||'音频播放失败';}
+   }),status);return wrap;
  }
  function visibleModules(){
    const q=(S().search||'').toLowerCase(),cat=S().category||'',scope=E('t2xScope')?.value||'';
@@ -121,7 +140,7 @@
    const bar=el('div','','t2x-actions');bar.append(btn('✅ 我能自己生成',()=>selfMark(m,true)),btn('❌ 还需要再练',()=>selfMark(m,false)),btn('换一题',nextRandom));wrap.append(bar);view.append(wrap);
  }
  function render(){
-   if(mode!==M)return;view.replaceChildren();sync();view.append(nav());E('t2xCount').textContent=visibleModules().length+' / '+D.moduleCount+' 个模块';
+   if(mode!==M)return;stopAudio();view.replaceChildren();sync();view.append(nav());E('t2xCount').textContent=visibleModules().length+' / '+D.moduleCount+' 个模块';
    if(S().view==='home')home();else if(S().view==='modules')modulesView();else if(S().view==='detail')detail();else if(S().view==='train')training('convert');else if(S().view==='timeline')training('timeline');else if(S().view==='random')training('random');else home();
  }
  E('t2xCategory').onchange=()=>{S().category=E('t2xCategory').value;save();render();};
@@ -134,7 +153,7 @@
    if(active){['practiceFilters','practiceStats','practice','errorsView','vocabularyView','batchControls','batchView','studyView','studyReviewView','t2InversionControls','t2InversionView','speechFlowControls','speechFlowView','c1Controls','c1View','oralControls','oralView','t2eControls','t2eView'].forEach(id=>E(id)?.classList.add('hidden'));render();}
  }
  const oldSet=setModule;
- setModule=function(m,fresh=false){window.speechSynthesis?.cancel();if(m===M){if(mode!==M){oldSet(M,fresh);current=null;order=null;}document.querySelectorAll('[data-module]').forEach(b=>{const a=b.dataset.module===String(M);b.classList.toggle('active',a);b.setAttribute('aria-pressed',String(a));});activate();save();}else{oldSet(m,fresh);activate();}};
+ setModule=function(m,fresh=false){stopAudio();if(m===M){if(mode!==M){oldSet(M,fresh);current=null;order=null;}document.querySelectorAll('[data-module]').forEach(b=>{const a=b.dataset.module===String(M);b.classList.toggle('active',a);b.setAttribute('aria-pressed',String(a));});activate();save();}else{oldSet(m,fresh);activate();}};
  const oldDraft=saveDraft;saveDraft=function(){if(mode!==M)oldDraft();};
  window.T2_TRANSFORM={data:D,render,progress:P};
  activate();

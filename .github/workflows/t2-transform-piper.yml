@@ -1,0 +1,49 @@
+name: Build T2 transformation Piper audio
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'combined-expressions/t2-transform-data.js'
+      - 'tools/piper/t2-transform-generate.py'
+      - '.github/workflows/t2-transform-piper.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Piper
+        run: pip install piper-tts
+      - name: Download SIWIS voice
+        run: |
+          curl -fL --retry 3 -o /tmp/fr_FR-siwis-medium.onnx 'https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx'
+          curl -fL --retry 3 -o /tmp/fr_FR-siwis-medium.onnx.json 'https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx.json'
+      - name: Generate all T2 Piper audio
+        run: python tools/piper/t2-transform-generate.py
+      - name: Verify generated manifest
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          p=pathlib.Path('combined-expressions/t2-transform-audio')
+          d=json.loads((p/'manifest.json').read_text())
+          assert d['count']==len(d['entries'])==169, (d['count'],len(d['entries']))
+          assert all((p/f).stat().st_size>256 for f in d['entries'].values())
+          print('Validated 169 Piper MP3 files')
+          PY
+      - name: Publish audio to GitHub Pages
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add combined-expressions/t2-transform-audio/
+          if ! git diff --cached --quiet; then
+            git commit -m 'Generate 169 Piper SIWIS recordings for T2 transformation [skip ci]'
+            git push
+          fi
