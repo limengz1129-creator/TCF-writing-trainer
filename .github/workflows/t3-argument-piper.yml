@@ -33,26 +33,41 @@ jobs:
         run: |
           curl -fL --retry 3 -o /tmp/fr_FR-siwis-medium.onnx https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx
           curl -fL --retry 3 -o /tmp/fr_FR-siwis-medium.onnx.json https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx.json
-      - name: Generate all 1549 vocabulary recordings
-        run: python -u tools/piper/build_t3_argument_audio.py
-      - name: Validate generated audio
-        run: |
-          python - <<'PY'
-          import json
-          from pathlib import Path
-          root=Path('eo-tache3-corpus/argument-audio')
-          entries=json.loads((root/'manifest.json').read_text())['entries']
-          assert len(entries)==1549, f'Expected 1549 phrases, found {len(entries)}'
-          assert all((root/e['pack']).is_file() for e in entries.values())
-          print(f'Validated {len(entries)} French Piper recordings')
-          PY
-      - name: Commit audio packs
+      - name: Configure Git author
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add eo-tache3-corpus/argument-audio/
-          if ! git diff --cached --quiet; then
-            git commit -m "Generate T3 argument vocabulary Piper recordings"
-            git pull --rebase
-            git push
-          fi
+      - name: Generate and publish 16 resumable batches
+        run: |
+          set -euo pipefail
+          for batch in $(seq 0 15); do
+            echo "::group::Piper batch $((batch+1))/16"
+            python -u tools/piper/build_t3_argument_audio.py "$batch"
+            git add eo-tache3-corpus/argument-audio/
+            if ! git diff --cached --quiet; then
+              git commit -m "Piper T3 vocabulary batch $((batch+1)) of 16"
+              git pull --rebase
+              git push
+            fi
+            echo "::endgroup::"
+          done
+      - name: Validate complete coverage
+        run: |
+          python - <<'PY'
+          import json,base64
+          from pathlib import Path
+          root=Path('eo-tache3-corpus/argument-audio')
+          manifest=json.loads((root/'manifest.json').read_text(encoding='utf-8'))
+          entries=manifest['entries']
+          assert len(entries)==1549, f'Expected 1549, found {len(entries)}'
+          packs={}
+          for phrase,info in entries.items():
+              name=info['pack']
+              if name not in packs:
+                  packs[name]=json.loads((root/name).read_text(encoding='utf-8'))
+              record=packs[name][info['id']]
+              assert record['text']==phrase
+              assert len(base64.b64decode(record['audio']))>100
+          assert len(packs)==16, f'Expected 16 packs, found {len(packs)}'
+          print(f'PASS: {len(entries)} Piper phrases across {len(packs)} packs')
+          PY
