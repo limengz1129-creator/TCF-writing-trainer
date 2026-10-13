@@ -24,19 +24,29 @@ dest.mkdir(exist_ok=True)
 model=Path("/tmp/fr_FR-siwis-medium.onnx")
 if not model.exists(): raise SystemExit("Missing Piper model")
 entries={}
+print(f"Loading Piper model for {len(phrases)} exact phrases", flush=True)
 voice=PiperVoice.load(str(model))
+print("Piper model loaded", flush=True)
 with tempfile.TemporaryDirectory() as tmp:
     for offset in range(0,len(phrases),100):
+        print(f"Generating batch {offset//100+1}/{(len(phrases)+99)//100}, phrases {offset+1}-{min(offset+100,len(phrases))}", flush=True)
         pack={}
         name=f"pack-{offset//100:03}.json"
         for i,phrase in enumerate(phrases[offset:offset+100]):
             wav=Path(tmp)/"voice.wav";mp3=Path(tmp)/"voice.mp3"
-            with wave.open(str(wav), "wb") as wav_file:
-                voice.synthesize_wav(phrase, wav_file)
-            subprocess.run(["ffmpeg","-nostdin","-hide_banner","-loglevel","error","-y","-i",str(wav),"-codec:a","libmp3lame","-q:a","5",str(mp3)],check=True)
+            try:
+                with wave.open(str(wav), "wb") as wav_file:
+                    voice.synthesize_wav(phrase, wav_file)
+            except Exception as exc:
+                raise RuntimeError(f"Piper failed at item {offset+i+1}: {phrase!r}") from exc
+            try:
+                subprocess.run(["ffmpeg","-nostdin","-hide_banner","-loglevel","error","-y","-i",str(wav),"-codec:a","libmp3lame","-q:a","5",str(mp3)],check=True)
+            except Exception as exc:
+                raise RuntimeError(f"MP3 conversion failed at item {offset+i+1}: {phrase!r}") from exc
             key=str(i);pack[key]={"text":phrase,"audio":base64.b64encode(mp3.read_bytes()).decode("ascii")}
             entries[phrase]={"pack":name,"id":key}
         (dest/name).write_text(json.dumps(pack,ensure_ascii=False),encoding="utf-8")
+        print(f"Saved {name}: {len(pack)} recordings", flush=True)
 (dest/"manifest.json").write_text(json.dumps({"voice":"fr_FR-siwis-medium","count":len(entries),"entries":entries},ensure_ascii=False),encoding="utf-8")
 assert len(entries)==len(phrases)
 assert all((dest / record["pack"]).is_file() for record in entries.values())
