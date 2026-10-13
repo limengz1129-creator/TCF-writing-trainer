@@ -12,7 +12,7 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     concurrency:
-      group: piper-audio-main
+      group: piper-example-six-main
       cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
