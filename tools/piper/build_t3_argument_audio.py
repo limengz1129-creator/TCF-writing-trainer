@@ -29,7 +29,7 @@ with tempfile.TemporaryDirectory() as tmp:
         name=f"pack-{offset//100:03}.json"
         for i,phrase in enumerate(phrases[offset:offset+100]):
             wav=Path(tmp)/"voice.wav";mp3=Path(tmp)/"voice.mp3"
-            subprocess.run(["piper","--model",str(model),"--output_file",str(wav)],input=phrase+"\n",text=True,check=True,stdout=subprocess.DEVNULL)
+            subprocess.run(["python","-m","piper","-m",str(model),"-f",str(wav),"--",phrase],text=True,check=True,stdout=subprocess.DEVNULL)
             subprocess.run(["ffmpeg","-nostdin","-hide_banner","-loglevel","error","-y","-i",str(wav),"-codec:a","libmp3lame","-q:a","5",str(mp3)],check=True)
             key=str(i);pack[key]={"text":phrase,"audio":base64.b64encode(mp3.read_bytes()).decode("ascii")}
             entries[phrase]={"pack":name,"id":key}
