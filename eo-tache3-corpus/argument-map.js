@@ -4,7 +4,7 @@
   const $=id=>document.getElementById(id);
   const topicData=()=>TOPICS[$('topic')?.value]||TOPICS['旅行与移民'];
 
-  // Only play pre-generated French Piper siwis recordings; never use browser speechSynthesis.
+  // Only play pre-generated French Piper siwis recordings; no system voice fallback.
   let argumentAudioManifest=null, argumentAudioManifestPromise=null, activeArgumentAudio=null, activeArgumentButton=null, activeArgumentUrl=null;
   async function speakArgumentPhrase(text,button){
     if(activeArgumentAudio){activeArgumentAudio.pause();activeArgumentAudio=null;}
