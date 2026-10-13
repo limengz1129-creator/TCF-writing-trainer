@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Isolated Piper fr_FR-siwis-medium audio builder for the 50-entry verb preposition module."""
+"""Isolated Piper fr_FR-siwis-medium audio builder for the 50-entry pronominal verb module."""
 import argparse,base64,hashlib,json,subprocess,tempfile,wave,re
 from pathlib import Path
 from piper import PiperVoice
 ROOT=Path(__file__).resolve().parents[3]
-DATA=ROOT/'combined-expressions/verb120/preposition/data.json'
-OUT=ROOT/'combined-expressions/verb120/preposition/piper-audio'
+DATA=ROOT/'combined-expressions/pronominal50/data.json'
+OUT=ROOT/'combined-expressions/pronominal50/piper-audio'
 def spoken(s):
     s=re.sub(r'\bqch\b','quelque chose',s,flags=re.I)
     s=re.sub(r'\bqn\b',"quelqu'un",s,flags=re.I)
