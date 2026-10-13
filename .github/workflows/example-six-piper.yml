@@ -11,12 +11,17 @@ permissions:
 jobs:
   generate:
     runs-on: ubuntu-latest
+    concurrency:
+      group: piper-audio-main
+      cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
       - run: pip install piper-tts
+      - name: Check Piper executable
+        run: command -v piper && command -v ffmpeg
       - name: Download official siwis model
         run: |
           curl -fL --retry 3 -o /tmp/fr_FR-siwis-medium.onnx https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx
@@ -29,5 +34,6 @@ jobs:
           git add combined-expressions/example-six/audio-manifest.json combined-expressions/example-six/audio-pack.json
           if ! git diff --cached --quiet; then
             git commit -m "Generate six offline Piper siwis recordings"
+            git pull --rebase
             git push
           fi
