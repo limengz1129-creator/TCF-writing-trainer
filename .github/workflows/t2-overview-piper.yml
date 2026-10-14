@@ -1,0 +1,47 @@
+name: Build T2 three-dimension overview Piper audio
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/piper/t2-overview-generate.py'
+      - '.github/workflows/t2-overview-piper.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg
+      - run: pip install piper-tts
+      - name: Download SIWIS
+        run: |
+          curl -fL --retry 3 -o /tmp/fr_FR-siwis-medium.onnx 'https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx'
+          curl -fL --retry 3 -o /tmp/fr_FR-siwis-medium.onnx.json 'https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx.json'
+      - run: python tools/piper/t2-overview-generate.py
+      - name: Verify 17 generated recordings
+        run: |
+          python - <<'PY'
+          import pathlib,json
+          p=pathlib.Path('combined-expressions/t2-overview-audio')
+          m=json.loads((p/'manifest.json').read_text())
+          assert len(m['entries'])==m['count']==17
+          assert all((p/x).stat().st_size>256 for x in m['entries'].values())
+          PY
+      - name: Commit pre-generated MP3s and manifest
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add combined-expressions/t2-overview-audio/
+          if ! git diff --cached --quiet; then
+            git commit -m 'Generate 17 T2 overview Piper SIWIS files [skip ci]'
+            git pull --rebase
+            git push
+          fi
