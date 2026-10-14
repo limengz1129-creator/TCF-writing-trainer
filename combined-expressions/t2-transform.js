@@ -51,7 +51,7 @@
  function sync(){E('t2xCategory').value=S().category||'';E('t2xSearch').value=S().search||'';}
  function nav(){
    const n=el('nav','','t2x-actions');
-   [['home','首页'],['modules','🧭 45个转换模块'],['train','🎯 结构转换训练'],['timeline','⏱ 时间线训练'],['random','🎲 综合随机训练']].forEach(x=>n.append(btn(x[1],()=>{S().view=x[0];S().moduleId='';save();render();},S().view===x[0]?'primary':'')));
+   [['home','首页'],['overview','📊 12题三维速览'],['modules','🧭 45个转换模块'],['train','🎯 结构转换训练'],['timeline','⏱ 时间线训练'],['random','🎲 综合随机训练']].forEach(x=>n.append(btn(x[1],()=>{S().view=x[0];S().moduleId='';save();render();},S().view===x[0]?'primary':'')));
    return n;
  }
  function metrics(){
@@ -64,6 +64,7 @@
    view.append(el('h2','T2 提问结构转换训练'),el('p','目标不是背完句子，而是把“我想问什么”转换成 2–3 个自然出口，并能按过去 / 现在 / 将来切换。','t2x-note'),metrics());
    const g=el('div','','t2x-home');
    [
+    ['overview','📊 12题三维速览\n疑问词 × 结构 × 时态参考分布'],
     ['modules','🧭 先学转换地图\n45 个核心功能，按 8 大系统归类'],
     ['train','🎯 普通问法 → 多样化\n学等义转换、自然化、信息深化'],
     ['timeline','⏱ 过去 / 现在 / 将来\n同一功能切换时间线，不机械变位'],
@@ -77,6 +78,62 @@
    ].forEach(x=>note.append(el('p',x[0]+'：'+x[1])));
    view.append(note);
  }
+
+ function overview(){
+   const frame=el('section','','t2x-overview');
+   frame.append(el('h2','📊 12题三维分布速览'),el('p','训练参考模板：疑问词 × 提问结构 × 时态。12题不是官方规定题数；先服从Sujet与考官回答，不为凑配额制造重复问题。','t2x-note'));
+   const makeTable=(heads,rows)=>{
+     const wrap=el('div','','t2x-table-wrap'),t=el('table','','t2x-table'),thead=el('thead'),tr=el('tr');
+     heads.forEach(h=>tr.append(el('th',h)));thead.append(tr);t.append(thead);
+     const body=el('tbody');rows.forEach(row=>{const r=el('tr');row.forEach(cell=>r.append(el('td',String(cell))));body.append(r);});t.append(body);wrap.append(t);return wrap;
+   };
+   const sec=(name,description)=>{const c=el('section','','t2x-card');c.append(el('h3',name));if(description)c.append(el('p',description,'t2x-note'));frame.append(c);return c;};
+   const one=sec('维度一｜疑问词 / 提问功能（12题）','允许适度重复；以下为功能类别，其中 Y a-t-il、Faut-il、Est-ce que 并非疑问代词。');
+   one.append(makeTable(['疑问词类型','建议题数','典型结构'],[
+    ['Quel / Quelle / Quels / Quelles',2,'Quelles activités… ?'],
+    ['Combien / Combien de / Combien de temps',2,'Combien coûte… ?'],
+    ['Quand / À quelle heure / À quelle date',1,'Quand aura lieu… ?'],
+    ['Où / Dans quel quartier',1,'Où se trouve… ?'],
+    ['Comment',1,'Comment se déroule… ?'],
+    ['Lequel / Laquelle',1,'Lequel me conseilleriez-vous ?'],
+    ['Qui / À qui / Avec qui',1,'À qui s’adresse… ?'],
+    ['Pourquoi / Pour quelle raison',1,'Pourquoi avez-vous choisi… ?'],
+    ["Qu’est-ce que / Qu’est-ce qui / En quoi",1,'En quoi consiste… ?'],
+    ['Y a-t-il / Faut-il / Est-ce que',1,'Y a-t-il des conditions… ?'],
+    ['合计',12,'按实际Sujet调整']
+   ]));
+   const two=sec('维度二｜疑问结构（12题）','参考比例：简单倒装4、复合倒装2、间接疑问2、est-ce que 3、语调疑问1。');
+   const dist=[['简单倒装',4,'Quand commence cette activité ?'],['复合倒装',2,'Cette activité est-elle adaptée aux débutants ?'],['间接疑问句',2,'Pourriez-vous me dire quand elle commencera ?'],['est-ce que',3,'Est-ce que le matériel est fourni ?'],['语调疑问句',1,'Vous proposez des réductions ?']];
+   const bar=el('div','','t2x-overview-bar');const cols=['#5277bb','#268e86','#8865af','#bc8844','#929aa8'];dist.forEach((d,i)=>{const part=el('span');part.style.width=(d[1]/12*100)+'%';part.style.background=cols[i];part.title=d[0]+'：'+d[1]+'题';bar.append(part);});two.append(bar,makeTable(['结构','题数','示例'],dist));
+   two.append(el('p','简单倒装：变位动词与代词主语倒装，或动词置于名词主语之前；复合倒装：名词主语在前，动词后再用 il/elle/ils/elles 复指。','t2x-note'));
+   const three=sec('维度三｜时态（按Sujet切换）','每个场景给出12题参考分布；间接问句可能同时含礼貌条件式与从句的时态，不能机械地把每道题只归为一种时态。');
+   const profiles=[
+    ['未来活动','报名课程、即将举行的活动',[5,3,1,1,0,2]],
+    ['过去经历','旅行回顾、已参加的活动',[2,0,0,6,3,1]],
+    ['当前服务','住房、购买和现有服务',[8,1,0,0,0,3]]
+   ];
+   const tense=['现在时','简单将来时','最近将来时','复合过去时','未完成过去时','条件式现在时'];
+   const select=el('select');select.setAttribute('aria-label','选择Sujet时间场景');profiles.forEach((p,i)=>select.add(new Option(p[0],String(i))));
+   const out=el('div');const refresh=()=>{const p=profiles[Number(select.value)||0];out.replaceChildren(el('p',p[1],'t2x-note'),makeTable(['时态','参考题数'],tense.map((n,i)=>[n,p[2][i]])));};select.onchange=refresh;three.append(select,out);refresh();
+   const four=sec('三维合并｜12题实战样例','Sujet：你想报名即将举行的法语培训，向负责人询问信息。这是展示三维交叉的样例，不严格对应上方任一固定配额；“Qu’est-ce qui”本身是疑问主语结构。');
+   four.append(makeTable(['#','疑问词 / 功能','疑问结构','主要时态','法语示例'],[
+    [1,'Quels / 种类','简单倒装','现在时','Quels cours proposez-vous ?'],
+    [2,'Quand / 时间','间接疑问','将来时','Pourriez-vous me dire quand la formation commencera ?'],
+    [3,'Combien / 价格','简单倒装','现在时','Combien coûte cette formation ?'],
+    [4,'Où / 地点','复合倒装','将来时','Où cette formation aura-t-elle lieu ?'],
+    [5,'Comment / 报名','est-ce que','现在时',"Comment est-ce que je peux m’inscrire ?"],
+    [6,'Laquelle / 选择','简单倒装','条件式','Laquelle me recommanderiez-vous ?'],
+    [7,'À qui / 对象','简单倒装','现在时',"À qui s’adresse cette formation ?"],
+    [8,'Pourquoi / 原因','简单倒装','现在时','Pourquoi conseillez-vous cette formation ?'],
+    [9,"Qu’est-ce qui / 内容",'疑问词作主语','将来时',"Qu’est-ce qui sera prévu pour les débutants ?"],
+    [10,'Faut-il / 要求','简单倒装','现在时','Faut-il avoir un niveau minimum ?'],
+    [11,'Combien de temps / 时长','复合倒装','将来时','Combien de temps cette formation durera-t-elle ?'],
+    [12,'Quelles / 准备','语调疑问','现在时','Vous demandez quelles pièces justificatives ?']
+   ]));
+   four.append(el('p','考试原则：内容不重复、提问顺畅优先；不需要在12问内强制凑齐每种疑问词、结构和时态。','t2x-note'));
+   view.append(frame);
+ }
+
  function tile(m){
    const p=P(m.id),b=btn(m.title+'\n'+m.intent,()=>{S().moduleId=m.id;S().view='detail';save();render();},'t2x-module-tile');
    const tag=el('span',(p.favorite?'★ ':'')+({new:'未学习',review:'待复习',mastered:'已掌握'}[p.status]||p.status),'t2x-note');b.append(document.createElement('br'),tag);return b;
@@ -141,7 +198,7 @@
  }
  function render(){
    if(mode!==M)return;stopAudio();view.replaceChildren();sync();view.append(nav());E('t2xCount').textContent=visibleModules().length+' / '+D.moduleCount+' 个模块';
-   if(S().view==='home')home();else if(S().view==='modules')modulesView();else if(S().view==='detail')detail();else if(S().view==='train')training('convert');else if(S().view==='timeline')training('timeline');else if(S().view==='random')training('random');else home();
+   if(S().view==='home')home();else if(S().view==='overview')overview();else if(S().view==='modules')modulesView();else if(S().view==='detail')detail();else if(S().view==='train')training('convert');else if(S().view==='timeline')training('timeline');else if(S().view==='random')training('random');else home();
  }
  E('t2xCategory').onchange=()=>{S().category=E('t2xCategory').value;save();render();};
  E('t2xSearch').oninput=()=>{S().search=E('t2xSearch').value;save();render();};
