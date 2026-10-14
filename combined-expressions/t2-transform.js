@@ -56,7 +56,7 @@
  function sync(){E('t2xCategory').value=S().category||'';E('t2xSearch').value=S().search||'';}
  function nav(){
    const n=el('nav','','t2x-actions');
-   [['home','首页'],['overview','📊 12题三维速览'],['modules','🧭 45个转换模块'],['train','🎯 结构转换训练'],['timeline','⏱ 时间线训练'],['random','🎲 综合随机训练']].forEach(x=>n.append(btn(x[1],()=>{S().view=x[0];S().moduleId='';save();render();},S().view===x[0]?'primary':'')));
+   [['home','首页'],['overview','📊 12题三维速览'],['twelve','🎯 真题12问训练'],['modules','🧭 45个转换模块'],['train','🎯 结构转换训练'],['timeline','⏱ 时间线训练'],['random','🎲 综合随机训练']].forEach(x=>n.append(btn(x[1],()=>{if(x[0]==='twelve'){window.location.href='t2-12-trainer.html';return;}S().view=x[0];S().moduleId='';save();render();},S().view===x[0]?'primary':'')));
    return n;
  }
  function metrics(){
@@ -70,11 +70,12 @@
    const g=el('div','','t2x-home');
    [
     ['overview','📊 12题三维速览\n疑问词 × 结构 × 时态参考分布'],
+    ['twelve','🎯 真题12问训练\n直接读取7–10月真实Sujet，中文提示逐题作答'],
     ['modules','🧭 先学转换地图\n45 个核心功能，按 8 大系统归类'],
     ['train','🎯 普通问法 → 多样化\n学等义转换、自然化、信息深化'],
     ['timeline','⏱ 过去 / 现在 / 将来\n同一功能切换时间线，不机械变位'],
     ['random','🎲 综合随机\n随机功能 + 结构 + 时间线，接近真考']
-   ].forEach(x=>g.append(btn(x[1],()=>{S().view=x[0];save();render();})));
+   ].forEach(x=>g.append(btn(x[1],()=>{if(x[0]==='twelve'){window.location.href='t2-12-trainer.html';return;}S().view=x[0];save();render();})));
    view.append(g);
    const note=el('div','','t2x-card');note.append(el('h3','先记住这三种“转换性质”'));
    [['🟢 等义转换','信息点不变，只换结构。例：Est-ce qu’il y a… → Y a-t-il…'],
