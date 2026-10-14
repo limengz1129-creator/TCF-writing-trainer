@@ -41,7 +41,7 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add combined-expressions/t2-overview-audio/
           if ! git diff --cached --quiet; then
-            git commit -m 'Generate 17 T2 overview Piper SIWIS files [skip ci]'
+            git commit -m 'Generate 17 T2 overview Piper SIWIS files'
             git pull --rebase
             git push
           fi
