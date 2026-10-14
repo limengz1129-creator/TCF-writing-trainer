@@ -8,6 +8,9 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+concurrency:
+  group: t2-overview-piper-main
+  cancel-in-progress: false
 jobs:
   generate:
     runs-on: ubuntu-latest
