@@ -29,9 +29,14 @@
      stopAudio();const request=playSerial;status.textContent='正在加载 Piper 法语音频…';
      try{
        const manifest=await getPiperManifest();if(request!==playSerial)return;
-       const filename=manifest.entries?.[text];
+       let filename=manifest.entries?.[text],audioDir='t2-transform-audio/';
+       if(!filename && t2OverviewPiperSet.has(text)){
+         const rr=await fetch('t2-overview-audio/manifest.json',{cache:'no-store'});
+         if(!rr.ok)throw Error('三维速览 Piper 音频尚未发布');
+         const mm=await rr.json();filename=mm.entries?.[text];audioDir='t2-overview-audio/';
+       }
        if(!filename)throw Error('当前法语句子缺少 Piper 音频');
-       const player=new Audio(new URL('t2-transform-audio/'+filename,document.baseURI).href);
+       const player=new Audio(new URL(audioDir+filename,document.baseURI).href);
        activeAudio=player;player.preload='auto';
        player.onended=()=>{if(activeAudio===player)status.textContent='朗读完成';};
        player.onerror=()=>{if(activeAudio===player)status.textContent='Piper 音频加载失败';};
@@ -79,13 +84,15 @@
    view.append(note);
  }
 
+ const T2_OVERVIEW_PIPER_TEXTS=["Quand commence cette activité ?","Cette activité est-elle adaptée aux débutants ?","Pourriez-vous me dire quand elle commencera ?","Est-ce que le matériel est fourni ?","Vous proposez des réductions ?","Quels cours proposez-vous ?","Pourriez-vous me dire quand la formation commencera ?","Combien coûte cette formation ?","Où cette formation aura-t-elle lieu ?","Comment est-ce que je peux m’inscrire ?","Laquelle me recommanderiez-vous ?","À qui s’adresse cette formation ?","Pourquoi conseillez-vous cette formation ?","Qu’est-ce qui sera prévu pour les débutants ?","Faut-il avoir un niveau minimum ?","Combien de temps cette formation durera-t-elle ?","Vous demandez quelles pièces justificatives ?"];
+ const t2OverviewPiperSet=new Set(T2_OVERVIEW_PIPER_TEXTS);
  function overview(){
    const frame=el('section','','t2x-overview');
    frame.append(el('h2','📊 12题三维分布速览'),el('p','训练参考模板：疑问词 × 提问结构 × 时态。12题不是官方规定题数；先服从Sujet与考官回答，不为凑配额制造重复问题。','t2x-note'));
    const makeTable=(heads,rows)=>{
      const wrap=el('div','','t2x-table-wrap'),t=el('table','','t2x-table'),thead=el('thead'),tr=el('tr');
      heads.forEach(h=>tr.append(el('th',h)));thead.append(tr);t.append(thead);
-     const body=el('tbody');rows.forEach(row=>{const r=el('tr');row.forEach(cell=>r.append(el('td',String(cell))));body.append(r);});t.append(body);wrap.append(t);return wrap;
+     const body=el('tbody');rows.forEach(row=>{const r=el('tr');row.forEach(cell=>{const td=el('td',String(cell));if(t2OverviewPiperSet.has(String(cell)))td.append(audio(String(cell)));r.append(td);});body.append(r);});t.append(body);wrap.append(t);return wrap;
    };
    const sec=(name,description)=>{const c=el('section','','t2x-card');c.append(el('h3',name));if(description)c.append(el('p',description,'t2x-note'));frame.append(c);return c;};
    const one=sec('维度一｜疑问词 / 提问功能（12题）','允许适度重复；以下为功能类别，其中 Y a-t-il、Faut-il、Est-ce que 并非疑问代词。');
