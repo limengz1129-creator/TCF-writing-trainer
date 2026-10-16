@@ -94,15 +94,15 @@
     const head=document.createElement('div');head.className='argument-head';head.innerHTML='<div><p class="eyebrow">'+D.title+' · #'+id+' · 场景分支</p><h2>'+s.title+'</h2></div>';stage.append(head);
     const top=document.createElement('section');top.className='argument-core';top.innerHTML='<p class="argument-label">场景法语逻辑链</p><div class="logic-fr" lang="fr">'+s.fr+'</div><div class="logic-zh">'+s.zh+'</div>';stage.append(top);
     const wt=document.createElement('h3');wt.textContent='主题词汇 / 词组';stage.append(wt);const words=document.createElement('div');words.className='argument-words';s.words.forEach(([fr,zh])=>words.append(phraseChip(fr,zh)));stage.append(words);
-    // 例子卡片仅展示人工核对过的原论段；未审核的原论段保持原有跳转入口。
+    // 例子卡片按原论段生成；具体例子与情境型论证分开标记。
     const reviewed=(s.sourceIds||[]).filter(pid=>window.TCF_T3_EXAMPLES?.[pid]);
     if(reviewed.length){
-      const exampleHead=document.createElement('h3');exampleHead.textContent='原论段例子提炼（'+reviewed.length+'）';stage.append(exampleHead);
+      const exampleHead=document.createElement('h3');exampleHead.textContent='原论段例子 / 情境提炼（'+reviewed.length+'）';stage.append(exampleHead);
       const exampleWrap=document.createElement('div');exampleWrap.className='argument-example-list';stage.append(exampleWrap);
       reviewed.forEach(pid=>{
         const e=window.TCF_T3_EXAMPLES[pid];
         const card=document.createElement('section');card.className='argument-core';card.style.marginBottom='12px';
-        const title=document.createElement('strong');title.textContent=e.title+' · '+pid;
+        const title=document.createElement('strong');title.textContent=(e.kind==='scenario'?'情境论证｜':'例子｜')+e.title+' · '+pid;
         const fr=document.createElement('p');fr.className='logic-fr';fr.lang='fr';fr.textContent=e.fr;
         const zh=document.createElement('p');zh.className='logic-zh';zh.textContent=e.zh;
         card.append(title,fr,zh);
