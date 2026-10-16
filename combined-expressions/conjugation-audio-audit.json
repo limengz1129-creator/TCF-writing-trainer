@@ -1,15 +1,23 @@
 {
   "voice": "fr_FR-siwis-medium",
-  "rows": 2469,
+  "rows": 2800,
+  "supplementalSourceRows": 331,
+  "supplementalNewRows": 331,
   "lemmas": 613,
-  "uniqueTargets": 2461,
+  "uniqueTargets": 2792,
   "coveredBefore": 2461,
-  "missingBefore": 0,
-  "brokenBefore": 0,
-  "brokenReasonsBefore": {},
-  "generated": 0,
+  "missingBefore": 331,
+  "brokenBefore": 331,
+  "brokenReasonsBefore": {
+    "missing-manifest-entry": 331
+  },
+  "generated": 331,
   "missingAfter": 0,
-  "repairPacks": [],
-  "missingLemmasBefore": 0,
+  "repairPacks": [
+    "conj-repair-03.json",
+    "conj-repair-04.json",
+    "conj-repair-05.json"
+  ],
+  "missingLemmasBefore": 83,
   "status": "ok"
 }
