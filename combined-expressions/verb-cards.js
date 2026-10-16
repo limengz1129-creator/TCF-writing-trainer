@@ -41,7 +41,7 @@ function renderVerbCard(x){
   input.onfocus=()=>{selectCardRow(row);for(const b of verbCardInputs.values())b.section.classList.toggle('selected',b.input===input);};input.oninput=()=>{rec(row.id).draft=input.value;if(current?.id===row.id)$('answer').value=input.value;persist();};input.onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();rowCheck(row);}};
   const checkButton=document.createElement('button');checkButton.textContent='核对';checkButton.onclick=()=>rowCheck(row);
   const reveal=document.createElement('button');reveal.textContent='看答案';reveal.onclick=()=>{selectCardRow(row);feedback.className='feedback';feedback.textContent='正确变位：'+conjugationForm(row)+'\n中文词义：'+conjugationMeaning(row);rowReference(row,feedback);};
-  const speak=document.createElement('button');speak.textContent='朗读';speak.onclick=()=>{selectCardRow(row);const panel=$('frenchSpeechPanel');if(panel&&!panel.hidden)$('closeFrenchSpeech').click();$('openFrenchSpeech')?.click();};actions.append(checkButton,reveal,speak);section.append(label,input,tense,actions,feedback);cards.append(section);verbCardInputs.set(row.id,{input,section,feedback});
+  const speak=document.createElement('button');speak.textContent='朗读';speak.onclick=()=>{selectCardRow(row);const text=conjugationForm(row);if(window.TCF_AUDIO?.speak)window.TCF_AUDIO.speak(text);else {const panel=$('frenchSpeechPanel');if(panel&&!panel.hidden)$('closeFrenchSpeech').click();$('openFrenchSpeech')?.click();}};actions.append(checkButton,reveal,speak);section.append(label,input,tense,actions,feedback);cards.append(section);verbCardInputs.set(row.id,{input,section,feedback});
  }
  selectCardRow(x);list();persist();
 }
