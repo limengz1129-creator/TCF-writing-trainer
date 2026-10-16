@@ -49,13 +49,13 @@ async function load(text){
  if(!data||data.text!==text)throw Error('音频与当前原文不一致');
  return data;
 }
-window.TCF_AUDIO={load,stop:close};
+window.TCF_AUDIO={load,stop:close,speak:(text)=>open(text)};
 async function play(){
  try{await audio.play();}
  catch{if(!panel.hidden)status.textContent='音频已就绪，请点击播放器的播放按钮试听。';}
 }
-async function open(){
- const text=window.TCF_SPEECH_TARGET?.()?.fr||window.TCF_GRAMMAR_TARGET?.()?.fr||'';
+async function open(targetText){
+ const text=typeof targetText==='string'?targetText:(window.TCF_SPEECH_TARGET?.()?.fr||window.TCF_GRAMMAR_TARGET?.()?.fr||'');
  panel.hidden=false;opener.setAttribute('aria-expanded','true');original.textContent=text;
  status.textContent='正在加载 Piper 法语音频……';
  const request=++version;stop();entry=null;
