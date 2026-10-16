@@ -6,6 +6,7 @@ from piper import PiperVoice
 ROOT=Path(__file__).resolve().parents[3]
 COMBINED=ROOT/"combined-expressions"
 PERSON=COMBINED/"conjugation-person-data.js"
+SUPPLEMENTAL=COMBINED/"subjunctive-active-data.js"
 AUDIO=COMBINED/"piper-audio"
 MANIFEST=AUDIO/"manifest.json"
 AUDIT=COMBINED/"conjugation-audio-audit.json"
@@ -60,6 +61,20 @@ def main():
     args=ap.parse_args()
 
     rows=load_rows()
+    # Match actual browser runtime: subjunctive-active-data.js appends
+    # supplemental person rows after loading conjugation-person-data.js.
+    supplemental_src=SUPPLEMENTAL.read_text(encoding="utf-8")
+    supplemental_start=supplemental_src.index("const additions=")+len("const additions=")
+    supplemental_entries,_=json.JSONDecoder().raw_decode(supplemental_src[supplemental_start:])
+    seen_rows={(r["lemma"],r["tense"],r["person"],r["fr"]) for r in rows}
+    extra=[]
+    for item in supplemental_entries:
+        row={"lemma":item["lemma"],"tense":"虚拟式现在时","person":item["person"],"fr":item["form"]}
+        key=(row["lemma"],row["tense"],row["person"],row["fr"])
+        if key not in seen_rows:
+            extra.append(row)
+            seen_rows.add(key)
+    rows.extend(extra)
     manifest=json.loads(MANIFEST.read_text(encoding="utf-8"))
     entries=manifest.setdefault("entries",{})
 
@@ -131,7 +146,7 @@ def main():
         reason=invalid_reasons.get(t,"unknown")
         reason_counts[reason]=reason_counts.get(reason,0)+1
 
-    print(f"Conjugation rows={len(rows)} lemmas={len(set(r['lemma'] for r in rows))} unique targets={len(targets)}",flush=True)
+    print(f"Conjugation rows={len(rows)} supplemental={len(extra)} lemmas={len(set(r['lemma'] for r in rows))} unique targets={len(targets)}",flush=True)
     print(f"Piper playable coverage before: {len(targets)-len(missing)}/{len(targets)}; broken={len(missing)} reasons={reason_counts}",flush=True)
 
     # Regenerate only broken targets. Never overwrite previous repair packs:
@@ -179,6 +194,8 @@ def main():
     audit={
         "voice":"fr_FR-siwis-medium",
         "rows":len(rows),
+        "supplementalSourceRows":len(supplemental_entries),
+        "supplementalNewRows":len(extra),
         "lemmas":len(set(r["lemma"] for r in rows)),
         "uniqueTargets":len(targets),
         "coveredBefore":len(targets)-len(missing),
