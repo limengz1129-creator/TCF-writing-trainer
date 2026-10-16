@@ -72,6 +72,11 @@ def main():
         if text not in seen:
             seen.add(text); targets.append(text)
 
+    # Regression check: a previously missing subjunctive form must be part of
+    # the exact-text audit whenever that row exists in the training data.
+    if any(r["lemma"] == "répondre" and "虚拟式" in r["tense"] and r["person"] == "je" for r in rows):
+        assert "que je réponde" in seen, "Missing the subjunctive Piper target"
+
     # A manifest key alone is not enough: the mapped pack/id can be missing,
     # stale, mismatched, or contain an empty audio payload. Validate the full
     # playback chain exactly as the browser does before deciding coverage.
