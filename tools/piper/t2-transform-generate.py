@@ -36,6 +36,9 @@ for module in data["modules"]:
         for row in scenario["rows"]:
             texts.update(example for _, example in row["forms"])
     texts.update(item["fr"] for item in extension.get("advanced", []))
+    for pair in module.get("personVariants", []):
+        texts.add(pair["vous"])
+        texts.add(pair["tu"])
 if data["moduleCount"] != 45:
     raise RuntimeError(f"Expected 45 modules, got {data['moduleCount']}")
 voice = PiperVoice.load(str(MODEL), config_path=str(CONFIG))
