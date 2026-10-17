@@ -1,0 +1,16 @@
+name: Audit T3 travel example Piper audio
+on:
+  push:
+    paths:
+      - 'eo-tache3-corpus/example-cards.js'
+      - 'eo-tache3-corpus/argument-audio/**'
+      - 'tools/piper/audit_t3_example_audio.py'
+      - '.github/workflows/audit-t3-example-audio.yml'
+  workflow_dispatch:
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate all travel example Piper MP3 assets
+        run: python3 tools/piper/audit_t3_example_audio.py
