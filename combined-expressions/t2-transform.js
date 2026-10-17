@@ -154,7 +154,7 @@
    const box=el('div','','t2x-card');box.append(el('h3','⏱ 时间线切换'));
    if(!m.timeline){box.append(el('p','这个功能通常不需要机械做过去 / 现在 / 将来三套。考试时先判断信息功能，再按场景选择时态。','t2x-note'));return box;}
    const g=el('div','','t2x-timeline');
-   [['过去',m.timeline.past],['现在',m.timeline.present],['将来',m.timeline.future]].forEach(x=>{const d=el('div');d.append(el('strong',x[0]),el('p',x[1]),audio(x[1]));g.append(d);});box.append(g);return box;
+   [['过去',m.timeline.past],['现在',m.timeline.present],['将来',m.timeline.future]].forEach((x,i)=>{const d=el('div');d.append(el('strong',x[0]),el('p',x[1]));if(m.zh?.timeline?.[i])d.append(el('p','中文：'+m.zh.timeline[i],'t2x-note'));d.append(audio(x[1]));g.append(d);});box.append(g);return box;
  }
  function practiceExtensionsBox(m){
    const ext=m.practiceExtensions;if(!ext)return null;
@@ -223,8 +223,8 @@
    const reveal=btn('显示转换思路',()=>{answer.classList.remove('hidden');reveal.disabled=true;});
    wrap.append(reveal);
    const sub=answer.dataset.sub||kind,target=answer.dataset.target;
-   if((kind==='timeline'||sub==='timeline')&&m.timeline){const t=target||'past';answer.append(el('strong','参考时间线'),el('p',m.timeline[t]),audio(m.timeline[t]));}
-   else{answer.append(el('strong','参考转换树'));m.forms.forEach(f=>answer.append(el('p',f[0]+' '+f[2])));}
+   if((kind==='timeline'||sub==='timeline')&&m.timeline){const t=target||'past';answer.append(el('strong','参考时间线'),el('p',m.timeline[t]));const index={past:0,present:1,future:2}[t];if(m.zh?.timeline?.[index])answer.append(el('p','中文：'+m.zh.timeline[index],'t2x-note'));answer.append(audio(m.timeline[t]));}
+   else{answer.append(el('strong','参考转换树'));m.forms.forEach((f,i)=>{answer.append(el('p',f[0]+' '+f[2]));if(m.zh?.forms?.[i])answer.append(el('p','中文：'+m.zh.forms[i].example,'t2x-note'));});}
    answer.append(el('p','规则：'+m.rule,'t2x-note'),el('p','你的真实案例：'+m.real.original+' → '+m.real.better,'t2x-note'));
    wrap.append(answer);
    const bar=el('div','','t2x-actions');bar.append(btn('✅ 我能自己生成',()=>selfMark(m,true)),btn('❌ 还需要再练',()=>selfMark(m,false)),btn('换一题',nextRandom));wrap.append(bar);view.append(wrap);
