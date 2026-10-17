@@ -13,7 +13,7 @@ refs={pid for m in topic["M"].values() for s in m["scenes"] for pid in s["source
 assert len(cards)==len(src)==27 and set(cards)==set(src)==refs
 assert len(topic["M"])==10
 assert 'family-example-cards.js' in (root/"index.html").read_text(encoding="utf-8")
-assert sum(len(m["scenes"]) for m in topic["M"].values())==NUMBER_OF_SCENES
+assert sum(len(m["scenes"]) for m in topic["M"].values())==26
 for id,card in cards.items():
     assert card["zh"]==src[id]["summary"],id
     assert card["words"],id
