@@ -5,7 +5,7 @@
   const topicData=()=>TOPICS[$('topic')?.value]||TOPICS['旅行与移民'];
 
   // Only play pre-generated French Piper siwis recordings; no system voice fallback.
-  let argumentAudioManifest=null, argumentAudioManifestPromise=null, chainAudioManifestPromise=null, activeArgumentAudio=null, activeArgumentButton=null, activeArgumentUrl=null;
+  let argumentAudioManifest=null, argumentAudioManifestPromise=null, chainAudioManifestPromise=null, exampleAudioManifestPromise=null, activeArgumentAudio=null, activeArgumentButton=null, activeArgumentUrl=null;
   async function speakArgumentPhrase(text,button){
     if(activeArgumentAudio){activeArgumentAudio.pause();activeArgumentAudio=null;}
     if(activeArgumentUrl){URL.revokeObjectURL(activeArgumentUrl);activeArgumentUrl=null;}
@@ -19,6 +19,11 @@
         if(!chainAudioManifestPromise)chainAudioManifestPromise=fetch(new URL('chain-audio/manifest.json',document.baseURI)).then(r=>{if(!r.ok)throw Error('场景逻辑链 Piper 音频尚未部署');return r.json();}).catch(e=>{chainAudioManifestPromise=null;throw e;});
         const chainManifest=await chainAudioManifestPromise;
         entry=chainManifest.entries?.[text];dir='chain-audio/';
+      }
+      if(!entry){
+        if(!exampleAudioManifestPromise)exampleAudioManifestPromise=fetch(new URL('example-audio/manifest.json',document.baseURI)).then(r=>{if(!r.ok)throw Error('例子逻辑链 Piper 音频尚未部署');return r.json();}).catch(e=>{exampleAudioManifestPromise=null;throw e;});
+        const exampleManifest=await exampleAudioManifestPromise;
+        entry=exampleManifest.entries?.[text];dir='example-audio/';
       }
       if(!entry)throw Error('该词块尚无 Piper 音频');
       const response=await fetch(new URL(dir+entry.pack,document.baseURI));
@@ -110,7 +115,7 @@
         const e=window.TCF_T3_EXAMPLES[pid];
         const card=document.createElement('section');card.className='argument-core';card.style.marginBottom='12px';
         const title=document.createElement('strong');title.textContent=(e.kind==='scenario'?'情境论证｜':'例子｜')+e.title+' · '+pid;
-        const fr=document.createElement('p');fr.className='logic-fr';fr.lang='fr';fr.textContent=e.fr;
+        const fr=document.createElement('div');fr.className='logic-fr scene-audio-chain';fr.lang='fr';e.fr.split(/\s*→\s*/).forEach((chunk,i)=>{if(i){const arrow=document.createElement('span');arrow.textContent=' → ';fr.append(arrow);}const part=document.createElement('span');part.className='scene-audio-chunk';const label=document.createElement('span');label.textContent=chunk;const audio=document.createElement('button');audio.type='button';audio.className='argument-word-audio';audio.textContent='🔊';audio.title='Piper 朗读 '+chunk;audio.setAttribute('aria-label','Piper 朗读 '+chunk);audio.onclick=()=>speakArgumentPhrase(chunk,audio);part.append(label,audio);fr.append(part);});
         const zh=document.createElement('p');zh.className='logic-zh';zh.textContent=e.zh;
         card.append(title,fr,zh);
         const vocabTitle=document.createElement('strong');vocabTitle.textContent='例子主题词汇（Piper 法语朗读）';card.append(vocabTitle);
