@@ -5,7 +5,7 @@
   const topicData=()=>TOPICS[$('topic')?.value]||TOPICS['旅行与移民'];
 
   // Only play pre-generated French Piper siwis recordings; no system voice fallback.
-  let argumentAudioManifest=null, argumentAudioManifestPromise=null, activeArgumentAudio=null, activeArgumentButton=null, activeArgumentUrl=null;
+  let argumentAudioManifest=null, argumentAudioManifestPromise=null, chainAudioManifestPromise=null, activeArgumentAudio=null, activeArgumentButton=null, activeArgumentUrl=null;
   async function speakArgumentPhrase(text,button){
     if(activeArgumentAudio){activeArgumentAudio.pause();activeArgumentAudio=null;}
     if(activeArgumentUrl){URL.revokeObjectURL(activeArgumentUrl);activeArgumentUrl=null;}
@@ -14,9 +14,14 @@
     try{
       if(!argumentAudioManifestPromise)argumentAudioManifestPromise=fetch(new URL('argument-audio/manifest.json',document.baseURI)).then(r=>{if(!r.ok)throw Error('Piper 音频尚未部署');return r.json();}).catch(e=>{argumentAudioManifestPromise=null;throw e;});
       argumentAudioManifest=await argumentAudioManifestPromise;
-      const entry=argumentAudioManifest.entries?.[text];
-      if(!entry)throw Error('该词组尚无 Piper 音频');
-      const response=await fetch(new URL('argument-audio/'+entry.pack,document.baseURI));
+      let entry=argumentAudioManifest.entries?.[text],dir='argument-audio/';
+      if(!entry){
+        if(!chainAudioManifestPromise)chainAudioManifestPromise=fetch(new URL('chain-audio/manifest.json',document.baseURI)).then(r=>{if(!r.ok)throw Error('场景逻辑链 Piper 音频尚未部署');return r.json();}).catch(e=>{chainAudioManifestPromise=null;throw e;});
+        const chainManifest=await chainAudioManifestPromise;
+        entry=chainManifest.entries?.[text];dir='chain-audio/';
+      }
+      if(!entry)throw Error('该词块尚无 Piper 音频');
+      const response=await fetch(new URL(dir+entry.pack,document.baseURI));
       if(!response.ok)throw Error('Piper 音频包加载失败');
       const item=(await response.json())[entry.id];
       if(!item||item.text!==text)throw Error('Piper 音频与词组不匹配');
@@ -94,7 +99,7 @@
     const d=D.M[id],s=d?.scenes?.[sceneIndex];if(!s)return;stage.replaceChildren();
     const back=document.createElement('button');back.className='back-to-map';back.textContent='← 返回 #'+id+' 法语逻辑链';back.onclick=()=>renderMother(stage,D,id,'chain');stage.append(back);
     const head=document.createElement('div');head.className='argument-head';head.innerHTML='<div><p class="eyebrow">'+D.title+' · #'+id+' · 场景分支</p><h2>'+s.title+'</h2></div>';stage.append(head);
-    const top=document.createElement('section');top.className='argument-core';top.innerHTML='<p class="argument-label">场景法语逻辑链</p><div class="logic-fr" lang="fr">'+s.fr+'</div><div class="logic-zh">'+s.zh+'</div>';stage.append(top);if(D.title==='旅行与移民'){const one=TRAVEL_SCENE_SUMMARIES[id+'-'+sceneIndex];if(one){const p=document.createElement('p');p.className='scene-zh-summary';p.textContent='简述：'+one;top.append(p);}}
+    const top=document.createElement('section');top.className='argument-core';top.innerHTML='<p class="argument-label">场景法语逻辑链</p><div class="logic-zh">'+s.zh+'</div>';const logic=document.createElement('div');logic.className='logic-fr scene-audio-chain';logic.lang='fr';s.fr.split(/\s*→\s*/).forEach((chunk,i)=>{if(i){const arrow=document.createElement('span');arrow.textContent=' → ';logic.append(arrow);}const wrap=document.createElement('span');wrap.className='scene-audio-chunk';const phrase=document.createElement('span');phrase.textContent=chunk;const play=document.createElement('button');play.type='button';play.className='argument-word-audio';play.textContent='🔊';play.title='Piper 朗读 '+chunk;play.setAttribute('aria-label','Piper 朗读 '+chunk);play.onclick=()=>speakArgumentPhrase(chunk,play);wrap.append(phrase,play);logic.append(wrap);});top.insertBefore(logic,top.querySelector('.logic-zh'));stage.append(top);if(D.title==='旅行与移民'){const one=TRAVEL_SCENE_SUMMARIES[id+'-'+sceneIndex];if(one){const p=document.createElement('p');p.className='scene-zh-summary';p.textContent='简述：'+one;top.append(p);}}
     const wt=document.createElement('h3');wt.textContent='主题词汇 / 词组';stage.append(wt);const words=document.createElement('div');words.className='argument-words';s.words.forEach(([fr,zh])=>words.append(phraseChip(fr,zh)));stage.append(words);
     // 例子卡片按原论段生成；具体例子与情境型论证分开标记。
     const reviewed=(s.sourceIds||[]).filter(pid=>window.TCF_T3_EXAMPLES?.[pid]);
