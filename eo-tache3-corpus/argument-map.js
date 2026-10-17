@@ -90,7 +90,8 @@
     stage.replaceChildren();const wrap=document.createElement('div');wrap.className='quick-overview-grid';
     D.QUICK.forEach(([title,keywords])=>{const card=document.createElement('section');card.className='quick-overview-card';card.innerHTML='<h3>'+title+'</h3><p>'+keywords+'</p>';wrap.append(card);});stage.append(wrap);
   }
-  function logicAudioChain(chain){
+  function logicAudioChain(chain,enabled=true){
+    if(!enabled){const plain=document.createElement('div');plain.className='logic-fr';plain.lang='fr';plain.textContent=chain;return plain;}
     const row=document.createElement('div');row.className='logic-fr scene-audio-chain';row.lang='fr';
     chain.split(/\s*→\s*/).forEach((part,i)=>{if(i){const arrow=document.createElement('span');arrow.textContent=' → ';row.append(arrow);}
       const chunk=document.createElement('span');chunk.className='scene-audio-chunk';
@@ -113,7 +114,7 @@
       const core=document.createElement('section');core.className='argument-core';
       const label=document.createElement('p');label.className='argument-label';label.textContent='核心法语逻辑链';
       const zh=document.createElement('div');zh.className='logic-zh';zh.textContent=d.zh;
-      core.append(label,logicAudioChain(d.fr),zh);body.append(core);
+      core.append(label,logicAudioChain(d.fr,D.title==='旅行与移民'),zh);body.append(core);
       const branches=document.createElement('div');branches.className='scene-list';
       d.scenes.forEach((scene,i)=>{
         const wrapper=document.createElement('section');wrapper.className='scene-chain-audio-row';
@@ -124,7 +125,7 @@
         card.append(name,chinese,tip);
         const weak=sceneWeakCount(scene);if(weak){const icon=weakMarker(weak);card.append(icon);}
         card.onclick=()=>renderScene(stage,D,id,i);
-        wrapper.append(card,logicAudioChain(scene.fr));branches.append(wrapper);
+        wrapper.append(card,logicAudioChain(scene.fr,D.title==='旅行与移民'));branches.append(wrapper);
       });body.append(branches);
     };
     const showQuick=()=>{body.replaceChildren();const q=document.createElement('section');q.className='quick-card';q.innerHTML='<p class="argument-label">考前极简速记</p><div class="quick-memory">'+d.zh+'</div><p class="logic-fr" lang="fr">'+d.fr+'</p><p class="logic-zh">'+d.zh+'</p>';body.append(q);};
