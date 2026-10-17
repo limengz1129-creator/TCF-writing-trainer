@@ -1,0 +1,17 @@
+name: Audit T3 career Piper only
+on:
+  push:
+    paths:
+      - 'eo-tache3-corpus/career-example-cards.js'
+      - 'eo-tache3-corpus/argument-map.js'
+      - 'eo-tache3-corpus/career-audio/**'
+      - 'tools/piper/audit_t3_career.py'
+      - '.github/workflows/audit-t3-career.yml'
+  workflow_dispatch:
+jobs:
+  career-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit career topic data and exact Piper MP3 coverage
+        run: python3 tools/piper/audit_t3_career.py
