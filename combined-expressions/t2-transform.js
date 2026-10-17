@@ -20,7 +20,7 @@
  let piperManifestPromise=null,activeAudio=null,playSerial=0;
  function stopAudio(){playSerial++;if(activeAudio){activeAudio.pause();activeAudio.removeAttribute('src');activeAudio.load();activeAudio=null;}}
  function getPiperManifest(){
-   if(!piperManifestPromise)piperManifestPromise=fetch('t2-transform-audio/manifest.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Piper 音频索引尚未发布');return r.json();}).catch(err=>{piperManifestPromise=null;throw err;});
+   if(!piperManifestPromise)piperManifestPromise=fetch('t2-transform-audio/manifest.json?v=base45-209',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Piper 音频索引尚未发布');return r.json();}).catch(err=>{piperManifestPromise=null;throw err;});
    return piperManifestPromise;
  }
  function audio(text){
