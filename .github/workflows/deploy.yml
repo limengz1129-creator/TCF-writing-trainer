@@ -110,6 +110,8 @@ jobs:
           print(f'PASS: 96 travel cards; {len(travel_phrases)} source-exact vocabulary clips')
 
           PY
+      - name: Validate education topic Piper before publishing
+        run: python3 tools/piper/audit_t3_education.py
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
