@@ -26,6 +26,6 @@ for name, entries in sorted(packs.items()):
         record = pack.get(ident)
         assert record and record.get("text") == text, f"Text mismatch: {name}:{ident}"
         audio = base64.b64decode(record["audio"], validate=True)
-        assert len(audio) > 100 and (audio.startswith(b"ID3") or audio[:2] in (b"\\xff\\xfb", b"\\xff\\xf3", b"\\xff\\xf2")), f"Bad MP3 header: {name}:{ident}"
+        assert len(audio) > 100 and (audio.startswith(b"ID3") or audio[:2] in tuple(bytes.fromhex(h) for h in ("fffb","fff3","fff2"))), f"Bad MP3 header: {name}:{ident}"
         count += 1
 print(f"PASS: {len(cards)} cards; {count} distinct audio records in {len(packs)} packs")
