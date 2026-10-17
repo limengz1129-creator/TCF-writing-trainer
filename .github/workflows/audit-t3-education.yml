@@ -1,0 +1,15 @@
+name: Audit T3 education Piper only
+on:
+  push:
+    paths:
+      - 'eo-tache3-corpus/education-example-cards.js'
+      - 'eo-tache3-corpus/education-audio/**'
+      - 'tools/piper/audit_t3_education.py'
+      - '.github/workflows/audit-t3-education.yml'
+  workflow_dispatch:
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tools/piper/audit_t3_education.py
