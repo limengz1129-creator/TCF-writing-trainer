@@ -42,4 +42,4 @@ for phrase in phrases:
     assert item and item["text"]==phrase,phrase
     audio=base64.b64decode(item["audio"],validate=True)
     assert len(audio)>100 and (audio.startswith(b"ID3") or audio[:2] in (bytes.fromhex("fffb"),bytes.fromhex("fff3"),bytes.fromhex("fff2"))),phrase
-print(f"PASS: 48 source-grounded cards, 17 mothers, {len(phrases)} Piper phrases, {len(packs)} packs")
+print(f"PASS: 42 source-grounded cards, 16 mothers, {len(phrases)} Piper phrases, {len(packs)} packs")
