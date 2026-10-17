@@ -13,14 +13,15 @@ cards=json.loads(re.search(r"window.TCF_T3_CAREER_EXAMPLES=(\{.*\});\s*$",data,r
 assert len(cards)==75
 chunks={p.strip() for m in topic["M"].values() for chain in [m["fr"],*[s["fr"] for s in m["scenes"]]] for p in chain.split("→")}
 chunks.update(p.strip() for card in cards.values() for p in card["fr"].split("→"))
-old=[json.loads((root/d/"manifest.json").read_text(encoding="utf-8"))["entries"] for d in ("argument-audio","chain-audio","example-audio","overview-audio")]
+old=[json.loads((root/d/"manifest.json").read_text(encoding="utf-8"))["entries"] for d in ("argument-audio","chain-audio","example-audio","overview-audio","career-audio")]
 missing=sorted(p for p in chunks if not any(p in index for index in old))
 dest=root/"career-audio";dest.mkdir(exist_ok=True)
 mf=dest/"manifest.json"
 manifest=json.loads(mf.read_text(encoding="utf-8")) if mf.exists() else {"voice":"fr_FR-siwis-medium","entries":{}}
+start_batch=len(list(dest.glob("pack-*.json")))
 voice=None
 for batch in range((len(missing)+39)//40):
-    selected=missing[40*batch:40*(batch+1)];name=f"pack-{batch:03}.json";path=dest/name
+    selected=missing[40*batch:40*(batch+1)];name=f"pack-{start_batch+batch:03}.json";path=dest/name
     if path.exists():
         pack=json.loads(path.read_text(encoding="utf-8"))
         assert all(pack[str(i)]["text"]==text for i,text in enumerate(selected))
