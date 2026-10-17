@@ -40,3 +40,5 @@ for phrase in phrases:
 print(f"PASS: 42 media cards, 39 scene chains, {len(phrases)} Piper chunks, {len(packs)} packs")
 
 
+
+# Rechecked after the generated media MP3 packs were committed.
