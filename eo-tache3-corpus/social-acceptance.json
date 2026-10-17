@@ -1,0 +1,28 @@
+{
+  "topic": "社会与公共事务",
+  "status": "accepted",
+  "validatedCommit": "d7adaca65c4cf63ac5653c1c1fe25c4696ed0d00",
+  "coverage": {
+    "motherArguments": 16,
+    "sceneBranches": 40,
+    "sourceParagraphs": 45,
+    "sourceGroundedExampleCards": 45,
+    "translatedExcerptChunks": 77
+  },
+  "audio": {
+    "voice": "fr_FR-siwis-medium",
+    "newIndexedPhrases": 265,
+    "generationRun": 39055844615
+  },
+  "verification": {
+    "sourceAudioAndUIGate": {
+      "runId": 39056605933,
+      "conclusion": "success"
+    },
+    "pagesDeployment": {
+      "runId": 39056605927,
+      "conclusion": "success"
+    }
+  },
+  "scope": "Automated source text, source mapping, audio pack decoding and Pages deployment. Manual listening not asserted."
+}
