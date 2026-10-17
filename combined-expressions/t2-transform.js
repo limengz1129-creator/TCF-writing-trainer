@@ -164,19 +164,19 @@
    ext.scenarios.forEach(scene=>{
      const details=document.createElement('details');details.open=true;
      details.append(el('summary',scene.title),el('p',scene.note,'t2x-note'));
-     scene.rows.forEach(row=>{
+     scene.rows.forEach((row,rowIndex)=>{
        const section=el('div','','t2x-form');section.append(el('strong',row.label));
-       row.forms.forEach(pair=>{
+       row.forms.forEach((pair,pairIndex)=>{
          const line=el('div','','t2x-example');
-         line.append(el('span',pair[0]+'：','t2x-note'),el('p',pair[1]),audio(pair[1]));
+         line.append(el('span',pair[0]+'：','t2x-note'),el('p',pair[1]));const z=m.zh?.scenarios?.[ext.scenarios.indexOf(scene)]?.rows?.[rowIndex]?.[pairIndex];if(z)line.append(el('p','中文：'+z,'t2x-note'));line.append(audio(pair[1]));
          section.append(line);
        });details.append(section);
      });container.append(details);
    });
    const advanced=el('section','','t2x-card');advanced.append(el('h3','高级转换 · 条件式 / 虚拟式 / 间接疑问'));
    advanced.append(el('p','按真实提问目的选用；这里是附加句型，不覆盖原转换树。','t2x-note'));
-   ext.advanced.forEach(item=>{
-     const d=el('div','','t2x-form');d.append(el('strong',item.title),el('p',item.fr),el('p',item.note,'t2x-note'),audio(item.fr));advanced.append(d);
+   ext.advanced.forEach((item,advancedIndex)=>{
+     const d=el('div','','t2x-form');d.append(el('strong',item.title),el('p',item.fr));if(m.zh?.advanced?.[advancedIndex])d.append(el('p','中文：'+m.zh.advanced[advancedIndex],'t2x-note'));d.append(el('p',item.note,'t2x-note'),audio(item.fr));advanced.append(d);
    });
    return [container,advanced];
  }
@@ -184,10 +184,10 @@
    const m=mod(S().moduleId);if(!m){S().view='modules';modulesView();return;}const p=P(m.id);
    const top=el('div','','t2x-actions');top.append(btn('← 返回模块地图',()=>{S().view='modules';S().moduleId='';render();}),btn(p.favorite?'★ 已收藏':'☆ 收藏',()=>{p.favorite=!p.favorite;save();render();}),btn('✅ 我已掌握',()=>{p.status='mastered';p.mastered++;save();render();}),btn('❌ 需要复习',()=>{p.status='review';p.review++;save();render();}));view.append(top);
    const c=el('article','','t2x-card');c.append(el('p',m.cat,'t2x-note'),el('h2',m.title),el('p',m.intent,'t2x-intent'));
-   const base=el('div','','t2x-base');base.append(el('strong','最普通的脑内问法'),el('p',m.base));if(m.baseExample){base.append(el('p','例句：'+m.baseExample),audio(m.baseExample));}c.append(base);
+   const base=el('div','','t2x-base');base.append(el('strong','最普通的脑内问法'),el('p',m.base));if(m.zh?.base)base.append(el('p','中文：'+m.zh.base,'t2x-note'));if(m.baseExample){base.append(el('p','例句：'+m.baseExample));if(m.zh?.baseExample)base.append(el('p','中文：'+m.zh.baseExample,'t2x-note'));base.append(audio(m.baseExample));}c.append(base);
    const rule=el('div','','t2x-rule');rule.append(el('strong','转换规则'),el('p',m.rule));c.append(rule);
    c.append(el('h3','转换树'));
-   m.forms.forEach(f=>{const d=el('div','','t2x-form');d.append(el('span',f[0],'t2x-kind'),el('strong',f[1]),el('p',f[2]),audio(f[2]));c.append(d);});
+   m.forms.forEach((f,i)=>{const d=el('div','','t2x-form');d.append(el('span',f[0],'t2x-kind'),el('strong',f[1]));if(m.zh?.forms?.[i]?.pattern)d.append(el('p','结构中文：'+m.zh.forms[i].pattern,'t2x-note'));d.append(el('p',f[2]));if(m.zh?.forms?.[i]?.example)d.append(el('p','例句中文：'+m.zh.forms[i].example,'t2x-note'));d.append(audio(f[2]));c.append(d);});
    const src=el('div','','t2x-source');src.append(el('strong','你的真实口语案例 · '+m.real.recordId),el('p','原稿：'+m.real.original,'raw'),el('p','优化：'+m.real.better,'better'));c.append(src);
    view.append(c,timelineBox(m));
    const extensions=practiceExtensionsBox(m);if(extensions)view.append(...extensions);
