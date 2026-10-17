@@ -78,6 +78,30 @@ jobs:
           missing=requested-covered
           assert not missing, f'Missing career Piper for {len(missing)} chunks'
           print(f'PASS: 75 career cards and {len(requested)} Piper chunks')
+          # Travel topic: source-faithful vocabulary must have deployed Piper assets.
+          travel_data=(career_folder/'example-cards.js').read_text(encoding='utf-8')
+          travel_cards=json.loads(travel_data.split('window.TCF_T3_EXAMPLES=',1)[1].rsplit(';',1)[0])
+          assert len(travel_cards)==96
+          travel_original=json.loads((career_folder/'data-1.js').read_text(encoding='utf-8').split('CORPUS.push(...',1)[1].rsplit(');',1)[0])
+          original_by_id={p['id']:p['fr'] for p in travel_original}
+          travel_phrases=set()
+          for pid,card in travel_cards.items():
+              assert card['words'],f'Empty travel vocabulary: {pid}'
+              for phrase,meaning in card['words']:
+                  assert meaning and meaning!='原文高频表达',f'Untranslated phrase: {pid}'
+                  assert phrase.casefold() in original_by_id[pid].casefold(),f'Not sourced: {pid}: {phrase}'
+                  travel_phrases.add(phrase)
+          travel_covered=set()
+          for folder in ('argument-audio','chain-audio','example-audio','overview-audio','career-audio','travel-vocab-audio'):
+              loc=career_folder/folder
+              manifest=json.loads((loc/'manifest.json').read_text(encoding='utf-8'))['entries']
+              for phrase in travel_phrases & manifest.keys():
+                  pack=loc/manifest[phrase]['pack']
+                  assert pack.is_file() and pack.stat().st_size>100,f'Missing travel audio {pack}'
+                  travel_covered.add(phrase)
+          assert travel_phrases==travel_covered,f'Missing {len(travel_phrases-travel_covered)} travel audio entries'
+          print(f'PASS: 96 travel cards; {len(travel_phrases)} source-exact vocabulary clips')
+
           PY
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
