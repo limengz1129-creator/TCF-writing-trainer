@@ -56,6 +56,40 @@ jobs:
               pack=overview/item['pack']
               assert pack.is_file() and pack.stat().st_size>100, f'Missing mother-chain pack {pack}'
           print('Pages artifact includes 93 mother-chain Piper recordings')
+          # No career audio buttons may ship without exact on-disk Piper coverage.
+          from pathlib import Path
+          import re
+          maps=Path('eo-tache3-corpus/argument-map.js').read_text(encoding='utf-8')
+          topics,_=json.JSONDecoder().raw_decode(maps[maps.index('const TOPICS=')+len('const TOPICS='):])
+          career=topics['职业与职场']
+          raw=Path('eo-tache3-corpus/career-example-cards.js').read_text(encoding='utf-8')
+          cards=json.loads(re.search(r'window.TCF_T3_CAREER_EXAMPLES=(\\{.*\\});\\s*
+          PY
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: .
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
+,raw,re.S).group(1))
+          assert len(cards)==75
+          requested={p.strip() for mother in career['M'].values() for line in [mother['fr'],*[scene['fr'] for scene in mother['scenes']]] for p in line.split('→')}
+          requested.update(p.strip() for card in cards.values() for p in card['fr'].split('→'))
+          dirs=['argument-audio','chain-audio','example-audio','overview-audio','career-audio']
+          indexes={}
+          for folder in dirs:
+              loc=Path('eo-tache3-corpus')/folder
+              index=json.loads((loc/'manifest.json').read_text(encoding='utf-8'))['entries']
+              for phrase,entry in index.items():
+                  if phrase not in requested:continue
+                  pack=loc/entry['pack']
+                  assert pack.is_file() and pack.stat().st_size>100, f'Missing {pack}'
+                  indexes[phrase]=True
+          missing=requested-indexes.keys()
+          assert not missing, f'Career Piper missing {len(missing)} phrases; examples: {sorted(missing)[:5]}'
+          print(f'PASS: career topic {len(cards)} cards; {len(requested)} Piper chunks')
+
           PY
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
