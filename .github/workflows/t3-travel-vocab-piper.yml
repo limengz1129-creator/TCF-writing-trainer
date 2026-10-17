@@ -1,0 +1,36 @@
+name: Generate T3 travel example vocabulary Piper
+on:
+  push:
+    paths:
+      - 'tools/piper/build_t3_travel_vocab.py'
+      - '.github/workflows/t3-travel-vocab-piper.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 80
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+      - run: pip install piper-tts
+      - run: |
+          curl -fL --retry 3 -o /tmp/fr_FR-siwis-medium.onnx https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx
+          curl -fL --retry 3 -o /tmp/fr_FR-siwis-medium.onnx.json https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx.json
+      - run: python -u tools/piper/build_t3_travel_vocab.py
+      - name: Publish
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add eo-tache3-corpus/travel-vocab-audio/
+          if ! git diff --cached --quiet; then
+            git commit -m "Generate source-faithful travel vocabulary Piper audio"
+            git pull --rebase
+            git push
+          fi
