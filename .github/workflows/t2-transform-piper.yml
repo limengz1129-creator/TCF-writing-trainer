@@ -7,6 +7,9 @@ on:
       - 'tools/piper/t2-transform-generate.py'
       - '.github/workflows/t2-transform-piper.yml'
   workflow_dispatch:
+concurrency:
+  group: t2-transform-piper
+  cancel-in-progress: true
 permissions:
   contents: write
 jobs:
@@ -51,5 +54,11 @@ jobs:
           git add combined-expressions/t2-transform-audio/
           if ! git diff --cached --quiet; then
             git commit -m 'Generate Piper SIWIS recordings for T2 transformation [skip ci]'
-            git push
+            for attempt in 1 2 3 4 5; do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then break; fi
+              if [ "$attempt" -eq 5 ]; then exit 1; fi
+              sleep 3
+            done
           fi
