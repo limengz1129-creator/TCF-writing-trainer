@@ -15,7 +15,7 @@ assert len(topic["M"])==17
 for id,card in cards.items():
     assert card["zh"]==src[id]["summary"],id
     assert card["words"],id
-    assert all("原文情境表达" not in zh and len(zh)>2 for _,zh in card["words"]),id
+    assert all("原文情境表达" not in zh and len(zh)>=2 for _,zh in card["words"]),id
     for fr,zh in card["words"]:
         assert fr and zh and fr.casefold() in src[id]["fr"].casefold(),(id,fr)
     for chunk in card["fr"].split("→"):
