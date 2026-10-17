@@ -49,6 +49,13 @@ jobs:
               pack=examples/item['pack']
               assert pack.is_file() and pack.stat().st_size>100, f'Missing example audio pack {pack}'
           print('Pages artifact includes 323 example-chain Piper recordings')
+          overview=Path('eo-tache3-corpus/overview-audio')
+          overview_manifest=json.loads((overview/'manifest.json').read_text(encoding='utf-8'))
+          assert len(overview_manifest['entries'])==93, f"Missing mother-chain audio: {len(overview_manifest['entries'])}/93"
+          for phrase,item in overview_manifest['entries'].items():
+              pack=overview/item['pack']
+              assert pack.is_file() and pack.stat().st_size>100, f'Missing mother-chain pack {pack}'
+          print('Pages artifact includes 93 mother-chain Piper recordings')
           PY
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
