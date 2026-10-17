@@ -5,7 +5,7 @@
   const topicData=()=>TOPICS[$('topic')?.value]||TOPICS['旅行与移民'];
 
   // Only play pre-generated French Piper siwis recordings; no system voice fallback.
-  let argumentAudioManifest=null, argumentAudioManifestPromise=null, chainAudioManifestPromise=null, exampleAudioManifestPromise=null, activeArgumentAudio=null, activeArgumentButton=null, activeArgumentUrl=null;
+  let argumentAudioManifest=null, argumentAudioManifestPromise=null, chainAudioManifestPromise=null, exampleAudioManifestPromise=null, overviewAudioManifestPromise=null, activeArgumentAudio=null, activeArgumentButton=null, activeArgumentUrl=null;
   async function speakArgumentPhrase(text,button){
     if(activeArgumentAudio){activeArgumentAudio.pause();activeArgumentAudio=null;}
     if(activeArgumentUrl){URL.revokeObjectURL(activeArgumentUrl);activeArgumentUrl=null;}
@@ -24,6 +24,10 @@
         if(!exampleAudioManifestPromise)exampleAudioManifestPromise=fetch(new URL('example-audio/manifest.json',document.baseURI)).then(r=>{if(!r.ok)throw Error('例子逻辑链 Piper 音频尚未部署');return r.json();}).catch(e=>{exampleAudioManifestPromise=null;throw e;});
         const exampleManifest=await exampleAudioManifestPromise;
         entry=exampleManifest.entries?.[text];dir='example-audio/';
+      }
+      if(!entry){
+        if(!overviewAudioManifestPromise)overviewAudioManifestPromise=fetch(new URL('overview-audio/manifest.json',document.baseURI)).then(r=>{if(!r.ok)throw Error('母论点逻辑链 Piper 音频尚未部署');return r.json();}).catch(e=>{overviewAudioManifestPromise=null;throw e;});
+        const overview=await overviewAudioManifestPromise;entry=overview.entries?.[text];dir='overview-audio/';
       }
       if(!entry)throw Error('该词块尚无 Piper 音频');
       const response=await fetch(new URL(dir+entry.pack,document.baseURI));
@@ -86,6 +90,17 @@
     stage.replaceChildren();const wrap=document.createElement('div');wrap.className='quick-overview-grid';
     D.QUICK.forEach(([title,keywords])=>{const card=document.createElement('section');card.className='quick-overview-card';card.innerHTML='<h3>'+title+'</h3><p>'+keywords+'</p>';wrap.append(card);});stage.append(wrap);
   }
+  function logicAudioChain(chain){
+    const row=document.createElement('div');row.className='logic-fr scene-audio-chain';row.lang='fr';
+    chain.split(/\s*→\s*/).forEach((part,i)=>{if(i){const arrow=document.createElement('span');arrow.textContent=' → ';row.append(arrow);}
+      const chunk=document.createElement('span');chunk.className='scene-audio-chunk';
+      const txt=document.createElement('span');txt.textContent=part;
+      const play=document.createElement('button');play.type='button';play.className='argument-word-audio';play.textContent='🔊';
+      play.title='Piper 朗读 '+part;play.setAttribute('aria-label','Piper 朗读 '+part);
+      play.onclick=ev=>{ev.stopPropagation();speakArgumentPhrase(part,play);};
+      chunk.append(txt,play);row.append(chunk);
+    });return row;
+  }
   function renderMother(stage,D,id,mode='map'){
     const d=D.M[id];if(!d)return;stage.replaceChildren();
     const back=document.createElement('button');back.className='back-to-map';back.textContent='← 返回 '+D.mothers+' 个母论点总图';back.onclick=()=>renderOverview(stage,D);stage.append(back);
@@ -93,7 +108,25 @@
     const modes=document.createElement('div');modes.className='argument-modes mother-modes';[['map','🧠 思维导图'],['chain','🔗 法语逻辑链'],['quick','⚡ 极简速记']].forEach(([k,label])=>{const b=document.createElement('button');b.dataset.motherMode=k;b.textContent=label;b.classList.toggle('active',k===mode);modes.append(b);});stage.append(modes);
     const body=document.createElement('div');body.className='mother-stage';stage.append(body);
     const showMap=()=>{body.replaceChildren();const map=document.createElement('div');map.className='argument-map-sample';const center=document.createElement('button');center.className='mother-node active';center.innerHTML='<strong>#'+id+' '+d.t+'</strong><small>'+(d.badge?d.badge+' · ':'')+'点击下面场景链继续展开</small>';map.append(center);const branches=document.createElement('div');branches.className='scene-grid';d.scenes.forEach((s,i)=>{const card=document.createElement('button');card.className='scene-node';card.innerHTML='<span>场景 '+(i+1)+'</span><strong>'+s.title+'</strong><small lang="fr">'+s.fr+'</small>';const weak=sceneWeakCount(s);if(weak){const icon=weakMarker(weak);icon.title='这个场景有 '+weak+' 个不熟练论段';card.querySelector('strong').append(icon);}card.onclick=()=>renderScene(stage,D,id,i);branches.append(card);});map.append(branches);body.append(map);};
-    const showChain=()=>{body.replaceChildren();const core=document.createElement('section');core.className='argument-core';core.innerHTML='<p class="argument-label">核心法语逻辑链</p><div class="logic-fr" lang="fr">'+d.fr+'</div><div class="logic-zh">'+d.zh+'</div>';body.append(core);const branches=document.createElement('div');branches.className='scene-list';d.scenes.forEach((s,i)=>{const card=document.createElement('button');card.className='scene-chain';card.innerHTML='<strong>'+s.title+'</strong><span class="logic-fr compact" lang="fr">'+s.fr+'</span><span class="logic-zh">'+s.zh+'</span><em>点击展开主题词组 ›</em>';const weak=sceneWeakCount(s);if(weak){const icon=weakMarker(weak);icon.title='这个场景有 '+weak+' 个不熟练论段';card.append(icon);}card.onclick=()=>renderScene(stage,D,id,i);branches.append(card);});body.append(branches);};
+    const showChain=()=>{
+      body.replaceChildren();
+      const core=document.createElement('section');core.className='argument-core';
+      const label=document.createElement('p');label.className='argument-label';label.textContent='核心法语逻辑链';
+      const zh=document.createElement('div');zh.className='logic-zh';zh.textContent=d.zh;
+      core.append(label,logicAudioChain(d.fr),zh);body.append(core);
+      const branches=document.createElement('div');branches.className='scene-list';
+      d.scenes.forEach((scene,i)=>{
+        const wrapper=document.createElement('section');wrapper.className='scene-chain-audio-row';
+        const card=document.createElement('button');card.className='scene-chain';card.type='button';
+        const name=document.createElement('strong');name.textContent=scene.title;
+        const chinese=document.createElement('span');chinese.className='logic-zh';chinese.textContent=scene.zh;
+        const tip=document.createElement('em');tip.textContent='点击展开主题词组 ›';
+        card.append(name,chinese,tip);
+        const weak=sceneWeakCount(scene);if(weak){const icon=weakMarker(weak);card.append(icon);}
+        card.onclick=()=>renderScene(stage,D,id,i);
+        wrapper.append(card,logicAudioChain(scene.fr));branches.append(wrapper);
+      });body.append(branches);
+    };
     const showQuick=()=>{body.replaceChildren();const q=document.createElement('section');q.className='quick-card';q.innerHTML='<p class="argument-label">考前极简速记</p><div class="quick-memory">'+d.zh+'</div><p class="logic-fr" lang="fr">'+d.fr+'</p><p class="logic-zh">'+d.zh+'</p>';body.append(q);};
     modes.onclick=e=>{const b=e.target.closest('button[data-mother-mode]');if(!b)return;modes.querySelectorAll('button').forEach(x=>x.classList.toggle('active',x===b));b.dataset.motherMode==='map'?showMap():b.dataset.motherMode==='chain'?showChain():showQuick();};
     mode==='chain'?showChain():mode==='quick'?showQuick():showMap();
