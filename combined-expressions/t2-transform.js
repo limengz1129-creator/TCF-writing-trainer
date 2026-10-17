@@ -180,6 +180,23 @@
    });
    return [container,advanced];
  }
+ function personVariantsBox(m){
+   const variants=m.personVariants||[];if(!variants.length)return null;
+   const box=el('section','','t2x-card');box.append(el('h3','Vous / Tu · 人称切换'),el('p','按考官设定的关系选称呼；仅显示需要第二人称变位的问句。','t2x-note'));
+   const controls=el('div','','t2x-actions'),listing=el('div');
+   let person=S().personMode==='tu'?'tu':'vous';
+   const formal=btn('Vous · 正式',()=>{person='vous';S().personMode=person;save();draw();}),informal=btn('Tu · 熟人',()=>{person='tu';S().personMode=person;save();draw();});
+   controls.append(formal,informal);box.append(controls,listing);
+   function draw(){
+     formal.classList.toggle('primary',person==='vous');informal.classList.toggle('primary',person==='tu');
+     listing.replaceChildren();
+     variants.forEach(item=>{
+       const card=el('div','','t2x-form'),fr=item[person],zh=item[person==='vous'?'zhVous':'zhTu'];
+       card.append(el('strong',fr),el('p','中文：'+zh,'t2x-note'),audio(fr));listing.append(card);
+     });
+   }
+   draw();return box;
+ }
  function detail(){
    const m=mod(S().moduleId);if(!m){S().view='modules';modulesView();return;}const p=P(m.id);
    const top=el('div','','t2x-actions');top.append(btn('← 返回模块地图',()=>{S().view='modules';S().moduleId='';render();}),btn(p.favorite?'★ 已收藏':'☆ 收藏',()=>{p.favorite=!p.favorite;save();render();}),btn('✅ 我已掌握',()=>{p.status='mastered';p.mastered++;save();render();}),btn('❌ 需要复习',()=>{p.status='review';p.review++;save();render();}));view.append(top);
@@ -191,6 +208,7 @@
    const src=el('div','','t2x-source');src.append(el('strong','你的真实口语案例 · '+m.real.recordId),el('p','原稿：'+m.real.original,'raw'),el('p','优化：'+m.real.better,'better'));c.append(src);
    view.append(c,timelineBox(m));
    const extensions=practiceExtensionsBox(m);if(extensions)view.append(...extensions);
+   const personBox=personVariantsBox(m);if(personBox)view.append(personBox);
    const notes=el('div','','t2x-card');notes.append(el('h3','📝 我的理解 / 记忆钩子'));const ta=el('textarea');ta.style.width='100%';ta.style.minHeight='80px';ta.value=p.notes||'';ta.oninput=()=>{p.notes=ta.value;save();};notes.append(ta);view.append(notes);
    const practice=el('div','','t2x-actions');practice.append(btn('用这个模块做转换训练',()=>{S().view='train';S().moduleId=m.id;save();render();},'primary'),btn('用这个模块练时间线',()=>{S().view='timeline';S().moduleId=m.id;save();render();}));view.append(practice);
  }
