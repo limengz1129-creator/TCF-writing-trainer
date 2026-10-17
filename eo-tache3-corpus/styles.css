@@ -153,3 +153,7 @@
 .scene-audio-chain{display:flex;flex-wrap:wrap;align-items:center;gap:7px;line-height:2.1}
 .scene-audio-chunk{display:inline-flex;align-items:center;gap:5px;white-space:normal}
 .scene-audio-chunk .argument-word-audio{font-size:12px;min-width:29px;min-height:29px;flex-shrink:0}
+
+.scene-chain-audio-row{border:1px solid #dce2f1;border-radius:12px;padding:12px;margin-bottom:10px}
+.scene-chain-audio-row .scene-chain{border:0;padding:4px;width:100%;text-align:left}
+.scene-chain-audio-row .scene-audio-chain{padding:6px 4px;gap:5px}
