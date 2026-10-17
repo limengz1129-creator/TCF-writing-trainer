@@ -25,6 +25,9 @@ if not match:
 data = json.loads(match.group(1))
 texts = set()
 for module in data["modules"]:
+    if not module.get("baseExample"):
+        raise RuntimeError(f"Missing base example for {module['id']}")
+    texts.add(module["baseExample"])
     texts.update(form[2] for form in module["forms"])
     if module.get("timeline"):
         texts.update(module["timeline"].values())
