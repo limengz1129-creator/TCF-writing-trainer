@@ -1,0 +1,28 @@
+{
+  "topic": "环境与城市",
+  "status": "accepted",
+  "validatedCommit": "acc9110aa7f59d30ce7095fd80363868bc767d48",
+  "coverage": {
+    "motherArguments": 16,
+    "sceneBranches": 41,
+    "sourceParagraphs": 42,
+    "sourceGroundedExampleCards": 42,
+    "translatedExcerptChunks": 82
+  },
+  "automatedVerification": {
+    "piperGeneration": {
+      "runId": 39004136022,
+      "conclusion": "success"
+    },
+    "topicAudit": {
+      "runId": 39004468375,
+      "conclusion": "success"
+    },
+    "pagesDeployment": {
+      "runId": 39004468376,
+      "conclusion": "success"
+    }
+  },
+  "scope": "Automated source correspondence, Piper indexes and packed MP3 validation, Pages deployment",
+  "note": "Physical device listening is not asserted."
+}
