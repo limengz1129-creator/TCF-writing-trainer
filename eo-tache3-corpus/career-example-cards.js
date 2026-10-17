@@ -1,9 +1,9 @@
 'use strict';
-// 职业与职场：从75个原始论段生成的初稿；reviewStatus=draft，需逐条精修后才能标记通过。
+// 职业与职场75条原论段，来源关联初稿，逐条精修前请保留待精修标签。
 window.TCF_T3_CAREER_EXAMPLES={
   "2-01-1": {
     "title": "家庭开支版 · 2-01-1",
-    "fr": "Prenons l’exemple d’une famille avec des enfants. Les parents doivent non seulement assumer les dépenses liées… → mais aussi parfois rembourser un prêt immobilier ou un crédit automobile",
+    "fr": "Prenons l’exemple d’une famille avec des enfants → mais aussi parfois rembourser un prêt immobilier ou un crédit automobile",
     "zh": "工资承担养家、房贷和日常开销，是选择工作的关键，也能保障经济安全与生活水平。",
     "words": [
       [
@@ -90,7 +90,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-03-2": {
     "title": "专业与责任版 · 2-03-2",
-    "fr": "s médecins. Ils doivent parfois prendre des décisions importantes qui peuvent avoir des conséquences directes…",
+    "fr": "s médecins",
     "zh": "医生面对直接影响患者健康的重大决定和高压环境；责任与出错后果也可成为高薪理由。",
     "words": [
       [
@@ -140,7 +140,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-04-3": {
     "title": "公平争议版 · 2-04-3",
-    "fr": "s médecins ou des enseignants. Ils assument des responsabilités importantes et contribuent directement au…",
+    "fr": "s médecins ou des enseignants",
     "zh": "医生和教师承担重要社会责任，收入却远低于顶尖运动员，因此有人认为薪酬差距过大。",
     "words": [
       [
@@ -161,7 +161,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-05-3": {
     "title": "艺术职业版 · 2-05-3",
-    "fr": "Un artiste ne dispose pas toujours d’un revenu stable et peut rencontrer des difficultés pour trouver…",
+    "fr": "Un artiste ne dispose pas toujours d’un revenu stable et peut rencontrer des difficultés pour trouver",
     "zh": "艺术工作常面临收入和项目不稳定，但财务波动不能否定职业的价值和专业性。",
     "words": [
       [
@@ -190,7 +190,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-07-2": {
     "title": "继续工作版 · 2-07-2",
-    "fr": "À l’approche de la retraite → elles peuvent encore avoir des dépenses importantes → par exemple un prêt immobilier à rembourser ou des membres de leur famille à soutenir financièrement. Elles…",
+    "fr": "À l’approche de la retraite → elles peuvent encore avoir des dépenses importantes → par exemple un prêt immobilier à rembourser ou des membres de leur famille à soutenir financièrement",
     "zh": "临近退休仍可能负担房贷或赡养家人；继续工作可维持收入和生活水平。",
     "words": [
       [
@@ -240,7 +240,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-01-2": {
     "title": "工作意义版 · 2-01-2",
-    "fr": "l’épanouissement professionnel peut être tout aussi important que le salaire. Une personne passe une grande…",
+    "fr": "l’épanouissement professionnel peut être tout aussi important que le salaire",
     "zh": "工作占据人生很长时间；有兴趣、有成长空间的职业能带来动力与成就感，高薪未必弥补压力或无意义感。",
     "words": [
       [
@@ -406,7 +406,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-11-1": {
     "title": "公平风险版 · 2-11-1",
-    "fr": "d’être plus indulgent envers lui ou d’hésiter à lui faire des remarques. Cette situation pourrait alors créer…",
+    "fr": "d’être plus indulgent envers lui ou d’hésiter à lui faire des remarques",
     "zh": "与亲属共事可能使主管对错误偏袒亲人，破坏公平感与团队氛围。",
     "words": [
       [
@@ -435,7 +435,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-11-3": {
     "title": "团队合作版 · 2-11-3",
-    "fr": "Ils connaissent parfois déjà leurs habitudes → leurs qualités ainsi que leur façon de travailler. Cette relation de confiance peut faciliter la communication… → notamment lorsqu’il faut résoudre rapidement un problème ou prendre une décision ensemble",
+    "fr": "Ils connaissent parfois déjà leurs habitudes → leurs qualités ainsi que leur façon de travailler → notamment lorsqu’il faut résoudre rapidement un problème ou prendre une décision ensemble",
     "zh": "家庭成员彼此熟悉、信任，可能更容易沟通协作和迅速共同解决问题。",
     "words": [
       [
@@ -464,7 +464,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-12-1": {
     "title": "支持型领导 · 2-12-1",
-    "fr": "Lorsqu’un employé rencontre une difficulté professionnelle → une responsable qui garde son calme peut prendre le temps de comprendre la situation avant de lui apporter son…",
+    "fr": "Lorsqu’un employé rencontre une difficulté professionnelle → une responsable qui garde son calme peut prendre le temps de comprendre la situation avant de lui apporter son soutien",
     "zh": "作者偏好耐心、温和且能在压力下保持冷静的主管，认为这有助于员工沟通和获得支持。",
     "words": [
       [
@@ -489,7 +489,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-12-2": {
     "title": "冲突管理版 · 2-12-2",
-    "fr": "si deux employés entraient en conflit à cause d’un désaccord professionnel → une responsable pourrait écouter attentivement le point de vue de chacun avant d’intervenir. Au lieu de… → elle pourrait jouer un rôle de médiatrice et essayer de trouver un compromis acceptable pour les deux parties",
+    "fr": "si deux employés entraient en conflit à cause d’un désaccord professionnel → une responsable pourrait écouter attentivement le point de vue de chacun avant d’intervenir → elle pourrait jouer un rôle de médiatrice et essayer de trouver un compromis acceptable pour les deux parties",
     "zh": "好主管应耐心倾听冲突双方并居中调解；找到双方可接受的妥协有助于维持团队气氛。",
     "words": [
       [
@@ -518,7 +518,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-12-3": {
     "title": "公平评价领导力 · 2-12-3",
-    "fr": "Le sexe ne devrait pas être le principal critère pour déterminer si une personne est capable de diriger une… → bienveillant et capable de gérer efficacement les conflits",
+    "fr": "Le sexe ne devrait pas être le principal critère pour déterminer si une personne est capable de diriger une équipe → bienveillant et capable de gérer efficacement les conflits",
     "zh": "不能凭性别推断领导能力；经验、责任感、专业技能与人际品质才是核心。",
     "words": [
       [
@@ -539,7 +539,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-13-2": {
     "title": "新人融入版 · 2-13-2",
-    "fr": "le responsable pourrait réserver un restaurant italien et inviter les membres du service à partager un repas.…",
+    "fr": "le responsable pourrait réserver un restaurant italien et inviter les membres du service à partager un repas",
     "zh": "欢迎聚餐等轻松活动能让新人与同事在工作之外相识，建立关系和公司归属感。",
     "words": [
       [
@@ -593,7 +593,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-14-2": {
     "title": "冲突管理版 · 2-14-2",
-    "fr": "si deux employés entraient en conflit → leur responsable devrait écouter attentivement le point de vue de chacun avant d’intervenir. Au lieu de… → il devrait jouer un rôle de médiateur et trouver un compromis acceptable pour les deux parties",
+    "fr": "si deux employés entraient en conflit → leur responsable devrait écouter attentivement le point de vue de chacun avant d’intervenir → il devrait jouer un rôle de médiateur et trouver un compromis acceptable pour les deux parties",
     "zh": "优秀主管还要耐心倾听和调解冲突，不能仅有专业技术。",
     "words": [
       [
@@ -622,7 +622,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-21-3": {
     "title": "冲突管理版 · 2-21-3",
-    "fr": "si deux employés entraient en conflit → leur responsable devrait être capable d’écouter chacun d’eux et de trouver un compromis acceptable pour les…",
+    "fr": "si deux employés entraient en conflit → leur responsable devrait être capable d’écouter chacun d’eux et de trouver un compromis acceptable pour les deux parties",
     "zh": "技术出色仍不一定能管理团队；主管还需要沟通、倾听和调解冲突的人际能力。",
     "words": [
       [
@@ -651,7 +651,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-06-1": {
     "title": "通勤与家庭版 · 2-06-1",
-    "fr": "Ce temps peut ensuite être consacré à sa vie personnelle → par exemple au repos → aux loisirs ou aux tâches quotidiennes. Le télétravail peut donc faciliter la conciliation entre les…",
+    "fr": "Ce temps peut ensuite être consacré à sa vie personnelle → par exemple au repos → aux loisirs ou aux tâches quotidiennes",
     "zh": "远程办公节省通勤与堵车时间，使员工能把时间用于休息、爱好和日常生活。",
     "words": [
       [
@@ -680,7 +680,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-06-2": {
     "title": "通勤与家庭版 · 2-06-2",
-    "fr": "ils peuvent avoir plus de temps pour s’occuper de leurs enfants → préparer le dîner en famille ou simplement partager certains moments de la vie quotidienne avec eux. Au lieu… → ils peuvent utiliser ce temps pour leurs proches",
+    "fr": "ils peuvent avoir plus de temps pour s’occuper de leurs enfants → préparer le dîner en famille ou simplement partager certains moments de la vie quotidienne avec eux → ils peuvent utiliser ce temps pour leurs proches",
     "zh": "省下通勤时间使父母更能照顾孩子、共进晚餐，从而改善家庭生活质量。",
     "words": [
       [
@@ -709,7 +709,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-06-3": {
     "title": "边界风险版 · 2-06-3",
-    "fr": "même après avoir terminé sa journée de travail → son téléphone peut continuer à sonner et elle peut recevoir constamment des messages dans les groupes de… → même le soir ou pendant le week-end",
+    "fr": "même après avoir terminé sa journée de travail → son téléphone peut continuer à sonner et elle peut recevoir constamment des messages dans les groupes de → même le soir ou pendant le week-end",
     "zh": "居家工作可能让下班后的电话和工作消息不断，模糊工作与生活边界并增加压力。",
     "words": [
       [
@@ -805,7 +805,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-09-2": {
     "title": "私人生活版 · 2-09-2",
-    "fr": "certaines personnes souhaitent passer davantage de temps avec leurs enfants → voyager ou simplement partager des moments chaleureux avec leurs proches. Travailler moins peut donc leur… → par conséquent",
+    "fr": "certaines personnes souhaitent passer davantage de temps avec leurs enfants → voyager ou simplement partager des moments chaleureux avec leurs proches → par conséquent",
     "zh": "工作过多会挤占亲友相处和爱好时间；缩短工时让人把精力留给工作之外重要的生活。",
     "words": [
       [
@@ -830,7 +830,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-10-1": {
     "title": "恢复状态版 · 2-10-1",
-    "fr": "après avoir travaillé plusieurs heures devant un écran ou participé à de nombreuses réunions → un employé peut ressentir une certaine fatigue. Quelques minutes de repos peuvent alors l’aider à retrouver…",
+    "fr": "après avoir travaillé plusieurs heures devant un écran ou participé à de nombreuses réunions → un employé peut ressentir une certaine fatigue",
     "zh": "午休时短暂小睡能缓解高工作量带来的疲劳，使员工下午恢复注意力和效率。",
     "words": [
       [
@@ -855,7 +855,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-10-2": {
     "title": "企业吸引力版 · 2-10-2",
-    "fr": "lorsqu’un candidat compare plusieurs entreprises → il peut tenir compte non seulement du salaire → mais aussi des conditions de travail et des avantages proposés. Une entreprise attentive au bien-être de ses…",
+    "fr": "lorsqu’un candidat compare plusieurs entreprises → il peut tenir compte non seulement du salaire → mais aussi des conditions de travail et des avantages proposés",
     "zh": "企业重视休息与健康会提高员工满意度，也有助于吸引和留住人才。",
     "words": [
       [
@@ -876,7 +876,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-10-3": {
     "title": "规则边界版 · 2-10-3",
-    "fr": "Il serait donc préférable d’autoriser une courte sieste pendant une période déterminée → par exemple pendant la pause déjeuner. Sa durée devrait rester raisonnable afin de ne pas perturber le…",
+    "fr": "Il serait donc préférable d’autoriser une courte sieste pendant une période déterminée → par exemple pendant la pause déjeuner",
     "zh": "午睡应限于午休等规定时段且时间适中，以免打乱工作安排或影响产出。",
     "words": [
       [
@@ -926,7 +926,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-25-1": {
     "title": "自主安排版 · 2-25-1",
-    "fr": "je pourrais monter mes vidéos sur mon ordinateur chez moi plutôt que de me rendre tous les jours dans un…",
+    "fr": "je pourrais monter mes vidéos sur mon ordinateur chez moi plutôt que de me rendre tous les jours dans un bureau",
     "zh": "做视频博主可以在家剪辑、自由安排拍摄和制作时间，减少通勤并改善工作生活平衡。",
     "words": [
       [
@@ -1005,7 +1005,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-14-3": {
     "title": "成长培养版 · 2-14-3",
-    "fr": "la restauration. De nombreux responsables de restaurant ont commencé leur carrière comme serveurs avant d’être…",
+    "fr": "la restauration",
     "zh": "领导能力可通过培训和基层经验逐步培养；服务员成长为餐厅经理便是例子。",
     "words": [
       [
@@ -1030,7 +1030,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-17-1": {
     "title": "双赢版 · 2-17-1",
-    "fr": "Prenons l’exemple d’un informaticien. Son entreprise pourrait lui proposer régulièrement des formations afin…",
+    "fr": "Prenons l’exemple d’un informaticien",
     "zh": "持续培训帮助员工更新技术并提高效率，也让企业获得更熟练的劳动力，双方受益。",
     "words": [
       [
@@ -1059,7 +1059,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-17-2": {
     "title": "机会平等版 · 2-17-2",
-    "fr": "un salarié issu d’un milieu modeste pourrait avoir des difficultés à se payer une formation professionnelle… → cet employé aurait davantage de possibilités de développer ses compétences et d’accéder progressivement à de…",
+    "fr": "un salarié issu d’un milieu modeste pourrait avoir des difficultés à se payer une formation professionnelle coûteuse → cet employé aurait davantage de possibilités de développer ses compétences et d’accéder progressivement à de nouvelles responsabilités",
     "zh": "企业资助培训可让经济条件有限的员工也获得提升技能与晋升的机会。",
     "words": [
       [
@@ -1080,7 +1080,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-17-3": {
     "title": "共同责任版 · 2-17-3",
-    "fr": "Une entreprise peut proposer de nombreuses formations → mais si un salarié refuse d’y participer ou ne fait aucun effort pour mettre en pratique ce qu’il a appris → leur efficacité restera forcément limitée. La formation continue devrait donc reposer sur une responsabilité…",
+    "fr": "Une entreprise peut proposer de nombreuses formations → mais si un salarié refuse d’y participer ou ne fait aucun effort pour mettre en pratique ce qu’il a appris → leur efficacité restera forcément limitée",
     "zh": "企业提供课程之外，员工也要主动参加并实践所学；持续学习是双方共同责任。",
     "words": [
       [
@@ -1105,7 +1105,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-18-1": {
     "title": "年龄挑战版 · 2-18-1",
-    "fr": "Prenons l’exemple d’une personne âgée qui commence à apprendre une langue étrangère comme le français. Elle…",
+    "fr": "Prenons l’exemple d’une personne âgée qui commence à apprendre une langue étrangère comme le français",
     "zh": "年长者学习新语言可能更难记忆、容易疲劳；年龄带来挑战，但不一定无法克服。",
     "words": [
       [
@@ -1130,7 +1130,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-18-2": {
     "title": "技术辅助版 · 2-18-2",
-    "fr": "suivre des cours en ligne → regarder des vidéos éducatives ou apprendre une langue étrangère à leur propre rythme. S’ils ne comprennent… → ils peuvent revoir le même contenu plusieurs fois",
+    "fr": "suivre des cours en ligne → regarder des vidéos éducatives ou apprendre une langue étrangère à leur propre rythme → ils peuvent revoir le même contenu plusieurs fois",
     "zh": "线上课程和视频让各年龄成人按自己的节奏反复学习，终身学习比过去更容易。",
     "words": [
       [
@@ -1159,7 +1159,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-18-3": {
     "title": "动力版 · 2-18-3",
-    "fr": "Une personne de cinquante ou soixante ans qui souhaite réellement acquérir une nouvelle compétence peut… → une personne beaucoup plus jeune qui manque de motivation ne progressera pas nécessairement plus vite",
+    "fr": "Une personne de cinquante ou soixante ans qui souhaite réellement acquérir une nouvelle compétence peut → une personne beaucoup plus jeune qui manque de motivation ne progressera pas nécessairement plus vite",
     "zh": "五六十岁的人若有明确目标并持续努力，仍能进步；学习能力也取决于意愿与毅力。",
     "words": [
       [
@@ -1184,7 +1184,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-19-2": {
     "title": "技能版 · 2-19-2",
-    "fr": "Prenons l’exemple d’une personne qui a d’abord travaillé dans le marketing avant de devenir analyste de… → elle comprend mieux les besoins des clients et les stratégies commerciales",
+    "fr": "Prenons l’exemple d’une personne qui a d’abord travaillé dans le marketing avant de devenir analyste de données → elle comprend mieux les besoins des clients et les stratégies commerciales",
     "zh": "市场营销与数据分析经验可结合成数字营销能力，跨学科背景拓宽职业选择。",
     "words": [
       [
@@ -1209,7 +1209,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-19-3": {
     "title": "限制版 · 2-19-3",
-    "fr": "Prenons l’exemple d’un candidat dont le CV présente de nombreuses expériences dans des secteurs très…",
+    "fr": "Prenons l’exemple d’un candidat dont le CV présente de nombreuses expériences dans des secteurs très différents",
     "zh": "转行过于频繁可能妨碍建立专业深度，也会让招聘者担忧稳定性。",
     "words": [
       [
@@ -1234,7 +1234,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-20-1": {
     "title": "困难版 · 2-20-1",
-    "fr": "une personne qui travaille dans le même domaine depuis vingt ou trente ans peut avoir davantage de difficultés…",
+    "fr": "travaille dans le même domaine depuis vingt ou trente ans peut avoir davantage de difficultés à sortir de sa zone de confort",
     "zh": "年长者转行要重新学习、适应环境，甚至从零开始；难度较大但并非不可能。",
     "words": [
       [
@@ -1263,7 +1263,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-20-2": {
     "title": "资源辅助版 · 2-20-2",
-    "fr": "Prenons l’exemple d’une personne qui travaille depuis longtemps dans le marketing mais qui souhaite se…",
+    "fr": "Prenons l’exemple d’une personne qui travaille depuis longtemps dans le marketing mais qui souhaite se reconvertir dans l’analyse de données",
     "zh": "在线课程与工作坊使成年人能按自己的节奏学新技能，无须一定全职重返大学。",
     "words": [
       [
@@ -1338,7 +1338,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-21-2": {
     "title": "导师领导版 · 2-21-2",
-    "fr": "Prenons l’exemple d’un développeur senior qui accompagne des développeurs juniors. Grâce à son expérience… → il peut encadrer et guider ses collègues → leur transmettre ses connaissances et les aider à résoudre des problèmes techniques",
+    "fr": "Prenons l’exemple d’un développeur senior qui accompagne des développeurs juniors → il peut encadrer et guider ses collègues → leur transmettre ses connaissances et les aider à résoudre des problèmes techniques",
     "zh": "资深开发者指导新人、传授技术并解决问题，可展示领导潜力并走向管理岗位。",
     "words": [
       [
@@ -1363,7 +1363,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-08-2": {
     "title": "职业能力版 · 2-08-2",
-    "fr": "Ces compétences peuvent constituer un véritable atout lorsqu’ils chercheront à s’insérer sur le marché du…",
+    "fr": "Ces compétences peuvent constituer un véritable atout lorsqu’ils chercheront à s’insérer sur le marché du travail",
     "zh": "兼职即使与专业无关，也能训练沟通、合作和时间管理，为未来就业积累经验。",
     "words": [
       [
@@ -1417,7 +1417,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-22-1": {
     "title": "经验悖论版 · 2-22-1",
-    "fr": "Certains jeunes diplômés viennent tout juste de terminer leurs études et n’ont parfois même jamais effectué de… → de nombreux recruteurs recherchent des candidats qui possèdent déjà une certaine expérience et qui peuvent…",
+    "fr": "Certains jeunes diplômés viennent tout juste de terminer leurs études et n’ont parfois même jamais effectué de stage → de nombreux recruteurs recherchent des candidats qui possèdent déjà une certaine expérience et qui peuvent être rapidement opérationnels",
     "zh": "许多招聘岗位要求经验，毕业生却须先找到工作才能积累经验，形成求职悖论。",
     "words": [
       [
@@ -1446,7 +1446,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-22-2": {
     "title": "竞争版 · 2-22-2",
-    "fr": "un titulaire d’une licence peut se retrouver en concurrence avec des candidats titulaires d’un master → voire d’un doctorat. Certains jeunes décident même de poursuivre leurs études pour augmenter leurs chances de…",
+    "fr": "un titulaire d’une licence peut se retrouver en concurrence avec des candidats titulaires d’un master → voire d’un doctorat",
     "zh": "毕业生人数多而对口职位有限，学历层次与学校声誉竞争使单有文凭未必够用。",
     "words": [
       [
@@ -1475,7 +1475,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-22-3": {
     "title": "AI工具版 · 2-22-3",
-    "fr": "ils peuvent utiliser un outil d’intelligence artificielle comme ChatGPT pour améliorer leur CV et mieux mettre…",
+    "fr": "ils peuvent utiliser un outil d’intelligence artificielle comme ChatGPT pour améliorer leur CV et mieux mettre en valeur leurs compétences",
     "zh": "AI 工具可以帮助年轻人修改简历与准备面试；快速掌握新工具也是他们的优势。",
     "words": [
       [
@@ -1504,7 +1504,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-04-1": {
     "title": "体育价值版 · 2-04-1",
-    "fr": "certains jeunes qui admirent des sportifs professionnels peuvent être encouragés à pratiquer régulièrement une… → dans une certaine mesure → refléter leurs efforts ainsi que leur influence auprès du public",
+    "fr": "certains jeunes qui admirent des sportifs professionnels peuvent être encouragés à pratiquer régulièrement une → dans une certaine mesure → refléter leurs efforts ainsi que leur influence auprès du public",
     "zh": "职业运动员投入大量训练与毅力，也向年轻人传递团队精神和自我超越等价值。",
     "words": [
       [
@@ -1533,7 +1533,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-04-2": {
     "title": "国际赛事版 · 2-04-2",
-    "fr": "la Coupe du monde de football. Cet événement attire l’attention de millions de personnes dans différents pays…",
+    "fr": "la Coupe du monde de football",
     "zh": "世界杯等赛事吸引国际观众和游客；明星运动员的曝光度能推广运动和国家形象。",
     "words": [
       [
@@ -1554,7 +1554,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-05-2": {
     "title": "艺术传播版 · 2-05-2",
-    "fr": "s œuvres présentées dans une galerie d’art. Elles peuvent constituer une véritable vitrine culturelle… → la sensibilité et l’expression artistique d’une société",
+    "fr": "s œuvres présentées dans une galerie d’art → la sensibilité et l’expression artistique d’une société",
     "zh": "电影、音乐和绘画传递文化价值及传统，艺术家帮助国家文化被更广泛的观众了解。",
     "words": [
       [
@@ -1604,7 +1604,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-24-2": {
     "title": "家长压力版 · 2-24-2",
-    "fr": "lorsqu’un élève obtient de mauvais résultats ou rencontre des problèmes de comportement à l’école → certains parents peuvent avoir tendance à en tenir l’enseignant responsable. Celui-ci doit alors non seulement… → mais aussi communiquer régulièrement avec les parents et parfois faire face à leurs critiques",
+    "fr": "lorsqu’un élève obtient de mauvais résultats ou rencontre des problèmes de comportement à l’école → certains parents peuvent avoir tendance à en tenir l’enseignant responsable → mais aussi communiquer régulièrement avec les parents et parfois faire face à leurs critiques",
     "zh": "家长期待高，学生成绩或行为出问题时可能责备教师；教师还须沟通与承受批评。",
     "words": [
       [
@@ -1629,7 +1629,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-25-2": {
     "title": "内容创作版 · 2-25-2",
-    "fr": "si je réalisais une série de vidéos sur New York → je pourrais goûter à la cuisine locale → visiter des monuments historiques et découvrir différentes galeries d’art. Je pourrais également filmer la vie…",
+    "fr": "si je réalisais une série de vidéos sur New York → je pourrais goûter à la cuisine locale → visiter des monuments historiques et découvrir différentes galeries d’art",
     "zh": "旅行视频创作使作者实地体验城市、美食和艺术，比仅在网上了解文化更具体，也能丰富作品。",
     "words": [
       [
@@ -1650,7 +1650,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-11-2": {
     "title": "选人原则版 · 2-11-2",
-    "fr": "s entreprises familiales. Certaines d’entre elles préfèrent recruter des dirigeants professionnels sur le…",
+    "fr": "s entreprises familiales",
     "zh": "亲属关系不能替代管理技能；重要岗位应根据经验和能力选人，必要时聘请外部经理。",
     "words": [
       [
@@ -1700,7 +1700,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-15-3": {
     "title": "合理规范版 · 2-15-3",
-    "fr": "les employés pourraient mettre leur téléphone en mode silencieux et l’utiliser principalement pendant leurs… → sauf en cas d’urgence",
+    "fr": "les employés pourraient mettre leur téléphone en mode silencieux et l’utiliser principalement pendant leurs pauses → sauf en cas d’urgence",
     "zh": "频繁刷社交媒体或接私人电话会分散注意力、影响同事；可规定静音和休息时使用。",
     "words": [
       [
@@ -1729,7 +1729,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-16-1": {
     "title": "指导版 · 2-16-1",
-    "fr": "lorsqu’un jeune employé doit traiter pour la première fois un dossier complexe → son responsable a peut-être déjà été confronté à une situation similaire. Il peut donc lui donner des conseils…",
+    "fr": "lorsqu’un jeune employé doit traiter pour la première fois un dossier complexe → son responsable a peut-être déjà été confronté à une situation similaire",
     "zh": "上司通常经验更丰富，能为首次处理复杂任务的新人提供方法、避免错误。",
     "words": [
       [
@@ -1758,7 +1758,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-16-2": {
     "title": "秩序版 · 2-16-2",
-    "fr": "lorsqu’un responsable répartit les tâches entre les membres de son service → chacun est normalement censé accomplir les missions qui lui sont confiées. Respecter cette structure…",
+    "fr": "lorsqu’un responsable répartit les tâches entre les membres de son service → chacun est normalement censé accomplir les missions qui lui sont confiées",
     "zh": "公司层级与任务分工维持内部秩序；员工通常应完成主管分配的职责。",
     "words": [
       [
@@ -1783,7 +1783,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-16-3": {
     "title": "边界版 · 2-16-3",
-    "fr": "si un responsable demandait à un employé de modifier volontairement certaines données afin de dissimuler une… → l’employé ne devrait évidemment pas suivre cette instruction. Il est donc essentiel que les employés fassent…",
+    "fr": "si un responsable demandait à un employé de modifier volontairement certaines données afin de dissimuler une erreur → l’employé ne devrait évidemment pas suivre cette instruction",
     "zh": "尊重层级不等于盲从；要求篡改数据等违背规则与职业伦理的指示应被质疑。",
     "words": [
       [
@@ -1891,7 +1891,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-08-1": {
     "title": "责任感版 · 2-08-1",
-    "fr": "un étudiant qui travaille plusieurs heures par semaine pour payer une partie de ses frais de scolarité fera…",
+    "fr": "payer une partie de ses frais de scolarité fera probablement davantage attention à la manière dont il dépense son argent",
     "zh": "学生通过打工认识挣钱的不易、学会储蓄和控制开销，从而培养独立与责任感。",
     "words": [
       [
@@ -1920,7 +1920,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-19-1": {
     "title": "视野版 · 2-19-1",
-    "fr": "Lorsqu’une personne travaille dans différents domaines → elle est amenée à rencontrer des personnes aux profils variés et à découvrir différents environnements…",
+    "fr": "Lorsqu’une personne travaille dans différents domaines → elle est amenée à rencontrer des personnes aux profils variés et à découvrir différents environnements professionnels",
     "zh": "跨行业工作让人认识不同职业现实与人群，减少偏见，形成更开放的职场观。",
     "words": [
       [
@@ -1945,7 +1945,7 @@ window.TCF_T3_CAREER_EXAMPLES={
   },
   "2-25-3": {
     "title": "内容创作者版 · 2-25-3",
-    "fr": "Après avoir publié une vidéo sur un voyage ou un restaurant → les internautes pourraient laisser des commentaires → poser des questions ou partager leurs propres expériences. Je trouverais particulièrement intéressant…",
+    "fr": "Après avoir publié une vidéo sur un voyage ou un restaurant → les internautes pourraient laisser des commentaires → poser des questions ou partager leurs propres expériences",
     "zh": "观众评论和分享经历让博主与他人交流、建立关系，使工作更有趣和动力。",
     "words": [
       [
