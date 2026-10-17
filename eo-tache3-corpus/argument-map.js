@@ -5,7 +5,7 @@
   const topicData=()=>TOPICS[$('topic')?.value]||TOPICS['旅行与移民'];
 
   // Only play pre-generated French Piper siwis recordings; no system voice fallback.
-  let argumentAudioManifest=null, argumentAudioManifestPromise=null, chainAudioManifestPromise=null, exampleAudioManifestPromise=null, overviewAudioManifestPromise=null, careerAudioManifestPromise=null, travelVocabAudioManifestPromise=null, educationAudioManifestPromise=null, activeArgumentAudio=null, activeArgumentButton=null, activeArgumentUrl=null;
+  let argumentAudioManifest=null, argumentAudioManifestPromise=null, chainAudioManifestPromise=null, exampleAudioManifestPromise=null, overviewAudioManifestPromise=null, careerAudioManifestPromise=null, travelVocabAudioManifestPromise=null, educationAudioManifestPromise=null, mediaAudioManifestPromise=null, activeArgumentAudio=null, activeArgumentButton=null, activeArgumentUrl=null;
   async function speakArgumentPhrase(text,button){
     if(activeArgumentAudio){activeArgumentAudio.pause();activeArgumentAudio=null;}
     if(activeArgumentUrl){URL.revokeObjectURL(activeArgumentUrl);activeArgumentUrl=null;}
@@ -40,6 +40,10 @@
       if(!entry){
         if(!educationAudioManifestPromise)educationAudioManifestPromise=fetch(new URL('education-audio/manifest.json',document.baseURI)).then(r=>{if(!r.ok)throw Error('教育与儿童 Piper 音频尚未部署');return r.json();}).catch(e=>{educationAudioManifestPromise=null;throw e;});
         const education=await educationAudioManifestPromise;entry=education.entries?.[text];dir='education-audio/';
+      }
+      if(!entry){
+        if(!mediaAudioManifestPromise)mediaAudioManifestPromise=fetch(new URL('media-audio/manifest.json',document.baseURI)).then(r=>{if(!r.ok)throw Error('媒体与文化 Piper 音频尚未部署');return r.json();}).catch(e=>{mediaAudioManifestPromise=null;throw e;});
+        const media=await mediaAudioManifestPromise;entry=media.entries?.[text];dir='media-audio/';
       }
       if(!entry)throw Error('该词块尚无 Piper 音频');
       const response=await fetch(new URL(dir+entry.pack,document.baseURI));
@@ -126,7 +130,7 @@
       const core=document.createElement('section');core.className='argument-core';
       const label=document.createElement('p');label.className='argument-label';label.textContent='核心法语逻辑链';
       const zh=document.createElement('div');zh.className='logic-zh';zh.textContent=d.zh;
-      core.append(label,logicAudioChain(d.fr,['旅行与移民','职业与职场','教育与儿童'].includes(D.title)),zh);body.append(core);
+      core.append(label,logicAudioChain(d.fr,['旅行与移民','职业与职场','教育与儿童','媒体与文化'].includes(D.title)),zh);body.append(core);
       const branches=document.createElement('div');branches.className='scene-list';
       d.scenes.forEach((scene,i)=>{
         const wrapper=document.createElement('section');wrapper.className='scene-chain-audio-row';
@@ -137,7 +141,7 @@
         card.append(name,chinese,tip);
         const weak=sceneWeakCount(scene);if(weak){const icon=weakMarker(weak);card.append(icon);}
         card.onclick=()=>renderScene(stage,D,id,i);
-        wrapper.append(card,logicAudioChain(scene.fr,['旅行与移民','职业与职场','教育与儿童'].includes(D.title)));branches.append(wrapper);
+        wrapper.append(card,logicAudioChain(scene.fr,['旅行与移民','职业与职场','教育与儿童','媒体与文化'].includes(D.title)));branches.append(wrapper);
       });body.append(branches);
     };
     const showQuick=()=>{body.replaceChildren();const q=document.createElement('section');q.className='quick-card';q.innerHTML='<p class="argument-label">考前极简速记</p><div class="quick-memory">'+d.zh+'</div><p class="logic-fr" lang="fr">'+d.fr+'</p><p class="logic-zh">'+d.zh+'</p>';body.append(q);};
@@ -151,10 +155,10 @@
     const d=D.M[id],s=d?.scenes?.[sceneIndex];if(!s)return;stage.replaceChildren();
     const back=document.createElement('button');back.className='back-to-map';back.textContent='← 返回 #'+id+' 法语逻辑链';back.onclick=()=>renderMother(stage,D,id,'chain');stage.append(back);
     const head=document.createElement('div');head.className='argument-head';head.innerHTML='<div><p class="eyebrow">'+D.title+' · #'+id+' · 场景分支</p><h2>'+s.title+'</h2></div>';stage.append(head);
-    const top=document.createElement('section');top.className='argument-core';top.innerHTML='<p class="argument-label">场景法语逻辑链</p><div class="logic-zh">'+s.zh+'</div>';const logic=document.createElement('div');logic.className='logic-fr scene-audio-chain';logic.lang='fr';s.fr.split(/\s*→\s*/).forEach((chunk,i)=>{if(i){const arrow=document.createElement('span');arrow.textContent=' → ';logic.append(arrow);}const wrap=document.createElement('span');wrap.className='scene-audio-chunk';const phrase=document.createElement('span');phrase.textContent=chunk;const play=document.createElement('button');play.type='button';play.className='argument-word-audio';play.textContent='🔊';play.title='Piper 朗读 '+chunk;play.setAttribute('aria-label','Piper 朗读 '+chunk);play.onclick=()=>speakArgumentPhrase(chunk,play);wrap.append(phrase,play);logic.append(wrap);});top.insertBefore(logic,top.querySelector('.logic-zh'));stage.append(top);if(['旅行与移民','职业与职场','教育与儿童'].includes(D.title)){const one=D.title==='旅行与移民'?TRAVEL_SCENE_SUMMARIES[id+'-'+sceneIndex]:D.title==='职业与职场'?CAREER_SCENE_SUMMARIES[id]?.[sceneIndex]:('这一场景说明：'+s.zh.split('→').map(x=>x.trim()).join('，')+'。');if(one){const p=document.createElement('p');p.className='scene-zh-summary';p.textContent='简述：'+one;top.append(p);}}
+    const top=document.createElement('section');top.className='argument-core';top.innerHTML='<p class="argument-label">场景法语逻辑链</p><div class="logic-zh">'+s.zh+'</div>';const logic=document.createElement('div');logic.className='logic-fr scene-audio-chain';logic.lang='fr';s.fr.split(/\s*→\s*/).forEach((chunk,i)=>{if(i){const arrow=document.createElement('span');arrow.textContent=' → ';logic.append(arrow);}const wrap=document.createElement('span');wrap.className='scene-audio-chunk';const phrase=document.createElement('span');phrase.textContent=chunk;const play=document.createElement('button');play.type='button';play.className='argument-word-audio';play.textContent='🔊';play.title='Piper 朗读 '+chunk;play.setAttribute('aria-label','Piper 朗读 '+chunk);play.onclick=()=>speakArgumentPhrase(chunk,play);wrap.append(phrase,play);logic.append(wrap);});top.insertBefore(logic,top.querySelector('.logic-zh'));stage.append(top);if(['旅行与移民','职业与职场','教育与儿童','媒体与文化'].includes(D.title)){const one=D.title==='旅行与移民'?TRAVEL_SCENE_SUMMARIES[id+'-'+sceneIndex]:D.title==='职业与职场'?CAREER_SCENE_SUMMARIES[id]?.[sceneIndex]:('这个场景围绕'+s.zh.split('→').map(x=>x.trim()).join('、')+'展开。');if(one){const p=document.createElement('p');p.className='scene-zh-summary';p.textContent='简述：'+one;top.append(p);}}
     const wt=document.createElement('h3');wt.textContent='主题词汇 / 词组';stage.append(wt);const words=document.createElement('div');words.className='argument-words';s.words.forEach(([fr,zh])=>words.append(phraseChip(fr,zh)));stage.append(words);
     // 例子卡片按原论段生成；具体例子与情境型论证分开标记。
-    const availableExamples={...window.TCF_T3_EXAMPLES,...window.TCF_T3_CAREER_EXAMPLES,...window.TCF_T3_EDUCATION_EXAMPLES};
+    const availableExamples={...window.TCF_T3_EXAMPLES,...window.TCF_T3_CAREER_EXAMPLES,...window.TCF_T3_EDUCATION_EXAMPLES,...window.TCF_T3_MEDIA_EXAMPLES};
     const reviewed=(s.sourceIds||[]).filter(pid=>availableExamples?.[pid]);
     if(reviewed.length){
       const exampleHead=document.createElement('h3');exampleHead.textContent='原论段例子 / 情境提炼（'+reviewed.length+'）';stage.append(exampleHead);
