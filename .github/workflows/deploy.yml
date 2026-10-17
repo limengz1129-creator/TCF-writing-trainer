@@ -64,6 +64,7 @@ jobs:
           payload=data.split('window.TCF_T3_CAREER_EXAMPLES=',1)[1].rsplit(';',1)[0]
           cards=json.loads(payload)
           assert len(cards)==75
+          assert (career_folder/'career-example-cards.js').is_file(), 'Missing career example UI data'
           requested={p.strip() for mother in career['M'].values() for line in [mother['fr'],*[scene['fr'] for scene in mother['scenes']]] for p in line.split('→')}
           requested.update(p.strip() for card in cards.values() for p in card['fr'].split('→'))
           covered=set()
