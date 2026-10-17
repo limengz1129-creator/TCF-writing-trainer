@@ -31,6 +31,11 @@ for module in data["modules"]:
     texts.update(form[2] for form in module["forms"])
     if module.get("timeline"):
         texts.update(module["timeline"].values())
+    extension = module.get("practiceExtensions") or {}
+    for scenario in extension.get("scenarios", []):
+        for row in scenario["rows"]:
+            texts.update(example for _, example in row["forms"])
+    texts.update(item["fr"] for item in extension.get("advanced", []))
 if data["moduleCount"] != 45:
     raise RuntimeError(f"Expected 45 modules, got {data['moduleCount']}")
 voice = PiperVoice.load(str(MODEL), config_path=str(CONFIG))
