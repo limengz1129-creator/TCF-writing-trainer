@@ -38,3 +38,5 @@ for phrase in phrases:
     audio=base64.b64decode(rec["audio"],validate=True)
     assert len(audio)>100 and (audio.startswith(b"ID3") or audio[:2] in (bytes.fromhex("fffb"),bytes.fromhex("fff3"),bytes.fromhex("fff2"))),phrase
 print(f"PASS: 84 education cards, 71 scene chains, {len(phrases)} Piper chunks, {len(packs)} packs")
+
+# Revalidation against published education-audio assets.
