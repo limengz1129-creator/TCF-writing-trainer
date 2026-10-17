@@ -1,0 +1,15 @@
+name: Audit T3 media Piper only
+on:
+  push:
+    paths:
+      - 'eo-tache3-corpus/media-example-cards.js'
+      - 'eo-tache3-corpus/media-audio/**'
+      - 'tools/piper/audit_t3_media.py'
+      - '.github/workflows/audit-t3-media.yml'
+  workflow_dispatch:
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tools/piper/audit_t3_media.py
