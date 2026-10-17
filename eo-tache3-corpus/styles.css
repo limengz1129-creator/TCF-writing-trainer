@@ -148,3 +148,8 @@
 .argument-word-audio{flex:0 0 auto;min-width:40px;padding:7px 9px;border-radius:9px;font-size:15px;line-height:1.1}
 .argument-word-audio.playing{border-color:var(--blue);background:#f3f5fd}
 @media(max-width:700px){.argument-word{align-items:flex-start}.argument-word-audio{margin-top:2px}}
+
+/* Piper buttons for individual scene-chain chunks */
+.scene-audio-chain{display:flex;flex-wrap:wrap;align-items:center;gap:7px;line-height:2.1}
+.scene-audio-chunk{display:inline-flex;align-items:center;gap:5px;white-space:normal}
+.scene-audio-chunk .argument-word-audio{font-size:12px;min-width:29px;min-height:29px;flex-shrink:0}
