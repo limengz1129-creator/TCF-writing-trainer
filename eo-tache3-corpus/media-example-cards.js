@@ -1,5 +1,5 @@
 'use strict';
-// 媒体与文化42条，法语逻辑链为原文基础上的口语自由表达关键词。
+// 媒体与文化42条：例子逻辑链为自由表达提示；词条从原论段摘取并附中文释义。
 window.TCF_T3_MEDIA_EXAMPLES={
   "4-01-1": {
     "title": "纸书体验版",
@@ -93,7 +93,16 @@ window.TCF_T3_MEDIA_EXAMPLES={
     "title": "纪念版",
     "fr": "lettre conservée → écriture / papier → souvenir retrouvé → émotion",
     "zh": "实体信和卡片可保存多年，重读时能从笔迹和纸张唤起珍贵回忆。",
-    "words": [],
+    "words": [
+      [
+        "une valeur sentimentale",
+        "情感价值"
+      ],
+      [
+        "conservée pendant plusieurs années",
+        "保存多年"
+      ]
+    ],
     "kind": "example",
     "reviewStatus": "content-reviewed"
   },
@@ -105,6 +114,14 @@ window.TCF_T3_MEDIA_EXAMPLES={
       [
         "un rythme de vie très chargé",
         "忙碌的生活节奏"
+      ],
+      [
+        "un rythme de vie très chargé",
+        "繁忙的生活节奏"
+      ],
+      [
+        "sans avoir à acheter un timbre",
+        "不必购买邮票"
       ]
     ],
     "kind": "scenario",
@@ -114,7 +131,16 @@ window.TCF_T3_MEDIA_EXAMPLES={
     "title": "纪念版",
     "fr": "album photo → anniversaire / voyage / diplôme → souvenirs conservés → mémoire familiale",
     "zh": "相册保存生日、旅行和毕业等时刻；多年后翻看能重现人生经历与故人旧地。",
-    "words": [],
+    "words": [
+      [
+        "les souvenirs de notre jeunesse",
+        "青春时期的回忆"
+      ],
+      [
+        "un album photo",
+        "一本相册"
+      ]
+    ],
     "kind": "example",
     "reviewStatus": "content-reviewed"
   },
@@ -227,7 +253,16 @@ window.TCF_T3_MEDIA_EXAMPLES={
     "title": "成人电影版",
     "fr": "cinéma en famille → pause après le travail → détente → moments partagés",
     "zh": "作者喜欢周末与家人看电影，从繁忙工作中暂时抽离、放松并共享时光。",
-    "words": [],
+    "words": [
+      [
+        "me détendre et de me changer les idées",
+        "放松并转换心情"
+      ],
+      [
+        "aller au cinéma avec ma famille",
+        "和家人去电影院"
+      ]
+    ],
     "kind": "scenario",
     "reviewStatus": "content-reviewed"
   },
@@ -239,6 +274,14 @@ window.TCF_T3_MEDIA_EXAMPLES={
       [
         "comprendre l’intrigue",
         "理解剧情"
+      ],
+      [
+        "le contexte historique, culturel ou littéraire",
+        "历史、文化或文学背景"
+      ],
+      [
+        "grâce aux images, aux décors",
+        "借助图像和布景"
       ]
     ],
     "kind": "scenario",
@@ -655,7 +698,16 @@ window.TCF_T3_MEDIA_EXAMPLES={
     "title": "公共议题版",
     "fr": "célébrité connue → cause environnementale / éducative → jeunes sensibilisés → débat public",
     "zh": "名人的知名度可使环保、教育和贫困等公共议题触及更多人，吸引年轻人了解政治。",
-    "words": [],
+    "words": [
+      [
+        "attirer l’attention du public",
+        "吸引公众注意"
+      ],
+      [
+        "une grande visibilité dans les médias",
+        "在媒体上有很高的曝光度"
+      ]
+    ],
     "kind": "scenario",
     "reviewStatus": "content-reviewed"
   },
@@ -663,7 +715,16 @@ window.TCF_T3_MEDIA_EXAMPLES={
     "title": "职业转型版",
     "fr": "célébrité → études et expérience sociale → compétences possibles → engagement politique",
     "zh": "名人也可能具备高等教育和社会经验，过去从事文艺或体育不应自动阻止其进入政治领域。",
-    "words": [],
+    "words": [
+      [
+        "des études supérieures",
+        "高等教育经历"
+      ],
+      [
+        "une véritable expérience de la société",
+        "真实的社会经验"
+      ]
+    ],
     "kind": "scenario",
     "reviewStatus": "content-reviewed"
   },
@@ -721,6 +782,14 @@ window.TCF_T3_MEDIA_EXAMPLES={
       [
         "exercer une influence importante sur la société",
         "对社会产生重要影响"
+      ],
+      [
+        "une forte visibilité médiatique",
+        "强大的媒体曝光度"
+      ],
+      [
+        "une campagne de protection de l’environnement",
+        "环保宣传活动"
       ]
     ],
     "kind": "example",
@@ -734,6 +803,14 @@ window.TCF_T3_MEDIA_EXAMPLES={
       [
         "la vie privée des célébrités",
         "名人私生活"
+      ],
+      [
+        "leurs responsabilités familiales",
+        "家庭责任"
+      ],
+      [
+        "leurs préoccupations quotidiennes",
+        "日常关切"
       ]
     ],
     "kind": "scenario",
