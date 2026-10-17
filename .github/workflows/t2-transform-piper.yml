@@ -36,7 +36,25 @@ jobs:
           import json, pathlib
           p=pathlib.Path('combined-expressions/t2-transform-audio')
           d=json.loads((p/'manifest.json').read_text())
-          assert d['count']==len(d['entries'])==169, (d['count'],len(d['entries']))
+          assert d['count']==len(d['entries']), (d['count'],len(d['entries']))
+          import re
+          src=pathlib.Path('combined-expressions/t2-transform-data.js').read_text()
+          modules=json.loads(re.search(r'const T2_TRANSFORM_DATA=(\\{.*\\});\\s*
+          assert all((p/f).stat().st_size>256 for f in d['entries'].values())
+          print(f"Validated {d['count']} Piper MP3 files including 45 basic examples")
+          PY
+      - name: Publish audio to GitHub Pages
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add combined-expressions/t2-transform-audio/
+          if ! git diff --cached --quiet; then
+            git commit -m 'Generate Piper SIWIS recordings for T2 transformation [skip ci]'
+            git push
+          fi
+,src,re.S).group(1))['modules']
+          assert len(modules)==45
+          assert all(m.get('baseExample') in d['entries'] for m in modules)
           assert all((p/f).stat().st_size>256 for f in d['entries'].values())
           print('Validated 169 Piper MP3 files')
           PY
