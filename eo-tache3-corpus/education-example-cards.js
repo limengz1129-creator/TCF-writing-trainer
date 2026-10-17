@@ -1,9 +1,9 @@
 'use strict';
-// 教育与儿童例子原文词条：仅引用原稿中的法语表达。
+// 教育与儿童：84段原文逻辑摘要，供源文核验和后续口语训练。
 window.TCF_T3_EDUCATION_EXAMPLES={
   "3-01-1": {
     "title": "艺术课版",
-    "fr": "lorsqu’ils visitent une galerie d’art → ils peuvent mieux apprécier les œuvres d’art → comprendre certains choix artistiques et porter un regard plus attentif sur ce",
+    "fr": "lorsqu’ils visitent une galerie d’art → ils peuvent mieux apprécier les œuvres d’art → comprendre certains choix artistiques et porter un regard plus attentif sur ce qu’ils voient → L’éducation artistique ne sert donc pas seulement à acquérir des connaissances",
     "zh": "音乐、美术和戏剧使学生认识艺术表达、培养审美能力，并更好地理解周围文化。",
     "words": [
       [
@@ -20,7 +20,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-01-2": {
     "title": "兴趣到职业版",
-    "fr": "une personne passionnée par le cinéma pourrait un jour devenir réalisateur à Hollywood → tandis qu’une personne spécialisée dans les arts pourrait poursuivre une carrière universitaire → il peut également devenir une véritable voie professionnelle",
+    "fr": "une personne passionnée par le cinéma pourrait un jour devenir réalisateur à Hollywood → tandis qu’une personne spécialisée dans les arts pourrait poursuivre une carrière universitaire → L’art ne constitue donc pas seulement un loisir → il peut également devenir une véritable voie professionnelle",
     "zh": "艺术课可能帮助孩子及早发现才能，并逐步发展为电影或艺术教育等职业。",
     "words": [
       [
@@ -45,7 +45,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-06-1": {
     "title": "博物馆 / 画廊版",
-    "fr": "Les écoles peuvent → organiser des visites dans des musées historiques ou des galeries d’art. Ces",
+    "fr": "Les écoles peuvent → organiser des visites dans des musées historiques ou des galeries d’art → Ces lieux constituent une véritable fenêtre sur la culture et l’histoire",
     "zh": "博物馆和画廊让学生亲眼看历史实物与艺术作品，使课本知识更具体、互动。",
     "words": [
       [
@@ -62,7 +62,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-01-3": {
     "title": "学科平衡版",
-    "fr": "les mathématiques peuvent renforcer la capacité de raisonnement logique → tandis que l’apprentissage des langues peut améliorer les compétences en communication. Une",
+    "fr": "les mathématiques peuvent renforcer la capacité de raisonnement logique → tandis que l’apprentissage des langues peut améliorer les compétences en communication → de communiquer avec des personnes venant de différents pays",
     "zh": "艺术课有价值，但数学、语言等基础课程也培养逻辑与交流能力，不能偏废。",
     "words": [
       [
@@ -91,7 +91,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-02-1": {
     "title": "编程逻辑版",
-    "fr": "lorsque j’écrivais du code → je devais analyser le problème étape par étape avant de choisir l’algorithme",
+    "fr": "lorsque j’écrivais du code → je devais analyser le problème étape par étape avant de choisir l’algorithme le plus adapté → d’aborder les problèmes de façon plus méthodique",
     "zh": "编程要求拆解问题、选择算法；作者因此喜欢计算机课，它训练了逻辑和解题能力。",
     "words": [
       [
@@ -116,7 +116,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-02-2": {
     "title": "实际应用版",
-    "fr": "les robots aspirateurs peuvent nettoyer automatiquement le sol → les agents conversationnels peuvent répondre aux questions des utilisateurs et les véhicules",
+    "fr": "les robots aspirateurs peuvent nettoyer automatiquement le sol → les agents conversationnels peuvent répondre aux questions des utilisateurs → Je trouvais particulièrement intéressant de voir",
     "zh": "计算机知识在人工智能、机器人和自动化中有具体应用，也能便利日常生活。",
     "words": [
       [
@@ -145,7 +145,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-03-3": {
     "title": "个性化指导版",
-    "fr": "Même si l’on peut y trouver énormément d’informations → ces ressources ne remplacent pas toujours l’accompagnement personnalisé d’un professeur. Lorsqu’un élève → un professeur peut la corriger",
+    "fr": "Même si l’on peut y trouver énormément d’informations → ces ressources ne remplacent pas toujours l’accompagnement personnalisé d’un professeur → Lorsqu’un élève commet une erreur → un professeur peut la corriger",
     "zh": "网络信息虽多，却无法总是替代教师的纠错与因材施教；导师能帮助学生找到方向。",
     "words": [
       [
@@ -158,7 +158,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-04-2": {
     "title": "教育游戏版",
-    "fr": "il existe des jeux dans lesquels les enfants doivent résoudre des problèmes → ils peuvent ainsi acquérir certaines connaissances de manière plus ludique et interactive",
+    "fr": "il existe des jeux dans lesquels les enfants doivent résoudre des problèmes mathématiques → Au lieu d’apprendre uniquement à travers des manuels scolaires → ils peuvent ainsi acquérir certaines connaissances de manière plus ludique et interactive",
     "zh": "教育游戏通过数学闯关让孩子以互动方式练逻辑和解题，增强学习兴趣。",
     "words": [
       [
@@ -175,7 +175,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-06-2": {
     "title": "校外教学版",
-    "fr": "Ils peuvent ainsi apprendre de manière plus ludique sans avoir l’impression d’être",
+    "fr": "Ils peuvent ainsi apprendre de manière plus ludique sans avoir",
     "zh": "博物馆或动物园之行让承受学业压力的学生换个环境，在放松中继续学习。",
     "words": [
       [
@@ -200,7 +200,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-06-3": {
     "title": "边界版",
-    "fr": "Si les écoles organisaient trop fréquemment ce type de sorties → certains enfants pourraient progressivement devenir moins assidus et avoir davantage de difficultés",
+    "fr": "Si les écoles organisaient trop fréquemment ce type de sorties → certains enfants pourraient progressivement devenir moins assidus → Ils risqueraient de s’habituer à des activités plus ludiques",
     "zh": "外出教学应补充课堂，而不能过于频繁，以免影响专注、理论知识和规律学习。",
     "words": [
       [
@@ -229,7 +229,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-26-1": {
     "title": "灵活学习版",
-    "fr": "Ils peuvent ainsi éviter de passer beaucoup de temps dans les transports → aux études ou à d’autres activités éducatives",
+    "fr": "Ils peuvent ainsi éviter de passer beaucoup de temps dans → Le temps économisé peut être consacré à la lecture → aux études ou à d’autres activités éducatives",
     "zh": "家庭教育可依孩子的学习速度安排课程，省下通勤时间并利用线上资源。",
     "words": [
       [
@@ -246,7 +246,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-26-2": {
     "title": "专业教学版",
-    "fr": "Ils savent expliquer des notions complexes → évaluer les progrès des élèves et adapter leurs méthodes lorsqu’un enfant rencontre → ils ne possèdent pas nécessairement les compétences pédagogiques d’un enseignant qualifié",
+    "fr": "Ils savent expliquer des notions complexes → évaluer les progrès des élèves → Même si les parents connaissent très bien leurs enfants → ils ne possèdent pas nécessairement les compétences pédagogiques d’un enseignant qualifié",
     "zh": "学校教师受过专业训练，懂得解释、评估和调整教法；了解孩子的父母未必具备教学能力。",
     "words": [
       [
@@ -267,7 +267,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-03-1": {
     "title": "自主学习版",
-    "fr": "Prenons mon propre exemple. Actuellement → j’apprends le français en grande partie par moi-même grâce à Internet",
+    "fr": "Prenons mon propre exemple → j’apprends le français en grande partie par moi-même grâce à Internet",
     "zh": "网络上的法语资料、视频和词典支持作者自主选材、按自己的进度学习。",
     "words": [
       [
@@ -288,7 +288,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-03-2": {
     "title": "论坛学习版",
-    "fr": "Prenons également l’exemple de Kaggle → une plateforme consacrée notamment à la science des données. Les utilisateurs peuvent → travailler en équipe et échanger différentes méthodes pour résoudre un même problème",
+    "fr": "Même lorsqu’on apprend en autodidacte → on peut donc bénéficier de l’expérience d’une véritable communauté",
     "zh": "编程论坛与Kaggle等社区让自学者提问、合作、分享解法，获得他人经验。",
     "words": [
       [
@@ -313,7 +313,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-04-1": {
     "title": "外语学习版",
-    "fr": "lorsqu’un enfant rencontre un mot qu’il ne connaît pas → il peut facilement consulter un dictionnaire électronique en ligne pour en vérifier → ces différentes ressources peuvent donc l’aider à améliorer son niveau de français",
+    "fr": "lorsqu’un enfant rencontre un mot qu’il ne connaît pas → il peut facilement consulter un dictionnaire électronique en ligne pour en vérifier le sens → ces différentes ressources peuvent donc l’aider à améliorer son niveau",
     "zh": "法语视频、字幕及在线词典可以帮助儿童记词、练听力，让外语学习更自主。",
     "words": [
       [
@@ -326,7 +326,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-05-1": {
     "title": "学校数字教育版",
-    "fr": "lorsqu’ils apprennent le français → les élèves peuvent regarder des documentaires ou des vidéos en français → utiliser les sous-titres et consulter des dictionnaires électroniques. Ils peuvent ainsi enrichir",
+    "fr": "lorsqu’ils apprennent le français → les élèves peuvent regarder des documentaires ou des vidéos en français → utiliser les sous-titres et consulter des dictionnaires électroniques → Ils peuvent ainsi enrichir leur vocabulaire",
     "zh": "学校教授数字工具使用，让学生用视频、字幕和词典学习外语，而非只上网娱乐。",
     "words": [
       [
@@ -347,7 +347,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-08-3": {
     "title": "手机版",
-    "fr": "lorsqu’ils apprennent le français → ils peuvent télécharger des documents → écouter des contenus audio",
+    "fr": "lorsqu’ils apprennent le français → ils peuvent télécharger des documents → écouter des contenus audio → regarder des vidéos éducatives ou consulter un dictionnaire électronique",
     "zh": "手机也能下载资料、听音频、查词和看教育视频；合理用于学习时有价值。",
     "words": [
       [
@@ -376,7 +376,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-09-3": {
     "title": "屏幕中性版",
-    "fr": "Aujourd’hui → les appareils électroniques jouent un rôle essentiel dans l’éducation. Les enfants peuvent → télécharger des documents",
+    "fr": "les appareils électroniques jouent un rôle essentiel dans l’éducation → Les enfants peuvent utiliser un ordinateur ou une tablette pour rechercher des informations → télécharger des documents → regarder des vidéos éducatives ou encore apprendre une langue étrangère",
     "zh": "屏幕可用于查资料、看教育视频和学外语；问题在于过度且缺少管理的使用。",
     "words": [
       [
@@ -397,7 +397,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-10-2": {
     "title": "项目 / 竞赛版",
-    "fr": "un jeune qui s’intéresse à la programmation peut rejoindre des forums de → échanger des solutions et apprendre grâce à l’expérience des autres. Il peut → notamment dans le domaine de la science des données",
+    "fr": "s’intéresse à la programmation peut rejoindre des forums de programmeurs → échanger des solutions et apprendre grâce à l’expérience des autres → Il peut également participer à des compétitions sur des plateformes comme Kaggle → notamment dans le domaine de la science des données",
     "zh": "编程论坛与Kaggle等线上社群使孩子提问、交流解法、参加竞赛并自主学习。",
     "words": [
       [
@@ -422,7 +422,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-11-1": {
     "title": "外语学习版",
-    "fr": "les enfants peuvent utiliser des plateformes éducatives pour écouter des documents audio → regarder des films en langue étrangère → mémoriser de nouveaux mots et de nouvelles expressions ou encore pratiquer leur",
+    "fr": "les enfants peuvent utiliser des plateformes éducatives pour écouter des documents audio → regarder des films en langue étrangère → mémoriser de nouveaux mots → Grâce à ces ressources",
     "zh": "在线音频、影片和教育平台让儿童自主练习外语，长期可明显提高语言能力。",
     "words": [
       [
@@ -443,7 +443,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-12-1": {
     "title": "手机版",
-    "fr": "dans le cadre de l’apprentissage du français → ils peuvent consulter un dictionnaire électronique → regarder de courtes vidéos éducatives ou écouter des documents audio en français.",
+    "fr": "dans le cadre de l’apprentissage du français → ils peuvent consulter un dictionnaire électronique → regarder de courtes vidéos éducatives ou écouter des documents audio en français → Cela leur permet non seulement d’enrichir leur vocabulaire",
     "zh": "校内手机能供学生查电子词典、看短视频和听法语音频，补充课堂学习。",
     "words": [
       [
@@ -456,7 +456,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-24-2": {
     "title": "远程练习版",
-    "fr": "sur des plateformes comme italki → il est possible de communiquer à distance avec des professeurs ou des → puisqu’on peut pratiquer une langue presque partout et à tout moment",
+    "fr": "sur des plateformes comme italki → il est possible de communiquer à distance avec des professeurs ou des locuteurs natifs → L’apprentissage est donc devenu beaucoup plus flexible et accessible qu’auparavant → puisqu’on peut pratiquer une langue presque partout et à tout moment",
     "zh": "在线视频、应用和远程老师使学习外语更灵活，可随时随地练习口语。",
     "words": [
       [
@@ -485,7 +485,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-04-3": {
     "title": "有害内容版",
-    "fr": "On peut y trouver des contenus inappropriés → notamment des contenus violents ou destinés aux adultes. Or → les enfants ne possèdent pas toujours suffisamment de recul pour distinguer les",
+    "fr": "On peut y trouver des contenus inappropriés → notamment des contenus violents ou destinés aux adultes → les enfants ne possèdent pas toujours suffisamment de recul",
     "zh": "儿童可能接触暴力和成人内容，或被游戏社媒分心；家长与教师需要指导合理使用。",
     "words": [
       [
@@ -506,7 +506,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-05-3": {
     "title": "假消息 / 媒介素养版",
-    "fr": "Sur Internet → ils peuvent être exposés à des contenus inappropriés ou violents → mais aussi à de fausses informations. Or",
+    "fr": "ils peuvent être exposés à des contenus inappropriés ou violents → mais aussi à de fausses informations → les enfants ne possèdent pas toujours suffisamment de recul",
     "zh": "网络有暴力内容与假消息；学校应教学生核实来源、识别误导信息和风险。",
     "words": [
       [
@@ -523,7 +523,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-08-1": {
     "title": "作业场景版",
-    "fr": "si leur téléphone sonne constamment à cause des SMS → des notifications ou des appels qu’ils reçoivent → ils risquent d’interrompre régulièrement leur travail pour vérifier leur écran ou répondre",
+    "fr": "si leur téléphone sonne constamment à cause des SMS → des notifications ou des appels qu’ils reçoivent → ils risquent d’interrompre régulièrement leur travail → Il devient alors plus difficile pour eux de rester pleinement concentrés sur leurs études",
     "zh": "频繁短信、提醒和来电会打断孩子作业，长期损害专注力与成绩。",
     "words": [
       [
@@ -536,7 +536,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-08-2": {
     "title": "有害内容版",
-    "fr": "certains peuvent chercher à reproduire des comportements violents qu’ils voient dans des → cela peut favoriser des comportements agressifs ou inappropriés",
+    "fr": "certains peuvent chercher à reproduire des comportements violents qu’ils voient → Dans certains cas → cela peut favoriser des comportements agressifs ou inappropriés",
     "zh": "儿童判断力尚不成熟，手机上的暴力或不良内容可能影响行为；父母应监督内容。",
     "words": [
       [
@@ -557,7 +557,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-09-1": {
     "title": "身体健康版",
-    "fr": "À long terme → cela peut entraîner une fatigue visuelle → notamment lorsqu’ils fixent un écran pendant plusieurs heures sans faire de pause",
+    "fr": "cela peut entraîner une fatigue visuelle → notamment lorsqu’ils fixent un écran pendant plusieurs heures sans faire de pause → ainsi que des problèmes liés à une mauvaise posture → Le manque d’activité physique peut également avoir des effets négatifs sur leur santé",
     "zh": "学习与娱乐都需屏幕，久坐、长时间盯屏会导致眼疲劳、姿势问题和缺乏运动。",
     "words": [
       [
@@ -582,7 +582,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-09-2": {
     "title": "有害内容版",
-    "fr": "On trouve en ligne de nombreux contenus violents ou destinés aux adultes. Or → comme les enfants sont encore jeunes et particulièrement influençables → ils n’ont pas toujours suffisamment de recul pour évaluer ce qu’ils voient",
+    "fr": "On trouve en ligne de nombreux contenus violents ou destinés aux adultes → comme les enfants sont encore jeunes et particulièrement influençables → ils n’ont pas toujours suffisamment de recul pour évaluer ce qu’ils voient",
     "zh": "上网时间越长，儿童越可能接触暴力或成人内容；家长应管理可访问的内容。",
     "words": [
       [
@@ -603,7 +603,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-10-3": {
     "title": "假消息 / 媒介素养版",
-    "fr": "Ils peuvent être exposés à des contenus inappropriés → violents ou destinés aux adultes. Comme ils sont encore jeunes et particulièrement influençables → ils n’ont pas toujours suffisamment de recul pour évaluer les informations auxquelles",
+    "fr": "Ils peuvent être exposés à des contenus inappropriés → violents ou destinés aux adultes → Comme ils sont encore jeunes et particulièrement influençables → ils n’ont pas toujours suffisamment de recul",
     "zh": "孩子在社媒可能遇到成人内容、暴力及假消息，若无监督易受误导。",
     "words": [
       [
@@ -624,7 +624,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-11-3": {
     "title": "有害内容版",
-    "fr": "On trouve en ligne de nombreux contenus inappropriés → notamment des contenus violents ou destinés aux adultes. Or → comme les enfants sont encore jeunes et particulièrement influençables",
+    "fr": "On trouve en ligne de nombreux contenus inappropriés → notamment des contenus violents ou destinés aux adultes → comme les enfants sont encore jeunes et particulièrement influençables → ils n’ont pas toujours suffisamment de recul pour évaluer ce qu’ils voient",
     "zh": "网络存在暴力及成人内容，儿童又易受影响，因此需要家长监督。",
     "words": [
       [
@@ -641,7 +641,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-12-2": {
     "title": "紧急联系版",
-    "fr": "si un enfant se sent soudainement malade → si un cours est annulé ou s’il rencontre un problème après l’école → il peut rapidement prévenir ses parents et leur expliquer la situation. Le",
+    "fr": "si un enfant se sent soudainement malade → si un cours est annulé ou s’il rencontre un problème après l’école → il peut rapidement prévenir ses parents et leur expliquer la situation → Le téléphone constitue donc un moyen de communication rassurant",
     "zh": "孩子生病、课程取消或放学后遇到问题时，手机让他们及时联系父母。",
     "words": [
       [
@@ -658,7 +658,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-12-3": {
     "title": "课堂版",
-    "fr": "lorsqu’ils naviguent sur Internet sans supervision → ils peuvent être exposés à des contenus inappropriés ou violents. Il est",
+    "fr": "lorsqu’ils naviguent sur Internet sans supervision → ils peuvent être exposés à des contenus inappropriés ou violents → Il est donc nécessaire d’encadrer strictement l’utilisation du téléphone pendant",
     "zh": "课堂消息、社媒和游戏易使学生分心，也可能接触有害内容；上课使用需严格管理。",
     "words": [
       [
@@ -679,7 +679,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-05-2": {
     "title": "文化发现版",
-    "fr": "Grâce à des plateformes comme Instagram → les élèves peuvent entrer en contact avec des personnes issues de différents → d’autres modes de vie et différentes façons de penser. Ces échanges interculturels",
+    "fr": "Grâce à des plateformes comme Instagram → les élèves peuvent entrer en contact avec des personnes issues de différents pays → d’autres modes de vie et différentes façons de penser → Ces échanges interculturels peuvent les aider à remettre en question certains stéréotypes",
     "zh": "合理使用社媒可以认识异国文化、反思刻板印象；学校能引导建设性交流。",
     "words": [
       [
@@ -704,7 +704,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-10-1": {
     "title": "文化发现版",
-    "fr": "les enfants peuvent regarder les vlogs de créateurs de contenu étrangers et → leurs habitudes et leur culture. Ils peuvent également interagir avec ces créateurs → poser des questions et échanger leurs points de vue",
+    "fr": "les enfants peuvent regarder les vlogs de créateurs de contenu étrangers → leurs habitudes et leur culture → Ils peuvent également interagir avec ces créateurs ou avec d’autres → poser des questions et échanger leurs points de vue",
     "zh": "社媒让孩子与不同国家的人交流、观看外国创作者的生活并练习沟通，拓宽视野。",
     "words": [
       [
@@ -717,7 +717,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-11-2": {
     "title": "互动合作版",
-    "fr": "grâce aux forums → aux groupes de discussion ou aux visioconférences → ils peuvent se faire de nouveaux amis",
+    "fr": "grâce aux forums → aux groupes de discussion ou aux visioconférences → ils peuvent se faire de nouveaux amis → échanger leurs points de vue et collaborer sur certains projets",
     "zh": "线上兴趣社群让孩子结交不同国家的朋友、协作项目，培养交流能力与文化开放心态。",
     "words": [
       [
@@ -738,7 +738,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-25-1": {
     "title": "开放心态版",
-    "fr": "Lorsqu’ils côtoient des camarades originaires de différents pays ou issus de différentes cultures → ils peuvent découvrir d’autres traditions → d’autres modes de vie et d’autres façons de penser. Cela leur permet",
+    "fr": "Lorsqu’ils côtoient des camarades originaires de différents pays ou issus → ils peuvent découvrir d’autres traditions → d’autres modes de vie et d’autres façons de penser → Cela leur permet de mieux comprendre et respecter les différences",
     "zh": "与不同文化背景同学相处，能让学生认识其他生活方式、反思偏见并更尊重差异。",
     "words": [
       [
@@ -759,7 +759,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-25-2": {
     "title": "社会能力版",
-    "fr": "Ils apprennent ainsi à communiquer → à écouter les autres → à respecter des opinions différentes et parfois à trouver des compromis. Toutes",
+    "fr": "Ils apprennent ainsi à communiquer → à écouter les autres → à respecter des opinions différentes et parfois à trouver des compromis → Toutes ces expériences leur permettent de développer leur capacité d’adaptation",
     "zh": "多元学校像小社会，学生学习倾听、合作与妥协，为日后职场和社会生活做准备。",
     "words": [
       [
@@ -776,7 +776,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-25-3": {
     "title": "排斥风险版",
-    "fr": "certains enfants issus de familles aisées peuvent avoir des vêtements coûteux ou → voire harceler → des camarades moins favorisés",
+    "fr": "ceux issus de familles modestes → Ils peuvent parfois former leur propre groupe et exclure → voire harceler → des camarades moins favorisés",
     "zh": "不同家庭财富差异可能在校园形成排斥甚至欺凌；多元化本身不能保证每个孩子都受益。",
     "words": [
       [
@@ -793,7 +793,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-26-3": {
     "title": "社交限制版",
-    "fr": "les élèves passent une grande partie de leur journée avec leurs camarades. → à travailler en équipe → à résoudre des conflits et à respecter des personnes ayant des personnalités différentes",
+    "fr": "les élèves passent une grande partie de leur journée avec leurs camarades → Ils apprennent à communiquer → à travailler en équipe → à résoudre des conflits et à respecter des personnes ayant des personnalités différentes",
     "zh": "居家学习可能减少与同龄人相处，限制合作、沟通与解决冲突能力，甚至产生孤立感。",
     "words": [
       [
@@ -822,7 +822,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-07-1": {
     "title": "具体行动版",
-    "fr": "l’école peut organiser une journée consacrée au ramassage des déchets sur une → les enfants comprennent concrètement les conséquences de la pollution et apprennent à",
+    "fr": "l’école peut organiser une journée consacrée au ramassage des déchets sur une plage → En participant à cette activité → les enfants comprennent concrètement les conséquences de la pollution",
     "zh": "童年容易形成习惯；参与海滩清洁等具体活动能让孩子理解污染并建立环保意识。",
     "words": [
       [
@@ -839,7 +839,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-07-2": {
     "title": "责任感版",
-    "fr": "Lorsqu’on apprend aux enfants à économiser l’eau → à trier leurs déchets ou à éviter de gaspiller les ressources → ils comprennent que chacun a sa part de responsabilité dans la protection",
+    "fr": "Lorsqu’on apprend aux enfants à économiser l’eau → à trier leurs déchets ou à éviter de gaspiller les ressources → ils comprennent que chacun a sa part de responsabilité dans la protection de notre planète → En grandissant",
     "zh": "从节水、垃圾分类和避免浪费入手，儿童能逐渐建立社会责任感，长大后更愿意保护环境。",
     "words": [
       [
@@ -860,7 +860,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-07-3": {
     "title": "年龄适配版",
-    "fr": "il peut être difficile pour eux de comprendre ce qu’est le réchauffement climatique → ses causes et ses conséquences à long terme. Il ne serait donc",
+    "fr": "il peut être difficile pour eux de comprendre ce qu’est le réchauffement climatique → ses causes et ses conséquences à long terme → Il ne serait donc pas efficace de leur présenter uniquement des théories abstraites",
     "zh": "幼儿难以理解气候变化等抽象概念，环保教育应依年龄设计游戏、活动和日常行动。",
     "words": [
       [
@@ -877,7 +877,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-02-3": {
     "title": "技术技能版",
-    "fr": "Dans la Silicon Valley → certains postes dans le domaine de l’informatique peuvent être particulièrement bien rémunérés → notamment lorsqu’ils exigent des compétences techniques spécialisées. Il est donc possible de",
+    "fr": "Dans la Silicon Valley → certains postes dans le domaine de l’informatique peuvent être particulièrement bien rémunérés → notamment lorsqu’ils exigent des compétences techniques spécialisées → Il est donc possible de transformer sa passion",
     "zh": "编程技能可在许多行业使用，科技公司部分岗位薪资优厚，兴趣也能转化为职业。",
     "words": [
       [
@@ -894,7 +894,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-13-1": {
     "title": "学历证明版",
-    "fr": "pour certains postes qualifiés → un candidat titulaire d’un master peut avoir davantage d’opportunités qu’un candidat possédant → la réputation de l’établissement fréquenté peut également être prise en considération",
+    "fr": "pour certains postes qualifiés → un candidat titulaire d’un master peut avoir davantage d’opportunités qu’un → Dans certains secteurs → la réputation de l’établissement fréquenté peut également être prise en considération",
     "zh": "招聘者常看学历、学位层级及学校背景；文凭是知识与资质的初步证明。",
     "words": [
       [
@@ -907,7 +907,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-13-2": {
     "title": "技工能力版",
-    "fr": "Une personne qui possède un véritable savoir-faire peut donc être très recherchée → même si elle ne possède pas un diplôme universitaire élevé",
+    "fr": "possède un véritable savoir-faire peut donc être très recherchée sur le marché du travail → même si elle ne possède pas un diplôme universitaire élevé",
     "zh": "电工和水管工等职业尤其看重识别问题、找到解决办法的实操能力，大学高学历并非必要。",
     "words": [
       [
@@ -932,7 +932,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-13-3": {
     "title": "职业发展版",
-    "fr": "un vendeur qui commence à un poste de base peut progressivement accumuler → son sens du relationnel → sa capacité à comprendre les besoins des clients et à travailler en équipe",
+    "fr": "commence à un poste de base peut progressivement accumuler de l’expérience au fil des années → Il peut développer ses compétences en communication → son sens du relationnel → sa capacité à comprendre les besoins des clients et à travailler en équipe",
     "zh": "销售人员凭长期经验、沟通和理解客户的能力逐步晋升，文凭并非唯一关键。",
     "words": [
       [
@@ -974,7 +974,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-14-2": {
     "title": "技工能力版",
-    "fr": "’un plombier ou d’un électricien. Pour exercer ces métiers → il faut surtout être capable d’identifier l’origine d’un problème → de trouver une solution adaptée et d’effectuer son travail de manière efficace et professionnelle",
+    "fr": "un plombier ou d’un électricien → Pour exercer ces métiers → il faut surtout être capable d’identifier l’origine d’un problème → de trouver une solution adaptée",
     "zh": "水管工、电工等职业主要靠实际技能，未必需长期大学教育或硕士学位。",
     "words": [
       [
@@ -999,7 +999,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-14-3": {
     "title": "团队与适应版",
-    "fr": "dans le domaine de la vente → une personne dotée d’un bon sens du relationnel peut établir une relation → à long terme",
+    "fr": "dans le domaine de la vente → mieux répondre à leurs attentes → Ces qualités peuvent constituer un véritable atout lors d’un recrutement et favoriser → l’évolution professionnelle",
     "zh": "沟通、团队合作和理解客户需求等人际技能，能帮助求职和长远发展。",
     "words": [
       [
@@ -1024,7 +1024,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-15-1": {
     "title": "专业职业版",
-    "fr": "un médecin doit suivre de longues études avant de pouvoir exercer son",
+    "fr": "un médecin doit suivre de longues études avant de pouvoir exercer son métier → Cette expertise est fortement valorisée sur le marché du travail",
     "zh": "医学、工程等专业需长期训练，专业知识在劳动市场上受到重视，可能带来较高收入。",
     "words": [
       [
@@ -1041,7 +1041,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-15-2": {
     "title": "团队与适应版",
-    "fr": "Le savoir-être → notamment la capacité à communiquer et à s’adapter → joue également un rôle essentiel dans l’évolution professionnelle. Dans une entreprise",
+    "fr": "Le savoir-être → notamment la capacité à communiquer et à s’adapter → joue également un rôle essentiel dans l’évolution professionnelle → Dans une entreprise",
     "zh": "高收入不只由学历决定；沟通、协作和适应能力也能带来更多职责与晋升。",
     "words": [
       [
@@ -1066,7 +1066,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-15-3": {
     "title": "收入 / 创业版",
-    "fr": "’un plombier ou d’un électricien expérimenté. Dans ces métiers → le savoir-faire → l’expérience acquise sur le terrain et la réputation professionnelle peuvent être particulièrement importants",
+    "fr": "un plombier ou d’un électricien expérimenté → Dans ces métiers → le savoir-faire → l’expérience acquise sur le terrain",
     "zh": "经验丰富的水管工或电工凭技术、口碑和客户积累也能创业并获得可观收入。",
     "words": [
       [
@@ -1091,7 +1091,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-16-1": {
     "title": "求职初期版",
-    "fr": "si deux jeunes diplômés postulent au même poste et possèdent des profils relativement similaires → de très bons résultats scolaires peuvent permettre à l’un d’entre eux de → notamment au début d’une carrière",
+    "fr": "si deux jeunes diplômés postulent au même poste → de très bons résultats scolaires peuvent permettre à l’un d’entre eux de se démarquer → Une bonne performance scolaire peut donc faciliter l’accès à certaines → notamment au début d’une carrière",
     "zh": "年轻求职者经验少，优秀成绩可作为筛选中的优势，帮助获得职业初期机会。",
     "words": [
       [
@@ -1116,7 +1116,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-16-2": {
     "title": "品质版",
-    "fr": "Un étudiant qui obtient régulièrement de bons résultats doit généralement faire preuve de persévérance → de détermination et d’autodiscipline. Il doit apprendre à organiser son temps → à travailler de manière régulière et à poursuivre ses objectifs malgré les difficultés",
+    "fr": "obtient régulièrement de bons résultats doit généralement faire preuve de persévérance → de détermination et d’autodiscipline → Il doit apprendre à organiser son temps → à travailler de manière régulière et à poursuivre ses objectifs malgré les difficultés",
     "zh": "好成绩往往体现坚持、自律和时间管理，这些品质也有利于工作与实现目标。",
     "words": [
       [
@@ -1137,7 +1137,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-16-3": {
     "title": "限制版",
-    "fr": "Dans une entreprise → il faut savoir communiquer efficacement avec ses collègues → travailler en équipe",
+    "fr": "Dans une entreprise → il faut savoir communiquer efficacement avec ses collègues → travailler en équipe → s’adapter à différentes situations et entretenir de bonnes relations professionnelles",
     "zh": "成绩无法独自决定人生成功；沟通、团队合作和适应能力也关键，成绩一般的人也可能成功。",
     "words": [
       [
@@ -1166,7 +1166,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-17-1": {
     "title": "经验积累版",
-    "fr": "’un plombier ou d’un électricien. Au fil des années → ces professionnels sont confrontés à de nombreuses situations concrètes et à des",
+    "fr": "un plombier ou d’un électricien → Au fil des années → ces professionnels sont confrontés à de nombreuses situations concrètes",
     "zh": "水管工、电工通过真实案例积累诊断和独立解决问题的能力，经验使其在市场上受欢迎。",
     "words": [
       [
@@ -1195,7 +1195,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-17-2": {
     "title": "职业发展版",
-    "fr": "un vendeur expérimenté a généralement eu l’occasion de communiquer avec des clients → il apprend à mieux comprendre leurs besoins → à répondre à leurs attentes et à établir une relation de confiance avec eux",
+    "fr": "un vendeur expérimenté a généralement eu l’occasion de communiquer avec → Au fil du temps → il apprend à mieux comprendre leurs besoins → à répondre à leurs attentes et à établir une relation de confiance avec eux",
     "zh": "销售经验帮助员工理解不同客户、建立信任和处理困难，从而提升表现并晋升。",
     "words": [
       [
@@ -1224,7 +1224,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-17-3": {
     "title": "理论基础版",
-    "fr": "’un chercheur scientifique. Pour mener des recherches sérieuses → analyser des données complexes et maîtriser les méthodes propres à son domaine → il doit généralement suivre une formation universitaire approfondie",
+    "fr": "un chercheur scientifique → Pour mener des recherches sérieuses → analyser des données complexes et maîtriser les méthodes propres à son domaine → il doit généralement suivre une formation universitaire approfondie",
     "zh": "科研等高度专业职业仍需深入大学教育；经验必须建立在理论与专业训练之上。",
     "words": [
       [
@@ -1249,7 +1249,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-23-1": {
     "title": "外语求职版",
-    "fr": "si une personne souhaite postuler à un poste dans une entreprise française → le fait de parler français avec fluidité peut représenter un avantage considérable → notamment si elle doit communiquer avec des collègues ou des clients francophones.",
+    "fr": "si une personne souhaite postuler à un poste dans une entreprise française → le fait de parler français avec fluidité peut représenter un avantage considérable → notamment si elle doit communiquer avec des collègues ou des clients francophones → La maîtrise d’une langue étrangère peut donc faciliter l’accès à",
     "zh": "国际化企业需要跨语言交流，外语能力能突出简历并拓展职位或收入机会。",
     "words": [
       [
@@ -1274,7 +1274,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-23-3": {
     "title": "限制版",
-    "fr": "’un médecin qui travaille dans un hôpital en Chine. Il peut avoir → une rémunération attractive et un statut social élevé → même s’il n’utilise pas de langue étrangère dans son travail quotidien",
+    "fr": "un médecin qui travaille dans un hôpital en Chine → Il peut avoir un emploi stable → une rémunération attractive et un statut social élevé → même s’il n’utilise pas de langue étrangère dans son travail quotidien",
     "zh": "并非所有工作都依赖外语；在本地医院工作的医生更需要医学知识、经验和专业技能。",
     "words": [
       [
@@ -1291,7 +1291,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-18-1": {
     "title": "保护版",
-    "fr": "l’utilisation d’Internet. De nos jours → les enfants peuvent facilement être exposés à des contenus violents ou inappropriés en ligne",
+    "fr": "l’utilisation d’Internet → les enfants peuvent facilement être exposés à des contenus violents ou inappropriés en ligne",
     "zh": "儿童判断能力尚未成熟，父母通过限制上网时间和内容可保护他们免受不良信息影响。",
     "words": [
       [
@@ -1316,7 +1316,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-18-2": {
     "title": "建议版",
-    "fr": "u choix des matières optionnelles à l’école. Un enfant peut avoir du → à ses centres d’intérêt ou à son projet d’avenir",
+    "fr": "du choix des matières optionnelles à l’école → Un enfant peut avoir du mal à déterminer quelles matières → à ses centres d’intérêt ou à son projet d’avenir",
     "zh": "父母生活经验较多，可在孩子选课等重大决定时提供建议，帮助其找到方向。",
     "words": [
       [
@@ -1337,7 +1337,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-18-3": {
     "title": "过度控制版",
-    "fr": "Si les parents prennent toutes les décisions à leur place et interviennent → les enfants risquent de devenir trop dépendants. Pire encore → cette autorité peut progressivement se transformer en une forme de contrôle presque pathologique",
+    "fr": "Si les parents prennent toutes les décisions à leur place → les enfants risquent de devenir trop dépendants → cette autorité peut progressivement se transformer en une forme de",
     "zh": "过度控制会削弱孩子独立性，并可能在青春期引发反抗、冲突甚至离家出走。",
     "words": [
       [
@@ -1354,7 +1354,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-20-1": {
     "title": "学习激励版",
-    "fr": "un enfant qui sait qu’il recevra une petite somme d’argent après avoir → cette pratique peut donc constituer un moyen efficace de stimuler sa motivation scolaire",
+    "fr": "son prochain examen → Utilisée de manière raisonnable → cette pratique peut donc constituer un moyen efficace de stimuler sa motivation scolaire",
     "zh": "小额金钱奖励可让孩子感觉努力被认可，鼓励定期学习并坚持达成目标。",
     "words": [
       [
@@ -1379,7 +1379,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-20-2": {
     "title": "理财教育版",
-    "fr": "au lieu de dépenser immédiatement tout l’argent reçu → ils peuvent en épargner une partie afin d’acheter plus tard quelque chose → les enfants peuvent progressivement apprendre à gérer un budget",
+    "fr": "au lieu de dépenser immédiatement tout l’argent reçu → ils peuvent en épargner une partie afin d’acheter plus tard → De cette manière → les enfants peuvent progressivement apprendre à gérer un budget",
     "zh": "有限奖励也能教孩子储蓄、做预算，并区分真正需要和一时想要的东西。",
     "words": [
       [
@@ -1396,7 +1396,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-20-3": {
     "title": "反作用版",
-    "fr": "Si les enfants reçoivent de l’argent chaque fois qu’ils obtiennent une bonne note → ils risquent progressivement de développer une motivation purement extrinsèque. Autrement dit → ils pourraient finir par étudier uniquement pour obtenir une récompense financière",
+    "fr": "Si les enfants reçoivent de l’argent chaque fois qu’ils obtiennent une bonne note → ils risquent progressivement de développer une motivation purement extrinsèque → Autrement dit → ils pourraient finir par étudier uniquement pour obtenir une récompense financière",
     "zh": "次次用钱奖励成绩会使孩子只为报酬学习，并可能培养物质化观念。",
     "words": [
       [
@@ -1417,7 +1417,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-21-1": {
     "title": "信任版",
-    "fr": "Si les parents sont généralement honnêtes avec eux → les enfants savent qu’ils peuvent leur faire confiance et leur parler ouvertement → si un enfant découvre régulièrement que ses parents lui ont menti",
+    "fr": "Si les parents sont généralement honnêtes avec eux → les enfants savent qu’ils peuvent leur faire confiance → si un enfant découvre régulièrement que ses parents lui ont menti → il risque progressivement de perdre confiance en eux",
     "zh": "父母说实话有助于建立信任，让孩子愿意倾诉；反复说谎会拉远家庭关系。",
     "words": [
       [
@@ -1438,7 +1438,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-21-2": {
     "title": "榜样版",
-    "fr": "un enfant qui comprend la valeur de l’honnêteté sera moins susceptible de",
+    "fr": "éviter une punition → Les parents peuvent ainsi transmettre certaines valeurs morales par leur propre comportement",
     "zh": "父母以身作则说真话，可教孩子重视诚实，减少作弊或为逃避惩罚而撒谎。",
     "words": [
       [
@@ -1459,7 +1459,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-21-3": {
     "title": "年龄适配版",
-    "fr": "’un divorce. Les parents devraient bien sûr expliquer à leur enfant qu’ils → mais ils ne sont pas obligés de lui révéler tous les détails",
+    "fr": "un divorce → Les parents devraient bien sûr expliquer à leur enfant qu’ils vont se séparer → mais ils ne sont pas obligés de lui révéler tous les détails de leurs conflits conjugaux",
     "zh": "涉及离婚等复杂事件时可说明事实，但细节应依孩子年龄和成熟度取舍。",
     "words": [
       [
@@ -1472,7 +1472,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-22-1": {
     "title": "儿童输入优势版",
-    "fr": "Lorsqu’ils sont régulièrement exposés à une langue étrangère → ils peuvent mémoriser progressivement du vocabulaire → reproduire la prononciation et assimiler certaines structures de manière assez naturelle. Commencer",
+    "fr": "Lorsqu’ils sont régulièrement exposés à une langue étrangère → ils peuvent mémoriser progressivement du vocabulaire → reproduire la prononciation et assimiler certaines structures de manière assez naturelle → Commencer tôt leur permet donc de se familiariser progressivement avec la langue",
     "zh": "儿童较容易接受新声音与表达，早接触外语有利于自然形成发音和语言习惯。",
     "words": [
       [
@@ -1489,7 +1489,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-22-2": {
     "title": "敢开口版",
-    "fr": "un adulte peut parfois se sentir gêné ou angoissé à l’idée de",
+    "fr": "un adulte peut parfois se sentir gêné ou angoissé à → Cette peur du jugement peut constituer un véritable frein à l’apprentissage",
     "zh": "孩子说外语时通常不太怕犯错，更愿意尝试和重来，因而能多开口、建立信心。",
     "words": [
       [
@@ -1502,7 +1502,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-22-3": {
     "title": "成年人优势版",
-    "fr": "ils peuvent analyser les règles grammaticales → organiser le vocabulaire par thème et établir eux-mêmes un programme de révision. → à leur autodiscipline et à leur capacité de raisonnement",
+    "fr": "ils peuvent analyser les règles grammaticales → organiser le vocabulaire par thème et établir eux-mêmes un programme de révision → Grâce à leur maturité → à leur autodiscipline et à leur capacité de raisonnement",
     "zh": "成年人虽起步晚，却有更强分析能力和自律，可通过语法梳理、主题词汇和复习计划高效进步。",
     "words": [
       [
@@ -1519,7 +1519,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-23-2": {
     "title": "融入版",
-    "fr": "une personne qui souhaite immigrer au Québec ou s’installer en France a → d’effectuer certaines démarches de la vie quotidienne et de trouver un emploi",
+    "fr": "souhaite immigrer au Québec ou s’installer en France a tout intérêt à apprendre le français → La maîtrise de cette langue peut lui permettre de communiquer → d’effectuer certaines démarches de la vie quotidienne et de trouver un emploi",
     "zh": "移居魁北克或法国时，法语能帮助办理日常事务、找工作与交友，促进融入。",
     "words": [
       [
@@ -1532,7 +1532,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-24-1": {
     "title": "长期学习版",
-    "fr": "C’est pourquoi certaines personnes peuvent parfois se sentir découragées lorsqu’elles ne constatent",
+    "fr": "C’est pourquoi certaines personnes peuvent parfois se sentir découragées lorsqu’elles",
     "zh": "外语学习涉及词汇、语法、发音、听力和即兴表达，需要长期练习及毅力。",
     "words": [
       [
@@ -1557,7 +1557,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-24-3": {
     "title": "沉浸版",
-    "fr": "Lorsqu’on séjourne dans un pays où la langue cible est parlée → on peut la pratiquer dans des situations réelles → à l’université",
+    "fr": "Lorsqu’on séjourne dans un pays où la langue cible est parlée → on peut la pratiquer dans des situations réelles → à l’université → dans les magasins",
     "zh": "在目标语言国家旅行或留学，可在校园、商店和交通中真实使用语言，增强信心。",
     "words": [
       [
@@ -1578,7 +1578,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-19-1": {
     "title": "性别平等版",
-    "fr": "Quel que soit leur genre ou leur origine → tous les enfants devraient pouvoir accéder à une éducation de qualité sans",
+    "fr": "Quel que soit leur genre ou leur origine → tous les enfants devraient pouvoir accéder à une éducation de → les garçons devraient donc bénéficier des mêmes possibilités d’apprentissage",
     "zh": "教育应不分性别或出身提供同等课程和学习机会，让每个孩子发挥潜力。",
     "words": [
       [
@@ -1599,7 +1599,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-19-2": {
     "title": "性别平等版",
-    "fr": "’une électricienne ou d’une plombière. Une femme peut parfaitement exercer ces professions",
+    "fr": "une électricienne ou d’une plombière → Une femme peut parfaitement exercer ces professions à condition de posséder les compétences",
     "zh": "男女接受同等教育有助于打破职业性别刻板印象，让女孩也可自由选择电工等职业。",
     "words": [
       [
@@ -1612,7 +1612,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-19-3": {
     "title": "个体差异版",
-    "fr": "Chaque enfant possède ses propres capacités → ses centres d’intérêt et ses aspirations. Certains sont davantage attirés par les sciences → tandis que d’autres préfèrent les langues",
+    "fr": "Chaque enfant possède ses propres capacités → ses centres d’intérêt et ses aspirations → Certains sont davantage attirés par les sciences → tandis que d’autres préfèrent les langues",
     "zh": "同等教育机会不等于统一道路；课程应依每个孩子的兴趣与能力调整，避免性别预设。",
     "words": [
       [
@@ -1633,7 +1633,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-27-1": {
     "title": "科研投资版",
-    "fr": "De nombreux enseignants-chercheurs travaillent dans des domaines comme la médecine → les nouvelles technologies ou la protection de l’environnement. Or → ces recherches nécessitent souvent des équipements coûteux",
+    "fr": "De nombreux enseignants-chercheurs travaillent dans des domaines comme la médecine → les nouvelles technologies ou la protection de l’environnement → ces recherches nécessitent souvent des équipements coûteux → des laboratoires modernes et du personnel qualifié",
     "zh": "大学研究需要昂贵设备、实验室和人才；更多资金可促进科技创新与社会发展。",
     "words": [
       [
@@ -1662,7 +1662,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-27-2": {
     "title": "助学版",
-    "fr": "Tous les étudiants ne disposent pas des mêmes ressources financières. Certaines familles → le logement ou le matériel nécessaire aux études → tandis que d’autres rencontrent davantage de difficultés",
+    "fr": "Tous les étudiants ne disposent pas des mêmes ressources financières → Certaines familles peuvent facilement payer les frais de scolarité → le logement ou le matériel nécessaire aux études → tandis que d’autres rencontrent davantage de difficultés",
     "zh": "增加大学经费可资助经济困难学生的学费、住宿和学习材料，改善高等教育机会公平。",
     "words": [
       [
@@ -1687,7 +1687,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-27-3": {
     "title": "公共预算版",
-    "fr": "certains financements pourraient servir à créer ou à soutenir des banques alimentaires",
+    "fr": "n’ont même pas les moyens de se nourrir correctement → Il est essentiel de répondre aux besoins fondamentaux de la population",
     "zh": "公共预算有限且贫困救助同样迫切，教育投入应与食物银行等基本民生需求平衡。",
     "words": [
       [
@@ -1708,7 +1708,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-28-1": {
     "title": "社会背景版",
-    "fr": "L’école ne doit pas seulement transmettre des connaissances → elle doit également permettre à chacun de développer son potentiel dans des",
+    "fr": "L’école ne doit pas seulement transmettre des connaissances → elle doit également permettre à chacun de développer son potentiel → La réussite scolaire ne devrait donc pas dépendre uniquement de",
     "zh": "学校应不论学生出身和家庭财力提供优质教育，让每个人尽可能公平地发展潜力。",
     "words": [
       [
@@ -1725,7 +1725,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-28-2": {
     "title": "助学版",
-    "fr": "Certains élèves issus de familles modestes rencontrent des difficultés financières qui peuvent → des aides financières ou d’autres formes de soutien afin qu’ils puissent payer",
+    "fr": "Certains élèves issus de familles modestes rencontrent des difficultés financières → Les établissements peuvent donc leur proposer des bourses → accéder aux ressources dont ils ont besoin",
     "zh": "学校可以用奖学金和经济援助降低贫困学生的学习成本，减少教育资源差距。",
     "words": [
       [
@@ -1742,7 +1742,7 @@ window.TCF_T3_EDUCATION_EXAMPLES={
   },
   "3-28-3": {
     "title": "资源有限版",
-    "fr": "dans certaines universités → seuls les étudiants ayant d’excellents résultats peuvent avoir l’occasion d’intégrer un laboratoire → les programmes d’échange universitaire ou les possibilités d’étudier à l’étranger disposent souvent",
+    "fr": "dans certaines universités → de participer à des projets de recherche sous la direction d’un professeur → nécessitent donc une sélection",
     "zh": "实验室、交换项目和社团名额有限，机会平等不意味着每个人最终得到完全相同的资源。",
     "words": [
       [
