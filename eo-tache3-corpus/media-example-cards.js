@@ -1,5 +1,5 @@
 'use strict';
-// 媒体与文化42条：例子逻辑链为自由表达提示；词条从原论段摘取并附中文释义。
+// 媒体与文化42条：例子逻辑链记思路；例子词条取自对应法语原文。
 window.TCF_T3_MEDIA_EXAMPLES={
   "4-01-1": {
     "title": "纸书体验版",
@@ -276,8 +276,8 @@ window.TCF_T3_MEDIA_EXAMPLES={
         "理解剧情"
       ],
       [
-        "le contexte historique, culturel ou littéraire",
-        "历史、文化或文学背景"
+        "comprendre l’intrigue",
+        "理解故事情节"
       ],
       [
         "grâce aux images, aux décors",
@@ -784,8 +784,8 @@ window.TCF_T3_MEDIA_EXAMPLES={
         "对社会产生重要影响"
       ],
       [
-        "une forte visibilité médiatique",
-        "强大的媒体曝光度"
+        "visibilité médiatique",
+        "媒体曝光度"
       ],
       [
         "une campagne de protection de l’environnement",
