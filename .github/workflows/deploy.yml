@@ -42,6 +42,13 @@ jobs:
               path=chain/item['pack']
               assert path.is_file(), f'Missing scene pack {path}'
           print('Pages artifact includes 190 scene logic-chain Piper recordings')
+          examples=Path('eo-tache3-corpus/example-audio')
+          example_manifest=json.loads((examples/'manifest.json').read_text(encoding='utf-8'))
+          assert len(example_manifest['entries'])==323, f"Missing example audio: {len(example_manifest['entries'])}/323"
+          for phrase,item in example_manifest['entries'].items():
+              pack=examples/item['pack']
+              assert pack.is_file() and pack.stat().st_size>100, f'Missing example audio pack {pack}'
+          print('Pages artifact includes 323 example-chain Piper recordings')
           PY
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
