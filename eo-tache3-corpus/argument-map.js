@@ -5,7 +5,7 @@
   const topicData=()=>TOPICS[$('topic')?.value]||TOPICS['旅行与移民'];
 
   // Only play pre-generated French Piper siwis recordings; no system voice fallback.
-  let argumentAudioManifest=null, argumentAudioManifestPromise=null, chainAudioManifestPromise=null, exampleAudioManifestPromise=null, overviewAudioManifestPromise=null, careerAudioManifestPromise=null, activeArgumentAudio=null, activeArgumentButton=null, activeArgumentUrl=null;
+  let argumentAudioManifest=null, argumentAudioManifestPromise=null, chainAudioManifestPromise=null, exampleAudioManifestPromise=null, overviewAudioManifestPromise=null, careerAudioManifestPromise=null, travelVocabAudioManifestPromise=null, activeArgumentAudio=null, activeArgumentButton=null, activeArgumentUrl=null;
   async function speakArgumentPhrase(text,button){
     if(activeArgumentAudio){activeArgumentAudio.pause();activeArgumentAudio=null;}
     if(activeArgumentUrl){URL.revokeObjectURL(activeArgumentUrl);activeArgumentUrl=null;}
@@ -32,6 +32,10 @@
       if(!entry && careerAudioManifestPromise!==false){
         if(!careerAudioManifestPromise)careerAudioManifestPromise=fetch(new URL('career-audio/manifest.json',document.baseURI)).then(r=>{if(!r.ok)throw Error('职业与职场 Piper 音频尚未部署');return r.json();}).catch(e=>{careerAudioManifestPromise=null;throw e;});
         const career=await careerAudioManifestPromise;entry=career.entries?.[text];dir='career-audio/';
+      }
+      if(!entry){
+        if(!travelVocabAudioManifestPromise)travelVocabAudioManifestPromise=fetch(new URL('travel-vocab-audio/manifest.json',document.baseURI)).then(r=>{if(!r.ok)throw Error('旅行原文词条 Piper 音频尚未部署');return r.json();}).catch(e=>{travelVocabAudioManifestPromise=null;throw e;});
+        const travelAudio=await travelVocabAudioManifestPromise;entry=travelAudio.entries?.[text];dir='travel-vocab-audio/';
       }
       if(!entry)throw Error('该词块尚无 Piper 音频');
       const response=await fetch(new URL(dir+entry.pack,document.baseURI));
