@@ -1,5 +1,5 @@
 'use strict';
-// 旅行与移民96条：例子逻辑链记思路；主题词条仅选自原论段中实际出现且已有Piper音频的表达。
+// 旅行与移民96条：逻辑链记思路；词块选自对应原论段原文且复用现有Piper音频；不使用占位释义。
 window.TCF_T3_EXAMPLES={
   "1-01-2": {
     "title": "新移民预约与咨询",
@@ -28,7 +28,7 @@ window.TCF_T3_EXAMPLES={
       ]
     ],
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "已沿用词库释义"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-10-1": {
     "title": "日常沟通与办理手续",
@@ -37,23 +37,23 @@ window.TCF_T3_EXAMPLES={
     "words": [
       [
         "créer des liens avec les autres",
-        "原文高频表达"
+        "与他人建立联系"
       ],
       [
         "Dans la vie quotidienne",
-        "原文高频表达"
+        "在日常生活中"
       ],
       [
         "maîtrise de la langue",
-        "原文高频表达"
+        "语言掌握能力"
       ],
       [
         "langue locale",
-        "原文高频表达"
+        "当地语言"
       ]
     ],
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-17-1": {
     "title": "在魁北克办理日常事务",
@@ -66,11 +66,11 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "démarches administratives",
-        "原文高频表达"
+        "行政手续"
       ]
     ],
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-12-1": {
     "title": "新移民表达需求",
@@ -87,7 +87,7 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "maîtrise de la langue",
-        "原文高频表达"
+        "语言掌握能力"
       ],
       [
         "gagner en autonomie",
@@ -95,11 +95,11 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "nouvel arrivant",
-        "原文高频表达"
+        "新移民"
       ]
     ],
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-02-1": {
     "title": "海外生活版 · 论段 1-02-1",
@@ -116,12 +116,12 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "maîtrise de la langue",
-        "原文高频表达"
+        "语言掌握能力"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-04-1": {
     "title": "语言版 · 论段 1-04-1",
@@ -146,12 +146,12 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "langue locale",
-        "原文高频表达"
+        "当地语言"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-05-2": {
     "title": "正向链 · 论段 1-05-2",
@@ -176,12 +176,12 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "parler la langue locale",
-        "原文高频表达"
+        "说当地语言"
       ]
     ],
     "kind": "scenario",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-08-1": {
     "title": "反向链 · 论段 1-08-1",
@@ -198,7 +198,7 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "peur de faire des erreurs",
-        "原文高频表达"
+        "害怕犯错"
       ],
       [
         "la barrière linguistique",
@@ -206,12 +206,12 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "communiquer spontanément",
-        "原文高频表达"
+        "自然地交流"
       ]
     ],
     "kind": "scenario",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-13-1": {
     "title": "求职版 · 论段 1-13-1",
@@ -225,23 +225,11 @@ window.TCF_T3_EXAMPLES={
       [
         "mettre en valeur ses compétences",
         "展示自己的能力"
-      ],
-      [
-        "de nombreux emplois exigent une bonne maîtrise de l’anglais ou du français",
-        "原文高频表达"
-      ],
-      [
-        "le fait d’être bilingue peut également constituer un véritable atout",
-        "原文高频表达"
-      ],
-      [
-        "selon la région et le secteur d’activité",
-        "原文高频表达"
       ]
     ],
     "kind": "scenario",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-14-2": {
     "title": "海外生活版 · 论段 1-14-2",
@@ -254,7 +242,7 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "évolution professionnelle",
-        "原文高频表达"
+        "职业发展"
       ],
       [
         "la barrière linguistique",
@@ -262,12 +250,12 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "plusieurs langues",
-        "原文高频表达"
+        "多种语言"
       ]
     ],
     "kind": "scenario",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-15-1": {
     "title": "海外生活版 · 论段 1-15-1",
@@ -280,24 +268,20 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "expérience à l’étranger",
-        "原文高频表达"
-      ],
-      [
-        "Pour certains postes",
-        "原文高频表达"
+        "海外经历"
       ],
       [
         "vivre à l’étranger",
-        "原文高频表达"
+        "在国外生活"
       ],
       [
         "plusieurs langues",
-        "原文高频表达"
+        "多种语言"
       ]
     ],
     "kind": "scenario",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-22-1": {
     "title": "旅行版 · 论段 1-22-1",
@@ -327,7 +311,7 @@ window.TCF_T3_EXAMPLES={
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "已沿用词库释义"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-29-1": {
     "title": "职场文化版 · 论段 1-29-1",
@@ -340,20 +324,20 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "les habitudes professionnelles",
-        "原文高频表达"
+        "职场习惯"
       ],
       [
         "mieux comprendre la culture",
-        "原文高频表达"
+        "更好地理解文化"
       ],
       [
         "parler la langue locale",
-        "原文高频表达"
+        "说当地语言"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-29-2": {
     "title": "正向链 · 论段 1-29-2",
@@ -362,24 +346,24 @@ window.TCF_T3_EXAMPLES={
     "words": [
       [
         "parler la langue locale",
-        "原文高频表达"
+        "说当地语言"
       ],
       [
         "associations locales",
-        "原文高频表达"
+        "当地协会"
       ],
       [
         "intégration sociale",
-        "原文高频表达"
+        "社会融入"
       ],
       [
         "nouvel arrivant",
-        "原文高频表达"
+        "新移民"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-02-2": {
     "title": "日常文化版 · 论段 1-02-2",
@@ -395,21 +379,13 @@ window.TCF_T3_EXAMPLES={
         "接受新的习惯"
       ],
       [
-        "les personnes plus âgées peuvent parfois être davantage attachées à leurs habitudes ou influencées par certains stéréotypes",
-        "原文高频表达"
-      ],
-      [
-        "les jeunes peuvent s’adapter plus facilement à un nouvel environnement culturel",
-        "原文高频表达"
-      ],
-      [
         "remettre en question",
-        "原文高频表达"
+        "重新审视"
       ]
     ],
     "kind": "scenario",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-03-1": {
     "title": "日常文化版 · 论段 1-03-1",
@@ -418,12 +394,12 @@ window.TCF_T3_EXAMPLES={
     "words": [
       [
         "langue maternelle",
-        "原文高频表达"
+        "母语"
       ]
     ],
     "kind": "scenario",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-03-2": {
     "title": "社会互动版 · 论段 1-03-2",
@@ -431,21 +407,13 @@ window.TCF_T3_EXAMPLES={
     "zh": "一个人在工作中逐渐了解新的沟通方式，随后调整自己的某些行为。",
     "words": [
       [
-        "une personne qui découvre progressivement de nouvelles façons de communiquer au travail et adapte certains de ses comportements",
-        "原文高频表达"
-      ],
-      [
-        "Ces interactions peuvent progressivement élargir notre vision du monde et transformer certains de nos repères culturels",
-        "原文高频表达"
-      ],
-      [
         "échanges avec les habitants",
-        "原文高频表达"
+        "与当地居民交流"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-04-2": {
     "title": "生活习惯版 · 论段 1-04-2",
@@ -457,25 +425,13 @@ window.TCF_T3_EXAMPLES={
         "适应其他规范"
       ],
       [
-        "au point que certaines traditions de son pays d’origine deviennent moins présentes dans son quotidien",
-        "原文高频表达"
-      ],
-      [
-        "les habitudes alimentaires ou certaines façons de célébrer les fêtes du pays d’accueil",
-        "原文高频表达"
-      ],
-      [
-        "une personne peut progressivement adopter les horaires",
-        "原文高频表达"
-      ],
-      [
         "Dans la vie quotidienne",
-        "原文高频表达"
+        "在日常生活中"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-05-3": {
     "title": "日常文化版 · 论段 1-05-3",
@@ -489,23 +445,11 @@ window.TCF_T3_EXAMPLES={
       [
         "mieux comprendre le mode de vie local",
         "更好理解当地生活方式"
-      ],
-      [
-        "Ce type d’expérience lui permet d’aller au-delà de la simple maîtrise linguistique",
-        "原文高频表达"
-      ],
-      [
-        "ou partager un repas de Thanksgiving avec des habitants",
-        "原文高频表达"
-      ],
-      [
-        "une personne peut participer à des événements locaux",
-        "原文高频表达"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-08-2": {
     "title": "社会互动版 · 论段 1-08-2",
@@ -518,16 +462,16 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "différences culturelles",
-        "原文高频表达"
+        "文化差异"
       ],
       [
         "première rencontre",
-        "原文高频表达"
+        "初次见面"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-10-3": {
     "title": "社会互动版 · 论段 1-10-3",
@@ -552,12 +496,12 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "un sentiment d’appartenance",
-        "原文高频表达"
+        "归属感"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-15-2": {
     "title": "海外生活版 · 论段 1-15-2",
@@ -578,16 +522,16 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "échanger régulièrement",
-        "原文高频表达"
+        "经常交流"
       ],
       [
         "remettre en question",
-        "原文高频表达"
+        "重新审视"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-16-3": {
     "title": "海外生活版 · 论段 1-16-3",
@@ -600,24 +544,24 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "différences culturelles",
-        "原文高频表达"
+        "文化差异"
       ],
       [
         "remettre en question",
-        "原文高频表达"
+        "重新审视"
       ],
       [
         "autres modes de vie",
-        "原文高频表达"
+        "其他生活方式"
       ],
       [
         "vivre à l’étranger",
-        "原文高频表达"
+        "在国外生活"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-28-3": {
     "title": "亲身体验版 · 论段 1-28-3",
@@ -647,7 +591,7 @@ window.TCF_T3_EXAMPLES={
     ],
     "kind": "scenario",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "已沿用词库释义"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-03-3": {
     "title": "家庭版 · 论段 1-03-3",
@@ -656,20 +600,20 @@ window.TCF_T3_EXAMPLES={
     "words": [
       [
         "langue maternelle en famille",
-        "原文高频表达"
+        "在家使用母语"
       ],
       [
         "fêtes traditionnelles",
-        "原文高频表达"
+        "传统节日"
       ],
       [
         "identité culturelle",
-        "原文高频表达"
+        "文化身份"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-04-3": {
     "title": "家庭版 · 论段 1-04-3",
@@ -699,7 +643,7 @@ window.TCF_T3_EXAMPLES={
     ],
     "kind": "scenario",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "已沿用词库释义"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-06-2": {
     "title": "社区版 · 论段 1-06-2",
@@ -720,16 +664,16 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "sentiment d’appartenance",
-        "原文高频表达"
+        "归属感"
       ],
       [
         "vie à l’étranger",
-        "原文高频表达"
+        "海外生活"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-07-3": {
     "title": "同胞支持版 · 论段 1-07-3",
@@ -759,7 +703,7 @@ window.TCF_T3_EXAMPLES={
     ],
     "kind": "scenario",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "已沿用词库释义"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-30-3": {
     "title": "家庭版 · 论段 1-30-3",
@@ -768,24 +712,24 @@ window.TCF_T3_EXAMPLES={
     "words": [
       [
         "histoire familiale",
-        "原文高频表达"
+        "家族历史"
       ],
       [
         "langue maternelle",
-        "原文高频表达"
+        "母语"
       ],
       [
         "liens familiaux",
-        "原文高频表达"
+        "家庭纽带"
       ],
       [
         "grands-parents",
-        "原文高频表达"
+        "祖辈"
       ]
     ],
     "kind": "scenario",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-01-1": {
     "title": "孤独链 · 论段 1-01-1",
@@ -805,17 +749,13 @@ window.TCF_T3_EXAMPLES={
         "加重孤独感"
       ],
       [
-        "un nouvel arrivant qui rentre chez lui après une journée difficile sans avoir personne avec qui partager ses préoccupations",
-        "原文高频表达"
-      ],
-      [
         "nouvelles relations",
-        "原文高频表达"
+        "新的人际关系"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-06-1": {
     "title": "支持链 · 论段 1-06-1",
@@ -836,16 +776,16 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "partager les difficultés",
-        "原文高频表达"
+        "分享困难"
       ],
       [
         "langue maternelle",
-        "原文高频表达"
+        "母语"
       ]
     ],
     "kind": "scenario",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-06-3": {
     "title": "开放社会版 · 论段 1-06-3",
@@ -866,16 +806,16 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "trouver sa place dans la société",
-        "原文高频表达"
+        "在社会中找到自己的位置"
       ],
       [
         "langue locale",
-        "原文高频表达"
+        "当地语言"
       ]
     ],
     "kind": "scenario",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-07-2": {
     "title": "社区版 · 论段 1-07-2",
@@ -887,16 +827,12 @@ window.TCF_T3_EXAMPLES={
         "参加当地协会"
       ],
       [
-        "ou partager un repas de Thanksgiving avec des habitants",
-        "原文高频表达"
-      ],
-      [
         "se familiariser avec les codes sociaux",
         "熟悉社会规则"
       ],
       [
         "un sentiment d’appartenance",
-        "原文高频表达"
+        "归属感"
       ],
       [
         "éviter certains malentendus",
@@ -905,7 +841,7 @@ window.TCF_T3_EXAMPLES={
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-08-3": {
     "title": "社区版 · 论段 1-08-3",
@@ -922,7 +858,7 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "rencontrer régulièrement des personnes",
-        "原文高频表达"
+        "经常与他人见面交流"
       ],
       [
         "participer à des activités locales",
@@ -935,7 +871,7 @@ window.TCF_T3_EXAMPLES={
     ],
     "kind": "scenario",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-12-3": {
     "title": "学校版 · 论段 1-12-3",
@@ -948,24 +884,24 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "développer son réseau social",
-        "原文高频表达"
+        "拓展社交网络"
       ],
       [
         "un sentiment d’appartenance",
-        "原文高频表达"
+        "归属感"
       ],
       [
         "participer à des activités",
-        "原文高频表达"
+        "参加活动"
       ],
       [
         "relations plus naturelles",
-        "原文高频表达"
+        "更自然的人际关系"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-17-3": {
     "title": "社区版 · 论段 1-17-3",
@@ -995,7 +931,7 @@ window.TCF_T3_EXAMPLES={
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "已沿用词库释义"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-18-2": {
     "title": "支持链 · 论段 1-18-2",
@@ -1025,7 +961,7 @@ window.TCF_T3_EXAMPLES={
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "已沿用词库释义"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-19-1": {
     "title": "学校版 · 论段 1-19-1",
@@ -1038,20 +974,20 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "activités scolaires",
-        "原文高频表达"
+        "学校活动"
       ],
       [
         "nouvelles relations",
-        "原文高频表达"
+        "新的人际关系"
       ],
       [
         "réseau social",
-        "原文高频表达"
+        "社交网络"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-23-3": {
     "title": "支持链 · 论段 1-23-3",
@@ -1060,24 +996,20 @@ window.TCF_T3_EXAMPLES={
     "words": [
       [
         "réduire le sentiment de solitude",
-        "原文高频表达"
+        "减轻孤独感"
       ],
       [
         "partager ses expériences",
-        "原文高频表达"
+        "分享经历"
       ],
       [
         "sentiment de sécurité",
-        "原文高频表达"
-      ],
-      [
-        "Les voyageurs peuvent",
-        "原文高频表达"
+        "安全感"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-05-1": {
     "title": "求职版 · 论段 1-05-1",
@@ -1102,12 +1034,12 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "insertion professionnelle",
-        "原文高频表达"
+        "职业融入"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-07-1": {
     "title": "职场适应版 · 论段 1-07-1",
@@ -1128,16 +1060,16 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "mieux comprendre les attentes",
-        "原文高频表达"
+        "更好地理解期待"
       ],
       [
         "insertion professionnelle",
-        "原文高频表达"
+        "职业融入"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-09-2": {
     "title": "收益链 · 论段 1-09-2",
@@ -1153,21 +1085,13 @@ window.TCF_T3_EXAMPLES={
         "维持关键行业正常运转"
       ],
       [
-        "où le manque de personnel peut être particulièrement important",
-        "原文高频表达"
-      ],
-      [
-        "de la construction ou des services aux personnes âgées",
-        "原文高频表达"
-      ],
-      [
         "vieillissement de la population",
-        "原文高频表达"
+        "人口老龄化"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-10-2": {
     "title": "求职准备版 · 论段 1-10-2",
@@ -1183,21 +1107,13 @@ window.TCF_T3_EXAMPLES={
         "找到一份工作"
       ],
       [
-        "les méthodes de travail et les attentes des employeurs peuvent varier considérablement d’un pays à l’autre",
-        "原文高频表达"
-      ],
-      [
-        "comprendre ces différences lui permet de mieux s’adapter à son environnement professionnel",
-        "原文高频表达"
-      ],
-      [
         "les habitudes professionnelles",
-        "原文高频表达"
+        "职场习惯"
       ]
     ],
     "kind": "scenario",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-11-3": {
     "title": "政府支持版 · 论段 1-11-3",
@@ -1215,19 +1131,11 @@ window.TCF_T3_EXAMPLES={
       [
         "des services d’orientation",
         "职业指导服务"
-      ],
-      [
-        "Le marché du travail étant souvent très compétitif",
-        "原文高频表达"
-      ],
-      [
-        "Les nouveaux arrivants peuvent",
-        "原文高频表达"
       ]
     ],
     "kind": "scenario",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-12-2": {
     "title": "职场适应版 · 论段 1-12-2",
@@ -1240,24 +1148,24 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "insertion professionnelle",
-        "原文高频表达"
+        "职业融入"
       ],
       [
         "échanger régulièrement",
-        "原文高频表达"
+        "经常交流"
       ],
       [
         "mieux collaborer",
-        "原文高频表达"
+        "更好地合作"
       ],
       [
         "épanouissement",
-        "原文高频表达"
+        "自我实现"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-13-2": {
     "title": "求职准备版 · 论段 1-13-2",
@@ -1266,7 +1174,7 @@ window.TCF_T3_EXAMPLES={
     "words": [
       [
         "différences culturelles",
-        "原文高频表达"
+        "文化差异"
       ],
       [
         "travailler en équipe",
@@ -1278,12 +1186,12 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "nouvel arrivant",
-        "原文高频表达"
+        "新移民"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-13-3": {
     "title": "自主求职版 · 论段 1-13-3",
@@ -1292,28 +1200,28 @@ window.TCF_T3_EXAMPLES={
     "words": [
       [
         "comprendre les attentes des employeurs",
-        "原文高频表达"
+        "理解雇主期望"
       ],
       [
         "suivre une formation professionnelle",
-        "原文高频表达"
+        "参加职业培训"
       ],
       [
         "mieux comprendre les attentes",
-        "原文高频表达"
+        "更好地理解期待"
       ],
       [
         "participer à des ateliers",
-        "原文高频表达"
+        "参加工作坊"
       ],
       [
         "nouvelles compétences",
-        "原文高频表达"
+        "新技能"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-14-1": {
     "title": "优势链 · 论段 1-14-1",
@@ -1343,7 +1251,7 @@ window.TCF_T3_EXAMPLES={
     ],
     "kind": "scenario",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "已沿用词库释义"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-14-3": {
     "title": "限制链 · 论段 1-14-3",
@@ -1355,25 +1263,13 @@ window.TCF_T3_EXAMPLES={
         "海外经历只是额外优势；专业技能、工作经验、团队合作和动力同样决定职业发展。"
       ],
       [
-        "De nombreuses personnes qui n’ont jamais vécu à l’étranger parviennent parfaitement à construire une carrière solide",
-        "原文高频表达"
-      ],
-      [
-        "comme les compétences professionnelles",
-        "原文高频表达"
-      ],
-      [
-        "expérience internationale",
-        "原文高频表达"
-      ],
-      [
         "expérience à l’étranger",
-        "原文高频表达"
+        "海外经历"
       ]
     ],
     "kind": "scenario",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-16-2": {
     "title": "优势链 · 论段 1-16-2",
@@ -1398,12 +1294,12 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "compétences professionnelles",
-        "原文高频表达"
+        "职业技能"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-17-2": {
     "title": "求职准备版 · 论段 1-17-2",
@@ -1419,21 +1315,17 @@ window.TCF_T3_EXAMPLES={
         "调整简历"
       ],
       [
-        "Une préparation professionnelle suffisante peut donc faciliter considérablement son installation",
-        "原文高频表达"
-      ],
-      [
         "insertion professionnelle",
-        "原文高频表达"
+        "职业融入"
       ],
       [
         "compétences recherchées",
-        "原文高频表达"
+        "雇主需要的技能"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-20-2": {
     "title": "机会链 · 论段 1-20-2",
@@ -1454,16 +1346,16 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "démarches administratives",
-        "原文高频表达"
+        "行政手续"
       ],
       [
         "études à New York",
-        "原文高频表达"
+        "在纽约学习"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-28-2": {
     "title": "跨国工作版 · 论段 1-28-2",
@@ -1471,29 +1363,13 @@ window.TCF_T3_EXAMPLES={
     "zh": "一家位于中国的企业经常与加拿大团队合作。",
     "words": [
       [
-        "une entreprise située en Chine qui travaille régulièrement avec une équipe au Canada",
-        "原文高频表达"
-      ],
-      [
-        "les employés chinois peuvent progressivement découvrir leur manière de communiquer",
-        "原文高频表达"
-      ],
-      [
-        "leur façon de travailler ou encore certaines habitudes professionnelles",
-        "原文高频表达"
-      ],
-      [
         "être en contact avec d’autres cultures sans voyager",
         "不旅行也能接触其他文化"
-      ],
-      [
-        "En collaborant avec leurs collègues canadiens",
-        "原文高频表达"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-01-3": {
     "title": "社会责任版 · 论段 1-01-3",
@@ -1507,23 +1383,11 @@ window.TCF_T3_EXAMPLES={
       [
         "participer à des activités de quartier",
         "参加社区活动"
-      ],
-      [
-        "rejoindre des associations locales",
-        "原文高频表达"
-      ],
-      [
-        "insertion sociale et culturelle",
-        "原文高频表达"
-      ],
-      [
-        "Les nouveaux arrivants peuvent",
-        "原文高频表达"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-09-3": {
     "title": "压力链 · 论段 1-09-3",
@@ -1533,27 +1397,11 @@ window.TCF_T3_EXAMPLES={
       [
         "accroître la demande de logements",
         "增加住房需求"
-      ],
-      [
-        "Si les infrastructures ne sont pas adaptées suffisamment rapidement",
-        "原文高频表达"
-      ],
-      [
-        "certaines difficultés peuvent apparaître",
-        "原文高频表达"
-      ],
-      [
-        "de transport ou d’accès aux services",
-        "原文高频表达"
-      ],
-      [
-        "notamment en matière de logement",
-        "原文高频表达"
       ]
     ],
     "kind": "scenario",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-11-1": {
     "title": "个人责任版 · 论段 1-11-1",
@@ -1570,16 +1418,16 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "nouvel arrivant",
-        "原文高频表达"
+        "新移民"
       ],
       [
         "langue locale",
-        "原文高频表达"
+        "当地语言"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-11-2": {
     "title": "社会责任版 · 论段 1-11-2",
@@ -1592,16 +1440,16 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "accompagnement",
-        "原文高频表达"
+        "支持与辅导"
       ],
       [
         "responsabilité",
-        "原文高频表达"
+        "责任"
       ]
     ],
     "kind": "scenario",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-19-3": {
     "title": "个人责任版 · 论段 1-19-3",
@@ -1614,20 +1462,20 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "apprendre la langue",
-        "原文高频表达"
+        "学习语言"
       ],
       [
         "créer des liens",
-        "原文高频表达"
+        "建立联系"
       ],
       [
         "réseau social",
-        "原文高频表达"
+        "社交网络"
       ]
     ],
     "kind": "scenario",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-20-1": {
     "title": "便利链 · 论段 1-20-1",
@@ -1648,16 +1496,16 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "coopération internationale",
-        "原文高频表达"
+        "国际合作"
       ],
       [
         "dans une certaine mesure",
-        "原文高频表达"
+        "在一定程度上"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-20-3": {
     "title": "安全链 · 论段 1-20-3",
@@ -1674,12 +1522,12 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "coopération internationale",
-        "原文高频表达"
+        "国际合作"
       ]
     ],
     "kind": "scenario",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-02-3": {
     "title": "生活经验版 · 论段 1-02-3",
@@ -1709,7 +1557,7 @@ window.TCF_T3_EXAMPLES={
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "已沿用词库释义"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-16-1": {
     "title": "教育机会版 · 论段 1-16-1",
@@ -1730,12 +1578,12 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "vivre à l’étranger",
-        "原文高频表达"
+        "在国外生活"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-18-3": {
     "title": "孩子版 · 论段 1-18-3",
@@ -1756,16 +1604,16 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "dans une certaine mesure",
-        "原文高频表达"
+        "在一定程度上"
       ],
       [
         "activités scolaires",
-        "原文高频表达"
+        "学校活动"
       ]
     ],
     "kind": "scenario",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-19-2": {
     "title": "家长版 · 论段 1-19-2",
@@ -1774,7 +1622,7 @@ window.TCF_T3_EXAMPLES={
     "words": [],
     "kind": "scenario",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "已沿用词库释义"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-30-1": {
     "title": "学业版 · 论段 1-30-1",
@@ -1791,16 +1639,16 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "réussir à l’école",
-        "原文高频表达"
+        "在学校取得成功"
       ],
       [
         "langue locale",
-        "原文高频表达"
+        "当地语言"
       ]
     ],
     "kind": "scenario",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-30-2": {
     "title": "社交版 · 论段 1-30-2",
@@ -1817,20 +1665,20 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "maîtrise de la langue",
-        "原文高频表达"
+        "语言掌握能力"
       ],
       [
         "culture locale",
-        "原文高频表达"
+        "当地文化"
       ],
       [
         "langue locale",
-        "原文高频表达"
+        "当地语言"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-15-3": {
     "title": "孤独链 · 论段 1-15-3",
@@ -1843,24 +1691,24 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "différences culturelles",
-        "原文高频表达"
+        "文化差异"
       ],
       [
         "expérience à l’étranger",
-        "原文高频表达"
+        "海外经历"
       ],
       [
         "sentiment de solitude",
-        "原文高频表达"
+        "孤独感"
       ],
       [
         "adaptation difficile",
-        "原文高频表达"
+        "适应困难"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-18-1": {
     "title": "独自移民版 · 论段 1-18-1",
@@ -1890,7 +1738,7 @@ window.TCF_T3_EXAMPLES={
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "已沿用词库释义"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-22-2": {
     "title": "旅行版 · 论段 1-22-2",
@@ -1906,21 +1754,13 @@ window.TCF_T3_EXAMPLES={
         "拓宽世界观"
       ],
       [
-        "une personne peut avoir certaines idées préconçues sur un pays avant de s’y rendre",
-        "原文高频表达"
-      ],
-      [
-        "puis se rendre compte sur place que la réalité est beaucoup plus complexe",
-        "原文高频表达"
-      ],
-      [
         "favoriser l’ouverture d’esprit",
         "促进思想开放"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-23-1": {
     "title": "独自旅行版 · 论段 1-23-1",
@@ -1938,19 +1778,11 @@ window.TCF_T3_EXAMPLES={
       [
         "adapter son programme",
         "调整行程"
-      ],
-      [
-        "trouver son logement ou encore résoudre certains problèmes imprévus sans pouvoir compter en permanence sur ses proches",
-        "原文高频表达"
-      ],
-      [
-        "un voyageur qui rate son train dans un pays étranger",
-        "原文高频表达"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-23-2": {
     "title": "自由版 · 论段 1-23-2",
@@ -1980,7 +1812,7 @@ window.TCF_T3_EXAMPLES={
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "已沿用词库释义"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-22-3": {
     "title": "限制链 · 论段 1-22-3",
@@ -1990,23 +1822,11 @@ window.TCF_T3_EXAMPLES={
       [
         "représenter un budget important",
         "构成一笔较大预算"
-      ],
-      [
-        "Tout le monde n’a donc pas nécessairement les moyens financiers ou le temps nécessaire pour voyager régulièrement",
-        "原文高频表达"
-      ],
-      [
-        "organiser un voyage nécessite parfois une préparation considérable",
-        "原文高频表达"
-      ],
-      [
-        "notamment lorsqu’il s’agit d’un séjour à l’étranger",
-        "原文高频表达"
       ]
     ],
     "kind": "scenario",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-26-1": {
     "title": "限制链 · 论段 1-26-1",
@@ -2016,27 +1836,11 @@ window.TCF_T3_EXAMPLES={
       [
         "les ressources financières",
         "经济资源"
-      ],
-      [
-        "les repas au restaurant et les visites de certains monuments",
-        "原文高频表达"
-      ],
-      [
-        "entre les billets d’avion",
-        "原文高频表达"
-      ],
-      [
-        "plusieurs nuits à l’hôtel",
-        "原文高频表达"
-      ],
-      [
-        "un voyage à Paris",
-        "原文高频表达"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-26-2": {
     "title": "限制链 · 论段 1-26-2",
@@ -2057,12 +1861,12 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "investissement",
-        "原文高频表达"
+        "投资"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-26-3": {
     "title": "解决链 · 论段 1-26-3",
@@ -2080,19 +1884,11 @@ window.TCF_T3_EXAMPLES={
       [
         "partir pendant la basse saison",
         "淡季出行"
-      ],
-      [
-        "Avec une bonne organisation et un budget adapté",
-        "原文高频表达"
-      ],
-      [
-        "Les voyageurs peuvent",
-        "原文高频表达"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-27-1": {
     "title": "飞机 · 论段 1-27-1",
@@ -2113,16 +1909,16 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "organiser son emploi du temps",
-        "原文高频表达"
+        "安排个人时间"
       ],
       [
         "priorité à la rapidité",
-        "原文高频表达"
+        "优先考虑速度"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-27-2": {
     "title": "大巴 · 论段 1-27-2",
@@ -2136,23 +1932,11 @@ window.TCF_T3_EXAMPLES={
       [
         "réduire l’utilisation des voitures individuelles",
         "减少私家车使用"
-      ],
-      [
-        "prendre le bus peut coûter beaucoup moins cher que prendre l’avion",
-        "原文高频表达"
-      ],
-      [
-        "comme plusieurs passagers partagent le même véhicule",
-        "原文高频表达"
-      ],
-      [
-        "pour se rendre dans une ville relativement proche",
-        "原文高频表达"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-21-2": {
     "title": "经济收益 · 论段 1-21-2",
@@ -2162,15 +1946,11 @@ window.TCF_T3_EXAMPLES={
       [
         "dynamiser l’économie locale",
         "带动地方经济"
-      ],
-      [
-        "croissance économique",
-        "原文高频表达"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-21-3": {
     "title": "就业 · 论段 1-21-3",
@@ -2180,15 +1960,11 @@ window.TCF_T3_EXAMPLES={
       [
         "favoriser la création d’emplois",
         "促进创造就业"
-      ],
-      [
-        "opportunités professionnelles",
-        "原文高频表达"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-24-1": {
     "title": "环境 · 论段 1-24-1",
@@ -2202,23 +1978,11 @@ window.TCF_T3_EXAMPLES={
       [
         "préserver les espaces naturels",
         "保护自然空间"
-      ],
-      [
-        "des emballages ou d’autres déchets dans les espaces publics ou à proximité des sites touristiques",
-        "原文高频表达"
-      ],
-      [
-        "une région naturelle qui accueille chaque année un grand nombre de visiteurs",
-        "原文高频表达"
-      ],
-      [
-        "Certains visiteurs peuvent",
-        "原文高频表达"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-24-2": {
     "title": "住房 · 论段 1-24-2",
@@ -2240,33 +2004,16 @@ window.TCF_T3_EXAMPLES={
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "已沿用词库释义"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-09-1": {
     "title": "多元文化社会版 · 论段 1-09-1",
     "fr": "grande ville multiculturelle → festivals / associations → rencontres entre communautés → échanges culturels",
     "zh": "在多元文化大城市里，不同社区会参与节庆、文化活动或协会生活。",
-    "words": [
-      [
-        "découvrir d’autres cultures",
-        "原文高频表达"
-      ],
-      [
-        "favoriser les échanges",
-        "原文高频表达"
-      ],
-      [
-        "diversité culturelle",
-        "原文高频表达"
-      ],
-      [
-        "ouverture d’esprit",
-        "原文高频表达"
-      ]
-    ],
+    "words": [],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-21-1": {
     "title": "旅游传播 · 论段 1-21-1",
@@ -2280,23 +2027,11 @@ window.TCF_T3_EXAMPLES={
       [
         "renforcer le rayonnement culturel",
         "增强文化影响力"
-      ],
-      [
-        "les visiteurs peuvent découvrir des traditions",
-        "原文高频表达"
-      ],
-      [
-        "pendant certaines périodes de fête",
-        "原文高频表达"
-      ],
-      [
-        "le rayonnement culturel d’un pays",
-        "原文高频表达"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-24-3": {
     "title": "旅游传播 · 论段 1-24-3",
@@ -2309,12 +2044,12 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "culture locale",
-        "原文高频表达"
+        "当地文化"
       ]
     ],
     "kind": "scenario",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-25-1": {
     "title": "城市版 · 论段 1-25-1",
@@ -2328,7 +2063,7 @@ window.TCF_T3_EXAMPLES={
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "已沿用词库释义"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-25-2": {
     "title": "城市版 · 论段 1-25-2",
@@ -2337,7 +2072,7 @@ window.TCF_T3_EXAMPLES={
     "words": [],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "已沿用词库释义"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-25-3": {
     "title": "美食版 · 论段 1-25-3",
@@ -2351,23 +2086,11 @@ window.TCF_T3_EXAMPLES={
       [
         "partager un moment convivial",
         "共享愉快时光"
-      ],
-      [
-        "Une sortie culinaire à Chengdu serait donc une manière concrète et agréable de découvrir la culture locale",
-        "原文高频表达"
-      ],
-      [
-        "je lui conseillerais de goûter un hot pot local et de découvrir différentes spécialités de la région",
-        "原文高频表达"
-      ],
-      [
-        "Ce type d’expérience lui permettrait non seulement de découvrir de nouvelles saveurs",
-        "原文高频表达"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-27-3": {
     "title": "火车 · 论段 1-27-3",
@@ -2385,19 +2108,11 @@ window.TCF_T3_EXAMPLES={
       [
         "profiter du voyage lui-même",
         "享受旅途本身"
-      ],
-      [
-        "un train touristique qui relie Seattle à Los Angeles",
-        "原文高频表达"
-      ],
-      [
-        "notamment des montagnes enneigées",
-        "原文高频表达"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-28-1": {
     "title": "数字媒体版 · 论段 1-28-1",
@@ -2407,15 +2122,11 @@ window.TCF_T3_EXAMPLES={
       [
         "regarder des documentaires",
         "观看纪录片"
-      ],
-      [
-        "découvrir d’autres cultures",
-        "原文高频表达"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-29-3": {
     "title": "远程了解版 · 论段 1-29-3",
@@ -2428,48 +2139,30 @@ window.TCF_T3_EXAMPLES={
       ],
       [
         "échanges avec les habitants",
-        "原文高频表达"
-      ],
-      [
-        "étudiant chinois",
-        "原文高频表达"
+        "与当地居民交流"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-31-1": {
     "title": "美食版 · 论段 1-31-1",
     "fr": "Nouvel An chinois → préparation familiale des raviolis → prospérité / bonheur → tradition",
     "zh": "以中国为例：春节期间，许多家庭会一起包饺子。",
-    "words": [
-      [
-        "traditions familiales",
-        "原文高频表达"
-      ],
-      [
-        "Nouvel An chinois",
-        "原文高频表达"
-      ]
-    ],
+    "words": [],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-31-2": {
     "title": "美食版 · 论段 1-31-2",
     "fr": "fondue chinoise → famille / amis autour de la table → cuisson et partage → convivialité",
     "zh": "以中国火锅为例：在中国，家人或朋友聚在一起吃火锅很常见。",
-    "words": [
-      [
-        "fondue chinoise",
-        "原文高频表达"
-      ]
-    ],
+    "words": [],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-31-3": {
     "title": "艺术传播版 · 论段 1-31-3",
@@ -2479,41 +2172,20 @@ window.TCF_T3_EXAMPLES={
       [
         "avoir une vision plus complète d’un pays",
         "对一个国家形成更完整的认识"
-      ],
-      [
-        "documentaire historique",
-        "原文高频表达"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-32-1": {
     "title": "艺术传播版 · 论段 1-32-1",
     "fr": "s acteurs chinois qui jouent dans des films d’arts martiaux → À travers leurs films → les spectateurs étrangers peuvent découvrir les arts martiaux chinois ainsi que certains éléments de la culture chinoise → observer certaines traditions",
     "zh": "以出演武术电影的中国演员为例：外国观众通过他们的电影，可以了解中国武术以及某些中国文化元素。",
-    "words": [
-      [
-        "les spectateurs étrangers peuvent découvrir les arts martiaux chinois ainsi que certains éléments de la culture chinoise",
-        "原文高频表达"
-      ],
-      [
-        "s acteurs chinois qui jouent dans des films d’arts martiaux",
-        "原文高频表达"
-      ],
-      [
-        "observer certaines traditions",
-        "原文高频表达"
-      ],
-      [
-        "À travers leurs films",
-        "原文高频表达"
-      ]
-    ],
+    "words": [],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-32-2": {
     "title": "艺术传播版 · 论段 1-32-2",
@@ -2527,23 +2199,11 @@ window.TCF_T3_EXAMPLES={
       [
         "devenir une véritable vitrine culturelle",
         "成为真正的文化窗口"
-      ],
-      [
-        "de nombreux étrangers commencent à s’intéresser davantage à la Corée du Sud",
-        "原文高频表达"
-      ],
-      [
-        "un groupe de musique sud-coréen connu dans le monde entier",
-        "原文高频表达"
-      ],
-      [
-        "Grâce à leur popularité internationale",
-        "原文高频表达"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   },
   "1-32-3": {
     "title": "艺术传播版 · 论段 1-32-3",
@@ -2553,14 +2213,10 @@ window.TCF_T3_EXAMPLES={
       [
         "regarder des documentaires",
         "观看纪录片"
-      ],
-      [
-        "vision plus complète",
-        "原文高频表达"
       ]
     ],
     "kind": "example",
     "vocabularySource": "原论段原文",
-    "vocabularyReview": "中文待核"
+    "vocabularyReview": "已标注中文释义"
   }
 };
