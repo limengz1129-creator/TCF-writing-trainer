@@ -156,6 +156,30 @@
    const g=el('div','','t2x-timeline');
    [['过去',m.timeline.past],['现在',m.timeline.present],['将来',m.timeline.future]].forEach(x=>{const d=el('div');d.append(el('strong',x[0]),el('p',x[1]),audio(x[1]));g.append(d);});box.append(g);return box;
  }
+ function practiceExtensionsBox(m){
+   const ext=m.practiceExtensions;if(!ext)return null;
+   const container=el('section','','t2x-card');
+   container.append(el('h3','情境化时间线 · 三结构分别练'));
+   container.append(el('p','先看对象是地点还是活动，再选相应时态；不机械套用一个过去时。','t2x-note'));
+   ext.scenarios.forEach(scene=>{
+     const details=document.createElement('details');details.open=true;
+     details.append(el('summary',scene.title),el('p',scene.note,'t2x-note'));
+     scene.rows.forEach(row=>{
+       const section=el('div','','t2x-form');section.append(el('strong',row.label));
+       row.forms.forEach(pair=>{
+         const line=el('div','','t2x-example');
+         line.append(el('span',pair[0]+'：','t2x-note'),el('p',pair[1]),audio(pair[1]));
+         section.append(line);
+       });details.append(section);
+     });container.append(details);
+   });
+   const advanced=el('section','','t2x-card');advanced.append(el('h3','高级转换 · 条件式 / 虚拟式 / 间接疑问'));
+   advanced.append(el('p','按真实提问目的选用；这里是附加句型，不覆盖原转换树。','t2x-note'));
+   ext.advanced.forEach(item=>{
+     const d=el('div','','t2x-form');d.append(el('strong',item.title),el('p',item.fr),el('p',item.note,'t2x-note'),audio(item.fr));advanced.append(d);
+   });
+   return [container,advanced];
+ }
  function detail(){
    const m=mod(S().moduleId);if(!m){S().view='modules';modulesView();return;}const p=P(m.id);
    const top=el('div','','t2x-actions');top.append(btn('← 返回模块地图',()=>{S().view='modules';S().moduleId='';render();}),btn(p.favorite?'★ 已收藏':'☆ 收藏',()=>{p.favorite=!p.favorite;save();render();}),btn('✅ 我已掌握',()=>{p.status='mastered';p.mastered++;save();render();}),btn('❌ 需要复习',()=>{p.status='review';p.review++;save();render();}));view.append(top);
@@ -166,6 +190,7 @@
    m.forms.forEach(f=>{const d=el('div','','t2x-form');d.append(el('span',f[0],'t2x-kind'),el('strong',f[1]),el('p',f[2]),audio(f[2]));c.append(d);});
    const src=el('div','','t2x-source');src.append(el('strong','你的真实口语案例 · '+m.real.recordId),el('p','原稿：'+m.real.original,'raw'),el('p','优化：'+m.real.better,'better'));c.append(src);
    view.append(c,timelineBox(m));
+   const extensions=practiceExtensionsBox(m);if(extensions)view.append(...extensions);
    const notes=el('div','','t2x-card');notes.append(el('h3','📝 我的理解 / 记忆钩子'));const ta=el('textarea');ta.style.width='100%';ta.style.minHeight='80px';ta.value=p.notes||'';ta.oninput=()=>{p.notes=ta.value;save();};notes.append(ta);view.append(notes);
    const practice=el('div','','t2x-actions');practice.append(btn('用这个模块做转换训练',()=>{S().view='train';S().moduleId=m.id;save();render();},'primary'),btn('用这个模块练时间线',()=>{S().view='timeline';S().moduleId=m.id;save();render();}));view.append(practice);
  }
