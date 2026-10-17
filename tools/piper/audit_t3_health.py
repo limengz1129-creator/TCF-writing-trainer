@@ -23,6 +23,8 @@ for id,card in cards.items():
 phrases={p.strip() for m in topic["M"].values() for chain in [m["fr"],*[s["fr"] for s in m["scenes"]]] for p in chain.split("→")}
 phrases.update(p.strip() for card in cards.values() for p in card["fr"].split("→"))
 phrases.update(fr for card in cards.values() for fr,_ in card["words"])
+phrases.update(fr for m in topic["M"].values() for sc in m["scenes"] for fr,_ in sc["words"])
+phrases.update(fr for m in topic["M"].values() for fr,_ in m.get("w",[]))
 indexes=[]
 for d in ("argument-audio","chain-audio","example-audio","overview-audio","career-audio","travel-vocab-audio","education-audio","media-audio","tech-audio","health-audio"):
     path=root/d
