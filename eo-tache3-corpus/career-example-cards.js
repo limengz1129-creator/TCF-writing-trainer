@@ -1,5 +1,5 @@
 'use strict';
-// 75 职业与职场例子：逐条重写成 TCF 口语可复用的简短场景逻辑链。音频另行覆盖验证。
+// 职业与职场：75个原论段逐条提炼；逻辑链记思路，例子主题词汇来自该条原文（字面核查）。
 window.TCF_T3_CAREER_EXAMPLES={
   "2-01-1": {
     "title": "家庭开支版 · 2-01-1",
@@ -7,18 +7,6 @@ window.TCF_T3_CAREER_EXAMPLES={
     "zh": "工资承担养家、房贷和日常开销，是选择工作的关键，也能保障经济安全与生活水平。",
     "words": [
       [
-        "gagner sa vie",
-        "谋生"
-      ],
-      [
-        "couvrir ses dépenses quotidiennes",
-        "支付日常开销"
-      ],
-      [
-        "soutenir sa famille financièrement",
-        "在经济上支持家庭"
-      ],
-      [
         "rembourser un prêt immobilier",
         "偿还房贷"
       ],
@@ -28,7 +16,9 @@ window.TCF_T3_CAREER_EXAMPLES={
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-02-3": {
     "title": "家庭开支版 · 2-02-3",
@@ -36,28 +26,26 @@ window.TCF_T3_CAREER_EXAMPLES={
     "zh": "职业成功不能只靠热情；足够的薪资能支付家庭开销、提供安全感，也能使员工长期留任。",
     "words": [
       [
-        "gagner sa vie",
-        "谋生"
+        "bénéficier d’une certaine sécurité financière",
+        "获得一定经济安全感"
       ],
       [
-        "couvrir ses dépenses quotidiennes",
-        "支付日常开销"
+        "ne soient pas particulièrement passionnés par leur métier",
+        "并非特别热爱自己的职业"
       ],
       [
-        "soutenir sa famille financièrement",
+        "soutenir leur famille financièrement",
         "在经济上支持家庭"
       ],
       [
-        "rembourser un prêt immobilier",
-        "偿还房贷"
-      ],
-      [
-        "bénéficier d’une certaine sécurité financière",
-        "获得一定经济安全感"
+        "rester dans leur emploi sur le long terme",
+        "长期留在岗位上"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-03-1": {
     "title": "专业与责任版 · 2-03-1",
@@ -65,28 +53,22 @@ window.TCF_T3_CAREER_EXAMPLES={
     "zh": "高难度职业可能需要多年专业积累并推动社会进步；较高薪酬可认可努力和贡献。",
     "words": [
       [
-        "exiger des compétences très spécialisées",
-        "要求高度专业化技能"
-      ],
-      [
-        "assumer de lourdes responsabilités",
-        "承担重大责任"
-      ],
-      [
-        "travailler sous pression",
-        "在压力下工作"
-      ],
-      [
         "apporter une contribution importante à la société",
         "对社会作出重要贡献"
       ],
       [
-        "être reconnu par une rémunération plus élevée",
-        "通过更高薪酬获得认可"
+        "des compétences très spécialisées",
+        "高度专业化的技能"
+      ],
+      [
+        "contribuer au progrès scientifique",
+        "促进科学进步"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-03-2": {
     "title": "专业与责任版 · 2-03-2",
@@ -94,28 +76,22 @@ window.TCF_T3_CAREER_EXAMPLES={
     "zh": "医生面对直接影响患者健康的重大决定和高压环境；责任与出错后果也可成为高薪理由。",
     "words": [
       [
-        "exiger des compétences très spécialisées",
-        "要求高度专业化技能"
+        "de lourdes responsabilités",
+        "重大责任"
       ],
       [
-        "assumer de lourdes responsabilités",
-        "承担重大责任"
+        "travaillent souvent sous pression",
+        "经常在压力下工作"
       ],
       [
-        "travailler sous pression",
-        "在压力下工作"
-      ],
-      [
-        "apporter une contribution importante à la société",
-        "对社会作出重要贡献"
-      ],
-      [
-        "être reconnu par une rémunération plus élevée",
-        "通过更高薪酬获得认可"
+        "prendre des décisions",
+        "作出决定"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-03-3": {
     "title": "薪酬不完全由辛苦程度决定 · 2-03-3",
@@ -123,20 +99,22 @@ window.TCF_T3_CAREER_EXAMPLES={
     "zh": "清洁工体力劳动繁重却往往薪资较低；薪酬还受技能、责任、社会贡献和市场状况影响。",
     "words": [
       [
-        "un métier exigeant sur le plan physique",
-        "体力要求高的职业"
-      ],
-      [
-        "tenir compte de plusieurs facteurs",
-        "考虑多个因素"
-      ],
-      [
         "la situation du marché du travail",
         "劳动力市场状况"
+      ],
+      [
+        "des agents d’entretien",
+        "清洁工作人员"
+      ],
+      [
+        "exigeant sur le plan physique",
+        "体力要求高"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-04-3": {
     "title": "公平争议版 · 2-04-3",
@@ -144,20 +122,18 @@ window.TCF_T3_CAREER_EXAMPLES={
     "zh": "医生和教师承担重要社会责任，收入却远低于顶尖运动员，因此有人认为薪酬差距过大。",
     "words": [
       [
-        "des professions essentielles à la société",
-        "社会必需职业"
+        "des médecins ou des enseignants",
+        "医生或教师"
       ],
       [
-        "assumer des responsabilités importantes",
-        "承担重大责任"
-      ],
-      [
-        "des écarts de rémunération excessifs",
-        "过大的薪酬差距"
+        "des responsabilités importantes",
+        "重要责任"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-05-3": {
     "title": "艺术职业版 · 2-05-3",
@@ -169,24 +145,18 @@ window.TCF_T3_CAREER_EXAMPLES={
         "更不稳定"
       ],
       [
-        "ne pas disposer d’un revenu stable",
-        "没有稳定收入"
-      ],
-      [
         "trouver régulièrement des contrats ou des projets",
         "持续找到合同或项目"
       ],
       [
         "l’instabilité financière",
         "财务不稳定"
-      ],
-      [
-        "constituer un véritable métier",
-        "构成真正的职业"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-07-2": {
     "title": "继续工作版 · 2-07-2",
@@ -198,20 +168,14 @@ window.TCF_T3_CAREER_EXAMPLES={
         "维持满意的生活水平"
       ],
       [
-        "faire face à ses dépenses",
-        "应付开支"
-      ],
-      [
-        "créer des difficultés financières",
-        "造成经济困难"
-      ],
-      [
-        "une source de stress",
-        "压力来源"
+        "bénéficier d’une certaine sécurité financière",
+        "获得一定经济安全感"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-09-3": {
     "title": "继续工作版 · 2-09-3",
@@ -219,24 +183,22 @@ window.TCF_T3_CAREER_EXAMPLES={
     "zh": "收入仍须覆盖住房、食物和孩子开销；工时大幅减少可能降低收入，带来新的财务压力。",
     "words": [
       [
-        "maintenir un niveau de vie satisfaisant",
-        "维持满意的生活水平"
-      ],
-      [
-        "faire face à ses dépenses",
-        "应付开支"
-      ],
-      [
         "créer des difficultés financières",
         "造成经济困难"
       ],
       [
-        "une source de stress",
-        "压力来源"
+        "une véritable source de stress",
+        "真正的压力来源"
+      ],
+      [
+        "gagner sa vie",
+        "谋生"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-01-2": {
     "title": "工作意义版 · 2-01-2",
@@ -265,17 +227,15 @@ window.TCF_T3_CAREER_EXAMPLES={
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-02-1": {
     "title": "投入与晋升版 · 2-02-1",
     "fr": "passion pour son métier → efforts supplémentaires → compétences améliorées → reconnaissance",
     "zh": "热爱工作让人更愿意投入、主动承担责任和提升技能，因而可能更容易得到认可与晋升。",
     "words": [
-      [
-        "être passionné par son travail",
-        "热爱自己的工作"
-      ],
       [
         "s’investir dans ses tâches professionnelles",
         "投入工作任务"
@@ -294,7 +254,9 @@ window.TCF_T3_CAREER_EXAMPLES={
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-02-2": {
     "title": "研究创新版 · 2-02-2",
@@ -306,16 +268,8 @@ window.TCF_T3_CAREER_EXAMPLES={
         "促进创造力和创新"
       ],
       [
-        "approfondir ses recherches",
-        "深入研究"
-      ],
-      [
         "explorer de nouvelles pistes",
         "探索新方向"
-      ],
-      [
-        "persévérer face aux difficultés",
-        "面对困难坚持"
       ],
       [
         "un véritable moteur professionnel",
@@ -323,7 +277,9 @@ window.TCF_T3_CAREER_EXAMPLES={
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-05-1": {
     "title": "艺术职业版 · 2-05-1",
@@ -331,28 +287,22 @@ window.TCF_T3_CAREER_EXAMPLES={
     "zh": "艺术家可在影视、剧院和美术馆全职工作养家；创作同样需要多年技能积累与毅力。",
     "words": [
       [
-        "suivre une formation artistique",
-        "接受艺术训练"
-      ],
-      [
-        "exercer son métier à temps plein",
-        "全职从业"
-      ],
-      [
         "percevoir un salaire",
         "获得工资"
       ],
       [
-        "subvenir aux besoins de sa famille",
-        "养活家庭"
-      ],
-      [
         "consacrer plusieurs années à développer ses compétences",
         "花多年培养技能"
+      ],
+      [
+        "gagner sa vie",
+        "谋生"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-07-1": {
     "title": "延后退休版 · 2-07-1",
@@ -364,16 +314,14 @@ window.TCF_T3_CAREER_EXAMPLES={
         "感到自己对社会有用"
       ],
       [
-        "poursuivre sa carrière",
-        "继续职业生涯"
-      ],
-      [
         "un choix personnel plutôt qu’une obligation",
         "个人选择而非义务"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-01-3": {
     "title": "团队合作版 · 2-01-3",
@@ -385,24 +333,14 @@ window.TCF_T3_CAREER_EXAMPLES={
         "工作氛围"
       ],
       [
-        "communiquer efficacement",
-        "有效沟通"
-      ],
-      [
-        "s’entraider",
-        "互相帮助"
-      ],
-      [
-        "une relation de confiance",
-        "信任关系"
-      ],
-      [
-        "faciliter la communication et la collaboration",
-        "促进沟通与合作"
+        "une véritable source de stress",
+        "真正的压力来源"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-11-1": {
     "title": "公平风险版 · 2-11-1",
@@ -410,16 +348,8 @@ window.TCF_T3_CAREER_EXAMPLES={
     "zh": "与亲属共事可能使主管对错误偏袒亲人，破坏公平感与团队氛围。",
     "words": [
       [
-        "prendre des décisions justes et objectives",
-        "作出公平客观决定"
-      ],
-      [
         "influencer son jugement",
         "影响判断"
-      ],
-      [
-        "être plus indulgent envers quelqu’un",
-        "对某人更宽容"
       ],
       [
         "créer un sentiment d’injustice",
@@ -431,7 +361,9 @@ window.TCF_T3_CAREER_EXAMPLES={
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-11-3": {
     "title": "团队合作版 · 2-11-3",
@@ -439,42 +371,28 @@ window.TCF_T3_CAREER_EXAMPLES={
     "zh": "家庭成员彼此熟悉、信任，可能更容易沟通协作和迅速共同解决问题。",
     "words": [
       [
-        "l’ambiance de travail",
-        "工作氛围"
-      ],
-      [
-        "communiquer efficacement",
-        "有效沟通"
-      ],
-      [
-        "s’entraider",
-        "互相帮助"
-      ],
-      [
-        "une relation de confiance",
-        "信任关系"
-      ],
-      [
         "faciliter la communication et la collaboration",
         "促进沟通与合作"
+      ],
+      [
+        "Les membres d’une même famille",
+        "同一家族的成员"
+      ],
+      [
+        "Cette relation de confiance",
+        "这种信任关系"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-12-1": {
     "title": "支持型领导 · 2-12-1",
     "fr": "responsable calme et patient → écoute des employés → dialogue facilité → soutien de l'équipe",
     "zh": "作者偏好耐心、温和且能在压力下保持冷静的主管，认为这有助于员工沟通和获得支持。",
     "words": [
-      [
-        "adopter une attitude patiente et bienveillante",
-        "采取耐心友善的态度"
-      ],
-      [
-        "garder son calme",
-        "保持冷静"
-      ],
       [
         "prendre le temps de comprendre la situation",
         "花时间了解情况"
@@ -485,7 +403,9 @@ window.TCF_T3_CAREER_EXAMPLES={
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-12-2": {
     "title": "冲突管理版 · 2-12-2",
@@ -493,28 +413,18 @@ window.TCF_T3_CAREER_EXAMPLES={
     "zh": "好主管应耐心倾听冲突双方并居中调解；找到双方可接受的妥协有助于维持团队气氛。",
     "words": [
       [
-        "écouter les deux parties",
-        "倾听冲突双方"
-      ],
-      [
-        "jouer un rôle de médiateur",
-        "发挥调解者作用"
-      ],
-      [
         "trouver un compromis",
         "找到妥协"
       ],
       [
         "gérer les conflits",
         "处理冲突"
-      ],
-      [
-        "la capacité à communiquer et à écouter",
-        "沟通与倾听能力"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-12-3": {
     "title": "公平评价领导力 · 2-12-3",
@@ -522,20 +432,18 @@ window.TCF_T3_CAREER_EXAMPLES={
     "zh": "不能凭性别推断领导能力；经验、责任感、专业技能与人际品质才是核心。",
     "words": [
       [
-        "ne pas dépendre du sexe de la personne",
-        "不取决于性别"
-      ],
-      [
-        "l’expérience, le sens des responsabilités et les compétences professionnelles",
-        "经验、责任感和专业能力"
-      ],
-      [
         "les qualités humaines",
         "人际品质"
+      ],
+      [
+        "diriger une équipe",
+        "领导团队"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-13-2": {
     "title": "新人融入版 · 2-13-2",
@@ -547,10 +455,6 @@ window.TCF_T3_CAREER_EXAMPLES={
         "组织欢迎活动"
       ],
       [
-        "faire connaissance avec ses collègues",
-        "认识同事"
-      ],
-      [
         "nouer des liens",
         "建立关系"
       ],
@@ -560,7 +464,9 @@ window.TCF_T3_CAREER_EXAMPLES={
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-14-1": {
     "title": "经验要求版 · 2-14-1",
@@ -589,7 +495,9 @@ window.TCF_T3_CAREER_EXAMPLES={
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-14-2": {
     "title": "冲突管理版 · 2-14-2",
@@ -597,28 +505,18 @@ window.TCF_T3_CAREER_EXAMPLES={
     "zh": "优秀主管还要耐心倾听和调解冲突，不能仅有专业技术。",
     "words": [
       [
-        "écouter les deux parties",
-        "倾听冲突双方"
-      ],
-      [
         "jouer un rôle de médiateur",
         "发挥调解者作用"
       ],
       [
         "trouver un compromis",
         "找到妥协"
-      ],
-      [
-        "gérer les conflits",
-        "处理冲突"
-      ],
-      [
-        "la capacité à communiquer et à écouter",
-        "沟通与倾听能力"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-21-3": {
     "title": "冲突管理版 · 2-21-3",
@@ -626,14 +524,6 @@ window.TCF_T3_CAREER_EXAMPLES={
     "zh": "技术出色仍不一定能管理团队；主管还需要沟通、倾听和调解冲突的人际能力。",
     "words": [
       [
-        "écouter les deux parties",
-        "倾听冲突双方"
-      ],
-      [
-        "jouer un rôle de médiateur",
-        "发挥调解者作用"
-      ],
-      [
         "trouver un compromis",
         "找到妥协"
       ],
@@ -642,12 +532,18 @@ window.TCF_T3_CAREER_EXAMPLES={
         "处理冲突"
       ],
       [
-        "la capacité à communiquer et à écouter",
-        "沟通与倾听能力"
+        "occuper un poste de responsable",
+        "担任主管职位"
+      ],
+      [
+        "diriger une équipe",
+        "领导团队"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-06-1": {
     "title": "通勤与家庭版 · 2-06-1",
@@ -665,18 +561,12 @@ window.TCF_T3_CAREER_EXAMPLES={
       [
         "gagner un temps précieux",
         "节省宝贵时间"
-      ],
-      [
-        "consacrer davantage de temps à sa famille",
-        "花更多时间陪伴家人"
-      ],
-      [
-        "améliorer sa qualité de vie",
-        "改善生活质量"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-06-2": {
     "title": "通勤与家庭版 · 2-06-2",
@@ -684,28 +574,18 @@ window.TCF_T3_CAREER_EXAMPLES={
     "zh": "省下通勤时间使父母更能照顾孩子、共进晚餐，从而改善家庭生活质量。",
     "words": [
       [
-        "réduire considérablement le temps consacré aux trajets",
-        "大幅减少通勤时间"
-      ],
-      [
-        "éviter les embouteillages aux heures de pointe",
-        "避开高峰拥堵"
-      ],
-      [
-        "gagner un temps précieux",
-        "节省宝贵时间"
-      ],
-      [
         "consacrer davantage de temps à sa famille",
         "花更多时间陪伴家人"
       ],
       [
-        "améliorer sa qualité de vie",
-        "改善生活质量"
+        "s’occuper de leurs enfants",
+        "照顾孩子"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-06-3": {
     "title": "边界风险版 · 2-06-3",
@@ -717,20 +597,14 @@ window.TCF_T3_CAREER_EXAMPLES={
         "模糊工作与生活边界"
       ],
       [
-        "avoir du mal à se déconnecter de son travail",
-        "难以从工作中抽离"
-      ],
-      [
-        "recevoir constamment des messages professionnels",
-        "不断收到工作消息"
-      ],
-      [
         "une véritable source de stress",
         "真正的压力来源"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-07-3": {
     "title": "退休与健康版 · 2-07-3",
@@ -738,20 +612,18 @@ window.TCF_T3_CAREER_EXAMPLES={
     "zh": "退休后也应有机会照顾健康、旅行和陪家人；体力要求不同，不能统一强制工作到70岁。",
     "words": [
       [
-        "prendre soin de sa santé",
-        "照顾健康"
+        "prendre leur retraite plus tôt",
+        "提前退休"
       ],
       [
-        "profiter davantage de sa vie personnelle",
-        "更多享受个人生活"
-      ],
-      [
-        "un métier exigeant sur le plan physique",
-        "体力要求高的职业"
+        "profiter davantage de leur vie personnelle",
+        "更好地享受个人生活"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-08-3": {
     "title": "学生兼职版 · 2-08-3",
@@ -763,20 +635,18 @@ window.TCF_T3_CAREER_EXAMPLES={
         "沉重工作量"
       ],
       [
-        "avoir des difficultés à concilier…",
-        "难以兼顾"
+        "concilier leur travail et leurs études",
+        "兼顾工作与学业"
       ],
       [
-        "nuire aux résultats scolaires",
-        "损害学习成绩"
-      ],
-      [
-        "avoir du mal à se concentrer",
-        "难以集中注意力"
+        "nuire à leurs résultats scolaires",
+        "影响学业成绩"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-09-1": {
     "title": "身体健康版 · 2-09-1",
@@ -788,20 +658,18 @@ window.TCF_T3_CAREER_EXAMPLES={
         "保护身体健康"
       ],
       [
-        "travailler de longues heures",
-        "长时间工作"
-      ],
-      [
         "souffrir de fatigue visuelle",
         "眼睛疲劳"
       ],
       [
-        "souffrir de douleurs au dos",
-        "背痛"
+        "une lourde charge de travail",
+        "沉重工作量"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-09-2": {
     "title": "私人生活版 · 2-09-2",
@@ -809,24 +677,18 @@ window.TCF_T3_CAREER_EXAMPLES={
     "zh": "工作过多会挤占亲友相处和爱好时间；缩短工时让人把精力留给工作之外重要的生活。",
     "words": [
       [
-        "consacrer trop de temps à son travail",
-        "花太多时间工作"
+        "consacre trop de temps à son travail",
+        "工作占用太多时间"
       ],
       [
-        "passer davantage de temps avec ses proches",
-        "多陪亲人"
-      ],
-      [
-        "faire régulièrement des heures supplémentaires",
-        "经常加班"
-      ],
-      [
-        "entraîner de la fatigue",
-        "导致疲劳"
+        "moins de temps pour sa famille",
+        "陪伴家人的时间减少"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-10-1": {
     "title": "恢复状态版 · 2-10-1",
@@ -848,10 +710,16 @@ window.TCF_T3_CAREER_EXAMPLES={
       [
         "améliorer sa concentration et son efficacité",
         "提高专注力和效率"
+      ],
+      [
+        "une lourde charge de travail",
+        "沉重工作量"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-10-2": {
     "title": "企业吸引力版 · 2-10-2",
@@ -865,14 +733,12 @@ window.TCF_T3_CAREER_EXAMPLES={
       [
         "améliorer la satisfaction des employés",
         "提高员工满意度"
-      ],
-      [
-        "attirer et fidéliser les talents",
-        "吸引并留住人才"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-10-3": {
     "title": "规则边界版 · 2-10-3",
@@ -888,30 +754,24 @@ window.TCF_T3_CAREER_EXAMPLES={
         "扰乱企业安排"
       ],
       [
-        "réduire la productivité",
-        "降低生产效率"
-      ],
-      [
         "pendant une période déterminée",
         "在规定时段内"
+      ],
+      [
+        "une courte sieste",
+        "短暂午睡"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-24-3": {
     "title": "私人生活版 · 2-24-3",
     "fr": "enseignants après les cours → préparation / corrections → journées longues → fatigue",
     "zh": "教师离校后仍要备课、批改和准备考试，长期加班可能造成疲劳与工作生活失衡。",
     "words": [
-      [
-        "consacrer trop de temps à son travail",
-        "花太多时间工作"
-      ],
-      [
-        "passer davantage de temps avec ses proches",
-        "多陪亲人"
-      ],
       [
         "faire régulièrement des heures supplémentaires",
         "经常加班"
@@ -922,7 +782,9 @@ window.TCF_T3_CAREER_EXAMPLES={
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-25-1": {
     "title": "自主安排版 · 2-25-1",
@@ -930,20 +792,22 @@ window.TCF_T3_CAREER_EXAMPLES={
     "zh": "做视频博主可以在家剪辑、自由安排拍摄和制作时间，减少通勤并改善工作生活平衡。",
     "words": [
       [
-        "organiser son travail en fonction de son propre emploi du temps",
-        "按自己的时间表安排工作"
-      ],
-      [
         "travailler de manière plus autonome",
         "更自主地工作"
       ],
       [
-        "mieux concilier son travail et sa vie personnelle",
-        "更好兼顾工作和生活"
+        "davantage de flexibilité dans mon travail",
+        "工作安排更加灵活"
+      ],
+      [
+        "monter mes vidéos sur mon ordinateur chez moi",
+        "在家用电脑剪辑视频"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-13-1": {
     "title": "文档培训版 · 2-13-1",
@@ -959,20 +823,14 @@ window.TCF_T3_CAREER_EXAMPLES={
         "清晰结构化文档"
       ],
       [
-        "mettre des ressources à la disposition de quelqu’un",
-        "向某人提供资源"
-      ],
-      [
-        "se familiariser avec le système de l’entreprise",
-        "熟悉公司系统"
-      ],
-      [
         "gagner en autonomie",
         "提高独立性"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-13-3": {
     "title": "导师版 · 2-13-3",
@@ -982,10 +840,6 @@ window.TCF_T3_CAREER_EXAMPLES={
       [
         "mettre en place un système de mentorat",
         "建立导师制度"
-      ],
-      [
-        "encadrer et guider les nouveaux employés",
-        "指导新员工"
       ],
       [
         "prendre en charge des projets plus complexes",
@@ -1001,7 +855,9 @@ window.TCF_T3_CAREER_EXAMPLES={
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-14-3": {
     "title": "成长培养版 · 2-14-3",
@@ -1009,24 +865,22 @@ window.TCF_T3_CAREER_EXAMPLES={
     "zh": "领导能力可通过培训和基层经验逐步培养；服务员成长为餐厅经理便是例子。",
     "words": [
       [
-        "l’expérience sur le terrain",
-        "一线实践经验"
-      ],
-      [
-        "acquérir progressivement des compétences",
-        "逐步获得技能"
-      ],
-      [
-        "développer ses compétences en gestion",
-        "培养管理能力"
-      ],
-      [
         "diriger une équipe",
         "领导团队"
+      ],
+      [
+        "Grâce à leur expérience sur le terrain",
+        "凭借实际工作经验"
+      ],
+      [
+        "développer leurs compétences en gestion",
+        "培养管理技能"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-17-1": {
     "title": "双赢版 · 2-17-1",
@@ -1042,20 +896,22 @@ window.TCF_T3_CAREER_EXAMPLES={
         "更新技能"
       ],
       [
-        "se familiariser avec de nouveaux outils numériques",
-        "熟悉新数字工具"
-      ],
-      [
         "gagner en efficacité",
         "提高效率"
       ],
       [
         "une situation gagnant-gagnant",
         "双赢局面"
+      ],
+      [
+        "progresser professionnellement",
+        "职业进步"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-17-2": {
     "title": "机会平等版 · 2-17-2",
@@ -1067,16 +923,18 @@ window.TCF_T3_CAREER_EXAMPLES={
         "促进机会平等"
       ],
       [
-        "prendre en charge les frais de formation",
-        "承担培训费用"
-      ],
-      [
         "accéder progressivement à de nouvelles responsabilités",
         "逐步承担新责任"
+      ],
+      [
+        "développer ses compétences",
+        "提升技能"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-17-3": {
     "title": "共同责任版 · 2-17-3",
@@ -1088,20 +946,18 @@ window.TCF_T3_CAREER_EXAMPLES={
         "主动采取行动"
       ],
       [
-        "s’investir activement dans son apprentissage",
-        "积极投入学习"
-      ],
-      [
-        "mettre en pratique ce qu’on a appris",
-        "把所学用于实践"
-      ],
-      [
         "une responsabilité partagée entre l’entreprise et ses employés",
         "企业与员工共同责任"
+      ],
+      [
+        "la formation continue",
+        "持续培训"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-18-1": {
     "title": "年龄挑战版 · 2-18-1",
@@ -1117,34 +973,20 @@ window.TCF_T3_CAREER_EXAMPLES={
         "记住新信息"
       ],
       [
-        "rester concentré pendant longtemps",
-        "长时间保持专注"
-      ],
-      [
         "un obstacle insurmontable",
         "不可逾越的障碍"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-18-2": {
     "title": "技术辅助版 · 2-18-2",
     "fr": "cours en ligne / vidéos → apprentissage à son rythme → répétition → formation tout au long de la vie",
     "zh": "线上课程和视频让各年龄成人按自己的节奏反复学习，终身学习比过去更容易。",
     "words": [
-      [
-        "rendre l’apprentissage plus accessible",
-        "让学习更容易实现"
-      ],
-      [
-        "les plateformes d’apprentissage en ligne",
-        "在线学习平台"
-      ],
-      [
-        "apprendre à son propre rythme",
-        "按自己的节奏学习"
-      ],
       [
         "revoir le même contenu plusieurs fois",
         "多次复习相同内容"
@@ -1155,7 +997,9 @@ window.TCF_T3_CAREER_EXAMPLES={
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-18-3": {
     "title": "动力版 · 2-18-3",
@@ -1167,20 +1011,18 @@ window.TCF_T3_CAREER_EXAMPLES={
         "动力与决心"
       ],
       [
-        "se fixer des objectifs réalistes",
-        "设定现实目标"
+        "se fixe des objectifs réalistes",
+        "设定现实可行的目标"
       ],
       [
-        "travailler régulièrement",
-        "规律学习"
-      ],
-      [
-        "la volonté, la persévérance et les efforts",
-        "意愿、毅力和努力"
+        "notre volonté, notre persévérance",
+        "意愿与毅力"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-19-2": {
     "title": "技能版 · 2-19-2",
@@ -1202,10 +1044,16 @@ window.TCF_T3_CAREER_EXAMPLES={
       [
         "rendre son profil plus polyvalent",
         "让个人背景更多面"
+      ],
+      [
+        "exercer plusieurs métiers",
+        "从事多种职业"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-19-3": {
     "title": "限制版 · 2-19-3",
@@ -1219,18 +1067,12 @@ window.TCF_T3_CAREER_EXAMPLES={
       [
         "développer une véritable expertise",
         "形成真正专业深度"
-      ],
-      [
-        "manquer de spécialisation",
-        "缺乏专业化"
-      ],
-      [
-        "s’interroger sur la stabilité professionnelle",
-        "质疑职业稳定性"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-20-1": {
     "title": "困难版 · 2-20-1",
@@ -1259,7 +1101,9 @@ window.TCF_T3_CAREER_EXAMPLES={
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-20-2": {
     "title": "资源辅助版 · 2-20-2",
@@ -1277,14 +1121,12 @@ window.TCF_T3_CAREER_EXAMPLES={
       [
         "acquérir progressivement les compétences techniques nécessaires",
         "逐步掌握所需技术能力"
-      ],
-      [
-        "faciliter la reconversion professionnelle",
-        "促进职业转型"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-20-3": {
     "title": "动力版 · 2-20-3",
@@ -1296,16 +1138,14 @@ window.TCF_T3_CAREER_EXAMPLES={
         "成功转行"
       ],
       [
-        "la capacité d’adaptation",
-        "适应能力"
-      ],
-      [
-        "fournir des efforts réguliers",
-        "持续努力"
+        "une reconversion professionnelle",
+        "职业转型"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-21-1": {
     "title": "绩效晋升版 · 2-21-1",
@@ -1321,20 +1161,18 @@ window.TCF_T3_CAREER_EXAMPLES={
         "取得良好工作成果"
       ],
       [
-        "atteindre ses objectifs commerciaux",
-        "达到销售目标"
+        "progresser dans la hiérarchie de l’entreprise",
+        "在公司层级中晋升"
       ],
       [
-        "dépasser ses objectifs",
-        "超额完成目标"
-      ],
-      [
-        "confier davantage de responsabilités",
-        "给予更多责任"
+        "obtenir une promotion",
+        "获得晋升"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-21-2": {
     "title": "导师领导版 · 2-21-2",
@@ -1350,16 +1188,18 @@ window.TCF_T3_CAREER_EXAMPLES={
         "传授知识"
       ],
       [
-        "faire preuve de solides compétences en matière de mentorat",
-        "展现扎实导师能力"
-      ],
-      [
         "évoluer vers un poste de responsable",
         "晋升到管理岗位"
+      ],
+      [
+        "être compétent dans son métier",
+        "胜任本职工作"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-08-2": {
     "title": "职业能力版 · 2-08-2",
@@ -1388,7 +1228,9 @@ window.TCF_T3_CAREER_EXAMPLES={
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-15-2": {
     "title": "绩效评价版 · 2-15-2",
@@ -1396,16 +1238,8 @@ window.TCF_T3_CAREER_EXAMPLES={
     "zh": "应按实际业绩而非偶尔使用私人手机评价员工；完成目标后的少量私人通话无须过度监管。",
     "words": [
       [
-        "évaluer la performance d’un employé",
-        "评价员工表现"
-      ],
-      [
         "en fonction des résultats obtenus",
         "根据取得的成果"
-      ],
-      [
-        "atteindre ses objectifs commerciaux",
-        "达到销售目标"
       ],
       [
         "évaluer un employé en fonction de sa performance réelle",
@@ -1413,7 +1247,9 @@ window.TCF_T3_CAREER_EXAMPLES={
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-22-1": {
     "title": "经验悖论版 · 2-22-1",
@@ -1421,28 +1257,22 @@ window.TCF_T3_CAREER_EXAMPLES={
     "zh": "许多招聘岗位要求经验，毕业生却须先找到工作才能积累经验，形成求职悖论。",
     "words": [
       [
-        "manquer d’expérience professionnelle",
-        "缺少职业经验"
-      ],
-      [
-        "un jeune diplômé",
-        "应届毕业生"
-      ],
-      [
         "être rapidement opérationnel",
         "能快速上手"
       ],
       [
-        "se retrouver dans une situation paradoxale",
-        "陷入矛盾处境"
+        "leur manque d’expérience professionnelle",
+        "缺乏工作经验"
       ],
       [
-        "freiner l’insertion professionnelle",
-        "阻碍进入职场"
+        "une situation paradoxale",
+        "一种矛盾处境"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-22-2": {
     "title": "竞争版 · 2-22-2",
@@ -1452,10 +1282,6 @@ window.TCF_T3_CAREER_EXAMPLES={
       [
         "faire face à une forte concurrence",
         "面临激烈竞争"
-      ],
-      [
-        "le nombre de postes disponibles",
-        "可用职位数量"
       ],
       [
         "le niveau de diplôme",
@@ -1471,25 +1297,15 @@ window.TCF_T3_CAREER_EXAMPLES={
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-22-3": {
     "title": "AI工具版 · 2-22-3",
     "fr": "jeunes candidats → IA pour le CV / entretiens → préparation améliorée → avantage numérique",
     "zh": "AI 工具可以帮助年轻人修改简历与准备面试；快速掌握新工具也是他们的优势。",
     "words": [
-      [
-        "faciliter la recherche d’emploi",
-        "便利求职"
-      ],
-      [
-        "améliorer son CV",
-        "改进简历"
-      ],
-      [
-        "mettre en valeur ses compétences",
-        "展示技能"
-      ],
       [
         "préparer un entretien d’embauche",
         "准备工作面试"
@@ -1500,7 +1316,9 @@ window.TCF_T3_CAREER_EXAMPLES={
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-04-1": {
     "title": "体育价值版 · 2-04-1",
@@ -1512,10 +1330,6 @@ window.TCF_T3_CAREER_EXAMPLES={
         "展现毅力"
       ],
       [
-        "transmettre des valeurs positives",
-        "传递积极价值"
-      ],
-      [
         "l’esprit d’équipe",
         "团队精神"
       ],
@@ -1524,12 +1338,14 @@ window.TCF_T3_CAREER_EXAMPLES={
         "超越自我"
       ],
       [
-        "devenir une source d’inspiration",
-        "成为榜样"
+        "persévérer face aux difficultés",
+        "面对困难坚持"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-04-2": {
     "title": "国际赛事版 · 2-04-2",
@@ -1537,20 +1353,18 @@ window.TCF_T3_CAREER_EXAMPLES={
     "zh": "世界杯等赛事吸引国际观众和游客；明星运动员的曝光度能推广运动和国家形象。",
     "words": [
       [
-        "un vecteur de rayonnement international",
-        "国际影响力载体"
+        "la Coupe du monde de football",
+        "足球世界杯"
       ],
       [
-        "bénéficier d’une visibilité internationale",
-        "获得国际曝光"
-      ],
-      [
-        "promouvoir l’image de son pays",
-        "推广国家形象"
+        "une visibilité internationale considérable",
+        "广泛的国际曝光"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-05-2": {
     "title": "艺术传播版 · 2-05-2",
@@ -1562,26 +1376,20 @@ window.TCF_T3_CAREER_EXAMPLES={
         "国家文化影响力"
       ],
       [
-        "transmettre des valeurs et des traditions",
-        "传递价值观和传统"
-      ],
-      [
         "une véritable vitrine culturelle",
         "真正的文化窗口"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-24-1": {
     "title": "学生管理版 · 2-24-1",
     "fr": "enseignant → élèves aux comportements variés → discipline / apprentissage → pression quotidienne",
     "zh": "教师要面对行为差异很大的学生，在维持纪律的同时保障学习氛围，日常压力很大。",
     "words": [
-      [
-        "impliquer une lourde responsabilité",
-        "承担重大责任"
-      ],
       [
         "encadrer les élèves",
         "管理学生"
@@ -1591,16 +1399,14 @@ window.TCF_T3_CAREER_EXAMPLES={
         "维持纪律"
       ],
       [
-        "créer un environnement favorable à l’apprentissage",
-        "创造有利学习环境"
-      ],
-      [
         "représenter une source importante de stress",
         "成为重要压力来源"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-24-2": {
     "title": "家长压力版 · 2-24-2",
@@ -1612,20 +1418,14 @@ window.TCF_T3_CAREER_EXAMPLES={
         "承受巨大压力"
       ],
       [
-        "avoir des attentes très élevées",
-        "有很高期待"
-      ],
-      [
         "tenir l’enseignant responsable",
         "把责任归到教师身上"
-      ],
-      [
-        "faire face aux critiques",
-        "面对批评"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-25-2": {
     "title": "内容创作版 · 2-25-2",
@@ -1637,16 +1437,18 @@ window.TCF_T3_CAREER_EXAMPLES={
         "获得更具体文化体验"
       ],
       [
-        "faire connaître certains aspects de son pays",
-        "让更多人了解文化"
+        "goûter à la cuisine locale",
+        "品尝当地美食"
       ],
       [
-        "élargir ses horizons",
-        "拓宽视野"
+        "filmer la vie quotidienne des habitants",
+        "拍摄当地居民的日常生活"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-11-2": {
     "title": "选人原则版 · 2-11-2",
@@ -1671,21 +1473,15 @@ window.TCF_T3_CAREER_EXAMPLES={
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-15-1": {
     "title": "紧急联系版 · 2-15-1",
     "fr": "téléphone personnel → urgence concernant un enfant / proche → information rapide → intervention",
     "zh": "私人手机使员工在孩子或家人遇到紧急情况时能及时获知并处理。",
     "words": [
-      [
-        "rester joignable en cas d’urgence",
-        "紧急情况下保持可联系"
-      ],
-      [
-        "être contacté immédiatement",
-        "立即被联系到"
-      ],
       [
         "réagir rapidement",
         "快速应对"
@@ -1696,7 +1492,9 @@ window.TCF_T3_CAREER_EXAMPLES={
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-15-3": {
     "title": "合理规范版 · 2-15-3",
@@ -1718,24 +1516,18 @@ window.TCF_T3_CAREER_EXAMPLES={
       [
         "encadrer l’utilisation du téléphone",
         "规范手机使用"
-      ],
-      [
-        "mettre son téléphone en mode silencieux",
-        "把手机调成静音"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-16-1": {
     "title": "指导版 · 2-16-1",
     "fr": "nouvel employé → tâche complexe → conseils d'un supérieur expérimenté → erreurs évitées",
     "zh": "上司通常经验更丰富，能为首次处理复杂任务的新人提供方法、避免错误。",
     "words": [
-      [
-        "posséder davantage d’expérience professionnelle",
-        "拥有更多职业经验"
-      ],
       [
         "encadrer et guider ses employés",
         "指导员工"
@@ -1754,7 +1546,9 @@ window.TCF_T3_CAREER_EXAMPLES={
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-16-2": {
     "title": "秩序版 · 2-16-2",
@@ -1766,20 +1560,14 @@ window.TCF_T3_CAREER_EXAMPLES={
         "明确层级结构"
       ],
       [
-        "respecter les consignes de son supérieur",
-        "遵守上司指示"
-      ],
-      [
-        "répartir les tâches",
-        "分配任务"
-      ],
-      [
         "maintenir un certain ordre",
         "维持一定秩序"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-16-3": {
     "title": "边界版 · 2-16-3",
@@ -1791,20 +1579,14 @@ window.TCF_T3_CAREER_EXAMPLES={
         "盲目服从"
       ],
       [
-        "faire preuve de discernement",
-        "有判断力"
-      ],
-      [
         "remettre en question une consigne",
         "质疑一项指示"
-      ],
-      [
-        "être contraire aux règles ou à l’éthique professionnelle",
-        "违反规则或职业伦理"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-23-1": {
     "title": "替代任务版 · 2-23-1",
@@ -1818,18 +1600,12 @@ window.TCF_T3_CAREER_EXAMPLES={
       [
         "sans intervention humaine",
         "无需人工干预"
-      ],
-      [
-        "automatiser certaines tâches",
-        "自动化某些任务"
-      ],
-      [
-        "réduire progressivement le besoin de main-d’œuvre humaine",
-        "逐步减少人力需求"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-23-2": {
     "title": "职业转型版 · 2-23-2",
@@ -1845,20 +1621,14 @@ window.TCF_T3_CAREER_EXAMPLES={
         "改变传统职业"
       ],
       [
-        "les plateformes numériques",
-        "数字平台"
-      ],
-      [
         "analyser rapidement de grandes quantités d’informations",
         "快速分析大量信息"
-      ],
-      [
-        "créer de nouvelles façons de travailler",
-        "创造新工作方式"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-23-3": {
     "title": "人类优势版 · 2-23-3",
@@ -1878,16 +1648,14 @@ window.TCF_T3_CAREER_EXAMPLES={
         "倾听"
       ],
       [
-        "une relation de confiance",
-        "信任关系"
-      ],
-      [
-        "ne pas pouvoir remplacer complètement…",
-        "无法完全取代……"
+        "les qualités humaines",
+        "人际品质"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-08-1": {
     "title": "责任感版 · 2-08-1",
@@ -1895,28 +1663,18 @@ window.TCF_T3_CAREER_EXAMPLES={
     "zh": "学生通过打工认识挣钱的不易、学会储蓄和控制开销，从而培养独立与责任感。",
     "words": [
       [
-        "développer son sens des responsabilités",
-        "培养责任感"
-      ],
-      [
-        "gagner son propre argent",
-        "自己挣钱"
-      ],
-      [
         "reconnaître la valeur de l’argent",
         "认识金钱价值"
       ],
       [
         "apprendre à épargner",
         "学会储蓄"
-      ],
-      [
-        "devenir plus autonome et plus responsable",
-        "变得更独立更负责"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-19-1": {
     "title": "视野版 · 2-19-1",
@@ -1941,17 +1699,15 @@ window.TCF_T3_CAREER_EXAMPLES={
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   },
   "2-25-3": {
     "title": "内容创作者版 · 2-25-3",
     "fr": "créateur de vidéos → commentaires des abonnés → échanges / partage d'expériences → motivation",
     "zh": "观众评论和分享经历让博主与他人交流、建立关系，使工作更有趣和动力。",
     "words": [
-      [
-        "partager ses expériences",
-        "分享经历"
-      ],
       [
         "créer des liens avec d’autres personnes",
         "与他人建立关系"
@@ -1963,13 +1719,11 @@ window.TCF_T3_CAREER_EXAMPLES={
       [
         "poser des questions",
         "提问"
-      ],
-      [
-        "échanger avec les internautes",
-        "与网友交流"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "content-reviewed"
+    "reviewStatus": "content-reviewed",
+    "vocabularySource": "原论段原文",
+    "vocabularyReview": "已核对原文"
   }
 };
