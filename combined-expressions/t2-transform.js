@@ -160,7 +160,7 @@
    const m=mod(S().moduleId);if(!m){S().view='modules';modulesView();return;}const p=P(m.id);
    const top=el('div','','t2x-actions');top.append(btn('← 返回模块地图',()=>{S().view='modules';S().moduleId='';render();}),btn(p.favorite?'★ 已收藏':'☆ 收藏',()=>{p.favorite=!p.favorite;save();render();}),btn('✅ 我已掌握',()=>{p.status='mastered';p.mastered++;save();render();}),btn('❌ 需要复习',()=>{p.status='review';p.review++;save();render();}));view.append(top);
    const c=el('article','','t2x-card');c.append(el('p',m.cat,'t2x-note'),el('h2',m.title),el('p',m.intent,'t2x-intent'));
-   const base=el('div','','t2x-base');base.append(el('strong','最普通的脑内问法'),el('p',m.base));c.append(base);
+   const base=el('div','','t2x-base');base.append(el('strong','最普通的脑内问法'),el('p',m.base));if(m.baseExample){base.append(el('p','例句：'+m.baseExample),audio(m.baseExample));}c.append(base);
    const rule=el('div','','t2x-rule');rule.append(el('strong','转换规则'),el('p',m.rule));c.append(rule);
    c.append(el('h3','转换树'));
    m.forms.forEach(f=>{const d=el('div','','t2x-form');d.append(el('span',f[0],'t2x-kind'),el('strong',f[1]),el('p',f[2]),audio(f[2]));c.append(d);});
