@@ -12,6 +12,7 @@ src={r["id"]:r for r in sources}
 refs={pid for m in topic["M"].values() for s in m["scenes"] for pid in s["sourceIds"]}
 assert len(cards)==len(src)==48 and set(cards)==set(src)==refs
 assert len(topic["M"])==16
+assert sum(len(m["scenes"]) for m in topic["M"].values())==45
 for id,card in cards.items():
     assert card["zh"]==src[id]["summary"],id
     assert card["words"],id
