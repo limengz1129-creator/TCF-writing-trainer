@@ -1,0 +1,29 @@
+{
+  "topic": "饮食与健康",
+  "status": "accepted",
+  "acceptedOn": "2026-10-16",
+  "validatedCommit": "b91be5783a4bc34ed6645c725106e4cfc11e930b",
+  "coverage": {
+    "motherArguments": 16,
+    "sceneBranches": 45,
+    "sourceParagraphs": 48,
+    "sourceGroundedExampleCards": 48,
+    "translatedExcerptChunks": 83
+  },
+  "automatedVerification": {
+    "piperGeneration": {
+      "runId": 39003043922,
+      "conclusion": "success"
+    },
+    "topicAudit": {
+      "runId": 39003141677,
+      "conclusion": "success"
+    },
+    "pagesDeployment": {
+      "runId": 39003141615,
+      "conclusion": "success"
+    }
+  },
+  "scope": "GitHub source correspondence, audio manifest/index/base64 assets, and Pages CI deployment",
+  "note": "Accepted by automated gates; physical device listening test is not asserted."
+}
