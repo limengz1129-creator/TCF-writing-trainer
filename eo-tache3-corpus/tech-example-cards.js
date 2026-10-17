@@ -1,5 +1,5 @@
 'use strict';
-// 48 source-grounded excerpts; French segments are verbatim from data-5.js. Chinese is each source paragraph's original summary.
+// Technology: 48 source-grounded excerpts and individually translated French chunks.
 window.TCF_T3_TECH_EXAMPLES={
   "5-01-1": {
     "title": "线上学习与知识获取 · 原稿提炼",
@@ -8,15 +8,15 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "ils peuvent regarder des vidéos éducatives",
-        "原文情境表达（详见上方中文概括）"
+        "他们可以观看教育视频"
       ],
       [
         "écouter des cours en ligne ou télécharger des documents afin de compléter leur apprentissage",
-        "原文情境表达（详见上方中文概括）"
+        "听网络课程或下载文件，以补充学习"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-02-2": {
     "title": "线上学习与知识获取 · 原稿提炼",
@@ -25,15 +25,15 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "ils peuvent télécharger des documents numériques",
-        "原文情境表达（详见上方中文概括）"
+        "他们可以下载数字资料"
       ],
       [
         "regarder des vidéos éducatives ou suivre des cours en ligne afin de compléter leur apprentissage",
-        "原文情境表达（详见上方中文概括）"
+        "看教育视频或参加在线课程，以补充学习"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-03-2": {
     "title": "线上学习与知识获取 · 原稿提炼",
@@ -42,15 +42,15 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "Lorsqu’un étudiant cherche une information pour faire ses devoirs",
-        "原文情境表达（详见上方中文概括）"
+        "当学生为作业查找信息时"
       ],
       [
         "il peut aujourd’hui consulter rapidement un grand nombre de ressources pédagogiques en ligne",
-        "原文情境表达（详见上方中文概括）"
+        "如今可以快速查阅大量在线教学资源"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-06-1": {
     "title": "线上学习与知识获取 · 原稿提炼",
@@ -59,19 +59,19 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "lorsqu’un jeune souhaite apprendre une langue étrangère comme le français",
-        "原文情境表达（详见上方中文概括）"
+        "当年轻人想学习法语等外语时"
       ],
       [
         "il peut écouter des documents sonores",
-        "原文情境表达（详见上方中文概括）"
+        "可以听音频资料"
       ],
       [
         "regarder des vidéos éducatives ou suivre des comptes consacrés à l’apprentissage des langues",
-        "原文情境表达（详见上方中文概括）"
+        "看教学视频或关注语言学习账号"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-11-1": {
     "title": "线上学习与知识获取 · 原稿提炼",
@@ -80,11 +80,11 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "Prenons le cas d’un enfant qui joue à un jeu en français",
-        "原文情境表达（详见上方中文概括）"
+        "以一个玩法语游戏的孩子为例"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-11-2": {
     "title": "线上学习与知识获取 · 原稿提炼",
@@ -93,11 +93,11 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "Prenons le cas d’un jeu de réflexion ou d’un jeu d’enquête policière",
-        "原文情境表达（详见上方中文概括）"
+        "以一款推理游戏或侦探游戏为例"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-01-2": {
     "title": "远程办公与工作效率 · 原稿提炼",
@@ -106,15 +106,15 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "Internet est devenu indispensable dans le monde professionnel",
-        "原文情境表达（详见上方中文概括）"
+        "互联网已经成为职业领域必不可少的工具"
       ],
       [
         "notamment avec le développement du télétravail",
-        "原文情境表达（详见上方中文概括）"
+        "特别是随着远程办公的发展"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-02-1": {
     "title": "远程办公与工作效率 · 原稿提炼",
@@ -123,15 +123,15 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "Internet a profondément transformé le monde du travail",
-        "原文情境表达（详见上方中文概括）"
+        "互联网深刻改变了工作世界"
       ],
       [
         "notamment grâce au développement du télétravail",
-        "原文情境表达（详见上方中文概括）"
+        "尤其得益于远程办公的发展"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-03-1": {
     "title": "远程办公与工作效率 · 原稿提炼",
@@ -140,15 +140,15 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "les outils numériques permettent de gagner beaucoup de temps dans la vie professionnelle",
-        "原文情境表达（详见上方中文概括）"
+        "数字工具能在工作中节省大量时间"
       ],
       [
         "notamment grâce au télétravail",
-        "原文情境表达（详见上方中文概括）"
+        "尤其是借助远程办公"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-14-1": {
     "title": "远程办公与工作效率 · 原稿提炼",
@@ -157,19 +157,19 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "C’est notamment le cas des personnes qui travaillent dans la vente",
-        "原文情境表达（详见上方中文概括）"
+        "销售行业从业人员尤其如此"
       ],
       [
         "puisqu’elles doivent non seulement rester en contact avec leurs collègues",
-        "原文情境表达（详见上方中文概括）"
+        "他们不仅需要与同事保持联系"
       ],
       [
         "mais aussi communiquer régulièrement avec leurs clients",
-        "原文情境表达（详见上方中文概括）"
+        "还需要经常与客户沟通"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-01-3": {
     "title": "数字工具的日常便利与非必要性 · 原稿提炼",
@@ -178,19 +178,19 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "Dans certaines zones rurales",
-        "原文情境表达（详见上方中文概括）"
+        "在某些农村地区"
       ],
       [
         "l’accès à Internet peut être plus limité",
-        "原文情境表达（详见上方中文概括）"
+        "互联网接入可能更有限"
       ],
       [
         "sans pour autant empêcher les habitants de mener une vie normale",
-        "原文情境表达（详见上方中文概括）"
+        "但这并不妨碍居民正常生活"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-14-2": {
     "title": "数字工具的日常便利与非必要性 · 原稿提炼",
@@ -199,15 +199,15 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "lorsqu’on se rend dans un endroit que l’on ne connaît pas",
-        "原文情境表达（详见上方中文概括）"
+        "当我们前往陌生地点时"
       ],
       [
         "on peut utiliser son téléphone pour consulter un itinéraire et éviter de se perdre",
-        "原文情境表达（详见上方中文概括）"
+        "可以用手机查看路线，避免迷路"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-14-3": {
     "title": "数字工具的日常便利与非必要性 · 原稿提炼",
@@ -216,15 +216,15 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "Dans certaines zones rurales où l’accès à Internet reste limité",
-        "原文情境表达（详见上方中文概括）"
+        "在一些互联网接入仍有限的农村地区"
       ],
       [
         "certaines personnes ont un mode de vie plus simple et moins dépendant des outils numériques",
-        "原文情境表达（详见上方中文概括）"
+        "有些人的生活方式较简单，对数字工具依赖较少"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-04-1": {
     "title": "跨文化交流、跨境商品与数字鸿沟 · 原稿提炼",
@@ -233,15 +233,15 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "elles peuvent échanger sur leurs traditions",
-        "原文情境表达（详见上方中文概括）"
+        "他们可以交流各自的传统"
       ],
       [
         "leurs habitudes ou leur mode de vie sans avoir besoin de se rencontrer physiquement",
-        "原文情境表达（详见上方中文概括）"
+        "无需见面，也能交流生活习惯与生活方式"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-04-2": {
     "title": "跨文化交流、跨境商品与数字鸿沟 · 原稿提炼",
@@ -250,11 +250,11 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "une personne vivant en Chine peut commander sur Internet un produit vendu aux États-Unis et le recevoir directement chez elle",
-        "原文情境表达（详见上方中文概括）"
+        "住在中国的人可以网上购买美国出售的商品，并直接收货"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-04-3": {
     "title": "跨文化交流、跨境商品与数字鸿沟 · 原稿提炼",
@@ -263,19 +263,19 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "dans des régions très développées comme la Silicon Valley",
-        "原文情境表达（详见上方中文概括）"
+        "在硅谷等高度发达地区"
       ],
       [
         "Internet et les technologies numériques ont favorisé l’essor de secteurs innovants",
-        "原文情境表达（详见上方中文概括）"
+        "互联网和数字技术推动了创新行业兴起"
       ],
       [
         "notamment celui de l’intelligence artificielle",
-        "原文情境表达（详见上方中文概括）"
+        "尤其是人工智能行业"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-06-2": {
     "title": "跨文化交流、跨境商品与数字鸿沟 · 原稿提炼",
@@ -284,15 +284,15 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "un jeune peut rejoindre une communauté internationale consacrée à l’art",
-        "原文情境表达（详见上方中文概括）"
+        "年轻人可以加入国际艺术兴趣社群"
       ],
       [
         "à la musique ou à l’apprentissage des langues et communiquer avec des personnes qu’il n’aurait probablement jamais rencontrées dans sa vie quotidienne",
-        "原文情境表达（详见上方中文概括）"
+        "也可以加入音乐或语言学习社群，与平时不会遇到的人交流"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-05-1": {
     "title": "太空探索的科学价值、前景与成本 · 原稿提炼",
@@ -301,11 +301,11 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "l’une des grandes questions scientifiques consiste à déterminer s’il existe d’autres formes de vie dans l’univers",
-        "原文情境表达（详见上方中文概括）"
+        "重要的科学问题之一是确定宇宙中是否存在其他生命形式"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-05-2": {
     "title": "太空探索的科学价值、前景与成本 · 原稿提炼",
@@ -314,15 +314,15 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "si les ressources disponibles sur Terre devenaient un jour insuffisantes",
-        "原文情境表达（详见上方中文概括）"
+        "假如有一天地球资源不足"
       ],
       [
         "l’exploration d’autres planètes pourrait permettre aux scientifiques de rechercher de nouvelles ressources ou d’envisager d’autres possibilités pour l’avenir",
-        "原文情境表达（详见上方中文概括）"
+        "探索其他行星可帮助科学家寻找新资源或未来的其他可能性"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-05-3": {
     "title": "太空探索的科学价值、前景与成本 · 原稿提炼",
@@ -331,19 +331,19 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "les gouvernements doivent également répondre à des besoins plus immédiats",
-        "原文情境表达（详见上方中文概括）"
+        "政府还必须回应更迫切的需求"
       ],
       [
         "notamment dans les domaines de la santé",
-        "原文情境表达（详见上方中文概括）"
+        "尤其是在医疗领域"
       ],
       [
         "de l’éducation ou de la lutte contre la pauvreté",
-        "原文情境表达（详见上方中文概括）"
+        "以及教育和减贫领域"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-07-1": {
     "title": "社交连接、共同兴趣与亲情 · 原稿提炼",
@@ -352,11 +352,11 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "Aujourd’hui, il existe de nombreuses plateformes sur lesquelles les utilisateurs peuvent consulter différents profils et entrer rapidement en contact avec des personnes qu’ils n’auraient probablement jamais rencontrées dans leur vie quotidienne",
-        "原文情境表达（详见上方中文概括）"
+        "如今许多平台让用户浏览资料、快速联系日常生活中很难认识的人"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-07-2": {
     "title": "社交连接、共同兴趣与亲情 · 原稿提炼",
@@ -365,11 +365,11 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "Prenons l’exemple d’un programmeur qui rejoint un forum consacré à l’informatique",
-        "原文情境表达（详见上方中文概括）"
+        "以加入计算机论坛的程序员为例"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-08-1": {
     "title": "社交连接、共同兴趣与亲情 · 原稿提炼",
@@ -378,11 +378,11 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "Prenons mon propre exemple",
-        "原文情境表达（详见上方中文概括）"
+        "以我自己的经历为例"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-08-2": {
     "title": "社交连接、共同兴趣与亲情 · 原稿提炼",
@@ -391,11 +391,11 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "Prenons le cas d’un programmeur qui rejoint un forum consacré à l’informatique",
-        "原文情境表达（详见上方中文概括）"
+        "以加入计算机论坛的程序员为例"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-08-3": {
     "title": "社交连接、共同兴趣与亲情 · 原稿提炼",
@@ -404,11 +404,11 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "Prenons mon propre exemple",
-        "原文情境表达（详见上方中文概括）"
+        "以我自己的经历为例"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-09-1": {
     "title": "社交连接、共同兴趣与亲情 · 原稿提炼",
@@ -417,11 +417,11 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "Au départ, deux internautes peuvent être de parfaits inconnus qui ne se sont jamais rencontrés dans la vie réelle",
-        "原文情境表达（详见上方中文概括）"
+        "起初，两名网友可能是现实生活中从未见过面的陌生人"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-09-2": {
     "title": "社交连接、共同兴趣与亲情 · 原稿提炼",
@@ -430,11 +430,11 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "Prenons le cas d’un programmeur qui rejoint un forum consacré à l’informatique",
-        "原文情境表达（详见上方中文概括）"
+        "以加入计算机论坛的程序员为例"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-09-3": {
     "title": "社交连接、共同兴趣与亲情 · 原稿提炼",
@@ -443,19 +443,19 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "Cela étant dit",
-        "原文情境表达（详见上方中文概括）"
+        "不过需要承认"
       ],
       [
         "il faut reconnaître que les liens familiaux restent généralement plus solides",
-        "原文情境表达（详见上方中文概括）"
+        "家庭关系通常更牢固"
       ],
       [
         "notamment parce qu’ils reposent sur les liens du sang et sur une histoire commune",
-        "原文情境表达（详见上方中文概括）"
+        "尤其因为它建立在血缘和共同经历之上"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-10-1": {
     "title": "社交连接、共同兴趣与亲情 · 原稿提炼",
@@ -464,19 +464,19 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "grâce à des plateformes comme Facebook",
-        "原文情境表达（详见上方中文概括）"
+        "借助 Facebook 等平台"
       ],
       [
         "Instagram ou Twitter",
-        "原文情境表达（详见上方中文概括）"
+        "以及 Instagram 或 Twitter"
       ],
       [
         "les internautes peuvent facilement publier des photos",
-        "原文情境表达（详见上方中文概括）"
+        "网民可以轻松发布照片"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-10-2": {
     "title": "社交平台的记忆与个人品牌 · 原稿提炼",
@@ -485,15 +485,15 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "De nombreuses personnes aiment publier des photos de leurs voyages",
-        "原文情境表达（详见上方中文概括）"
+        "许多人喜欢发布旅行照片"
       ],
       [
         "de leurs anniversaires ou de moments chaleureux partagés en famille",
-        "原文情境表达（详见上方中文概括）"
+        "生日或与家人共度温馨时光的照片"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-10-3": {
     "title": "社交平台的记忆与个人品牌 · 原稿提炼",
@@ -502,11 +502,11 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "Prenons le cas d’une personne passionnée de cuisine",
-        "原文情境表达（详见上方中文概括）"
+        "以一位热爱烹饪的人为例"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-12-1": {
     "title": "数字消费的商品、服务与试用限制 · 原稿提炼",
@@ -515,11 +515,11 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "Prenons mon propre exemple",
-        "原文情境表达（详见上方中文概括）"
+        "再次以我自己的经历为例"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-12-2": {
     "title": "数字消费的商品、服务与试用限制 · 原稿提炼",
@@ -528,11 +528,11 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "Prenons encore mon propre exemple",
-        "原文情境表达（详见上方中文概括）"
+        "再举一个我自己的例子"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-12-3": {
     "title": "数字消费的商品、服务与试用限制 · 原稿提炼",
@@ -541,11 +541,11 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "Prenons le cas d’un vêtement commandé en ligne",
-        "原文情境表达（详见上方中文概括）"
+        "以一件网购的衣服为例"
       ]
     ],
     "kind": "example",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-13-1": {
     "title": "手机更新的工作需要、潮流与预算 · 原稿提炼",
@@ -554,19 +554,19 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "C’est notamment le cas des créateurs de contenu",
-        "原文情境表达（详见上方中文概括）"
+        "内容创作者尤其如此"
       ],
       [
         "en particulier des vlogueurs",
-        "原文情境表达（详见上方中文概括）"
+        "特别是视频博主"
       ],
       [
         "qui utilisent leur téléphone comme un véritable outil de travail",
-        "原文情境表达（详见上方中文概括）"
+        "他们把手机当作真正的工作工具"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-13-2": {
     "title": "手机更新的工作需要、潮流与预算 · 原稿提炼",
@@ -575,19 +575,19 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "Lorsqu’un nouveau modèle sort sur le marché avec un meilleur appareil photo",
-        "原文情境表达（详见上方中文概括）"
+        "当新机型上市且相机更好"
       ],
       [
         "de nouvelles fonctionnalités ou un design plus moderne",
-        "原文情境表达（详见上方中文概括）"
+        "拥有新功能或更现代的设计"
       ],
       [
         "certains consommateurs ont immédiatement envie de l’acheter",
-        "原文情境表达（详见上方中文概括）"
+        "一些消费者立即想购买"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-13-3": {
     "title": "手机更新的工作需要、潮流与预算 · 原稿提炼",
@@ -596,15 +596,15 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "Pour les personnes ayant un budget limité ou des revenus modestes",
-        "原文情境表达（详见上方中文概括）"
+        "对于预算有限或收入不高的人而言"
       ],
       [
         "acheter régulièrement un nouvel appareil n’est pas forcément raisonnable",
-        "原文情境表达（详见上方中文概括）"
+        "经常购买新设备未必合理"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-03-3": {
     "title": "时间浪费、通知干扰与注意力 · 原稿提炼",
@@ -613,15 +613,15 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "Cela étant dit",
-        "原文情境表达（详见上方中文概括）"
+        "不过"
       ],
       [
         "il faut reconnaître que les outils numériques peuvent aussi nous faire perdre du temps lorsqu’ils sont mal utilisés",
-        "原文情境表达（详见上方中文概括）"
+        "应当承认数字工具使用不当也会浪费时间"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-15-1": {
     "title": "时间浪费、通知干扰与注意力 · 原稿提炼",
@@ -630,19 +630,19 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "Lorsqu’une personne travaille",
-        "原文情境表达（详见上方中文概括）"
+        "当一个人工作时"
       ],
       [
         "elle peut être constamment interrompue par des notifications",
-        "原文情境表达（详见上方中文概括）"
+        "可能不断被通知打断"
       ],
       [
         "des messages ou des appels",
-        "原文情境表达（详见上方中文概括）"
+        "或被消息、电话打断"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-16-1": {
     "title": "时间浪费、通知干扰与注意力 · 原稿提炼",
@@ -651,19 +651,19 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "Lorsqu’une personne travaille",
-        "原文情境表达（详见上方中文概括）"
+        "当一个人工作时"
       ],
       [
         "elle peut être constamment interrompue par des notifications",
-        "原文情境表达（详见上方中文概括）"
+        "可能不断被通知打断"
       ],
       [
         "des messages ou des appels",
-        "原文情境表达（详见上方中文概括）"
+        "或被消息、电话打断"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-02-3": {
     "title": "不当内容与未成年人保护 · 原稿提炼",
@@ -672,19 +672,19 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "On peut y trouver un grand nombre de contenus violents",
-        "原文情境表达（详见上方中文概括）"
+        "其中存在大量暴力内容"
       ],
       [
         "pornographiques ou simplement inappropriés",
-        "原文情境表达（详见上方中文概括）"
+        "色情或其他不适当内容"
       ],
       [
         "auxquels les jeunes peuvent être facilement exposés",
-        "原文情境表达（详见上方中文概括）"
+        "年轻人很容易接触到这些内容"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-11-3": {
     "title": "不当内容与未成年人保护 · 原稿提炼",
@@ -693,15 +693,15 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "Lorsqu’un enfant y est exposé trop souvent",
-        "原文情境表达（详见上方中文概括）"
+        "如果儿童经常接触这类内容"
       ],
       [
         "il peut progressivement banaliser la violence ou imiter certains comportements agressifs",
-        "原文情境表达（详见上方中文概括）"
+        "可能逐渐对暴力习以为常或模仿攻击行为"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-15-2": {
     "title": "不当内容与未成年人保护 · 原稿提炼",
@@ -710,15 +710,15 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "Comme les jeunes n’ont pas toujours suffisamment de recul pour distinguer les contenus appropriés de ceux qui peuvent être nocifs",
-        "原文情境表达（详见上方中文概括）"
+        "由于年轻人未必有足够判断力区分适宜与有害内容"
       ],
       [
         "ils peuvent parfois banaliser certains comportements violents ou chercher à les imiter",
-        "原文情境表达（详见上方中文概括）"
+        "有时会淡化暴力行为的严重性或试图模仿"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-16-2": {
     "title": "不当内容与未成年人保护 · 原稿提炼",
@@ -727,15 +727,15 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "Comme les jeunes n’ont pas toujours suffisamment de recul pour distinguer les contenus appropriés de ceux qui peuvent être nocifs",
-        "原文情境表达（详见上方中文概括）"
+        "由于年轻人未必有足够判断力区分适宜与有害内容"
       ],
       [
         "ils peuvent parfois banaliser certains comportements violents ou chercher à les imiter",
-        "原文情境表达（详见上方中文概括）"
+        "有时会淡化暴力行为的严重性或试图模仿"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-07-3": {
     "title": "网络交友的诈骗风险 · 原稿提炼",
@@ -744,19 +744,19 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "Cela étant dit",
-        "原文情境表达（详见上方中文概括）"
+        "不过"
       ],
       [
         "il faut reconnaître que les rencontres en ligne présentent également certains risques",
-        "原文情境表达（详见上方中文概括）"
+        "必须承认网上交友也存在某些风险"
       ],
       [
         "notamment celui de l’escroquerie",
-        "原文情境表达（详见上方中文概括）"
+        "尤其是诈骗风险"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-06-3": {
     "title": "屏幕使用与身心健康 · 原稿提炼",
@@ -765,19 +765,19 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "Sur le plan psychologique",
-        "原文情境表达（详见上方中文概括）"
+        "在心理方面"
       ],
       [
         "les adolescents peuvent être facilement exposés à des contenus violents",
-        "原文情境表达（详见上方中文概括）"
+        "青少年容易接触暴力内容"
       ],
       [
         "ce qui peut avoir des conséquences négatives sur leur bien-être mental",
-        "原文情境表达（详见上方中文概括）"
+        "这可能对心理健康造成负面影响"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-15-3": {
     "title": "屏幕使用与身心健康 · 原稿提炼",
@@ -786,15 +786,15 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "lorsqu’une personne reste assise pendant plusieurs heures devant un ordinateur ou une tablette",
-        "原文情境表达（详见上方中文概括）"
+        "当一个人在电脑或平板前连续坐数小时"
       ],
       [
         "cela peut favoriser un mode de vie sédentaire",
-        "原文情境表达（详见上方中文概括）"
+        "可能形成久坐的生活方式"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   },
   "5-16-3": {
     "title": "屏幕使用与身心健康 · 原稿提炼",
@@ -803,18 +803,18 @@ window.TCF_T3_TECH_EXAMPLES={
     "words": [
       [
         "lorsqu’une personne reste assise pendant plusieurs heures devant un ordinateur",
-        "原文情境表达（详见上方中文概括）"
+        "当一个人在电脑前连续坐数小时"
       ],
       [
         "une tablette ou un téléphone portable",
-        "原文情境表达（详见上方中文概括）"
+        "或在平板、手机前久坐"
       ],
       [
         "cela peut favoriser un mode de vie sédentaire",
-        "原文情境表达（详见上方中文概括）"
+        "可能形成久坐的生活方式"
       ]
     ],
     "kind": "scenario",
-    "reviewStatus": "source-extracted"
+    "reviewStatus": "source-translated"
   }
 };
