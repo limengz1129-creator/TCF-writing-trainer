@@ -16,6 +16,13 @@ for key,m in career["M"].items(): assert len(summaries[key])==len(m["scenes"])
 text=(root/"career-example-cards.js").read_text(encoding="utf-8")
 cards=json.loads(text.split("window.TCF_T3_CAREER_EXAMPLES=",1)[1].rsplit(";",1)[0])
 assert len(cards)==75
+original=json.loads((root/"data-2.js").read_text(encoding="utf-8").split("CORPUS.push(...",1)[1].rsplit(");",1)[0])
+source={p["id"]:p["fr"].casefold() for p in original}
+assert set(cards)==set(source)
+for pid,card in cards.items():
+    assert len(card["words"])>=2, f"Missing reusable phrases: {pid}"
+    for fr,zh in card["words"]:
+        assert zh.strip() and fr.casefold() in source[pid], f"Not from original: {pid} {fr}"
 referenced={id for m in career["M"].values() for s in m["scenes"] for id in s["sourceIds"]}
 assert referenced==set(cards),f"Unmatched sources: {referenced^set(cards)}"
 phrases={p.strip() for m in career["M"].values() for line in [m["fr"],*[s["fr"] for s in m["scenes"]]] for p in line.split("→")}
