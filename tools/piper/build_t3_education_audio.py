@@ -14,7 +14,7 @@ assert len(cards)==84
 chunks={p.strip() for m in topic["M"].values() for chain in [m["fr"],*[s["fr"] for s in m["scenes"]]] for p in chain.split("→")}
 chunks.update(p.strip() for card in cards.values() for p in card["fr"].split("→"))
 chunks.update(fr for card in cards.values() for fr,_ in card["words"])
-old=[json.loads((root/d/"manifest.json").read_text(encoding="utf-8"))["entries"] for d in ("argument-audio","chain-audio","example-audio","overview-audio","education-audio")]
+old=[json.loads((root/d/"manifest.json").read_text(encoding="utf-8"))["entries"] for d in ("argument-audio","chain-audio","example-audio","overview-audio","career-audio","travel-vocab-audio")]
 missing=sorted(p for p in chunks if not any(p in index for index in old))
 dest=root/"education-audio";dest.mkdir(exist_ok=True)
 mf=dest/"manifest.json"
