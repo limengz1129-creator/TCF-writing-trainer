@@ -1,5 +1,5 @@
 'use strict';
-// 旅行与移民96条：逻辑链记思路；词块选自对应原论段原文且复用现有Piper音频；不使用占位释义。
+// 旅行与移民96条：逻辑链记思路；词汇忠于对应原论段，并使用Piper静态朗读。
 window.TCF_T3_EXAMPLES={
   "1-01-2": {
     "title": "新移民预约与咨询",
@@ -1619,7 +1619,16 @@ window.TCF_T3_EXAMPLES={
     "title": "家长版 · 论段 1-19-2",
     "fr": "école locale → découvertes linguistiques / culturelles → partage avec les parents → intégration familiale",
     "zh": "孩子把课堂上学到的语言、习惯和社会规则带回家，间接帮助父母理解新环境。",
-    "words": [],
+    "words": [
+      [
+        "fréquentent une école locale",
+        "就读当地学校"
+      ],
+      [
+        "partager certaines de leurs expériences avec leurs parents",
+        "与父母分享自己的经历"
+      ]
+    ],
     "kind": "scenario",
     "vocabularySource": "原论段原文",
     "vocabularyReview": "已标注中文释义"
@@ -2010,7 +2019,16 @@ window.TCF_T3_EXAMPLES={
     "title": "多元文化社会版 · 论段 1-09-1",
     "fr": "grande ville multiculturelle → festivals / associations → rencontres entre communautés → échanges culturels",
     "zh": "在多元文化大城市里，不同社区会参与节庆、文化活动或协会生活。",
-    "words": [],
+    "words": [
+      [
+        "la diversité culturelle",
+        "文化多样性"
+      ],
+      [
+        "favorisent une plus grande ouverture d’esprit",
+        "促进更加开放的思想"
+      ]
+    ],
     "kind": "example",
     "vocabularySource": "原论段原文",
     "vocabularyReview": "已标注中文释义"
@@ -2069,7 +2087,16 @@ window.TCF_T3_EXAMPLES={
     "title": "城市版 · 论段 1-25-2",
     "fr": "Shanghai → promenade sur le Bund → fleuve Huangpu / gratte-ciel → contraste ancien / moderne",
     "zh": "游客可以沿外滩散步，欣赏黄浦江和对岸的摩天大楼。",
-    "words": [],
+    "words": [
+      [
+        "faire une promenade le long du Bund",
+        "沿外滩散步"
+      ],
+      [
+        "l’architecture moderne de la ville",
+        "城市现代建筑"
+      ]
+    ],
     "kind": "example",
     "vocabularySource": "原论段原文",
     "vocabularyReview": "已标注中文释义"
@@ -2150,7 +2177,16 @@ window.TCF_T3_EXAMPLES={
     "title": "美食版 · 论段 1-31-1",
     "fr": "Nouvel An chinois → préparation familiale des raviolis → prospérité / bonheur → tradition",
     "zh": "以中国为例：春节期间，许多家庭会一起包饺子。",
-    "words": [],
+    "words": [
+      [
+        "de nombreuses familles préparent des raviolis ensemble",
+        "许多家庭一起包饺子"
+      ],
+      [
+        "la prospérité et au bonheur",
+        "繁荣与幸福"
+      ]
+    ],
     "kind": "example",
     "vocabularySource": "原论段原文",
     "vocabularyReview": "已标注中文释义"
@@ -2159,7 +2195,16 @@ window.TCF_T3_EXAMPLES={
     "title": "美食版 · 论段 1-31-2",
     "fr": "fondue chinoise → famille / amis autour de la table → cuisson et partage → convivialité",
     "zh": "以中国火锅为例：在中国，家人或朋友聚在一起吃火锅很常见。",
-    "words": [],
+    "words": [
+      [
+        "manger une fondue en famille ou entre amis",
+        "与家人或朋友吃火锅"
+      ],
+      [
+        "une ambiance conviviale",
+        "融洽的氛围"
+      ]
+    ],
     "kind": "example",
     "vocabularySource": "原论段原文",
     "vocabularyReview": "已标注中文释义"
@@ -2182,7 +2227,16 @@ window.TCF_T3_EXAMPLES={
     "title": "艺术传播版 · 论段 1-32-1",
     "fr": "s acteurs chinois qui jouent dans des films d’arts martiaux → À travers leurs films → les spectateurs étrangers peuvent découvrir les arts martiaux chinois ainsi que certains éléments de la culture chinoise → observer certaines traditions",
     "zh": "以出演武术电影的中国演员为例：外国观众通过他们的电影，可以了解中国武术以及某些中国文化元素。",
-    "words": [],
+    "words": [
+      [
+        "les arts martiaux chinois",
+        "中国武术"
+      ],
+      [
+        "faire connaître certains aspects de la culture de leur pays à l’étranger",
+        "向国外介绍本国文化的某些方面"
+      ]
+    ],
     "kind": "example",
     "vocabularySource": "原论段原文",
     "vocabularyReview": "已标注中文释义"
