@@ -1,0 +1,16 @@
+name: Audit T3 food and health Piper only
+on:
+  push:
+    paths:
+      - 'eo-tache3-corpus/tech-*'
+      - 'eo-tache3-corpus/argument-map.js'
+      - 'eo-tache3-corpus/health-audio/**'
+      - 'tools/piper/audit_t3_health.py'
+      - '.github/workflows/audit-t3-health.yml'
+  workflow_dispatch:
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python tools/piper/audit_t3_health.py
