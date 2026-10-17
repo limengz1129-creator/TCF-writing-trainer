@@ -1,5 +1,5 @@
 'use strict';
-// 教育与儿童初稿：来源对应，需进一步核对词条释义和场景逻辑。
+// 教育与儿童例子原文词条：仅引用原稿中的法语表达。
 window.TCF_T3_EDUCATION_EXAMPLES={
   "3-01-1": {
     "title": "艺术课版",
@@ -13,10 +13,6 @@ window.TCF_T3_EDUCATION_EXAMPLES={
       [
         "les matières artistiques",
         "艺术课程"
-      ],
-      [
-        "mieux comprendre la culture",
-        "待人工释义"
       ]
     ],
     "kind": "example",
@@ -243,10 +239,6 @@ window.TCF_T3_EDUCATION_EXAMPLES={
       [
         "l’éducation à la maison",
         "家庭教育"
-      ],
-      [
-        "aux heures de pointe",
-        "待人工释义"
       ]
     ],
     "kind": "scenario",
@@ -277,7 +269,20 @@ window.TCF_T3_EDUCATION_EXAMPLES={
     "title": "自主学习版",
     "fr": "Prenons mon propre exemple. Actuellement → j’apprends le français en grande partie par moi-même grâce à Internet",
     "zh": "网络上的法语资料、视频和词典支持作者自主选材、按自己的进度学习。",
-    "words": [],
+    "words": [
+      [
+        "apprendre à mon propre rythme",
+        "按照自己的节奏学习"
+      ],
+      [
+        "dictionnaires électroniques",
+        "电子词典"
+      ],
+      [
+        "regarder des vidéos sur YouTube",
+        "观看 YouTube 视频"
+      ]
+    ],
     "kind": "example",
     "reviewStatus": "draft"
   },
@@ -314,10 +319,6 @@ window.TCF_T3_EDUCATION_EXAMPLES={
       [
         "consulter un dictionnaire électronique",
         "查电子词典"
-      ],
-      [
-        "regarder des documentaires",
-        "待人工释义"
       ]
     ],
     "kind": "example",
@@ -423,7 +424,20 @@ window.TCF_T3_EDUCATION_EXAMPLES={
     "title": "外语学习版",
     "fr": "les enfants peuvent utiliser des plateformes éducatives pour écouter des documents audio → regarder des films en langue étrangère → mémoriser de nouveaux mots et de nouvelles expressions ou encore pratiquer leur",
     "zh": "在线音频、影片和教育平台让儿童自主练习外语，长期可明显提高语言能力。",
-    "words": [],
+    "words": [
+      [
+        "une grande variété de ressources pédagogiques",
+        "各种教学资源"
+      ],
+      [
+        "pratiquer leur expression orale",
+        "练习口语"
+      ],
+      [
+        "devenir bilingues",
+        "成为双语使用者"
+      ]
+    ],
     "kind": "example",
     "reviewStatus": "draft"
   },
@@ -435,10 +449,6 @@ window.TCF_T3_EDUCATION_EXAMPLES={
       [
         "consulter un dictionnaire électronique",
         "查电子词典"
-      ],
-      [
-        "apprentissage du français",
-        "待人工释义"
       ]
     ],
     "kind": "example",
@@ -477,7 +487,20 @@ window.TCF_T3_EDUCATION_EXAMPLES={
     "title": "有害内容版",
     "fr": "On peut y trouver des contenus inappropriés → notamment des contenus violents ou destinés aux adultes. Or → les enfants ne possèdent pas toujours suffisamment de recul pour distinguer les",
     "zh": "儿童可能接触暴力和成人内容，或被游戏社媒分心；家长与教师需要指导合理使用。",
-    "words": [],
+    "words": [
+      [
+        "des contenus inappropriés",
+        "不适当的内容"
+      ],
+      [
+        "les jeux vidéo ou les réseaux sociaux",
+        "电子游戏或社交网络"
+      ],
+      [
+        "utiliser Internet de manière raisonnable et responsable",
+        "合理且负责任地使用互联网"
+      ]
+    ],
     "kind": "scenario",
     "reviewStatus": "draft"
   },
@@ -506,10 +529,6 @@ window.TCF_T3_EDUCATION_EXAMPLES={
       [
         "nuire à la concentration",
         "损害专注力"
-      ],
-      [
-        "nuire à leurs résultats scolaires",
-        "待人工释义"
       ]
     ],
     "kind": "example",
@@ -519,7 +538,20 @@ window.TCF_T3_EDUCATION_EXAMPLES={
     "title": "有害内容版",
     "fr": "certains peuvent chercher à reproduire des comportements violents qu’ils voient dans des → cela peut favoriser des comportements agressifs ou inappropriés",
     "zh": "儿童判断力尚不成熟，手机上的暴力或不良内容可能影响行为；父母应监督内容。",
-    "words": [],
+    "words": [
+      [
+        "des comportements violents",
+        "暴力行为"
+      ],
+      [
+        "sans en comprendre réellement les conséquences",
+        "没有真正理解后果"
+      ],
+      [
+        "encadrent l’utilisation du téléphone",
+        "监管手机使用"
+      ]
+    ],
     "kind": "example",
     "reviewStatus": "draft"
   },
@@ -552,7 +584,20 @@ window.TCF_T3_EDUCATION_EXAMPLES={
     "title": "有害内容版",
     "fr": "On trouve en ligne de nombreux contenus violents ou destinés aux adultes. Or → comme les enfants sont encore jeunes et particulièrement influençables → ils n’ont pas toujours suffisamment de recul pour évaluer ce qu’ils voient",
     "zh": "上网时间越长，儿童越可能接触暴力或成人内容；家长应管理可访问的内容。",
-    "words": [],
+    "words": [
+      [
+        "des contenus inappropriés",
+        "不适当的内容"
+      ],
+      [
+        "une influence négative sur leur comportement",
+        "对行为产生负面影响"
+      ],
+      [
+        "contrôlent les contenus auxquels leurs enfants ont accès",
+        "监管孩子接触的内容"
+      ]
+    ],
     "kind": "scenario",
     "reviewStatus": "draft"
   },
@@ -560,7 +605,20 @@ window.TCF_T3_EDUCATION_EXAMPLES={
     "title": "假消息 / 媒介素养版",
     "fr": "Ils peuvent être exposés à des contenus inappropriés → violents ou destinés aux adultes. Comme ils sont encore jeunes et particulièrement influençables → ils n’ont pas toujours suffisamment de recul pour évaluer les informations auxquelles",
     "zh": "孩子在社媒可能遇到成人内容、暴力及假消息，若无监督易受误导。",
-    "words": [],
+    "words": [
+      [
+        "des contenus inappropriés",
+        "不适当的内容"
+      ],
+      [
+        "fausses ou trompeuses",
+        "虚假或误导性的"
+      ],
+      [
+        "Sans supervision",
+        "缺乏监管"
+      ]
+    ],
     "kind": "scenario",
     "reviewStatus": "draft"
   },
@@ -774,10 +832,6 @@ window.TCF_T3_EDUCATION_EXAMPLES={
       [
         "la formation des habitudes",
         "习惯形成"
-      ],
-      [
-        "ouverture d’esprit",
-        "待人工释义"
       ]
     ],
     "kind": "example",
@@ -833,10 +887,6 @@ window.TCF_T3_EDUCATION_EXAMPLES={
       [
         "travailler dans de nombreux secteurs",
         "在多个行业工作"
-      ],
-      [
-        "compétences techniques",
-        "待人工释义"
       ]
     ],
     "kind": "scenario",
@@ -850,14 +900,6 @@ window.TCF_T3_EDUCATION_EXAMPLES={
       [
         "un diplôme reste un atout important",
         "文凭仍是重要优势"
-      ],
-      [
-        "la réputation de l’établissement",
-        "待人工释义"
-      ],
-      [
-        "Pour certains postes",
-        "待人工释义"
       ]
     ],
     "kind": "example",
@@ -992,10 +1034,6 @@ window.TCF_T3_EDUCATION_EXAMPLES={
       [
         "acquérir des connaissances approfondies",
         "获得深入知识"
-      ],
-      [
-        "compétences techniques",
-        "待人工释义"
       ]
     ],
     "kind": "example",
@@ -1246,10 +1284,6 @@ window.TCF_T3_EDUCATION_EXAMPLES={
       [
         "le savoir-faire",
         "实操能力"
-      ],
-      [
-        "compétences professionnelles",
-        "待人工释义"
       ]
     ],
     "kind": "example",
@@ -1313,10 +1347,6 @@ window.TCF_T3_EDUCATION_EXAMPLES={
       [
         "des règles trop strictes",
         "过严规则"
-      ],
-      [
-        "devenir plus autonome",
-        "待人工释义"
       ]
     ],
     "kind": "scenario",
@@ -1465,10 +1495,6 @@ window.TCF_T3_EDUCATION_EXAMPLES={
       [
         "gagner progressivement en confiance",
         "逐步增强自信"
-      ],
-      [
-        "peur de faire des erreurs",
-        "待人工释义"
       ]
     ],
     "kind": "example",
@@ -1499,10 +1525,6 @@ window.TCF_T3_EDUCATION_EXAMPLES={
       [
         "créer des liens avec les autres",
         "与他人建立关系"
-      ],
-      [
-        "un sentiment d’appartenance",
-        "待人工释义"
       ]
     ],
     "kind": "example",
@@ -1583,10 +1605,6 @@ window.TCF_T3_EDUCATION_EXAMPLES={
       [
         "lutter contre les stéréotypes de genre",
         "反对性别刻板印象"
-      ],
-      [
-        "remettre en question",
-        "待人工释义"
       ]
     ],
     "kind": "example",
@@ -1596,7 +1614,20 @@ window.TCF_T3_EDUCATION_EXAMPLES={
     "title": "个体差异版",
     "fr": "Chaque enfant possède ses propres capacités → ses centres d’intérêt et ses aspirations. Certains sont davantage attirés par les sciences → tandis que d’autres préfèrent les langues",
     "zh": "同等教育机会不等于统一道路；课程应依每个孩子的兴趣与能力调整，避免性别预设。",
-    "words": [],
+    "words": [
+      [
+        "ses propres capacités",
+        "自身的能力"
+      ],
+      [
+        "ses centres d’intérêt",
+        "个人兴趣"
+      ],
+      [
+        "adaptée aux besoins et aux aptitudes de chacun",
+        "适应每个人的需求和能力"
+      ]
+    ],
     "kind": "scenario",
     "reviewStatus": "draft"
   },
@@ -1704,10 +1735,6 @@ window.TCF_T3_EDUCATION_EXAMPLES={
       [
         "des bourses",
         "奖学金"
-      ],
-      [
-        "difficultés financières",
-        "待人工释义"
       ]
     ],
     "kind": "scenario",
