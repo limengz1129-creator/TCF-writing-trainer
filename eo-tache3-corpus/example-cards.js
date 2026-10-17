@@ -1,5 +1,5 @@
 'use strict';
-// 旅行与移民 96 条原论段提炼卡片；逻辑片段不截断，法语词组仅使用有 Piper 索引的条目。
+// 96 条原论段例子 / 情境提炼：自由发挥关键词链，不背原句。保留原论段编号及 Piper 词汇索引。
 window.TCF_T3_EXAMPLES={
   "1-01-2": {
     "title": "新移民预约与咨询",
@@ -75,7 +75,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-02-1": {
     "title": "海外生活版 · 论段 1-02-1",
-    "fr": "s’ils souhaitent s’installer à Paris → ils peuvent pratiquer le français dans leur vie quotidienne → mais aussi participer à des activités locales → rejoindre des associations ou échanger avec des habitants",
+    "fr": "installation à Paris → français quotidien → activités locales / associations → échanges avec les habitants",
     "zh": "如果他们想定居巴黎，可以在日常生活中练习法语，也可以参加当地活动、加入协会或与居民交流。",
     "words": [
       [
@@ -99,7 +99,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-04-1": {
     "title": "语言版 · 论段 1-04-1",
-    "fr": "une personne qui vit à l’étranger depuis de nombreuses années → elle peut parfois chercher ses mots dans sa langue maternelle ou utiliser spontanément des expressions de la langue locale → cela peut créer une certaine distance avec une partie de sa culture d’origine",
+    "fr": "long séjour à l’étranger → langue locale dominante → mots oubliés en langue maternelle → distance culturelle",
     "zh": "长期住在国外的人，有时用母语说话会一时找不到词，或自然而然使用当地语言的表达。",
     "words": [
       [
@@ -123,7 +123,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-05-2": {
     "title": "正向链 · 论段 1-05-2",
-    "fr": "Lorsqu’une personne maîtrise suffisamment la langue → elle peut échanger plus spontanément avec ses voisins → participer à des activités locales ou rejoindre une association → Ces interactions lui permettent non seulement d’élargir son réseau social",
+    "fr": "langue maîtrisée → échanges avec les voisins → associations locales → réseau social élargi",
     "zh": "语言能力使人更自然地与邻居及社团交流，既能扩展人脉，也能理解社会规则并建立归属感。",
     "words": [
       [
@@ -147,7 +147,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-08-1": {
     "title": "反向链 · 论段 1-08-1",
-    "fr": "Lorsqu’une personne ne maîtrise pas suffisamment la langue du pays d’accueil → elle peut éprouver des difficultés à exprimer ses idées → ses émotions ou même son sens de l’humour → Par peur de faire des erreurs ou de ne pas être comprise",
+    "fr": "langue insuffisante → idées / émotions difficiles à exprimer → peur des erreurs → difficulté à créer des amitiés",
     "zh": "语言不熟使人难以表达想法、情感与幽默感，也可能因怕犯错而退缩，妨碍交友。",
     "words": [
       [
@@ -191,7 +191,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-14-2": {
     "title": "海外生活版 · 论段 1-14-2",
-    "fr": "lorsqu’une personne utilise quotidiennement une langue étrangère au travail → dans les commerces ou dans ses relations sociales → elle peut progressivement acquérir une plus grande aisance à l’oral → la barrière linguistique peut parfois constituer un obstacle à l’évolution professionnelle",
+    "fr": "langue étrangère au travail / dans les commerces → pratique quotidienne → aisance orale → évolution professionnelle",
     "zh": "海外生活提供每天使用外语的机会；多语言能力可拓宽职业前景，尤其适用于国际企业。",
     "words": [
       [
@@ -215,7 +215,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-15-1": {
     "title": "海外生活版 · 论段 1-15-1",
-    "fr": "lorsqu’une personne utilise quotidiennement une langue étrangère au travail → dans les commerces ou dans ses relations sociales → elle peut progressivement acquérir une plus grande aisance à l’oral → Cette compétence peut ensuite constituer un véritable atout sur le marché du travail",
+    "fr": "travail / commerces / relations sociales → usage régulier de la langue → aisance orale → atout professionnel",
     "zh": "持续在真实场景使用外语能提高口语水平，进而加强求职者在多语言岗位上的竞争力。",
     "words": [
       [
@@ -239,7 +239,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-22-1": {
     "title": "旅行版 · 论段 1-22-1",
-    "fr": "lorsqu’elle voyage dans un pays étranger → elle est amenée à utiliser cette langue quotidiennement → pour commander dans un restaurant → demander son chemin ou simplement communiquer avec les habitants",
+    "fr": "voyage à l’étranger → restaurant / itinéraire / habitants → pratique quotidienne → progrès linguistiques",
     "zh": "在餐馆点餐、问路或与当地居民交流。",
     "words": [
       [
@@ -275,7 +275,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-29-1": {
     "title": "职场文化版 · 论段 1-29-1",
-    "fr": "Grâce à ces échanges → elle peut progressivement découvrir les habitudes professionnelles locales → la manière de communiquer au travail → d’organiser les réunions ou de collaborer au sein d’une équipe",
+    "fr": "échanges avec les collègues → communication / réunions / travail d’équipe → compréhension des habitudes professionnelles",
     "zh": "工作中的沟通方式、会议的组织方式以及团队合作方式。",
     "words": [
       [
@@ -295,7 +295,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-29-2": {
     "title": "正向链 · 论段 1-29-2",
-    "fr": "en participant à une activité organisée dans son quartier → il peut rencontrer ses voisins et mieux comprendre leur mode de vie → La langue favorise donc non seulement l’intégration sociale → mais aussi une compréhension plus approfondie de la société d’accueil",
+    "fr": "activité de quartier → rencontre avec les voisins → échanges en langue locale → compréhension du mode de vie",
     "zh": "参加社区活动时，他能够结识邻居，更好地理解他们的生活方式。",
     "words": [
       [
@@ -343,7 +343,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-03-1": {
     "title": "日常文化版 · 论段 1-03-1",
-    "fr": "nous devons souvent utiliser une langue étrangère au lieu de notre langue maternelle → ce soit au travail → dans les commerces ou dans les services publics → Cette adaptation linguistique peut modifier notre manière de communiquer et",
+    "fr": "vie à l’étranger → langue locale au travail / dans les commerces → nouvelles habitudes de communication",
     "zh": "在国外频繁使用当地语言，会逐渐改变沟通方式和日常习惯，使当地文化进入自己的生活。",
     "words": [
       [
@@ -439,7 +439,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-08-2": {
     "title": "社会互动版 · 论段 1-08-2",
-    "fr": "certaines personnes chinoises peuvent paraître plus réservées lors d’une première rencontre → Cette attitude peut être interprétée → comme un manque d’intérêt → alors qu’elle correspond simplement à une manière différente d’établir une relation",
+    "fr": "première rencontre → attitude réservée → malentendu culturel → interprétation erronée du comportement",
     "zh": "某些中国人在初次见面时可能显得比较拘谨。",
     "words": [
       [
@@ -463,7 +463,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-10-3": {
     "title": "社会互动版 · 论段 1-10-3",
-    "fr": "un nouvel arrivant peut rejoindre une association locale → participer à des activités de quartier ou prendre part à certaines fêtes et célébrations avec les habitants → il peut créer des liens",
+    "fr": "nouvel arrivant → association / fêtes locales → rencontres avec les habitants → création de liens",
     "zh": "新移民可以加入当地协会、参加社区活动，或与居民一起参加节庆。",
     "words": [
       [
@@ -487,7 +487,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-15-2": {
     "title": "海外生活版 · 论段 1-15-2",
-    "fr": "le fait d’échanger régulièrement avec des personnes issues de milieux culturels différents peut lui permettre de mieux comprendre leurs habitudes et leurs valeurs → Cette expérience peut ainsi élargir sa vision du monde et l’aider à éviter certains stéréotypes",
+    "fr": "échanges interculturels → découverte des habitudes / valeurs → moins de stéréotypes → ouverture d’esprit",
     "zh": "经常与不同文化背景的人交流，可以帮助他更好地理解他们的习惯和价值观。",
     "words": [
       [
@@ -511,7 +511,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-16-3": {
     "title": "海外生活版 · 论段 1-16-3",
-    "fr": "en participant à des activités locales ou en échangeant régulièrement avec les habitants → elles peuvent découvrir d’autres façons de communiquer et mieux comprendre certaines différences culturelles → Cette expérience peut ainsi favoriser l’ouverture d’esprit → élargir leur vision du monde et contribuer à leur épanouissement personnel",
+    "fr": "activités locales → échanges avec les habitants → découverte des différences culturelles → ouverture d’esprit",
     "zh": "参与当地活动或经常与居民交流，可以帮助他们了解其他沟通方式，更好地理解文化差异。",
     "words": [
       [
@@ -535,7 +535,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-28-3": {
     "title": "亲身体验版 · 论段 1-28-3",
-    "fr": "Lorsqu’on voyage → on peut observer directement la manière dont les habitants vivent → communiquer avec eux et participer à des activités locales → Cette immersion permet souvent de dépasser les connaissances théoriques et de se faire une idée plus concrète de la culture locale",
+    "fr": "voyage sur place → observation du quotidien → échanges / activités locales → compréhension concrète de la culture",
     "zh": "视频或远程交流难以完全呈现日常生活；实地旅行通过观察和参与带来更深入的理解。",
     "words": [
       [
@@ -563,7 +563,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-03-3": {
     "title": "家庭版 · 论段 1-03-3",
-    "fr": "les personnes vivant à l’étranger peuvent continuer à célébrer leurs fêtes traditionnelles → parler leur langue maternelle en famille ou fréquenter leurs compatriotes → elles peuvent préserver une partie importante de leur identité culturelle tout en s’adaptant à leur nouvel environnement",
+    "fr": "vie à l’étranger → fêtes traditionnelles / langue maternelle / compatriotes → identité culturelle préservée",
     "zh": "生活在国外的人可以继续庆祝传统节日、在家使用母语，或者与同胞交往。",
     "words": [
       [
@@ -587,7 +587,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-04-3": {
     "title": "家庭版 · 论段 1-04-3",
-    "fr": "On peut continuer à parler sa langue maternelle en famille → célébrer les fêtes traditionnelles → cuisiner des plats de son pays ou fréquenter ses compatriotes → Ces pratiques permettent de maintenir un lien culturel fort",
+    "fr": "langue maternelle en famille → fêtes / cuisine traditionnelle → liens avec les compatriotes → racines préservées",
     "zh": "即便多年旅居海外，也能通过母语、传统节日、家乡菜和同胞交往维系文化联系。",
     "words": [
       [
@@ -611,7 +611,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-06-2": {
     "title": "社区版 · 论段 1-06-2",
-    "fr": "une personne qui célèbre une fête traditionnelle avec d’autres membres de sa communauté → Même loin de son pays et de sa famille → elle peut ainsi préserver certaines habitudes culturelles → partager un moment convivial et maintenir un lien avec ses racines",
+    "fr": "fête traditionnelle en communauté → convivialité malgré la distance → traditions préservées → lien avec ses racines",
     "zh": "一个人与社区里的其他成员一起庆祝传统节日，即使远离故乡和家人，也能保留某些文化习惯，共享愉快的时光，维系与文化根源的联系。",
     "words": [
       [
@@ -631,7 +631,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-07-3": {
     "title": "同胞支持版 · 论段 1-07-3",
-    "fr": "Lorsqu’une personne vit loin de son pays d’origine → ces relations peuvent lui apporter un soutien affectif et l’aider à surmonter le sentiment d’isolement → rester uniquement dans son propre cercle culturel risque de limiter les occasions d’échanger avec les habitants et de ralentir le processus d’intégration → L’essentiel est donc de trouver un équilibre entre la préservation de ses liens culturels et l’ouverture à la société d’accueil",
+    "fr": "compatriotes → soutien affectif → risque de cercle fermé → échanges locaux → équilibre culturel",
     "zh": "同胞提供情感支持，但只待在原有文化圈会限制交流；需要在保留联系与接触当地社会间取得平衡。",
     "words": [
       [
@@ -659,7 +659,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-30-3": {
     "title": "家庭版 · 论段 1-30-3",
-    "fr": "les parents devraient continuer à la parler régulièrement à la maison → Cette langue permet aux enfants de communiquer avec leurs grands-parents ou d’autres membres de leur famille vivant dans leur pays d’origine → Elle leur permet également de mieux comprendre leurs traditions → leur histoire familiale et leurs origines",
+    "fr": "langue maternelle à la maison → échanges avec les grands-parents → traditions familiales → identité culturelle",
     "zh": "家中继续使用母语能让孩子与祖辈沟通，并保留家族历史、传统和文化联系。",
     "words": [
       [
@@ -707,7 +707,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-06-1": {
     "title": "支持链 · 论段 1-06-1",
-    "fr": "Lorsqu’une personne vient de s’installer dans un pays étranger → la barrière linguistique peut compliquer les échanges et renforcer le sentiment d’isolement → Avec ses compatriotes → elle peut s’exprimer plus spontanément dans sa langue maternelle",
+    "fr": "arrivée à l’étranger → barrière linguistique / isolement → compatriotes → échanges dans sa langue maternelle",
     "zh": "同胞能用熟悉的语言分享相似经历，在移居初期提供情感支持并缓解孤立感。",
     "words": [
       [
@@ -731,7 +731,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-06-3": {
     "title": "开放社会版 · 论段 1-06-3",
-    "fr": "il est également essentiel de créer des liens avec les habitants du pays d’accueil et avec des personnes d’autres origines → Ces échanges permettent de pratiquer davantage la langue locale → de se familiariser avec les codes sociaux et de mieux comprendre le mode de vie du pays → En diversifiant son réseau social",
+    "fr": "rencontres avec les habitants → langue locale pratiquée → codes sociaux compris → réseau diversifié",
     "zh": "若社交圈只限于同胞，就会减少练习当地语言和理解社会规则的机会；扩大人脉更利于融入。",
     "words": [
       [
@@ -755,7 +755,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-07-2": {
     "title": "社区版 · 论段 1-07-2",
-    "fr": "un nouvel arrivant peut assister à un défilé de Noël ou partager un repas de Thanksgiving avec des habitants → Ces expériences lui permettent de se familiariser avec les codes sociaux → d’éviter certains malentendus dans la vie quotidienne et de développer progressivement un sentiment d’appartenance à la société d’accueil",
+    "fr": "défilé de Noël / repas de Thanksgiving → échanges avec les habitants → découverte des coutumes → appartenance",
     "zh": "新移民可以观看圣诞游行，或与当地居民一起吃感恩节晚餐。",
     "words": [
       [
@@ -779,7 +779,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-08-3": {
     "title": "社区版 · 论段 1-08-3",
-    "fr": "Participer à des activités locales → rejoindre une association ou faire du bénévolat permet de rencontrer régulièrement des personnes partageant certains centres d’intérêt → La régularité de ces échanges facilite la création de liens plus authentiques et permet de développer progressivement un réseau social → Cela offre également l’occasion de pratiquer la langue et de mieux comprendre les codes sociaux",
+    "fr": "association / bénévolat → rencontres régulières → amitiés authentiques → réseau social",
     "zh": "定期参加活动、社团或志愿服务能认识志趣相投的人，同时练语言、建立更真实的友谊。",
     "words": [
       [
@@ -803,7 +803,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-12-3": {
     "title": "学校版 · 论段 1-12-3",
-    "fr": "un étudiant peut rejoindre une association → participer à des activités scolaires ou prendre part à différents événements organisés par son établissement → Il peut également travailler sur des projets de groupe avec ses camarades → ce qui lui donne l’occasion d’échanger régulièrement avec eux et de créer des relations plus naturelles",
+    "fr": "association étudiante / activités scolaires → projets de groupe → échanges avec les camarades → liens sociaux",
     "zh": "学生可以加入协会、参加校园活动，或参与学校组织的各种活动。",
     "words": [
       [
@@ -827,7 +827,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-17-3": {
     "title": "社区版 · 论段 1-17-3",
-    "fr": "un nouvel arrivant peut rejoindre une association → participer à des activités de quartier ou faire du bénévolat → Ces démarches lui permettent de développer progressivement un réseau social → de mieux comprendre la société québécoise et de renforcer son sentiment d’appartenance",
+    "fr": "association / quartier / bénévolat → rencontres → réseau social → appartenance au Québec",
     "zh": "新移民可以加入协会、参加社区活动或做志愿者。",
     "words": [
       [
@@ -851,7 +851,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-18-2": {
     "title": "支持链 · 论段 1-18-2",
-    "fr": "Après une journée difficile → elle n’a pas nécessairement quelqu’un avec qui partager ses préoccupations → immigrer en famille permet de bénéficier d’un soutien affectif et psychologique au quotidien → Les membres de la famille peuvent s’encourager mutuellement",
+    "fr": "journée difficile → personne à qui se confier → soutien familial → encouragement mutuel",
     "zh": "比如艰难的一天结束后，他未必有人可以倾诉。",
     "words": [
       [
@@ -875,7 +875,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-19-1": {
     "title": "学校版 · 论段 1-19-1",
-    "fr": "une réunion scolaire ou d’une activité sportive → les parents peuvent discuter avec d’autres parents → faire progressivement connaissance et créer de nouvelles relations → L’école peut ainsi devenir un véritable point de rencontre qui permet aux parents d’élargir leur cercle social et de participer davantage à la vie locale",
+    "fr": "réunion scolaire / sport → discussions entre parents → nouvelles relations → intégration locale",
     "zh": "在家长会或体育活动上，家长可以与其他家长交谈、逐渐相识并建立新关系。",
     "words": [
       [
@@ -899,7 +899,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-23-3": {
     "title": "支持链 · 论段 1-23-3",
-    "fr": "si une personne rencontre un problème pendant le voyage → elle peut compter sur ses compagnons pour l’aider → Voyager en groupe peut ainsi apporter un certain sentiment de sécurité et rendre l’expérience plus conviviale",
+    "fr": "problème en voyage → aide des compagnons → sentiment de sécurité → voyage convivial",
     "zh": "旅途中有人遇到问题，就可以依靠同伴协助。",
     "words": [
       [
@@ -923,7 +923,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-05-1": {
     "title": "求职版 · 论段 1-05-1",
-    "fr": "une personne qui cherche un emploi au Canada → Si elle maîtrise suffisamment le français ou l’anglais → elle pourra mieux mettre en valeur ses compétences lors d’un entretien et s’adapter plus facilement à son environnement professionnel → La maîtrise de la langue peut donc faciliter l’accès à l’emploi et favoriser une insertion durable sur le marché du travail",
+    "fr": "recherche d’emploi au Canada → français / anglais → entretien réussi → compétences valorisées",
     "zh": "以一位在加拿大找工作的人为例：如果他充分掌握法语或英语，就能在面试中更好地展示能力，也更容易适应工作环境。",
     "words": [
       [
@@ -947,7 +947,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-07-1": {
     "title": "职场适应版 · 论段 1-07-1",
-    "fr": "une personne qui travaille dans une entreprise au Canada → En échangeant régulièrement avec ses collègues locaux → elle peut se familiariser avec les méthodes de travail → mieux comprendre les attentes de son employeur et collaborer plus efficacement au sein de son équipe",
+    "fr": "emploi au Canada → échanges avec les collègues → méthodes de travail comprises → collaboration efficace",
     "zh": "一位在加拿大公司工作的人，经常与当地同事交流，便能熟悉工作方法、更好地理解雇主的期待，并在团队中更有效地合作。",
     "words": [
       [
@@ -1043,7 +1043,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-12-2": {
     "title": "职场适应版 · 论段 1-12-2",
-    "fr": "le fait de participer activement aux réunions → d’échanger régulièrement avec ses collègues et de respecter les habitudes de travail de l’entreprise peut lui permettre de gagner progressivement leur confiance → Cela peut favoriser à la fois son insertion professionnelle et son épanouissement personnel",
+    "fr": "réunions / échanges avec collègues → respect des habitudes de travail → confiance → intégration professionnelle",
     "zh": "积极参加会议、经常与同事交流、遵守公司的工作习惯，可以让他逐渐赢得同事信任。",
     "words": [
       [
@@ -1067,7 +1067,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-13-2": {
     "title": "求职准备版 · 论段 1-13-2",
-    "fr": "les façons de communiquer avec ses collègues → de travailler en équipe ou de mettre en valeur son expérience lors d’un entretien peuvent être différentes de celles de son pays d’origine → Un nouvel arrivant peut donc avoir besoin d’un certain temps pour trouver ses repères et s’adapter aux pratiques professionnelles locales",
+    "fr": "emploi dans un nouveau pays → communication / équipe / entretien différents → adaptation aux codes professionnels",
     "zh": "与同事交流、团队合作或在面试中展示经历的方式，可能与原籍国不同。",
     "words": [
       [
@@ -1091,7 +1091,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-13-3": {
     "title": "自主求职版 · 论段 1-13-3",
-    "fr": "suivre une formation professionnelle → participer à des ateliers consacrés à la recherche d’emploi ou développer leur réseau professionnel → Ces démarches leur permettent non seulement d’acquérir de nouvelles compétences → mais aussi de mieux comprendre les attentes des employeurs et de mettre davantage en valeur leur expérience sur leur CV",
+    "fr": "formation / ateliers de recherche d’emploi → réseau professionnel → compétences → CV valorisé",
     "zh": "他们可以参加职业培训、求职工作坊，或拓展职业人脉。",
     "words": [
       [
@@ -1111,7 +1111,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-14-1": {
     "title": "优势链 · 论段 1-14-1",
-    "fr": "avoir étudié ou travaillé dans un autre pays montre souvent qu’une personne a été capable de s’adapter à un nouvel environnement → de faire face à des situations inconnues et de sortir de sa zone de confort → Ces qualités peuvent être particulièrement appréciées par certaines entreprises → notamment celles qui travaillent dans un contexte international",
+    "fr": "études / travail à l’étranger → adaptation / défis inconnus → qualités recherchées par les entreprises internationales",
     "zh": "海外学习或工作经历展示适应能力和迎接挑战的能力，特别受国际化企业看重。",
     "words": [
       [
@@ -1155,7 +1155,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-16-2": {
     "title": "优势链 · 论段 1-16-2",
-    "fr": "une personne qui travaille pendant plusieurs années dans une entreprise à l’étranger → Elle peut non seulement améliorer ses compétences professionnelles → mais aussi apprendre à collaborer avec des collègues issus de cultures différentes → Vivre à l’étranger peut donc lui permettre d’élargir ses perspectives professionnelles et, à plus long terme, de favoriser son évolution de carrière",
+    "fr": "entreprise à l’étranger → compétences professionnelles → collègues de cultures différentes → évolution de carrière",
     "zh": "一个人在外国企业工作多年，不仅能提高专业技能，还能学会与不同文化背景的同事合作。",
     "words": [
       [
@@ -1203,7 +1203,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-20-2": {
     "title": "机会链 · 论段 1-20-2",
-    "fr": "Prenons mon propre exemple → lorsque j’ai décidé de poursuivre mes études à New York → j’ai dû demander un visa étudiant avant de pouvoir partir aux États-Unis → Cette procédure m’a demandé du temps et beaucoup de préparation",
+    "fr": "études à New York → demande de visa étudiant → démarches longues → préparation nécessaire",
     "zh": "以我自己的经历为例：决定去纽约继续学业时，我必须先申请学生签证才能前往美国。",
     "words": [
       [
@@ -1287,7 +1287,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-11-1": {
     "title": "个人责任版 · 论段 1-11-1",
-    "fr": "une personne qui s’installe au Québec → Si elle apprend le français et échange régulièrement avec les habitants → elle pourra gagner en autonomie → créer plus facilement des liens et mieux comprendre la société dans laquelle elle vit",
+    "fr": "installation au Québec → apprentissage du français → échanges locaux → autonomie / intégration",
     "zh": "一个定居魁北克的人，如果学习法语并经常与当地居民交流，就能更加独立、更容易建立关系，也能更好地理解所生活的社会。",
     "words": [
       [
@@ -1307,7 +1307,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-11-2": {
     "title": "社会责任版 · 论段 1-11-2",
-    "fr": "les autorités peuvent mettre en place des cours de langue → des ateliers culturels ou encore des programmes d’accompagnement destinés aux nouveaux arrivants → Ces dispositifs leur permettent de se familiariser avec la langue → les codes sociaux et le fonctionnement de la société d’accueil",
+    "fr": "cours de langue / ateliers culturels → accompagnement des nouveaux arrivants → codes sociaux compris → intégration",
     "zh": "接收国政府可提供语言课、文化工作坊和安家服务，帮助新移民理解当地社会。",
     "words": [
       [
@@ -1331,7 +1331,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-19-3": {
     "title": "个人责任版 · 论段 1-19-3",
-    "fr": "Les parents doivent toujours faire face à certaines difficultés → comme la barrière linguistique → la recherche d’un emploi ou la création de leur propre réseau social → ils ne peuvent pas compter uniquement sur leurs enfants pour s’intégrer",
+    "fr": "parents immigrés → langue / recherche d’emploi / réseau social → efforts personnels nécessaires",
     "zh": "有孩子并不能自动解决父母的语言、就业与交友问题；父母仍需主动参与融入。",
     "words": [
       [
@@ -1351,7 +1351,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-20-1": {
     "title": "便利链 · 论段 1-20-1",
-    "fr": "s citoyens canadiens → lorsqu’ils se rendent aux États-Unis pour un simple séjour touristique → ils n’ont généralement pas besoin de demander un visa à l’avance → Les déplacements entre les deux pays sont donc relativement simples",
+    "fr": "touriste canadien aux États-Unis → séjour court sans visa préalable dans les cas habituels → mobilité facilitée",
     "zh": "以加拿大公民为例：他们去美国短期旅游，通常不需要事先申请签证。",
     "words": [
       [
@@ -1375,7 +1375,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-20-3": {
     "title": "安全链 · 论段 1-20-3",
-    "fr": "Les États doivent pouvoir identifier les personnes qui entrent sur leur territoire et lutter contre certaines activités criminelles → Sans aucun contrôle aux frontières → il pourrait devenir plus difficile de surveiller certains déplacements et de garantir la sécurité de la population → La disparition totale des frontières nécessiterait donc une coopération internationale extrêmement étroite ainsi que des mécanismes de contrôle adaptés",
+    "fr": "frontières ouvertes → identification difficile / risques de criminalité → coopération et contrôles nécessaires",
     "zh": "彻底取消边境会加大人员识别和犯罪防范难度，因此仍需国际合作及相应管控机制。",
     "words": [
       [
@@ -1391,7 +1391,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-02-3": {
     "title": "生活经验版 · 论段 1-02-3",
-    "fr": "Cela étant dit → il faut reconnaître que les personnes plus âgées ont généralement davantage d’expérience pour faire face aux difficultés de la vie quotidienne → elles peuvent être mieux préparées pour gérer un budget → chercher un logement ou accomplir certaines démarches administratives",
+    "fr": "expérience des personnes plus âgées → budget / logement / démarches → meilleure gestion du quotidien",
     "zh": "他们可能更善于管理预算、寻找住房或办理某些行政手续。",
     "words": [
       [
@@ -1423,7 +1423,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-16-1": {
     "title": "教育机会版 · 论段 1-16-1",
-    "fr": "certaines familles souhaitent que leurs enfants puissent étudier dans un environnement international → apprendre plusieurs langues ou bénéficier de méthodes d’enseignement différentes → Pour ces familles → vivre à l’étranger représente donc une occasion d’offrir à leurs enfants un environnement éducatif plus diversifié et de leur ouvrir davantage de perspectives pour l’avenir",
+    "fr": "familles à l’étranger → école internationale / plusieurs langues → méthodes éducatives variées → perspectives élargies",
     "zh": "某些家庭希望子女在国际化环境中学习、掌握多种语言，或接受不同的教学方法。",
     "words": [
       [
@@ -1447,7 +1447,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-18-3": {
     "title": "孩子版 · 论段 1-18-3",
-    "fr": "En fréquentant une école locale → les enfants sont quotidiennement en contact avec la langue et la culture du pays d’accueil → Ils peuvent ainsi améliorer progressivement leurs compétences linguistiques → créer des relations avec leurs camarades et se familiariser avec les codes sociaux",
+    "fr": "école locale → langue / camarades / codes sociaux → intégration des enfants et de la famille",
     "zh": "孩子通过当地学校习得语言与社交规则，学校活动也让父母认识其他家庭，带动全家融入。",
     "words": [
       [
@@ -1471,7 +1471,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-19-2": {
     "title": "家长版 · 论段 1-19-2",
-    "fr": "Lorsqu’ils fréquentent une école locale → ils utilisent quotidiennement la langue → découvrent certaines habitudes culturelles et apprennent progressivement les codes sociaux → ils peuvent ensuite partager certaines de leurs expériences avec leurs parents ou leur expliquer des expressions et des habitudes découvertes à l’école",
+    "fr": "école locale → découvertes linguistiques / culturelles → partage avec les parents → intégration familiale",
     "zh": "孩子把课堂上学到的语言、习惯和社会规则带回家，间接帮助父母理解新环境。",
     "words": [
       [
@@ -1491,7 +1491,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-30-1": {
     "title": "学业版 · 论段 1-30-1",
-    "fr": "lorsqu’un enfant étudie dans un pays étranger → la plupart des cours sont généralement dispensés dans la langue locale → S’il ne maîtrise pas suffisamment cette langue → il risque d’avoir du mal à comprendre les explications de ses enseignants",
+    "fr": "école à l’étranger → cours dans la langue locale → difficultés de compréhension → besoin de soutien linguistique",
     "zh": "家中练习当地语言能帮助孩子听懂课程、完成作业，避免因语言不足影响学业。",
     "words": [
       [
@@ -1511,7 +1511,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-30-2": {
     "title": "社交版 · 论段 1-30-2",
-    "fr": "lorsqu’ils participent à des activités sportives ou à des événements organisés dans leur quartier → ils doivent communiquer avec d’autres enfants et avec des adultes → Une bonne maîtrise de la langue leur permet alors de participer plus activement à la vie locale → de nouer de nouvelles amitiés et de mieux comprendre certaines habitudes du pays d’accueil",
+    "fr": "sports / activités de quartier → échanges avec d’autres enfants → amitiés → intégration sociale",
     "zh": "参加体育活动或社区组织的活动时，他们需要与其他孩子和成年人交流。",
     "words": [
       [
@@ -1527,7 +1527,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-15-3": {
     "title": "孤独链 · 论段 1-15-3",
-    "fr": "une personne qui vient de s’installer dans un nouveau pays et qui ne connaît encore personne → Elle peut avoir du mal à créer un nouveau cercle social et ressentir progressivement un véritable sentiment de solitude",
+    "fr": "arrivée dans un nouveau pays → absence de connaissances → réseau social limité → solitude",
     "zh": "一个刚定居新国家、还不认识任何人的人，可能难以建立新的社交圈，并逐渐感到真正的孤独。",
     "words": [
       [
@@ -1551,7 +1551,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-18-1": {
     "title": "独自移民版 · 论段 1-18-1",
-    "fr": "chercher un logement → accomplir certaines démarches administratives → gérer son budget ou encore résoudre certains problèmes sans pouvoir compter en permanence sur l’aide de ses proches → cette situation peut être particulièrement exigeante",
+    "fr": "installation en solitaire → logement / démarches / budget → décisions autonomes → responsabilités",
     "zh": "他要找住房、办理行政手续、管理预算，或在不能一直依靠亲友帮助的情况下解决问题。",
     "words": [
       [
@@ -1623,7 +1623,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-23-2": {
     "title": "自由版 · 论段 1-23-2",
-    "fr": "s’il souhaite rester plus longtemps dans une ville qu’il apprécie particulièrement → modifier son programme au dernier moment ou simplement passer une journée à son propre rythme, il peut le faire librement → il peut le faire librement → Cette flexibilité lui permet donc de personnaliser davantage son voyage et de profiter de son séjour selon ses propres priorités",
+    "fr": "voyage en solitaire → prolonger une étape / modifier l’itinéraire → rythme personnel → liberté",
     "zh": "如果他想在特别喜欢的城市多留一会儿、临时修改计划，或按自己的节奏度过一天，都可以自由决定。",
     "words": [
       [
@@ -1707,7 +1707,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-26-2": {
     "title": "限制链 · 论段 1-26-2",
-    "fr": "Contrairement à de nombreux salariés qui doivent respecter des horaires de travail fixes → certaines personnes peuvent tirer une partie importante de leurs revenus de leurs investissements → grâce à des placements financiers ou à des dividendes → Elles ne sont donc pas nécessairement obligées de travailler toute la journée dans un bureau et peuvent organiser leur emploi du temps de manière plus flexible",
+    "fr": "revenus d’investissements / dividendes → moins d’horaires fixes → temps libre → voyages facilités",
     "zh": "金融产品或股息。",
     "words": [
       [
@@ -1751,7 +1751,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-27-1": {
     "title": "飞机 · 论段 1-27-1",
-    "fr": "un salarié qui doit participer à une réunion importante dans une ville très éloignée peut préférer prendre l’avion plutôt que de passer de nombreuses heures sur la route → Même si le billet peut parfois coûter plus cher → la rapidité de l’avion lui permet de réduire considérablement la durée du trajet et d’organiser son emploi du temps de manière plus efficace → L’avion constitue donc un véritable atout pour les personnes qui accordent la priorité à la rapidité",
+    "fr": "réunion dans une ville éloignée → avion plutôt que route → temps gagné → agenda optimisé",
     "zh": "一名雇员需要到很远的城市参加重要会议，可能宁愿坐飞机，也不想花数小时走公路。",
     "words": [
       [
@@ -1795,7 +1795,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-21-2": {
     "title": "经济收益 · 论段 1-21-2",
-    "fr": "Prenons l’exemple du secteur hôtelier → lorsqu’une région accueille un grand nombre de visiteurs → les hôtels peuvent enregistrer davantage de réservations et augmenter considérablement leurs revenus → Ces dépenses profitent non seulement aux entreprises du secteur touristique",
+    "fr": "région touristique → hausse des visiteurs → réservations hôtelières → revenus accrus",
     "zh": "以酒店业为例：一个地区接待大量游客时，酒店预订量可能增加，收入也会显著提高。",
     "words": [
       [
@@ -1819,7 +1819,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-21-3": {
     "title": "就业 · 论段 1-21-3",
-    "fr": "un restaurant situé dans une région très touristique → s’il accueille beaucoup plus de clients pendant la haute saison → il peut être amené à recruter davantage de serveurs → de cuisiniers ou d’autres employés",
+    "fr": "restaurant en haute saison → davantage de clients → recrutement de serveurs / cuisiniers → emplois",
     "zh": "旅游旺季中，一家位于热门旅游区的餐馆接待更多客人时，可能需要招聘更多服务员、厨师或其他员工。",
     "words": [
       [
@@ -1851,7 +1851,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-24-2": {
     "title": "住房 · 论段 1-24-2",
-    "fr": "dans une petite ville très touristique → les loyers peuvent progressivement augmenter et devenir plus difficiles à supporter pour certaines familles locales → Le tourisme peut donc exercer une pression économique sur les habitants → même s’il apporte parallèlement des revenus à la région",
+    "fr": "petite ville touristique → demande accrue de logements → hausse des loyers → pression sur les habitants",
     "zh": "在一个热门旅游小城，租金可能逐渐上涨，让一些当地家庭越来越难以负担。",
     "words": [
       [
@@ -1871,7 +1871,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-09-1": {
     "title": "多元文化社会版 · 论段 1-09-1",
-    "fr": "s grandes villes multiculturelles → où différentes communautés participent à des festivals → à des événements culturels ou à la vie associative → Cette diversité peut ainsi enrichir la société et favoriser les échanges entre des personnes issues de milieux différents",
+    "fr": "grande ville multiculturelle → festivals / associations → rencontres entre communautés → échanges culturels",
     "zh": "在多元文化大城市里，不同社区会参与节庆、文化活动或协会生活。",
     "words": [
       [
@@ -1919,7 +1919,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-24-3": {
     "title": "旅游传播 · 论段 1-24-3",
-    "fr": "Lorsque les visiteurs découvrent des monuments → des traditions → des spécialités culinaires ou des activités culturelles → ils apprennent à mieux connaître la région",
+    "fr": "touristes → monuments / traditions / cuisine → découverte culturelle → partage après le voyage",
     "zh": "游客认识当地古迹、美食和传统，并在回程后传播体验，有助于地方文化走向外界。",
     "words": [
       [
@@ -1943,7 +1943,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-25-1": {
     "title": "城市版 · 论段 1-25-1",
-    "fr": "je lui conseillerais de visiter la Cité interdite → où il pourrait découvrir l’architecture traditionnelle chinoise et en apprendre davantage sur l’histoire impériale → Il pourrait également se promener dans les quartiers historiques et observer certains aspects de la vie quotidienne des habitants → Pékin constitue donc une étape incontournable pour un étranger qui souhaite découvrir les racines historiques et culturelles de la Chine",
+    "fr": "Pékin → Cité interdite / quartiers historiques → architecture / histoire impériale → culture chinoise",
     "zh": "我会建议他游览故宫，在那里欣赏中国传统建筑，进一步了解帝王时代的历史。",
     "words": [
       [
@@ -1963,7 +1963,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-25-2": {
     "title": "城市版 · 论段 1-25-2",
-    "fr": "le touriste pourrait faire une promenade le long du Bund et admirer la vue sur le fleuve Huangpu ainsi que les gratte-ciel situés de l’autre côté → Il pourrait ainsi découvrir le contraste entre certains bâtiments historiques et l’architecture moderne de la ville → Shanghai permettrait donc au visiteur de découvrir une autre facette de la Chine → plus moderne et internationale",
+    "fr": "Shanghai → promenade sur le Bund → fleuve Huangpu / gratte-ciel → contraste ancien / moderne",
     "zh": "游客可以沿外滩散步，欣赏黄浦江和对岸的摩天大楼。",
     "words": [
       [
@@ -2023,7 +2023,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-28-1": {
     "title": "数字媒体版 · 论段 1-28-1",
-    "fr": "les internautes peuvent regarder des documentaires → des vidéos en ligne ou encore des émissions produites dans d’autres pays → Ils peuvent ainsi découvrir la cuisine locale → les traditions",
+    "fr": "documentaires / vidéos étrangères → cuisine / traditions / quotidien → découverte à distance",
     "zh": "网民可以观看其他国家制作的纪录片、网络视频或节目，从中了解当地美食、传统、生活方式，甚至某些日常习惯。",
     "words": [
       [
@@ -2047,7 +2047,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-29-3": {
     "title": "远程了解版 · 论段 1-29-3",
-    "fr": "un étudiant chinois qui s’intéresse au Canada peut consulter des ressources en chinois sur son histoire, sa société ou ses traditions → sa société ou ses traditions → Il peut ainsi acquérir de nombreuses connaissances sur ce pays sans nécessairement parler français ou anglais → cette connaissance risque de rester plus théorique et moins directe que celle acquise grâce à de véritables échanges avec les habitants",
+    "fr": "étudiant chinois → ressources en chinois sur le Canada → connaissances théoriques → expérience directe limitée",
     "zh": "对加拿大感兴趣的中国学生，可以用中文查阅它的历史、社会或传统资料。",
     "words": [
       [
@@ -2067,7 +2067,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-31-1": {
     "title": "美食版 · 论段 1-31-1",
-    "fr": "Pendant le Nouvel An chinois → de nombreuses familles préparent des raviolis ensemble → Ce plat ne représente pas simplement un repas → il est également associé à la prospérité et au bonheur et fait partie des traditions familiales liées à cette fête",
+    "fr": "Nouvel An chinois → préparation familiale des raviolis → prospérité / bonheur → tradition",
     "zh": "以中国为例：春节期间，许多家庭会一起包饺子。",
     "words": [
       [
@@ -2087,7 +2087,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-31-2": {
     "title": "美食版 · 论段 1-31-2",
-    "fr": "la fondue chinoise → il est courant de manger une fondue en famille ou entre amis → Tout le monde se réunit autour de la même table → fait cuire les aliments dans le même bouillon et partage le repas pendant un long moment",
+    "fr": "fondue chinoise → famille / amis autour de la table → cuisson et partage → convivialité",
     "zh": "以中国火锅为例：在中国，家人或朋友聚在一起吃火锅很常见。",
     "words": [
       [
@@ -2107,7 +2107,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-31-3": {
     "title": "艺术传播版 · 论段 1-31-3",
-    "fr": "un documentaire historique peut permettre de mieux comprendre l’évolution d’une société → tandis qu’un livre peut présenter ses traditions et ses valeurs → Ces différents moyens sont donc complémentaires et permettent d’avoir une vision plus complète d’un pays",
+    "fr": "documentaire historique → évolution de la société ; livre → traditions / valeurs → vision culturelle complémentaire",
     "zh": "历史纪录片可以帮助人们更好地理解一个社会的发展，而书籍可以介绍其传统和价值观。",
     "words": [
       [
@@ -2179,7 +2179,7 @@ window.TCF_T3_EXAMPLES={
   },
   "1-32-3": {
     "title": "艺术传播版 · 论段 1-32-3",
-    "fr": "lire des livres ou regarder des documentaires peut permettre de mieux comprendre l’évolution historique et sociale d’un pays → Ces différentes sources sont donc complémentaires et permettent d’aller au-delà de l’image transmise par les artistes",
+    "fr": "livres / documentaires → histoire / société → compléter la vision donnée par les artistes",
     "zh": "读书或看纪录片，能帮助人们更好地理解这个国家的历史和社会发展。",
     "words": [
       [
