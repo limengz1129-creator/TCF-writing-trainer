@@ -64,9 +64,16 @@ jobs:
           payload=data.split('window.TCF_T3_CAREER_EXAMPLES=',1)[1].rsplit(';',1)[0]
           cards=json.loads(payload)
           assert len(cards)==75
+          original=json.loads((career_folder/'data-2.js').read_text(encoding='utf-8').split('CORPUS.push(...',1)[1].rsplit(');',1)[0])
+          by_id={item['id']:item['fr'] for item in original}
+          for pid,card in cards.items():
+              assert len(card['words'])>=2, f'Missing career source vocabulary: {pid}'
+              for fr,zh in card['words']:
+                  assert zh and fr.casefold() in by_id[pid].casefold(),f'Career word not from source: {pid} {fr}'
           assert (career_folder/'career-example-cards.js').is_file(), 'Missing career example UI data'
           requested={p.strip() for mother in career['M'].values() for line in [mother['fr'],*[scene['fr'] for scene in mother['scenes']]] for p in line.split('→')}
           requested.update(p.strip() for card in cards.values() for p in card['fr'].split('→'))
+          requested.update(fr for card in cards.values() for fr,_ in card['words'])
           covered=set()
           for folder in ('argument-audio','chain-audio','example-audio','overview-audio','career-audio'):
               location=career_folder/folder
