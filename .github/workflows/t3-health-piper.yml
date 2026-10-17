@@ -26,6 +26,8 @@ jobs:
       - run: |
           curl -fL --retry 3 -o /tmp/fr_FR-siwis-medium.onnx https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx
           curl -fL --retry 3 -o /tmp/fr_FR-siwis-medium.onnx.json https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx.json
+      - name: Synchronize repository before generation
+        run: git pull --ff-only origin main
       - run: python -u tools/piper/build_t3_health_audio.py
       - name: Publish packs
         run: |
@@ -34,6 +36,5 @@ jobs:
           git add eo-tache3-corpus/health-audio/
           if ! git diff --cached --quiet; then
             git commit -m "Generate T3 food and health Piper packs"
-            git pull --rebase
-            git push
+            git push origin HEAD:main
           fi
