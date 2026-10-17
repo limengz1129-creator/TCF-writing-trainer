@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Audit education T3 source, scene mapping and exact Piper audio files."""
+"""Audit media and culture T3 source, scenes and Piper audio files."""
 import base64,json
 from pathlib import Path
 root=Path(__file__).resolve().parents[2]/"eo-tache3-corpus"
@@ -37,6 +37,6 @@ for phrase in phrases:
     assert rec and rec["text"]==phrase,phrase
     audio=base64.b64decode(rec["audio"],validate=True)
     assert len(audio)>100 and (audio.startswith(b"ID3") or audio[:2] in (bytes.fromhex("fffb"),bytes.fromhex("fff3"),bytes.fromhex("fff2"))),phrase
-print(f"PASS: 84 education cards, 71 scene chains, {len(phrases)} Piper chunks, {len(packs)} packs")
+print(f"PASS: 42 media cards, 39 scene chains, {len(phrases)} Piper chunks, {len(packs)} packs")
 
-# Revalidation against published media-audio assets.
+
