@@ -36,7 +36,7 @@ def check(item):
     if data.get("text")!=sentence:return f"{pack}:{rid} text mismatch"
     try:audio=base64.b64decode(data["audio"],validate=True)
     except Exception as exc:return f"{pack}:{rid} base64 invalid: {exc}"
-    if not audio.startswith((b"ID3",b"\\xff\\xfb",b"\\xff\\xf3",b"\\xff\\xf2")):return f"{pack}:{rid} no MP3 header"
+    if not (audio[:3]==b"ID3" or (len(audio)>2 and audio[0]==255 and audio[1] in (251,243,242))):return f"{pack}:{rid} no MP3 header"
     proc=subprocess.run(["ffmpeg","-v","error","-xerror","-f","mp3","-i","pipe:0","-f","null","-"],input=audio,stdout=subprocess.DEVNULL,stderr=subprocess.PIPE,timeout=45)
     if proc.returncode:return f"{pack}:{rid} decoding failed: {proc.stderr.decode(errors='replace')[:120]}"
     return None
