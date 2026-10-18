@@ -1,0 +1,1335 @@
+{
+  "version": "work-review-2026-10-18-v1",
+  "theme": "工作与职业",
+  "sujets": [
+    {
+      "month": "2026-09",
+      "number": 1,
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "地点",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "交通",
+          "questionNumbers": [
+            2
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "同事",
+          "questionNumbers": [
+            4,
+            5
+          ]
+        },
+        {
+          "name": "经理",
+          "questionNumbers": [
+            6
+          ]
+        },
+        {
+          "name": "任务",
+          "questionNumbers": [
+            7,
+            8
+          ]
+        },
+        {
+          "name": "培训",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "福利",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "氛围",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "活动",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "困难",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "满意度",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "未来",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 8,
+        "现在评价": 5,
+        "过去经历": 1,
+        "将来计划": 1
+      },
+      "pronounAndRelevanceReview": "核对朋友新入职后的团队规模、工作职责和福利信息；把“满意”改为不预设性别的satisfait(e)，修正团队人数问法和留任计划角度。",
+      "translationReview": "15条中文逐句核对，确保角色、语气和法语语义对应。",
+      "changeReasons": [
+        {
+          "month": "2026-09",
+          "number": 1,
+          "row": 4,
+          "oldFr": "Vous êtes combien dans ton équipe ?",
+          "newFr": "Combien de personnes y a-t-il dans ton équipe ?",
+          "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+        },
+        {
+          "month": "2026-09",
+          "number": 1,
+          "row": 6,
+          "oldFr": "Comment ça se passe avec ton responsable ?",
+          "newFr": "Comment se passent tes échanges avec ton responsable ?",
+          "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+        },
+        {
+          "month": "2026-09",
+          "number": 1,
+          "row": 14,
+          "oldFr": "Tu es contente de ton nouveau travail ?",
+          "newFr": "Tu es satisfait(e) de ton nouveau travail ?",
+          "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+        },
+        {
+          "month": "2026-09",
+          "number": 1,
+          "row": 15,
+          "oldFr": "Tu te vois rester longtemps dans cette entreprise ?",
+          "newFr": "Tu envisages de rester longtemps dans cette entreprise ?",
+          "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+        }
+      ]
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "准备",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "材料",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "穿着",
+          "questionNumbers": [
+            4
+          ]
+        },
+        {
+          "name": "准时",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "行为",
+          "questionNumbers": [
+            6,
+            7
+          ]
+        },
+        {
+          "name": "回答",
+          "questionNumbers": [
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "name": "问题",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "薪资",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "结束",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "跟进",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "面试前准备": 5,
+        "面试中": 9,
+        "面试之后": 1
+      },
+      "pronounAndRelevanceReview": "面试建议按面试前准备、面试中表现、结束与面试后跟进分布；澄清职位信息理解、到场时间和薪酬谈法。",
+      "translationReview": "15条中文逐句核对，确保角色、语气和法语语义对应。",
+      "changeReasons": [
+        {
+          "month": "2026-09",
+          "number": 2,
+          "row": 2,
+          "oldFr": "Sur quels points de l’offre d’emploi dois-je être particulièrement au clair ?",
+          "newFr": "Quelles informations de l’offre d’emploi devrais-je bien comprendre avant l’entretien ?",
+          "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+        },
+        {
+          "month": "2026-09",
+          "number": 2,
+          "row": 5,
+          "oldFr": "Tu me conseilles d’arriver combien de temps à l’avance ?",
+          "newFr": "À ton avis, combien de temps avant l’entretien devrais-je arriver ?",
+          "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+        },
+        {
+          "month": "2026-09",
+          "number": 2,
+          "row": 13,
+          "oldFr": "Quelle est la meilleure façon d’aborder la question du salaire ?",
+          "newFr": "Comment puis-je aborder la question de la rémunération ?",
+          "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+        }
+      ]
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "地点",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "营业",
+          "questionNumbers": [
+            2,
+            3
+          ]
+        },
+        {
+          "name": "商品",
+          "questionNumbers": [
+            4,
+            5
+          ]
+        },
+        {
+          "name": "客户",
+          "questionNumbers": [
+            6,
+            7
+          ]
+        },
+        {
+          "name": "价格",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "供应",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "管理",
+          "questionNumbers": [
+            10,
+            11
+          ]
+        },
+        {
+          "name": "困难",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "成本",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "建议",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "未来",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "面试前准备": 5,
+        "面试中": 9,
+        "面试之后": 1
+      },
+      "pronounAndRelevanceReview": "同一面试Sujet重复真题，保留同一问题集；与2026-09第2题保持一致的面试三阶段覆盖。",
+      "translationReview": "15条中文逐句核对，确保角色、语气和法语语义对应。",
+      "changeReasons": []
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "地区",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "城市",
+          "questionNumbers": [
+            2
+          ]
+        },
+        {
+          "name": "行业",
+          "questionNumbers": [
+            3,
+            4
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            5,
+            6
+          ]
+        },
+        {
+          "name": "工资",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "申请",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "材料",
+          "questionNumbers": [
+            9,
+            10
+          ]
+        },
+        {
+          "name": "面试",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "经验",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "语言",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "合同",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在建议": 4,
+        "现在信息": 7,
+        "将来准备": 3,
+        "将来申请": 1
+      },
+      "pronounAndRelevanceReview": "面向法语教师统一vous；区分地区/城市、职位类型、申请、合同和提高录用机会。",
+      "translationReview": "15条中文逐句核对，确保角色、语气和法语语义对应。",
+      "changeReasons": []
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            2
+          ]
+        },
+        {
+          "name": "接待",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "同事",
+          "questionNumbers": [
+            4,
+            5
+          ]
+        },
+        {
+          "name": "经理",
+          "questionNumbers": [
+            6
+          ]
+        },
+        {
+          "name": "任务",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "培训",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "午餐",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "氛围",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "困难",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "惊喜",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "满意度",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "准备",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "未来",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "过去经历": 13,
+        "现在反思": 1,
+        "将来计划": 1
+      },
+      "pronounAndRelevanceReview": "首次工作日Sujet使用ami(e)，去除arrivée和surprise的女性性别假设；时态区分当天经历、反思和融入计划。",
+      "translationReview": "15条中文逐句核对，确保角色、语气和法语语义对应。",
+      "changeReasons": [
+        {
+          "month": "2026-08",
+          "number": 1,
+          "row": 1,
+          "oldFr": "Tu es arrivée à quelle heure le premier jour ?",
+          "newFr": "Tu es arrivé(e) à quelle heure le premier jour ?",
+          "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+        },
+        {
+          "month": "2026-08",
+          "number": 1,
+          "row": 9,
+          "oldFr": "La pause déjeuner s’est bien passée ?",
+          "newFr": "Comment s’est passée ta pause déjeuner ?",
+          "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+        },
+        {
+          "month": "2026-08",
+          "number": 1,
+          "row": 12,
+          "oldFr": "Quelque chose t’a particulièrement surprise ?",
+          "newFr": "Quelque chose t’a particulièrement étonné(e) ?",
+          "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+        },
+        {
+          "month": "2026-08",
+          "number": 1,
+          "row": 14,
+          "oldFr": "Si tu pouvais refaire cette première journée, qu’est-ce que tu changerais dans ta préparation ?",
+          "newFr": "Si tu pouvais revivre cette première journée, qu’aurais-tu préparé différemment ?",
+          "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+        }
+      ]
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "职业",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "教育",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "求职",
+          "questionNumbers": [
+            4
+          ]
+        },
+        {
+          "name": "任务",
+          "questionNumbers": [
+            5,
+            6
+          ]
+        },
+        {
+          "name": "关系",
+          "questionNumbers": [
+            7,
+            8
+          ]
+        },
+        {
+          "name": "氛围",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "条件",
+          "questionNumbers": [
+            10,
+            11
+          ]
+        },
+        {
+          "name": "培训",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "发展",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "难点",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 7,
+        "过去经历": 3,
+        "现在评价": 4,
+        "现在建议": 1
+      },
+      "pronounAndRelevanceReview": "面向朋友使用tu；分别检查职业选择经历、当前工作职责、工作条件、发展机会和建议。",
+      "translationReview": "15条中文逐句核对，确保角色、语气和法语语义对应。",
+      "changeReasons": [
+        {
+          "month": "2026-08",
+          "number": 2,
+          "row": 8,
+          "oldFr": "Comment ça se passe avec ton responsable ?",
+          "newFr": "Comment se passent tes échanges avec ton responsable ?",
+          "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+        }
+      ]
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "频率",
+          "questionNumbers": [
+            4
+          ]
+        },
+        {
+          "name": "孩子",
+          "questionNumbers": [
+            5,
+            6
+          ]
+        },
+        {
+          "name": "学校",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "路线",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "任务",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "等待",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "紧急",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "健康",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "支付",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "开始",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 14,
+        "将来安排": 1
+      },
+      "pronounAndRelevanceReview": "求职者向招聘家庭提问，保持对雇主vous；区分接送时段、孩子情况、路线/职责、紧急联系人和薪酬发放频率。",
+      "translationReview": "15条中文逐句核对，确保角色、语气和法语语义对应。",
+      "changeReasons": [
+        {
+          "month": "2026-07",
+          "number": 1,
+          "row": 14,
+          "oldFr": "Le salaire sera versé à quelle fréquence ?",
+          "newFr": "À quelle fréquence le salaire sera-t-il versé ?",
+          "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+        }
+      ]
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "现状",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "原因",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            4
+          ]
+        },
+        {
+          "name": "氛围",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "同事",
+          "questionNumbers": [
+            6
+          ]
+        },
+        {
+          "name": "经理",
+          "questionNumbers": [
+            7,
+            14
+          ]
+        },
+        {
+          "name": "压力",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "目标",
+          "questionNumbers": [
+            9,
+            10
+          ]
+        },
+        {
+          "name": "条件",
+          "questionNumbers": [
+            11,
+            12
+          ]
+        },
+        {
+          "name": "手续",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "决定",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 3,
+        "现在评价": 5,
+        "将来计划": 6,
+        "条件情况": 1
+      },
+      "pronounAndRelevanceReview": "同事转部门场景将原来15条tu统一改为符合Sujet设定的vous，按现状、原因、目标部门、流程和被拒后的条件安排展开。",
+      "translationReview": "15条中文逐句核对，确保角色、语气和法语语义对应。",
+      "changeReasons": [
+        {
+          "month": "2026-07",
+          "number": 2,
+          "row": 1,
+          "oldFr": "Tu travailles dans quel service actuellement ?",
+          "newFr": "Dans quel service travaillez-vous actuellement ?",
+          "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+        },
+        {
+          "month": "2026-07",
+          "number": 2,
+          "row": 2,
+          "oldFr": "Tu fais quoi principalement dans ce service ?",
+          "newFr": "Quelles sont vos principales tâches dans ce service ?",
+          "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+        },
+        {
+          "month": "2026-07",
+          "number": 2,
+          "row": 3,
+          "oldFr": "Qu’est-ce qui te pousse à vouloir changer de service ?",
+          "newFr": "Qu’est-ce qui vous donne envie de changer de service ?",
+          "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+        },
+        {
+          "month": "2026-07",
+          "number": 2,
+          "row": 4,
+          "oldFr": "Tes horaires actuels te conviennent ?",
+          "newFr": "Vos horaires actuels vous conviennent-ils ?",
+          "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+        },
+        {
+          "month": "2026-07",
+          "number": 2,
+          "row": 5,
+          "oldFr": "Tu trouves comment l’ambiance dans ton service ?",
+          "newFr": "Comment trouvez-vous l’ambiance dans votre service ?",
+          "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+        },
+        {
+          "month": "2026-07",
+          "number": 2,
+          "row": 6,
+          "oldFr": "Tu t’entends bien avec tes collègues ?",
+          "newFr": "Vous entendez-vous bien avec vos collègues ?",
+          "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+        },
+        {
+          "month": "2026-07",
+          "number": 2,
+          "row": 7,
+          "oldFr": "Et avec ton responsable, comment est la relation ?",
+          "newFr": "Et avec votre responsable, comment se passent les choses ?",
+          "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+        },
+        {
+          "month": "2026-07",
+          "number": 2,
+          "row": 8,
+          "oldFr": "Tu trouves que la charge de travail est trop importante ?",
+          "newFr": "Trouvez-vous que votre charge de travail est trop importante ?",
+          "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+        },
+        {
+          "month": "2026-07",
+          "number": 2,
+          "row": 9,
+          "oldFr": "Vers quel service aimerais-tu aller ?",
+          "newFr": "Dans quel service aimeriez-vous travailler ?",
+          "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+        },
+        {
+          "month": "2026-07",
+          "number": 2,
+          "row": 10,
+          "oldFr": "Tu aimerais faire quoi comme tâches dans le nouveau service ?",
+          "newFr": "Quelles tâches aimeriez-vous effectuer dans le nouveau service ?",
+          "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+        },
+        {
+          "month": "2026-07",
+          "number": 2,
+          "row": 11,
+          "oldFr": "Tu voudrais surtout avoir de meilleurs horaires ?",
+          "newFr": "Souhaiteriez-vous surtout avoir de meilleurs horaires ?",
+          "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+        },
+        {
+          "month": "2026-07",
+          "number": 2,
+          "row": 13,
+          "oldFr": "Comment se passe une demande de changement de service dans ton entreprise ?",
+          "newFr": "Quelle est la procédure pour demander un changement de service dans votre entreprise ?",
+          "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+        },
+        {
+          "month": "2026-07",
+          "number": 2,
+          "row": 14,
+          "oldFr": "Tu en as déjà discuté avec ton responsable ?",
+          "newFr": "En avez-vous déjà discuté avec votre responsable ?",
+          "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+        },
+        {
+          "month": "2026-07",
+          "number": 2,
+          "row": 15,
+          "oldFr": "Et si ta demande est refusée, qu’est-ce que tu feras ?",
+          "newFr": "Si votre demande est refusée, que ferez-vous ?",
+          "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+        }
+      ]
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "准备",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "材料",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "穿着",
+          "questionNumbers": [
+            4
+          ]
+        },
+        {
+          "name": "准时",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "行为",
+          "questionNumbers": [
+            6,
+            7
+          ]
+        },
+        {
+          "name": "回答",
+          "questionNumbers": [
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "name": "问题",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "薪资",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "结束",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "跟进",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "面试前准备": 5,
+        "面试中": 9,
+        "面试之后": 1
+      },
+      "pronounAndRelevanceReview": "与2026-09第2题重复的面试建议Sujet，保留相同15问；核验tu称谓、疑问形式和面试前中后时间线。",
+      "translationReview": "15条中文逐句核对，确保角色、语气和法语语义对应。",
+      "changeReasons": [
+        {
+          "month": "2026-07",
+          "number": 3,
+          "row": 2,
+          "oldFr": "Sur quels points de l’offre d’emploi dois-je être particulièrement au clair ?",
+          "newFr": "Quelles informations de l’offre d’emploi devrais-je bien comprendre avant l’entretien ?",
+          "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+        },
+        {
+          "month": "2026-07",
+          "number": 3,
+          "row": 5,
+          "oldFr": "Tu me conseilles d’arriver combien de temps à l’avance ?",
+          "newFr": "À ton avis, combien de temps avant l’entretien devrais-je arriver ?",
+          "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+        },
+        {
+          "month": "2026-07",
+          "number": 3,
+          "row": 13,
+          "oldFr": "Quelle est la meilleure façon d’aborder la question du salaire ?",
+          "newFr": "Comment puis-je aborder la question de la rémunération ?",
+          "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+        }
+      ]
+    }
+  ],
+  "questionSlots": 135,
+  "status": "ready_for_audio_rebuild",
+  "approval": "pending_audio_and_pages",
+  "source": "tache2/real-exams/source/work.json.gz.b64",
+  "runtime": "tache2/real-exams/data/work.json",
+  "reviewMethod": [
+    "对9题逐题检查15问，逐句审查疑问词、句法、角色关系和信息角度，不用标签代替内容审核。",
+    "校验朋友/同事/教师/招聘家庭的人称称谓，核对过去经历、当前工作信息、面试前中后和未来安排。",
+    "135句中文逐句人工复核；明显误译全部订正。",
+    "仅在自然度、性别中立、称谓一致和语义清晰方面有实际收益时改法语；改写行采用新progressKey。",
+    "Piper逐句资源和Pages部署验证成功后才标记通过。"
+  ],
+  "findings": [
+    "保留9个Sujet、每题15问；重复出现的面试Sujet作为相同真题保留同一问题集。",
+    "修正15问同事转部门场景中tu/vous不一致，统一依Sujet设定为vous。",
+    "修正性别假设、提问角度不明和不自然法语；逐句订正中文，保留表达准确自然的原句。"
+  ],
+  "limitations": [
+    "等待审核版Piper音频构建和Pages验证。"
+  ],
+  "changes": [
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 4,
+      "oldFr": "Vous êtes combien dans ton équipe ?",
+      "newFr": "Combien de personnes y a-t-il dans ton équipe ?",
+      "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 6,
+      "oldFr": "Comment ça se passe avec ton responsable ?",
+      "newFr": "Comment se passent tes échanges avec ton responsable ?",
+      "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 14,
+      "oldFr": "Tu es contente de ton nouveau travail ?",
+      "newFr": "Tu es satisfait(e) de ton nouveau travail ?",
+      "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 15,
+      "oldFr": "Tu te vois rester longtemps dans cette entreprise ?",
+      "newFr": "Tu envisages de rester longtemps dans cette entreprise ?",
+      "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 2,
+      "oldFr": "Sur quels points de l’offre d’emploi dois-je être particulièrement au clair ?",
+      "newFr": "Quelles informations de l’offre d’emploi devrais-je bien comprendre avant l’entretien ?",
+      "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 5,
+      "oldFr": "Tu me conseilles d’arriver combien de temps à l’avance ?",
+      "newFr": "À ton avis, combien de temps avant l’entretien devrais-je arriver ?",
+      "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 13,
+      "oldFr": "Quelle est la meilleure façon d’aborder la question du salaire ?",
+      "newFr": "Comment puis-je aborder la question de la rémunération ?",
+      "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 1,
+      "oldFr": "Tu es arrivée à quelle heure le premier jour ?",
+      "newFr": "Tu es arrivé(e) à quelle heure le premier jour ?",
+      "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 9,
+      "oldFr": "La pause déjeuner s’est bien passée ?",
+      "newFr": "Comment s’est passée ta pause déjeuner ?",
+      "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 12,
+      "oldFr": "Quelque chose t’a particulièrement surprise ?",
+      "newFr": "Quelque chose t’a particulièrement étonné(e) ?",
+      "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 14,
+      "oldFr": "Si tu pouvais refaire cette première journée, qu’est-ce que tu changerais dans ta préparation ?",
+      "newFr": "Si tu pouvais revivre cette première journée, qu’aurais-tu préparé différemment ?",
+      "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 8,
+      "oldFr": "Comment ça se passe avec ton responsable ?",
+      "newFr": "Comment se passent tes échanges avec ton responsable ?",
+      "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 14,
+      "oldFr": "Le salaire sera versé à quelle fréquence ?",
+      "newFr": "À quelle fréquence le salaire sera-t-il versé ?",
+      "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 1,
+      "oldFr": "Tu travailles dans quel service actuellement ?",
+      "newFr": "Dans quel service travaillez-vous actuellement ?",
+      "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 2,
+      "oldFr": "Tu fais quoi principalement dans ce service ?",
+      "newFr": "Quelles sont vos principales tâches dans ce service ?",
+      "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 3,
+      "oldFr": "Qu’est-ce qui te pousse à vouloir changer de service ?",
+      "newFr": "Qu’est-ce qui vous donne envie de changer de service ?",
+      "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 4,
+      "oldFr": "Tes horaires actuels te conviennent ?",
+      "newFr": "Vos horaires actuels vous conviennent-ils ?",
+      "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 5,
+      "oldFr": "Tu trouves comment l’ambiance dans ton service ?",
+      "newFr": "Comment trouvez-vous l’ambiance dans votre service ?",
+      "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 6,
+      "oldFr": "Tu t’entends bien avec tes collègues ?",
+      "newFr": "Vous entendez-vous bien avec vos collègues ?",
+      "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 7,
+      "oldFr": "Et avec ton responsable, comment est la relation ?",
+      "newFr": "Et avec votre responsable, comment se passent les choses ?",
+      "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 8,
+      "oldFr": "Tu trouves que la charge de travail est trop importante ?",
+      "newFr": "Trouvez-vous que votre charge de travail est trop importante ?",
+      "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 9,
+      "oldFr": "Vers quel service aimerais-tu aller ?",
+      "newFr": "Dans quel service aimeriez-vous travailler ?",
+      "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 10,
+      "oldFr": "Tu aimerais faire quoi comme tâches dans le nouveau service ?",
+      "newFr": "Quelles tâches aimeriez-vous effectuer dans le nouveau service ?",
+      "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 11,
+      "oldFr": "Tu voudrais surtout avoir de meilleurs horaires ?",
+      "newFr": "Souhaiteriez-vous surtout avoir de meilleurs horaires ?",
+      "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 13,
+      "oldFr": "Comment se passe une demande de changement de service dans ton entreprise ?",
+      "newFr": "Quelle est la procédure pour demander un changement de service dans votre entreprise ?",
+      "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 14,
+      "oldFr": "Tu en as déjà discuté avec ton responsable ?",
+      "newFr": "En avez-vous déjà discuté avec votre responsable ?",
+      "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 15,
+      "oldFr": "Et si ta demande est refusée, qu’est-ce que tu feras ?",
+      "newFr": "Si votre demande est refusée, que ferez-vous ?",
+      "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 2,
+      "oldFr": "Sur quels points de l’offre d’emploi dois-je être particulièrement au clair ?",
+      "newFr": "Quelles informations de l’offre d’emploi devrais-je bien comprendre avant l’entretien ?",
+      "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 5,
+      "oldFr": "Tu me conseilles d’arriver combien de temps à l’avance ?",
+      "newFr": "À ton avis, combien de temps avant l’entretien devrais-je arriver ?",
+      "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 13,
+      "oldFr": "Quelle est la meilleure façon d’aborder la question du salaire ?",
+      "newFr": "Comment puis-je aborder la question de la rémunération ?",
+      "reason": "见该Sujet三维审查理由；已更换独立progressKey。"
+    }
+  ],
+  "piperCoverage": {
+    "status": "pending-generation",
+    "voice": "fr_FR-siwis-medium",
+    "uniqueFrenchQuestions": 116,
+    "matched": 0,
+    "missing": "pending"
+  },
+  "runtimeChecks": {
+    "sujetCount": 9,
+    "expectedSujetCount": 9,
+    "questionSlots": 135,
+    "expectedQuestionSlots": 135,
+    "allSujetsHave15Questions": true,
+    "allRowsHaveFrenchAndChinese": true,
+    "noDuplicateFrenchPerSujet": true,
+    "frenchProgressKeysDifferFromOriginal": true,
+    "followMarkerRows": 0
+  }
+}
