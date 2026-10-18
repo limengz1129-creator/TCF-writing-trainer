@@ -7,6 +7,9 @@ on:
       - 'tools/piper/travel/generate.py'
       - 'tache2/real-exams/travel-data-*.js'
   workflow_dispatch:
+concurrency:
+  group: travel-t2-piper
+  cancel-in-progress: true
 permissions:
   contents: write
 jobs:
@@ -41,7 +44,11 @@ jobs:
             echo "No audio changes"
           else
             git commit -m "Generate Piper siwis audio for travel T2 study"
-            git fetch origin main
-            git rebase origin/main
-            git push
+            for attempt in 1 2 3 4 5; do
+              git fetch origin main
+              if git rebase origin/main && git push origin HEAD:main; then break; fi
+              git rebase --abort || true
+              if [ "$attempt" -eq 5 ]; then exit 1; fi
+              sleep 4
+            done
           fi
