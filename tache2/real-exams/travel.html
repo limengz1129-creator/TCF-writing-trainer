@@ -86,16 +86,16 @@ button,select{font:inherit}.wrap{max-width:1460px;margin:auto;padding:24px 18px 
 
 <script src="piper-inline.js?v=3"></script>
 <script>window.T2_TRAVEL=[];</script>
-<script src="travel-data-1.js?v=fusion-pilot-1"></script><script src="travel-data-2.js?v=1"></script><script src="travel-data-3.js?v=1"></script>
-<script src="travel-data-4.js?v=1"></script><script src="travel-data-5.js?v=1"></script><script src="travel-data-6.js?v=1"></script>
-<script src="travel-data-7.js?v=1"></script><script src="travel-data-8.js?v=1"></script><script src="travel-data-9.js?v=1"></script>
+<script src="travel-data-1.js?v=travel27-fusion-v1"></script><script src="travel-data-2.js?v=travel27-fusion-v1"></script><script src="travel-data-3.js?v=travel27-fusion-v1"></script>
+<script src="travel-data-4.js?v=travel27-fusion-v1"></script><script src="travel-data-5.js?v=travel27-fusion-v1"></script><script src="travel-data-6.js?v=travel27-fusion-v1"></script>
+<script src="travel-data-7.js?v=travel27-fusion-v1"></script><script src="travel-data-8.js?v=travel27-fusion-v1"></script><script src="travel-data-9.js?v=travel27-fusion-v1"></script>
 <script>
 (()=>{
 const D=window.T2_TRAVEL.sort((a,b)=>a.month.localeCompare(b.month)||a.number-b.number),KEY='TCF-T2-REAL-TRAVEL-v1';
 let state={index:0,mode:'table',single:0,chain:0,progress:{}};
 try{state={...state,...JSON.parse(localStorage.getItem(KEY)||'{}')}}catch(e){}
 const $=id=>document.getElementById(id),save=()=>localStorage.setItem(KEY,JSON.stringify(state)),cur=()=>D[state.index]||D[0];
-const rowKey=(q,r)=>q.month+'-'+q.number+'-'+r.n+(q.month==='2026-07'&&q.number===1&&[4,8,9].includes(r.n)?'-fusion-'+r.fr:''),prog=(q,r)=>state.progress[rowKey(q,r)]||(state.progress[rowKey(q,r)]={status:'new',favorite:false});
+const rowKey=(q,r)=>q.month+'-'+q.number+'-'+r.n+(r.originalFr?'-fusion-'+r.fr:''),prog=(q,r)=>state.progress[rowKey(q,r)]||(state.progress[rowKey(q,r)]={status:'new',favorite:false});
 function speak(text){
  const status=$('speechStatus');
  if(window.TCF_TRAVEL_PIPER?.play)return window.TCF_TRAVEL_PIPER.play(text,status,1);
