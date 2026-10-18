@@ -3,7 +3,7 @@
   "theme": "住房与安家",
   "sujets": 33,
   "questionSlots": 495,
-  "status": "ready_for_audio_rebuild_and_final_verification",
+  "status": "ready_for_pages_verification",
   "approval": "not_passed",
   "source": "tache2/real-exams/source/housing.json.gz.b64",
   "runtime": "tache2/real-exams/data/housing.json",
@@ -18,7 +18,7 @@
     "完成33个Sujet共495问的逐题结构与人称复核；每题15问，保留原有可用提问。",
     "识别并修正14个法语问句：6个邻居/同事语境统一vous，3个朋友语境统一tu，2处购物角度去重，3处明确儿童活动安全问题的指代。",
     "对照完整备份逐行校订中文译文：486行发生变化；剩余译文均与法语语义相符。",
-    "Piper fr_FR-siwis-medium对住房主题284/284条不同法语问句精确覆盖。"
+    "Piper fr_FR-siwis-medium对住房主题285/285条不同法语问句精确覆盖；全站manifest含2331条目标，所有索引ID均可在资源包中找到，包内文本与索引逐条精确相符。"
   ],
   "limitations": [],
   "changes": [
@@ -11632,17 +11632,18 @@
   "piperCoverage": {
     "status": "covered; resources verified",
     "voice": "fr_FR-siwis-medium",
-    "uniqueFrenchQuestions": 284,
-    "matched": 284,
+    "uniqueFrenchQuestions": 285,
+    "matched": 285,
     "missing": [],
     "manifest": "tache2/real-exams/piper-audio/themes/manifest.json",
     "resourceIntegrity": {
-      "manifestTargets": 2330,
-      "audioRecords": 2330,
+      "manifestTargets": 2331,
+      "audioRecords": 2331,
       "resourceIdsPresent": true,
       "embeddedTextMatchesIndex": true,
-      "recoveredOverwrittenOriginalPack": "housing-pack-000.json",
-      "newGeneratedPack": "housing-pack-005.json"
+      "restoredOriginalPack": "housing-pack-000.json",
+      "newGeneratedPack": "housing-pack-006.json",
+      "repairedShortExactMetadataPack": "housing-variety-fix.json"
     }
   },
   "runtimeChecks": {
@@ -11653,7 +11654,11 @@
     "allSujetsHave15Questions": true,
     "allRowsHaveFrenchAndChinese": true,
     "frenchProgressKeysDifferFromOriginal": true,
-    "allFrenchQuestionsAudioCovered": false,
-    "audioResourceFilesVerified": true
+    "allFrenchQuestionsAudioCovered": true,
+    "audioResourceFilesVerified": true,
+    "manifestTargetCount": 2331,
+    "manifestRecordCount": 2331,
+    "allManifestIdsResolveToResource": true,
+    "allAudioEmbeddedTextMatchesTarget": true
   }
 }
