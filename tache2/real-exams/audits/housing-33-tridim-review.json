@@ -3,8 +3,8 @@
   "theme": "住房与安家",
   "sujets": 33,
   "questionSlots": 495,
-  "status": "ready_for_pages_verification",
-  "approval": "not_passed",
+  "status": "passed",
+  "approval": "passed",
   "source": "tache2/real-exams/source/housing.json.gz.b64",
   "runtime": "tache2/real-exams/data/housing.json",
   "reviewMethod": [
@@ -18,7 +18,8 @@
     "完成33个Sujet共495问的逐题结构与人称复核；每题15问，保留原有可用提问。",
     "识别并修正14个法语问句：6个邻居/同事语境统一vous，3个朋友语境统一tu，2处购物角度去重，3处明确儿童活动安全问题的指代。",
     "对照完整备份逐行校订中文译文：486行发生变化；剩余译文均与法语语义相符。",
-    "Piper fr_FR-siwis-medium对住房主题285/285条不同法语问句精确覆盖；全站manifest含2331条目标，所有索引ID均可在资源包中找到，包内文本与索引逐条精确相符。"
+    "Piper fr_FR-siwis-medium对住房主题285/285条不同法语问句精确覆盖；全站manifest含2331条目标，所有索引ID均可在资源包中找到，包内文本与索引逐条精确相符。",
+    "规范化住房源文件已与最终运行数据逐行同步，后续构建不会回退中文修订或法语终稿。"
   ],
   "limitations": [],
   "changes": [
@@ -11659,6 +11660,7 @@
     "manifestTargetCount": 2331,
     "manifestRecordCount": 2331,
     "allManifestIdsResolveToResource": true,
-    "allAudioEmbeddedTextMatchesTarget": true
+    "allAudioEmbeddedTextMatchesTarget": true,
+    "sourceRowsMatchRuntime": true
   }
 }
