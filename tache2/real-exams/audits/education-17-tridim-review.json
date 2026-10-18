@@ -1,0 +1,3962 @@
+{
+  "version": "education-review-2026-10-18-v1",
+  "theme": "教育与培训",
+  "sujets": 17,
+  "questionSlots": 255,
+  "status": "ready_for_audio_rebuild",
+  "approval": "not_passed",
+  "source": "tache2/real-exams/source/education.json.gz.b64",
+  "runtime": "tache2/real-exams/data/education.json",
+  "reviewMethod": [
+    "依据Sujet关系逐问核对tu/vous、疑问句结构、自然度及口语适用性。",
+    "复核过去经历、当前信息/习惯、未来计划与条件场景的时间线。",
+    "检查每个Sujet的15问是否覆盖互补信息角度，避免题内重复。",
+    "逐句校订中文译文；所有法语改句记录理由并更新progressKey。",
+    "由GitHub Actions使用Piper fr_FR-siwis-medium覆盖最终法语文本，并检查索引与资源包。"
+  ],
+  "findings": [
+    "保留17个Sujet、每题15问；没有题内完全重复。",
+    "修正朋友关系中4处不一致的vous用法或对群体的称呼，统一tu称呼。",
+    "清理2个跟进问句的手写箭头，通过follow字段显示。",
+    "按回顾语境改写2个烹饪课程经历问句；所有题目逐问检查时态、语式与信息角度。",
+    "对照原始备份校订中文译文，共255行实际修改。"
+  ],
+  "limitations": [
+    "主题音频需完成最终重建和资源包核验后才能验收。"
+  ],
+  "changes": [
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 9,
+      "oldFr": "↳ Comment se déroule ce test ?",
+      "newFr": "Comment se déroule ce test ?",
+      "zh": "这个测试是怎样进行的？",
+      "reason": "跟进提示由follow字段负责显示；移除法语文本中的手写箭头，避免影响单句练习和Piper语音。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 9,
+      "oldFr": "↳ Comment se déroule ce test ?",
+      "newFr": "Comment se déroule ce test ?",
+      "zh": "这个测试是怎样进行的？",
+      "reason": "跟进提示由follow字段负责显示；移除法语文本中的手写箭头，避免影响单句练习和Piper语音。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 7,
+      "oldFr": "Sur quoi travaillez-vous pendant les cours ?",
+      "newFr": "Sur quoi travailles-tu pendant les cours ?",
+      "zh": "你上课时主要练习什么内容？",
+      "reason": "Sujet中的对话对象是朋友，统一用tu；课程内容问题保持口语自然。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 4,
+      "oldFr": "Vous apprenez quoi concrètement pendant les cours ?",
+      "newFr": "Tu apprends quoi concrètement pendant les cours ?",
+      "zh": "你上课时具体学些什么？",
+      "reason": "Sujet中的对话对象是朋友，统一用tu，避免与相邻问题的人称不一致。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 5,
+      "oldFr": "Vous avez appris à préparer quels types de plats ?",
+      "newFr": "Quels types de plats as-tu appris à préparer ?",
+      "zh": "你学会了做哪些类型的菜？",
+      "reason": "回顾朋友的烹饪课经历，统一用tu，并将疑问焦点前置表达得更自然。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 6,
+      "oldFr": "On vous donnait les recettes après le cours ?",
+      "newFr": "On te remettait les recettes après le cours ?",
+      "zh": "下课后会把食谱发给你吗？",
+      "reason": "回顾朋友的课程经历，改为单数间接宾语te；remettre表达课后发放食谱更自然。"
+    }
+  ],
+  "translationEdits": [
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 1,
+      "fr": "À quelle heure a lieu le cours ?",
+      "oldZh": "课程是什么时候?",
+      "newZh": "课程几点开始？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 2,
+      "fr": "Combien de fois par semaine les cours ont-ils lieu ?",
+      "oldZh": "课程的频率是多少?",
+      "newZh": "课程每周上几次？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 3,
+      "fr": "Peut-on modifier l’horaire en cas d’imprévu ?",
+      "oldZh": "如果发生意外情况,可以改变时间吗?",
+      "newZh": "如果临时有事，可以调整上课时间吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 4,
+      "fr": "Où se déroule exactement le cours ?",
+      "oldZh": "课程在哪里?",
+      "newZh": "课程具体在哪里上？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 5,
+      "fr": "Qu’est-ce qu’on fait concrètement pendant le cours ?",
+      "oldZh": "在课程中实际上学到什么?",
+      "newZh": "课程中具体会做些什么？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 6,
+      "fr": "Le cours est-il adapté aux débutants ?",
+      "oldZh": "这个课程是否适合初学者?",
+      "newZh": "这门课适合初学者吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 7,
+      "fr": "Puis-je faire un cours d’essai avant de m’inscrire ?",
+      "oldZh": "在报名之前,我可以接受试课吗?",
+      "newZh": "报名之前我可以先试听一节课吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 8,
+      "fr": "Dois-je apporter mon propre appareil photo ou du matériel particulier ?",
+      "oldZh": "我是否需要携带自己的相机或特殊设备?",
+      "newZh": "我需要自带相机或其他特定器材吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 9,
+      "fr": "Est-ce que le matériel est disponible sur place ?",
+      "oldZh": "设备可以在现场提供吗?",
+      "newZh": "现场能提供器材吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 10,
+      "fr": "Quelle formation a suivie le professeur ?",
+      "oldZh": "教授有哪些资格?",
+      "newZh": "这位老师接受过什么培训？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 11,
+      "fr": "Depuis quand enseigne-t-il la photographie ?",
+      "oldZh": "他教摄影多久了?",
+      "newZh": "他教摄影有多久了？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 12,
+      "fr": "Quel est le tarif mensuel du cours ?",
+      "oldZh": "一个月的课费是多少?",
+      "newZh": "这门课的月费是多少？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 13,
+      "fr": "Est-ce que je peux bénéficier d’une réduction si je m’inscris pour plusieurs mois ?",
+      "oldZh": "如果我报名几个月,有没有折扣?",
+      "newZh": "如果我一次报名几个月，可以享受优惠吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 14,
+      "fr": "Comment se passe l’inscription ?",
+      "oldZh": "我怎么能报名?",
+      "newZh": "报名流程是怎样的？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 15,
+      "fr": "Les participants sont-ils généralement satisfaits du cours ?",
+      "oldZh": "参与者通常对课程满意吗?",
+      "newZh": "学员通常对这门课满意吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 1,
+      "fr": "Quel jour a lieu le cours de théâtre ?",
+      "oldZh": "戏剧课是什么天?",
+      "newZh": "戏剧课通常在星期几上？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 2,
+      "fr": "À quelle heure commence le cours ?",
+      "oldZh": "课程什么时候开始?",
+      "newZh": "课程几点开始？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 3,
+      "fr": "Combien de fois par semaine les cours ont-ils lieu ?",
+      "oldZh": "课程的频率是多少?",
+      "newZh": "课程每周上几次？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 4,
+      "fr": "Où se déroulent les cours exactement ?",
+      "oldZh": "课程在哪里?",
+      "newZh": "课程具体在哪里上？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 5,
+      "fr": "Les cours se font-ils en groupe ?",
+      "oldZh": "课程是个团体吗?",
+      "newZh": "课程是以小组形式进行的吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 6,
+      "fr": "Quelle est la taille des groupes ?",
+      "oldZh": "一个小组中有多少人?",
+      "newZh": "每组有多少人？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 7,
+      "fr": "Sur quoi travailles-tu pendant les cours ?",
+      "oldZh": "我们在课堂上做什么?",
+      "newZh": "你上课时主要练习什么内容？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 8,
+      "fr": "Le cours est-il adapté à quelqu’un qui débute ?",
+      "oldZh": "这个课程是否适合初学者?",
+      "newZh": "这门课适合刚入门的人吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 9,
+      "fr": "Le professeur enseigne-t-il depuis longtemps ?",
+      "oldZh": "老师有没有很多经验?",
+      "newZh": "这位老师教了很多年了吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 10,
+      "fr": "Comment se déroulent les exercices avec le professeur ?",
+      "oldZh": "教师如何安排练习?",
+      "newZh": "上课时会怎样和老师一起做练习？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 11,
+      "fr": "Puis-je assister à un cours d’essai ?",
+      "oldZh": "我可以参加试验课吗?",
+      "newZh": "我可以先试听一节课吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 12,
+      "fr": "Quel est le tarif mensuel du cours ?",
+      "oldZh": "一个月的课费是多少?",
+      "newZh": "这门课的月费是多少？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 13,
+      "fr": "Proposez-vous un tarif réduit pour une inscription de plusieurs mois ?",
+      "oldZh": "如果我订阅几个月,有没有折扣?",
+      "newZh": "一次报名几个月有优惠吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 14,
+      "fr": "Comment se passe l’inscription ?",
+      "oldZh": "我怎么能报名?",
+      "newZh": "报名流程是怎样的？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 15,
+      "fr": "Dois-je préparer quelque chose avant le premier cours ?",
+      "oldZh": "在第一个课程之前,我们需要做什么准备吗?",
+      "newZh": "第一节课之前我需要准备什么吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 4,
+      "row": 1,
+      "fr": "Depuis quand enseignez-vous le français ?",
+      "oldZh": "你已经教法语了多久了?",
+      "newZh": "您教法语有多久了？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 4,
+      "row": 2,
+      "fr": "Quelle formation ou quelles certifications avez-vous ?",
+      "oldZh": "你有什么学位或证书?",
+      "newZh": "您接受过哪些培训，持有哪些证书？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 4,
+      "row": 3,
+      "fr": "Avec quels niveaux d’élèves travaillez-vous habituellement ?",
+      "oldZh": "你通常和哪些学生一起工作?",
+      "newZh": "您平时教哪些法语水平的学生？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 4,
+      "row": 4,
+      "fr": "Comment organisez-vous généralement vos cours particuliers ?",
+      "oldZh": "你在私人课时使用什么方法?",
+      "newZh": "您通常怎样安排一对一课程？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 4,
+      "row": 5,
+      "fr": "Adaptez-vous les cours aux besoins de chaque élève ?",
+      "oldZh": "你是否适应每个学生的需求?",
+      "newZh": "您会根据每位学生的需求调整课程吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 4,
+      "row": 6,
+      "fr": "Vous travaillez beaucoup l’expression orale pendant les cours ?",
+      "oldZh": "在课堂上,我们有没有太多的口头表达?",
+      "newZh": "您上课时会安排很多口语练习吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 4,
+      "row": 7,
+      "fr": "Les cours se font en présentiel, en ligne ou les deux ?",
+      "oldZh": "你会在面对面,在线或两者都有吗?",
+      "newZh": "课程是面授、线上，还是两种方式都有？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 4,
+      "row": 8,
+      "fr": "Combien de temps dure un cours ?",
+      "oldZh": "一个课程需要多长时间?",
+      "newZh": "一节课多长时间？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 4,
+      "row": 9,
+      "fr": "Quels créneaux avez-vous de disponibles ?",
+      "oldZh": "你有哪些时间和日期可用?",
+      "newZh": "您目前有哪些可预约的时段？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 4,
+      "row": 10,
+      "fr": "Est-ce que vous donnez du matériel ou des exercices à faire entre les cours ?",
+      "oldZh": "你在课堂之间提供任何材料或练习吗?",
+      "newZh": "您会提供教材，或布置课后练习吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 4,
+      "row": 11,
+      "fr": "Serait-il possible de faire un premier cours d’essai ?",
+      "oldZh": "我可以做一个第一次试验课吗?",
+      "newZh": "可以先安排一节试听课吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 4,
+      "row": 12,
+      "fr": "Combien demandez-vous pour une heure de cours ?",
+      "oldZh": "一个小时的课费是多少?",
+      "newZh": "您一小时的课收费多少？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 4,
+      "row": 13,
+      "fr": "Avez-vous un forfait si je réserve plusieurs cours ?",
+      "oldZh": "你有没有提议一套多班课程的套餐?",
+      "newZh": "如果我预约多节课，您有套餐价吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 4,
+      "row": 14,
+      "fr": "Comment puis-je réserver un cours avec vous ?",
+      "oldZh": "我怎么能与你预订课程呢?",
+      "newZh": "我该怎样向您预约课程？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 4,
+      "row": 15,
+      "fr": "Est-ce que vous préparez aussi les élèves aux examens de français ?",
+      "oldZh": "你也能帮我做法语考试吗?",
+      "newZh": "您也辅导学生准备法语考试吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 1,
+      "fr": "Quels jours proposez-vous les cours de cuisine ?",
+      "oldZh": "你在哪些日子上厨师课?",
+      "newZh": "您在哪些日子开设烹饪课？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 2,
+      "fr": "Combien de temps dure un cours ?",
+      "oldZh": "一个课程需要多长时间?",
+      "newZh": "一节课多长时间？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 3,
+      "fr": "Où se déroulent les cours ?",
+      "oldZh": "课程在哪里?",
+      "newZh": "课程在哪里上？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 4,
+      "fr": "Qu’est-ce qu’on fait concrètement pendant un cours ?",
+      "oldZh": "在课程中实际上学到什么?",
+      "newZh": "一节课上具体会做些什么？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 5,
+      "fr": "Quels types de plats préparez-vous ?",
+      "oldZh": "你做什么菜?",
+      "newZh": "您会教做哪些类型的菜？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 6,
+      "fr": "Les recettes sont-elles remises après le cours ?",
+      "oldZh": "我们在课后收到菜单吗?",
+      "newZh": "下课后会发放食谱吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 7,
+      "fr": "Vous avez généralement combien de participants par cours ?",
+      "oldZh": "通常有多少人参加?",
+      "newZh": "您每节课通常带多少名学员？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 8,
+      "fr": "Les cours conviennent-ils aux débutants ?",
+      "oldZh": "课程是否适合初学者?",
+      "newZh": "这些课程适合初学者吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 9,
+      "fr": "Depuis quand donnez-vous des cours de cuisine ?",
+      "oldZh": "你教了几年了?",
+      "newZh": "您教烹饪有多久了？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 10,
+      "fr": "Puis-je participer à un cours d’essai ?",
+      "oldZh": "我可以参加试验课吗?",
+      "newZh": "我可以先试听一节课吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 11,
+      "fr": "Dois-je apporter des ingrédients ou du matériel ?",
+      "oldZh": "我们是否需要带来任何成分或材料?",
+      "newZh": "我需要自备食材或器材吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 12,
+      "fr": "Quel est le prix d’un cours ?",
+      "oldZh": "一个课程需要多少钱?",
+      "newZh": "一节课多少钱？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 13,
+      "fr": "Y a-t-il une réduction si je réserve plusieurs cours ?",
+      "oldZh": "如果我预订多个课程,有没有折扣?",
+      "newZh": "一次预约多节课有折扣吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 14,
+      "fr": "Comment se passe l’inscription ?",
+      "oldZh": "我怎么能报名?",
+      "newZh": "报名流程是怎样的？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 15,
+      "fr": "Est-ce que vous pouvez adapter les recettes aux régimes végétariens ou aux allergies alimentaires ?",
+      "oldZh": "你能否适应菜单适合素食者或食物过敏者?",
+      "newZh": "您能根据素食需求或食物过敏情况调整食谱吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 1,
+      "fr": "Quels sont les jours et les horaires des cours ?",
+      "oldZh": "课程有哪些日期和时间?",
+      "newZh": "课程安排在哪些日子、什么时间？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 2,
+      "fr": "Combien de fois par semaine les cours ont-ils lieu ?",
+      "oldZh": "课程的频率是多少?",
+      "newZh": "课程每周上几次？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 3,
+      "fr": "Qu’est-ce que vous proposez comme cours de musique ?",
+      "oldZh": "你提供什么样的音乐课程?",
+      "newZh": "您开设哪些音乐课程？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 4,
+      "fr": "Quels instruments peut-on y apprendre ?",
+      "oldZh": "在你的学校可以学习什么乐器?",
+      "newZh": "在这里可以学习哪些乐器？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 5,
+      "fr": "Les cours sont-ils adaptés aux débutants ?",
+      "oldZh": "这些课程是否适合初学者?",
+      "newZh": "这些课程适合初学者吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 6,
+      "fr": "Vous proposez plutôt des cours individuels, en groupe, ou les deux ?",
+      "oldZh": "课程是个人的还是团体的?",
+      "newZh": "您主要提供一对一课程、小组课，还是两种都有？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 7,
+      "fr": "Quelle est la taille des groupes ?",
+      "oldZh": "一个小组中有多少人?",
+      "newZh": "每组有多少人？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 8,
+      "fr": "Puis-je faire un cours d’essai avant de m’inscrire ?",
+      "oldZh": "在报名之前,我可以接受试课吗?",
+      "newZh": "报名之前我可以先试听一节课吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 9,
+      "fr": "L’école fournit-elle les instruments ?",
+      "oldZh": "这些工具是学校提供的吗?",
+      "newZh": "学校会提供乐器吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 10,
+      "fr": "Quelle formation ont suivie les professeurs ?",
+      "oldZh": "教师的资格是什么?",
+      "newZh": "这些老师接受过什么专业培训？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 11,
+      "fr": "Quel est le tarif mensuel des cours ?",
+      "oldZh": "每个月的课程费用是多少?",
+      "newZh": "课程的月费是多少？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 12,
+      "fr": "Proposez-vous un tarif réduit pour plusieurs cours ou plusieurs mois ?",
+      "oldZh": "有几个课程或几个月的折扣费吗?",
+      "newZh": "报名多门课程或连续几个月有优惠吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 13,
+      "fr": "Comment se passe l’inscription ?",
+      "oldZh": "我怎么能报名?",
+      "newZh": "报名流程是怎样的？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 14,
+      "fr": "Qu’est-ce qu’il faut fournir comme documents pour l’inscription ?",
+      "oldZh": "报名需要提供哪些文件?",
+      "newZh": "报名需要提交哪些材料？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 15,
+      "fr": "Peut-on changer d’horaire en cas de problème ?",
+      "oldZh": "如果有问题,可以改变时间吗?",
+      "newZh": "如果有特殊情况，可以改上课时间吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 1,
+      "fr": "Quels sont les jours et les horaires des cours ?",
+      "oldZh": "课程有哪些日期和时间?",
+      "newZh": "课程安排在哪些日子、什么时间？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 2,
+      "fr": "Combien de fois par semaine les cours ont-ils lieu ?",
+      "oldZh": "课程的频率是多少?",
+      "newZh": "课程每周上几次？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 3,
+      "fr": "Qu’est-ce que vous proposez comme cours de musique ?",
+      "oldZh": "你提供什么样的音乐课程?",
+      "newZh": "您开设哪些音乐课程？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 4,
+      "fr": "Quels instruments peut-on y apprendre ?",
+      "oldZh": "在你的学校可以学习什么乐器?",
+      "newZh": "在这里可以学习哪些乐器？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 5,
+      "fr": "Les cours sont-ils adaptés aux débutants ?",
+      "oldZh": "这些课程是否适合初学者?",
+      "newZh": "这些课程适合初学者吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 6,
+      "fr": "Vous proposez plutôt des cours individuels, en groupe, ou les deux ?",
+      "oldZh": "课程是个人的还是团体的?",
+      "newZh": "您主要提供一对一课程、小组课，还是两种都有？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 7,
+      "fr": "Quelle est la taille des groupes ?",
+      "oldZh": "一个小组中有多少人?",
+      "newZh": "每组有多少人？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 8,
+      "fr": "Puis-je faire un cours d’essai avant de m’inscrire ?",
+      "oldZh": "在报名之前,我可以接受试课吗?",
+      "newZh": "报名之前我可以先试听一节课吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 9,
+      "fr": "L’école fournit-elle les instruments ?",
+      "oldZh": "这些工具是学校提供的吗?",
+      "newZh": "学校会提供乐器吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 10,
+      "fr": "Quelle formation ont suivie les professeurs ?",
+      "oldZh": "教师的资格是什么?",
+      "newZh": "这些老师接受过什么专业培训？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 11,
+      "fr": "Quel est le tarif mensuel des cours ?",
+      "oldZh": "每个月的课程费用是多少?",
+      "newZh": "课程的月费是多少？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 12,
+      "fr": "Proposez-vous un tarif réduit pour plusieurs cours ou plusieurs mois ?",
+      "oldZh": "有几个课程或几个月的折扣费吗?",
+      "newZh": "报名多门课程或连续几个月有优惠吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 13,
+      "fr": "Comment se passe l’inscription ?",
+      "oldZh": "我怎么能报名?",
+      "newZh": "报名流程是怎样的？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 14,
+      "fr": "Qu’est-ce qu’il faut fournir comme documents pour l’inscription ?",
+      "oldZh": "报名需要提供哪些文件?",
+      "newZh": "报名需要提交哪些材料？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 15,
+      "fr": "Peut-on changer d’horaire en cas de problème ?",
+      "oldZh": "如果有问题,可以改变时间吗?",
+      "newZh": "如果有特殊情况，可以改上课时间吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 1,
+      "fr": "Quel instrument cette personne enseigne-t-elle ?",
+      "oldZh": "这个人教什么乐器?",
+      "newZh": "这位老师教哪种乐器？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 2,
+      "fr": "Depuis quand donne-t-elle des cours ?",
+      "oldZh": "她已经教了多久了?",
+      "newZh": "她教课有多久了？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 3,
+      "fr": "A-t-elle une formation ou un diplôme en musique ?",
+      "oldZh": "她有什么音乐学历?",
+      "newZh": "她受过音乐专业培训或取得过相关文凭吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 4,
+      "fr": "Quels créneaux sont disponibles avec elle ?",
+      "oldZh": "它有哪些日期和时间可用?",
+      "newZh": "她目前有哪些可上课的时段？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 5,
+      "fr": "Combien de fois par semaine peut-on prendre des cours ?",
+      "oldZh": "我们可以有多少次上课?",
+      "newZh": "每周可以上几次课？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 6,
+      "fr": "Peut-elle donner les cours à domicile ?",
+      "oldZh": "她可以在家教吗?",
+      "newZh": "她可以上门授课吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 7,
+      "fr": "Elle donne uniquement des cours particuliers ou aussi des cours en petit groupe ?",
+      "oldZh": "她是否只在私人或小组上课?",
+      "newZh": "她只教一对一，还是也开小组课？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 8,
+      "fr": "Elle accepte aussi les débutants ?",
+      "oldZh": "她能接受初学者吗?",
+      "newZh": "她也收初学者吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 9,
+      "fr": "Comment se déroulent généralement ses cours ?",
+      "oldZh": "她通常如何安排课程?",
+      "newZh": "她的课通常是怎样进行的？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 10,
+      "fr": "Serait-il possible de faire un premier cours d’essai ?",
+      "oldZh": "有没有可能进行第一次试验课程吗?",
+      "newZh": "可以先安排一节试听课吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 11,
+      "fr": "Dois-je avoir mon propre instrument ?",
+      "oldZh": "他需要自己的乐器吗?",
+      "newZh": "我需要自备乐器吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 12,
+      "fr": "Quel est son tarif pour une heure de cours ?",
+      "oldZh": "她需要多少钱给一个小时的课程?",
+      "newZh": "她一小时的课收费多少？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 13,
+      "fr": "Fait-elle un tarif réduit si je réserve plusieurs cours ?",
+      "oldZh": "她是否提供了几门课程的折扣费?",
+      "newZh": "预约多节课她会给优惠价吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 14,
+      "fr": "Comment puis-je la contacter pour fixer un premier rendez-vous ?",
+      "oldZh": "我如何联系她,安排一个第一次约会?",
+      "newZh": "我怎样联系她，安排第一次见面或上课？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 15,
+      "fr": "Peut-on déplacer un cours en cas d’imprévu ?",
+      "oldZh": "如果不预期,我们可以移动课程吗?",
+      "newZh": "如果临时有事，可以改上课时间吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 5,
+      "row": 1,
+      "fr": "À quelle heure a lieu le cours ?",
+      "oldZh": "课程是什么时候?",
+      "newZh": "课程几点开始？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 5,
+      "row": 2,
+      "fr": "Combien de fois par semaine les cours ont-ils lieu ?",
+      "oldZh": "课程的频率是多少?",
+      "newZh": "课程每周上几次？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 5,
+      "row": 3,
+      "fr": "Peut-on modifier l’horaire en cas d’imprévu ?",
+      "oldZh": "如果发生意外情况,可以改变时间吗?",
+      "newZh": "如果临时有事，可以调整上课时间吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 5,
+      "row": 4,
+      "fr": "Où se déroule exactement le cours ?",
+      "oldZh": "课程在哪里?",
+      "newZh": "课程具体在哪里上？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 5,
+      "row": 5,
+      "fr": "Qu’est-ce qu’on fait concrètement pendant le cours ?",
+      "oldZh": "在课程中实际上学到什么?",
+      "newZh": "课程中具体会做些什么？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 5,
+      "row": 6,
+      "fr": "Le cours est-il adapté aux débutants ?",
+      "oldZh": "这个课程是否适合初学者?",
+      "newZh": "这门课适合初学者吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 5,
+      "row": 7,
+      "fr": "Puis-je faire un cours d’essai avant de m’inscrire ?",
+      "oldZh": "在报名之前,我可以接受试课吗?",
+      "newZh": "报名之前我可以先试听一节课吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 5,
+      "row": 8,
+      "fr": "Dois-je apporter mon propre appareil photo ou du matériel particulier ?",
+      "oldZh": "我是否需要携带自己的相机或特殊设备?",
+      "newZh": "我需要自带相机或其他特定器材吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 5,
+      "row": 9,
+      "fr": "Est-ce que le matériel est disponible sur place ?",
+      "oldZh": "设备可以在现场提供吗?",
+      "newZh": "现场能提供器材吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 5,
+      "row": 10,
+      "fr": "Quelle formation a suivie le professeur ?",
+      "oldZh": "教授有哪些资格?",
+      "newZh": "这位老师接受过什么培训？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 5,
+      "row": 11,
+      "fr": "Depuis quand enseigne-t-il la photographie ?",
+      "oldZh": "他教摄影多久了?",
+      "newZh": "他教摄影有多久了？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 5,
+      "row": 12,
+      "fr": "Quel est le tarif mensuel du cours ?",
+      "oldZh": "一个月的课费是多少?",
+      "newZh": "这门课的月费是多少？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 5,
+      "row": 13,
+      "fr": "Est-ce que je peux bénéficier d’une réduction si je m’inscris pour plusieurs mois ?",
+      "oldZh": "如果我报名几个月,有没有折扣?",
+      "newZh": "如果我一次报名几个月，可以享受优惠吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 5,
+      "row": 14,
+      "fr": "Comment se passe l’inscription ?",
+      "oldZh": "我怎么能报名?",
+      "newZh": "报名流程是怎样的？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 5,
+      "row": 15,
+      "fr": "Les participants sont-ils généralement satisfaits du cours ?",
+      "oldZh": "参与者通常对课程满意吗?",
+      "newZh": "学员通常对这门课满意吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 6,
+      "row": 1,
+      "fr": "Quelles formules de formation en français proposez-vous ?",
+      "oldZh": "你提供什么样的法语培训?",
+      "newZh": "您提供哪些法语培训课程？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 6,
+      "row": 2,
+      "fr": "À quels niveaux s’adressent vos formations ?",
+      "oldZh": "你接受哪些水平?",
+      "newZh": "您的培训课程适合哪些法语水平？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 6,
+      "row": 3,
+      "fr": "Est-ce qu’un test de niveau est prévu avant de commencer ?",
+      "oldZh": "在开始之前,我必须通过一个水平测试吗?",
+      "newZh": "开课前会安排水平测试吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 6,
+      "row": 4,
+      "fr": "À quelles heures ont lieu les cours ?",
+      "oldZh": "课时是什么时候?",
+      "newZh": "课程在什么时间上？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 6,
+      "row": 5,
+      "fr": "Combien de temps dure la formation ?",
+      "oldZh": "训练需要多长时间?",
+      "newZh": "培训课程持续多长时间？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 6,
+      "row": 6,
+      "fr": "Combien de fois par semaine a-t-on cours ?",
+      "oldZh": "我们每周学习多少次?",
+      "newZh": "我们每周上几次课？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 6,
+      "row": 7,
+      "fr": "Quelle est la taille d’une classe en général ?",
+      "oldZh": "一个班子里有多少学生?",
+      "newZh": "一个班通常有多少名学生？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 6,
+      "row": 8,
+      "fr": "Quels sont les principaux points travaillés pendant la formation ?",
+      "oldZh": "在培训期间,我们主要的工作是什么?",
+      "newZh": "培训期间主要学习哪些内容？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 6,
+      "row": 9,
+      "fr": "L’oral occupe-t-il une place importante dans la formation ?",
+      "oldZh": "有没有很多口腔练习?",
+      "newZh": "培训中口语练习占的比重高吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 6,
+      "row": 10,
+      "fr": "Le matériel pédagogique est-il compris dans la formation ?",
+      "oldZh": "教材是否提供?",
+      "newZh": "培训费用包含教材或学习资料吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 6,
+      "row": 11,
+      "fr": "Les professeurs enseignent-ils depuis longtemps ?",
+      "oldZh": "教师有没有很多经验?",
+      "newZh": "这些老师教书有很多年了吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 6,
+      "row": 12,
+      "fr": "Quel est le tarif de la formation ?",
+      "oldZh": "培训费用是多少?",
+      "newZh": "这项培训的费用是多少？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 6,
+      "row": 13,
+      "fr": "Proposez-vous un forfait ou une réduction pour une formation plus longue ?",
+      "oldZh": "有没有更长的培训费用或折扣?",
+      "newZh": "参加较长期的培训有套餐价或折扣吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 6,
+      "row": 14,
+      "fr": "Comment se passe l’inscription ?",
+      "oldZh": "我怎么能报名?",
+      "newZh": "报名流程是怎样的？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-08",
+      "number": 6,
+      "row": 15,
+      "fr": "Si je veux progresser rapidement à l’oral, quelle formule me conseilleriez-vous ?",
+      "oldZh": "如果你想让我快速进步,你会给我什么建议?",
+      "newZh": "如果我想尽快提高口语，您建议我选哪种课程？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 1,
+      "fr": "Tu suivais quel type de cours du soir à l’université ?",
+      "oldZh": "你在大学上有什么样的晚上课程?",
+      "newZh": "你以前在大学上的是哪类晚课？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 2,
+      "fr": "À quelle heure commençaient les cours ?",
+      "oldZh": "课程什么时候开始?",
+      "newZh": "当时课程几点开始？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 3,
+      "fr": "Combien de fois par semaine avais-tu cours ?",
+      "oldZh": "你每周有多少次上课?",
+      "newZh": "你当时每周上几次课？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 4,
+      "fr": "Tu as suivi cette formation pendant toute l’année ?",
+      "oldZh": "你整年都在接受这项培训吗?",
+      "newZh": "你那一年都参加了这项培训吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 5,
+      "fr": "Où avaient lieu les cours ?",
+      "oldZh": "课程在哪里举行?",
+      "newZh": "当时课程在哪里上？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 6,
+      "fr": "Comment as-tu trouvé les professeurs ?",
+      "oldZh": "你怎么找到了教师?",
+      "newZh": "你觉得那些老师教得怎么样？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 7,
+      "fr": "Comment les professeurs organisaient-ils leurs cours ?",
+      "oldZh": "他们在课堂上使用什么方法?",
+      "newZh": "老师们当时是怎样安排课程的？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 8,
+      "fr": "Vous étiez combien dans ta classe ?",
+      "oldZh": "你的班子里有多少学生?",
+      "newZh": "你们班当时有多少人？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 9,
+      "fr": "Tu penses que ce type de cours conviendrait à une débutante ?",
+      "oldZh": "你认为这类课程适合初学者吗?",
+      "newZh": "你觉得这种课程适合初学者吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 10,
+      "fr": "Peut-on faire un cours d’essai avant de s’inscrire ?",
+      "oldZh": "在报名之前,我们可以接受试验吗?",
+      "newZh": "报名之前可以先试听一节课吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 11,
+      "fr": "Dois-je acheter du matériel ou des livres particuliers ?",
+      "oldZh": "我们是否需要购买特殊的材料或书籍?",
+      "newZh": "我需要买特定的教材或书籍吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 12,
+      "fr": "Quel était le prix de la formation ?",
+      "oldZh": "训练费用是多少?",
+      "newZh": "当时这项培训的费用是多少？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 13,
+      "fr": "Est-ce que tu avais droit à une réduction ou à un tarif étudiant ?",
+      "oldZh": "有没有任何折扣或学生价格?",
+      "newZh": "你当时能享受折扣或学生价吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 14,
+      "fr": "Comment faut-il s’inscrire à ce type de cours ?",
+      "oldZh": "如何报名参加此类课程?",
+      "newZh": "这类课程应该怎样报名？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 15,
+      "fr": "Tu me conseillerais cette formation ?",
+      "oldZh": "你能推我接受这个训练吗?",
+      "newZh": "你会推荐我参加这项培训吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 1,
+      "fr": "Quels sont les jours et les horaires des cours ?",
+      "oldZh": "课程有哪些日期和时间?",
+      "newZh": "课程安排在哪些日子、什么时间？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 2,
+      "fr": "Combien de fois par semaine les cours ont-ils lieu ?",
+      "oldZh": "课程的频率是多少?",
+      "newZh": "课程每周上几次？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 3,
+      "fr": "Qu’est-ce que vous proposez comme cours de musique ?",
+      "oldZh": "你提供什么样的音乐课程?",
+      "newZh": "您开设哪些音乐课程？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 4,
+      "fr": "Quels instruments peut-on y apprendre ?",
+      "oldZh": "在你的学校可以学习什么乐器?",
+      "newZh": "在这里可以学习哪些乐器？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 5,
+      "fr": "Les cours sont-ils adaptés aux débutants ?",
+      "oldZh": "这些课程是否适合初学者?",
+      "newZh": "这些课程适合初学者吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 6,
+      "fr": "Vous proposez plutôt des cours individuels, en groupe, ou les deux ?",
+      "oldZh": "课程是个人的还是团体的?",
+      "newZh": "您主要提供一对一课程、小组课，还是两种都有？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 7,
+      "fr": "Quelle est la taille des groupes ?",
+      "oldZh": "一个小组中有多少人?",
+      "newZh": "每组有多少人？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 8,
+      "fr": "Puis-je faire un cours d’essai avant de m’inscrire ?",
+      "oldZh": "在报名之前,我可以接受试课吗?",
+      "newZh": "报名之前我可以先试听一节课吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 9,
+      "fr": "L’école fournit-elle les instruments ?",
+      "oldZh": "这些工具是学校提供的吗?",
+      "newZh": "学校会提供乐器吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 10,
+      "fr": "Quelle formation ont suivie les professeurs ?",
+      "oldZh": "教师的资格是什么?",
+      "newZh": "这些老师接受过什么专业培训？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 11,
+      "fr": "Quel est le tarif mensuel des cours ?",
+      "oldZh": "每个月的课程费用是多少?",
+      "newZh": "课程的月费是多少？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 12,
+      "fr": "Proposez-vous un tarif réduit pour plusieurs cours ou plusieurs mois ?",
+      "oldZh": "有几个课程或几个月的折扣费吗?",
+      "newZh": "报名多门课程或连续几个月有优惠吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 13,
+      "fr": "Comment se passe l’inscription ?",
+      "oldZh": "我怎么能报名?",
+      "newZh": "报名流程是怎样的？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 14,
+      "fr": "Qu’est-ce qu’il faut fournir comme documents pour l’inscription ?",
+      "oldZh": "报名需要提供哪些文件?",
+      "newZh": "报名需要提交哪些材料？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 15,
+      "fr": "Peut-on changer d’horaire en cas de problème ?",
+      "oldZh": "如果有问题,可以改变时间吗?",
+      "newZh": "如果有特殊情况，可以改上课时间吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 1,
+      "fr": "C’est quel jour et à quelle heure, ton cours de dessin ?",
+      "oldZh": "你的绘画课是什么日子和什么时候?",
+      "newZh": "你的绘画课安排在星期几、几点？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 2,
+      "fr": "À quelle fréquence tu suis ce cours ?",
+      "oldZh": "你经常参加这个课程吗?",
+      "newZh": "你多久上一次这门课？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 3,
+      "fr": "Où se trouve exactement l’école ?",
+      "oldZh": "学校在哪里?",
+      "newZh": "学校具体在哪里？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 4,
+      "fr": "Tu apprends quoi concrètement pendant les cours ?",
+      "oldZh": "在课堂上你学到什么?",
+      "newZh": "你上课时具体学些什么？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 5,
+      "fr": "Comment trouves-tu ce cours ?",
+      "oldZh": "你觉得这个课程是什么样的?",
+      "newZh": "你觉得这门课怎么样？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 6,
+      "fr": "Tu penses que ce cours conviendrait à une débutante ?",
+      "oldZh": "你认为这个课程适合初学者吗?",
+      "newZh": "你觉得这门课适合初学者吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 7,
+      "fr": "Comment trouves-tu le professeur ?",
+      "oldZh": "你觉得老师怎么样?",
+      "newZh": "你觉得这位老师教得怎么样？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 8,
+      "fr": "Comment enseigne-t-il concrètement ?",
+      "oldZh": "他使用什么教学方法?",
+      "newZh": "他具体是怎么教的？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 9,
+      "fr": "Combien de personnes y a-t-il dans le groupe ?",
+      "oldZh": "团队中有多少人?",
+      "newZh": "小组里有多少人？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 10,
+      "fr": "Dois-je apporter du matériel de dessin ?",
+      "oldZh": "我们是否需要带来绘画材料?",
+      "newZh": "我需要自备绘画材料吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 11,
+      "fr": "L’école fournit-elle une partie du matériel ?",
+      "oldZh": "学校是否提供任何材料?",
+      "newZh": "学校会提供部分材料吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 12,
+      "fr": "Puis-je faire un cours d’essai ?",
+      "oldZh": "我可以试课吗?",
+      "newZh": "我可以先试听一节课吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 13,
+      "fr": "Combien coûte le cours ?",
+      "oldZh": "这个课程有多少钱?",
+      "newZh": "这门课多少钱？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 14,
+      "fr": "Comment se passe l’inscription ?",
+      "oldZh": "我怎么能报名?",
+      "newZh": "报名流程是怎样的？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 15,
+      "fr": "Qu’est-ce que tu aimes le plus dans ce cours ?",
+      "oldZh": "你最喜欢这个课程是什么?",
+      "newZh": "你最喜欢这门课的哪一点？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 1,
+      "fr": "À quelle date commence le semestre ?",
+      "oldZh": "学期什么时候开始?",
+      "newZh": "新学期什么时候开始？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 2,
+      "fr": "Puis-je encore inscrire mon enfant maintenant ?",
+      "oldZh": "我现在还能登记我的孩子吗?",
+      "newZh": "现在还来得及给孩子报名吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 3,
+      "fr": "Qu’est-ce qu’on trouve comme écoles dans le quartier ?",
+      "oldZh": "附近有哪些学校?",
+      "newZh": "这个街区有哪些学校？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 4,
+      "fr": "Où se trouve l’école la plus proche ?",
+      "oldZh": "最近的学校在哪里?",
+      "newZh": "最近的学校在哪里？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 5,
+      "fr": "Quel est le moyen le plus simple pour s’y rendre ?",
+      "oldZh": "怎么去那里？",
+      "newZh": "去那里最方便的方式是什么？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 6,
+      "fr": "Que pensez-vous des enseignants ?",
+      "oldZh": "你觉得老师们怎么样?",
+      "newZh": "您觉得这些老师怎么样？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 7,
+      "fr": "Quelle formation ont les enseignants ?",
+      "oldZh": "他们有什么资格?",
+      "newZh": "这些老师接受过什么专业培训？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 8,
+      "fr": "Un test de niveau est-il prévu avant l’entrée ?",
+      "oldZh": "有没有入学前水平测试吗?",
+      "newZh": "入学前会安排水平测试吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 9,
+      "fr": "Comment se déroule ce test ?",
+      "oldZh": "如何进行测试?",
+      "newZh": "这个测试是怎样进行的？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 10,
+      "fr": "Comment se passe l’inscription de mon enfant ?",
+      "oldZh": "我如何注册我的孩子?",
+      "newZh": "我该怎样给孩子办理入学报名？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 11,
+      "fr": "Qu’est-ce qu’il faut fournir comme documents pour l’inscription ?",
+      "oldZh": "报名需要提供哪些文件?",
+      "newZh": "报名需要提交哪些材料？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 12,
+      "fr": "Qu’est-ce qui est proposé comme activités extrascolaires ?",
+      "oldZh": "课外活动有哪些?",
+      "newZh": "学校提供哪些课外活动？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 13,
+      "fr": "Les activités sont-elles bien encadrées et sécurisées ?",
+      "oldZh": "活动是安全的吗?",
+      "newZh": "这些活动有妥善看护并确保安全吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 14,
+      "fr": "Quels frais faut-il prévoir pour l’inscription ?",
+      "oldZh": "有没有报名费用或其他费用?",
+      "newZh": "报名时还需要准备哪些费用？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 15,
+      "fr": "Les nouveaux élèves bénéficient-ils d’un accompagnement à leur arrivée ?",
+      "oldZh": "学校是否为新生提供辅助?",
+      "newZh": "新生入学时会得到适应方面的帮助吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 1,
+      "fr": "Tu avais choisi quel type de cours de cuisine ?",
+      "oldZh": "你去过什么样的课?",
+      "newZh": "你当时选了哪种烹饪课？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 2,
+      "fr": "À quelle heure avaient lieu les cours ?",
+      "oldZh": "课时是什么时候?",
+      "newZh": "当时课程几点开始？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 3,
+      "fr": "Combien de fois par semaine avais-tu cours ?",
+      "oldZh": "你每周有多少次上课?",
+      "newZh": "你当时每周上几次课？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 4,
+      "fr": "Où se déroulaient les cours ?",
+      "oldZh": "课程在哪里举行?",
+      "newZh": "当时课程在哪里上？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 5,
+      "fr": "Quels types de plats as-tu appris à préparer ?",
+      "oldZh": "你学会了如何做什么菜?",
+      "newZh": "你学会了做哪些类型的菜？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 6,
+      "fr": "On te remettait les recettes après le cours ?",
+      "oldZh": "在课后,你得到了这些菜单吗?",
+      "newZh": "下课后会把食谱发给你吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 7,
+      "fr": "Comment as-tu trouvé le professeur ?",
+      "oldZh": "你怎么找到了教授?",
+      "newZh": "你觉得那位老师教得怎么样？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 8,
+      "fr": "Comment expliquait-il les recettes et les techniques ?",
+      "oldZh": "他如何解释食谱和技巧?",
+      "newZh": "他当时是怎样讲解食谱和烹饪技巧的？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 9,
+      "fr": "Vous étiez combien dans le groupe ?",
+      "oldZh": "团队中有多少人?",
+      "newZh": "你们小组当时有多少人？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 10,
+      "fr": "Dois-je apporter des ingrédients ou du matériel ?",
+      "oldZh": "我们是否需要带来任何成分或材料?",
+      "newZh": "我需要自备食材或器材吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 11,
+      "fr": "Tu penses que ce cours conviendrait à une débutante ?",
+      "oldZh": "你认为这个课程适合初学者吗?",
+      "newZh": "你觉得这门课适合初学者吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 12,
+      "fr": "Peut-on faire un cours d’essai ?",
+      "oldZh": "我们可以做试验课吗?",
+      "newZh": "可以先试听一节课吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 13,
+      "fr": "Combien coûte le cours ?",
+      "oldZh": "这个课程有多少钱?",
+      "newZh": "这门课多少钱？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 14,
+      "fr": "Comment se passe l’inscription ?",
+      "oldZh": "我怎么能报名?",
+      "newZh": "报名流程是怎样的？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 15,
+      "fr": "Tu me conseillerais ce cours ?",
+      "oldZh": "你能给我推这个课程吗?",
+      "newZh": "你会推荐我上这门课吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 1,
+      "fr": "Depuis quand cette personne donne-t-elle des cours de cuisine ?",
+      "oldZh": "这个人教了几年了?",
+      "newZh": "这位老师教烹饪有多久了？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 2,
+      "fr": "A-t-elle une formation ou une expérience professionnelle en cuisine ?",
+      "oldZh": "她有过任何培训或厨房专业经验吗?",
+      "newZh": "她受过烹饪培训，或有相关从业经验吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 3,
+      "fr": "Quel type de cuisine enseigne-t-elle surtout ?",
+      "oldZh": "她主要教什么样的?",
+      "newZh": "她主要教哪种菜系的烹饪？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 4,
+      "fr": "Quels créneaux sont disponibles avec elle ?",
+      "oldZh": "它有哪些日期和时间可用?",
+      "newZh": "她目前有哪些可上课的时段？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 5,
+      "fr": "Combien de fois par semaine peut-on prendre des cours ?",
+      "oldZh": "我们可以有多少次上课?",
+      "newZh": "每周可以上几次课？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 6,
+      "fr": "Où donne-t-elle ses cours ?",
+      "oldZh": "她在哪里教课?",
+      "newZh": "她在哪里授课？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 7,
+      "fr": "Les cours se font-ils individuellement ou en petit groupe ?",
+      "oldZh": "课程是个人的还是小组的?",
+      "newZh": "课程是一对一还是小组授课？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 8,
+      "fr": "Comment se déroule généralement un cours avec elle ?",
+      "oldZh": "她通常如何安排课程?",
+      "newZh": "她的课通常是怎样进行的？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 9,
+      "fr": "Elle accepte aussi les débutants ?",
+      "oldZh": "她能接受初学者吗?",
+      "newZh": "她也收初学者吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 10,
+      "fr": "Serait-il possible de faire un premier cours d’essai ?",
+      "oldZh": "有没有可能进行第一次试验课程?",
+      "newZh": "可以先安排一节试听课吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 11,
+      "fr": "Dois-je acheter les ingrédients ou apporter du matériel ?",
+      "oldZh": "我们是否需要购买材料或带来材料?",
+      "newZh": "我需要购买食材或自备器材吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 12,
+      "fr": "Quel est le prix d’un cours ?",
+      "oldZh": "一个课程需要多少钱?",
+      "newZh": "一节课多少钱？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 13,
+      "fr": "Fait-elle un tarif réduit si je réserve plusieurs cours ?",
+      "oldZh": "她是否提供了几门课程的折扣费?",
+      "newZh": "预约多节课她会给优惠价吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 14,
+      "fr": "Comment puis-je la contacter ?",
+      "oldZh": "我如何联系她?",
+      "newZh": "我怎样联系她？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 15,
+      "fr": "Peut-on déplacer un cours en cas d’imprévu ?",
+      "oldZh": "如果不预期,我们可以移动课程吗?",
+      "newZh": "如果临时有事，可以改上课时间吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 1,
+      "fr": "Quels sont les jours et les horaires des cours ?",
+      "oldZh": "课程有哪些日期和时间?",
+      "newZh": "课程安排在哪些日子、什么时间？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 2,
+      "fr": "Combien de fois par semaine les cours ont-ils lieu ?",
+      "oldZh": "课程的频率是多少?",
+      "newZh": "课程每周上几次？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 3,
+      "fr": "Qu’est-ce que vous proposez comme cours de musique ?",
+      "oldZh": "你提供什么样的音乐课程?",
+      "newZh": "您开设哪些音乐课程？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 4,
+      "fr": "Quels instruments peut-on y apprendre ?",
+      "oldZh": "在你的学校可以学习什么乐器?",
+      "newZh": "在这里可以学习哪些乐器？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 5,
+      "fr": "Les cours sont-ils adaptés aux débutants ?",
+      "oldZh": "这些课程是否适合初学者?",
+      "newZh": "这些课程适合初学者吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 6,
+      "fr": "Vous proposez plutôt des cours individuels, en groupe, ou les deux ?",
+      "oldZh": "课程是个人的还是团体的?",
+      "newZh": "您主要提供一对一课程、小组课，还是两种都有？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 7,
+      "fr": "Quelle est la taille des groupes ?",
+      "oldZh": "一个小组中有多少人?",
+      "newZh": "每组有多少人？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 8,
+      "fr": "Puis-je faire un cours d’essai avant de m’inscrire ?",
+      "oldZh": "在报名之前,我可以接受试课吗?",
+      "newZh": "报名之前我可以先试听一节课吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 9,
+      "fr": "L’école fournit-elle les instruments ?",
+      "oldZh": "这些工具是学校提供的吗?",
+      "newZh": "学校会提供乐器吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 10,
+      "fr": "Quelle formation ont suivie les professeurs ?",
+      "oldZh": "教师的资格是什么?",
+      "newZh": "这些老师接受过什么专业培训？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 11,
+      "fr": "Quel est le tarif mensuel des cours ?",
+      "oldZh": "每个月的课程费用是多少?",
+      "newZh": "课程的月费是多少？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 12,
+      "fr": "Proposez-vous un tarif réduit pour plusieurs cours ou plusieurs mois ?",
+      "oldZh": "有几个课程或几个月的折扣费吗?",
+      "newZh": "报名多门课程或连续几个月有优惠吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 13,
+      "fr": "Comment se passe l’inscription ?",
+      "oldZh": "我怎么能报名?",
+      "newZh": "报名流程是怎样的？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 14,
+      "fr": "Qu’est-ce qu’il faut fournir comme documents pour l’inscription ?",
+      "oldZh": "报名需要提供哪些文件?",
+      "newZh": "报名需要提交哪些材料？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 15,
+      "fr": "Peut-on changer d’horaire en cas de problème ?",
+      "oldZh": "如果有问题,可以改变时间吗?",
+      "newZh": "如果有特殊情况，可以改上课时间吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 1,
+      "fr": "À quelle date commence le semestre ?",
+      "oldZh": "学期什么时候开始?",
+      "newZh": "新学期什么时候开始？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 2,
+      "fr": "Puis-je encore inscrire mon enfant maintenant ?",
+      "oldZh": "我现在还能登记我的孩子吗?",
+      "newZh": "现在还来得及给孩子报名吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 3,
+      "fr": "Qu’est-ce qu’on trouve comme écoles dans le quartier ?",
+      "oldZh": "附近有哪些学校?",
+      "newZh": "这个街区有哪些学校？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 4,
+      "fr": "Où se trouve l’école la plus proche ?",
+      "oldZh": "最近的学校在哪里?",
+      "newZh": "最近的学校在哪里？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 5,
+      "fr": "Quel est le moyen le plus simple pour s’y rendre ?",
+      "oldZh": "怎么去那里？",
+      "newZh": "去那里最方便的方式是什么？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 6,
+      "fr": "Que pensez-vous des enseignants ?",
+      "oldZh": "你觉得老师们怎么样?",
+      "newZh": "您觉得这些老师怎么样？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 7,
+      "fr": "Quelle formation ont les enseignants ?",
+      "oldZh": "他们有什么资格?",
+      "newZh": "这些老师接受过什么专业培训？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 8,
+      "fr": "Un test de niveau est-il prévu avant l’entrée ?",
+      "oldZh": "有没有入学前水平测试吗?",
+      "newZh": "入学前会安排水平测试吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 9,
+      "fr": "Comment se déroule ce test ?",
+      "oldZh": "如何进行测试?",
+      "newZh": "这个测试是怎样进行的？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 10,
+      "fr": "Comment se passe l’inscription de mon enfant ?",
+      "oldZh": "我如何注册我的孩子?",
+      "newZh": "我该怎样给孩子办理入学报名？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 11,
+      "fr": "Qu’est-ce qu’il faut fournir comme documents pour l’inscription ?",
+      "oldZh": "报名需要提供哪些文件?",
+      "newZh": "报名需要提交哪些材料？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 12,
+      "fr": "Qu’est-ce qui est proposé comme activités extrascolaires ?",
+      "oldZh": "课外活动有哪些?",
+      "newZh": "学校提供哪些课外活动？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 13,
+      "fr": "Les activités sont-elles bien encadrées et sécurisées ?",
+      "oldZh": "活动是安全的吗?",
+      "newZh": "这些活动有妥善看护并确保安全吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 14,
+      "fr": "Quels frais faut-il prévoir pour l’inscription ?",
+      "oldZh": "有没有报名费用或其他费用?",
+      "newZh": "报名时还需要准备哪些费用？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 15,
+      "fr": "Les nouveaux élèves bénéficient-ils d’un accompagnement à leur arrivée ?",
+      "oldZh": "学校是否为新生提供辅助?",
+      "newZh": "新生入学时会得到适应方面的帮助吗？",
+      "reason": "人工对照法语原句校订中文译文，修正错义、漏义或不自然表达。"
+    }
+  ],
+  "translationEditCount": 255,
+  "entries": [
+    {
+      "month": "2026-10",
+      "number": 2,
+      "sujet": "Je suis votre voisin(e). Je prends des cours de photographie dans l’association du quartier. Vous êtes intéressé(e). Vous me posez des questions sur le cours (prix, horaires, matériel, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            4
+          ]
+        },
+        {
+          "name": "课程",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "水平",
+          "questionNumbers": [
+            6
+          ]
+        },
+        {
+          "name": "体验",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "器材",
+          "questionNumbers": [
+            8,
+            9
+          ]
+        },
+        {
+          "name": "老师",
+          "questionNumbers": [
+            10,
+            11
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            12,
+            13
+          ]
+        },
+        {
+          "name": "报名",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "评价",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 10,
+        "条件情况": 1,
+        "将来尝试": 1,
+        "将来准备": 1,
+        "将来报名": 1,
+        "现在评价": 1
+      },
+      "pronounAndRelevanceReview": "逐问核对人称与信息角度；保留合格原句，只记录确有收益的修改。",
+      "translationReview": "本题15条译文均对照法语逐句校订。",
+      "changeReasons": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "sujet": "Je suis votre ami(e). Je fais du théâtre chaque semaine. Vous voulez vous inscrire. Vous me posez des questions (tarifs, horaires, organisation, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            4
+          ]
+        },
+        {
+          "name": "组织",
+          "questionNumbers": [
+            5,
+            6
+          ]
+        },
+        {
+          "name": "课程",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "水平",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "老师",
+          "questionNumbers": [
+            9,
+            10
+          ]
+        },
+        {
+          "name": "体验",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            12,
+            13
+          ]
+        },
+        {
+          "name": "报名",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "准备",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 12,
+        "将来尝试": 1,
+        "将来报名": 1,
+        "将来准备": 1
+      },
+      "pronounAndRelevanceReview": "逐问核对人称与信息角度；保留合格原句，只记录确有收益的修改。",
+      "translationReview": "本题15条译文均对照法语逐句校订。",
+      "changeReasons": [
+        {
+          "month": "2026-10",
+          "number": 3,
+          "row": 7,
+          "oldFr": "Sur quoi travaillez-vous pendant les cours ?",
+          "newFr": "Sur quoi travailles-tu pendant les cours ?",
+          "zh": "你上课时主要练习什么内容？",
+          "reason": "Sujet中的对话对象是朋友，统一用tu；课程内容问题保持口语自然。"
+        }
+      ],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-10",
+      "number": 4,
+      "sujet": "Je suis professeur de français. Vous venez d’arriver au Canada et vous cherchez des cours particuliers. Vous me posez des questions sur mon parcours (expérience, méthode, prix, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "教师",
+          "questionNumbers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "教学",
+          "questionNumbers": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "name": "形式",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            8,
+            9
+          ]
+        },
+        {
+          "name": "教材",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "体验",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "价格",
+          "questionNumbers": [
+            12,
+            13
+          ]
+        },
+        {
+          "name": "预约",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "考试",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 12,
+        "将来尝试": 1,
+        "将来预约": 1,
+        "将来目标": 1
+      },
+      "pronounAndRelevanceReview": "逐问核对人称与信息角度；保留合格原句，只记录确有收益的修改。",
+      "translationReview": "本题15条译文均对照法语逐句校订。",
+      "changeReasons": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "sujet": "Je suis votre voisin(e). Je donne des cours de cuisine à des particuliers. Vous êtes intéressé(e). Vous me posez des questions pour savoir comment cela se passe (tarifs, plats, participants, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "课程",
+          "questionNumbers": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "name": "组织",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "水平",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "老师",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "体验",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "材料",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            12,
+            13
+          ]
+        },
+        {
+          "name": "报名",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "饮食",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 12,
+        "将来尝试": 1,
+        "将来准备": 1,
+        "将来报名": 1
+      },
+      "pronounAndRelevanceReview": "逐问核对人称与信息角度；保留合格原句，只记录确有收益的修改。",
+      "translationReview": "本题15条译文均对照法语逐句校订。",
+      "changeReasons": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "sujet": "Je travaille à la réception d’une école de musique. Vous voulez vous inscrire à des cours. Vous me posez des questions sur ce que l’école propose (leçons, prix, emploi du temps, instruments, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "课程",
+          "questionNumbers": [
+            3,
+            4
+          ]
+        },
+        {
+          "name": "水平",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "组织",
+          "questionNumbers": [
+            6,
+            7
+          ]
+        },
+        {
+          "name": "体验",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "器材",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "老师",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            11,
+            12
+          ]
+        },
+        {
+          "name": "报名",
+          "questionNumbers": [
+            13,
+            14
+          ]
+        },
+        {
+          "name": "安排",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 11,
+        "将来尝试": 1,
+        "将来报名": 2,
+        "条件情况": 1
+      },
+      "pronounAndRelevanceReview": "逐问核对人称与信息角度；保留合格原句，只记录确有收益的修改。",
+      "translationReview": "本题15条译文均对照法语逐句校订。",
+      "changeReasons": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "sujet": "Je travaille à l’accueil dans une école de musique. Vous voulez vous inscrire à un cours. Vous me posez des questions (types de cours, horaires, tarifs, etc.) et je vous communique des informations.",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "课程",
+          "questionNumbers": [
+            3,
+            4
+          ]
+        },
+        {
+          "name": "水平",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "组织",
+          "questionNumbers": [
+            6,
+            7
+          ]
+        },
+        {
+          "name": "体验",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "器材",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "老师",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            11,
+            12
+          ]
+        },
+        {
+          "name": "报名",
+          "questionNumbers": [
+            13,
+            14
+          ]
+        },
+        {
+          "name": "安排",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 11,
+        "将来尝试": 1,
+        "将来报名": 2,
+        "条件情况": 1
+      },
+      "pronounAndRelevanceReview": "逐问核对人称与信息角度；保留合格原句，只记录确有收益的修改。",
+      "translationReview": "本题15条译文均对照法语逐句校订。",
+      "changeReasons": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "sujet": "Je suis votre voisin(e). Je connais quelqu’un qui propose des cours de musique à domicile. Vous êtes intéressé(e) et vous me posez des questions sur cette personne : ses tarifs, sa disponibilité, son expérience, etc.",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "老师",
+          "questionNumbers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            4,
+            5
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            6
+          ]
+        },
+        {
+          "name": "形式",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "水平",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "方法",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "体验",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "器材",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "价格",
+          "questionNumbers": [
+            12,
+            13
+          ]
+        },
+        {
+          "name": "预约",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "取消",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 11,
+        "将来尝试": 1,
+        "将来准备": 1,
+        "将来联系": 1,
+        "条件情况": 1
+      },
+      "pronounAndRelevanceReview": "逐问核对人称与信息角度；保留合格原句，只记录确有收益的修改。",
+      "translationReview": "本题15条译文均对照法语逐句校订。",
+      "changeReasons": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-08",
+      "number": 5,
+      "sujet": "Je suis votre voisin(e). Je prends des cours de photographie dans l’association du quartier. Vous êtes intéressé(e). Vous me posez des questions sur le cours (prix, horaires, matériel, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            4
+          ]
+        },
+        {
+          "name": "课程",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "水平",
+          "questionNumbers": [
+            6
+          ]
+        },
+        {
+          "name": "体验",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "器材",
+          "questionNumbers": [
+            8,
+            9
+          ]
+        },
+        {
+          "name": "老师",
+          "questionNumbers": [
+            10,
+            11
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            12,
+            13
+          ]
+        },
+        {
+          "name": "报名",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "评价",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 10,
+        "条件情况": 1,
+        "将来尝试": 1,
+        "将来准备": 1,
+        "将来报名": 1,
+        "现在评价": 1
+      },
+      "pronounAndRelevanceReview": "逐问核对人称与信息角度；保留合格原句，只记录确有收益的修改。",
+      "translationReview": "本题15条译文均对照法语逐句校订。",
+      "changeReasons": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-08",
+      "number": 6,
+      "sujet": "Je travaille à l’accueil dans une école de langue. Vous souhaitez suivre une formation en français et vous me posez des questions pour choisir le stage le plus adapté (type de formation, durée, tarifs, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "课程",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "水平",
+          "questionNumbers": [
+            2,
+            3
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "name": "组织",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "教学",
+          "questionNumbers": [
+            8,
+            9
+          ]
+        },
+        {
+          "name": "教材",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "教师",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            12,
+            13
+          ]
+        },
+        {
+          "name": "报名",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "选择",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 13,
+        "将来报名": 1,
+        "将来决定": 1
+      },
+      "pronounAndRelevanceReview": "逐问核对人称与信息角度；保留合格原句，只记录确有收益的修改。",
+      "translationReview": "本题15条译文均对照法语逐句校订。",
+      "changeReasons": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "sujet": "Je suis votre collègue. J’ai pris des cours du soir à l’université pendant un an. Cela vous intéresse. Vous me posez des questions sur les cours (professeurs, horaires, tarifs, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "课程",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "教师",
+          "questionNumbers": [
+            6
+          ]
+        },
+        {
+          "name": "教学",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "组织",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "水平",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "体验",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "教材",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            12,
+            13
+          ]
+        },
+        {
+          "name": "报名",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "过去经验": 7,
+        "过去评价": 1,
+        "现在建议": 1,
+        "将来计划": 1,
+        "现在信息": 3,
+        "将来报名": 1,
+        "现在评价": 1
+      },
+      "pronounAndRelevanceReview": "逐问核对人称与信息角度；保留合格原句，只记录确有收益的修改。",
+      "translationReview": "本题15条译文均对照法语逐句校订。",
+      "changeReasons": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "sujet": "Je suis votre voisin, je travaille dans une école de musique. Vous êtes intéressé. Posez-moi des questions (cours, horaire, prix).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "课程",
+          "questionNumbers": [
+            3,
+            4
+          ]
+        },
+        {
+          "name": "水平",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "组织",
+          "questionNumbers": [
+            6,
+            7
+          ]
+        },
+        {
+          "name": "体验",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "器材",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "老师",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            11,
+            12
+          ]
+        },
+        {
+          "name": "报名",
+          "questionNumbers": [
+            13,
+            14
+          ]
+        },
+        {
+          "name": "安排",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 11,
+        "将来尝试": 1,
+        "将来报名": 2,
+        "条件情况": 1
+      },
+      "pronounAndRelevanceReview": "逐问核对人称与信息角度；保留合格原句，只记录确有收益的修改。",
+      "translationReview": "本题15条译文均对照法语逐句校订。",
+      "changeReasons": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "sujet": "Je suis votre ami(e). Je prends des cours de dessin. Vous êtes intéressé(e) et vous me posez des questions pour avoir des informations (les tarifs, l’école, les professeurs, les horaires, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "课程",
+          "questionNumbers": [
+            4
+          ]
+        },
+        {
+          "name": "评价",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "水平",
+          "questionNumbers": [
+            6
+          ]
+        },
+        {
+          "name": "老师",
+          "questionNumbers": [
+            7,
+            8
+          ]
+        },
+        {
+          "name": "组织",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "材料",
+          "questionNumbers": [
+            10,
+            11
+          ]
+        },
+        {
+          "name": "体验",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "报名",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 9,
+        "现在评价": 3,
+        "将来准备": 1,
+        "将来尝试": 1,
+        "将来报名": 1
+      },
+      "pronounAndRelevanceReview": "逐问核对人称与信息角度；保留合格原句，只记录确有收益的修改。",
+      "translationReview": "本题15条译文均对照法语逐句校订。",
+      "changeReasons": [
+        {
+          "month": "2026-07",
+          "number": 3,
+          "row": 4,
+          "oldFr": "Vous apprenez quoi concrètement pendant les cours ?",
+          "newFr": "Tu apprends quoi concrètement pendant les cours ?",
+          "zh": "你上课时具体学些什么？",
+          "reason": "Sujet中的对话对象是朋友，统一用tu，避免与相邻问题的人称不一致。"
+        }
+      ],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "sujet": "Je suis votre voisin(e). Vous venez d’arriver à Edmonton. Vous voulez inscrire vos enfants à l’école. Vous me posez des questions sur les écoles du quartier (adresses, enseignants, activités, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "报名",
+          "questionNumbers": [
+            2,
+            10,
+            11
+          ]
+        },
+        {
+          "name": "学校",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            4
+          ]
+        },
+        {
+          "name": "交通",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "教师",
+          "questionNumbers": [
+            6,
+            7
+          ]
+        },
+        {
+          "name": "入学",
+          "questionNumbers": [
+            8,
+            9
+          ]
+        },
+        {
+          "name": "活动",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "安全",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "适应",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 10,
+        "将来计划": 1,
+        "现在评价": 1,
+        "将来报名": 2,
+        "将来适应": 1
+      },
+      "pronounAndRelevanceReview": "逐问核对人称与信息角度；保留合格原句，只记录确有收益的修改。",
+      "translationReview": "本题15条译文均对照法语逐句校订。",
+      "changeReasons": [
+        {
+          "month": "2026-07",
+          "number": 4,
+          "row": 9,
+          "oldFr": "↳ Comment se déroule ce test ?",
+          "newFr": "Comment se déroule ce test ?",
+          "zh": "这个测试是怎样进行的？",
+          "reason": "跟进提示由follow字段负责显示；移除法语文本中的手写箭头，避免影响单句练习和Piper语音。"
+        }
+      ],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "sujet": "Je suis votre ami(e). J’ai suivi un cours de cuisine. Vous voulez vous y inscrire. Vous me posez des questions sur ce cours (prix, horaires, programme, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "课程",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            2,
+            3
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            4
+          ]
+        },
+        {
+          "name": "内容",
+          "questionNumbers": [
+            5,
+            6
+          ]
+        },
+        {
+          "name": "老师",
+          "questionNumbers": [
+            7,
+            8
+          ]
+        },
+        {
+          "name": "组织",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "材料",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "水平",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "体验",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "报名",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "过去经验": 8,
+        "过去评价": 1,
+        "现在信息": 2,
+        "现在建议": 1,
+        "将来计划": 1,
+        "将来报名": 1,
+        "现在评价": 1
+      },
+      "pronounAndRelevanceReview": "逐问核对人称与信息角度；保留合格原句，只记录确有收益的修改。",
+      "translationReview": "本题15条译文均对照法语逐句校订。",
+      "changeReasons": [
+        {
+          "month": "2026-07",
+          "number": 5,
+          "row": 5,
+          "oldFr": "Vous avez appris à préparer quels types de plats ?",
+          "newFr": "Quels types de plats as-tu appris à préparer ?",
+          "zh": "你学会了做哪些类型的菜？",
+          "reason": "回顾朋友的烹饪课经历，统一用tu，并将疑问焦点前置表达得更自然。"
+        },
+        {
+          "month": "2026-07",
+          "number": 5,
+          "row": 6,
+          "oldFr": "On vous donnait les recettes après le cours ?",
+          "newFr": "On te remettait les recettes après le cours ?",
+          "zh": "下课后会把食谱发给你吗？",
+          "reason": "回顾朋友的课程经历，改为单数间接宾语te；remettre表达课后发放食谱更自然。"
+        }
+      ],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "sujet": "Je suis votre ami(e). Je connais une personne qui donne des cours de cuisine. Vous êtes intéressé(e). Vous me posez des questions sur cette personne (expérience, disponibilité, tarifs, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "老师",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "课程",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            4,
+            5
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            6
+          ]
+        },
+        {
+          "name": "形式",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "方法",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "水平",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "体验",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "材料",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "价格",
+          "questionNumbers": [
+            12,
+            13
+          ]
+        },
+        {
+          "name": "联系",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "取消",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 11,
+        "将来尝试": 1,
+        "将来准备": 1,
+        "将来联系": 1,
+        "条件情况": 1
+      },
+      "pronounAndRelevanceReview": "逐问核对人称与信息角度；保留合格原句，只记录确有收益的修改。",
+      "translationReview": "本题15条译文均对照法语逐句校订。",
+      "changeReasons": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "sujet": "Je travaille à l’accueil dans une école de musique. Vous voulez vous inscrire à un cours. Vous me posez des questions (types de cours, horaires, tarifs, etc.) et je vous donne des informations.",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "课程",
+          "questionNumbers": [
+            3,
+            4
+          ]
+        },
+        {
+          "name": "水平",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "组织",
+          "questionNumbers": [
+            6,
+            7
+          ]
+        },
+        {
+          "name": "体验",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "器材",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "老师",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            11,
+            12
+          ]
+        },
+        {
+          "name": "报名",
+          "questionNumbers": [
+            13,
+            14
+          ]
+        },
+        {
+          "name": "安排",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 11,
+        "将来尝试": 1,
+        "将来报名": 2,
+        "条件情况": 1
+      },
+      "pronounAndRelevanceReview": "逐问核对人称与信息角度；保留合格原句，只记录确有收益的修改。",
+      "translationReview": "本题15条译文均对照法语逐句校订。",
+      "changeReasons": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "sujet": "Je suis votre voisin(e). Vous venez d’arriver au Canada et vous cherchez une école pour vos enfants. Posez-moi des questions (types d’écoles, inscriptions, activités, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "报名",
+          "questionNumbers": [
+            2,
+            10,
+            11
+          ]
+        },
+        {
+          "name": "学校",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            4
+          ]
+        },
+        {
+          "name": "交通",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "教师",
+          "questionNumbers": [
+            6,
+            7
+          ]
+        },
+        {
+          "name": "入学",
+          "questionNumbers": [
+            8,
+            9
+          ]
+        },
+        {
+          "name": "活动",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "安全",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "适应",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 10,
+        "将来计划": 1,
+        "现在评价": 1,
+        "将来报名": 2,
+        "将来适应": 1
+      },
+      "pronounAndRelevanceReview": "逐问核对人称与信息角度；保留合格原句，只记录确有收益的修改。",
+      "translationReview": "本题15条译文均对照法语逐句校订。",
+      "changeReasons": [
+        {
+          "month": "2026-07",
+          "number": 8,
+          "row": 9,
+          "oldFr": "↳ Comment se déroule ce test ?",
+          "newFr": "Comment se déroule ce test ?",
+          "zh": "这个测试是怎样进行的？",
+          "reason": "跟进提示由follow字段负责显示；移除法语文本中的手写箭头，避免影响单句练习和Piper语音。"
+        }
+      ],
+      "translationEditCount": 15
+    }
+  ],
+  "piperCoverage": {
+    "status": "pending-generation",
+    "voice": "fr_FR-siwis-medium",
+    "uniqueFrenchQuestions": 155,
+    "matched": 151,
+    "missing": [
+      "On te remettait les recettes après le cours ?",
+      "Quels types de plats as-tu appris à préparer ?",
+      "Sur quoi travailles-tu pendant les cours ?",
+      "Tu apprends quoi concrètement pendant les cours ?"
+    ]
+  },
+  "runtimeChecks": {
+    "sujetCount": 17,
+    "expectedSujetCount": 17,
+    "questionSlots": 255,
+    "expectedQuestionSlots": 255,
+    "allSujetsHave15Questions": true,
+    "allRowsHaveFrenchAndChinese": true,
+    "noDuplicateFrenchPerSujet": true,
+    "frenchProgressKeysDifferFromOriginal": true,
+    "followMarkerRows": 2
+  }
+}

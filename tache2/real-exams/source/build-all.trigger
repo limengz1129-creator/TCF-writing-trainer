@@ -1,2 +1,2 @@
-theme=social
-revision=3
+theme=education
+revision=4
