@@ -1,0 +1,1991 @@
+{
+  "version": "culture-review-2026-10-18-v1",
+  "theme": "文化媒体与节庆",
+  "sujets": [
+    {
+      "month": "2026-10",
+      "number": 1,
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            4
+          ]
+        },
+        {
+          "name": "交通",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "类型",
+          "questionNumbers": [
+            6
+          ]
+        },
+        {
+          "name": "节目",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "演员",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "座位",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "价格",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "支付",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "同行",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "评价",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "资料",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "确认",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 10,
+        "将来计划": 2,
+        "将来购买": 1,
+        "现在评价": 1,
+        "将来安排": 1
+      },
+      "pronounAndRelevanceReview": "将“交通方式”限定为从市中心出发以消除出发点歧义；把指代含混的座位问法改为直接询问两张票的座位；明确还票款和取票方式。",
+      "translationReview": "15句中文逐句核对并校订，确保与法语提问含义一致。",
+      "changeReasons": [
+        {
+          "month": "2026-10",
+          "number": 1,
+          "row": 2,
+          "oldFr": "Le concert commencera à quelle heure ?",
+          "newFr": "À quelle heure le spectacle commencera-t-il ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-10",
+          "number": 1,
+          "row": 3,
+          "oldFr": "Le spectacle durera combien de temps ?",
+          "newFr": "Combien de temps durera le spectacle ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-10",
+          "number": 1,
+          "row": 4,
+          "oldFr": "Dans quel lieu se déroulera le spectacle exactement ?",
+          "newFr": "Dans quelle salle le spectacle aura-t-il lieu ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-10",
+          "number": 1,
+          "row": 5,
+          "oldFr": "Quel est le moyen le plus simple pour m’y rendre ?",
+          "newFr": "Quel est le moyen le plus simple pour m’y rendre depuis le centre-ville ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-10",
+          "number": 1,
+          "row": 9,
+          "oldFr": "Elles sont situées où, les deux places ?",
+          "newFr": "Où se trouvent les deux places ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-10",
+          "number": 1,
+          "row": 11,
+          "oldFr": "Tu préfères que je te paie les billets comment ?",
+          "newFr": "Comment préférez-vous que je vous paie les billets ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-10",
+          "number": 1,
+          "row": 12,
+          "oldFr": "Je peux venir avec la personne de mon choix ?",
+          "newFr": "Est-ce que je peux venir avec la personne de mon choix ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-10",
+          "number": 1,
+          "row": 13,
+          "oldFr": "Tu penses que ce spectacle vaut vraiment le détour ?",
+          "newFr": "Pensez-vous que ce spectacle vaut vraiment le détour ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-10",
+          "number": 1,
+          "row": 14,
+          "oldFr": "Existe-t-il un programme ou une brochure avec plus de détails ?",
+          "newFr": "Existe-t-il un programme ou une brochure qui donne plus de détails ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-10",
+          "number": 1,
+          "row": 15,
+          "oldFr": "Comment se passe la récupération des billets ?",
+          "newFr": "Comment puis-je récupérer les billets ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        }
+      ]
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "类型",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "推荐",
+          "questionNumbers": [
+            2
+          ]
+        },
+        {
+          "name": "剧情",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "演员",
+          "questionNumbers": [
+            4
+          ]
+        },
+        {
+          "name": "评价",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "长度",
+          "questionNumbers": [
+            6,
+            7
+          ]
+        },
+        {
+          "name": "季数",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "平台",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "语言",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "字幕",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "人气",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "比较",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "适合度",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 11,
+        "现在建议": 3,
+        "现在评价": 1
+      },
+      "pronounAndRelevanceReview": "保留类型、剧情、演员、长度、平台、字幕与比较等不同角度；逐句订正中文口语表达。",
+      "translationReview": "15句中文逐句核对并校订，确保与法语提问含义一致。",
+      "changeReasons": []
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "经验",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "平台",
+          "questionNumbers": [
+            2
+          ]
+        },
+        {
+          "name": "主题",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "栏目",
+          "questionNumbers": [
+            4
+          ]
+        },
+        {
+          "name": "内容",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "节奏",
+          "questionNumbers": [
+            6
+          ]
+        },
+        {
+          "name": "写作",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "照片",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "读者",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "互动",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "推广",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "社交媒体",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "工具",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "建议",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "准备",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "过去经验": 1,
+        "现在信息": 2,
+        "将来规划": 3,
+        "现在经验": 7,
+        "现在建议": 1,
+        "将来准备": 1
+      },
+      "pronounAndRelevanceReview": "调整博客发布频率、目标读者及图片数量问法，使语序自然并切合旅行博客建议场景。",
+      "translationReview": "15句中文逐句核对并校订，确保与法语提问含义一致。",
+      "changeReasons": [
+        {
+          "month": "2026-09",
+          "number": 1,
+          "row": 6,
+          "oldFr": "Tu publies de nouveaux articles combien de fois par semaine ou par mois ?",
+          "newFr": "À quelle fréquence publies-tu de nouveaux articles ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-09",
+          "number": 1,
+          "row": 8,
+          "oldFr": "Tu conseillerais de mettre combien de photos dans un article ?",
+          "newFr": "Combien de photos conseillerais-tu de mettre dans un article ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-09",
+          "number": 1,
+          "row": 9,
+          "oldFr": "À quel public devrais-je m’adresser avec mon blog ?",
+          "newFr": "Quel public devrais-je viser avec mon blog ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        }
+      ]
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "类型",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "主题",
+          "questionNumbers": [
+            2
+          ]
+        },
+        {
+          "name": "推荐",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "语言",
+          "questionNumbers": [
+            4,
+            5
+          ]
+        },
+        {
+          "name": "内容",
+          "questionNumbers": [
+            6
+          ]
+        },
+        {
+          "name": "频率",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "价格",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "订阅",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "电子版",
+          "questionNumbers": [
+            10,
+            11
+          ]
+        },
+        {
+          "name": "样刊",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "比较",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "口碑",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "购买",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 11,
+        "现在建议": 2,
+        "将来选择": 1,
+        "将来购买": 1
+      },
+      "pronounAndRelevanceReview": "明确出版频率、单期价格、订阅和样刊角度，订正报刊术语译文。",
+      "translationReview": "15句中文逐句核对并校订，确保与法语提问含义一致。",
+      "changeReasons": [
+        {
+          "month": "2026-09",
+          "number": 2,
+          "row": 5,
+          "oldFr": "Les articles sont-ils plutôt faciles à comprendre ?",
+          "newFr": "Les articles sont-ils faciles à comprendre ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-09",
+          "number": 2,
+          "row": 7,
+          "oldFr": "Il paraît à quelle fréquence ?",
+          "newFr": "À quelle fréquence ce journal paraît-il ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        }
+      ]
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "活动",
+          "questionNumbers": [
+            4,
+            6
+          ]
+        },
+        {
+          "name": "内容形式",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "传统",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "图片",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "餐饮",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "穿着",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "天气",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "交通",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "预订",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "家庭",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 10,
+        "将来准备": 2,
+        "将来计划": 2,
+        "现在建议": 1
+      },
+      "pronounAndRelevanceReview": "保持教师称谓vous；区分既有庆祝习惯与首次参加的准备/计划，修正内容形式和图片维度。",
+      "translationReview": "15句中文逐句核对并校订，确保与法语提问含义一致。",
+      "changeReasons": [
+        {
+          "month": "2026-09",
+          "number": 3,
+          "row": 4,
+          "oldFr": "Qu’est-ce qu’on fait le plus souvent pendant cette soirée ?",
+          "newFr": "Quelles activités sont les plus fréquentes pendant cette soirée ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-09",
+          "number": 3,
+          "row": 11,
+          "oldFr": "Comme il fait froid, qu’est-ce que vous me conseilleriez d’emporter ?",
+          "newFr": "Comme il fait froid, que me conseillez-vous d’emporter ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        }
+      ]
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "活动",
+          "questionNumbers": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "name": "传统",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "餐饮",
+          "questionNumbers": [
+            8,
+            9
+          ]
+        },
+        {
+          "name": "穿着",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "天气",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "交通",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "预订",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "家庭",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 10,
+        "将来准备": 2,
+        "将来计划": 2,
+        "现在建议": 1
+      },
+      "pronounAndRelevanceReview": "同一新年Sujet与2026-09第3题完全相同，保留共用问题库；核对称谓、信息角度和时间线。",
+      "translationReview": "15句中文逐句核对并校订，确保与法语提问含义一致。",
+      "changeReasons": [
+        {
+          "month": "2026-08",
+          "number": 1,
+          "row": 4,
+          "oldFr": "Qu’est-ce qu’on fait le plus souvent pendant cette soirée ?",
+          "newFr": "Quelles activités sont les plus fréquentes pendant cette soirée ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-08",
+          "number": 1,
+          "row": 11,
+          "oldFr": "Comme il fait froid, qu’est-ce que vous me conseilleriez d’emporter ?",
+          "newFr": "Comme il fait froid, que me conseillez-vous d’emporter ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        }
+      ]
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            4
+          ]
+        },
+        {
+          "name": "交通",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "节目",
+          "questionNumbers": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "name": "价格",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "优惠",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "支付",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "餐饮",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "服务",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "安全",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "购票",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 12,
+        "将来计划": 1,
+        "将来购买": 1,
+        "将来参加": 1
+      },
+      "pronounAndRelevanceReview": "面向熟人使用tu；区分日期、节目、票价、现场服务、安全和购票安排。",
+      "translationReview": "15句中文逐句核对并校订，确保与法语提问含义一致。",
+      "changeReasons": [
+        {
+          "month": "2026-08",
+          "number": 2,
+          "row": 1,
+          "oldFr": "Le festival aura lieu de quelle date à quelle date ?",
+          "newFr": "À quelles dates le festival aura-t-il lieu ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-08",
+          "number": 2,
+          "row": 5,
+          "oldFr": "Quel est le moyen le plus simple pour m’y rendre ?",
+          "newFr": "Quel est le moyen le plus simple pour m’y rendre depuis le centre-ville ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-08",
+          "number": 2,
+          "row": 6,
+          "oldFr": "Quels styles de musique seront au programme ?",
+          "newFr": "Quels styles de musique seront représentés ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-08",
+          "number": 2,
+          "row": 11,
+          "oldFr": "Comment peut-on payer sur place ?",
+          "newFr": "Quels moyens de paiement acceptez-vous sur place ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-08",
+          "number": 2,
+          "row": 13,
+          "oldFr": "Qu’est-ce qui sera disponible comme services sur le site ?",
+          "newFr": "Quels services seront disponibles sur le site ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        }
+      ]
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            4
+          ]
+        },
+        {
+          "name": "交通",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "停车",
+          "questionNumbers": [
+            6
+          ]
+        },
+        {
+          "name": "类型",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "体验",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "评价",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "演员",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "价格",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "座位",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "同行",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "预订",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 10,
+        "将来计划": 2,
+        "过去经验": 1,
+        "过去评价": 1,
+        "现在建议": 1
+      },
+      "pronounAndRelevanceReview": "Sujet中的同事使用vous；过去体验及评价连续追问一致使用vous，避免误用tu。",
+      "translationReview": "15句中文逐句核对并校订，确保与法语提问含义一致。",
+      "changeReasons": [
+        {
+          "month": "2026-08",
+          "number": 3,
+          "row": 3,
+          "oldFr": "Il va durer combien de temps ?",
+          "newFr": "Combien de temps va-t-il durer ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-08",
+          "number": 3,
+          "row": 5,
+          "oldFr": "Quel est le moyen le plus simple pour y aller ?",
+          "newFr": "Quel est le moyen le plus simple pour s’y rendre ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-08",
+          "number": 3,
+          "row": 8,
+          "oldFr": "Tu as déjà assisté à ce type de spectacle ?",
+          "newFr": "Avez-vous déjà assisté à ce type de spectacle ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-08",
+          "number": 3,
+          "row": 9,
+          "oldFr": "↳ Et tu en as pensé quoi ?",
+          "newFr": "Et qu’en avez-vous pensé ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-08",
+          "number": 3,
+          "row": 10,
+          "oldFr": "Il y aura combien d’acteurs ou d’artistes ?",
+          "newFr": "Combien y aura-t-il d’acteurs ou d’artistes ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-08",
+          "number": 3,
+          "row": 15,
+          "oldFr": "D’après toi, ça vaut vraiment le coup d’y aller ?",
+          "newFr": "D’après vous, ça vaut vraiment le coup d’y aller ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        }
+      ]
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "类型",
+          "questionNumbers": [
+            1,
+            3
+          ]
+        },
+        {
+          "name": "推荐",
+          "questionNumbers": [
+            2
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "演员",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "座位",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "价格",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "优惠",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "语言",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "预订",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "取消",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "支付",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 11,
+        "现在建议": 1,
+        "将来购买": 2,
+        "条件情况": 1
+      },
+      "pronounAndRelevanceReview": "面向售票处工作人员使用vous；区分演出内容、座位类别、优惠、语言适配、预订/改签与付款。",
+      "translationReview": "15句中文逐句核对并校订，确保与法语提问含义一致。",
+      "changeReasons": [
+        {
+          "month": "2026-08",
+          "number": 4,
+          "row": 1,
+          "oldFr": "Qu’est-ce que vous proposez comme spectacles cette semaine ?",
+          "newFr": "Quels spectacles proposez-vous cette semaine ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-08",
+          "number": 4,
+          "row": 2,
+          "oldFr": "Lequel me conseilleriez-vous en priorité ?",
+          "newFr": "Lequel me conseillez-vous en priorité ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-08",
+          "number": 4,
+          "row": 4,
+          "oldFr": "Il aura lieu à quelle date ?",
+          "newFr": "À quelle date aura-t-il lieu ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-08",
+          "number": 4,
+          "row": 5,
+          "oldFr": "Le concert commencera à quelle heure ?",
+          "newFr": "À quelle heure le spectacle commencera-t-il ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-08",
+          "number": 4,
+          "row": 6,
+          "oldFr": "Il dure combien de temps ?",
+          "newFr": "Combien de temps dure-t-il ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-08",
+          "number": 4,
+          "row": 15,
+          "oldFr": "Comment peut-on payer sur place ?",
+          "newFr": "Quels moyens de paiement acceptez-vous sur place ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        }
+      ]
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "节目",
+          "questionNumbers": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "name": "语言",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "嘉宾",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "活动",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "价格",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "通票",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "优惠",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "购票",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "餐饮",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "预订",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 12,
+        "现在建议": 1,
+        "将来参加": 2
+      },
+      "pronounAndRelevanceReview": "面向节庆主办者使用tu；将节目、字幕、嘉宾、票价、通票和提前预订分成独立角度。",
+      "translationReview": "15句中文逐句核对并校订，确保与法语提问含义一致。",
+      "changeReasons": [
+        {
+          "month": "2026-07",
+          "number": 1,
+          "row": 1,
+          "oldFr": "Le festival aura lieu de quelle date à quelle date ?",
+          "newFr": "À quelles dates le festival aura-t-il lieu ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-07",
+          "number": 1,
+          "row": 2,
+          "oldFr": "Les projections commencent à quelles heures ?",
+          "newFr": "À quelles heures commencent les projections ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-07",
+          "number": 1,
+          "row": 10,
+          "oldFr": "Quel est le prix d’une séance ?",
+          "newFr": "Quel est le prix d’une séance de projection ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        }
+      ]
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            4
+          ]
+        },
+        {
+          "name": "交通",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "音乐",
+          "questionNumbers": [
+            6,
+            7
+          ]
+        },
+        {
+          "name": "歌曲",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "体验",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "评价",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "价格",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "座位",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "同行",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "预订",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 10,
+        "将来计划": 2,
+        "过去经验": 1,
+        "过去评价": 1,
+        "现在建议": 1
+      },
+      "pronounAndRelevanceReview": "面向朋友使用tu；分别询问演出经历与评价，并保留日期、曲目、座位和购票角度。",
+      "translationReview": "15句中文逐句核对并校订，确保与法语提问含义一致。",
+      "changeReasons": [
+        {
+          "month": "2026-07",
+          "number": 2,
+          "row": 1,
+          "oldFr": "Quand aura lieu le concert exactement ?",
+          "newFr": "Quand le concert aura-t-il lieu exactement ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-07",
+          "number": 2,
+          "row": 2,
+          "oldFr": "Le concert commencera à quelle heure ?",
+          "newFr": "À quelle heure le spectacle commencera-t-il ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-07",
+          "number": 2,
+          "row": 3,
+          "oldFr": "Le concert durera combien de temps ?",
+          "newFr": "Combien de temps durera le concert ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-07",
+          "number": 2,
+          "row": 5,
+          "oldFr": "Quel est le moyen le plus simple pour y aller ?",
+          "newFr": "Quel est le moyen le plus simple pour s’y rendre ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-07",
+          "number": 2,
+          "row": 8,
+          "oldFr": "Tu sais quelles chansons sont prévues ?",
+          "newFr": "Sais-tu quelles chansons sont au programme ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-07",
+          "number": 2,
+          "row": 9,
+          "oldFr": "Tu as déjà assisté à un concert de cet artiste ?",
+          "newFr": "As-tu déjà assisté à un concert de cet artiste ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-07",
+          "number": 2,
+          "row": 10,
+          "oldFr": "↳ Et qu’est-ce que tu en as pensé ?",
+          "newFr": "Et qu’en as-tu pensé ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-07",
+          "number": 2,
+          "row": 12,
+          "oldFr": "Nos places seront situées où ?",
+          "newFr": "Où se trouveront nos places ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-07",
+          "number": 2,
+          "row": 13,
+          "oldFr": "D’autres amis vont-ils venir avec nous ?",
+          "newFr": "Est-ce que d’autres amis viendront avec nous ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        },
+        {
+          "month": "2026-07",
+          "number": 2,
+          "row": 14,
+          "oldFr": "Comment se passent l’achat ou la réservation des billets ?",
+          "newFr": "Comment peut-on acheter ou réserver les billets ?",
+          "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+        }
+      ]
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "类型",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "推荐",
+          "questionNumbers": [
+            2
+          ]
+        },
+        {
+          "name": "剧情",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "演员",
+          "questionNumbers": [
+            4
+          ]
+        },
+        {
+          "name": "评价",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "长度",
+          "questionNumbers": [
+            6,
+            7
+          ]
+        },
+        {
+          "name": "季数",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "平台",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "语言",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "字幕",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "人气",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "比较",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "适合度",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 11,
+        "现在建议": 3,
+        "现在评价": 1
+      },
+      "pronounAndRelevanceReview": "与2026-10第2题相同的系列选择Sujet，共用同一问题库；逐句校订中文。",
+      "translationReview": "15句中文逐句核对并校订，确保与法语提问含义一致。",
+      "changeReasons": []
+    }
+  ],
+  "questionSlots": 180,
+  "status": "ready_for_audio_rebuild",
+  "approval": "pending_audio_and_pages",
+  "source": "tache2/real-exams/source/culture.json.gz.b64",
+  "runtime": "tache2/real-exams/data/culture.json",
+  "reviewMethod": [
+    "以完整备份为基线，对12个Sujet逐题检查15问和信息角度，不将三维标签本身当作审查结论。",
+    "结合Sujet角色逐句检查vous/tu、疑问结构、代词指代及过去经历/当前信息/未来计划的时间关系。",
+    "180条中文逐句核对，并修复与法语意思不一致或生硬的译文。",
+    "只在自然度、角色一致或语义明确方面有收益时改写法语；所有改写行赋予新progressKey。",
+    "完成Piper音频包逐条核验和GitHub Pages成功部署后才通过。"
+  ],
+  "findings": [
+    "保留12个Sujet及每题15问；新年题与系列剧题在原库中重复出现，内容重复属于重复真题，保留同一套问题库。",
+    "发现并修正同事Sujet两条连续追问误用tu的问题，按vous保持称谓一致。",
+    "修正原中文中交通方向、节目/场次、订阅、票务等多处误译；重新检查每题的维度角度与时间线。"
+  ],
+  "limitations": [
+    "待Piper音频和GitHub Pages检查。"
+  ],
+  "changes": [
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 2,
+      "oldFr": "Le concert commencera à quelle heure ?",
+      "newFr": "À quelle heure le spectacle commencera-t-il ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 3,
+      "oldFr": "Le spectacle durera combien de temps ?",
+      "newFr": "Combien de temps durera le spectacle ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 4,
+      "oldFr": "Dans quel lieu se déroulera le spectacle exactement ?",
+      "newFr": "Dans quelle salle le spectacle aura-t-il lieu ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 5,
+      "oldFr": "Quel est le moyen le plus simple pour m’y rendre ?",
+      "newFr": "Quel est le moyen le plus simple pour m’y rendre depuis le centre-ville ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 9,
+      "oldFr": "Elles sont situées où, les deux places ?",
+      "newFr": "Où se trouvent les deux places ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 11,
+      "oldFr": "Tu préfères que je te paie les billets comment ?",
+      "newFr": "Comment préférez-vous que je vous paie les billets ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 12,
+      "oldFr": "Je peux venir avec la personne de mon choix ?",
+      "newFr": "Est-ce que je peux venir avec la personne de mon choix ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 13,
+      "oldFr": "Tu penses que ce spectacle vaut vraiment le détour ?",
+      "newFr": "Pensez-vous que ce spectacle vaut vraiment le détour ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 14,
+      "oldFr": "Existe-t-il un programme ou une brochure avec plus de détails ?",
+      "newFr": "Existe-t-il un programme ou une brochure qui donne plus de détails ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 15,
+      "oldFr": "Comment se passe la récupération des billets ?",
+      "newFr": "Comment puis-je récupérer les billets ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 6,
+      "oldFr": "Tu publies de nouveaux articles combien de fois par semaine ou par mois ?",
+      "newFr": "À quelle fréquence publies-tu de nouveaux articles ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 8,
+      "oldFr": "Tu conseillerais de mettre combien de photos dans un article ?",
+      "newFr": "Combien de photos conseillerais-tu de mettre dans un article ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 9,
+      "oldFr": "À quel public devrais-je m’adresser avec mon blog ?",
+      "newFr": "Quel public devrais-je viser avec mon blog ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 5,
+      "oldFr": "Les articles sont-ils plutôt faciles à comprendre ?",
+      "newFr": "Les articles sont-ils faciles à comprendre ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 7,
+      "oldFr": "Il paraît à quelle fréquence ?",
+      "newFr": "À quelle fréquence ce journal paraît-il ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 4,
+      "oldFr": "Qu’est-ce qu’on fait le plus souvent pendant cette soirée ?",
+      "newFr": "Quelles activités sont les plus fréquentes pendant cette soirée ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 11,
+      "oldFr": "Comme il fait froid, qu’est-ce que vous me conseilleriez d’emporter ?",
+      "newFr": "Comme il fait froid, que me conseillez-vous d’emporter ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 4,
+      "oldFr": "Qu’est-ce qu’on fait le plus souvent pendant cette soirée ?",
+      "newFr": "Quelles activités sont les plus fréquentes pendant cette soirée ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 11,
+      "oldFr": "Comme il fait froid, qu’est-ce que vous me conseilleriez d’emporter ?",
+      "newFr": "Comme il fait froid, que me conseillez-vous d’emporter ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 1,
+      "oldFr": "Le festival aura lieu de quelle date à quelle date ?",
+      "newFr": "À quelles dates le festival aura-t-il lieu ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 5,
+      "oldFr": "Quel est le moyen le plus simple pour m’y rendre ?",
+      "newFr": "Quel est le moyen le plus simple pour m’y rendre depuis le centre-ville ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 6,
+      "oldFr": "Quels styles de musique seront au programme ?",
+      "newFr": "Quels styles de musique seront représentés ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 11,
+      "oldFr": "Comment peut-on payer sur place ?",
+      "newFr": "Quels moyens de paiement acceptez-vous sur place ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 13,
+      "oldFr": "Qu’est-ce qui sera disponible comme services sur le site ?",
+      "newFr": "Quels services seront disponibles sur le site ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 3,
+      "oldFr": "Il va durer combien de temps ?",
+      "newFr": "Combien de temps va-t-il durer ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 5,
+      "oldFr": "Quel est le moyen le plus simple pour y aller ?",
+      "newFr": "Quel est le moyen le plus simple pour s’y rendre ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 8,
+      "oldFr": "Tu as déjà assisté à ce type de spectacle ?",
+      "newFr": "Avez-vous déjà assisté à ce type de spectacle ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 9,
+      "oldFr": "↳ Et tu en as pensé quoi ?",
+      "newFr": "Et qu’en avez-vous pensé ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 10,
+      "oldFr": "Il y aura combien d’acteurs ou d’artistes ?",
+      "newFr": "Combien y aura-t-il d’acteurs ou d’artistes ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 15,
+      "oldFr": "D’après toi, ça vaut vraiment le coup d’y aller ?",
+      "newFr": "D’après vous, ça vaut vraiment le coup d’y aller ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 1,
+      "oldFr": "Qu’est-ce que vous proposez comme spectacles cette semaine ?",
+      "newFr": "Quels spectacles proposez-vous cette semaine ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 2,
+      "oldFr": "Lequel me conseilleriez-vous en priorité ?",
+      "newFr": "Lequel me conseillez-vous en priorité ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 4,
+      "oldFr": "Il aura lieu à quelle date ?",
+      "newFr": "À quelle date aura-t-il lieu ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 5,
+      "oldFr": "Le concert commencera à quelle heure ?",
+      "newFr": "À quelle heure le spectacle commencera-t-il ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 6,
+      "oldFr": "Il dure combien de temps ?",
+      "newFr": "Combien de temps dure-t-il ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 15,
+      "oldFr": "Comment peut-on payer sur place ?",
+      "newFr": "Quels moyens de paiement acceptez-vous sur place ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 1,
+      "oldFr": "Le festival aura lieu de quelle date à quelle date ?",
+      "newFr": "À quelles dates le festival aura-t-il lieu ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 2,
+      "oldFr": "Les projections commencent à quelles heures ?",
+      "newFr": "À quelles heures commencent les projections ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 10,
+      "oldFr": "Quel est le prix d’une séance ?",
+      "newFr": "Quel est le prix d’une séance de projection ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 1,
+      "oldFr": "Quand aura lieu le concert exactement ?",
+      "newFr": "Quand le concert aura-t-il lieu exactement ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 2,
+      "oldFr": "Le concert commencera à quelle heure ?",
+      "newFr": "À quelle heure le spectacle commencera-t-il ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 3,
+      "oldFr": "Le concert durera combien de temps ?",
+      "newFr": "Combien de temps durera le concert ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 5,
+      "oldFr": "Quel est le moyen le plus simple pour y aller ?",
+      "newFr": "Quel est le moyen le plus simple pour s’y rendre ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 8,
+      "oldFr": "Tu sais quelles chansons sont prévues ?",
+      "newFr": "Sais-tu quelles chansons sont au programme ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 9,
+      "oldFr": "Tu as déjà assisté à un concert de cet artiste ?",
+      "newFr": "As-tu déjà assisté à un concert de cet artiste ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 10,
+      "oldFr": "↳ Et qu’est-ce que tu en as pensé ?",
+      "newFr": "Et qu’en as-tu pensé ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 12,
+      "oldFr": "Nos places seront situées où ?",
+      "newFr": "Où se trouveront nos places ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 13,
+      "oldFr": "D’autres amis vont-ils venir avec nous ?",
+      "newFr": "Est-ce que d’autres amis viendront avec nous ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 14,
+      "oldFr": "Comment se passent l’achat ou la réservation des billets ?",
+      "newFr": "Comment peut-on acheter ou réserver les billets ?",
+      "reason": "见对应Sujet三维审查理由；新句使用独立progressKey。"
+    }
+  ],
+  "piperCoverage": {
+    "status": "pending-generation",
+    "voice": "fr_FR-siwis-medium",
+    "uniqueFrenchQuestions": 136,
+    "matched": 0,
+    "missing": "pending"
+  },
+  "runtimeChecks": {
+    "sujetCount": 12,
+    "expectedSujetCount": 12,
+    "questionSlots": 180,
+    "expectedQuestionSlots": 180,
+    "allSujetsHave15Questions": true,
+    "allRowsHaveFrenchAndChinese": true,
+    "noDuplicateFrenchPerSujet": true,
+    "frenchProgressKeysDifferFromOriginal": true,
+    "followMarkerRows": 0
+  }
+}
