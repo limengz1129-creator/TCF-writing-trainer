@@ -1,0 +1,2749 @@
+{
+  "version": "health-review-2026-10-18-v1",
+  "theme": "健康安全与公共服务",
+  "sujets": 10,
+  "questionSlots": 150,
+  "status": "ready_for_audio_rebuild",
+  "approval": "not_passed",
+  "source": "tache2/real-exams/source/health.json.gz.b64",
+  "runtime": "tache2/real-exams/data/health.json",
+  "reviewMethod": [
+    "逐题核对15问、称谓、疑问句结构及场景关系。",
+    "准确区分目前医疗信息、未来就医与服务办理、紧急条件和后续安排。",
+    "逐句人工校订150条中文并保留修改理由。",
+    "任何法语改写都赋予新progressKey。",
+    "Piper资源和Pages部署检查通过后通过验收。"
+  ],
+  "findings": [
+    "保留10个Sujet、每题15问。",
+    "修正邻居场景中将邻居写成诊所工作人员、保险通话中女性性别预设等问题。",
+    "与完整备份对照，人工校订中文译文150行。"
+  ],
+  "limitations": [
+    "待Piper及GitHub Pages验收。"
+  ],
+  "changes": [
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 5,
+      "oldFr": "À quelles heures êtes-vous ouverts ?",
+      "newFr": "Quels sont les horaires d’ouverture des cabinets médicaux ?",
+      "zh": "诊所通常在什么时间开放？",
+      "reason": "受访者是邻居，不是诊所工作人员；改为向邻居询问诊所营业时间。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 15,
+      "oldFr": "Pour une nouvelle arrivante, comment faire pour consulter un médecin le plus simplement possible ?",
+      "newFr": "Pour une personne qui vient d’arriver, comment faire pour consulter un médecin le plus simplement possible ?",
+      "zh": "刚搬来这里的人怎样就医最方便？",
+      "reason": "去除对新来者性别的预设。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 3,
+      "oldFr": "Est-il possible d’envoyer une dépanneuse ?",
+      "newFr": "Pouvez-vous envoyer une dépanneuse ?",
+      "zh": "您可以派一辆拖车来吗？",
+      "reason": "改为直接向保险客服询问能否派拖车，更符合通话语境。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 10,
+      "oldFr": "Si la réparation prend plusieurs jours, pouvez-vous organiser mon retour ?",
+      "newFr": "Si la réparation prend plusieurs jours, pouvez-vous organiser mon retour chez moi ?",
+      "zh": "如果维修需要几天，您能安排我回家吗？",
+      "reason": "明确询问能否安排回家，避免“返回哪里”不清楚。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 13,
+      "oldFr": "Qu’est-ce que je dois garder comme documents pour être remboursée ?",
+      "newFr": "Quels documents dois-je conserver pour demander un remboursement ?",
+      "zh": "申请报销需要保留哪些文件？",
+      "reason": "去除女性性别预设，明确询问报销所需材料。"
+    }
+  ],
+  "timelineChanges": [
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 7,
+      "oldTimeline": "现在信息",
+      "newTimeline": "将来志愿服务",
+      "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 8,
+      "oldTimeline": "现在信息",
+      "newTimeline": "将来志愿服务",
+      "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 9,
+      "oldTimeline": "现在信息",
+      "newTimeline": "将来准备",
+      "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 14,
+      "oldTimeline": "将来参加",
+      "newTimeline": "将来报名",
+      "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 15,
+      "oldTimeline": "将来参加",
+      "newTimeline": "将来报名",
+      "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 3,
+      "oldTimeline": "紧急情况",
+      "newTimeline": "紧急援助",
+      "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 4,
+      "oldTimeline": "紧急情况",
+      "newTimeline": "紧急援助",
+      "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 6,
+      "oldTimeline": "后续处理",
+      "newTimeline": "后续维修",
+      "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 8,
+      "oldTimeline": "后续处理",
+      "newTimeline": "后续维修",
+      "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 9,
+      "oldTimeline": "后续处理",
+      "newTimeline": "后续交通",
+      "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 10,
+      "oldTimeline": "后续处理",
+      "newTimeline": "后续交通",
+      "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 11,
+      "oldTimeline": "后续处理",
+      "newTimeline": "后续住宿",
+      "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 12,
+      "oldTimeline": "后续处理",
+      "newTimeline": "后续理赔",
+      "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 13,
+      "oldTimeline": "后续处理",
+      "newTimeline": "后续理赔",
+      "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 14,
+      "oldTimeline": "紧急情况",
+      "newTimeline": "紧急联络",
+      "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 15,
+      "oldTimeline": "后续处理",
+      "newTimeline": "后续维修",
+      "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 12,
+      "oldTimeline": "将来参加",
+      "newTimeline": "将来报名",
+      "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 13,
+      "oldTimeline": "将来参加",
+      "newTimeline": "将来报名",
+      "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 11,
+      "oldTimeline": "现在信息",
+      "newTimeline": "将来预约",
+      "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 12,
+      "oldTimeline": "现在信息",
+      "newTimeline": "将来报名",
+      "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 13,
+      "oldTimeline": "将来参加",
+      "newTimeline": "将来报名",
+      "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+    }
+  ],
+  "translationEdits": [
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 1,
+      "fr": "Où se trouve exactement le centre culturel ?",
+      "oldZh": "文化中心在哪里?",
+      "newZh": "文化中心具体在哪里？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 2,
+      "fr": "À quelles heures êtes-vous ouverts ?",
+      "oldZh": "开放时间是什么?",
+      "newZh": "你们的开放时间是什么？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 3,
+      "fr": "Le centre est-il aussi ouvert le week-end ?",
+      "oldZh": "这个中心周末也开放吗?",
+      "newZh": "文化中心周末也开放吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 4,
+      "fr": "Qu’est-ce que vous proposez comme activités ?",
+      "oldZh": "你提供什么类型的活动?",
+      "newZh": "你们提供哪些活动？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 5,
+      "fr": "Proposez-vous des ateliers pour les adultes ?",
+      "oldZh": "有没有成年人研讨会?",
+      "newZh": "你们为成年人开设工作坊吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 6,
+      "fr": "Et pour les enfants, qu’est-ce qui est prévu ?",
+      "oldZh": "你还为孩子们提供任何活动吗?",
+      "newZh": "那孩子们可以参加哪些活动？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 7,
+      "fr": "Quelles expositions peut-on voir en ce moment ?",
+      "oldZh": "目前有任何展览吗?",
+      "newZh": "目前可以看哪些展览？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 8,
+      "fr": "Qu’est-ce qu’on peut utiliser comme équipements sur place ?",
+      "oldZh": "我们可以在场使用哪些设备?",
+      "newZh": "现场有哪些设备可以使用？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 9,
+      "fr": "Le Wi-Fi est-il gratuit sur place ?",
+      "oldZh": "有没有免费的Wi-Fi?",
+      "newZh": "现场的无线网络免费吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 10,
+      "fr": "Peut-on imprimer des documents sur place ?",
+      "oldZh": "我们可以在现场打印文件吗?",
+      "newZh": "可以在现场打印文件吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 11,
+      "fr": "Quel est le tarif des activités ?",
+      "oldZh": "活动的费用是多少?",
+      "newZh": "这些活动的费用是多少？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 12,
+      "fr": "Certaines personnes ont-elles droit à un tarif réduit ?",
+      "oldZh": "对于某些人来说,有没有降低的价格?",
+      "newZh": "哪些人可以享受优惠价？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 13,
+      "fr": "Vaut-il mieux s’inscrire à l’avance pour participer aux ateliers ?",
+      "oldZh": "需要提前报名才能参加工作坊吗?",
+      "newZh": "参加工作坊最好提前报名吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 14,
+      "fr": "Qu’est-ce qu’il faut fournir comme documents pour l’inscription ?",
+      "oldZh": "报名需要提供哪些文件?",
+      "newZh": "报名需要提供哪些文件？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 15,
+      "fr": "Le centre est-il accessible aux personnes à mobilité réduite ?",
+      "oldZh": "交通障碍者是否可以进入该中心?",
+      "newZh": "行动不便者可以方便地进入文化中心吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 1,
+      "fr": "Qu’est-ce qu’on peut faire comme bénévolat dans le quartier ?",
+      "oldZh": "在这个地区有哪些志愿者?",
+      "newZh": "在附近有哪些志愿服务可以参加？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 2,
+      "fr": "Existe-t-il des associations qui travaillent avec des enfants ?",
+      "oldZh": "有没有任何协会与儿童合作?",
+      "newZh": "有没有为儿童提供服务的协会？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 3,
+      "fr": "Et avec des personnes âgées ?",
+      "oldZh": "对于老年人来说呢?",
+      "newZh": "有没有为老年人服务的协会？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 4,
+      "fr": "Existe-t-il aussi des missions auprès de personnes handicapées ?",
+      "oldZh": "还有残疾人的任务吗?",
+      "newZh": "也有为残障人士提供帮助的志愿工作吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 5,
+      "fr": "Concrètement, qu’est-ce que font les bénévoles ?",
+      "oldZh": "志愿者实际上在做什么活动?",
+      "newZh": "志愿者具体要做些什么？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 6,
+      "fr": "Où ont lieu les activités ?",
+      "oldZh": "活动在哪里?",
+      "newZh": "这些活动在哪里举行？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 7,
+      "fr": "Quels sont les jours et les horaires possibles pour faire du bénévolat ?",
+      "oldZh": "在哪些日子和时间可以做志愿服务?",
+      "newZh": "可以在哪些日子、什么时间做志愿服务？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 8,
+      "fr": "À quelle fréquence faut-il être disponible chaque semaine ?",
+      "oldZh": "每周要有多少次开放?",
+      "newZh": "每周需要参加几次？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 9,
+      "fr": "Une formation est-elle prévue avant de commencer ?",
+      "oldZh": "开始之前会提供培训吗？",
+      "newZh": "开始之前会安排培训吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 10,
+      "fr": "Les bénévoles sont-ils encadrés par un responsable ?",
+      "oldZh": "志愿者是否有管理人员的指导?",
+      "newZh": "志愿者会有负责人指导吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 11,
+      "fr": "Une expérience ou une compétence particulière est-elle nécessaire ?",
+      "oldZh": "需要什么特殊的经验或技能吗?",
+      "newZh": "需要相关经验或特殊技能吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 12,
+      "fr": "Une attestation de bénévolat est-elle remise ?",
+      "oldZh": "我们能否获得志愿者身份证?",
+      "newZh": "会提供志愿服务证明吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 13,
+      "fr": "Les bénévoles sont-ils couverts par une assurance pendant les activités ?",
+      "oldZh": "志愿者在活动期间是否有保险?",
+      "newZh": "志愿服务期间，志愿者享有保险保障吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 14,
+      "fr": "Comment se passe l’inscription ?",
+      "oldZh": "我怎么能报名?",
+      "newZh": "报名流程是怎样的？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 15,
+      "fr": "Qu’est-ce qu’il faut fournir comme documents ?",
+      "oldZh": "需要提供哪些材料？",
+      "newZh": "需要提交哪些文件？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 1,
+      "fr": "Quels types de médecins trouve-t-on dans la ville ?",
+      "oldZh": "在城市里,我可以咨询哪些医生?",
+      "newZh": "这座城市有哪些类型的医生？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 2,
+      "fr": "Trouve-t-on facilement un médecin de famille ?",
+      "oldZh": "找到家庭医生是不是很容易的?",
+      "newZh": "在这里容易找到家庭医生吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 3,
+      "fr": "Quels spécialistes peut-on consulter près d’ici ?",
+      "oldZh": "附近有哪些专家?",
+      "newZh": "附近可以看哪些专科医生？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 4,
+      "fr": "Où se trouve la clinique la plus proche ?",
+      "oldZh": "最近的诊所在哪里?",
+      "newZh": "最近的诊所在哪里？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 5,
+      "fr": "Quels sont les horaires d’ouverture des cabinets médicaux ?",
+      "oldZh": "开放时间是什么?",
+      "newZh": "诊所通常在什么时间开放？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 6,
+      "fr": "Comment se passe la prise de rendez-vous ?",
+      "oldZh": "我怎么可以约会?",
+      "newZh": "预约就诊的流程是怎样的？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 7,
+      "fr": "En moyenne, combien de temps faut-il attendre pour obtenir un rendez-vous ?",
+      "oldZh": "约会的平均时间是多少?",
+      "newZh": "通常要等多久才能约上？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 8,
+      "fr": "Existe-t-il des cliniques sans rendez-vous ?",
+      "oldZh": "有没有没有预约的诊所?",
+      "newZh": "这里有免预约诊所吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 9,
+      "fr": "Quel est le prix d’une consultation ?",
+      "oldZh": "咨询需要多少钱?",
+      "newZh": "一次门诊大约多少钱？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 10,
+      "fr": "Puis-je utiliser ma carte d’assurance maladie ?",
+      "oldZh": "我可以使用医疗保险卡吗?",
+      "newZh": "我可以使用医疗保险卡吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 11,
+      "fr": "Quels frais ne sont pas couverts ?",
+      "oldZh": "有没有没有支付的费用吗?",
+      "newZh": "哪些费用不在保险承保范围内？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 12,
+      "fr": "Est-ce que le médecin peut me prescrire des médicaments si nécessaire ?",
+      "oldZh": "如果需要,医生可以给我处方吗?",
+      "newZh": "如果有需要，医生可以给我开药吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 13,
+      "fr": "Où faut-il aller pour faire les examens prescrits par le médecin ?",
+      "oldZh": "如果医生下令我进行检查,我应该去哪里?",
+      "newZh": "医生开了检查后，我应该去哪里做？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 14,
+      "fr": "Que dois-je faire si mon problème devient urgent ?",
+      "oldZh": "如果我的问题变得紧迫,我该怎么办?",
+      "newZh": "如果我的病情变得紧急，我应该怎么办？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 15,
+      "fr": "Pour une personne qui vient d’arriver, comment faire pour consulter un médecin le plus simplement possible ?",
+      "oldZh": "对于新人来说,最简单的方法是什么?",
+      "newZh": "刚搬来这里的人怎样就医最方便？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 1,
+      "fr": "Quel est le nom du médecin remplaçant ?",
+      "oldZh": "替换医生的名字是什么?",
+      "newZh": "代诊医生叫什么名字？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 2,
+      "fr": "Quelle est sa spécialité ?",
+      "oldZh": "它的专业是什么?",
+      "newZh": "他的专科是什么？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 3,
+      "fr": "A-t-il beaucoup d’expérience ?",
+      "oldZh": "他有没有很多经验?",
+      "newZh": "他有丰富的临床经验吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 4,
+      "fr": "Jusqu’à quand va-t-il remplacer mon médecin ?",
+      "oldZh": "他要替代我的医生多久?",
+      "newZh": "他会代替我的医生到什么时候？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 5,
+      "fr": "À quels horaires consulte-t-il ?",
+      "oldZh": "他的咨询时间是什么?",
+      "newZh": "他通常在什么时间接诊？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 6,
+      "fr": "Va-t-il consulter dans le même cabinet ?",
+      "oldZh": "他会在同一个办公室咨询吗?",
+      "newZh": "他也会在同一家诊所接诊吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 7,
+      "fr": "Comment puis-je prendre rendez-vous avec lui ?",
+      "oldZh": "我怎么能和他约会?",
+      "newZh": "我怎样预约他的门诊？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 8,
+      "fr": "Faut-il attendre longtemps pour obtenir un rendez-vous ?",
+      "oldZh": "预约要等太久吗?",
+      "newZh": "预约他需要等很久吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 9,
+      "fr": "Pourra-t-il consulter mon dossier médical ?",
+      "oldZh": "他能访问我的医疗记录吗?",
+      "newZh": "他能查阅我的病历吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 10,
+      "fr": "Pourra-t-il renouveler mes ordonnances si nécessaire ?",
+      "oldZh": "如果有必要,他能否更新我的处方?",
+      "newZh": "有需要的话，他可以续开我的处方吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 11,
+      "fr": "Pourra-t-il consulter mes résultats d’analyses précédents ?",
+      "oldZh": "他能查看我之前的分析结果吗?",
+      "newZh": "他能查看我以前的化验结果吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 12,
+      "fr": "Les tarifs ou la couverture restent-ils les mêmes ?",
+      "oldZh": "价格和保险是否不变?",
+      "newZh": "诊费和保险报销范围保持不变吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 13,
+      "fr": "À qui puis-je m’adresser si j’ai une question avant le rendez-vous ?",
+      "oldZh": "如果在约会前有任何问题,我可以联系谁?",
+      "newZh": "预约前如果有问题，我可以联系谁？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 14,
+      "fr": "Que dois-je faire si j’ai besoin d’un médecin en urgence ?",
+      "oldZh": "如果我急需医生怎么办?",
+      "newZh": "如果我需要紧急就医，应该怎么办？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 15,
+      "fr": "Quand mon médecin habituel doit-il revenir ?",
+      "oldZh": "我常见的医生要到什么时候回来?",
+      "newZh": "我的固定医生预计什么时候回来？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 1,
+      "fr": "Quand on tombe malade, où va-t-on généralement en premier ?",
+      "oldZh": "当我们生病时,我们通常首先去哪里?",
+      "newZh": "生病时，人们通常首先去哪里就诊？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 2,
+      "fr": "Tout le monde a-t-il un médecin de famille ?",
+      "oldZh": "每个人都有家庭医生吗?",
+      "newZh": "每个人都有家庭医生吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 3,
+      "fr": "Peut-on consulter dans une clinique sans rendez-vous ?",
+      "oldZh": "我们可以在没有预约的诊所查看吗?",
+      "newZh": "可以直接去免预约诊所看病吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 4,
+      "fr": "En général, combien de temps attend-on avant de voir un médecin ?",
+      "oldZh": "通常需要多长时间才能见医生?",
+      "newZh": "通常要等多久才能见到医生？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 5,
+      "fr": "Dans quels cas faut-il aller directement à l’hôpital ?",
+      "oldZh": "在何种情况下要直接去医院?",
+      "newZh": "哪些情况下需要直接去医院？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 6,
+      "fr": "Comment fonctionne le service des urgences ?",
+      "oldZh": "紧急服务部门是如何工作的?",
+      "newZh": "急诊服务是怎样运作的？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 7,
+      "fr": "L’attente est-elle généralement longue aux urgences ?",
+      "oldZh": "我们要等待长时间吗?",
+      "newZh": "急诊通常需要等很久吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 8,
+      "fr": "Quel numéro faut-il appeler pour une ambulance en cas d’urgence ?",
+      "oldZh": "在紧急情况下,我们怎么叫救护车?",
+      "newZh": "遇到紧急情况时，叫救护车应该拨打什么号码？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 9,
+      "fr": "Les consultations médicales sont-elles payantes ?",
+      "oldZh": "医疗咨询是没有费用的吗?",
+      "newZh": "看医生需要付费吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 10,
+      "fr": "Comment fonctionne l’assurance maladie dans ton pays ?",
+      "oldZh": "在你的国家,医疗保险是如何工作的?",
+      "newZh": "你们国家的医疗保险是怎么运作的？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 11,
+      "fr": "Quels soins sont généralement couverts ?",
+      "oldZh": "医疗保健通常是什么样的?",
+      "newZh": "通常哪些医疗服务可以报销？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 12,
+      "fr": "Trouve-t-on facilement une pharmacie ?",
+      "oldZh": "我们能找到一个药店吗?",
+      "newZh": "附近容易找到药店吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 13,
+      "fr": "La plupart des médicaments nécessitent-ils une ordonnance ?",
+      "oldZh": "大多数药物都需要处方吗?",
+      "newZh": "大多数药物都需要处方吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 14,
+      "fr": "Doit-on passer par un médecin généraliste pour consulter un spécialiste ?",
+      "oldZh": "要去见专家,我需要去看普通医生吗?",
+      "newZh": "看专科医生之前，必须先看全科医生吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 15,
+      "fr": "Qu’est-ce que tu conseillerais à quelqu’un qui vient d’arriver et qui tombe malade ?",
+      "oldZh": "你会给一个刚刚到达的病人什么建议?",
+      "newZh": "如果刚到你们国家的人生病了，你会给他什么建议？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 1,
+      "fr": "Quelles informations dois-je vous donner pour localiser ma voiture ?",
+      "oldZh": "我需要给你什么信息来找到我的车?",
+      "newZh": "我需要提供哪些信息，您才能定位我的车？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 2,
+      "fr": "Qu’est-ce que je dois faire immédiatement pour rester en sécurité ?",
+      "oldZh": "我现在该怎么做才能保持安全?",
+      "newZh": "为了确保安全，我现在应该马上做什么？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 3,
+      "fr": "Pouvez-vous envoyer une dépanneuse ?",
+      "oldZh": "你能发送一个卖货吗?",
+      "newZh": "您可以派一辆拖车来吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 4,
+      "fr": "Dans combien de temps la dépanneuse peut-elle arriver ?",
+      "oldZh": "我们要等多久?",
+      "newZh": "拖车大约多久能到？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 5,
+      "fr": "Les frais de remorquage sont-ils pris en charge par mon assurance ?",
+      "oldZh": "拖车费用是我保险支付的吗?",
+      "newZh": "拖车费用由我的保险承担吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 6,
+      "fr": "Où la voiture sera-t-elle réparée ?",
+      "oldZh": "汽车将在哪里修理?",
+      "newZh": "汽车会送到哪里维修？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 7,
+      "fr": "Qu’est-ce que mon contrat couvre comme frais de réparation ?",
+      "oldZh": "我的合同有哪些修复费用?",
+      "newZh": "我的保险合同涵盖哪些维修费用？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 8,
+      "fr": "Faut-il votre accord avant que je fasse réparer la voiture ?",
+      "oldZh": "在修理车之前,我必须得到你的同意吗?",
+      "newZh": "维修汽车之前需要先得到您的同意吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 9,
+      "fr": "Mon assurance prévoit-elle une voiture de remplacement ?",
+      "oldZh": "我的保险是否提供了更换车辆?",
+      "newZh": "我的保险包含代步车吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 10,
+      "fr": "Si la réparation prend plusieurs jours, pouvez-vous organiser mon retour chez moi ?",
+      "oldZh": "如果修复需要几天,你能安排我回来吗?",
+      "newZh": "如果维修需要几天，您能安排我回家吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 11,
+      "fr": "L’assurance peut-elle prendre en charge un hôtel si je suis loin de chez moi ?",
+      "oldZh": "如果我离家远,保险可以支付酒店吗?",
+      "newZh": "如果我离家很远，保险能承担酒店费用吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 12,
+      "fr": "Comment se passe la déclaration de la panne et l’envoi des justificatifs ?",
+      "oldZh": "我如何宣布故障并发送证据?",
+      "newZh": "故障如何申报，相关凭证要怎样提交？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 13,
+      "fr": "Quels documents dois-je conserver pour demander un remboursement ?",
+      "oldZh": "我需要保留什么文件才能收回钱?",
+      "newZh": "申请报销需要保留哪些文件？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 14,
+      "fr": "Qui dois-je appeler si la situation change ?",
+      "oldZh": "如果情况发生变化,我应该打电话给哪个号码?",
+      "newZh": "如果情况有变化，我应该打电话给谁？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 15,
+      "fr": "Comment savoir combien de temps la réparation va durer ?",
+      "oldZh": "我怎么知道修复需要多长时间?",
+      "newZh": "我怎样才能知道维修需要多长时间？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 1,
+      "fr": "Qu’est-ce que la ville propose comme activités culturelles en ce moment ?",
+      "oldZh": "城市目前提供哪些文化活动?",
+      "newZh": "这座城市最近有哪些文化活动？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 2,
+      "fr": "Qu’est-ce qu’il y a comme expositions à visiter ?",
+      "oldZh": "我们可以参观哪些展览?",
+      "newZh": "有哪些展览值得参观？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 3,
+      "fr": "Quels musées valent le plus le détour selon vous ?",
+      "oldZh": "你会建议我去哪些博物馆?",
+      "newZh": "您觉得哪些博物馆最值得一去？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 4,
+      "fr": "Proposez-vous des ateliers pour les adultes ?",
+      "oldZh": "有没有成年人研讨会?",
+      "newZh": "你们为成年人开设工作坊吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 5,
+      "fr": "Et pour les enfants, qu’est-ce qui est prévu ?",
+      "oldZh": "你还为孩子们提供任何活动吗?",
+      "newZh": "那孩子们可以参加哪些活动？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 6,
+      "fr": "Où ont lieu les principales activités ?",
+      "oldZh": "主要活动在哪里?",
+      "newZh": "主要活动在哪里举行？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 7,
+      "fr": "À quelles heures êtes-vous ouverts ?",
+      "oldZh": "开放时间是什么?",
+      "newZh": "你们的开放时间是什么？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 8,
+      "fr": "Le week-end, y a-t-il davantage d’activités ?",
+      "oldZh": "周末有更多活动吗?",
+      "newZh": "周末的活动会更多吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 9,
+      "fr": "Quel est le tarif des activités ?",
+      "oldZh": "活动的费用是多少?",
+      "newZh": "这些活动的费用是多少？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 10,
+      "fr": "Les étudiants, les familles ou les nouveaux arrivants ont-ils droit à des réductions ?",
+      "oldZh": "有没有学生,家庭或新移民的折扣?",
+      "newZh": "学生、家庭或新来者可以享受优惠吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 11,
+      "fr": "Vaut-il mieux réserver à l’avance ?",
+      "oldZh": "我必须提前预订吗?",
+      "newZh": "最好提前预约吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 12,
+      "fr": "Comment se passe l’inscription à un atelier ?",
+      "oldZh": "我怎么能登录一个工作室?",
+      "newZh": "工作坊的报名流程是怎样的？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 13,
+      "fr": "Doit-on présenter un document particulier pour s’inscrire ?",
+      "oldZh": "报名需要一个特殊的文件吗?",
+      "newZh": "报名时需要出示特定文件吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 14,
+      "fr": "Les lieux sont-ils accessibles aux personnes à mobilité réduite ?",
+      "oldZh": "活动障碍者是否可以进入这些场所?",
+      "newZh": "行动不便者可以方便地进入这些场所吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 15,
+      "fr": "Parmi ces activités, laquelle me conseilleriez-vous pour découvrir la ville ?",
+      "oldZh": "你建议我去哪里去探索这个城市?",
+      "newZh": "如果想了解这座城市，您最推荐哪项活动？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 1,
+      "fr": "Où se trouve exactement le centre culturel ?",
+      "oldZh": "文化中心在哪里?",
+      "newZh": "文化中心具体在哪里？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 2,
+      "fr": "À quelles heures êtes-vous ouverts ?",
+      "oldZh": "开放时间是什么?",
+      "newZh": "你们的开放时间是什么？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 3,
+      "fr": "Le centre est-il aussi ouvert le week-end ?",
+      "oldZh": "这个中心周末也开放吗?",
+      "newZh": "文化中心周末也开放吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 4,
+      "fr": "Qu’est-ce que vous proposez comme activités ?",
+      "oldZh": "你提供什么类型的活动?",
+      "newZh": "你们提供哪些活动？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 5,
+      "fr": "Proposez-vous des ateliers pour les adultes ?",
+      "oldZh": "有没有成年人研讨会?",
+      "newZh": "你们为成年人开设工作坊吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 6,
+      "fr": "Et pour les enfants, qu’est-ce qui est prévu ?",
+      "oldZh": "你还为孩子们提供任何活动吗?",
+      "newZh": "那孩子们可以参加哪些活动？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 7,
+      "fr": "Quelles expositions peut-on voir en ce moment ?",
+      "oldZh": "目前有任何展览吗?",
+      "newZh": "目前可以看哪些展览？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 8,
+      "fr": "Qu’est-ce qu’on peut utiliser comme équipements sur place ?",
+      "oldZh": "我们可以在场使用哪些设备?",
+      "newZh": "现场有哪些设备可以使用？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 9,
+      "fr": "Le Wi-Fi est-il gratuit sur place ?",
+      "oldZh": "有没有免费的Wi-Fi?",
+      "newZh": "现场的无线网络免费吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 10,
+      "fr": "Peut-on imprimer des documents sur place ?",
+      "oldZh": "我们可以在现场打印文件吗?",
+      "newZh": "可以在现场打印文件吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 11,
+      "fr": "Quel est le tarif des activités ?",
+      "oldZh": "活动的费用是多少?",
+      "newZh": "这些活动的费用是多少？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 12,
+      "fr": "Certaines personnes ont-elles droit à un tarif réduit ?",
+      "oldZh": "对于某些人来说,有没有降低的价格?",
+      "newZh": "哪些人可以享受优惠价？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 13,
+      "fr": "Vaut-il mieux s’inscrire à l’avance pour participer aux ateliers ?",
+      "oldZh": "需要提前报名才能参加工作坊吗?",
+      "newZh": "参加工作坊最好提前报名吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 14,
+      "fr": "Qu’est-ce qu’il faut fournir comme documents pour l’inscription ?",
+      "oldZh": "报名需要提供哪些文件?",
+      "newZh": "报名需要提供哪些文件？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 15,
+      "fr": "Le centre est-il accessible aux personnes à mobilité réduite ?",
+      "oldZh": "交通障碍者是否可以进入该中心?",
+      "newZh": "行动不便者可以方便地进入文化中心吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 1,
+      "fr": "Où se trouve exactement le centre culturel ?",
+      "oldZh": "文化中心在哪里?",
+      "newZh": "文化中心具体在哪里？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 2,
+      "fr": "À quelles heures êtes-vous ouverts ?",
+      "oldZh": "开放时间是什么?",
+      "newZh": "你们的开放时间是什么？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 3,
+      "fr": "Le centre est-il aussi ouvert le week-end ?",
+      "oldZh": "这个中心周末也开放吗?",
+      "newZh": "文化中心周末也开放吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 4,
+      "fr": "Qu’est-ce que vous proposez comme activités ?",
+      "oldZh": "你提供什么类型的活动?",
+      "newZh": "你们提供哪些活动？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 5,
+      "fr": "Proposez-vous des ateliers pour les adultes ?",
+      "oldZh": "有没有成年人研讨会?",
+      "newZh": "你们为成年人开设工作坊吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 6,
+      "fr": "Et pour les enfants, qu’est-ce qui est prévu ?",
+      "oldZh": "你还为孩子们提供任何活动吗?",
+      "newZh": "那孩子们可以参加哪些活动？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 7,
+      "fr": "Quelles expositions peut-on voir en ce moment ?",
+      "oldZh": "目前有任何展览吗?",
+      "newZh": "目前可以看哪些展览？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 8,
+      "fr": "Qu’est-ce qu’on peut utiliser comme équipements sur place ?",
+      "oldZh": "我们可以在场使用哪些设备?",
+      "newZh": "现场有哪些设备可以使用？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 9,
+      "fr": "Le Wi-Fi est-il gratuit sur place ?",
+      "oldZh": "有没有免费的Wi-Fi?",
+      "newZh": "现场的无线网络免费吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 10,
+      "fr": "Peut-on imprimer des documents sur place ?",
+      "oldZh": "我们可以在现场打印文件吗?",
+      "newZh": "可以在现场打印文件吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 11,
+      "fr": "Quel est le tarif des activités ?",
+      "oldZh": "活动的费用是多少?",
+      "newZh": "这些活动的费用是多少？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 12,
+      "fr": "Certaines personnes ont-elles droit à un tarif réduit ?",
+      "oldZh": "对于某些人来说,有没有降低的价格?",
+      "newZh": "哪些人可以享受优惠价？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 13,
+      "fr": "Vaut-il mieux s’inscrire à l’avance pour participer aux ateliers ?",
+      "oldZh": "需要提前报名才能参加工作坊吗?",
+      "newZh": "参加工作坊最好提前报名吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 14,
+      "fr": "Qu’est-ce qu’il faut fournir comme documents pour l’inscription ?",
+      "oldZh": "报名需要提供哪些文件?",
+      "newZh": "报名需要提供哪些文件？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 15,
+      "fr": "Le centre est-il accessible aux personnes à mobilité réduite ?",
+      "oldZh": "交通障碍者是否可以进入该中心?",
+      "newZh": "行动不便者可以方便地进入文化中心吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 1,
+      "fr": "Où se trouve exactement la bibliothèque ?",
+      "oldZh": "图书馆在哪里?",
+      "newZh": "图书馆具体在哪里？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 2,
+      "fr": "À quelles heures êtes-vous ouverts ?",
+      "oldZh": "开放时间是什么?",
+      "newZh": "你们的开放时间是什么？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 3,
+      "fr": "La bibliothèque est-elle ouverte le week-end ?",
+      "oldZh": "图书馆周末开放吗?",
+      "newZh": "图书馆周末开放吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 4,
+      "fr": "Que faut-il remplir comme conditions pour s’inscrire ?",
+      "oldZh": "报名的条件是什么?",
+      "newZh": "办理图书证需要满足什么条件？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 5,
+      "fr": "Faut-il respecter une condition d’âge ou de résidence ?",
+      "oldZh": "有任何年龄或居住条件吗?",
+      "newZh": "有年龄或居住地方面的要求吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 6,
+      "fr": "Qu’est-ce que je dois apporter comme documents ?",
+      "oldZh": "我应该带什么文件?",
+      "newZh": "我需要带哪些文件？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 7,
+      "fr": "Une carte de bibliothèque est-elle remise après l’inscription ?",
+      "oldZh": "报名后,我会收到图书馆卡吗?",
+      "newZh": "注册后会发图书馆借阅卡吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 8,
+      "fr": "Quel est le nombre maximum de documents que je peux emprunter à la fois ?",
+      "oldZh": "我可以同时借多少文件?",
+      "newZh": "我一次最多可以借几件资料？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 9,
+      "fr": "Combien de temps puis-je les garder ?",
+      "oldZh": "我可以多久保留它们?",
+      "newZh": "我可以借阅多长时间？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 10,
+      "fr": "Puis-je renouveler un emprunt ?",
+      "oldZh": "我可以再借吗?",
+      "newZh": "我可以续借吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 11,
+      "fr": "Est-il possible de réserver un livre déjà emprunté ?",
+      "oldZh": "我们可以预订已经借过的书吗?",
+      "newZh": "已经借出的书可以预约吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 12,
+      "fr": "L’impression de documents est-elle gratuite ?",
+      "oldZh": "可以免费打印文件吗?",
+      "newZh": "打印资料是免费的吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 13,
+      "fr": "Qu’est-ce que la bibliothèque organise comme activités ou ateliers ?",
+      "oldZh": "图书馆组织活动或研讨会吗?",
+      "newZh": "图书馆会组织哪些活动或工作坊？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 14,
+      "fr": "L’inscription est-elle gratuite ?",
+      "oldZh": "报名是免费的吗?",
+      "newZh": "注册图书证需要付费吗？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 15,
+      "fr": "Que se passe-t-il si je rends un document en retard ?",
+      "oldZh": "如果我迟到提交文件,会发生什么?",
+      "newZh": "如果我逾期归还资料，会有什么后果？",
+      "reason": "逐句对照法语人工校订，纠正医疗/公共服务术语、误译或不自然中文。"
+    }
+  ],
+  "translationEditCount": 150,
+  "entries": [
+    {
+      "month": "2026-10",
+      "number": 1,
+      "sujet": "Je travaille à l’accueil du nouveau centre culturel de votre ville. Vous êtes intéressé(e). Vous me posez des questions sur les activités proposées par le centre (horaires, prix, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "地点",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            2,
+            3
+          ]
+        },
+        {
+          "name": "活动",
+          "questionNumbers": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "name": "展览",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "设备",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "服务",
+          "questionNumbers": [
+            9,
+            10
+          ]
+        },
+        {
+          "name": "价格",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "优惠",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "报名",
+          "questionNumbers": [
+            13,
+            14
+          ]
+        },
+        {
+          "name": "无障碍",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 13,
+        "将来参加": 2
+      },
+      "pronounAndRelevanceReview": "按中心工作人员、志愿服务咨询员、邻居、医生秘书、朋友及保险客服逐题核对称谓和场景角色；检查信息角度与时间线。",
+      "translationReview": "本题15句中文均逐句人工校订。",
+      "changeReasons": [],
+      "timelineChanges": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "sujet": "Je suis agent d’accueil dans un bureau d’information sur les associations. Vous voulez faire du bénévolat dans votre quartier. Vous me posez des questions (types, activités, public, horaires, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "志愿服务",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "服务对象",
+          "questionNumbers": [
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "name": "活动",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            6
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "频率",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "培训",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "监督",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "条件",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "证明",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "保险",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "报名",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "文件",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 9,
+        "将来志愿服务": 2,
+        "将来准备": 1,
+        "将来结果": 1,
+        "将来报名": 2
+      },
+      "pronounAndRelevanceReview": "按中心工作人员、志愿服务咨询员、邻居、医生秘书、朋友及保险客服逐题核对称谓和场景角色；检查信息角度与时间线。",
+      "translationReview": "本题15句中文均逐句人工校订。",
+      "changeReasons": [],
+      "timelineChanges": [
+        {
+          "month": "2026-10",
+          "number": 2,
+          "row": 7,
+          "oldTimeline": "现在信息",
+          "newTimeline": "将来志愿服务",
+          "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+        },
+        {
+          "month": "2026-10",
+          "number": 2,
+          "row": 8,
+          "oldTimeline": "现在信息",
+          "newTimeline": "将来志愿服务",
+          "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+        },
+        {
+          "month": "2026-10",
+          "number": 2,
+          "row": 9,
+          "oldTimeline": "现在信息",
+          "newTimeline": "将来准备",
+          "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+        },
+        {
+          "month": "2026-10",
+          "number": 2,
+          "row": 14,
+          "oldTimeline": "将来参加",
+          "newTimeline": "将来报名",
+          "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+        },
+        {
+          "month": "2026-10",
+          "number": 2,
+          "row": 15,
+          "oldTimeline": "将来参加",
+          "newTimeline": "将来报名",
+          "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+        }
+      ],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "sujet": "Je suis votre voisin(e). Vous venez de vous installer au Québec. Vous souhaitez prendre un rendez-vous médical. Vous me posez des questions pour obtenir des informations sur les médecins de la ville (lieux, tarifs, spécialisations, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "医生",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "专科",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            4
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "预约",
+          "questionNumbers": [
+            6,
+            7
+          ]
+        },
+        {
+          "name": "无预约",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "医保",
+          "questionNumbers": [
+            10,
+            11
+          ]
+        },
+        {
+          "name": "处方",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "检查",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "紧急",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 10,
+        "将来就医": 3,
+        "条件情况": 1,
+        "现在建议": 1
+      },
+      "pronounAndRelevanceReview": "按中心工作人员、志愿服务咨询员、邻居、医生秘书、朋友及保险客服逐题核对称谓和场景角色；检查信息角度与时间线。",
+      "translationReview": "本题15句中文均逐句人工校订。",
+      "changeReasons": [
+        {
+          "month": "2026-10",
+          "number": 3,
+          "row": 5,
+          "oldFr": "À quelles heures êtes-vous ouverts ?",
+          "newFr": "Quels sont les horaires d’ouverture des cabinets médicaux ?",
+          "zh": "诊所通常在什么时间开放？",
+          "reason": "受访者是邻居，不是诊所工作人员；改为向邻居询问诊所营业时间。"
+        },
+        {
+          "month": "2026-10",
+          "number": 3,
+          "row": 15,
+          "oldFr": "Pour une nouvelle arrivante, comment faire pour consulter un médecin le plus simplement possible ?",
+          "newFr": "Pour une personne qui vient d’arriver, comment faire pour consulter un médecin le plus simplement possible ?",
+          "zh": "刚搬来这里的人怎样就医最方便？",
+          "reason": "去除对新来者性别的预设。"
+        }
+      ],
+      "timelineChanges": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "sujet": "Je suis le (la) secrétaire de votre médecin. Il est en congés et vous me posez des questions sur son remplaçant (nom du médecin, horaires, durée, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "医生",
+          "questionNumbers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            4,
+            5
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            6
+          ]
+        },
+        {
+          "name": "预约",
+          "questionNumbers": [
+            7,
+            8
+          ]
+        },
+        {
+          "name": "病历",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "处方",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "检查",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "联系",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "紧急",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "回归",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 11,
+        "将来就诊": 2,
+        "条件情况": 1,
+        "将来信息": 1
+      },
+      "pronounAndRelevanceReview": "按中心工作人员、志愿服务咨询员、邻居、医生秘书、朋友及保险客服逐题核对称谓和场景角色；检查信息角度与时间线。",
+      "translationReview": "本题15句中文均逐句人工校订。",
+      "changeReasons": [],
+      "timelineChanges": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "sujet": "Je suis un(e) ami(e) francophone. Vous voulez savoir comment cela se passe quand on tombe malade dans mon pays. Vous me posez des questions sur l’organisation des soins (médecins, hôpitaux, urgences médicales, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "初级医疗",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "医生",
+          "questionNumbers": [
+            2
+          ]
+        },
+        {
+          "name": "诊所",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "预约",
+          "questionNumbers": [
+            4
+          ]
+        },
+        {
+          "name": "医院",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "急诊",
+          "questionNumbers": [
+            6,
+            7
+          ]
+        },
+        {
+          "name": "救护",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "保险",
+          "questionNumbers": [
+            10,
+            11
+          ]
+        },
+        {
+          "name": "药房",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "处方",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "专科",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 13,
+        "条件情况": 1,
+        "现在建议": 1
+      },
+      "pronounAndRelevanceReview": "按中心工作人员、志愿服务咨询员、邻居、医生秘书、朋友及保险客服逐题核对称谓和场景角色；检查信息角度与时间线。",
+      "translationReview": "本题15句中文均逐句人工校订。",
+      "changeReasons": [],
+      "timelineChanges": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "sujet": "Vous êtes en voiture au Canada et vous tombez en panne. Vous appelez votre assurance pour savoir comment elle peut vous aider (dépannage, réparations, retour, etc.). Je suis l’agent qui vous répond.",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "故障",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "拖车",
+          "questionNumbers": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "维修",
+          "questionNumbers": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "name": "交通",
+          "questionNumbers": [
+            9,
+            10
+          ]
+        },
+        {
+          "name": "住宿",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "理赔",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "文件",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "联系",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "紧急情况": 2,
+        "紧急援助": 2,
+        "现在信息": 2,
+        "后续维修": 3,
+        "后续交通": 2,
+        "后续住宿": 1,
+        "后续理赔": 2,
+        "紧急联络": 1
+      },
+      "pronounAndRelevanceReview": "按中心工作人员、志愿服务咨询员、邻居、医生秘书、朋友及保险客服逐题核对称谓和场景角色；检查信息角度与时间线。",
+      "translationReview": "本题15句中文均逐句人工校订。",
+      "changeReasons": [
+        {
+          "month": "2026-08",
+          "number": 1,
+          "row": 3,
+          "oldFr": "Est-il possible d’envoyer une dépanneuse ?",
+          "newFr": "Pouvez-vous envoyer une dépanneuse ?",
+          "zh": "您可以派一辆拖车来吗？",
+          "reason": "改为直接向保险客服询问能否派拖车，更符合通话语境。"
+        },
+        {
+          "month": "2026-08",
+          "number": 1,
+          "row": 10,
+          "oldFr": "Si la réparation prend plusieurs jours, pouvez-vous organiser mon retour ?",
+          "newFr": "Si la réparation prend plusieurs jours, pouvez-vous organiser mon retour chez moi ?",
+          "zh": "如果维修需要几天，您能安排我回家吗？",
+          "reason": "明确询问能否安排回家，避免“返回哪里”不清楚。"
+        },
+        {
+          "month": "2026-08",
+          "number": 1,
+          "row": 13,
+          "oldFr": "Qu’est-ce que je dois garder comme documents pour être remboursée ?",
+          "newFr": "Quels documents dois-je conserver pour demander un remboursement ?",
+          "zh": "申请报销需要保留哪些文件？",
+          "reason": "去除女性性别预设，明确询问报销所需材料。"
+        }
+      ],
+      "timelineChanges": [
+        {
+          "month": "2026-08",
+          "number": 1,
+          "row": 3,
+          "oldTimeline": "紧急情况",
+          "newTimeline": "紧急援助",
+          "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+        },
+        {
+          "month": "2026-08",
+          "number": 1,
+          "row": 4,
+          "oldTimeline": "紧急情况",
+          "newTimeline": "紧急援助",
+          "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+        },
+        {
+          "month": "2026-08",
+          "number": 1,
+          "row": 6,
+          "oldTimeline": "后续处理",
+          "newTimeline": "后续维修",
+          "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+        },
+        {
+          "month": "2026-08",
+          "number": 1,
+          "row": 8,
+          "oldTimeline": "后续处理",
+          "newTimeline": "后续维修",
+          "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+        },
+        {
+          "month": "2026-08",
+          "number": 1,
+          "row": 9,
+          "oldTimeline": "后续处理",
+          "newTimeline": "后续交通",
+          "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+        },
+        {
+          "month": "2026-08",
+          "number": 1,
+          "row": 10,
+          "oldTimeline": "后续处理",
+          "newTimeline": "后续交通",
+          "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+        },
+        {
+          "month": "2026-08",
+          "number": 1,
+          "row": 11,
+          "oldTimeline": "后续处理",
+          "newTimeline": "后续住宿",
+          "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+        },
+        {
+          "month": "2026-08",
+          "number": 1,
+          "row": 12,
+          "oldTimeline": "后续处理",
+          "newTimeline": "后续理赔",
+          "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+        },
+        {
+          "month": "2026-08",
+          "number": 1,
+          "row": 13,
+          "oldTimeline": "后续处理",
+          "newTimeline": "后续理赔",
+          "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+        },
+        {
+          "month": "2026-08",
+          "number": 1,
+          "row": 14,
+          "oldTimeline": "紧急情况",
+          "newTimeline": "紧急联络",
+          "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+        },
+        {
+          "month": "2026-08",
+          "number": 1,
+          "row": 15,
+          "oldTimeline": "后续处理",
+          "newTimeline": "后续维修",
+          "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+        }
+      ],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "sujet": "Je travaille au service culturel de la mairie. Vous voulez en savoir plus sur les activités culturelles de la ville. Vous me posez des questions (expositions, musées, ateliers, prix, accès, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "活动",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "展览",
+          "questionNumbers": [
+            2
+          ]
+        },
+        {
+          "name": "博物馆",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "工作坊",
+          "questionNumbers": [
+            4
+          ]
+        },
+        {
+          "name": "儿童",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            6
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            7,
+            8
+          ]
+        },
+        {
+          "name": "价格",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "优惠",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "预约",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "报名",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "文件",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "无障碍",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 11,
+        "将来参加": 1,
+        "将来报名": 2,
+        "现在建议": 1
+      },
+      "pronounAndRelevanceReview": "按中心工作人员、志愿服务咨询员、邻居、医生秘书、朋友及保险客服逐题核对称谓和场景角色；检查信息角度与时间线。",
+      "translationReview": "本题15句中文均逐句人工校订。",
+      "changeReasons": [],
+      "timelineChanges": [
+        {
+          "month": "2026-08",
+          "number": 2,
+          "row": 12,
+          "oldTimeline": "将来参加",
+          "newTimeline": "将来报名",
+          "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+        },
+        {
+          "month": "2026-08",
+          "number": 2,
+          "row": 13,
+          "oldTimeline": "将来参加",
+          "newTimeline": "将来报名",
+          "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+        }
+      ],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "sujet": "Je travaille à l’accueil du nouveau centre culturel de votre ville. Vous êtes intéressé(e). Vous me posez des questions sur les activités proposées par le centre (horaires, prix, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "地点",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            2,
+            3
+          ]
+        },
+        {
+          "name": "活动",
+          "questionNumbers": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "name": "展览",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "设备",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "服务",
+          "questionNumbers": [
+            9,
+            10
+          ]
+        },
+        {
+          "name": "价格",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "优惠",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "报名",
+          "questionNumbers": [
+            13,
+            14
+          ]
+        },
+        {
+          "name": "无障碍",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 11,
+        "将来预约": 1,
+        "将来报名": 2,
+        "将来参加": 1
+      },
+      "pronounAndRelevanceReview": "按中心工作人员、志愿服务咨询员、邻居、医生秘书、朋友及保险客服逐题核对称谓和场景角色；检查信息角度与时间线。",
+      "translationReview": "本题15句中文均逐句人工校订。",
+      "changeReasons": [],
+      "timelineChanges": [
+        {
+          "month": "2026-08",
+          "number": 3,
+          "row": 11,
+          "oldTimeline": "现在信息",
+          "newTimeline": "将来预约",
+          "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+        },
+        {
+          "month": "2026-08",
+          "number": 3,
+          "row": 12,
+          "oldTimeline": "现在信息",
+          "newTimeline": "将来报名",
+          "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+        },
+        {
+          "month": "2026-08",
+          "number": 3,
+          "row": 13,
+          "oldTimeline": "将来参加",
+          "newTimeline": "将来报名",
+          "reason": "依问题对应的未来就医、服务使用、注册、理赔或后续安排修正时间线。"
+        }
+      ],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "sujet": "Je travaille à l’accueil du nouveau centre culturel de votre ville. Vous êtes intéressé(e). Vous me posez des questions sur les activités proposées par le centre (horaires, prix, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "地点",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            2,
+            3
+          ]
+        },
+        {
+          "name": "活动",
+          "questionNumbers": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "name": "展览",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "设备",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "服务",
+          "questionNumbers": [
+            9,
+            10
+          ]
+        },
+        {
+          "name": "价格",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "优惠",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "报名",
+          "questionNumbers": [
+            13,
+            14
+          ]
+        },
+        {
+          "name": "无障碍",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 13,
+        "将来参加": 2
+      },
+      "pronounAndRelevanceReview": "按中心工作人员、志愿服务咨询员、邻居、医生秘书、朋友及保险客服逐题核对称谓和场景角色；检查信息角度与时间线。",
+      "translationReview": "本题15句中文均逐句人工校订。",
+      "changeReasons": [],
+      "timelineChanges": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "sujet": "Je travaille à l’accueil d’une bibliothèque. Vous voulez vous inscrire. Vous me posez des questions sur le fonctionnement de cette bibliothèque (inscription, conditions d’emprunt, horaires, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "地点",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            2,
+            3
+          ]
+        },
+        {
+          "name": "注册",
+          "questionNumbers": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "name": "卡",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "借阅",
+          "questionNumbers": [
+            8,
+            9
+          ]
+        },
+        {
+          "name": "续借",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "预约",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "服务",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "活动",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "迟还",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 10,
+        "将来注册": 2,
+        "将来借阅": 2,
+        "条件情况": 1
+      },
+      "pronounAndRelevanceReview": "按中心工作人员、志愿服务咨询员、邻居、医生秘书、朋友及保险客服逐题核对称谓和场景角色；检查信息角度与时间线。",
+      "translationReview": "本题15句中文均逐句人工校订。",
+      "changeReasons": [],
+      "timelineChanges": [],
+      "translationEditCount": 15
+    }
+  ],
+  "piperCoverage": {
+    "status": "pending-generation",
+    "voice": "fr_FR-siwis-medium",
+    "uniqueFrenchQuestions": 115,
+    "matched": 0,
+    "missing": "pending"
+  },
+  "runtimeChecks": {
+    "sujetCount": 10,
+    "expectedSujetCount": 10,
+    "questionSlots": 150,
+    "expectedQuestionSlots": 150,
+    "allSujetsHave15Questions": true,
+    "allRowsHaveFrenchAndChinese": true,
+    "noDuplicateFrenchPerSujet": true,
+    "frenchProgressKeysDifferFromOriginal": true,
+    "followMarkerRows": 0
+  }
+}
