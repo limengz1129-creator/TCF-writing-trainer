@@ -1,0 +1,13 @@
+{
+  "version": "travel27-tridim-v2",
+  "sujets": 27,
+  "questions_per_sujet": 15,
+  "total_question_slots": 405,
+  "source15": "tache2/real-exams/travel-data-1.js through travel-data-9.js",
+  "source12": "combined-expressions/t2-12-trainer.html",
+  "finding": "The 12-question exercise reads the original 15-question rows and selects up to 12 based on the dimension field, then fills by original order. It is not a separate rephrased corpus.",
+  "method": ["Compare the 12-question selection to the complete 15-question list per Sujet", "Retain all 15 question positions and original four-column presentation", "Prioritize semantic relevance, naturally diverse question forms, appropriate past/present/future/conditional/subjunctive and vous/tu consistency", "Retain approved originals when variation would be artificial", "Preserve changed original text with originalFr for audit and progress isolation"],
+  "changes_this_round": 17,
+  "tracking": "Every Sujet stores fusion3D.version=2 and an edit list. Prior optimized replacements remain tagged with originalFr.",
+  "qualification": "Three-dimensional diagnosis is a human-guided editorial review, not an official C1 scoring rubric. Questions are not forced into a fixed distribution of interrogatives or tenses."
+}
