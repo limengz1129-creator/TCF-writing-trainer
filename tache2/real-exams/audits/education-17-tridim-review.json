@@ -3,7 +3,7 @@
   "theme": "教育与培训",
   "sujets": 17,
   "questionSlots": 255,
-  "status": "ready_for_audio_rebuild",
+  "status": "ready_for_pages_verification",
   "approval": "not_passed",
   "source": "tache2/real-exams/source/education.json.gz.b64",
   "runtime": "tache2/real-exams/data/education.json",
@@ -19,11 +19,10 @@
     "修正朋友关系中4处不一致的vous用法或对群体的称呼，统一tu称呼。",
     "清理2个跟进问句的手写箭头，通过follow字段显示。",
     "按回顾语境改写2个烹饪课程经历问句；所有题目逐问检查时态、语式与信息角度。",
-    "对照原始备份校订中文译文，共255行实际修改。"
+    "对照原始备份校订中文译文，共255行实际修改。",
+    "Piper fr_FR-siwis-medium对教育主题155/155条不同法语问句精确覆盖；资源索引及音频文件逐项核验通过。"
   ],
-  "limitations": [
-    "主题音频需完成最终重建和资源包核验后才能验收。"
-  ],
+  "limitations": [],
   "changes": [
     {
       "month": "2026-07",
@@ -3937,16 +3936,19 @@
     }
   ],
   "piperCoverage": {
-    "status": "pending-generation",
+    "status": "covered; resources verified",
     "voice": "fr_FR-siwis-medium",
     "uniqueFrenchQuestions": 155,
-    "matched": 151,
-    "missing": [
-      "On te remettait les recettes après le cours ?",
-      "Quels types de plats as-tu appris à préparer ?",
-      "Sur quoi travailles-tu pendant les cours ?",
-      "Tu apprends quoi concrètement pendant les cours ?"
-    ]
+    "matched": 155,
+    "missing": [],
+    "manifest": "tache2/real-exams/piper-audio/themes/manifest.json",
+    "resourceIntegrity": {
+      "manifestTargets": 2349,
+      "audioRecords": 2349,
+      "resourceIdsPresent": true,
+      "embeddedTextMatchesIndex": true,
+      "newGeneratedPack": "education-pack-002.json"
+    }
   },
   "runtimeChecks": {
     "sujetCount": 17,
@@ -3957,6 +3959,13 @@
     "allRowsHaveFrenchAndChinese": true,
     "noDuplicateFrenchPerSujet": true,
     "frenchProgressKeysDifferFromOriginal": true,
-    "followMarkerRows": 2
+    "followMarkerRows": 2,
+    "allFrenchQuestionsAudioCovered": true,
+    "audioResourceFilesVerified": true,
+    "manifestTargetCount": 2349,
+    "manifestRecordCount": 2349,
+    "allManifestIdsResolveToResource": true,
+    "allAudioEmbeddedTextMatchesTarget": true,
+    "sourceRowsMatchRuntime": true
   }
 }
