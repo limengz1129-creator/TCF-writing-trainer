@@ -1,0 +1,2639 @@
+{
+  "version": "sport-review-2026-10-18-v1",
+  "theme": "体育户外与场馆",
+  "sujets": 9,
+  "questionSlots": 135,
+  "status": "ready_for_audio_rebuild",
+  "approval": "not_passed",
+  "source": "tache2/real-exams/source/sport.json.gz.b64",
+  "runtime": "tache2/real-exams/data/sport.json",
+  "reviewMethod": [
+    "逐Sujet审查15问的信息角度、关系人称和句法自然度。",
+    "核对活动时间、出行、准备、报名、现场保障和结果的时间线。",
+    "逐句校订全部135条中文译文，并记录变更。",
+    "法语改写通过新progressKey重置原句学习状态。",
+    "完成Piper精确文本/资源验证和Pages部署后通过。"
+  ],
+  "findings": [
+    "保留9个Sujet、每题15问。",
+    "纠正跑步赛事中邻居关系的tu/vous；纠正邻居健身房场景把邻居写成工作人员；消除初学者学习者的性别预设。",
+    "与完整备份对照，人工校订中文译文135行。"
+  ],
+  "limitations": [
+    "需完成最终Piper音频覆盖和Pages部署检查。"
+  ],
+  "changes": [
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 7,
+      "oldFr": "Les séances sont-elles adaptées à une débutante ?",
+      "newFr": "Les séances conviennent-elles aux personnes qui débutent ?",
+      "zh": "这些课程适合刚开始练瑜伽的人吗？",
+      "reason": "去除对学习者性别的预设，用自然中性的表达。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 7,
+      "oldFr": "Cette activité est-elle adaptée à une débutante comme moi ?",
+      "newFr": "Cette activité convient-elle aux personnes qui débutent ?",
+      "zh": "这项活动适合初学者吗？",
+      "reason": "去除学习者女性性别预设。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 8,
+      "oldFr": "Est-il possible d’être accompagné par un entraîneur quand on débute ?",
+      "newFr": "Puis-je bénéficier d’un accompagnement par un entraîneur quand je débute ?",
+      "zh": "刚开始时，我可以请教练指导吗？",
+      "reason": "直接采用第一人称询问教练指导，避免性别一致误判。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 7,
+      "oldFr": "Cette activité est-elle adaptée à une débutante comme moi ?",
+      "newFr": "Cette activité convient-elle aux personnes qui débutent ?",
+      "zh": "这项活动适合初学者吗？",
+      "reason": "去除学习者女性性别预设。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 8,
+      "oldFr": "Est-il possible d’être accompagné par un entraîneur quand on débute ?",
+      "newFr": "Puis-je bénéficier d’un accompagnement par un entraîneur quand je débute ?",
+      "zh": "刚开始时，我可以请教练指导吗？",
+      "reason": "直接采用第一人称询问教练指导，避免性别一致误判。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 7,
+      "oldFr": "Les séances sont-elles adaptées à une débutante ?",
+      "newFr": "Les séances conviennent-elles aux personnes qui débutent ?",
+      "zh": "这些课程适合刚开始练瑜伽的人吗？",
+      "reason": "去除学习者女性性别预设。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 5,
+      "oldFr": "La course fait combien de kilomètres ?",
+      "newFr": "Quelle est la distance de la course ?",
+      "zh": "比赛距离是多少？",
+      "reason": "将略显生硬的距离问法改为自然简洁表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 7,
+      "oldFr": "Combien de semaines de préparation me conseillerais-tu ?",
+      "newFr": "Combien de semaines de préparation me conseilleriez-vous ?",
+      "zh": "您建议我提前多少周开始准备？",
+      "reason": "该Sujet对象是邻居，统一使用礼貌vous。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 8,
+      "oldFr": "Comment devrais-je m’entraîner avant la course selon toi ?",
+      "newFr": "Comment me conseilleriez-vous de m’entraîner avant la course ?",
+      "zh": "您建议我在比赛前如何训练？",
+      "reason": "该Sujet对象是邻居，统一使用礼貌vous，并用自然问法征求训练建议。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 1,
+      "oldFr": "Où se trouve exactement la salle de sport ?",
+      "newFr": "Connaissez-vous une salle de sport dans le quartier ?",
+      "zh": "您知道附近有健身房吗？",
+      "reason": "Sujet中受访者是邻居而不是俱乐部员工，改为询问附近健身房信息。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 3,
+      "oldFr": "À quelles heures êtes-vous ouverts ?",
+      "newFr": "Savez-vous à quelles heures elle est ouverte ?",
+      "zh": "您知道那家健身房几点开放吗？",
+      "reason": "改为向邻居询问健身房开放时间。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 4,
+      "oldFr": "Et le week-end, les horaires changent-ils ?",
+      "newFr": "Et le week-end, ses horaires changent-ils ?",
+      "zh": "那家健身房周末的开放时间会变吗？",
+      "reason": "明确询问健身房周末时间，符合邻居角色。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 5,
+      "oldFr": "Qu’est-ce que vous proposez comme activités ou programmes ?",
+      "newFr": "Quelles activités y sont proposées ?",
+      "zh": "那里提供哪些活动？",
+      "reason": "原句把邻居当成健身房工作人员；改为询问场馆提供的活动。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 7,
+      "oldFr": "Ce programme est-il adapté à une débutante ?",
+      "newFr": "Ce programme convient-il aux personnes qui débutent ?",
+      "zh": "这项课程适合初学者吗？",
+      "reason": "去除对学习者性别的预设。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 9,
+      "oldFr": "Puis-je être accompagnée par un entraîneur au début ?",
+      "newFr": "Peut-on bénéficier d’un accompagnement par un entraîneur quand on débute ?",
+      "zh": "刚开始锻炼时，可以请教练指导吗？",
+      "reason": "去除女性性别预设，并保持咨询场馆服务的问法。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 10,
+      "oldFr": "Vous proposez plutôt des entraînements collectifs, individuels, ou les deux ?",
+      "newFr": "Les entraînements sont-ils individuels, collectifs, ou les deux ?",
+      "zh": "训练是单人、团体，还是两种形式都有？",
+      "reason": "原句把邻居当成场馆员工，改为询问场馆训练形式。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 7,
+      "oldFr": "Cette activité est-elle adaptée à une débutante comme moi ?",
+      "newFr": "Cette activité convient-elle aux personnes qui débutent ?",
+      "zh": "这项活动适合初学者吗？",
+      "reason": "去除学习者女性性别预设。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 8,
+      "oldFr": "Est-il possible d’être accompagné par un entraîneur quand on débute ?",
+      "newFr": "Puis-je bénéficier d’un accompagnement par un entraîneur quand je débute ?",
+      "zh": "刚开始时，我可以请教练指导吗？",
+      "reason": "直接采用第一人称询问教练指导，避免性别一致误判。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 7,
+      "oldFr": "Cette activité est-elle adaptée à une débutante comme moi ?",
+      "newFr": "Cette activité convient-elle aux personnes qui débutent ?",
+      "zh": "这项活动适合初学者吗？",
+      "reason": "去除学习者女性性别预设。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 8,
+      "oldFr": "Est-il possible d’être accompagné par un entraîneur quand on débute ?",
+      "newFr": "Puis-je bénéficier d’un accompagnement par un entraîneur quand je débute ?",
+      "zh": "刚开始时，我可以请教练指导吗？",
+      "reason": "直接采用第一人称询问教练指导，避免性别一致误判。"
+    }
+  ],
+  "timelineChanges": [
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 1,
+      "oldTimeline": "现在信息",
+      "newTimeline": "将来活动",
+      "reason": "问题询问的是未来举行的赛事、准备、现场保障或赛后结果，按对应未来时间线标注。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 2,
+      "oldTimeline": "现在信息",
+      "newTimeline": "将来活动",
+      "reason": "问题询问的是未来举行的赛事、准备、现场保障或赛后结果，按对应未来时间线标注。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 3,
+      "oldTimeline": "现在信息",
+      "newTimeline": "将来活动",
+      "reason": "问题询问的是未来举行的赛事、准备、现场保障或赛后结果，按对应未来时间线标注。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 4,
+      "oldTimeline": "将来计划",
+      "newTimeline": "将来出行",
+      "reason": "问题询问的是未来举行的赛事、准备、现场保障或赛后结果，按对应未来时间线标注。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 5,
+      "oldTimeline": "现在信息",
+      "newTimeline": "将来活动",
+      "reason": "问题询问的是未来举行的赛事、准备、现场保障或赛后结果，按对应未来时间线标注。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 10,
+      "oldTimeline": "现在信息",
+      "newTimeline": "将来保障",
+      "reason": "问题询问的是未来举行的赛事、准备、现场保障或赛后结果，按对应未来时间线标注。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 11,
+      "oldTimeline": "现在信息",
+      "newTimeline": "将来保障",
+      "reason": "问题询问的是未来举行的赛事、准备、现场保障或赛后结果，按对应未来时间线标注。"
+    }
+  ],
+  "translationEdits": [
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 1,
+      "fr": "Où se trouve exactement votre école de danse ?",
+      "oldZh": "你的舞蹈学校在哪里?",
+      "newZh": "您的舞蹈学校具体在哪里？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 2,
+      "fr": "Quel est le moyen le plus simple pour y aller ?",
+      "oldZh": "我怎么能去呢?",
+      "newZh": "怎么去那里最方便？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 3,
+      "fr": "À quelles heures êtes-vous ouverts ?",
+      "oldZh": "开放时间是什么?",
+      "newZh": "你们的开放时间是什么？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 4,
+      "fr": "Et le week-end, les horaires changent-ils ?",
+      "oldZh": "周末的时间是相同的吗?",
+      "newZh": "周末的开放时间会有变化吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 5,
+      "fr": "Qu’est-ce que vous proposez comme styles de danse ?",
+      "oldZh": "你提出什么样的舞蹈?",
+      "newZh": "你们提供哪些舞蹈课程？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 6,
+      "fr": "Les cours sont-ils adaptés aux débutants ?",
+      "oldZh": "这些课程是否适合初学者?",
+      "newZh": "这些课程适合初学者吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 7,
+      "fr": "Dois-je préparer quelque chose avant de commencer ?",
+      "oldZh": "在开始之前,我们需要做些什么准备吗?",
+      "newZh": "开始之前，我需要做什么准备吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 8,
+      "fr": "Quelle formation ont suivie les professeurs ?",
+      "oldZh": "教师的资格是什么?",
+      "newZh": "老师们接受过什么专业培训？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 9,
+      "fr": "Vous proposez des cours individuels, en groupe, ou les deux ?",
+      "oldZh": "课程是个人的还是团体的?",
+      "newZh": "你们提供单人课、团体课，还是两种都有？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 10,
+      "fr": "Quelle est la taille des groupes en général ?",
+      "oldZh": "一个小组中有多少人?",
+      "newZh": "每个班通常有多少人？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 11,
+      "fr": "Comment faut-il s’habiller pour les cours ?",
+      "oldZh": "要穿什么样的服装来上课?",
+      "newZh": "上课时应该穿什么？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 12,
+      "fr": "Dois-je apporter du matériel particulier ?",
+      "oldZh": "需要自己带特别的材料或者装备吗？",
+      "newZh": "我需要自备什么特别的器材吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 13,
+      "fr": "Quel est le tarif des cours ?",
+      "oldZh": "这些课程需要多少钱?",
+      "newZh": "课程费用是多少？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 14,
+      "fr": "Puis-je faire un cours d’essai avant de m’inscrire ?",
+      "oldZh": "在报名之前,我可以接受试课吗?",
+      "newZh": "报名之前，我可以先试听一节课吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 15,
+      "fr": "Comment se passe l’inscription ?",
+      "oldZh": "我怎么能报名?",
+      "newZh": "报名流程是怎样的？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 1,
+      "fr": "Quels sont les jours et les horaires des séances de yoga ?",
+      "oldZh": "课时间和日期是什么?",
+      "newZh": "瑜伽课安排在星期几、什么时间？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 2,
+      "fr": "À quelle fréquence proposez-vous les séances ?",
+      "oldZh": "你每周安排会议的时间是多少次?",
+      "newZh": "你们多久开一次瑜伽课？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 3,
+      "fr": "Où ont lieu les séances exactement ?",
+      "oldZh": "会议在哪里举行?",
+      "newZh": "瑜伽课具体在哪里上？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 4,
+      "fr": "Quel est le moyen le plus simple pour m’y rendre ?",
+      "oldZh": "我怎么回去呢?",
+      "newZh": "怎么去那里最方便？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 5,
+      "fr": "Quelles formules de yoga proposez-vous ?",
+      "oldZh": "你提供什么样的会议?",
+      "newZh": "你们提供哪些瑜伽课程或形式？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 6,
+      "fr": "Comment se déroule une séance typique ?",
+      "oldZh": "你能描述一个典型的会议吗?",
+      "newZh": "一节常规课程通常怎么进行？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 7,
+      "fr": "Les séances conviennent-elles aux personnes qui débutent ?",
+      "oldZh": "一个初学者可以参加吗?",
+      "newZh": "这些课程适合刚开始练瑜伽的人吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 8,
+      "fr": "Dois-je faire une préparation particulière avant de commencer ?",
+      "oldZh": "在开始之前,需要做什么特别的准备吗?",
+      "newZh": "开始之前，我需要做特别准备吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 9,
+      "fr": "Qui encadre les séances : un professeur ou un entraîneur ?",
+      "oldZh": "有没有教师或教练来主导会议吗?",
+      "newZh": "课程由谁带领，是瑜伽老师还是教练？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 10,
+      "fr": "Les séances sont-elles collectives ?",
+      "oldZh": "会议是团队的吗?",
+      "newZh": "这些课程是团体课吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 11,
+      "fr": "Quelle est la taille des groupes en général ?",
+      "oldZh": "一个小组中有多少人?",
+      "newZh": "每个班通常有多少人？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 12,
+      "fr": "Le tapis de yoga est-il fourni ou dois-je apporter le mien ?",
+      "oldZh": "我应该带我的毯吗?",
+      "newZh": "你们提供瑜伽垫吗，还是需要我自带？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 13,
+      "fr": "Quel autre équipement faut-il prévoir ?",
+      "oldZh": "还有其他特殊设备吗?",
+      "newZh": "还需要准备什么其他器材？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 14,
+      "fr": "Quel est le prix d’une séance ?",
+      "oldZh": "一个会议需要多少钱?",
+      "newZh": "每节课多少钱？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 15,
+      "fr": "Comment se passe l’inscription ?",
+      "oldZh": "我怎么能报名?",
+      "newZh": "报名流程是怎样的？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 1,
+      "fr": "Où se trouve exactement votre club sportif ?",
+      "oldZh": "你的体育俱乐部在哪里?",
+      "newZh": "您的体育俱乐部具体在哪里？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 2,
+      "fr": "Quel est le moyen le plus simple pour y aller ?",
+      "oldZh": "我怎么能去呢?",
+      "newZh": "怎么去那里最方便？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 3,
+      "fr": "À quelles heures êtes-vous ouverts ?",
+      "oldZh": "开放时间是什么?",
+      "newZh": "你们的开放时间是什么？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 4,
+      "fr": "Et le week-end, les horaires changent-ils ?",
+      "oldZh": "周末的时间是相同的吗?",
+      "newZh": "周末的开放时间会有变化吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 5,
+      "fr": "Qu’est-ce qu’on peut pratiquer comme sport dans votre club ?",
+      "oldZh": "你提供哪些运动?",
+      "newZh": "在你们俱乐部可以参加哪些运动？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 6,
+      "fr": "Parmi ces activités, laquelle me conseilleriez-vous ?",
+      "oldZh": "你建议我做什么?",
+      "newZh": "这些活动中，您会推荐哪一项？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 7,
+      "fr": "Cette activité convient-elle aux personnes qui débutent ?",
+      "oldZh": "这项活动是否适合像我这样的初学者?",
+      "newZh": "这项活动适合初学者吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 8,
+      "fr": "Puis-je bénéficier d’un accompagnement par un entraîneur quand je débute ?",
+      "oldZh": "有没有一个教练来陪伴初学者吗?",
+      "newZh": "刚开始时，我可以请教练指导吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 9,
+      "fr": "Les séances se font-elles individuellement ou en groupe ?",
+      "oldZh": "会议是个人的还是团体的?",
+      "newZh": "训练是单独进行还是团体进行？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 10,
+      "fr": "Quelle est la taille des groupes en général ?",
+      "oldZh": "一个小组中有多少人?",
+      "newZh": "每个班通常有多少人？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 11,
+      "fr": "Comment la sécurité des participants est-elle assurée ?",
+      "oldZh": "活动是安全的吗?",
+      "newZh": "你们如何保障参与者的安全？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 12,
+      "fr": "Est-ce que le matériel est disponible sur place ?",
+      "oldZh": "设备是否在现场供应?",
+      "newZh": "现场提供运动器材吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 13,
+      "fr": "Quel est le tarif de l’activité qui m’intéresse ?",
+      "oldZh": "我感兴趣的活动需要多少钱?",
+      "newZh": "我感兴趣的活动费用是多少？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 14,
+      "fr": "Comment peut-on payer ?",
+      "oldZh": "你接受什么样的支付方式?",
+      "newZh": "可以用哪些方式付款？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 15,
+      "fr": "Comment se passe l’inscription ?",
+      "oldZh": "我怎么能报名?",
+      "newZh": "报名流程是怎样的？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 1,
+      "fr": "Où se trouve exactement votre club sportif ?",
+      "oldZh": "你的体育俱乐部在哪里?",
+      "newZh": "您的体育俱乐部具体在哪里？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 2,
+      "fr": "Quel est le moyen le plus simple pour y aller ?",
+      "oldZh": "我怎么能去呢?",
+      "newZh": "怎么去那里最方便？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 3,
+      "fr": "À quelles heures êtes-vous ouverts ?",
+      "oldZh": "开放时间是什么?",
+      "newZh": "你们的开放时间是什么？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 4,
+      "fr": "Et le week-end, les horaires changent-ils ?",
+      "oldZh": "周末的时间是相同的吗?",
+      "newZh": "周末的开放时间会有变化吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 5,
+      "fr": "Qu’est-ce qu’on peut pratiquer comme sport dans votre club ?",
+      "oldZh": "你提供哪些运动?",
+      "newZh": "在你们俱乐部可以参加哪些运动？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 6,
+      "fr": "Parmi ces activités, laquelle me conseilleriez-vous ?",
+      "oldZh": "你建议我做什么?",
+      "newZh": "这些活动中，您会推荐哪一项？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 7,
+      "fr": "Cette activité convient-elle aux personnes qui débutent ?",
+      "oldZh": "这项活动是否适合像我这样的初学者?",
+      "newZh": "这项活动适合初学者吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 8,
+      "fr": "Puis-je bénéficier d’un accompagnement par un entraîneur quand je débute ?",
+      "oldZh": "有没有一个教练来陪伴初学者吗?",
+      "newZh": "刚开始时，我可以请教练指导吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 9,
+      "fr": "Les séances se font-elles individuellement ou en groupe ?",
+      "oldZh": "会议是个人的还是团体的?",
+      "newZh": "训练是单独进行还是团体进行？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 10,
+      "fr": "Quelle est la taille des groupes en général ?",
+      "oldZh": "一个小组中有多少人?",
+      "newZh": "每个班通常有多少人？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 11,
+      "fr": "Comment la sécurité des participants est-elle assurée ?",
+      "oldZh": "活动是安全的吗?",
+      "newZh": "你们如何保障参与者的安全？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 12,
+      "fr": "Est-ce que le matériel est disponible sur place ?",
+      "oldZh": "设备是否在现场供应?",
+      "newZh": "现场提供运动器材吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 13,
+      "fr": "Quel est le tarif de l’activité qui m’intéresse ?",
+      "oldZh": "我感兴趣的活动需要多少钱?",
+      "newZh": "我感兴趣的活动费用是多少？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 14,
+      "fr": "Comment peut-on payer ?",
+      "oldZh": "你接受什么样的支付方式?",
+      "newZh": "可以用哪些方式付款？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 15,
+      "fr": "Comment se passe l’inscription ?",
+      "oldZh": "我怎么能报名?",
+      "newZh": "报名流程是怎样的？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 1,
+      "fr": "Quels sont les jours et les horaires des séances de yoga ?",
+      "oldZh": "课时间和日期是什么?",
+      "newZh": "瑜伽课安排在星期几、什么时间？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 2,
+      "fr": "À quelle fréquence proposez-vous les séances ?",
+      "oldZh": "你每周安排会议的时间是多少次?",
+      "newZh": "你们多久开一次瑜伽课？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 3,
+      "fr": "Où ont lieu les séances exactement ?",
+      "oldZh": "会议在哪里举行?",
+      "newZh": "瑜伽课具体在哪里上？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 4,
+      "fr": "Quel est le moyen le plus simple pour m’y rendre ?",
+      "oldZh": "我怎么回去呢?",
+      "newZh": "怎么去那里最方便？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 5,
+      "fr": "Quelles formules de yoga proposez-vous ?",
+      "oldZh": "你提供什么样的会议?",
+      "newZh": "你们提供哪些瑜伽课程或形式？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 6,
+      "fr": "Comment se déroule une séance typique ?",
+      "oldZh": "你能描述一个典型的会议吗?",
+      "newZh": "一节常规课程通常怎么进行？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 7,
+      "fr": "Les séances conviennent-elles aux personnes qui débutent ?",
+      "oldZh": "一个初学者可以参加吗?",
+      "newZh": "这些课程适合刚开始练瑜伽的人吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 8,
+      "fr": "Dois-je faire une préparation particulière avant de commencer ?",
+      "oldZh": "在开始之前,需要做什么特别的准备吗?",
+      "newZh": "开始之前，我需要做特别准备吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 9,
+      "fr": "Qui encadre les séances : un professeur ou un entraîneur ?",
+      "oldZh": "有没有教师或教练来主导会议吗?",
+      "newZh": "课程由谁带领，是瑜伽老师还是教练？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 10,
+      "fr": "Les séances sont-elles collectives ?",
+      "oldZh": "会议是团队的吗?",
+      "newZh": "这些课程是团体课吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 11,
+      "fr": "Quelle est la taille des groupes en général ?",
+      "oldZh": "一个小组中有多少人?",
+      "newZh": "每个班通常有多少人？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 12,
+      "fr": "Le tapis de yoga est-il fourni ou dois-je apporter le mien ?",
+      "oldZh": "我应该带我的毯吗?",
+      "newZh": "你们提供瑜伽垫吗，还是需要我自带？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 13,
+      "fr": "Quel autre équipement faut-il prévoir ?",
+      "oldZh": "还有其他特殊设备吗?",
+      "newZh": "还需要准备什么其他器材？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 14,
+      "fr": "Quel est le prix d’une séance ?",
+      "oldZh": "一个会议需要多少钱?",
+      "newZh": "每节课多少钱？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 15,
+      "fr": "Comment se passe l’inscription ?",
+      "oldZh": "我怎么能报名?",
+      "newZh": "报名流程是怎样的？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 1,
+      "fr": "Quand aura lieu la course exactement ?",
+      "oldZh": "赛事的时间是什么?",
+      "newZh": "比赛具体在什么时候举行？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 2,
+      "fr": "En général, combien de temps dure l’événement ?",
+      "oldZh": "活动通常持续多长时间?",
+      "newZh": "活动通常持续多长时间？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 3,
+      "fr": "Où aura lieu la course exactement ?",
+      "oldZh": "赛事将在哪里举行?",
+      "newZh": "比赛具体在哪里举行？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 4,
+      "fr": "Quel est le moyen le plus simple pour s’y rendre ?",
+      "oldZh": "怎么去那里？",
+      "newZh": "怎么去那里最方便？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 5,
+      "fr": "Quelle est la distance de la course ?",
+      "oldZh": "赛车距离是多少?",
+      "newZh": "比赛距离是多少？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 6,
+      "fr": "Cette course est-elle accessible aux débutants ?",
+      "oldZh": "这场比赛是否适合初学者?",
+      "newZh": "这项比赛适合初学者参加吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 7,
+      "fr": "Combien de semaines de préparation me conseilleriez-vous ?",
+      "oldZh": "准备需要多少时间?",
+      "newZh": "您建议我提前多少周开始准备？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 8,
+      "fr": "Comment me conseilleriez-vous de m’entraîner avant la course ?",
+      "oldZh": "你怎么建议我在比赛前训练?",
+      "newZh": "您建议我在比赛前如何训练？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 9,
+      "fr": "De quel équipement ai-je besoin pour la course ?",
+      "oldZh": "需要准备哪些装备？",
+      "newZh": "参加比赛需要准备什么装备？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 10,
+      "fr": "Des points d’eau ou de ravitaillement sont-ils prévus sur le parcours ?",
+      "oldZh": "路上是否会有水点或补给?",
+      "newZh": "赛道沿途设有饮水点或补给点吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 11,
+      "fr": "Un service médical sera-t-il disponible en cas d’urgence ?",
+      "oldZh": "在紧急情况下,是否会有医疗服务?",
+      "newZh": "如果发生紧急情况，会有医疗服务吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 12,
+      "fr": "Quel est le prix de l’inscription ?",
+      "oldZh": "报名费用是多少?",
+      "newZh": "报名费是多少？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 13,
+      "fr": "Comment se passe l’inscription ?",
+      "oldZh": "我怎么能报名?",
+      "newZh": "报名流程是怎样的？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 14,
+      "fr": "Jusqu’à quand peut-on s’inscrire ?",
+      "oldZh": "报名截止日期是什么?",
+      "newZh": "最晚可以报名到什么时候？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 15,
+      "fr": "Reçoit-on une attestation ou une médaille après la course ?",
+      "oldZh": "在比赛结束后,我们会得到证书或奖牌吗?",
+      "newZh": "比赛结束后会发完赛证明或奖牌吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 1,
+      "fr": "Connaissez-vous une salle de sport dans le quartier ?",
+      "oldZh": "体育馆在哪里?",
+      "newZh": "您知道附近有健身房吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 2,
+      "fr": "Quel est le moyen le plus simple pour y aller ?",
+      "oldZh": "我怎么能去呢?",
+      "newZh": "怎么去那里最方便？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 3,
+      "fr": "Savez-vous à quelles heures elle est ouverte ?",
+      "oldZh": "开放时间是什么?",
+      "newZh": "您知道那家健身房几点开放吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 4,
+      "fr": "Et le week-end, ses horaires changent-ils ?",
+      "oldZh": "周末的时间是相同的吗?",
+      "newZh": "那家健身房周末的开放时间会变吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 5,
+      "fr": "Quelles activités y sont proposées ?",
+      "oldZh": "提供哪些类型的活动或计划?",
+      "newZh": "那里提供哪些活动？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 6,
+      "fr": "Parmi vos programmes, lequel me conseilleriez-vous ?",
+      "oldZh": "你会建议我做什么?",
+      "newZh": "您推荐的这些课程中，哪一项更适合我？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 7,
+      "fr": "Ce programme convient-il aux personnes qui débutent ?",
+      "oldZh": "这项课程是否适合初学者?",
+      "newZh": "这项课程适合初学者吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 8,
+      "fr": "Dois-je préparer quelque chose avant de commencer ?",
+      "oldZh": "在开始之前,我们需要做些什么准备吗?",
+      "newZh": "开始之前，我需要做什么准备吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 9,
+      "fr": "Peut-on bénéficier d’un accompagnement par un entraîneur quand on débute ?",
+      "oldZh": "有没有教练可以帮助我开始吗?",
+      "newZh": "刚开始锻炼时，可以请教练指导吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 10,
+      "fr": "Les entraînements sont-ils individuels, collectifs, ou les deux ?",
+      "oldZh": "训练是集体还是个人?",
+      "newZh": "训练是单人、团体，还是两种形式都有？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 11,
+      "fr": "Qu’est-ce qu’on trouve comme équipements dans la salle ?",
+      "oldZh": "房间里有什么设备?",
+      "newZh": "健身房里有哪些器材？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 12,
+      "fr": "Quel est le prix de l’abonnement ?",
+      "oldZh": "订阅费用是多少?",
+      "newZh": "会员费是多少？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 13,
+      "fr": "Les étudiants ont-ils droit à une réduction ?",
+      "oldZh": "有没有学生卡的折扣吗?",
+      "newZh": "学生可以享受优惠吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 14,
+      "fr": "Puis-je faire une séance d’essai avant de m’inscrire ?",
+      "oldZh": "在报名之前,我可以做一次试验吗?",
+      "newZh": "报名之前，我可以先体验一节课吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 15,
+      "fr": "Comment se passe l’inscription ?",
+      "oldZh": "我怎么能报名?",
+      "newZh": "报名流程是怎样的？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 1,
+      "fr": "Où se trouve exactement votre club sportif ?",
+      "oldZh": "你的体育俱乐部在哪里?",
+      "newZh": "您的体育俱乐部具体在哪里？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 2,
+      "fr": "Quel est le moyen le plus simple pour y aller ?",
+      "oldZh": "我怎么能去呢?",
+      "newZh": "怎么去那里最方便？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 3,
+      "fr": "À quelles heures êtes-vous ouverts ?",
+      "oldZh": "开放时间是什么?",
+      "newZh": "你们的开放时间是什么？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 4,
+      "fr": "Et le week-end, les horaires changent-ils ?",
+      "oldZh": "周末的时间是相同的吗?",
+      "newZh": "周末的开放时间会有变化吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 5,
+      "fr": "Qu’est-ce qu’on peut pratiquer comme sport dans votre club ?",
+      "oldZh": "你提供哪些运动?",
+      "newZh": "在你们俱乐部可以参加哪些运动？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 6,
+      "fr": "Parmi ces activités, laquelle me conseilleriez-vous ?",
+      "oldZh": "你建议我做什么?",
+      "newZh": "这些活动中，您会推荐哪一项？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 7,
+      "fr": "Cette activité convient-elle aux personnes qui débutent ?",
+      "oldZh": "这项活动是否适合像我这样的初学者?",
+      "newZh": "这项活动适合初学者吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 8,
+      "fr": "Puis-je bénéficier d’un accompagnement par un entraîneur quand je débute ?",
+      "oldZh": "有没有一个教练来陪伴初学者吗?",
+      "newZh": "刚开始时，我可以请教练指导吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 9,
+      "fr": "Les séances se font-elles individuellement ou en groupe ?",
+      "oldZh": "会议是个人的还是团体的?",
+      "newZh": "训练是单独进行还是团体进行？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 10,
+      "fr": "Quelle est la taille des groupes en général ?",
+      "oldZh": "一个小组中有多少人?",
+      "newZh": "每个班通常有多少人？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 11,
+      "fr": "Comment la sécurité des participants est-elle assurée ?",
+      "oldZh": "活动是安全的吗?",
+      "newZh": "你们如何保障参与者的安全？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 12,
+      "fr": "Est-ce que le matériel est disponible sur place ?",
+      "oldZh": "设备是否在现场供应?",
+      "newZh": "现场提供运动器材吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 13,
+      "fr": "Quel est le tarif de l’activité qui m’intéresse ?",
+      "oldZh": "我感兴趣的活动需要多少钱?",
+      "newZh": "我感兴趣的活动费用是多少？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 14,
+      "fr": "Comment peut-on payer ?",
+      "oldZh": "你接受什么样的支付方式?",
+      "newZh": "可以用哪些方式付款？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 15,
+      "fr": "Comment se passe l’inscription ?",
+      "oldZh": "我怎么能报名?",
+      "newZh": "报名流程是怎样的？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 1,
+      "fr": "Où se trouve exactement votre club sportif ?",
+      "oldZh": "你的体育俱乐部在哪里?",
+      "newZh": "您的体育俱乐部具体在哪里？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 2,
+      "fr": "Quel est le moyen le plus simple pour y aller ?",
+      "oldZh": "我怎么能去呢?",
+      "newZh": "怎么去那里最方便？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 3,
+      "fr": "À quelles heures êtes-vous ouverts ?",
+      "oldZh": "开放时间是什么?",
+      "newZh": "你们的开放时间是什么？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 4,
+      "fr": "Et le week-end, les horaires changent-ils ?",
+      "oldZh": "周末的时间是相同的吗?",
+      "newZh": "周末的开放时间会有变化吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 5,
+      "fr": "Qu’est-ce qu’on peut pratiquer comme sport dans votre club ?",
+      "oldZh": "你提供哪些运动?",
+      "newZh": "在你们俱乐部可以参加哪些运动？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 6,
+      "fr": "Parmi ces activités, laquelle me conseilleriez-vous ?",
+      "oldZh": "你建议我做什么?",
+      "newZh": "这些活动中，您会推荐哪一项？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 7,
+      "fr": "Cette activité convient-elle aux personnes qui débutent ?",
+      "oldZh": "这项活动是否适合像我这样的初学者?",
+      "newZh": "这项活动适合初学者吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 8,
+      "fr": "Puis-je bénéficier d’un accompagnement par un entraîneur quand je débute ?",
+      "oldZh": "有没有一个教练来陪伴初学者吗?",
+      "newZh": "刚开始时，我可以请教练指导吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 9,
+      "fr": "Les séances se font-elles individuellement ou en groupe ?",
+      "oldZh": "会议是个人的还是团体的?",
+      "newZh": "训练是单独进行还是团体进行？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 10,
+      "fr": "Quelle est la taille des groupes en général ?",
+      "oldZh": "一个小组中有多少人?",
+      "newZh": "每个班通常有多少人？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 11,
+      "fr": "Comment la sécurité des participants est-elle assurée ?",
+      "oldZh": "活动是安全的吗?",
+      "newZh": "你们如何保障参与者的安全？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 12,
+      "fr": "Est-ce que le matériel est disponible sur place ?",
+      "oldZh": "设备是否在现场供应?",
+      "newZh": "现场提供运动器材吗？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 13,
+      "fr": "Quel est le tarif de l’activité qui m’intéresse ?",
+      "oldZh": "我感兴趣的活动需要多少钱?",
+      "newZh": "我感兴趣的活动费用是多少？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 14,
+      "fr": "Comment peut-on payer ?",
+      "oldZh": "你接受什么样的支付方式?",
+      "newZh": "可以用哪些方式付款？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 15,
+      "fr": "Comment se passe l’inscription ?",
+      "oldZh": "我怎么能报名?",
+      "newZh": "报名流程是怎样的？",
+      "reason": "逐句对照法语人工校订，修复错译、角色误认或不自然中文。"
+    }
+  ],
+  "translationEditCount": 135,
+  "entries": [
+    {
+      "month": "2026-10",
+      "number": 1,
+      "sujet": "Je travaille à l’accueil d’une école de danse. Vous êtes intéressé(e) par les cours proposés. Vous me posez des questions pour obtenir des informations (types de danse, horaires, tarifs, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "地点",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "交通",
+          "questionNumbers": [
+            2
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            3,
+            4
+          ]
+        },
+        {
+          "name": "课程",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "水平",
+          "questionNumbers": [
+            6
+          ]
+        },
+        {
+          "name": "准备",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "老师",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "组织",
+          "questionNumbers": [
+            9,
+            10
+          ]
+        },
+        {
+          "name": "服装",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "器材",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "体验",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "报名",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 9,
+        "将来计划": 1,
+        "将来准备": 3,
+        "将来尝试": 1,
+        "将来报名": 1
+      },
+      "pronounAndRelevanceReview": "逐题核对接待人员/同事/邻居关系对应的人称、具体信息角度、句法和时间线。邻居健身房Sujet统一改为向邻居了解附近场馆，不再把邻居当作工作人员。",
+      "translationReview": "本题15句中文均逐句人工校订。",
+      "changeReasons": [],
+      "timelineChanges": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "sujet": "Je suis votre collègue. J’organise des séances de yoga pour les employé(e)s de l’entreprise. Vous êtes intéressé(e). Vous me posez des questions pour obtenir des informations (lieux, horaires, équipements, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "交通",
+          "questionNumbers": [
+            4
+          ]
+        },
+        {
+          "name": "课程",
+          "questionNumbers": [
+            5,
+            6
+          ]
+        },
+        {
+          "name": "水平",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "准备",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "教练",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "组织",
+          "questionNumbers": [
+            10,
+            11
+          ]
+        },
+        {
+          "name": "器材",
+          "questionNumbers": [
+            12,
+            13
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "报名",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 10,
+        "将来计划": 1,
+        "将来准备": 3,
+        "将来报名": 1
+      },
+      "pronounAndRelevanceReview": "逐题核对接待人员/同事/邻居关系对应的人称、具体信息角度、句法和时间线。邻居健身房Sujet统一改为向邻居了解附近场馆，不再把邻居当作工作人员。",
+      "translationReview": "本题15句中文均逐句人工校订。",
+      "changeReasons": [
+        {
+          "month": "2026-10",
+          "number": 2,
+          "row": 7,
+          "oldFr": "Les séances sont-elles adaptées à une débutante ?",
+          "newFr": "Les séances conviennent-elles aux personnes qui débutent ?",
+          "zh": "这些课程适合刚开始练瑜伽的人吗？",
+          "reason": "去除对学习者性别的预设，用自然中性的表达。"
+        }
+      ],
+      "timelineChanges": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "sujet": "Je travaille dans un club sportif. Vous voulez vous inscrire à un cours de sport. Vous me posez des questions pour obtenir des informations et faire votre choix (sports proposés, horaires, tarifs, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "地点",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "交通",
+          "questionNumbers": [
+            2
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            3,
+            4
+          ]
+        },
+        {
+          "name": "项目",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "推荐",
+          "questionNumbers": [
+            6
+          ]
+        },
+        {
+          "name": "水平",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "教练",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "组织",
+          "questionNumbers": [
+            9,
+            10
+          ]
+        },
+        {
+          "name": "安全",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "器材",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "支付",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "报名",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 12,
+        "将来计划": 1,
+        "现在建议": 1,
+        "将来报名": 1
+      },
+      "pronounAndRelevanceReview": "逐题核对接待人员/同事/邻居关系对应的人称、具体信息角度、句法和时间线。邻居健身房Sujet统一改为向邻居了解附近场馆，不再把邻居当作工作人员。",
+      "translationReview": "本题15句中文均逐句人工校订。",
+      "changeReasons": [
+        {
+          "month": "2026-09",
+          "number": 1,
+          "row": 7,
+          "oldFr": "Cette activité est-elle adaptée à une débutante comme moi ?",
+          "newFr": "Cette activité convient-elle aux personnes qui débutent ?",
+          "zh": "这项活动适合初学者吗？",
+          "reason": "去除学习者女性性别预设。"
+        },
+        {
+          "month": "2026-09",
+          "number": 1,
+          "row": 8,
+          "oldFr": "Est-il possible d’être accompagné par un entraîneur quand on débute ?",
+          "newFr": "Puis-je bénéficier d’un accompagnement par un entraîneur quand je débute ?",
+          "zh": "刚开始时，我可以请教练指导吗？",
+          "reason": "直接采用第一人称询问教练指导，避免性别一致误判。"
+        }
+      ],
+      "timelineChanges": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "sujet": "Je travaille à l’accueil d’un club de sport. Vous êtes intéressé(e). Vous me posez des questions pour obtenir des informations (types de sports, horaires, tarifs, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "地点",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "交通",
+          "questionNumbers": [
+            2
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            3,
+            4
+          ]
+        },
+        {
+          "name": "项目",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "推荐",
+          "questionNumbers": [
+            6
+          ]
+        },
+        {
+          "name": "水平",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "教练",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "组织",
+          "questionNumbers": [
+            9,
+            10
+          ]
+        },
+        {
+          "name": "安全",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "器材",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "支付",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "报名",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 12,
+        "将来计划": 1,
+        "现在建议": 1,
+        "将来报名": 1
+      },
+      "pronounAndRelevanceReview": "逐题核对接待人员/同事/邻居关系对应的人称、具体信息角度、句法和时间线。邻居健身房Sujet统一改为向邻居了解附近场馆，不再把邻居当作工作人员。",
+      "translationReview": "本题15句中文均逐句人工校订。",
+      "changeReasons": [
+        {
+          "month": "2026-08",
+          "number": 1,
+          "row": 7,
+          "oldFr": "Cette activité est-elle adaptée à une débutante comme moi ?",
+          "newFr": "Cette activité convient-elle aux personnes qui débutent ?",
+          "zh": "这项活动适合初学者吗？",
+          "reason": "去除学习者女性性别预设。"
+        },
+        {
+          "month": "2026-08",
+          "number": 1,
+          "row": 8,
+          "oldFr": "Est-il possible d’être accompagné par un entraîneur quand on débute ?",
+          "newFr": "Puis-je bénéficier d’un accompagnement par un entraîneur quand je débute ?",
+          "zh": "刚开始时，我可以请教练指导吗？",
+          "reason": "直接采用第一人称询问教练指导，避免性别一致误判。"
+        }
+      ],
+      "timelineChanges": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "sujet": "Je suis votre collègue. J’organise des séances de yoga pour les employé(e)s de l’entreprise. Vous êtes intéressé(e). Vous me posez des questions pour obtenir des informations (lieux, horaires, équipements, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "交通",
+          "questionNumbers": [
+            4
+          ]
+        },
+        {
+          "name": "课程",
+          "questionNumbers": [
+            5,
+            6
+          ]
+        },
+        {
+          "name": "水平",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "准备",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "教练",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "组织",
+          "questionNumbers": [
+            10,
+            11
+          ]
+        },
+        {
+          "name": "器材",
+          "questionNumbers": [
+            12,
+            13
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "报名",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 10,
+        "将来计划": 1,
+        "将来准备": 3,
+        "将来报名": 1
+      },
+      "pronounAndRelevanceReview": "逐题核对接待人员/同事/邻居关系对应的人称、具体信息角度、句法和时间线。邻居健身房Sujet统一改为向邻居了解附近场馆，不再把邻居当作工作人员。",
+      "translationReview": "本题15句中文均逐句人工校订。",
+      "changeReasons": [
+        {
+          "month": "2026-08",
+          "number": 2,
+          "row": 7,
+          "oldFr": "Les séances sont-elles adaptées à une débutante ?",
+          "newFr": "Les séances conviennent-elles aux personnes qui débutent ?",
+          "zh": "这些课程适合刚开始练瑜伽的人吗？",
+          "reason": "去除学习者女性性别预设。"
+        }
+      ],
+      "timelineChanges": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "sujet": "Je suis votre voisin(e). Je vais participer à une course à pied à Vancouver. Vous êtes intéressé(e). Vous me posez des questions sur cet événement (inscription, préparation, organisation, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "交通",
+          "questionNumbers": [
+            4
+          ]
+        },
+        {
+          "name": "路线",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "水平",
+          "questionNumbers": [
+            6
+          ]
+        },
+        {
+          "name": "准备",
+          "questionNumbers": [
+            7,
+            8
+          ]
+        },
+        {
+          "name": "装备",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "补给",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "医疗",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "报名",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "截止",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "证明",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "将来活动": 4,
+        "将来出行": 1,
+        "现在信息": 3,
+        "将来准备": 3,
+        "将来保障": 2,
+        "将来报名": 1,
+        "将来结果": 1
+      },
+      "pronounAndRelevanceReview": "逐题核对接待人员/同事/邻居关系对应的人称、具体信息角度、句法和时间线。邻居健身房Sujet统一改为向邻居了解附近场馆，不再把邻居当作工作人员。",
+      "translationReview": "本题15句中文均逐句人工校订。",
+      "changeReasons": [
+        {
+          "month": "2026-07",
+          "number": 1,
+          "row": 5,
+          "oldFr": "La course fait combien de kilomètres ?",
+          "newFr": "Quelle est la distance de la course ?",
+          "zh": "比赛距离是多少？",
+          "reason": "将略显生硬的距离问法改为自然简洁表达。"
+        },
+        {
+          "month": "2026-07",
+          "number": 1,
+          "row": 7,
+          "oldFr": "Combien de semaines de préparation me conseillerais-tu ?",
+          "newFr": "Combien de semaines de préparation me conseilleriez-vous ?",
+          "zh": "您建议我提前多少周开始准备？",
+          "reason": "该Sujet对象是邻居，统一使用礼貌vous。"
+        },
+        {
+          "month": "2026-07",
+          "number": 1,
+          "row": 8,
+          "oldFr": "Comment devrais-je m’entraîner avant la course selon toi ?",
+          "newFr": "Comment me conseilleriez-vous de m’entraîner avant la course ?",
+          "zh": "您建议我在比赛前如何训练？",
+          "reason": "该Sujet对象是邻居，统一使用礼貌vous，并用自然问法征求训练建议。"
+        }
+      ],
+      "timelineChanges": [
+        {
+          "month": "2026-07",
+          "number": 1,
+          "row": 1,
+          "oldTimeline": "现在信息",
+          "newTimeline": "将来活动",
+          "reason": "问题询问的是未来举行的赛事、准备、现场保障或赛后结果，按对应未来时间线标注。"
+        },
+        {
+          "month": "2026-07",
+          "number": 1,
+          "row": 2,
+          "oldTimeline": "现在信息",
+          "newTimeline": "将来活动",
+          "reason": "问题询问的是未来举行的赛事、准备、现场保障或赛后结果，按对应未来时间线标注。"
+        },
+        {
+          "month": "2026-07",
+          "number": 1,
+          "row": 3,
+          "oldTimeline": "现在信息",
+          "newTimeline": "将来活动",
+          "reason": "问题询问的是未来举行的赛事、准备、现场保障或赛后结果，按对应未来时间线标注。"
+        },
+        {
+          "month": "2026-07",
+          "number": 1,
+          "row": 4,
+          "oldTimeline": "将来计划",
+          "newTimeline": "将来出行",
+          "reason": "问题询问的是未来举行的赛事、准备、现场保障或赛后结果，按对应未来时间线标注。"
+        },
+        {
+          "month": "2026-07",
+          "number": 1,
+          "row": 5,
+          "oldTimeline": "现在信息",
+          "newTimeline": "将来活动",
+          "reason": "问题询问的是未来举行的赛事、准备、现场保障或赛后结果，按对应未来时间线标注。"
+        },
+        {
+          "month": "2026-07",
+          "number": 1,
+          "row": 10,
+          "oldTimeline": "现在信息",
+          "newTimeline": "将来保障",
+          "reason": "问题询问的是未来举行的赛事、准备、现场保障或赛后结果，按对应未来时间线标注。"
+        },
+        {
+          "month": "2026-07",
+          "number": 1,
+          "row": 11,
+          "oldTimeline": "现在信息",
+          "newTimeline": "将来保障",
+          "reason": "问题询问的是未来举行的赛事、准备、现场保障或赛后结果，按对应未来时间线标注。"
+        }
+      ],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "sujet": "Je suis votre voisin, vous êtes récemment installé dans l’immeuble et vous cherchez une salle de sport. Posez-moi des questions.",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "地点",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "交通",
+          "questionNumbers": [
+            2
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            3,
+            4
+          ]
+        },
+        {
+          "name": "项目",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "推荐",
+          "questionNumbers": [
+            6
+          ]
+        },
+        {
+          "name": "水平",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "准备",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "教练",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "组织",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "器材",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "优惠",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "试用",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "报名",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 10,
+        "将来计划": 1,
+        "现在建议": 1,
+        "将来准备": 1,
+        "将来尝试": 1,
+        "将来报名": 1
+      },
+      "pronounAndRelevanceReview": "逐题核对接待人员/同事/邻居关系对应的人称、具体信息角度、句法和时间线。邻居健身房Sujet统一改为向邻居了解附近场馆，不再把邻居当作工作人员。",
+      "translationReview": "本题15句中文均逐句人工校订。",
+      "changeReasons": [
+        {
+          "month": "2026-07",
+          "number": 2,
+          "row": 1,
+          "oldFr": "Où se trouve exactement la salle de sport ?",
+          "newFr": "Connaissez-vous une salle de sport dans le quartier ?",
+          "zh": "您知道附近有健身房吗？",
+          "reason": "Sujet中受访者是邻居而不是俱乐部员工，改为询问附近健身房信息。"
+        },
+        {
+          "month": "2026-07",
+          "number": 2,
+          "row": 3,
+          "oldFr": "À quelles heures êtes-vous ouverts ?",
+          "newFr": "Savez-vous à quelles heures elle est ouverte ?",
+          "zh": "您知道那家健身房几点开放吗？",
+          "reason": "改为向邻居询问健身房开放时间。"
+        },
+        {
+          "month": "2026-07",
+          "number": 2,
+          "row": 4,
+          "oldFr": "Et le week-end, les horaires changent-ils ?",
+          "newFr": "Et le week-end, ses horaires changent-ils ?",
+          "zh": "那家健身房周末的开放时间会变吗？",
+          "reason": "明确询问健身房周末时间，符合邻居角色。"
+        },
+        {
+          "month": "2026-07",
+          "number": 2,
+          "row": 5,
+          "oldFr": "Qu’est-ce que vous proposez comme activités ou programmes ?",
+          "newFr": "Quelles activités y sont proposées ?",
+          "zh": "那里提供哪些活动？",
+          "reason": "原句把邻居当成健身房工作人员；改为询问场馆提供的活动。"
+        },
+        {
+          "month": "2026-07",
+          "number": 2,
+          "row": 7,
+          "oldFr": "Ce programme est-il adapté à une débutante ?",
+          "newFr": "Ce programme convient-il aux personnes qui débutent ?",
+          "zh": "这项课程适合初学者吗？",
+          "reason": "去除对学习者性别的预设。"
+        },
+        {
+          "month": "2026-07",
+          "number": 2,
+          "row": 9,
+          "oldFr": "Puis-je être accompagnée par un entraîneur au début ?",
+          "newFr": "Peut-on bénéficier d’un accompagnement par un entraîneur quand on débute ?",
+          "zh": "刚开始锻炼时，可以请教练指导吗？",
+          "reason": "去除女性性别预设，并保持咨询场馆服务的问法。"
+        },
+        {
+          "month": "2026-07",
+          "number": 2,
+          "row": 10,
+          "oldFr": "Vous proposez plutôt des entraînements collectifs, individuels, ou les deux ?",
+          "newFr": "Les entraînements sont-ils individuels, collectifs, ou les deux ?",
+          "zh": "训练是单人、团体，还是两种形式都有？",
+          "reason": "原句把邻居当成场馆员工，改为询问场馆训练形式。"
+        }
+      ],
+      "timelineChanges": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "sujet": "Je travaille à l’accueil d’un club de sport. Vous êtes intéressé(e). Vous me posez des questions pour obtenir des informations (types de sports, horaires, tarifs, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "地点",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "交通",
+          "questionNumbers": [
+            2
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            3,
+            4
+          ]
+        },
+        {
+          "name": "项目",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "推荐",
+          "questionNumbers": [
+            6
+          ]
+        },
+        {
+          "name": "水平",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "教练",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "组织",
+          "questionNumbers": [
+            9,
+            10
+          ]
+        },
+        {
+          "name": "安全",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "器材",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "支付",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "报名",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 12,
+        "将来计划": 1,
+        "现在建议": 1,
+        "将来报名": 1
+      },
+      "pronounAndRelevanceReview": "逐题核对接待人员/同事/邻居关系对应的人称、具体信息角度、句法和时间线。邻居健身房Sujet统一改为向邻居了解附近场馆，不再把邻居当作工作人员。",
+      "translationReview": "本题15句中文均逐句人工校订。",
+      "changeReasons": [
+        {
+          "month": "2026-07",
+          "number": 3,
+          "row": 7,
+          "oldFr": "Cette activité est-elle adaptée à une débutante comme moi ?",
+          "newFr": "Cette activité convient-elle aux personnes qui débutent ?",
+          "zh": "这项活动适合初学者吗？",
+          "reason": "去除学习者女性性别预设。"
+        },
+        {
+          "month": "2026-07",
+          "number": 3,
+          "row": 8,
+          "oldFr": "Est-il possible d’être accompagné par un entraîneur quand on débute ?",
+          "newFr": "Puis-je bénéficier d’un accompagnement par un entraîneur quand je débute ?",
+          "zh": "刚开始时，我可以请教练指导吗？",
+          "reason": "直接采用第一人称询问教练指导，避免性别一致误判。"
+        }
+      ],
+      "timelineChanges": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "sujet": "Je travaille à l’accueil d’un club sportif de votre ville. Vous voulez faire du sport. Vous me posez des questions pour décider si vous allez vous inscrire (cours, tarifs, horaires, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "地点",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "交通",
+          "questionNumbers": [
+            2
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            3,
+            4
+          ]
+        },
+        {
+          "name": "项目",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "推荐",
+          "questionNumbers": [
+            6
+          ]
+        },
+        {
+          "name": "水平",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "教练",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "组织",
+          "questionNumbers": [
+            9,
+            10
+          ]
+        },
+        {
+          "name": "安全",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "器材",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "支付",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "报名",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 12,
+        "将来计划": 1,
+        "现在建议": 1,
+        "将来报名": 1
+      },
+      "pronounAndRelevanceReview": "逐题核对接待人员/同事/邻居关系对应的人称、具体信息角度、句法和时间线。邻居健身房Sujet统一改为向邻居了解附近场馆，不再把邻居当作工作人员。",
+      "translationReview": "本题15句中文均逐句人工校订。",
+      "changeReasons": [
+        {
+          "month": "2026-07",
+          "number": 4,
+          "row": 7,
+          "oldFr": "Cette activité est-elle adaptée à une débutante comme moi ?",
+          "newFr": "Cette activité convient-elle aux personnes qui débutent ?",
+          "zh": "这项活动适合初学者吗？",
+          "reason": "去除学习者女性性别预设。"
+        },
+        {
+          "month": "2026-07",
+          "number": 4,
+          "row": 8,
+          "oldFr": "Est-il possible d’être accompagné par un entraîneur quand on débute ?",
+          "newFr": "Puis-je bénéficier d’un accompagnement par un entraîneur quand je débute ?",
+          "zh": "刚开始时，我可以请教练指导吗？",
+          "reason": "直接采用第一人称询问教练指导，避免性别一致误判。"
+        }
+      ],
+      "timelineChanges": [],
+      "translationEditCount": 15
+    }
+  ],
+  "piperCoverage": {
+    "status": "pending-generation",
+    "voice": "fr_FR-siwis-medium",
+    "uniqueFrenchQuestions": 64,
+    "matched": 0,
+    "missing": "pending"
+  },
+  "runtimeChecks": {
+    "sujetCount": 9,
+    "expectedSujetCount": 9,
+    "questionSlots": 135,
+    "expectedQuestionSlots": 135,
+    "allSujetsHave15Questions": true,
+    "allRowsHaveFrenchAndChinese": true,
+    "noDuplicateFrenchPerSujet": true,
+    "frenchProgressKeysDifferFromOriginal": true,
+    "followMarkerRows": 0
+  }
+}
