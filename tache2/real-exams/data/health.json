@@ -1,1 +1,1522 @@
-{"slug":"health","title":"健康安全与公共服务","count":10,"entries":[{"month":"2026-10","number":1,"sujet":"Je travaille à l’accueil du nouveau centre culturel de votre ville. Vous êtes intéressé(e). Vous me posez des questions sur les activités proposées par le centre (horaires, prix, etc.).","logic":"地点与开放时间 → 活动/展览 → 公共设备 → 价格优惠 → 报名 → 无障碍","timeline":"现在信息 → 将来参加","notes":["与 2026-08 第3题、2026-07 第1题 Sujet 完全相同，共用同一套文化中心问题库。"],"followup":"这 3 个条目 Sujet 完全相同，共用同一套最终问题库。手稿中的开放时间、活动、公共设施、打印、报名和图书卡/文件类思路已吸收。","rows":[{"n":1,"dimension":"地点","sub":"中心位置","timeline":"现在信息","fr":"Où se trouve exactement le centre culturel ?","follow":false,"zh":"文化中心具体在哪里？"},{"n":2,"dimension":"时间","sub":"开放时间","timeline":"现在信息","fr":"À quelles heures êtes-vous ouverts ?","follow":false,"zh":"你们的开放时间是什么？"},{"n":3,"dimension":"时间","sub":"周末","timeline":"现在信息","fr":"Le centre est-il aussi ouvert le week-end ?","follow":false,"zh":"文化中心周末也开放吗？"},{"n":4,"dimension":"活动","sub":"活动类型","timeline":"现在信息","fr":"Qu’est-ce que vous proposez comme activités ?","follow":false,"zh":"你们提供哪些活动？"},{"n":5,"dimension":"活动","sub":"工作坊","timeline":"现在信息","fr":"Proposez-vous des ateliers pour les adultes ?","follow":false,"zh":"你们为成年人开设工作坊吗？"},{"n":6,"dimension":"活动","sub":"儿童活动","timeline":"现在信息","fr":"Et pour les enfants, qu’est-ce qui est prévu ?","follow":false,"zh":"那孩子们可以参加哪些活动？"},{"n":7,"dimension":"展览","sub":"展览","timeline":"现在信息","fr":"Quelles expositions peut-on voir en ce moment ?","follow":false,"zh":"目前可以看哪些展览？"},{"n":8,"dimension":"设备","sub":"公共设备","timeline":"现在信息","fr":"Qu’est-ce qu’on peut utiliser comme équipements sur place ?","follow":false,"zh":"现场有哪些设备可以使用？"},{"n":9,"dimension":"服务","sub":"网络","timeline":"现在信息","fr":"Le Wi-Fi est-il gratuit sur place ?","follow":false,"zh":"现场的无线网络免费吗？"},{"n":10,"dimension":"服务","sub":"打印","timeline":"现在信息","fr":"Peut-on imprimer des documents sur place ?","follow":false,"zh":"可以在现场打印文件吗？"},{"n":11,"dimension":"价格","sub":"入场/活动费用","timeline":"现在信息","fr":"Quel est le tarif des activités ?","follow":false,"zh":"这些活动的费用是多少？"},{"n":12,"dimension":"优惠","sub":"优惠","timeline":"现在信息","fr":"Certaines personnes ont-elles droit à un tarif réduit ?","follow":false,"zh":"哪些人可以享受优惠价？"},{"n":13,"dimension":"报名","sub":"报名方式","timeline":"将来参加","fr":"Vaut-il mieux s’inscrire à l’avance pour participer aux ateliers ?","follow":false,"zh":"参加工作坊最好提前报名吗？"},{"n":14,"dimension":"报名","sub":"所需文件","timeline":"将来参加","fr":"Qu’est-ce qu’il faut fournir comme documents pour l’inscription ?","follow":false,"zh":"报名需要提供哪些文件？"},{"n":15,"dimension":"无障碍","sub":"无障碍设施","timeline":"现在信息","fr":"Le centre est-il accessible aux personnes à mobilité réduite ?","follow":false,"zh":"行动不便者可以方便地进入文化中心吗？"}],"reviewed":true},{"month":"2026-10","number":2,"sujet":"Je suis agent d’accueil dans un bureau d’information sur les associations. Vous voulez faire du bénévolat dans votre quartier. Vous me posez des questions (types, activités, public, horaires, etc.).","logic":"志愿服务类型 → 面向人群 → 时间地点 → 培训/监督 → 证明 → 报名手续","timeline":"现在信息 → 将来参加","notes":[],"followup":"手稿中的儿童/老人/残障人士、encadré、证明、手续等信息已纳入。","rows":[{"n":1,"dimension":"志愿服务","sub":"服务类型","timeline":"现在信息","fr":"Qu’est-ce qu’on peut faire comme bénévolat dans le quartier ?","follow":false,"zh":"在附近有哪些志愿服务可以参加？"},{"n":2,"dimension":"服务对象","sub":"儿童","timeline":"现在信息","fr":"Existe-t-il des associations qui travaillent avec des enfants ?","follow":false,"zh":"有没有为儿童提供服务的协会？"},{"n":3,"dimension":"服务对象","sub":"老人","timeline":"现在信息","fr":"Et avec des personnes âgées ?","follow":false,"zh":"有没有为老年人服务的协会？"},{"n":4,"dimension":"服务对象","sub":"残障人士","timeline":"现在信息","fr":"Existe-t-il aussi des missions auprès de personnes handicapées ?","follow":false,"zh":"也有为残障人士提供帮助的志愿工作吗？"},{"n":5,"dimension":"活动","sub":"具体任务","timeline":"现在信息","fr":"Concrètement, qu’est-ce que font les bénévoles ?","follow":false,"zh":"志愿者具体要做些什么？"},{"n":6,"dimension":"地点","sub":"服务地点","timeline":"现在信息","fr":"Où ont lieu les activités ?","follow":false,"zh":"这些活动在哪里举行？"},{"n":7,"dimension":"时间","sub":"服务时间","timeline":"将来志愿服务","fr":"Quels sont les jours et les horaires possibles pour faire du bénévolat ?","follow":false,"zh":"可以在哪些日子、什么时间做志愿服务？"},{"n":8,"dimension":"频率","sub":"参与频率","timeline":"将来志愿服务","fr":"À quelle fréquence faut-il être disponible chaque semaine ?","follow":false,"zh":"每周需要参加几次？"},{"n":9,"dimension":"培训","sub":"培训","timeline":"将来准备","fr":"Une formation est-elle prévue avant de commencer ?","follow":false,"zh":"开始之前会安排培训吗？"},{"n":10,"dimension":"监督","sub":"负责人","timeline":"现在信息","fr":"Les bénévoles sont-ils encadrés par un responsable ?","follow":false,"zh":"志愿者会有负责人指导吗？"},{"n":11,"dimension":"条件","sub":"资格要求","timeline":"现在信息","fr":"Une expérience ou une compétence particulière est-elle nécessaire ?","follow":false,"zh":"需要相关经验或特殊技能吗？"},{"n":12,"dimension":"证明","sub":"参与证明","timeline":"将来结果","fr":"Une attestation de bénévolat est-elle remise ?","follow":false,"zh":"会提供志愿服务证明吗？"},{"n":13,"dimension":"保险","sub":"志愿者保险","timeline":"现在信息","fr":"Les bénévoles sont-ils couverts par une assurance pendant les activités ?","follow":false,"zh":"志愿服务期间，志愿者享有保险保障吗？"},{"n":14,"dimension":"报名","sub":"报名方式","timeline":"将来报名","fr":"Comment se passe l’inscription ?","follow":false,"zh":"报名流程是怎样的？"},{"n":15,"dimension":"文件","sub":"所需文件","timeline":"将来报名","fr":"Qu’est-ce qu’il faut fournir comme documents ?","follow":false,"zh":"需要提交哪些文件？"}],"reviewed":true},{"month":"2026-10","number":3,"sujet":"Je suis votre voisin(e). Vous venez de vous installer au Québec. Vous souhaitez prendre un rendez-vous médical. Vous me posez des questions pour obtenir des informations sur les médecins de la ville (lieux, tarifs, spécialisations, etc.).","logic":"医生类型 → 地点 → 专科 → 预约 → 等待时间 → 费用 → 保险/医保 → 紧急情况","timeline":"现在信息 → 将来就医","notes":[],"followup":"手稿中的家庭医生/专科、地点、时间、费用、医疗卡与预约已纳入。","rows":[{"n":1,"dimension":"医生","sub":"医生类型","timeline":"现在信息","fr":"Quels types de médecins trouve-t-on dans la ville ?","follow":false,"zh":"这座城市有哪些类型的医生？"},{"n":2,"dimension":"医生","sub":"家庭医生","timeline":"现在信息","fr":"Trouve-t-on facilement un médecin de famille ?","follow":false,"zh":"在这里容易找到家庭医生吗？"},{"n":3,"dimension":"专科","sub":"专科医生","timeline":"现在信息","fr":"Quels spécialistes peut-on consulter près d’ici ?","follow":false,"zh":"附近可以看哪些专科医生？"},{"n":4,"dimension":"地点","sub":"诊所位置","timeline":"现在信息","fr":"Où se trouve la clinique la plus proche ?","follow":false,"zh":"最近的诊所在哪里？"},{"n":5,"dimension":"时间","sub":"营业时间","timeline":"现在信息","fr":"Quels sont les horaires d’ouverture des cabinets médicaux ?","follow":false,"zh":"诊所通常在什么时间开放？","progressKey":"r5-e9214f18cc"},{"n":6,"dimension":"预约","sub":"预约方式","timeline":"将来就医","fr":"Comment se passe la prise de rendez-vous ?","follow":false,"zh":"预约就诊的流程是怎样的？"},{"n":7,"dimension":"预约","sub":"等待时间","timeline":"现在信息","fr":"En moyenne, combien de temps faut-il attendre pour obtenir un rendez-vous ?","follow":false,"zh":"通常要等多久才能约上？"},{"n":8,"dimension":"无预约","sub":"walk-in","timeline":"现在信息","fr":"Existe-t-il des cliniques sans rendez-vous ?","follow":false,"zh":"这里有免预约诊所吗？"},{"n":9,"dimension":"费用","sub":"看诊费用","timeline":"现在信息","fr":"Quel est le prix d’une consultation ?","follow":false,"zh":"一次门诊大约多少钱？"},{"n":10,"dimension":"医保","sub":"医保卡","timeline":"现在信息","fr":"Puis-je utiliser ma carte d’assurance maladie ?","follow":false,"zh":"我可以使用医疗保险卡吗？"},{"n":11,"dimension":"医保","sub":"自费项目","timeline":"现在信息","fr":"Quels frais ne sont pas couverts ?","follow":false,"zh":"哪些费用不在保险承保范围内？"},{"n":12,"dimension":"处方","sub":"药物处方","timeline":"将来就医","fr":"Est-ce que le médecin peut me prescrire des médicaments si nécessaire ?","follow":false,"zh":"如果有需要，医生可以给我开药吗？"},{"n":13,"dimension":"检查","sub":"检查地点","timeline":"将来就医","fr":"Où faut-il aller pour faire les examens prescrits par le médecin ?","follow":false,"zh":"医生开了检查后，我应该去哪里做？"},{"n":14,"dimension":"紧急","sub":"紧急情况","timeline":"条件情况","fr":"Que dois-je faire si mon problème devient urgent ?","follow":false,"zh":"如果我的病情变得紧急，我应该怎么办？"},{"n":15,"dimension":"建议","sub":"新居民建议","timeline":"现在建议","fr":"Pour une personne qui vient d’arriver, comment faire pour consulter un médecin le plus simplement possible ?","follow":false,"zh":"刚搬来这里的人怎样就医最方便？","progressKey":"r15-6553112acb"}],"reviewed":true},{"month":"2026-09","number":1,"sujet":"Je suis le (la) secrétaire de votre médecin. Il est en congés et vous me posez des questions sur son remplaçant (nom du médecin, horaires, durée, etc.).","logic":"代诊医生身份 → 代诊期限 → 时间地点 → 专业/经验 → 预约 → 病历与处方 → 紧急联系","timeline":"现在信息 → 将来就诊","notes":[],"followup":"真实题干重点是 remplaçant；问题集中在代诊安排。","rows":[{"n":1,"dimension":"医生","sub":"代诊医生姓名","timeline":"现在信息","fr":"Quel est le nom du médecin remplaçant ?","follow":false,"zh":"代诊医生叫什么名字？"},{"n":2,"dimension":"医生","sub":"专业背景","timeline":"现在信息","fr":"Quelle est sa spécialité ?","follow":false,"zh":"他的专科是什么？"},{"n":3,"dimension":"医生","sub":"经验","timeline":"现在信息","fr":"A-t-il beaucoup d’expérience ?","follow":false,"zh":"他有丰富的临床经验吗？"},{"n":4,"dimension":"时间","sub":"代诊期限","timeline":"现在信息","fr":"Jusqu’à quand va-t-il remplacer mon médecin ?","follow":false,"zh":"他会代替我的医生到什么时候？"},{"n":5,"dimension":"时间","sub":"看诊时间","timeline":"现在信息","fr":"À quels horaires consulte-t-il ?","follow":false,"zh":"他通常在什么时间接诊？"},{"n":6,"dimension":"地点","sub":"看诊地点","timeline":"现在信息","fr":"Va-t-il consulter dans le même cabinet ?","follow":false,"zh":"他也会在同一家诊所接诊吗？"},{"n":7,"dimension":"预约","sub":"预约方式","timeline":"将来就诊","fr":"Comment puis-je prendre rendez-vous avec lui ?","follow":false,"zh":"我怎样预约他的门诊？"},{"n":8,"dimension":"预约","sub":"等待时间","timeline":"现在信息","fr":"Faut-il attendre longtemps pour obtenir un rendez-vous ?","follow":false,"zh":"预约他需要等很久吗？"},{"n":9,"dimension":"病历","sub":"病历访问","timeline":"现在信息","fr":"Pourra-t-il consulter mon dossier médical ?","follow":false,"zh":"他能查阅我的病历吗？"},{"n":10,"dimension":"处方","sub":"续方","timeline":"将来就诊","fr":"Pourra-t-il renouveler mes ordonnances si nécessaire ?","follow":false,"zh":"有需要的话，他可以续开我的处方吗？"},{"n":11,"dimension":"检查","sub":"检查结果","timeline":"现在信息","fr":"Pourra-t-il consulter mes résultats d’analyses précédents ?","follow":false,"zh":"他能查看我以前的化验结果吗？"},{"n":12,"dimension":"费用","sub":"费用","timeline":"现在信息","fr":"Les tarifs ou la couverture restent-ils les mêmes ?","follow":false,"zh":"诊费和保险报销范围保持不变吗？"},{"n":13,"dimension":"联系","sub":"秘书处","timeline":"现在信息","fr":"À qui puis-je m’adresser si j’ai une question avant le rendez-vous ?","follow":false,"zh":"预约前如果有问题，我可以联系谁？"},{"n":14,"dimension":"紧急","sub":"紧急情况","timeline":"条件情况","fr":"Que dois-je faire si j’ai besoin d’un médecin en urgence ?","follow":false,"zh":"如果我需要紧急就医，应该怎么办？"},{"n":15,"dimension":"回归","sub":"原医生回来","timeline":"将来信息","fr":"Quand mon médecin habituel doit-il revenir ?","follow":false,"zh":"我的固定医生预计什么时候回来？"}],"reviewed":true},{"month":"2026-09","number":2,"sujet":"Je suis un(e) ami(e) francophone. Vous voulez savoir comment cela se passe quand on tombe malade dans mon pays. Vous me posez des questions sur l’organisation des soins (médecins, hôpitaux, urgences médicales, etc.).","logic":"初级医疗 → 家庭医生/诊所 → 医院 → 急诊 → 费用与保险 → 药房/处方 → 救护","timeline":"现在制度说明 → 条件情况","notes":[],"followup":"手稿里的 carte d’assurance maladie、médecin、hôpital、urgence 等维度已纳入。","rows":[{"n":1,"dimension":"初级医疗","sub":"生病第一步","timeline":"现在信息","fr":"Quand on tombe malade, où va-t-on généralement en premier ?","follow":false,"zh":"生病时，人们通常首先去哪里就诊？"},{"n":2,"dimension":"医生","sub":"家庭医生","timeline":"现在信息","fr":"Tout le monde a-t-il un médecin de famille ?","follow":false,"zh":"每个人都有家庭医生吗？"},{"n":3,"dimension":"诊所","sub":"无预约诊所","timeline":"现在信息","fr":"Peut-on consulter dans une clinique sans rendez-vous ?","follow":false,"zh":"可以直接去免预约诊所看病吗？"},{"n":4,"dimension":"预约","sub":"预约时间","timeline":"现在信息","fr":"En général, combien de temps attend-on avant de voir un médecin ?","follow":false,"zh":"通常要等多久才能见到医生？"},{"n":5,"dimension":"医院","sub":"去医院条件","timeline":"现在信息","fr":"Dans quels cas faut-il aller directement à l’hôpital ?","follow":false,"zh":"哪些情况下需要直接去医院？"},{"n":6,"dimension":"急诊","sub":"急诊使用","timeline":"现在信息","fr":"Comment fonctionne le service des urgences ?","follow":false,"zh":"急诊服务是怎样运作的？"},{"n":7,"dimension":"急诊","sub":"等待时间","timeline":"现在信息","fr":"L’attente est-elle généralement longue aux urgences ?","follow":false,"zh":"急诊通常需要等很久吗？"},{"n":8,"dimension":"救护","sub":"救护车","timeline":"条件情况","fr":"Quel numéro faut-il appeler pour une ambulance en cas d’urgence ?","follow":false,"zh":"遇到紧急情况时，叫救护车应该拨打什么号码？"},{"n":9,"dimension":"费用","sub":"看病费用","timeline":"现在信息","fr":"Les consultations médicales sont-elles payantes ?","follow":false,"zh":"看医生需要付费吗？"},{"n":10,"dimension":"保险","sub":"医疗保险","timeline":"现在信息","fr":"Comment fonctionne l’assurance maladie dans ton pays ?","follow":false,"zh":"你们国家的医疗保险是怎么运作的？"},{"n":11,"dimension":"保险","sub":"覆盖范围","timeline":"现在信息","fr":"Quels soins sont généralement couverts ?","follow":false,"zh":"通常哪些医疗服务可以报销？"},{"n":12,"dimension":"药房","sub":"药房","timeline":"现在信息","fr":"Trouve-t-on facilement une pharmacie ?","follow":false,"zh":"附近容易找到药店吗？"},{"n":13,"dimension":"处方","sub":"处方药","timeline":"现在信息","fr":"La plupart des médicaments nécessitent-ils une ordonnance ?","follow":false,"zh":"大多数药物都需要处方吗？"},{"n":14,"dimension":"专科","sub":"转诊","timeline":"现在信息","fr":"Doit-on passer par un médecin généraliste pour consulter un spécialiste ?","follow":false,"zh":"看专科医生之前，必须先看全科医生吗？"},{"n":15,"dimension":"建议","sub":"外国人建议","timeline":"现在建议","fr":"Qu’est-ce que tu conseillerais à quelqu’un qui vient d’arriver et qui tombe malade ?","follow":false,"zh":"如果刚到你们国家的人生病了，你会给他什么建议？"}],"reviewed":true},{"month":"2026-08","number":1,"sujet":"Vous êtes en voiture au Canada et vous tombez en panne. Vous appelez votre assurance pour savoir comment elle peut vous aider (dépannage, réparations, retour, etc.). Je suis l’agent qui vous répond.","logic":"故障定位 → 拖车 → 修理 → 费用/保险覆盖 → 替代交通/住宿 → 理赔 → 回程","timeline":"突发故障 → 即时处理 → 后续理赔","notes":[],"followup":"手稿中的 panne、dépannage、remorquage、réparation、assurance、retour 已纳入。","rows":[{"n":1,"dimension":"故障","sub":"位置","timeline":"紧急情况","fr":"Quelles informations dois-je vous donner pour localiser ma voiture ?","follow":false,"zh":"我需要提供哪些信息，您才能定位我的车？"},{"n":2,"dimension":"故障","sub":"安全","timeline":"紧急情况","fr":"Qu’est-ce que je dois faire immédiatement pour rester en sécurité ?","follow":false,"zh":"为了确保安全，我现在应该马上做什么？"},{"n":3,"dimension":"拖车","sub":"拖车服务","timeline":"紧急援助","fr":"Pouvez-vous envoyer une dépanneuse ?","follow":false,"zh":"您可以派一辆拖车来吗？","progressKey":"r3-ea2af1e471"},{"n":4,"dimension":"拖车","sub":"等待时间","timeline":"紧急援助","fr":"Dans combien de temps la dépanneuse peut-elle arriver ?","follow":false,"zh":"拖车大约多久能到？"},{"n":5,"dimension":"拖车","sub":"费用","timeline":"现在信息","fr":"Les frais de remorquage sont-ils pris en charge par mon assurance ?","follow":false,"zh":"拖车费用由我的保险承担吗？"},{"n":6,"dimension":"维修","sub":"维修地点","timeline":"后续维修","fr":"Où la voiture sera-t-elle réparée ?","follow":false,"zh":"汽车会送到哪里维修？"},{"n":7,"dimension":"维修","sub":"维修费用","timeline":"现在信息","fr":"Qu’est-ce que mon contrat couvre comme frais de réparation ?","follow":false,"zh":"我的保险合同涵盖哪些维修费用？"},{"n":8,"dimension":"维修","sub":"授权","timeline":"后续维修","fr":"Faut-il votre accord avant que je fasse réparer la voiture ?","follow":false,"zh":"维修汽车之前需要先得到您的同意吗？"},{"n":9,"dimension":"交通","sub":"替代车辆","timeline":"后续交通","fr":"Mon assurance prévoit-elle une voiture de remplacement ?","follow":false,"zh":"我的保险包含代步车吗？"},{"n":10,"dimension":"交通","sub":"返程","timeline":"后续交通","fr":"Si la réparation prend plusieurs jours, pouvez-vous organiser mon retour chez moi ?","follow":false,"zh":"如果维修需要几天，您能安排我回家吗？","progressKey":"r10-281a48507f"},{"n":11,"dimension":"住宿","sub":"住宿","timeline":"后续住宿","fr":"L’assurance peut-elle prendre en charge un hôtel si je suis loin de chez moi ?","follow":false,"zh":"如果我离家很远，保险能承担酒店费用吗？"},{"n":12,"dimension":"理赔","sub":"申报","timeline":"后续理赔","fr":"Comment se passe la déclaration de la panne et l’envoi des justificatifs ?","follow":false,"zh":"故障如何申报，相关凭证要怎样提交？"},{"n":13,"dimension":"文件","sub":"所需文件","timeline":"后续理赔","fr":"Quels documents dois-je conserver pour demander un remboursement ?","follow":false,"zh":"申请报销需要保留哪些文件？","progressKey":"r13-d5cbe9b5a6"},{"n":14,"dimension":"联系","sub":"再次联系","timeline":"紧急联络","fr":"Qui dois-je appeler si la situation change ?","follow":false,"zh":"如果情况有变化，我应该打电话给谁？"},{"n":15,"dimension":"时间","sub":"维修时间","timeline":"后续维修","fr":"Comment savoir combien de temps la réparation va durer ?","follow":false,"zh":"我怎样才能知道维修需要多长时间？"}],"reviewed":true},{"month":"2026-08","number":2,"sujet":"Je travaille au service culturel de la mairie. Vous voulez en savoir plus sur les activités culturelles de la ville. Vous me posez des questions (expositions, musées, ateliers, prix, accès, etc.).","logic":"活动类型 → 展览/博物馆/工作坊 → 时间地点 → 预约 → 价格优惠 → 无障碍/家庭","timeline":"现在信息 → 将来参加","notes":[],"followup":"手稿中的 exposition、musée、atelier、prix、réservation/文件等思路已纳入。","rows":[{"n":1,"dimension":"活动","sub":"活动类型","timeline":"现在信息","fr":"Qu’est-ce que la ville propose comme activités culturelles en ce moment ?","follow":false,"zh":"这座城市最近有哪些文化活动？"},{"n":2,"dimension":"展览","sub":"展览","timeline":"现在信息","fr":"Qu’est-ce qu’il y a comme expositions à visiter ?","follow":false,"zh":"有哪些展览值得参观？"},{"n":3,"dimension":"博物馆","sub":"博物馆","timeline":"现在信息","fr":"Quels musées valent le plus le détour selon vous ?","follow":false,"zh":"您觉得哪些博物馆最值得一去？"},{"n":4,"dimension":"工作坊","sub":"工作坊","timeline":"现在信息","fr":"Proposez-vous des ateliers pour les adultes ?","follow":false,"zh":"你们为成年人开设工作坊吗？"},{"n":5,"dimension":"儿童","sub":"儿童活动","timeline":"现在信息","fr":"Et pour les enfants, qu’est-ce qui est prévu ?","follow":false,"zh":"那孩子们可以参加哪些活动？"},{"n":6,"dimension":"地点","sub":"活动地点","timeline":"现在信息","fr":"Où ont lieu les principales activités ?","follow":false,"zh":"主要活动在哪里举行？"},{"n":7,"dimension":"时间","sub":"开放时间","timeline":"现在信息","fr":"À quelles heures êtes-vous ouverts ?","follow":false,"zh":"你们的开放时间是什么？"},{"n":8,"dimension":"时间","sub":"周末","timeline":"现在信息","fr":"Le week-end, y a-t-il davantage d’activités ?","follow":false,"zh":"周末的活动会更多吗？"},{"n":9,"dimension":"价格","sub":"费用","timeline":"现在信息","fr":"Quel est le tarif des activités ?","follow":false,"zh":"这些活动的费用是多少？"},{"n":10,"dimension":"优惠","sub":"优惠","timeline":"现在信息","fr":"Les étudiants, les familles ou les nouveaux arrivants ont-ils droit à des réductions ?","follow":false,"zh":"学生、家庭或新来者可以享受优惠吗？"},{"n":11,"dimension":"预约","sub":"提前预约","timeline":"将来参加","fr":"Vaut-il mieux réserver à l’avance ?","follow":false,"zh":"最好提前预约吗？"},{"n":12,"dimension":"报名","sub":"报名方式","timeline":"将来报名","fr":"Comment se passe l’inscription à un atelier ?","follow":false,"zh":"工作坊的报名流程是怎样的？"},{"n":13,"dimension":"文件","sub":"所需文件","timeline":"将来报名","fr":"Doit-on présenter un document particulier pour s’inscrire ?","follow":false,"zh":"报名时需要出示特定文件吗？"},{"n":14,"dimension":"无障碍","sub":"无障碍","timeline":"现在信息","fr":"Les lieux sont-ils accessibles aux personnes à mobilité réduite ?","follow":false,"zh":"行动不便者可以方便地进入这些场所吗？"},{"n":15,"dimension":"建议","sub":"推荐","timeline":"现在建议","fr":"Parmi ces activités, laquelle me conseilleriez-vous pour découvrir la ville ?","follow":false,"zh":"如果想了解这座城市，您最推荐哪项活动？"}],"reviewed":true},{"month":"2026-08","number":3,"sujet":"Je travaille à l’accueil du nouveau centre culturel de votre ville. Vous êtes intéressé(e). Vous me posez des questions sur les activités proposées par le centre (horaires, prix, etc.).","logic":"地点与开放时间 → 活动/展览 → 公共设备 → 价格优惠 → 报名 → 无障碍","timeline":"现在信息 → 将来参加","notes":["与 2026-10 第1题、2026-07 第1题 Sujet 完全相同，共用同一套文化中心问题库。"],"followup":"这 3 个条目 Sujet 完全相同，共用同一套最终问题库。手稿中的开放时间、活动、公共设施、打印、报名和图书卡/文件类思路已吸收。","rows":[{"n":1,"dimension":"地点","sub":"中心位置","timeline":"现在信息","fr":"Où se trouve exactement le centre culturel ?","follow":false,"zh":"文化中心具体在哪里？"},{"n":2,"dimension":"时间","sub":"开放时间","timeline":"现在信息","fr":"À quelles heures êtes-vous ouverts ?","follow":false,"zh":"你们的开放时间是什么？"},{"n":3,"dimension":"时间","sub":"周末","timeline":"现在信息","fr":"Le centre est-il aussi ouvert le week-end ?","follow":false,"zh":"文化中心周末也开放吗？"},{"n":4,"dimension":"活动","sub":"活动类型","timeline":"现在信息","fr":"Qu’est-ce que vous proposez comme activités ?","follow":false,"zh":"你们提供哪些活动？"},{"n":5,"dimension":"活动","sub":"工作坊","timeline":"现在信息","fr":"Proposez-vous des ateliers pour les adultes ?","follow":false,"zh":"你们为成年人开设工作坊吗？"},{"n":6,"dimension":"活动","sub":"儿童活动","timeline":"现在信息","fr":"Et pour les enfants, qu’est-ce qui est prévu ?","follow":false,"zh":"那孩子们可以参加哪些活动？"},{"n":7,"dimension":"展览","sub":"展览","timeline":"现在信息","fr":"Quelles expositions peut-on voir en ce moment ?","follow":false,"zh":"目前可以看哪些展览？"},{"n":8,"dimension":"设备","sub":"公共设备","timeline":"现在信息","fr":"Qu’est-ce qu’on peut utiliser comme équipements sur place ?","follow":false,"zh":"现场有哪些设备可以使用？"},{"n":9,"dimension":"服务","sub":"网络","timeline":"现在信息","fr":"Le Wi-Fi est-il gratuit sur place ?","follow":false,"zh":"现场的无线网络免费吗？"},{"n":10,"dimension":"服务","sub":"打印","timeline":"现在信息","fr":"Peut-on imprimer des documents sur place ?","follow":false,"zh":"可以在现场打印文件吗？"},{"n":11,"dimension":"价格","sub":"入场/活动费用","timeline":"将来预约","fr":"Quel est le tarif des activités ?","follow":false,"zh":"这些活动的费用是多少？"},{"n":12,"dimension":"优惠","sub":"优惠","timeline":"将来报名","fr":"Certaines personnes ont-elles droit à un tarif réduit ?","follow":false,"zh":"哪些人可以享受优惠价？"},{"n":13,"dimension":"报名","sub":"报名方式","timeline":"将来报名","fr":"Vaut-il mieux s’inscrire à l’avance pour participer aux ateliers ?","follow":false,"zh":"参加工作坊最好提前报名吗？"},{"n":14,"dimension":"报名","sub":"所需文件","timeline":"将来参加","fr":"Qu’est-ce qu’il faut fournir comme documents pour l’inscription ?","follow":false,"zh":"报名需要提供哪些文件？"},{"n":15,"dimension":"无障碍","sub":"无障碍设施","timeline":"现在信息","fr":"Le centre est-il accessible aux personnes à mobilité réduite ?","follow":false,"zh":"行动不便者可以方便地进入文化中心吗？"}],"reviewed":true},{"month":"2026-07","number":1,"sujet":"Je travaille à l’accueil du nouveau centre culturel de votre ville. Vous êtes intéressé(e). Vous me posez des questions sur les activités proposées par le centre (horaires, prix, etc.).","logic":"地点与开放时间 → 活动/展览 → 公共设备 → 价格优惠 → 报名 → 无障碍","timeline":"现在信息 → 将来参加","notes":["与 2026-10 第1题、2026-08 第3题 Sujet 完全相同，共用同一套文化中心问题库。"],"followup":"这 3 个条目 Sujet 完全相同，共用同一套最终问题库。手稿中的开放时间、活动、公共设施、打印、报名和图书卡/文件类思路已吸收。","rows":[{"n":1,"dimension":"地点","sub":"中心位置","timeline":"现在信息","fr":"Où se trouve exactement le centre culturel ?","follow":false,"zh":"文化中心具体在哪里？"},{"n":2,"dimension":"时间","sub":"开放时间","timeline":"现在信息","fr":"À quelles heures êtes-vous ouverts ?","follow":false,"zh":"你们的开放时间是什么？"},{"n":3,"dimension":"时间","sub":"周末","timeline":"现在信息","fr":"Le centre est-il aussi ouvert le week-end ?","follow":false,"zh":"文化中心周末也开放吗？"},{"n":4,"dimension":"活动","sub":"活动类型","timeline":"现在信息","fr":"Qu’est-ce que vous proposez comme activités ?","follow":false,"zh":"你们提供哪些活动？"},{"n":5,"dimension":"活动","sub":"工作坊","timeline":"现在信息","fr":"Proposez-vous des ateliers pour les adultes ?","follow":false,"zh":"你们为成年人开设工作坊吗？"},{"n":6,"dimension":"活动","sub":"儿童活动","timeline":"现在信息","fr":"Et pour les enfants, qu’est-ce qui est prévu ?","follow":false,"zh":"那孩子们可以参加哪些活动？"},{"n":7,"dimension":"展览","sub":"展览","timeline":"现在信息","fr":"Quelles expositions peut-on voir en ce moment ?","follow":false,"zh":"目前可以看哪些展览？"},{"n":8,"dimension":"设备","sub":"公共设备","timeline":"现在信息","fr":"Qu’est-ce qu’on peut utiliser comme équipements sur place ?","follow":false,"zh":"现场有哪些设备可以使用？"},{"n":9,"dimension":"服务","sub":"网络","timeline":"现在信息","fr":"Le Wi-Fi est-il gratuit sur place ?","follow":false,"zh":"现场的无线网络免费吗？"},{"n":10,"dimension":"服务","sub":"打印","timeline":"现在信息","fr":"Peut-on imprimer des documents sur place ?","follow":false,"zh":"可以在现场打印文件吗？"},{"n":11,"dimension":"价格","sub":"入场/活动费用","timeline":"现在信息","fr":"Quel est le tarif des activités ?","follow":false,"zh":"这些活动的费用是多少？"},{"n":12,"dimension":"优惠","sub":"优惠","timeline":"现在信息","fr":"Certaines personnes ont-elles droit à un tarif réduit ?","follow":false,"zh":"哪些人可以享受优惠价？"},{"n":13,"dimension":"报名","sub":"报名方式","timeline":"将来参加","fr":"Vaut-il mieux s’inscrire à l’avance pour participer aux ateliers ?","follow":false,"zh":"参加工作坊最好提前报名吗？"},{"n":14,"dimension":"报名","sub":"所需文件","timeline":"将来参加","fr":"Qu’est-ce qu’il faut fournir comme documents pour l’inscription ?","follow":false,"zh":"报名需要提供哪些文件？"},{"n":15,"dimension":"无障碍","sub":"无障碍设施","timeline":"现在信息","fr":"Le centre est-il accessible aux personnes à mobilité réduite ?","follow":false,"zh":"行动不便者可以方便地进入文化中心吗？"}],"reviewed":true},{"month":"2026-07","number":2,"sujet":"Je travaille à l’accueil d’une bibliothèque. Vous voulez vous inscrire. Vous me posez des questions sur le fonctionnement de cette bibliothèque (inscription, conditions d’emprunt, horaires, etc.).","logic":"地点与开放时间 → 注册条件 → 借阅规则 → 续借/预约 → 公共服务 → 费用与迟还","timeline":"现在信息 → 将来注册/借阅 → 条件情况","notes":[],"followup":"手稿中图书馆的地点、开放时间、年龄/资格、借阅数量、免费打印、活动、图书卡与文件等已纳入。","rows":[{"n":1,"dimension":"地点","sub":"图书馆位置","timeline":"现在信息","fr":"Où se trouve exactement la bibliothèque ?","follow":false,"zh":"图书馆具体在哪里？"},{"n":2,"dimension":"时间","sub":"开放时间","timeline":"现在信息","fr":"À quelles heures êtes-vous ouverts ?","follow":false,"zh":"你们的开放时间是什么？"},{"n":3,"dimension":"时间","sub":"周末","timeline":"现在信息","fr":"La bibliothèque est-elle ouverte le week-end ?","follow":false,"zh":"图书馆周末开放吗？"},{"n":4,"dimension":"注册","sub":"注册条件","timeline":"现在信息","fr":"Que faut-il remplir comme conditions pour s’inscrire ?","follow":false,"zh":"办理图书证需要满足什么条件？"},{"n":5,"dimension":"注册","sub":"年龄/资格","timeline":"现在信息","fr":"Faut-il respecter une condition d’âge ou de résidence ?","follow":false,"zh":"有年龄或居住地方面的要求吗？"},{"n":6,"dimension":"注册","sub":"所需文件","timeline":"将来注册","fr":"Qu’est-ce que je dois apporter comme documents ?","follow":false,"zh":"我需要带哪些文件？"},{"n":7,"dimension":"卡","sub":"图书卡","timeline":"将来注册","fr":"Une carte de bibliothèque est-elle remise après l’inscription ?","follow":false,"zh":"注册后会发图书馆借阅卡吗？"},{"n":8,"dimension":"借阅","sub":"借阅数量","timeline":"现在信息","fr":"Quel est le nombre maximum de documents que je peux emprunter à la fois ?","follow":false,"zh":"我一次最多可以借几件资料？"},{"n":9,"dimension":"借阅","sub":"借阅期限","timeline":"现在信息","fr":"Combien de temps puis-je les garder ?","follow":false,"zh":"我可以借阅多长时间？"},{"n":10,"dimension":"续借","sub":"续借","timeline":"将来借阅","fr":"Puis-je renouveler un emprunt ?","follow":false,"zh":"我可以续借吗？"},{"n":11,"dimension":"预约","sub":"预约图书","timeline":"将来借阅","fr":"Est-il possible de réserver un livre déjà emprunté ?","follow":false,"zh":"已经借出的书可以预约吗？"},{"n":12,"dimension":"服务","sub":"打印","timeline":"现在信息","fr":"L’impression de documents est-elle gratuite ?","follow":false,"zh":"打印资料是免费的吗？"},{"n":13,"dimension":"活动","sub":"活动","timeline":"现在信息","fr":"Qu’est-ce que la bibliothèque organise comme activités ou ateliers ?","follow":false,"zh":"图书馆会组织哪些活动或工作坊？"},{"n":14,"dimension":"费用","sub":"会员费","timeline":"现在信息","fr":"L’inscription est-elle gratuite ?","follow":false,"zh":"注册图书证需要付费吗？"},{"n":15,"dimension":"迟还","sub":"逾期","timeline":"条件情况","fr":"Que se passe-t-il si je rends un document en retard ?","follow":false,"zh":"如果我逾期归还资料，会有什么后果？"}],"reviewed":true}],"_build":{"translation":"human-reviewed-tridim-v1","voice":"fr_FR-siwis-medium","rows":150}}
+{
+  "slug": "health",
+  "title": "健康安全与公共服务",
+  "count": 10,
+  "entries": [
+    {
+      "month": "2026-10",
+      "number": 1,
+      "sujet": "Je travaille à l’accueil du nouveau centre culturel de votre ville. Vous êtes intéressé(e). Vous me posez des questions sur les activités proposées par le centre (horaires, prix, etc.).",
+      "logic": "地点与开放时间 → 活动/展览 → 公共设备 → 价格优惠 → 报名 → 无障碍",
+      "timeline": "现在信息 → 将来参加",
+      "notes": [
+        "与 2026-08 第3题、2026-07 第1题 Sujet 完全相同，共用同一套文化中心问题库。"
+      ],
+      "followup": "这 3 个条目 Sujet 完全相同，共用同一套最终问题库。手稿中的开放时间、活动、公共设施、打印、报名和图书卡/文件类思路已吸收。",
+      "rows": [
+        {
+          "n": 1,
+          "dimension": "地点",
+          "sub": "中心位置",
+          "timeline": "现在信息",
+          "fr": "Où se trouve exactement le centre culturel ?",
+          "follow": false,
+          "zh": "文化中心具体在哪里？"
+        },
+        {
+          "n": 2,
+          "dimension": "时间",
+          "sub": "开放时间",
+          "timeline": "现在信息",
+          "fr": "À quelles heures êtes-vous ouverts ?",
+          "follow": false,
+          "zh": "你们的开放时间是什么？"
+        },
+        {
+          "n": 3,
+          "dimension": "时间",
+          "sub": "周末",
+          "timeline": "现在信息",
+          "fr": "Le centre est-il aussi ouvert le week-end ?",
+          "follow": false,
+          "zh": "文化中心周末也开放吗？"
+        },
+        {
+          "n": 4,
+          "dimension": "活动",
+          "sub": "活动类型",
+          "timeline": "现在信息",
+          "fr": "Qu’est-ce que vous proposez comme activités ?",
+          "follow": false,
+          "zh": "你们提供哪些活动？"
+        },
+        {
+          "n": 5,
+          "dimension": "活动",
+          "sub": "工作坊",
+          "timeline": "现在信息",
+          "fr": "Organisez-vous des ateliers en soirée pour les personnes qui travaillent ?",
+          "follow": false,
+          "zh": "是否为上班族安排晚间工作坊？",
+          "progressKey": "health-round2-e1-q5"
+        },
+        {
+          "n": 6,
+          "dimension": "活动",
+          "sub": "儿童活动",
+          "timeline": "现在信息",
+          "fr": "Et pour les enfants, qu’est-ce qui est prévu ?",
+          "follow": false,
+          "zh": "那孩子们可以参加哪些活动？"
+        },
+        {
+          "n": 7,
+          "dimension": "展览",
+          "sub": "展览",
+          "timeline": "现在信息",
+          "fr": "Quelles expositions peut-on voir en ce moment ?",
+          "follow": false,
+          "zh": "目前可以看哪些展览？"
+        },
+        {
+          "n": 8,
+          "dimension": "设备",
+          "sub": "公共设备",
+          "timeline": "现在信息",
+          "fr": "Faut-il réserver une place pour assister aux expositions ?",
+          "follow": false,
+          "zh": "参观展览是否需要预约？",
+          "progressKey": "health-round2-e1-q8"
+        },
+        {
+          "n": 9,
+          "dimension": "服务",
+          "sub": "网络",
+          "timeline": "现在信息",
+          "fr": "Est-ce qu’il y a des visites guidées ?",
+          "follow": false,
+          "zh": "是否有导览活动？",
+          "progressKey": "health-round2-e1-q9"
+        },
+        {
+          "n": 10,
+          "dimension": "服务",
+          "sub": "打印",
+          "timeline": "现在信息",
+          "fr": "Proposez-vous des activités gratuites ?",
+          "follow": false,
+          "zh": "是否提供免费活动？",
+          "progressKey": "health-round2-e1-q10"
+        },
+        {
+          "n": 11,
+          "dimension": "价格",
+          "sub": "入场/活动费用",
+          "timeline": "现在信息",
+          "fr": "Quel est le tarif des activités ?",
+          "follow": false,
+          "zh": "这些活动的费用是多少？"
+        },
+        {
+          "n": 12,
+          "dimension": "优惠",
+          "sub": "优惠",
+          "timeline": "现在信息",
+          "fr": "Certaines personnes ont-elles droit à un tarif réduit ?",
+          "follow": false,
+          "zh": "哪些人可以享受优惠价？"
+        },
+        {
+          "n": 13,
+          "dimension": "报名",
+          "sub": "报名方式",
+          "timeline": "将来参加",
+          "fr": "Vaut-il mieux s’inscrire à l’avance pour participer aux ateliers ?",
+          "follow": false,
+          "zh": "参加工作坊最好提前报名吗？"
+        },
+        {
+          "n": 14,
+          "dimension": "报名",
+          "sub": "所需文件",
+          "timeline": "将来参加",
+          "fr": "Qu’est-ce qu’il faut fournir comme documents pour l’inscription ?",
+          "follow": false,
+          "zh": "报名需要提供哪些文件？"
+        },
+        {
+          "n": 15,
+          "dimension": "无障碍",
+          "sub": "无障碍设施",
+          "timeline": "现在信息",
+          "fr": "Le centre est-il accessible aux personnes à mobilité réduite ?",
+          "follow": false,
+          "zh": "行动不便者可以方便地进入文化中心吗？"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "sujet": "Je suis agent d’accueil dans un bureau d’information sur les associations. Vous voulez faire du bénévolat dans votre quartier. Vous me posez des questions (types, activités, public, horaires, etc.).",
+      "logic": "志愿服务类型 → 面向人群 → 时间地点 → 培训/监督 → 证明 → 报名手续",
+      "timeline": "现在信息 → 将来参加",
+      "notes": [],
+      "followup": "手稿中的儿童/老人/残障人士、encadré、证明、手续等信息已纳入。",
+      "rows": [
+        {
+          "n": 1,
+          "dimension": "志愿服务",
+          "sub": "服务类型",
+          "timeline": "现在信息",
+          "fr": "Qu’est-ce qu’on peut faire comme bénévolat dans le quartier ?",
+          "follow": false,
+          "zh": "在附近有哪些志愿服务可以参加？"
+        },
+        {
+          "n": 2,
+          "dimension": "服务对象",
+          "sub": "儿童",
+          "timeline": "现在信息",
+          "fr": "Existe-t-il des associations qui travaillent avec des enfants ?",
+          "follow": false,
+          "zh": "有没有为儿童提供服务的协会？"
+        },
+        {
+          "n": 3,
+          "dimension": "服务对象",
+          "sub": "老人",
+          "timeline": "现在信息",
+          "fr": "Quelles missions peut-on faire auprès des personnes âgées ?",
+          "follow": false,
+          "zh": "有哪些为老年人提供帮助的志愿活动？",
+          "progressKey": "health-round2-e2-q3"
+        },
+        {
+          "n": 4,
+          "dimension": "服务对象",
+          "sub": "残障人士",
+          "timeline": "现在信息",
+          "fr": "Y a-t-il des missions accessibles sans expérience préalable ?",
+          "follow": false,
+          "zh": "是否有无需经验也可参与的志愿活动？",
+          "progressKey": "health-round2-e2-q4"
+        },
+        {
+          "n": 5,
+          "dimension": "活动",
+          "sub": "具体任务",
+          "timeline": "现在信息",
+          "fr": "Concrètement, qu’est-ce que font les bénévoles ?",
+          "follow": false,
+          "zh": "志愿者具体要做些什么？"
+        },
+        {
+          "n": 6,
+          "dimension": "地点",
+          "sub": "服务地点",
+          "timeline": "现在信息",
+          "fr": "Où ont lieu les activités ?",
+          "follow": false,
+          "zh": "这些活动在哪里举行？"
+        },
+        {
+          "n": 7,
+          "dimension": "时间",
+          "sub": "服务时间",
+          "timeline": "将来志愿服务",
+          "fr": "Quels sont les jours et les horaires possibles pour faire du bénévolat ?",
+          "follow": false,
+          "zh": "可以在哪些日子、什么时间做志愿服务？"
+        },
+        {
+          "n": 8,
+          "dimension": "频率",
+          "sub": "参与频率",
+          "timeline": "将来志愿服务",
+          "fr": "Peut-on s’engager seulement quelques heures par mois ?",
+          "follow": false,
+          "zh": "是否可以每月只参与几个小时？",
+          "progressKey": "health-round2-e2-q8"
+        },
+        {
+          "n": 9,
+          "dimension": "培训",
+          "sub": "培训",
+          "timeline": "将来准备",
+          "fr": "Une formation est-elle prévue avant de commencer ?",
+          "follow": false,
+          "zh": "开始之前会安排培训吗？"
+        },
+        {
+          "n": 10,
+          "dimension": "监督",
+          "sub": "负责人",
+          "timeline": "现在信息",
+          "fr": "Les bénévoles sont-ils encadrés par un responsable ?",
+          "follow": false,
+          "zh": "志愿者会有负责人指导吗？"
+        },
+        {
+          "n": 11,
+          "dimension": "条件",
+          "sub": "资格要求",
+          "timeline": "现在信息",
+          "fr": "Une expérience ou une compétence particulière est-elle nécessaire ?",
+          "follow": false,
+          "zh": "需要相关经验或特殊技能吗？"
+        },
+        {
+          "n": 12,
+          "dimension": "证明",
+          "sub": "参与证明",
+          "timeline": "将来结果",
+          "fr": "Une attestation de bénévolat est-elle remise ?",
+          "follow": false,
+          "zh": "会提供志愿服务证明吗？"
+        },
+        {
+          "n": 13,
+          "dimension": "保险",
+          "sub": "志愿者保险",
+          "timeline": "现在信息",
+          "fr": "Les bénévoles sont-ils couverts par une assurance pendant les activités ?",
+          "follow": false,
+          "zh": "志愿服务期间，志愿者享有保险保障吗？"
+        },
+        {
+          "n": 14,
+          "dimension": "报名",
+          "sub": "报名方式",
+          "timeline": "将来报名",
+          "fr": "Comment se passe l’inscription ?",
+          "follow": false,
+          "zh": "报名流程是怎样的？"
+        },
+        {
+          "n": 15,
+          "dimension": "文件",
+          "sub": "所需文件",
+          "timeline": "将来报名",
+          "fr": "Qu’est-ce qu’il faut fournir comme documents ?",
+          "follow": false,
+          "zh": "需要提交哪些文件？"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "sujet": "Je suis votre voisin(e). Vous venez de vous installer au Québec. Vous souhaitez prendre un rendez-vous médical. Vous me posez des questions pour obtenir des informations sur les médecins de la ville (lieux, tarifs, spécialisations, etc.).",
+      "logic": "医生类型 → 地点 → 专科 → 预约 → 等待时间 → 费用 → 保险/医保 → 紧急情况",
+      "timeline": "现在信息 → 将来就医",
+      "notes": [],
+      "followup": "手稿中的家庭医生/专科、地点、时间、费用、医疗卡与预约已纳入。",
+      "rows": [
+        {
+          "n": 1,
+          "dimension": "医生",
+          "sub": "医生类型",
+          "timeline": "现在信息",
+          "fr": "Est-ce que vous connaissez une clinique qui accepte de nouveaux patients ?",
+          "follow": false,
+          "zh": "您知道有接收新患者的诊所吗？",
+          "progressKey": "health-round2-e3-q1"
+        },
+        {
+          "n": 2,
+          "dimension": "医生",
+          "sub": "家庭医生",
+          "timeline": "现在信息",
+          "fr": "Trouve-t-on facilement un médecin de famille ?",
+          "follow": false,
+          "zh": "在这里容易找到家庭医生吗？"
+        },
+        {
+          "n": 3,
+          "dimension": "专科",
+          "sub": "专科医生",
+          "timeline": "现在信息",
+          "fr": "Quels spécialistes peut-on consulter près d’ici ?",
+          "follow": false,
+          "zh": "附近可以看哪些专科医生？"
+        },
+        {
+          "n": 4,
+          "dimension": "地点",
+          "sub": "诊所位置",
+          "timeline": "现在信息",
+          "fr": "Où se trouve la clinique la plus proche ?",
+          "follow": false,
+          "zh": "最近的诊所在哪里？"
+        },
+        {
+          "n": 5,
+          "dimension": "时间",
+          "sub": "营业时间",
+          "timeline": "现在信息",
+          "fr": "Quels sont les horaires d’ouverture des cabinets médicaux ?",
+          "follow": false,
+          "zh": "诊所通常在什么时间开放？",
+          "progressKey": "r5-e9214f18cc"
+        },
+        {
+          "n": 6,
+          "dimension": "预约",
+          "sub": "预约方式",
+          "timeline": "将来就医",
+          "fr": "Comment se passe la prise de rendez-vous ?",
+          "follow": false,
+          "zh": "预约就诊的流程是怎样的？"
+        },
+        {
+          "n": 7,
+          "dimension": "预约",
+          "sub": "等待时间",
+          "timeline": "现在信息",
+          "fr": "En moyenne, combien de temps faut-il attendre pour obtenir un rendez-vous ?",
+          "follow": false,
+          "zh": "通常要等多久才能约上？"
+        },
+        {
+          "n": 8,
+          "dimension": "无预约",
+          "sub": "walk-in",
+          "timeline": "现在信息",
+          "fr": "Existe-t-il des cliniques sans rendez-vous ?",
+          "follow": false,
+          "zh": "这里有免预约诊所吗？"
+        },
+        {
+          "n": 9,
+          "dimension": "费用",
+          "sub": "看诊费用",
+          "timeline": "现在信息",
+          "fr": "Quel est le prix d’une consultation ?",
+          "follow": false,
+          "zh": "一次门诊大约多少钱？"
+        },
+        {
+          "n": 10,
+          "dimension": "医保",
+          "sub": "医保卡",
+          "timeline": "现在信息",
+          "fr": "Pour une personne qui vient d’arriver, comment fonctionne la couverture médicale au Québec ?",
+          "follow": false,
+          "zh": "刚到魁北克的人，医疗保险如何运作？",
+          "progressKey": "health-round2-e3-q10"
+        },
+        {
+          "n": 11,
+          "dimension": "医保",
+          "sub": "自费项目",
+          "timeline": "现在信息",
+          "fr": "Quels frais ne sont pas couverts ?",
+          "follow": false,
+          "zh": "哪些费用不在保险承保范围内？"
+        },
+        {
+          "n": 12,
+          "dimension": "处方",
+          "sub": "药物处方",
+          "timeline": "将来就医",
+          "fr": "Est-ce que le médecin peut me prescrire des médicaments si nécessaire ?",
+          "follow": false,
+          "zh": "如果有需要，医生可以给我开药吗？"
+        },
+        {
+          "n": 13,
+          "dimension": "检查",
+          "sub": "检查地点",
+          "timeline": "将来就医",
+          "fr": "Où faut-il aller pour faire les examens prescrits par le médecin ?",
+          "follow": false,
+          "zh": "医生开了检查后，我应该去哪里做？"
+        },
+        {
+          "n": 14,
+          "dimension": "紧急",
+          "sub": "紧急情况",
+          "timeline": "条件情况",
+          "fr": "Que dois-je faire si mon problème devient urgent ?",
+          "follow": false,
+          "zh": "如果我的病情变得紧急，我应该怎么办？"
+        },
+        {
+          "n": 15,
+          "dimension": "建议",
+          "sub": "新居民建议",
+          "timeline": "现在建议",
+          "fr": "À votre avis, par où devrais-je commencer pour trouver un médecin ?",
+          "follow": false,
+          "zh": "您觉得我应该从哪里开始找医生？",
+          "progressKey": "health-round2-e3-q15"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "sujet": "Je suis le (la) secrétaire de votre médecin. Il est en congés et vous me posez des questions sur son remplaçant (nom du médecin, horaires, durée, etc.).",
+      "logic": "代诊医生身份 → 代诊期限 → 时间地点 → 专业/经验 → 预约 → 病历与处方 → 紧急联系",
+      "timeline": "现在信息 → 将来就诊",
+      "notes": [],
+      "followup": "真实题干重点是 remplaçant；问题集中在代诊安排。",
+      "rows": [
+        {
+          "n": 1,
+          "dimension": "医生",
+          "sub": "代诊医生姓名",
+          "timeline": "现在信息",
+          "fr": "Quel est le nom du médecin remplaçant ?",
+          "follow": false,
+          "zh": "代诊医生叫什么名字？"
+        },
+        {
+          "n": 2,
+          "dimension": "医生",
+          "sub": "专业背景",
+          "timeline": "现在信息",
+          "fr": "Est-ce qu’il s’agit d’un médecin généraliste ?",
+          "follow": false,
+          "zh": "替班的是全科医生吗？",
+          "progressKey": "health-round2-e4-q2"
+        },
+        {
+          "n": 3,
+          "dimension": "医生",
+          "sub": "经验",
+          "timeline": "现在信息",
+          "fr": "Est-ce que ce médecin connaît déjà les patients du cabinet ?",
+          "follow": false,
+          "zh": "这位医生熟悉诊所现有患者吗？",
+          "progressKey": "health-round2-e4-q3"
+        },
+        {
+          "n": 4,
+          "dimension": "时间",
+          "sub": "代诊期限",
+          "timeline": "现在信息",
+          "fr": "Jusqu’à quand va-t-il remplacer mon médecin ?",
+          "follow": false,
+          "zh": "他会代替我的医生到什么时候？"
+        },
+        {
+          "n": 5,
+          "dimension": "时间",
+          "sub": "看诊时间",
+          "timeline": "现在信息",
+          "fr": "À quels horaires consulte-t-il ?",
+          "follow": false,
+          "zh": "他通常在什么时间接诊？"
+        },
+        {
+          "n": 6,
+          "dimension": "地点",
+          "sub": "看诊地点",
+          "timeline": "现在信息",
+          "fr": "Va-t-il consulter dans le même cabinet ?",
+          "follow": false,
+          "zh": "他也会在同一家诊所接诊吗？"
+        },
+        {
+          "n": 7,
+          "dimension": "预约",
+          "sub": "预约方式",
+          "timeline": "将来就诊",
+          "fr": "Comment puis-je prendre rendez-vous avec lui ?",
+          "follow": false,
+          "zh": "我怎样预约他的门诊？"
+        },
+        {
+          "n": 8,
+          "dimension": "预约",
+          "sub": "等待时间",
+          "timeline": "现在信息",
+          "fr": "Faut-il attendre longtemps pour obtenir un rendez-vous ?",
+          "follow": false,
+          "zh": "预约他需要等很久吗？"
+        },
+        {
+          "n": 9,
+          "dimension": "病历",
+          "sub": "病历访问",
+          "timeline": "现在信息",
+          "fr": "Pourra-t-il consulter mon dossier médical ?",
+          "follow": false,
+          "zh": "他能查阅我的病历吗？"
+        },
+        {
+          "n": 10,
+          "dimension": "处方",
+          "sub": "续方",
+          "timeline": "将来就诊",
+          "fr": "Pourra-t-il renouveler mes ordonnances si nécessaire ?",
+          "follow": false,
+          "zh": "有需要的话，他可以续开我的处方吗？"
+        },
+        {
+          "n": 11,
+          "dimension": "检查",
+          "sub": "检查结果",
+          "timeline": "现在信息",
+          "fr": "Est-ce que mes résultats d’analyses seront accessibles pendant le rendez-vous ?",
+          "follow": false,
+          "zh": "就诊时能查看我之前的检查结果吗？",
+          "progressKey": "health-round2-e4-q11"
+        },
+        {
+          "n": 12,
+          "dimension": "费用",
+          "sub": "费用",
+          "timeline": "现在信息",
+          "fr": "Les tarifs ou la couverture restent-ils les mêmes ?",
+          "follow": false,
+          "zh": "诊费和保险报销范围保持不变吗？"
+        },
+        {
+          "n": 13,
+          "dimension": "联系",
+          "sub": "秘书处",
+          "timeline": "现在信息",
+          "fr": "À qui puis-je m’adresser si j’ai une question avant le rendez-vous ?",
+          "follow": false,
+          "zh": "预约前如果有问题，我可以联系谁？"
+        },
+        {
+          "n": 14,
+          "dimension": "紧急",
+          "sub": "紧急情况",
+          "timeline": "条件情况",
+          "fr": "Que dois-je faire si j’ai besoin d’un médecin en urgence ?",
+          "follow": false,
+          "zh": "如果我需要紧急就医，应该怎么办？"
+        },
+        {
+          "n": 15,
+          "dimension": "回归",
+          "sub": "原医生回来",
+          "timeline": "将来信息",
+          "fr": "Quand mon médecin habituel doit-il revenir ?",
+          "follow": false,
+          "zh": "我的固定医生预计什么时候回来？"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "sujet": "Je suis un(e) ami(e) francophone. Vous voulez savoir comment cela se passe quand on tombe malade dans mon pays. Vous me posez des questions sur l’organisation des soins (médecins, hôpitaux, urgences médicales, etc.).",
+      "logic": "初级医疗 → 家庭医生/诊所 → 医院 → 急诊 → 费用与保险 → 药房/处方 → 救护",
+      "timeline": "现在制度说明 → 条件情况",
+      "notes": [],
+      "followup": "手稿里的 carte d’assurance maladie、médecin、hôpital、urgence 等维度已纳入。",
+      "rows": [
+        {
+          "n": 1,
+          "dimension": "初级医疗",
+          "sub": "生病第一步",
+          "timeline": "现在信息",
+          "fr": "Quand on tombe malade, où va-t-on généralement en premier ?",
+          "follow": false,
+          "zh": "生病时，人们通常首先去哪里就诊？"
+        },
+        {
+          "n": 2,
+          "dimension": "医生",
+          "sub": "家庭医生",
+          "timeline": "现在信息",
+          "fr": "Tout le monde a-t-il un médecin de famille ?",
+          "follow": false,
+          "zh": "每个人都有家庭医生吗？"
+        },
+        {
+          "n": 3,
+          "dimension": "诊所",
+          "sub": "无预约诊所",
+          "timeline": "现在信息",
+          "fr": "Peut-on consulter dans une clinique sans rendez-vous ?",
+          "follow": false,
+          "zh": "可以直接去免预约诊所看病吗？"
+        },
+        {
+          "n": 4,
+          "dimension": "预约",
+          "sub": "预约时间",
+          "timeline": "现在信息",
+          "fr": "En général, combien de temps attend-on avant de voir un médecin ?",
+          "follow": false,
+          "zh": "通常要等多久才能见到医生？"
+        },
+        {
+          "n": 5,
+          "dimension": "医院",
+          "sub": "去医院条件",
+          "timeline": "现在信息",
+          "fr": "Dans quels cas faut-il aller directement à l’hôpital ?",
+          "follow": false,
+          "zh": "哪些情况下需要直接去医院？"
+        },
+        {
+          "n": 6,
+          "dimension": "急诊",
+          "sub": "急诊使用",
+          "timeline": "现在信息",
+          "fr": "Comment fonctionne le service des urgences ?",
+          "follow": false,
+          "zh": "急诊服务是怎样运作的？"
+        },
+        {
+          "n": 7,
+          "dimension": "急诊",
+          "sub": "等待时间",
+          "timeline": "现在信息",
+          "fr": "Comment les patients sont-ils pris en charge aux urgences ?",
+          "follow": false,
+          "zh": "急诊如何接诊患者？",
+          "progressKey": "health-round2-e5-q7"
+        },
+        {
+          "n": 8,
+          "dimension": "救护",
+          "sub": "救护车",
+          "timeline": "条件情况",
+          "fr": "Quel numéro faut-il appeler pour une ambulance en cas d’urgence ?",
+          "follow": false,
+          "zh": "遇到紧急情况时，叫救护车应该拨打什么号码？"
+        },
+        {
+          "n": 9,
+          "dimension": "费用",
+          "sub": "看病费用",
+          "timeline": "现在信息",
+          "fr": "Les consultations médicales sont-elles payantes ?",
+          "follow": false,
+          "zh": "看医生需要付费吗？"
+        },
+        {
+          "n": 10,
+          "dimension": "保险",
+          "sub": "医疗保险",
+          "timeline": "现在信息",
+          "fr": "Comment fonctionne l’assurance maladie dans ton pays ?",
+          "follow": false,
+          "zh": "你们国家的医疗保险是怎么运作的？"
+        },
+        {
+          "n": 11,
+          "dimension": "保险",
+          "sub": "覆盖范围",
+          "timeline": "现在信息",
+          "fr": "Les soins dentaires sont-ils couverts de la même manière ?",
+          "follow": false,
+          "zh": "牙科治疗也是同样的保险报销方式吗？",
+          "progressKey": "health-round2-e5-q11"
+        },
+        {
+          "n": 12,
+          "dimension": "药房",
+          "sub": "药房",
+          "timeline": "现在信息",
+          "fr": "Trouve-t-on facilement une pharmacie ?",
+          "follow": false,
+          "zh": "附近容易找到药店吗？"
+        },
+        {
+          "n": 13,
+          "dimension": "处方",
+          "sub": "处方药",
+          "timeline": "现在信息",
+          "fr": "La plupart des médicaments nécessitent-ils une ordonnance ?",
+          "follow": false,
+          "zh": "大多数药物都需要处方吗？"
+        },
+        {
+          "n": 14,
+          "dimension": "专科",
+          "sub": "转诊",
+          "timeline": "现在信息",
+          "fr": "Doit-on passer par un médecin généraliste pour consulter un spécialiste ?",
+          "follow": false,
+          "zh": "看专科医生之前，必须先看全科医生吗？"
+        },
+        {
+          "n": 15,
+          "dimension": "建议",
+          "sub": "外国人建议",
+          "timeline": "现在建议",
+          "fr": "Qu’est-ce que tu conseillerais à quelqu’un qui vient d’arriver et qui tombe malade ?",
+          "follow": false,
+          "zh": "如果刚到你们国家的人生病了，你会给他什么建议？"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "sujet": "Vous êtes en voiture au Canada et vous tombez en panne. Vous appelez votre assurance pour savoir comment elle peut vous aider (dépannage, réparations, retour, etc.). Je suis l’agent qui vous répond.",
+      "logic": "故障定位 → 拖车 → 修理 → 费用/保险覆盖 → 替代交通/住宿 → 理赔 → 回程",
+      "timeline": "突发故障 → 即时处理 → 后续理赔",
+      "notes": [],
+      "followup": "手稿中的 panne、dépannage、remorquage、réparation、assurance、retour 已纳入。",
+      "rows": [
+        {
+          "n": 1,
+          "dimension": "故障",
+          "sub": "位置",
+          "timeline": "紧急情况",
+          "fr": "Quelles informations dois-je vous donner pour localiser ma voiture ?",
+          "follow": false,
+          "zh": "我需要提供哪些信息，您才能定位我的车？"
+        },
+        {
+          "n": 2,
+          "dimension": "故障",
+          "sub": "安全",
+          "timeline": "紧急情况",
+          "fr": "Qu’est-ce que je dois faire immédiatement pour rester en sécurité ?",
+          "follow": false,
+          "zh": "为了确保安全，我现在应该马上做什么？"
+        },
+        {
+          "n": 3,
+          "dimension": "拖车",
+          "sub": "拖车服务",
+          "timeline": "紧急援助",
+          "fr": "Pouvez-vous envoyer une dépanneuse ?",
+          "follow": false,
+          "zh": "您可以派一辆拖车来吗？",
+          "progressKey": "r3-ea2af1e471"
+        },
+        {
+          "n": 4,
+          "dimension": "拖车",
+          "sub": "等待时间",
+          "timeline": "紧急援助",
+          "fr": "Dans combien de temps la dépanneuse peut-elle arriver ?",
+          "follow": false,
+          "zh": "拖车大约多久能到？"
+        },
+        {
+          "n": 5,
+          "dimension": "拖车",
+          "sub": "费用",
+          "timeline": "现在信息",
+          "fr": "Les frais de remorquage sont-ils pris en charge par mon assurance ?",
+          "follow": false,
+          "zh": "拖车费用由我的保险承担吗？"
+        },
+        {
+          "n": 6,
+          "dimension": "维修",
+          "sub": "维修地点",
+          "timeline": "后续维修",
+          "fr": "Puis-je choisir le garage où faire remorquer la voiture ?",
+          "follow": false,
+          "zh": "我可以选择拖车送往的修理厂吗？",
+          "progressKey": "health-round2-e6-q6"
+        },
+        {
+          "n": 7,
+          "dimension": "维修",
+          "sub": "维修费用",
+          "timeline": "现在信息",
+          "fr": "Qu’est-ce que mon contrat couvre comme frais de réparation ?",
+          "follow": false,
+          "zh": "我的保险合同涵盖哪些维修费用？"
+        },
+        {
+          "n": 8,
+          "dimension": "维修",
+          "sub": "授权",
+          "timeline": "后续维修",
+          "fr": "Faut-il votre accord avant que je fasse réparer la voiture ?",
+          "follow": false,
+          "zh": "维修汽车之前需要先得到您的同意吗？"
+        },
+        {
+          "n": 9,
+          "dimension": "交通",
+          "sub": "替代车辆",
+          "timeline": "后续交通",
+          "fr": "Mon assurance prévoit-elle une voiture de remplacement ?",
+          "follow": false,
+          "zh": "我的保险包含代步车吗？"
+        },
+        {
+          "n": 10,
+          "dimension": "交通",
+          "sub": "返程",
+          "timeline": "后续交通",
+          "fr": "Si la réparation prend plusieurs jours, pouvez-vous organiser mon retour chez moi ?",
+          "follow": false,
+          "zh": "如果维修需要几天，您能安排我回家吗？",
+          "progressKey": "r10-281a48507f"
+        },
+        {
+          "n": 11,
+          "dimension": "住宿",
+          "sub": "住宿",
+          "timeline": "后续住宿",
+          "fr": "L’assurance peut-elle prendre en charge un hôtel si je suis loin de chez moi ?",
+          "follow": false,
+          "zh": "如果我离家很远，保险能承担酒店费用吗？"
+        },
+        {
+          "n": 12,
+          "dimension": "理赔",
+          "sub": "申报",
+          "timeline": "后续理赔",
+          "fr": "Comment se passe la déclaration de la panne et l’envoi des justificatifs ?",
+          "follow": false,
+          "zh": "故障如何申报，相关凭证要怎样提交？"
+        },
+        {
+          "n": 13,
+          "dimension": "文件",
+          "sub": "所需文件",
+          "timeline": "后续理赔",
+          "fr": "Quels documents dois-je conserver pour demander un remboursement ?",
+          "follow": false,
+          "zh": "申请报销需要保留哪些文件？",
+          "progressKey": "r13-d5cbe9b5a6"
+        },
+        {
+          "n": 14,
+          "dimension": "联系",
+          "sub": "再次联系",
+          "timeline": "紧急联络",
+          "fr": "Qui dois-je appeler si la situation change ?",
+          "follow": false,
+          "zh": "如果情况有变化，我应该打电话给谁？"
+        },
+        {
+          "n": 15,
+          "dimension": "时间",
+          "sub": "维修时间",
+          "timeline": "后续维修",
+          "fr": "Est-ce qu’un garage pourra me donner une estimation avant les réparations ?",
+          "follow": false,
+          "zh": "修车前修理厂能提供报价吗？",
+          "progressKey": "health-round2-e6-q15"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "sujet": "Je travaille au service culturel de la mairie. Vous voulez en savoir plus sur les activités culturelles de la ville. Vous me posez des questions (expositions, musées, ateliers, prix, accès, etc.).",
+      "logic": "活动类型 → 展览/博物馆/工作坊 → 时间地点 → 预约 → 价格优惠 → 无障碍/家庭",
+      "timeline": "现在信息 → 将来参加",
+      "notes": [],
+      "followup": "手稿中的 exposition、musée、atelier、prix、réservation/文件等思路已纳入。",
+      "rows": [
+        {
+          "n": 1,
+          "dimension": "活动",
+          "sub": "活动类型",
+          "timeline": "现在信息",
+          "fr": "Qu’est-ce que la ville propose comme activités culturelles en ce moment ?",
+          "follow": false,
+          "zh": "这座城市最近有哪些文化活动？"
+        },
+        {
+          "n": 2,
+          "dimension": "展览",
+          "sub": "展览",
+          "timeline": "现在信息",
+          "fr": "Qu’est-ce qu’il y a comme expositions à visiter ?",
+          "follow": false,
+          "zh": "有哪些展览值得参观？"
+        },
+        {
+          "n": 3,
+          "dimension": "博物馆",
+          "sub": "博物馆",
+          "timeline": "现在信息",
+          "fr": "Quels musées valent le plus le détour selon vous ?",
+          "follow": false,
+          "zh": "您觉得哪些博物馆最值得一去？"
+        },
+        {
+          "n": 4,
+          "dimension": "工作坊",
+          "sub": "工作坊",
+          "timeline": "现在信息",
+          "fr": "Proposez-vous des ateliers pour les adultes ?",
+          "follow": false,
+          "zh": "你们为成年人开设工作坊吗？"
+        },
+        {
+          "n": 5,
+          "dimension": "儿童",
+          "sub": "儿童活动",
+          "timeline": "现在信息",
+          "fr": "Et pour les enfants, qu’est-ce qui est prévu ?",
+          "follow": false,
+          "zh": "那孩子们可以参加哪些活动？"
+        },
+        {
+          "n": 6,
+          "dimension": "地点",
+          "sub": "活动地点",
+          "timeline": "现在信息",
+          "fr": "Où ont lieu les principales activités ?",
+          "follow": false,
+          "zh": "主要活动在哪里举行？"
+        },
+        {
+          "n": 7,
+          "dimension": "时间",
+          "sub": "开放时间",
+          "timeline": "现在信息",
+          "fr": "Où puis-je consulter les horaires des différentes activités ?",
+          "follow": false,
+          "zh": "我在哪里可以查看不同活动的时间表？",
+          "progressKey": "health-round2-e7-q7"
+        },
+        {
+          "n": 8,
+          "dimension": "时间",
+          "sub": "周末",
+          "timeline": "现在信息",
+          "fr": "Y a-t-il des événements organisés spécialement le week-end ?",
+          "follow": false,
+          "zh": "周末有专门组织的活动吗？",
+          "progressKey": "health-round2-e7-q8"
+        },
+        {
+          "n": 9,
+          "dimension": "价格",
+          "sub": "费用",
+          "timeline": "现在信息",
+          "fr": "Quel est le tarif des activités ?",
+          "follow": false,
+          "zh": "这些活动的费用是多少？"
+        },
+        {
+          "n": 10,
+          "dimension": "优惠",
+          "sub": "优惠",
+          "timeline": "现在信息",
+          "fr": "Les étudiants, les familles ou les nouveaux arrivants ont-ils droit à des réductions ?",
+          "follow": false,
+          "zh": "学生、家庭或新来者可以享受优惠吗？"
+        },
+        {
+          "n": 11,
+          "dimension": "预约",
+          "sub": "提前预约",
+          "timeline": "将来参加",
+          "fr": "Vaut-il mieux réserver à l’avance ?",
+          "follow": false,
+          "zh": "最好提前预约吗？"
+        },
+        {
+          "n": 12,
+          "dimension": "报名",
+          "sub": "报名方式",
+          "timeline": "将来报名",
+          "fr": "Comment se passe l’inscription à un atelier ?",
+          "follow": false,
+          "zh": "工作坊的报名流程是怎样的？"
+        },
+        {
+          "n": 13,
+          "dimension": "文件",
+          "sub": "所需文件",
+          "timeline": "将来报名",
+          "fr": "Doit-on présenter un document particulier pour s’inscrire ?",
+          "follow": false,
+          "zh": "报名时需要出示特定文件吗？"
+        },
+        {
+          "n": 14,
+          "dimension": "无障碍",
+          "sub": "无障碍",
+          "timeline": "现在信息",
+          "fr": "Les lieux sont-ils accessibles aux personnes à mobilité réduite ?",
+          "follow": false,
+          "zh": "行动不便者可以方便地进入这些场所吗？"
+        },
+        {
+          "n": 15,
+          "dimension": "建议",
+          "sub": "推荐",
+          "timeline": "现在建议",
+          "fr": "Parmi ces activités, laquelle me conseilleriez-vous pour découvrir la ville ?",
+          "follow": false,
+          "zh": "如果想了解这座城市，您最推荐哪项活动？"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "sujet": "Je travaille à l’accueil du nouveau centre culturel de votre ville. Vous êtes intéressé(e). Vous me posez des questions sur les activités proposées par le centre (horaires, prix, etc.).",
+      "logic": "地点与开放时间 → 活动/展览 → 公共设备 → 价格优惠 → 报名 → 无障碍",
+      "timeline": "现在信息 → 将来参加",
+      "notes": [
+        "与 2026-10 第1题、2026-07 第1题 Sujet 完全相同，共用同一套文化中心问题库。"
+      ],
+      "followup": "这 3 个条目 Sujet 完全相同，共用同一套最终问题库。手稿中的开放时间、活动、公共设施、打印、报名和图书卡/文件类思路已吸收。",
+      "rows": [
+        {
+          "n": 1,
+          "dimension": "地点",
+          "sub": "中心位置",
+          "timeline": "现在信息",
+          "fr": "Où se trouve exactement le centre culturel ?",
+          "follow": false,
+          "zh": "文化中心具体在哪里？"
+        },
+        {
+          "n": 2,
+          "dimension": "时间",
+          "sub": "开放时间",
+          "timeline": "现在信息",
+          "fr": "À quelles heures êtes-vous ouverts ?",
+          "follow": false,
+          "zh": "你们的开放时间是什么？"
+        },
+        {
+          "n": 3,
+          "dimension": "时间",
+          "sub": "周末",
+          "timeline": "现在信息",
+          "fr": "Le centre est-il aussi ouvert le week-end ?",
+          "follow": false,
+          "zh": "文化中心周末也开放吗？"
+        },
+        {
+          "n": 4,
+          "dimension": "活动",
+          "sub": "活动类型",
+          "timeline": "现在信息",
+          "fr": "Qu’est-ce que vous proposez comme activités ?",
+          "follow": false,
+          "zh": "你们提供哪些活动？"
+        },
+        {
+          "n": 5,
+          "dimension": "活动",
+          "sub": "工作坊",
+          "timeline": "现在信息",
+          "fr": "Organisez-vous des ateliers en soirée pour les personnes qui travaillent ?",
+          "follow": false,
+          "zh": "是否为上班族安排晚间工作坊？",
+          "progressKey": "health-round2-e8-q5"
+        },
+        {
+          "n": 6,
+          "dimension": "活动",
+          "sub": "儿童活动",
+          "timeline": "现在信息",
+          "fr": "Et pour les enfants, qu’est-ce qui est prévu ?",
+          "follow": false,
+          "zh": "那孩子们可以参加哪些活动？"
+        },
+        {
+          "n": 7,
+          "dimension": "展览",
+          "sub": "展览",
+          "timeline": "现在信息",
+          "fr": "Quelles expositions peut-on voir en ce moment ?",
+          "follow": false,
+          "zh": "目前可以看哪些展览？"
+        },
+        {
+          "n": 8,
+          "dimension": "设备",
+          "sub": "公共设备",
+          "timeline": "现在信息",
+          "fr": "Faut-il réserver une place pour assister aux expositions ?",
+          "follow": false,
+          "zh": "参观展览是否需要预约？",
+          "progressKey": "health-round2-e8-q8"
+        },
+        {
+          "n": 9,
+          "dimension": "服务",
+          "sub": "网络",
+          "timeline": "现在信息",
+          "fr": "Est-ce qu’il y a des visites guidées ?",
+          "follow": false,
+          "zh": "是否有导览活动？",
+          "progressKey": "health-round2-e8-q9"
+        },
+        {
+          "n": 10,
+          "dimension": "服务",
+          "sub": "打印",
+          "timeline": "现在信息",
+          "fr": "Proposez-vous des activités gratuites ?",
+          "follow": false,
+          "zh": "是否提供免费活动？",
+          "progressKey": "health-round2-e8-q10"
+        },
+        {
+          "n": 11,
+          "dimension": "价格",
+          "sub": "入场/活动费用",
+          "timeline": "将来预约",
+          "fr": "Quel est le tarif des activités ?",
+          "follow": false,
+          "zh": "这些活动的费用是多少？"
+        },
+        {
+          "n": 12,
+          "dimension": "优惠",
+          "sub": "优惠",
+          "timeline": "将来报名",
+          "fr": "Certaines personnes ont-elles droit à un tarif réduit ?",
+          "follow": false,
+          "zh": "哪些人可以享受优惠价？"
+        },
+        {
+          "n": 13,
+          "dimension": "报名",
+          "sub": "报名方式",
+          "timeline": "将来报名",
+          "fr": "Vaut-il mieux s’inscrire à l’avance pour participer aux ateliers ?",
+          "follow": false,
+          "zh": "参加工作坊最好提前报名吗？"
+        },
+        {
+          "n": 14,
+          "dimension": "报名",
+          "sub": "所需文件",
+          "timeline": "将来参加",
+          "fr": "Qu’est-ce qu’il faut fournir comme documents pour l’inscription ?",
+          "follow": false,
+          "zh": "报名需要提供哪些文件？"
+        },
+        {
+          "n": 15,
+          "dimension": "无障碍",
+          "sub": "无障碍设施",
+          "timeline": "现在信息",
+          "fr": "Le centre est-il accessible aux personnes à mobilité réduite ?",
+          "follow": false,
+          "zh": "行动不便者可以方便地进入文化中心吗？"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "sujet": "Je travaille à l’accueil du nouveau centre culturel de votre ville. Vous êtes intéressé(e). Vous me posez des questions sur les activités proposées par le centre (horaires, prix, etc.).",
+      "logic": "地点与开放时间 → 活动/展览 → 公共设备 → 价格优惠 → 报名 → 无障碍",
+      "timeline": "现在信息 → 将来参加",
+      "notes": [
+        "与 2026-10 第1题、2026-08 第3题 Sujet 完全相同，共用同一套文化中心问题库。"
+      ],
+      "followup": "这 3 个条目 Sujet 完全相同，共用同一套最终问题库。手稿中的开放时间、活动、公共设施、打印、报名和图书卡/文件类思路已吸收。",
+      "rows": [
+        {
+          "n": 1,
+          "dimension": "地点",
+          "sub": "中心位置",
+          "timeline": "现在信息",
+          "fr": "Où se trouve exactement le centre culturel ?",
+          "follow": false,
+          "zh": "文化中心具体在哪里？"
+        },
+        {
+          "n": 2,
+          "dimension": "时间",
+          "sub": "开放时间",
+          "timeline": "现在信息",
+          "fr": "À quelles heures êtes-vous ouverts ?",
+          "follow": false,
+          "zh": "你们的开放时间是什么？"
+        },
+        {
+          "n": 3,
+          "dimension": "时间",
+          "sub": "周末",
+          "timeline": "现在信息",
+          "fr": "Le centre est-il aussi ouvert le week-end ?",
+          "follow": false,
+          "zh": "文化中心周末也开放吗？"
+        },
+        {
+          "n": 4,
+          "dimension": "活动",
+          "sub": "活动类型",
+          "timeline": "现在信息",
+          "fr": "Qu’est-ce que vous proposez comme activités ?",
+          "follow": false,
+          "zh": "你们提供哪些活动？"
+        },
+        {
+          "n": 5,
+          "dimension": "活动",
+          "sub": "工作坊",
+          "timeline": "现在信息",
+          "fr": "Organisez-vous des ateliers en soirée pour les personnes qui travaillent ?",
+          "follow": false,
+          "zh": "是否为上班族安排晚间工作坊？",
+          "progressKey": "health-round2-e9-q5"
+        },
+        {
+          "n": 6,
+          "dimension": "活动",
+          "sub": "儿童活动",
+          "timeline": "现在信息",
+          "fr": "Et pour les enfants, qu’est-ce qui est prévu ?",
+          "follow": false,
+          "zh": "那孩子们可以参加哪些活动？"
+        },
+        {
+          "n": 7,
+          "dimension": "展览",
+          "sub": "展览",
+          "timeline": "现在信息",
+          "fr": "Quelles expositions peut-on voir en ce moment ?",
+          "follow": false,
+          "zh": "目前可以看哪些展览？"
+        },
+        {
+          "n": 8,
+          "dimension": "设备",
+          "sub": "公共设备",
+          "timeline": "现在信息",
+          "fr": "Faut-il réserver une place pour assister aux expositions ?",
+          "follow": false,
+          "zh": "参观展览是否需要预约？",
+          "progressKey": "health-round2-e9-q8"
+        },
+        {
+          "n": 9,
+          "dimension": "服务",
+          "sub": "网络",
+          "timeline": "现在信息",
+          "fr": "Est-ce qu’il y a des visites guidées ?",
+          "follow": false,
+          "zh": "是否有导览活动？",
+          "progressKey": "health-round2-e9-q9"
+        },
+        {
+          "n": 10,
+          "dimension": "服务",
+          "sub": "打印",
+          "timeline": "现在信息",
+          "fr": "Proposez-vous des activités gratuites ?",
+          "follow": false,
+          "zh": "是否提供免费活动？",
+          "progressKey": "health-round2-e9-q10"
+        },
+        {
+          "n": 11,
+          "dimension": "价格",
+          "sub": "入场/活动费用",
+          "timeline": "现在信息",
+          "fr": "Quel est le tarif des activités ?",
+          "follow": false,
+          "zh": "这些活动的费用是多少？"
+        },
+        {
+          "n": 12,
+          "dimension": "优惠",
+          "sub": "优惠",
+          "timeline": "现在信息",
+          "fr": "Certaines personnes ont-elles droit à un tarif réduit ?",
+          "follow": false,
+          "zh": "哪些人可以享受优惠价？"
+        },
+        {
+          "n": 13,
+          "dimension": "报名",
+          "sub": "报名方式",
+          "timeline": "将来参加",
+          "fr": "Vaut-il mieux s’inscrire à l’avance pour participer aux ateliers ?",
+          "follow": false,
+          "zh": "参加工作坊最好提前报名吗？"
+        },
+        {
+          "n": 14,
+          "dimension": "报名",
+          "sub": "所需文件",
+          "timeline": "将来参加",
+          "fr": "Qu’est-ce qu’il faut fournir comme documents pour l’inscription ?",
+          "follow": false,
+          "zh": "报名需要提供哪些文件？"
+        },
+        {
+          "n": 15,
+          "dimension": "无障碍",
+          "sub": "无障碍设施",
+          "timeline": "现在信息",
+          "fr": "Le centre est-il accessible aux personnes à mobilité réduite ?",
+          "follow": false,
+          "zh": "行动不便者可以方便地进入文化中心吗？"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "sujet": "Je travaille à l’accueil d’une bibliothèque. Vous voulez vous inscrire. Vous me posez des questions sur le fonctionnement de cette bibliothèque (inscription, conditions d’emprunt, horaires, etc.).",
+      "logic": "地点与开放时间 → 注册条件 → 借阅规则 → 续借/预约 → 公共服务 → 费用与迟还",
+      "timeline": "现在信息 → 将来注册/借阅 → 条件情况",
+      "notes": [],
+      "followup": "手稿中图书馆的地点、开放时间、年龄/资格、借阅数量、免费打印、活动、图书卡与文件等已纳入。",
+      "rows": [
+        {
+          "n": 1,
+          "dimension": "地点",
+          "sub": "图书馆位置",
+          "timeline": "现在信息",
+          "fr": "Où se trouve exactement la bibliothèque ?",
+          "follow": false,
+          "zh": "图书馆具体在哪里？"
+        },
+        {
+          "n": 2,
+          "dimension": "时间",
+          "sub": "开放时间",
+          "timeline": "现在信息",
+          "fr": "À quelles heures êtes-vous ouverts ?",
+          "follow": false,
+          "zh": "你们的开放时间是什么？"
+        },
+        {
+          "n": 3,
+          "dimension": "时间",
+          "sub": "周末",
+          "timeline": "现在信息",
+          "fr": "La bibliothèque est-elle ouverte le week-end ?",
+          "follow": false,
+          "zh": "图书馆周末开放吗？"
+        },
+        {
+          "n": 4,
+          "dimension": "注册",
+          "sub": "注册条件",
+          "timeline": "现在信息",
+          "fr": "Est-ce qu’il faut habiter dans la ville pour obtenir une carte ?",
+          "follow": false,
+          "zh": "必须住在本市才能办借书证吗？",
+          "progressKey": "health-round2-e10-q4"
+        },
+        {
+          "n": 5,
+          "dimension": "注册",
+          "sub": "年龄/资格",
+          "timeline": "现在信息",
+          "fr": "Puis-je faire l’inscription directement en ligne ?",
+          "follow": false,
+          "zh": "可以直接在线注册吗？",
+          "progressKey": "health-round2-e10-q5"
+        },
+        {
+          "n": 6,
+          "dimension": "注册",
+          "sub": "所需文件",
+          "timeline": "将来注册",
+          "fr": "Qu’est-ce que je dois apporter comme documents ?",
+          "follow": false,
+          "zh": "我需要带哪些文件？"
+        },
+        {
+          "n": 7,
+          "dimension": "卡",
+          "sub": "图书卡",
+          "timeline": "将来注册",
+          "fr": "Une carte de bibliothèque est-elle remise après l’inscription ?",
+          "follow": false,
+          "zh": "注册后会发图书馆借阅卡吗？"
+        },
+        {
+          "n": 8,
+          "dimension": "借阅",
+          "sub": "借阅数量",
+          "timeline": "现在信息",
+          "fr": "Quel est le nombre maximum de documents que je peux emprunter à la fois ?",
+          "follow": false,
+          "zh": "我一次最多可以借几件资料？"
+        },
+        {
+          "n": 9,
+          "dimension": "借阅",
+          "sub": "借阅期限",
+          "timeline": "现在信息",
+          "fr": "Combien de temps puis-je les garder ?",
+          "follow": false,
+          "zh": "我可以借阅多长时间？"
+        },
+        {
+          "n": 10,
+          "dimension": "续借",
+          "sub": "续借",
+          "timeline": "将来借阅",
+          "fr": "Puis-je renouveler un emprunt ?",
+          "follow": false,
+          "zh": "我可以续借吗？"
+        },
+        {
+          "n": 11,
+          "dimension": "预约",
+          "sub": "预约图书",
+          "timeline": "将来借阅",
+          "fr": "Est-il possible de réserver un livre déjà emprunté ?",
+          "follow": false,
+          "zh": "已经借出的书可以预约吗？"
+        },
+        {
+          "n": 12,
+          "dimension": "服务",
+          "sub": "打印",
+          "timeline": "现在信息",
+          "fr": "Disposez-vous d’espaces pour étudier ou travailler sur place ?",
+          "follow": false,
+          "zh": "馆内是否有学习或工作的区域？",
+          "progressKey": "health-round2-e10-q12"
+        },
+        {
+          "n": 13,
+          "dimension": "活动",
+          "sub": "活动",
+          "timeline": "现在信息",
+          "fr": "Qu’est-ce que la bibliothèque organise comme activités ou ateliers ?",
+          "follow": false,
+          "zh": "图书馆会组织哪些活动或工作坊？"
+        },
+        {
+          "n": 14,
+          "dimension": "费用",
+          "sub": "会员费",
+          "timeline": "现在信息",
+          "fr": "L’inscription est-elle gratuite ?",
+          "follow": false,
+          "zh": "注册图书证需要付费吗？"
+        },
+        {
+          "n": 15,
+          "dimension": "迟还",
+          "sub": "逾期",
+          "timeline": "条件情况",
+          "fr": "Que se passe-t-il si je rends un document en retard ?",
+          "follow": false,
+          "zh": "如果我逾期归还资料，会有什么后果？"
+        }
+      ],
+      "reviewed": true
+    }
+  ],
+  "_build": {
+    "translation": "human-reviewed-tridim-v1",
+    "voice": "fr_FR-siwis-medium",
+    "rows": 150
+  }
+}
