@@ -1,1 +1,774 @@
-{"slug":"family","title":"家庭儿童与宠物照护","count":5,"entries":[{"month":"2026-10","number":1,"sujet":"Je suis votre voisin(e) et je souhaite que vous gardiez mon enfant pendant mon absence. Posez-moi des questions (durée, allergies, activités, etc.).","logic":"日期时间 → 饮食 → 作息 → 活动与性格 → 健康 → 紧急联系 → 钥匙与突发处理","timeline":"现在信息 → 将来照护 → 条件情况","notes":[],"followup":"真实记录与手稿都强调饮食、过敏、作息、活动、健康与紧急联系人。","rows":[{"n":1,"dimension":"时间","sub":"照看日期","timeline":"将来照护","fr":"Pour quelles dates dois-je garder votre enfant ?","follow":false,"zh":"您需要我在哪几天照看孩子？"},{"n":2,"dimension":"时间","sub":"每天时段","timeline":"将来照护","fr":"Quels horaires dois-je prévoir chaque jour ?","follow":false,"zh":"每天需要安排什么时间？"},{"n":3,"dimension":"日常作息","sub":"吃饭时间","timeline":"现在信息","fr":"Il mange généralement à quelles heures ?","follow":false,"zh":"他通常几点吃饭？"},{"n":4,"dimension":"饮食","sub":"饮食习惯","timeline":"现在信息","fr":"Qu’est-ce qu’il mange habituellement ?","follow":false,"zh":"它平时吃什么？"},{"n":5,"dimension":"饮食","sub":"过敏","timeline":"现在信息","fr":"A-t-il des allergies alimentaires ou des aliments à éviter ?","follow":false,"zh":"他有食物过敏吗？有没有需要避免的食物？"},{"n":6,"dimension":"作息","sub":"午睡/睡觉","timeline":"现在信息","fr":"À quelle heure se couche-t-il le soir ?","follow":false,"zh":"他晚上通常几点睡觉？","progressKey":"r6-5fdfd4d4af"},{"n":7,"dimension":"活动","sub":"喜欢的活动","timeline":"现在信息","fr":"Qu’est-ce qu’il aime faire comme activités ?","follow":false,"zh":"他喜欢做哪些活动？"},{"n":8,"dimension":"性格","sub":"性格特点","timeline":"现在信息","fr":"Comment décririez-vous son caractère ?","follow":false,"zh":"您会怎么形容他的性格？"},{"n":9,"dimension":"习惯","sub":"特别习惯","timeline":"现在信息","fr":"Quelles habitudes particulières dois-je respecter ?","follow":false,"zh":"我需要注意并遵循他有哪些特别习惯？"},{"n":10,"dimension":"健康","sub":"健康问题","timeline":"现在信息","fr":"Est-ce qu’il y a un problème de santé ou un traitement dont je dois être au courant ?","follow":false,"zh":"他有需要我了解的健康问题或正在接受的治疗吗？"},{"n":11,"dimension":"紧急","sub":"紧急联系人","timeline":"现在信息","fr":"Qui dois-je contacter en cas d’urgence ?","follow":false,"zh":"遇到紧急情况时，我应该联系谁？"},{"n":12,"dimension":"钥匙","sub":"备用钥匙","timeline":"将来准备","fr":"Où puis-je trouver une clé de secours si j’en ai besoin ?","follow":false,"zh":"如果需要备用钥匙，我可以在哪里找到？"},{"n":13,"dimension":"洗澡","sub":"洗澡频率","timeline":"现在信息","fr":"À quelle fréquence dois-je lui donner son bain ?","follow":false,"zh":"我应该多久给他洗一次澡？","progressKey":"r13-a87bfd082b"},{"n":14,"dimension":"外出","sub":"能否外出","timeline":"将来外出","fr":"Puis-je l’emmener au parc ou faire une promenade avec lui ?","follow":false,"zh":"我可以带他去公园或出去散步吗？"},{"n":15,"dimension":"突发","sub":"生病怎么办","timeline":"条件情况","fr":"Que dois-je faire s’il tombe malade pendant votre absence ?","follow":false,"zh":"您不在时，如果他生病了，我该怎么办？"}],"reviewed":true},{"month":"2026-09","number":1,"sujet":"Je suis votre voisin(e). Je pars en vacances. J’aimerais que vous vous occupiez de mon animal de compagnie pendant mon absence. Vous me posez des questions pour décider si vous allez accepter (dates, habitudes de l’animal, règles, etc.).","logic":"日期 → 动物基本情况 → 喂食 → 散步/活动 → 性格 → 健康与药物 → 兽医/紧急联系","timeline":"现在信息 → 将来照护 → 条件情况","notes":["与 2026-07 第2题 Sujet 完全相同，共用同一套宠物照护问题库。"],"followup":"两题 Sujet 完全相同，共用同一套宠物照护问题库。","rows":[{"n":1,"dimension":"时间","sub":"照看日期","timeline":"将来照护","fr":"Pour quelles dates dois-je m’occuper de votre animal ?","follow":false,"zh":"您外出期间，我需要在哪几天照看您的宠物？"},{"n":2,"dimension":"动物","sub":"动物类型","timeline":"现在信息","fr":"De quel animal s’agit-il exactement ?","follow":false,"zh":"您养的具体是什么宠物？"},{"n":3,"dimension":"动物","sub":"年龄","timeline":"现在信息","fr":"Quel âge a-t-il ?","follow":false,"zh":"它多大了？"},{"n":4,"dimension":"饮食","sub":"喂食时间","timeline":"现在信息","fr":"À quelles heures faut-il le nourrir ?","follow":false,"zh":"应该在什么时间喂它？"},{"n":5,"dimension":"饮食","sub":"食物种类","timeline":"现在信息","fr":"Qu’est-ce qu’il mange habituellement ?","follow":false,"zh":"它平时吃什么？"},{"n":6,"dimension":"饮食","sub":"食量","timeline":"现在信息","fr":"Combien dois-je lui donner à chaque repas ?","follow":false,"zh":"每顿应该喂它多少？"},{"n":7,"dimension":"活动","sub":"散步","timeline":"现在信息","fr":"À quelle fréquence faut-il le promener dans la journée ?","follow":false,"zh":"白天需要带它出去散步几次？"},{"n":8,"dimension":"活动","sub":"活动习惯","timeline":"现在信息","fr":"Quelles activités aime-t-il le plus ?","follow":false,"zh":"它最喜欢哪些活动？","progressKey":"r8-038fa81286"},{"n":9,"dimension":"性格","sub":"性格","timeline":"现在信息","fr":"Comment est-il avec les personnes qu’il connaît peu ?","follow":false,"zh":"它和不太熟悉的人相处得怎么样？"},{"n":10,"dimension":"健康","sub":"过敏/疾病","timeline":"现在信息","fr":"A-t-il des allergies ou des problèmes de santé ?","follow":false,"zh":"它有过敏症或健康问题吗？"},{"n":11,"dimension":"健康","sub":"药物","timeline":"将来照护","fr":"Dois-je lui donner des médicaments pendant votre absence ?","follow":false,"zh":"您不在时，我需要给它喂药吗？"},{"n":12,"dimension":"安全","sub":"外出规则","timeline":"现在信息","fr":"Quels endroits dois-je éviter avec lui ?","follow":false,"zh":"带它外出时，哪些地方需要避开？"},{"n":13,"dimension":"紧急","sub":"兽医","timeline":"条件情况","fr":"À quel vétérinaire dois-je m’adresser en cas de problème ?","follow":false,"zh":"如果出现问题，我应该联系哪位兽医？"},{"n":14,"dimension":"紧急","sub":"联系人","timeline":"将来联络","fr":"Quel est le meilleur moyen de vous joindre rapidement pendant vos vacances ?","follow":false,"zh":"您度假期间，怎样能最快联系到您？"},{"n":15,"dimension":"突发","sub":"动物生病","timeline":"条件情况","fr":"Que dois-je faire s’il tombe malade ou s’il se blesse ?","follow":false,"zh":"如果它生病或受伤，我应该怎么办？"}],"reviewed":true},{"month":"2026-08","number":1,"sujet":"Je suis une amie / un ami. Je pars pour le week-end et je vous demande de garder ma fille de 3 ans. Vous la connaissez un peu. Je vous indique les horaires et les choses à faire. Vous me posez des questions pour bien vous organiser (repas, jeux, sieste, etc.).","logic":"周末时间表 → 三岁孩子饮食 → 游戏 → 午睡/睡觉 → 个性与习惯 → 健康与紧急情况","timeline":"现在信息 → 周末照护 → 条件情况","notes":["人工网页核验：当前 Sujet 与来源 Sujet 不一致，但均为短期照护孩子；按相似真实记录 + 手稿重建。"],"followup":"当前 Sujet 与来源 Sujet 不一致，但已人工网页确认是高度相似照护孩子记录；按相似真实记录 + 手稿重建。","rows":[{"n":1,"dimension":"时间","sub":"周末日期","timeline":"将来安排","fr":"Tu pars quels jours exactement ce week-end ?","follow":false,"zh":"这个周末你具体哪几天不在？","progressKey":"r1-c500106f34"},{"n":2,"dimension":"时间","sub":"接送/返回时间","timeline":"将来安排","fr":"Tu pars à quelle heure, et tu rentres vers quelle heure ?","follow":false,"zh":"你几点出发？大约几点回来？"},{"n":3,"dimension":"饮食","sub":"用餐时间","timeline":"现在信息","fr":"Elle mange généralement à quelles heures ?","follow":false,"zh":"她通常几点吃饭？"},{"n":4,"dimension":"饮食","sub":"喜欢的食物","timeline":"现在信息","fr":"Qu’est-ce qu’elle aime manger en général ?","follow":false,"zh":"她平时喜欢吃什么？"},{"n":5,"dimension":"饮食","sub":"过敏","timeline":"现在信息","fr":"Elle a des allergies ou des aliments à éviter ?","follow":false,"zh":"她有过敏症或需要避免的食物吗？"},{"n":6,"dimension":"作息","sub":"午睡","timeline":"现在信息","fr":"À quelle heure fait-elle habituellement la sieste ?","follow":false,"zh":"她通常几点午睡？"},{"n":7,"dimension":"作息","sub":"睡觉","timeline":"现在信息","fr":"À quelle heure se couche-t-elle le soir ?","follow":false,"zh":"她晚上几点睡觉？"},{"n":8,"dimension":"活动","sub":"游戏","timeline":"现在信息","fr":"À quoi est-ce qu’elle aime jouer ?","follow":false,"zh":"她喜欢玩什么？"},{"n":9,"dimension":"活动","sub":"外出","timeline":"将来外出","fr":"Je peux l’emmener au parc ou faire une petite promenade avec elle ?","follow":false,"zh":"我可以带她去公园或出去散一会儿步吗？"},{"n":10,"dimension":"性格","sub":"情绪/性格","timeline":"现在信息","fr":"Comment est-elle avec les autres quand tu n’es pas là ?","follow":false,"zh":"你不在时，她和其他人相处得怎么样？"},{"n":11,"dimension":"习惯","sub":"特别习惯","timeline":"现在信息","fr":"Quelle routine dois-je respecter avec elle ?","follow":false,"zh":"我需要遵循她怎样的日常作息？"},{"n":12,"dimension":"健康","sub":"健康问题","timeline":"现在信息","fr":"Il y a un problème de santé ou un médicament dont je dois être au courant ?","follow":false,"zh":"她有需要我了解的健康问题或正在服用的药物吗？"},{"n":13,"dimension":"紧急","sub":"紧急联系人","timeline":"将来联络","fr":"Qui dois-je contacter en priorité en cas de problème ?","follow":false,"zh":"如果遇到问题，我应该优先联系谁？"},{"n":14,"dimension":"物品","sub":"必需物品","timeline":"将来准备","fr":"Tu vas laisser quoi sur place pour elle, par exemple ses vêtements ou ses jouets préférés ?","follow":false,"zh":"你会给她留下哪些东西？比如衣服或她最喜欢的玩具。"},{"n":15,"dimension":"突发","sub":"生病处理","timeline":"条件情况","fr":"Que dois-je faire si elle tombe malade pendant le week-end ?","follow":false,"zh":"如果她周末生病了，我该怎么办？"}],"reviewed":true},{"month":"2026-07","number":1,"sujet":"Je suis parent d’élève. Vous voulez inscrire vos enfants à une activité après l’école. Vous me demandez des informations et des conseils sur les activités proposées dans le quartier (type d’activités, horaires, tarifs, animations, etc.).","logic":"活动类型 → 时间频率 → 地点 → 年龄适配 → 教练/监管 → 材料 → 报名 → 价格 → 家长评价","timeline":"现在信息 → 将来报名","notes":[],"followup":"手稿中的 jeu / danse / sport、地点、时间频率、animations、报名、材料、价格与折扣已纳入。","rows":[{"n":1,"dimension":"活动","sub":"活动类型","timeline":"现在信息","fr":"Qu’est-ce qui est proposé comme activités après l’école dans le quartier ?","follow":false,"zh":"附近有哪些课后活动？"},{"n":2,"dimension":"活动","sub":"推荐活动","timeline":"现在建议","fr":"Laquelle me conseilleriez-vous pour mon enfant ?","follow":false,"zh":"您会推荐哪项活动给我的孩子？"},{"n":3,"dimension":"时间","sub":"上课时间","timeline":"现在信息","fr":"Quels sont les jours et les horaires des activités ?","follow":false,"zh":"活动安排在星期几、什么时间？"},{"n":4,"dimension":"时间","sub":"频率","timeline":"现在信息","fr":"À quelle fréquence les enfants y participent-ils chaque semaine ?","follow":false,"zh":"孩子们每周参加几次？"},{"n":5,"dimension":"地点","sub":"活动地点","timeline":"现在信息","fr":"Où se déroulent les activités ?","follow":false,"zh":"活动在哪里举行？"},{"n":6,"dimension":"年龄","sub":"年龄范围","timeline":"现在信息","fr":"Pour quelles tranches d’âge ces activités sont-elles prévues ?","follow":false,"zh":"这些活动面向哪些年龄段的孩子？"},{"n":7,"dimension":"组织","sub":"小组人数","timeline":"现在信息","fr":"Quelle est la taille des groupes en général ?","follow":false,"zh":"每个小组通常有多少孩子？"},{"n":8,"dimension":"监管","sub":"指导人员","timeline":"现在信息","fr":"Qui encadre les activités ? Les animateurs sont-ils qualifiés ?","follow":false,"zh":"活动由谁负责带领？带领者具备相关资质吗？"},{"n":9,"dimension":"安全","sub":"安全措施","timeline":"现在信息","fr":"Comment la sécurité des enfants est-elle assurée ?","follow":false,"zh":"活动中如何保障孩子们的安全？"},{"n":10,"dimension":"材料","sub":"所需材料","timeline":"将来准备","fr":"Doit-on apporter du matériel ou prévoir une tenue particulière ?","follow":false,"zh":"需要自备材料或穿着特定服装吗？"},{"n":11,"dimension":"报名","sub":"报名方式","timeline":"将来报名","fr":"Comment se passe l’inscription de mon enfant ?","follow":false,"zh":"孩子的报名流程是怎样的？"},{"n":12,"dimension":"报名","sub":"所需文件","timeline":"将来报名","fr":"Qu’est-ce qu’il faut fournir comme documents ?","follow":false,"zh":"需要提交哪些文件？"},{"n":13,"dimension":"价格","sub":"费用","timeline":"现在信息","fr":"Quel est le tarif de l’activité ?","follow":false,"zh":"这项活动的费用是多少？"},{"n":14,"dimension":"价格","sub":"优惠","timeline":"现在信息","fr":"Proposez-vous une réduction si on inscrit plusieurs enfants ou à plusieurs activités ?","follow":false,"zh":"同时给多个孩子报名，或报名多项活动，有优惠吗？"},{"n":15,"dimension":"评价","sub":"家长反馈","timeline":"现在评价","fr":"Quels retours les parents vous font-ils généralement ?","follow":false,"zh":"家长通常会给您什么反馈？","progressKey":"r15-7be62417c2"}],"reviewed":true},{"month":"2026-07","number":2,"sujet":"Je suis votre voisin(e). Je pars en vacances. J’aimerais que vous vous occupiez de mon animal de compagnie pendant mon absence. Vous me posez des questions pour décider si vous allez accepter (dates, habitudes de l’animal, règles, etc.).","logic":"日期 → 动物基本情况 → 喂食 → 散步/活动 → 性格 → 健康与药物 → 兽医/紧急联系","timeline":"现在信息 → 将来照护 → 条件情况","notes":["与 2026-09 第1题 Sujet 完全相同，共用同一套宠物照护问题库。"],"followup":"两题 Sujet 完全相同，共用同一套宠物照护问题库。","rows":[{"n":1,"dimension":"时间","sub":"照看日期","timeline":"现在信息","fr":"Pour quelles dates dois-je m’occuper de votre animal ?","follow":false,"zh":"您外出期间，我需要在哪几天照看您的宠物？"},{"n":2,"dimension":"动物","sub":"动物类型","timeline":"现在信息","fr":"De quel animal s’agit-il exactement ?","follow":false,"zh":"您养的具体是什么宠物？"},{"n":3,"dimension":"动物","sub":"年龄","timeline":"现在信息","fr":"Quel âge a-t-il ?","follow":false,"zh":"它多大了？"},{"n":4,"dimension":"饮食","sub":"喂食时间","timeline":"现在信息","fr":"À quelles heures faut-il le nourrir ?","follow":false,"zh":"应该在什么时间喂它？"},{"n":5,"dimension":"饮食","sub":"食物种类","timeline":"现在信息","fr":"Qu’est-ce qu’il mange habituellement ?","follow":false,"zh":"它平时吃什么？"},{"n":6,"dimension":"饮食","sub":"食量","timeline":"现在信息","fr":"Combien dois-je lui donner à chaque repas ?","follow":false,"zh":"每顿应该喂它多少？"},{"n":7,"dimension":"活动","sub":"散步","timeline":"现在信息","fr":"À quelle fréquence faut-il le promener dans la journée ?","follow":false,"zh":"白天需要带它出去散步几次？"},{"n":8,"dimension":"活动","sub":"活动习惯","timeline":"现在信息","fr":"Qu’est-ce qu’il aime faire comme activités ?","follow":false,"zh":"他喜欢做哪些活动？"},{"n":9,"dimension":"性格","sub":"性格","timeline":"现在信息","fr":"Comment est-il avec les personnes qu’il connaît peu ?","follow":false,"zh":"它和不太熟悉的人相处得怎么样？"},{"n":10,"dimension":"健康","sub":"过敏/疾病","timeline":"现在信息","fr":"A-t-il des allergies ou des problèmes de santé ?","follow":false,"zh":"它有过敏症或健康问题吗？"},{"n":11,"dimension":"健康","sub":"药物","timeline":"现在信息","fr":"Dois-je lui donner des médicaments pendant votre absence ?","follow":false,"zh":"您不在时，我需要给它喂药吗？"},{"n":12,"dimension":"安全","sub":"外出规则","timeline":"现在信息","fr":"Quels endroits dois-je éviter avec lui ?","follow":false,"zh":"带它外出时，哪些地方需要避开？"},{"n":13,"dimension":"紧急","sub":"兽医","timeline":"现在信息","fr":"À quel vétérinaire dois-je m’adresser en cas de problème ?","follow":false,"zh":"如果出现问题，我应该联系哪位兽医？"},{"n":14,"dimension":"紧急","sub":"联系人","timeline":"现在信息","fr":"Quel est le meilleur moyen de vous joindre rapidement pendant vos vacances ?","follow":false,"zh":"您度假期间，怎样能最快联系到您？"},{"n":15,"dimension":"突发","sub":"动物生病","timeline":"条件情况","fr":"Que dois-je faire s’il tombe malade ou s’il se blesse ?","follow":false,"zh":"如果它生病或受伤，我应该怎么办？"}],"reviewed":true}],"_build":{"translation":"human-reviewed-tridim-v1","voice":"fr_FR-siwis-medium","rows":75}}
+{
+  "slug": "family",
+  "title": "家庭儿童与宠物照护",
+  "count": 5,
+  "entries": [
+    {
+      "month": "2026-10",
+      "number": 1,
+      "sujet": "Je suis votre voisin(e) et je souhaite que vous gardiez mon enfant pendant mon absence. Posez-moi des questions (durée, allergies, activités, etc.).",
+      "logic": "日期时间 → 饮食 → 作息 → 活动与性格 → 健康 → 紧急联系 → 钥匙与突发处理",
+      "timeline": "现在信息 → 将来照护 → 条件情况",
+      "notes": [],
+      "followup": "真实记录与手稿都强调饮食、过敏、作息、活动、健康与紧急联系人。",
+      "rows": [
+        {
+          "n": 1,
+          "dimension": "时间",
+          "sub": "照看日期",
+          "timeline": "将来照护",
+          "fr": "Pour quelles dates dois-je garder votre enfant ?",
+          "follow": false,
+          "zh": "您需要我在哪几天照看孩子？"
+        },
+        {
+          "n": 2,
+          "dimension": "时间",
+          "sub": "每天时段",
+          "timeline": "将来照护",
+          "fr": "Quels horaires dois-je prévoir chaque jour ?",
+          "follow": false,
+          "zh": "每天需要安排什么时间？"
+        },
+        {
+          "n": 3,
+          "dimension": "日常作息",
+          "sub": "吃饭时间",
+          "timeline": "现在信息",
+          "fr": "À quels moments prend-il habituellement ses repas ?",
+          "follow": false,
+          "zh": "孩子平时在什么时间吃饭？",
+          "progressKey": "family-round2-e1-q3"
+        },
+        {
+          "n": 4,
+          "dimension": "饮食",
+          "sub": "饮食习惯",
+          "timeline": "现在信息",
+          "fr": "Y a-t-il des plats qu’il aime particulièrement ?",
+          "follow": false,
+          "zh": "有没有他特别喜欢吃的菜？",
+          "progressKey": "family-round2-e1-q4"
+        },
+        {
+          "n": 5,
+          "dimension": "饮食",
+          "sub": "过敏",
+          "timeline": "现在信息",
+          "fr": "A-t-il des allergies alimentaires ou des aliments à éviter ?",
+          "follow": false,
+          "zh": "他有食物过敏吗？有没有需要避免的食物？"
+        },
+        {
+          "n": 6,
+          "dimension": "作息",
+          "sub": "午睡/睡觉",
+          "timeline": "现在信息",
+          "fr": "À quelle heure se couche-t-il le soir ?",
+          "follow": false,
+          "zh": "他晚上通常几点睡觉？",
+          "progressKey": "r6-5fdfd4d4af"
+        },
+        {
+          "n": 7,
+          "dimension": "活动",
+          "sub": "喜欢的活动",
+          "timeline": "现在信息",
+          "fr": "Qu’est-ce qu’il aime faire comme activités ?",
+          "follow": false,
+          "zh": "他喜欢做哪些活动？"
+        },
+        {
+          "n": 8,
+          "dimension": "性格",
+          "sub": "性格特点",
+          "timeline": "现在信息",
+          "fr": "Comment décririez-vous son caractère ?",
+          "follow": false,
+          "zh": "您会怎么形容他的性格？"
+        },
+        {
+          "n": 9,
+          "dimension": "习惯",
+          "sub": "特别习惯",
+          "timeline": "现在信息",
+          "fr": "Quelles habitudes particulières dois-je respecter ?",
+          "follow": false,
+          "zh": "我需要注意并遵循他有哪些特别习惯？"
+        },
+        {
+          "n": 10,
+          "dimension": "健康",
+          "sub": "健康问题",
+          "timeline": "现在信息",
+          "fr": "Est-ce qu’il y a un problème de santé ou un traitement dont je dois être au courant ?",
+          "follow": false,
+          "zh": "他有需要我了解的健康问题或正在接受的治疗吗？"
+        },
+        {
+          "n": 11,
+          "dimension": "紧急",
+          "sub": "紧急联系人",
+          "timeline": "现在信息",
+          "fr": "Qui dois-je contacter en cas d’urgence ?",
+          "follow": false,
+          "zh": "遇到紧急情况时，我应该联系谁？"
+        },
+        {
+          "n": 12,
+          "dimension": "钥匙",
+          "sub": "备用钥匙",
+          "timeline": "将来准备",
+          "fr": "Où allez-vous laisser les affaires dont j’aurai besoin ?",
+          "follow": false,
+          "zh": "您会把我需要的用品放在哪里？",
+          "progressKey": "family-round2-e1-q12"
+        },
+        {
+          "n": 13,
+          "dimension": "洗澡",
+          "sub": "洗澡频率",
+          "timeline": "现在信息",
+          "fr": "Est-ce que je dois l’aider à faire sa toilette ?",
+          "follow": false,
+          "zh": "我需要帮孩子洗漱吗？",
+          "progressKey": "family-round2-e1-q13"
+        },
+        {
+          "n": 14,
+          "dimension": "外出",
+          "sub": "能否外出",
+          "timeline": "将来外出",
+          "fr": "Puis-je l’emmener au parc ou faire une promenade avec lui ?",
+          "follow": false,
+          "zh": "我可以带他去公园或出去散步吗？"
+        },
+        {
+          "n": 15,
+          "dimension": "突发",
+          "sub": "生病怎么办",
+          "timeline": "条件情况",
+          "fr": "Que dois-je faire s’il tombe malade pendant votre absence ?",
+          "follow": false,
+          "zh": "您不在时，如果他生病了，我该怎么办？"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "sujet": "Je suis votre voisin(e). Je pars en vacances. J’aimerais que vous vous occupiez de mon animal de compagnie pendant mon absence. Vous me posez des questions pour décider si vous allez accepter (dates, habitudes de l’animal, règles, etc.).",
+      "logic": "日期 → 动物基本情况 → 喂食 → 散步/活动 → 性格 → 健康与药物 → 兽医/紧急联系",
+      "timeline": "现在信息 → 将来照护 → 条件情况",
+      "notes": [
+        "与 2026-07 第2题 Sujet 完全相同，共用同一套宠物照护问题库。"
+      ],
+      "followup": "两题 Sujet 完全相同，共用同一套宠物照护问题库。",
+      "rows": [
+        {
+          "n": 1,
+          "dimension": "时间",
+          "sub": "照看日期",
+          "timeline": "将来照护",
+          "fr": "Pour quelles dates dois-je m’occuper de votre animal ?",
+          "follow": false,
+          "zh": "您外出期间，我需要在哪几天照看您的宠物？"
+        },
+        {
+          "n": 2,
+          "dimension": "动物",
+          "sub": "动物类型",
+          "timeline": "现在信息",
+          "fr": "De quel animal s’agit-il exactement ?",
+          "follow": false,
+          "zh": "您养的具体是什么宠物？"
+        },
+        {
+          "n": 3,
+          "dimension": "动物",
+          "sub": "年龄",
+          "timeline": "现在信息",
+          "fr": "Quel âge a-t-il ?",
+          "follow": false,
+          "zh": "它多大了？"
+        },
+        {
+          "n": 4,
+          "dimension": "饮食",
+          "sub": "喂食时间",
+          "timeline": "现在信息",
+          "fr": "À quelles heures faut-il le nourrir ?",
+          "follow": false,
+          "zh": "应该在什么时间喂它？"
+        },
+        {
+          "n": 5,
+          "dimension": "饮食",
+          "sub": "食物种类",
+          "timeline": "现在信息",
+          "fr": "Qu’est-ce qu’il mange habituellement ?",
+          "follow": false,
+          "zh": "它平时吃什么？"
+        },
+        {
+          "n": 6,
+          "dimension": "饮食",
+          "sub": "食量",
+          "timeline": "现在信息",
+          "fr": "Combien dois-je lui donner à chaque repas ?",
+          "follow": false,
+          "zh": "每顿应该喂它多少？"
+        },
+        {
+          "n": 7,
+          "dimension": "活动",
+          "sub": "散步",
+          "timeline": "现在信息",
+          "fr": "Est-ce qu’il a besoin de sortir ou de faire de l’exercice chaque jour ?",
+          "follow": false,
+          "zh": "它每天需要外出或运动吗？",
+          "progressKey": "family-round2-e2-q7"
+        },
+        {
+          "n": 8,
+          "dimension": "活动",
+          "sub": "活动习惯",
+          "timeline": "现在信息",
+          "fr": "Quelles activités aime-t-il le plus ?",
+          "follow": false,
+          "zh": "它最喜欢哪些活动？",
+          "progressKey": "r8-038fa81286"
+        },
+        {
+          "n": 9,
+          "dimension": "性格",
+          "sub": "性格",
+          "timeline": "现在信息",
+          "fr": "Comment est-il avec les personnes qu’il connaît peu ?",
+          "follow": false,
+          "zh": "它和不太熟悉的人相处得怎么样？"
+        },
+        {
+          "n": 10,
+          "dimension": "健康",
+          "sub": "过敏/疾病",
+          "timeline": "现在信息",
+          "fr": "A-t-il des allergies ou des problèmes de santé ?",
+          "follow": false,
+          "zh": "它有过敏症或健康问题吗？"
+        },
+        {
+          "n": 11,
+          "dimension": "健康",
+          "sub": "药物",
+          "timeline": "将来照护",
+          "fr": "Dois-je lui donner des médicaments pendant votre absence ?",
+          "follow": false,
+          "zh": "您不在时，我需要给它喂药吗？"
+        },
+        {
+          "n": 12,
+          "dimension": "安全",
+          "sub": "外出规则",
+          "timeline": "现在信息",
+          "fr": "Y a-t-il des endroits de la maison auxquels il ne doit pas avoir accès ?",
+          "follow": false,
+          "zh": "家里有没有不该让宠物进入的地方？",
+          "progressKey": "family-round2-e2-q12"
+        },
+        {
+          "n": 13,
+          "dimension": "紧急",
+          "sub": "兽医",
+          "timeline": "条件情况",
+          "fr": "À quel vétérinaire dois-je m’adresser en cas de problème ?",
+          "follow": false,
+          "zh": "如果出现问题，我应该联系哪位兽医？"
+        },
+        {
+          "n": 14,
+          "dimension": "紧急",
+          "sub": "联系人",
+          "timeline": "将来联络",
+          "fr": "Quel est le meilleur moyen de vous joindre rapidement pendant vos vacances ?",
+          "follow": false,
+          "zh": "您度假期间，怎样能最快联系到您？"
+        },
+        {
+          "n": 15,
+          "dimension": "突发",
+          "sub": "动物生病",
+          "timeline": "条件情况",
+          "fr": "Est-ce qu’il a tendance à s’enfuir ou à se cacher ?",
+          "follow": false,
+          "zh": "它有没有逃跑或躲起来的习惯？",
+          "progressKey": "family-round2-e2-q15"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "sujet": "Je suis une amie / un ami. Je pars pour le week-end et je vous demande de garder ma fille de 3 ans. Vous la connaissez un peu. Je vous indique les horaires et les choses à faire. Vous me posez des questions pour bien vous organiser (repas, jeux, sieste, etc.).",
+      "logic": "周末时间表 → 三岁孩子饮食 → 游戏 → 午睡/睡觉 → 个性与习惯 → 健康与紧急情况",
+      "timeline": "现在信息 → 周末照护 → 条件情况",
+      "notes": [
+        "人工网页核验：当前 Sujet 与来源 Sujet 不一致，但均为短期照护孩子；按相似真实记录 + 手稿重建。"
+      ],
+      "followup": "当前 Sujet 与来源 Sujet 不一致，但已人工网页确认是高度相似照护孩子记录；按相似真实记录 + 手稿重建。",
+      "rows": [
+        {
+          "n": 1,
+          "dimension": "时间",
+          "sub": "周末日期",
+          "timeline": "将来安排",
+          "fr": "Tu pars quels jours exactement ce week-end ?",
+          "follow": false,
+          "zh": "这个周末你具体哪几天不在？",
+          "progressKey": "r1-c500106f34"
+        },
+        {
+          "n": 2,
+          "dimension": "时间",
+          "sub": "接送/返回时间",
+          "timeline": "将来安排",
+          "fr": "Tu pars à quelle heure, et tu rentres vers quelle heure ?",
+          "follow": false,
+          "zh": "你几点出发？大约几点回来？"
+        },
+        {
+          "n": 3,
+          "dimension": "饮食",
+          "sub": "用餐时间",
+          "timeline": "现在信息",
+          "fr": "Elle mange généralement à quelles heures ?",
+          "follow": false,
+          "zh": "她通常几点吃饭？"
+        },
+        {
+          "n": 4,
+          "dimension": "饮食",
+          "sub": "喜欢的食物",
+          "timeline": "现在信息",
+          "fr": "Qu’est-ce qu’elle aime manger en général ?",
+          "follow": false,
+          "zh": "她平时喜欢吃什么？"
+        },
+        {
+          "n": 5,
+          "dimension": "饮食",
+          "sub": "过敏",
+          "timeline": "现在信息",
+          "fr": "Elle a des allergies ou des aliments à éviter ?",
+          "follow": false,
+          "zh": "她有过敏症或需要避免的食物吗？"
+        },
+        {
+          "n": 6,
+          "dimension": "作息",
+          "sub": "午睡",
+          "timeline": "现在信息",
+          "fr": "À quelle heure fait-elle habituellement la sieste ?",
+          "follow": false,
+          "zh": "她通常几点午睡？"
+        },
+        {
+          "n": 7,
+          "dimension": "作息",
+          "sub": "睡觉",
+          "timeline": "现在信息",
+          "fr": "À quelle heure se couche-t-elle le soir ?",
+          "follow": false,
+          "zh": "她晚上几点睡觉？"
+        },
+        {
+          "n": 8,
+          "dimension": "活动",
+          "sub": "游戏",
+          "timeline": "现在信息",
+          "fr": "À quoi est-ce qu’elle aime jouer ?",
+          "follow": false,
+          "zh": "她喜欢玩什么？"
+        },
+        {
+          "n": 9,
+          "dimension": "活动",
+          "sub": "外出",
+          "timeline": "将来外出",
+          "fr": "Je peux l’emmener au parc ou faire une petite promenade avec elle ?",
+          "follow": false,
+          "zh": "我可以带她去公园或出去散一会儿步吗？"
+        },
+        {
+          "n": 10,
+          "dimension": "性格",
+          "sub": "情绪/性格",
+          "timeline": "现在信息",
+          "fr": "Est-ce qu’elle a du mal à se séparer de toi ?",
+          "follow": false,
+          "zh": "她和你分开时会不适应吗？",
+          "progressKey": "family-round2-e3-q10"
+        },
+        {
+          "n": 11,
+          "dimension": "习惯",
+          "sub": "特别习惯",
+          "timeline": "现在信息",
+          "fr": "Qu’est-ce qui l’aide à se calmer quand elle est contrariée ?",
+          "follow": false,
+          "zh": "她不高兴时，什么能让她平静下来？",
+          "progressKey": "family-round2-e3-q11"
+        },
+        {
+          "n": 12,
+          "dimension": "健康",
+          "sub": "健康问题",
+          "timeline": "现在信息",
+          "fr": "Il y a un problème de santé ou un médicament dont je dois être au courant ?",
+          "follow": false,
+          "zh": "她有需要我了解的健康问题或正在服用的药物吗？"
+        },
+        {
+          "n": 13,
+          "dimension": "紧急",
+          "sub": "紧急联系人",
+          "timeline": "将来联络",
+          "fr": "Qui dois-je contacter en priorité en cas de problème ?",
+          "follow": false,
+          "zh": "如果遇到问题，我应该优先联系谁？"
+        },
+        {
+          "n": 14,
+          "dimension": "物品",
+          "sub": "必需物品",
+          "timeline": "将来准备",
+          "fr": "Tu vas laisser quoi sur place pour elle, par exemple ses vêtements ou ses jouets préférés ?",
+          "follow": false,
+          "zh": "你会给她留下哪些东西？比如衣服或她最喜欢的玩具。"
+        },
+        {
+          "n": 15,
+          "dimension": "突发",
+          "sub": "生病处理",
+          "timeline": "条件情况",
+          "fr": "Est-ce qu’elle sait me dire quand elle a besoin d’aller aux toilettes ?",
+          "follow": false,
+          "zh": "她需要上厕所时会告诉我吗？",
+          "progressKey": "family-round2-e3-q15"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "sujet": "Je suis parent d’élève. Vous voulez inscrire vos enfants à une activité après l’école. Vous me demandez des informations et des conseils sur les activités proposées dans le quartier (type d’activités, horaires, tarifs, animations, etc.).",
+      "logic": "活动类型 → 时间频率 → 地点 → 年龄适配 → 教练/监管 → 材料 → 报名 → 价格 → 家长评价",
+      "timeline": "现在信息 → 将来报名",
+      "notes": [],
+      "followup": "手稿中的 jeu / danse / sport、地点、时间频率、animations、报名、材料、价格与折扣已纳入。",
+      "rows": [
+        {
+          "n": 1,
+          "dimension": "活动",
+          "sub": "活动类型",
+          "timeline": "现在信息",
+          "fr": "Qu’est-ce qui est proposé comme activités après l’école dans le quartier ?",
+          "follow": false,
+          "zh": "附近有哪些课后活动？"
+        },
+        {
+          "n": 2,
+          "dimension": "活动",
+          "sub": "推荐活动",
+          "timeline": "现在建议",
+          "fr": "Laquelle me conseilleriez-vous pour mon enfant ?",
+          "follow": false,
+          "zh": "您会推荐哪项活动给我的孩子？"
+        },
+        {
+          "n": 3,
+          "dimension": "时间",
+          "sub": "上课时间",
+          "timeline": "现在信息",
+          "fr": "Quels sont les jours et les horaires des activités ?",
+          "follow": false,
+          "zh": "活动安排在星期几、什么时间？"
+        },
+        {
+          "n": 4,
+          "dimension": "时间",
+          "sub": "频率",
+          "timeline": "现在信息",
+          "fr": "Est-ce qu’il y a des activités chaque jour ou seulement certains jours ?",
+          "follow": false,
+          "zh": "活动是每天都有，还是只在特定日期举行？",
+          "progressKey": "family-round2-e4-q4"
+        },
+        {
+          "n": 5,
+          "dimension": "地点",
+          "sub": "活动地点",
+          "timeline": "现在信息",
+          "fr": "Où se déroulent les activités ?",
+          "follow": false,
+          "zh": "活动在哪里举行？"
+        },
+        {
+          "n": 6,
+          "dimension": "年龄",
+          "sub": "年龄范围",
+          "timeline": "现在信息",
+          "fr": "Pour quelles tranches d’âge ces activités sont-elles prévues ?",
+          "follow": false,
+          "zh": "这些活动面向哪些年龄段的孩子？"
+        },
+        {
+          "n": 7,
+          "dimension": "组织",
+          "sub": "小组人数",
+          "timeline": "现在信息",
+          "fr": "Quelle est la taille des groupes en général ?",
+          "follow": false,
+          "zh": "每个小组通常有多少孩子？"
+        },
+        {
+          "n": 8,
+          "dimension": "监管",
+          "sub": "指导人员",
+          "timeline": "现在信息",
+          "fr": "Est-ce que les animateurs ont l’habitude de travailler avec des enfants ?",
+          "follow": false,
+          "zh": "活动指导人员有照顾孩子的经验吗？",
+          "progressKey": "family-round2-e4-q8"
+        },
+        {
+          "n": 9,
+          "dimension": "安全",
+          "sub": "安全措施",
+          "timeline": "现在信息",
+          "fr": "Comment la sécurité des enfants est-elle assurée ?",
+          "follow": false,
+          "zh": "活动中如何保障孩子们的安全？"
+        },
+        {
+          "n": 10,
+          "dimension": "材料",
+          "sub": "所需材料",
+          "timeline": "将来准备",
+          "fr": "Doit-on apporter du matériel ou prévoir une tenue particulière ?",
+          "follow": false,
+          "zh": "需要自备材料或穿着特定服装吗？"
+        },
+        {
+          "n": 11,
+          "dimension": "报名",
+          "sub": "报名方式",
+          "timeline": "将来报名",
+          "fr": "Comment se passe l’inscription de mon enfant ?",
+          "follow": false,
+          "zh": "孩子的报名流程是怎样的？"
+        },
+        {
+          "n": 12,
+          "dimension": "报名",
+          "sub": "所需文件",
+          "timeline": "将来报名",
+          "fr": "Qu’est-ce qu’il faut fournir comme documents ?",
+          "follow": false,
+          "zh": "需要提交哪些文件？"
+        },
+        {
+          "n": 13,
+          "dimension": "价格",
+          "sub": "费用",
+          "timeline": "现在信息",
+          "fr": "Quel est le tarif de l’activité ?",
+          "follow": false,
+          "zh": "这项活动的费用是多少？"
+        },
+        {
+          "n": 14,
+          "dimension": "价格",
+          "sub": "优惠",
+          "timeline": "现在信息",
+          "fr": "Est-ce qu’il existe des tarifs réduits pour les familles ?",
+          "follow": false,
+          "zh": "是否有面向家庭的优惠价格？",
+          "progressKey": "family-round2-e4-q14"
+        },
+        {
+          "n": 15,
+          "dimension": "评价",
+          "sub": "家长反馈",
+          "timeline": "现在评价",
+          "fr": "Est-ce que vos enfants ont déjà participé à l’une de ces activités ?",
+          "follow": false,
+          "zh": "您的孩子以前参加过其中某项活动吗？",
+          "progressKey": "family-round2-e4-q15"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "sujet": "Je suis votre voisin(e). Je pars en vacances. J’aimerais que vous vous occupiez de mon animal de compagnie pendant mon absence. Vous me posez des questions pour décider si vous allez accepter (dates, habitudes de l’animal, règles, etc.).",
+      "logic": "日期 → 动物基本情况 → 喂食 → 散步/活动 → 性格 → 健康与药物 → 兽医/紧急联系",
+      "timeline": "现在信息 → 将来照护 → 条件情况",
+      "notes": [
+        "与 2026-09 第1题 Sujet 完全相同，共用同一套宠物照护问题库。"
+      ],
+      "followup": "两题 Sujet 完全相同，共用同一套宠物照护问题库。",
+      "rows": [
+        {
+          "n": 1,
+          "dimension": "时间",
+          "sub": "照看日期",
+          "timeline": "现在信息",
+          "fr": "Pour quelles dates dois-je m’occuper de votre animal ?",
+          "follow": false,
+          "zh": "您外出期间，我需要在哪几天照看您的宠物？"
+        },
+        {
+          "n": 2,
+          "dimension": "动物",
+          "sub": "动物类型",
+          "timeline": "现在信息",
+          "fr": "De quel animal s’agit-il exactement ?",
+          "follow": false,
+          "zh": "您养的具体是什么宠物？"
+        },
+        {
+          "n": 3,
+          "dimension": "动物",
+          "sub": "年龄",
+          "timeline": "现在信息",
+          "fr": "Quel âge a-t-il ?",
+          "follow": false,
+          "zh": "它多大了？"
+        },
+        {
+          "n": 4,
+          "dimension": "饮食",
+          "sub": "喂食时间",
+          "timeline": "现在信息",
+          "fr": "À quelles heures faut-il le nourrir ?",
+          "follow": false,
+          "zh": "应该在什么时间喂它？"
+        },
+        {
+          "n": 5,
+          "dimension": "饮食",
+          "sub": "食物种类",
+          "timeline": "现在信息",
+          "fr": "Qu’est-ce qu’il mange habituellement ?",
+          "follow": false,
+          "zh": "它平时吃什么？"
+        },
+        {
+          "n": 6,
+          "dimension": "饮食",
+          "sub": "食量",
+          "timeline": "现在信息",
+          "fr": "Combien dois-je lui donner à chaque repas ?",
+          "follow": false,
+          "zh": "每顿应该喂它多少？"
+        },
+        {
+          "n": 7,
+          "dimension": "活动",
+          "sub": "散步",
+          "timeline": "现在信息",
+          "fr": "Est-ce qu’il a besoin de sortir ou de faire de l’exercice chaque jour ?",
+          "follow": false,
+          "zh": "它每天需要外出或运动吗？",
+          "progressKey": "family-round2-e5-q7"
+        },
+        {
+          "n": 8,
+          "dimension": "活动",
+          "sub": "活动习惯",
+          "timeline": "现在信息",
+          "fr": "Quelles activités aime-t-il le plus ?",
+          "follow": false,
+          "zh": "它最喜欢哪些活动？",
+          "progressKey": "family-round2-e5-q8"
+        },
+        {
+          "n": 9,
+          "dimension": "性格",
+          "sub": "性格",
+          "timeline": "现在信息",
+          "fr": "Comment est-il avec les personnes qu’il connaît peu ?",
+          "follow": false,
+          "zh": "它和不太熟悉的人相处得怎么样？"
+        },
+        {
+          "n": 10,
+          "dimension": "健康",
+          "sub": "过敏/疾病",
+          "timeline": "现在信息",
+          "fr": "A-t-il des allergies ou des problèmes de santé ?",
+          "follow": false,
+          "zh": "它有过敏症或健康问题吗？"
+        },
+        {
+          "n": 11,
+          "dimension": "健康",
+          "sub": "药物",
+          "timeline": "现在信息",
+          "fr": "Dois-je lui donner des médicaments pendant votre absence ?",
+          "follow": false,
+          "zh": "您不在时，我需要给它喂药吗？"
+        },
+        {
+          "n": 12,
+          "dimension": "安全",
+          "sub": "外出规则",
+          "timeline": "现在信息",
+          "fr": "Y a-t-il des endroits de la maison auxquels il ne doit pas avoir accès ?",
+          "follow": false,
+          "zh": "家里有没有不该让宠物进入的地方？",
+          "progressKey": "family-round2-e5-q12"
+        },
+        {
+          "n": 13,
+          "dimension": "紧急",
+          "sub": "兽医",
+          "timeline": "现在信息",
+          "fr": "À quel vétérinaire dois-je m’adresser en cas de problème ?",
+          "follow": false,
+          "zh": "如果出现问题，我应该联系哪位兽医？"
+        },
+        {
+          "n": 14,
+          "dimension": "紧急",
+          "sub": "联系人",
+          "timeline": "现在信息",
+          "fr": "Quel est le meilleur moyen de vous joindre rapidement pendant vos vacances ?",
+          "follow": false,
+          "zh": "您度假期间，怎样能最快联系到您？"
+        },
+        {
+          "n": 15,
+          "dimension": "突发",
+          "sub": "动物生病",
+          "timeline": "条件情况",
+          "fr": "Est-ce qu’il a tendance à s’enfuir ou à se cacher ?",
+          "follow": false,
+          "zh": "它有没有逃跑或躲起来的习惯？",
+          "progressKey": "family-round2-e5-q15"
+        }
+      ],
+      "reviewed": true
+    }
+  ],
+  "_build": {
+    "translation": "human-reviewed-tridim-v1",
+    "voice": "fr_FR-siwis-medium",
+    "rows": 75
+  }
+}
