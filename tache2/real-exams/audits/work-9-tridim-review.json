@@ -1053,8 +1053,8 @@
     }
   ],
   "questionSlots": 135,
-  "status": "ready_for_audio_rebuild",
-  "approval": "pending_audio_and_pages",
+  "status": "passed",
+  "approval": "passed",
   "source": "tache2/real-exams/source/work.json.gz.b64",
   "runtime": "tache2/real-exams/data/work.json",
   "reviewMethod": [
@@ -1069,9 +1069,7 @@
     "修正15问同事转部门场景中tu/vous不一致，统一依Sujet设定为vous。",
     "修正性别假设、提问角度不明和不自然法语；逐句订正中文，保留表达准确自然的原句。"
   ],
-  "limitations": [
-    "等待审核版Piper音频构建和Pages验证。"
-  ],
+  "limitations": [],
   "changes": [
     {
       "month": "2026-09",
@@ -1315,11 +1313,19 @@
     }
   ],
   "piperCoverage": {
-    "status": "pending-generation",
+    "status": "passed",
     "voice": "fr_FR-siwis-medium",
     "uniqueFrenchQuestions": 116,
-    "matched": 0,
-    "missing": "pending"
+    "matched": 116,
+    "missing": 0,
+    "manifestRecords": 2431,
+    "packsUsed": [
+      "work-pack-000.json",
+      "work-pack-002.json",
+      "work-variety-000.json",
+      "work-variety-001.json"
+    ],
+    "verifiedBy": "Exact French text and non-empty audio payload verified for all unique work questions in indexed GitHub blobs."
   },
   "runtimeChecks": {
     "sujetCount": 9,
@@ -1330,6 +1336,13 @@
     "allRowsHaveFrenchAndChinese": true,
     "noDuplicateFrenchPerSujet": true,
     "frenchProgressKeysDifferFromOriginal": true,
-    "followMarkerRows": 0
+    "followMarkerRows": 0,
+    "githubActionsBuildRun": 39105744035,
+    "githubActionsBuildConclusion": "success",
+    "githubPagesRun": 39105743994,
+    "githubPagesConclusion": "success",
+    "buildCheckpoint": "3f555dd19b55f9ca3350bcd2bb826cd6fe6ca375",
+    "deploymentUrl": "https://limengz1129-creator.github.io/TCF-writing-trainer/tache2/real-exams/",
+    "verifiedAtCommit": "3f555dd19b55f9ca3350bcd2bb826cd6fe6ca375"
   }
 }
