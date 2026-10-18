@@ -1,0 +1,25 @@
+name: Audit all T2 Piper audio
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/piper/real-exam-themes/audit_final_audio.py'
+      - '.github/workflows/audit-t2-final-audio.yml'
+      - 'tache2/real-exams/data/**'
+      - 'tache2/real-exams/piper-audio/themes/**'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg
+      - name: Check all question texts and decode all referenced audio
+        run: python tools/piper/real-exam-themes/audit_final_audio.py
