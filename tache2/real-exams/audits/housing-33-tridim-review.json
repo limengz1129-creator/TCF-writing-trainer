@@ -1,0 +1,6784 @@
+{
+  "version": "housing-33-tridim-review-v1",
+  "theme": "住房与安家",
+  "sujets": 33,
+  "questionSlots": 495,
+  "status": "in_progress",
+  "approval": "not_passed",
+  "source": "tache2/real-exams/source/housing.json.gz.b64",
+  "runtime": "tache2/real-exams/data/housing.json",
+  "reviewMethod": [
+    "逐 Sujet 核对15问数量与原Sujet的人物关系",
+    "逐句检查具体提问是否切题、是否有近义重复，保留合格原句",
+    "按疑问词、句法结构、时态/语式与时间线复核；不强加倒装或虚拟式",
+    "核对大/小维度和时间线覆盖",
+    "对修改项记录原句、终稿及理由；修改项使用不同学习状态键"
+  ],
+  "findings": [
+    "修正 6 个邻居/同事 Sujet 中误用 tu 的提问（3类题重复出现）。",
+    "将久未联系的法语朋友题统一为 tu 称呼（3处）。",
+    "超市购物题第15问与第5问都问日常购物推荐，改为附近新鲜食品市场，避免重复信息角度。",
+    "修复常见错误中文译文，包括 boulangerie、caution、meublé、insonorisé、transport 等。",
+    "对照备份，人工修订了 211 条中文译文；其余译文未充分复核，不能验收。"
+  ],
+  "limitations": [
+    "其余未改动译文仍需逐句人工复核；住房主题不通过验收。",
+    "新增提问的 Piper 音频覆盖需在 GitHub Actions 构建完成后复核。"
+  ],
+  "changes": [
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 6,
+      "oldFr": "Tu connais une bonne boulangerie près d’ici ?",
+      "newFr": "Connaissez-vous une bonne boulangerie près d’ici ?",
+      "zh": "附近有您推荐的面包店吗？",
+      "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 15,
+      "oldFr": "Pour mes courses de tous les jours, quel magasin me conseilleriez-vous en priorité ?",
+      "newFr": "Y a-t-il un marché dans le quartier où je pourrais acheter des produits frais ?",
+      "zh": "附近有可以买到新鲜食品的市场吗？",
+      "reason": "改为市场/新鲜食品角度，避免与本题日常购物推荐重复。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 11,
+      "oldFr": "Tu connais un café agréable à proximité ?",
+      "newFr": "Connaissez-vous un café agréable à proximité ?",
+      "zh": "附近有舒适宜人的咖啡馆吗？",
+      "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+    },
+    {
+      "month": "2026-10",
+      "number": 6,
+      "row": 13,
+      "oldFr": "Tu connais des restaurants qui organisent parfois des rencontres ou des événements ?",
+      "newFr": "Connaissez-vous des restaurants qui organisent parfois des rencontres ou des événements ?",
+      "zh": "您知道附近有哪些餐厅偶尔会举办聚会或活动吗？",
+      "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+    },
+    {
+      "month": "2026-09",
+      "number": 9,
+      "row": 1,
+      "oldFr": "Pour trouver un logement, par où me conseillez-vous de commencer ?",
+      "newFr": "Pour trouver un logement, par où me conseilles-tu de commencer ?",
+      "zh": "找房的话，你建议我从哪里开始？",
+      "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+    },
+    {
+      "month": "2026-09",
+      "number": 9,
+      "row": 11,
+      "oldFr": "Où me conseilleriez-vous d’aller pour des ateliers, des centres culturels ou des galeries d’art ?",
+      "newFr": "Où me conseillerais-tu d’aller pour des ateliers, des centres culturels ou des galeries d’art ?",
+      "zh": "你建议我去哪里找工作坊、文化中心或艺术画廊？",
+      "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+    },
+    {
+      "month": "2026-09",
+      "number": 9,
+      "row": 15,
+      "oldFr": "Qu’est-ce que vous me conseilleriez de faire pendant mes premières semaines pour bien m’installer ?",
+      "newFr": "Qu’est-ce que tu me conseillerais de faire pendant mes premières semaines pour bien m’installer ?",
+      "zh": "你建议我在最初几周做些什么，才能顺利安顿下来？",
+      "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 6,
+      "oldFr": "Tu connais une bonne boulangerie près d’ici ?",
+      "newFr": "Connaissez-vous une bonne boulangerie près d’ici ?",
+      "zh": "附近有您推荐的面包店吗？",
+      "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 15,
+      "oldFr": "Pour mes courses de tous les jours, quel magasin me conseilleriez-vous en priorité ?",
+      "newFr": "Y a-t-il un marché dans le quartier où je pourrais acheter des produits frais ?",
+      "zh": "附近有可以买到新鲜食品的市场吗？",
+      "reason": "改为市场/新鲜食品角度，避免与本题日常购物推荐重复。"
+    },
+    {
+      "month": "2026-07",
+      "number": 10,
+      "row": 11,
+      "oldFr": "Tu connais un café agréable à proximité ?",
+      "newFr": "Connaissez-vous un café agréable à proximité ?",
+      "zh": "附近有舒适宜人的咖啡馆吗？",
+      "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+    },
+    {
+      "month": "2026-07",
+      "number": 12,
+      "row": 13,
+      "oldFr": "Tu connais des restaurants qui organisent parfois des rencontres ou des événements ?",
+      "newFr": "Connaissez-vous des restaurants qui organisent parfois des rencontres ou des événements ?",
+      "zh": "您知道附近有哪些餐厅偶尔会举办聚会或活动吗？",
+      "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 6,
+      "oldFr": "Tu connais une bonne boulangerie près d’ici ?",
+      "newFr": "Connaissez-vous une bonne boulangerie près d’ici ?",
+      "zh": "附近有您推荐的面包店吗？",
+      "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 15,
+      "oldFr": "Pour mes courses de tous les jours, quel magasin me conseilleriez-vous en priorité ?",
+      "newFr": "Y a-t-il un marché dans le quartier où je pourrais acheter des produits frais ?",
+      "zh": "附近有可以买到新鲜食品的市场吗？",
+      "reason": "改为市场/新鲜食品角度，避免与本题日常购物推荐重复。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 11,
+      "oldFr": "Tu connais un café agréable à proximité ?",
+      "newFr": "Connaissez-vous un café agréable à proximité ?",
+      "zh": "附近有舒适宜人的咖啡馆吗？",
+      "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+    },
+    {
+      "month": "2026-10",
+      "number": 6,
+      "row": 13,
+      "oldFr": "Tu connais des restaurants qui organisent parfois des rencontres ou des événements ?",
+      "newFr": "Connaissez-vous des restaurants qui organisent parfois des rencontres ou des événements ?",
+      "zh": "您知道附近有哪些餐厅偶尔会举办聚会或活动吗？",
+      "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+    },
+    {
+      "month": "2026-09",
+      "number": 9,
+      "row": 1,
+      "oldFr": "Pour trouver un logement, par où me conseillez-vous de commencer ?",
+      "newFr": "Pour trouver un logement, par où me conseilles-tu de commencer ?",
+      "zh": "找房的话，你建议我从哪里开始？",
+      "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+    },
+    {
+      "month": "2026-09",
+      "number": 9,
+      "row": 11,
+      "oldFr": "Où me conseilleriez-vous d’aller pour des ateliers, des centres culturels ou des galeries d’art ?",
+      "newFr": "Où me conseillerais-tu d’aller pour des ateliers, des centres culturels ou des galeries d’art ?",
+      "zh": "你建议我去哪里找工作坊、文化中心或艺术画廊？",
+      "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+    },
+    {
+      "month": "2026-09",
+      "number": 9,
+      "row": 15,
+      "oldFr": "Qu’est-ce que vous me conseilleriez de faire pendant mes premières semaines pour bien m’installer ?",
+      "newFr": "Qu’est-ce que tu me conseillerais de faire pendant mes premières semaines pour bien m’installer ?",
+      "zh": "你建议我在最初几周做些什么，才能顺利安顿下来？",
+      "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 6,
+      "oldFr": "Tu connais une bonne boulangerie près d’ici ?",
+      "newFr": "Connaissez-vous une bonne boulangerie près d’ici ?",
+      "zh": "附近有您推荐的面包店吗？",
+      "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 15,
+      "oldFr": "Pour mes courses de tous les jours, quel magasin me conseilleriez-vous en priorité ?",
+      "newFr": "Y a-t-il un marché dans le quartier où je pourrais acheter des produits frais ?",
+      "zh": "附近有可以买到新鲜食品的市场吗？",
+      "reason": "改为市场/新鲜食品角度，避免与本题日常购物推荐重复。"
+    },
+    {
+      "month": "2026-07",
+      "number": 10,
+      "row": 11,
+      "oldFr": "Tu connais un café agréable à proximité ?",
+      "newFr": "Connaissez-vous un café agréable à proximité ?",
+      "zh": "附近有舒适宜人的咖啡馆吗？",
+      "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+    },
+    {
+      "month": "2026-07",
+      "number": 12,
+      "row": 13,
+      "oldFr": "Tu connais des restaurants qui organisent parfois des rencontres ou des événements ?",
+      "newFr": "Connaissez-vous des restaurants qui organisent parfois des rencontres ou des événements ?",
+      "zh": "您知道附近有哪些餐厅偶尔会举办聚会或活动吗？",
+      "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+    }
+  ],
+  "entries": [
+    {
+      "month": "2026-10",
+      "number": 1,
+      "sujet": "Je suis votre voisin(e) et vous êtes nouveau dans le quartier. Vous souhaitez savoir où faire vos courses. Posez-moi des questions (supermarchés, boulangeries, heures, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "地点与交通",
+          "questionNumbers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "商店与商品",
+          "questionNumbers": [
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "name": "时间与营业",
+          "questionNumbers": [
+            9,
+            10
+          ]
+        },
+        {
+          "name": "费用与优惠",
+          "questionNumbers": [
+            11,
+            12
+          ]
+        },
+        {
+          "name": "服务",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "家庭与儿童",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "体验与建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 14,
+        "将来计划 / 建议": 1
+      },
+      "questionStructures": {
+        "疑问词问句": 5,
+        "倒装疑问": 3,
+        "est-ce-que": 1,
+        "复杂/代词倒装": 4,
+        "语调/陈述语序疑问": 2
+      },
+      "pronounAndRelevanceReview": "checked; obvious inconsistent address forms corrected; unchanged questions retained when they fit Sujet",
+      "changeReasons": [
+        {
+          "month": "2026-10",
+          "number": 1,
+          "row": 6,
+          "oldFr": "Tu connais une bonne boulangerie près d’ici ?",
+          "newFr": "Connaissez-vous une bonne boulangerie près d’ici ?",
+          "zh": "附近有您推荐的面包店吗？",
+          "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+        },
+        {
+          "month": "2026-10",
+          "number": 1,
+          "row": 15,
+          "oldFr": "Pour mes courses de tous les jours, quel magasin me conseilleriez-vous en priorité ?",
+          "newFr": "Y a-t-il un marché dans le quartier où je pourrais acheter des produits frais ?",
+          "zh": "附近有可以买到新鲜食品的市场吗？",
+          "reason": "改为市场/新鲜食品角度，避免与本题日常购物推荐重复。"
+        },
+        {
+          "month": "2026-10",
+          "number": 1,
+          "row": 6,
+          "oldFr": "Tu connais une bonne boulangerie près d’ici ?",
+          "newFr": "Connaissez-vous une bonne boulangerie près d’ici ?",
+          "zh": "附近有您推荐的面包店吗？",
+          "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+        },
+        {
+          "month": "2026-10",
+          "number": 1,
+          "row": 15,
+          "oldFr": "Pour mes courses de tous les jours, quel magasin me conseilleriez-vous en priorité ?",
+          "newFr": "Y a-t-il un marché dans le quartier où je pourrais acheter des produits frais ?",
+          "zh": "附近有可以买到新鲜食品的市场吗？",
+          "reason": "改为市场/新鲜食品角度，避免与本题日常购物推荐重复。"
+        }
+      ],
+      "translationEdits": [
+        {
+          "month": "2026-10",
+          "number": 1,
+          "row": 2,
+          "fr": "Vaut-il mieux y aller à pied ou prendre les transports en commun ?",
+          "oldZh": "我可以步行吗?还是要用公共交通?",
+          "newZh": "走路去比较方便，还是乘坐公共交通更合适？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 1,
+          "row": 6,
+          "fr": "Connaissez-vous une bonne boulangerie près d’ici ?",
+          "oldZh": "附近有没有一个好的饼厂?",
+          "newZh": "您知道附近有不错的面包店吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 1,
+          "row": 7,
+          "fr": "Quels types de produits peut-on acheter dans ce supermarché ?",
+          "oldZh": "在这个超市里可以买什么类型的产品?",
+          "newZh": "这家超市可以买到哪些种类的商品？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 1,
+          "row": 9,
+          "fr": "Quels sont les horaires d’ouverture ?",
+          "oldZh": "开放时间是什么?",
+          "newZh": "营业时间是什么？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 1,
+          "row": 11,
+          "fr": "Le magasin propose-t-il une carte de fidélité ou des réductions pour les habitants du quartier ?",
+          "oldZh": "有没有一个忠诚度卡,或者是区别居民的折扣吗?",
+          "newZh": "商店提供会员卡或街区居民折扣吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 1,
+          "row": 13,
+          "fr": "Le magasin livre-t-il à domicile ?",
+          "oldZh": "商店是否提供到家的送货服务?",
+          "newZh": "商店提供送货上门服务吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 1,
+          "row": 15,
+          "fr": "Y a-t-il un marché dans le quartier où je pourrais acheter des produits frais ?",
+          "oldZh": "对于我每天的购物,你会优先建议我去哪家商店?",
+          "newZh": "附近有可以买到新鲜食品的市场吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        }
+      ]
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "sujet": "Je suis votre voisin(e). Vous êtes nouveau/nouvelle dans l’immeuble. Nous nous rencontrons pour la première fois. Vous me demandez des informations sur la vie de l’immeuble (habitants, règles, espaces communs, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "邻里与住户",
+          "questionNumbers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "楼内规则",
+          "questionNumbers": [
+            4,
+            5
+          ]
+        },
+        {
+          "name": "公共空间",
+          "questionNumbers": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "name": "安全与管理",
+          "questionNumbers": [
+            9,
+            10
+          ]
+        },
+        {
+          "name": "周边生活",
+          "questionNumbers": [
+            11,
+            12
+          ]
+        },
+        {
+          "name": "社区活动",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "信息获取",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "体验与建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 13,
+        "将来计划 / 建议": 2
+      },
+      "questionStructures": {
+        "疑问词问句": 5,
+        "复杂/代词倒装": 5,
+        "语调/陈述语序疑问": 3,
+        "est-ce-que": 2
+      },
+      "pronounAndRelevanceReview": "checked; obvious inconsistent address forms corrected; unchanged questions retained when they fit Sujet",
+      "changeReasons": [
+        {
+          "month": "2026-10",
+          "number": 2,
+          "row": 11,
+          "oldFr": "Tu connais un café agréable à proximité ?",
+          "newFr": "Connaissez-vous un café agréable à proximité ?",
+          "zh": "附近有舒适宜人的咖啡馆吗？",
+          "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+        },
+        {
+          "month": "2026-10",
+          "number": 2,
+          "row": 11,
+          "oldFr": "Tu connais un café agréable à proximité ?",
+          "newFr": "Connaissez-vous un café agréable à proximité ?",
+          "zh": "附近有舒适宜人的咖啡馆吗？",
+          "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+        }
+      ],
+      "translationEdits": [
+        {
+          "month": "2026-10",
+          "number": 2,
+          "row": 1,
+          "fr": "Comment décririez-vous l’ambiance dans l’immeuble ?",
+          "oldZh": "你会如何描述建筑物的氛围?",
+          "newZh": "您会如何描述这栋楼的整体氛围？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 2,
+          "row": 2,
+          "fr": "Les habitants sont-ils plutôt agréables et accueillants ?",
+          "oldZh": "村民是否更有友好和欢迎?",
+          "newZh": "这里的居民友善、热情吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 2,
+          "row": 3,
+          "fr": "Comment puis-je faire connaissance avec les autres voisins ?",
+          "oldZh": "我如何认识其他邻居?",
+          "newZh": "我怎样才能认识其他邻居？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 2,
+          "row": 4,
+          "fr": "Existe-t-il des horaires de calme à respecter dans l’immeuble ?",
+          "oldZh": "建筑物里有没有节奏时间?",
+          "newZh": "楼里有需要遵守的安静时段吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 2,
+          "row": 5,
+          "fr": "Quelles règles s’appliquent aux visiteurs ?",
+          "oldZh": "有没有特别的规则对游客?",
+          "newZh": "访客需要遵守哪些规定？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 2,
+          "row": 6,
+          "fr": "Quels espaces communs sont à la disposition des habitants ?",
+          "oldZh": "居民有哪些公共空间?",
+          "newZh": "居民可以使用哪些公共区域？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 2,
+          "row": 8,
+          "fr": "Les résidents disposent-ils d’un parking ou d’un local à vélos ?",
+          "oldZh": "有没有停车场或骑自行车的地方?",
+          "newZh": "居民有停车场或自行车存放处可以使用吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 2,
+          "row": 11,
+          "fr": "Connaissez-vous un café agréable à proximité ?",
+          "oldZh": "附近有什么好咖啡馆吗?",
+          "newZh": "您知道附近有没有舒适宜人的咖啡馆？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 2,
+          "row": 13,
+          "fr": "Qu’est-ce qui est organisé pour les habitants, par exemple des activités culturelles ou des rencontres ?",
+          "oldZh": "有没有文化活动或为当地人举行会议?",
+          "newZh": "社区为居民组织哪些活动？例如文化活动或聚会。",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 2,
+          "row": 14,
+          "fr": "Où puis-je trouver les informations et les règles de l’immeuble ?",
+          "oldZh": "在哪里可以找到建筑的信息和规则?",
+          "newZh": "我在哪里可以查到这栋楼的相关信息和规定？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        }
+      ]
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "sujet": "Je suis votre collègue. Je cherche un colocataire. Vous êtes intéressé(e) et vous me posez des questions sur le logement disponible (pièces, loyer, autres habitants, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "地点与交通",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "住房与入住",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "住房空间",
+          "questionNumbers": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "name": "费用与合同",
+          "questionNumbers": [
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "name": "室友与生活",
+          "questionNumbers": [
+            14,
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 15
+      },
+      "questionStructures": {
+        "疑问词问句": 6,
+        "复杂/代词倒装": 8,
+        "语调/陈述语序疑问": 1
+      },
+      "pronounAndRelevanceReview": "checked; obvious inconsistent address forms corrected; unchanged questions retained when they fit Sujet",
+      "changeReasons": [],
+      "translationEdits": [
+        {
+          "month": "2026-10",
+          "number": 3,
+          "row": 2,
+          "fr": "Comment peut-on se déplacer en transports en commun à proximité ?",
+          "oldZh": "附近有哪些公共交通工具?",
+          "newZh": "附近乘坐公共交通方便吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 3,
+          "row": 3,
+          "fr": "À partir de quand la chambre est-elle disponible ?",
+          "oldZh": "从什么时候开始,房间可以开放?",
+          "newZh": "这间房从什么时候起可以入住？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 3,
+          "row": 4,
+          "fr": "Combien de pièces y a-t-il dans l’appartement ?",
+          "oldZh": "公寓里有多少个房间?",
+          "newZh": "这套公寓有几间房？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 3,
+          "row": 5,
+          "fr": "La chambre disponible est-elle assez spacieuse ?",
+          "oldZh": "有没有宽的房间?",
+          "newZh": "空出的房间够宽敞吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 3,
+          "row": 6,
+          "fr": "La chambre est-elle déjà meublée ?",
+          "oldZh": "这间房间是不是很有家具的?",
+          "newZh": "房间已经配好家具了吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 3,
+          "row": 7,
+          "fr": "L’appartement est-il bien insonorisé ?",
+          "oldZh": "有没有好的防音?",
+          "newZh": "这套公寓的隔音效果好吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 3,
+          "row": 8,
+          "fr": "La salle de bain est-elle privée ou partagée ?",
+          "oldZh": "浴室是私人还是共享的?",
+          "newZh": "浴室是独用的还是公用的？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 3,
+          "row": 9,
+          "fr": "Quels espaces communs devons-nous partager ?",
+          "oldZh": "我们应该分享哪些共同空间?",
+          "newZh": "我们需要共用哪些公共空间？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 3,
+          "row": 11,
+          "fr": "Faut-il payer une caution ?",
+          "oldZh": "我必须缴纳保释吗?",
+          "newZh": "需要交押金吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 3,
+          "row": 12,
+          "fr": "À combien s’élève la caution ?",
+          "oldZh": "押金是多少?",
+          "newZh": "押金金额是多少？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 3,
+          "row": 13,
+          "fr": "L’électricité, le chauffage et le Wi-Fi sont-ils inclus dans le loyer ?",
+          "oldZh": "电力,加热和Wi-Fi是否包括在租金中?",
+          "newZh": "房租包含电费、暖气费和 Wi-Fi 费用吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 3,
+          "row": 15,
+          "fr": "Quelles sont leurs habitudes de vie et les règles principales de la colocation ?",
+          "oldZh": "他们的生活习惯和住宿的主要规则是什么?",
+          "newZh": "他们平时的生活习惯如何？合租有哪些主要规则？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        }
+      ]
+    },
+    {
+      "month": "2026-10",
+      "number": 4,
+      "sujet": "Vous êtes mon ami(e). Vous allez m’aider à déménager dans mon nouveau logement. Vous me posez des questions sur l’organisation de la journée (lieu, date, participants, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间安排",
+          "questionNumbers": [
+            1,
+            2,
+            14
+          ]
+        },
+        {
+          "name": "地点与路线",
+          "questionNumbers": [
+            3,
+            4
+          ]
+        },
+        {
+          "name": "交通与车辆",
+          "questionNumbers": [
+            5,
+            6
+          ]
+        },
+        {
+          "name": "住房条件",
+          "questionNumbers": [
+            7,
+            8
+          ]
+        },
+        {
+          "name": "人员组织",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "物品与家具",
+          "questionNumbers": [
+            10,
+            11
+          ]
+        },
+        {
+          "name": "准备工作",
+          "questionNumbers": [
+            12,
+            13
+          ]
+        },
+        {
+          "name": "体验与建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "将来计划": 10,
+        "现在信息": 4,
+        "将来计划 / 建议": 1
+      },
+      "questionStructures": {
+        "语调/陈述语序疑问": 5,
+        "疑问词问句": 4,
+        "复杂/代词倒装": 4,
+        "倒装疑问": 2
+      },
+      "pronounAndRelevanceReview": "checked; obvious inconsistent address forms corrected; unchanged questions retained when they fit Sujet",
+      "changeReasons": [],
+      "translationEdits": [
+        {
+          "month": "2026-10",
+          "number": 4,
+          "row": 4,
+          "fr": "Et où se trouve le nouveau logement ?",
+          "oldZh": "那么新房子在哪里?",
+          "newZh": "新住处又在哪里？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 4,
+          "row": 6,
+          "fr": "Comment allons-nous transporter les meubles ?",
+          "oldZh": "我们将使用哪种交通工具来搬家?",
+          "newZh": "我们打算怎么搬运家具？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 4,
+          "row": 8,
+          "fr": "L’immeuble a-t-il un ascenseur ?",
+          "oldZh": "楼里有没有电梯吗?",
+          "newZh": "楼里有电梯吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 4,
+          "row": 10,
+          "fr": "Quels meubles devons-nous déménager ?",
+          "oldZh": "我们需要搬到哪些家具?",
+          "newZh": "我们需要搬走哪些家具？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 4,
+          "row": 11,
+          "fr": "Certains objets sont-ils fragiles ou particulièrement lourds à transporter ?",
+          "oldZh": "有什么脆弱或特别重的物品需要运输吗?",
+          "newZh": "有没有易碎或特别沉重、搬运时需要注意的物品？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 4,
+          "row": 13,
+          "fr": "Faut-il apporter du matériel ou des outils particuliers ?",
+          "oldZh": "我们是否需要特别的设备或工具?",
+          "newZh": "需要带什么特殊用品或工具吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 4,
+          "row": 14,
+          "fr": "Combien de temps penses-tu que le déménagement va durer ?",
+          "oldZh": "你认为这次搬迁会持续多久?",
+          "newZh": "你觉得这次搬家要持续多久？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 4,
+          "row": 15,
+          "fr": "Comment veux-tu répartir les tâches entre nous pour que tout se passe bien ?",
+          "oldZh": "你怎么想把任务分给我们,让一切顺利?",
+          "newZh": "你想怎么分配我们的任务，才能让搬家顺利进行？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        }
+      ]
+    },
+    {
+      "month": "2026-10",
+      "number": 5,
+      "sujet": "Vous arrivez au Québec. Je suis votre voisin(e). Je vous invite à un apéritif. Vous me posez des questions sur la vie du quartier (voisins, services, activités, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "聚会信息",
+          "questionNumbers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "邻里与氛围",
+          "questionNumbers": [
+            4,
+            5
+          ]
+        },
+        {
+          "name": "安全与环境",
+          "questionNumbers": [
+            6
+          ]
+        },
+        {
+          "name": "生活服务",
+          "questionNumbers": [
+            7,
+            8
+          ]
+        },
+        {
+          "name": "社区活动",
+          "questionNumbers": [
+            9,
+            10
+          ]
+        },
+        {
+          "name": "家庭与儿童",
+          "questionNumbers": [
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "name": "信息获取",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "体验与建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "将来计划": 3,
+        "现在信息": 11,
+        "将来计划 / 建议": 1
+      },
+      "questionStructures": {
+        "语调/陈述语序疑问": 6,
+        "疑问词问句": 6,
+        "复杂/代词倒装": 2,
+        "est-ce-que": 1
+      },
+      "pronounAndRelevanceReview": "checked; obvious inconsistent address forms corrected; unchanged questions retained when they fit Sujet",
+      "changeReasons": [],
+      "translationEdits": [
+        {
+          "month": "2026-10",
+          "number": 5,
+          "row": 1,
+          "fr": "À quelle heure commence l’apéritif ?",
+          "oldZh": "预食时间是什么时候开始的?",
+          "newZh": "小聚几点开始？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 5,
+          "row": 3,
+          "fr": "Combien de personnes seront invitées ?",
+          "oldZh": "有多少人会被邀请?",
+          "newZh": "会邀请多少人？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 5,
+          "row": 5,
+          "fr": "Le quartier est-il plutôt calme ou animé ?",
+          "oldZh": "这个地区平静吗?",
+          "newZh": "这个街区比较安静还是热闹？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 5,
+          "row": 6,
+          "fr": "Le quartier reste-t-il sûr le soir ?",
+          "oldZh": "这个街区安全吗？晚上也安全吗？",
+          "newZh": "这个街区晚上也安全吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 5,
+          "row": 9,
+          "fr": "Qu’est-ce qui est organisé comme activités dans le quartier ?",
+          "oldZh": "区内有哪些活动?",
+          "newZh": "街区里组织了哪些活动？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 5,
+          "row": 14,
+          "fr": "Où puis-je consulter le programme des activités du quartier ?",
+          "oldZh": "有没有一个信息中心或网站来了解该地区的活动?",
+          "newZh": "我在哪里可以查看社区活动安排？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        }
+      ]
+    },
+    {
+      "month": "2026-10",
+      "number": 6,
+      "sujet": "Vous venez d’arriver au Canada. Je suis votre collègue. Vous avez envie de rencontrer des gens. Vous me posez des questions pour savoir où et comment rencontrer de nouvelles personnes (activités, associations, lieux de convivialité, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "社交活动",
+          "questionNumbers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "协会与组织",
+          "questionNumbers": [
+            4,
+            5
+          ]
+        },
+        {
+          "name": "地点与频率",
+          "questionNumbers": [
+            6,
+            7
+          ]
+        },
+        {
+          "name": "报名与费用",
+          "questionNumbers": [
+            8,
+            9
+          ]
+        },
+        {
+          "name": "家庭与儿童",
+          "questionNumbers": [
+            10,
+            11
+          ]
+        },
+        {
+          "name": "社交场所",
+          "questionNumbers": [
+            12,
+            13
+          ]
+        },
+        {
+          "name": "社区参与",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "体验与建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "将来计划 / 建议": 3,
+        "现在信息": 10,
+        "将来计划": 2
+      },
+      "questionStructures": {
+        "倒装疑问": 1,
+        "语调/陈述语序疑问": 6,
+        "疑问词问句": 3,
+        "复杂/代词倒装": 5
+      },
+      "pronounAndRelevanceReview": "checked; obvious inconsistent address forms corrected; unchanged questions retained when they fit Sujet",
+      "changeReasons": [
+        {
+          "month": "2026-10",
+          "number": 6,
+          "row": 13,
+          "oldFr": "Tu connais des restaurants qui organisent parfois des rencontres ou des événements ?",
+          "newFr": "Connaissez-vous des restaurants qui organisent parfois des rencontres ou des événements ?",
+          "zh": "您知道附近有哪些餐厅偶尔会举办聚会或活动吗？",
+          "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+        },
+        {
+          "month": "2026-10",
+          "number": 6,
+          "row": 13,
+          "oldFr": "Tu connais des restaurants qui organisent parfois des rencontres ou des événements ?",
+          "newFr": "Connaissez-vous des restaurants qui organisent parfois des rencontres ou des événements ?",
+          "zh": "您知道附近有哪些餐厅偶尔会举办聚会或活动吗？",
+          "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+        }
+      ],
+      "translationEdits": [
+        {
+          "month": "2026-10",
+          "number": 6,
+          "row": 2,
+          "fr": "Peut-on suivre des ateliers de cuisine dans le quartier ?",
+          "oldZh": "附近有没有厨师工作坊?",
+          "newZh": "附近有烹饪工作坊可以参加吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 6,
+          "row": 4,
+          "fr": "Quelles associations locales pourrais-je rejoindre ?",
+          "oldZh": "我可以加入任何地方协会吗?",
+          "newZh": "我可以加入哪些本地社团？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 6,
+          "row": 5,
+          "fr": "Existe-t-il des groupes spécialement destinés aux nouveaux résidents ?",
+          "oldZh": "有没有专门面向新居民的群体或组织？",
+          "newZh": "有没有专门面向新居民的团体？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 6,
+          "row": 6,
+          "fr": "Où ont lieu généralement ces activités ?",
+          "oldZh": "这些活动通常发生在哪里?",
+          "newZh": "这些活动通常在哪里举行？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 6,
+          "row": 11,
+          "fr": "Les activités pour enfants sont-elles bien sécurisées et bien encadrées ?",
+          "oldZh": "儿童活动是安全的吗?",
+          "newZh": "儿童活动安全吗？有工作人员妥善看护吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 6,
+          "row": 12,
+          "fr": "Où les gens se retrouvent-ils facilement dans le quartier ?",
+          "oldZh": "有没有咖啡馆或友好的地方,人们很容易见面?",
+          "newZh": "街区里大家通常在哪里聚会？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-10",
+          "number": 6,
+          "row": 13,
+          "fr": "Connaissez-vous des restaurants qui organisent parfois des rencontres ou des événements ?",
+          "oldZh": "有没有餐厅有时会有聚会或活动?",
+          "newZh": "您知道有没有餐厅偶尔会举办聚会或活动吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        }
+      ]
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "sujet": "Vous partez vivre au Canada et vous cherchez un appartement en colocation. Je vous propose le mien. Vous me posez des questions pour savoir comment cela se déroulera (espaces, prix, colocataires, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "地点与交通",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "住房与入住",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "住房空间",
+          "questionNumbers": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "name": "费用与合同",
+          "questionNumbers": [
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "name": "室友与生活",
+          "questionNumbers": [
+            14,
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 15
+      },
+      "questionStructures": {
+        "疑问词问句": 6,
+        "复杂/代词倒装": 8,
+        "语调/陈述语序疑问": 1
+      },
+      "pronounAndRelevanceReview": "checked; obvious inconsistent address forms corrected; unchanged questions retained when they fit Sujet",
+      "changeReasons": [],
+      "translationEdits": [
+        {
+          "month": "2026-09",
+          "number": 1,
+          "row": 2,
+          "fr": "Comment peut-on se déplacer en transports en commun à proximité ?",
+          "oldZh": "附近有哪些公共交通工具?",
+          "newZh": "附近乘坐公共交通方便吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 1,
+          "row": 3,
+          "fr": "À partir de quand la chambre est-elle disponible ?",
+          "oldZh": "从什么时候开始,房间可以开放?",
+          "newZh": "这间房从什么时候起可以入住？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 1,
+          "row": 4,
+          "fr": "Combien de pièces y a-t-il dans l’appartement ?",
+          "oldZh": "公寓里有多少个房间?",
+          "newZh": "这套公寓有几间房？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 1,
+          "row": 5,
+          "fr": "La chambre disponible est-elle assez spacieuse ?",
+          "oldZh": "有没有宽的房间?",
+          "newZh": "空出的房间够宽敞吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 1,
+          "row": 6,
+          "fr": "La chambre est-elle déjà meublée ?",
+          "oldZh": "这间房间是不是很有家具的?",
+          "newZh": "房间已经配好家具了吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 1,
+          "row": 7,
+          "fr": "L’appartement est-il bien insonorisé ?",
+          "oldZh": "有没有好的防音?",
+          "newZh": "这套公寓的隔音效果好吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 1,
+          "row": 8,
+          "fr": "La salle de bain est-elle privée ou partagée ?",
+          "oldZh": "浴室是私人还是共享的?",
+          "newZh": "浴室是独用的还是公用的？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 1,
+          "row": 9,
+          "fr": "Quels espaces communs devons-nous partager ?",
+          "oldZh": "我们应该分享哪些共同空间?",
+          "newZh": "我们需要共用哪些公共空间？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 1,
+          "row": 11,
+          "fr": "Faut-il payer une caution ?",
+          "oldZh": "我必须缴纳保释吗?",
+          "newZh": "需要交押金吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 1,
+          "row": 12,
+          "fr": "À combien s’élève la caution ?",
+          "oldZh": "押金是多少?",
+          "newZh": "押金金额是多少？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 1,
+          "row": 13,
+          "fr": "L’électricité, le chauffage et le Wi-Fi sont-ils inclus dans le loyer ?",
+          "oldZh": "电力,加热和Wi-Fi是否包括在租金中?",
+          "newZh": "房租包含电费、暖气费和 Wi-Fi 费用吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 1,
+          "row": 15,
+          "fr": "Quelles sont leurs habitudes de vie et les règles principales de la colocation ?",
+          "oldZh": "他们的生活习惯和住宿的主要规则是什么?",
+          "newZh": "他们平时的生活习惯如何？合租有哪些主要规则？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        }
+      ]
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "sujet": "Nous sommes amis. Vous voulez vous installer au Canada. J’habite dans un appartement en colocation à Toronto. Je vous propose de partager mon appartement. Vous me posez des questions pour décider si vous allez accepter (appartement, quartier, habitudes de vie, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "地点与街区",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "地点与交通",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "住房空间",
+          "questionNumbers": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "name": "费用与合同",
+          "questionNumbers": [
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "name": "室友与生活",
+          "questionNumbers": [
+            14,
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 15
+      },
+      "questionStructures": {
+        "疑问词问句": 5,
+        "复杂/代词倒装": 8,
+        "est-ce-que": 1,
+        "语调/陈述语序疑问": 1
+      },
+      "pronounAndRelevanceReview": "checked; obvious inconsistent address forms corrected; unchanged questions retained when they fit Sujet",
+      "changeReasons": [],
+      "translationEdits": [
+        {
+          "month": "2026-09",
+          "number": 2,
+          "row": 4,
+          "fr": "Combien de pièces y a-t-il dans l’appartement ?",
+          "oldZh": "公寓里有多少个房间?",
+          "newZh": "这套公寓有几间房？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 2,
+          "row": 5,
+          "fr": "La chambre disponible est-elle assez spacieuse ?",
+          "oldZh": "有没有宽的房间?",
+          "newZh": "空出的房间够宽敞吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 2,
+          "row": 6,
+          "fr": "La chambre est-elle déjà meublée ?",
+          "oldZh": "这间房间是不是很有家具的?",
+          "newZh": "房间已经配好家具了吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 2,
+          "row": 7,
+          "fr": "L’appartement est-il bien insonorisé ?",
+          "oldZh": "有没有好的防音?",
+          "newZh": "这套公寓的隔音效果好吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 2,
+          "row": 8,
+          "fr": "La salle de bain est-elle privée ou partagée ?",
+          "oldZh": "浴室是私人还是共享的?",
+          "newZh": "浴室是独用的还是公用的？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 2,
+          "row": 9,
+          "fr": "Quels espaces communs devons-nous partager ?",
+          "oldZh": "我们应该分享哪些共同空间?",
+          "newZh": "我们需要共用哪些公共空间？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 2,
+          "row": 11,
+          "fr": "Faut-il payer une caution ?",
+          "oldZh": "我必须缴纳保释吗?",
+          "newZh": "需要交押金吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 2,
+          "row": 12,
+          "fr": "À combien s’élève la caution ?",
+          "oldZh": "押金是多少?",
+          "newZh": "押金金额是多少？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 2,
+          "row": 13,
+          "fr": "L’électricité, le chauffage et le Wi-Fi sont-ils inclus dans le loyer ?",
+          "oldZh": "电力,加热和Wi-Fi是否包括在租金中?",
+          "newZh": "房租包含电费、暖气费和 Wi-Fi 费用吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        }
+      ]
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "sujet": "Au Québec, vous souhaitez entrer en contact avec des personnes venant de votre pays d’origine. Vous me demandez conseil, je travaille au bureau d’arrondissement de la ville. Posez-moi des questions (structures d’accueil, activités, lieux, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "接待与支持",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "协会与社群",
+          "questionNumbers": [
+            3,
+            4
+          ]
+        },
+        {
+          "name": "地点与交通",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "活动与课程",
+          "questionNumbers": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "name": "社区参与",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "报名与费用",
+          "questionNumbers": [
+            10,
+            11
+          ]
+        },
+        {
+          "name": "家庭与儿童",
+          "questionNumbers": [
+            12,
+            13
+          ]
+        },
+        {
+          "name": "信息获取",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "体验与建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 12,
+        "将来计划 / 建议": 2,
+        "将来计划": 1
+      },
+      "questionStructures": {
+        "疑问词问句": 4,
+        "est-ce-que": 1,
+        "语调/陈述语序疑问": 6,
+        "复杂/代词倒装": 4
+      },
+      "pronounAndRelevanceReview": "checked; obvious inconsistent address forms corrected; unchanged questions retained when they fit Sujet",
+      "changeReasons": [],
+      "translationEdits": [
+        {
+          "month": "2026-09",
+          "number": 3,
+          "row": 1,
+          "fr": "Quelles structures d’accueil peuvent m’aider à entrer en contact avec mes compatriotes ?",
+          "oldZh": "哪些接待机构可以帮助我与我的同胞联系?",
+          "newZh": "有哪些接待服务机构可以帮我联系同胞？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 3,
+          "row": 3,
+          "fr": "Existe-t-il une association chinoise dans la ville ?",
+          "oldZh": "这里有没有中国人协会?",
+          "newZh": "这个城市有华人协会吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 3,
+          "row": 7,
+          "fr": "À quelle fréquence ont lieu les ateliers ou les rencontres ?",
+          "oldZh": "工作坊和会议的频率是多少?",
+          "newZh": "工作坊或交流聚会多久举办一次？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 3,
+          "row": 14,
+          "fr": "Où puis-je consulter le programme des activités ?",
+          "oldZh": "有没有网站或信息中心可以查看该计划吗?",
+          "newZh": "我在哪里可以查看活动安排？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        }
+      ]
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "sujet": "Je suis votre voisin(e). Vous venez d’emménager dans mon immeuble. Vous me posez des questions sur les activités du quartier (commerces, activités culturelles et sportives, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "商业与生活",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "文化活动",
+          "questionNumbers": [
+            3,
+            4
+          ]
+        },
+        {
+          "name": "体育活动",
+          "questionNumbers": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "name": "报名与费用",
+          "questionNumbers": [
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "name": "家庭与儿童",
+          "questionNumbers": [
+            12,
+            13
+          ]
+        },
+        {
+          "name": "户外环境",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "信息获取",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 14,
+        "将来计划": 1
+      },
+      "questionStructures": {
+        "est-ce-que": 1,
+        "语调/陈述语序疑问": 7,
+        "疑问词问句": 5,
+        "复杂/代词倒装": 2
+      },
+      "pronounAndRelevanceReview": "checked; obvious inconsistent address forms corrected; unchanged questions retained when they fit Sujet",
+      "changeReasons": [],
+      "translationEdits": [
+        {
+          "month": "2026-09",
+          "number": 4,
+          "row": 10,
+          "fr": "Combien coûte une séance ou une inscription ?",
+          "oldZh": "一个会议或报名费用多少?",
+          "newZh": "参加一次活动或报名需要多少钱？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 4,
+          "row": 11,
+          "fr": "Les habitants du quartier ont-ils droit à une réduction ?",
+          "oldZh": "有没有区别居民的折扣吗?",
+          "newZh": "街区居民可以享受折扣吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        }
+      ]
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "sujet": "Je propose une chambre à louer dans mon appartement. Vous avez vu mon annonce. Vous venez visiter l’appartement et vous me posez des questions (loyer, meubles, vie en commun, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "地点与环境",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "住房与入住",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "住房空间",
+          "questionNumbers": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "name": "费用与合同",
+          "questionNumbers": [
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "name": "室友与生活",
+          "questionNumbers": [
+            14,
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 15
+      },
+      "questionStructures": {
+        "疑问词问句": 5,
+        "复杂/代词倒装": 9,
+        "语调/陈述语序疑问": 1
+      },
+      "pronounAndRelevanceReview": "checked; obvious inconsistent address forms corrected; unchanged questions retained when they fit Sujet",
+      "changeReasons": [],
+      "translationEdits": [
+        {
+          "month": "2026-09",
+          "number": 5,
+          "row": 3,
+          "fr": "À partir de quand la chambre est-elle disponible ?",
+          "oldZh": "从什么时候开始,房间可以开放?",
+          "newZh": "这间房从什么时候起可以入住？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 5,
+          "row": 4,
+          "fr": "Combien de pièces y a-t-il dans l’appartement ?",
+          "oldZh": "公寓里有多少个房间?",
+          "newZh": "这套公寓有几间房？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 5,
+          "row": 5,
+          "fr": "La chambre disponible est-elle assez spacieuse ?",
+          "oldZh": "有没有宽的房间?",
+          "newZh": "空出的房间够宽敞吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 5,
+          "row": 6,
+          "fr": "La chambre est-elle déjà meublée ?",
+          "oldZh": "这间房间是不是很有家具的?",
+          "newZh": "房间已经配好家具了吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 5,
+          "row": 7,
+          "fr": "L’appartement est-il bien insonorisé ?",
+          "oldZh": "有没有好的防音?",
+          "newZh": "这套公寓的隔音效果好吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 5,
+          "row": 8,
+          "fr": "La salle de bain est-elle privée ou partagée ?",
+          "oldZh": "浴室是私人还是共享的?",
+          "newZh": "浴室是独用的还是公用的？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 5,
+          "row": 9,
+          "fr": "Quels espaces communs devons-nous partager ?",
+          "oldZh": "我们应该分享哪些共同空间?",
+          "newZh": "我们需要共用哪些公共空间？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 5,
+          "row": 11,
+          "fr": "Faut-il payer une caution ?",
+          "oldZh": "我必须缴纳保释吗?",
+          "newZh": "需要交押金吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 5,
+          "row": 12,
+          "fr": "À combien s’élève la caution ?",
+          "oldZh": "押金是多少?",
+          "newZh": "押金金额是多少？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 5,
+          "row": 13,
+          "fr": "L’électricité, le chauffage et le Wi-Fi sont-ils inclus dans le loyer ?",
+          "oldZh": "电力,加热和Wi-Fi是否包括在租金中?",
+          "newZh": "房租包含电费、暖气费和 Wi-Fi 费用吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        }
+      ]
+    },
+    {
+      "month": "2026-09",
+      "number": 6,
+      "sujet": "Je travaille dans une entreprise de services aux particuliers. Vous avez besoin de faire de petits travaux chez vous. Vous me posez des questions pour obtenir des informations (services proposés, tarifs, organisation, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "服务内容",
+          "questionNumbers": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "name": "时间安排",
+          "questionNumbers": [
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "name": "应急与替代",
+          "questionNumbers": [
+            8,
+            9
+          ]
+        },
+        {
+          "name": "人员组织",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "服务流程",
+          "questionNumbers": [
+            11,
+            12
+          ]
+        },
+        {
+          "name": "费用与支付",
+          "questionNumbers": [
+            13,
+            14
+          ]
+        },
+        {
+          "name": "联系与预约",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 11,
+        "将来计划": 2,
+        "将来计划 / 条件式": 2
+      },
+      "questionStructures": {
+        "疑问词问句": 5,
+        "语调/陈述语序疑问": 5,
+        "复杂/代词倒装": 4,
+        "est-ce-que": 1
+      },
+      "pronounAndRelevanceReview": "checked; obvious inconsistent address forms corrected; unchanged questions retained when they fit Sujet",
+      "changeReasons": [],
+      "translationEdits": [
+        {
+          "month": "2026-09",
+          "number": 6,
+          "row": 5,
+          "fr": "Quand est-elle disponible ?",
+          "oldZh": "他有什么时间?",
+          "newZh": "她什么时候有空？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 6,
+          "row": 6,
+          "fr": "À quelle fréquence peut-elle venir ?",
+          "oldZh": "它的频率是多少?",
+          "newZh": "她多久可以来一次？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 6,
+          "row": 7,
+          "fr": "J’aurais besoin de deux passages par semaine. Est-ce que ce serait possible ?",
+          "oldZh": "我需要每周两次旅行.这是否可能?",
+          "newZh": "我每周需要两次上门服务，可以安排吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 6,
+          "row": 11,
+          "fr": "Combien de temps dure une intervention en moyenne ?",
+          "oldZh": "一次手术平均需要多长时间?",
+          "newZh": "一次上门服务平均持续多久？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 6,
+          "row": 13,
+          "fr": "Combien coûte le service par intervention ?",
+          "oldZh": "每次治疗费用是多少?",
+          "newZh": "每次上门服务的费用是多少？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        }
+      ]
+    },
+    {
+      "month": "2026-09",
+      "number": 7,
+      "sujet": "Je suis votre voisin(e). Vous allez vous occuper de ma maison pendant mon absence. Vous me posez des questions pour savoir ce que vous devrez faire (durée de l’absence, types de services, informations utiles, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间安排",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "任务安排",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "植物照护",
+          "questionNumbers": [
+            4,
+            5
+          ]
+        },
+        {
+          "name": "邮件与包裹",
+          "questionNumbers": [
+            6
+          ]
+        },
+        {
+          "name": "宠物照护",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "垃圾与清洁",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "钥匙与门窗",
+          "questionNumbers": [
+            9,
+            10
+          ]
+        },
+        {
+          "name": "房屋维护",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "安全与异常",
+          "questionNumbers": [
+            12,
+            13
+          ]
+        },
+        {
+          "name": "紧急联系",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "沟通",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "将来计划": 4,
+        "现在信息": 10,
+        "将来计划 / 建议": 1
+      },
+      "questionStructures": {
+        "语调/陈述语序疑问": 5,
+        "疑问词问句": 4,
+        "复杂/代词倒装": 2,
+        "est-ce-que": 1,
+        "倒装疑问": 3
+      },
+      "pronounAndRelevanceReview": "checked; obvious inconsistent address forms corrected; unchanged questions retained when they fit Sujet",
+      "changeReasons": [],
+      "translationEdits": [
+        {
+          "month": "2026-09",
+          "number": 7,
+          "row": 6,
+          "fr": "Voulez-vous que je relève votre courrier ou que je récupère les colis ?",
+          "oldZh": "你想让我拿起你的邮件,还是收回这些包裹?",
+          "newZh": "您需要我帮您取信或收包裹吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 7,
+          "row": 12,
+          "fr": "À quoi dois-je faire particulièrement attention ?",
+          "oldZh": "我应该注意什么特别的东西吗?",
+          "newZh": "我需要特别注意什么？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        }
+      ]
+    },
+    {
+      "month": "2026-09",
+      "number": 8,
+      "sujet": "Je suis votre ami(e). J’habite dans une grande ville. Vous voulez louer un logement dans cette ville. Vous me posez des questions à ce sujet (offres, prix, quartier, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "找房渠道",
+          "questionNumbers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "地点与街区",
+          "questionNumbers": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "name": "地点与交通",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "住房条件",
+          "questionNumbers": [
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "name": "费用与合同",
+          "questionNumbers": [
+            12,
+            13
+          ]
+        },
+        {
+          "name": "手续与材料",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "看房与入住",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 11,
+        "将来计划 / 建议": 2,
+        "将来计划": 2
+      },
+      "questionStructures": {
+        "est-ce-que": 1,
+        "疑问词问句": 4,
+        "倒装疑问": 1,
+        "复杂/代词倒装": 7,
+        "语调/陈述语序疑问": 2
+      },
+      "pronounAndRelevanceReview": "checked; obvious inconsistent address forms corrected; unchanged questions retained when they fit Sujet",
+      "changeReasons": [],
+      "translationEdits": [
+        {
+          "month": "2026-09",
+          "number": 8,
+          "row": 1,
+          "fr": "Qu’est-ce qu’on trouve comme types de logements dans cette ville ?",
+          "oldZh": "在这个城市里,我们能找到什么样的住房?",
+          "newZh": "这个城市有哪些类型的住房？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 8,
+          "row": 3,
+          "fr": "Vaut-il mieux passer par une agence immobilière ou contacter directement les propriétaires ?",
+          "oldZh": "房地产代理商或直接联系房东?",
+          "newZh": "通过房地产中介找房比较好，还是直接联系房东比较好？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 8,
+          "row": 5,
+          "fr": "Où se trouve exactement le logement qui pourrait me convenir ?",
+          "oldZh": "哪里确切地找到适合我住宿?",
+          "newZh": "可能适合我的房子具体在哪里？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 8,
+          "row": 10,
+          "fr": "Le logement est-il lumineux ?",
+          "oldZh": "房间有没有光?",
+          "newZh": "房子的采光好吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 8,
+          "row": 13,
+          "fr": "Faut-il verser une caution et, si oui, de quel montant ?",
+          "oldZh": "有没有保释,如果有,多少钱?",
+          "newZh": "需要交押金吗？如果需要，金额是多少？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        }
+      ]
+    },
+    {
+      "month": "2026-09",
+      "number": 9,
+      "sujet": "Je suis un(e) ami(e) francophone installé(e) ici depuis longtemps. Vous venez d’arriver dans ma ville. Vous me demandez des conseils pratiques pour votre installation (logement, démarches administratives, transports, commerces, loisirs, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "住房与找房",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "行政手续",
+          "questionNumbers": [
+            3,
+            4
+          ]
+        },
+        {
+          "name": "交通",
+          "questionNumbers": [
+            5,
+            6
+          ]
+        },
+        {
+          "name": "商业与生活",
+          "questionNumbers": [
+            7,
+            8
+          ]
+        },
+        {
+          "name": "家庭与儿童",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "健康与服务",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "文化与休闲",
+          "questionNumbers": [
+            11,
+            12
+          ]
+        },
+        {
+          "name": "社区融入",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "信息获取",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "体验与建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "将来计划 / 建议": 3,
+        "现在信息": 12
+      },
+      "questionStructures": {
+        "语调/陈述语序疑问": 3,
+        "倒装疑问": 2,
+        "疑问词问句": 7,
+        "复杂/代词倒装": 1,
+        "est-ce-que": 2
+      },
+      "pronounAndRelevanceReview": "checked; obvious inconsistent address forms corrected; unchanged questions retained when they fit Sujet",
+      "changeReasons": [
+        {
+          "month": "2026-09",
+          "number": 9,
+          "row": 1,
+          "oldFr": "Pour trouver un logement, par où me conseillez-vous de commencer ?",
+          "newFr": "Pour trouver un logement, par où me conseilles-tu de commencer ?",
+          "zh": "找房的话，你建议我从哪里开始？",
+          "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+        },
+        {
+          "month": "2026-09",
+          "number": 9,
+          "row": 11,
+          "oldFr": "Où me conseilleriez-vous d’aller pour des ateliers, des centres culturels ou des galeries d’art ?",
+          "newFr": "Où me conseillerais-tu d’aller pour des ateliers, des centres culturels ou des galeries d’art ?",
+          "zh": "你建议我去哪里找工作坊、文化中心或艺术画廊？",
+          "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+        },
+        {
+          "month": "2026-09",
+          "number": 9,
+          "row": 15,
+          "oldFr": "Qu’est-ce que vous me conseilleriez de faire pendant mes premières semaines pour bien m’installer ?",
+          "newFr": "Qu’est-ce que tu me conseillerais de faire pendant mes premières semaines pour bien m’installer ?",
+          "zh": "你建议我在最初几周做些什么，才能顺利安顿下来？",
+          "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+        },
+        {
+          "month": "2026-09",
+          "number": 9,
+          "row": 1,
+          "oldFr": "Pour trouver un logement, par où me conseillez-vous de commencer ?",
+          "newFr": "Pour trouver un logement, par où me conseilles-tu de commencer ?",
+          "zh": "找房的话，你建议我从哪里开始？",
+          "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+        },
+        {
+          "month": "2026-09",
+          "number": 9,
+          "row": 11,
+          "oldFr": "Où me conseilleriez-vous d’aller pour des ateliers, des centres culturels ou des galeries d’art ?",
+          "newFr": "Où me conseillerais-tu d’aller pour des ateliers, des centres culturels ou des galeries d’art ?",
+          "zh": "你建议我去哪里找工作坊、文化中心或艺术画廊？",
+          "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+        },
+        {
+          "month": "2026-09",
+          "number": 9,
+          "row": 15,
+          "oldFr": "Qu’est-ce que vous me conseilleriez de faire pendant mes premières semaines pour bien m’installer ?",
+          "newFr": "Qu’est-ce que tu me conseillerais de faire pendant mes premières semaines pour bien m’installer ?",
+          "zh": "你建议我在最初几周做些什么，才能顺利安顿下来？",
+          "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+        }
+      ],
+      "translationEdits": [
+        {
+          "month": "2026-09",
+          "number": 9,
+          "row": 1,
+          "fr": "Pour trouver un logement, par où me conseilles-tu de commencer ?",
+          "oldZh": "要找到住房,你建议我从哪里开始?",
+          "newZh": "找房的话，你建议我从哪里开始？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 9,
+          "row": 4,
+          "fr": "Quels documents dois-je préparer pour ces démarches ?",
+          "oldZh": "我需要准备哪些文件来进行这些行动?",
+          "newZh": "办理这些手续需要准备哪些材料？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 9,
+          "row": 8,
+          "fr": "Qu’est-ce que je devrais organiser rapidement, par exemple une banque ou un forfait téléphonique ?",
+          "oldZh": "银行或电话包等哪些基本服务需要迅速安排?",
+          "newZh": "银行账户、手机套餐等事项中，哪些需要尽快办好？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 9,
+          "row": 11,
+          "fr": "Où me conseillerais-tu d’aller pour des ateliers, des centres culturels ou des galeries d’art ?",
+          "oldZh": "你建议我去哪些研讨会,文化中心或艺术画廊?",
+          "newZh": "你建议我去哪里找工作坊、文化中心或艺术画廊？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 9,
+          "row": 12,
+          "fr": "Quelles activités sportives sont facilement accessibles aux nouveaux résidents ?",
+          "oldZh": "新居民是否可以获得任何体育中心或体育活动?",
+          "newZh": "新居民方便参加哪些体育活动？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-09",
+          "number": 9,
+          "row": 15,
+          "fr": "Qu’est-ce que tu me conseillerais de faire pendant mes premières semaines pour bien m’installer ?",
+          "oldZh": "你会给我什么实用建议,让我在最初几周的时间里成功安装?",
+          "newZh": "你建议我在最初几周做些什么，才能顺利安顿下来？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        }
+      ]
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "sujet": "Je suis votre ami(e). Je veux vendre ma maison. Vous cherchez à en acheter une. Vous me posez des questions pour obtenir des informations sur cette maison (nombre de pièces, équipements, prix, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "地点与环境",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "住房空间",
+          "questionNumbers": [
+            3,
+            4
+          ]
+        },
+        {
+          "name": "住房条件",
+          "questionNumbers": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "name": "费用与购买",
+          "questionNumbers": [
+            11,
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "name": "看房与决定",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 13,
+        "将来计划": 2
+      },
+      "questionStructures": {
+        "疑问词问句": 6,
+        "复杂/代词倒装": 7,
+        "语调/陈述语序疑问": 2
+      },
+      "pronounAndRelevanceReview": "checked; obvious inconsistent address forms corrected; unchanged questions retained when they fit Sujet",
+      "changeReasons": [],
+      "translationEdits": [
+        {
+          "month": "2026-08",
+          "number": 1,
+          "row": 3,
+          "fr": "Combien de pièces et de chambres y a-t-il ?",
+          "oldZh": "有多少房间和房间?",
+          "newZh": "房子有几间房、几间卧室？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-08",
+          "number": 1,
+          "row": 5,
+          "fr": "Qu’est-ce qui est fourni avec la maison ?",
+          "oldZh": "房子里有哪些设备?",
+          "newZh": "房子配有哪些设施？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-08",
+          "number": 1,
+          "row": 6,
+          "fr": "La maison est-elle meublée ou non meublée ?",
+          "oldZh": "房子有家具还是没有家具?",
+          "newZh": "房子带家具还是不带家具？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-08",
+          "number": 1,
+          "row": 9,
+          "fr": "Comment est l’insonorisation ?",
+          "oldZh": "如何做噪音?",
+          "newZh": "房子的隔音效果如何？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-08",
+          "number": 1,
+          "row": 13,
+          "fr": "À combien s’élève l’acompte ou le dépôt de garantie ?",
+          "oldZh": "需要多少钱来支付押金或保证金?",
+          "newZh": "首付款或保证金分别是多少？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-08",
+          "number": 1,
+          "row": 15,
+          "fr": "Est-il possible de faire une visite plus détaillée avant de prendre une décision ?",
+          "oldZh": "在做出决定之前,我们可以做出更详细的检查吗?",
+          "newZh": "做决定之前，可以更仔细地看一下房子吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        }
+      ]
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "sujet": "Je suis votre voisin(e). Je connais une personne qui fait des petits services à domicile. Vous voulez en savoir plus et vous me posez des questions (compétences, horaires, tarifs, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "服务内容",
+          "questionNumbers": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "name": "时间安排",
+          "questionNumbers": [
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "name": "应急与替代",
+          "questionNumbers": [
+            8,
+            9
+          ]
+        },
+        {
+          "name": "人员组织",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "服务流程",
+          "questionNumbers": [
+            11,
+            12
+          ]
+        },
+        {
+          "name": "费用与支付",
+          "questionNumbers": [
+            13,
+            14
+          ]
+        },
+        {
+          "name": "联系与预约",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 11,
+        "将来计划": 2,
+        "将来计划 / 条件式": 2
+      },
+      "questionStructures": {
+        "疑问词问句": 5,
+        "语调/陈述语序疑问": 5,
+        "复杂/代词倒装": 4,
+        "est-ce-que": 1
+      },
+      "pronounAndRelevanceReview": "checked; obvious inconsistent address forms corrected; unchanged questions retained when they fit Sujet",
+      "changeReasons": [],
+      "translationEdits": [
+        {
+          "month": "2026-08",
+          "number": 2,
+          "row": 5,
+          "fr": "Quand est-elle disponible ?",
+          "oldZh": "他有什么时间?",
+          "newZh": "她什么时候有空？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-08",
+          "number": 2,
+          "row": 6,
+          "fr": "À quelle fréquence peut-elle venir ?",
+          "oldZh": "它的频率是多少?",
+          "newZh": "她多久可以来一次？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-08",
+          "number": 2,
+          "row": 7,
+          "fr": "J’aurais besoin de deux passages par semaine. Est-ce que ce serait possible ?",
+          "oldZh": "我需要每周两次旅行.这是否可能?",
+          "newZh": "我每周需要两次上门服务，可以安排吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-08",
+          "number": 2,
+          "row": 11,
+          "fr": "Combien de temps dure une intervention en moyenne ?",
+          "oldZh": "一次手术平均需要多长时间?",
+          "newZh": "一次上门服务平均持续多久？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-08",
+          "number": 2,
+          "row": 13,
+          "fr": "Combien coûte le service par intervention ?",
+          "oldZh": "每次治疗费用是多少?",
+          "newZh": "每次上门服务的费用是多少？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        }
+      ]
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "sujet": "Je suis votre ami(e). Je vis au Canada depuis deux ans. Vous êtes en train de préparer votre arrivée au Canada. Vous me posez des questions sur mon vécu (habitudes, vie courante, adaptation, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "过去经历",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "住房",
+          "questionNumbers": [
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "name": "日常生活",
+          "questionNumbers": [
+            5,
+            6
+          ]
+        },
+        {
+          "name": "社交关系",
+          "questionNumbers": [
+            7,
+            8
+          ]
+        },
+        {
+          "name": "适应",
+          "questionNumbers": [
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "name": "行政与服务",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "家庭与儿童",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "生活质量",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "体验与建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "过去经历": 6,
+        "现在评价": 5,
+        "现在信息": 3,
+        "将来计划 / 建议": 1
+      },
+      "questionStructures": {
+        "疑问词问句": 6,
+        "复杂/代词倒装": 2,
+        "语调/陈述语序疑问": 5,
+        "est-ce-que": 2
+      },
+      "pronounAndRelevanceReview": "checked; obvious inconsistent address forms corrected; unchanged questions retained when they fit Sujet",
+      "changeReasons": [],
+      "translationEdits": [
+        {
+          "month": "2026-08",
+          "number": 3,
+          "row": 6,
+          "fr": "Peut-on facilement faire ses courses et trouver les services essentiels ?",
+          "oldZh": "购物和找到必需服务是不是很容易的?",
+          "newZh": "在这里买日用品、使用基本生活服务方便吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-08",
+          "number": 3,
+          "row": 8,
+          "fr": "Comment puis-je rencontrer de nouvelles personnes, par exemple grâce à des activités ou des associations ?",
+          "oldZh": "什么类型的活动或交友可以帮助我们建立朋友?",
+          "newZh": "我可以通过哪些活动或社团认识新朋友？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        }
+      ]
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "sujet": "Je travaille dans une agence immobilière. Vous voulez louer votre appartement pour les vacances afin de gagner plus d’argent. Vous me demandez des conseils sur les prix, la durée de location, le type de locataires, etc.",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "出租策略",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "价格与收益",
+          "questionNumbers": [
+            3,
+            4
+          ]
+        },
+        {
+          "name": "租客选择",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "发布与管理",
+          "questionNumbers": [
+            6,
+            7
+          ]
+        },
+        {
+          "name": "费用与收益",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "手续与规定",
+          "questionNumbers": [
+            9,
+            10
+          ]
+        },
+        {
+          "name": "费用与保障",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "住房准备",
+          "questionNumbers": [
+            12,
+            13
+          ]
+        },
+        {
+          "name": "入住与退房",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "体验与建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "将来计划 / 建议": 5,
+        "现在信息": 7,
+        "将来计划": 3
+      },
+      "questionStructures": {
+        "倒装疑问": 6,
+        "疑问词问句": 4,
+        "语调/陈述语序疑问": 3,
+        "复杂/代词倒装": 2
+      },
+      "pronounAndRelevanceReview": "checked; obvious inconsistent address forms corrected; unchanged questions retained when they fit Sujet",
+      "changeReasons": [],
+      "translationEdits": [
+        {
+          "month": "2026-08",
+          "number": 4,
+          "row": 1,
+          "fr": "À quelle période vaut-il mieux louer mon appartement aux vacanciers ?",
+          "oldZh": "什么时候最好为假客租我的公寓?",
+          "newZh": "什么时候把公寓租给度假游客比较合适？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-08",
+          "number": 4,
+          "row": 3,
+          "fr": "Combien puis-je demander par nuit ou par semaine ?",
+          "oldZh": "我可以每晚或每周申请多少价格?",
+          "newZh": "我每晚或每周可以收多少租金？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-08",
+          "number": 4,
+          "row": 7,
+          "fr": "Que peut prendre en charge votre agence ?",
+          "oldZh": "你的公司可以承担哪些服务?",
+          "newZh": "贵中介可以代办哪些事项？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-08",
+          "number": 4,
+          "row": 11,
+          "fr": "À combien me conseillez-vous de fixer la caution ?",
+          "oldZh": "您建议向租户申请多少代保?",
+          "newZh": "您建议我把租客押金定为多少？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-08",
+          "number": 4,
+          "row": 13,
+          "fr": "Comment organiser le ménage entre deux locations ?",
+          "oldZh": "如何安排两家房间间间的清洁?",
+          "newZh": "两次出租之间的清洁工作该如何安排？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        }
+      ]
+    },
+    {
+      "month": "2026-08",
+      "number": 5,
+      "sujet": "Vous êtes mon ami(e). Vous allez m’aider à déménager dans mon nouveau logement. Vous me posez des questions sur l’organisation de la journée (lieu, date, participants, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间安排",
+          "questionNumbers": [
+            1,
+            2,
+            14
+          ]
+        },
+        {
+          "name": "地点与路线",
+          "questionNumbers": [
+            3,
+            4
+          ]
+        },
+        {
+          "name": "交通与车辆",
+          "questionNumbers": [
+            5,
+            6
+          ]
+        },
+        {
+          "name": "住房条件",
+          "questionNumbers": [
+            7,
+            8
+          ]
+        },
+        {
+          "name": "人员组织",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "物品与家具",
+          "questionNumbers": [
+            10,
+            11
+          ]
+        },
+        {
+          "name": "准备工作",
+          "questionNumbers": [
+            12,
+            13
+          ]
+        },
+        {
+          "name": "体验与建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "将来计划": 10,
+        "现在信息": 4,
+        "将来计划 / 建议": 1
+      },
+      "questionStructures": {
+        "语调/陈述语序疑问": 5,
+        "疑问词问句": 4,
+        "复杂/代词倒装": 4,
+        "倒装疑问": 2
+      },
+      "pronounAndRelevanceReview": "checked; obvious inconsistent address forms corrected; unchanged questions retained when they fit Sujet",
+      "changeReasons": [],
+      "translationEdits": [
+        {
+          "month": "2026-08",
+          "number": 5,
+          "row": 4,
+          "fr": "Et où se trouve le nouveau logement ?",
+          "oldZh": "那么新房子在哪里?",
+          "newZh": "新住处又在哪里？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-08",
+          "number": 5,
+          "row": 6,
+          "fr": "Comment allons-nous transporter les meubles ?",
+          "oldZh": "我们将使用哪种交通工具来搬家?",
+          "newZh": "我们打算怎么搬运家具？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-08",
+          "number": 5,
+          "row": 8,
+          "fr": "L’immeuble a-t-il un ascenseur ?",
+          "oldZh": "楼里有没有电梯吗?",
+          "newZh": "楼里有电梯吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-08",
+          "number": 5,
+          "row": 10,
+          "fr": "Quels meubles devons-nous déménager ?",
+          "oldZh": "我们需要搬到哪些家具?",
+          "newZh": "我们需要搬走哪些家具？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-08",
+          "number": 5,
+          "row": 11,
+          "fr": "Certains objets sont-ils fragiles ou particulièrement lourds à transporter ?",
+          "oldZh": "有什么脆弱或特别重的物品需要运输吗?",
+          "newZh": "有没有易碎或特别沉重、搬运时需要注意的物品？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-08",
+          "number": 5,
+          "row": 13,
+          "fr": "Faut-il apporter du matériel ou des outils particuliers ?",
+          "oldZh": "我们是否需要特别的设备或工具?",
+          "newZh": "需要带什么特殊用品或工具吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-08",
+          "number": 5,
+          "row": 14,
+          "fr": "Combien de temps penses-tu que le déménagement va durer ?",
+          "oldZh": "你认为这次搬迁会持续多久?",
+          "newZh": "你觉得这次搬家要持续多久？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-08",
+          "number": 5,
+          "row": 15,
+          "fr": "Comment veux-tu répartir les tâches entre nous pour que tout se passe bien ?",
+          "oldZh": "你怎么想把任务分给我们,让一切顺利?",
+          "newZh": "你想怎么分配我们的任务，才能让搬家顺利进行？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        }
+      ]
+    },
+    {
+      "month": "2026-08",
+      "number": 6,
+      "sujet": "Je suis un(e) ami(e) et vous souhaitez vous installer dans ma ville. Vous cherchez un quartier agréable pour y vivre. Vous me posez des questions afin de choisir celui qui vous convient le mieux (environnement, prix, services, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "街区环境",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "安全与环境",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "住房与价格",
+          "questionNumbers": [
+            4
+          ]
+        },
+        {
+          "name": "交通",
+          "questionNumbers": [
+            5,
+            6
+          ]
+        },
+        {
+          "name": "生活服务",
+          "questionNumbers": [
+            7,
+            8
+          ]
+        },
+        {
+          "name": "家庭与儿童",
+          "questionNumbers": [
+            9,
+            10
+          ]
+        },
+        {
+          "name": "休闲环境",
+          "questionNumbers": [
+            11,
+            12
+          ]
+        },
+        {
+          "name": "停车与车辆",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "比较与选择",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "体验与建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 13,
+        "现在评价": 1,
+        "将来计划 / 建议": 1
+      },
+      "questionStructures": {
+        "疑问词问句": 6,
+        "语调/陈述语序疑问": 6,
+        "复杂/代词倒装": 2,
+        "est-ce-que": 1
+      },
+      "pronounAndRelevanceReview": "checked; obvious inconsistent address forms corrected; unchanged questions retained when they fit Sujet",
+      "changeReasons": [],
+      "translationEdits": [
+        {
+          "month": "2026-08",
+          "number": 6,
+          "row": 2,
+          "fr": "Quels quartiers sont plutôt calmes et lesquels sont plus animés ?",
+          "oldZh": "哪些地区比较平静,哪些地区更勃?",
+          "newZh": "哪些街区比较安静，哪些更热闹？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-08",
+          "number": 6,
+          "row": 4,
+          "fr": "Dans quels quartiers les loyers sont-ils les plus abordables ?",
+          "oldZh": "哪个地区租金最便宜?",
+          "newZh": "哪些街区的租金更实惠？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-08",
+          "number": 6,
+          "row": 6,
+          "fr": "Quel quartier serait pratique si je dois aller souvent au centre-ville ?",
+          "oldZh": "如果我必须经常去市中心,哪个地区会很方便?",
+          "newZh": "如果我经常要去市中心，住在哪个街区比较方便？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-08",
+          "number": 6,
+          "row": 12,
+          "fr": "Qu’est-ce qu’on trouve comme loisirs, centres culturels ou équipements sportifs ?",
+          "oldZh": "有哪些休场所,文化中心或体育设施?",
+          "newZh": "附近有哪些休闲场所、文化中心或体育设施？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        }
+      ]
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "sujet": "Je suis un(e) ami(e), je vis au Canada depuis quelques mois. Vous m’interrogez sur ma vie au Canada (logement, activités, relations, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "生活概况",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "住房",
+          "questionNumbers": [
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "name": "日常生活",
+          "questionNumbers": [
+            5,
+            6
+          ]
+        },
+        {
+          "name": "社交关系",
+          "questionNumbers": [
+            7,
+            8
+          ]
+        },
+        {
+          "name": "适应",
+          "questionNumbers": [
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "name": "行政与服务",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "家庭与儿童",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "生活质量",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "体验与建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在评价": 6,
+        "过去经历": 5,
+        "现在信息": 3,
+        "将来计划 / 建议": 1
+      },
+      "questionStructures": {
+        "疑问词问句": 6,
+        "复杂/代词倒装": 2,
+        "语调/陈述语序疑问": 5,
+        "est-ce-que": 2
+      },
+      "pronounAndRelevanceReview": "checked; obvious inconsistent address forms corrected; unchanged questions retained when they fit Sujet",
+      "changeReasons": [],
+      "translationEdits": [
+        {
+          "month": "2026-07",
+          "number": 1,
+          "row": 6,
+          "fr": "Peut-on facilement faire ses courses et trouver les services essentiels ?",
+          "oldZh": "购物和找到必需服务是不是很容易的?",
+          "newZh": "在这里买日用品、使用基本生活服务方便吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 1,
+          "row": 8,
+          "fr": "Comment puis-je rencontrer de nouvelles personnes, par exemple grâce à des activités ou des associations ?",
+          "oldZh": "什么类型的活动或交友可以帮助我们建立朋友?",
+          "newZh": "我可以通过哪些活动或社团认识新朋友？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        }
+      ]
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "sujet": "Je travaille dans une agence immobilière. Vous cherchez un logement. Vous me posez des questions sur les offres disponibles (types de logement, prix, localisation, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "住房选择",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "地点与街区",
+          "questionNumbers": [
+            2
+          ]
+        },
+        {
+          "name": "费用与预算",
+          "questionNumbers": [
+            3,
+            6
+          ]
+        },
+        {
+          "name": "住房空间",
+          "questionNumbers": [
+            4
+          ]
+        },
+        {
+          "name": "住房条件",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "地点与交通",
+          "questionNumbers": [
+            7,
+            8
+          ]
+        },
+        {
+          "name": "周边服务",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "入住时间",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "申请手续",
+          "questionNumbers": [
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "name": "看房",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "体验与建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 11,
+        "将来计划": 3,
+        "将来计划 / 建议": 1
+      },
+      "questionStructures": {
+        "语调/陈述语序疑问": 5,
+        "疑问词问句": 2,
+        "复杂/代词倒装": 7,
+        "est-ce-que": 1
+      },
+      "pronounAndRelevanceReview": "checked; obvious inconsistent address forms corrected; unchanged questions retained when they fit Sujet",
+      "changeReasons": [],
+      "translationEdits": []
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "sujet": "Je suis votre voisin(e). Vous venez d’emménager dans mon immeuble. Vous me posez des questions sur les activités du quartier (commerces, activités culturelles et sportives, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "商业与生活",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "文化活动",
+          "questionNumbers": [
+            3,
+            4
+          ]
+        },
+        {
+          "name": "体育活动",
+          "questionNumbers": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "name": "报名与费用",
+          "questionNumbers": [
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "name": "家庭与儿童",
+          "questionNumbers": [
+            12,
+            13
+          ]
+        },
+        {
+          "name": "户外环境",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "信息获取",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 14,
+        "将来计划": 1
+      },
+      "questionStructures": {
+        "est-ce-que": 1,
+        "语调/陈述语序疑问": 7,
+        "疑问词问句": 5,
+        "复杂/代词倒装": 2
+      },
+      "pronounAndRelevanceReview": "checked; obvious inconsistent address forms corrected; unchanged questions retained when they fit Sujet",
+      "changeReasons": [],
+      "translationEdits": [
+        {
+          "month": "2026-07",
+          "number": 3,
+          "row": 10,
+          "fr": "Combien coûte une séance ou une inscription ?",
+          "oldZh": "一个会议或报名费用多少?",
+          "newZh": "参加一次活动或报名需要多少钱？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 3,
+          "row": 11,
+          "fr": "Les habitants du quartier ont-ils droit à une réduction ?",
+          "oldZh": "有没有区别居民的折扣吗?",
+          "newZh": "街区居民可以享受折扣吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        }
+      ]
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "sujet": "Je propose une chambre à louer dans mon appartement. Vous avez vu mon annonce. Vous venez visiter l’appartement et vous me posez des questions (loyer, meubles, vie en commun, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "地点与环境",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "住房与入住",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "住房空间",
+          "questionNumbers": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "name": "费用与合同",
+          "questionNumbers": [
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "name": "室友与生活",
+          "questionNumbers": [
+            14,
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 15
+      },
+      "questionStructures": {
+        "疑问词问句": 5,
+        "复杂/代词倒装": 9,
+        "语调/陈述语序疑问": 1
+      },
+      "pronounAndRelevanceReview": "checked; obvious inconsistent address forms corrected; unchanged questions retained when they fit Sujet",
+      "changeReasons": [],
+      "translationEdits": [
+        {
+          "month": "2026-07",
+          "number": 4,
+          "row": 3,
+          "fr": "À partir de quand la chambre est-elle disponible ?",
+          "oldZh": "从什么时候开始,房间可以开放?",
+          "newZh": "这间房从什么时候起可以入住？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 4,
+          "row": 4,
+          "fr": "Combien de pièces y a-t-il dans l’appartement ?",
+          "oldZh": "公寓里有多少个房间?",
+          "newZh": "这套公寓有几间房？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 4,
+          "row": 5,
+          "fr": "La chambre disponible est-elle assez spacieuse ?",
+          "oldZh": "有没有宽的房间?",
+          "newZh": "空出的房间够宽敞吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 4,
+          "row": 6,
+          "fr": "La chambre est-elle déjà meublée ?",
+          "oldZh": "这间房间是不是很有家具的?",
+          "newZh": "房间已经配好家具了吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 4,
+          "row": 7,
+          "fr": "L’appartement est-il bien insonorisé ?",
+          "oldZh": "有没有好的防音?",
+          "newZh": "这套公寓的隔音效果好吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 4,
+          "row": 8,
+          "fr": "La salle de bain est-elle privée ou partagée ?",
+          "oldZh": "浴室是私人还是共享的?",
+          "newZh": "浴室是独用的还是公用的？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 4,
+          "row": 9,
+          "fr": "Quels espaces communs devons-nous partager ?",
+          "oldZh": "我们应该分享哪些共同空间?",
+          "newZh": "我们需要共用哪些公共空间？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 4,
+          "row": 11,
+          "fr": "Faut-il payer une caution ?",
+          "oldZh": "我必须缴纳保释吗?",
+          "newZh": "需要交押金吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 4,
+          "row": 12,
+          "fr": "À combien s’élève la caution ?",
+          "oldZh": "押金是多少?",
+          "newZh": "押金金额是多少？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 4,
+          "row": 13,
+          "fr": "L’électricité, le chauffage et le Wi-Fi sont-ils inclus dans le loyer ?",
+          "oldZh": "电力,加热和Wi-Fi是否包括在租金中?",
+          "newZh": "房租包含电费、暖气费和 Wi-Fi 费用吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        }
+      ]
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "sujet": "Je suis votre ami(e). Je cherche un appartement à louer. Vous voulez m’aider à en trouver un et vous me posez des questions (localisation, budget, superficie, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "地点与街区",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "费用与预算",
+          "questionNumbers": [
+            2
+          ]
+        },
+        {
+          "name": "住房空间",
+          "questionNumbers": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "住房条件",
+          "questionNumbers": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "name": "地点与交通",
+          "questionNumbers": [
+            9,
+            10
+          ]
+        },
+        {
+          "name": "周边生活",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "安全与环境",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "租期与入住",
+          "questionNumbers": [
+            13,
+            14
+          ]
+        },
+        {
+          "name": "体验与建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "将来计划": 14,
+        "将来计划 / 建议": 1
+      },
+      "questionStructures": {
+        "疑问词问句": 5,
+        "语调/陈述语序疑问": 9,
+        "est-ce-que": 1
+      },
+      "pronounAndRelevanceReview": "checked; obvious inconsistent address forms corrected; unchanged questions retained when they fit Sujet",
+      "changeReasons": [],
+      "translationEdits": [
+        {
+          "month": "2026-07",
+          "number": 5,
+          "row": 5,
+          "fr": "Combien de chambres te faudrait-il ?",
+          "oldZh": "你需要多少房间?",
+          "newZh": "你需要几间卧室？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 5,
+          "row": 6,
+          "fr": "Tu cherches un appartement meublé ou non meublé ?",
+          "oldZh": "你想找一个家具的公寓还是没有家具的公寓?",
+          "newZh": "你想找带家具还是不带家具的公寓？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 5,
+          "row": 8,
+          "fr": "Tu tiens absolument à avoir une bonne insonorisation ?",
+          "oldZh": "你绝对想要一个好的防音吗?",
+          "newZh": "你特别在意房子的隔音效果吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        }
+      ]
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "sujet": "Vous venez d’arriver au Canada. Je suis un(e) ami(e) et je vous héberge pour quelques jours. Vous me demandez des conseils pour trouver et louer un appartement (loyer, quartiers, modalités, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "找房渠道",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "地点与街区",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "费用与预算",
+          "questionNumbers": [
+            4
+          ]
+        },
+        {
+          "name": "住房选择",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "住房条件",
+          "questionNumbers": [
+            6
+          ]
+        },
+        {
+          "name": "地点与交通",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "安全与环境",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "申请手续",
+          "questionNumbers": [
+            9,
+            10
+          ]
+        },
+        {
+          "name": "费用与合同",
+          "questionNumbers": [
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "name": "看房与时间",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "体验与建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "将来计划 / 建议": 3,
+        "现在信息": 11,
+        "将来计划": 1
+      },
+      "questionStructures": {
+        "语调/陈述语序疑问": 3,
+        "倒装疑问": 4,
+        "复杂/代词倒装": 4,
+        "est-ce-que": 1,
+        "疑问词问句": 3
+      },
+      "pronounAndRelevanceReview": "checked; obvious inconsistent address forms corrected; unchanged questions retained when they fit Sujet",
+      "changeReasons": [],
+      "translationEdits": [
+        {
+          "month": "2026-07",
+          "number": 6,
+          "row": 2,
+          "fr": "Vaut-il mieux passer par une agence immobilière ou contacter directement les propriétaires ?",
+          "oldZh": "房地产代理商或直接联系房东?",
+          "newZh": "通过房地产中介找房比较好，还是直接联系房东比较好？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 6,
+          "row": 7,
+          "fr": "Où vaut-il mieux habiter pour être bien desservi par les transports en commun ?",
+          "oldZh": "公共交通是哪些地区的好服务?",
+          "newZh": "住在哪个区域乘坐公共交通会更方便？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 6,
+          "row": 9,
+          "fr": "Quels documents faut-il préparer pour déposer un dossier de location ?",
+          "oldZh": "需要准备哪些文件才能提交租文件?",
+          "newZh": "申请租房需要准备哪些材料？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 6,
+          "row": 11,
+          "fr": "Faut-il verser une caution au moment de signer le bail ?",
+          "oldZh": "在签署租时,我必须缴纳保释吗?",
+          "newZh": "签租约时需要交押金吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 6,
+          "row": 12,
+          "fr": "Comment se déroule la signature du bail ?",
+          "oldZh": "签署租的主要步骤是什么?",
+          "newZh": "签订租约的流程是怎样的？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 6,
+          "row": 13,
+          "fr": "Qu’est-ce qui est généralement compris dans le loyer ?",
+          "oldZh": "租金通常包括哪些费用?",
+          "newZh": "房租通常包含哪些费用？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        }
+      ]
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "sujet": "Je suis votre voisin(e). Vous venez de vous installer à Vancouver. Vous cherchez où faire vos courses. Vous me posez des questions sur les magasins du quartier (types de commerces, lieux, services, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "地点与交通",
+          "questionNumbers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "商店与商品",
+          "questionNumbers": [
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "name": "时间与营业",
+          "questionNumbers": [
+            9,
+            10
+          ]
+        },
+        {
+          "name": "费用与优惠",
+          "questionNumbers": [
+            11,
+            12
+          ]
+        },
+        {
+          "name": "服务",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "家庭与儿童",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "体验与建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 14,
+        "将来计划 / 建议": 1
+      },
+      "questionStructures": {
+        "疑问词问句": 5,
+        "倒装疑问": 3,
+        "est-ce-que": 1,
+        "复杂/代词倒装": 4,
+        "语调/陈述语序疑问": 2
+      },
+      "pronounAndRelevanceReview": "checked; obvious inconsistent address forms corrected; unchanged questions retained when they fit Sujet",
+      "changeReasons": [
+        {
+          "month": "2026-07",
+          "number": 7,
+          "row": 6,
+          "oldFr": "Tu connais une bonne boulangerie près d’ici ?",
+          "newFr": "Connaissez-vous une bonne boulangerie près d’ici ?",
+          "zh": "附近有您推荐的面包店吗？",
+          "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+        },
+        {
+          "month": "2026-07",
+          "number": 7,
+          "row": 15,
+          "oldFr": "Pour mes courses de tous les jours, quel magasin me conseilleriez-vous en priorité ?",
+          "newFr": "Y a-t-il un marché dans le quartier où je pourrais acheter des produits frais ?",
+          "zh": "附近有可以买到新鲜食品的市场吗？",
+          "reason": "改为市场/新鲜食品角度，避免与本题日常购物推荐重复。"
+        },
+        {
+          "month": "2026-07",
+          "number": 7,
+          "row": 6,
+          "oldFr": "Tu connais une bonne boulangerie près d’ici ?",
+          "newFr": "Connaissez-vous une bonne boulangerie près d’ici ?",
+          "zh": "附近有您推荐的面包店吗？",
+          "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+        },
+        {
+          "month": "2026-07",
+          "number": 7,
+          "row": 15,
+          "oldFr": "Pour mes courses de tous les jours, quel magasin me conseilleriez-vous en priorité ?",
+          "newFr": "Y a-t-il un marché dans le quartier où je pourrais acheter des produits frais ?",
+          "zh": "附近有可以买到新鲜食品的市场吗？",
+          "reason": "改为市场/新鲜食品角度，避免与本题日常购物推荐重复。"
+        }
+      ],
+      "translationEdits": [
+        {
+          "month": "2026-07",
+          "number": 7,
+          "row": 2,
+          "fr": "Vaut-il mieux y aller à pied ou prendre les transports en commun ?",
+          "oldZh": "我可以步行吗?还是要用公共交通?",
+          "newZh": "走路去比较方便，还是乘坐公共交通更合适？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 7,
+          "row": 6,
+          "fr": "Connaissez-vous une bonne boulangerie près d’ici ?",
+          "oldZh": "附近有没有一个好的饼厂?",
+          "newZh": "您知道附近有不错的面包店吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 7,
+          "row": 7,
+          "fr": "Quels types de produits peut-on acheter dans ce supermarché ?",
+          "oldZh": "在这个超市里可以买什么类型的产品?",
+          "newZh": "这家超市可以买到哪些种类的商品？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 7,
+          "row": 9,
+          "fr": "Quels sont les horaires d’ouverture ?",
+          "oldZh": "开放时间是什么?",
+          "newZh": "营业时间是什么？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 7,
+          "row": 11,
+          "fr": "Le magasin propose-t-il une carte de fidélité ou des réductions pour les habitants du quartier ?",
+          "oldZh": "有没有一个忠诚度卡,或者是区别居民的折扣吗?",
+          "newZh": "商店提供会员卡或街区居民折扣吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 7,
+          "row": 13,
+          "fr": "Le magasin livre-t-il à domicile ?",
+          "oldZh": "商店是否提供到家的送货服务?",
+          "newZh": "商店提供送货上门服务吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 7,
+          "row": 15,
+          "fr": "Y a-t-il un marché dans le quartier où je pourrais acheter des produits frais ?",
+          "oldZh": "对于我每天的购物,你会优先建议我去哪家商店?",
+          "newZh": "附近有可以买到新鲜食品的市场吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        }
+      ]
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "sujet": "Je suis votre ami(e). Je vis en colocation. Une chambre est disponible dans le logement. Cela vous intéresse. Vous me posez des questions sur la colocation (loyer, pièces, autres habitants, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "住房空间",
+          "questionNumbers": [
+            1,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "name": "地点与交通",
+          "questionNumbers": [
+            2
+          ]
+        },
+        {
+          "name": "住房与入住",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "费用与合同",
+          "questionNumbers": [
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "name": "室友与生活",
+          "questionNumbers": [
+            14,
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 15
+      },
+      "questionStructures": {
+        "疑问词问句": 6,
+        "复杂/代词倒装": 8,
+        "语调/陈述语序疑问": 1
+      },
+      "pronounAndRelevanceReview": "checked; obvious inconsistent address forms corrected; unchanged questions retained when they fit Sujet",
+      "changeReasons": [],
+      "translationEdits": [
+        {
+          "month": "2026-07",
+          "number": 8,
+          "row": 2,
+          "fr": "Comment peut-on se déplacer en transports en commun à proximité ?",
+          "oldZh": "附近有哪些公共交通工具?",
+          "newZh": "附近乘坐公共交通方便吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 8,
+          "row": 3,
+          "fr": "À partir de quand la chambre est-elle disponible ?",
+          "oldZh": "从什么时候开始,房间可以开放?",
+          "newZh": "这间房从什么时候起可以入住？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 8,
+          "row": 4,
+          "fr": "Combien de pièces y a-t-il dans l’appartement ?",
+          "oldZh": "公寓里有多少个房间?",
+          "newZh": "这套公寓有几间房？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 8,
+          "row": 5,
+          "fr": "La chambre disponible est-elle assez spacieuse ?",
+          "oldZh": "有没有宽的房间?",
+          "newZh": "空出的房间够宽敞吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 8,
+          "row": 6,
+          "fr": "La chambre est-elle déjà meublée ?",
+          "oldZh": "这间房间是不是很有家具的?",
+          "newZh": "房间已经配好家具了吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 8,
+          "row": 7,
+          "fr": "L’appartement est-il bien insonorisé ?",
+          "oldZh": "有没有好的防音?",
+          "newZh": "这套公寓的隔音效果好吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 8,
+          "row": 8,
+          "fr": "La salle de bain est-elle privée ou partagée ?",
+          "oldZh": "浴室是私人还是共享的?",
+          "newZh": "浴室是独用的还是公用的？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 8,
+          "row": 9,
+          "fr": "Quels espaces communs devons-nous partager ?",
+          "oldZh": "我们应该分享哪些共同空间?",
+          "newZh": "我们需要共用哪些公共空间？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 8,
+          "row": 11,
+          "fr": "Faut-il payer une caution ?",
+          "oldZh": "我必须缴纳保释吗?",
+          "newZh": "需要交押金吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 8,
+          "row": 12,
+          "fr": "À combien s’élève la caution ?",
+          "oldZh": "押金是多少?",
+          "newZh": "押金金额是多少？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 8,
+          "row": 13,
+          "fr": "L’électricité, le chauffage et le Wi-Fi sont-ils inclus dans le loyer ?",
+          "oldZh": "电力,加热和Wi-Fi是否包括在租金中?",
+          "newZh": "房租包含电费、暖气费和 Wi-Fi 费用吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 8,
+          "row": 15,
+          "fr": "Quelles sont leurs habitudes de vie et les règles principales de la colocation ?",
+          "oldZh": "他们的生活习惯和住宿的主要规则是什么?",
+          "newZh": "他们平时的生活习惯如何？合租有哪些主要规则？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        }
+      ]
+    },
+    {
+      "month": "2026-07",
+      "number": 9,
+      "sujet": "Je suis votre ami(e). Je déménage dans un nouveau logement. Vous voulez m’aider. Vous me posez des questions pour obtenir des informations sur le déménagement (horaires, transport, organisation, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间安排",
+          "questionNumbers": [
+            1,
+            2,
+            14
+          ]
+        },
+        {
+          "name": "地点与路线",
+          "questionNumbers": [
+            3,
+            4
+          ]
+        },
+        {
+          "name": "交通与车辆",
+          "questionNumbers": [
+            5,
+            6
+          ]
+        },
+        {
+          "name": "住房条件",
+          "questionNumbers": [
+            7,
+            8
+          ]
+        },
+        {
+          "name": "人员组织",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "物品与家具",
+          "questionNumbers": [
+            10,
+            11
+          ]
+        },
+        {
+          "name": "准备工作",
+          "questionNumbers": [
+            12,
+            13
+          ]
+        },
+        {
+          "name": "体验与建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "将来计划": 10,
+        "现在信息": 4,
+        "将来计划 / 建议": 1
+      },
+      "questionStructures": {
+        "语调/陈述语序疑问": 5,
+        "疑问词问句": 4,
+        "复杂/代词倒装": 4,
+        "倒装疑问": 2
+      },
+      "pronounAndRelevanceReview": "checked; obvious inconsistent address forms corrected; unchanged questions retained when they fit Sujet",
+      "changeReasons": [],
+      "translationEdits": [
+        {
+          "month": "2026-07",
+          "number": 9,
+          "row": 4,
+          "fr": "Et où se trouve le nouveau logement ?",
+          "oldZh": "那么新房子在哪里?",
+          "newZh": "新住处又在哪里？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 9,
+          "row": 6,
+          "fr": "Comment allons-nous transporter les meubles ?",
+          "oldZh": "我们将使用哪种交通工具来搬家?",
+          "newZh": "我们打算怎么搬运家具？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 9,
+          "row": 8,
+          "fr": "L’immeuble a-t-il un ascenseur ?",
+          "oldZh": "楼里有没有电梯吗?",
+          "newZh": "楼里有电梯吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 9,
+          "row": 10,
+          "fr": "Quels meubles devons-nous déménager ?",
+          "oldZh": "我们需要搬到哪些家具?",
+          "newZh": "我们需要搬走哪些家具？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 9,
+          "row": 11,
+          "fr": "Certains objets sont-ils fragiles ou particulièrement lourds à transporter ?",
+          "oldZh": "有什么脆弱或特别重的物品需要运输吗?",
+          "newZh": "有没有易碎或特别沉重、搬运时需要注意的物品？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 9,
+          "row": 13,
+          "fr": "Faut-il apporter du matériel ou des outils particuliers ?",
+          "oldZh": "我们是否需要特别的设备或工具?",
+          "newZh": "需要带什么特殊用品或工具吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 9,
+          "row": 14,
+          "fr": "Combien de temps penses-tu que le déménagement va durer ?",
+          "oldZh": "你认为这次搬迁会持续多久?",
+          "newZh": "你觉得这次搬家要持续多久？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 9,
+          "row": 15,
+          "fr": "Comment veux-tu répartir les tâches entre nous pour que tout se passe bien ?",
+          "oldZh": "你怎么想把任务分给我们,让一切顺利?",
+          "newZh": "你想怎么分配我们的任务，才能让搬家顺利进行？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        }
+      ]
+    },
+    {
+      "month": "2026-07",
+      "number": 10,
+      "sujet": "Je suis votre voisin(e). Vous êtes nouveau dans l’immeuble et nous nous sommes rencontrés dans l’ascenseur. Posez-moi des questions (voisinage, commerces, activités, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "邻里与住户",
+          "questionNumbers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "楼内规则",
+          "questionNumbers": [
+            4,
+            5
+          ]
+        },
+        {
+          "name": "公共空间",
+          "questionNumbers": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "name": "安全与管理",
+          "questionNumbers": [
+            9,
+            10
+          ]
+        },
+        {
+          "name": "周边生活",
+          "questionNumbers": [
+            11,
+            12
+          ]
+        },
+        {
+          "name": "社区活动",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "信息获取",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "体验与建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 13,
+        "将来计划 / 建议": 2
+      },
+      "questionStructures": {
+        "疑问词问句": 5,
+        "复杂/代词倒装": 5,
+        "语调/陈述语序疑问": 3,
+        "est-ce-que": 2
+      },
+      "pronounAndRelevanceReview": "checked; obvious inconsistent address forms corrected; unchanged questions retained when they fit Sujet",
+      "changeReasons": [
+        {
+          "month": "2026-07",
+          "number": 10,
+          "row": 11,
+          "oldFr": "Tu connais un café agréable à proximité ?",
+          "newFr": "Connaissez-vous un café agréable à proximité ?",
+          "zh": "附近有舒适宜人的咖啡馆吗？",
+          "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+        },
+        {
+          "month": "2026-07",
+          "number": 10,
+          "row": 11,
+          "oldFr": "Tu connais un café agréable à proximité ?",
+          "newFr": "Connaissez-vous un café agréable à proximité ?",
+          "zh": "附近有舒适宜人的咖啡馆吗？",
+          "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+        }
+      ],
+      "translationEdits": [
+        {
+          "month": "2026-07",
+          "number": 10,
+          "row": 1,
+          "fr": "Comment décririez-vous l’ambiance dans l’immeuble ?",
+          "oldZh": "你会如何描述建筑物的氛围?",
+          "newZh": "您会如何描述这栋楼的整体氛围？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 10,
+          "row": 2,
+          "fr": "Les habitants sont-ils plutôt agréables et accueillants ?",
+          "oldZh": "村民是否更有友好和欢迎?",
+          "newZh": "这里的居民友善、热情吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 10,
+          "row": 3,
+          "fr": "Comment puis-je faire connaissance avec les autres voisins ?",
+          "oldZh": "我如何认识其他邻居?",
+          "newZh": "我怎样才能认识其他邻居？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 10,
+          "row": 4,
+          "fr": "Existe-t-il des horaires de calme à respecter dans l’immeuble ?",
+          "oldZh": "建筑物里有没有节奏时间?",
+          "newZh": "楼里有需要遵守的安静时段吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 10,
+          "row": 5,
+          "fr": "Quelles règles s’appliquent aux visiteurs ?",
+          "oldZh": "有没有特别的规则对游客?",
+          "newZh": "访客需要遵守哪些规定？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 10,
+          "row": 6,
+          "fr": "Quels espaces communs sont à la disposition des habitants ?",
+          "oldZh": "居民有哪些公共空间?",
+          "newZh": "居民可以使用哪些公共区域？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 10,
+          "row": 8,
+          "fr": "Les résidents disposent-ils d’un parking ou d’un local à vélos ?",
+          "oldZh": "有没有停车场或骑自行车的地方?",
+          "newZh": "居民有停车场或自行车存放处可以使用吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 10,
+          "row": 11,
+          "fr": "Connaissez-vous un café agréable à proximité ?",
+          "oldZh": "附近有什么好咖啡馆吗?",
+          "newZh": "您知道附近有没有舒适宜人的咖啡馆？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 10,
+          "row": 13,
+          "fr": "Qu’est-ce qui est organisé pour les habitants, par exemple des activités culturelles ou des rencontres ?",
+          "oldZh": "有没有文化活动或为当地人举行会议?",
+          "newZh": "社区为居民组织哪些活动？例如文化活动或聚会。",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 10,
+          "row": 14,
+          "fr": "Où puis-je trouver les informations et les règles de l’immeuble ?",
+          "oldZh": "在哪里可以找到建筑的信息和规则?",
+          "newZh": "我在哪里可以查到这栋楼的相关信息和规定？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        }
+      ]
+    },
+    {
+      "month": "2026-07",
+      "number": 11,
+      "sujet": "Nous sommes amis. Vous voulez vous installer au Canada. J’habite dans un appartement en colocation à Toronto, je vous propose de partager mon appartement. Vous me posez des questions pour décider si vous allez accepter (appartement, quartier, habitudes de vie, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "地点与街区",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "地点与交通",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "住房空间",
+          "questionNumbers": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "name": "费用与合同",
+          "questionNumbers": [
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "name": "室友与生活",
+          "questionNumbers": [
+            14,
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 15
+      },
+      "questionStructures": {
+        "疑问词问句": 5,
+        "复杂/代词倒装": 8,
+        "est-ce-que": 1,
+        "语调/陈述语序疑问": 1
+      },
+      "pronounAndRelevanceReview": "checked; obvious inconsistent address forms corrected; unchanged questions retained when they fit Sujet",
+      "changeReasons": [],
+      "translationEdits": [
+        {
+          "month": "2026-07",
+          "number": 11,
+          "row": 4,
+          "fr": "Combien de pièces y a-t-il dans l’appartement ?",
+          "oldZh": "公寓里有多少个房间?",
+          "newZh": "这套公寓有几间房？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 11,
+          "row": 5,
+          "fr": "La chambre disponible est-elle assez spacieuse ?",
+          "oldZh": "有没有宽的房间?",
+          "newZh": "空出的房间够宽敞吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 11,
+          "row": 6,
+          "fr": "La chambre est-elle déjà meublée ?",
+          "oldZh": "这间房间是不是很有家具的?",
+          "newZh": "房间已经配好家具了吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 11,
+          "row": 7,
+          "fr": "L’appartement est-il bien insonorisé ?",
+          "oldZh": "有没有好的防音?",
+          "newZh": "这套公寓的隔音效果好吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 11,
+          "row": 8,
+          "fr": "La salle de bain est-elle privée ou partagée ?",
+          "oldZh": "浴室是私人还是共享的?",
+          "newZh": "浴室是独用的还是公用的？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 11,
+          "row": 9,
+          "fr": "Quels espaces communs devons-nous partager ?",
+          "oldZh": "我们应该分享哪些共同空间?",
+          "newZh": "我们需要共用哪些公共空间？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 11,
+          "row": 11,
+          "fr": "Faut-il payer une caution ?",
+          "oldZh": "我必须缴纳保释吗?",
+          "newZh": "需要交押金吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 11,
+          "row": 12,
+          "fr": "À combien s’élève la caution ?",
+          "oldZh": "押金是多少?",
+          "newZh": "押金金额是多少？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 11,
+          "row": 13,
+          "fr": "L’électricité, le chauffage et le Wi-Fi sont-ils inclus dans le loyer ?",
+          "oldZh": "电力,加热和Wi-Fi是否包括在租金中?",
+          "newZh": "房租包含电费、暖气费和 Wi-Fi 费用吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        }
+      ]
+    },
+    {
+      "month": "2026-07",
+      "number": 12,
+      "sujet": "Vous venez d’arriver au Canada. Je suis votre collègue. Vous avez envie de rencontrer des gens. Vous me posez des questions pour savoir où et comment rencontrer de nouvelles personnes (activités, associations, lieux de convivialité, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "社交活动",
+          "questionNumbers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "协会与组织",
+          "questionNumbers": [
+            4,
+            5
+          ]
+        },
+        {
+          "name": "地点与频率",
+          "questionNumbers": [
+            6,
+            7
+          ]
+        },
+        {
+          "name": "报名与费用",
+          "questionNumbers": [
+            8,
+            9
+          ]
+        },
+        {
+          "name": "家庭与儿童",
+          "questionNumbers": [
+            10,
+            11
+          ]
+        },
+        {
+          "name": "社交场所",
+          "questionNumbers": [
+            12,
+            13
+          ]
+        },
+        {
+          "name": "社区参与",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "体验与建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "将来计划 / 建议": 3,
+        "现在信息": 10,
+        "将来计划": 2
+      },
+      "questionStructures": {
+        "倒装疑问": 1,
+        "语调/陈述语序疑问": 6,
+        "疑问词问句": 3,
+        "复杂/代词倒装": 5
+      },
+      "pronounAndRelevanceReview": "checked; obvious inconsistent address forms corrected; unchanged questions retained when they fit Sujet",
+      "changeReasons": [
+        {
+          "month": "2026-07",
+          "number": 12,
+          "row": 13,
+          "oldFr": "Tu connais des restaurants qui organisent parfois des rencontres ou des événements ?",
+          "newFr": "Connaissez-vous des restaurants qui organisent parfois des rencontres ou des événements ?",
+          "zh": "您知道附近有哪些餐厅偶尔会举办聚会或活动吗？",
+          "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+        },
+        {
+          "month": "2026-07",
+          "number": 12,
+          "row": 13,
+          "oldFr": "Tu connais des restaurants qui organisent parfois des rencontres ou des événements ?",
+          "newFr": "Connaissez-vous des restaurants qui organisent parfois des rencontres ou des événements ?",
+          "zh": "您知道附近有哪些餐厅偶尔会举办聚会或活动吗？",
+          "reason": "按 Sujet 的邻居/同事或朋友关系统一 vous/tu 人称。"
+        }
+      ],
+      "translationEdits": [
+        {
+          "month": "2026-07",
+          "number": 12,
+          "row": 2,
+          "fr": "Peut-on suivre des ateliers de cuisine dans le quartier ?",
+          "oldZh": "附近有没有厨师工作坊?",
+          "newZh": "附近有烹饪工作坊可以参加吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 12,
+          "row": 4,
+          "fr": "Quelles associations locales pourrais-je rejoindre ?",
+          "oldZh": "我可以加入任何地方协会吗?",
+          "newZh": "我可以加入哪些本地社团？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 12,
+          "row": 5,
+          "fr": "Existe-t-il des groupes spécialement destinés aux nouveaux résidents ?",
+          "oldZh": "有没有专门面向新居民的群体或组织？",
+          "newZh": "有没有专门面向新居民的团体？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 12,
+          "row": 6,
+          "fr": "Où ont lieu généralement ces activités ?",
+          "oldZh": "这些活动通常发生在哪里?",
+          "newZh": "这些活动通常在哪里举行？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 12,
+          "row": 11,
+          "fr": "Les activités pour enfants sont-elles bien sécurisées et bien encadrées ?",
+          "oldZh": "儿童活动是安全的吗?",
+          "newZh": "儿童活动安全吗？有工作人员妥善看护吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 12,
+          "row": 12,
+          "fr": "Où les gens se retrouvent-ils facilement dans le quartier ?",
+          "oldZh": "有没有咖啡馆或友好的地方,人们很容易见面?",
+          "newZh": "街区里大家通常在哪里聚会？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        },
+        {
+          "month": "2026-07",
+          "number": 12,
+          "row": 13,
+          "fr": "Connaissez-vous des restaurants qui organisent parfois des rencontres ou des événements ?",
+          "oldZh": "有没有餐厅有时会有聚会或活动?",
+          "newZh": "您知道有没有餐厅偶尔会举办聚会或活动吗？",
+          "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+        }
+      ]
+    }
+  ],
+  "translationEdits": [
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 2,
+      "fr": "Vaut-il mieux y aller à pied ou prendre les transports en commun ?",
+      "oldZh": "我可以步行吗?还是要用公共交通?",
+      "newZh": "走路去比较方便，还是乘坐公共交通更合适？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 6,
+      "fr": "Connaissez-vous une bonne boulangerie près d’ici ?",
+      "oldZh": "附近有没有一个好的饼厂?",
+      "newZh": "您知道附近有不错的面包店吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 7,
+      "fr": "Quels types de produits peut-on acheter dans ce supermarché ?",
+      "oldZh": "在这个超市里可以买什么类型的产品?",
+      "newZh": "这家超市可以买到哪些种类的商品？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 9,
+      "fr": "Quels sont les horaires d’ouverture ?",
+      "oldZh": "开放时间是什么?",
+      "newZh": "营业时间是什么？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 11,
+      "fr": "Le magasin propose-t-il une carte de fidélité ou des réductions pour les habitants du quartier ?",
+      "oldZh": "有没有一个忠诚度卡,或者是区别居民的折扣吗?",
+      "newZh": "商店提供会员卡或街区居民折扣吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 13,
+      "fr": "Le magasin livre-t-il à domicile ?",
+      "oldZh": "商店是否提供到家的送货服务?",
+      "newZh": "商店提供送货上门服务吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 15,
+      "fr": "Y a-t-il un marché dans le quartier où je pourrais acheter des produits frais ?",
+      "oldZh": "对于我每天的购物,你会优先建议我去哪家商店?",
+      "newZh": "附近有可以买到新鲜食品的市场吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 1,
+      "fr": "Comment décririez-vous l’ambiance dans l’immeuble ?",
+      "oldZh": "你会如何描述建筑物的氛围?",
+      "newZh": "您会如何描述这栋楼的整体氛围？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 2,
+      "fr": "Les habitants sont-ils plutôt agréables et accueillants ?",
+      "oldZh": "村民是否更有友好和欢迎?",
+      "newZh": "这里的居民友善、热情吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 3,
+      "fr": "Comment puis-je faire connaissance avec les autres voisins ?",
+      "oldZh": "我如何认识其他邻居?",
+      "newZh": "我怎样才能认识其他邻居？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 4,
+      "fr": "Existe-t-il des horaires de calme à respecter dans l’immeuble ?",
+      "oldZh": "建筑物里有没有节奏时间?",
+      "newZh": "楼里有需要遵守的安静时段吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 5,
+      "fr": "Quelles règles s’appliquent aux visiteurs ?",
+      "oldZh": "有没有特别的规则对游客?",
+      "newZh": "访客需要遵守哪些规定？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 6,
+      "fr": "Quels espaces communs sont à la disposition des habitants ?",
+      "oldZh": "居民有哪些公共空间?",
+      "newZh": "居民可以使用哪些公共区域？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 8,
+      "fr": "Les résidents disposent-ils d’un parking ou d’un local à vélos ?",
+      "oldZh": "有没有停车场或骑自行车的地方?",
+      "newZh": "居民有停车场或自行车存放处可以使用吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 11,
+      "fr": "Connaissez-vous un café agréable à proximité ?",
+      "oldZh": "附近有什么好咖啡馆吗?",
+      "newZh": "您知道附近有没有舒适宜人的咖啡馆？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 13,
+      "fr": "Qu’est-ce qui est organisé pour les habitants, par exemple des activités culturelles ou des rencontres ?",
+      "oldZh": "有没有文化活动或为当地人举行会议?",
+      "newZh": "社区为居民组织哪些活动？例如文化活动或聚会。",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 14,
+      "fr": "Où puis-je trouver les informations et les règles de l’immeuble ?",
+      "oldZh": "在哪里可以找到建筑的信息和规则?",
+      "newZh": "我在哪里可以查到这栋楼的相关信息和规定？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 2,
+      "fr": "Comment peut-on se déplacer en transports en commun à proximité ?",
+      "oldZh": "附近有哪些公共交通工具?",
+      "newZh": "附近乘坐公共交通方便吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 3,
+      "fr": "À partir de quand la chambre est-elle disponible ?",
+      "oldZh": "从什么时候开始,房间可以开放?",
+      "newZh": "这间房从什么时候起可以入住？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 4,
+      "fr": "Combien de pièces y a-t-il dans l’appartement ?",
+      "oldZh": "公寓里有多少个房间?",
+      "newZh": "这套公寓有几间房？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 5,
+      "fr": "La chambre disponible est-elle assez spacieuse ?",
+      "oldZh": "有没有宽的房间?",
+      "newZh": "空出的房间够宽敞吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 6,
+      "fr": "La chambre est-elle déjà meublée ?",
+      "oldZh": "这间房间是不是很有家具的?",
+      "newZh": "房间已经配好家具了吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 7,
+      "fr": "L’appartement est-il bien insonorisé ?",
+      "oldZh": "有没有好的防音?",
+      "newZh": "这套公寓的隔音效果好吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 8,
+      "fr": "La salle de bain est-elle privée ou partagée ?",
+      "oldZh": "浴室是私人还是共享的?",
+      "newZh": "浴室是独用的还是公用的？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 9,
+      "fr": "Quels espaces communs devons-nous partager ?",
+      "oldZh": "我们应该分享哪些共同空间?",
+      "newZh": "我们需要共用哪些公共空间？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 11,
+      "fr": "Faut-il payer une caution ?",
+      "oldZh": "我必须缴纳保释吗?",
+      "newZh": "需要交押金吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 12,
+      "fr": "À combien s’élève la caution ?",
+      "oldZh": "押金是多少?",
+      "newZh": "押金金额是多少？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 13,
+      "fr": "L’électricité, le chauffage et le Wi-Fi sont-ils inclus dans le loyer ?",
+      "oldZh": "电力,加热和Wi-Fi是否包括在租金中?",
+      "newZh": "房租包含电费、暖气费和 Wi-Fi 费用吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 3,
+      "row": 15,
+      "fr": "Quelles sont leurs habitudes de vie et les règles principales de la colocation ?",
+      "oldZh": "他们的生活习惯和住宿的主要规则是什么?",
+      "newZh": "他们平时的生活习惯如何？合租有哪些主要规则？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 4,
+      "row": 4,
+      "fr": "Et où se trouve le nouveau logement ?",
+      "oldZh": "那么新房子在哪里?",
+      "newZh": "新住处又在哪里？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 4,
+      "row": 6,
+      "fr": "Comment allons-nous transporter les meubles ?",
+      "oldZh": "我们将使用哪种交通工具来搬家?",
+      "newZh": "我们打算怎么搬运家具？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 4,
+      "row": 8,
+      "fr": "L’immeuble a-t-il un ascenseur ?",
+      "oldZh": "楼里有没有电梯吗?",
+      "newZh": "楼里有电梯吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 4,
+      "row": 10,
+      "fr": "Quels meubles devons-nous déménager ?",
+      "oldZh": "我们需要搬到哪些家具?",
+      "newZh": "我们需要搬走哪些家具？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 4,
+      "row": 11,
+      "fr": "Certains objets sont-ils fragiles ou particulièrement lourds à transporter ?",
+      "oldZh": "有什么脆弱或特别重的物品需要运输吗?",
+      "newZh": "有没有易碎或特别沉重、搬运时需要注意的物品？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 4,
+      "row": 13,
+      "fr": "Faut-il apporter du matériel ou des outils particuliers ?",
+      "oldZh": "我们是否需要特别的设备或工具?",
+      "newZh": "需要带什么特殊用品或工具吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 4,
+      "row": 14,
+      "fr": "Combien de temps penses-tu que le déménagement va durer ?",
+      "oldZh": "你认为这次搬迁会持续多久?",
+      "newZh": "你觉得这次搬家要持续多久？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 4,
+      "row": 15,
+      "fr": "Comment veux-tu répartir les tâches entre nous pour que tout se passe bien ?",
+      "oldZh": "你怎么想把任务分给我们,让一切顺利?",
+      "newZh": "你想怎么分配我们的任务，才能让搬家顺利进行？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 5,
+      "row": 1,
+      "fr": "À quelle heure commence l’apéritif ?",
+      "oldZh": "预食时间是什么时候开始的?",
+      "newZh": "小聚几点开始？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 5,
+      "row": 3,
+      "fr": "Combien de personnes seront invitées ?",
+      "oldZh": "有多少人会被邀请?",
+      "newZh": "会邀请多少人？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 5,
+      "row": 5,
+      "fr": "Le quartier est-il plutôt calme ou animé ?",
+      "oldZh": "这个地区平静吗?",
+      "newZh": "这个街区比较安静还是热闹？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 5,
+      "row": 6,
+      "fr": "Le quartier reste-t-il sûr le soir ?",
+      "oldZh": "这个街区安全吗？晚上也安全吗？",
+      "newZh": "这个街区晚上也安全吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 5,
+      "row": 9,
+      "fr": "Qu’est-ce qui est organisé comme activités dans le quartier ?",
+      "oldZh": "区内有哪些活动?",
+      "newZh": "街区里组织了哪些活动？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 5,
+      "row": 14,
+      "fr": "Où puis-je consulter le programme des activités du quartier ?",
+      "oldZh": "有没有一个信息中心或网站来了解该地区的活动?",
+      "newZh": "我在哪里可以查看社区活动安排？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 6,
+      "row": 2,
+      "fr": "Peut-on suivre des ateliers de cuisine dans le quartier ?",
+      "oldZh": "附近有没有厨师工作坊?",
+      "newZh": "附近有烹饪工作坊可以参加吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 6,
+      "row": 4,
+      "fr": "Quelles associations locales pourrais-je rejoindre ?",
+      "oldZh": "我可以加入任何地方协会吗?",
+      "newZh": "我可以加入哪些本地社团？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 6,
+      "row": 5,
+      "fr": "Existe-t-il des groupes spécialement destinés aux nouveaux résidents ?",
+      "oldZh": "有没有专门面向新居民的群体或组织？",
+      "newZh": "有没有专门面向新居民的团体？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 6,
+      "row": 6,
+      "fr": "Où ont lieu généralement ces activités ?",
+      "oldZh": "这些活动通常发生在哪里?",
+      "newZh": "这些活动通常在哪里举行？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 6,
+      "row": 11,
+      "fr": "Les activités pour enfants sont-elles bien sécurisées et bien encadrées ?",
+      "oldZh": "儿童活动是安全的吗?",
+      "newZh": "儿童活动安全吗？有工作人员妥善看护吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 6,
+      "row": 12,
+      "fr": "Où les gens se retrouvent-ils facilement dans le quartier ?",
+      "oldZh": "有没有咖啡馆或友好的地方,人们很容易见面?",
+      "newZh": "街区里大家通常在哪里聚会？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 6,
+      "row": 13,
+      "fr": "Connaissez-vous des restaurants qui organisent parfois des rencontres ou des événements ?",
+      "oldZh": "有没有餐厅有时会有聚会或活动?",
+      "newZh": "您知道有没有餐厅偶尔会举办聚会或活动吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 2,
+      "fr": "Comment peut-on se déplacer en transports en commun à proximité ?",
+      "oldZh": "附近有哪些公共交通工具?",
+      "newZh": "附近乘坐公共交通方便吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 3,
+      "fr": "À partir de quand la chambre est-elle disponible ?",
+      "oldZh": "从什么时候开始,房间可以开放?",
+      "newZh": "这间房从什么时候起可以入住？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 4,
+      "fr": "Combien de pièces y a-t-il dans l’appartement ?",
+      "oldZh": "公寓里有多少个房间?",
+      "newZh": "这套公寓有几间房？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 5,
+      "fr": "La chambre disponible est-elle assez spacieuse ?",
+      "oldZh": "有没有宽的房间?",
+      "newZh": "空出的房间够宽敞吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 6,
+      "fr": "La chambre est-elle déjà meublée ?",
+      "oldZh": "这间房间是不是很有家具的?",
+      "newZh": "房间已经配好家具了吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 7,
+      "fr": "L’appartement est-il bien insonorisé ?",
+      "oldZh": "有没有好的防音?",
+      "newZh": "这套公寓的隔音效果好吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 8,
+      "fr": "La salle de bain est-elle privée ou partagée ?",
+      "oldZh": "浴室是私人还是共享的?",
+      "newZh": "浴室是独用的还是公用的？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 9,
+      "fr": "Quels espaces communs devons-nous partager ?",
+      "oldZh": "我们应该分享哪些共同空间?",
+      "newZh": "我们需要共用哪些公共空间？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 11,
+      "fr": "Faut-il payer une caution ?",
+      "oldZh": "我必须缴纳保释吗?",
+      "newZh": "需要交押金吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 12,
+      "fr": "À combien s’élève la caution ?",
+      "oldZh": "押金是多少?",
+      "newZh": "押金金额是多少？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 13,
+      "fr": "L’électricité, le chauffage et le Wi-Fi sont-ils inclus dans le loyer ?",
+      "oldZh": "电力,加热和Wi-Fi是否包括在租金中?",
+      "newZh": "房租包含电费、暖气费和 Wi-Fi 费用吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 15,
+      "fr": "Quelles sont leurs habitudes de vie et les règles principales de la colocation ?",
+      "oldZh": "他们的生活习惯和住宿的主要规则是什么?",
+      "newZh": "他们平时的生活习惯如何？合租有哪些主要规则？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 4,
+      "fr": "Combien de pièces y a-t-il dans l’appartement ?",
+      "oldZh": "公寓里有多少个房间?",
+      "newZh": "这套公寓有几间房？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 5,
+      "fr": "La chambre disponible est-elle assez spacieuse ?",
+      "oldZh": "有没有宽的房间?",
+      "newZh": "空出的房间够宽敞吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 6,
+      "fr": "La chambre est-elle déjà meublée ?",
+      "oldZh": "这间房间是不是很有家具的?",
+      "newZh": "房间已经配好家具了吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 7,
+      "fr": "L’appartement est-il bien insonorisé ?",
+      "oldZh": "有没有好的防音?",
+      "newZh": "这套公寓的隔音效果好吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 8,
+      "fr": "La salle de bain est-elle privée ou partagée ?",
+      "oldZh": "浴室是私人还是共享的?",
+      "newZh": "浴室是独用的还是公用的？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 9,
+      "fr": "Quels espaces communs devons-nous partager ?",
+      "oldZh": "我们应该分享哪些共同空间?",
+      "newZh": "我们需要共用哪些公共空间？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 11,
+      "fr": "Faut-il payer une caution ?",
+      "oldZh": "我必须缴纳保释吗?",
+      "newZh": "需要交押金吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 12,
+      "fr": "À combien s’élève la caution ?",
+      "oldZh": "押金是多少?",
+      "newZh": "押金金额是多少？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 13,
+      "fr": "L’électricité, le chauffage et le Wi-Fi sont-ils inclus dans le loyer ?",
+      "oldZh": "电力,加热和Wi-Fi是否包括在租金中?",
+      "newZh": "房租包含电费、暖气费和 Wi-Fi 费用吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 1,
+      "fr": "Quelles structures d’accueil peuvent m’aider à entrer en contact avec mes compatriotes ?",
+      "oldZh": "哪些接待机构可以帮助我与我的同胞联系?",
+      "newZh": "有哪些接待服务机构可以帮我联系同胞？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 3,
+      "fr": "Existe-t-il une association chinoise dans la ville ?",
+      "oldZh": "这里有没有中国人协会?",
+      "newZh": "这个城市有华人协会吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 7,
+      "fr": "À quelle fréquence ont lieu les ateliers ou les rencontres ?",
+      "oldZh": "工作坊和会议的频率是多少?",
+      "newZh": "工作坊或交流聚会多久举办一次？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 14,
+      "fr": "Où puis-je consulter le programme des activités ?",
+      "oldZh": "有没有网站或信息中心可以查看该计划吗?",
+      "newZh": "我在哪里可以查看活动安排？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "row": 10,
+      "fr": "Combien coûte une séance ou une inscription ?",
+      "oldZh": "一个会议或报名费用多少?",
+      "newZh": "参加一次活动或报名需要多少钱？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "row": 11,
+      "fr": "Les habitants du quartier ont-ils droit à une réduction ?",
+      "oldZh": "有没有区别居民的折扣吗?",
+      "newZh": "街区居民可以享受折扣吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 3,
+      "fr": "À partir de quand la chambre est-elle disponible ?",
+      "oldZh": "从什么时候开始,房间可以开放?",
+      "newZh": "这间房从什么时候起可以入住？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 4,
+      "fr": "Combien de pièces y a-t-il dans l’appartement ?",
+      "oldZh": "公寓里有多少个房间?",
+      "newZh": "这套公寓有几间房？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 5,
+      "fr": "La chambre disponible est-elle assez spacieuse ?",
+      "oldZh": "有没有宽的房间?",
+      "newZh": "空出的房间够宽敞吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 6,
+      "fr": "La chambre est-elle déjà meublée ?",
+      "oldZh": "这间房间是不是很有家具的?",
+      "newZh": "房间已经配好家具了吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 7,
+      "fr": "L’appartement est-il bien insonorisé ?",
+      "oldZh": "有没有好的防音?",
+      "newZh": "这套公寓的隔音效果好吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 8,
+      "fr": "La salle de bain est-elle privée ou partagée ?",
+      "oldZh": "浴室是私人还是共享的?",
+      "newZh": "浴室是独用的还是公用的？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 9,
+      "fr": "Quels espaces communs devons-nous partager ?",
+      "oldZh": "我们应该分享哪些共同空间?",
+      "newZh": "我们需要共用哪些公共空间？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 11,
+      "fr": "Faut-il payer une caution ?",
+      "oldZh": "我必须缴纳保释吗?",
+      "newZh": "需要交押金吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 12,
+      "fr": "À combien s’élève la caution ?",
+      "oldZh": "押金是多少?",
+      "newZh": "押金金额是多少？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 13,
+      "fr": "L’électricité, le chauffage et le Wi-Fi sont-ils inclus dans le loyer ?",
+      "oldZh": "电力,加热和Wi-Fi是否包括在租金中?",
+      "newZh": "房租包含电费、暖气费和 Wi-Fi 费用吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 6,
+      "row": 5,
+      "fr": "Quand est-elle disponible ?",
+      "oldZh": "他有什么时间?",
+      "newZh": "她什么时候有空？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 6,
+      "row": 6,
+      "fr": "À quelle fréquence peut-elle venir ?",
+      "oldZh": "它的频率是多少?",
+      "newZh": "她多久可以来一次？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 6,
+      "row": 7,
+      "fr": "J’aurais besoin de deux passages par semaine. Est-ce que ce serait possible ?",
+      "oldZh": "我需要每周两次旅行.这是否可能?",
+      "newZh": "我每周需要两次上门服务，可以安排吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 6,
+      "row": 11,
+      "fr": "Combien de temps dure une intervention en moyenne ?",
+      "oldZh": "一次手术平均需要多长时间?",
+      "newZh": "一次上门服务平均持续多久？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 6,
+      "row": 13,
+      "fr": "Combien coûte le service par intervention ?",
+      "oldZh": "每次治疗费用是多少?",
+      "newZh": "每次上门服务的费用是多少？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 7,
+      "row": 6,
+      "fr": "Voulez-vous que je relève votre courrier ou que je récupère les colis ?",
+      "oldZh": "你想让我拿起你的邮件,还是收回这些包裹?",
+      "newZh": "您需要我帮您取信或收包裹吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 7,
+      "row": 12,
+      "fr": "À quoi dois-je faire particulièrement attention ?",
+      "oldZh": "我应该注意什么特别的东西吗?",
+      "newZh": "我需要特别注意什么？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 8,
+      "row": 1,
+      "fr": "Qu’est-ce qu’on trouve comme types de logements dans cette ville ?",
+      "oldZh": "在这个城市里,我们能找到什么样的住房?",
+      "newZh": "这个城市有哪些类型的住房？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 8,
+      "row": 3,
+      "fr": "Vaut-il mieux passer par une agence immobilière ou contacter directement les propriétaires ?",
+      "oldZh": "房地产代理商或直接联系房东?",
+      "newZh": "通过房地产中介找房比较好，还是直接联系房东比较好？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 8,
+      "row": 5,
+      "fr": "Où se trouve exactement le logement qui pourrait me convenir ?",
+      "oldZh": "哪里确切地找到适合我住宿?",
+      "newZh": "可能适合我的房子具体在哪里？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 8,
+      "row": 10,
+      "fr": "Le logement est-il lumineux ?",
+      "oldZh": "房间有没有光?",
+      "newZh": "房子的采光好吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 8,
+      "row": 13,
+      "fr": "Faut-il verser une caution et, si oui, de quel montant ?",
+      "oldZh": "有没有保释,如果有,多少钱?",
+      "newZh": "需要交押金吗？如果需要，金额是多少？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 9,
+      "row": 1,
+      "fr": "Pour trouver un logement, par où me conseilles-tu de commencer ?",
+      "oldZh": "要找到住房,你建议我从哪里开始?",
+      "newZh": "找房的话，你建议我从哪里开始？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 9,
+      "row": 4,
+      "fr": "Quels documents dois-je préparer pour ces démarches ?",
+      "oldZh": "我需要准备哪些文件来进行这些行动?",
+      "newZh": "办理这些手续需要准备哪些材料？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 9,
+      "row": 8,
+      "fr": "Qu’est-ce que je devrais organiser rapidement, par exemple une banque ou un forfait téléphonique ?",
+      "oldZh": "银行或电话包等哪些基本服务需要迅速安排?",
+      "newZh": "银行账户、手机套餐等事项中，哪些需要尽快办好？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 9,
+      "row": 11,
+      "fr": "Où me conseillerais-tu d’aller pour des ateliers, des centres culturels ou des galeries d’art ?",
+      "oldZh": "你建议我去哪些研讨会,文化中心或艺术画廊?",
+      "newZh": "你建议我去哪里找工作坊、文化中心或艺术画廊？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 9,
+      "row": 12,
+      "fr": "Quelles activités sportives sont facilement accessibles aux nouveaux résidents ?",
+      "oldZh": "新居民是否可以获得任何体育中心或体育活动?",
+      "newZh": "新居民方便参加哪些体育活动？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 9,
+      "row": 15,
+      "fr": "Qu’est-ce que tu me conseillerais de faire pendant mes premières semaines pour bien m’installer ?",
+      "oldZh": "你会给我什么实用建议,让我在最初几周的时间里成功安装?",
+      "newZh": "你建议我在最初几周做些什么，才能顺利安顿下来？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 3,
+      "fr": "Combien de pièces et de chambres y a-t-il ?",
+      "oldZh": "有多少房间和房间?",
+      "newZh": "房子有几间房、几间卧室？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 5,
+      "fr": "Qu’est-ce qui est fourni avec la maison ?",
+      "oldZh": "房子里有哪些设备?",
+      "newZh": "房子配有哪些设施？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 6,
+      "fr": "La maison est-elle meublée ou non meublée ?",
+      "oldZh": "房子有家具还是没有家具?",
+      "newZh": "房子带家具还是不带家具？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 9,
+      "fr": "Comment est l’insonorisation ?",
+      "oldZh": "如何做噪音?",
+      "newZh": "房子的隔音效果如何？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 13,
+      "fr": "À combien s’élève l’acompte ou le dépôt de garantie ?",
+      "oldZh": "需要多少钱来支付押金或保证金?",
+      "newZh": "首付款或保证金分别是多少？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 15,
+      "fr": "Est-il possible de faire une visite plus détaillée avant de prendre une décision ?",
+      "oldZh": "在做出决定之前,我们可以做出更详细的检查吗?",
+      "newZh": "做决定之前，可以更仔细地看一下房子吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 5,
+      "fr": "Quand est-elle disponible ?",
+      "oldZh": "他有什么时间?",
+      "newZh": "她什么时候有空？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 6,
+      "fr": "À quelle fréquence peut-elle venir ?",
+      "oldZh": "它的频率是多少?",
+      "newZh": "她多久可以来一次？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 7,
+      "fr": "J’aurais besoin de deux passages par semaine. Est-ce que ce serait possible ?",
+      "oldZh": "我需要每周两次旅行.这是否可能?",
+      "newZh": "我每周需要两次上门服务，可以安排吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 11,
+      "fr": "Combien de temps dure une intervention en moyenne ?",
+      "oldZh": "一次手术平均需要多长时间?",
+      "newZh": "一次上门服务平均持续多久？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 13,
+      "fr": "Combien coûte le service par intervention ?",
+      "oldZh": "每次治疗费用是多少?",
+      "newZh": "每次上门服务的费用是多少？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 6,
+      "fr": "Peut-on facilement faire ses courses et trouver les services essentiels ?",
+      "oldZh": "购物和找到必需服务是不是很容易的?",
+      "newZh": "在这里买日用品、使用基本生活服务方便吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 8,
+      "fr": "Comment puis-je rencontrer de nouvelles personnes, par exemple grâce à des activités ou des associations ?",
+      "oldZh": "什么类型的活动或交友可以帮助我们建立朋友?",
+      "newZh": "我可以通过哪些活动或社团认识新朋友？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 1,
+      "fr": "À quelle période vaut-il mieux louer mon appartement aux vacanciers ?",
+      "oldZh": "什么时候最好为假客租我的公寓?",
+      "newZh": "什么时候把公寓租给度假游客比较合适？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 3,
+      "fr": "Combien puis-je demander par nuit ou par semaine ?",
+      "oldZh": "我可以每晚或每周申请多少价格?",
+      "newZh": "我每晚或每周可以收多少租金？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 7,
+      "fr": "Que peut prendre en charge votre agence ?",
+      "oldZh": "你的公司可以承担哪些服务?",
+      "newZh": "贵中介可以代办哪些事项？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 11,
+      "fr": "À combien me conseillez-vous de fixer la caution ?",
+      "oldZh": "您建议向租户申请多少代保?",
+      "newZh": "您建议我把租客押金定为多少？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 13,
+      "fr": "Comment organiser le ménage entre deux locations ?",
+      "oldZh": "如何安排两家房间间间的清洁?",
+      "newZh": "两次出租之间的清洁工作该如何安排？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 5,
+      "row": 4,
+      "fr": "Et où se trouve le nouveau logement ?",
+      "oldZh": "那么新房子在哪里?",
+      "newZh": "新住处又在哪里？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 5,
+      "row": 6,
+      "fr": "Comment allons-nous transporter les meubles ?",
+      "oldZh": "我们将使用哪种交通工具来搬家?",
+      "newZh": "我们打算怎么搬运家具？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 5,
+      "row": 8,
+      "fr": "L’immeuble a-t-il un ascenseur ?",
+      "oldZh": "楼里有没有电梯吗?",
+      "newZh": "楼里有电梯吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 5,
+      "row": 10,
+      "fr": "Quels meubles devons-nous déménager ?",
+      "oldZh": "我们需要搬到哪些家具?",
+      "newZh": "我们需要搬走哪些家具？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 5,
+      "row": 11,
+      "fr": "Certains objets sont-ils fragiles ou particulièrement lourds à transporter ?",
+      "oldZh": "有什么脆弱或特别重的物品需要运输吗?",
+      "newZh": "有没有易碎或特别沉重、搬运时需要注意的物品？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 5,
+      "row": 13,
+      "fr": "Faut-il apporter du matériel ou des outils particuliers ?",
+      "oldZh": "我们是否需要特别的设备或工具?",
+      "newZh": "需要带什么特殊用品或工具吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 5,
+      "row": 14,
+      "fr": "Combien de temps penses-tu que le déménagement va durer ?",
+      "oldZh": "你认为这次搬迁会持续多久?",
+      "newZh": "你觉得这次搬家要持续多久？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 5,
+      "row": 15,
+      "fr": "Comment veux-tu répartir les tâches entre nous pour que tout se passe bien ?",
+      "oldZh": "你怎么想把任务分给我们,让一切顺利?",
+      "newZh": "你想怎么分配我们的任务，才能让搬家顺利进行？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 6,
+      "row": 2,
+      "fr": "Quels quartiers sont plutôt calmes et lesquels sont plus animés ?",
+      "oldZh": "哪些地区比较平静,哪些地区更勃?",
+      "newZh": "哪些街区比较安静，哪些更热闹？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 6,
+      "row": 4,
+      "fr": "Dans quels quartiers les loyers sont-ils les plus abordables ?",
+      "oldZh": "哪个地区租金最便宜?",
+      "newZh": "哪些街区的租金更实惠？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 6,
+      "row": 6,
+      "fr": "Quel quartier serait pratique si je dois aller souvent au centre-ville ?",
+      "oldZh": "如果我必须经常去市中心,哪个地区会很方便?",
+      "newZh": "如果我经常要去市中心，住在哪个街区比较方便？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 6,
+      "row": 12,
+      "fr": "Qu’est-ce qu’on trouve comme loisirs, centres culturels ou équipements sportifs ?",
+      "oldZh": "有哪些休场所,文化中心或体育设施?",
+      "newZh": "附近有哪些休闲场所、文化中心或体育设施？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 6,
+      "fr": "Peut-on facilement faire ses courses et trouver les services essentiels ?",
+      "oldZh": "购物和找到必需服务是不是很容易的?",
+      "newZh": "在这里买日用品、使用基本生活服务方便吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 8,
+      "fr": "Comment puis-je rencontrer de nouvelles personnes, par exemple grâce à des activités ou des associations ?",
+      "oldZh": "什么类型的活动或交友可以帮助我们建立朋友?",
+      "newZh": "我可以通过哪些活动或社团认识新朋友？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 10,
+      "fr": "Combien coûte une séance ou une inscription ?",
+      "oldZh": "一个会议或报名费用多少?",
+      "newZh": "参加一次活动或报名需要多少钱？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 11,
+      "fr": "Les habitants du quartier ont-ils droit à une réduction ?",
+      "oldZh": "有没有区别居民的折扣吗?",
+      "newZh": "街区居民可以享受折扣吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 3,
+      "fr": "À partir de quand la chambre est-elle disponible ?",
+      "oldZh": "从什么时候开始,房间可以开放?",
+      "newZh": "这间房从什么时候起可以入住？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 4,
+      "fr": "Combien de pièces y a-t-il dans l’appartement ?",
+      "oldZh": "公寓里有多少个房间?",
+      "newZh": "这套公寓有几间房？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 5,
+      "fr": "La chambre disponible est-elle assez spacieuse ?",
+      "oldZh": "有没有宽的房间?",
+      "newZh": "空出的房间够宽敞吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 6,
+      "fr": "La chambre est-elle déjà meublée ?",
+      "oldZh": "这间房间是不是很有家具的?",
+      "newZh": "房间已经配好家具了吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 7,
+      "fr": "L’appartement est-il bien insonorisé ?",
+      "oldZh": "有没有好的防音?",
+      "newZh": "这套公寓的隔音效果好吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 8,
+      "fr": "La salle de bain est-elle privée ou partagée ?",
+      "oldZh": "浴室是私人还是共享的?",
+      "newZh": "浴室是独用的还是公用的？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 9,
+      "fr": "Quels espaces communs devons-nous partager ?",
+      "oldZh": "我们应该分享哪些共同空间?",
+      "newZh": "我们需要共用哪些公共空间？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 11,
+      "fr": "Faut-il payer une caution ?",
+      "oldZh": "我必须缴纳保释吗?",
+      "newZh": "需要交押金吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 12,
+      "fr": "À combien s’élève la caution ?",
+      "oldZh": "押金是多少?",
+      "newZh": "押金金额是多少？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 13,
+      "fr": "L’électricité, le chauffage et le Wi-Fi sont-ils inclus dans le loyer ?",
+      "oldZh": "电力,加热和Wi-Fi是否包括在租金中?",
+      "newZh": "房租包含电费、暖气费和 Wi-Fi 费用吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 5,
+      "fr": "Combien de chambres te faudrait-il ?",
+      "oldZh": "你需要多少房间?",
+      "newZh": "你需要几间卧室？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 6,
+      "fr": "Tu cherches un appartement meublé ou non meublé ?",
+      "oldZh": "你想找一个家具的公寓还是没有家具的公寓?",
+      "newZh": "你想找带家具还是不带家具的公寓？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 8,
+      "fr": "Tu tiens absolument à avoir une bonne insonorisation ?",
+      "oldZh": "你绝对想要一个好的防音吗?",
+      "newZh": "你特别在意房子的隔音效果吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 2,
+      "fr": "Vaut-il mieux passer par une agence immobilière ou contacter directement les propriétaires ?",
+      "oldZh": "房地产代理商或直接联系房东?",
+      "newZh": "通过房地产中介找房比较好，还是直接联系房东比较好？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 7,
+      "fr": "Où vaut-il mieux habiter pour être bien desservi par les transports en commun ?",
+      "oldZh": "公共交通是哪些地区的好服务?",
+      "newZh": "住在哪个区域乘坐公共交通会更方便？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 9,
+      "fr": "Quels documents faut-il préparer pour déposer un dossier de location ?",
+      "oldZh": "需要准备哪些文件才能提交租文件?",
+      "newZh": "申请租房需要准备哪些材料？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 11,
+      "fr": "Faut-il verser une caution au moment de signer le bail ?",
+      "oldZh": "在签署租时,我必须缴纳保释吗?",
+      "newZh": "签租约时需要交押金吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 12,
+      "fr": "Comment se déroule la signature du bail ?",
+      "oldZh": "签署租的主要步骤是什么?",
+      "newZh": "签订租约的流程是怎样的？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 13,
+      "fr": "Qu’est-ce qui est généralement compris dans le loyer ?",
+      "oldZh": "租金通常包括哪些费用?",
+      "newZh": "房租通常包含哪些费用？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 2,
+      "fr": "Vaut-il mieux y aller à pied ou prendre les transports en commun ?",
+      "oldZh": "我可以步行吗?还是要用公共交通?",
+      "newZh": "走路去比较方便，还是乘坐公共交通更合适？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 6,
+      "fr": "Connaissez-vous une bonne boulangerie près d’ici ?",
+      "oldZh": "附近有没有一个好的饼厂?",
+      "newZh": "您知道附近有不错的面包店吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 7,
+      "fr": "Quels types de produits peut-on acheter dans ce supermarché ?",
+      "oldZh": "在这个超市里可以买什么类型的产品?",
+      "newZh": "这家超市可以买到哪些种类的商品？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 9,
+      "fr": "Quels sont les horaires d’ouverture ?",
+      "oldZh": "开放时间是什么?",
+      "newZh": "营业时间是什么？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 11,
+      "fr": "Le magasin propose-t-il une carte de fidélité ou des réductions pour les habitants du quartier ?",
+      "oldZh": "有没有一个忠诚度卡,或者是区别居民的折扣吗?",
+      "newZh": "商店提供会员卡或街区居民折扣吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 13,
+      "fr": "Le magasin livre-t-il à domicile ?",
+      "oldZh": "商店是否提供到家的送货服务?",
+      "newZh": "商店提供送货上门服务吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 15,
+      "fr": "Y a-t-il un marché dans le quartier où je pourrais acheter des produits frais ?",
+      "oldZh": "对于我每天的购物,你会优先建议我去哪家商店?",
+      "newZh": "附近有可以买到新鲜食品的市场吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 2,
+      "fr": "Comment peut-on se déplacer en transports en commun à proximité ?",
+      "oldZh": "附近有哪些公共交通工具?",
+      "newZh": "附近乘坐公共交通方便吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 3,
+      "fr": "À partir de quand la chambre est-elle disponible ?",
+      "oldZh": "从什么时候开始,房间可以开放?",
+      "newZh": "这间房从什么时候起可以入住？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 4,
+      "fr": "Combien de pièces y a-t-il dans l’appartement ?",
+      "oldZh": "公寓里有多少个房间?",
+      "newZh": "这套公寓有几间房？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 5,
+      "fr": "La chambre disponible est-elle assez spacieuse ?",
+      "oldZh": "有没有宽的房间?",
+      "newZh": "空出的房间够宽敞吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 6,
+      "fr": "La chambre est-elle déjà meublée ?",
+      "oldZh": "这间房间是不是很有家具的?",
+      "newZh": "房间已经配好家具了吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 7,
+      "fr": "L’appartement est-il bien insonorisé ?",
+      "oldZh": "有没有好的防音?",
+      "newZh": "这套公寓的隔音效果好吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 8,
+      "fr": "La salle de bain est-elle privée ou partagée ?",
+      "oldZh": "浴室是私人还是共享的?",
+      "newZh": "浴室是独用的还是公用的？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 9,
+      "fr": "Quels espaces communs devons-nous partager ?",
+      "oldZh": "我们应该分享哪些共同空间?",
+      "newZh": "我们需要共用哪些公共空间？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 11,
+      "fr": "Faut-il payer une caution ?",
+      "oldZh": "我必须缴纳保释吗?",
+      "newZh": "需要交押金吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 12,
+      "fr": "À combien s’élève la caution ?",
+      "oldZh": "押金是多少?",
+      "newZh": "押金金额是多少？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 13,
+      "fr": "L’électricité, le chauffage et le Wi-Fi sont-ils inclus dans le loyer ?",
+      "oldZh": "电力,加热和Wi-Fi是否包括在租金中?",
+      "newZh": "房租包含电费、暖气费和 Wi-Fi 费用吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 15,
+      "fr": "Quelles sont leurs habitudes de vie et les règles principales de la colocation ?",
+      "oldZh": "他们的生活习惯和住宿的主要规则是什么?",
+      "newZh": "他们平时的生活习惯如何？合租有哪些主要规则？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 9,
+      "row": 4,
+      "fr": "Et où se trouve le nouveau logement ?",
+      "oldZh": "那么新房子在哪里?",
+      "newZh": "新住处又在哪里？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 9,
+      "row": 6,
+      "fr": "Comment allons-nous transporter les meubles ?",
+      "oldZh": "我们将使用哪种交通工具来搬家?",
+      "newZh": "我们打算怎么搬运家具？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 9,
+      "row": 8,
+      "fr": "L’immeuble a-t-il un ascenseur ?",
+      "oldZh": "楼里有没有电梯吗?",
+      "newZh": "楼里有电梯吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 9,
+      "row": 10,
+      "fr": "Quels meubles devons-nous déménager ?",
+      "oldZh": "我们需要搬到哪些家具?",
+      "newZh": "我们需要搬走哪些家具？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 9,
+      "row": 11,
+      "fr": "Certains objets sont-ils fragiles ou particulièrement lourds à transporter ?",
+      "oldZh": "有什么脆弱或特别重的物品需要运输吗?",
+      "newZh": "有没有易碎或特别沉重、搬运时需要注意的物品？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 9,
+      "row": 13,
+      "fr": "Faut-il apporter du matériel ou des outils particuliers ?",
+      "oldZh": "我们是否需要特别的设备或工具?",
+      "newZh": "需要带什么特殊用品或工具吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 9,
+      "row": 14,
+      "fr": "Combien de temps penses-tu que le déménagement va durer ?",
+      "oldZh": "你认为这次搬迁会持续多久?",
+      "newZh": "你觉得这次搬家要持续多久？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 9,
+      "row": 15,
+      "fr": "Comment veux-tu répartir les tâches entre nous pour que tout se passe bien ?",
+      "oldZh": "你怎么想把任务分给我们,让一切顺利?",
+      "newZh": "你想怎么分配我们的任务，才能让搬家顺利进行？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 10,
+      "row": 1,
+      "fr": "Comment décririez-vous l’ambiance dans l’immeuble ?",
+      "oldZh": "你会如何描述建筑物的氛围?",
+      "newZh": "您会如何描述这栋楼的整体氛围？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 10,
+      "row": 2,
+      "fr": "Les habitants sont-ils plutôt agréables et accueillants ?",
+      "oldZh": "村民是否更有友好和欢迎?",
+      "newZh": "这里的居民友善、热情吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 10,
+      "row": 3,
+      "fr": "Comment puis-je faire connaissance avec les autres voisins ?",
+      "oldZh": "我如何认识其他邻居?",
+      "newZh": "我怎样才能认识其他邻居？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 10,
+      "row": 4,
+      "fr": "Existe-t-il des horaires de calme à respecter dans l’immeuble ?",
+      "oldZh": "建筑物里有没有节奏时间?",
+      "newZh": "楼里有需要遵守的安静时段吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 10,
+      "row": 5,
+      "fr": "Quelles règles s’appliquent aux visiteurs ?",
+      "oldZh": "有没有特别的规则对游客?",
+      "newZh": "访客需要遵守哪些规定？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 10,
+      "row": 6,
+      "fr": "Quels espaces communs sont à la disposition des habitants ?",
+      "oldZh": "居民有哪些公共空间?",
+      "newZh": "居民可以使用哪些公共区域？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 10,
+      "row": 8,
+      "fr": "Les résidents disposent-ils d’un parking ou d’un local à vélos ?",
+      "oldZh": "有没有停车场或骑自行车的地方?",
+      "newZh": "居民有停车场或自行车存放处可以使用吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 10,
+      "row": 11,
+      "fr": "Connaissez-vous un café agréable à proximité ?",
+      "oldZh": "附近有什么好咖啡馆吗?",
+      "newZh": "您知道附近有没有舒适宜人的咖啡馆？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 10,
+      "row": 13,
+      "fr": "Qu’est-ce qui est organisé pour les habitants, par exemple des activités culturelles ou des rencontres ?",
+      "oldZh": "有没有文化活动或为当地人举行会议?",
+      "newZh": "社区为居民组织哪些活动？例如文化活动或聚会。",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 10,
+      "row": 14,
+      "fr": "Où puis-je trouver les informations et les règles de l’immeuble ?",
+      "oldZh": "在哪里可以找到建筑的信息和规则?",
+      "newZh": "我在哪里可以查到这栋楼的相关信息和规定？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 11,
+      "row": 4,
+      "fr": "Combien de pièces y a-t-il dans l’appartement ?",
+      "oldZh": "公寓里有多少个房间?",
+      "newZh": "这套公寓有几间房？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 11,
+      "row": 5,
+      "fr": "La chambre disponible est-elle assez spacieuse ?",
+      "oldZh": "有没有宽的房间?",
+      "newZh": "空出的房间够宽敞吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 11,
+      "row": 6,
+      "fr": "La chambre est-elle déjà meublée ?",
+      "oldZh": "这间房间是不是很有家具的?",
+      "newZh": "房间已经配好家具了吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 11,
+      "row": 7,
+      "fr": "L’appartement est-il bien insonorisé ?",
+      "oldZh": "有没有好的防音?",
+      "newZh": "这套公寓的隔音效果好吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 11,
+      "row": 8,
+      "fr": "La salle de bain est-elle privée ou partagée ?",
+      "oldZh": "浴室是私人还是共享的?",
+      "newZh": "浴室是独用的还是公用的？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 11,
+      "row": 9,
+      "fr": "Quels espaces communs devons-nous partager ?",
+      "oldZh": "我们应该分享哪些共同空间?",
+      "newZh": "我们需要共用哪些公共空间？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 11,
+      "row": 11,
+      "fr": "Faut-il payer une caution ?",
+      "oldZh": "我必须缴纳保释吗?",
+      "newZh": "需要交押金吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 11,
+      "row": 12,
+      "fr": "À combien s’élève la caution ?",
+      "oldZh": "押金是多少?",
+      "newZh": "押金金额是多少？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 11,
+      "row": 13,
+      "fr": "L’électricité, le chauffage et le Wi-Fi sont-ils inclus dans le loyer ?",
+      "oldZh": "电力,加热和Wi-Fi是否包括在租金中?",
+      "newZh": "房租包含电费、暖气费和 Wi-Fi 费用吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 12,
+      "row": 2,
+      "fr": "Peut-on suivre des ateliers de cuisine dans le quartier ?",
+      "oldZh": "附近有没有厨师工作坊?",
+      "newZh": "附近有烹饪工作坊可以参加吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 12,
+      "row": 4,
+      "fr": "Quelles associations locales pourrais-je rejoindre ?",
+      "oldZh": "我可以加入任何地方协会吗?",
+      "newZh": "我可以加入哪些本地社团？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 12,
+      "row": 5,
+      "fr": "Existe-t-il des groupes spécialement destinés aux nouveaux résidents ?",
+      "oldZh": "有没有专门面向新居民的群体或组织？",
+      "newZh": "有没有专门面向新居民的团体？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 12,
+      "row": 6,
+      "fr": "Où ont lieu généralement ces activités ?",
+      "oldZh": "这些活动通常发生在哪里?",
+      "newZh": "这些活动通常在哪里举行？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 12,
+      "row": 11,
+      "fr": "Les activités pour enfants sont-elles bien sécurisées et bien encadrées ?",
+      "oldZh": "儿童活动是安全的吗?",
+      "newZh": "儿童活动安全吗？有工作人员妥善看护吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 12,
+      "row": 12,
+      "fr": "Où les gens se retrouvent-ils facilement dans le quartier ?",
+      "oldZh": "有没有咖啡馆或友好的地方,人们很容易见面?",
+      "newZh": "街区里大家通常在哪里聚会？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 12,
+      "row": 13,
+      "fr": "Connaissez-vous des restaurants qui organisent parfois des rencontres ou des événements ?",
+      "oldZh": "有没有餐厅有时会有聚会或活动?",
+      "newZh": "您知道有没有餐厅偶尔会举办聚会或活动吗？",
+      "reason": "修正原自动翻译中的错义、搭配或中文表达，使译文准确对应法语提问。"
+    }
+  ],
+  "translationEditCount": 211,
+  "piperCoverage": {
+    "voice": "fr_FR-siwis-medium",
+    "requiredUniqueQuestions": 284,
+    "manifestCovered": 277,
+    "missing": [
+      "Connaissez-vous des restaurants qui organisent parfois des rencontres ou des événements ?",
+      "Connaissez-vous un café agréable à proximité ?",
+      "Connaissez-vous une bonne boulangerie près d’ici ?",
+      "Où me conseillerais-tu d’aller pour des ateliers, des centres culturels ou des galeries d’art ?",
+      "Pour trouver un logement, par où me conseilles-tu de commencer ?",
+      "Qu’est-ce que tu me conseillerais de faire pendant mes premières semaines pour bien m’installer ?",
+      "Y a-t-il un marché dans le quartier où je pourrais acheter des produits frais ?"
+    ],
+    "status": "pending-generation"
+  },
+  "runtimeChecks": {
+    "sujets": 33,
+    "questionSlots": 495,
+    "eachHas15": true,
+    "frenchChinesePairsPresent": true,
+    "dimensionsAndTimelinesPresent": true,
+    "modifiedRowsHaveDistinctProgressKeys": 11,
+    "allSujetsPass": false
+  }
+}

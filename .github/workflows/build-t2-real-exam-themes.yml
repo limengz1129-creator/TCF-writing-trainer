@@ -35,4 +35,10 @@ jobs:
           curl -L --fail --retry 3 -o .piper-model/fr_FR-siwis-medium.onnx https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx
           curl -L --fail --retry 3 -o .piper-model/fr_FR-siwis-medium.onnx.json https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx.json
       - name: Build, validate and push one checkpoint per theme
-        run: python tools/piper/real-exam-themes/build.py --all --git-checkpoints --piper-model .piper-model/fr_FR-siwis-medium.onnx
+        run: |
+          slug="$(sed -n '1s/^theme=//p' tache2/real-exams/source/build-all.trigger)"
+          case "$slug" in
+            housing|social|education|consumption|transport|family|sport|health|culture|work) ;;
+            *) echo "Invalid theme trigger: $slug" >&2; exit 1 ;;
+          esac
+          python tools/piper/real-exam-themes/build.py --slug "$slug" --git-checkpoints --piper-model .piper-model/fr_FR-siwis-medium.onnx
