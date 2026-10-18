@@ -89,7 +89,9 @@ def read_manifest():
 def add_audio(slug,texts,model_path,manifest):
     missing=[t for t in texts if t not in manifest["targets"]]
     print(f"{slug}: Piper reuse={len(texts)-len(missing)} new={len(missing)}",flush=True)
-    pack={};size=0;num=0;written=[]
+    pack={};size=0
+    existing=[int(m.group(1)) for p in AUDIO.glob(f"{slug}-pack-*.json") if (m:=re.fullmatch(rf"{re.escape(slug)}-pack-(\d+)\.json",p.name))]
+    num=max(existing,default=-1)+1;written=[]
     def flush():
         nonlocal pack,size,num
         if not pack:return
