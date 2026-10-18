@@ -3,8 +3,8 @@
   "theme": "健康安全与公共服务",
   "sujets": 10,
   "questionSlots": 150,
-  "status": "ready_for_audio_rebuild",
-  "approval": "not_passed",
+  "status": "passed",
+  "approval": "passed",
   "source": "tache2/real-exams/source/health.json.gz.b64",
   "runtime": "tache2/real-exams/data/health.json",
   "reviewMethod": [
@@ -2729,11 +2729,22 @@
     }
   ],
   "piperCoverage": {
-    "status": "pending-generation",
+    "status": "passed",
     "voice": "fr_FR-siwis-medium",
     "uniqueFrenchQuestions": 115,
-    "matched": 0,
-    "missing": "pending"
+    "matched": 115,
+    "missing": 0,
+    "manifestRecords": 2377,
+    "packsUsed": [
+      "health-pack-000.json",
+      "health-pack-001.json",
+      "health-pack-002.json",
+      "health-variety-000.json",
+      "health-variety-001.json",
+      "family-variety-000.json",
+      "sport-variety-000.json"
+    ],
+    "verifiedBy": "GitHub blob content exact-text and audio payload checks"
   },
   "runtimeChecks": {
     "sujetCount": 10,
@@ -2744,6 +2755,12 @@
     "allRowsHaveFrenchAndChinese": true,
     "noDuplicateFrenchPerSujet": true,
     "frenchProgressKeysDifferFromOriginal": true,
-    "followMarkerRows": 0
+    "followMarkerRows": 0,
+    "githubActionsBuildRun": 39105020631,
+    "githubActionsBuildConclusion": "success",
+    "githubPagesRun": 39105020624,
+    "githubPagesConclusion": "success",
+    "buildCheckpoint": "94cecd7821491f3989829a6e2b40f66825281ee8",
+    "deploymentUrl": "https://limengz1129-creator.github.io/TCF-writing-trainer/tache2/real-exams/"
   }
 }
