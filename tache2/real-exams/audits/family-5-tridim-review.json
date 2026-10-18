@@ -3,8 +3,8 @@
   "theme": "家庭儿童与宠物照护",
   "sujets": 5,
   "questionSlots": 75,
-  "status": "ready_for_audio_rebuild",
-  "approval": "not_passed",
+  "status": "passed",
+  "approval": "passed_after_self_review",
   "source": "tache2/real-exams/source/family.json.gz.b64",
   "runtime": "tache2/real-exams/data/family.json",
   "reviewMethod": [
@@ -17,11 +17,10 @@
   "findings": [
     "保留5个Sujet、每题15问。",
     "调整孩子就寝时间、洗澡频率和宠物活动问法；避免朋友题中将对方默认作女性。",
-    "与完整备份对照，人工校订中文译文75行。"
+    "与完整备份对照，人工校订中文译文75行。",
+    "Piper fr_FR-siwis-medium exact text/index/audio coverage passed: 59/59 unique questions; all 3 referenced pack files exist and every record embeds the matching French text and audio."
   ],
-  "limitations": [
-    "需完成Piper音频重建及Pages部署检查。"
-  ],
+  "limitations": [],
   "changes": [
     {
       "month": "2026-10",
@@ -1321,11 +1320,16 @@
     }
   ],
   "piperCoverage": {
-    "status": "pending-generation",
+    "status": "passed",
     "voice": "fr_FR-siwis-medium",
     "uniqueFrenchQuestions": 59,
-    "matched": 0,
-    "missing": "pending"
+    "matched": 59,
+    "missing": [],
+    "resourcePacks": 3,
+    "allReferencedPacksExist": true,
+    "allEmbeddedTextsMatch": true,
+    "allRecordsContainAudio": true,
+    "buildCommit": "45594b97b560318e4e071c4066f2367d351fc70d"
   },
   "runtimeChecks": {
     "sujetCount": 5,
@@ -1336,6 +1340,14 @@
     "allRowsHaveFrenchAndChinese": true,
     "noDuplicateFrenchPerSujet": true,
     "frenchProgressKeysDifferFromOriginal": true,
-    "followMarkerRows": 0
+    "followMarkerRows": 0,
+    "sourceAndRuntimeRowsMatch": true,
+    "allFrenchQuestionsHavePiperAudio": true
+  },
+  "deployment": {
+    "status": "success",
+    "buildWorkflowRun": 39104427243,
+    "pagesWorkflowRun": 39104427229,
+    "pagesStatus": "success"
   }
 }
