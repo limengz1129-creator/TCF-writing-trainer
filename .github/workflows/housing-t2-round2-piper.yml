@@ -3,6 +3,7 @@ on:
   push:
     branches: [main]
     paths:
+      - 'tache2/real-exams/data/housing.json'
       - 'tools/piper/real-exam-themes/housing_round2_audio.py'
       - '.github/workflows/housing-t2-round2-piper.yml'
   workflow_dispatch:
