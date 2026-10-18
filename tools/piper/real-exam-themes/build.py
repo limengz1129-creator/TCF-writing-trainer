@@ -129,7 +129,7 @@ def build_one(slug,model_path,known,do_git):
     manifest=read_manifest(); newpacks=add_audio(slug,all_fr,model_path,manifest)
     mf=AUDIO/"manifest.json"; (AUDIO/"README.md").write_text("# T2 real-exam theme Piper audio\n\nStatic pre-generated Piper fr_FR-siwis-medium audio. No browser TTS or paid API.\n",encoding="utf-8")
     meta_path=DATA/"themes.json";meta=json.loads(meta_path.read_text(encoding="utf-8")) if meta_path.exists() else {}
-    meta[slug]={"title":obj["title"],"count":obj["count"],"rows":obj["count"]*15,"translation":"nllb-200-distilled-600M","voice":"fr_FR-siwis-medium"}
+    meta[slug]={"title":obj["title"],"count":obj["count"],"rows":obj["count"]*15,"translation":obj["_build"]["translation"],"voice":"fr_FR-siwis-medium"}
     meta_path.write_text(json.dumps(meta,ensure_ascii=False,separators=(",",":")),encoding="utf-8")
     # Validate exact theme correspondence and audio coverage before checkpoint commit.
     check=json.loads(data_path.read_text(encoding="utf-8")); man=json.loads(mf.read_text(encoding="utf-8"))

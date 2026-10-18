@@ -1,0 +1,3077 @@
+{
+  "version": "transport-review-2026-10-18-v1",
+  "theme": "交通与车辆",
+  "sujets": 13,
+  "questionSlots": 195,
+  "status": "ready_for_audio_rebuild",
+  "approval": "not_passed",
+  "source": "tache2/real-exams/source/transport.json.gz.b64",
+  "runtime": "tache2/real-exams/data/transport.json",
+  "reviewMethod": [
+    "保留每Sujet15问并逐问检查疑问结构、口语自然度和信息角度。",
+    "逐题按身份核查tu/vous，校对过去经历、现状、未来安排和条件语境。",
+    "全部195条中文与法语逐句复核，记录所有译文变更。",
+    "改动法语问题使用新progressKey，避免继承原已掌握状态。",
+    "Piper生成后核验精确文本索引与音频资源，Pages部署成功后通过。"
+  ],
+  "findings": [
+    "保留13个Sujet，每题15问；历史重复题组未删减。",
+    "修正包裹尺寸和公交发车频率表达；接机Sujet中替换同义重复问法；自行车出售题将近义议价问题调整为支付方式问题。",
+    "与完整备份对照，人工校订中文译文193行。"
+  ],
+  "limitations": [
+    "需完成Piper及Pages部署检查。"
+  ],
+  "changes": [
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 1,
+      "oldFr": "Qu’est-ce que vous proposez comme voitures à la location ?",
+      "newFr": "Quels types de voitures proposez-vous à la location ?",
+      "zh": "您提供哪些车型出租？",
+      "reason": "明确询问可租车型，使用更简洁自然的问法。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 3,
+      "oldFr": "Le paquet fait quelles dimensions ?",
+      "newFr": "Quelles sont les dimensions du paquet ?",
+      "zh": "这个包裹的尺寸是多少？",
+      "reason": "将不自然的口语尺寸问法改为标准自然表达。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 8,
+      "oldFr": "Tu penses que je peux le transporter facilement toute seule ?",
+      "newFr": "Tu penses que je pourrai le transporter facilement toute seule ?",
+      "zh": "你觉得我一个人能方便地把它运过去吗？",
+      "reason": "明确询问之后代为运送的可行性，使用将来时。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 8,
+      "oldFr": "Est-ce qu’il y a un détail particulier qui pourrait m’aider à les reconnaître ?",
+      "newFr": "Ont-ils besoin d’aide pour récupérer leurs bagages ou se déplacer dans l’aéroport ?",
+      "zh": "他们在取行李或在机场内行动时需要帮忙吗？",
+      "reason": "避免与上一问重复询问辨认特征，改问接机时可能需要的实际协助。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 4,
+      "oldFr": "Les bus ou le métro passent toutes les combien de minutes ?",
+      "newFr": "À quelle fréquence passent les bus et le métro ?",
+      "zh": "公交车和地铁多久一班？",
+      "reason": "调整为更自然清晰的频率问法。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 8,
+      "oldFr": "Est-ce qu’il y a un détail particulier qui pourrait m’aider à les reconnaître ?",
+      "newFr": "Ont-ils besoin d’aide pour récupérer leurs bagages ou se déplacer dans l’aéroport ?",
+      "zh": "他们在取行李或在机场内行动时需要帮忙吗？",
+      "reason": "避免与上一问重复询问辨认特征，改问接机时可能需要的实际协助。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 4,
+      "oldFr": "Les bus ou le métro passent toutes les combien de minutes ?",
+      "newFr": "À quelle fréquence passent les bus et le métro ?",
+      "zh": "公交车和地铁多久一班？",
+      "reason": "调整为更自然清晰的频率问法。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 4,
+      "oldFr": "Les bus ou le métro passent toutes les combien de minutes ?",
+      "newFr": "À quelle fréquence passent les bus et le métro ?",
+      "zh": "公交车和地铁多久一班？",
+      "reason": "调整为更自然清晰的频率问法。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 10,
+      "oldFr": "Tu pourrais me faire quelle réduction ?",
+      "newFr": "Quel moyen de paiement préfères-tu ?",
+      "zh": "你比较喜欢哪种付款方式？",
+      "reason": "原问与“价格能否商量”近义，改为询问付款方式，补足不同信息角度。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 3,
+      "oldFr": "Le paquet fait quelles dimensions ?",
+      "newFr": "Quelles sont les dimensions du paquet ?",
+      "zh": "这个包裹的尺寸是多少？",
+      "reason": "将不自然的口语尺寸问法改为标准自然表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 8,
+      "oldFr": "Tu penses que je peux le transporter facilement toute seule ?",
+      "newFr": "Tu penses que je pourrai le transporter facilement toute seule ?",
+      "zh": "你觉得我一个人能方便地把它运过去吗？",
+      "reason": "明确询问之后代为运送的可行性，使用将来时。"
+    }
+  ],
+  "translationEdits": [
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 1,
+      "fr": "Quels types de voitures proposez-vous à la location ?",
+      "oldZh": "你为租车提供什么类型的汽车?",
+      "newZh": "您提供哪些车型出租？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 2,
+      "fr": "Pour des vacances en famille, quel modèle me conseilleriez-vous ?",
+      "oldZh": "你会给我推哪种模式适合家庭度假?",
+      "newZh": "如果是家庭度假，您会推荐哪种车型？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 3,
+      "fr": "Dans quel état sont les véhicules disponibles ?",
+      "oldZh": "车辆的状态如何?",
+      "newZh": "目前可租的车辆状况怎么样？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 4,
+      "fr": "Quel est le tarif de location par jour ?",
+      "oldZh": "每天租多少钱?",
+      "newZh": "每天的租车费用是多少？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 5,
+      "fr": "Faites-vous un tarif réduit pour une location de plusieurs jours ?",
+      "oldZh": "如果我租车几天,有什么折扣吗?",
+      "newZh": "租几天有优惠价吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 6,
+      "fr": "L’assurance est-elle incluse dans le prix ?",
+      "oldZh": "保险是否包括在价格中?",
+      "newZh": "价格包含保险吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 7,
+      "fr": "Qu’est-ce que l’assurance couvre exactement comme dommages ?",
+      "oldZh": "保险有哪些类型的损害?",
+      "newZh": "保险具体承保哪些损坏情况？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 8,
+      "fr": "Qu’est-ce que je dois fournir comme documents pour louer une voiture ?",
+      "oldZh": "我需要提供哪些文件才能租车?",
+      "newZh": "租车需要提供哪些证件？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 9,
+      "fr": "Faut-il avoir un âge minimum ou une certaine ancienneté de permis ?",
+      "oldZh": "有没有最低年龄或老年限?",
+      "newZh": "租车有最低年龄要求或驾照年限要求吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 10,
+      "fr": "Vous avez aussi des voitures électriques ?",
+      "oldZh": "你也提出电动汽车吗?",
+      "newZh": "您也提供电动汽车吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 11,
+      "fr": "Si je choisis un modèle électrique, où pourrai-je le recharger ?",
+      "oldZh": "如果我选择电动型号,我可以在哪里找到充电站?",
+      "newZh": "如果我选择电动车，可以在哪里充电？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 12,
+      "fr": "Le kilométrage est-il limité ?",
+      "oldZh": "有没有里程限制?",
+      "newZh": "租车有里程限制吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 13,
+      "fr": "Comment puis-je régler la location ?",
+      "oldZh": "你接受什么样的支付方式?",
+      "newZh": "租车费用可以怎么支付？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 14,
+      "fr": "Puis-je annuler ou modifier la réservation si nécessaire ?",
+      "oldZh": "预订是否可以取消或更改?",
+      "newZh": "有需要的话，我可以取消或更改预订吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 15,
+      "fr": "Quand dois-je rendre la voiture, et avec quel niveau de carburant ?",
+      "oldZh": "我什么时候送回车,用什么燃料?",
+      "newZh": "我应该什么时候还车？还车时油量需要达到多少？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 1,
+      "fr": "Pour quelle date le paquet doit-il être envoyé au plus tard ?",
+      "oldZh": "包裹最迟要发送到什么日期?",
+      "newZh": "这个包裹最迟需要在什么时候寄出？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 2,
+      "fr": "Où est-ce que je dois aller pour poster le paquet ?",
+      "oldZh": "我应该去哪里把包裹放?",
+      "newZh": "我应该去哪里寄这个包裹？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 3,
+      "fr": "Quelles sont les dimensions du paquet ?",
+      "oldZh": "包裹的尺寸是多少?",
+      "newZh": "这个包裹的尺寸是多少？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 4,
+      "fr": "Quel est son poids approximatif ?",
+      "oldZh": "他大约重多少?",
+      "newZh": "包裹大约有多重？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 5,
+      "fr": "Qu’est-ce qu’il y a dans le paquet ?",
+      "oldZh": "包装里有什么东西?",
+      "newZh": "包裹里装的是什么？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 6,
+      "fr": "Il y a quelque chose de fragile à l’intérieur ?",
+      "oldZh": "这里有什么脆弱的东西吗?",
+      "newZh": "里面有易碎物品吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 7,
+      "fr": "Le paquet est-il déjà bien emballé ?",
+      "oldZh": "包装已经好好了吗?",
+      "newZh": "包裹已经包装好了吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 8,
+      "fr": "Tu penses que je pourrai le transporter facilement toute seule ?",
+      "oldZh": "我可以单独运送吗?",
+      "newZh": "你觉得我一个人能方便地把它运过去吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 9,
+      "fr": "Environ combien de temps faut-il pour faire l’envoi ?",
+      "oldZh": "需要多少时间才能发送?",
+      "newZh": "寄出包裹大概要花多长时间？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 10,
+      "fr": "Combien coûtera l’envoi ?",
+      "oldZh": "送货费用是多少?",
+      "newZh": "寄这个包裹要多少钱？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 11,
+      "fr": "Je dois avancer les frais d’envoi ?",
+      "oldZh": "我是否需要提前送货费用?",
+      "newZh": "寄件费用需要我先垫付吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 12,
+      "fr": "Tu préfères que je choisisse un envoi avec suivi ?",
+      "oldZh": "我们应该选择一个随访的货物吗?",
+      "newZh": "你希望我选可以追踪的寄件服务吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 13,
+      "fr": "Une signature est-elle nécessaire à la réception ?",
+      "oldZh": "接待需要签名吗?",
+      "newZh": "收件时需要签收吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 14,
+      "fr": "Tu m’as bien donné toutes les coordonnées du destinataire ?",
+      "oldZh": "你给了我收件人所有联系方式吗?",
+      "newZh": "你把收件人的完整联系方式都给我了吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 15,
+      "fr": "Si je ne peux finalement pas y aller, quelle autre solution as-tu prévue ?",
+      "oldZh": "如果我终于不能去,你还有什么办法?",
+      "newZh": "如果我最后实在去不了，你安排了什么替代方案？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 1,
+      "fr": "Tes parents arrivent quel jour ?",
+      "oldZh": "你的父母什么时候到来?",
+      "newZh": "你父母哪天到？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 2,
+      "fr": "Leur avion doit atterrir vers quelle heure ?",
+      "oldZh": "他们飞机要到什么时候着陆?",
+      "newZh": "他们的航班预计几点左右降落？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 3,
+      "fr": "Quel est leur numéro de vol ?",
+      "oldZh": "他们的飞行号码是什么?",
+      "newZh": "他们的航班号是多少？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 4,
+      "fr": "Ils arrivent dans quel aéroport ?",
+      "oldZh": "他们到达哪个机场?",
+      "newZh": "他们会抵达哪个机场？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 5,
+      "fr": "Tu sais dans quel terminal ils arrivent ?",
+      "oldZh": "你知道他们会到达哪个终端吗?",
+      "newZh": "你知道他们会到达哪个航站楼吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 6,
+      "fr": "Tes parents ont quel âge ?",
+      "oldZh": "你父母有多年?",
+      "newZh": "你父母多大年纪？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 7,
+      "fr": "Comment puis-je les reconnaître facilement ?",
+      "oldZh": "我怎么能轻松识别他们呢?",
+      "newZh": "我怎么才能轻松认出他们？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 8,
+      "fr": "Ont-ils besoin d’aide pour récupérer leurs bagages ou se déplacer dans l’aéroport ?",
+      "oldZh": "他们穿着衣服或外观有什么特别细节吗?",
+      "newZh": "他们在取行李或在机场内行动时需要帮忙吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 9,
+      "fr": "Ils auront beaucoup de bagages ?",
+      "oldZh": "他们会有很多行李吗?",
+      "newZh": "他们会带很多行李吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 10,
+      "fr": "Comment est-ce que je peux les joindre à leur arrivée ?",
+      "oldZh": "当他们到达时,我如何联系他们?",
+      "newZh": "他们抵达后，我怎么联系他们？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 11,
+      "fr": "Tu veux que je les attende où exactement ?",
+      "oldZh": "你希望我在哪里等他们?",
+      "newZh": "你希望我具体在哪里等他们？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 12,
+      "fr": "Après les avoir récupérés, où dois-je les conduire ?",
+      "oldZh": "在收回后,我应该把它们带到哪里?",
+      "newZh": "接到他们之后，我应该把他们送到哪里？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 13,
+      "fr": "Est-ce qu’on peut se garer facilement près du terminal ?",
+      "oldZh": "站点附近有没有方便的停车场?",
+      "newZh": "航站楼附近停车方便吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 14,
+      "fr": "Qu’est-ce que je fais si leur vol est retardé ?",
+      "oldZh": "如果他们的飞行迟到,我该怎么办?",
+      "newZh": "如果他们的航班延误了，我该怎么办？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 15,
+      "fr": "Si je ne peux pas venir au dernier moment, quelle solution de remplacement prévois-tu ?",
+      "oldZh": "如果我不能到最后一刻,你有什么替代方案?",
+      "newZh": "如果我临时去不了，你安排了什么替代办法？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 1,
+      "fr": "Qu’est-ce qu’il y a comme transports en commun dans la ville ?",
+      "oldZh": "市内有哪些公共交通工具?",
+      "newZh": "这座城市有哪些公共交通工具？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 2,
+      "fr": "Pour me déplacer facilement, lequel me conseilleriez-vous ?",
+      "oldZh": "你会给我建议哪一个可以让我轻松地移动?",
+      "newZh": "为了出行方便，您会推荐哪种交通方式？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 3,
+      "fr": "Quelles lignes permettent d’aller au centre-ville ?",
+      "oldZh": "城市中心有哪些线路?",
+      "newZh": "哪些线路可以到市中心？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 4,
+      "fr": "À quelle fréquence passent les bus et le métro ?",
+      "oldZh": "公共汽车或地铁的频率是多少?",
+      "newZh": "公交车和地铁多久一班？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 5,
+      "fr": "À partir de quelle heure circulent les premiers bus ou métros ?",
+      "oldZh": "第一次公共汽车或地铁什么时候上班?",
+      "newZh": "最早的公交车或地铁几点开始运行？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 6,
+      "fr": "Et jusqu’à quelle heure circulent-ils le soir ?",
+      "oldZh": "最后的时间是什么时候?",
+      "newZh": "晚上公交车和地铁最晚运行到几点？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 7,
+      "fr": "Quel est le prix d’un trajet ?",
+      "oldZh": "一个旅行需要多少钱?",
+      "newZh": "单程票价是多少？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 8,
+      "fr": "Peut-on acheter un pass ou un abonnement valable plusieurs jours ?",
+      "oldZh": "有没有几天的通票或订阅?",
+      "newZh": "可以买多日通票或多日有效的月票吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 9,
+      "fr": "Les étudiants ont-ils droit à une réduction ?",
+      "oldZh": "有没有学生卡的折扣吗?",
+      "newZh": "学生可以享受优惠吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 10,
+      "fr": "Où est-ce qu’on achète les billets ou qu’on recharge une carte ?",
+      "oldZh": "哪里可以买票或加载卡?",
+      "newZh": "在哪里可以买车票或给交通卡充值？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 11,
+      "fr": "Vous recommandez une application pour planifier les trajets ?",
+      "oldZh": "有没有计划旅行的应用程序?",
+      "newZh": "您推荐用哪个应用规划路线？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 12,
+      "fr": "Est-ce qu’on peut rejoindre facilement les principaux sites de la ville en transport en commun ?",
+      "oldZh": "城市的主要景点是否受到了充分的服务?",
+      "newZh": "乘坐公共交通方便到达市内的主要景点吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 13,
+      "fr": "Les transports restent-ils sûrs le soir ?",
+      "oldZh": "晚上交通安全吗?",
+      "newZh": "晚上乘坐公共交通安全吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 14,
+      "fr": "Qu’est-ce que je peux faire si je rate mon bus ou mon métro ?",
+      "oldZh": "如果我错过公共汽车或地铁,怎么办?",
+      "newZh": "如果我错过了公交车或地铁，可以怎么办？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 15,
+      "fr": "Pour une nouvelle arrivante, quel moyen de transport serait le plus simple au quotidien ?",
+      "oldZh": "对于新人来说,哪种交通工具是最简单的?",
+      "newZh": "对刚到这里的人来说，日常出行选哪种交通方式最方便？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 1,
+      "fr": "Qu’est-ce que vous proposez comme vélos à la location ?",
+      "oldZh": "你为租车提供哪些类型的自行车?",
+      "newZh": "您提供哪些类型的自行车出租？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 2,
+      "fr": "Pour circuler en ville, quel modèle me conseilleriez-vous ?",
+      "oldZh": "你会给我建议哪个车型可以在城市走动?",
+      "newZh": "如果在城里骑，您会推荐哪种车型？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 3,
+      "fr": "Proposez-vous aussi des vélos électriques ?",
+      "oldZh": "你还建议电动自行车吗?",
+      "newZh": "您也出租电动自行车吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 4,
+      "fr": "Les vélos sont-ils en bon état ?",
+      "oldZh": "自行车的状况如何?",
+      "newZh": "这些自行车的状况好吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 5,
+      "fr": "Quel est le tarif de location par jour ?",
+      "oldZh": "每天租多少钱?",
+      "newZh": "每天的租车费用是多少？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 6,
+      "fr": "Faites-vous un tarif réduit pour plusieurs jours ?",
+      "oldZh": "有几天的折扣吗?",
+      "newZh": "租几天有优惠价吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 8,
+      "fr": "Qu’est-ce que je dois fournir comme documents ?",
+      "oldZh": "我需要提供什么文件?",
+      "newZh": "我需要提供哪些证件？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 9,
+      "fr": "Le casque est-il compris dans la location ?",
+      "oldZh": "头盔是否配备了自行车?",
+      "newZh": "租金包含头盔吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 10,
+      "fr": "Et l’antivol, est-il également fourni ?",
+      "oldZh": "还有防毒剂吗?",
+      "newZh": "也会提供车锁吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 11,
+      "fr": "Un vélo électrique peut parcourir combien de kilomètres environ ?",
+      "oldZh": "电动自行车的自行车 autonomy是多少?",
+      "newZh": "电动自行车大约能骑多少公里？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 12,
+      "fr": "Où est-ce que je peux le recharger ?",
+      "oldZh": "我可以在哪里充电?",
+      "newZh": "我可以在哪里给它充电？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 13,
+      "fr": "Puis-je essayer le vélo avant de le louer ?",
+      "oldZh": "在租车之前,我可以试看吗?",
+      "newZh": "租之前我可以试骑这辆自行车吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 14,
+      "fr": "Que se passe-t-il si le vélo tombe en panne ?",
+      "oldZh": "如果自行车故障,会发生什么?",
+      "newZh": "如果自行车发生故障怎么办？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 15,
+      "fr": "Où dois-je rendre le vélo, et avant quelle heure ?",
+      "oldZh": "在哪里和什么时候返回自行车?",
+      "newZh": "我应该在哪里还车，最晚几点还？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 1,
+      "fr": "Ottawa dispose-t-elle de beaucoup de pistes cyclables ?",
+      "oldZh": "奥塔瓦有没有很多自行车道?",
+      "newZh": "渥太华的自行车道多吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 2,
+      "fr": "Les pistes cyclables sont-elles bien sécurisées ?",
+      "oldZh": "自行车道安全吗？",
+      "newZh": "自行车道的安全措施完善吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 3,
+      "fr": "Peut-on rejoindre facilement le centre-ville à vélo ?",
+      "oldZh": "我们能否轻松骑自行车到市中心?",
+      "newZh": "骑自行车方便到市中心吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 4,
+      "fr": "Tu sais où je peux louer un vélo facilement ?",
+      "oldZh": "哪里可以轻松租一辆自行车?",
+      "newZh": "你知道在哪里租自行车比较方便吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 5,
+      "fr": "Combien coûte la location ?",
+      "oldZh": "租多少钱?",
+      "newZh": "租车要多少钱？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 6,
+      "fr": "Le port du casque est-il obligatoire ?",
+      "oldZh": "我必须戴戴头盔吗?",
+      "newZh": "骑车必须戴头盔吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 7,
+      "fr": "Quel autre équipement de sécurité me conseilles-tu ?",
+      "oldZh": "你建议我使用哪些其他安全设备?",
+      "newZh": "你还建议我配备哪些安全装备？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 8,
+      "fr": "Trouve-t-on facilement des endroits sûrs pour attacher son vélo ?",
+      "oldZh": "容易找到安全锁自行车的地方吗？",
+      "newZh": "容易找到安全的地方锁自行车吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 9,
+      "fr": "Qu’est-ce que je dois connaître comme règles de circulation ?",
+      "oldZh": "你需要知道什么交通规则?",
+      "newZh": "我需要了解哪些交通规则？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 10,
+      "fr": "Peut-on circuler à vélo toute l’année à Ottawa ?",
+      "oldZh": "我们可以在奥塔瓦骑自行车吗?",
+      "newZh": "在渥太华全年都适合骑自行车吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 11,
+      "fr": "Un vélo électrique serait-il pratique pour se déplacer en ville ?",
+      "oldZh": "电动自行车是否适合在城市旅行?",
+      "newZh": "在城里出行，电动自行车会方便吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 12,
+      "fr": "Trouve-t-on facilement des bornes de recharge pour les vélos électriques ?",
+      "oldZh": "有没有电动自行车充电站?",
+      "newZh": "容易找到电动自行车充电站吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 13,
+      "fr": "Est-ce facile de combiner vélo et transports en commun ?",
+      "oldZh": "我们能否轻松地将自行车与公共交通工具结合起来?",
+      "newZh": "骑自行车和乘公共交通衔接方便吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 14,
+      "fr": "Le vélo reste-t-il pratique aux heures de pointe ?",
+      "oldZh": "在高峰时刻,自行车是否仍然适合?",
+      "newZh": "高峰时段骑车还方便吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 15,
+      "fr": "Pour une nouvelle arrivante, tu me conseillerais vraiment de circuler à vélo ?",
+      "oldZh": "对于新人来说,你真的建议我骑自行车吗?",
+      "newZh": "对刚到这里的人，你真的会建议我骑自行车出行吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 1,
+      "fr": "Vous partez d’où exactement ?",
+      "oldZh": "你到底要从哪里去?",
+      "newZh": "您具体从哪里出发？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 2,
+      "fr": "Vous allez où habituellement ?",
+      "oldZh": "你通常去哪里?",
+      "newZh": "您通常去哪里？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 3,
+      "fr": "Vous partez vers quelle heure le matin ?",
+      "oldZh": "你早上什么时候离开?",
+      "newZh": "您早上大约几点出发？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 4,
+      "fr": "Et vous rentrez vers quelle heure le soir ?",
+      "oldZh": "你晚上什么时候回来?",
+      "newZh": "您晚上大约几点回来？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 5,
+      "fr": "Vous faites ce trajet combien de fois par semaine ?",
+      "oldZh": "你每周行这么多次?",
+      "newZh": "您每周走这条路线几次？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 6,
+      "fr": "On se retrouve où avant de partir ?",
+      "oldZh": "在我们离开之前,我们会在哪里?",
+      "newZh": "出发前我们在哪里碰面？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 7,
+      "fr": "Vous êtes généralement combien dans la voiture ?",
+      "oldZh": "通常有多少人乘坐汽车?",
+      "newZh": "车里通常有几个人？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 8,
+      "fr": "Ça me coûterait combien par trajet ?",
+      "oldZh": "我每次旅行要付多少钱?",
+      "newZh": "每趟我要付多少钱？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 9,
+      "fr": "Comment est-ce que vous partagez les frais ?",
+      "oldZh": "我们如何划分费用?",
+      "newZh": "你们怎么分摊费用？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 10,
+      "fr": "L’horaire peut-il être légèrement modifié si nécessaire ?",
+      "oldZh": "如果有需要，时间可以稍微调整吗？",
+      "newZh": "有需要时，时间可以稍作调整吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 11,
+      "fr": "Que se passe-t-il si l’un de nous doit annuler au dernier moment ?",
+      "oldZh": "如果我们每个人必须在最后一刻取消,会发生什么?",
+      "newZh": "如果我们其中一人临时需要取消，该怎么办？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 12,
+      "fr": "Comment est-ce qu’on reste en contact le jour du trajet ?",
+      "oldZh": "当天怎么保持联系？",
+      "newZh": "出行当天我们怎么保持联系？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 13,
+      "fr": "Je peux prendre un sac ou quelques affaires avec moi ?",
+      "oldZh": "我可以带一个袋子或一些东西吗?",
+      "newZh": "我可以带一个包或几件随身物品吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 14,
+      "fr": "Votre assurance couvre-t-elle les passagers ?",
+      "oldZh": "你的保险是否覆盖乘客?",
+      "newZh": "您的保险承保乘客吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 15,
+      "fr": "Serait-il possible d’essayer une fois avant que je m’engage régulièrement ?",
+      "oldZh": "在我定期参与之前,我们可以试一次吗?",
+      "newZh": "在我固定搭乘之前，可以先试一次吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 1,
+      "fr": "Tes parents arrivent quel jour ?",
+      "oldZh": "你的父母什么时候到来?",
+      "newZh": "你父母哪天到？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 2,
+      "fr": "Leur avion doit atterrir vers quelle heure ?",
+      "oldZh": "他们飞机要到什么时候着陆?",
+      "newZh": "他们的航班预计几点左右降落？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 3,
+      "fr": "Quel est leur numéro de vol ?",
+      "oldZh": "他们的飞行号码是什么?",
+      "newZh": "他们的航班号是多少？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 4,
+      "fr": "Ils arrivent dans quel aéroport ?",
+      "oldZh": "他们到达哪个机场?",
+      "newZh": "他们会抵达哪个机场？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 5,
+      "fr": "Tu sais dans quel terminal ils arrivent ?",
+      "oldZh": "你知道他们会到达哪个终端吗?",
+      "newZh": "你知道他们会到达哪个航站楼吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 6,
+      "fr": "Tes parents ont quel âge ?",
+      "oldZh": "你父母有多年?",
+      "newZh": "你父母多大年纪？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 7,
+      "fr": "Comment puis-je les reconnaître facilement ?",
+      "oldZh": "我怎么能轻松识别他们呢?",
+      "newZh": "我怎么才能轻松认出他们？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 8,
+      "fr": "Ont-ils besoin d’aide pour récupérer leurs bagages ou se déplacer dans l’aéroport ?",
+      "oldZh": "他们穿着衣服或外观有什么特别细节吗?",
+      "newZh": "他们在取行李或在机场内行动时需要帮忙吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 9,
+      "fr": "Ils auront beaucoup de bagages ?",
+      "oldZh": "他们会有很多行李吗?",
+      "newZh": "他们会带很多行李吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 10,
+      "fr": "Comment est-ce que je peux les joindre à leur arrivée ?",
+      "oldZh": "当他们到达时,我如何联系他们?",
+      "newZh": "他们抵达后，我怎么联系他们？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 11,
+      "fr": "Tu veux que je les attende où exactement ?",
+      "oldZh": "你希望我在哪里等他们?",
+      "newZh": "你希望我具体在哪里等他们？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 12,
+      "fr": "Après les avoir récupérés, où dois-je les conduire ?",
+      "oldZh": "在收回后,我应该把它们带到哪里?",
+      "newZh": "接到他们之后，我应该把他们送到哪里？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 13,
+      "fr": "Est-ce qu’on peut se garer facilement près du terminal ?",
+      "oldZh": "站点附近有没有方便的停车场?",
+      "newZh": "航站楼附近停车方便吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 14,
+      "fr": "Qu’est-ce que je fais si leur vol est retardé ?",
+      "oldZh": "如果他们的飞行迟到,我该怎么办?",
+      "newZh": "如果他们的航班延误了，我该怎么办？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 15,
+      "fr": "Si je ne peux pas venir au dernier moment, quelle solution de remplacement prévois-tu ?",
+      "oldZh": "如果我不能到最后一刻,你有什么替代方案?",
+      "newZh": "如果我临时去不了，你安排了什么替代办法？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 1,
+      "fr": "Qu’est-ce que la ville propose comme transports en commun ?",
+      "oldZh": "城市提供哪些公共交通工具?",
+      "newZh": "这座城市有哪些公共交通工具？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 2,
+      "fr": "Pour commencer, quel moyen de transport me conseilleriez-vous ?",
+      "oldZh": "首先,你建议我使用哪种交通工具?",
+      "newZh": "刚开始时，您会推荐我乘坐哪种交通工具？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 3,
+      "fr": "Quelles lignes vont directement au centre-ville ?",
+      "oldZh": "到市中心有哪些线路?",
+      "newZh": "哪些线路可以直达市中心？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 4,
+      "fr": "À quelle fréquence passent les bus et le métro ?",
+      "oldZh": "公共汽车或地铁的频率是多少?",
+      "newZh": "公交车和地铁多久一班？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 5,
+      "fr": "À partir de quelle heure circulent les premiers bus ou métros ?",
+      "oldZh": "第一次公共汽车或地铁什么时候上班?",
+      "newZh": "最早的公交车或地铁几点开始运行？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 6,
+      "fr": "Et jusqu’à quelle heure circulent-ils le soir ?",
+      "oldZh": "最后的时间是什么时候?",
+      "newZh": "晚上公交车和地铁最晚运行到几点？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 7,
+      "fr": "Quel est le prix d’un trajet ?",
+      "oldZh": "一个旅行需要多少钱?",
+      "newZh": "单程票价是多少？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 8,
+      "fr": "Peut-on acheter un pass à la journée ou à la semaine ?",
+      "oldZh": "有没有每日或每周的通行证?",
+      "newZh": "可以买日票或周票吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 9,
+      "fr": "Est-ce qu’un tarif étudiant est proposé ?",
+      "oldZh": "有没有学生卡的折扣价格?",
+      "newZh": "有学生票价吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 10,
+      "fr": "Où est-ce que je peux acheter les billets ?",
+      "oldZh": "在哪里可以买票?",
+      "newZh": "我可以在哪里买车票？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 11,
+      "fr": "Le même billet permet-il de faire une correspondance ?",
+      "oldZh": "我可以用同一张纸币进行电信吗?",
+      "newZh": "同一张票可以换乘吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 12,
+      "fr": "Existe-t-il une application officielle pour consulter les horaires ?",
+      "oldZh": "有没有官方应用程序查看时间表?",
+      "newZh": "有官方应用可以查询时刻表吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 13,
+      "fr": "Est-ce qu’on peut les prendre sans problème le soir ?",
+      "oldZh": "晚上交通安全吗?",
+      "newZh": "晚上乘坐这些交通工具安全吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 14,
+      "fr": "Comment ça se passe en cas de retard ou d’interruption du service ?",
+      "oldZh": "如果服务延迟或中断,我该怎么办?",
+      "newZh": "如果延误或服务中断，通常怎么处理？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 15,
+      "fr": "Si je les utilise tous les jours, quel abonnement serait le plus avantageux ?",
+      "oldZh": "如果我每天使用它们,哪个订阅会更好呢?",
+      "newZh": "如果我每天都乘坐，买哪种月票最划算？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 1,
+      "fr": "Qu’est-ce que la ville propose comme transports en commun ?",
+      "oldZh": "城市提供哪些公共交通工具?",
+      "newZh": "这座城市有哪些公共交通工具？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 2,
+      "fr": "Pour commencer, quel moyen de transport me conseilleriez-vous ?",
+      "oldZh": "首先,你建议我使用哪种交通工具?",
+      "newZh": "刚开始时，您会推荐我乘坐哪种交通工具？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 3,
+      "fr": "Quelles lignes vont directement au centre-ville ?",
+      "oldZh": "到市中心有哪些线路?",
+      "newZh": "哪些线路可以直达市中心？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 4,
+      "fr": "À quelle fréquence passent les bus et le métro ?",
+      "oldZh": "公共汽车或地铁的频率是多少?",
+      "newZh": "公交车和地铁多久一班？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 5,
+      "fr": "À partir de quelle heure circulent les premiers bus ou métros ?",
+      "oldZh": "第一次公共汽车或地铁什么时候上班?",
+      "newZh": "最早的公交车或地铁几点开始运行？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 6,
+      "fr": "Et jusqu’à quelle heure circulent-ils le soir ?",
+      "oldZh": "最后的时间是什么时候?",
+      "newZh": "晚上公交车和地铁最晚运行到几点？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 7,
+      "fr": "Quel est le prix d’un trajet ?",
+      "oldZh": "一个旅行需要多少钱?",
+      "newZh": "单程票价是多少？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 8,
+      "fr": "Peut-on acheter un pass à la journée ou à la semaine ?",
+      "oldZh": "有没有每日或每周的通行证?",
+      "newZh": "可以买日票或周票吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 9,
+      "fr": "Est-ce qu’un tarif étudiant est proposé ?",
+      "oldZh": "有没有学生卡的折扣价格?",
+      "newZh": "有学生票价吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 10,
+      "fr": "Où est-ce que je peux acheter les billets ?",
+      "oldZh": "在哪里可以买票?",
+      "newZh": "我可以在哪里买车票？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 11,
+      "fr": "Le même billet permet-il de faire une correspondance ?",
+      "oldZh": "我可以用同一张纸币进行电信吗?",
+      "newZh": "同一张票可以换乘吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 12,
+      "fr": "Existe-t-il une application officielle pour consulter les horaires ?",
+      "oldZh": "有没有官方应用程序查看时间表?",
+      "newZh": "有官方应用可以查询时刻表吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 13,
+      "fr": "Est-ce qu’on peut les prendre sans problème le soir ?",
+      "oldZh": "晚上交通安全吗?",
+      "newZh": "晚上乘坐这些交通工具安全吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 14,
+      "fr": "Comment ça se passe en cas de retard ou d’interruption du service ?",
+      "oldZh": "如果服务延迟或中断,我该怎么办?",
+      "newZh": "如果延误或服务中断，通常怎么处理？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 15,
+      "fr": "Si je les utilise tous les jours, quel abonnement serait le plus avantageux ?",
+      "oldZh": "如果我每天使用它们,哪个订阅会更好呢?",
+      "newZh": "如果我每天都乘坐，买哪种月票最划算？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 1,
+      "fr": "De quelle couleur est ton vélo ?",
+      "oldZh": "你的自行车是什么颜色的?",
+      "newZh": "你的自行车是什么颜色？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 2,
+      "fr": "C’est quel modèle exactement ?",
+      "oldZh": "正确的模型是什么?",
+      "newZh": "具体是什么型号？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 3,
+      "fr": "Le cadre fait quelle taille ?",
+      "oldZh": "框架的尺寸是多少?",
+      "newZh": "车架是什么尺寸？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 4,
+      "fr": "Ça fait combien de temps que tu l’utilises ?",
+      "oldZh": "你使用了多久?",
+      "newZh": "你用了这辆车多久了？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 5,
+      "fr": "Dans quel état est-il actuellement ?",
+      "oldZh": "他目前处于什么状态?",
+      "newZh": "它现在的状况怎么样？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 6,
+      "fr": "Tu as déjà dû faire des réparations importantes dessus ?",
+      "oldZh": "他有没有得到任何重大修复?",
+      "newZh": "你以前给它做过大修吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 7,
+      "fr": "Qu’est-ce qui est inclus comme accessoires avec le vélo ?",
+      "oldZh": "哪些配件包括在自行车上?",
+      "newZh": "自行车附带哪些配件？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 8,
+      "fr": "Tu en demandes combien ?",
+      "oldZh": "你需要多少钱?",
+      "newZh": "你打算卖多少钱？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 10,
+      "fr": "Quel moyen de paiement préfères-tu ?",
+      "oldZh": "你能给我什么折扣?",
+      "newZh": "你比较喜欢哪种付款方式？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 11,
+      "fr": "Tu as encore la facture d’achat ?",
+      "oldZh": "你还拿着购物账单吗?",
+      "newZh": "你还留着购买发票吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 12,
+      "fr": "Il est encore sous garantie ?",
+      "oldZh": "他还保证吗?",
+      "newZh": "它还在保修期内吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 13,
+      "fr": "Je peux l’essayer avant de me décider ?",
+      "oldZh": "在我决定之前,我可以试试吗?",
+      "newZh": "我决定之前可以试骑吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 14,
+      "fr": "Tu penses que je pourrais le repeindre dans une autre couleur ?",
+      "oldZh": "我能否用另一种颜色再画呢?",
+      "newZh": "你觉得我可以把它重新喷成别的颜色吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 15,
+      "fr": "Quand est-ce que je peux venir voir et récupérer le vélo ?",
+      "oldZh": "我什么时候可以去看看,拿回自行车?",
+      "newZh": "我什么时候可以过来看看并取走自行车？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 1,
+      "fr": "Vous partez d’où exactement ?",
+      "oldZh": "你到底要从哪里去?",
+      "newZh": "您具体从哪里出发？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 2,
+      "fr": "Vous allez où habituellement ?",
+      "oldZh": "你通常去哪里?",
+      "newZh": "您通常去哪里？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 3,
+      "fr": "Vous partez vers quelle heure le matin ?",
+      "oldZh": "你早上什么时候离开?",
+      "newZh": "您早上大约几点出发？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 4,
+      "fr": "Et vous rentrez vers quelle heure le soir ?",
+      "oldZh": "你晚上什么时候回来?",
+      "newZh": "您晚上大约几点回来？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 5,
+      "fr": "Vous faites ce trajet combien de fois par semaine ?",
+      "oldZh": "你每周行这么多次?",
+      "newZh": "您每周走这条路线几次？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 6,
+      "fr": "On se retrouve où avant de partir ?",
+      "oldZh": "在我们离开之前,我们会在哪里?",
+      "newZh": "出发前我们在哪里碰面？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 7,
+      "fr": "Vous êtes généralement combien dans la voiture ?",
+      "oldZh": "通常有多少人乘坐汽车?",
+      "newZh": "车里通常有几个人？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 8,
+      "fr": "Ça me coûterait combien par trajet ?",
+      "oldZh": "我每次旅行要付多少钱?",
+      "newZh": "每趟我要付多少钱？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 9,
+      "fr": "Comment est-ce que vous partagez les frais ?",
+      "oldZh": "我们如何划分费用?",
+      "newZh": "你们怎么分摊费用？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 10,
+      "fr": "L’horaire peut-il être légèrement modifié si nécessaire ?",
+      "oldZh": "如果有需要，时间可以稍微调整吗？",
+      "newZh": "有需要时，时间可以稍作调整吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 11,
+      "fr": "Que se passe-t-il si l’un de nous doit annuler au dernier moment ?",
+      "oldZh": "如果我们每个人必须在最后一刻取消,会发生什么?",
+      "newZh": "如果我们其中一人临时需要取消，该怎么办？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 12,
+      "fr": "Comment est-ce qu’on reste en contact le jour du trajet ?",
+      "oldZh": "当天怎么保持联系？",
+      "newZh": "出行当天我们怎么保持联系？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 13,
+      "fr": "Je peux prendre un sac ou quelques affaires avec moi ?",
+      "oldZh": "我可以带一个袋子或一些东西吗?",
+      "newZh": "我可以带一个包或几件随身物品吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 14,
+      "fr": "Votre assurance couvre-t-elle les passagers ?",
+      "oldZh": "你的保险是否覆盖乘客?",
+      "newZh": "您的保险承保乘客吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 15,
+      "fr": "Serait-il possible d’essayer une fois avant que je m’engage régulièrement ?",
+      "oldZh": "在我定期参与之前,我们可以试一次吗?",
+      "newZh": "在我固定搭乘之前，可以先试一次吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 1,
+      "fr": "Pour quelle date le paquet doit-il être envoyé au plus tard ?",
+      "oldZh": "包裹最迟要发送到什么日期?",
+      "newZh": "这个包裹最迟需要在什么时候寄出？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 2,
+      "fr": "Où est-ce que je dois aller pour poster le paquet ?",
+      "oldZh": "我应该去哪里把包裹放?",
+      "newZh": "我应该去哪里寄这个包裹？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 3,
+      "fr": "Quelles sont les dimensions du paquet ?",
+      "oldZh": "包裹的尺寸是多少?",
+      "newZh": "这个包裹的尺寸是多少？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 4,
+      "fr": "Quel est son poids approximatif ?",
+      "oldZh": "他大约重多少?",
+      "newZh": "包裹大约有多重？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 5,
+      "fr": "Qu’est-ce qu’il y a dans le paquet ?",
+      "oldZh": "包装里有什么东西?",
+      "newZh": "包裹里装的是什么？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 6,
+      "fr": "Il y a quelque chose de fragile à l’intérieur ?",
+      "oldZh": "这里有什么脆弱的东西吗?",
+      "newZh": "里面有易碎物品吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 7,
+      "fr": "Le paquet est-il déjà bien emballé ?",
+      "oldZh": "包装已经好好了吗?",
+      "newZh": "包裹已经包装好了吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 8,
+      "fr": "Tu penses que je pourrai le transporter facilement toute seule ?",
+      "oldZh": "我可以单独运送吗?",
+      "newZh": "你觉得我一个人能方便地把它运过去吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 9,
+      "fr": "Environ combien de temps faut-il pour faire l’envoi ?",
+      "oldZh": "需要多少时间才能发送?",
+      "newZh": "寄出包裹大概要花多长时间？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 10,
+      "fr": "Combien coûtera l’envoi ?",
+      "oldZh": "送货费用是多少?",
+      "newZh": "寄这个包裹要多少钱？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 11,
+      "fr": "Je dois avancer les frais d’envoi ?",
+      "oldZh": "我是否需要提前送货费用?",
+      "newZh": "寄件费用需要我先垫付吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 12,
+      "fr": "Tu préfères que je choisisse un envoi avec suivi ?",
+      "oldZh": "我们应该选择一个随访的货物吗?",
+      "newZh": "你希望我选可以追踪的寄件服务吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 13,
+      "fr": "Une signature est-elle nécessaire à la réception ?",
+      "oldZh": "接待需要签名吗?",
+      "newZh": "收件时需要签收吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 14,
+      "fr": "Tu m’as bien donné toutes les coordonnées du destinataire ?",
+      "oldZh": "你给了我收件人所有联系方式吗?",
+      "newZh": "你把收件人的完整联系方式都给我了吗？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 15,
+      "fr": "Si je ne peux finalement pas y aller, quelle autre solution as-tu prévue ?",
+      "oldZh": "如果我终于不能去,你还有什么办法?",
+      "newZh": "如果我最后实在去不了，你安排了什么替代方案？",
+      "reason": "逐句对照法语人工校订，修复错译、漏译及不自然措辞。"
+    }
+  ],
+  "translationEditCount": 193,
+  "entries": [
+    {
+      "month": "2026-10",
+      "number": 1,
+      "sujet": "Je travaille dans une agence de location de voitures au Québec. Vous souhaitez louer une voiture pour vos vacances. Vous me posez des questions pour obtenir des informations (tarifs, conditions de location, documents demandés, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "车型",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "车辆",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "价格",
+          "questionNumbers": [
+            4,
+            5
+          ]
+        },
+        {
+          "name": "保险",
+          "questionNumbers": [
+            6,
+            7
+          ]
+        },
+        {
+          "name": "文件",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "条件",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "电动车",
+          "questionNumbers": [
+            10,
+            11
+          ]
+        },
+        {
+          "name": "里程",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "支付",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "取消",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "归还",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 11,
+        "将来租车": 3,
+        "条件情况": 1
+      },
+      "pronounAndRelevanceReview": "逐题核对身份关系对应的tu/vous、各问题的信息角度、语法结构及过去/现在/未来语境；接机题移除同义重复，自行车交易题补充付款角度。",
+      "translationReview": "本题15句中文均与法语逐句人工校订。",
+      "changeReasons": [
+        {
+          "month": "2026-10",
+          "number": 1,
+          "row": 1,
+          "oldFr": "Qu’est-ce que vous proposez comme voitures à la location ?",
+          "newFr": "Quels types de voitures proposez-vous à la location ?",
+          "zh": "您提供哪些车型出租？",
+          "reason": "明确询问可租车型，使用更简洁自然的问法。"
+        }
+      ],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "sujet": "Je suis votre ami(e). Je dois poster un paquet mais je ne peux pas y aller. Je vous demande de l’aide. Vous me posez des questions pour décider si vous pouvez me rendre ce service (délai, volume, durée, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            9
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            2
+          ]
+        },
+        {
+          "name": "包裹",
+          "questionNumbers": [
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "name": "运输",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            10,
+            11
+          ]
+        },
+        {
+          "name": "服务",
+          "questionNumbers": [
+            12,
+            13
+          ]
+        },
+        {
+          "name": "联系",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "备选",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 11,
+        "将来帮忙": 3,
+        "条件情况": 1
+      },
+      "pronounAndRelevanceReview": "逐题核对身份关系对应的tu/vous、各问题的信息角度、语法结构及过去/现在/未来语境；接机题移除同义重复，自行车交易题补充付款角度。",
+      "translationReview": "本题15句中文均与法语逐句人工校订。",
+      "changeReasons": [
+        {
+          "month": "2026-10",
+          "number": 2,
+          "row": 3,
+          "oldFr": "Le paquet fait quelles dimensions ?",
+          "newFr": "Quelles sont les dimensions du paquet ?",
+          "zh": "这个包裹的尺寸是多少？",
+          "reason": "将不自然的口语尺寸问法改为标准自然表达。"
+        },
+        {
+          "month": "2026-10",
+          "number": 2,
+          "row": 8,
+          "oldFr": "Tu penses que je peux le transporter facilement toute seule ?",
+          "newFr": "Tu penses que je pourrai le transporter facilement toute seule ?",
+          "zh": "你觉得我一个人能方便地把它运过去吗？",
+          "reason": "明确询问之后代为运送的可行性，使用将来时。"
+        }
+      ],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "sujet": "Je suis votre collègue. Je ne pourrai pas aller chercher mes parents à l’aéroport ce week-end. Vous me proposez de me rendre ce service et vous me demandez les informations nécessaires (dates, vol, description physique, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "航班",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "机场",
+          "questionNumbers": [
+            4,
+            5
+          ]
+        },
+        {
+          "name": "人物",
+          "questionNumbers": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "name": "行李",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "联系",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "接人",
+          "questionNumbers": [
+            11,
+            12
+          ]
+        },
+        {
+          "name": "停车",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "延误",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "备选",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 10,
+        "将来接人": 3,
+        "条件情况": 2
+      },
+      "pronounAndRelevanceReview": "逐题核对身份关系对应的tu/vous、各问题的信息角度、语法结构及过去/现在/未来语境；接机题移除同义重复，自行车交易题补充付款角度。",
+      "translationReview": "本题15句中文均与法语逐句人工校订。",
+      "changeReasons": [
+        {
+          "month": "2026-09",
+          "number": 1,
+          "row": 8,
+          "oldFr": "Est-ce qu’il y a un détail particulier qui pourrait m’aider à les reconnaître ?",
+          "newFr": "Ont-ils besoin d’aide pour récupérer leurs bagages ou se déplacer dans l’aéroport ?",
+          "zh": "他们在取行李或在机场内行动时需要帮忙吗？",
+          "reason": "避免与上一问重复询问辨认特征，改问接机时可能需要的实际协助。"
+        }
+      ],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "sujet": "Je suis un ami canadien. Vous venez d’arriver dans ma ville, vous logez chez moi. Vous avez l’intention de vous balader en ville et vous sollicitez mes conseils pour utiliser les transports en commun (type, destination, horaire, tarifs, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "交通",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "线路",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "name": "票价",
+          "questionNumbers": [
+            7,
+            8
+          ]
+        },
+        {
+          "name": "优惠",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "购票",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "规划",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "覆盖",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "安全",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "延误",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 12,
+        "现在建议": 1,
+        "条件情况": 1,
+        "将来出行": 1
+      },
+      "pronounAndRelevanceReview": "逐题核对身份关系对应的tu/vous、各问题的信息角度、语法结构及过去/现在/未来语境；接机题移除同义重复，自行车交易题补充付款角度。",
+      "translationReview": "本题15句中文均与法语逐句人工校订。",
+      "changeReasons": [
+        {
+          "month": "2026-08",
+          "number": 1,
+          "row": 4,
+          "oldFr": "Les bus ou le métro passent toutes les combien de minutes ?",
+          "newFr": "À quelle fréquence passent les bus et le métro ?",
+          "zh": "公交车和地铁多久一班？",
+          "reason": "调整为更自然清晰的频率问法。"
+        }
+      ],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "sujet": "Je suis employé dans une agence de location de vélos. Vous voulez en louer un. Vous effectuez des recherches pour trouver le modèle de vélo qui conviendra le mieux à vos besoins. (modèles, tarifs, fonctionnement, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "车型",
+          "questionNumbers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "车辆",
+          "questionNumbers": [
+            4
+          ]
+        },
+        {
+          "name": "价格",
+          "questionNumbers": [
+            5,
+            6
+          ]
+        },
+        {
+          "name": "押金",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "文件",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "装备",
+          "questionNumbers": [
+            9,
+            10
+          ]
+        },
+        {
+          "name": "电动",
+          "questionNumbers": [
+            11,
+            12
+          ]
+        },
+        {
+          "name": "试用",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "故障",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "归还",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 10,
+        "现在建议": 1,
+        "将来租赁": 2,
+        "将来决定": 1,
+        "条件情况": 1
+      },
+      "pronounAndRelevanceReview": "逐题核对身份关系对应的tu/vous、各问题的信息角度、语法结构及过去/现在/未来语境；接机题移除同义重复，自行车交易题补充付款角度。",
+      "translationReview": "本题15句中文均与法语逐句人工校订。",
+      "changeReasons": [],
+      "translationEditCount": 14
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "sujet": "Je suis votre ami(e) et j’habite à Ottawa. Vous venez d’arriver dans la ville et vous souhaitez circuler à vélo. Vous me posez des questions pour savoir si c’est pratique (pistes, location, matériel, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "路线",
+          "questionNumbers": [
+            1,
+            3
+          ]
+        },
+        {
+          "name": "安全",
+          "questionNumbers": [
+            2
+          ]
+        },
+        {
+          "name": "租赁",
+          "questionNumbers": [
+            4,
+            5
+          ]
+        },
+        {
+          "name": "装备",
+          "questionNumbers": [
+            6,
+            7
+          ]
+        },
+        {
+          "name": "停车",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "交通规则",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "天气",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "电动",
+          "questionNumbers": [
+            11,
+            12
+          ]
+        },
+        {
+          "name": "公交",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "高峰",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 13,
+        "条件情况": 1,
+        "现在建议": 1
+      },
+      "pronounAndRelevanceReview": "逐题核对身份关系对应的tu/vous、各问题的信息角度、语法结构及过去/现在/未来语境；接机题移除同义重复，自行车交易题补充付款角度。",
+      "translationReview": "本题15句中文均与法语逐句人工校订。",
+      "changeReasons": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "sujet": "Je suis votre voisin(e). Je suis conductrice/conducteur et je propose de partager des allers-retours avec ma voiture. Vous êtes intéressé(e) et me posez des questions sur ce type de service (prix, horaires, organisation, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "路线",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "组织",
+          "questionNumbers": [
+            6,
+            7
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            8,
+            9
+          ]
+        },
+        {
+          "name": "灵活性",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "取消",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "联系",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "行李",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "安全",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 11,
+        "条件情况": 2,
+        "将来安排": 1,
+        "将来尝试": 1
+      },
+      "pronounAndRelevanceReview": "逐题核对身份关系对应的tu/vous、各问题的信息角度、语法结构及过去/现在/未来语境；接机题移除同义重复，自行车交易题补充付款角度。",
+      "translationReview": "本题15句中文均与法语逐句人工校订。",
+      "changeReasons": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "sujet": "Je suis votre collègue. Je ne pourrai pas aller chercher mes parents à l’aéroport ce week-end. Vous me proposez de me rendre ce service et vous me demandez les informations nécessaires (dates, vol, description physique, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "航班",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "机场",
+          "questionNumbers": [
+            4,
+            5
+          ]
+        },
+        {
+          "name": "人物",
+          "questionNumbers": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "name": "行李",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "联系",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "接人",
+          "questionNumbers": [
+            11,
+            12
+          ]
+        },
+        {
+          "name": "停车",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "延误",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "备选",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 10,
+        "将来接人": 3,
+        "条件情况": 2
+      },
+      "pronounAndRelevanceReview": "逐题核对身份关系对应的tu/vous、各问题的信息角度、语法结构及过去/现在/未来语境；接机题移除同义重复，自行车交易题补充付款角度。",
+      "translationReview": "本题15句中文均与法语逐句人工校订。",
+      "changeReasons": [
+        {
+          "month": "2026-07",
+          "number": 1,
+          "row": 8,
+          "oldFr": "Est-ce qu’il y a un détail particulier qui pourrait m’aider à les reconnaître ?",
+          "newFr": "Ont-ils besoin d’aide pour récupérer leurs bagages ou se déplacer dans l’aéroport ?",
+          "zh": "他们在取行李或在机场内行动时需要帮忙吗？",
+          "reason": "避免与上一问重复询问辨认特征，改问接机时可能需要的实际协助。"
+        }
+      ],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "sujet": "Je travaille dans l’agence des transports en commun et vous venez d’arriver dans ma ville. Vous me posez des questions pour obtenir des informations (types de transports, tarifs, horaires, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "交通",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "线路",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "name": "票价",
+          "questionNumbers": [
+            7,
+            8
+          ]
+        },
+        {
+          "name": "优惠",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "购票",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "换乘",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "规划",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "安全",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "延误",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 12,
+        "现在建议": 1,
+        "条件情况": 1,
+        "将来出行": 1
+      },
+      "pronounAndRelevanceReview": "逐题核对身份关系对应的tu/vous、各问题的信息角度、语法结构及过去/现在/未来语境；接机题移除同义重复，自行车交易题补充付款角度。",
+      "translationReview": "本题15句中文均与法语逐句人工校订。",
+      "changeReasons": [
+        {
+          "month": "2026-07",
+          "number": 2,
+          "row": 4,
+          "oldFr": "Les bus ou le métro passent toutes les combien de minutes ?",
+          "newFr": "À quelle fréquence passent les bus et le métro ?",
+          "zh": "公交车和地铁多久一班？",
+          "reason": "调整为更自然清晰的频率问法。"
+        }
+      ],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "sujet": "Je travaille dans l’agence des transports en commun et vous venez d’arriver dans ma ville. Vous me posez des questions pour obtenir des informations (types de transports, tarifs, horaires, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "交通",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "线路",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "name": "票价",
+          "questionNumbers": [
+            7,
+            8
+          ]
+        },
+        {
+          "name": "优惠",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "购票",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "换乘",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "规划",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "安全",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "延误",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 12,
+        "现在建议": 1,
+        "条件情况": 1,
+        "将来出行": 1
+      },
+      "pronounAndRelevanceReview": "逐题核对身份关系对应的tu/vous、各问题的信息角度、语法结构及过去/现在/未来语境；接机题移除同义重复，自行车交易题补充付款角度。",
+      "translationReview": "本题15句中文均与法语逐句人工校订。",
+      "changeReasons": [
+        {
+          "month": "2026-07",
+          "number": 3,
+          "row": 4,
+          "oldFr": "Les bus ou le métro passent toutes les combien de minutes ?",
+          "newFr": "À quelle fréquence passent les bus et le métro ?",
+          "zh": "公交车和地铁多久一班？",
+          "reason": "调整为更自然清晰的频率问法。"
+        }
+      ],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "sujet": "Je suis votre ami(e). Je vends mon vélo. Vous êtes intéressé(e). Vous me posez des questions pour obtenir des renseignements sur mon vélo (prix, couleur, modèle, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "车辆",
+          "questionNumbers": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "name": "配件",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "价格",
+          "questionNumbers": [
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "name": "文件",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "保修",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "试骑",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "外观",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "交付",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 11,
+        "过去经历": 1,
+        "将来决定": 1,
+        "将来使用": 1,
+        "将来购买": 1
+      },
+      "pronounAndRelevanceReview": "逐题核对身份关系对应的tu/vous、各问题的信息角度、语法结构及过去/现在/未来语境；接机题移除同义重复，自行车交易题补充付款角度。",
+      "translationReview": "本题15句中文均与法语逐句人工校订。",
+      "changeReasons": [
+        {
+          "month": "2026-07",
+          "number": 4,
+          "row": 10,
+          "oldFr": "Tu pourrais me faire quelle réduction ?",
+          "newFr": "Quel moyen de paiement préfères-tu ?",
+          "zh": "你比较喜欢哪种付款方式？",
+          "reason": "原问与“价格能否商量”近义，改为询问付款方式，补足不同信息角度。"
+        }
+      ],
+      "translationEditCount": 14
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "sujet": "Je suis votre voisin(e). Je suis conductrice/conducteur et je propose de partager des allers-retours avec ma voiture. Vous êtes intéressé(e) et me posez des questions sur ce type de service (prix, horaires, organisation, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "路线",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "组织",
+          "questionNumbers": [
+            6,
+            7
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            8,
+            9
+          ]
+        },
+        {
+          "name": "灵活性",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "取消",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "联系",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "行李",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "安全",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 11,
+        "条件情况": 2,
+        "将来安排": 1,
+        "将来尝试": 1
+      },
+      "pronounAndRelevanceReview": "逐题核对身份关系对应的tu/vous、各问题的信息角度、语法结构及过去/现在/未来语境；接机题移除同义重复，自行车交易题补充付款角度。",
+      "translationReview": "本题15句中文均与法语逐句人工校订。",
+      "changeReasons": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "sujet": "Je suis votre ami(e). Je dois poster un paquet mais je ne peux pas y aller. Je vous demande de l’aide. Vous me posez des questions pour décider si vous pouvez me rendre ce service (délai, volume, durée, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            9
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            2
+          ]
+        },
+        {
+          "name": "包裹",
+          "questionNumbers": [
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "name": "运输",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            10,
+            11
+          ]
+        },
+        {
+          "name": "服务",
+          "questionNumbers": [
+            12,
+            13
+          ]
+        },
+        {
+          "name": "联系",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "备选",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 11,
+        "将来帮忙": 3,
+        "条件情况": 1
+      },
+      "pronounAndRelevanceReview": "逐题核对身份关系对应的tu/vous、各问题的信息角度、语法结构及过去/现在/未来语境；接机题移除同义重复，自行车交易题补充付款角度。",
+      "translationReview": "本题15句中文均与法语逐句人工校订。",
+      "changeReasons": [
+        {
+          "month": "2026-07",
+          "number": 6,
+          "row": 3,
+          "oldFr": "Le paquet fait quelles dimensions ?",
+          "newFr": "Quelles sont les dimensions du paquet ?",
+          "zh": "这个包裹的尺寸是多少？",
+          "reason": "将不自然的口语尺寸问法改为标准自然表达。"
+        },
+        {
+          "month": "2026-07",
+          "number": 6,
+          "row": 8,
+          "oldFr": "Tu penses que je peux le transporter facilement toute seule ?",
+          "newFr": "Tu penses que je pourrai le transporter facilement toute seule ?",
+          "zh": "你觉得我一个人能方便地把它运过去吗？",
+          "reason": "明确询问之后代为运送的可行性，使用将来时。"
+        }
+      ],
+      "translationEditCount": 15
+    }
+  ],
+  "piperCoverage": {
+    "status": "pending-generation",
+    "voice": "fr_FR-siwis-medium",
+    "uniqueFrenchQuestions": 130,
+    "matched": 0,
+    "missing": "pending"
+  },
+  "runtimeChecks": {
+    "sujetCount": 13,
+    "expectedSujetCount": 13,
+    "questionSlots": 195,
+    "expectedQuestionSlots": 195,
+    "allSujetsHave15Questions": true,
+    "allRowsHaveFrenchAndChinese": true,
+    "noDuplicateFrenchPerSujet": true,
+    "frenchProgressKeysDifferFromOriginal": true,
+    "followMarkerRows": 0
+  }
+}
