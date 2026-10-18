@@ -1,0 +1,76 @@
+{
+  "version": "housing-round2-v1",
+  "scope": "住房与安家 33 Sujets",
+  "method": "人工按Sujet审核信息覆盖、问法自然性和结构变化；不为凑时态或句法类型改写正确句子",
+  "questionCount": 495,
+  "sujetCount": 33,
+  "changes": [
+    {
+      "sujet": "2026-10#1",
+      "n": 14,
+      "from": "Les enfants disposent-ils d’un espace ou d’une aire de jeu ?",
+      "to": "Peut-on payer par carte bancaire dans ce supermarché ?",
+      "zh": "可以在这家超市用银行卡付款吗？"
+    },
+    {
+      "sujet": "2026-10#3",
+      "n": 11,
+      "from": "Faut-il payer une caution ?",
+      "to": "Faut-il fournir un garant pour louer la chambre ?",
+      "zh": "租这间房需要提供担保人吗？"
+    },
+    {
+      "sujet": "2026-10#6",
+      "n": 2,
+      "from": "Peut-on suivre des ateliers de cuisine dans le quartier ?",
+      "to": "Il y a aussi des ateliers de cuisine dans le quartier ?",
+      "zh": "这个街区也有烹饪工作坊吗？"
+    },
+    {
+      "sujet": "2026-09#5",
+      "n": 11,
+      "from": "Faut-il payer une caution ?",
+      "to": "Faut-il fournir un garant pour louer la chambre ?",
+      "zh": "租这间房需要提供担保人吗？"
+    },
+    {
+      "sujet": "2026-09#7",
+      "n": 13,
+      "from": "Pourriez-vous me préciser ce point ?",
+      "to": "Y a-t-il des personnes autorisées à entrer dans la maison pendant votre absence ?",
+      "zh": "您不在时，有其他人被允许进入房子吗？"
+    },
+    {
+      "sujet": "2026-07#4",
+      "n": 11,
+      "from": "Faut-il payer une caution ?",
+      "to": "Faut-il fournir un garant pour louer la chambre ?",
+      "zh": "租这间房需要提供担保人吗？"
+    },
+    {
+      "sujet": "2026-07#7",
+      "n": 14,
+      "from": "Les enfants disposent-ils d’un espace ou d’une aire de jeu ?",
+      "to": "Peut-on payer par carte bancaire dans ce supermarché ?",
+      "zh": "可以在这家超市用银行卡付款吗？"
+    },
+    {
+      "sujet": "2026-07#8",
+      "n": 11,
+      "from": "Faut-il payer une caution ?",
+      "to": "Faut-il fournir un garant pour louer la chambre ?",
+      "zh": "租这间房需要提供担保人吗？"
+    },
+    {
+      "sujet": "2026-07#12",
+      "n": 2,
+      "from": "Peut-on suivre des ateliers de cuisine dans le quartier ?",
+      "to": "Il y a aussi des ateliers de cuisine dans le quartier ?",
+      "zh": "这个街区也有烹饪工作坊吗？"
+    }
+  ],
+  "limitations": [
+    "本次主要处理高确定性问题；全部法语真人听音仍待人工验收",
+    "新音频须以 Piper 构建与 Pages 部署结果为准"
+  ]
+}
