@@ -3,8 +3,8 @@
   "theme": "社交聚会与个人生活",
   "sujets": 17,
   "questionSlots": 255,
-  "status": "ready_for_pages_verification",
-  "approval": "not_passed",
+  "status": "passed",
+  "approval": "passed",
   "source": "tache2/real-exams/source/social.json.gz.b64",
   "runtime": "tache2/real-exams/data/social.json",
   "reviewMethod": [
@@ -20,7 +20,8 @@
     "生日回顾题统一朋友关系的tu称呼；城市文章题补足户外休闲角度，减少文化/休闲近义重复。",
     "对照原始完整备份，逐行校订中文译文；255行译文发生修改。",
     "14条跟进提问从法语文本中移除手写箭头，并通过follow字段由界面统一显示跟进标记；单句练习和Piper音频只保留法语问题本身。",
-    "Piper fr_FR-siwis-medium对社交主题212/212条不同法语问句精确覆盖；资源清单和音频文件逐项核验通过。"
+    "Piper fr_FR-siwis-medium对社交主题212/212条不同法语问句精确覆盖；资源清单和音频文件逐项核验通过。",
+    "包含最终社交主题数据和Piper资源的GitHub Pages部署运行成功。"
   ],
   "limitations": [],
   "changes": [
@@ -4085,6 +4086,8 @@
     "allManifestIdsResolveToResource": true,
     "allAudioEmbeddedTextMatchesTarget": true,
     "sourceRowsMatchRuntime": true,
-    "noDuplicateFrenchPerSujet": true
+    "noDuplicateFrenchPerSujet": true,
+    "pagesDeploymentRunId": 39103018582,
+    "pagesDeploymentConclusion": "success"
   }
 }
