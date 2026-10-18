@@ -121,7 +121,7 @@ def build_one(slug,model_path,known,do_git):
     generated=nllb_translate(missing)
     for q in obj["entries"]:
         for row in q["rows"]:
-            row["zh"]=known.get(norm(row["fr"])) or generated.get(row["fr"]) or ""
+            row["zh"]=row.get("zh") or known.get(norm(row["fr"])) or generated.get(row["fr"]) or ""
             assert row["zh"]
             known.setdefault(norm(row["fr"]),row["zh"])
     obj["_build"]={"translation":"nllb-200-distilled-600M","voice":"fr_FR-siwis-medium","rows":obj["count"]*15}

@@ -1,0 +1,4090 @@
+{
+  "version": "social-review-2026-10-18-v1",
+  "theme": "社交聚会与个人生活",
+  "sujets": 17,
+  "questionSlots": 255,
+  "status": "ready_for_audio_rebuild",
+  "approval": "not_passed",
+  "source": "tache2/real-exams/source/social.json.gz.b64",
+  "runtime": "tache2/real-exams/data/social.json",
+  "reviewMethod": [
+    "按原Sujet关系核对vous/tu及礼貌程度；逐问检查疑问词、口语句法、过去经历/现在信息/未来计划时态。",
+    "按信息角度检查15问是否互补；对近义重叠只在有明确收益时改写。",
+    "逐行对照法语人工校订中文译文。",
+    "记录每题大/小维度和时间线分布；法语改句使用新progressKey。",
+    "最终音频由GitHub Actions使用Piper fr_FR-siwis-medium重建并逐字核验资源索引。"
+  ],
+  "findings": [
+    "保留17个Sujet，每题15问。",
+    "修正魁北克三餐名称，区分早餐déjeuner、午餐dîner和晚餐souper。",
+    "生日回顾题统一朋友关系的tu称呼；城市文章题补足户外休闲角度，减少文化/休闲近义重复。",
+    "对照原始完整备份，逐行校订中文译文；255行译文发生修改。",
+    "14条跟进提问从法语文本中移除手写箭头，并通过follow字段由界面统一显示跟进标记；单句练习和Piper音频只保留法语问题本身。"
+  ],
+  "limitations": [
+    "Piper需根据最终法语问句重建并验证资源后，主题才能通过验收。"
+  ],
+  "changes": [
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 5,
+      "oldFr": "↳ À quelle fréquence les appelles-tu ?",
+      "newFr": "À quelle fréquence les appelles-tu ?",
+      "zh": "你多久给他们打一次电话？",
+      "reason": "跟进箭头由界面按follow字段显示；从法语文本中移除标记，确保单句练习和Piper语音只包含问题本身。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 9,
+      "oldFr": "↳ Quel niveau as-tu maintenant ?",
+      "newFr": "Quel niveau as-tu maintenant ?",
+      "zh": "你现在钢琴弹到什么水平了？",
+      "reason": "跟进箭头由界面按follow字段显示；从法语文本中移除标记，确保单句练习和Piper语音只包含问题本身。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 11,
+      "oldFr": "↳ À quelle fréquence en fais-tu ?",
+      "newFr": "À quelle fréquence en fais-tu ?",
+      "zh": "你多久做一次这项运动？",
+      "reason": "跟进箭头由界面按follow字段显示；从法语文本中移除标记，确保单句练习和Piper语音只包含问题本身。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 6,
+      "oldFr": "Quelles activités aviez-vous prévues ?",
+      "newFr": "Quelles activités avais-tu prévues ?",
+      "zh": "你当时安排了哪些活动？",
+      "reason": "生日聚会回顾题面向朋友，统一用 tu；过去已安排的活动用愈过去时。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 9,
+      "oldFr": "Vous aviez choisi quel type de gâteau ?",
+      "newFr": "Tu avais choisi quel type de gâteau ?",
+      "zh": "你当时选了哪种蛋糕？",
+      "reason": "生日聚会回顾题面向朋友，统一用 tu；问题询问聚会前选定的蛋糕。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 12,
+      "oldFr": "↳ Lequel t’a fait le plus plaisir ?",
+      "newFr": "Lequel t’a fait le plus plaisir ?",
+      "zh": "哪件礼物最让你开心？",
+      "reason": "跟进箭头由界面按follow字段显示；从法语文本中移除标记，确保单句练习和Piper语音只包含问题本身。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 8,
+      "oldFr": "↳ Quels documents dois-je remplir ?",
+      "newFr": "Quels documents dois-je remplir ?",
+      "zh": "我需要填写哪些表格？",
+      "reason": "跟进箭头由界面按follow字段显示；从法语文本中移除标记，确保单句练习和Piper语音只包含问题本身。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 12,
+      "oldFr": "↳ Puis-je venir avec mon fils ?",
+      "newFr": "Puis-je venir avec mon fils ?",
+      "zh": "我可以带儿子一起来吗？",
+      "reason": "跟进箭头由界面按follow字段显示；从法语文本中移除标记，确保单句练习和Piper语音只包含问题本身。"
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "row": 4,
+      "oldFr": "À quelle heure déjeune-t-on généralement ?",
+      "newFr": "À quelle heure dîne-t-on généralement au Québec ?",
+      "zh": "在魁北克，人们通常几点吃午饭？",
+      "reason": "按魁北克法语区分三餐名称：déjeuner 是早餐、dîner 是午餐；避免与 petit-déjeuner 重复。"
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "row": 5,
+      "oldFr": "Et à quelle heure dîne-t-on le soir ?",
+      "newFr": "Et à quelle heure soupe-t-on le soir ?",
+      "zh": "那晚上通常几点吃晚饭？",
+      "reason": "按魁北克法语的 souper 表示晚餐，时间线与小维度对应。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 5,
+      "oldFr": "↳ Comment décrirais-tu son architecture ?",
+      "newFr": "Comment décrirais-tu son architecture ?",
+      "zh": "你会怎样描述这座城市的建筑风格？",
+      "reason": "跟进箭头由界面按follow字段显示；从法语文本中移除标记，确保单句练习和Piper语音只包含问题本身。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 8,
+      "oldFr": "↳ Lequel as-tu préféré quand tu l’as visité ?",
+      "newFr": "Lequel as-tu préféré quand tu l’as visité ?",
+      "zh": "你参观过的景点中，最喜欢哪一个？",
+      "reason": "跟进箭头由界面按follow字段显示；从法语文本中移除标记，确保单句练习和Piper语音只包含问题本身。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 10,
+      "oldFr": "Qu’est-ce qu’on peut y faire pendant son temps libre ?",
+      "newFr": "Quelles activités de plein air peut-on y faire ?",
+      "zh": "在这座城市可以参加哪些户外活动？",
+      "reason": "避免与第9问文化活动角度重叠，改问户外休闲活动。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 10,
+      "oldFr": "↳ Y aura-t-il aussi des boissons sans alcool ?",
+      "newFr": "Y aura-t-il aussi des boissons sans alcool ?",
+      "zh": "也会有不含酒精的饮料吗？",
+      "reason": "跟进箭头由界面按follow字段显示；从法语文本中移除标记，确保单句练习和Piper语音只包含问题本身。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 9,
+      "oldFr": "↳ Y a-t-il un entraîneur pour m’aider au début ?",
+      "newFr": "Y a-t-il un entraîneur pour m’aider au début ?",
+      "zh": "刚开始练习时有教练可以指导我吗？",
+      "reason": "跟进箭头由界面按follow字段显示；从法语文本中移除标记，确保单句练习和Piper语音只包含问题本身。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 12,
+      "oldFr": "↳ Est-ce que le matériel est fourni sur place ?",
+      "newFr": "Est-ce que le matériel est fourni sur place ?",
+      "zh": "现场会提供器材吗？",
+      "reason": "跟进箭头由界面按follow字段显示；从法语文本中移除标记，确保单句练习和Piper语音只包含问题本身。"
+    },
+    {
+      "month": "2026-07",
+      "number": 9,
+      "row": 5,
+      "oldFr": "↳ À quelle fréquence les appelles-tu ?",
+      "newFr": "À quelle fréquence les appelles-tu ?",
+      "zh": "你多久给他们打一次电话？",
+      "reason": "跟进箭头由界面按follow字段显示；从法语文本中移除标记，确保单句练习和Piper语音只包含问题本身。"
+    },
+    {
+      "month": "2026-07",
+      "number": 9,
+      "row": 9,
+      "oldFr": "↳ Quel niveau as-tu maintenant ?",
+      "newFr": "Quel niveau as-tu maintenant ?",
+      "zh": "你现在钢琴弹到什么水平了？",
+      "reason": "跟进箭头由界面按follow字段显示；从法语文本中移除标记，确保单句练习和Piper语音只包含问题本身。"
+    },
+    {
+      "month": "2026-07",
+      "number": 9,
+      "row": 11,
+      "oldFr": "↳ À quelle fréquence en fais-tu ?",
+      "newFr": "À quelle fréquence en fais-tu ?",
+      "zh": "你多久做一次这项运动？",
+      "reason": "跟进箭头由界面按follow字段显示；从法语文本中移除标记，确保单句练习和Piper语音只包含问题本身。"
+    }
+  ],
+  "translationEdits": [
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 1,
+      "fr": "Où habites-tu maintenant ?",
+      "oldZh": "你现在住在哪里?",
+      "newZh": "你现在住在哪里？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 2,
+      "fr": "Tu habites dans quel type de logement maintenant ?",
+      "oldZh": "你现在住在什么房子里?",
+      "newZh": "你现在住的是什么类型的房子？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 3,
+      "fr": "Comment va ta famille en ce moment ?",
+      "oldZh": "现在你的家人怎么样?",
+      "newZh": "你家人最近怎么样？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 4,
+      "fr": "Comment restes-tu en contact avec tes parents ?",
+      "oldZh": "你如何与父母保持联系?",
+      "newZh": "你平时怎么和父母保持联系？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 5,
+      "fr": "À quelle fréquence les appelles-tu ?",
+      "oldZh": "你打电话多频?",
+      "newZh": "你多久给他们打一次电话？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 6,
+      "fr": "Qu’est-ce que tu fais surtout pendant ton temps libre en ce moment ?",
+      "oldZh": "你目前的主要休活动是什么?",
+      "newZh": "你最近空闲时主要做些什么？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 7,
+      "fr": "Tu fais aussi des activités culturelles pendant ton temps libre ?",
+      "oldZh": "在你的空时间里,你做什么文化活动?",
+      "newZh": "你空闲时也会参加文化活动吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 8,
+      "fr": "Tu joues toujours du piano ?",
+      "oldZh": "你还在钢琴吗?",
+      "newZh": "你还在弹钢琴吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 9,
+      "fr": "Quel niveau as-tu maintenant ?",
+      "oldZh": "你现在的水平是多少?",
+      "newZh": "你现在钢琴弹到什么水平了？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 10,
+      "fr": "En ce moment, quel sport tu préfères ?",
+      "oldZh": "你现在最喜欢的运动是什么?",
+      "newZh": "你最近最喜欢哪项运动？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 11,
+      "fr": "À quelle fréquence en fais-tu ?",
+      "oldZh": "你经常这样做吗?",
+      "newZh": "你多久做一次这项运动？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 12,
+      "fr": "Qu’est-ce que tu fais comme travail maintenant ?",
+      "oldZh": "你现在做什么工作?",
+      "newZh": "你现在做什么工作？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 13,
+      "fr": "Comment trouves-tu l’ambiance au travail ?",
+      "oldZh": "你怎么看待工作环境?",
+      "newZh": "你觉得工作氛围怎么样？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 14,
+      "fr": "Qu’est-ce que tu fais généralement le week-end ?",
+      "oldZh": "你通常在周末做什么?",
+      "newZh": "你周末通常做些什么？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 15,
+      "fr": "Qu’est-ce qui a le plus changé dans ta vie depuis la dernière fois qu’on s’est vus ?",
+      "oldZh": "自从我们最后一次见面以来,你生活中最发生了什么变化?",
+      "newZh": "从我们上次见面到现在，你的生活变化最大的是哪方面？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 1,
+      "fr": "À quelle heure la soirée a-t-elle commencé ?",
+      "oldZh": "晚上什么时候开始?",
+      "newZh": "晚会是几点开始的？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 2,
+      "fr": "Combien de temps a-t-elle duré ?",
+      "oldZh": "它持续了多久?",
+      "newZh": "晚会持续了多久？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 3,
+      "fr": "Où as-tu fêté ton anniversaire ?",
+      "oldZh": "你在哪里庆祝你的生日?",
+      "newZh": "你在哪里办的生日聚会？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 4,
+      "fr": "Combien de personnes étaient présentes ?",
+      "oldZh": "有多少人?",
+      "newZh": "当时有多少人参加？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 5,
+      "fr": "Qui était là, plutôt ta famille, tes amis ou les deux ?",
+      "oldZh": "谁在这里,不是你的家人,朋友,还是两者?",
+      "newZh": "当时有哪些人参加？是家人、朋友，还是两边都有？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 6,
+      "fr": "Quelles activités avais-tu prévues ?",
+      "oldZh": "你计划做什么活动?",
+      "newZh": "你当时安排了哪些活动？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 7,
+      "fr": "Tu as fait du karaoké ?",
+      "oldZh": "你做过 karaoke吗?",
+      "newZh": "你唱卡拉 OK 了吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 8,
+      "fr": "Tu as aussi joué à des jeux de société ?",
+      "oldZh": "你也曾玩过游戏吗?",
+      "newZh": "你们还玩桌游了吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 9,
+      "fr": "Tu avais choisi quel type de gâteau ?",
+      "oldZh": "你吃过什么样的蛋糕?",
+      "newZh": "你当时选了哪种蛋糕？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 10,
+      "fr": "Qui a préparé le gâteau ?",
+      "oldZh": "谁做了蛋糕?",
+      "newZh": "蛋糕是谁准备的？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 11,
+      "fr": "Tu as reçu quoi comme cadeaux ?",
+      "oldZh": "你收到的礼物是什么?",
+      "newZh": "你收到了什么礼物？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 12,
+      "fr": "Lequel t’a fait le plus plaisir ?",
+      "oldZh": "你最喜欢什么?",
+      "newZh": "哪件礼物最让你开心？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 13,
+      "fr": "Comment était l’ambiance pendant la soirée ?",
+      "oldZh": "晚上气氛如何?",
+      "newZh": "晚会的气氛怎么样？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 14,
+      "fr": "Qu’est-ce que tu as préféré pendant la soirée ?",
+      "oldZh": "晚上你最喜欢什么?",
+      "newZh": "晚会中你最喜欢哪个环节？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 15,
+      "fr": "Comment la soirée s’est-elle terminée ?",
+      "oldZh": "晚上如何结束?",
+      "newZh": "晚会最后是怎么结束的？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 1,
+      "fr": "Quand aura lieu la soirée d’ouverture ?",
+      "oldZh": "什么时候开幕晚会?",
+      "newZh": "开业晚会什么时候举行？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 2,
+      "fr": "À quelle heure commencera la soirée ?",
+      "oldZh": "晚上什么时候开始?",
+      "newZh": "晚会几点开始？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 3,
+      "fr": "Combien de temps durera l’événement ?",
+      "oldZh": "这次活动将持续多久?",
+      "newZh": "活动会持续多久？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 4,
+      "fr": "Où se trouve exactement le restaurant ?",
+      "oldZh": "这家餐厅在哪里?",
+      "newZh": "餐厅具体在哪里？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 5,
+      "fr": "Comment peut-on s’y rendre ?",
+      "oldZh": "我们可以使用哪些交通工具去那里?",
+      "newZh": "可以怎么去那里？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 6,
+      "fr": "Est-ce qu’on peut se garer gratuitement si je viens en voiture ?",
+      "oldZh": "如果我乘车来,有没有免费停车场?",
+      "newZh": "如果我开车来，附近可以免费停车吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 7,
+      "fr": "Comment faut-il s’habiller pour la soirée ?",
+      "oldZh": "晚上我应该穿什么衣服?",
+      "newZh": "参加晚会应该穿什么？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 8,
+      "fr": "Qu’est-ce qui sera proposé au menu ?",
+      "oldZh": "这里有哪些菜单或菜单?",
+      "newZh": "菜单上会有哪些菜？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 9,
+      "fr": "Comme je suis végétarienne, un menu végétarien sera-t-il prévu ?",
+      "oldZh": "因为我是素食主义者,有没有素食菜单?",
+      "newZh": "我是素食者，晚会会提供素食菜单吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 10,
+      "fr": "Et pour les enfants, un menu sera-t-il prévu ?",
+      "oldZh": "还有孩子们的菜单吗?",
+      "newZh": "也会为孩子准备儿童菜单吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 11,
+      "fr": "Pourrai-je discuter un peu avec le chef ?",
+      "oldZh": "我可以和老板聊一下吗?",
+      "newZh": "我可以和主厨聊几句吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 12,
+      "fr": "Comment la soirée va-t-elle se dérouler ?",
+      "oldZh": "今晚会怎么办?",
+      "newZh": "晚会的流程是怎样的？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 13,
+      "fr": "Le repas sera-t-il gratuit ou payant ?",
+      "oldZh": "这顿饭是免费的还是付费的?",
+      "newZh": "这顿饭免费还是收费？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 14,
+      "fr": "Puis-je venir avec mon fils ?",
+      "oldZh": "我可以带我儿子来吗?",
+      "newZh": "我可以带儿子一起来吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 15,
+      "fr": "Dois-je confirmer ma présence à l’avance ?",
+      "oldZh": "我需要提前确认我是否会到这里?",
+      "newZh": "我需要提前确认出席吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 1,
+      "fr": "À quelle date aura lieu le festival ?",
+      "oldZh": "节日时间是什么?",
+      "newZh": "文化节是哪天举行？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 2,
+      "fr": "À quelle heure commencera-t-il ?",
+      "oldZh": "什么时候开始?",
+      "newZh": "文化节几点开始？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 3,
+      "fr": "Combien de temps durera le festival ?",
+      "oldZh": "这个节日将持续多久?",
+      "newZh": "文化节会持续多久？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 4,
+      "fr": "Où aura lieu exactement le festival ?",
+      "oldZh": "这个节日将在哪里举行?",
+      "newZh": "文化节具体在哪里举行？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 5,
+      "fr": "Comment puis-je m’y rendre ?",
+      "oldZh": "我怎么回去呢?",
+      "newZh": "我怎么去那里？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 6,
+      "fr": "Dois-je apporter du matériel ou des outils particuliers ?",
+      "oldZh": "我是否需要特别的设备或工具?",
+      "newZh": "我需要带什么特别的材料或工具吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 7,
+      "fr": "Est-ce que je dois m’inscrire à l’avance pour aider à l’organisation ?",
+      "oldZh": "我需要提前报名吗?",
+      "newZh": "如果要帮忙筹办，我需要提前报名吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 8,
+      "fr": "Quels documents dois-je remplir ?",
+      "oldZh": "我需要填写哪些文件?",
+      "newZh": "我需要填写哪些表格？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 9,
+      "fr": "Qu’est-ce que vous voulez que je fasse sur place ?",
+      "oldZh": "你想让我在场做什么?",
+      "newZh": "您希望我到现场后负责什么？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 10,
+      "fr": "À quelle heure dois-je arriver pour aider à la préparation ?",
+      "oldZh": "我到什么时候可以帮忙做准备?",
+      "newZh": "我几点到场帮忙准备比较合适？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 11,
+      "fr": "Qu’est-ce qui est prévu pour les enfants : des ateliers, des activités ?",
+      "oldZh": "有没有为孩子们提供工作坊或活动?",
+      "newZh": "会为孩子安排什么内容，比如工作坊或其他活动？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 12,
+      "fr": "Puis-je venir avec mon fils ?",
+      "oldZh": "我可以带我儿子来吗?",
+      "newZh": "我可以带儿子一起来吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 13,
+      "fr": "La participation est-elle gratuite ou payante ?",
+      "oldZh": "参与是免费的还是付费的?",
+      "newZh": "参加活动免费还是收费？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 14,
+      "fr": "Qui coordonne les bénévoles pendant le festival ?",
+      "oldZh": "在节日期间,谁会协调志愿者?",
+      "newZh": "文化节期间由谁负责协调志愿者？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 15,
+      "fr": "Une attestation de participation est-elle remise après le festival ?",
+      "oldZh": "节日结束后,我们能否获得参加证书?",
+      "newZh": "文化节结束后会发参与证明吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "row": 1,
+      "fr": "Combien de repas mange-t-on généralement par jour au Québec ?",
+      "oldZh": "北克人通常每天吃多少饭?",
+      "newZh": "魁北克人通常一天吃几顿饭？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "row": 2,
+      "fr": "Qu’est-ce que les Québécois prennent généralement au petit-déjeuner ?",
+      "oldZh": "北克人通常吃什么早餐?",
+      "newZh": "魁北克人早餐通常吃些什么？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "row": 3,
+      "fr": "Le café est-il courant le matin ?",
+      "oldZh": "我们早上经常喝咖啡吗?",
+      "newZh": "魁北克人早上通常喝咖啡吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "row": 4,
+      "fr": "À quelle heure dîne-t-on généralement au Québec ?",
+      "oldZh": "我们通常什么时候吃午饭?",
+      "newZh": "在魁北克，人们通常几点吃午饭？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "row": 5,
+      "fr": "Et à quelle heure soupe-t-on le soir ?",
+      "oldZh": "我们晚上吃什么时候?",
+      "newZh": "那晚上通常几点吃晚饭？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "row": 6,
+      "fr": "Qu’est-ce que tu me conseillerais de goûter comme plat typique ?",
+      "oldZh": "你建议我吃哪些典型的食物?",
+      "newZh": "你建议我尝尝哪道当地特色菜？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "row": 7,
+      "fr": "La poutine est-elle vraiment très populaire ?",
+      "oldZh": "波丁真的很受欢迎吗?",
+      "newZh": "Poutine（肉汁奶酪薯条）真的很受欢迎吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "row": 8,
+      "fr": "Qu’est-ce qu’on mange souvent comme dessert typique ?",
+      "oldZh": "我们经常吃什么典型的甜点?",
+      "newZh": "当地常见的特色甜点有哪些？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "row": 9,
+      "fr": "Trouve-t-on facilement des plats végétariens ?",
+      "oldZh": "找到素食菜单是不是很容易的?",
+      "newZh": "在这里容易找到素食菜肴吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "row": 10,
+      "fr": "Qu’est-ce qu’on boit généralement pendant les repas ?",
+      "oldZh": "我们通常在餐时喝什么?",
+      "newZh": "人们吃饭时通常喝什么？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "row": 11,
+      "fr": "Les Québécois vont-ils souvent au restaurant ?",
+      "oldZh": "北克人经常在餐厅吃饭吗?",
+      "newZh": "魁北克人经常去餐馆吃饭吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "row": 12,
+      "fr": "On cuisine beaucoup à la maison en général ?",
+      "oldZh": "我们经常在家做饭吗?",
+      "newZh": "大家平时常在家做饭吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "row": 13,
+      "fr": "Les habitudes alimentaires changent-elles beaucoup le week-end ?",
+      "oldZh": "周末的饮食习惯有什么变化?",
+      "newZh": "周末的饮食习惯会有很大变化吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "row": 14,
+      "fr": "Les repas sont-ils plutôt rapides ou assez longs en général ?",
+      "oldZh": "食物是否很快,或者通常很长时间?",
+      "newZh": "一般来说，用餐时间比较短还是比较长？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "row": 15,
+      "fr": "Pour quelqu’un qui vient de s’installer, qu’est-ce qu’il faudrait goûter en premier ?",
+      "oldZh": "对于新入住者来说,",
+      "newZh": "刚搬来的人最应该先尝尝什么？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 1,
+      "fr": "Quels sont les horaires d’ouverture de la ludothèque ?",
+      "oldZh": "游戏馆开放时间是什么?",
+      "newZh": "玩具图书馆的开放时间是什么？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 2,
+      "fr": "Les horaires sont-ils les mêmes le week-end ?",
+      "oldZh": "周末的时间是相同的吗?",
+      "newZh": "周末的开放时间也一样吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 3,
+      "fr": "Combien coûte l’inscription pour un adulte ?",
+      "oldZh": "一个成年人的报名费用是多少?",
+      "newZh": "成人注册需要多少钱？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 4,
+      "fr": "Et combien coûte l’inscription pour un enfant ?",
+      "oldZh": "一个孩子的报名费用是多少?",
+      "newZh": "儿童注册需要多少钱？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 5,
+      "fr": "Qu’est-ce qu’on peut emprunter comme jeux ?",
+      "oldZh": "我们可以借什么类型的游戏?",
+      "newZh": "这里可以借哪些游戏？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 6,
+      "fr": "Trouve-t-on des jeux adaptés à différents âges ?",
+      "oldZh": "有没有适合不同年龄的游戏?",
+      "newZh": "这里有适合不同年龄段的游戏吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 7,
+      "fr": "Puis-je venir avec mon fils ?",
+      "oldZh": "我可以带我儿子来吗?",
+      "newZh": "我可以带儿子一起来吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 8,
+      "fr": "Du personnel est-il présent pour encadrer et aider les enfants ?",
+      "oldZh": "有没有教导和帮助孩子的员工?",
+      "newZh": "现场有工作人员照看并帮助孩子吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 9,
+      "fr": "Comment puis-je m’inscrire ?",
+      "oldZh": "我怎么能报名?",
+      "newZh": "我该如何办理注册？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 10,
+      "fr": "Qu’est-ce que je dois apporter comme documents pour l’inscription ?",
+      "oldZh": "我需要带来什么文件才能报名?",
+      "newZh": "办理注册需要带哪些证件或材料？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 11,
+      "fr": "Après l’inscription, vais-je recevoir une carte de membre ?",
+      "oldZh": "报名后,我会得到一个会员卡吗?",
+      "newZh": "注册后会给我一张会员卡吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 12,
+      "fr": "Combien de jeux puis-je emprunter à la fois ?",
+      "oldZh": "我可以同时借多少款游戏?",
+      "newZh": "我一次可以借几款游戏？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 13,
+      "fr": "Combien de temps puis-je garder un jeu ?",
+      "oldZh": "我可以多久保持一个游戏?",
+      "newZh": "每款游戏可以借多久？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 14,
+      "fr": "Comment se passe le retour des jeux ?",
+      "oldZh": "我怎么能返回这些游戏?",
+      "newZh": "游戏要怎么归还？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 15,
+      "fr": "Que se passe-t-il si je rends un jeu en retard ?",
+      "oldZh": "如果我延迟比赛,会发生什么?",
+      "newZh": "如果我逾期归还游戏，会有什么后果？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 6,
+      "row": 1,
+      "fr": "À quelle date aura lieu la fête de l’école ?",
+      "oldZh": "校园派对什么时候举行?",
+      "newZh": "学校庆祝活动是哪天举行？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 6,
+      "row": 2,
+      "fr": "Quels seront les horaires de la fête ?",
+      "oldZh": "聚会时间是什么?",
+      "newZh": "活动当天的具体时间是几点到几点？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 6,
+      "row": 3,
+      "fr": "Où aura lieu l’événement ?",
+      "oldZh": "活动将在哪里举行?",
+      "newZh": "活动在哪里举行？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 6,
+      "row": 4,
+      "fr": "Quel est le programme prévu cette année ?",
+      "oldZh": "今年的计划是什么?",
+      "newZh": "今年安排了哪些活动？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 6,
+      "row": 5,
+      "fr": "Qu’est-ce qui est prévu comme jeux ?",
+      "oldZh": "我们会举办哪些游戏?",
+      "newZh": "会安排哪些游戏？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 6,
+      "row": 6,
+      "fr": "Des activités culturelles sont-elles aussi prévues ?",
+      "oldZh": "还会有文化活动吗?",
+      "newZh": "还会安排文化活动吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 6,
+      "row": 7,
+      "fr": "Comment va s’organiser la journée ?",
+      "oldZh": "节目将如何在白天进行?",
+      "newZh": "当天的活动流程是怎样的？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 6,
+      "row": 8,
+      "fr": "Pourriez-vous m’envoyer le programme à l’avance ?",
+      "oldZh": "你能提前发给我这个节目吗?",
+      "newZh": "您能提前把活动安排发给我吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 6,
+      "row": 9,
+      "fr": "Les activités seront-elles bien encadrées et sécurisées pour les enfants ?",
+      "oldZh": "这些活动将对儿童进行适当的监管和安全吗?",
+      "newZh": "孩子参加的活动会有妥善看护并确保安全吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 6,
+      "row": 10,
+      "fr": "Comment se passe l’inscription de mon fils à un atelier ?",
+      "oldZh": "我儿子怎么能登录一个工作室?",
+      "newZh": "我该怎样给儿子报名参加工作坊？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 6,
+      "row": 11,
+      "fr": "La participation est-elle gratuite ou payante ?",
+      "oldZh": "参与是免费的还是付费的?",
+      "newZh": "参加活动免费还是收费？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 6,
+      "row": 12,
+      "fr": "Les activités sont-elles adaptées à tous les âges ?",
+      "oldZh": "活动是否适合所有年龄段的人?",
+      "newZh": "这些活动适合各个年龄段的孩子吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 6,
+      "row": 13,
+      "fr": "Doit-on apporter du matériel pour certains ateliers ?",
+      "oldZh": "我们是否需要为一些研讨会带来设备?",
+      "newZh": "有些工作坊需要自备材料吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 6,
+      "row": 14,
+      "fr": "Les parents peuvent-ils participer à certaines activités avec leurs enfants ?",
+      "oldZh": "父母可以与孩子一起参与某些活动吗?",
+      "newZh": "家长可以和孩子一起参加某些活动吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-09",
+      "number": 6,
+      "row": 15,
+      "fr": "Vaut-il mieux arriver un peu en avance pour certaines animations ?",
+      "oldZh": "我需要提前来看一些动画吗?",
+      "newZh": "参加某些活动最好提前一会儿到吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 1,
+      "fr": "Quelle ville préfères-tu et pourquoi ?",
+      "oldZh": "你最喜欢哪个城市,为什么?",
+      "newZh": "你最喜欢哪个城市？为什么？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 2,
+      "fr": "Où se trouve exactement cette ville ?",
+      "oldZh": "这座城市在哪里?",
+      "newZh": "这座城市具体在哪里？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 3,
+      "fr": "Comment trouves-tu cette ville en général ?",
+      "oldZh": "你一般觉得这个城市是什么样子的?",
+      "newZh": "你总体上觉得这座城市怎么样？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 4,
+      "fr": "Quels bâtiments ou monuments valent vraiment le détour ?",
+      "oldZh": "最有趣的建筑或纪念碑是哪些?",
+      "newZh": "哪些建筑或纪念碑特别值得一看？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 5,
+      "fr": "Comment décrirais-tu son architecture ?",
+      "oldZh": "您如何描述它的建筑?",
+      "newZh": "你会怎样描述这座城市的建筑风格？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 6,
+      "fr": "Qu’est-ce qu’on peut voir comme paysages ou espaces verts ?",
+      "oldZh": "有没有美丽的风景或绿色空间?",
+      "newZh": "这里有哪些值得看的风景或绿地？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 7,
+      "fr": "Quels sites touristiques me conseillerais-tu en priorité ?",
+      "oldZh": "哪些旅游景点最值得注意?",
+      "newZh": "你最推荐我去哪些景点？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 8,
+      "fr": "Lequel as-tu préféré quand tu l’as visité ?",
+      "oldZh": "当你去访时,你最喜欢哪个?",
+      "newZh": "你参观过的景点中，最喜欢哪一个？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 9,
+      "fr": "Que peut-on faire comme activités culturelles dans cette ville ?",
+      "oldZh": "在这个城市可以做什么文化活动?",
+      "newZh": "在这座城市可以参加哪些文化活动？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 10,
+      "fr": "Quelles activités de plein air peut-on y faire ?",
+      "oldZh": "在空的时候,我们可以做些什么呢?",
+      "newZh": "在这座城市可以参加哪些户外活动？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 11,
+      "fr": "Comment se déplace-t-on le plus souvent dans cette ville ?",
+      "oldZh": "我们最多使用哪些交通工具?",
+      "newZh": "在这座城市，人们最常用什么方式出行？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 12,
+      "fr": "Quel quartier me conseillerais-tu de mentionner dans mon article ?",
+      "oldZh": "你建议我在我的文章中提到哪个地区?",
+      "newZh": "你建议我在文章里介绍哪个街区？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 13,
+      "fr": "Qu’est-ce qu’on trouve facilement comme services ou infrastructures ?",
+      "oldZh": "哪些服务或基础设施可以轻松地找到?",
+      "newZh": "在这里容易找到哪些公共服务或基础设施？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 14,
+      "fr": "Comment sont les habitants et l’ambiance de la ville ?",
+      "oldZh": "城市居民和氛围如何?",
+      "newZh": "这座城市的居民和整体氛围怎么样？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 15,
+      "fr": "Qu’est-ce que je devrais absolument mettre en avant dans mon article ?",
+      "oldZh": "我应该在文章中强调什么?",
+      "newZh": "你觉得我在文章里一定要突出介绍什么？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 1,
+      "fr": "À quelle date aura lieu ta fête d’anniversaire ?",
+      "oldZh": "你的生日聚会是什么日期?",
+      "newZh": "你的生日聚会定在几号？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 2,
+      "fr": "À quelle heure veux-tu commencer la fête ?",
+      "oldZh": "你想什么时候开始派对?",
+      "newZh": "你想几点开始聚会？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 3,
+      "fr": "Combien de temps veux-tu qu’elle dure ?",
+      "oldZh": "你想让它持续多久?",
+      "newZh": "你希望聚会持续多久？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 4,
+      "fr": "Où aura lieu la fête exactement ?",
+      "oldZh": "聚会将在哪里举行?",
+      "newZh": "聚会具体在哪里举行？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 5,
+      "fr": "Comment les invités pourront-ils s’y rendre ?",
+      "oldZh": "客人怎么能到达这里?",
+      "newZh": "客人可以怎么去聚会地点？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 6,
+      "fr": "Est-ce qu’on pourra se garer à proximité ?",
+      "oldZh": "有没有附近的停车场?",
+      "newZh": "附近可以停车吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 7,
+      "fr": "As-tu déjà réservé le restaurant ou le lieu ?",
+      "oldZh": "你有没有预订过餐厅或地方?",
+      "newZh": "你已经订好餐厅或场地了吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 8,
+      "fr": "Combien de personnes veux-tu inviter ?",
+      "oldZh": "你想邀请多少人?",
+      "newZh": "你打算邀请多少人？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 9,
+      "fr": "Qu’est-ce que tu veux prévoir comme repas ou comme menu ?",
+      "oldZh": "你想安排什么样的餐饮或菜单?",
+      "newZh": "你打算准备什么饭菜或菜单？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 10,
+      "fr": "Est-ce qu’on doit prévoir des plats végétariens ?",
+      "oldZh": "我们是否应该提供素食菜?",
+      "newZh": "我们需要准备素食菜肴吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 11,
+      "fr": "Qui va s’occuper du gâteau et des bougies ?",
+      "oldZh": "谁会照顾蛋糕和?",
+      "newZh": "蛋糕和蜡烛由谁来准备？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 12,
+      "fr": "Tu préfères quel style de décoration ?",
+      "oldZh": "你最喜欢什么样的装饰?",
+      "newZh": "你喜欢什么风格的装饰？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 13,
+      "fr": "Quelles boissons veux-tu prévoir ?",
+      "oldZh": "你想预订什么饮料?",
+      "newZh": "你想准备哪些饮料？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 14,
+      "fr": "Qu’est-ce que je peux apporter pour t’aider ?",
+      "oldZh": "我能做些什么来帮助你?",
+      "newZh": "我可以带些什么来帮忙？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 15,
+      "fr": "Combien faut-il prévoir par personne ?",
+      "oldZh": "每个人大概要准备多少预算？",
+      "newZh": "每人大概要准备多少预算？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 1,
+      "fr": "Quand aura lieu la soirée d’ouverture ?",
+      "oldZh": "什么时候开幕晚会?",
+      "newZh": "开业晚会什么时候举行？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 2,
+      "fr": "À quelle heure commencera la soirée ?",
+      "oldZh": "晚上什么时候开始?",
+      "newZh": "晚会几点开始？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 3,
+      "fr": "Combien de temps durera l’événement ?",
+      "oldZh": "这次活动将持续多久?",
+      "newZh": "活动会持续多久？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 4,
+      "fr": "Où se trouve exactement le restaurant ?",
+      "oldZh": "这家餐厅在哪里?",
+      "newZh": "餐厅具体在哪里？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 5,
+      "fr": "Comment peut-on s’y rendre ?",
+      "oldZh": "我们可以使用哪些交通工具去那里?",
+      "newZh": "可以怎么去那里？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 6,
+      "fr": "Est-ce qu’on peut se garer gratuitement si je viens en voiture ?",
+      "oldZh": "如果我乘车来,有没有免费停车场?",
+      "newZh": "如果我开车来，附近可以免费停车吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 7,
+      "fr": "Comment faut-il s’habiller pour la soirée ?",
+      "oldZh": "晚上我应该穿什么衣服?",
+      "newZh": "参加晚会应该穿什么？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 8,
+      "fr": "Qu’est-ce qui sera proposé au menu ?",
+      "oldZh": "这里有哪些菜单或菜单?",
+      "newZh": "菜单上会有哪些菜？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 9,
+      "fr": "Comme je suis végétarienne, un menu végétarien sera-t-il prévu ?",
+      "oldZh": "因为我是素食主义者,有没有素食菜单?",
+      "newZh": "我是素食者，晚会会提供素食菜单吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 10,
+      "fr": "Et pour les enfants, un menu sera-t-il prévu ?",
+      "oldZh": "还有孩子们的菜单吗?",
+      "newZh": "也会为孩子准备儿童菜单吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 11,
+      "fr": "Pourrai-je discuter un peu avec le chef ?",
+      "oldZh": "我可以和老板聊一下吗?",
+      "newZh": "我可以和主厨聊几句吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 12,
+      "fr": "Comment la soirée va-t-elle se dérouler ?",
+      "oldZh": "今晚会怎么办?",
+      "newZh": "晚会的流程是怎样的？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 13,
+      "fr": "Le repas sera-t-il gratuit ou payant ?",
+      "oldZh": "这顿饭是免费的还是付费的?",
+      "newZh": "这顿饭免费还是收费？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 14,
+      "fr": "Puis-je venir avec mon fils ?",
+      "oldZh": "我可以带我儿子来吗?",
+      "newZh": "我可以带儿子一起来吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 15,
+      "fr": "Dois-je confirmer ma présence à l’avance ?",
+      "oldZh": "我需要提前确认我是否会到这里?",
+      "newZh": "我需要提前确认出席吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 1,
+      "fr": "À quelle date aura lieu le mariage ?",
+      "oldZh": "结婚的日期是什么?",
+      "newZh": "婚礼定在几号？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 2,
+      "fr": "À quelle heure commencera la cérémonie ?",
+      "oldZh": "仪式什么时候开始?",
+      "newZh": "婚礼仪式几点开始？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 3,
+      "fr": "Combien de temps durera la cérémonie ?",
+      "oldZh": "这场仪式将持续多久?",
+      "newZh": "仪式会持续多久？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 4,
+      "fr": "Où aura lieu le mariage exactement ?",
+      "oldZh": "婚礼将在哪里举行?",
+      "newZh": "婚礼具体在哪里举行？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 5,
+      "fr": "Comment puis-je m’y rendre ?",
+      "oldZh": "我怎么回去呢?",
+      "newZh": "我怎么去那里？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 6,
+      "fr": "Est-ce qu’on pourra se garer sur place ?",
+      "oldZh": "有没有停车场?",
+      "newZh": "现场可以停车吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 7,
+      "fr": "Combien d’invités seront présents ?",
+      "oldZh": "有多少人会来?",
+      "newZh": "会有多少位宾客出席？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 8,
+      "fr": "Comment la journée va-t-elle se dérouler ?",
+      "oldZh": "这一天会怎样?",
+      "newZh": "婚礼当天的流程是怎样的？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 9,
+      "fr": "Un repas est-il prévu après la cérémonie ?",
+      "oldZh": "仪式结束后会有什么餐饮吗?",
+      "newZh": "仪式结束后安排了宴席吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 10,
+      "fr": "Comment faut-il s’habiller pour le mariage ?",
+      "oldZh": "有没有特别的服装法?",
+      "newZh": "参加婚礼应该穿什么？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 11,
+      "fr": "Vais-je recevoir une invitation ou une carte avec les détails ?",
+      "oldZh": "我会收到一个邀请书或一张详细的地图吗?",
+      "newZh": "我会收到请柬或附有具体安排的卡片吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 12,
+      "fr": "Qu’est-ce que tu me conseillerais comme cadeau ?",
+      "oldZh": "你能给我建议什么样的礼物?",
+      "newZh": "你建议我送什么礼物？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 13,
+      "fr": "À quel moment vaut-il mieux remettre le cadeau ?",
+      "oldZh": "什么时候最好把礼物交给?",
+      "newZh": "最好什么时候把礼物送给新人？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 14,
+      "fr": "Puis-je venir accompagnée ?",
+      "oldZh": "我可以和你一起来吗?",
+      "newZh": "我可以带一位同伴来吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 15,
+      "fr": "Dois-je confirmer ma présence à l’avance ?",
+      "oldZh": "我需要提前确认我是否会到这里?",
+      "newZh": "我需要提前确认出席吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 1,
+      "fr": "À quelle date aura lieu le dîner ?",
+      "oldZh": "晚餐时间是什么?",
+      "newZh": "聚餐定在几号？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 2,
+      "fr": "À quelle heure doit-on se retrouver ?",
+      "oldZh": "我们要到什么时候见面?",
+      "newZh": "我们几点碰面？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 3,
+      "fr": "Combien de temps le dîner devrait-il durer ?",
+      "oldZh": "晚餐应该持续多久?",
+      "newZh": "这顿晚餐预计会持续多久？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 4,
+      "fr": "Où se trouve exactement le restaurant ?",
+      "oldZh": "这家餐厅在哪里?",
+      "newZh": "餐厅具体在哪里？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 5,
+      "fr": "Comment puis-je y aller ?",
+      "oldZh": "我怎么能去呢?",
+      "newZh": "我怎么去那里？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 6,
+      "fr": "Est-ce que je pourrai me garer à proximité si je viens en voiture ?",
+      "oldZh": "如果我开车来,附近有没有停车场?",
+      "newZh": "如果我开车来，附近可以停车吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 7,
+      "fr": "Qu’est-ce que le restaurant propose comme cuisine ?",
+      "oldZh": "这家餐厅主要是什么菜系？",
+      "newZh": "这家餐厅主打什么菜系？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 8,
+      "fr": "Comme je suis végétarienne, est-ce qu’on trouve des plats végétariens ?",
+      "oldZh": "因为我是素食主义者,有没有素食菜?",
+      "newZh": "我是素食者，这里有素食菜吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 9,
+      "fr": "Combien coûte environ le repas par personne ?",
+      "oldZh": "一个人吃饭的价格是多少?",
+      "newZh": "每人大约要花多少钱？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 10,
+      "fr": "Combien de personnes seront présentes ?",
+      "oldZh": "有多少人会来?",
+      "newZh": "预计有多少人参加？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 11,
+      "fr": "Qui sera là parmi les collègues ?",
+      "oldZh": "哪些同事会在这里?",
+      "newZh": "哪些同事会参加？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 12,
+      "fr": "L’ambiance sera plutôt décontractée ou assez formelle ?",
+      "oldZh": "这样一来,气氛会更轻松,或者还会更正式.",
+      "newZh": "气氛会比较轻松，还是比较正式？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 13,
+      "fr": "Quelque chose est-il prévu après le dîner ?",
+      "oldZh": "我们晚饭后有什么计划吗?",
+      "newZh": "晚餐之后还安排了什么活动吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 14,
+      "fr": "Comment faut-il s’habiller ?",
+      "oldZh": "我们是否需要特别的服装?",
+      "newZh": "需要穿什么样的衣服？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 15,
+      "fr": "Dois-je confirmer ma présence à l’avance ?",
+      "oldZh": "我是否需要提前确认我到来?",
+      "newZh": "我需要提前确认出席吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 1,
+      "fr": "À quelle date aura lieu la fête de l’immeuble ?",
+      "oldZh": "建筑庆典什么时候举行?",
+      "newZh": "楼里的聚会定在几号？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 2,
+      "fr": "À quelle heure commencera-t-elle ?",
+      "oldZh": "什么时候开始?",
+      "newZh": "聚会几点开始？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 3,
+      "fr": "Combien de temps devrait-elle durer ?",
+      "oldZh": "它应该持续多久?",
+      "newZh": "聚会预计会持续多久？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 4,
+      "fr": "Où aura lieu la fête exactement ?",
+      "oldZh": "聚会将在哪里举行?",
+      "newZh": "聚会具体在哪里举行？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 5,
+      "fr": "Combien de personnes seront présentes ?",
+      "oldZh": "有多少人会来?",
+      "newZh": "预计有多少人参加？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 6,
+      "fr": "Puis-je venir avec mon fils ?",
+      "oldZh": "我可以带我儿子来吗?",
+      "newZh": "我可以带儿子一起来吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 7,
+      "fr": "Qu’est-ce qui sera prévu à manger ?",
+      "oldZh": "他们会提供什么菜呢?",
+      "newZh": "聚会上会提供什么吃的？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 8,
+      "fr": "Des plats végétariens seront-ils aussi prévus ?",
+      "oldZh": "还会有蔬菜菜吗?",
+      "newZh": "也会准备素食菜肴吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 9,
+      "fr": "Qu’est-ce qui sera prévu à boire ?",
+      "oldZh": "我们将提供哪些饮料?",
+      "newZh": "聚会上会提供哪些饮料？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 10,
+      "fr": "Y aura-t-il aussi des boissons sans alcool ?",
+      "oldZh": "还有没有酒的饮料吗?",
+      "newZh": "也会有不含酒精的饮料吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 11,
+      "fr": "Qu’est-ce qui est prévu comme activités pendant la soirée ?",
+      "oldZh": "晚上有什么活动?",
+      "newZh": "晚上安排了哪些活动？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 12,
+      "fr": "De la musique ou du karaoké sont-ils prévus ?",
+      "oldZh": "有没有音乐或空调?",
+      "newZh": "会安排音乐或卡拉 OK 吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 13,
+      "fr": "L’ambiance sera plutôt familiale, calme ou festive ?",
+      "oldZh": "氛围会比较家庭化、安静，还是比较热闹？",
+      "newZh": "气氛会比较温馨、安静，还是热闹？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 14,
+      "fr": "Comment faut-il s’habiller ?",
+      "oldZh": "我们是否需要特别的服装?",
+      "newZh": "需要穿什么样的衣服？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 15,
+      "fr": "Vous voulez que j’apporte quelque chose ou que je vous aide à préparer ?",
+      "oldZh": "你需要我带来什么东西,或者帮你做饭吗?",
+      "newZh": "您希望我带点什么来，或帮忙做些准备吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 1,
+      "fr": "Quel jour tes amis vont-ils venir ?",
+      "oldZh": "你的朋友什么时候会来?",
+      "newZh": "你的朋友哪天来？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 2,
+      "fr": "À quelle heure vont-ils arriver ?",
+      "oldZh": "他们到达什么时候?",
+      "newZh": "他们几点到？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 3,
+      "fr": "Combien de temps vont-ils rester ?",
+      "oldZh": "他们要待多久?",
+      "newZh": "他们会待多久？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 4,
+      "fr": "Combien de personnes as-tu invitées ?",
+      "oldZh": "你邀请了多少人?",
+      "newZh": "你邀请了多少人？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 5,
+      "fr": "Des enfants seront-ils aussi présents ?",
+      "oldZh": "还会有孩子吗?",
+      "newZh": "也会有孩子来吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 6,
+      "fr": "Ils font quoi comme travail ?",
+      "oldZh": "他们做什么工作?",
+      "newZh": "他们从事什么工作？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 7,
+      "fr": "Comment décrirais-tu leur caractère ?",
+      "oldZh": "你如何描述他们的性格?",
+      "newZh": "你会怎么形容他们的性格？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 8,
+      "fr": "Ont-ils des habitudes particulières que je devrais connaître ?",
+      "oldZh": "他们有什么特殊的习惯,我应该知道吗?",
+      "newZh": "他们有什么需要我提前了解的特殊习惯吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 9,
+      "fr": "Est-ce que je connais déjà certains de tes amis ?",
+      "oldZh": "我已经认识过你的朋友吗?",
+      "newZh": "我以前见过你的哪些朋友吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 10,
+      "fr": "Tu veux préparer quoi comme repas ?",
+      "oldZh": "你想做什么样的饭?",
+      "newZh": "你打算准备什么饭菜？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 11,
+      "fr": "Est-ce que certains invités sont végétariens ou ont des restrictions alimentaires ?",
+      "oldZh": "有没有素食者或有限制饮食的人?",
+      "newZh": "有些客人是素食者，或有饮食禁忌吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 12,
+      "fr": "Tu préfères qu’on prévoie des boissons alcoolisées ou plutôt sans alcool ?",
+      "oldZh": "应该提供酒精饮料,还是无酒精饮料?",
+      "newZh": "你想准备含酒精的饮料，还是以无酒精饮料为主？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 13,
+      "fr": "Qu’est-ce que vous avez prévu de faire pendant la soirée ?",
+      "oldZh": "晚上你计划做什么?",
+      "newZh": "你们打算晚上做些什么？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 14,
+      "fr": "Certains invités vont-ils dormir chez nous ?",
+      "oldZh": "有没有客人来我们家睡觉吗?",
+      "newZh": "会有客人留宿在我们家吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 15,
+      "fr": "Tu veux que je prépare quelque chose avant leur arrivée ?",
+      "oldZh": "在他们到来之前,你想我做些什么吗?",
+      "newZh": "你希望我在他们到之前准备些什么吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 1,
+      "fr": "Où me conseillerais-tu d’aller pour une sortie culturelle pas chère ?",
+      "oldZh": "你建议我去哪个便宜的文化场所?",
+      "newZh": "你建议我去哪里参加经济实惠的文化活动？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 2,
+      "fr": "Où se trouve exactement cet endroit ?",
+      "oldZh": "这个地方在哪里?",
+      "newZh": "那个地方具体在哪里？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 3,
+      "fr": "Comment puis-je y aller ?",
+      "oldZh": "我怎么能去呢?",
+      "newZh": "我怎么去那里？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 4,
+      "fr": "Comment pourrais-je y aller au moindre coût ?",
+      "oldZh": "哪种交通工具是最便宜的?",
+      "newZh": "怎样去那里最省钱？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 5,
+      "fr": "Combien coûte l’entrée ?",
+      "oldZh": "门票多少钱?",
+      "newZh": "门票多少钱？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 6,
+      "fr": "Les nouveaux arrivants ou les étudiants ont-ils droit à une réduction ?",
+      "oldZh": "对于新来者或学生来说,有没有任何折扣?",
+      "newZh": "新移民或学生可以享受折扣吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 7,
+      "fr": "Qu’est-ce qu’on peut faire sur place ?",
+      "oldZh": "现场活动有哪些?",
+      "newZh": "在那里可以参加哪些活动？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 8,
+      "fr": "Peux-tu me donner quelques exemples d’activités ou d’ateliers ?",
+      "oldZh": "你能给我一些活动或工作坊的例子吗?",
+      "newZh": "你能举几个活动或工作坊的例子吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 9,
+      "fr": "Qu’est-ce qui est prévu pour les enfants ?",
+      "oldZh": "有任何儿童活动吗?",
+      "newZh": "为孩子安排了哪些活动？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 10,
+      "fr": "Les activités pour enfants sont-elles bien encadrées et sécurisées ?",
+      "oldZh": "儿童活动是安全的吗?",
+      "newZh": "儿童活动有妥善看护并确保安全吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 11,
+      "fr": "Peut-on se restaurer sur place ?",
+      "oldZh": "这里有餐厅吗?",
+      "newZh": "那里有地方可以吃饭吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 12,
+      "fr": "Comment se passe l’inscription aux activités ?",
+      "oldZh": "我如何登记活动?",
+      "newZh": "这些活动要怎么报名？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 13,
+      "fr": "Faut-il réserver à l’avance ?",
+      "oldZh": "我必须提前预订吗?",
+      "newZh": "需要提前预订吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 14,
+      "fr": "Dois-je remplir un formulaire pour participer ?",
+      "oldZh": "我必须填写一个表格才能参加吗?",
+      "newZh": "参加前需要填写表格吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 15,
+      "fr": "Au total, combien devrais-je prévoir pour une sortie comme celle-là ?",
+      "oldZh": "总的来说,我应该为这样的外出预计多少钱?",
+      "newZh": "像这样的活动，连同各项开销我总共要准备多少钱？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 1,
+      "fr": "Quel sport pratiques-tu exactement ?",
+      "oldZh": "你从事什么运动?",
+      "newZh": "你具体练的是什么运动？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 2,
+      "fr": "Quel jour pratiques-tu généralement ?",
+      "oldZh": "你通常在什么日子上练习?",
+      "newZh": "你通常星期几练习？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 3,
+      "fr": "À quelle fréquence tu en fais ?",
+      "oldZh": "你经常这样做吗?",
+      "newZh": "你多久练一次？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 4,
+      "fr": "Où se trouve exactement le centre sportif ?",
+      "oldZh": "运动中心在哪里?",
+      "newZh": "体育中心具体在哪里？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 5,
+      "fr": "Comment puis-je y aller ?",
+      "oldZh": "我怎么能去呢?",
+      "newZh": "我怎么去那里？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 6,
+      "fr": "Est-ce que je peux me garer si je viens en voiture ?",
+      "oldZh": "如果我乘车来,有没有停车场?",
+      "newZh": "如果我开车来，可以停车吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 7,
+      "fr": "Qu’est-ce qu’on peut y pratiquer comme activités sportives ?",
+      "oldZh": "在那里提供什么类型的体育活动?",
+      "newZh": "那里还可以参加哪些体育活动？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 8,
+      "fr": "Cette activité convient-elle à une débutante comme moi ?",
+      "oldZh": "这项活动是否适合像我这样的初学者?",
+      "newZh": "这项运动适合我这样的初学者吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 9,
+      "fr": "Y a-t-il un entraîneur pour m’aider au début ?",
+      "oldZh": "有没有教练可以帮助我开始吗?",
+      "newZh": "刚开始练习时有教练可以指导我吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 10,
+      "fr": "Les séances se font-elles en groupe ou individuellement ?",
+      "oldZh": "会议是团体还是个人?",
+      "newZh": "训练是集体进行还是一对一进行？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 11,
+      "fr": "Qu’est-ce que je dois apporter comme équipement ?",
+      "oldZh": "我应该带什么设备?",
+      "newZh": "我需要自备哪些装备？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 12,
+      "fr": "Est-ce que le matériel est fourni sur place ?",
+      "oldZh": "设备是否在现场供应?",
+      "newZh": "现场会提供器材吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 13,
+      "fr": "Combien coûte l’activité ?",
+      "oldZh": "活动的费用是多少?",
+      "newZh": "参加这项活动要多少钱？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 14,
+      "fr": "Est-ce qu’il existe un tarif réduit ou un forfait intéressant ?",
+      "oldZh": "有没有折扣价格或有趣的套餐?",
+      "newZh": "有优惠价或比较划算的套餐吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 15,
+      "fr": "Comment puis-je m’inscrire et quels documents faut-il apporter ?",
+      "oldZh": "我如何登记,需要带来哪些文件?",
+      "newZh": "我该如何报名？需要带哪些材料？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 9,
+      "row": 1,
+      "fr": "Où habites-tu maintenant ?",
+      "oldZh": "你现在住在哪里?",
+      "newZh": "你现在住在哪里？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 9,
+      "row": 2,
+      "fr": "Tu habites dans quel type de logement maintenant ?",
+      "oldZh": "你现在住在什么房子里?",
+      "newZh": "你现在住的是什么类型的房子？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 9,
+      "row": 3,
+      "fr": "Comment va ta famille en ce moment ?",
+      "oldZh": "现在你的家人怎么样?",
+      "newZh": "你家人最近怎么样？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 9,
+      "row": 4,
+      "fr": "Comment restes-tu en contact avec tes parents ?",
+      "oldZh": "你如何与父母保持联系?",
+      "newZh": "你平时怎么和父母保持联系？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 9,
+      "row": 5,
+      "fr": "À quelle fréquence les appelles-tu ?",
+      "oldZh": "你打电话多频?",
+      "newZh": "你多久给他们打一次电话？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 9,
+      "row": 6,
+      "fr": "Qu’est-ce que tu fais surtout pendant ton temps libre en ce moment ?",
+      "oldZh": "你目前的主要休活动是什么?",
+      "newZh": "你最近空闲时主要做些什么？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 9,
+      "row": 7,
+      "fr": "Tu fais aussi des activités culturelles pendant ton temps libre ?",
+      "oldZh": "在你的空时间里,你做什么文化活动?",
+      "newZh": "你空闲时也会参加文化活动吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 9,
+      "row": 8,
+      "fr": "Tu joues toujours du piano ?",
+      "oldZh": "你还在钢琴吗?",
+      "newZh": "你还在弹钢琴吗？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 9,
+      "row": 9,
+      "fr": "Quel niveau as-tu maintenant ?",
+      "oldZh": "你现在的水平是多少?",
+      "newZh": "你现在钢琴弹到什么水平了？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 9,
+      "row": 10,
+      "fr": "En ce moment, quel sport tu préfères ?",
+      "oldZh": "你现在最喜欢的运动是什么?",
+      "newZh": "你最近最喜欢哪项运动？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 9,
+      "row": 11,
+      "fr": "À quelle fréquence en fais-tu ?",
+      "oldZh": "你经常这样做吗?",
+      "newZh": "你多久做一次这项运动？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 9,
+      "row": 12,
+      "fr": "Qu’est-ce que tu fais comme travail maintenant ?",
+      "oldZh": "你现在做什么工作?",
+      "newZh": "你现在做什么工作？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 9,
+      "row": 13,
+      "fr": "Comment trouves-tu l’ambiance au travail ?",
+      "oldZh": "你怎么看待工作环境?",
+      "newZh": "你觉得工作氛围怎么样？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 9,
+      "row": 14,
+      "fr": "Qu’est-ce que tu fais généralement le week-end ?",
+      "oldZh": "你通常在周末做什么?",
+      "newZh": "你周末通常做些什么？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    },
+    {
+      "month": "2026-07",
+      "number": 9,
+      "row": 15,
+      "fr": "Qu’est-ce qui a le plus changé dans ta vie depuis la dernière fois qu’on s’est vus ?",
+      "oldZh": "自从我们最后一次见面以来,你生活中最发生了什么变化?",
+      "newZh": "从我们上次见面到现在，你的生活变化最大的是哪方面？",
+      "reason": "人工复核法语语义并修订自动译文，使中文自然、准确地对应提问。"
+    }
+  ],
+  "translationEditCount": 255,
+  "entries": [
+    {
+      "month": "2026-10",
+      "number": 2,
+      "sujet": "Je suis votre ami(e) canadien(ne) et nous ne nous sommes pas vus depuis longtemps. Vous prenez de mes nouvelles et vous me posez des questions sur ma vie quotidienne (loisirs, famille, travail, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "近况与住房",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "家庭",
+          "questionNumbers": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "兴趣爱好",
+          "questionNumbers": [
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "name": "运动",
+          "questionNumbers": [
+            10,
+            11
+          ]
+        },
+        {
+          "name": "工作",
+          "questionNumbers": [
+            12,
+            13
+          ]
+        },
+        {
+          "name": "日常生活",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "总体近况",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 14,
+        "过去 → 现在": 1
+      },
+      "pronounAndRelevanceReview": "逐问核对情境人称、疑问句自然度与信息角度；近义题保留或按明确收益修订。",
+      "translationReview": "15问逐句对照校订；中文译文对应具体法语提问。",
+      "changeReasons": [
+        {
+          "month": "2026-10",
+          "number": 2,
+          "row": 5,
+          "oldFr": "↳ À quelle fréquence les appelles-tu ?",
+          "newFr": "À quelle fréquence les appelles-tu ?",
+          "zh": "",
+          "reason": "跟进箭头由界面按follow字段显示；从法语文本中移除标记，确保单句练习和Piper语音只包含问题本身。"
+        },
+        {
+          "month": "2026-10",
+          "number": 2,
+          "row": 9,
+          "oldFr": "↳ Quel niveau as-tu maintenant ?",
+          "newFr": "Quel niveau as-tu maintenant ?",
+          "zh": "",
+          "reason": "跟进箭头由界面按follow字段显示；从法语文本中移除标记，确保单句练习和Piper语音只包含问题本身。"
+        },
+        {
+          "month": "2026-10",
+          "number": 2,
+          "row": 11,
+          "oldFr": "↳ À quelle fréquence en fais-tu ?",
+          "newFr": "À quelle fréquence en fais-tu ?",
+          "zh": "",
+          "reason": "跟进箭头由界面按follow字段显示；从法语文本中移除标记，确保单句练习和Piper语音只包含问题本身。"
+        }
+      ],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "sujet": "Nous sommes ami(e)s. Je viens de fêter mon anniversaire, mais vous n’avez pas pu venir. Vous me posez des questions pour savoir comment s’est passée la soirée (activités, personnes présentes, cadeaux reçus, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "宾客",
+          "questionNumbers": [
+            4,
+            5
+          ]
+        },
+        {
+          "name": "活动",
+          "questionNumbers": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "name": "餐饮",
+          "questionNumbers": [
+            9,
+            10
+          ]
+        },
+        {
+          "name": "礼物",
+          "questionNumbers": [
+            11,
+            12
+          ]
+        },
+        {
+          "name": "氛围",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "体验",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "结束",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "过去经历": 15
+      },
+      "pronounAndRelevanceReview": "逐问核对情境人称、疑问句自然度与信息角度；近义题保留或按明确收益修订。",
+      "translationReview": "15问逐句对照校订；中文译文对应具体法语提问。",
+      "changeReasons": [
+        {
+          "month": "2026-09",
+          "number": 1,
+          "row": 6,
+          "oldFr": "Quelles activités aviez-vous prévues ?",
+          "newFr": "Quelles activités avais-tu prévues ?",
+          "zh": "你当时安排了哪些活动？",
+          "reason": "生日聚会回顾题面向朋友，统一用 tu；过去已安排的活动用愈过去时。"
+        },
+        {
+          "month": "2026-09",
+          "number": 1,
+          "row": 9,
+          "oldFr": "Vous aviez choisi quel type de gâteau ?",
+          "newFr": "Tu avais choisi quel type de gâteau ?",
+          "zh": "你当时选了哪种蛋糕？",
+          "reason": "生日聚会回顾题面向朋友，统一用 tu；问题询问聚会前选定的蛋糕。"
+        },
+        {
+          "month": "2026-09",
+          "number": 1,
+          "row": 12,
+          "oldFr": "↳ Lequel t’a fait le plus plaisir ?",
+          "newFr": "Lequel t’a fait le plus plaisir ?",
+          "zh": "",
+          "reason": "跟进箭头由界面按follow字段显示；从法语文本中移除标记，确保单句练习和Piper语音只包含问题本身。"
+        }
+      ],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "sujet": "Je suis votre ami(e), je vous invite à la soirée d’ouverture d’un grand restaurant. Vous me posez des questions sur l’événement (tenue appropriée, menu proposé, déroulement de la soirée, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "地点与交通",
+          "questionNumbers": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "name": "着装",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "餐饮",
+          "questionNumbers": [
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "name": "互动",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "流程",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "宾客",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "确认",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "将来安排": 4,
+        "现在信息": 6,
+        "将来计划": 4,
+        "将来可能": 1
+      },
+      "pronounAndRelevanceReview": "逐问核对情境人称、疑问句自然度与信息角度；近义题保留或按明确收益修订。",
+      "translationReview": "15问逐句对照校订；中文译文对应具体法语提问。",
+      "changeReasons": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "sujet": "Je suis votre voisin(e). Je participe à l’organisation d’un festival culturel dans notre ville. Vous me proposez votre aide. Vous me posez des questions sur l’organisation du festival (préparation, lieux, horaires, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "地点与交通",
+          "questionNumbers": [
+            4,
+            5
+          ]
+        },
+        {
+          "name": "准备",
+          "questionNumbers": [
+            6
+          ]
+        },
+        {
+          "name": "报名手续",
+          "questionNumbers": [
+            7,
+            8
+          ]
+        },
+        {
+          "name": "任务",
+          "questionNumbers": [
+            9,
+            10
+          ]
+        },
+        {
+          "name": "儿童活动",
+          "questionNumbers": [
+            11,
+            12
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "组织",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "证明",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 7,
+        "将来计划": 1,
+        "将来参与": 5,
+        "将来可能": 2
+      },
+      "pronounAndRelevanceReview": "逐问核对情境人称、疑问句自然度与信息角度；近义题保留或按明确收益修订。",
+      "translationReview": "15问逐句对照校订；中文译文对应具体法语提问。",
+      "changeReasons": [
+        {
+          "month": "2026-09",
+          "number": 3,
+          "row": 8,
+          "oldFr": "↳ Quels documents dois-je remplir ?",
+          "newFr": "Quels documents dois-je remplir ?",
+          "zh": "",
+          "reason": "跟进箭头由界面按follow字段显示；从法语文本中移除标记，确保单句练习和Piper语音只包含问题本身。"
+        },
+        {
+          "month": "2026-09",
+          "number": 3,
+          "row": 12,
+          "oldFr": "↳ Puis-je venir avec mon fils ?",
+          "newFr": "Puis-je venir avec mon fils ?",
+          "zh": "",
+          "reason": "跟进箭头由界面按follow字段显示；从法语文本中移除标记，确保单句练习和Piper语音只包含问题本身。"
+        }
+      ],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "sujet": "Je suis un(e) ami(e) québécois(e). Vous allez vous installer au Québec. Vous me posez des questions sur les habitudes alimentaires des Québécois (nombre de repas, horaires, plats typiques, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "日常节奏",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "早餐",
+          "questionNumbers": [
+            2,
+            3
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            4,
+            5
+          ]
+        },
+        {
+          "name": "典型饮食",
+          "questionNumbers": [
+            6,
+            7
+          ]
+        },
+        {
+          "name": "甜点",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "饮食偏好",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "饮品",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "外食",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "家庭饮食",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "周末",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "份量/节奏",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在习惯": 14,
+        "将来计划": 1
+      },
+      "pronounAndRelevanceReview": "逐问核对情境人称、疑问句自然度与信息角度；近义题保留或按明确收益修订。",
+      "translationReview": "15问逐句对照校订；中文译文对应具体法语提问。",
+      "changeReasons": [
+        {
+          "month": "2026-09",
+          "number": 4,
+          "row": 4,
+          "oldFr": "À quelle heure déjeune-t-on généralement ?",
+          "newFr": "À quelle heure dîne-t-on généralement au Québec ?",
+          "zh": "在魁北克，人们通常几点吃午饭？",
+          "reason": "按魁北克法语区分三餐名称：déjeuner 是早餐、dîner 是午餐；避免与 petit-déjeuner 重复。"
+        },
+        {
+          "month": "2026-09",
+          "number": 4,
+          "row": 5,
+          "oldFr": "Et à quelle heure dîne-t-on le soir ?",
+          "newFr": "Et à quelle heure soupe-t-on le soir ?",
+          "zh": "那晚上通常几点吃晚饭？",
+          "reason": "按魁北克法语的 souper 表示晚餐，时间线与小维度对应。"
+        }
+      ],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "sujet": "Je travaille à la ludothèque de votre ville (espace où vous pouvez emprunter des jeux). Vous souhaitez vous inscrire. Vous me posez des questions sur la ludothèque (horaires, tarifs, types de jeux, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "开放时间",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            3,
+            4
+          ]
+        },
+        {
+          "name": "游戏",
+          "questionNumbers": [
+            5,
+            6
+          ]
+        },
+        {
+          "name": "儿童",
+          "questionNumbers": [
+            7,
+            8
+          ]
+        },
+        {
+          "name": "注册",
+          "questionNumbers": [
+            9,
+            10
+          ]
+        },
+        {
+          "name": "会员",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "借阅",
+          "questionNumbers": [
+            12,
+            13
+          ]
+        },
+        {
+          "name": "归还",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "逾期",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 7,
+        "将来使用": 7,
+        "条件情况": 1
+      },
+      "pronounAndRelevanceReview": "逐问核对情境人称、疑问句自然度与信息角度；近义题保留或按明确收益修订。",
+      "translationReview": "15问逐句对照校订；中文译文对应具体法语提问。",
+      "changeReasons": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-09",
+      "number": 6,
+      "sujet": "Je suis parent d’élève. Nos enfants vont à la même école. Vous allez participer à la fête de l’école pour la première fois. Vous me posez des questions sur l’événement (horaires, programme, animations, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "节目",
+          "questionNumbers": [
+            4,
+            8
+          ]
+        },
+        {
+          "name": "活动",
+          "questionNumbers": [
+            5,
+            6
+          ]
+        },
+        {
+          "name": "流程",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "儿童安全",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "报名",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "儿童活动",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "材料",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "家长",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "到场",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 10,
+        "将来准备": 3,
+        "将来参加": 2
+      },
+      "pronounAndRelevanceReview": "逐问核对情境人称、疑问句自然度与信息角度；近义题保留或按明确收益修订。",
+      "translationReview": "15问逐句对照校订；中文译文对应具体法语提问。",
+      "changeReasons": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "sujet": "Je suis un ami francophone. Il vous est demandé d’écrire un article sur une ville pour un magazine culturel. Vous cherchez des idées. Vous m’interrogez sur les villes que j’aime (activités, architecture, transports, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "城市选择",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "地理",
+          "questionNumbers": [
+            2
+          ]
+        },
+        {
+          "name": "总体评价",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "建筑",
+          "questionNumbers": [
+            4,
+            5
+          ]
+        },
+        {
+          "name": "景观",
+          "questionNumbers": [
+            6
+          ]
+        },
+        {
+          "name": "景点",
+          "questionNumbers": [
+            7,
+            8
+          ]
+        },
+        {
+          "name": "活动",
+          "questionNumbers": [
+            9,
+            10
+          ]
+        },
+        {
+          "name": "交通",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "街区",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "服务",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "居民",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "推荐",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在评价": 3,
+        "现在信息": 8,
+        "写作素材": 2,
+        "过去体验": 1,
+        "写作建议": 1
+      },
+      "pronounAndRelevanceReview": "逐问核对情境人称、疑问句自然度与信息角度；近义题保留或按明确收益修订。",
+      "translationReview": "15问逐句对照校订；中文译文对应具体法语提问。",
+      "changeReasons": [
+        {
+          "month": "2026-08",
+          "number": 1,
+          "row": 5,
+          "oldFr": "↳ Comment décrirais-tu son architecture ?",
+          "newFr": "Comment décrirais-tu son architecture ?",
+          "zh": "",
+          "reason": "跟进箭头由界面按follow字段显示；从法语文本中移除标记，确保单句练习和Piper语音只包含问题本身。"
+        },
+        {
+          "month": "2026-08",
+          "number": 1,
+          "row": 8,
+          "oldFr": "↳ Lequel as-tu préféré quand tu l’as visité ?",
+          "newFr": "Lequel as-tu préféré quand tu l’as visité ?",
+          "zh": "",
+          "reason": "跟进箭头由界面按follow字段显示；从法语文本中移除标记，确保单句练习和Piper语音只包含问题本身。"
+        },
+        {
+          "month": "2026-08",
+          "number": 1,
+          "row": 10,
+          "oldFr": "Qu’est-ce qu’on peut y faire pendant son temps libre ?",
+          "newFr": "Quelles activités de plein air peut-on y faire ?",
+          "zh": "在这座城市可以参加哪些户外活动？",
+          "reason": "避免与第9问文化活动角度重叠，改问户外休闲活动。"
+        }
+      ],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "sujet": "Je suis votre ami(e). J’organise ma fête d’anniversaire. Vous voulez m’aider. Vous me posez des questions sur la préparation de la fête (repas, décoration, invités, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "地点与交通",
+          "questionNumbers": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "name": "预订",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "宾客",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "餐饮",
+          "questionNumbers": [
+            9,
+            10
+          ]
+        },
+        {
+          "name": "蛋糕",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "装饰",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "饮品",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "分工",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "将来安排": 12,
+        "现在进度": 1,
+        "任务分工": 1,
+        "将来参与": 1
+      },
+      "pronounAndRelevanceReview": "逐问核对情境人称、疑问句自然度与信息角度；近义题保留或按明确收益修订。",
+      "translationReview": "15问逐句对照校订；中文译文对应具体法语提问。",
+      "changeReasons": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "sujet": "Je suis votre ami(e), je vous invite à la soirée d’ouverture d’un grand restaurant. Vous me posez des questions sur l’événement (tenue appropriée, menu proposé, déroulement de la soirée, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "地点与交通",
+          "questionNumbers": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "name": "着装",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "餐饮",
+          "questionNumbers": [
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "name": "互动",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "流程",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "宾客",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "确认",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "将来安排": 4,
+        "现在信息": 6,
+        "将来计划": 4,
+        "将来可能": 1
+      },
+      "pronounAndRelevanceReview": "逐问核对情境人称、疑问句自然度与信息角度；近义题保留或按明确收益修订。",
+      "translationReview": "15问逐句对照校订；中文译文对应具体法语提问。",
+      "changeReasons": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "sujet": "Je suis votre ami(e). Mon fils va se marier. Vous êtes invité(e). Vous me posez des questions sur le mariage (organisation, invités, cadeau, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            4
+          ]
+        },
+        {
+          "name": "交通",
+          "questionNumbers": [
+            5,
+            6
+          ]
+        },
+        {
+          "name": "宾客",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "流程",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "餐饮",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "着装",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "邀请",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "礼物",
+          "questionNumbers": [
+            12,
+            13
+          ]
+        },
+        {
+          "name": "同行",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "确认",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 8,
+        "将来计划": 4,
+        "将来准备": 3
+      },
+      "pronounAndRelevanceReview": "逐问核对情境人称、疑问句自然度与信息角度；近义题保留或按明确收益修订。",
+      "translationReview": "15问逐句对照校订；中文译文对应具体法语提问。",
+      "changeReasons": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "sujet": "Je suis votre ami(e), je vous invite à un dîner entre collègues. Posez-moi des questions (date, lieu, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            4
+          ]
+        },
+        {
+          "name": "交通",
+          "questionNumbers": [
+            5,
+            6
+          ]
+        },
+        {
+          "name": "餐饮",
+          "questionNumbers": [
+            7,
+            8
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "宾客",
+          "questionNumbers": [
+            10,
+            11
+          ]
+        },
+        {
+          "name": "氛围",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "活动",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "着装",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "确认",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 11,
+        "将来计划": 3,
+        "将来准备": 1
+      },
+      "pronounAndRelevanceReview": "逐问核对情境人称、疑问句自然度与信息角度；近义题保留或按明确收益修订。",
+      "translationReview": "15问逐句对照校订；中文译文对应具体法语提问。",
+      "changeReasons": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "sujet": "Je suis votre voisin(e). Je veux organiser une fête pour tous les habitants de notre immeuble, je vous invite. Vous m’interrogez sur cette fête (date, invités, nourriture, boissons, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            4
+          ]
+        },
+        {
+          "name": "宾客",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "家庭",
+          "questionNumbers": [
+            6
+          ]
+        },
+        {
+          "name": "餐饮",
+          "questionNumbers": [
+            7,
+            8
+          ]
+        },
+        {
+          "name": "饮品",
+          "questionNumbers": [
+            9,
+            10
+          ]
+        },
+        {
+          "name": "活动",
+          "questionNumbers": [
+            11,
+            12
+          ]
+        },
+        {
+          "name": "氛围",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "着装",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "分工",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 12,
+        "将来参加": 1,
+        "将来准备": 1,
+        "将来参与": 1
+      },
+      "pronounAndRelevanceReview": "逐问核对情境人称、疑问句自然度与信息角度；近义题保留或按明确收益修订。",
+      "translationReview": "15问逐句对照校订；中文译文对应具体法语提问。",
+      "changeReasons": [
+        {
+          "month": "2026-07",
+          "number": 5,
+          "row": 10,
+          "oldFr": "↳ Y aura-t-il aussi des boissons sans alcool ?",
+          "newFr": "Y aura-t-il aussi des boissons sans alcool ?",
+          "zh": "",
+          "reason": "跟进箭头由界面按follow字段显示；从法语文本中移除标记，确保单句练习和Piper语音只包含问题本身。"
+        }
+      ],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "sujet": "Je suis votre colocataire. Je souhaite inviter des amis chez nous. Vous me posez des questions pour obtenir plus de détails (nombre, caractère des invités, durée, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "人数",
+          "questionNumbers": [
+            4,
+            5
+          ]
+        },
+        {
+          "name": "来客特点",
+          "questionNumbers": [
+            6,
+            7
+          ]
+        },
+        {
+          "name": "习惯",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "关系",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "餐饮",
+          "questionNumbers": [
+            10,
+            11
+          ]
+        },
+        {
+          "name": "饮品",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "活动",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "住宿",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "分工",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "将来安排": 9,
+        "现在信息": 5,
+        "将来参与": 1
+      },
+      "pronounAndRelevanceReview": "逐问核对情境人称、疑问句自然度与信息角度；近义题保留或按明确收益修订。",
+      "translationReview": "15问逐句对照校订；中文译文对应具体法语提问。",
+      "changeReasons": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "sujet": "Je suis votre ami(e). Vous venez d’arriver au Canada. Demandez-moi des conseils pour faire une sortie culturelle bon marché (lieux, activités, transports, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "地点",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "交通",
+          "questionNumbers": [
+            3,
+            4
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            5,
+            6
+          ]
+        },
+        {
+          "name": "活动",
+          "questionNumbers": [
+            7,
+            8
+          ]
+        },
+        {
+          "name": "儿童",
+          "questionNumbers": [
+            9,
+            10
+          ]
+        },
+        {
+          "name": "餐饮",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "报名",
+          "questionNumbers": [
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "name": "预算",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 9,
+        "将来计划": 6
+      },
+      "pronounAndRelevanceReview": "逐问核对情境人称、疑问句自然度与信息角度；近义题保留或按明确收益修订。",
+      "translationReview": "15问逐句对照校订；中文译文对应具体法语提问。",
+      "changeReasons": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "sujet": "Je suis votre ami(e). Je pratique un sport depuis longtemps. Vous voulez pratiquer ce sport avec moi. Vous me posez des questions pour obtenir des renseignements sur cette activité (type de sport, lieu, équipement, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "运动",
+          "questionNumbers": [
+            1,
+            7
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            2,
+            3
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            4
+          ]
+        },
+        {
+          "name": "交通",
+          "questionNumbers": [
+            5,
+            6
+          ]
+        },
+        {
+          "name": "水平",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "指导",
+          "questionNumbers": [
+            9,
+            10
+          ]
+        },
+        {
+          "name": "装备",
+          "questionNumbers": [
+            11,
+            12
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            13,
+            14
+          ]
+        },
+        {
+          "name": "报名",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 10,
+        "将来计划": 2,
+        "将来参加": 2,
+        "将来准备": 1
+      },
+      "pronounAndRelevanceReview": "逐问核对情境人称、疑问句自然度与信息角度；近义题保留或按明确收益修订。",
+      "translationReview": "15问逐句对照校订；中文译文对应具体法语提问。",
+      "changeReasons": [
+        {
+          "month": "2026-07",
+          "number": 8,
+          "row": 9,
+          "oldFr": "↳ Y a-t-il un entraîneur pour m’aider au début ?",
+          "newFr": "Y a-t-il un entraîneur pour m’aider au début ?",
+          "zh": "",
+          "reason": "跟进箭头由界面按follow字段显示；从法语文本中移除标记，确保单句练习和Piper语音只包含问题本身。"
+        },
+        {
+          "month": "2026-07",
+          "number": 8,
+          "row": 12,
+          "oldFr": "↳ Est-ce que le matériel est fourni sur place ?",
+          "newFr": "Est-ce que le matériel est fourni sur place ?",
+          "zh": "",
+          "reason": "跟进箭头由界面按follow字段显示；从法语文本中移除标记，确保单句练习和Piper语音只包含问题本身。"
+        }
+      ],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-07",
+      "number": 9,
+      "sujet": "Je suis votre ami(e) canadien(ne) et nous ne nous sommes pas vus depuis longtemps. Vous prenez de mes nouvelles et vous me posez des questions sur ma vie quotidienne (loisirs, famille, travail, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "近况与住房",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "家庭",
+          "questionNumbers": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "兴趣爱好",
+          "questionNumbers": [
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "name": "运动",
+          "questionNumbers": [
+            10,
+            11
+          ]
+        },
+        {
+          "name": "工作",
+          "questionNumbers": [
+            12,
+            13
+          ]
+        },
+        {
+          "name": "日常生活",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "总体近况",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 14,
+        "过去 → 现在": 1
+      },
+      "pronounAndRelevanceReview": "逐问核对情境人称、疑问句自然度与信息角度；近义题保留或按明确收益修订。",
+      "translationReview": "15问逐句对照校订；中文译文对应具体法语提问。",
+      "changeReasons": [
+        {
+          "month": "2026-07",
+          "number": 9,
+          "row": 5,
+          "oldFr": "↳ À quelle fréquence les appelles-tu ?",
+          "newFr": "À quelle fréquence les appelles-tu ?",
+          "zh": "",
+          "reason": "跟进箭头由界面按follow字段显示；从法语文本中移除标记，确保单句练习和Piper语音只包含问题本身。"
+        },
+        {
+          "month": "2026-07",
+          "number": 9,
+          "row": 9,
+          "oldFr": "↳ Quel niveau as-tu maintenant ?",
+          "newFr": "Quel niveau as-tu maintenant ?",
+          "zh": "",
+          "reason": "跟进箭头由界面按follow字段显示；从法语文本中移除标记，确保单句练习和Piper语音只包含问题本身。"
+        },
+        {
+          "month": "2026-07",
+          "number": 9,
+          "row": 11,
+          "oldFr": "↳ À quelle fréquence en fais-tu ?",
+          "newFr": "À quelle fréquence en fais-tu ?",
+          "zh": "",
+          "reason": "跟进箭头由界面按follow字段显示；从法语文本中移除标记，确保单句练习和Piper语音只包含问题本身。"
+        }
+      ],
+      "translationEditCount": 15
+    }
+  ],
+  "piperCoverage": {
+    "status": "pending-generation",
+    "voice": "fr_FR-siwis-medium",
+    "uniqueFrenchQuestions": 212,
+    "matched": 198,
+    "missing": [
+      "Comment décrirais-tu son architecture ?",
+      "Est-ce que le matériel est fourni sur place ?",
+      "Et à quelle heure soupe-t-on le soir ?",
+      "Lequel as-tu préféré quand tu l’as visité ?",
+      "Lequel t’a fait le plus plaisir ?",
+      "Quel niveau as-tu maintenant ?",
+      "Quelles activités avais-tu prévues ?",
+      "Quelles activités de plein air peut-on y faire ?",
+      "Quels documents dois-je remplir ?",
+      "Tu avais choisi quel type de gâteau ?",
+      "Y aura-t-il aussi des boissons sans alcool ?",
+      "À quelle fréquence en fais-tu ?",
+      "À quelle fréquence les appelles-tu ?",
+      "À quelle heure dîne-t-on généralement au Québec ?"
+    ]
+  },
+  "runtimeChecks": {
+    "sujetCount": 17,
+    "expectedSujetCount": 17,
+    "questionSlots": 255,
+    "expectedQuestionSlots": 255,
+    "allSujetsHave15Questions": true,
+    "allRowsHaveFrenchAndChinese": true,
+    "frenchProgressKeysDifferFromOriginal": true,
+    "followMarkerRows": 14,
+    "allFollowRowsHaveSeparateUIFlag": true
+  }
+}
