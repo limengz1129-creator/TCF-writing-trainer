@@ -1557,8 +1557,8 @@
     }
   ],
   "questionSlots": 180,
-  "status": "ready_for_audio_rebuild",
-  "approval": "pending_audio_and_pages",
+  "status": "passed",
+  "approval": "passed",
   "source": "tache2/real-exams/source/culture.json.gz.b64",
   "runtime": "tache2/real-exams/data/culture.json",
   "reviewMethod": [
@@ -1573,9 +1573,7 @@
     "发现并修正同事Sujet两条连续追问误用tu的问题，按vous保持称谓一致。",
     "修正原中文中交通方向、节目/场次、订阅、票务等多处误译；重新检查每题的维度角度与时间线。"
   ],
-  "limitations": [
-    "待Piper音频和GitHub Pages检查。"
-  ],
+  "limitations": [],
   "changes": [
     {
       "month": "2026-10",
@@ -1971,11 +1969,22 @@
     }
   ],
   "piperCoverage": {
-    "status": "pending-generation",
+    "status": "passed",
     "voice": "fr_FR-siwis-medium",
     "uniqueFrenchQuestions": 136,
-    "matched": 0,
-    "missing": "pending"
+    "matched": 136,
+    "missing": 0,
+    "manifestRecords": 2405,
+    "packsUsed": [
+      "culture-variety-000.json",
+      "culture-pack-000.json",
+      "culture-pack-001.json",
+      "culture-pack-002.json",
+      "culture-variety-001.json",
+      "health-variety-000.json",
+      "sport-variety-000.json"
+    ],
+    "verifiedBy": "Every unique culture question has an exact text match and audio payload in its indexed GitHub blob pack."
   },
   "runtimeChecks": {
     "sujetCount": 12,
@@ -1986,6 +1995,13 @@
     "allRowsHaveFrenchAndChinese": true,
     "noDuplicateFrenchPerSujet": true,
     "frenchProgressKeysDifferFromOriginal": true,
-    "followMarkerRows": 0
+    "followMarkerRows": 0,
+    "githubActionsBuildRun": 39105395429,
+    "githubActionsBuildConclusion": "success",
+    "githubPagesRun": 39105395364,
+    "githubPagesConclusion": "success",
+    "buildCheckpoint": "bb237b10409230830efe7df0b14510ca37e3444c",
+    "deploymentUrl": "https://limengz1129-creator.github.io/TCF-writing-trainer/tache2/real-exams/",
+    "verifiedAtCommit": "bb237b10409230830efe7df0b14510ca37e3444c"
   }
 }
