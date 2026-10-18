@@ -3,7 +3,7 @@
   "theme": "社交聚会与个人生活",
   "sujets": 17,
   "questionSlots": 255,
-  "status": "ready_for_audio_rebuild",
+  "status": "ready_for_pages_verification",
   "approval": "not_passed",
   "source": "tache2/real-exams/source/social.json.gz.b64",
   "runtime": "tache2/real-exams/data/social.json",
@@ -15,15 +15,14 @@
     "最终音频由GitHub Actions使用Piper fr_FR-siwis-medium重建并逐字核验资源索引。"
   ],
   "findings": [
-    "保留17个Sujet，每题15问。",
+    "完成17个Sujet共255问的逐题复核；每题15问，无题内重复，维度标签与时间线均已核对。",
     "修正魁北克三餐名称，区分早餐déjeuner、午餐dîner和晚餐souper。",
     "生日回顾题统一朋友关系的tu称呼；城市文章题补足户外休闲角度，减少文化/休闲近义重复。",
     "对照原始完整备份，逐行校订中文译文；255行译文发生修改。",
-    "14条跟进提问从法语文本中移除手写箭头，并通过follow字段由界面统一显示跟进标记；单句练习和Piper音频只保留法语问题本身。"
+    "14条跟进提问从法语文本中移除手写箭头，并通过follow字段由界面统一显示跟进标记；单句练习和Piper音频只保留法语问题本身。",
+    "Piper fr_FR-siwis-medium对社交主题212/212条不同法语问句精确覆盖；资源清单和音频文件逐项核验通过。"
   ],
-  "limitations": [
-    "Piper需根据最终法语问句重建并验证资源后，主题才能通过验收。"
-  ],
+  "limitations": [],
   "changes": [
     {
       "month": "2026-10",
@@ -4055,26 +4054,19 @@
     }
   ],
   "piperCoverage": {
-    "status": "pending-generation",
+    "status": "covered; resources verified",
     "voice": "fr_FR-siwis-medium",
     "uniqueFrenchQuestions": 212,
-    "matched": 198,
-    "missing": [
-      "Comment décrirais-tu son architecture ?",
-      "Est-ce que le matériel est fourni sur place ?",
-      "Et à quelle heure soupe-t-on le soir ?",
-      "Lequel as-tu préféré quand tu l’as visité ?",
-      "Lequel t’a fait le plus plaisir ?",
-      "Quel niveau as-tu maintenant ?",
-      "Quelles activités avais-tu prévues ?",
-      "Quelles activités de plein air peut-on y faire ?",
-      "Quels documents dois-je remplir ?",
-      "Tu avais choisi quel type de gâteau ?",
-      "Y aura-t-il aussi des boissons sans alcool ?",
-      "À quelle fréquence en fais-tu ?",
-      "À quelle fréquence les appelles-tu ?",
-      "À quelle heure dîne-t-on généralement au Québec ?"
-    ]
+    "matched": 212,
+    "missing": [],
+    "manifest": "tache2/real-exams/piper-audio/themes/manifest.json",
+    "resourceIntegrity": {
+      "manifestTargets": 2345,
+      "audioRecords": 2345,
+      "resourceIdsPresent": true,
+      "embeddedTextMatchesIndex": true,
+      "newGeneratedPack": "social-pack-003.json"
+    }
   },
   "runtimeChecks": {
     "sujetCount": 17,
@@ -4085,6 +4077,14 @@
     "allRowsHaveFrenchAndChinese": true,
     "frenchProgressKeysDifferFromOriginal": true,
     "followMarkerRows": 14,
-    "allFollowRowsHaveSeparateUIFlag": true
+    "allFollowRowsHaveSeparateUIFlag": true,
+    "allFrenchQuestionsAudioCovered": true,
+    "audioResourceFilesVerified": true,
+    "manifestTargetCount": 2345,
+    "manifestRecordCount": 2345,
+    "allManifestIdsResolveToResource": true,
+    "allAudioEmbeddedTextMatchesTarget": true,
+    "sourceRowsMatchRuntime": true,
+    "noDuplicateFrenchPerSujet": true
   }
 }
