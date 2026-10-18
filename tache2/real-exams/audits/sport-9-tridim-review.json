@@ -3,8 +3,8 @@
   "theme": "体育户外与场馆",
   "sujets": 9,
   "questionSlots": 135,
-  "status": "ready_for_audio_rebuild",
-  "approval": "not_passed",
+  "status": "passed",
+  "approval": "passed_after_self_review",
   "source": "tache2/real-exams/source/sport.json.gz.b64",
   "runtime": "tache2/real-exams/data/sport.json",
   "reviewMethod": [
@@ -17,11 +17,10 @@
   "findings": [
     "保留9个Sujet、每题15问。",
     "纠正跑步赛事中邻居关系的tu/vous；纠正邻居健身房场景把邻居写成工作人员；消除初学者学习者的性别预设。",
-    "与完整备份对照，人工校订中文译文135行。"
+    "与完整备份对照，人工校订中文译文135行。",
+    "Piper fr_FR-siwis-medium exact text/index/audio coverage passed: 64/64 unique questions; all 4 referenced pack files exist and every record embeds matching French text and audio."
   ],
-  "limitations": [
-    "需完成最终Piper音频覆盖和Pages部署检查。"
-  ],
+  "limitations": [],
   "changes": [
     {
       "month": "2026-10",
@@ -2619,11 +2618,16 @@
     }
   ],
   "piperCoverage": {
-    "status": "pending-generation",
+    "status": "passed",
     "voice": "fr_FR-siwis-medium",
     "uniqueFrenchQuestions": 64,
-    "matched": 0,
-    "missing": "pending"
+    "matched": 64,
+    "missing": [],
+    "resourcePacks": 4,
+    "allReferencedPacksExist": true,
+    "allEmbeddedTextsMatch": true,
+    "allRecordsContainAudio": true,
+    "buildCommit": "54ae0259faa01356d82e8f0ea9674f9b2f5b625f"
   },
   "runtimeChecks": {
     "sujetCount": 9,
@@ -2634,6 +2638,14 @@
     "allRowsHaveFrenchAndChinese": true,
     "noDuplicateFrenchPerSujet": true,
     "frenchProgressKeysDifferFromOriginal": true,
-    "followMarkerRows": 0
+    "followMarkerRows": 0,
+    "sourceAndRuntimeRowsMatch": true,
+    "allFrenchQuestionsHavePiperAudio": true
+  },
+  "deployment": {
+    "status": "success",
+    "buildWorkflowRun": 39104733233,
+    "pagesWorkflowRun": 39104733258,
+    "pagesStatus": "success"
   }
 }
