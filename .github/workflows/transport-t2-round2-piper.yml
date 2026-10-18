@@ -1,0 +1,48 @@
+name: Transport T2 round-two Piper
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tache2/real-exams/data/transport.json'
+      - 'tools/piper/real-exam-themes/transport_round2_audio.py'
+      - '.github/workflows/transport-t2-round2-piper.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: transport-round2-audio
+  cancel-in-progress: false
+jobs:
+  synthesize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Piper and ffmpeg
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y ffmpeg
+          pip install piper-tts
+      - name: Get voice
+        run: |
+          mkdir -p .piper-model
+          curl -fL --retry 3 -o .piper-model/fr_FR-siwis-medium.onnx https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx
+          curl -fL --retry 3 -o .piper-model/fr_FR-siwis-medium.onnx.json https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx.json
+      - name: Generate missing transport audio
+        run: python tools/piper/real-exam-themes/transport_round2_audio.py
+      - name: Commit only generated audio
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add tache2/real-exams/piper-audio/themes/manifest.json
+          if test -f tache2/real-exams/piper-audio/themes/transport-round2-000.json; then
+            git add tache2/real-exams/piper-audio/themes/transport-round2-000.json
+          fi
+          if ! git diff --cached --quiet; then
+            git commit -m 'Piper transport round-two additions [skip ci]'
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
