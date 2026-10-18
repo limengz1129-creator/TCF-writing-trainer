@@ -3,8 +3,8 @@
   "theme": "教育与培训",
   "sujets": 17,
   "questionSlots": 255,
-  "status": "ready_for_pages_verification",
-  "approval": "not_passed",
+  "status": "passed",
+  "approval": "passed",
   "source": "tache2/real-exams/source/education.json.gz.b64",
   "runtime": "tache2/real-exams/data/education.json",
   "reviewMethod": [
@@ -20,7 +20,8 @@
     "清理2个跟进问句的手写箭头，通过follow字段显示。",
     "按回顾语境改写2个烹饪课程经历问句；所有题目逐问检查时态、语式与信息角度。",
     "对照原始备份校订中文译文，共255行实际修改。",
-    "Piper fr_FR-siwis-medium对教育主题155/155条不同法语问句精确覆盖；资源索引及音频文件逐项核验通过。"
+    "Piper fr_FR-siwis-medium对教育主题155/155条不同法语问句精确覆盖；资源索引及音频文件逐项核验通过。",
+    "包含教育主题最终数据与音频资源的GitHub Pages部署成功。"
   ],
   "limitations": [],
   "changes": [
@@ -3966,6 +3967,8 @@
     "manifestRecordCount": 2349,
     "allManifestIdsResolveToResource": true,
     "allAudioEmbeddedTextMatchesTarget": true,
-    "sourceRowsMatchRuntime": true
+    "sourceRowsMatchRuntime": true,
+    "pagesDeploymentRunId": 39103402444,
+    "pagesDeploymentConclusion": "success"
   }
 }
