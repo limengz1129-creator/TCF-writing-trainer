@@ -124,7 +124,7 @@ def build_one(slug,model_path,known,do_git):
             row["zh"]=row.get("zh") or known.get(norm(row["fr"])) or generated.get(row["fr"]) or ""
             assert row["zh"]
             known.setdefault(norm(row["fr"]),row["zh"])
-    obj["_build"]={"translation":"nllb-200-distilled-600M","voice":"fr_FR-siwis-medium","rows":obj["count"]*15}
+    obj["_build"]={"translation":"human-reviewed-tridim-v1" if all(row.get("zh") for q in obj["entries"] for row in q["rows"]) and any(q.get("reviewed") for q in obj["entries"]) else "nllb-200-distilled-600M","voice":"fr_FR-siwis-medium","rows":obj["count"]*15}
     data_path=DATA/f"{slug}.json";data_path.write_text(json.dumps(obj,ensure_ascii=False,separators=(",",":")),encoding="utf-8")
     manifest=read_manifest(); newpacks=add_audio(slug,all_fr,model_path,manifest)
     mf=AUDIO/"manifest.json"; (AUDIO/"README.md").write_text("# T2 real-exam theme Piper audio\n\nStatic pre-generated Piper fr_FR-siwis-medium audio. No browser TTS or paid API.\n",encoding="utf-8")

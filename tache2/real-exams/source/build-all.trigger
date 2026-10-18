@@ -1,2 +1,2 @@
-theme=education
-revision=4
+theme=consumption
+revision=5

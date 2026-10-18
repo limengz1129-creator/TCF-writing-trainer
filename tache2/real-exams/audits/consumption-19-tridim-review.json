@@ -1,0 +1,4453 @@
+{
+  "version": "consumption-review-2026-10-18-v1",
+  "theme": "消费餐饮与生活服务",
+  "sujets": 19,
+  "questionSlots": 285,
+  "status": "ready_for_audio_rebuild",
+  "approval": "not_passed",
+  "source": "tache2/real-exams/source/consumption.json.gz.b64",
+  "runtime": "tache2/real-exams/data/consumption.json",
+  "reviewMethod": [
+    "按Sujet关系复核tu/vous与礼貌程度，检查疑问结构及口语自然度。",
+    "区分过去经历、现在信息、未来计划和条件问题，复核时间线标签。",
+    "逐Sujet审查15个信息角度，去除题内重复。",
+    "逐句校订中文；改动法语行均使用新progressKey并记录理由。",
+    "Piper重建后验证精确文本索引、音频资源包和部署。"
+  ],
+  "findings": [
+    "保留19个Sujet、每题15问；每个Sujet内部问题角度互补。",
+    "修正家具尺寸/看货时间等口语表达，改正邻居语境中的人称，并调整租赁合同问法。",
+    "与完整备份对照，人工校订中文译文278行。"
+  ],
+  "limitations": [
+    "需完成最终Piper音频资源覆盖和GitHub Pages部署检查后再通过验收。"
+  ],
+  "changes": [
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 5,
+      "oldFr": "↳ Tu peux me décrire ce plat un peu plus en détail ?",
+      "newFr": "Tu peux me décrire ce plat un peu plus en détail ?",
+      "zh": "你能再详细介绍一下这道菜吗？",
+      "reason": "跟进提示通过follow字段单独呈现；从法语文本移除箭头，确保单句练习和Piper语音只包含问题。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 5,
+      "oldFr": "↳ Tu peux me décrire ce plat un peu plus en détail ?",
+      "newFr": "Tu peux me décrire ce plat un peu plus en détail ?",
+      "zh": "你能再详细介绍一下这道菜吗？",
+      "reason": "跟进提示通过follow字段单独呈现；从法语文本移除箭头，确保单句练习和Piper语音只包含问题。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 5,
+      "oldFr": "↳ Comment avez-vous trouvé ce restaurant ?",
+      "newFr": "Comment avez-vous trouvé ce restaurant ?",
+      "zh": "您觉得这家餐厅怎么样？",
+      "reason": "跟进提示通过follow字段单独呈现；从法语文本移除箭头，确保单句练习和Piper语音只包含问题。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 4,
+      "oldFr": "Le meuble qui m’intéresse fait quelles dimensions ?",
+      "newFr": "Quelles sont les dimensions du meuble qui m’intéresse ?",
+      "zh": "我感兴趣的这件家具尺寸是多少？",
+      "reason": "将口语但生硬的尺寸表达改为自然直接问法。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 15,
+      "oldFr": "Quand puis-je venir examiner les meubles sur place ?",
+      "newFr": "À quel moment puis-je passer voir les meubles ?",
+      "zh": "我什么时候可以过去看家具？",
+      "reason": "保留询问看货时间的角度，改用更自然的口语表达。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 11,
+      "oldFr": "Un contrat de location est-il à signer ?",
+      "newFr": "Faut-il signer un contrat de location ?",
+      "zh": "需要签租赁合同吗？",
+      "reason": "将不自然的被动疑问改为简洁常用的主动问法。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 4,
+      "oldFr": "Le meuble qui m’intéresse fait quelles dimensions ?",
+      "newFr": "Quelles sont les dimensions du meuble qui m’intéresse ?",
+      "zh": "我感兴趣的这件家具尺寸是多少？",
+      "reason": "将口语但生硬的尺寸表达改为自然直接问法。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 15,
+      "oldFr": "Quand puis-je venir examiner les meubles sur place ?",
+      "newFr": "À quel moment puis-je passer voir les meubles ?",
+      "zh": "我什么时候可以过去看家具？",
+      "reason": "保留询问看货时间的角度，改用更自然的口语表达。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 3,
+      "oldFr": "Quel genre de restaurant lui conseillerais-tu en priorité ?",
+      "newFr": "Quel genre de restaurant lui conseilleriez-vous en priorité ?",
+      "zh": "您最建议他去什么类型的餐厅？",
+      "reason": "对邻居采用礼貌vous，与Sujet关系相符。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 15,
+      "oldFr": "Au final, penses-tu qu’il pourra se nourrir facilement pendant son voyage d’affaires ?",
+      "newFr": "Au final, pensez-vous qu’il pourra se nourrir facilement pendant son voyage d’affaires ?",
+      "zh": "总的来说，您觉得他出差期间容易找到吃的吗？",
+      "reason": "对邻居采用礼貌vous，与Sujet关系相符。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 3,
+      "oldFr": "Avez-vous encore de la disponibilité pour la date de l’anniversaire ?",
+      "newFr": "Avez-vous encore des tables disponibles à la date de l’anniversaire ?",
+      "zh": "生日当天您还有空桌吗？",
+      "reason": "明确询问生日当天是否有空桌，表达更自然且切题。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 4,
+      "oldFr": "Le meuble qui m’intéresse fait quelles dimensions ?",
+      "newFr": "Quelles sont les dimensions du meuble qui m’intéresse ?",
+      "zh": "我感兴趣的这件家具尺寸是多少？",
+      "reason": "将口语但生硬的尺寸表达改为自然直接问法。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 15,
+      "oldFr": "Quand puis-je venir examiner les meubles sur place ?",
+      "newFr": "À quel moment puis-je passer voir les meubles ?",
+      "zh": "我什么时候可以过去看家具？",
+      "reason": "保留询问看货时间的角度，改用更自然的口语表达。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 4,
+      "oldFr": "Le meuble qui m’intéresse fait quelles dimensions ?",
+      "newFr": "Quelles sont les dimensions du meuble qui m’intéresse ?",
+      "zh": "我感兴趣的这件家具尺寸是多少？",
+      "reason": "将口语但生硬的尺寸表达改为自然直接问法。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 15,
+      "oldFr": "Quand puis-je venir examiner les meubles sur place ?",
+      "newFr": "À quel moment puis-je passer voir les meubles ?",
+      "zh": "我什么时候可以过去看家具？",
+      "reason": "保留询问看货时间的角度，改用更自然的口语表达。"
+    }
+  ],
+  "translationEdits": [
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 1,
+      "fr": "Quels meubles vendez-vous exactement ?",
+      "oldZh": "你卖什么家具?",
+      "newZh": "您具体出售哪些家具？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 2,
+      "fr": "Dans quel état sont les meubles ?",
+      "oldZh": "家具的状况如何?",
+      "newZh": "这些家具的状况怎么样？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 3,
+      "fr": "Les meubles présentent-ils des défauts ou des traces d’usure ?",
+      "oldZh": "有任何缺陷或穿戴痕迹吗?",
+      "newZh": "家具上有瑕疵或磨损痕迹吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 4,
+      "fr": "Quelles sont les dimensions du meuble qui m’intéresse ?",
+      "oldZh": "我感兴趣的家具尺寸是什么?",
+      "newZh": "我感兴趣的这件家具尺寸是多少？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 5,
+      "fr": "Avez-vous un modèle un peu plus petit ?",
+      "oldZh": "你有没有更小的模型吗?",
+      "newZh": "您有稍小一点的款式吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 6,
+      "fr": "Puis-je venir voir les meubles sur place avant de me décider ?",
+      "oldZh": "在我决定之前,我可以来看家具吗?",
+      "newZh": "决定之前，我可以到现场看看这些家具吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 7,
+      "fr": "Combien coûte ce meuble ?",
+      "oldZh": "这家具的价格是多少?",
+      "newZh": "这件家具多少钱？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 9,
+      "fr": "Est-ce que vous faites un prix si j’achète plusieurs meubles ?",
+      "oldZh": "如果我购买多家具,有没有折扣?",
+      "newZh": "如果我买多件家具，价格可以优惠吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 10,
+      "fr": "Proposez-vous la livraison à domicile ?",
+      "oldZh": "你能把家具送到我家吗?",
+      "newZh": "您提供送货上门服务吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 11,
+      "fr": "Les frais de livraison sont-ils compris dans le prix ?",
+      "oldZh": "货运费用包括在价格中吗?",
+      "newZh": "送货费包含在价格里吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 12,
+      "fr": "Le montage ou l’installation sont-ils inclus ?",
+      "oldZh": "装配或安装是否包括在内?",
+      "newZh": "费用包含组装或安装吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 13,
+      "fr": "Quels moyens de paiement acceptez-vous ?",
+      "oldZh": "你接受什么样的支付方式?",
+      "newZh": "您接受哪些付款方式？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 14,
+      "fr": "Pourriez-vous me réserver le meuble pendant quelques jours ?",
+      "oldZh": "你能为我预定几天的家具吗?",
+      "newZh": "您能帮我把这件家具留几天吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 1,
+      "row": 15,
+      "fr": "À quel moment puis-je passer voir les meubles ?",
+      "oldZh": "我什么时候可以来检查现场的家具?",
+      "newZh": "我什么时候可以过去看家具？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 1,
+      "fr": "Quel âge a ta sœur ?",
+      "oldZh": "你妹妹有多年?",
+      "newZh": "你妹妹多大了？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 2,
+      "fr": "Qu’est-ce qu’elle aime en général ?",
+      "oldZh": "她一般喜欢什么?",
+      "newZh": "她平时喜欢什么？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 3,
+      "fr": "Elle aime recevoir des vêtements en cadeau ?",
+      "oldZh": "她喜欢接受衣服吗?",
+      "newZh": "她喜欢收到衣服作为礼物吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 4,
+      "fr": "Quelle taille porte-t-elle ?",
+      "oldZh": "她身材有多大?",
+      "newZh": "她穿多大尺码？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 5,
+      "fr": "Qu’est-ce qu’elle aime faire pendant son temps libre ?",
+      "oldZh": "她在空的时候喜欢做什么活动?",
+      "newZh": "她空闲时喜欢做什么？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 6,
+      "fr": "Elle fait de la randonnée ou d’autres activités sportives ?",
+      "oldZh": "她喜欢徒步旅行或其他体育活动吗?",
+      "newZh": "她会去徒步或参加其他体育活动吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 7,
+      "fr": "Tu crois qu’une robe lui ferait plaisir ?",
+      "oldZh": "你认为她会喜欢一件衣服吗?",
+      "newZh": "你觉得她会喜欢收到一条裙子吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 8,
+      "fr": "Et une paire de chaussures de randonnée, ça lui conviendrait ?",
+      "oldZh": "一双徒步鞋是否适合她?",
+      "newZh": "那一双登山鞋适合她吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 9,
+      "fr": "Comment décrirais-tu sa personnalité ?",
+      "oldZh": "你如何描述他的性格?",
+      "newZh": "你会怎么形容她的性格？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 10,
+      "fr": "Quelles couleurs préfère-t-elle ?",
+      "oldZh": "她喜欢什么颜色?",
+      "newZh": "她最喜欢哪些颜色？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 11,
+      "fr": "Elle préfère plutôt quelque chose de pratique ou de plus élégant ?",
+      "oldZh": "她更喜欢一些实用或更优雅的东西吗?",
+      "newZh": "她更喜欢实用款，还是更优雅的款式？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 12,
+      "fr": "Y a-t-il quelque chose qu’elle possède déjà et que je devrais éviter d’acheter ?",
+      "oldZh": "她已经有什么东西,更好不要买?",
+      "newZh": "有什么东西是她已经有了、我最好别再买的吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 13,
+      "fr": "Combien te semblerait raisonnable pour son cadeau ?",
+      "oldZh": "你认为他的礼物是什么预算合理的?",
+      "newZh": "你觉得给她买礼物花多少钱比较合适？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 14,
+      "fr": "Parmi ces idées, laquelle me conseillerais-tu le plus ?",
+      "oldZh": "在这些想法中,你最建议我做什么?",
+      "newZh": "这些想法里，你最推荐哪一个？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "row": 15,
+      "fr": "Tu penses qu’il vaut mieux ajouter une carte ou faire un emballage spécial ?",
+      "oldZh": "你觉得更好的是添加一个地图,或者做一个特殊的包装吗?",
+      "newZh": "你觉得最好附上一张卡片，还是做特别包装？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 1,
+      "fr": "Où se trouve exactement ce nouveau restaurant ?",
+      "oldZh": "这家新餐厅在哪里?",
+      "newZh": "这家新餐厅具体在哪里？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 2,
+      "fr": "Comment puis-je y aller ?",
+      "oldZh": "我怎么能去呢?",
+      "newZh": "我怎么去那里？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 3,
+      "fr": "Qu’est-ce que le restaurant propose comme cuisine ?",
+      "oldZh": "这家餐厅主要是什么菜系？",
+      "newZh": "这家餐厅主打什么菜系？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 4,
+      "fr": "Qu’est-ce que tu me recommanderais comme plat ?",
+      "oldZh": "你会推我吃什么?",
+      "newZh": "你会给我推荐什么菜？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 5,
+      "fr": "Tu peux me décrire ce plat un peu plus en détail ?",
+      "oldZh": "你能比我更详细地描述这个菜吗?",
+      "newZh": "你能再详细介绍一下这道菜吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 6,
+      "fr": "Comme je suis végétarienne, est-ce qu’on trouve des plats végétariens ?",
+      "oldZh": "因为我是素食主义者,有没有素食菜?",
+      "newZh": "我是素食者，这里有素食菜肴吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 7,
+      "fr": "Comment as-tu trouvé ce restaurant dans l’ensemble ?",
+      "oldZh": "你怎么发现这家餐厅?",
+      "newZh": "总体来说，你觉得这家餐厅怎么样？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 8,
+      "fr": "Comment était l’ambiance ?",
+      "oldZh": "气氛如何?",
+      "newZh": "那里的氛围怎么样？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 9,
+      "fr": "Et le service, tu l’as trouvé comment ?",
+      "oldZh": "你怎么找到了服务?",
+      "newZh": "你觉得他们的服务怎么样？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 10,
+      "fr": "Combien faut-il prévoir par personne ?",
+      "oldZh": "每个人要预计多少?",
+      "newZh": "每人需要准备多少钱？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 11,
+      "fr": "Comment peut-on payer sur place ?",
+      "oldZh": "哪些支付方式被接受?",
+      "newZh": "在店里可以用哪些方式付款？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 12,
+      "fr": "Comment se passe la réservation d’une table ?",
+      "oldZh": "我怎么能预订一个桌子呢?",
+      "newZh": "餐桌要怎么预订？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 13,
+      "fr": "À quelles heures le restaurant est-il ouvert ?",
+      "oldZh": "开放时间是什么?",
+      "newZh": "餐厅的营业时间是什么？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 14,
+      "fr": "Tu me conseillerais vraiment ce restaurant ?",
+      "oldZh": "你真的会推这个餐厅吗?",
+      "newZh": "你真的会推荐这家餐厅吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "row": 15,
+      "fr": "Quand serais-tu disponible pour qu’on y aille ensemble ?",
+      "oldZh": "你什么时候可以让我们一起去?",
+      "newZh": "你什么时候有空，我们可以一起去？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 1,
+      "fr": "Où se trouve exactement votre magasin ?",
+      "oldZh": "你的商店在哪里?",
+      "newZh": "您的店具体在哪里？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 2,
+      "fr": "Comment puis-je y aller ?",
+      "oldZh": "我怎么能去呢?",
+      "newZh": "我怎么去那里？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 3,
+      "fr": "Qu’est-ce que vous proposez comme costumes ?",
+      "oldZh": "你提出什么样的服装?",
+      "newZh": "您店里有哪些类型的服装？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 4,
+      "fr": "Vous avez quelles tailles disponibles ?",
+      "oldZh": "有哪些尺寸?",
+      "newZh": "您这边有哪些尺码？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 5,
+      "fr": "Puis-je essayer le costume avant de le louer ?",
+      "oldZh": "在租用之前,我可以试穿这件衣服吗?",
+      "newZh": "租之前我可以试穿这套服装吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 6,
+      "fr": "Pour combien de temps peut-on louer un costume ?",
+      "oldZh": "我们可以租一套西装多久?",
+      "newZh": "一套服装可以租多长时间？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 7,
+      "fr": "Combien coûte la location par jour ?",
+      "oldZh": "每天租多少钱?",
+      "newZh": "每天的租金是多少？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 9,
+      "fr": "Faites-vous un tarif réduit pour plusieurs jours ?",
+      "oldZh": "有几天的折扣吗?",
+      "newZh": "租多天有优惠吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 10,
+      "fr": "Quels moyens de paiement acceptez-vous ?",
+      "oldZh": "你接受什么样的支付方式?",
+      "newZh": "您接受哪些付款方式？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 11,
+      "fr": "Faut-il signer un contrat de location ?",
+      "oldZh": "我需要签订租协议吗?",
+      "newZh": "需要签租赁合同吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 12,
+      "fr": "Comment se passe le retour du costume ?",
+      "oldZh": "我如何返回这件衣服?",
+      "newZh": "服装要怎么归还？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 13,
+      "fr": "Que se passe-t-il si je rends le costume en retard ?",
+      "oldZh": "如果我迟到返回这件衣服,怎么会发生呢?",
+      "newZh": "如果我逾期归还服装，会有什么后果？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 14,
+      "fr": "Et si le costume est abîmé, quels frais dois-je payer ?",
+      "oldZh": "如果服装坏了,我还要付多少钱?",
+      "newZh": "如果服装损坏，我需要支付哪些费用？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "row": 15,
+      "fr": "Vaut-il mieux réserver le costume à l’avance ?",
+      "oldZh": "我必须提前预订这件衣服吗?",
+      "newZh": "最好提前预订服装吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 1,
+      "fr": "Quels meubles vendez-vous exactement ?",
+      "oldZh": "你卖什么家具?",
+      "newZh": "您具体出售哪些家具？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 2,
+      "fr": "Dans quel état sont les meubles ?",
+      "oldZh": "家具的状况如何?",
+      "newZh": "这些家具的状况怎么样？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 3,
+      "fr": "Les meubles présentent-ils des défauts ou des traces d’usure ?",
+      "oldZh": "有任何缺陷或穿戴痕迹吗?",
+      "newZh": "家具上有瑕疵或磨损痕迹吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 4,
+      "fr": "Quelles sont les dimensions du meuble qui m’intéresse ?",
+      "oldZh": "我感兴趣的家具尺寸是什么?",
+      "newZh": "我感兴趣的这件家具尺寸是多少？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 5,
+      "fr": "Avez-vous un modèle un peu plus petit ?",
+      "oldZh": "你有没有更小的模型吗?",
+      "newZh": "您有稍小一点的款式吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 6,
+      "fr": "Puis-je venir voir les meubles sur place avant de me décider ?",
+      "oldZh": "在我决定之前,我可以来看家具吗?",
+      "newZh": "决定之前，我可以到现场看看这些家具吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 7,
+      "fr": "Combien coûte ce meuble ?",
+      "oldZh": "这家具的价格是多少?",
+      "newZh": "这件家具多少钱？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 9,
+      "fr": "Est-ce que vous faites un prix si j’achète plusieurs meubles ?",
+      "oldZh": "如果我购买多家具,有没有折扣?",
+      "newZh": "如果我买多件家具，价格可以优惠吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 10,
+      "fr": "Proposez-vous la livraison à domicile ?",
+      "oldZh": "你能把家具送到我家吗?",
+      "newZh": "您提供送货上门服务吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 11,
+      "fr": "Les frais de livraison sont-ils compris dans le prix ?",
+      "oldZh": "货运费用包括在价格中吗?",
+      "newZh": "送货费包含在价格里吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 12,
+      "fr": "Le montage ou l’installation sont-ils inclus ?",
+      "oldZh": "装配或安装是否包括在内?",
+      "newZh": "费用包含组装或安装吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 13,
+      "fr": "Quels moyens de paiement acceptez-vous ?",
+      "oldZh": "你接受什么样的支付方式?",
+      "newZh": "您接受哪些付款方式？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 14,
+      "fr": "Pourriez-vous me réserver le meuble pendant quelques jours ?",
+      "oldZh": "你能为我预定几天的家具吗?",
+      "newZh": "您能帮我把这件家具留几天吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "row": 15,
+      "fr": "À quel moment puis-je passer voir les meubles ?",
+      "oldZh": "我什么时候可以来检查现场的家具?",
+      "newZh": "我什么时候可以过去看家具？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "row": 1,
+      "fr": "Tu utilises quelle plateforme pour vendre tes objets ?",
+      "oldZh": "你使用哪个网站或平台销售你的物品?",
+      "newZh": "你用哪个平台卖东西？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "row": 2,
+      "fr": "Comment puis-je trouver cette plateforme ?",
+      "oldZh": "我怎么能找到这个平台?",
+      "newZh": "我怎么找到这个平台？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "row": 3,
+      "fr": "Est-ce qu’un compte est nécessaire avant de vendre ?",
+      "oldZh": "在出售之前,我需要创建一个账户吗?",
+      "newZh": "卖东西之前需要先注册账号吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "row": 4,
+      "fr": "Comment se passe la création du compte ?",
+      "oldZh": "如何创建一个账户?",
+      "newZh": "账号要怎么注册？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "row": 5,
+      "fr": "Qu’est-ce qui se vend bien sur ce site ?",
+      "oldZh": "在这个网站上有哪些东西卖得很好?",
+      "newZh": "在这个网站上什么东西比较好卖？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "row": 6,
+      "fr": "Quels articles se vendent le plus vite ?",
+      "oldZh": "哪些商品最容易离开?",
+      "newZh": "哪些商品卖得最快？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "row": 7,
+      "fr": "Comment t’y prends-tu pour rédiger et publier une annonce ?",
+      "oldZh": "如何编写和发布广告?",
+      "newZh": "你通常怎么撰写并发布商品信息？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "row": 8,
+      "fr": "Combien de photos me conseillerais-tu de mettre dans l’annonce ?",
+      "oldZh": "广告中最好放多少张照片?",
+      "newZh": "你建议我在商品信息里放几张照片？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "row": 9,
+      "fr": "Comment fixes-tu le prix de tes objets ?",
+      "oldZh": "你如何确定物品的价格?",
+      "newZh": "你怎么给物品定价？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "row": 10,
+      "fr": "Qu’est-ce que tu fais pour rendre tes annonces plus visibles ?",
+      "oldZh": "你如何提高广告的可见性?",
+      "newZh": "你会怎么提高商品信息的曝光度？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "row": 11,
+      "fr": "Comment restes-tu en contact avec les acheteurs ?",
+      "oldZh": "你如何与买家保持联系?",
+      "newZh": "你怎么和买家保持联系？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "row": 12,
+      "fr": "Quel mode de paiement te paraît le plus sûr ?",
+      "oldZh": "什么是最安全的支付方式?",
+      "newZh": "你觉得哪种付款方式最安全？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "row": 13,
+      "fr": "Tu préfères remettre l’objet en main propre ou l’envoyer ?",
+      "oldZh": "你更愿意把这件物品交给自己,还是把它发送?",
+      "newZh": "你更喜欢当面交货，还是邮寄？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "row": 14,
+      "fr": "Que fais-tu si l’acheteur annule au dernier moment ?",
+      "oldZh": "如果买家最后一刻取消,你会怎么办?",
+      "newZh": "如果买家临时取消，你会怎么办？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "row": 15,
+      "fr": "Comment éviter les arnaques selon toi ?",
+      "oldZh": "为了避免骗局,我们应该采取哪些预防措施?",
+      "newZh": "你觉得怎样才能避免被骗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 1,
+      "fr": "Trouve-t-on facilement des restaurants végétariens au Canada ?",
+      "oldZh": "在加拿大有没有什么蔬菜餐厅?",
+      "newZh": "在加拿大容易找到素食餐厅吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 2,
+      "fr": "Les restaurants italiens ou chinois proposent-ils souvent des plats végétariens ?",
+      "oldZh": "意大利或中国的餐厅经常提供素食菜吗?",
+      "newZh": "意大利餐馆或中餐馆通常会提供素食菜吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 3,
+      "fr": "Quel genre de restaurant lui conseilleriez-vous en priorité ?",
+      "oldZh": "你最好建议他去哪家餐厅?",
+      "newZh": "您最建议他去什么类型的餐厅？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 4,
+      "fr": "Dans les centres-villes, trouve-t-on facilement des restaurants végétariens près des bureaux ou des hôtels ?",
+      "oldZh": "在城市中心,在办公室或酒店附近是否容易找到它?",
+      "newZh": "在市中心的办公楼或酒店附近，容易找到素食餐厅吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 5,
+      "fr": "Les cantines d’entreprise proposent-elles généralement des options végétariennes ?",
+      "oldZh": "企业餐厅通常提供素食选择吗?",
+      "newZh": "公司食堂通常会提供素食选项吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 6,
+      "fr": "Les supermarchés proposent-ils facilement des produits végétariens ?",
+      "oldZh": "超市是否容易找到蔬菜产品?",
+      "newZh": "超市容易买到素食产品吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 7,
+      "fr": "Vaut-il mieux faire ses courses en centre-ville ou en banlieue ?",
+      "oldZh": "在市中心或郊区购物更好吗?",
+      "newZh": "在市中心还是郊区买东西更方便？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 8,
+      "fr": "Le choix est-il assez large pour les végétariens ?",
+      "oldZh": "适合素食主义者是否有很多选择?",
+      "newZh": "素食者可选的种类够多吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 9,
+      "fr": "Trouve-t-on facilement du tofu, des légumineuses ou d’autres protéines végétales ?",
+      "oldZh": "有没有很容易找到豆腐,胡卜或其他植物蛋白质?",
+      "newZh": "容易买到豆腐、豆类或其他植物蛋白吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 10,
+      "fr": "Les repas végétariens au restaurant sont-ils chers ?",
+      "oldZh": "餐厅的素食餐价格高昂吗?",
+      "newZh": "餐厅里的素食菜肴贵吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 11,
+      "fr": "Et les produits végétariens au supermarché, sont-ils abordables ?",
+      "oldZh": "超市的蔬菜产品是什么价格?",
+      "newZh": "超市里的素食产品价格实惠吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 12,
+      "fr": "Les produits sont-ils clairement étiquetés pour les végétariens ?",
+      "oldZh": "产品是否明确标记为素食者?",
+      "newZh": "产品上会清楚标明是否适合素食者吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 13,
+      "fr": "Peut-on facilement demander un plat sans viande au restaurant ?",
+      "oldZh": "在餐厅要求没有肉的菜是不是很容易的?",
+      "newZh": "在餐厅容易要求做一道不含肉的菜吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 14,
+      "fr": "Vaut-il mieux prévoir quelques snacks végétariens pour le voyage ?",
+      "oldZh": "旅行中最好安排一些素食零食吗?",
+      "newZh": "旅行时最好带些素食零食吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "row": 15,
+      "fr": "Au final, pensez-vous qu’il pourra se nourrir facilement pendant son voyage d’affaires ?",
+      "oldZh": "你认为他会在商务旅行中很容易吃饭吗?",
+      "newZh": "总的来说，您觉得他出差期间容易找到吃的吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 1,
+      "fr": "Où puis-je venir voir les vêtements ?",
+      "oldZh": "我可以去哪里看衣服?",
+      "newZh": "我可以去哪里看这些衣服？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 2,
+      "fr": "Pour quels âges ou quelles tailles sont-ils disponibles ?",
+      "oldZh": "它们有哪些年龄或尺寸?",
+      "newZh": "这些衣服适合哪些年龄或尺码？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 3,
+      "fr": "Tu proposes combien de styles différents ?",
+      "oldZh": "你提出了多少不同的风格?",
+      "newZh": "你有多少种不同款式？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 4,
+      "fr": "As-tu aussi des vêtements de sport ?",
+      "oldZh": "你也有运动服吗?",
+      "newZh": "你也有运动服吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 5,
+      "fr": "Combien de vêtements as-tu encore en stock ?",
+      "oldZh": "你还有多少件衣服?",
+      "newZh": "你还剩多少件衣服？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 6,
+      "fr": "Dans quel état sont les vêtements ?",
+      "oldZh": "衣服的状况如何?",
+      "newZh": "这些衣服的状况怎么样？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 7,
+      "fr": "Certains articles ont-ils des taches ou des défauts ?",
+      "oldZh": "有什么东西有点或缺陷吗?",
+      "newZh": "有些衣服上有污渍或瑕疵吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 8,
+      "fr": "Est-ce que mon enfant peut essayer les vêtements avant l’achat ?",
+      "oldZh": "我的孩子可以在我买之前尝试衣服吗?",
+      "newZh": "买之前我孩子可以试穿吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 9,
+      "fr": "Combien coûte un vêtement ?",
+      "oldZh": "一件衣服有多少钱?",
+      "newZh": "一件衣服多少钱？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 10,
+      "fr": "Tu fais un prix si j’en achète plusieurs ?",
+      "oldZh": "如果我买多个,有什么折扣吗?",
+      "newZh": "如果我买多件，你会给优惠价吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 11,
+      "fr": "Quels moyens de paiement acceptes-tu ?",
+      "oldZh": "你接受什么样的支付方式?",
+      "newZh": "你接受哪些付款方式？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 12,
+      "fr": "Tu pourrais me réserver quelques articles ?",
+      "oldZh": "你能为我预订一些东西吗?",
+      "newZh": "你能帮我留几件吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 13,
+      "fr": "Puis-je retourner un vêtement s’il ne convient pas ?",
+      "oldZh": "如果不合适,我可以把衣服转回吗?",
+      "newZh": "如果衣服不合适，可以退货吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 14,
+      "fr": "Et s’il y a un problème avec l’article, puis-je être remboursée ?",
+      "oldZh": "如果有问题,可以退还吗?",
+      "newZh": "如果商品有问题，我可以退款吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "row": 15,
+      "fr": "Quand puis-je venir voir et essayer les vêtements ?",
+      "oldZh": "我什么时候可以来看看,试穿衣服?",
+      "newZh": "我什么时候可以过去看衣服并试穿？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 1,
+      "fr": "Où se trouve exactement votre restaurant ?",
+      "oldZh": "你的餐厅在哪里?",
+      "newZh": "您的餐厅具体在哪里？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 2,
+      "fr": "Quel est le moyen le plus simple pour y aller ?",
+      "oldZh": "我们怎么去呢?",
+      "newZh": "去那里最方便的方式是什么？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 3,
+      "fr": "Avez-vous encore des tables disponibles à la date de l’anniversaire ?",
+      "oldZh": "你还能准备生日日期吗?",
+      "newZh": "生日当天您还有空桌吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 4,
+      "fr": "Jusqu’à combien de personnes pouvez-vous accueillir pour ce repas ?",
+      "oldZh": "你能为多少人安排这顿饭?",
+      "newZh": "这顿饭最多可以接待多少人？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 5,
+      "fr": "Qu’est-ce que vous proposez comme menus pour un anniversaire ?",
+      "oldZh": "你推什么样的生日菜单?",
+      "newZh": "您为生日聚会提供哪些套餐？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 6,
+      "fr": "Est-il possible de prévoir des plats végétariens ?",
+      "oldZh": "你能预定什么蔬菜菜?",
+      "newZh": "可以安排素食菜肴吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 7,
+      "fr": "Qu’est-ce que vous me conseilleriez comme plat pour ce type de repas ?",
+      "oldZh": "你会给我推哪种食物?",
+      "newZh": "这种聚餐您建议我点什么菜？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 8,
+      "fr": "Est-ce que vous préparez aussi des gâteaux d’anniversaire ?",
+      "oldZh": "你能做一个生日蛋糕吗?",
+      "newZh": "您也会制作生日蛋糕吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 9,
+      "fr": "Proposez-vous une décoration ou un service spécial pour les anniversaires ?",
+      "oldZh": "你有没有提出一个特殊的生日装饰或服务?",
+      "newZh": "您提供生日主题布置或特别服务吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 10,
+      "fr": "Combien faut-il prévoir par personne ?",
+      "oldZh": "每个人要预计多少?",
+      "newZh": "每人需要准备多少钱？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 11,
+      "fr": "Proposez-vous un tarif de groupe ?",
+      "oldZh": "有没有一个小组的折扣吗?",
+      "newZh": "您提供团体优惠价吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 12,
+      "fr": "Quels moyens de paiement acceptez-vous ?",
+      "oldZh": "你接受什么样的支付方式?",
+      "newZh": "您接受哪些付款方式？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 13,
+      "fr": "Comment se passe la réservation ?",
+      "oldZh": "我怎么可以预订?",
+      "newZh": "预订流程是怎样的？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 14,
+      "fr": "Puis-je annuler ou modifier la réservation en cas de problème ?",
+      "oldZh": "如果有问题,我可以取消或更改预订吗?",
+      "newZh": "如果临时有事，我可以取消或更改预订吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "row": 15,
+      "fr": "À quel moment faut-il confirmer le nombre final d’invités ?",
+      "oldZh": "需要多久先确认最后的客人数?",
+      "newZh": "需要在什么时候确认最终的宾客人数？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 1,
+      "fr": "Qu’est-ce que vous pouvez préparer comme plats ?",
+      "oldZh": "你能做什么样的菜呢?",
+      "newZh": "您可以准备哪些菜？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 2,
+      "fr": "Est-il possible d’avoir aussi un menu végétarien ?",
+      "oldZh": "你也可以做一个素食菜单吗?",
+      "newZh": "也可以准备素食菜单吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 3,
+      "fr": "Pouvez-vous adapter le menu aux goûts de ma famille ?",
+      "oldZh": "菜单是否可以适应我家人的喜好?",
+      "newZh": "您可以根据我家人的口味调整菜单吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 4,
+      "fr": "Les allergies ou restrictions alimentaires peuvent-elles être prises en compte ?",
+      "oldZh": "你能考虑过敏症或食物限制吗?",
+      "newZh": "可以考虑食物过敏或饮食限制吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 5,
+      "fr": "Quelle formation professionnelle avez-vous ?",
+      "oldZh": "你有什么职业资格?",
+      "newZh": "您接受过什么专业培训？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 6,
+      "fr": "Depuis quand travaillez-vous comme chef à domicile ?",
+      "oldZh": "你做家庭主管了多久?",
+      "newZh": "您做上门厨师有多久了？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 8,
+      "fr": "Utilisez-vous des produits frais et de saison ?",
+      "oldZh": "你使用的是新鲜的产品吗?",
+      "newZh": "您会使用新鲜的时令食材吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 9,
+      "fr": "De quel matériel faut-il disposer à la maison ?",
+      "oldZh": "家里需要什么设备?",
+      "newZh": "家里需要准备哪些设备？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 10,
+      "fr": "Vous apportez votre propre matériel professionnel ?",
+      "oldZh": "你带着自己的专业设备吗?",
+      "newZh": "您会自带专业设备吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 11,
+      "fr": "Le service à table est-il compris ?",
+      "oldZh": "餐厅服务是什么意思?",
+      "newZh": "费用包含上菜服务吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 12,
+      "fr": "Le nettoyage de la cuisine est-il inclus après le repas ?",
+      "oldZh": "厨房清洁是包括在饭后的吗?",
+      "newZh": "用餐后清理厨房包含在服务里吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 13,
+      "fr": "Quel est votre tarif par personne ?",
+      "oldZh": "你每个人需要多少钱?",
+      "newZh": "您的收费标准是每人多少？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 14,
+      "fr": "Comment se passe la réservation de vos services ?",
+      "oldZh": "我如何预订您的服务?",
+      "newZh": "怎样预订您的服务？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "row": 15,
+      "fr": "Quand faut-il confirmer le nombre d’invités et le menu définitif ?",
+      "oldZh": "什么时候要确认客人数和最终菜单?",
+      "newZh": "需要什么时候确认宾客人数和最终菜单？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 1,
+      "fr": "Quelles zones desservez-vous pour la livraison ?",
+      "oldZh": "你们配送哪些区域？",
+      "newZh": "您提供送货服务的区域有哪些？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 2,
+      "fr": "Quels créneaux sont disponibles ?",
+      "oldZh": "你提出的时间段是什么?",
+      "newZh": "目前有哪些配送时段？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 3,
+      "fr": "Livrez-vous aussi le week-end ?",
+      "oldZh": "你也会在周末交货吗?",
+      "newZh": "周末也配送吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 4,
+      "fr": "En moyenne, combien de temps prend la livraison ?",
+      "oldZh": "平均配送需要多长时间？",
+      "newZh": "配送平均需要多长时间？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 5,
+      "fr": "Combien coûte la livraison ?",
+      "oldZh": "送货费用是多少?",
+      "newZh": "配送费是多少？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 6,
+      "fr": "À partir de quel montant la livraison est-elle gratuite ?",
+      "oldZh": "订单达到一定金额以后可以免运费吗？",
+      "newZh": "订单金额达到多少可以免配送费？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 7,
+      "fr": "Quelles formules de livraison proposez-vous ?",
+      "oldZh": "你提出的配送方式是什么?",
+      "newZh": "您提供哪些配送方式或服务方案？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 8,
+      "fr": "Proposez-vous la livraison sans contact ?",
+      "oldZh": "没有联系的交货是可能的吗?",
+      "newZh": "您提供无接触配送吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 9,
+      "fr": "Quels moyens de paiement acceptez-vous ?",
+      "oldZh": "你接受什么样的支付方式?",
+      "newZh": "您接受哪些付款方式？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 10,
+      "fr": "Puis-je choisir un créneau précis ?",
+      "oldZh": "我可以选择一个特定的位吗?",
+      "newZh": "我可以选择具体的配送时段吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 11,
+      "fr": "À qui dois-je m’adresser si la livraison est en retard ?",
+      "oldZh": "如果货物迟到,我该怎么办?",
+      "newZh": "如果配送延误，我应该联系谁？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 12,
+      "fr": "Que se passe-t-il si je ne suis pas chez moi au moment de la livraison ?",
+      "oldZh": "如果送货时我不在家怎么办？",
+      "newZh": "送货时如果我不在家，会怎么办？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 13,
+      "fr": "Comment ça se passe si un produit arrive abîmé ?",
+      "oldZh": "如果产品出现损坏,我该怎么办?",
+      "newZh": "如果收到的商品损坏了，该怎么处理？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 14,
+      "fr": "Dans ce cas, puis-je être remboursée ?",
+      "oldZh": "在这种情况下,还款是否可能?",
+      "newZh": "这种情况下可以退款吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "row": 15,
+      "fr": "Comment passer une commande avec livraison ?",
+      "oldZh": "我如何预订或订货?",
+      "newZh": "怎样下单并选择送货？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 1,
+      "fr": "Où se trouve exactement ce nouveau restaurant ?",
+      "oldZh": "这家新餐厅在哪里?",
+      "newZh": "这家新餐厅具体在哪里？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 2,
+      "fr": "Comment puis-je y aller ?",
+      "oldZh": "我怎么能去呢?",
+      "newZh": "我怎么去那里？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 3,
+      "fr": "Qu’est-ce que le restaurant propose comme cuisine ?",
+      "oldZh": "这家餐厅主要是什么菜系？",
+      "newZh": "这家餐厅主打什么菜系？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 4,
+      "fr": "Qu’est-ce que tu me recommanderais comme plat ?",
+      "oldZh": "你会推我吃什么?",
+      "newZh": "你会给我推荐什么菜？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 5,
+      "fr": "Tu peux me décrire ce plat un peu plus en détail ?",
+      "oldZh": "你能比我更详细地描述这个菜吗?",
+      "newZh": "你能再详细介绍一下这道菜吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 6,
+      "fr": "Comme je suis végétarienne, est-ce qu’on trouve des plats végétariens ?",
+      "oldZh": "因为我是素食主义者,有没有素食菜?",
+      "newZh": "我是素食者，这里有素食菜肴吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 7,
+      "fr": "Comment as-tu trouvé ce restaurant dans l’ensemble ?",
+      "oldZh": "你怎么发现这家餐厅?",
+      "newZh": "总体来说，你觉得这家餐厅怎么样？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 8,
+      "fr": "Comment était l’ambiance ?",
+      "oldZh": "气氛如何?",
+      "newZh": "那里的氛围怎么样？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 9,
+      "fr": "Et le service, tu l’as trouvé comment ?",
+      "oldZh": "你怎么找到了服务?",
+      "newZh": "你觉得他们的服务怎么样？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 10,
+      "fr": "Combien faut-il prévoir par personne ?",
+      "oldZh": "每个人要预计多少?",
+      "newZh": "每人需要准备多少钱？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 11,
+      "fr": "Comment peut-on payer sur place ?",
+      "oldZh": "哪些支付方式被接受?",
+      "newZh": "在店里可以用哪些方式付款？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 12,
+      "fr": "Comment se passe la réservation d’une table ?",
+      "oldZh": "我怎么能预订一个桌子呢?",
+      "newZh": "餐桌要怎么预订？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 13,
+      "fr": "À quelles heures le restaurant est-il ouvert ?",
+      "oldZh": "开放时间是什么?",
+      "newZh": "餐厅的营业时间是什么？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 14,
+      "fr": "Tu me conseillerais vraiment ce restaurant ?",
+      "oldZh": "你真的会推这个餐厅吗?",
+      "newZh": "你真的会推荐这家餐厅吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "row": 15,
+      "fr": "Quand serais-tu disponible pour qu’on y aille ensemble ?",
+      "oldZh": "你什么时候可以让我们一起去?",
+      "newZh": "你什么时候有空，我们可以一起去？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 1,
+      "fr": "Quels meubles vendez-vous exactement ?",
+      "oldZh": "你卖什么家具?",
+      "newZh": "您具体出售哪些家具？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 2,
+      "fr": "Dans quel état sont les meubles ?",
+      "oldZh": "家具的状况如何?",
+      "newZh": "这些家具的状况怎么样？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 3,
+      "fr": "Les meubles présentent-ils des défauts ou des traces d’usure ?",
+      "oldZh": "有任何缺陷或穿戴痕迹吗?",
+      "newZh": "家具上有瑕疵或磨损痕迹吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 4,
+      "fr": "Quelles sont les dimensions du meuble qui m’intéresse ?",
+      "oldZh": "我感兴趣的家具尺寸是什么?",
+      "newZh": "我感兴趣的这件家具尺寸是多少？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 5,
+      "fr": "Avez-vous un modèle un peu plus petit ?",
+      "oldZh": "你有没有更小的模型吗?",
+      "newZh": "您有稍小一点的款式吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 6,
+      "fr": "Puis-je venir voir les meubles sur place avant de me décider ?",
+      "oldZh": "在我决定之前,我可以来看家具吗?",
+      "newZh": "决定之前，我可以到现场看看这些家具吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 7,
+      "fr": "Combien coûte ce meuble ?",
+      "oldZh": "这家具的价格是多少?",
+      "newZh": "这件家具多少钱？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 9,
+      "fr": "Est-ce que vous faites un prix si j’achète plusieurs meubles ?",
+      "oldZh": "如果我购买多家具,有没有折扣?",
+      "newZh": "如果我买多件家具，价格可以优惠吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 10,
+      "fr": "Proposez-vous la livraison à domicile ?",
+      "oldZh": "你能把家具送到我家吗?",
+      "newZh": "您提供送货上门服务吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 11,
+      "fr": "Les frais de livraison sont-ils compris dans le prix ?",
+      "oldZh": "货运费用包括在价格中吗?",
+      "newZh": "送货费包含在价格里吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 12,
+      "fr": "Le montage ou l’installation sont-ils inclus ?",
+      "oldZh": "装配或安装是否包括在内?",
+      "newZh": "费用包含组装或安装吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 13,
+      "fr": "Quels moyens de paiement acceptez-vous ?",
+      "oldZh": "你接受什么样的支付方式?",
+      "newZh": "您接受哪些付款方式？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 14,
+      "fr": "Pourriez-vous me réserver le meuble pendant quelques jours ?",
+      "oldZh": "你能为我预定几天的家具吗?",
+      "newZh": "您能帮我把这件家具留几天吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "row": 15,
+      "fr": "À quel moment puis-je passer voir les meubles ?",
+      "oldZh": "我什么时候可以来检查现场的家具?",
+      "newZh": "我什么时候可以过去看家具？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 1,
+      "fr": "Pour mon anniversaire, quel genre de restaurant me recommanderiez-vous ?",
+      "oldZh": "你会推我庆祝我的生日的餐厅是什么样的?",
+      "newZh": "我想过生日，您会推荐什么类型的餐厅？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 2,
+      "fr": "Où se trouve exactement ce restaurant ?",
+      "oldZh": "这家餐厅在哪里?",
+      "newZh": "这家餐厅具体在哪里？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 3,
+      "fr": "Comment puis-je y aller ?",
+      "oldZh": "我怎么能去呢?",
+      "newZh": "我怎么去那里？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 4,
+      "fr": "Vous y êtes déjà allé(e) ?",
+      "oldZh": "你已经去过吗?",
+      "newZh": "您以前去过那里吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 5,
+      "fr": "Comment avez-vous trouvé ce restaurant ?",
+      "oldZh": "如何找到这家餐厅?",
+      "newZh": "您觉得这家餐厅怎么样？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 6,
+      "fr": "Quelle spécialité est la plus connue ?",
+      "oldZh": "最著名的专业是什么?",
+      "newZh": "这里最有名的特色菜是什么？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 7,
+      "fr": "Et pour les végétariens, est-ce qu’il y a des options ?",
+      "oldZh": "还有植物菜吗?",
+      "newZh": "这里有适合素食者的菜吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 8,
+      "fr": "Vous auriez une autre adresse à me conseiller ?",
+      "oldZh": "有没有其他餐厅可以给我建议吗?",
+      "newZh": "您还可以给我推荐另一家餐厅吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 9,
+      "fr": "Entre les deux, lequel me conseilleriez-vous pour un anniversaire ?",
+      "oldZh": "两者中,你会给我推哪个生日?",
+      "newZh": "这两家里，您更推荐哪家办生日聚会？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 10,
+      "fr": "L’ambiance est-elle plutôt calme, élégante ou festive ?",
+      "oldZh": "气氛是宁静的,优雅的,或节日的?",
+      "newZh": "这里的氛围比较安静、优雅，还是热闹？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 11,
+      "fr": "Le restaurant est-il adapté à un petit groupe d’amis ?",
+      "oldZh": "这家餐厅适合一群朋友吗?",
+      "newZh": "这家餐厅适合一小群朋友聚餐吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 12,
+      "fr": "Combien faut-il prévoir par personne ?",
+      "oldZh": "每个人要预计多少?",
+      "newZh": "每人需要准备多少钱？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 13,
+      "fr": "Vaut-il mieux réserver longtemps à l’avance ?",
+      "oldZh": "需要提前预订时间吗?",
+      "newZh": "最好提前很久预订吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 14,
+      "fr": "Quelque chose de spécial est-il prévu pour les anniversaires ?",
+      "oldZh": "这家餐厅有什么特别的生日礼物吗?",
+      "newZh": "生日当天会有特别安排吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "row": 15,
+      "fr": "À quelle heure me conseilleriez-vous de réserver pour avoir une bonne ambiance ?",
+      "oldZh": "你建议我什么时候预定,以保持良好的气氛?",
+      "newZh": "您建议我订几点，才能体验到热闹的氛围？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 1,
+      "fr": "Quel jour serait le plus pratique pour organiser ce repas ?",
+      "oldZh": "你建议我什么天安排这顿饭?",
+      "newZh": "哪天安排这顿饭最方便？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 2,
+      "fr": "À quelle heure serait-il préférable de commencer ?",
+      "oldZh": "什么时候最好开始?",
+      "newZh": "最好几点开始？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 3,
+      "fr": "Où me conseillerais-tu d’organiser ce repas ?",
+      "oldZh": "你建议我去哪家餐厅或地方?",
+      "newZh": "你建议我在哪里安排这顿饭？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 4,
+      "fr": "Quel est le moyen le plus simple pour y aller ?",
+      "oldZh": "我们怎么去呢?",
+      "newZh": "去那里最方便的方式是什么？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 5,
+      "fr": "Qu’est-ce que je devrais proposer comme plats traditionnels canadiens ?",
+      "oldZh": "我应该提供哪些传统的加拿大菜?",
+      "newZh": "我应该准备哪些加拿大传统菜？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 6,
+      "fr": "Quel plat serait le plus représentatif de la cuisine canadienne ?",
+      "oldZh": "什么菜式最能代表加拿大菜呢?",
+      "newZh": "哪道菜最能代表加拿大美食？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 7,
+      "fr": "Comment décrirais-tu le goût de ce plat ?",
+      "oldZh": "你会如何描述这种菜的味道?",
+      "newZh": "你会怎么形容这道菜的味道？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 8,
+      "fr": "Qu’est-ce qu’on peut utiliser comme ingrédients typiquement canadiens ?",
+      "oldZh": "我们可以使用哪些典型的加拿大成分?",
+      "newZh": "可以用哪些具有加拿大特色的食材？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 9,
+      "fr": "Quels produits de saison vaudrait-il mieux privilégier ?",
+      "oldZh": "有没有什么季节产品可以优先考虑?",
+      "newZh": "最好优先选用哪些时令食材？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 10,
+      "fr": "Est-ce qu’on devrait aussi prévoir un plat végétarien ?",
+      "oldZh": "我们还应该提供素食菜吗?",
+      "newZh": "我们也应该准备一道素食菜吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 11,
+      "fr": "Qu’est-ce que tu me conseillerais comme dessert canadien ?",
+      "oldZh": "你能给我推哪种加拿大甜点?",
+      "newZh": "你建议我准备哪种加拿大甜点？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 12,
+      "fr": "Quelles boissons iraient bien avec le menu ?",
+      "oldZh": "哪些饮料适合搭配这个菜单？",
+      "newZh": "哪些饮料适合搭配这份菜单？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 13,
+      "fr": "Combien faut-il prévoir par personne ?",
+      "oldZh": "每个人要预计多少?",
+      "newZh": "每人需要准备多少钱？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 14,
+      "fr": "Vaut-il mieux réserver le restaurant à l’avance ?",
+      "oldZh": "我必须提前预订餐厅吗?",
+      "newZh": "最好提前预订餐厅吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "row": 15,
+      "fr": "Si tu voulais faire découvrir la cuisine canadienne, quel menu complet choisirais-tu ?",
+      "oldZh": "如果你想让人们了解加拿大菜单,你会选择哪个完整的菜单?",
+      "newZh": "如果你想让朋友了解加拿大美食，你会选择什么完整菜单？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 1,
+      "fr": "Quels meubles vendez-vous exactement ?",
+      "oldZh": "你卖什么家具?",
+      "newZh": "您具体出售哪些家具？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 2,
+      "fr": "Dans quel état sont les meubles ?",
+      "oldZh": "家具的状况如何?",
+      "newZh": "这些家具的状况怎么样？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 3,
+      "fr": "Les meubles présentent-ils des défauts ou des traces d’usure ?",
+      "oldZh": "有任何缺陷或穿戴痕迹吗?",
+      "newZh": "家具上有瑕疵或磨损痕迹吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 4,
+      "fr": "Quelles sont les dimensions du meuble qui m’intéresse ?",
+      "oldZh": "我感兴趣的家具尺寸是什么?",
+      "newZh": "我感兴趣的这件家具尺寸是多少？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 5,
+      "fr": "Avez-vous un modèle un peu plus petit ?",
+      "oldZh": "你有没有更小的模型吗?",
+      "newZh": "您有稍小一点的款式吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 6,
+      "fr": "Puis-je venir voir les meubles sur place avant de me décider ?",
+      "oldZh": "在我决定之前,我可以来看家具吗?",
+      "newZh": "决定之前，我可以到现场看看这些家具吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 7,
+      "fr": "Combien coûte ce meuble ?",
+      "oldZh": "这家具的价格是多少?",
+      "newZh": "这件家具多少钱？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 9,
+      "fr": "Est-ce que vous faites un prix si j’achète plusieurs meubles ?",
+      "oldZh": "如果我购买多家具,有没有折扣?",
+      "newZh": "如果我买多件家具，价格可以优惠吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 10,
+      "fr": "Proposez-vous la livraison à domicile ?",
+      "oldZh": "你能把家具送到我家吗?",
+      "newZh": "您提供送货上门服务吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 11,
+      "fr": "Les frais de livraison sont-ils compris dans le prix ?",
+      "oldZh": "货运费用包括在价格中吗?",
+      "newZh": "送货费包含在价格里吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 12,
+      "fr": "Le montage ou l’installation sont-ils inclus ?",
+      "oldZh": "装配或安装是否包括在内?",
+      "newZh": "费用包含组装或安装吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 13,
+      "fr": "Quels moyens de paiement acceptez-vous ?",
+      "oldZh": "你接受什么样的支付方式?",
+      "newZh": "您接受哪些付款方式？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 14,
+      "fr": "Pourriez-vous me réserver le meuble pendant quelques jours ?",
+      "oldZh": "你能为我预定几天的家具吗?",
+      "newZh": "您能帮我把这件家具留几天吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "row": 15,
+      "fr": "À quel moment puis-je passer voir les meubles ?",
+      "oldZh": "我什么时候可以来检查现场的家具?",
+      "newZh": "我什么时候可以过去看家具？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 1,
+      "fr": "Qu’est-ce que vous pouvez préparer comme plats ?",
+      "oldZh": "你能做什么样的菜呢?",
+      "newZh": "您可以准备哪些菜？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 2,
+      "fr": "Est-il possible d’avoir aussi un menu végétarien ?",
+      "oldZh": "你也可以做一个素食菜单吗?",
+      "newZh": "也可以准备素食菜单吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 3,
+      "fr": "Pouvez-vous adapter le menu aux goûts de ma famille ?",
+      "oldZh": "菜单是否可以适应我家人的喜好?",
+      "newZh": "您可以根据我家人的口味调整菜单吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 4,
+      "fr": "Les allergies ou restrictions alimentaires peuvent-elles être prises en compte ?",
+      "oldZh": "你能考虑过敏症或食物限制吗?",
+      "newZh": "可以考虑食物过敏或饮食限制吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 5,
+      "fr": "Quelle formation professionnelle avez-vous ?",
+      "oldZh": "你有什么职业资格?",
+      "newZh": "您接受过什么专业培训？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 6,
+      "fr": "Depuis quand travaillez-vous comme chef à domicile ?",
+      "oldZh": "你做家庭主管了多久?",
+      "newZh": "您做上门厨师有多久了？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 8,
+      "fr": "Utilisez-vous des produits frais et de saison ?",
+      "oldZh": "你使用的是新鲜的产品吗?",
+      "newZh": "您会使用新鲜的时令食材吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 9,
+      "fr": "De quel matériel faut-il disposer à la maison ?",
+      "oldZh": "家里需要什么设备?",
+      "newZh": "家里需要准备哪些设备？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 10,
+      "fr": "Vous apportez votre propre matériel professionnel ?",
+      "oldZh": "你带着自己的专业设备吗?",
+      "newZh": "您会自带专业设备吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 11,
+      "fr": "Le service à table est-il compris ?",
+      "oldZh": "餐厅服务是什么意思?",
+      "newZh": "费用包含上菜服务吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 12,
+      "fr": "Le nettoyage de la cuisine est-il inclus après le repas ?",
+      "oldZh": "厨房清洁是包括在饭后的吗?",
+      "newZh": "用餐后清理厨房包含在服务里吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 13,
+      "fr": "Quel est votre tarif par personne ?",
+      "oldZh": "你每个人需要多少钱?",
+      "newZh": "您的收费标准是每人多少？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 14,
+      "fr": "Comment se passe la réservation de vos services ?",
+      "oldZh": "我如何预订您的服务?",
+      "newZh": "怎样预订您的服务？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "row": 15,
+      "fr": "Quand faut-il confirmer le nombre d’invités et le menu définitif ?",
+      "oldZh": "什么时候要确认客人数和最终菜单?",
+      "newZh": "需要什么时候确认宾客人数和最终菜单？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 1,
+      "fr": "Quel âge a ta sœur ?",
+      "oldZh": "你妹妹有多年?",
+      "newZh": "你妹妹多大了？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 2,
+      "fr": "Qu’est-ce qu’elle aime en général ?",
+      "oldZh": "她一般喜欢什么?",
+      "newZh": "她平时喜欢什么？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 3,
+      "fr": "Elle aime recevoir des vêtements en cadeau ?",
+      "oldZh": "她喜欢接受衣服吗?",
+      "newZh": "她喜欢收到衣服作为礼物吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 4,
+      "fr": "Quelle taille porte-t-elle ?",
+      "oldZh": "她身材有多大?",
+      "newZh": "她穿多大尺码？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 5,
+      "fr": "Qu’est-ce qu’elle aime faire pendant son temps libre ?",
+      "oldZh": "她在空的时候喜欢做什么活动?",
+      "newZh": "她空闲时喜欢做什么？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 6,
+      "fr": "Elle fait de la randonnée ou d’autres activités sportives ?",
+      "oldZh": "她喜欢徒步旅行或其他体育活动吗?",
+      "newZh": "她会去徒步或参加其他体育活动吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 7,
+      "fr": "Tu crois qu’une robe lui ferait plaisir ?",
+      "oldZh": "你认为她会喜欢一件衣服吗?",
+      "newZh": "你觉得她会喜欢收到一条裙子吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 8,
+      "fr": "Et une paire de chaussures de randonnée, ça lui conviendrait ?",
+      "oldZh": "一双徒步鞋是否适合她?",
+      "newZh": "那一双登山鞋适合她吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 9,
+      "fr": "Comment décrirais-tu sa personnalité ?",
+      "oldZh": "你如何描述他的性格?",
+      "newZh": "你会怎么形容她的性格？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 10,
+      "fr": "Quelles couleurs préfère-t-elle ?",
+      "oldZh": "她喜欢什么颜色?",
+      "newZh": "她最喜欢哪些颜色？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 11,
+      "fr": "Elle préfère plutôt quelque chose de pratique ou de plus élégant ?",
+      "oldZh": "她更喜欢一些实用或更优雅的东西吗?",
+      "newZh": "她更喜欢实用款，还是更优雅的款式？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 12,
+      "fr": "Y a-t-il quelque chose qu’elle possède déjà et que je devrais éviter d’acheter ?",
+      "oldZh": "她已经有什么东西,更好不要买?",
+      "newZh": "有什么东西是她已经有了、我最好别再买的吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 13,
+      "fr": "Combien te semblerait raisonnable pour son cadeau ?",
+      "oldZh": "你认为他的礼物是什么预算合理的?",
+      "newZh": "你觉得给她买礼物花多少钱比较合适？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 14,
+      "fr": "Parmi ces idées, laquelle me conseillerais-tu le plus ?",
+      "oldZh": "在这些想法中,你最建议我做什么?",
+      "newZh": "这些想法里，你最推荐哪一个？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "row": 15,
+      "fr": "Tu penses qu’il vaut mieux ajouter une carte ou faire un emballage spécial ?",
+      "oldZh": "你觉得更好的是添加一个地图,或者做一个特殊的包装吗?",
+      "newZh": "你觉得最好附上一张卡片，还是做特别包装？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 1,
+      "fr": "Quel âge a ta sœur ?",
+      "oldZh": "你妹妹有多年?",
+      "newZh": "你妹妹多大了？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 2,
+      "fr": "Qu’est-ce qu’elle aime en général ?",
+      "oldZh": "她一般喜欢什么?",
+      "newZh": "她平时喜欢什么？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 3,
+      "fr": "Elle aime recevoir des vêtements en cadeau ?",
+      "oldZh": "她喜欢接受衣服吗?",
+      "newZh": "她喜欢收到衣服作为礼物吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 4,
+      "fr": "Quelle taille porte-t-elle ?",
+      "oldZh": "她身材有多大?",
+      "newZh": "她穿多大尺码？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 5,
+      "fr": "Qu’est-ce qu’elle aime faire pendant son temps libre ?",
+      "oldZh": "她在空的时候喜欢做什么活动?",
+      "newZh": "她空闲时喜欢做什么？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 6,
+      "fr": "Elle fait de la randonnée ou d’autres activités sportives ?",
+      "oldZh": "她喜欢徒步旅行或其他体育活动吗?",
+      "newZh": "她会去徒步或参加其他体育活动吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 7,
+      "fr": "Tu crois qu’une robe lui ferait plaisir ?",
+      "oldZh": "你认为她会喜欢一件衣服吗?",
+      "newZh": "你觉得她会喜欢收到一条裙子吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 8,
+      "fr": "Et une paire de chaussures de randonnée, ça lui conviendrait ?",
+      "oldZh": "一双徒步鞋是否适合她?",
+      "newZh": "那一双登山鞋适合她吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 9,
+      "fr": "Comment décrirais-tu sa personnalité ?",
+      "oldZh": "你如何描述他的性格?",
+      "newZh": "你会怎么形容她的性格？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 10,
+      "fr": "Quelles couleurs préfère-t-elle ?",
+      "oldZh": "她喜欢什么颜色?",
+      "newZh": "她最喜欢哪些颜色？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 11,
+      "fr": "Elle préfère plutôt quelque chose de pratique ou de plus élégant ?",
+      "oldZh": "她更喜欢一些实用或更优雅的东西吗?",
+      "newZh": "她更喜欢实用款，还是更优雅的款式？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 12,
+      "fr": "Y a-t-il quelque chose qu’elle possède déjà et que je devrais éviter d’acheter ?",
+      "oldZh": "她已经有什么东西,更好不要买?",
+      "newZh": "有什么东西是她已经有了、我最好别再买的吗？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 13,
+      "fr": "Combien te semblerait raisonnable pour son cadeau ?",
+      "oldZh": "你认为他的礼物是什么预算合理的?",
+      "newZh": "你觉得给她买礼物花多少钱比较合适？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 14,
+      "fr": "Parmi ces idées, laquelle me conseillerais-tu le plus ?",
+      "oldZh": "在这些想法中,你最建议我做什么?",
+      "newZh": "这些想法里，你最推荐哪一个？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "row": 15,
+      "fr": "Tu penses qu’il vaut mieux ajouter une carte ou faire un emballage spécial ?",
+      "oldZh": "你觉得更好的是添加一个地图,或者做一个特殊的包装吗?",
+      "newZh": "你觉得最好附上一张卡片，还是做特别包装？",
+      "reason": "逐句对照法语校订自动译文，修正错义、漏义或不自然中文。"
+    }
+  ],
+  "translationEditCount": 278,
+  "entries": [
+    {
+      "month": "2026-10",
+      "number": 1,
+      "sujet": "Je suis votre voisin(e). Je déménage bientôt à l'étranger. Je souhaite vendre mon mobilier (table, chaises, télé, canapé, etc.) avant mon départ. Vous me posez des questions pour savoir si certains meubles vous intéressent (prix, état, dimensions, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "商品",
+          "questionNumbers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "尺寸",
+          "questionNumbers": [
+            4,
+            5
+          ]
+        },
+        {
+          "name": "查看",
+          "questionNumbers": [
+            6
+          ]
+        },
+        {
+          "name": "价格",
+          "questionNumbers": [
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "name": "运输",
+          "questionNumbers": [
+            10,
+            11
+          ]
+        },
+        {
+          "name": "安装",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "支付",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "预留",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 12,
+        "将来计划": 3
+      },
+      "pronounAndRelevanceReview": "按Sujet核对人称与语境；逐问检查信息角度，避免题内重复。",
+      "translationReview": "本题15问中文均与法语原句逐句对照校订。",
+      "changeReasons": [
+        {
+          "month": "2026-10",
+          "number": 1,
+          "row": 4,
+          "oldFr": "Le meuble qui m’intéresse fait quelles dimensions ?",
+          "newFr": "Quelles sont les dimensions du meuble qui m’intéresse ?",
+          "zh": "我感兴趣的这件家具尺寸是多少？",
+          "reason": "将口语但生硬的尺寸表达改为自然直接问法。"
+        },
+        {
+          "month": "2026-10",
+          "number": 1,
+          "row": 15,
+          "oldFr": "Quand puis-je venir examiner les meubles sur place ?",
+          "newFr": "À quel moment puis-je passer voir les meubles ?",
+          "zh": "我什么时候可以过去看家具？",
+          "reason": "保留询问看货时间的角度，改用更自然的口语表达。"
+        }
+      ],
+      "translationEditCount": 14
+    },
+    {
+      "month": "2026-10",
+      "number": 2,
+      "sujet": "Je suis votre ami(e). Je vous invite à l’anniversaire de ma sœur. Vous me posez des questions sur elle pour savoir quel cadeau lui offrir (goûts, activités, personnalité, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "人物",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "喜好",
+          "questionNumbers": [
+            2
+          ]
+        },
+        {
+          "name": "穿衣",
+          "questionNumbers": [
+            3,
+            4
+          ]
+        },
+        {
+          "name": "活动",
+          "questionNumbers": [
+            5,
+            6
+          ]
+        },
+        {
+          "name": "礼物",
+          "questionNumbers": [
+            7,
+            8
+          ]
+        },
+        {
+          "name": "性格",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "颜色",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "风格",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "已有物品",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "预算",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "选择",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "包装",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 10,
+        "将来选择": 4,
+        "将来准备": 1
+      },
+      "pronounAndRelevanceReview": "按Sujet核对人称与语境；逐问检查信息角度，避免题内重复。",
+      "translationReview": "本题15问中文均与法语原句逐句对照校订。",
+      "changeReasons": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-09",
+      "number": 1,
+      "sujet": "Je suis votre ami(e). J’ai testé un nouveau restaurant à Ottawa. Vous aimeriez y aller et vous me demandez des infos : plats proposés, tarifs, si j’ai aimé ou non.",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "地点",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "交通",
+          "questionNumbers": [
+            2
+          ]
+        },
+        {
+          "name": "餐饮",
+          "questionNumbers": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "name": "体验",
+          "questionNumbers": [
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "name": "价格",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "支付",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "预订",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "建议",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "同行",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 8,
+        "将来计划": 3,
+        "过去评价": 3,
+        "现在评价": 1
+      },
+      "pronounAndRelevanceReview": "按Sujet核对人称与语境；逐问检查信息角度，避免题内重复。",
+      "translationReview": "本题15问中文均与法语原句逐句对照校订。",
+      "changeReasons": [
+        {
+          "month": "2026-09",
+          "number": 1,
+          "row": 5,
+          "oldFr": "↳ Tu peux me décrire ce plat un peu plus en détail ?",
+          "newFr": "Tu peux me décrire ce plat un peu plus en détail ?",
+          "zh": "你能再详细介绍一下这道菜吗？",
+          "reason": "跟进提示通过follow字段单独呈现；从法语文本移除箭头，确保单句练习和Piper语音只包含问题。"
+        }
+      ],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-09",
+      "number": 2,
+      "sujet": "Je suis employé(e) dans un magasin de déguisements. Vous avez besoin d’un costume pour une soirée. Vous me posez des questions (types de tenues, règles de location, prix, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "地点",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "交通",
+          "questionNumbers": [
+            2
+          ]
+        },
+        {
+          "name": "服装",
+          "questionNumbers": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "租赁",
+          "questionNumbers": [
+            6
+          ]
+        },
+        {
+          "name": "价格",
+          "questionNumbers": [
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "name": "支付",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "手续",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "归还",
+          "questionNumbers": [
+            12,
+            13
+          ]
+        },
+        {
+          "name": "损坏",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "预订",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 8,
+        "将来计划": 3,
+        "将来租赁": 2,
+        "条件情况": 2
+      },
+      "pronounAndRelevanceReview": "按Sujet核对人称与语境；逐问检查信息角度，避免题内重复。",
+      "translationReview": "本题15问中文均与法语原句逐句对照校订。",
+      "changeReasons": [
+        {
+          "month": "2026-09",
+          "number": 2,
+          "row": 11,
+          "oldFr": "Un contrat de location est-il à signer ?",
+          "newFr": "Faut-il signer un contrat de location ?",
+          "zh": "需要签租赁合同吗？",
+          "reason": "将不自然的被动疑问改为简洁常用的主动问法。"
+        }
+      ],
+      "translationEditCount": 14
+    },
+    {
+      "month": "2026-09",
+      "number": 3,
+      "sujet": "Je suis votre collègue. Vous avez lu mon annonce au travail : je revends mes meubles. Vous êtes intéressé(e) : vous me posez des questions (état, prix, taille, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "商品",
+          "questionNumbers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "尺寸",
+          "questionNumbers": [
+            4,
+            5
+          ]
+        },
+        {
+          "name": "查看",
+          "questionNumbers": [
+            6
+          ]
+        },
+        {
+          "name": "价格",
+          "questionNumbers": [
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "name": "运输",
+          "questionNumbers": [
+            10,
+            11
+          ]
+        },
+        {
+          "name": "安装",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "支付",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "预留",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 12,
+        "将来计划": 3
+      },
+      "pronounAndRelevanceReview": "按Sujet核对人称与语境；逐问检查信息角度，避免题内重复。",
+      "translationReview": "本题15问中文均与法语原句逐句对照校订。",
+      "changeReasons": [
+        {
+          "month": "2026-09",
+          "number": 3,
+          "row": 4,
+          "oldFr": "Le meuble qui m’intéresse fait quelles dimensions ?",
+          "newFr": "Quelles sont les dimensions du meuble qui m’intéresse ?",
+          "zh": "我感兴趣的这件家具尺寸是多少？",
+          "reason": "将口语但生硬的尺寸表达改为自然直接问法。"
+        },
+        {
+          "month": "2026-09",
+          "number": 3,
+          "row": 15,
+          "oldFr": "Quand puis-je venir examiner les meubles sur place ?",
+          "newFr": "À quel moment puis-je passer voir les meubles ?",
+          "zh": "我什么时候可以过去看家具？",
+          "reason": "保留询问看货时间的角度，改用更自然的口语表达。"
+        }
+      ],
+      "translationEditCount": 14
+    },
+    {
+      "month": "2026-09",
+      "number": 4,
+      "sujet": "Je suis votre ami(e). Je vends des objets que je n’utilise plus sur Internet. Vous souhaitez faire la même chose. Vous me posez des questions pour avoir plus d’informations (type de site, types d’objets, modalités, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "平台",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "账户",
+          "questionNumbers": [
+            3,
+            4
+          ]
+        },
+        {
+          "name": "商品",
+          "questionNumbers": [
+            5,
+            6
+          ]
+        },
+        {
+          "name": "广告",
+          "questionNumbers": [
+            7,
+            8
+          ]
+        },
+        {
+          "name": "价格",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "曝光",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "联系",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "付款",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "交付",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "取消",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "安全",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 2,
+        "将来准备": 2,
+        "现在经验": 4,
+        "将来出售": 6,
+        "条件情况": 1
+      },
+      "pronounAndRelevanceReview": "按Sujet核对人称与语境；逐问检查信息角度，避免题内重复。",
+      "translationReview": "本题15问中文均与法语原句逐句对照校订。",
+      "changeReasons": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-09",
+      "number": 5,
+      "sujet": "Je suis votre voisin(e) canadien(ne). Un de vos amis est végétarien, il doit faire un voyage d’affaires au Canada. Vous m’interrogez pour savoir si votre ami pourra se nourrir facilement au Canada ou pas (restaurants et cantines, achats, variété, prix, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "餐厅",
+          "questionNumbers": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "name": "食堂",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "购物",
+          "questionNumbers": [
+            6,
+            7
+          ]
+        },
+        {
+          "name": "种类",
+          "questionNumbers": [
+            8,
+            9
+          ]
+        },
+        {
+          "name": "价格",
+          "questionNumbers": [
+            10,
+            11
+          ]
+        },
+        {
+          "name": "标签",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "沟通",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "准备",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "结论",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 11,
+        "将来旅行": 3,
+        "现在评价": 1
+      },
+      "pronounAndRelevanceReview": "按Sujet核对人称与语境；逐问检查信息角度，避免题内重复。",
+      "translationReview": "本题15问中文均与法语原句逐句对照校订。",
+      "changeReasons": [
+        {
+          "month": "2026-09",
+          "number": 5,
+          "row": 3,
+          "oldFr": "Quel genre de restaurant lui conseillerais-tu en priorité ?",
+          "newFr": "Quel genre de restaurant lui conseilleriez-vous en priorité ?",
+          "zh": "您最建议他去什么类型的餐厅？",
+          "reason": "对邻居采用礼貌vous，与Sujet关系相符。"
+        },
+        {
+          "month": "2026-09",
+          "number": 5,
+          "row": 15,
+          "oldFr": "Au final, penses-tu qu’il pourra se nourrir facilement pendant son voyage d’affaires ?",
+          "newFr": "Au final, pensez-vous qu’il pourra se nourrir facilement pendant son voyage d’affaires ?",
+          "zh": "总的来说，您觉得他出差期间容易找到吃的吗？",
+          "reason": "对邻居采用礼貌vous，与Sujet关系相符。"
+        }
+      ],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-08",
+      "number": 1,
+      "sujet": "Nous sommes collègues de travail. Je vends un stock de vêtements d’occasion pour enfants. Vous êtes intéressé(e). Vous me posez des questions sur ces vêtements (taille, prix, quantité, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "地点",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "尺码",
+          "questionNumbers": [
+            2
+          ]
+        },
+        {
+          "name": "款式",
+          "questionNumbers": [
+            3,
+            4
+          ]
+        },
+        {
+          "name": "数量",
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "name": "状态",
+          "questionNumbers": [
+            6,
+            7
+          ]
+        },
+        {
+          "name": "试穿",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "价格",
+          "questionNumbers": [
+            9,
+            10
+          ]
+        },
+        {
+          "name": "支付",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "预留",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "退换",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "退款",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 10,
+        "将来购买": 2,
+        "条件情况": 2,
+        "将来计划": 1
+      },
+      "pronounAndRelevanceReview": "按Sujet核对人称与语境；逐问检查信息角度，避免题内重复。",
+      "translationReview": "本题15问中文均与法语原句逐句对照校订。",
+      "changeReasons": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-08",
+      "number": 2,
+      "sujet": "Je travaille dans un restaurant. Vous souhaitez organiser un repas d’anniversaire pour votre meilleur(e) ami(e). Vous me posez des questions sur les services du restaurant (menus, prix, disponibilités, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "地点",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "交通",
+          "questionNumbers": [
+            2
+          ]
+        },
+        {
+          "name": "可用性",
+          "questionNumbers": [
+            3,
+            4
+          ]
+        },
+        {
+          "name": "菜单",
+          "questionNumbers": [
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "name": "蛋糕",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "服务",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "价格",
+          "questionNumbers": [
+            10,
+            11
+          ]
+        },
+        {
+          "name": "支付",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "预订",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "取消",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "确认",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 10,
+        "将来计划": 3,
+        "将来预订": 1,
+        "条件情况": 1
+      },
+      "pronounAndRelevanceReview": "按Sujet核对人称与语境；逐问检查信息角度，避免题内重复。",
+      "translationReview": "本题15问中文均与法语原句逐句对照校订。",
+      "changeReasons": [
+        {
+          "month": "2026-08",
+          "number": 2,
+          "row": 3,
+          "oldFr": "Avez-vous encore de la disponibilité pour la date de l’anniversaire ?",
+          "newFr": "Avez-vous encore des tables disponibles à la date de l’anniversaire ?",
+          "zh": "生日当天您还有空桌吗？",
+          "reason": "明确询问生日当天是否有空桌，表达更自然且切题。"
+        }
+      ],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-08",
+      "number": 3,
+      "sujet": "Je suis chef cuisinier/cheffe cuisinière à domicile. Vous souhaitez organiser un repas de famille. Vous me posez des questions sur ce que je peux vous proposer (plats, matériel, prix, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "菜单",
+          "questionNumbers": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "name": "厨师",
+          "questionNumbers": [
+            5,
+            6
+          ]
+        },
+        {
+          "name": "食材",
+          "questionNumbers": [
+            7,
+            8
+          ]
+        },
+        {
+          "name": "设备",
+          "questionNumbers": [
+            9,
+            10
+          ]
+        },
+        {
+          "name": "服务",
+          "questionNumbers": [
+            11,
+            12
+          ]
+        },
+        {
+          "name": "价格",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "预订",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "确认",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 13,
+        "将来计划": 2
+      },
+      "pronounAndRelevanceReview": "按Sujet核对人称与语境；逐问检查信息角度，避免题内重复。",
+      "translationReview": "本题15问中文均与法语原句逐句对照校订。",
+      "changeReasons": [],
+      "translationEditCount": 14
+    },
+    {
+      "month": "2026-08",
+      "number": 4,
+      "sujet": "Je travaille dans un magasin d’alimentation. Vous êtes client(e) et vous voulez faire livrer vos courses chez vous. Vous me posez des questions sur les conditions offertes : délais, tarifs, mode de livraison, etc.",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "配送",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "name": "费用",
+          "questionNumbers": [
+            5,
+            6
+          ]
+        },
+        {
+          "name": "方式",
+          "questionNumbers": [
+            7,
+            8
+          ]
+        },
+        {
+          "name": "支付",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "预约",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "延误",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "缺席",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "问题",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "退款",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "预订",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 9,
+        "将来下单": 2,
+        "条件情况": 4
+      },
+      "pronounAndRelevanceReview": "按Sujet核对人称与语境；逐问检查信息角度，避免题内重复。",
+      "translationReview": "本题15问中文均与法语原句逐句对照校订。",
+      "changeReasons": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-07",
+      "number": 1,
+      "sujet": "Je suis votre ami(e). J’ai dîné dans un nouveau restaurant à Ottawa. Vous souhaitez y aller. Vous me posez des questions sur ce nouveau restaurant (menu, prix, appréciation, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "地点",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "交通",
+          "questionNumbers": [
+            2
+          ]
+        },
+        {
+          "name": "餐饮",
+          "questionNumbers": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "name": "体验",
+          "questionNumbers": [
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "name": "价格",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "支付",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "预订",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "建议",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "同行",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 8,
+        "将来计划": 3,
+        "过去评价": 3,
+        "现在评价": 1
+      },
+      "pronounAndRelevanceReview": "按Sujet核对人称与语境；逐问检查信息角度，避免题内重复。",
+      "translationReview": "本题15问中文均与法语原句逐句对照校订。",
+      "changeReasons": [
+        {
+          "month": "2026-07",
+          "number": 1,
+          "row": 5,
+          "oldFr": "↳ Tu peux me décrire ce plat un peu plus en détail ?",
+          "newFr": "Tu peux me décrire ce plat un peu plus en détail ?",
+          "zh": "你能再详细介绍一下这道菜吗？",
+          "reason": "跟进提示通过follow字段单独呈现；从法语文本移除箭头，确保单句练习和Piper语音只包含问题。"
+        }
+      ],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-07",
+      "number": 2,
+      "sujet": "Je suis votre collègue. Vous avez lu mon annonce au travail : je revends mes meubles. Vous êtes intéressé(e) : vous me posez des questions (état, prix, taille, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "商品",
+          "questionNumbers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "尺寸",
+          "questionNumbers": [
+            4,
+            5
+          ]
+        },
+        {
+          "name": "查看",
+          "questionNumbers": [
+            6
+          ]
+        },
+        {
+          "name": "价格",
+          "questionNumbers": [
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "name": "运输",
+          "questionNumbers": [
+            10,
+            11
+          ]
+        },
+        {
+          "name": "安装",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "支付",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "预留",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 12,
+        "将来计划": 3
+      },
+      "pronounAndRelevanceReview": "按Sujet核对人称与语境；逐问检查信息角度，避免题内重复。",
+      "translationReview": "本题15问中文均与法语原句逐句对照校订。",
+      "changeReasons": [
+        {
+          "month": "2026-07",
+          "number": 2,
+          "row": 4,
+          "oldFr": "Le meuble qui m’intéresse fait quelles dimensions ?",
+          "newFr": "Quelles sont les dimensions du meuble qui m’intéresse ?",
+          "zh": "我感兴趣的这件家具尺寸是多少？",
+          "reason": "将口语但生硬的尺寸表达改为自然直接问法。"
+        },
+        {
+          "month": "2026-07",
+          "number": 2,
+          "row": 15,
+          "oldFr": "Quand puis-je venir examiner les meubles sur place ?",
+          "newFr": "À quel moment puis-je passer voir les meubles ?",
+          "zh": "我什么时候可以过去看家具？",
+          "reason": "保留询问看货时间的角度，改用更自然的口语表达。"
+        }
+      ],
+      "translationEditCount": 14
+    },
+    {
+      "month": "2026-07",
+      "number": 3,
+      "sujet": "Je suis votre collègue de travail. Vous venez d’arriver à Toronto. Vous cherchez un bon restaurant pour fêter votre anniversaire. Vous me posez des questions pour avoir des conseils sur les différents restaurants de la ville (spécialités, prix, ambiance, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "推荐",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            2
+          ]
+        },
+        {
+          "name": "交通",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "体验",
+          "questionNumbers": [
+            4,
+            5
+          ]
+        },
+        {
+          "name": "餐饮",
+          "questionNumbers": [
+            6,
+            7
+          ]
+        },
+        {
+          "name": "备选",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "比较",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "氛围",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "人数",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "价格",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "预订",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "服务",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在建议": 3,
+        "现在信息": 7,
+        "将来计划": 3,
+        "过去体验": 1,
+        "过去评价": 1
+      },
+      "pronounAndRelevanceReview": "按Sujet核对人称与语境；逐问检查信息角度，避免题内重复。",
+      "translationReview": "本题15问中文均与法语原句逐句对照校订。",
+      "changeReasons": [
+        {
+          "month": "2026-07",
+          "number": 3,
+          "row": 5,
+          "oldFr": "↳ Comment avez-vous trouvé ce restaurant ?",
+          "newFr": "Comment avez-vous trouvé ce restaurant ?",
+          "zh": "您觉得这家餐厅怎么样？",
+          "reason": "跟进提示通过follow字段单独呈现；从法语文本移除箭头，确保单句练习和Piper语音只包含问题。"
+        }
+      ],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-07",
+      "number": 4,
+      "sujet": "Je suis un(e) ami(e). Vous voulez faire découvrir la cuisine traditionnelle canadienne à des amis. Vous me demandez des conseils pour organiser ce repas (lieu, menu, prix, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "时间",
+          "questionNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "地点",
+          "questionNumbers": [
+            3
+          ]
+        },
+        {
+          "name": "交通",
+          "questionNumbers": [
+            4
+          ]
+        },
+        {
+          "name": "菜单",
+          "questionNumbers": [
+            5,
+            6
+          ]
+        },
+        {
+          "name": "口味",
+          "questionNumbers": [
+            7
+          ]
+        },
+        {
+          "name": "食材",
+          "questionNumbers": [
+            8
+          ]
+        },
+        {
+          "name": "季节",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "素食",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "甜点",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "饮料",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "价格",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "预订",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "建议",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "将来安排": 2,
+        "现在建议": 7,
+        "将来计划": 2,
+        "现在信息": 4
+      },
+      "pronounAndRelevanceReview": "按Sujet核对人称与语境；逐问检查信息角度，避免题内重复。",
+      "translationReview": "本题15问中文均与法语原句逐句对照校订。",
+      "changeReasons": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-07",
+      "number": 5,
+      "sujet": "Je suis votre voisin(e), j’ai mis une annonce dans le hall d’entrée de l’immeuble pour vendre un meuble (table, canapé, etc.). Vous êtes intéressé(e) et vous venez me poser des questions pour vous renseigner (état du meuble, prix, livraison possible, date, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "商品",
+          "questionNumbers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "尺寸",
+          "questionNumbers": [
+            4,
+            5
+          ]
+        },
+        {
+          "name": "查看",
+          "questionNumbers": [
+            6
+          ]
+        },
+        {
+          "name": "价格",
+          "questionNumbers": [
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "name": "运输",
+          "questionNumbers": [
+            10,
+            11
+          ]
+        },
+        {
+          "name": "安装",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "支付",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "预留",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "时间",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 12,
+        "将来计划": 3
+      },
+      "pronounAndRelevanceReview": "按Sujet核对人称与语境；逐问检查信息角度，避免题内重复。",
+      "translationReview": "本题15问中文均与法语原句逐句对照校订。",
+      "changeReasons": [
+        {
+          "month": "2026-07",
+          "number": 5,
+          "row": 4,
+          "oldFr": "Le meuble qui m’intéresse fait quelles dimensions ?",
+          "newFr": "Quelles sont les dimensions du meuble qui m’intéresse ?",
+          "zh": "我感兴趣的这件家具尺寸是多少？",
+          "reason": "将口语但生硬的尺寸表达改为自然直接问法。"
+        },
+        {
+          "month": "2026-07",
+          "number": 5,
+          "row": 15,
+          "oldFr": "Quand puis-je venir examiner les meubles sur place ?",
+          "newFr": "À quel moment puis-je passer voir les meubles ?",
+          "zh": "我什么时候可以过去看家具？",
+          "reason": "保留询问看货时间的角度，改用更自然的口语表达。"
+        }
+      ],
+      "translationEditCount": 14
+    },
+    {
+      "month": "2026-07",
+      "number": 6,
+      "sujet": "Je suis chef cuisinier/cheffe cuisinière à domicile. Vous souhaitez organiser un repas de famille. Vous me posez des questions sur ce que je peux vous proposer (plats, matériel, prix, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "菜单",
+          "questionNumbers": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "name": "厨师",
+          "questionNumbers": [
+            5,
+            6
+          ]
+        },
+        {
+          "name": "食材",
+          "questionNumbers": [
+            7,
+            8
+          ]
+        },
+        {
+          "name": "设备",
+          "questionNumbers": [
+            9,
+            10
+          ]
+        },
+        {
+          "name": "服务",
+          "questionNumbers": [
+            11,
+            12
+          ]
+        },
+        {
+          "name": "价格",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "预订",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "确认",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 13,
+        "将来计划": 2
+      },
+      "pronounAndRelevanceReview": "按Sujet核对人称与语境；逐问检查信息角度，避免题内重复。",
+      "translationReview": "本题15问中文均与法语原句逐句对照校订。",
+      "changeReasons": [],
+      "translationEditCount": 14
+    },
+    {
+      "month": "2026-07",
+      "number": 7,
+      "sujet": "Je suis votre ami(e). Je vous invite à l’anniversaire de ma sœur. Vous me posez des questions sur elle pour savoir quel cadeau lui offrir (goûts, activités, personnalité, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "人物",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "喜好",
+          "questionNumbers": [
+            2
+          ]
+        },
+        {
+          "name": "穿衣",
+          "questionNumbers": [
+            3,
+            4
+          ]
+        },
+        {
+          "name": "活动",
+          "questionNumbers": [
+            5,
+            6
+          ]
+        },
+        {
+          "name": "礼物",
+          "questionNumbers": [
+            7,
+            8
+          ]
+        },
+        {
+          "name": "性格",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "颜色",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "风格",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "已有物品",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "预算",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "选择",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "包装",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 10,
+        "将来选择": 4,
+        "将来准备": 1
+      },
+      "pronounAndRelevanceReview": "按Sujet核对人称与语境；逐问检查信息角度，避免题内重复。",
+      "translationReview": "本题15问中文均与法语原句逐句对照校订。",
+      "changeReasons": [],
+      "translationEditCount": 15
+    },
+    {
+      "month": "2026-07",
+      "number": 8,
+      "sujet": "Je suis votre ami(e). Je vous invite à l’anniversaire de ma sœur. Vous me posez des questions sur elle pour savoir quel cadeau lui offrir (goûts, activités, personnalité, etc.).",
+      "questionCount": 15,
+      "rowCountValid": true,
+      "dimensions": [
+        {
+          "name": "人物",
+          "questionNumbers": [
+            1
+          ]
+        },
+        {
+          "name": "喜好",
+          "questionNumbers": [
+            2
+          ]
+        },
+        {
+          "name": "穿衣",
+          "questionNumbers": [
+            3,
+            4
+          ]
+        },
+        {
+          "name": "活动",
+          "questionNumbers": [
+            5,
+            6
+          ]
+        },
+        {
+          "name": "礼物",
+          "questionNumbers": [
+            7,
+            8
+          ]
+        },
+        {
+          "name": "性格",
+          "questionNumbers": [
+            9
+          ]
+        },
+        {
+          "name": "颜色",
+          "questionNumbers": [
+            10
+          ]
+        },
+        {
+          "name": "风格",
+          "questionNumbers": [
+            11
+          ]
+        },
+        {
+          "name": "已有物品",
+          "questionNumbers": [
+            12
+          ]
+        },
+        {
+          "name": "预算",
+          "questionNumbers": [
+            13
+          ]
+        },
+        {
+          "name": "选择",
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "name": "包装",
+          "questionNumbers": [
+            15
+          ]
+        }
+      ],
+      "timelineDistribution": {
+        "现在信息": 10,
+        "将来选择": 4,
+        "将来准备": 1
+      },
+      "pronounAndRelevanceReview": "按Sujet核对人称与语境；逐问检查信息角度，避免题内重复。",
+      "translationReview": "本题15问中文均与法语原句逐句对照校订。",
+      "changeReasons": [],
+      "translationEditCount": 15
+    }
+  ],
+  "piperCoverage": {
+    "status": "pending-generation",
+    "voice": "fr_FR-siwis-medium",
+    "uniqueFrenchQuestions": 171,
+    "matched": 0,
+    "missing": "pending"
+  },
+  "runtimeChecks": {
+    "sujetCount": 19,
+    "expectedSujetCount": 19,
+    "questionSlots": 285,
+    "expectedQuestionSlots": 285,
+    "allSujetsHave15Questions": true,
+    "allRowsHaveFrenchAndChinese": true,
+    "noDuplicateFrenchPerSujet": true,
+    "frenchProgressKeysDifferFromOriginal": true,
+    "followMarkerRows": 3
+  }
+}
