@@ -2,8 +2,8 @@
   "theme": "housing",
   "title": "住房与安家",
   "target": "TCF Canada 口语 Tâche 2 · C1",
-  "version": 1,
-  "principle": "约100个高价值词/词块，以33道最终真题为基础；词块与真实套用问法绑定，优先训练中文→法语主动调用。",
+  "version": 2,
+  "principle": "以当前33题×15问为依据，128个词块与53组问法均标注真题来源；按11个场景练习中文→法语，人称与时态跟随具体情境。",
   "scenarios": [
     {
       "id": "renting",
@@ -36,17 +36,35 @@
     {
       "id": "services",
       "name": "家居服务 / 维修"
+    },
+    {
+      "id": "shopping",
+      "name": "社区购物 / 日常服务"
+    },
+    {
+      "id": "holiday",
+      "name": "短租出租 / 房东安排"
+    },
+    {
+      "id": "absence",
+      "name": "代看房屋 / 离家托管"
     }
   ],
   "vocabulary": [
     {
       "id": 1,
       "fr": "un logement",
-      "zh": "住房 / 住处",
+      "zh": "住房；住处",
       "scenario": "renting",
       "priority": 5,
-      "exampleFr": "Pour trouver un logement, par où me conseillez-vous de commencer ?",
-      "exampleZh": "找住房的话，您建议我从哪里开始？"
+      "exampleFr": "Pour trouver un logement, par où me conseilles-tu de commencer ?",
+      "exampleZh": "找房的话，你建议我从哪里开始？",
+      "source": {
+        "month": "2026-09",
+        "number": 9,
+        "question": 1
+      },
+      "learningKey": "1-final15-v2"
     },
     {
       "id": 2,
@@ -55,7 +73,12 @@
       "scenario": "renting",
       "priority": 5,
       "exampleFr": "Où se trouve exactement l’appartement ?",
-      "exampleZh": "这套公寓具体在哪里？"
+      "exampleZh": "这套公寓具体在哪里？",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 1
+      }
     },
     {
       "id": 3,
@@ -64,7 +87,12 @@
       "scenario": "buying",
       "priority": 5,
       "exampleFr": "Où se trouve exactement la maison ?",
-      "exampleZh": "这栋房子具体在哪里？"
+      "exampleZh": "这栋房子具体在哪里？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 1
+      }
     },
     {
       "id": 4,
@@ -73,7 +101,12 @@
       "scenario": "renting",
       "priority": 5,
       "exampleFr": "Quels sites ou quelles plateformes me conseilles-tu pour chercher un logement ?",
-      "exampleZh": "你建议我在哪些网站或平台找房？"
+      "exampleZh": "你建议我通过哪些网站或平台找房？",
+      "source": {
+        "month": "2026-09",
+        "number": 8,
+        "question": 2
+      }
     },
     {
       "id": 5,
@@ -82,7 +115,12 @@
       "scenario": "renting",
       "priority": 5,
       "exampleFr": "Est-il difficile de trouver un logement aujourd’hui ?",
-      "exampleZh": "现在找住房困难吗？"
+      "exampleZh": "现在找房子难吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 3
+      }
     },
     {
       "id": 6,
@@ -91,7 +129,12 @@
       "scenario": "settling",
       "priority": 5,
       "exampleFr": "Dans quels quartiers conseillerais-tu à un nouvel arrivant de s’installer ?",
-      "exampleZh": "你会建议新来的人住在哪些街区？"
+      "exampleZh": "你会建议新来的人住在哪些街区？",
+      "source": {
+        "month": "2026-09",
+        "number": 9,
+        "question": 2
+      }
     },
     {
       "id": 7,
@@ -100,7 +143,12 @@
       "scenario": "settling",
       "priority": 4,
       "exampleFr": "Dans quels quartiers conseillerais-tu à un nouvel arrivant de s’installer ?",
-      "exampleZh": "你会建议新来的人住在哪些街区？"
+      "exampleZh": "你会建议新来的人住在哪些街区？",
+      "source": {
+        "month": "2026-09",
+        "number": 9,
+        "question": 2
+      }
     },
     {
       "id": 8,
@@ -109,7 +157,12 @@
       "scenario": "renting",
       "priority": 5,
       "exampleFr": "Vaut-il mieux passer par une agence immobilière ou contacter directement les propriétaires ?",
-      "exampleZh": "是通过房地产中介好，还是直接联系房东好？"
+      "exampleZh": "通过房地产中介找房比较好，还是直接联系房东比较好？",
+      "source": {
+        "month": "2026-09",
+        "number": 8,
+        "question": 3
+      }
     },
     {
       "id": 9,
@@ -118,7 +171,12 @@
       "scenario": "renting",
       "priority": 5,
       "exampleFr": "Vaut-il mieux passer par une agence immobilière ou contacter directement les propriétaires ?",
-      "exampleZh": "是通过房地产中介好，还是直接联系房东好？"
+      "exampleZh": "通过房地产中介找房比较好，还是直接联系房东比较好？",
+      "source": {
+        "month": "2026-09",
+        "number": 8,
+        "question": 3
+      }
     },
     {
       "id": 10,
@@ -127,7 +185,12 @@
       "scenario": "renting",
       "priority": 4,
       "exampleFr": "Quels sites ou quelles plateformes me conseilles-tu pour chercher un logement ?",
-      "exampleZh": "你建议我在哪些网站或平台找房？"
+      "exampleZh": "你建议我通过哪些网站或平台找房？",
+      "source": {
+        "month": "2026-09",
+        "number": 8,
+        "question": 2
+      }
     },
     {
       "id": 11,
@@ -136,7 +199,12 @@
       "scenario": "renting",
       "priority": 5,
       "exampleFr": "Est-il possible de visiter le logement avant de prendre une décision ?",
-      "exampleZh": "决定前可以先看房吗？"
+      "exampleZh": "决定之前可以先看房吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 8,
+        "question": 15
+      }
     },
     {
       "id": 12,
@@ -145,7 +213,12 @@
       "scenario": "renting",
       "priority": 4,
       "exampleFr": "Est-il possible de visiter le logement avant de prendre une décision ?",
-      "exampleZh": "决定前可以先看房吗？"
+      "exampleZh": "决定之前可以先看房吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 8,
+        "question": 15
+      }
     },
     {
       "id": 13,
@@ -154,7 +227,12 @@
       "scenario": "renting",
       "priority": 5,
       "exampleFr": "À partir de quand la chambre est-elle disponible ?",
-      "exampleZh": "房间从什么时候可以入住？"
+      "exampleZh": "这间房从什么时候起可以入住？",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 3
+      }
     },
     {
       "id": 14,
@@ -163,7 +241,12 @@
       "scenario": "moving",
       "priority": 5,
       "exampleFr": "À partir de quand voudrais-tu emménager ?",
-      "exampleZh": "你想从什么时候开始搬进去？"
+      "exampleZh": "你想从什么时候起搬进新住处？",
+      "source": {
+        "month": "2026-07",
+        "number": 5,
+        "question": 13
+      }
     },
     {
       "id": 15,
@@ -172,7 +255,12 @@
       "scenario": "neighborhood",
       "priority": 5,
       "exampleFr": "Dans quels quartiers est-il agréable de vivre ?",
-      "exampleZh": "哪些街区住起来比较舒服？"
+      "exampleZh": "哪些街区居住环境比较好？",
+      "source": {
+        "month": "2026-09",
+        "number": 8,
+        "question": 4
+      }
     },
     {
       "id": 16,
@@ -181,16 +269,27 @@
       "scenario": "neighborhood",
       "priority": 5,
       "exampleFr": "Le quartier est-il plutôt calme ou animé ?",
-      "exampleZh": "这个街区比较安静还是热闹？"
+      "exampleZh": "这个街区比较安静还是热闹？",
+      "source": {
+        "month": "2026-10",
+        "number": 5,
+        "question": 5
+      }
     },
     {
       "id": 17,
-      "fr": "un quartier animé",
-      "zh": "热闹的街区",
+      "fr": "le meilleur équilibre entre prix, services et qualité de vie",
+      "zh": "价格、服务和生活质量之间的最佳平衡",
       "scenario": "neighborhood",
       "priority": 4,
-      "exampleFr": "Le quartier est-il plutôt calme ou animé ?",
-      "exampleZh": "这个街区比较安静还是热闹？"
+      "exampleFr": "Quel quartier offre, selon toi, le meilleur équilibre entre prix, services et qualité de vie ?",
+      "exampleZh": "你觉得哪个街区在房价、生活服务和生活质量之间最均衡？",
+      "source": {
+        "month": "2026-08",
+        "number": 6,
+        "question": 14
+      },
+      "learningKey": "17-final15-v2"
     },
     {
       "id": 18,
@@ -199,7 +298,12 @@
       "scenario": "neighborhood",
       "priority": 5,
       "exampleFr": "Le quartier est-il bien desservi par les transports en commun ?",
-      "exampleZh": "这个街区公共交通方便吗？"
+      "exampleZh": "这个街区的公共交通方便吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 5,
+        "question": 2
+      }
     },
     {
       "id": 19,
@@ -208,7 +312,12 @@
       "scenario": "neighborhood",
       "priority": 5,
       "exampleFr": "Comment peut-on se déplacer en transports en commun à proximité ?",
-      "exampleZh": "附近怎么乘公共交通出行？"
+      "exampleZh": "附近乘坐公共交通方便吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 2
+      }
     },
     {
       "id": 20,
@@ -217,61 +326,97 @@
       "scenario": "neighborhood",
       "priority": 5,
       "exampleFr": "Qu’est-ce qu’on trouve comme commerces et services à proximité ?",
-      "exampleZh": "附近有哪些商店和服务？"
+      "exampleZh": "附近有哪些商店和生活服务？",
+      "source": {
+        "month": "2026-10",
+        "number": 5,
+        "question": 7
+      }
     },
     {
       "id": 21,
       "fr": "se garer gratuitement",
       "zh": "免费停车",
-      "scenario": "neighborhood",
+      "scenario": "shopping",
       "priority": 4,
       "exampleFr": "Est-ce qu’on peut se garer gratuitement à proximité ?",
-      "exampleZh": "附近可以免费停车吗？"
+      "exampleZh": "附近可以免费停车吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 3
+      }
     },
     {
       "id": 22,
       "fr": "un commerce",
       "zh": "商店 / 商业设施",
-      "scenario": "neighborhood",
+      "scenario": "shopping",
       "priority": 4,
       "exampleFr": "Quels types de commerces trouve-t-on dans le quartier ?",
-      "exampleZh": "街区里有哪些商店？"
+      "exampleZh": "这个街区有哪些商店？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 4
+      }
     },
     {
       "id": 23,
       "fr": "faire ses courses",
       "zh": "买日常用品",
-      "scenario": "neighborhood",
+      "scenario": "shopping",
       "priority": 5,
       "exampleFr": "Où me conseillez-vous d’aller pour faire mes courses au quotidien ?",
-      "exampleZh": "日常购物您建议我去哪里？"
+      "exampleZh": "您建议我平时去哪里买日常用品？",
+      "source": {
+        "month": "2026-07",
+        "number": 7,
+        "question": 5
+      }
     },
     {
       "id": 24,
       "fr": "une boulangerie",
       "zh": "面包店",
-      "scenario": "neighborhood",
+      "scenario": "shopping",
       "priority": 3,
-      "exampleFr": "Tu connais une bonne boulangerie près d’ici ?",
-      "exampleZh": "你知道附近有好的面包店吗？"
+      "exampleFr": "Connaissez-vous une bonne boulangerie près d’ici ?",
+      "exampleZh": "您知道附近有不错的面包店吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 6
+      },
+      "learningKey": "24-final15-v2"
     },
     {
       "id": 25,
       "fr": "une pharmacie",
       "zh": "药店",
-      "scenario": "neighborhood",
+      "scenario": "shopping",
       "priority": 4,
       "exampleFr": "Trouve-t-on facilement une pharmacie ou un centre médical dans le quartier ?",
-      "exampleZh": "街区里容易找到药店或医疗中心吗？"
+      "exampleZh": "这个街区容易找到药店或医疗中心吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 5,
+        "question": 8
+      }
     },
     {
       "id": 26,
       "fr": "un centre médical",
       "zh": "医疗中心",
-      "scenario": "neighborhood",
+      "scenario": "shopping",
       "priority": 3,
       "exampleFr": "Trouve-t-on facilement une pharmacie ou un centre médical dans le quartier ?",
-      "exampleZh": "街区里容易找到药店或医疗中心吗？"
+      "exampleZh": "这个街区容易找到药店或医疗中心吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 5,
+        "question": 8
+      }
     },
     {
       "id": 27,
@@ -280,7 +425,12 @@
       "scenario": "settling",
       "priority": 4,
       "exampleFr": "Quelles associations locales pourrais-je rejoindre ?",
-      "exampleZh": "我可以加入哪些当地协会？"
+      "exampleZh": "我可以加入哪些本地社团？",
+      "source": {
+        "month": "2026-10",
+        "number": 6,
+        "question": 4
+      }
     },
     {
       "id": 28,
@@ -289,7 +439,12 @@
       "scenario": "settling",
       "priority": 4,
       "exampleFr": "Quelles associations ou quels groupes de quartier pourrais-je rejoindre ?",
-      "exampleZh": "我可以加入哪些社区协会或群体？"
+      "exampleZh": "我可以加入哪些社区协会或邻里团体？",
+      "source": {
+        "month": "2026-10",
+        "number": 5,
+        "question": 10
+      }
     },
     {
       "id": 29,
@@ -298,16 +453,27 @@
       "scenario": "building",
       "priority": 5,
       "exampleFr": "Comment puis-je faire connaissance avec les autres voisins ?",
-      "exampleZh": "我怎么认识其他邻居？"
+      "exampleZh": "我怎样才能认识其他邻居？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 3
+      }
     },
     {
       "id": 30,
-      "fr": "les habitants de l’immeuble",
-      "zh": "楼里的住户",
+      "fr": "les habitants",
+      "zh": "住户；居民",
       "scenario": "building",
       "priority": 4,
       "exampleFr": "Les habitants sont-ils plutôt agréables et accueillants ?",
-      "exampleZh": "楼里的住户友好吗、热情吗？"
+      "exampleZh": "这里的居民友善、热情吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 10,
+        "question": 2
+      },
+      "learningKey": "30-final15-v2"
     },
     {
       "id": 31,
@@ -316,7 +482,12 @@
       "scenario": "building",
       "priority": 4,
       "exampleFr": "Comment décririez-vous l’ambiance dans l’immeuble ?",
-      "exampleZh": "您会怎么形容楼里的氛围？"
+      "exampleZh": "您会如何描述这栋楼的整体氛围？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 1
+      }
     },
     {
       "id": 32,
@@ -325,7 +496,12 @@
       "scenario": "building",
       "priority": 5,
       "exampleFr": "L’immeuble a-t-il un ascenseur ?",
-      "exampleZh": "这栋楼有电梯吗？"
+      "exampleZh": "楼里有电梯吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 4,
+        "question": 8
+      }
     },
     {
       "id": 33,
@@ -334,7 +510,12 @@
       "scenario": "building",
       "priority": 4,
       "exampleFr": "À quel étage se situe ton appartement ?",
-      "exampleZh": "你的公寓在几楼？"
+      "exampleZh": "你的公寓在几楼？",
+      "source": {
+        "month": "2026-10",
+        "number": 4,
+        "question": 7
+      }
     },
     {
       "id": 34,
@@ -343,7 +524,12 @@
       "scenario": "building",
       "priority": 4,
       "exampleFr": "L’immeuble a-t-il un ascenseur ?",
-      "exampleZh": "这栋楼有电梯吗？"
+      "exampleZh": "楼里有电梯吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 4,
+        "question": 8
+      }
     },
     {
       "id": 35,
@@ -352,7 +538,12 @@
       "scenario": "building",
       "priority": 5,
       "exampleFr": "Quels espaces communs sont à la disposition des habitants ?",
-      "exampleZh": "住户可以使用哪些公共空间？"
+      "exampleZh": "居民可以使用哪些公共区域？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 6
+      }
     },
     {
       "id": 36,
@@ -361,7 +552,12 @@
       "scenario": "building",
       "priority": 3,
       "exampleFr": "L’immeuble dispose-t-il d’une buanderie ou d’une laverie commune ?",
-      "exampleZh": "楼里有洗衣房或公共洗衣设施吗？"
+      "exampleZh": "楼里有公用洗衣房或自助洗衣店吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 7
+      }
     },
     {
       "id": 37,
@@ -370,7 +566,12 @@
       "scenario": "building",
       "priority": 3,
       "exampleFr": "L’immeuble dispose-t-il d’une buanderie ou d’une laverie commune ?",
-      "exampleZh": "楼里有洗衣房或公共洗衣设施吗？"
+      "exampleZh": "楼里有公用洗衣房或自助洗衣店吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 7
+      }
     },
     {
       "id": 38,
@@ -379,7 +580,12 @@
       "scenario": "building",
       "priority": 3,
       "exampleFr": "Les résidents disposent-ils d’un parking ou d’un local à vélos ?",
-      "exampleZh": "住户有停车场或自行车存放处吗？"
+      "exampleZh": "居民有停车场或自行车存放处可以使用吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 8
+      }
     },
     {
       "id": 39,
@@ -388,7 +594,12 @@
       "scenario": "building",
       "priority": 4,
       "exampleFr": "Les résidents disposent-ils d’un parking ou d’un local à vélos ?",
-      "exampleZh": "住户有停车场或自行车存放处吗？"
+      "exampleZh": "居民有停车场或自行车存放处可以使用吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 8
+      }
     },
     {
       "id": 40,
@@ -397,16 +608,27 @@
       "scenario": "building",
       "priority": 4,
       "exampleFr": "Existe-t-il des horaires de calme à respecter dans l’immeuble ?",
-      "exampleZh": "楼里有需要遵守的安静时段吗？"
+      "exampleZh": "楼里有需要遵守的安静时段吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 4
+      }
     },
     {
       "id": 41,
-      "fr": "respecter les règles",
-      "zh": "遵守规定",
+      "fr": "s’entraider",
+      "zh": "互相帮助",
       "scenario": "building",
       "priority": 4,
-      "exampleFr": "Existe-t-il des horaires de calme à respecter dans l’immeuble ?",
-      "exampleZh": "楼里有需要遵守的安静时段吗？"
+      "exampleFr": "Les voisins ont-ils l'habitude de s'entraider ?",
+      "exampleZh": "邻居之间有互相帮忙的习惯吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 2
+      },
+      "learningKey": "41-final15-v2"
     },
     {
       "id": 42,
@@ -415,7 +637,12 @@
       "scenario": "building",
       "priority": 5,
       "exampleFr": "Où puis-je trouver les informations et les règles de l’immeuble ?",
-      "exampleZh": "在哪里能找到楼里的信息和规定？"
+      "exampleZh": "我在哪里可以查到这栋楼的相关信息和规定？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 14
+      }
     },
     {
       "id": 43,
@@ -424,7 +651,12 @@
       "scenario": "building",
       "priority": 3,
       "exampleFr": "Quelles règles s’appliquent aux visiteurs ?",
-      "exampleZh": "访客需要遵守哪些规定？"
+      "exampleZh": "访客需要遵守哪些规定？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 5
+      }
     },
     {
       "id": 44,
@@ -433,7 +665,12 @@
       "scenario": "building",
       "priority": 4,
       "exampleFr": "L’entrée de l’immeuble est-elle sécurisée ?",
-      "exampleZh": "楼门入口安全吗？"
+      "exampleZh": "这栋楼的入口有安全保障吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 9
+      }
     },
     {
       "id": 45,
@@ -442,7 +679,12 @@
       "scenario": "building",
       "priority": 4,
       "exampleFr": "Comment fonctionne le tri des déchets et où faut-il sortir les poubelles ?",
-      "exampleZh": "垃圾分类怎么做，垃圾要放到哪里？"
+      "exampleZh": "垃圾如何分类？垃圾应该拿到哪里投放？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 10
+      }
     },
     {
       "id": 46,
@@ -451,7 +693,12 @@
       "scenario": "building",
       "priority": 4,
       "exampleFr": "Comment fonctionne le tri des déchets et où faut-il sortir les poubelles ?",
-      "exampleZh": "垃圾分类怎么做，垃圾要放到哪里？"
+      "exampleZh": "垃圾如何分类？垃圾应该拿到哪里投放？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 10
+      }
     },
     {
       "id": 47,
@@ -460,7 +707,12 @@
       "scenario": "roommate",
       "priority": 5,
       "exampleFr": "À partir de quand la chambre est-elle disponible ?",
-      "exampleZh": "房间从什么时候可以入住？"
+      "exampleZh": "这间房从什么时候起可以入住？",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 3
+      }
     },
     {
       "id": 48,
@@ -469,7 +721,12 @@
       "scenario": "roommate",
       "priority": 5,
       "exampleFr": "Combien de pièces y a-t-il dans l’appartement ?",
-      "exampleZh": "公寓里有几个房间？"
+      "exampleZh": "这套公寓有几间房？",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 4
+      }
     },
     {
       "id": 49,
@@ -478,7 +735,12 @@
       "scenario": "roommate",
       "priority": 4,
       "exampleFr": "La chambre disponible est-elle assez spacieuse ?",
-      "exampleZh": "空出来的房间够宽敞吗？"
+      "exampleZh": "空出的房间够宽敞吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 5
+      }
     },
     {
       "id": 50,
@@ -487,16 +749,27 @@
       "scenario": "renting",
       "priority": 5,
       "exampleFr": "Le logement est-il meublé ou non meublé ?",
-      "exampleZh": "住房是带家具还是不带家具？"
+      "exampleZh": "这个住房带家具还是不带家具？",
+      "source": {
+        "month": "2026-09",
+        "number": 8,
+        "question": 8
+      }
     },
     {
       "id": 51,
-      "fr": "être non meublé(e)",
-      "zh": "不带家具",
+      "fr": "des critères indispensables",
+      "zh": "必不可少的条件",
       "scenario": "renting",
       "priority": 4,
-      "exampleFr": "Le logement est-il meublé ou non meublé ?",
-      "exampleZh": "住房是带家具还是不带家具？"
+      "exampleFr": "Parmi tous ces critères, lesquels sont vraiment indispensables pour toi ?",
+      "exampleZh": "这些条件中，哪些对你来说是必不可少的？",
+      "source": {
+        "month": "2026-07",
+        "number": 5,
+        "question": 15
+      },
+      "learningKey": "51-final15-v2"
     },
     {
       "id": 52,
@@ -505,7 +778,12 @@
       "scenario": "renting",
       "priority": 5,
       "exampleFr": "L’appartement est-il bien insonorisé ?",
-      "exampleZh": "公寓隔音好吗？"
+      "exampleZh": "这套公寓的隔音效果好吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 7
+      }
     },
     {
       "id": 53,
@@ -514,7 +792,12 @@
       "scenario": "renting",
       "priority": 5,
       "exampleFr": "Comment est l’insonorisation du logement ?",
-      "exampleZh": "住房的隔音怎么样？"
+      "exampleZh": "这套住房的隔音效果如何？",
+      "source": {
+        "month": "2026-09",
+        "number": 8,
+        "question": 11
+      }
     },
     {
       "id": 54,
@@ -523,7 +806,12 @@
       "scenario": "renting",
       "priority": 4,
       "exampleFr": "Le logement est-il lumineux ?",
-      "exampleZh": "住房采光好吗？"
+      "exampleZh": "房子的采光好吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 8,
+        "question": 10
+      }
     },
     {
       "id": 55,
@@ -532,7 +820,12 @@
       "scenario": "renting",
       "priority": 5,
       "exampleFr": "Quelle est la superficie du logement et combien de pièces comprend-il ?",
-      "exampleZh": "住房面积多大，有几个房间？"
+      "exampleZh": "这个住房面积多大？有几个房间？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 4
+      }
     },
     {
       "id": 56,
@@ -541,7 +834,12 @@
       "scenario": "renting",
       "priority": 4,
       "exampleFr": "Combien de mètres carrés fait la maison ?",
-      "exampleZh": "房子有多少平方米？"
+      "exampleZh": "这栋房子的面积是多少平方米？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 4
+      }
     },
     {
       "id": 57,
@@ -550,7 +848,12 @@
       "scenario": "roommate",
       "priority": 4,
       "exampleFr": "La salle de bain est-elle privée ou partagée ?",
-      "exampleZh": "浴室是私人使用还是共用？"
+      "exampleZh": "浴室是独用的还是公用的？",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 8
+      }
     },
     {
       "id": 58,
@@ -559,7 +862,12 @@
       "scenario": "roommate",
       "priority": 4,
       "exampleFr": "La salle de bain est-elle privée ou partagée ?",
-      "exampleZh": "浴室是私人使用还是共用？"
+      "exampleZh": "浴室是独用的还是公用的？",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 8
+      }
     },
     {
       "id": 59,
@@ -568,7 +876,12 @@
       "scenario": "buying",
       "priority": 3,
       "exampleFr": "Le logement dispose-t-il d’un jardin, d’un balcon ou d’une terrasse ?",
-      "exampleZh": "住房有花园、阳台或露台吗？"
+      "exampleZh": "这套房子有花园、阳台或露台吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 7
+      }
     },
     {
       "id": 60,
@@ -577,7 +890,12 @@
       "scenario": "buying",
       "priority": 4,
       "exampleFr": "Le logement dispose-t-il d’un jardin, d’un balcon ou d’une terrasse ?",
-      "exampleZh": "住房有花园、阳台或露台吗？"
+      "exampleZh": "这套房子有花园、阳台或露台吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 7
+      }
     },
     {
       "id": 61,
@@ -586,16 +904,27 @@
       "scenario": "buying",
       "priority": 3,
       "exampleFr": "Le logement dispose-t-il d’un jardin, d’un balcon ou d’une terrasse ?",
-      "exampleZh": "住房有花园、阳台或露台吗？"
+      "exampleZh": "这套房子有花园、阳台或露台吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 7
+      }
     },
     {
       "id": 62,
-      "fr": "l’état général du logement",
-      "zh": "住房整体状况",
+      "fr": "l’état général",
+      "zh": "整体状况",
       "scenario": "buying",
       "priority": 4,
       "exampleFr": "Dans quel état général se trouve la maison ?",
-      "exampleZh": "房子的整体状况怎么样？"
+      "exampleZh": "这栋房子的整体状况怎么样？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 10
+      },
+      "learningKey": "62-final15-v2"
     },
     {
       "id": 63,
@@ -604,7 +933,12 @@
       "scenario": "renting",
       "priority": 4,
       "exampleFr": "Qu’est-ce qui est inclus comme équipement ?",
-      "exampleZh": "包含哪些设备？"
+      "exampleZh": "房子配备了哪些设施？",
+      "source": {
+        "month": "2026-09",
+        "number": 8,
+        "question": 9
+      }
     },
     {
       "id": 64,
@@ -613,16 +947,27 @@
       "scenario": "renting",
       "priority": 5,
       "exampleFr": "Combien coûte le loyer par mois ?",
-      "exampleZh": "每个月房租多少钱？"
+      "exampleZh": "月租金是多少？",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 10
+      }
     },
     {
       "id": 65,
-      "fr": "le loyer mensuel",
-      "zh": "月租",
+      "fr": "compte tenu de mon budget",
+      "zh": "考虑到我的预算",
       "scenario": "renting",
       "priority": 5,
-      "exampleFr": "Combien coûte le loyer par mois ?",
-      "exampleZh": "每个月房租多少钱？"
+      "exampleFr": "Compte tenu de mon budget, quel logement me conseilleriez-vous en priorité ?",
+      "exampleZh": "考虑到我的预算，您最优先建议我选哪套住房？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 15
+      },
+      "learningKey": "65-final15-v2"
     },
     {
       "id": 66,
@@ -631,7 +976,12 @@
       "scenario": "renting",
       "priority": 4,
       "exampleFr": "Dans quels quartiers les loyers sont-ils les plus abordables ?",
-      "exampleZh": "哪些街区的房租最实惠？"
+      "exampleZh": "哪些街区的租金更实惠？",
+      "source": {
+        "month": "2026-08",
+        "number": 6,
+        "question": 4
+      }
     },
     {
       "id": 67,
@@ -640,7 +990,12 @@
       "scenario": "renting",
       "priority": 5,
       "exampleFr": "L’électricité, le chauffage et le Wi-Fi sont-ils inclus dans le loyer ?",
-      "exampleZh": "电费、暖气和 Wi-Fi 包含在房租里吗？"
+      "exampleZh": "房租包含电费、暖气费和 Wi-Fi 费用吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 13
+      }
     },
     {
       "id": 68,
@@ -649,7 +1004,12 @@
       "scenario": "renting",
       "priority": 3,
       "exampleFr": "L’électricité, le chauffage et le Wi-Fi sont-ils inclus dans le loyer ?",
-      "exampleZh": "电费、暖气和 Wi-Fi 包含在房租里吗？"
+      "exampleZh": "房租包含电费、暖气费和 Wi-Fi 费用吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 13
+      }
     },
     {
       "id": 69,
@@ -658,16 +1018,27 @@
       "scenario": "renting",
       "priority": 4,
       "exampleFr": "L’électricité, le chauffage et le Wi-Fi sont-ils inclus dans le loyer ?",
-      "exampleZh": "电费、暖气和 Wi-Fi 包含在房租里吗？"
+      "exampleZh": "房租包含电费、暖气费和 Wi-Fi 费用吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 13
+      }
     },
     {
       "id": 70,
       "fr": "une caution",
-      "zh": "押金",
+      "zh": "押金（本题语境）",
       "scenario": "renting",
       "priority": 5,
-      "exampleFr": "Faut-il payer une caution ?",
-      "exampleZh": "需要交押金吗？"
+      "exampleFr": "Faut-il verser une caution et, si oui, de quel montant ?",
+      "exampleZh": "需要交押金吗？如果需要，金额是多少？",
+      "source": {
+        "month": "2026-09",
+        "number": 8,
+        "question": 13
+      },
+      "learningKey": "70-final15-v2"
     },
     {
       "id": 71,
@@ -676,7 +1047,12 @@
       "scenario": "renting",
       "priority": 5,
       "exampleFr": "Faut-il verser une caution au moment de signer le bail ?",
-      "exampleZh": "签租约时需要交押金吗？"
+      "exampleZh": "签租约时需要交押金吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 6,
+        "question": 11
+      }
     },
     {
       "id": 72,
@@ -685,7 +1061,12 @@
       "scenario": "renting",
       "priority": 5,
       "exampleFr": "À combien s’élève la caution ?",
-      "exampleZh": "押金金额是多少？"
+      "exampleZh": "押金金额是多少？",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 12
+      }
     },
     {
       "id": 73,
@@ -694,7 +1075,12 @@
       "scenario": "renting",
       "priority": 5,
       "exampleFr": "Comment se déroule la signature du bail ?",
-      "exampleZh": "租约签署流程是怎样的？"
+      "exampleZh": "签订租约的流程是怎样的？",
+      "source": {
+        "month": "2026-07",
+        "number": 6,
+        "question": 12
+      }
     },
     {
       "id": 74,
@@ -703,16 +1089,27 @@
       "scenario": "renting",
       "priority": 5,
       "exampleFr": "Faut-il verser une caution au moment de signer le bail ?",
-      "exampleZh": "签租约时需要交押金吗？"
+      "exampleZh": "签租约时需要交押金吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 6,
+        "question": 11
+      }
     },
     {
       "id": 75,
-      "fr": "la signature du bail",
-      "zh": "签署租约",
+      "fr": "déposer un dossier de location",
+      "zh": "提交租房申请材料",
       "scenario": "renting",
       "priority": 4,
-      "exampleFr": "Comment se déroule la signature du bail ?",
-      "exampleZh": "租约签署流程是怎样的？"
+      "exampleFr": "Quels documents faut-il préparer pour déposer un dossier de location ?",
+      "exampleZh": "申请租房需要准备哪些材料？",
+      "source": {
+        "month": "2026-07",
+        "number": 6,
+        "question": 9
+      },
+      "learningKey": "75-final15-v2"
     },
     {
       "id": 76,
@@ -721,7 +1118,12 @@
       "scenario": "renting",
       "priority": 5,
       "exampleFr": "Quels documents faut-il préparer pour déposer un dossier de location ?",
-      "exampleZh": "提交租房申请需要准备哪些文件？"
+      "exampleZh": "申请租房需要准备哪些材料？",
+      "source": {
+        "month": "2026-07",
+        "number": 6,
+        "question": 9
+      }
     },
     {
       "id": 77,
@@ -730,7 +1132,12 @@
       "scenario": "renting",
       "priority": 5,
       "exampleFr": "Quels documents faut-il fournir pour constituer le dossier ?",
-      "exampleZh": "准备申请材料需要提供哪些文件？"
+      "exampleZh": "申请住房需要提供哪些材料？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 11
+      }
     },
     {
       "id": 78,
@@ -739,7 +1146,12 @@
       "scenario": "renting",
       "priority": 5,
       "exampleFr": "Quels documents faut-il fournir pour louer le logement ?",
-      "exampleZh": "租房需要提供哪些文件？"
+      "exampleZh": "租这套住房需要提供哪些材料？",
+      "source": {
+        "month": "2026-09",
+        "number": 8,
+        "question": 14
+      }
     },
     {
       "id": 79,
@@ -748,7 +1160,12 @@
       "scenario": "renting",
       "priority": 5,
       "exampleFr": "Faut-il fournir un garant ou d’autres garanties financières ?",
-      "exampleZh": "需要提供担保人或其他经济担保吗？"
+      "exampleZh": "需要提供担保人或者其他经济担保吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 12
+      }
     },
     {
       "id": 80,
@@ -757,7 +1174,12 @@
       "scenario": "renting",
       "priority": 4,
       "exampleFr": "Faut-il fournir un garant ou d’autres garanties financières ?",
-      "exampleZh": "需要提供担保人或其他经济担保吗？"
+      "exampleZh": "需要提供担保人或者其他经济担保吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 12
+      }
     },
     {
       "id": 81,
@@ -766,7 +1188,12 @@
       "scenario": "renting",
       "priority": 4,
       "exampleFr": "Faut-il généralement fournir un garant ou une preuve de revenus ?",
-      "exampleZh": "通常需要提供担保人或收入证明吗？"
+      "exampleZh": "通常需要提供担保人或收入证明吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 6,
+        "question": 10
+      }
     },
     {
       "id": 82,
@@ -775,7 +1202,12 @@
       "scenario": "roommate",
       "priority": 5,
       "exampleFr": "Combien d’autres colocataires vivent actuellement dans l’appartement ?",
-      "exampleZh": "目前公寓里还有几个室友？"
+      "exampleZh": "目前这套公寓还有几位合租室友？",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 14
+      }
     },
     {
       "id": 83,
@@ -784,7 +1216,12 @@
       "scenario": "roommate",
       "priority": 5,
       "exampleFr": "Quelles sont leurs habitudes de vie et les règles principales de la colocation ?",
-      "exampleZh": "他们的生活习惯和合租主要规定是什么？"
+      "exampleZh": "他们平时的生活习惯如何？合租有哪些主要规则？",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 15
+      }
     },
     {
       "id": 84,
@@ -793,7 +1230,12 @@
       "scenario": "roommate",
       "priority": 5,
       "exampleFr": "Quelles sont les habitudes de vie des autres colocataires ?",
-      "exampleZh": "其他室友的生活习惯怎么样？"
+      "exampleZh": "其他合租室友的生活习惯如何？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 15
+      }
     },
     {
       "id": 85,
@@ -802,7 +1244,12 @@
       "scenario": "roommate",
       "priority": 4,
       "exampleFr": "Quelles sont les règles principales pour la vie en commun ?",
-      "exampleZh": "共同生活有哪些主要规则？"
+      "exampleZh": "合住时主要需要遵守哪些规则？",
+      "source": {
+        "month": "2026-09",
+        "number": 5,
+        "question": 15
+      }
     },
     {
       "id": 86,
@@ -811,7 +1258,12 @@
       "scenario": "roommate",
       "priority": 4,
       "exampleFr": "Quels espaces communs devons-nous partager ?",
-      "exampleZh": "我们需要共用哪些公共空间？"
+      "exampleZh": "我们需要共用哪些公共空间？",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 9
+      }
     },
     {
       "id": 87,
@@ -820,7 +1272,12 @@
       "scenario": "moving",
       "priority": 5,
       "exampleFr": "À quelle heure devons-nous commencer le déménagement ?",
-      "exampleZh": "我们几点开始搬家？"
+      "exampleZh": "我们几点开始搬家？",
+      "source": {
+        "month": "2026-10",
+        "number": 4,
+        "question": 2
+      }
     },
     {
       "id": 88,
@@ -829,7 +1286,12 @@
       "scenario": "moving",
       "priority": 5,
       "exampleFr": "Quels meubles devons-nous déménager ?",
-      "exampleZh": "我们需要搬哪些家具？"
+      "exampleZh": "我们需要搬走哪些家具？",
+      "source": {
+        "month": "2026-10",
+        "number": 4,
+        "question": 10
+      }
     },
     {
       "id": 89,
@@ -838,7 +1300,12 @@
       "scenario": "moving",
       "priority": 4,
       "exampleFr": "Comment allons-nous transporter les meubles ?",
-      "exampleZh": "我们怎么运输家具？"
+      "exampleZh": "我们打算怎么搬运家具？",
+      "source": {
+        "month": "2026-10",
+        "number": 4,
+        "question": 6
+      }
     },
     {
       "id": 90,
@@ -847,7 +1314,12 @@
       "scenario": "moving",
       "priority": 4,
       "exampleFr": "Les cartons seront-ils déjà prêts avant notre arrivée ?",
-      "exampleZh": "我们到之前纸箱会准备好吗？"
+      "exampleZh": "我们到之前，纸箱都已经打包好了吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 4,
+        "question": 12
+      }
     },
     {
       "id": 91,
@@ -856,7 +1328,12 @@
       "scenario": "moving",
       "priority": 4,
       "exampleFr": "Certains objets sont-ils fragiles ou particulièrement lourds à transporter ?",
-      "exampleZh": "有没有易碎或特别重的东西要搬？"
+      "exampleZh": "有没有易碎或特别沉重、搬运时需要注意的物品？",
+      "source": {
+        "month": "2026-10",
+        "number": 4,
+        "question": 11
+      }
     },
     {
       "id": 92,
@@ -865,7 +1342,12 @@
       "scenario": "moving",
       "priority": 4,
       "exampleFr": "Certains objets sont-ils fragiles ou particulièrement lourds à transporter ?",
-      "exampleZh": "有没有易碎或特别重的东西要搬？"
+      "exampleZh": "有没有易碎或特别沉重、搬运时需要注意的物品？",
+      "source": {
+        "month": "2026-10",
+        "number": 4,
+        "question": 11
+      }
     },
     {
       "id": 93,
@@ -874,7 +1356,12 @@
       "scenario": "moving",
       "priority": 4,
       "exampleFr": "Faut-il apporter du matériel ou des outils particuliers ?",
-      "exampleZh": "需要带特殊工具或材料吗？"
+      "exampleZh": "需要带什么特殊用品或工具吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 4,
+        "question": 13
+      }
     },
     {
       "id": 94,
@@ -883,7 +1370,12 @@
       "scenario": "moving",
       "priority": 4,
       "exampleFr": "Faut-il apporter du matériel ou des outils particuliers ?",
-      "exampleZh": "需要带特殊工具或材料吗？"
+      "exampleZh": "需要带什么特殊用品或工具吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 4,
+        "question": 13
+      }
     },
     {
       "id": 95,
@@ -892,25 +1384,40 @@
       "scenario": "moving",
       "priority": 5,
       "exampleFr": "Comment veux-tu répartir les tâches entre nous pour que tout se passe bien ?",
-      "exampleZh": "你想怎么分工，让一切顺利？"
+      "exampleZh": "你想怎么分配我们的任务，才能让搬家顺利进行？",
+      "source": {
+        "month": "2026-10",
+        "number": 4,
+        "question": 15
+      }
     },
     {
       "id": 96,
       "fr": "la remise des clés",
       "zh": "交钥匙",
-      "scenario": "renting",
+      "scenario": "holiday",
       "priority": 4,
       "exampleFr": "Comment organiser l’arrivée, la remise des clés et le départ des locataires ?",
-      "exampleZh": "怎么安排租客入住、交钥匙和离开？"
+      "exampleZh": "如何安排租客入住、交接钥匙和退房？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 14
+      }
     },
     {
       "id": 97,
       "fr": "un locataire",
       "zh": "租客",
-      "scenario": "renting",
+      "scenario": "holiday",
       "priority": 4,
       "exampleFr": "Que dois-je laisser comme équipements à disposition des locataires ?",
-      "exampleZh": "我应该为租客提供哪些设备？"
+      "exampleZh": "我应该为租客准备哪些设备？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 12
+      }
     },
     {
       "id": 98,
@@ -919,7 +1426,12 @@
       "scenario": "buying",
       "priority": 5,
       "exampleFr": "Est-il possible de financer l’achat avec un prêt immobilier ?",
-      "exampleZh": "可以用房贷来支付购房款吗？"
+      "exampleZh": "可以申请住房贷款来支付购房费用吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 12
+      }
     },
     {
       "id": 99,
@@ -928,16 +1440,26 @@
       "scenario": "buying",
       "priority": 4,
       "exampleFr": "Est-il possible de financer l’achat avec un prêt immobilier ?",
-      "exampleZh": "可以用房贷来支付购房款吗？"
+      "exampleZh": "可以申请住房贷款来支付购房费用吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 12
+      }
     },
     {
       "id": 100,
       "fr": "un acompte",
-      "zh": "首付款 / 定金",
+      "zh": "预付款；定金",
       "scenario": "buying",
       "priority": 4,
       "exampleFr": "À combien s’élève l’acompte ou le dépôt de garantie ?",
-      "exampleZh": "首付款或保证金是多少？"
+      "exampleZh": "首付款或保证金分别是多少？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 13
+      }
     },
     {
       "id": 101,
@@ -946,16 +1468,27 @@
       "scenario": "buying",
       "priority": 4,
       "exampleFr": "À combien s’élève l’acompte ou le dépôt de garantie ?",
-      "exampleZh": "首付款或保证金是多少？"
+      "exampleZh": "首付款或保证金分别是多少？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 13
+      }
     },
     {
       "id": 102,
-      "fr": "des frais supplémentaires",
-      "zh": "额外费用",
+      "fr": "des frais ou taxes en plus du prix",
+      "zh": "价格之外的费用或税费",
       "scenario": "buying",
       "priority": 5,
       "exampleFr": "Quels frais ou taxes faut-il prévoir en plus du prix ?",
-      "exampleZh": "除了房价还要准备哪些额外费用或税？"
+      "exampleZh": "除房价外，还需要准备哪些费用或税款？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 14
+      },
+      "learningKey": "102-final15-v2"
     },
     {
       "id": 103,
@@ -964,7 +1497,12 @@
       "scenario": "buying",
       "priority": 4,
       "exampleFr": "Quels frais ou taxes faut-il prévoir en plus du prix ?",
-      "exampleZh": "除了房价还要准备哪些额外费用或税？"
+      "exampleZh": "除房价外，还需要准备哪些费用或税款？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 14
+      }
     },
     {
       "id": 104,
@@ -973,16 +1511,27 @@
       "scenario": "settling",
       "priority": 5,
       "exampleFr": "Par quelles démarches administratives dois-je commencer après mon arrivée ?",
-      "exampleZh": "到达后我应该先办哪些行政手续？"
+      "exampleZh": "到达后，我应该先办理哪些行政手续？",
+      "source": {
+        "month": "2026-09",
+        "number": 9,
+        "question": 3
+      }
     },
     {
       "id": 105,
-      "fr": "préparer son arrivée",
-      "zh": "准备安家 / 到来",
+      "fr": "préparer mon arrivée",
+      "zh": "为我的到来做准备",
       "scenario": "settling",
       "priority": 4,
       "exampleFr": "Qu’est-ce que tu me conseillerais pour bien préparer mon arrivée et m’adapter plus facilement ?",
-      "exampleZh": "你建议我怎么准备到来并更容易适应？"
+      "exampleZh": "你建议我做些什么来充分准备到来，并更快适应这里？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 15
+      },
+      "learningKey": "105-final15-v2"
     },
     {
       "id": 106,
@@ -991,16 +1540,27 @@
       "scenario": "settling",
       "priority": 5,
       "exampleFr": "Qu’est-ce qui t’a le plus aidé à t’adapter à la vie canadienne ?",
-      "exampleZh": "什么最帮助你适应加拿大生活？"
+      "exampleZh": "什么对你适应加拿大生活帮助最大？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 9
+      }
     },
     {
       "id": 107,
-      "fr": "un service à domicile",
-      "zh": "上门服务",
+      "fr": "de petits travaux de bricolage",
+      "zh": "家里的小修小补",
       "scenario": "services",
       "priority": 4,
-      "exampleFr": "En quoi cette personne peut-elle m’aider ?",
-      "exampleZh": "这个人能为我提供哪些帮助？"
+      "exampleFr": "Peut-elle aussi faire de petits travaux de bricolage, par exemple réparer ou fixer une table ?",
+      "exampleZh": "她也能做些简单的维修活吗？比如修理或固定桌子。",
+      "source": {
+        "month": "2026-09",
+        "number": 6,
+        "question": 2
+      },
+      "learningKey": "107-final15-v2"
     },
     {
       "id": 108,
@@ -1009,16 +1569,27 @@
       "scenario": "services",
       "priority": 4,
       "exampleFr": "Peut-elle aussi faire de petits travaux de bricolage, par exemple réparer ou fixer une table ?",
-      "exampleZh": "她也能做一些小维修吗，比如修理或固定桌子？"
+      "exampleZh": "她也能做些简单的维修活吗？比如修理或固定桌子。",
+      "source": {
+        "month": "2026-09",
+        "number": 6,
+        "question": 2
+      }
     },
     {
       "id": 109,
-      "fr": "faire le ménage",
-      "zh": "做家务 / 清洁",
+      "fr": "faire un peu de ménage",
+      "zh": "做一些清洁",
       "scenario": "services",
       "priority": 4,
       "exampleFr": "Peut-elle également faire un peu de ménage ou nettoyer une pièce ?",
-      "exampleZh": "她也能做一些家务或打扫房间吗？"
+      "exampleZh": "她也可以帮忙做些家务或打扫一个房间吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 6,
+        "question": 3
+      },
+      "learningKey": "109-final15-v2"
     },
     {
       "id": 110,
@@ -1027,7 +1598,12 @@
       "scenario": "services",
       "priority": 4,
       "exampleFr": "Peut-elle intervenir en cas d’urgence ?",
-      "exampleZh": "她能在紧急情况下上门吗？"
+      "exampleZh": "紧急情况下可以请她上门处理吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 6,
+        "question": 8
+      }
     },
     {
       "id": 111,
@@ -1036,7 +1612,12 @@
       "scenario": "services",
       "priority": 5,
       "exampleFr": "Comment puis-je la contacter et prendre rendez-vous ?",
-      "exampleZh": "我怎么联系她并预约？"
+      "exampleZh": "我该如何联系她并预约？",
+      "source": {
+        "month": "2026-09",
+        "number": 6,
+        "question": 15
+      }
     },
     {
       "id": 112,
@@ -1045,7 +1626,252 @@
       "scenario": "services",
       "priority": 4,
       "exampleFr": "Combien de temps dure une intervention en moyenne ?",
-      "exampleZh": "一次上门服务平均持续多久？"
+      "exampleZh": "一次上门服务平均持续多久？",
+      "source": {
+        "month": "2026-09",
+        "number": 6,
+        "question": 11
+      }
+    },
+    {
+      "id": 113,
+      "fr": "une carte de fidélité",
+      "zh": "会员卡",
+      "scenario": "shopping",
+      "priority": 4,
+      "exampleFr": "Le magasin propose-t-il une carte de fidélité ou des réductions pour les habitants du quartier ?",
+      "exampleZh": "商店提供会员卡或街区居民折扣吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 11
+      },
+      "learningKey": "113-final15-v2"
+    },
+    {
+      "id": 114,
+      "fr": "livrer à domicile",
+      "zh": "送货上门",
+      "scenario": "shopping",
+      "priority": 4,
+      "exampleFr": "Le magasin livre-t-il à domicile ?",
+      "exampleZh": "商店提供送货上门服务吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 13
+      },
+      "learningKey": "114-final15-v2"
+    },
+    {
+      "id": 115,
+      "fr": "des produits frais",
+      "zh": "新鲜食品",
+      "scenario": "shopping",
+      "priority": 4,
+      "exampleFr": "Y a-t-il un marché dans le quartier où je pourrais acheter des produits frais ?",
+      "exampleZh": "附近有可以买到新鲜食品的市场吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 15
+      },
+      "learningKey": "115-final15-v2"
+    },
+    {
+      "id": 116,
+      "fr": "souscrire une assurance",
+      "zh": "投保",
+      "scenario": "holiday",
+      "priority": 5,
+      "exampleFr": "Faut-il souscrire une assurance particulière ?",
+      "exampleZh": "需要购买什么特定的保险吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 10
+      },
+      "learningKey": "116-final15-v2"
+    },
+    {
+      "id": 117,
+      "fr": "publier l’annonce",
+      "zh": "发布广告",
+      "scenario": "holiday",
+      "priority": 4,
+      "exampleFr": "Sur quels sites ou plateformes me conseillez-vous de publier l’annonce ?",
+      "exampleZh": "您建议我在哪些网站或平台发布出租信息？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 6
+      },
+      "learningKey": "117-final15-v2"
+    },
+    {
+      "id": 118,
+      "fr": "une commission",
+      "zh": "佣金",
+      "scenario": "holiday",
+      "priority": 5,
+      "exampleFr": "Combien votre agence facture-t-elle de frais ou de commission ?",
+      "exampleZh": "贵中介会收取多少服务费或佣金？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 8
+      },
+      "learningKey": "118-final15-v2"
+    },
+    {
+      "id": 119,
+      "fr": "le ménage entre deux locations",
+      "zh": "两次出租之间的清洁",
+      "scenario": "holiday",
+      "priority": 4,
+      "exampleFr": "Comment organiser le ménage entre deux locations ?",
+      "exampleZh": "两次出租之间的清洁工作该如何安排？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 13
+      },
+      "learningKey": "119-final15-v2"
+    },
+    {
+      "id": 120,
+      "fr": "arroser les plantes",
+      "zh": "给植物浇水",
+      "scenario": "absence",
+      "priority": 5,
+      "exampleFr": "Où se trouvent les plantes que je dois arroser ?",
+      "exampleZh": "我需要浇水的植物放在哪里？",
+      "source": {
+        "month": "2026-09",
+        "number": 7,
+        "question": 4
+      },
+      "learningKey": "120-final15-v2"
+    },
+    {
+      "id": 121,
+      "fr": "relever le courrier",
+      "zh": "取信件",
+      "scenario": "absence",
+      "priority": 5,
+      "exampleFr": "Voulez-vous que je relève votre courrier ou que je récupère les colis ?",
+      "exampleZh": "您需要我帮您取信或收包裹吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 7,
+        "question": 6
+      },
+      "learningKey": "121-final15-v2"
+    },
+    {
+      "id": 122,
+      "fr": "le double des clés",
+      "zh": "备用钥匙",
+      "scenario": "absence",
+      "priority": 5,
+      "exampleFr": "Où allez-vous me laisser le double des clés ?",
+      "exampleZh": "您会把备用钥匙放在哪里给我？",
+      "source": {
+        "month": "2026-09",
+        "number": 7,
+        "question": 9
+      },
+      "learningKey": "122-final15-v2"
+    },
+    {
+      "id": 123,
+      "fr": "aérer la maison",
+      "zh": "给房屋通风",
+      "scenario": "absence",
+      "priority": 4,
+      "exampleFr": "Dois-je aérer la maison ou vérifier certains appareils régulièrement ?",
+      "exampleZh": "我需要定期开窗通风或检查某些电器吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 7,
+        "question": 11
+      },
+      "learningKey": "123-final15-v2"
+    },
+    {
+      "id": 124,
+      "fr": "donner des nouvelles",
+      "zh": "告知近况；报平安",
+      "scenario": "absence",
+      "priority": 4,
+      "exampleFr": "Souhaitez-vous que je vous donne régulièrement des nouvelles pendant votre absence ?",
+      "exampleZh": "您不在期间，希望我定期向您报平安吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 7,
+        "question": 15
+      },
+      "learningKey": "124-final15-v2"
+    },
+    {
+      "id": 125,
+      "fr": "poser des difficultés",
+      "zh": "造成困难",
+      "scenario": "settling",
+      "priority": 4,
+      "exampleFr": "La langue t’a-t-elle posé beaucoup de difficultés ?",
+      "exampleZh": "语言给你带来了很多困难吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 10
+      },
+      "learningKey": "125-final15-v2"
+    },
+    {
+      "id": 126,
+      "fr": "une structure d’accueil",
+      "zh": "接待与支持机构",
+      "scenario": "settling",
+      "priority": 5,
+      "exampleFr": "Quelles structures d’accueil peuvent m’aider à entrer en contact avec mes compatriotes ?",
+      "exampleZh": "有哪些接待服务机构可以帮我联系同胞？",
+      "source": {
+        "month": "2026-09",
+        "number": 3,
+        "question": 1
+      },
+      "learningKey": "126-final15-v2"
+    },
+    {
+      "id": 127,
+      "fr": "des groupes destinés aux nouveaux résidents",
+      "zh": "面向新居民的团体",
+      "scenario": "settling",
+      "priority": 4,
+      "exampleFr": "Existe-t-il des groupes spécialement destinés aux nouveaux résidents ?",
+      "exampleZh": "有没有专门面向新居民的群体或组织？",
+      "source": {
+        "month": "2026-10",
+        "number": 6,
+        "question": 5
+      },
+      "learningKey": "127-final15-v2"
+    },
+    {
+      "id": 128,
+      "fr": "quelqu’un pour la remplacer",
+      "zh": "能替代她的人",
+      "scenario": "services",
+      "priority": 4,
+      "exampleFr": "Et si elle ne peut pas venir, y a-t-il quelqu’un pour la remplacer ?",
+      "exampleZh": "如果她来不了，有人可以代替她吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 6,
+        "question": 9
+      },
+      "learningKey": "128-final15-v2"
     }
   ],
   "patterns": [
@@ -1055,15 +1881,25 @@
       "zh": "……具体在哪里？",
       "exampleFr": "Où se trouve exactement l’appartement ?",
       "exampleZh": "这套公寓具体在哪里？",
-      "scenario": "renting"
+      "scenario": "renting",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 1
+      }
     },
     {
       "id": 2,
-      "pattern": "Dans quels quartiers + question ?",
-      "zh": "哪些街区……？",
+      "pattern": "Dans quels quartiers conseillerais-tu à + personne + de + infinitif ?",
+      "zh": "哪些街区……？（按实际句子组织主语和谓语）",
       "exampleFr": "Dans quels quartiers conseillerais-tu à un nouvel arrivant de s’installer ?",
       "exampleZh": "你会建议新来的人住在哪些街区？",
-      "scenario": "neighborhood"
+      "scenario": "neighborhood",
+      "source": {
+        "month": "2026-09",
+        "number": 9,
+        "question": 2
+      }
     },
     {
       "id": 3,
@@ -1071,167 +1907,272 @@
       "zh": "这个街区……吗？",
       "exampleFr": "Le quartier est-il plutôt calme ou animé ?",
       "exampleZh": "这个街区比较安静还是热闹？",
-      "scenario": "neighborhood"
+      "scenario": "neighborhood",
+      "source": {
+        "month": "2026-10",
+        "number": 5,
+        "question": 5
+      }
     },
     {
       "id": 4,
       "pattern": "Le quartier est-il bien desservi par + transport ?",
       "zh": "这个街区……交通方便吗？",
       "exampleFr": "Le quartier est-il bien desservi par les transports en commun ?",
-      "exampleZh": "这个街区公共交通方便吗？",
-      "scenario": "neighborhood"
+      "exampleZh": "这个街区的公共交通方便吗？",
+      "scenario": "neighborhood",
+      "source": {
+        "month": "2026-09",
+        "number": 5,
+        "question": 2
+      }
     },
     {
       "id": 5,
       "pattern": "Qu’est-ce qu’on trouve comme + nom + à proximité ?",
       "zh": "附近有哪些……？",
       "exampleFr": "Qu’est-ce qu’on trouve comme commerces et services à proximité ?",
-      "exampleZh": "附近有哪些商店和服务？",
-      "scenario": "neighborhood"
+      "exampleZh": "附近有哪些商店和生活服务？",
+      "scenario": "neighborhood",
+      "source": {
+        "month": "2026-10",
+        "number": 5,
+        "question": 7
+      }
     },
     {
       "id": 6,
-      "pattern": "À partir de quand + nom + est-il/elle disponible ?",
-      "zh": "从什么时候可以……？",
+      "pattern": "À partir de quand + nom féminin singulier + est-elle disponible ?",
+      "zh": "……从什么时候可以入住或使用？",
       "exampleFr": "À partir de quand la chambre est-elle disponible ?",
-      "exampleZh": "房间从什么时候可以入住？",
-      "scenario": "renting"
+      "exampleZh": "这间房从什么时候起可以入住？",
+      "scenario": "renting",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 3
+      }
     },
     {
       "id": 7,
       "pattern": "Combien de pièces y a-t-il dans + lieu ?",
       "zh": "……有几个房间？",
       "exampleFr": "Combien de pièces y a-t-il dans l’appartement ?",
-      "exampleZh": "公寓里有几个房间？",
-      "scenario": "renting"
+      "exampleZh": "这套公寓有几间房？",
+      "scenario": "renting",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 4
+      }
     },
     {
       "id": 8,
       "pattern": "Combien de mètres carrés fait + logement ?",
       "zh": "……面积多大？",
       "exampleFr": "Combien de mètres carrés fait la maison ?",
-      "exampleZh": "房子有多少平方米？",
-      "scenario": "buying"
+      "exampleZh": "这栋房子的面积是多少平方米？",
+      "scenario": "buying",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 4
+      }
     },
     {
       "id": 9,
       "pattern": "Le logement est-il meublé ou non meublé ?",
       "zh": "住房带家具还是不带家具？",
       "exampleFr": "Le logement est-il meublé ou non meublé ?",
-      "exampleZh": "住房带家具还是不带家具？",
-      "scenario": "renting"
+      "exampleZh": "这个住房带家具还是不带家具？",
+      "scenario": "renting",
+      "source": {
+        "month": "2026-09",
+        "number": 8,
+        "question": 8
+      }
     },
     {
       "id": 10,
       "pattern": "Comment est + nom ?",
       "zh": "……怎么样？",
       "exampleFr": "Comment est l’insonorisation du logement ?",
-      "exampleZh": "住房的隔音怎么样？",
-      "scenario": "renting"
+      "exampleZh": "这套住房的隔音效果如何？",
+      "scenario": "renting",
+      "source": {
+        "month": "2026-09",
+        "number": 8,
+        "question": 11
+      }
     },
     {
       "id": 11,
       "pattern": "Le logement dispose-t-il de + nom ?",
       "zh": "住房有没有……？",
       "exampleFr": "Le logement dispose-t-il d’un jardin, d’un balcon ou d’une terrasse ?",
-      "exampleZh": "住房有花园、阳台或露台吗？",
-      "scenario": "buying"
+      "exampleZh": "这套房子有花园、阳台或露台吗？",
+      "scenario": "buying",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 7
+      }
     },
     {
       "id": 12,
       "pattern": "Combien coûte + nom + par mois ?",
       "zh": "……每月多少钱？",
       "exampleFr": "Combien coûte le loyer par mois ?",
-      "exampleZh": "每个月房租多少钱？",
-      "scenario": "renting"
+      "exampleZh": "月租金是多少？",
+      "scenario": "renting",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 10
+      }
     },
     {
       "id": 13,
       "pattern": "Combien faut-il prévoir en moyenne pour + nom ?",
       "zh": "平均要准备多少……？",
       "exampleFr": "Combien faut-il prévoir en moyenne pour le loyer ?",
-      "exampleZh": "平均房租要准备多少？",
-      "scenario": "renting"
+      "exampleZh": "平均需要准备多少租金？",
+      "scenario": "renting",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 4
+      }
     },
     {
       "id": 14,
-      "pattern": "Est-ce que + charges + sont incluses dans le loyer ?",
-      "zh": "……包含在房租里吗？",
+      "pattern": "L’électricité, le chauffage et le Wi-Fi sont-ils inclus dans + nom ?",
+      "zh": "电费、暖气和Wi-Fi包含在……内吗？",
       "exampleFr": "L’électricité, le chauffage et le Wi-Fi sont-ils inclus dans le loyer ?",
-      "exampleZh": "电费、暖气和 Wi-Fi 包含在房租里吗？",
-      "scenario": "renting"
+      "exampleZh": "房租包含电费、暖气费和 Wi-Fi 费用吗？",
+      "scenario": "renting",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 13
+      }
     },
     {
       "id": 15,
-      "pattern": "Faut-il payer / verser une caution ?",
-      "zh": "需要交押金吗？",
-      "exampleFr": "Faut-il payer une caution ?",
-      "exampleZh": "需要交押金吗？",
-      "scenario": "renting"
+      "pattern": "Faut-il verser une caution et, si oui, de quel montant ?",
+      "zh": "需要交押金吗？如果需要，金额是多少？",
+      "exampleFr": "Faut-il verser une caution et, si oui, de quel montant ?",
+      "exampleZh": "需要交押金吗？如果需要，金额是多少？",
+      "scenario": "renting",
+      "source": {
+        "month": "2026-09",
+        "number": 8,
+        "question": 13
+      }
     },
     {
       "id": 16,
       "pattern": "À combien s’élève + somme ?",
       "zh": "……金额是多少？",
       "exampleFr": "À combien s’élève la caution ?",
-      "exampleZh": "押金是多少？",
-      "scenario": "renting"
+      "exampleZh": "押金金额是多少？",
+      "scenario": "renting",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 12
+      }
     },
     {
       "id": 17,
       "pattern": "Quels documents faut-il fournir pour + infinitif ?",
       "zh": "……需要提供哪些材料？",
       "exampleFr": "Quels documents faut-il fournir pour louer le logement ?",
-      "exampleZh": "租房需要提供哪些文件？",
-      "scenario": "renting"
+      "exampleZh": "租这套住房需要提供哪些材料？",
+      "scenario": "renting",
+      "source": {
+        "month": "2026-09",
+        "number": 8,
+        "question": 14
+      }
     },
     {
       "id": 18,
       "pattern": "Faut-il fournir un garant ou + nom ?",
       "zh": "需要提供担保人或……吗？",
       "exampleFr": "Faut-il fournir un garant ou d’autres garanties financières ?",
-      "exampleZh": "需要提供担保人或其他经济担保吗？",
-      "scenario": "renting"
+      "exampleZh": "需要提供担保人或者其他经济担保吗？",
+      "scenario": "renting",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 12
+      }
     },
     {
       "id": 19,
       "pattern": "Comment se déroule + nom ?",
       "zh": "……流程是怎样的？",
       "exampleFr": "Comment se déroule la signature du bail ?",
-      "exampleZh": "租约签署流程是怎样的？",
-      "scenario": "renting"
+      "exampleZh": "签订租约的流程是怎样的？",
+      "scenario": "renting",
+      "source": {
+        "month": "2026-07",
+        "number": 6,
+        "question": 12
+      }
     },
     {
       "id": 20,
       "pattern": "Est-il possible de visiter + nom + avant de + infinitif ?",
       "zh": "在……之前可以先看……吗？",
       "exampleFr": "Est-il possible de visiter le logement avant de prendre une décision ?",
-      "exampleZh": "决定前可以先看房吗？",
-      "scenario": "renting"
+      "exampleZh": "决定之前可以先看房吗？",
+      "scenario": "renting",
+      "source": {
+        "month": "2026-09",
+        "number": 8,
+        "question": 15
+      }
     },
     {
       "id": 21,
       "pattern": "Combien d’autres colocataires + verbe ?",
       "zh": "还有几个室友……？",
       "exampleFr": "Combien d’autres colocataires vivent actuellement dans l’appartement ?",
-      "exampleZh": "目前公寓里还有几个室友？",
-      "scenario": "roommate"
+      "exampleZh": "目前这套公寓还有几位合租室友？",
+      "scenario": "roommate",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 14
+      }
     },
     {
       "id": 22,
       "pattern": "Quelles sont les habitudes de vie de + personne ?",
       "zh": "……的生活习惯怎么样？",
       "exampleFr": "Quelles sont les habitudes de vie des autres colocataires ?",
-      "exampleZh": "其他室友的生活习惯怎么样？",
-      "scenario": "roommate"
+      "exampleZh": "其他合租室友的生活习惯如何？",
+      "scenario": "roommate",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 15
+      }
     },
     {
       "id": 23,
-      "pattern": "Quels espaces communs devons-nous partager ?",
+      "pattern": "Quels + nom masculin pluriel + devons-nous + infinitif ?",
       "zh": "我们需要共用哪些空间？",
       "exampleFr": "Quels espaces communs devons-nous partager ?",
       "exampleZh": "我们需要共用哪些公共空间？",
-      "scenario": "roommate"
+      "scenario": "roommate",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 9
+      }
     },
     {
       "id": 24,
@@ -1239,23 +2180,38 @@
       "zh": "有没有需要遵守的规定/时段？",
       "exampleFr": "Existe-t-il des horaires de calme à respecter dans l’immeuble ?",
       "exampleZh": "楼里有需要遵守的安静时段吗？",
-      "scenario": "building"
+      "scenario": "building",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 4
+      }
     },
     {
       "id": 25,
       "pattern": "Comment fonctionne + service / système ?",
       "zh": "……怎么运作？",
       "exampleFr": "Comment fonctionne le tri des déchets et où faut-il sortir les poubelles ?",
-      "exampleZh": "垃圾分类怎么做，垃圾要放到哪里？",
-      "scenario": "building"
+      "exampleZh": "垃圾如何分类？垃圾应该拿到哪里投放？",
+      "scenario": "building",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 10
+      }
     },
     {
       "id": 26,
       "pattern": "Comment puis-je faire connaissance avec + personne ?",
       "zh": "我怎么认识……？",
       "exampleFr": "Comment puis-je faire connaissance avec les autres voisins ?",
-      "exampleZh": "我怎么认识其他邻居？",
-      "scenario": "building"
+      "exampleZh": "我怎样才能认识其他邻居？",
+      "scenario": "building",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 3
+      }
     },
     {
       "id": 27,
@@ -1263,71 +2219,116 @@
       "zh": "我们几点开始……？",
       "exampleFr": "À quelle heure devons-nous commencer le déménagement ?",
       "exampleZh": "我们几点开始搬家？",
-      "scenario": "moving"
+      "scenario": "moving",
+      "source": {
+        "month": "2026-10",
+        "number": 4,
+        "question": 2
+      }
     },
     {
       "id": 28,
       "pattern": "Comment allons-nous + infinitif ?",
       "zh": "我们要怎么……？",
       "exampleFr": "Comment allons-nous transporter les meubles ?",
-      "exampleZh": "我们怎么运输家具？",
-      "scenario": "moving"
+      "exampleZh": "我们打算怎么搬运家具？",
+      "scenario": "moving",
+      "source": {
+        "month": "2026-10",
+        "number": 4,
+        "question": 6
+      }
     },
     {
       "id": 29,
       "pattern": "Faut-il apporter / fournir + matériel ?",
       "zh": "需要带/提供……吗？",
       "exampleFr": "Faut-il apporter du matériel ou des outils particuliers ?",
-      "exampleZh": "需要带特殊工具或材料吗？",
-      "scenario": "moving"
+      "exampleZh": "需要带什么特殊用品或工具吗？",
+      "scenario": "moving",
+      "source": {
+        "month": "2026-10",
+        "number": 4,
+        "question": 13
+      }
     },
     {
       "id": 30,
       "pattern": "Comment veux-tu répartir les tâches + complément ?",
       "zh": "你想怎么分工……？",
       "exampleFr": "Comment veux-tu répartir les tâches entre nous pour que tout se passe bien ?",
-      "exampleZh": "你想怎么分工，让一切顺利？",
-      "scenario": "moving"
+      "exampleZh": "你想怎么分配我们的任务，才能让搬家顺利进行？",
+      "scenario": "moving",
+      "source": {
+        "month": "2026-10",
+        "number": 4,
+        "question": 15
+      }
     },
     {
       "id": 31,
       "pattern": "Est-il possible de financer + nom + avec + moyen ?",
       "zh": "可以用……来融资吗？",
       "exampleFr": "Est-il possible de financer l’achat avec un prêt immobilier ?",
-      "exampleZh": "可以用房贷来支付购房款吗？",
-      "scenario": "buying"
+      "exampleZh": "可以申请住房贷款来支付购房费用吗？",
+      "scenario": "buying",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 12
+      }
     },
     {
       "id": 32,
       "pattern": "Quels frais ou taxes faut-il prévoir en plus de + nom ?",
       "zh": "除了……还要准备哪些费用或税？",
       "exampleFr": "Quels frais ou taxes faut-il prévoir en plus du prix ?",
-      "exampleZh": "除了房价还要准备哪些额外费用或税？",
-      "scenario": "buying"
+      "exampleZh": "除房价外，还需要准备哪些费用或税款？",
+      "scenario": "buying",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 14
+      }
     },
     {
       "id": 33,
       "pattern": "Par quelles démarches dois-je commencer après + événement ?",
       "zh": "……后我应该先办哪些手续？",
       "exampleFr": "Par quelles démarches administratives dois-je commencer après mon arrivée ?",
-      "exampleZh": "到达后我应该先办哪些行政手续？",
-      "scenario": "settling"
+      "exampleZh": "到达后，我应该先办理哪些行政手续？",
+      "scenario": "settling",
+      "source": {
+        "month": "2026-09",
+        "number": 9,
+        "question": 3
+      }
     },
     {
       "id": 34,
-      "pattern": "Qu’est-ce que vous me conseilleriez pour + infinitif ?",
-      "zh": "为了……您会给我什么建议？",
-      "exampleFr": "Qu’est-ce que vous me conseilleriez de faire pendant mes premières semaines pour bien m’installer ?",
-      "exampleZh": "为了顺利安家，最初几周您建议我做什么？",
-      "scenario": "settling"
+      "pattern": "Qu’est-ce que tu me conseillerais de faire + complément ?",
+      "zh": "你会建议我做什么？",
+      "exampleFr": "Qu’est-ce que tu me conseillerais de faire pendant mes premières semaines pour bien m’installer ?",
+      "exampleZh": "你建议我在最初几周做些什么，才能顺利安顿下来？",
+      "scenario": "settling",
+      "source": {
+        "month": "2026-09",
+        "number": 9,
+        "question": 15
+      }
     },
     {
       "id": 35,
       "pattern": "Peut-elle / peut-il + infinitif ?",
       "zh": "她/他能……吗？",
       "exampleFr": "Peut-elle intervenir en cas d’urgence ?",
-      "exampleZh": "她能在紧急情况下上门吗？",
-      "scenario": "services"
+      "exampleZh": "紧急情况下可以请她上门处理吗？",
+      "scenario": "services",
+      "source": {
+        "month": "2026-09",
+        "number": 6,
+        "question": 8
+      }
     },
     {
       "id": 36,
@@ -1335,7 +2336,12 @@
       "zh": "多久一次？",
       "exampleFr": "À quelle fréquence peut-elle venir ?",
       "exampleZh": "她多久可以来一次？",
-      "scenario": "services"
+      "scenario": "services",
+      "source": {
+        "month": "2026-09",
+        "number": 6,
+        "question": 6
+      }
     },
     {
       "id": 37,
@@ -1343,15 +2349,294 @@
       "zh": "……平均持续多久？",
       "exampleFr": "Combien de temps dure une intervention en moyenne ?",
       "exampleZh": "一次上门服务平均持续多久？",
-      "scenario": "services"
+      "scenario": "services",
+      "source": {
+        "month": "2026-09",
+        "number": 6,
+        "question": 11
+      }
     },
     {
       "id": 38,
-      "pattern": "Comment puis-je + contacter / prendre rendez-vous ?",
-      "zh": "我怎么联系/预约？",
+      "pattern": "Comment puis-je + pronom complément + infinitif ?",
+      "zh": "我怎样可以……？（代词放在不定式前）",
       "exampleFr": "Comment puis-je la contacter et prendre rendez-vous ?",
-      "exampleZh": "我怎么联系她并预约？",
-      "scenario": "services"
+      "exampleZh": "我该如何联系她并预约？",
+      "scenario": "services",
+      "source": {
+        "month": "2026-09",
+        "number": 6,
+        "question": 15
+      }
+    },
+    {
+      "id": 39,
+      "pattern": "Comment as-tu + participe passé + complément ?",
+      "zh": "你当时是怎样……的？",
+      "scenario": "settling",
+      "exampleFr": "Comment as-tu trouvé ton premier logement ?",
+      "exampleZh": "你是怎么找到第一处住处的？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 2
+      }
+    },
+    {
+      "id": 40,
+      "pattern": "Qu’est-ce qui t’a le plus aidé à + infinitif ?",
+      "zh": "什么最帮助你……？",
+      "scenario": "settling",
+      "exampleFr": "Qu’est-ce qui t’a le plus aidé à t’adapter à la vie canadienne ?",
+      "exampleZh": "什么对你适应加拿大生活帮助最大？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 9
+      }
+    },
+    {
+      "id": 41,
+      "pattern": "Si + imparfait, + question au conditionnel présent",
+      "zh": "如果……，你会……？",
+      "scenario": "neighborhood",
+      "exampleFr": "Si tu devais m’en recommander un pour m’installer à long terme, lequel choisirais-tu ?",
+      "exampleZh": "如果要推荐一个适合长期居住的街区，你会选哪个？",
+      "source": {
+        "month": "2026-08",
+        "number": 6,
+        "question": 15
+      }
+    },
+    {
+      "id": 42,
+      "pattern": "J’aurais besoin de + nom. Est-ce que ce serait possible ?",
+      "zh": "我需要……，这样可以吗？",
+      "scenario": "services",
+      "exampleFr": "J’aurais besoin de deux passages par semaine. Est-ce que ce serait possible ?",
+      "exampleZh": "我每周需要两次上门服务，可以安排吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 6,
+        "question": 7
+      }
+    },
+    {
+      "id": 43,
+      "pattern": "Faut-il que je + verbe au subjonctif présent ?",
+      "zh": "我需要……吗？",
+      "scenario": "services",
+      "exampleFr": "Faut-il que je fournisse le matériel et les outils ?",
+      "exampleZh": "需要由我提供材料和工具吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 6,
+        "question": 12
+      }
+    },
+    {
+      "id": 44,
+      "pattern": "Les + nom masculin pluriel + seront-ils déjà prêts avant + nom ?",
+      "zh": "……会在……之前准备好吗？",
+      "scenario": "moving",
+      "exampleFr": "Les cartons seront-ils déjà prêts avant notre arrivée ?",
+      "exampleZh": "我们到之前，纸箱都已经打包好了吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 4,
+        "question": 12
+      }
+    },
+    {
+      "id": 45,
+      "pattern": "Sur quels sites ou plateformes me conseillez-vous de + infinitif ?",
+      "zh": "您建议我在哪些网站或平台……？",
+      "scenario": "holiday",
+      "exampleFr": "Sur quels sites ou plateformes me conseillez-vous de publier l’annonce ?",
+      "exampleZh": "您建议我在哪些网站或平台发布出租信息？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 6
+      }
+    },
+    {
+      "id": 46,
+      "pattern": "Que peut prendre en charge + sujet ?",
+      "zh": "……可以负责哪些事情？",
+      "scenario": "holiday",
+      "exampleFr": "Que peut prendre en charge votre agence ?",
+      "exampleZh": "贵中介可以代办哪些事项？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 7
+      }
+    },
+    {
+      "id": 47,
+      "pattern": "Comment organiser + nom + entre + deux événements ?",
+      "zh": "怎样安排两次……之间的……？",
+      "scenario": "holiday",
+      "exampleFr": "Comment organiser le ménage entre deux locations ?",
+      "exampleZh": "两次出租之间的清洁工作该如何安排？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 13
+      }
+    },
+    {
+      "id": 48,
+      "pattern": "À quelle fréquence faut-il + pronom complément + infinitif ?",
+      "zh": "需要多久……一次？",
+      "scenario": "absence",
+      "exampleFr": "À quelle fréquence faut-il les arroser ?",
+      "exampleZh": "这些植物需要多久浇一次水？",
+      "source": {
+        "month": "2026-09",
+        "number": 7,
+        "question": 5
+      }
+    },
+    {
+      "id": 49,
+      "pattern": "Voulez-vous que je + verbe au subjonctif présent ?",
+      "zh": "您希望我……吗？",
+      "scenario": "absence",
+      "exampleFr": "Voulez-vous que je relève votre courrier ou que je récupère les colis ?",
+      "exampleZh": "您需要我帮您取信或收包裹吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 7,
+        "question": 6
+      }
+    },
+    {
+      "id": 50,
+      "pattern": "En cas d’urgence, comment puis-je + pronom + infinitif ?",
+      "zh": "紧急情况下，我怎样可以……？",
+      "scenario": "absence",
+      "exampleFr": "En cas d’urgence, comment puis-je vous contacter ?",
+      "exampleZh": "如果发生紧急情况，我该如何联系您？",
+      "source": {
+        "month": "2026-09",
+        "number": 7,
+        "question": 14
+      }
+    },
+    {
+      "id": 51,
+      "pattern": "Le + nom masculin singulier + propose-t-il + nom ?",
+      "zh": "……提供……吗？",
+      "scenario": "shopping",
+      "exampleFr": "Le magasin propose-t-il une carte de fidélité ou des réductions pour les habitants du quartier ?",
+      "exampleZh": "商店提供会员卡或街区居民折扣吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 11
+      }
+    },
+    {
+      "id": 52,
+      "pattern": "Comment puis-je m’inscrire à / au + nom ?",
+      "zh": "我怎样注册或报名……？",
+      "scenario": "shopping",
+      "exampleFr": "Comment puis-je m’inscrire au programme de fidélité ?",
+      "exampleZh": "我该如何注册会员？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 12
+      }
+    },
+    {
+      "id": 53,
+      "pattern": "Depuis combien de temps + verbe + sujet + complément ?",
+      "zh": "……做这件事多久了？",
+      "scenario": "services",
+      "exampleFr": "Depuis combien de temps fait-elle ce type de travail ?",
+      "exampleZh": "她做这类工作有多久了？",
+      "source": {
+        "month": "2026-09",
+        "number": 6,
+        "question": 4
+      }
     }
+  ],
+  "core20": [
+    1,
+    4,
+    6,
+    8,
+    11,
+    13,
+    15,
+    18,
+    50,
+    55,
+    64,
+    67,
+    70,
+    73,
+    77,
+    79,
+    82,
+    87,
+    104,
+    111
+  ],
+  "core50": [
+    1,
+    4,
+    6,
+    8,
+    11,
+    13,
+    15,
+    18,
+    50,
+    55,
+    64,
+    67,
+    70,
+    73,
+    77,
+    79,
+    82,
+    87,
+    104,
+    111,
+    12,
+    14,
+    20,
+    23,
+    29,
+    35,
+    42,
+    45,
+    47,
+    48,
+    52,
+    57,
+    59,
+    65,
+    66,
+    72,
+    81,
+    84,
+    85,
+    88,
+    90,
+    95,
+    98,
+    102,
+    106,
+    114,
+    116,
+    120,
+    122,
+    126
   ]
 }
