@@ -2,8 +2,8 @@
   "theme": "transport",
   "title": "交通与车辆",
   "target": "TCF Canada 口语 Tâche 2 · C1",
-  "version": 1,
-  "principle": "约100个高价值词/词块，以最终真题为基础；词块与真实套用问法绑定，优先训练中文→法语主动调用。",
+  "version": 2,
+  "principle": "以当前13题×15问为依据，122个词块与55组问法均标注真题来源；按8个场景训练中文→法语，区分租赁、二手购买、日常骑行和代办服务。",
   "scenarios": [
     {
       "id": "car",
@@ -15,7 +15,15 @@
     },
     {
       "id": "bike",
-      "name": "自行车 / 骑行"
+      "name": "自行车租赁"
+    },
+    {
+      "id": "cycling",
+      "name": "城市骑行 / 冬季出行"
+    },
+    {
+      "id": "usedbike",
+      "name": "购买二手自行车"
     },
     {
       "id": "rideshare",
@@ -37,8 +45,14 @@
       "zh": "租车",
       "scenario": "car",
       "priority": 5,
-      "exampleFr": "Vous souhaitez louer une voiture pour vos vacances.",
-      "exampleZh": "您想为假期租一辆车。"
+      "exampleFr": "Qu’est-ce que je dois fournir comme documents pour louer une voiture ?",
+      "exampleZh": "租车需要提供哪些证件？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 8
+      },
+      "learningKey": "transport-final15-v2-1"
     },
     {
       "id": 2,
@@ -46,8 +60,14 @@
       "zh": "租车公司",
       "scenario": "car",
       "priority": 5,
-      "exampleFr": "Je travaille dans une agence de location de voitures au Québec.",
-      "exampleZh": "我在魁北克一家租车公司工作。"
+      "exampleFr": "Est-ce que je peux rendre la voiture dans une autre agence ?",
+      "exampleZh": "可以在另一家门店还车吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 15
+      },
+      "learningKey": "transport-final15-v2-2"
     },
     {
       "id": 3,
@@ -55,17 +75,29 @@
       "zh": "车型",
       "scenario": "car",
       "priority": 5,
-      "exampleFr": "Quel type de voiture me conseilleriez-vous ?",
-      "exampleZh": "您建议我选什么车型？"
+      "exampleFr": "Pour des vacances en famille, quel modèle me conseilleriez-vous ?",
+      "exampleZh": "如果是家庭度假，您会推荐哪种车型？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 2
+      },
+      "learningKey": "transport-final15-v2-3"
     },
     {
       "id": 4,
-      "fr": "l’état du véhicule",
-      "zh": "车辆状况",
+      "fr": "être révisé avant la location",
+      "zh": "出租前经过检修",
       "scenario": "car",
       "priority": 5,
-      "exampleFr": "Dans quel état sont les véhicules proposés ?",
-      "exampleZh": "提供的车辆状况怎么样？"
+      "exampleFr": "Les voitures sont-elles révisées avant chaque location ?",
+      "exampleZh": "每次出租前车辆都会检查吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 3
+      },
+      "learningKey": "transport-final15-v2-4"
     },
     {
       "id": 5,
@@ -73,8 +105,14 @@
       "zh": "日租价",
       "scenario": "car",
       "priority": 5,
-      "exampleFr": "Quel est le tarif par jour ?",
-      "exampleZh": "每天多少钱？"
+      "exampleFr": "Quel est le tarif de location par jour ?",
+      "exampleZh": "每天的租车费用是多少？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 4
+      },
+      "learningKey": "transport-final15-v2-5"
     },
     {
       "id": 6,
@@ -82,8 +120,14 @@
       "zh": "长租优惠",
       "scenario": "car",
       "priority": 4,
-      "exampleFr": "Proposez-vous une réduction pour une location plus longue ?",
-      "exampleZh": "长期租赁有优惠吗？"
+      "exampleFr": "Faites-vous un tarif réduit pour une location de plusieurs jours ?",
+      "exampleZh": "租几天有优惠价吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 5
+      },
+      "learningKey": "transport-final15-v2-6"
     },
     {
       "id": 7,
@@ -91,17 +135,29 @@
       "zh": "保险",
       "scenario": "car",
       "priority": 5,
-      "exampleFr": "L’assurance est-elle comprise dans le prix ?",
-      "exampleZh": "保险包含在价格里吗？"
+      "exampleFr": "L’assurance est-elle incluse dans le prix ?",
+      "exampleZh": "价格包含保险吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 6
+      },
+      "learningKey": "transport-final15-v2-7"
     },
     {
       "id": 8,
-      "fr": "être couvert(e)",
-      "zh": "受保险保障",
+      "fr": "couvrir des dommages",
+      "zh": "承保损坏",
       "scenario": "car",
       "priority": 4,
-      "exampleFr": "Qu’est-ce qui est couvert par l’assurance ?",
-      "exampleZh": "保险覆盖哪些情况？"
+      "exampleFr": "Qu’est-ce que l’assurance couvre exactement comme dommages ?",
+      "exampleZh": "保险具体承保哪些损坏情况？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 7
+      },
+      "learningKey": "transport-final15-v2-8"
     },
     {
       "id": 9,
@@ -109,8 +165,14 @@
       "zh": "所需证件",
       "scenario": "car",
       "priority": 5,
-      "exampleFr": "Quels documents faut-il présenter pour louer une voiture ?",
-      "exampleZh": "租车需要出示哪些文件？"
+      "exampleFr": "Qu’est-ce que je dois fournir comme documents pour louer une voiture ?",
+      "exampleZh": "租车需要提供哪些证件？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 8
+      },
+      "learningKey": "transport-final15-v2-9"
     },
     {
       "id": 10,
@@ -118,17 +180,29 @@
       "zh": "驾照",
       "scenario": "car",
       "priority": 5,
-      "exampleFr": "Quels documents faut-il présenter pour louer une voiture ?",
-      "exampleZh": "租车需要出示哪些文件？"
+      "exampleFr": "Faut-il avoir un âge minimum ou une certaine ancienneté de permis ?",
+      "exampleZh": "租车有最低年龄要求或驾照年限要求吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 9
+      },
+      "learningKey": "transport-final15-v2-10"
     },
     {
       "id": 11,
-      "fr": "une condition de location",
-      "zh": "租赁条件",
+      "fr": "une ancienneté de permis",
+      "zh": "持有驾照的年限",
       "scenario": "car",
       "priority": 5,
-      "exampleFr": "Quelles sont les conditions de location ?",
-      "exampleZh": "租赁条件有哪些？"
+      "exampleFr": "Faut-il avoir un âge minimum ou une certaine ancienneté de permis ?",
+      "exampleZh": "租车有最低年龄要求或驾照年限要求吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 9
+      },
+      "learningKey": "transport-final15-v2-11"
     },
     {
       "id": 12,
@@ -136,8 +210,14 @@
       "zh": "里程限制",
       "scenario": "car",
       "priority": 4,
-      "exampleFr": "Y a-t-il une limite de kilométrage ?",
-      "exampleZh": "有里程限制吗？"
+      "exampleFr": "Le kilométrage est-il limité ?",
+      "exampleZh": "租车有里程限制吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 12
+      },
+      "learningKey": "transport-final15-v2-12"
     },
     {
       "id": 13,
@@ -145,17 +225,29 @@
       "zh": "电动车",
       "scenario": "car",
       "priority": 4,
-      "exampleFr": "Proposez-vous des voitures électriques ?",
-      "exampleZh": "你们提供电动车吗？"
+      "exampleFr": "Vous avez aussi des voitures électriques ?",
+      "exampleZh": "您也提供电动汽车吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 10
+      },
+      "learningKey": "transport-final15-v2-13"
     },
     {
       "id": 14,
-      "fr": "une borne de recharge",
-      "zh": "充电桩",
+      "fr": "un nombre de kilomètres compris",
+      "zh": "已包含的行驶里程",
       "scenario": "car",
       "priority": 4,
-      "exampleFr": "Où peut-on recharger la voiture électrique ?",
-      "exampleZh": "电动车在哪里充电？"
+      "exampleFr": "Le prix comprend-il un certain nombre de kilomètres ?",
+      "exampleZh": "价格是否包含一定的行驶里程？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 11
+      },
+      "learningKey": "transport-final15-v2-14"
     },
     {
       "id": 15,
@@ -163,8 +255,14 @@
       "zh": "付款",
       "scenario": "car",
       "priority": 5,
-      "exampleFr": "Quels moyens de paiement acceptez-vous ?",
-      "exampleZh": "接受哪些付款方式？"
+      "exampleFr": "Comment puis-je régler la location ?",
+      "exampleZh": "租车费用可以怎么支付？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 13
+      },
+      "learningKey": "transport-final15-v2-15"
     },
     {
       "id": 16,
@@ -172,8 +270,14 @@
       "zh": "还车",
       "scenario": "car",
       "priority": 5,
-      "exampleFr": "Comment se passe la restitution du véhicule ?",
-      "exampleZh": "还车流程怎样？"
+      "exampleFr": "Est-ce que je peux rendre la voiture dans une autre agence ?",
+      "exampleZh": "可以在另一家门店还车吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 15
+      },
+      "learningKey": "transport-final15-v2-16"
     },
     {
       "id": 17,
@@ -181,8 +285,14 @@
       "zh": "取消条件",
       "scenario": "car",
       "priority": 4,
-      "exampleFr": "Quelles sont les conditions d’annulation ?",
-      "exampleZh": "取消条件是什么？"
+      "exampleFr": "Puis-je annuler ou modifier la réservation si nécessaire ?",
+      "exampleZh": "有需要的话，我可以取消或更改预订吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 14
+      },
+      "learningKey": "transport-final15-v2-17"
     },
     {
       "id": 18,
@@ -190,8 +300,14 @@
       "zh": "公共交通",
       "scenario": "public",
       "priority": 5,
-      "exampleFr": "Quels types de transports en commun sont disponibles ?",
-      "exampleZh": "有哪些公共交通？"
+      "exampleFr": "Qu’est-ce qu’il y a comme transports en commun dans la ville ?",
+      "exampleZh": "这座城市有哪些公共交通工具？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 1
+      },
+      "learningKey": "transport-final15-v2-18"
     },
     {
       "id": 19,
@@ -199,17 +315,29 @@
       "zh": "线路",
       "scenario": "public",
       "priority": 5,
-      "exampleFr": "Quelles sont les principales lignes ?",
-      "exampleZh": "主要有哪些线路？"
+      "exampleFr": "Quelles lignes permettent d’aller au centre-ville ?",
+      "exampleZh": "哪些线路可以到市中心？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 3
+      },
+      "learningKey": "transport-final15-v2-19"
     },
     {
       "id": 20,
-      "fr": "un arrêt",
-      "zh": "站点",
+      "fr": "un quartier bien desservi",
+      "zh": "公共交通便利的街区",
       "scenario": "public",
       "priority": 4,
-      "exampleFr": "Où se trouve l’arrêt le plus proche ?",
-      "exampleZh": "最近的站点在哪里？"
+      "exampleFr": "Quels quartiers sont les mieux desservis par les transports en commun ?",
+      "exampleZh": "哪些街区的公共交通最方便？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 2
+      },
+      "learningKey": "transport-final15-v2-20"
     },
     {
       "id": 21,
@@ -217,8 +345,14 @@
       "zh": "班次频率",
       "scenario": "public",
       "priority": 5,
-      "exampleFr": "À quelle fréquence passent les bus ?",
-      "exampleZh": "公交多久一班？"
+      "exampleFr": "À quelle fréquence passent les bus aux heures de pointe ?",
+      "exampleZh": "高峰期公交车多久一班？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 4
+      },
+      "learningKey": "transport-final15-v2-21"
     },
     {
       "id": 22,
@@ -226,8 +360,14 @@
       "zh": "首班车",
       "scenario": "public",
       "priority": 4,
-      "exampleFr": "À quelle heure passe le premier bus ?",
-      "exampleZh": "首班车几点？"
+      "exampleFr": "À partir de quelle heure circulent les premiers bus ou métros ?",
+      "exampleZh": "最早的公交车或地铁几点开始运行？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 5
+      },
+      "learningKey": "transport-final15-v2-22"
     },
     {
       "id": 23,
@@ -235,8 +375,14 @@
       "zh": "末班车",
       "scenario": "public",
       "priority": 4,
-      "exampleFr": "À quelle heure passe le dernier bus ?",
-      "exampleZh": "末班车几点？"
+      "exampleFr": "Et jusqu’à quelle heure circulent-ils le soir ?",
+      "exampleZh": "晚上公交车和地铁最晚运行到几点？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 6
+      },
+      "learningKey": "transport-final15-v2-23"
     },
     {
       "id": 24,
@@ -245,16 +391,27 @@
       "scenario": "public",
       "priority": 5,
       "exampleFr": "Où est-ce que je peux acheter les billets ?",
-      "exampleZh": "在哪里可以买票？"
+      "exampleZh": "我可以在哪里买车票？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 10
+      }
     },
     {
       "id": 25,
-      "fr": "un ticket à l’unité",
-      "zh": "单程票",
+      "fr": "le prix d’un trajet",
+      "zh": "单程费用",
       "scenario": "public",
       "priority": 4,
-      "exampleFr": "Combien coûte un billet simple ?",
-      "exampleZh": "单程票多少钱？"
+      "exampleFr": "Quel est le prix d’un trajet ?",
+      "exampleZh": "单程票价是多少？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 7
+      },
+      "learningKey": "transport-final15-v2-25"
     },
     {
       "id": 26,
@@ -262,8 +419,14 @@
       "zh": "交通月票 / 通票",
       "scenario": "public",
       "priority": 5,
-      "exampleFr": "Quel abonnement serait le plus avantageux ?",
-      "exampleZh": "哪种通票最划算？"
+      "exampleFr": "Si je les utilise tous les jours, quel abonnement serait le plus avantageux ?",
+      "exampleZh": "如果我每天都乘坐，买哪种月票最划算？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 15
+      },
+      "learningKey": "transport-final15-v2-26"
     },
     {
       "id": 27,
@@ -271,8 +434,14 @@
       "zh": "日票",
       "scenario": "public",
       "priority": 4,
-      "exampleFr": "Proposez-vous un pass à la journée ?",
-      "exampleZh": "有日票吗？"
+      "exampleFr": "Peut-on acheter un pass à la journée ou à la semaine ?",
+      "exampleZh": "可以买日票或周票吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 8
+      },
+      "learningKey": "transport-final15-v2-27"
     },
     {
       "id": 28,
@@ -280,8 +449,14 @@
       "zh": "周票",
       "scenario": "public",
       "priority": 4,
-      "exampleFr": "Existe-t-il un pass pour une semaine ?",
-      "exampleZh": "有周票吗？"
+      "exampleFr": "Peut-on acheter un pass à la journée ou à la semaine ?",
+      "exampleZh": "可以买日票或周票吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 8
+      },
+      "learningKey": "transport-final15-v2-28"
     },
     {
       "id": 29,
@@ -289,8 +464,14 @@
       "zh": "学生优惠价",
       "scenario": "public",
       "priority": 5,
-      "exampleFr": "Un tarif étudiant est-il proposé ?",
-      "exampleZh": "有学生优惠价吗？"
+      "exampleFr": "Est-ce qu’un tarif étudiant est proposé ?",
+      "exampleZh": "有学生票价吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 9
+      },
+      "learningKey": "transport-final15-v2-29"
     },
     {
       "id": 30,
@@ -298,8 +479,14 @@
       "zh": "交通卡",
       "scenario": "public",
       "priority": 5,
-      "exampleFr": "Faut-il une carte de transport ?",
-      "exampleZh": "需要交通卡吗？"
+      "exampleFr": "Où est-ce qu’on achète les billets ou qu’on recharge une carte ?",
+      "exampleZh": "在哪里可以买车票或给交通卡充值？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 10
+      },
+      "learningKey": "transport-final15-v2-30"
     },
     {
       "id": 31,
@@ -308,7 +495,12 @@
       "scenario": "public",
       "priority": 5,
       "exampleFr": "Où est-ce que je peux acheter les billets ?",
-      "exampleZh": "在哪里可以买票？"
+      "exampleZh": "我可以在哪里买车票？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 10
+      }
     },
     {
       "id": 32,
@@ -317,7 +509,12 @@
       "scenario": "public",
       "priority": 5,
       "exampleFr": "Le même billet permet-il de faire une correspondance ?",
-      "exampleZh": "同一张票可以换乘吗？"
+      "exampleZh": "同一张票可以换乘吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 11
+      }
     },
     {
       "id": 33,
@@ -326,7 +523,12 @@
       "scenario": "public",
       "priority": 4,
       "exampleFr": "Existe-t-il une application officielle pour consulter les horaires ?",
-      "exampleZh": "有官方 App 查看时刻吗？"
+      "exampleZh": "有官方应用可以查询时刻表吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 12
+      }
     },
     {
       "id": 34,
@@ -335,7 +537,12 @@
       "scenario": "public",
       "priority": 5,
       "exampleFr": "Existe-t-il une application officielle pour consulter les horaires ?",
-      "exampleZh": "有官方应用可以查看时刻吗？"
+      "exampleZh": "有官方应用可以查询时刻表吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 12
+      }
     },
     {
       "id": 35,
@@ -344,7 +551,12 @@
       "scenario": "public",
       "priority": 5,
       "exampleFr": "Comment ça se passe en cas de retard ou d’interruption du service ?",
-      "exampleZh": "延误或服务中断时怎么办？"
+      "exampleZh": "如果延误或服务中断，通常怎么处理？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 14
+      }
     },
     {
       "id": 36,
@@ -353,16 +565,27 @@
       "scenario": "public",
       "priority": 4,
       "exampleFr": "Comment ça se passe en cas de retard ou d’interruption du service ?",
-      "exampleZh": "延误或服务中断时怎么办？"
+      "exampleZh": "如果延误或服务中断，通常怎么处理？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 14
+      }
     },
     {
       "id": 37,
-      "fr": "être en sécurité le soir",
-      "zh": "晚上出行安全",
+      "fr": "des transports sûrs le soir",
+      "zh": "夜间安全的公共交通",
       "scenario": "public",
       "priority": 4,
-      "exampleFr": "Est-ce qu’on peut les prendre sans problème le soir ?",
-      "exampleZh": "晚上乘公共交通安全吗？"
+      "exampleFr": "Les transports restent-ils sûrs le soir ?",
+      "exampleZh": "晚上乘坐公共交通安全吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 13
+      },
+      "learningKey": "transport-final15-v2-37"
     },
     {
       "id": 38,
@@ -370,17 +593,29 @@
       "zh": "新居民",
       "scenario": "public",
       "priority": 4,
-      "exampleFr": "Vous venez d’arriver dans ma ville.",
-      "exampleZh": "您刚到我的城市。"
+      "exampleFr": "Pour une nouvelle arrivante, quel moyen de transport serait le plus simple au quotidien ?",
+      "exampleZh": "对刚到这里的人来说，日常出行选哪种交通方式最方便？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 15
+      },
+      "learningKey": "transport-final15-v2-38"
     },
     {
       "id": 39,
-      "fr": "circuler en ville",
-      "zh": "在城里出行",
+      "fr": "rejoindre les principaux sites",
+      "zh": "到达主要景点",
       "scenario": "public",
       "priority": 5,
-      "exampleFr": "Vous souhaitez circuler en ville.",
-      "exampleZh": "您想在城里出行。"
+      "exampleFr": "Est-ce qu’on peut rejoindre facilement les principaux sites de la ville en transport en commun ?",
+      "exampleZh": "乘坐公共交通方便到达市内的主要景点吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 12
+      },
+      "learningKey": "transport-final15-v2-39"
     },
     {
       "id": 40,
@@ -388,62 +623,99 @@
       "zh": "自行车",
       "scenario": "bike",
       "priority": 5,
-      "exampleFr": "Vous voulez en louer un.",
-      "exampleZh": "您想租一辆自行车。"
+      "exampleFr": "Qu’est-ce que vous proposez comme vélos à la location ?",
+      "exampleZh": "您提供哪些类型的自行车出租？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 1
+      },
+      "learningKey": "transport-final15-v2-40"
     },
     {
       "id": 41,
       "fr": "louer un vélo",
       "zh": "租自行车",
-      "scenario": "bike",
+      "scenario": "cycling",
       "priority": 5,
-      "exampleFr": "Je suis employé dans une agence de location de vélos.",
-      "exampleZh": "我在自行车租赁公司工作。"
+      "exampleFr": "Tu sais où je peux louer un vélo facilement ?",
+      "exampleZh": "你知道在哪里租自行车比较方便吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 4
+      },
+      "learningKey": "transport-final15-v2-41"
     },
     {
       "id": 42,
       "fr": "un modèle de vélo",
       "zh": "自行车型号",
-      "scenario": "bike",
+      "scenario": "usedbike",
       "priority": 5,
       "exampleFr": "C’est quel modèle exactement ?",
-      "exampleZh": "具体是什么型号？"
+      "exampleZh": "具体是什么型号？",
+      "source": {
+        "month": "2026-07",
+        "number": 4,
+        "question": 2
+      }
     },
     {
       "id": 43,
       "fr": "la taille du cadre",
       "zh": "车架尺寸",
-      "scenario": "bike",
+      "scenario": "usedbike",
       "priority": 5,
       "exampleFr": "Le cadre fait quelle taille ?",
-      "exampleZh": "车架多大？"
+      "exampleZh": "车架是什么尺寸？",
+      "source": {
+        "month": "2026-07",
+        "number": 4,
+        "question": 3
+      }
     },
     {
       "id": 44,
       "fr": "l’état du vélo",
       "zh": "自行车状况",
-      "scenario": "bike",
+      "scenario": "usedbike",
       "priority": 5,
       "exampleFr": "Dans quel état est-il actuellement ?",
-      "exampleZh": "这辆车现在状况怎样？"
+      "exampleZh": "它现在的状况怎么样？",
+      "source": {
+        "month": "2026-07",
+        "number": 4,
+        "question": 5
+      }
     },
     {
       "id": 45,
       "fr": "une réparation",
       "zh": "维修",
-      "scenario": "bike",
+      "scenario": "usedbike",
       "priority": 4,
       "exampleFr": "Tu as déjà dû faire des réparations importantes dessus ?",
-      "exampleZh": "之前做过大的维修吗？"
+      "exampleZh": "你以前给它做过大修吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 4,
+        "question": 6
+      }
     },
     {
       "id": 46,
       "fr": "un accessoire",
       "zh": "配件",
-      "scenario": "bike",
+      "scenario": "usedbike",
       "priority": 4,
       "exampleFr": "Qu’est-ce qui est inclus comme accessoires avec le vélo ?",
-      "exampleZh": "自行车包含哪些配件？"
+      "exampleZh": "自行车附带哪些配件？",
+      "source": {
+        "month": "2026-07",
+        "number": 4,
+        "question": 7
+      }
     },
     {
       "id": 47,
@@ -451,8 +723,14 @@
       "zh": "头盔",
       "scenario": "bike",
       "priority": 5,
-      "exampleFr": "Le casque est-il fourni ?",
-      "exampleZh": "提供头盔吗？"
+      "exampleFr": "Le casque est-il compris dans la location ?",
+      "exampleZh": "租金包含头盔吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 9
+      },
+      "learningKey": "transport-final15-v2-47"
     },
     {
       "id": 48,
@@ -460,8 +738,14 @@
       "zh": "电动自行车",
       "scenario": "bike",
       "priority": 5,
-      "exampleFr": "Proposez-vous des vélos électriques ?",
-      "exampleZh": "提供电动自行车吗？"
+      "exampleFr": "Proposez-vous aussi des vélos électriques ?",
+      "exampleZh": "您也出租电动自行车吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 3
+      },
+      "learningKey": "transport-final15-v2-48"
     },
     {
       "id": 49,
@@ -469,8 +753,14 @@
       "zh": "续航",
       "scenario": "bike",
       "priority": 5,
-      "exampleFr": "Quelle est l’autonomie du vélo électrique ?",
-      "exampleZh": "电动车续航多少？"
+      "exampleFr": "Quelle est l’autonomie moyenne de vos vélos électriques ?",
+      "exampleZh": "你们的电动自行车平均续航多少？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 11
+      },
+      "learningKey": "transport-final15-v2-49"
     },
     {
       "id": 50,
@@ -478,44 +768,73 @@
       "zh": "充电",
       "scenario": "bike",
       "priority": 4,
-      "exampleFr": "Où peut-on le recharger ?",
-      "exampleZh": "在哪里可以充电？"
+      "exampleFr": "Est-ce que la batterie est rechargée avant la location ?",
+      "exampleZh": "租赁前电池会充满电吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 12
+      },
+      "learningKey": "transport-final15-v2-50"
     },
     {
       "id": 51,
       "fr": "faire un essai",
       "zh": "试骑 / 试用",
-      "scenario": "bike",
+      "scenario": "usedbike",
       "priority": 5,
       "exampleFr": "Je peux l’essayer avant de me décider ?",
-      "exampleZh": "决定前可以试骑吗？"
+      "exampleZh": "我决定之前可以试骑吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 4,
+        "question": 13
+      }
     },
     {
       "id": 52,
       "fr": "une piste cyclable",
       "zh": "自行车道",
-      "scenario": "bike",
+      "scenario": "cycling",
       "priority": 5,
-      "exampleFr": "Y a-t-il beaucoup de pistes cyclables ?",
-      "exampleZh": "有很多自行车道吗？"
+      "exampleFr": "Ottawa dispose-t-elle de beaucoup de pistes cyclables ?",
+      "exampleZh": "渥太华的自行车道多吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 1
+      },
+      "learningKey": "transport-final15-v2-52"
     },
     {
       "id": 53,
       "fr": "circuler à vélo",
       "zh": "骑车出行",
-      "scenario": "bike",
+      "scenario": "cycling",
       "priority": 5,
-      "exampleFr": "Vous souhaitez circuler à vélo.",
-      "exampleZh": "您想骑自行车出行。"
+      "exampleFr": "Peut-on circuler à vélo toute l’année à Ottawa ?",
+      "exampleZh": "在渥太华全年都适合骑自行车吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 10
+      },
+      "learningKey": "transport-final15-v2-53"
     },
     {
       "id": 54,
-      "fr": "garer son vélo",
-      "zh": "停自行车",
-      "scenario": "bike",
+      "fr": "attacher son vélo",
+      "zh": "锁好自行车",
+      "scenario": "cycling",
       "priority": 4,
-      "exampleFr": "Où peut-on garer son vélo en sécurité ?",
-      "exampleZh": "哪里可以安全停车？"
+      "exampleFr": "Trouve-t-on facilement des endroits sûrs pour attacher son vélo ?",
+      "exampleZh": "容易找到安全的地方锁自行车吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 8
+      },
+      "learningKey": "transport-final15-v2-54"
     },
     {
       "id": 55,
@@ -523,35 +842,59 @@
       "zh": "自行车锁",
       "scenario": "bike",
       "priority": 4,
-      "exampleFr": "Quel type d’antivol me conseillerais-tu ?",
-      "exampleZh": "你建议我用什么锁？"
+      "exampleFr": "Et l’antivol, est-il également fourni ?",
+      "exampleZh": "也会提供车锁吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 10
+      },
+      "learningKey": "transport-final15-v2-55"
     },
     {
       "id": 56,
       "fr": "les règles de circulation",
       "zh": "交通规则",
-      "scenario": "bike",
+      "scenario": "cycling",
       "priority": 5,
-      "exampleFr": "Quelles règles faut-il respecter à vélo ?",
-      "exampleZh": "骑车要遵守哪些规则？"
+      "exampleFr": "Qu’est-ce que je dois connaître comme règles de circulation ?",
+      "exampleZh": "我需要了解哪些交通规则？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 9
+      },
+      "learningKey": "transport-final15-v2-56"
     },
     {
       "id": 57,
-      "fr": "partager un trajet",
-      "zh": "拼车 / 共享行程",
+      "fr": "faire du covoiturage",
+      "zh": "拼车",
       "scenario": "rideshare",
       "priority": 5,
-      "exampleFr": "Je propose de partager des allers-retours avec ma voiture.",
-      "exampleZh": "我提议共享往返行程。"
+      "exampleFr": "Est-ce que tu as déjà fait du covoiturage avec d’autres voisins ?",
+      "exampleZh": "你以前和其他邻居一起拼过车吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 14
+      },
+      "learningKey": "transport-final15-v2-57"
     },
     {
       "id": 58,
-      "fr": "un aller-retour",
-      "zh": "往返",
+      "fr": "la fréquence d’un trajet",
+      "zh": "一条路线的出行频率",
       "scenario": "rideshare",
       "priority": 5,
-      "exampleFr": "Je propose de partager des allers-retours avec ma voiture.",
-      "exampleZh": "我提供往返拼车。"
+      "exampleFr": "Vous faites ce trajet combien de fois par semaine ?",
+      "exampleZh": "您每周走这条路线几次？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 5
+      },
+      "learningKey": "transport-final15-v2-58"
     },
     {
       "id": 59,
@@ -559,8 +902,14 @@
       "zh": "行程 / 路线",
       "scenario": "rideshare",
       "priority": 5,
-      "exampleFr": "Quel trajet fais-tu exactement ?",
-      "exampleZh": "你具体走哪条路线？"
+      "exampleFr": "Vous allez où habituellement ?",
+      "exampleZh": "您通常去哪里？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 2
+      },
+      "learningKey": "transport-final15-v2-59"
     },
     {
       "id": 60,
@@ -568,8 +917,14 @@
       "zh": "集合地点",
       "scenario": "rideshare",
       "priority": 5,
-      "exampleFr": "Où est le point de rendez-vous ?",
-      "exampleZh": "集合地点在哪里？"
+      "exampleFr": "On se retrouve où avant de partir ?",
+      "exampleZh": "出发前我们在哪里碰面？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 6
+      },
+      "learningKey": "transport-final15-v2-60"
     },
     {
       "id": 61,
@@ -577,8 +932,14 @@
       "zh": "出发时间",
       "scenario": "rideshare",
       "priority": 5,
-      "exampleFr": "À quelle heure pars-tu ?",
-      "exampleZh": "你几点出发？"
+      "exampleFr": "Vous partez vers quelle heure le matin ?",
+      "exampleZh": "您早上大约几点出发？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 3
+      },
+      "learningKey": "transport-final15-v2-61"
     },
     {
       "id": 62,
@@ -586,26 +947,44 @@
       "zh": "返程时间",
       "scenario": "rideshare",
       "priority": 4,
-      "exampleFr": "À quelle heure reviens-tu ?",
-      "exampleZh": "你几点回来？"
+      "exampleFr": "Et vous rentrez vers quelle heure le soir ?",
+      "exampleZh": "您晚上大约几点回来？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 4
+      },
+      "learningKey": "transport-final15-v2-62"
     },
     {
       "id": 63,
-      "fr": "partager les frais",
-      "zh": "分摊费用",
+      "fr": "le coût par trajet",
+      "zh": "每趟费用",
       "scenario": "rideshare",
       "priority": 5,
-      "exampleFr": "Comment partage-t-on les frais ?",
-      "exampleZh": "费用怎么分摊？"
+      "exampleFr": "Ça me coûterait combien par trajet ?",
+      "exampleZh": "每趟我要付多少钱？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 8
+      },
+      "learningKey": "transport-final15-v2-63"
     },
     {
       "id": 64,
-      "fr": "être flexible",
-      "zh": "时间灵活",
+      "fr": "modifier légèrement l’horaire",
+      "zh": "稍微调整时间",
       "scenario": "rideshare",
       "priority": 4,
-      "exampleFr": "Les horaires sont-ils flexibles ?",
-      "exampleZh": "时间灵活吗？"
+      "exampleFr": "L’horaire peut-il être légèrement modifié si nécessaire ?",
+      "exampleZh": "有需要时，时间可以稍作调整吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 10
+      },
+      "learningKey": "transport-final15-v2-64"
     },
     {
       "id": 65,
@@ -613,8 +992,14 @@
       "zh": "取消行程",
       "scenario": "rideshare",
       "priority": 4,
-      "exampleFr": "Que se passe-t-il si je dois annuler le trajet ?",
-      "exampleZh": "如果我需要取消行程怎么办？"
+      "exampleFr": "Que se passe-t-il si l’un de nous doit annuler au dernier moment ?",
+      "exampleZh": "如果我们其中一人临时需要取消，该怎么办？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 11
+      },
+      "learningKey": "transport-final15-v2-65"
     },
     {
       "id": 66,
@@ -622,8 +1007,14 @@
       "zh": "保持联系",
       "scenario": "rideshare",
       "priority": 4,
-      "exampleFr": "Comment restons-nous en contact en cas de changement ?",
-      "exampleZh": "有变化时我们怎么保持联系？"
+      "exampleFr": "Comment est-ce qu’on reste en contact le jour du trajet ?",
+      "exampleZh": "出行当天我们怎么保持联系？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 12
+      },
+      "learningKey": "transport-final15-v2-66"
     },
     {
       "id": 67,
@@ -631,17 +1022,29 @@
       "zh": "行李",
       "scenario": "airport",
       "priority": 5,
-      "exampleFr": "Combien de bagages auront-ils ?",
-      "exampleZh": "他们会有多少件行李？"
+      "exampleFr": "Ils auront beaucoup de bagages ?",
+      "exampleZh": "他们会带很多行李吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 9
+      },
+      "learningKey": "transport-final15-v2-67"
     },
     {
       "id": 68,
-      "fr": "aller chercher quelqu’un",
-      "zh": "去接某人",
+      "fr": "conduire quelqu’un à destination",
+      "zh": "送某人到目的地",
       "scenario": "airport",
       "priority": 5,
-      "exampleFr": "Je ne pourrai pas aller chercher mes parents à l’aéroport.",
-      "exampleZh": "我没法去机场接父母。"
+      "exampleFr": "Après les avoir récupérés, où dois-je les conduire ?",
+      "exampleZh": "接到他们之后，我应该把他们送到哪里？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 12
+      },
+      "learningKey": "transport-final15-v2-68"
     },
     {
       "id": 69,
@@ -650,7 +1053,12 @@
       "scenario": "airport",
       "priority": 5,
       "exampleFr": "Quel est leur numéro de vol ?",
-      "exampleZh": "他们的航班号是多少？"
+      "exampleZh": "他们的航班号是多少？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 3
+      }
     },
     {
       "id": 70,
@@ -659,7 +1067,12 @@
       "scenario": "airport",
       "priority": 5,
       "exampleFr": "Quel est leur numéro de vol ?",
-      "exampleZh": "他们的航班号是多少？"
+      "exampleZh": "他们的航班号是多少？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 3
+      }
     },
     {
       "id": 71,
@@ -667,8 +1080,14 @@
       "zh": "机场",
       "scenario": "airport",
       "priority": 5,
-      "exampleFr": "À quel aéroport arrivent-ils ?",
-      "exampleZh": "他们到哪个机场？"
+      "exampleFr": "Ils arrivent dans quel aéroport ?",
+      "exampleZh": "他们会抵达哪个机场？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 4
+      },
+      "learningKey": "transport-final15-v2-71"
     },
     {
       "id": 72,
@@ -676,8 +1095,14 @@
       "zh": "航站楼",
       "scenario": "airport",
       "priority": 4,
-      "exampleFr": "À quel terminal arrivent-ils ?",
-      "exampleZh": "他们到哪个航站楼？"
+      "exampleFr": "Tu sais dans quel terminal ils arrivent ?",
+      "exampleZh": "你知道他们会到达哪个航站楼吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 5
+      },
+      "learningKey": "transport-final15-v2-72"
     },
     {
       "id": 73,
@@ -685,17 +1110,29 @@
       "zh": "到达时间",
       "scenario": "airport",
       "priority": 5,
-      "exampleFr": "À quelle heure leur vol arrive-t-il ?",
-      "exampleZh": "航班几点到？"
+      "exampleFr": "Leur avion doit atterrir vers quelle heure ?",
+      "exampleZh": "他们的航班预计几点左右降落？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 2
+      },
+      "learningKey": "transport-final15-v2-73"
     },
     {
       "id": 74,
-      "fr": "une description physique",
-      "zh": "外貌描述",
+      "fr": "une photo récente",
+      "zh": "近期照片",
       "scenario": "airport",
       "priority": 5,
-      "exampleFr": "Comment puis-je les reconnaître ?",
-      "exampleZh": "我怎么认出他们？"
+      "exampleFr": "Est-ce que tu peux m’envoyer une photo récente d’eux ?",
+      "exampleZh": "你能发我一张他们最近的照片吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 13
+      },
+      "learningKey": "transport-final15-v2-74"
     },
     {
       "id": 75,
@@ -703,17 +1140,29 @@
       "zh": "认出某人",
       "scenario": "airport",
       "priority": 5,
-      "exampleFr": "Comment puis-je les reconnaître ?",
-      "exampleZh": "我怎么认出他们？"
+      "exampleFr": "Comment puis-je les reconnaître facilement ?",
+      "exampleZh": "我怎么才能轻松认出他们？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 7
+      },
+      "learningKey": "transport-final15-v2-75"
     },
     {
       "id": 76,
-      "fr": "un numéro de téléphone",
-      "zh": "电话号码",
+      "fr": "joindre quelqu’un à son arrivée",
+      "zh": "在某人抵达时联系上对方",
       "scenario": "airport",
       "priority": 4,
-      "exampleFr": "Quel numéro puis-je appeler ?",
-      "exampleZh": "我可以打哪个号码？"
+      "exampleFr": "Comment est-ce que je peux les joindre à leur arrivée ?",
+      "exampleZh": "他们抵达后，我怎么联系他们？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 10
+      },
+      "learningKey": "transport-final15-v2-76"
     },
     {
       "id": 77,
@@ -721,8 +1170,14 @@
       "zh": "碰面地点",
       "scenario": "airport",
       "priority": 4,
-      "exampleFr": "Où dois-je les retrouver dans l’aéroport ?",
-      "exampleZh": "我在机场哪里和他们碰面？"
+      "exampleFr": "Tu veux que je les attende où exactement ?",
+      "exampleZh": "你希望我具体在哪里等他们？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 11
+      },
+      "learningKey": "transport-final15-v2-77"
     },
     {
       "id": 78,
@@ -730,17 +1185,29 @@
       "zh": "航班延误",
       "scenario": "airport",
       "priority": 5,
-      "exampleFr": "Que dois-je faire si le vol est retardé ?",
-      "exampleZh": "如果航班延误我该怎么办？"
+      "exampleFr": "Qu’est-ce que je fais si leur vol est retardé ?",
+      "exampleZh": "如果他们的航班延误了，我该怎么办？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 14
+      },
+      "learningKey": "transport-final15-v2-78"
     },
     {
       "id": 79,
-      "fr": "un parking d’aéroport",
-      "zh": "机场停车场",
+      "fr": "une solution de remplacement",
+      "zh": "替代方案",
       "scenario": "airport",
       "priority": 4,
-      "exampleFr": "Où puis-je me garer à l’aéroport ?",
-      "exampleZh": "机场哪里可以停车？"
+      "exampleFr": "Si je ne peux pas venir au dernier moment, quelle solution de remplacement prévois-tu ?",
+      "exampleZh": "如果我临时去不了，你安排了什么替代办法？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 15
+      },
+      "learningKey": "transport-final15-v2-79"
     },
     {
       "id": 80,
@@ -748,8 +1215,14 @@
       "zh": "包裹",
       "scenario": "parcel",
       "priority": 5,
-      "exampleFr": "Je dois poster un paquet.",
-      "exampleZh": "我需要寄一个包裹。"
+      "exampleFr": "Quelles sont les dimensions du paquet ?",
+      "exampleZh": "这个包裹的尺寸是多少？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 3
+      },
+      "learningKey": "transport-final15-v2-80"
     },
     {
       "id": 81,
@@ -757,8 +1230,14 @@
       "zh": "寄包裹",
       "scenario": "parcel",
       "priority": 5,
-      "exampleFr": "Je dois poster un paquet mais je ne peux pas y aller.",
-      "exampleZh": "我需要寄包裹但没法去。"
+      "exampleFr": "Où est-ce que je dois aller pour poster le paquet ?",
+      "exampleZh": "我应该去哪里寄这个包裹？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 2
+      },
+      "learningKey": "transport-final15-v2-81"
     },
     {
       "id": 82,
@@ -766,8 +1245,14 @@
       "zh": "截止时间 / 时限",
       "scenario": "parcel",
       "priority": 5,
-      "exampleFr": "Quel est le délai pour l’envoyer ?",
-      "exampleZh": "最晚什么时候寄？"
+      "exampleFr": "Pour quelle date le paquet doit-il être envoyé au plus tard ?",
+      "exampleZh": "这个包裹最迟需要在什么时候寄出？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 1
+      },
+      "learningKey": "transport-final15-v2-82"
     },
     {
       "id": 83,
@@ -775,8 +1260,14 @@
       "zh": "邮局",
       "scenario": "parcel",
       "priority": 5,
-      "exampleFr": "Où dois-je déposer le paquet ?",
-      "exampleZh": "我应该去哪里寄包裹？"
+      "exampleFr": "Est-ce qu’il faut faire la queue longtemps au bureau de poste ?",
+      "exampleZh": "邮局通常要排很久队吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 9
+      },
+      "learningKey": "transport-final15-v2-83"
     },
     {
       "id": 84,
@@ -784,8 +1275,14 @@
       "zh": "包裹尺寸",
       "scenario": "parcel",
       "priority": 5,
-      "exampleFr": "Le paquet est-il volumineux ?",
-      "exampleZh": "包裹很大吗？"
+      "exampleFr": "Quelles sont les dimensions du paquet ?",
+      "exampleZh": "这个包裹的尺寸是多少？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 3
+      },
+      "learningKey": "transport-final15-v2-84"
     },
     {
       "id": 85,
@@ -793,8 +1290,14 @@
       "zh": "重量",
       "scenario": "parcel",
       "priority": 5,
-      "exampleFr": "Combien pèse le paquet ?",
-      "exampleZh": "包裹多重？"
+      "exampleFr": "Quel est son poids approximatif ?",
+      "exampleZh": "包裹大约有多重？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 4
+      },
+      "learningKey": "transport-final15-v2-85"
     },
     {
       "id": 86,
@@ -803,7 +1306,12 @@
       "scenario": "parcel",
       "priority": 4,
       "exampleFr": "Qu’est-ce qu’il y a dans le paquet ?",
-      "exampleZh": "包裹里有什么？"
+      "exampleZh": "包裹里装的是什么？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 5
+      }
     },
     {
       "id": 87,
@@ -811,8 +1319,14 @@
       "zh": "易碎",
       "scenario": "parcel",
       "priority": 5,
-      "exampleFr": "Est-ce qu’il contient quelque chose de fragile ?",
-      "exampleZh": "里面有易碎物品吗？"
+      "exampleFr": "Il y a quelque chose de fragile à l’intérieur ?",
+      "exampleZh": "里面有易碎物品吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 6
+      },
+      "learningKey": "transport-final15-v2-87"
     },
     {
       "id": 88,
@@ -821,16 +1335,27 @@
       "scenario": "parcel",
       "priority": 5,
       "exampleFr": "Le paquet est-il déjà bien emballé ?",
-      "exampleZh": "包裹已经包装好了吗？"
+      "exampleZh": "包裹已经包装好了吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 7
+      }
     },
     {
       "id": 89,
-      "fr": "être lourd à porter",
-      "zh": "搬运起来很重",
+      "fr": "transporter un paquet toute seule",
+      "zh": "独自运送一个包裹",
       "scenario": "parcel",
       "priority": 4,
-      "exampleFr": "Est-ce qu’il est lourd à porter ?",
-      "exampleZh": "它搬起来重吗？"
+      "exampleFr": "Tu penses que je pourrai le transporter facilement toute seule ?",
+      "exampleZh": "你觉得我一个人能方便地把它运过去吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 8
+      },
+      "learningKey": "transport-final15-v2-89"
     },
     {
       "id": 90,
@@ -838,8 +1363,14 @@
       "zh": "邮费",
       "scenario": "parcel",
       "priority": 5,
-      "exampleFr": "Combien coûtent les frais de port ?",
-      "exampleZh": "邮费多少？"
+      "exampleFr": "Combien coûtera l’envoi ?",
+      "exampleZh": "寄这个包裹要多少钱？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 10
+      },
+      "learningKey": "transport-final15-v2-90"
     },
     {
       "id": 91,
@@ -847,17 +1378,29 @@
       "zh": "跟踪包裹",
       "scenario": "parcel",
       "priority": 5,
-      "exampleFr": "Est-ce qu’on peut suivre le colis ?",
-      "exampleZh": "可以追踪包裹吗？"
+      "exampleFr": "Tu préfères que je choisisse un envoi avec suivi ?",
+      "exampleZh": "你希望我选可以追踪的寄件服务吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 12
+      },
+      "learningKey": "transport-final15-v2-91"
     },
     {
       "id": 92,
-      "fr": "une signature à la réception",
-      "zh": "签收",
+      "fr": "une preuve d’envoi",
+      "zh": "寄件凭证",
       "scenario": "parcel",
       "priority": 4,
-      "exampleFr": "Faut-il une signature à la réception ?",
-      "exampleZh": "需要签收吗？"
+      "exampleFr": "Est-ce que tu veux une preuve d’envoi ?",
+      "exampleZh": "你需要寄件凭证吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 13
+      },
+      "learningKey": "transport-final15-v2-92"
     },
     {
       "id": 93,
@@ -865,8 +1408,14 @@
       "zh": "收件人信息",
       "scenario": "parcel",
       "priority": 5,
-      "exampleFr": "As-tu bien les coordonnées du destinataire ?",
-      "exampleZh": "你有完整的收件人信息吗？"
+      "exampleFr": "Tu m’as bien donné toutes les coordonnées du destinataire ?",
+      "exampleZh": "你把收件人的完整联系方式都给我了吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 14
+      },
+      "learningKey": "transport-final15-v2-93"
     },
     {
       "id": 94,
@@ -874,106 +1423,603 @@
       "zh": "收件人",
       "scenario": "parcel",
       "priority": 4,
-      "exampleFr": "As-tu bien les coordonnées du destinataire ?",
-      "exampleZh": "你有完整的收件人信息吗？"
+      "exampleFr": "Tu m’as bien donné toutes les coordonnées du destinataire ?",
+      "exampleZh": "你把收件人的完整联系方式都给我了吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 14
+      },
+      "learningKey": "transport-final15-v2-94"
+    },
+    {
+      "id": 95,
+      "fr": "un âge minimum",
+      "zh": "最低年龄",
+      "scenario": "car",
+      "priority": 5,
+      "exampleFr": "Faut-il avoir un âge minimum ou une certaine ancienneté de permis ?",
+      "exampleZh": "租车有最低年龄要求或驾照年限要求吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 9
+      },
+      "learningKey": "transport-final15-v2-95"
+    },
+    {
+      "id": 96,
+      "fr": "régler la location",
+      "zh": "支付租赁费用",
+      "scenario": "car",
+      "priority": 4,
+      "exampleFr": "Comment puis-je régler la location ?",
+      "exampleZh": "租车费用可以怎么支付？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 13
+      },
+      "learningKey": "transport-final15-v2-96"
+    },
+    {
+      "id": 97,
+      "fr": "rendre la voiture dans une autre agence",
+      "zh": "异地门店还车",
+      "scenario": "car",
+      "priority": 5,
+      "exampleFr": "Est-ce que je peux rendre la voiture dans une autre agence ?",
+      "exampleZh": "可以在另一家门店还车吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 15
+      },
+      "learningKey": "transport-final15-v2-97"
+    },
+    {
+      "id": 98,
+      "fr": "recharger une carte",
+      "zh": "给交通卡充值",
+      "scenario": "public",
+      "priority": 5,
+      "exampleFr": "Où est-ce qu’on achète les billets ou qu’on recharge une carte ?",
+      "exampleZh": "在哪里可以买车票或给交通卡充值？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 10
+      },
+      "learningKey": "transport-final15-v2-98"
+    },
+    {
+      "id": 99,
+      "fr": "les perturbations du réseau",
+      "zh": "交通网络运行异常",
+      "scenario": "public",
+      "priority": 5,
+      "exampleFr": "Comment puis-je connaître les perturbations du réseau ?",
+      "exampleZh": "怎么查看交通网络的服务中断信息？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 14
+      },
+      "learningKey": "transport-final15-v2-99"
+    },
+    {
+      "id": 100,
+      "fr": "planifier un trajet",
+      "zh": "规划行程",
+      "scenario": "public",
+      "priority": 4,
+      "exampleFr": "Y a-t-il une application pour planifier les trajets ?",
+      "exampleZh": "有没有用来规划路线的应用程序？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 11
+      },
+      "learningKey": "transport-final15-v2-100"
+    },
+    {
+      "id": 101,
+      "fr": "les heures de pointe",
+      "zh": "高峰时段",
+      "scenario": "public",
+      "priority": 5,
+      "exampleFr": "À quelle fréquence passent les bus aux heures de pointe ?",
+      "exampleZh": "高峰期公交车多久一班？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 4
+      },
+      "learningKey": "transport-final15-v2-101"
+    },
+    {
+      "id": 102,
+      "fr": "une caution",
+      "zh": "押金",
+      "scenario": "bike",
+      "priority": 5,
+      "exampleFr": "Une caution est-elle demandée ?",
+      "exampleZh": "需要交押金吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 7
+      },
+      "learningKey": "transport-final15-v2-102"
+    },
+    {
+      "id": 103,
+      "fr": "tomber en panne",
+      "zh": "发生故障",
+      "scenario": "bike",
+      "priority": 5,
+      "exampleFr": "Que se passe-t-il si le vélo tombe en panne ?",
+      "exampleZh": "如果自行车发生故障怎么办？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 14
+      },
+      "learningKey": "transport-final15-v2-103"
+    },
+    {
+      "id": 104,
+      "fr": "rendre le vélo",
+      "zh": "归还自行车",
+      "scenario": "bike",
+      "priority": 5,
+      "exampleFr": "Où dois-je rendre le vélo, et avant quelle heure ?",
+      "exampleZh": "我应该在哪里还车，最晚几点还？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 15
+      },
+      "learningKey": "transport-final15-v2-104"
+    },
+    {
+      "id": 105,
+      "fr": "le port du casque",
+      "zh": "佩戴头盔",
+      "scenario": "cycling",
+      "priority": 5,
+      "exampleFr": "Le port du casque est-il obligatoire ?",
+      "exampleZh": "骑车必须戴头盔吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 6
+      },
+      "learningKey": "transport-final15-v2-105"
+    },
+    {
+      "id": 106,
+      "fr": "un équipement de sécurité",
+      "zh": "安全装备",
+      "scenario": "cycling",
+      "priority": 4,
+      "exampleFr": "Quel autre équipement de sécurité me conseilles-tu ?",
+      "exampleZh": "你还建议我配备哪些安全装备？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 7
+      },
+      "learningKey": "transport-final15-v2-106"
+    },
+    {
+      "id": 107,
+      "fr": "déneiger une piste cyclable",
+      "zh": "清除自行车道上的积雪",
+      "scenario": "cycling",
+      "priority": 5,
+      "exampleFr": "Est-ce que les pistes cyclables sont déneigées en hiver ?",
+      "exampleZh": "冬天自行车道会清雪吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 12
+      },
+      "learningKey": "transport-final15-v2-107"
+    },
+    {
+      "id": 108,
+      "fr": "combiner vélo et transports en commun",
+      "zh": "结合骑行与公共交通",
+      "scenario": "cycling",
+      "priority": 5,
+      "exampleFr": "Est-ce facile de combiner vélo et transports en commun ?",
+      "exampleZh": "骑自行车和乘公共交通衔接方便吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 13
+      },
+      "learningKey": "transport-final15-v2-108"
+    },
+    {
+      "id": 109,
+      "fr": "un itinéraire différent en hiver",
+      "zh": "冬季替代路线",
+      "scenario": "cycling",
+      "priority": 4,
+      "exampleFr": "Faut-il prévoir des itinéraires différents en hiver ?",
+      "exampleZh": "冬天需要规划不同的骑行路线吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 11
+      },
+      "learningKey": "transport-final15-v2-109"
+    },
+    {
+      "id": 110,
+      "fr": "une facture d’achat",
+      "zh": "购买发票",
+      "scenario": "usedbike",
+      "priority": 5,
+      "exampleFr": "Tu as encore la facture d’achat ?",
+      "exampleZh": "你还留着购买发票吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 4,
+        "question": 11
+      },
+      "learningKey": "transport-final15-v2-110"
+    },
+    {
+      "id": 111,
+      "fr": "être sous garantie",
+      "zh": "在保修期内",
+      "scenario": "usedbike",
+      "priority": 5,
+      "exampleFr": "Il est encore sous garantie ?",
+      "exampleZh": "它还在保修期内吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 4,
+        "question": 12
+      },
+      "learningKey": "transport-final15-v2-111"
+    },
+    {
+      "id": 112,
+      "fr": "un essai sur route",
+      "zh": "上路试骑",
+      "scenario": "usedbike",
+      "priority": 4,
+      "exampleFr": "Est-ce que tu pourrais me laisser faire un essai sur route ?",
+      "exampleZh": "能让我上路试骑一下吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 4,
+        "question": 14
+      },
+      "learningKey": "transport-final15-v2-112"
+    },
+    {
+      "id": 113,
+      "fr": "récupérer le vélo",
+      "zh": "取走自行车",
+      "scenario": "usedbike",
+      "priority": 4,
+      "exampleFr": "Quand est-ce que je peux venir voir et récupérer le vélo ?",
+      "exampleZh": "我什么时候可以过来看看并取走自行车？",
+      "source": {
+        "month": "2026-07",
+        "number": 4,
+        "question": 15
+      },
+      "learningKey": "transport-final15-v2-113"
+    },
+    {
+      "id": 114,
+      "fr": "s’engager régulièrement",
+      "zh": "承诺固定参与",
+      "scenario": "rideshare",
+      "priority": 5,
+      "exampleFr": "Serait-il possible d’essayer une fois avant que je m’engage régulièrement ?",
+      "exampleZh": "在我固定搭乘之前，可以先试一次吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 15
+      },
+      "learningKey": "transport-final15-v2-114"
+    },
+    {
+      "id": 115,
+      "fr": "essayer une fois",
+      "zh": "先尝试一次",
+      "scenario": "rideshare",
+      "priority": 4,
+      "exampleFr": "Serait-il possible d’essayer une fois avant que je m’engage régulièrement ?",
+      "exampleZh": "在我固定搭乘之前，可以先试一次吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 15
+      },
+      "learningKey": "transport-final15-v2-115"
+    },
+    {
+      "id": 116,
+      "fr": "récupérer les bagages",
+      "zh": "领取行李",
+      "scenario": "airport",
+      "priority": 5,
+      "exampleFr": "Ont-ils besoin d’aide pour récupérer leurs bagages ou se déplacer dans l’aéroport ?",
+      "exampleZh": "他们在取行李或在机场内行动时需要帮忙吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 8
+      },
+      "learningKey": "transport-final15-v2-116"
+    },
+    {
+      "id": 117,
+      "fr": "atterrir",
+      "zh": "降落",
+      "scenario": "airport",
+      "priority": 5,
+      "exampleFr": "Leur avion doit atterrir vers quelle heure ?",
+      "exampleZh": "他们的航班预计几点左右降落？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 2
+      },
+      "learningKey": "transport-final15-v2-117"
+    },
+    {
+      "id": 118,
+      "fr": "avancer les frais d’envoi",
+      "zh": "垫付寄件费用",
+      "scenario": "parcel",
+      "priority": 5,
+      "exampleFr": "Je dois avancer les frais d’envoi ?",
+      "exampleZh": "寄件费用需要我先垫付吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 11
+      },
+      "learningKey": "transport-final15-v2-118"
+    },
+    {
+      "id": 119,
+      "fr": "un envoi avec suivi",
+      "zh": "可追踪的寄件服务",
+      "scenario": "parcel",
+      "priority": 5,
+      "exampleFr": "Tu préfères que je choisisse un envoi avec suivi ?",
+      "exampleZh": "你希望我选可以追踪的寄件服务吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 12
+      },
+      "learningKey": "transport-final15-v2-119"
+    },
+    {
+      "id": 120,
+      "fr": "au plus tard",
+      "zh": "最迟",
+      "scenario": "parcel",
+      "priority": 5,
+      "exampleFr": "Pour quelle date le paquet doit-il être envoyé au plus tard ?",
+      "exampleZh": "这个包裹最迟需要在什么时候寄出？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 1
+      },
+      "learningKey": "transport-final15-v2-120"
+    },
+    {
+      "id": 121,
+      "fr": "faire la queue",
+      "zh": "排队",
+      "scenario": "parcel",
+      "priority": 4,
+      "exampleFr": "Est-ce qu’il faut faire la queue longtemps au bureau de poste ?",
+      "exampleZh": "邮局通常要排很久队吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 9
+      },
+      "learningKey": "transport-final15-v2-121"
+    },
+    {
+      "id": 122,
+      "fr": "une autre solution prévue",
+      "zh": "已安排的替代方案",
+      "scenario": "parcel",
+      "priority": 4,
+      "exampleFr": "Si je ne peux finalement pas y aller, quelle autre solution as-tu prévue ?",
+      "exampleZh": "如果我最后实在去不了，你安排了什么替代方案？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 15
+      },
+      "learningKey": "transport-final15-v2-122"
     }
   ],
   "patterns": [
     {
       "id": 1,
-      "pattern": "Quel type de véhicule me conseilleriez-vous ?",
-      "zh": "您建议什么车型？",
-      "exampleFr": "Quel type de voiture me conseilleriez-vous ?",
-      "exampleZh": "您建议我选什么车型？",
-      "scenario": "car"
+      "pattern": "Pour + situation, quel modèle me conseilleriez-vous ?",
+      "zh": "在……情况下，您会推荐哪种车型？",
+      "exampleFr": "Pour des vacances en famille, quel modèle me conseilleriez-vous ?",
+      "exampleZh": "如果是家庭度假，您会推荐哪种车型？",
+      "scenario": "car",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 2
+      },
+      "learningKey": "transport-final15-v2-1"
     },
     {
       "id": 2,
-      "pattern": "Quel est le tarif par jour ?",
-      "zh": "每天多少钱？",
-      "exampleFr": "Quel est le tarif par jour ?",
-      "exampleZh": "每天多少钱？",
-      "scenario": "car"
+      "pattern": "Quel est le tarif de location par jour ?",
+      "zh": "每天租金是多少？",
+      "exampleFr": "Quel est le tarif de location par jour ?",
+      "exampleZh": "每天的租车费用是多少？",
+      "scenario": "car",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 4
+      },
+      "learningKey": "transport-final15-v2-2"
     },
     {
       "id": 3,
-      "pattern": "L’assurance est-elle comprise dans le prix ?",
-      "zh": "保险包含吗？",
-      "exampleFr": "L’assurance est-elle comprise dans le prix ?",
-      "exampleZh": "保险包含在价格里吗？",
-      "scenario": "car"
+      "pattern": "L’assurance est-elle incluse dans le prix ?",
+      "zh": "价格包含保险吗？",
+      "exampleFr": "L’assurance est-elle incluse dans le prix ?",
+      "exampleZh": "价格包含保险吗？",
+      "scenario": "car",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 6
+      },
+      "learningKey": "transport-final15-v2-3"
     },
     {
       "id": 4,
-      "pattern": "Quels documents faut-il présenter ?",
-      "zh": "需要出示哪些文件？",
-      "exampleFr": "Quels documents faut-il présenter pour louer une voiture ?",
-      "exampleZh": "租车需要出示哪些文件？",
-      "scenario": "car"
+      "pattern": "Qu’est-ce que je dois fournir comme documents pour + infinitif ?",
+      "zh": "为了……需要提供哪些证件？",
+      "exampleFr": "Qu’est-ce que je dois fournir comme documents pour louer une voiture ?",
+      "exampleZh": "租车需要提供哪些证件？",
+      "scenario": "car",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 8
+      },
+      "learningKey": "transport-final15-v2-4"
     },
     {
       "id": 5,
-      "pattern": "Y a-t-il une limite de kilométrage ?",
+      "pattern": "Le kilométrage est-il limité ?",
       "zh": "有里程限制吗？",
-      "exampleFr": "Y a-t-il une limite de kilométrage ?",
-      "exampleZh": "有里程限制吗？",
-      "scenario": "car"
+      "exampleFr": "Le kilométrage est-il limité ?",
+      "exampleZh": "租车有里程限制吗？",
+      "scenario": "car",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 12
+      },
+      "learningKey": "transport-final15-v2-5"
     },
     {
       "id": 6,
-      "pattern": "Comment se passe la restitution ?",
-      "zh": "归还流程怎样？",
-      "exampleFr": "Comment se passe la restitution du véhicule ?",
-      "exampleZh": "还车流程怎样？",
-      "scenario": "car"
+      "pattern": "Est-ce que je peux rendre + véhicule + dans + lieu ?",
+      "zh": "可以在……归还车辆吗？",
+      "exampleFr": "Est-ce que je peux rendre la voiture dans une autre agence ?",
+      "exampleZh": "可以在另一家门店还车吗？",
+      "scenario": "car",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 15
+      },
+      "learningKey": "transport-final15-v2-6"
     },
     {
       "id": 7,
-      "pattern": "Quels types de transports sont disponibles ?",
-      "zh": "有哪些交通方式？",
-      "exampleFr": "Quels types de transports en commun sont disponibles ?",
-      "exampleZh": "有哪些公共交通？",
-      "scenario": "public"
+      "pattern": "Qu’est-ce qu’il y a comme transports en commun dans + lieu ?",
+      "zh": "……有哪些公共交通？",
+      "exampleFr": "Qu’est-ce qu’il y a comme transports en commun dans la ville ?",
+      "exampleZh": "这座城市有哪些公共交通工具？",
+      "scenario": "public",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 1
+      },
+      "learningKey": "transport-final15-v2-7"
     },
     {
       "id": 8,
-      "pattern": "À quelle fréquence passe + transport ?",
-      "zh": "多久一班？",
-      "exampleFr": "À quelle fréquence passent les bus ?",
-      "exampleZh": "公交多久一班？",
-      "scenario": "public"
+      "pattern": "À quelle fréquence passent + transports + aux heures de pointe ?",
+      "zh": "高峰时段……多久一班？",
+      "exampleFr": "À quelle fréquence passent les bus aux heures de pointe ?",
+      "exampleZh": "高峰期公交车多久一班？",
+      "scenario": "public",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 4
+      },
+      "learningKey": "transport-final15-v2-8"
     },
     {
       "id": 9,
-      "pattern": "À quelle heure passe le premier / dernier + transport ?",
-      "zh": "首/末班几点？",
-      "exampleFr": "À quelle heure passe le dernier bus ?",
-      "exampleZh": "末班车几点？",
-      "scenario": "public"
+      "pattern": "Jusqu’à quelle heure circulent-ils le soir ?",
+      "zh": "晚上最晚运行到几点？",
+      "exampleFr": "Et jusqu’à quelle heure circulent-ils le soir ?",
+      "exampleZh": "晚上公交车和地铁最晚运行到几点？",
+      "scenario": "public",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 6
+      },
+      "learningKey": "transport-final15-v2-9"
     },
     {
       "id": 10,
-      "pattern": "Combien coûte un billet simple ?",
-      "zh": "单程票多少钱？",
-      "exampleFr": "Combien coûte un billet simple ?",
-      "exampleZh": "单程票多少钱？",
-      "scenario": "public"
+      "pattern": "Quel est le prix d’un trajet ?",
+      "zh": "单程费用是多少？",
+      "exampleFr": "Quel est le prix d’un trajet ?",
+      "exampleZh": "单程票价是多少？",
+      "scenario": "public",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 7
+      },
+      "learningKey": "transport-final15-v2-10"
     },
     {
       "id": 11,
-      "pattern": "Un tarif étudiant est-il proposé ?",
-      "zh": "有学生优惠吗？",
-      "exampleFr": "Un tarif étudiant est-il proposé ?",
-      "exampleZh": "有学生优惠价吗？",
-      "scenario": "public"
+      "pattern": "Est-ce qu’un tarif étudiant est proposé ?",
+      "zh": "提供学生票价吗？",
+      "exampleFr": "Est-ce qu’un tarif étudiant est proposé ?",
+      "exampleZh": "有学生票价吗？",
+      "scenario": "public",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 9
+      },
+      "learningKey": "transport-final15-v2-11"
     },
     {
       "id": 12,
       "pattern": "Où puis-je acheter les billets ?",
       "zh": "在哪里购票？",
       "exampleFr": "Où est-ce que je peux acheter les billets ?",
-      "exampleZh": "在哪里可以买票？",
-      "scenario": "public"
+      "exampleZh": "我可以在哪里买车票？",
+      "scenario": "public",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 10
+      }
     },
     {
       "id": 13,
@@ -981,31 +2027,51 @@
       "zh": "同一张票能换乘吗？",
       "exampleFr": "Le même billet permet-il de faire une correspondance ?",
       "exampleZh": "同一张票可以换乘吗？",
-      "scenario": "public"
+      "scenario": "public",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 11
+      }
     },
     {
       "id": 14,
       "pattern": "Existe-t-il une application pour consulter les horaires ?",
       "zh": "有 App 看时刻吗？",
       "exampleFr": "Existe-t-il une application officielle pour consulter les horaires ?",
-      "exampleZh": "有官方 App 查看时刻吗？",
-      "scenario": "public"
+      "exampleZh": "有官方应用可以查询时刻表吗？",
+      "scenario": "public",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 12
+      }
     },
     {
       "id": 15,
       "pattern": "Que se passe-t-il en cas de retard ?",
       "zh": "延误时怎么办？",
       "exampleFr": "Comment ça se passe en cas de retard ou d’interruption du service ?",
-      "exampleZh": "延误或服务中断时怎么办？",
-      "scenario": "public"
+      "exampleZh": "如果延误或服务中断，通常怎么处理？",
+      "scenario": "public",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 14
+      }
     },
     {
       "id": 16,
       "pattern": "Quel abonnement serait le plus avantageux ?",
       "zh": "哪种通票最划算？",
       "exampleFr": "Si je les utilise tous les jours, quel abonnement serait le plus avantageux ?",
-      "exampleZh": "如果每天用，哪种通票最划算？",
-      "scenario": "public"
+      "exampleZh": "如果我每天都乘坐，买哪种月票最划算？",
+      "scenario": "public",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 15
+      }
     },
     {
       "id": 17,
@@ -1013,63 +2079,106 @@
       "zh": "具体是什么型号？",
       "exampleFr": "C’est quel modèle exactement ?",
       "exampleZh": "具体是什么型号？",
-      "scenario": "bike"
+      "scenario": "usedbike",
+      "source": {
+        "month": "2026-07",
+        "number": 4,
+        "question": 2
+      }
     },
     {
       "id": 18,
       "pattern": "Le cadre fait quelle taille ?",
       "zh": "车架多大？",
       "exampleFr": "Le cadre fait quelle taille ?",
-      "exampleZh": "车架多大？",
-      "scenario": "bike"
+      "exampleZh": "车架是什么尺寸？",
+      "scenario": "usedbike",
+      "source": {
+        "month": "2026-07",
+        "number": 4,
+        "question": 3
+      }
     },
     {
       "id": 19,
       "pattern": "Dans quel état est-il actuellement ?",
       "zh": "现在状况怎样？",
       "exampleFr": "Dans quel état est-il actuellement ?",
-      "exampleZh": "现在状况怎样？",
-      "scenario": "bike"
+      "exampleZh": "它现在的状况怎么样？",
+      "scenario": "usedbike",
+      "source": {
+        "month": "2026-07",
+        "number": 4,
+        "question": 5
+      }
     },
     {
       "id": 20,
       "pattern": "Qu’est-ce qui est inclus comme accessoires ?",
       "zh": "包含哪些配件？",
       "exampleFr": "Qu’est-ce qui est inclus comme accessoires avec le vélo ?",
-      "exampleZh": "自行车包含哪些配件？",
-      "scenario": "bike"
+      "exampleZh": "自行车附带哪些配件？",
+      "scenario": "usedbike",
+      "source": {
+        "month": "2026-07",
+        "number": 4,
+        "question": 7
+      }
     },
     {
       "id": 21,
       "pattern": "Je peux l’essayer avant de me décider ?",
       "zh": "决定前可以试吗？",
       "exampleFr": "Je peux l’essayer avant de me décider ?",
-      "exampleZh": "决定前可以试骑吗？",
-      "scenario": "bike"
+      "exampleZh": "我决定之前可以试骑吗？",
+      "scenario": "usedbike",
+      "source": {
+        "month": "2026-07",
+        "number": 4,
+        "question": 13
+      }
     },
     {
       "id": 22,
-      "pattern": "Quel trajet fais-tu exactement ?",
-      "zh": "你具体走哪条路线？",
-      "exampleFr": "Quel trajet fais-tu exactement ?",
-      "exampleZh": "你具体走哪条路线？",
-      "scenario": "rideshare"
+      "pattern": "Vous allez où habituellement ?",
+      "zh": "您通常去哪里？",
+      "exampleFr": "Vous allez où habituellement ?",
+      "exampleZh": "您通常去哪里？",
+      "scenario": "rideshare",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 2
+      },
+      "learningKey": "transport-final15-v2-22"
     },
     {
       "id": 23,
-      "pattern": "Comment partage-t-on les frais ?",
-      "zh": "费用怎么分摊？",
-      "exampleFr": "Comment partage-t-on les frais ?",
-      "exampleZh": "费用怎么分摊？",
-      "scenario": "rideshare"
+      "pattern": "Ça me coûterait combien par trajet ?",
+      "zh": "每趟我要付多少钱？",
+      "exampleFr": "Ça me coûterait combien par trajet ?",
+      "exampleZh": "每趟我要付多少钱？",
+      "scenario": "rideshare",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 8
+      },
+      "learningKey": "transport-final15-v2-23"
     },
     {
       "id": 24,
-      "pattern": "Que se passe-t-il si je dois annuler ?",
-      "zh": "如果取消怎么办？",
-      "exampleFr": "Que se passe-t-il si je dois annuler le trajet ?",
-      "exampleZh": "如果我需要取消行程怎么办？",
-      "scenario": "rideshare"
+      "pattern": "Que se passe-t-il si l’un de nous doit + infinitif ?",
+      "zh": "如果我们其中一人需要……怎么办？",
+      "exampleFr": "Que se passe-t-il si l’un de nous doit annuler au dernier moment ?",
+      "exampleZh": "如果我们其中一人临时需要取消，该怎么办？",
+      "scenario": "rideshare",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 11
+      },
+      "learningKey": "transport-final15-v2-24"
     },
     {
       "id": 25,
@@ -1077,79 +2186,505 @@
       "zh": "航班号是多少？",
       "exampleFr": "Quel est leur numéro de vol ?",
       "exampleZh": "他们的航班号是多少？",
-      "scenario": "airport"
+      "scenario": "airport",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 3
+      }
     },
     {
       "id": 26,
-      "pattern": "À quel terminal arrivent-ils ?",
-      "zh": "到哪个航站楼？",
-      "exampleFr": "À quel terminal arrivent-ils ?",
-      "exampleZh": "他们到哪个航站楼？",
-      "scenario": "airport"
+      "pattern": "Tu sais dans quel terminal ils arrivent ?",
+      "zh": "你知道他们到哪个航站楼吗？",
+      "exampleFr": "Tu sais dans quel terminal ils arrivent ?",
+      "exampleZh": "你知道他们会到达哪个航站楼吗？",
+      "scenario": "airport",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 5
+      },
+      "learningKey": "transport-final15-v2-26"
     },
     {
       "id": 27,
-      "pattern": "Comment puis-je les reconnaître ?",
-      "zh": "我怎么认出他们？",
-      "exampleFr": "Comment puis-je les reconnaître ?",
-      "exampleZh": "我怎么认出他们？",
-      "scenario": "airport"
+      "pattern": "Comment puis-je les reconnaître facilement ?",
+      "zh": "我怎么才能轻松认出他们？",
+      "exampleFr": "Comment puis-je les reconnaître facilement ?",
+      "exampleZh": "我怎么才能轻松认出他们？",
+      "scenario": "airport",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 7
+      },
+      "learningKey": "transport-final15-v2-27"
     },
     {
       "id": 28,
-      "pattern": "Que dois-je faire si le vol est retardé ?",
-      "zh": "航班延误怎么办？",
-      "exampleFr": "Que dois-je faire si le vol est retardé ?",
-      "exampleZh": "如果航班延误我该怎么办？",
-      "scenario": "airport"
+      "pattern": "Qu’est-ce que je fais si leur vol est retardé ?",
+      "zh": "如果他们的航班延误，我怎么办？",
+      "exampleFr": "Qu’est-ce que je fais si leur vol est retardé ?",
+      "exampleZh": "如果他们的航班延误了，我该怎么办？",
+      "scenario": "airport",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 14
+      },
+      "learningKey": "transport-final15-v2-28"
     },
     {
       "id": 29,
-      "pattern": "Quel est le délai pour l’envoyer ?",
-      "zh": "最晚什么时候寄？",
-      "exampleFr": "Quel est le délai pour l’envoyer ?",
-      "exampleZh": "最晚什么时候寄？",
-      "scenario": "parcel"
+      "pattern": "Pour quelle date + nom + doit-il être + participe passé + au plus tard ?",
+      "zh": "……最迟必须在什么时候被……？",
+      "exampleFr": "Pour quelle date le paquet doit-il être envoyé au plus tard ?",
+      "exampleZh": "这个包裹最迟需要在什么时候寄出？",
+      "scenario": "parcel",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 1
+      },
+      "learningKey": "transport-final15-v2-29"
     },
     {
       "id": 30,
-      "pattern": "Combien pèse le paquet ?",
-      "zh": "包裹多重？",
-      "exampleFr": "Combien pèse le paquet ?",
-      "exampleZh": "包裹多重？",
-      "scenario": "parcel"
+      "pattern": "Quel est son poids approximatif ?",
+      "zh": "大约有多重？",
+      "exampleFr": "Quel est son poids approximatif ?",
+      "exampleZh": "包裹大约有多重？",
+      "scenario": "parcel",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 4
+      },
+      "learningKey": "transport-final15-v2-30"
     },
     {
       "id": 31,
       "pattern": "Qu’est-ce qu’il y a dans le paquet ?",
       "zh": "包裹里有什么？",
       "exampleFr": "Qu’est-ce qu’il y a dans le paquet ?",
-      "exampleZh": "包裹里有什么？",
-      "scenario": "parcel"
+      "exampleZh": "包裹里装的是什么？",
+      "scenario": "parcel",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 5
+      }
     },
     {
       "id": 32,
-      "pattern": "Est-ce qu’il contient quelque chose de fragile ?",
-      "zh": "有易碎品吗？",
-      "exampleFr": "Est-ce qu’il contient quelque chose de fragile ?",
+      "pattern": "Il y a quelque chose de fragile à l’intérieur ?",
+      "zh": "里面有易碎物品吗？",
+      "exampleFr": "Il y a quelque chose de fragile à l’intérieur ?",
       "exampleZh": "里面有易碎物品吗？",
-      "scenario": "parcel"
+      "scenario": "parcel",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 6
+      },
+      "learningKey": "transport-final15-v2-32"
     },
     {
       "id": 33,
-      "pattern": "Combien coûtent les frais de port ?",
-      "zh": "邮费多少？",
-      "exampleFr": "Combien coûtent les frais de port ?",
-      "exampleZh": "邮费多少？",
-      "scenario": "parcel"
+      "pattern": "Combien coûtera + nom ?",
+      "zh": "……要花多少钱？",
+      "exampleFr": "Combien coûtera l’envoi ?",
+      "exampleZh": "寄这个包裹要多少钱？",
+      "scenario": "parcel",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 10
+      },
+      "learningKey": "transport-final15-v2-33"
     },
     {
       "id": 34,
-      "pattern": "Est-ce qu’on peut suivre le colis ?",
-      "zh": "可以跟踪包裹吗？",
-      "exampleFr": "Est-ce qu’on peut suivre le colis ?",
-      "exampleZh": "可以追踪包裹吗？",
-      "scenario": "parcel"
+      "pattern": "Tu préfères que je choisisse + nom ?",
+      "zh": "你希望我选择……吗？",
+      "exampleFr": "Tu préfères que je choisisse un envoi avec suivi ?",
+      "exampleZh": "你希望我选可以追踪的寄件服务吗？",
+      "scenario": "parcel",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 12
+      },
+      "learningKey": "transport-final15-v2-34"
+    },
+    {
+      "id": 35,
+      "pattern": "Qu’est-ce que l’assurance couvre exactement comme + nom ?",
+      "zh": "保险具体承保哪些……？",
+      "scenario": "car",
+      "exampleFr": "Qu’est-ce que l’assurance couvre exactement comme dommages ?",
+      "exampleZh": "保险具体承保哪些损坏情况？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 7
+      },
+      "learningKey": "transport-final15-v2-35"
+    },
+    {
+      "id": 36,
+      "pattern": "Faut-il avoir + condition ?",
+      "zh": "是否需要具备……条件？",
+      "scenario": "car",
+      "exampleFr": "Faut-il avoir un âge minimum ou une certaine ancienneté de permis ?",
+      "exampleZh": "租车有最低年龄要求或驾照年限要求吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 9
+      },
+      "learningKey": "transport-final15-v2-36"
+    },
+    {
+      "id": 37,
+      "pattern": "Les véhicules sont-ils + participe passé + avant chaque location ?",
+      "zh": "车辆每次出租前都会被……吗？",
+      "scenario": "car",
+      "exampleFr": "Les voitures sont-elles révisées avant chaque location ?",
+      "exampleZh": "每次出租前车辆都会检查吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 3
+      },
+      "learningKey": "transport-final15-v2-37"
+    },
+    {
+      "id": 39,
+      "pattern": "Comment puis-je connaître + nom ?",
+      "zh": "我怎么查看……？",
+      "scenario": "public",
+      "exampleFr": "Comment puis-je connaître les perturbations du réseau ?",
+      "exampleZh": "怎么查看交通网络的服务中断信息？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 14
+      },
+      "learningKey": "transport-final15-v2-39"
+    },
+    {
+      "id": 40,
+      "pattern": "Quelles précautions me conseillez-vous pour + infinitif ?",
+      "zh": "为了……您建议注意哪些事项？",
+      "scenario": "public",
+      "exampleFr": "Quelles précautions me conseillez-vous pour voyager le soir ?",
+      "exampleZh": "您建议晚上乘车注意哪些事项？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 13
+      },
+      "learningKey": "transport-final15-v2-40"
+    },
+    {
+      "id": 41,
+      "pattern": "Quelle est l’autonomie moyenne de + véhicule ?",
+      "zh": "……的平均续航是多少？",
+      "scenario": "bike",
+      "exampleFr": "Quelle est l’autonomie moyenne de vos vélos électriques ?",
+      "exampleZh": "你们的电动自行车平均续航多少？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 11
+      },
+      "learningKey": "transport-final15-v2-41"
+    },
+    {
+      "id": 42,
+      "pattern": "Que se passe-t-il si + véhicule + tombe en panne ?",
+      "zh": "如果……发生故障怎么办？",
+      "scenario": "bike",
+      "exampleFr": "Que se passe-t-il si le vélo tombe en panne ?",
+      "exampleZh": "如果自行车发生故障怎么办？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 14
+      },
+      "learningKey": "transport-final15-v2-42"
+    },
+    {
+      "id": 43,
+      "pattern": "Où dois-je rendre + véhicule, et avant quelle heure ?",
+      "zh": "我应该在哪里、最晚几点还车？",
+      "scenario": "bike",
+      "exampleFr": "Où dois-je rendre le vélo, et avant quelle heure ?",
+      "exampleZh": "我应该在哪里还车，最晚几点还？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 15
+      },
+      "learningKey": "transport-final15-v2-43"
+    },
+    {
+      "id": 44,
+      "pattern": "Le port du casque est-il obligatoire ?",
+      "zh": "必须佩戴头盔吗？",
+      "scenario": "cycling",
+      "exampleFr": "Le port du casque est-il obligatoire ?",
+      "exampleZh": "骑车必须戴头盔吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 6
+      },
+      "learningKey": "transport-final15-v2-44"
+    },
+    {
+      "id": 45,
+      "pattern": "Est-ce que les pistes cyclables sont déneigées en hiver ?",
+      "zh": "冬天自行车道会清雪吗？",
+      "scenario": "cycling",
+      "exampleFr": "Est-ce que les pistes cyclables sont déneigées en hiver ?",
+      "exampleZh": "冬天自行车道会清雪吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 12
+      },
+      "learningKey": "transport-final15-v2-45"
+    },
+    {
+      "id": 46,
+      "pattern": "Est-ce facile de combiner + nom + et + nom ?",
+      "zh": "将……和……结合起来方便吗？",
+      "scenario": "cycling",
+      "exampleFr": "Est-ce facile de combiner vélo et transports en commun ?",
+      "exampleZh": "骑自行车和乘公共交通衔接方便吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 13
+      },
+      "learningKey": "transport-final15-v2-46"
+    },
+    {
+      "id": 47,
+      "pattern": "Ça fait combien de temps que tu + présent ?",
+      "zh": "你……多久了？",
+      "scenario": "usedbike",
+      "exampleFr": "Ça fait combien de temps que tu l’utilises ?",
+      "exampleZh": "你用了这辆车多久了？",
+      "source": {
+        "month": "2026-07",
+        "number": 4,
+        "question": 4
+      },
+      "learningKey": "transport-final15-v2-47"
+    },
+    {
+      "id": 48,
+      "pattern": "Tu as déjà dû faire + nom ?",
+      "zh": "你之前是否曾需要……？",
+      "scenario": "usedbike",
+      "exampleFr": "Tu as déjà dû faire des réparations importantes dessus ?",
+      "exampleZh": "你以前给它做过大修吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 4,
+        "question": 6
+      },
+      "learningKey": "transport-final15-v2-48"
+    },
+    {
+      "id": 49,
+      "pattern": "Il est encore sous garantie ?",
+      "zh": "它还在保修期内吗？",
+      "scenario": "usedbike",
+      "exampleFr": "Il est encore sous garantie ?",
+      "exampleZh": "它还在保修期内吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 4,
+        "question": 12
+      },
+      "learningKey": "transport-final15-v2-49"
+    },
+    {
+      "id": 50,
+      "pattern": "Serait-il possible de + infinitif + avant que + subjonctif ?",
+      "zh": "在……之前，可以先……吗？",
+      "scenario": "rideshare",
+      "exampleFr": "Serait-il possible d’essayer une fois avant que je m’engage régulièrement ?",
+      "exampleZh": "在我固定搭乘之前，可以先试一次吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 15
+      },
+      "learningKey": "transport-final15-v2-50"
+    },
+    {
+      "id": 51,
+      "pattern": "L’horaire peut-il être légèrement modifié si nécessaire ?",
+      "zh": "如有需要，时间可以稍作调整吗？",
+      "scenario": "rideshare",
+      "exampleFr": "L’horaire peut-il être légèrement modifié si nécessaire ?",
+      "exampleZh": "有需要时，时间可以稍作调整吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 10
+      },
+      "learningKey": "transport-final15-v2-51"
+    },
+    {
+      "id": 52,
+      "pattern": "Ont-ils besoin d’aide pour + infinitif ?",
+      "zh": "他们需要有人帮助……吗？",
+      "scenario": "airport",
+      "exampleFr": "Ont-ils besoin d’aide pour récupérer leurs bagages ou se déplacer dans l’aéroport ?",
+      "exampleZh": "他们在取行李或在机场内行动时需要帮忙吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 8
+      },
+      "learningKey": "transport-final15-v2-52"
+    },
+    {
+      "id": 53,
+      "pattern": "Si je ne peux pas + infinitif, quelle solution prévois-tu ?",
+      "zh": "如果我无法……你有什么替代安排？",
+      "scenario": "airport",
+      "exampleFr": "Si je ne peux pas venir au dernier moment, quelle solution de remplacement prévois-tu ?",
+      "exampleZh": "如果我临时去不了，你安排了什么替代办法？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 15
+      },
+      "learningKey": "transport-final15-v2-53"
+    },
+    {
+      "id": 54,
+      "pattern": "Je dois avancer + frais ?",
+      "zh": "我需要垫付……费用吗？",
+      "scenario": "parcel",
+      "exampleFr": "Je dois avancer les frais d’envoi ?",
+      "exampleZh": "寄件费用需要我先垫付吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 11
+      },
+      "learningKey": "transport-final15-v2-54"
+    },
+    {
+      "id": 55,
+      "pattern": "Tu m’as bien donné toutes les coordonnées de + personne ?",
+      "zh": "你把……的完整联系方式都给我了吗？",
+      "scenario": "parcel",
+      "exampleFr": "Tu m’as bien donné toutes les coordonnées du destinataire ?",
+      "exampleZh": "你把收件人的完整联系方式都给我了吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 14
+      },
+      "learningKey": "transport-final15-v2-55"
+    },
+    {
+      "id": 56,
+      "pattern": "Est-ce que tu veux une preuve de + nom ?",
+      "zh": "你需要……凭证吗？",
+      "scenario": "parcel",
+      "exampleFr": "Est-ce que tu veux une preuve d’envoi ?",
+      "exampleZh": "你需要寄件凭证吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 13
+      },
+      "learningKey": "transport-final15-v2-56"
     }
+  ],
+  "core20": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    10,
+    12,
+    16,
+    18,
+    21,
+    24,
+    26,
+    32,
+    43,
+    47,
+    49,
+    60,
+    70,
+    82,
+    90
+  ],
+  "core50": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    10,
+    12,
+    16,
+    18,
+    21,
+    24,
+    26,
+    32,
+    43,
+    47,
+    49,
+    60,
+    70,
+    82,
+    90,
+    4,
+    6,
+    8,
+    11,
+    13,
+    17,
+    19,
+    20,
+    22,
+    23,
+    27,
+    29,
+    30,
+    33,
+    35,
+    36,
+    37,
+    45,
+    46,
+    51,
+    55,
+    56,
+    63,
+    65,
+    66,
+    72,
+    75,
+    78,
+    91,
+    118
   ]
 }
