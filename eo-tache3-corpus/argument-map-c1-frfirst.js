@@ -249,14 +249,18 @@
     function vocab(section,raw){
       const area=document.createElement('div');area.className='c1-vocab';
       const ls=lines(raw).filter(x=>!/^类型\s+法语表达/.test(x));
-      // Original Word extraction retains Chinese type labels and line wrapping.
-      // Keep every source line, do not invent or rewrite collocations.
-      for(const l of ls){
-        const p=document.createElement('div');p.className='c1-vocab-row';
-        if(/[\u3400-\u9fff]/.test(l)){p.textContent=l.replace(/(?:核心|拓展)/g, '').replace(/\s+/g, ' ').trim();p.classList.add('logic-zh');}
-        else if(/[A-Za-zÀ-ÿ]/.test(l)){p.append(audioLine(l));}
-        else p.textContent=l;
-        area.append(p);
+      // Word table extraction puts French and Chinese on the same line.
+      // Separate the two languages so that French always receives its Piper button.
+      for(const original of ls){
+        const row=document.createElement('div');row.className='c1-vocab-row';
+        const line=original.replace(/^(?:核心|拓展)\s*/,'').trim();
+        const zhAt=line.search(/[\u3400-\u9fff]/);
+        const fr=(zhAt<0?line:line.slice(0,zhAt)).trim();
+        const zh=(zhAt<0?'':line.slice(zhAt)).trim();
+        if(/[A-Za-zÀ-ÿ]/.test(fr))row.append(audioLine(fr));
+        if(zh){const label=document.createElement('span');label.className='logic-zh';label.textContent=zh;row.append(label);}
+        if(!row.childNodes.length)row.textContent=line;
+        area.append(row);
       }
       section.append(area);
     }
