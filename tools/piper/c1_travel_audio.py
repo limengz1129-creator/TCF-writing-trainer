@@ -40,6 +40,12 @@ def targets():
         for chain in bilingual(r["chain"]):
             for chunk in re.split(r"\s*(?:→|/|\+|[,，、])\s*",chain):
                 if chunk.strip():ret.append(chunk.strip())
+        # The Exemple-cle chain in the core section uses individual playback buttons.
+        example=re.split(r"例子关键词\s*[｜|]\s*Exemple-clé",r["core"])
+        if len(example)>1:
+            for sentence in bilingual(example[1]):
+                for chunk in re.split(r"\s*(?:→|/|\+|[,，、])\s*",sentence):
+                    if chunk.strip():ret.append(chunk.strip())
         ret.extend(vocab(r["vocab"]))
     return list(dict.fromkeys(ret))
 def verify():
