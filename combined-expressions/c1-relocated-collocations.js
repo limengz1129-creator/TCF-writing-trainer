@@ -10,13 +10,25 @@
  const rowsFor=n=>n===8?M8:n===2?hidden.filter(e=>M2.has(e.id)):n===15?hidden.filter(e=>M15.has(e.id)):[];
  const titleFor=n=>n===8?'安家语料 · 40 条高频动词固定搭配':n===2?'安家语料 · 3 条形容词 / 状态表达':'安家语料 · 3 条虚拟式高价值搭配';
  const noteFor=n=>n===8?'这些词条原本跟随“虚拟式核心动词”资料进入旧专项，但它们本质是可跨时态复用的动词固定搭配，因此归到 #8。原词条、例句和来源不删除。':n===2?'这 3 条核心是 être + 形容词 / 状态补语，不属于虚拟式本身，因此归到 #2。':'这 3 条本身直接包含虚拟式触发，因此继续归 #15；veiller à ce que + subjonctif 已经保留在 #15 主结构中，不在这里重复。';
- function speak(text){
-  if(!window.speechSynthesis||!window.SpeechSynthesisUtterance)return;
-  speechSynthesis.cancel();
-  const u=new SpeechSynthesisUtterance(String(text||'').replace(/\+/g,', '));
-  const voices=speechSynthesis.getVoices().filter(v=>/^fr(?:[-_]|$)/i.test(v.lang));
-  if(voices.length)u.voice=voices.find(v=>v.lang.toLowerCase()==='fr-fr')||voices[0];
-  u.lang=u.voice?.lang||'fr-FR';u.rate=.92;speechSynthesis.speak(u);
+ let activeAudio=null,activeBlob=null,manifestPromise=null;
+ const audioRoot=new URL('c1-relocated-audio/',document.baseURI);
+ async function speak(text){
+  const fr=String(text||'').trim();if(!fr)return;
+  if(activeAudio){activeAudio.pause();activeAudio=null;}
+  if(activeBlob){URL.revokeObjectURL(activeBlob);activeBlob=null;}
+  try{
+   if(!manifestPromise)manifestPromise=fetch(new URL('manifest.json?v=1',audioRoot),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Piper 索引无法加载');return r.json();}).catch(e=>{manifestPromise=null;throw e;});
+   const manifest=await manifestPromise;
+   const ref=manifest.entries?.[fr];
+   if(!ref)throw Error('当前词块尚未生成 Piper 音频');
+   const response=await fetch(new URL(ref.pack,audioRoot));if(!response.ok)throw Error('Piper 音频包无法加载');
+   const data=(await response.json())[ref.id];
+   if(!data||data.text!==fr)throw Error('音频与词块不匹配');
+   const bytes=Uint8Array.from(atob(data.audio),x=>x.charCodeAt(0));
+   activeBlob=URL.createObjectURL(new Blob([bytes],{type:'audio/mpeg'}));
+   activeAudio=new Audio(activeBlob);
+   await activeAudio.play();
+  }catch(error){const notice=document.getElementById('toast');if(notice)notice.textContent=error.message;else console.warn('Piper:',error.message);}
  }
  function group8(rows){
   const order=['faire','prendre','mettre','savoir','pouvoir','avoir','favoriser','encourager','protéger','garantir','proposer','permettre','veiller'];
