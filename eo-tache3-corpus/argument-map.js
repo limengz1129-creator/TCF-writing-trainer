@@ -154,20 +154,17 @@
       if(currentUrl){URL.revokeObjectURL(currentUrl);currentUrl=null;}
       if(currentButton){currentButton.textContent='🔊';currentButton.disabled=false;currentButton.onclick=currentButton._c1PlayHandler;currentButton=null;}
     }
-    const loadManifest=()=>manifestPromise||(manifestPromise=fetch(new URL('../piper-audio/manifest.json',document.baseURI)).then(r=>{if(!r.ok)throw Error('音频索引无法加载');return r.json();}).catch(e=>{manifestPromise=null;throw e;}));
+    const loadManifest=()=>manifestPromise||(manifestPromise=fetch(new URL('c1-travel-audio/manifest.json',document.baseURI)).then(r=>{if(!r.ok)throw Error('C1 Piper 音频尚未部署');return r.json();}).catch(e=>{manifestPromise=null;throw e;}));
     async function speak(fr,btn){
-      stop();currentButton=btn;btn.textContent='加载中';btn.disabled=true;status.textContent='正在查找 Piper 音频……';
+      stop();currentButton=btn;btn.textContent='加载中';btn.disabled=true;status.textContent='正在加载 C1 Piper siwis 音频……';
       try{
-        const index=await loadManifest();const links=index.targets?.[fr];
-        if(!links?.length)throw Error('这段法语尚无匹配的 Piper 预生成音频');
-        const parts=await Promise.all(links.map(async link=>{
-          const record=index.records[link.id];if(!record)throw Error('音频索引记录缺失');
-          const url=new URL(record.pack,new URL('../piper-audio/',document.baseURI));
-          const response=await fetch(url);if(!response.ok)throw Error('Piper 音频包加载失败');
-          const pack=await response.json(),item=pack[record.id];
-          if(!item||fr.slice(link.offset,link.offset+item.text.length)!==item.text)throw Error('法语原文与音频内容不一致');
-          return item;
-        }));
+        const index=await loadManifest();const entry=index.entries?.[fr];
+        if(!entry)throw Error('本条 C1 Piper 音频尚未生成');
+        const packUrl=new URL(entry.pack,new URL('c1-travel-audio/',document.baseURI));
+        const response=await fetch(packUrl);if(!response.ok)throw Error('C1 Piper 音频包加载失败');
+        const item=(await response.json())[entry.id];
+        if(!item||item.text!==fr)throw Error('法语文字与录音索引不匹配');
+        const parts=[item];
         if(currentButton!==btn)return;
         let pos=0;
         const next=()=>{
