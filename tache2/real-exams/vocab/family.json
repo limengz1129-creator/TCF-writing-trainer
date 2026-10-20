@@ -2,8 +2,8 @@
   "theme": "family",
   "title": "家庭儿童与宠物照护",
   "target": "TCF Canada 口语 Tâche 2 · C1",
-  "version": 1,
-  "principle": "约100个高价值词/词块，以最终真题为基础；词块与真实套用问法绑定，优先训练中文→法语主动调用。",
+  "version": 2,
+  "principle": "以当前5题×15问为依据，105个词块与42组问法均标注真题来源；按5个场景练习中文→法语，区分儿童作息、情绪安抚、宠物规则和课后活动咨询。",
   "scenarios": [
     {
       "id": "childcare",
@@ -34,7 +34,12 @@
       "scenario": "childcare",
       "priority": 5,
       "exampleFr": "Pour quelles dates dois-je garder votre enfant ?",
-      "exampleZh": "我需要在哪些日期照看您的孩子？"
+      "exampleZh": "您需要我在哪几天照看孩子？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 1
+      }
     },
     {
       "id": 2,
@@ -43,7 +48,12 @@
       "scenario": "childcare",
       "priority": 5,
       "exampleFr": "Quels horaires dois-je prévoir chaque jour ?",
-      "exampleZh": "每天需要照顾到几点？"
+      "exampleZh": "每天需要安排什么时间？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 2
+      }
     },
     {
       "id": 3,
@@ -52,7 +62,12 @@
       "scenario": "childcare",
       "priority": 5,
       "exampleFr": "Que dois-je faire s’il tombe malade pendant votre absence ?",
-      "exampleZh": "您不在时孩子生病怎么办？"
+      "exampleZh": "您不在时，如果他生病了，我该怎么办？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 15
+      }
     },
     {
       "id": 4,
@@ -60,8 +75,14 @@
       "zh": "儿童看护",
       "scenario": "childcare",
       "priority": 5,
-      "exampleFr": "Je souhaite que vous gardiez mon enfant pendant mon absence.",
-      "exampleZh": "我希望您在我不在时照看孩子。"
+      "exampleFr": "Pour quelles dates dois-je garder votre enfant ?",
+      "exampleZh": "您需要我在哪几天照看孩子？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 1
+      },
+      "learningKey": "family-final15-v2-4"
     },
     {
       "id": 5,
@@ -70,16 +91,27 @@
       "scenario": "childcare",
       "priority": 5,
       "exampleFr": "Quels horaires dois-je prévoir chaque jour ?",
-      "exampleZh": "每天需要安排哪些时间？"
+      "exampleZh": "每天需要安排什么时间？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 2
+      }
     },
     {
       "id": 6,
-      "fr": "une routine",
-      "zh": "固定作息",
+      "fr": "respecter les habitudes de l’enfant",
+      "zh": "遵循孩子的生活习惯",
       "scenario": "routine",
       "priority": 5,
-      "exampleFr": "Quelle routine dois-je respecter avec elle ?",
-      "exampleZh": "我需要遵守什么日常作息？"
+      "exampleFr": "Quelles habitudes particulières dois-je respecter ?",
+      "exampleZh": "我需要注意并遵循他有哪些特别习惯？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 9
+      },
+      "learningKey": "family-final15-v2-6"
     },
     {
       "id": 7,
@@ -88,7 +120,12 @@
       "scenario": "routine",
       "priority": 5,
       "exampleFr": "Quelles habitudes particulières dois-je respecter ?",
-      "exampleZh": "我需要注意哪些特殊习惯？"
+      "exampleZh": "我需要注意并遵循他有哪些特别习惯？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 9
+      }
     },
     {
       "id": 8,
@@ -97,7 +134,12 @@
       "scenario": "routine",
       "priority": 4,
       "exampleFr": "Quelles habitudes particulières dois-je respecter ?",
-      "exampleZh": "我需要注意哪些特殊习惯？"
+      "exampleZh": "我需要注意并遵循他有哪些特别习惯？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 9
+      }
     },
     {
       "id": 9,
@@ -105,17 +147,28 @@
       "zh": "吃饭时间",
       "scenario": "routine",
       "priority": 5,
-      "exampleFr": "Il mange généralement à quelles heures ?",
-      "exampleZh": "他通常几点吃饭？"
+      "exampleFr": "À quels moments prend-il habituellement ses repas ?",
+      "exampleZh": "孩子平时在什么时间吃饭？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 3
+      },
+      "learningKey": "family-final15-v2-9"
     },
     {
       "id": 10,
       "fr": "une habitude alimentaire",
       "zh": "饮食习惯",
-      "scenario": "routine",
+      "scenario": "pet",
       "priority": 5,
       "exampleFr": "Qu’est-ce qu’il mange habituellement ?",
-      "exampleZh": "他通常吃什么？"
+      "exampleZh": "它平时吃什么？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 5
+      }
     },
     {
       "id": 11,
@@ -124,7 +177,12 @@
       "scenario": "routine",
       "priority": 5,
       "exampleFr": "A-t-il des allergies alimentaires ou des aliments à éviter ?",
-      "exampleZh": "他有食物过敏或需要避免的食物吗？"
+      "exampleZh": "他有食物过敏吗？有没有需要避免的食物？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 5
+      }
     },
     {
       "id": 12,
@@ -133,7 +191,12 @@
       "scenario": "health",
       "priority": 5,
       "exampleFr": "A-t-il des allergies alimentaires ou des aliments à éviter ?",
-      "exampleZh": "他有食物过敏吗？"
+      "exampleZh": "他有食物过敏吗？有没有需要避免的食物？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 5
+      }
     },
     {
       "id": 13,
@@ -141,8 +204,14 @@
       "zh": "午睡",
       "scenario": "routine",
       "priority": 5,
-      "exampleFr": "À quelle heure fait-il la sieste ou se couche-t-il ?",
-      "exampleZh": "他几点午睡或睡觉？"
+      "exampleFr": "À quelle heure fait-elle habituellement la sieste ?",
+      "exampleZh": "她通常几点午睡？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 6
+      },
+      "learningKey": "family-final15-v2-13"
     },
     {
       "id": 14,
@@ -151,16 +220,27 @@
       "scenario": "routine",
       "priority": 5,
       "exampleFr": "À quelle heure se couche-t-elle le soir ?",
-      "exampleZh": "她晚上几点睡？"
+      "exampleZh": "她晚上几点睡觉？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 7
+      }
     },
     {
       "id": 15,
-      "fr": "donner le bain",
-      "zh": "给孩子洗澡",
+      "fr": "faire sa toilette",
+      "zh": "洗漱／清洁身体",
       "scenario": "routine",
       "priority": 4,
-      "exampleFr": "Combien de fois dois-je lui donner son bain ?",
-      "exampleZh": "我应该多久给她洗一次澡？"
+      "exampleFr": "Est-ce que je dois l’aider à faire sa toilette ?",
+      "exampleZh": "我需要帮孩子洗漱吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 13
+      },
+      "learningKey": "family-final15-v2-15"
     },
     {
       "id": 16,
@@ -169,7 +249,12 @@
       "scenario": "childcare",
       "priority": 4,
       "exampleFr": "Tu vas laisser quoi sur place pour elle, par exemple ses vêtements ou ses jouets préférés ?",
-      "exampleZh": "你会留下什么，比如她喜欢的衣服或玩具？"
+      "exampleZh": "你会给她留下哪些东西？比如衣服或她最喜欢的玩具。",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 14
+      }
     },
     {
       "id": 17,
@@ -178,7 +263,12 @@
       "scenario": "childcare",
       "priority": 4,
       "exampleFr": "Tu vas laisser quoi sur place pour elle, par exemple ses vêtements ou ses jouets préférés ?",
-      "exampleZh": "你会留下什么，比如她喜欢的衣服或玩具？"
+      "exampleZh": "你会给她留下哪些东西？比如衣服或她最喜欢的玩具。",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 14
+      }
     },
     {
       "id": 18,
@@ -187,7 +277,12 @@
       "scenario": "childcare",
       "priority": 5,
       "exampleFr": "Puis-je l’emmener au parc ou faire une promenade avec lui ?",
-      "exampleZh": "我可以带他去公园或散步吗？"
+      "exampleZh": "我可以带他去公园或出去散步吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 14
+      }
     },
     {
       "id": 19,
@@ -196,7 +291,12 @@
       "scenario": "childcare",
       "priority": 5,
       "exampleFr": "Puis-je l’emmener au parc ou faire une promenade avec lui ?",
-      "exampleZh": "我可以带他去公园或散步吗？"
+      "exampleZh": "我可以带他去公园或出去散步吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 14
+      }
     },
     {
       "id": 20,
@@ -205,7 +305,12 @@
       "scenario": "childcare",
       "priority": 5,
       "exampleFr": "À quoi est-ce qu’elle aime jouer ?",
-      "exampleZh": "她喜欢玩什么？"
+      "exampleZh": "她喜欢玩什么？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 8
+      }
     },
     {
       "id": 21,
@@ -214,25 +319,42 @@
       "scenario": "childcare",
       "priority": 5,
       "exampleFr": "Comment décririez-vous son caractère ?",
-      "exampleZh": "您会怎么形容他的性格？"
+      "exampleZh": "您会怎么形容他的性格？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 8
+      }
     },
     {
       "id": 22,
-      "fr": "être calme",
-      "zh": "性格安静",
+      "fr": "se calmer",
+      "zh": "平静下来",
       "scenario": "childcare",
       "priority": 4,
-      "exampleFr": "Comment décririez-vous son caractère ?",
-      "exampleZh": "您会怎么形容他的性格？"
+      "exampleFr": "Qu’est-ce qui l’aide à se calmer quand elle est contrariée ?",
+      "exampleZh": "她不高兴时，什么能让她平静下来？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 11
+      },
+      "learningKey": "family-final15-v2-22"
     },
     {
       "id": 23,
-      "fr": "être sociable",
-      "zh": "合群",
+      "fr": "avoir du mal à se séparer de quelqu’un",
+      "zh": "与某人分开时感到困难",
       "scenario": "childcare",
       "priority": 4,
-      "exampleFr": "Comment est-elle avec les autres quand tu n’es pas là ?",
-      "exampleZh": "你不在时她和别人相处怎么样？"
+      "exampleFr": "Est-ce qu’elle a du mal à se séparer de toi ?",
+      "exampleZh": "她和你分开时会不适应吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 10
+      },
+      "learningKey": "family-final15-v2-23"
     },
     {
       "id": 24,
@@ -241,7 +363,12 @@
       "scenario": "health",
       "priority": 5,
       "exampleFr": "Est-ce qu’il y a un problème de santé ou un traitement dont je dois être au courant ?",
-      "exampleZh": "有没有我需要知道的健康问题或治疗？"
+      "exampleZh": "他有需要我了解的健康问题或正在接受的治疗吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 10
+      }
     },
     {
       "id": 25,
@@ -250,7 +377,12 @@
       "scenario": "health",
       "priority": 5,
       "exampleFr": "Est-ce qu’il y a un problème de santé ou un traitement dont je dois être au courant ?",
-      "exampleZh": "有没有我需要知道的健康问题或治疗？"
+      "exampleZh": "他有需要我了解的健康问题或正在接受的治疗吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 10
+      }
     },
     {
       "id": 26,
@@ -259,7 +391,12 @@
       "scenario": "health",
       "priority": 5,
       "exampleFr": "Dois-je lui donner des médicaments pendant votre absence ?",
-      "exampleZh": "您不在时我需要给他吃药吗？"
+      "exampleZh": "您不在时，我需要给它喂药吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 11
+      }
     },
     {
       "id": 27,
@@ -268,7 +405,12 @@
       "scenario": "health",
       "priority": 5,
       "exampleFr": "Dois-je lui donner des médicaments pendant votre absence ?",
-      "exampleZh": "您不在时我需要给他吃药吗？"
+      "exampleZh": "您不在时，我需要给它喂药吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 11
+      }
     },
     {
       "id": 28,
@@ -277,7 +419,12 @@
       "scenario": "health",
       "priority": 4,
       "exampleFr": "Il y a un problème de santé ou un médicament dont je dois être au courant ?",
-      "exampleZh": "有没有健康问题或药物是我需要知道的？"
+      "exampleZh": "她有需要我了解的健康问题或正在服用的药物吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 12
+      }
     },
     {
       "id": 29,
@@ -286,7 +433,12 @@
       "scenario": "health",
       "priority": 5,
       "exampleFr": "Qui dois-je contacter en cas d’urgence ?",
-      "exampleZh": "紧急情况我该联系谁？"
+      "exampleZh": "遇到紧急情况时，我应该联系谁？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 11
+      }
     },
     {
       "id": 30,
@@ -295,7 +447,12 @@
       "scenario": "health",
       "priority": 5,
       "exampleFr": "Qui dois-je contacter en cas d’urgence ?",
-      "exampleZh": "紧急情况我该联系谁？"
+      "exampleZh": "遇到紧急情况时，我应该联系谁？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 11
+      }
     },
     {
       "id": 31,
@@ -304,25 +461,42 @@
       "scenario": "health",
       "priority": 5,
       "exampleFr": "Que dois-je faire s’il tombe malade pendant votre absence ?",
-      "exampleZh": "您不在时他生病怎么办？"
+      "exampleZh": "您不在时，如果他生病了，我该怎么办？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 15
+      }
     },
     {
       "id": 32,
-      "fr": "se blesser",
-      "zh": "受伤",
+      "fr": "savoir quoi faire en cas de maladie",
+      "zh": "知道生病时该如何处理",
       "scenario": "health",
       "priority": 5,
-      "exampleFr": "Que dois-je faire s’il tombe malade ou s’il se blesse ?",
-      "exampleZh": "如果它生病或受伤怎么办？"
+      "exampleFr": "Que dois-je faire s’il tombe malade pendant votre absence ?",
+      "exampleZh": "您不在时，如果他生病了，我该怎么办？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 15
+      },
+      "learningKey": "family-final15-v2-32"
     },
     {
       "id": 33,
-      "fr": "une clé de secours",
-      "zh": "备用钥匙",
+      "fr": "les affaires nécessaires",
+      "zh": "所需用品",
       "scenario": "childcare",
       "priority": 4,
-      "exampleFr": "Où puis-je trouver une clé de secours si j’en ai besoin ?",
-      "exampleZh": "如果需要，我在哪里能找到备用钥匙？"
+      "exampleFr": "Où allez-vous laisser les affaires dont j’aurai besoin ?",
+      "exampleZh": "您会把我需要的用品放在哪里？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 12
+      },
+      "learningKey": "family-final15-v2-33"
     },
     {
       "id": 34,
@@ -331,7 +505,12 @@
       "scenario": "pet",
       "priority": 5,
       "exampleFr": "Pour quelles dates dois-je m’occuper de votre animal ?",
-      "exampleZh": "我需要在哪些日期照顾您的宠物？"
+      "exampleZh": "您外出期间，我需要在哪几天照看您的宠物？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 1
+      }
     },
     {
       "id": 35,
@@ -339,8 +518,14 @@
       "zh": "宠物",
       "scenario": "pet",
       "priority": 5,
-      "exampleFr": "J’aimerais que vous vous occupiez de mon animal de compagnie.",
-      "exampleZh": "我希望您照顾我的宠物。"
+      "exampleFr": "De quel animal s’agit-il exactement ?",
+      "exampleZh": "您养的具体是什么宠物？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 2
+      },
+      "learningKey": "family-final15-v2-35"
     },
     {
       "id": 36,
@@ -349,7 +534,12 @@
       "scenario": "pet",
       "priority": 5,
       "exampleFr": "À quelles heures faut-il le nourrir ?",
-      "exampleZh": "几点需要喂它？"
+      "exampleZh": "应该在什么时间喂它？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 4
+      }
     },
     {
       "id": 37,
@@ -358,25 +548,42 @@
       "scenario": "pet",
       "priority": 5,
       "exampleFr": "Combien dois-je lui donner à chaque repas ?",
-      "exampleZh": "每顿应该给它多少？"
+      "exampleZh": "每顿应该喂它多少？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 6
+      }
     },
     {
       "id": 38,
-      "fr": "promener un animal",
-      "zh": "遛宠物",
+      "fr": "sortir chaque jour",
+      "zh": "每天外出",
       "scenario": "pet",
       "priority": 5,
-      "exampleFr": "À quelle fréquence faut-il le promener dans la journée ?",
-      "exampleZh": "一天要遛几次？"
+      "exampleFr": "Est-ce qu’il a besoin de sortir ou de faire de l’exercice chaque jour ?",
+      "exampleZh": "它每天需要外出或运动吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 7
+      },
+      "learningKey": "family-final15-v2-38"
     },
     {
       "id": 39,
-      "fr": "une promenade quotidienne",
-      "zh": "每日散步",
+      "fr": "faire de l’exercice chaque jour",
+      "zh": "每天运动",
       "scenario": "pet",
       "priority": 4,
-      "exampleFr": "À quelle fréquence faut-il le promener dans la journée ?",
-      "exampleZh": "一天要遛几次？"
+      "exampleFr": "Est-ce qu’il a besoin de sortir ou de faire de l’exercice chaque jour ?",
+      "exampleZh": "它每天需要外出或运动吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 7
+      },
+      "learningKey": "family-final15-v2-39"
     },
     {
       "id": 40,
@@ -385,7 +592,12 @@
       "scenario": "pet",
       "priority": 5,
       "exampleFr": "À quel vétérinaire dois-je m’adresser en cas de problème ?",
-      "exampleZh": "有问题时我该联系哪个兽医？"
+      "exampleZh": "如果出现问题，我应该联系哪位兽医？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 13
+      }
     },
     {
       "id": 41,
@@ -394,25 +606,42 @@
       "scenario": "pet",
       "priority": 4,
       "exampleFr": "À quel vétérinaire dois-je m’adresser en cas de problème ?",
-      "exampleZh": "有问题时我该联系哪个兽医？"
+      "exampleZh": "如果出现问题，我应该联系哪位兽医？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 13
+      }
     },
     {
       "id": 42,
-      "fr": "un lieu à éviter",
-      "zh": "需要避开的地方",
+      "fr": "un endroit interdit à l’animal",
+      "zh": "不允许宠物进入的地方",
       "scenario": "pet",
       "priority": 4,
-      "exampleFr": "Quels endroits dois-je éviter avec lui ?",
-      "exampleZh": "有哪些地方我不应该带它去？"
+      "exampleFr": "Y a-t-il des endroits de la maison auxquels il ne doit pas avoir accès ?",
+      "exampleZh": "家里有没有不该让宠物进入的地方？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 12
+      },
+      "learningKey": "family-final15-v2-42"
     },
     {
       "id": 43,
-      "fr": "une règle de sortie",
-      "zh": "外出规则",
+      "fr": "avoir accès à une pièce",
+      "zh": "可以进入某个房间",
       "scenario": "pet",
       "priority": 4,
-      "exampleFr": "Quels endroits dois-je éviter avec lui ?",
-      "exampleZh": "有哪些外出限制？"
+      "exampleFr": "Y a-t-il des endroits de la maison auxquels il ne doit pas avoir accès ?",
+      "exampleZh": "家里有没有不该让宠物进入的地方？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 12
+      },
+      "learningKey": "family-final15-v2-43"
     },
     {
       "id": 44,
@@ -421,7 +650,12 @@
       "scenario": "health",
       "priority": 5,
       "exampleFr": "Quel est le meilleur moyen de vous joindre rapidement pendant vos vacances ?",
-      "exampleZh": "度假期间怎么能最快联系到您？"
+      "exampleZh": "您度假期间，怎样能最快联系到您？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 14
+      }
     },
     {
       "id": 45,
@@ -430,7 +664,12 @@
       "scenario": "after_school",
       "priority": 5,
       "exampleFr": "Qu’est-ce qui est proposé comme activités après l’école dans le quartier ?",
-      "exampleZh": "社区里有哪些课后活动？"
+      "exampleZh": "附近有哪些课后活动？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 1
+      }
     },
     {
       "id": 46,
@@ -439,7 +678,12 @@
       "scenario": "after_school",
       "priority": 5,
       "exampleFr": "Qu’est-ce qui est proposé comme activités après l’école dans le quartier ?",
-      "exampleZh": "社区里有哪些课后活动？"
+      "exampleZh": "附近有哪些课后活动？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 1
+      }
     },
     {
       "id": 47,
@@ -448,7 +692,12 @@
       "scenario": "after_school",
       "priority": 5,
       "exampleFr": "Pour quelles tranches d’âge ces activités sont-elles prévues ?",
-      "exampleZh": "这些活动适合哪些年龄段？"
+      "exampleZh": "这些活动面向哪些年龄段的孩子？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 6
+      }
     },
     {
       "id": 48,
@@ -457,7 +706,12 @@
       "scenario": "after_school",
       "priority": 5,
       "exampleFr": "Quelle est la taille des groupes en général ?",
-      "exampleZh": "每组通常有多少孩子？"
+      "exampleZh": "每个小组通常有多少孩子？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 7
+      }
     },
     {
       "id": 49,
@@ -465,26 +719,44 @@
       "zh": "活动指导员",
       "scenario": "after_school",
       "priority": 5,
-      "exampleFr": "Qui encadre les activités ? Les animateurs sont-ils qualifiés ?",
-      "exampleZh": "谁负责活动？指导员有资质吗？"
+      "exampleFr": "Est-ce que les animateurs ont l’habitude de travailler avec des enfants ?",
+      "exampleZh": "活动指导人员有照顾孩子的经验吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 8
+      },
+      "learningKey": "family-final15-v2-49"
     },
     {
       "id": 50,
-      "fr": "être qualifié(e)",
-      "zh": "有资质",
+      "fr": "avoir l’habitude de travailler avec des enfants",
+      "zh": "有与孩子相处的经验",
       "scenario": "after_school",
       "priority": 4,
-      "exampleFr": "Les animateurs sont-ils qualifiés ?",
-      "exampleZh": "指导员有资质吗？"
+      "exampleFr": "Est-ce que les animateurs ont l’habitude de travailler avec des enfants ?",
+      "exampleZh": "活动指导人员有照顾孩子的经验吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 8
+      },
+      "learningKey": "family-final15-v2-50"
     },
     {
       "id": 51,
-      "fr": "encadrer une activité",
-      "zh": "监管 / 带领活动",
+      "fr": "travailler avec des enfants",
+      "zh": "与孩子一起工作",
       "scenario": "after_school",
       "priority": 5,
-      "exampleFr": "Qui encadre les activités ?",
-      "exampleZh": "谁负责带领活动？"
+      "exampleFr": "Est-ce que les animateurs ont l’habitude de travailler avec des enfants ?",
+      "exampleZh": "活动指导人员有照顾孩子的经验吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 8
+      },
+      "learningKey": "family-final15-v2-51"
     },
     {
       "id": 52,
@@ -493,7 +765,12 @@
       "scenario": "after_school",
       "priority": 5,
       "exampleFr": "Comment la sécurité des enfants est-elle assurée ?",
-      "exampleZh": "如何保障孩子安全？"
+      "exampleZh": "活动中如何保障孩子们的安全？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 9
+      }
     },
     {
       "id": 53,
@@ -502,7 +779,12 @@
       "scenario": "after_school",
       "priority": 4,
       "exampleFr": "Doit-on apporter du matériel ou prévoir une tenue particulière ?",
-      "exampleZh": "需要自带材料或准备特别服装吗？"
+      "exampleZh": "需要自备材料或穿着特定服装吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 10
+      }
     },
     {
       "id": 54,
@@ -511,7 +793,12 @@
       "scenario": "after_school",
       "priority": 4,
       "exampleFr": "Doit-on apporter du matériel ou prévoir une tenue particulière ?",
-      "exampleZh": "需要准备特别服装吗？"
+      "exampleZh": "需要自备材料或穿着特定服装吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 10
+      }
     },
     {
       "id": 55,
@@ -520,7 +807,12 @@
       "scenario": "after_school",
       "priority": 5,
       "exampleFr": "Comment se passe l’inscription de mon enfant ?",
-      "exampleZh": "我的孩子怎么报名？"
+      "exampleZh": "孩子的报名流程是怎样的？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 11
+      }
     },
     {
       "id": 56,
@@ -529,7 +821,12 @@
       "scenario": "after_school",
       "priority": 5,
       "exampleFr": "Qu’est-ce qu’il faut fournir comme documents ?",
-      "exampleZh": "需要提供哪些文件？"
+      "exampleZh": "需要提交哪些文件？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 12
+      }
     },
     {
       "id": 57,
@@ -538,7 +835,12 @@
       "scenario": "after_school",
       "priority": 5,
       "exampleFr": "Quel est le tarif de l’activité ?",
-      "exampleZh": "活动费用是多少？"
+      "exampleZh": "这项活动的费用是多少？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 13
+      }
     },
     {
       "id": 58,
@@ -546,17 +848,29 @@
       "zh": "折扣",
       "scenario": "after_school",
       "priority": 4,
-      "exampleFr": "Proposez-vous une réduction si on inscrit plusieurs enfants ou à plusieurs activités ?",
-      "exampleZh": "多个孩子或多个活动有折扣吗？"
+      "exampleFr": "Est-ce qu’il existe des tarifs réduits pour les familles ?",
+      "exampleZh": "是否有面向家庭的优惠价格？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 14
+      },
+      "learningKey": "family-final15-v2-58"
     },
     {
       "id": 59,
-      "fr": "les retours des parents",
-      "zh": "家长反馈",
+      "fr": "avoir déjà participé à une activité",
+      "zh": "以前参加过某项活动",
       "scenario": "after_school",
       "priority": 4,
-      "exampleFr": "Quels retours avez-vous généralement des parents ?",
-      "exampleZh": "家长通常有什么反馈？"
+      "exampleFr": "Est-ce que vos enfants ont déjà participé à l’une de ces activités ?",
+      "exampleZh": "您的孩子以前参加过其中某项活动吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 15
+      },
+      "learningKey": "family-final15-v2-59"
     },
     {
       "id": 60,
@@ -565,7 +879,12 @@
       "scenario": "after_school",
       "priority": 5,
       "exampleFr": "Laquelle me conseilleriez-vous pour mon enfant ?",
-      "exampleZh": "您会推荐我的孩子参加哪项活动？"
+      "exampleZh": "您会推荐哪项活动给我的孩子？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 2
+      }
     },
     {
       "id": 61,
@@ -574,16 +893,27 @@
       "scenario": "after_school",
       "priority": 5,
       "exampleFr": "Quels sont les jours et les horaires des activités ?",
-      "exampleZh": "活动通常哪几天、几点？"
+      "exampleZh": "活动安排在星期几、什么时间？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 3
+      }
     },
     {
       "id": 62,
-      "fr": "la fréquence",
-      "zh": "频率",
+      "fr": "seulement certains jours",
+      "zh": "只在特定日期",
       "scenario": "after_school",
       "priority": 4,
-      "exampleFr": "À quelle fréquence les enfants y participent-ils chaque semaine ?",
-      "exampleZh": "孩子每周参加几次？"
+      "exampleFr": "Est-ce qu’il y a des activités chaque jour ou seulement certains jours ?",
+      "exampleZh": "活动是每天都有，还是只在特定日期举行？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 4
+      },
+      "learningKey": "family-final15-v2-62"
     },
     {
       "id": 63,
@@ -592,7 +922,12 @@
       "scenario": "after_school",
       "priority": 4,
       "exampleFr": "Où se déroulent les activités ?",
-      "exampleZh": "活动在哪里进行？"
+      "exampleZh": "活动在哪里举行？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 5
+      }
     },
     {
       "id": 64,
@@ -600,8 +935,14 @@
       "zh": "不在场 / 离开",
       "scenario": "childcare",
       "priority": 4,
-      "exampleFr": "Je pars pour le week-end et je vous demande de garder ma fille.",
-      "exampleZh": "我周末离开，请你照看女儿。"
+      "exampleFr": "Tu pars quels jours exactement ce week-end ?",
+      "exampleZh": "这个周末你具体哪几天不在？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 1
+      },
+      "learningKey": "family-final15-v2-64"
     },
     {
       "id": 65,
@@ -609,8 +950,14 @@
       "zh": "周末",
       "scenario": "childcare",
       "priority": 4,
-      "exampleFr": "Tu seras absente quels jours exactement ce week-end ?",
-      "exampleZh": "这个周末你具体哪几天不在？"
+      "exampleFr": "Tu pars quels jours exactement ce week-end ?",
+      "exampleZh": "这个周末你具体哪几天不在？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 1
+      },
+      "learningKey": "family-final15-v2-65"
     },
     {
       "id": 66,
@@ -619,7 +966,12 @@
       "scenario": "childcare",
       "priority": 4,
       "exampleFr": "Tu pars à quelle heure, et tu rentres vers quelle heure ?",
-      "exampleZh": "你几点走，大概几点回来？"
+      "exampleZh": "你几点出发？大约几点回来？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 2
+      }
     },
     {
       "id": 67,
@@ -628,7 +980,12 @@
       "scenario": "routine",
       "priority": 4,
       "exampleFr": "Elle mange généralement à quelles heures ?",
-      "exampleZh": "她通常几点吃饭？"
+      "exampleZh": "她通常几点吃饭？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 3
+      }
     },
     {
       "id": 68,
@@ -637,7 +994,12 @@
       "scenario": "routine",
       "priority": 5,
       "exampleFr": "À quelle heure fait-elle habituellement la sieste ?",
-      "exampleZh": "她通常几点午睡？"
+      "exampleZh": "她通常几点午睡？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 6
+      }
     },
     {
       "id": 69,
@@ -646,7 +1008,12 @@
       "scenario": "routine",
       "priority": 4,
       "exampleFr": "À quelle heure se couche-t-elle le soir ?",
-      "exampleZh": "她晚上几点睡？"
+      "exampleZh": "她晚上几点睡觉？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 7
+      }
     },
     {
       "id": 70,
@@ -655,7 +1022,12 @@
       "scenario": "health",
       "priority": 5,
       "exampleFr": "Elle a des allergies ou des aliments à éviter ?",
-      "exampleZh": "她有过敏或需要避免的食物吗？"
+      "exampleZh": "她有过敏症或需要避免的食物吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 5
+      }
     },
     {
       "id": 71,
@@ -663,17 +1035,29 @@
       "zh": "疾病",
       "scenario": "health",
       "priority": 4,
-      "exampleFr": "Que dois-je faire s’il tombe malade ?",
-      "exampleZh": "如果他生病怎么办？"
+      "exampleFr": "Que dois-je faire s’il tombe malade pendant votre absence ?",
+      "exampleZh": "您不在时，如果他生病了，我该怎么办？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 15
+      },
+      "learningKey": "family-final15-v2-71"
     },
     {
       "id": 72,
-      "fr": "un accident",
-      "zh": "意外",
+      "fr": "un problème à signaler",
+      "zh": "需要报告的问题",
       "scenario": "health",
       "priority": 4,
       "exampleFr": "Qui dois-je contacter en priorité en cas de problème ?",
-      "exampleZh": "出现问题时我应该先联系谁？"
+      "exampleZh": "如果遇到问题，我应该优先联系谁？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 13
+      },
+      "learningKey": "family-final15-v2-72"
     },
     {
       "id": 73,
@@ -682,7 +1066,12 @@
       "scenario": "childcare",
       "priority": 4,
       "exampleFr": "Quelles habitudes particulières dois-je respecter ?",
-      "exampleZh": "我需要遵守哪些特别注意事项？"
+      "exampleZh": "我需要注意并遵循他有哪些特别习惯？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 9
+      }
     },
     {
       "id": 74,
@@ -691,16 +1080,27 @@
       "scenario": "health",
       "priority": 3,
       "exampleFr": "Qui dois-je contacter en priorité en cas de problème ?",
-      "exampleZh": "出现问题时我应该优先联系谁？"
+      "exampleZh": "如果遇到问题，我应该优先联系谁？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 13
+      }
     },
     {
       "id": 75,
-      "fr": "un enfant de trois ans",
-      "zh": "三岁孩子",
+      "fr": "avoir besoin d’aller aux toilettes",
+      "zh": "需要上厕所",
       "scenario": "childcare",
       "priority": 4,
-      "exampleFr": "Je vous demande de garder ma fille de 3 ans.",
-      "exampleZh": "我请你照看我三岁的女儿。"
+      "exampleFr": "Est-ce qu’elle sait me dire quand elle a besoin d’aller aux toilettes ?",
+      "exampleZh": "她需要上厕所时会告诉我吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 15
+      },
+      "learningKey": "family-final15-v2-75"
     },
     {
       "id": 76,
@@ -709,7 +1109,12 @@
       "scenario": "routine",
       "priority": 4,
       "exampleFr": "Qu’est-ce qu’elle aime manger en général ?",
-      "exampleZh": "她一般喜欢吃什么？"
+      "exampleZh": "她平时喜欢吃什么？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 4
+      }
     },
     {
       "id": 77,
@@ -718,16 +1123,27 @@
       "scenario": "routine",
       "priority": 4,
       "exampleFr": "Quels horaires dois-je prévoir chaque jour ?",
-      "exampleZh": "每天要安排什么时间？"
+      "exampleZh": "每天需要安排什么时间？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 2
+      }
     },
     {
       "id": 78,
-      "fr": "une activité calme",
-      "zh": "安静的活动",
+      "fr": "une activité appréciée",
+      "zh": "喜欢的活动",
       "scenario": "childcare",
       "priority": 3,
       "exampleFr": "Qu’est-ce qu’il aime faire comme activités ?",
-      "exampleZh": "他喜欢做什么活动？"
+      "exampleZh": "他喜欢做哪些活动？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 7
+      },
+      "learningKey": "family-final15-v2-78"
     },
     {
       "id": 79,
@@ -736,16 +1152,27 @@
       "scenario": "childcare",
       "priority": 4,
       "exampleFr": "Puis-je l’emmener au parc ou faire une promenade avec lui ?",
-      "exampleZh": "我可以带他去公园或散步吗？"
+      "exampleZh": "我可以带他去公园或出去散步吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 14
+      }
     },
     {
       "id": 80,
-      "fr": "un parent d’élève",
-      "zh": "学生家长",
+      "fr": "les enfants d’un autre parent",
+      "zh": "其他家长的孩子",
       "scenario": "after_school",
       "priority": 4,
-      "exampleFr": "Je suis parent d’élève.",
-      "exampleZh": "我是学生家长。"
+      "exampleFr": "Est-ce que vos enfants ont déjà participé à l’une de ces activités ?",
+      "exampleZh": "您的孩子以前参加过其中某项活动吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 15
+      },
+      "learningKey": "family-final15-v2-80"
     },
     {
       "id": 81,
@@ -754,7 +1181,12 @@
       "scenario": "after_school",
       "priority": 4,
       "exampleFr": "Qu’est-ce qui est proposé comme activités après l’école dans le quartier ?",
-      "exampleZh": "社区里有哪些课后活动？"
+      "exampleZh": "附近有哪些课后活动？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 1
+      }
     },
     {
       "id": 82,
@@ -763,7 +1195,12 @@
       "scenario": "after_school",
       "priority": 4,
       "exampleFr": "Qu’est-ce qu’il faut fournir comme documents ?",
-      "exampleZh": "报名需要提供哪些文件？"
+      "exampleZh": "需要提交哪些文件？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 12
+      }
     },
     {
       "id": 83,
@@ -772,25 +1209,42 @@
       "scenario": "childcare",
       "priority": 4,
       "exampleFr": "Tu pars à quelle heure, et tu rentres vers quelle heure ?",
-      "exampleZh": "你几点走，大概几点回来？"
+      "exampleZh": "你几点出发？大约几点回来？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 2
+      }
     },
     {
       "id": 84,
-      "fr": "la quantité à donner",
-      "zh": "每次要给的量",
+      "fr": "à chaque repas",
+      "zh": "每顿饭",
       "scenario": "pet",
       "priority": 4,
       "exampleFr": "Combien dois-je lui donner à chaque repas ?",
-      "exampleZh": "每顿应该给它多少？"
+      "exampleZh": "每顿应该喂它多少？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 6
+      },
+      "learningKey": "family-final15-v2-84"
     },
     {
       "id": 85,
-      "fr": "un repas adapté",
-      "zh": "合适的一餐",
+      "fr": "aimer manger quelque chose",
+      "zh": "喜欢吃某种食物",
       "scenario": "routine",
       "priority": 4,
       "exampleFr": "Qu’est-ce qu’elle aime manger en général ?",
-      "exampleZh": "她一般喜欢吃什么？"
+      "exampleZh": "她平时喜欢吃什么？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 4
+      },
+      "learningKey": "family-final15-v2-85"
     },
     {
       "id": 86,
@@ -799,34 +1253,57 @@
       "scenario": "childcare",
       "priority": 4,
       "exampleFr": "À quoi est-ce qu’elle aime jouer ?",
-      "exampleZh": "她喜欢玩什么游戏？"
+      "exampleZh": "她喜欢玩什么？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 8
+      }
     },
     {
       "id": 87,
-      "fr": "un endroit sûr",
-      "zh": "安全的地方",
+      "fr": "une petite promenade",
+      "zh": "短时间散步",
       "scenario": "childcare",
       "priority": 4,
-      "exampleFr": "Puis-je l’emmener au parc ou faire une petite promenade avec elle ?",
-      "exampleZh": "我可以带她去公园或散步吗？"
+      "exampleFr": "Je peux l’emmener au parc ou faire une petite promenade avec elle ?",
+      "exampleZh": "我可以带她去公园或出去散一会儿步吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 9
+      },
+      "learningKey": "family-final15-v2-87"
     },
     {
       "id": 88,
-      "fr": "un numéro d’urgence",
-      "zh": "紧急联系电话",
+      "fr": "contacter quelqu’un en priorité",
+      "zh": "优先联系某人",
       "scenario": "health",
       "priority": 5,
       "exampleFr": "Qui dois-je contacter en priorité en cas de problème ?",
-      "exampleZh": "出现问题时我应该先联系谁？"
+      "exampleZh": "如果遇到问题，我应该优先联系谁？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 13
+      },
+      "learningKey": "family-final15-v2-88"
     },
     {
       "id": 89,
-      "fr": "une personne de confiance",
-      "zh": "可信赖的联系人",
+      "fr": "en cas de problème",
+      "zh": "遇到问题时",
       "scenario": "health",
       "priority": 4,
       "exampleFr": "Qui dois-je contacter en priorité en cas de problème ?",
-      "exampleZh": "出现问题时我应该先联系谁？"
+      "exampleZh": "如果遇到问题，我应该优先联系谁？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 13
+      },
+      "learningKey": "family-final15-v2-89"
     },
     {
       "id": 90,
@@ -835,41 +1312,291 @@
       "scenario": "after_school",
       "priority": 5,
       "exampleFr": "Pour quelles tranches d’âge ces activités sont-elles prévues ?",
-      "exampleZh": "这些活动适合哪些年龄段？"
+      "exampleZh": "这些活动面向哪些年龄段的孩子？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 6
+      }
+    },
+    {
+      "id": 91,
+      "fr": "être contrarié(e)",
+      "zh": "不高兴／心烦",
+      "scenario": "childcare",
+      "priority": 5,
+      "exampleFr": "Qu’est-ce qui l’aide à se calmer quand elle est contrariée ?",
+      "exampleZh": "她不高兴时，什么能让她平静下来？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 11
+      },
+      "learningKey": "family-final15-v2-91"
+    },
+    {
+      "id": 92,
+      "fr": "se séparer de quelqu’un",
+      "zh": "与某人分开",
+      "scenario": "childcare",
+      "priority": 5,
+      "exampleFr": "Est-ce qu’elle a du mal à se séparer de toi ?",
+      "exampleZh": "她和你分开时会不适应吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 10
+      },
+      "learningKey": "family-final15-v2-92"
+    },
+    {
+      "id": 93,
+      "fr": "laisser les affaires sur place",
+      "zh": "把用品留在照看地点",
+      "scenario": "childcare",
+      "priority": 4,
+      "exampleFr": "Tu vas laisser quoi sur place pour elle, par exemple ses vêtements ou ses jouets préférés ?",
+      "exampleZh": "你会给她留下哪些东西？比如衣服或她最喜欢的玩具。",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 14
+      },
+      "learningKey": "family-final15-v2-93"
+    },
+    {
+      "id": 94,
+      "fr": "aider un enfant à faire sa toilette",
+      "zh": "帮助孩子洗漱",
+      "scenario": "routine",
+      "priority": 5,
+      "exampleFr": "Est-ce que je dois l’aider à faire sa toilette ?",
+      "exampleZh": "我需要帮孩子洗漱吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 13
+      },
+      "learningKey": "family-final15-v2-94"
+    },
+    {
+      "id": 95,
+      "fr": "des aliments préférés",
+      "zh": "喜欢吃的食物",
+      "scenario": "routine",
+      "priority": 4,
+      "exampleFr": "Y a-t-il des plats qu’il aime particulièrement ?",
+      "exampleZh": "有没有他特别喜欢吃的菜？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 4
+      },
+      "learningKey": "family-final15-v2-95"
+    },
+    {
+      "id": 96,
+      "fr": "connaître peu une personne",
+      "zh": "不太熟悉某人",
+      "scenario": "pet",
+      "priority": 4,
+      "exampleFr": "Comment est-il avec les personnes qu’il connaît peu ?",
+      "exampleZh": "它和不太熟悉的人相处得怎么样？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 9
+      },
+      "learningKey": "family-final15-v2-96"
+    },
+    {
+      "id": 97,
+      "fr": "avoir tendance à",
+      "zh": "有……的倾向",
+      "scenario": "pet",
+      "priority": 5,
+      "exampleFr": "Est-ce qu’il a tendance à s’enfuir ou à se cacher ?",
+      "exampleZh": "它有没有逃跑或躲起来的习惯？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 15
+      },
+      "learningKey": "family-final15-v2-97"
+    },
+    {
+      "id": 98,
+      "fr": "s’enfuir",
+      "zh": "逃跑",
+      "scenario": "pet",
+      "priority": 5,
+      "exampleFr": "Est-ce qu’il a tendance à s’enfuir ou à se cacher ?",
+      "exampleZh": "它有没有逃跑或躲起来的习惯？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 15
+      },
+      "learningKey": "family-final15-v2-98"
+    },
+    {
+      "id": 99,
+      "fr": "se cacher",
+      "zh": "躲藏",
+      "scenario": "pet",
+      "priority": 5,
+      "exampleFr": "Est-ce qu’il a tendance à s’enfuir ou à se cacher ?",
+      "exampleZh": "它有没有逃跑或躲起来的习惯？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 15
+      },
+      "learningKey": "family-final15-v2-99"
+    },
+    {
+      "id": 100,
+      "fr": "pendant les vacances",
+      "zh": "度假期间",
+      "scenario": "pet",
+      "priority": 4,
+      "exampleFr": "Quel est le meilleur moyen de vous joindre rapidement pendant vos vacances ?",
+      "exampleZh": "您度假期间，怎样能最快联系到您？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 14
+      },
+      "learningKey": "family-final15-v2-100"
+    },
+    {
+      "id": 101,
+      "fr": "des allergies ou des problèmes de santé",
+      "zh": "过敏或健康问题",
+      "scenario": "health",
+      "priority": 5,
+      "exampleFr": "A-t-il des allergies ou des problèmes de santé ?",
+      "exampleZh": "它有过敏症或健康问题吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 10
+      },
+      "learningKey": "family-final15-v2-101"
+    },
+    {
+      "id": 102,
+      "fr": "être prévu pour une tranche d’âge",
+      "zh": "面向某个年龄段",
+      "scenario": "after_school",
+      "priority": 4,
+      "exampleFr": "Pour quelles tranches d’âge ces activités sont-elles prévues ?",
+      "exampleZh": "这些活动面向哪些年龄段的孩子？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 6
+      },
+      "learningKey": "family-final15-v2-102"
+    },
+    {
+      "id": 103,
+      "fr": "des tarifs réduits pour les familles",
+      "zh": "家庭优惠价",
+      "scenario": "after_school",
+      "priority": 5,
+      "exampleFr": "Est-ce qu’il existe des tarifs réduits pour les familles ?",
+      "exampleZh": "是否有面向家庭的优惠价格？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 14
+      },
+      "learningKey": "family-final15-v2-103"
+    },
+    {
+      "id": 104,
+      "fr": "prévoir une tenue particulière",
+      "zh": "准备特定服装",
+      "scenario": "after_school",
+      "priority": 4,
+      "exampleFr": "Doit-on apporter du matériel ou prévoir une tenue particulière ?",
+      "exampleZh": "需要自备材料或穿着特定服装吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 10
+      },
+      "learningKey": "family-final15-v2-104"
+    },
+    {
+      "id": 105,
+      "fr": "chaque jour ou certains jours",
+      "zh": "每天或特定日期",
+      "scenario": "after_school",
+      "priority": 4,
+      "exampleFr": "Est-ce qu’il y a des activités chaque jour ou seulement certains jours ?",
+      "exampleZh": "活动是每天都有，还是只在特定日期举行？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 4
+      },
+      "learningKey": "family-final15-v2-105"
     }
   ],
   "patterns": [
     {
       "id": 1,
-      "pattern": "Pour quelles dates dois-je garder / m’occuper de + personne/animal ?",
-      "zh": "需要照看到哪些日期？",
+      "pattern": "Pour quelles dates dois-je + infinitif + complément ?",
+      "zh": "需要我在哪些日期……？",
       "exampleFr": "Pour quelles dates dois-je garder votre enfant ?",
-      "exampleZh": "我需要在哪些日期照看您的孩子？",
-      "scenario": "childcare"
+      "exampleZh": "您需要我在哪几天照看孩子？",
+      "scenario": "childcare",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 1
+      }
     },
     {
       "id": 2,
       "pattern": "Quels horaires dois-je prévoir chaque jour ?",
       "zh": "每天需要安排哪些时间？",
       "exampleFr": "Quels horaires dois-je prévoir chaque jour ?",
-      "exampleZh": "每天需要安排哪些时间？",
-      "scenario": "childcare"
+      "exampleZh": "每天需要安排什么时间？",
+      "scenario": "childcare",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 2
+      }
     },
     {
       "id": 3,
       "pattern": "Qu’est-ce qu’il/elle mange habituellement ?",
       "zh": "他/她通常吃什么？",
       "exampleFr": "Qu’est-ce qu’il mange habituellement ?",
-      "exampleZh": "他通常吃什么？",
-      "scenario": "routine"
+      "exampleZh": "它平时吃什么？",
+      "scenario": "pet",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 5
+      }
     },
     {
       "id": 4,
-      "pattern": "A-t-il / elle des allergies ou des aliments à éviter ?",
-      "zh": "有过敏或忌口吗？",
+      "pattern": "A-t-il / A-t-elle + nom ?",
+      "zh": "他／她有……吗？",
       "exampleFr": "A-t-il des allergies alimentaires ou des aliments à éviter ?",
-      "exampleZh": "他有食物过敏或忌口吗？",
-      "scenario": "health"
+      "exampleZh": "他有食物过敏吗？有没有需要避免的食物？",
+      "scenario": "health",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 5
+      }
     },
     {
       "id": 5,
@@ -877,23 +1604,38 @@
       "zh": "几点午睡？",
       "exampleFr": "À quelle heure fait-elle habituellement la sieste ?",
       "exampleZh": "她通常几点午睡？",
-      "scenario": "routine"
+      "scenario": "routine",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 6
+      }
     },
     {
       "id": 6,
-      "pattern": "À quelle heure se couche-t-il/elle ?",
-      "zh": "几点睡觉？",
+      "pattern": "À quelle heure se couche-t-il / se couche-t-elle ?",
+      "zh": "他／她几点睡觉？",
       "exampleFr": "À quelle heure se couche-t-elle le soir ?",
-      "exampleZh": "她晚上几点睡？",
-      "scenario": "routine"
+      "exampleZh": "她晚上几点睡觉？",
+      "scenario": "routine",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 7
+      }
     },
     {
       "id": 7,
       "pattern": "Qu’est-ce qu’il/elle aime faire comme activités ?",
       "zh": "喜欢做什么活动？",
       "exampleFr": "Qu’est-ce qu’il aime faire comme activités ?",
-      "exampleZh": "他喜欢做什么活动？",
-      "scenario": "childcare"
+      "exampleZh": "他喜欢做哪些活动？",
+      "scenario": "childcare",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 7
+      }
     },
     {
       "id": 8,
@@ -901,175 +1643,545 @@
       "zh": "您会怎么形容他的性格？",
       "exampleFr": "Comment décririez-vous son caractère ?",
       "exampleZh": "您会怎么形容他的性格？",
-      "scenario": "childcare"
+      "scenario": "childcare",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 8
+      }
     },
     {
       "id": 9,
       "pattern": "Quelles habitudes particulières dois-je respecter ?",
       "zh": "需要注意哪些特殊习惯？",
       "exampleFr": "Quelles habitudes particulières dois-je respecter ?",
-      "exampleZh": "我需要注意哪些特殊习惯？",
-      "scenario": "routine"
+      "exampleZh": "我需要注意并遵循他有哪些特别习惯？",
+      "scenario": "routine",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 9
+      }
     },
     {
       "id": 10,
       "pattern": "Y a-t-il un problème de santé dont je dois être au courant ?",
       "zh": "有需要知道的健康问题吗？",
       "exampleFr": "Est-ce qu’il y a un problème de santé ou un traitement dont je dois être au courant ?",
-      "exampleZh": "有没有我需要知道的健康问题？",
-      "scenario": "health"
+      "exampleZh": "他有需要我了解的健康问题或正在接受的治疗吗？",
+      "scenario": "health",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 10
+      }
     },
     {
       "id": 11,
       "pattern": "Qui dois-je contacter en cas d’urgence ?",
       "zh": "紧急情况联系谁？",
       "exampleFr": "Qui dois-je contacter en cas d’urgence ?",
-      "exampleZh": "紧急情况我该联系谁？",
-      "scenario": "health"
+      "exampleZh": "遇到紧急情况时，我应该联系谁？",
+      "scenario": "health",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 11
+      }
     },
     {
       "id": 12,
       "pattern": "Puis-je l’emmener au parc ?",
       "zh": "我可以带他去公园吗？",
       "exampleFr": "Puis-je l’emmener au parc ou faire une promenade avec lui ?",
-      "exampleZh": "我可以带他去公园或散步吗？",
-      "scenario": "childcare"
+      "exampleZh": "我可以带他去公园或出去散步吗？",
+      "scenario": "childcare",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 14
+      }
     },
     {
       "id": 13,
       "pattern": "Que dois-je faire s’il/elle tombe malade ?",
       "zh": "生病怎么办？",
       "exampleFr": "Que dois-je faire s’il tombe malade pendant votre absence ?",
-      "exampleZh": "您不在时他生病怎么办？",
-      "scenario": "health"
+      "exampleZh": "您不在时，如果他生病了，我该怎么办？",
+      "scenario": "health",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 15
+      }
     },
     {
       "id": 14,
       "pattern": "De quel animal s’agit-il ?",
       "zh": "是什么宠物？",
       "exampleFr": "De quel animal s’agit-il exactement ?",
-      "exampleZh": "具体是什么动物？",
-      "scenario": "pet"
+      "exampleZh": "您养的具体是什么宠物？",
+      "scenario": "pet",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 2
+      }
     },
     {
       "id": 15,
       "pattern": "À quelles heures faut-il le nourrir ?",
       "zh": "几点喂？",
       "exampleFr": "À quelles heures faut-il le nourrir ?",
-      "exampleZh": "几点需要喂它？",
-      "scenario": "pet"
+      "exampleZh": "应该在什么时间喂它？",
+      "scenario": "pet",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 4
+      }
     },
     {
       "id": 16,
       "pattern": "Combien dois-je lui donner à chaque repas ?",
       "zh": "每顿给多少？",
       "exampleFr": "Combien dois-je lui donner à chaque repas ?",
-      "exampleZh": "每顿应该给它多少？",
-      "scenario": "pet"
+      "exampleZh": "每顿应该喂它多少？",
+      "scenario": "pet",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 6
+      }
     },
     {
       "id": 17,
-      "pattern": "À quelle fréquence faut-il le promener ?",
-      "zh": "多久遛一次？",
-      "exampleFr": "À quelle fréquence faut-il le promener dans la journée ?",
-      "exampleZh": "一天要遛几次？",
-      "scenario": "pet"
+      "pattern": "Est-ce qu’il a besoin de + infinitif + chaque jour ?",
+      "zh": "它每天需要……吗？",
+      "exampleFr": "Est-ce qu’il a besoin de sortir ou de faire de l’exercice chaque jour ?",
+      "exampleZh": "它每天需要外出或运动吗？",
+      "scenario": "pet",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 7
+      },
+      "learningKey": "family-final15-v2-17"
     },
     {
       "id": 18,
       "pattern": "À quel vétérinaire dois-je m’adresser ?",
       "zh": "有问题联系哪个兽医？",
       "exampleFr": "À quel vétérinaire dois-je m’adresser en cas de problème ?",
-      "exampleZh": "有问题时我该联系哪个兽医？",
-      "scenario": "pet"
+      "exampleZh": "如果出现问题，我应该联系哪位兽医？",
+      "scenario": "pet",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 13
+      }
     },
     {
       "id": 19,
       "pattern": "Quel est le meilleur moyen de vous joindre rapidement ?",
       "zh": "怎么最快联系您？",
       "exampleFr": "Quel est le meilleur moyen de vous joindre rapidement pendant vos vacances ?",
-      "exampleZh": "度假期间怎么能最快联系到您？",
-      "scenario": "health"
+      "exampleZh": "您度假期间，怎样能最快联系到您？",
+      "scenario": "health",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 14
+      }
     },
     {
       "id": 20,
       "pattern": "Qu’est-ce qui est proposé comme activités après l’école ?",
       "zh": "有哪些课后活动？",
       "exampleFr": "Qu’est-ce qui est proposé comme activités après l’école dans le quartier ?",
-      "exampleZh": "社区里有哪些课后活动？",
-      "scenario": "after_school"
+      "exampleZh": "附近有哪些课后活动？",
+      "scenario": "after_school",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 1
+      }
     },
     {
       "id": 21,
       "pattern": "Pour quelles tranches d’âge ces activités sont-elles prévues ?",
       "zh": "适合哪些年龄段？",
       "exampleFr": "Pour quelles tranches d’âge ces activités sont-elles prévues ?",
-      "exampleZh": "这些活动适合哪些年龄段？",
-      "scenario": "after_school"
+      "exampleZh": "这些活动面向哪些年龄段的孩子？",
+      "scenario": "after_school",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 6
+      }
     },
     {
       "id": 22,
       "pattern": "Quelle est la taille des groupes ?",
       "zh": "每组多少孩子？",
       "exampleFr": "Quelle est la taille des groupes en général ?",
-      "exampleZh": "每组通常有多少孩子？",
-      "scenario": "after_school"
+      "exampleZh": "每个小组通常有多少孩子？",
+      "scenario": "after_school",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 7
+      }
     },
     {
       "id": 23,
-      "pattern": "Qui encadre les activités ?",
-      "zh": "谁带领活动？",
-      "exampleFr": "Qui encadre les activités ? Les animateurs sont-ils qualifiés ?",
-      "exampleZh": "谁负责活动？",
-      "scenario": "after_school"
+      "pattern": "Est-ce que les animateurs ont l’habitude de + infinitif ?",
+      "zh": "活动指导人员是否有……经验？",
+      "exampleFr": "Est-ce que les animateurs ont l’habitude de travailler avec des enfants ?",
+      "exampleZh": "活动指导人员有照顾孩子的经验吗？",
+      "scenario": "after_school",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 8
+      },
+      "learningKey": "family-final15-v2-23"
     },
     {
       "id": 24,
       "pattern": "Comment la sécurité des enfants est-elle assurée ?",
       "zh": "怎么保障孩子安全？",
       "exampleFr": "Comment la sécurité des enfants est-elle assurée ?",
-      "exampleZh": "怎么保障孩子安全？",
-      "scenario": "after_school"
+      "exampleZh": "活动中如何保障孩子们的安全？",
+      "scenario": "after_school",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 9
+      }
     },
     {
       "id": 25,
       "pattern": "Doit-on apporter du matériel ?",
       "zh": "需要自带材料吗？",
       "exampleFr": "Doit-on apporter du matériel ou prévoir une tenue particulière ?",
-      "exampleZh": "需要自带材料或特别服装吗？",
-      "scenario": "after_school"
+      "exampleZh": "需要自备材料或穿着特定服装吗？",
+      "scenario": "after_school",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 10
+      }
     },
     {
       "id": 26,
       "pattern": "Comment se passe l’inscription de mon enfant ?",
       "zh": "孩子怎么报名？",
       "exampleFr": "Comment se passe l’inscription de mon enfant ?",
-      "exampleZh": "孩子怎么报名？",
-      "scenario": "after_school"
+      "exampleZh": "孩子的报名流程是怎样的？",
+      "scenario": "after_school",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 11
+      }
     },
     {
       "id": 27,
       "pattern": "Quel est le tarif de l’activité ?",
       "zh": "活动多少钱？",
       "exampleFr": "Quel est le tarif de l’activité ?",
-      "exampleZh": "活动费用是多少？",
-      "scenario": "after_school"
+      "exampleZh": "这项活动的费用是多少？",
+      "scenario": "after_school",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 13
+      }
     },
     {
       "id": 28,
-      "pattern": "Proposez-vous une réduction ?",
-      "zh": "有折扣吗？",
-      "exampleFr": "Proposez-vous une réduction si on inscrit plusieurs enfants ou à plusieurs activités ?",
-      "exampleZh": "多个孩子或活动有折扣吗？",
-      "scenario": "after_school"
+      "pattern": "Est-ce qu’il existe des tarifs réduits pour + personnes ?",
+      "zh": "有没有面向……的优惠价？",
+      "exampleFr": "Est-ce qu’il existe des tarifs réduits pour les familles ?",
+      "exampleZh": "是否有面向家庭的优惠价格？",
+      "scenario": "after_school",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 14
+      },
+      "learningKey": "family-final15-v2-28"
     },
     {
       "id": 29,
-      "pattern": "Quels retours avez-vous des parents ?",
-      "zh": "家长反馈如何？",
-      "exampleFr": "Quels retours avez-vous généralement des parents ?",
-      "exampleZh": "家长通常有什么反馈？",
-      "scenario": "after_school"
+      "pattern": "Est-ce que vos enfants ont déjà participé à + activité ?",
+      "zh": "您的孩子以前参加过……吗？",
+      "exampleFr": "Est-ce que vos enfants ont déjà participé à l’une de ces activités ?",
+      "exampleZh": "您的孩子以前参加过其中某项活动吗？",
+      "scenario": "after_school",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 15
+      },
+      "learningKey": "family-final15-v2-29"
+    },
+    {
+      "id": 30,
+      "pattern": "Est-ce qu’elle a du mal à + infinitif ?",
+      "zh": "她……会有困难吗？",
+      "scenario": "childcare",
+      "exampleFr": "Est-ce qu’elle a du mal à se séparer de toi ?",
+      "exampleZh": "她和你分开时会不适应吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 10
+      },
+      "learningKey": "family-final15-v2-30"
+    },
+    {
+      "id": 31,
+      "pattern": "Qu’est-ce qui l’aide à + infinitif + quand + proposition ?",
+      "zh": "她……时，什么能帮助她……？",
+      "scenario": "childcare",
+      "exampleFr": "Qu’est-ce qui l’aide à se calmer quand elle est contrariée ?",
+      "exampleZh": "她不高兴时，什么能让她平静下来？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 11
+      },
+      "learningKey": "family-final15-v2-31"
+    },
+    {
+      "id": 32,
+      "pattern": "Est-ce qu’elle sait me dire quand + proposition ?",
+      "zh": "她能在……时告诉我吗？",
+      "scenario": "routine",
+      "exampleFr": "Est-ce qu’elle sait me dire quand elle a besoin d’aller aux toilettes ?",
+      "exampleZh": "她需要上厕所时会告诉我吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 15
+      },
+      "learningKey": "family-final15-v2-32"
+    },
+    {
+      "id": 33,
+      "pattern": "Est-ce que je dois l’aider à + infinitif ?",
+      "zh": "我需要帮他／她……吗？",
+      "scenario": "routine",
+      "exampleFr": "Est-ce que je dois l’aider à faire sa toilette ?",
+      "exampleZh": "我需要帮孩子洗漱吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 13
+      },
+      "learningKey": "family-final15-v2-33"
+    },
+    {
+      "id": 34,
+      "pattern": "Où allez-vous laisser + nom ?",
+      "zh": "您会把……放在哪里？",
+      "scenario": "childcare",
+      "exampleFr": "Où allez-vous laisser les affaires dont j’aurai besoin ?",
+      "exampleZh": "您会把我需要的用品放在哪里？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 12
+      },
+      "learningKey": "family-final15-v2-34"
+    },
+    {
+      "id": 35,
+      "pattern": "Tu pars à quelle heure, et tu rentres vers quelle heure ?",
+      "zh": "你几点出发，大约几点回来？",
+      "scenario": "childcare",
+      "exampleFr": "Tu pars à quelle heure, et tu rentres vers quelle heure ?",
+      "exampleZh": "你几点出发？大约几点回来？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 2
+      },
+      "learningKey": "family-final15-v2-35"
+    },
+    {
+      "id": 36,
+      "pattern": "Comment est-il avec les personnes qu’il connaît peu ?",
+      "zh": "它和不太熟悉的人相处得怎么样？",
+      "scenario": "pet",
+      "exampleFr": "Comment est-il avec les personnes qu’il connaît peu ?",
+      "exampleZh": "它和不太熟悉的人相处得怎么样？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 9
+      },
+      "learningKey": "family-final15-v2-36"
+    },
+    {
+      "id": 37,
+      "pattern": "Y a-t-il des endroits auxquels il ne doit pas avoir accès ?",
+      "zh": "有没有不该让它进入的地方？",
+      "scenario": "pet",
+      "exampleFr": "Y a-t-il des endroits de la maison auxquels il ne doit pas avoir accès ?",
+      "exampleZh": "家里有没有不该让宠物进入的地方？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 12
+      },
+      "learningKey": "family-final15-v2-37"
+    },
+    {
+      "id": 38,
+      "pattern": "Est-ce qu’il a tendance à + infinitif ?",
+      "zh": "它有没有……的习惯？",
+      "scenario": "pet",
+      "exampleFr": "Est-ce qu’il a tendance à s’enfuir ou à se cacher ?",
+      "exampleZh": "它有没有逃跑或躲起来的习惯？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 15
+      },
+      "learningKey": "family-final15-v2-38"
+    },
+    {
+      "id": 39,
+      "pattern": "Dois-je lui donner + médicament + pendant votre absence ?",
+      "zh": "您不在时，我需要给它喂……吗？",
+      "scenario": "health",
+      "exampleFr": "Dois-je lui donner des médicaments pendant votre absence ?",
+      "exampleZh": "您不在时，我需要给它喂药吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 11
+      },
+      "learningKey": "family-final15-v2-39"
+    },
+    {
+      "id": 40,
+      "pattern": "Qui dois-je contacter en priorité en cas de + nom ?",
+      "zh": "遇到……时我应该优先联系谁？",
+      "scenario": "health",
+      "exampleFr": "Qui dois-je contacter en priorité en cas de problème ?",
+      "exampleZh": "如果遇到问题，我应该优先联系谁？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 13
+      },
+      "learningKey": "family-final15-v2-40"
+    },
+    {
+      "id": 41,
+      "pattern": "Est-ce qu’il y a + activités + chaque jour ou seulement certains jours ?",
+      "zh": "……是每天都有，还是只在特定日期？",
+      "scenario": "after_school",
+      "exampleFr": "Est-ce qu’il y a des activités chaque jour ou seulement certains jours ?",
+      "exampleZh": "活动是每天都有，还是只在特定日期举行？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 4
+      },
+      "learningKey": "family-final15-v2-41"
+    },
+    {
+      "id": 42,
+      "pattern": "Laquelle me conseilleriez-vous pour + personne ?",
+      "zh": "您会给……推荐哪一项？",
+      "scenario": "after_school",
+      "exampleFr": "Laquelle me conseilleriez-vous pour mon enfant ?",
+      "exampleZh": "您会推荐哪项活动给我的孩子？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 2
+      },
+      "learningKey": "family-final15-v2-42"
     }
+  ],
+  "core20": [
+    1,
+    5,
+    7,
+    11,
+    12,
+    13,
+    14,
+    18,
+    21,
+    24,
+    26,
+    28,
+    29,
+    31,
+    34,
+    36,
+    37,
+    40,
+    47,
+    52
+  ],
+  "core50": [
+    1,
+    5,
+    7,
+    11,
+    12,
+    13,
+    14,
+    18,
+    21,
+    24,
+    26,
+    28,
+    29,
+    31,
+    34,
+    36,
+    37,
+    40,
+    47,
+    52,
+    3,
+    8,
+    9,
+    15,
+    16,
+    17,
+    20,
+    22,
+    23,
+    25,
+    27,
+    30,
+    33,
+    35,
+    38,
+    39,
+    42,
+    44,
+    45,
+    48,
+    49,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    60,
+    61,
+    65
   ]
 }
