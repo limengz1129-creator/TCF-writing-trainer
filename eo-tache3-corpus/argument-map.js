@@ -179,13 +179,13 @@
           currentAudio.play().catch(()=>{status.textContent='浏览器阻止自动播放，请再次点击朗读';stop();});
         };
         btn.disabled=false;btn.textContent='■ 停止';btn.onclick=()=>{stop();status.textContent='已停止';};status.textContent='正在朗读 Piper siwis';next();
-      }catch(e){if(currentButton===btn){stop();status.textContent=e.message;}}
+      }catch(e){if(currentButton===btn){stop();status.textContent=e.message;btn.textContent='音频未就绪';btn.title=e.message;btn.setAttribute('aria-label',e.message);btn.classList.add('c1-audio-missing');}}
     }
     function audioLine(fr){
       const line=document.createElement('div');line.className='c1-fr-line';
       const text=document.createElement('span');text.lang='fr';text.textContent=fr;
       const btn=document.createElement('button');btn.type='button';btn.className='argument-word-audio';btn.textContent='🔊';btn.setAttribute('aria-label','Piper 朗读');
-      btn._c1PlayHandler=()=>speak(fr,btn);btn.onclick=btn._c1PlayHandler;
+      btn._c1PlayHandler=()=>{btn.title='';btn.classList.remove('c1-audio-missing');speak(fr,btn);};btn.onclick=btn._c1PlayHandler;
       line.append(text,btn);return line;
     }
     function lines(txt){return String(txt||'').split(/\n/).map(x=>x.trim()).filter(Boolean);}
@@ -231,7 +231,7 @@
     }
   }
   const c1style=document.createElement('style');
-  c1style.textContent='.c1-jump{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.c1-jump button{font-size:13px}.c1-scene-card{margin:15px 0;padding:16px;scroll-margin-top:20px}.c1-scene-card h4{margin:20px 0 7px;color:#304985}.c1-fr-line{display:flex;gap:9px;align-items:flex-start;line-height:1.8;margin:6px 0;white-space:pre-wrap}.c1-fr-line>span{flex:1;min-width:0}.c1-fr-line button{flex:none}.c1-text>.logic-zh{margin:2px 0 12px}.c1-vocab-row{margin:5px 0}.c1-vocab-row.logic-zh{color:#68758a;font-size:.9em}';document.head.append(c1style);
+  c1style.textContent='.c1-audio-missing{font-size:.76rem;white-space:nowrap;color:#a44343}.c1-jump{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.c1-jump button{font-size:13px}.c1-scene-card{margin:15px 0;padding:16px;scroll-margin-top:20px}.c1-scene-card h4{margin:20px 0 7px;color:#304985}.c1-fr-line{display:flex;gap:9px;align-items:flex-start;line-height:1.8;margin:6px 0;white-space:pre-wrap}.c1-fr-line>span{flex:1;min-width:0}.c1-fr-line button{flex:none}.c1-text>.logic-zh{margin:2px 0 12px}.c1-vocab-row{margin:5px 0}.c1-vocab-row.logic-zh{color:#68758a;font-size:.9em}';document.head.append(c1style);
 
   function renderMother(stage,D,id,mode='map'){
     const d=D.M[id];if(!d)return;stage.replaceChildren();
