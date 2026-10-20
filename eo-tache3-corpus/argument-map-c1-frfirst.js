@@ -204,28 +204,26 @@
       const area=document.createElement('div');area.className='c1-text c1-chain';
       const ls=lines(raw).filter(x=>!/(?:保留原中文节点与顺序|保留已编辑 Word 的原链|仅补齐缺失的对应法语|以下保留已编辑 Word|原链文字与顺序|原链文字|保留已编辑)/.test(x));
       const split=x=>x.split(/\s*(?:→|\/|\+|[,，、])\s*/).map(v=>v.trim()).filter(Boolean);
+      function renderRow(fr,zh){
+        const frParts=split(fr),zhParts=zh?split(zh):[];
+        const row=document.createElement('div');row.className='c1-chain-row';
+        const paired=frParts.length===zhParts.length;
+        for(let j=0;j<frParts.length;j++){
+          if(j){const arrow=document.createElement('span');arrow.className='c1-chain-arrow';arrow.textContent='→';row.append(arrow);}
+          const node=document.createElement('div');node.className='c1-chain-node';
+          node.append(audioLine(frParts[j]));
+          if(paired){const p=document.createElement('div');p.className='logic-zh';p.textContent=zhParts[j];node.append(p);}
+          row.append(node);
+        }
+        if(!paired&&zh){const p=document.createElement('div');p.className='logic-zh c1-chain-translation';p.textContent=zh;row.append(p);}
+        area.append(row);
+      }
       for(let i=0;i<ls.length;){
         const zh=/[\u3400-\u9fff]/.test(ls[i])?ls[i++]:null;
         let fr='';
-        while(i<ls.length&&!/[\u3400-\u9fff]/.test(ls[i])){
-          fr+=(fr?' ':'')+ls[i++];
-        }
-        if(!fr){
-          if(zh){const p=document.createElement('p');p.className='logic-zh';p.textContent=zh;area.append(p);}
-          continue;
-        }
-        const frParts=split(fr),zhParts=zh?split(zh):[];
-        // Pair individual nodes only when their counts correspond; otherwise keep
-        // original French-first line and original Chinese translation intact.
-        if(zhParts.length===frParts.length&&frParts.length>1){
-          for(let j=0;j<frParts.length;j++){
-            area.append(audioLine(frParts[j]));
-            const p=document.createElement('p');p.className='logic-zh';p.textContent=zhParts[j];area.append(p);
-          }
-        }else{
-          for(const part of frParts)area.append(audioLine(part));
-          if(zh){const p=document.createElement('p');p.className='logic-zh';p.textContent=zh;area.append(p);}
-        }
+        while(i<ls.length&&!/[\u3400-\u9fff]/.test(ls[i]))fr+=(fr?' ':'')+ls[i++];
+        if(fr)renderRow(fr,zh);
+        else if(zh){const p=document.createElement('p');p.className='logic-zh';p.textContent=zh;area.append(p);}
       }
       section.append(area);
     }
@@ -264,7 +262,7 @@
     }
   }
   const c1style=document.createElement('style');
-  c1style.textContent='.c1-audio-missing{font-size:.76rem;white-space:nowrap;color:#a44343}.c1-jump{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.c1-jump button{font-size:13px}.c1-scene-card{margin:15px 0;padding:16px;scroll-margin-top:20px}.c1-scene-card h4{margin:20px 0 7px;color:#304985}.c1-fr-line{display:flex;gap:9px;align-items:flex-start;line-height:1.8;margin:6px 0;white-space:pre-wrap}.c1-fr-line>span{flex:1;min-width:0}.c1-fr-line button{flex:none}.c1-text>.logic-zh{margin:2px 0 12px}.c1-vocab-row{margin:5px 0}.c1-vocab-row.logic-zh{color:#68758a;font-size:.9em}';document.head.append(c1style);
+  c1style.textContent='.c1-chain-row{display:flex;align-items:flex-start;gap:9px;flex-wrap:wrap;margin:12px 0 20px}.c1-chain-node{display:flex;flex-direction:column;min-width:0;max-width:100%}.c1-chain-node .c1-fr-line{margin:0;gap:4px;align-items:center}.c1-chain-node .c1-fr-line button{padding:4px 6px;font-size:.8rem}.c1-chain-node .logic-zh{margin:4px 0 0!important;font-size:.88em}.c1-chain-arrow{align-self:flex-start;padding-top:6px;font-weight:bold;color:#72809b}.c1-chain-translation{flex-basis:100%;margin:0}.c1-audio-missing{font-size:.76rem;white-space:nowrap;color:#a44343}.c1-jump{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.c1-jump button{font-size:13px}.c1-scene-card{margin:15px 0;padding:16px;scroll-margin-top:20px}.c1-scene-card h4{margin:20px 0 7px;color:#304985}.c1-fr-line{display:flex;gap:9px;align-items:flex-start;line-height:1.8;margin:6px 0;white-space:pre-wrap}.c1-fr-line>span{flex:1;min-width:0}.c1-fr-line button{flex:none}.c1-text>.logic-zh{margin:2px 0 12px}.c1-vocab-row{margin:5px 0}.c1-vocab-row.logic-zh{color:#68758a;font-size:.9em}';document.head.append(c1style);
 
   function renderMother(stage,D,id,mode='map'){
     const d=D.M[id];if(!d)return;stage.replaceChildren();
