@@ -51,7 +51,12 @@ def targets():
     required=("recherche d’emploi au Canada","entretien","comprendre les consignes","collaboration")
     missing=set(required)-set(ret)
     assert not missing, f"Missing split example audio targets: {sorted(missing)}"
-    return list(dict.fromkeys(ret))
+    unique=list(dict.fromkeys(ret))
+    # 72 scenes have >1,000 distinct French playback targets after node splitting.
+    # Never accept the old whole-chain-only manifest as a complete deployment.
+    assert len(unique)>=1200, f"Too few C1 targets after splitting: {len(unique)}"
+    print(f"C1 French playback target audit: 72 scenes / {len(unique)} unique utterances",flush=True)
+    return unique
 def verify():
     expected=targets()
     manifest_file=OUT/"manifest.json"
