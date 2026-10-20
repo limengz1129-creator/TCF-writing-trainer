@@ -156,7 +156,7 @@
       if(currentUrl){URL.revokeObjectURL(currentUrl);currentUrl=null;}
       if(currentButton){currentButton.textContent='🔊';currentButton.disabled=false;currentButton.onclick=currentButton._c1PlayHandler;currentButton=null;}
     }
-    const loadManifest=()=>manifestPromise||(manifestPromise=fetch(new URL(audioFolder+'manifest.json',document.baseURI),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('C1 Piper 音频尚未部署');return r.json();}).catch(e=>{manifestPromise=null;throw e;}));
+    const loadManifest=()=>manifestPromise||(manifestPromise=fetch(new URL(audioFolder+'manifest.json?v=c1-tech-audio-980',document.baseURI),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('C1 Piper 音频尚未部署');return r.json();}).catch(e=>{manifestPromise=null;throw e;}));
     async function speak(fr,btn){
       stop();currentButton=btn;btn.textContent='加载中';btn.disabled=true;status.textContent='正在加载 C1 Piper siwis 音频……';
       try{
