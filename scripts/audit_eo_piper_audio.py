@@ -57,7 +57,7 @@ for topic in DIRS:
             except (KeyError, TypeError, ValueError, base64.binascii.Error):
                 errors.append(f"{topic}/{pack_name}#{clip_id}: invalid base64 audio")
                 continue
-            if len(raw) < 100 or not (raw.startswith(b"ID3") or raw[:2] in (b"\\xff\\xfb", b"\\xff\\xf3", b"\\xff\\xf2")):
+            if len(raw) < 100 or not (raw.startswith(b"ID3") or raw[:2] in (bytes.fromhex("fffb"), bytes.fromhex("fff3"), bytes.fromhex("fff2"))):
                 errors.append(f"{topic}/{pack_name}#{clip_id}: invalid/empty MP3 header")
                 continue
             totals["clips"] += 1
