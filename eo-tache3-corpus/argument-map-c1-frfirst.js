@@ -229,6 +229,13 @@
       }
       section.append(area);
     }
+    function coreBlock(section,raw){
+      const parts=String(raw||'').split(/例子关键词\s*[｜|]\s*Exemple-clé/);
+      bilingual(section,parts[0]);
+      if(parts.length<2)return;
+      const heading=document.createElement('div');heading.className='label';heading.textContent='例子关键词 | Exemple-clé';section.append(heading);
+      chainBlock(section,parts.slice(1).join(' '));
+    }
     function vocab(section,raw){
       const area=document.createElement('div');area.className='c1-vocab';
       const ls=lines(raw).filter(x=>!/^类型\s+法语表达/.test(x));
@@ -251,7 +258,7 @@
       const meta=document.createElement('p');meta.className='note';meta.textContent='原论段：'+r.source+' ｜ 原题：'+r.question;card.append(meta);
       [['① 核心论点与例子关键词',r.core,'bi'],['② 精简词块',r.vocab,'vocab'],['③ 中法逻辑链',r.chain,'bi'],['④ 完整法语论段与逐句中文',r.text,'bi']].forEach(([label,content,type])=>{
         const heading=document.createElement('h4');heading.textContent=label;card.append(heading);
-        type==='vocab'?vocab(card,content):label.startsWith('③')?chainBlock(card,content):bilingual(card,content);
+        type==='vocab'?vocab(card,content):label.startsWith('③')?chainBlock(card,content):label.startsWith('①')?coreBlock(card,content):bilingual(card,content);
       });
       body.append(card);
     }
