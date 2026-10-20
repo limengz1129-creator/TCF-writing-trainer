@@ -1,0 +1,16 @@
+name: Audit EO Piper audio
+on:
+  push:
+    paths:
+      - 'scripts/audit_eo_piper_audio.py'
+      - '.github/workflows/audit-eo-piper-audio.yml'
+      - 'eo-tache3-corpus/**-audio/**'
+  workflow_dispatch:
+jobs:
+  integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate every audio pack and indexed clip
+        run: python3 scripts/audit_eo_piper_audio.py
