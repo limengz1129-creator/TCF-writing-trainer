@@ -184,7 +184,17 @@
       const line=document.createElement('div');line.className='c1-fr-line';
       const text=document.createElement('span');text.lang='fr';text.textContent=fr;
       const btn=document.createElement('button');btn.type='button';btn.className='argument-word-audio';btn.textContent='🔊';btn.setAttribute('aria-label','Piper 朗读');
-      btn._c1PlayHandler=()=>{btn.title='';btn.classList.remove('c1-audio-missing');speak(fr,btn);};btn.onclick=btn._c1PlayHandler;
+      btn._c1PlayHandler=()=>{speak(fr,btn);};btn.onclick=btn._c1PlayHandler;
+      // Technology C1 has new text not covered by the earlier technology Piper catalog.
+      // Check exact indexed text first; do not advertise playable audio when it is absent.
+      if(topic==='科技与网络'){
+        btn.disabled=true;btn.textContent='校验音频';btn.title='正在检查 Piper 静态索引';
+        loadManifest().then(index=>{
+          if(!btn.isConnected)return;
+          if(index.entries?.[fr]){btn.disabled=false;btn.textContent='🔊';btn.title='播放 Piper siwis';}
+          else{btn.disabled=true;btn.textContent='待生成音频';btn.title='该 C1 原句尚未生成 Piper 音频';btn.classList.add('c1-audio-missing');}
+        }).catch(()=>{if(btn.isConnected){btn.disabled=true;btn.textContent='音频索引不可用';btn.classList.add('c1-audio-missing');}});
+      }
       line.append(text,btn);return line;
     }
     function lines(txt){return String(txt||'').split(/\n/).map(x=>x.trim()).filter(Boolean);}
