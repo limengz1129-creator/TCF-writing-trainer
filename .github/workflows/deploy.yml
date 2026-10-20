@@ -127,11 +127,12 @@ jobs:
           python3 tools/piper/c1_travel_audio.py verify
           python3 tools/piper/c1_career_audio.py verify
           python3 tools/piper/c1_education_audio.py verify
+          python3 tools/piper/c1_media_audio.py verify
           python3 - <<'PY'
           import json
           from pathlib import Path
           root=Path('eo-tache3-corpus')
-          for name,minimum in (('travel',1200),('career',1100),('education',1100)):
+          for name,minimum in (('travel',1200),('career',1100),('education',1100),('media',650)):
               folder=root/f'c1-{name}-audio'
               manifest=json.loads((folder/'manifest.json').read_text(encoding='utf-8'))
               entries=manifest['entries']
