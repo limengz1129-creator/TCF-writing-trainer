@@ -1,0 +1,46 @@
+name: Build C1 Travel Piper Audio
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'eo-tache3-corpus/c1-travel-data.js'
+      - 'tools/piper/c1_travel_audio.py'
+      - '.github/workflows/c1-travel-piper.yml'
+permissions:
+  contents: write
+concurrency:
+  group: c1-travel-piper
+  cancel-in-progress: false
+jobs:
+  synthesize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install offline speech engine
+        run: |
+          python -m pip install 'piper-tts==1.3.0'
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+      - name: Download official SIWIS medium model and config
+        run: |
+          mkdir -p /tmp/siwis
+          curl --fail --location --retry 3 'https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx' -o /tmp/siwis/fr_FR-siwis-medium.onnx
+          curl --fail --location --retry 3 'https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx.json' -o /tmp/siwis/fr_FR-siwis-medium.onnx.json
+      - name: Generate every C1 French utterance
+        run: python tools/piper/c1_travel_audio.py generate --model /tmp/siwis/fr_FR-siwis-medium.onnx
+      - name: Verify every referenced audio file
+        run: python tools/piper/c1_travel_audio.py verify
+      - name: Publish generated static recordings
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add eo-tache3-corpus/c1-travel-audio/
+          if ! git diff --cached --quiet; then
+            git commit -m "Generate and audit C1 travel siwis recordings"
+            git push
+          fi
