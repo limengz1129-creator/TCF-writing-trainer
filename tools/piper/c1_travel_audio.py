@@ -36,6 +36,10 @@ def targets():
     for r in rows:
         for field in ("core","chain","text"):
             ret.extend(bilingual(r[field]))
+        # Each French logical-chain chunk is a separate Piper playback target.
+        for chain in bilingual(r["chain"]):
+            for chunk in re.split(r"\s*(?:→|/|\+|[,，、])\s*",chain):
+                if chunk.strip():ret.append(chunk.strip())
         ret.extend(vocab(r["vocab"]))
     return list(dict.fromkeys(ret))
 def verify():
