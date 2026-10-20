@@ -2,8 +2,8 @@
   "theme": "consumption",
   "title": "消费餐饮与生活服务",
   "target": "TCF Canada 口语 Tâche 2 · C1",
-  "version": 1,
-  "principle": "约100个高价值词/词块，以最终真题为基础；词块与真实套用问法绑定，优先训练中文→法语主动调用。",
+  "version": 2,
+  "principle": "以当前19题×15问为依据，129个词块与52组问法均标注真题来源；按9个场景训练中文→法语，兼顾商品咨询、餐食安排与过往体验。",
   "scenarios": [
     {
       "id": "furniture",
@@ -36,6 +36,10 @@
     {
       "id": "online",
       "name": "线上二手交易"
+    },
+    {
+      "id": "canadian",
+      "name": "加拿大传统餐食 / 菜单搭配"
     }
   ],
   "vocabulary": [
@@ -46,16 +50,27 @@
       "scenario": "furniture",
       "priority": 5,
       "exampleFr": "Quels meubles vendez-vous exactement ?",
-      "exampleZh": "您具体卖哪些家具？"
+      "exampleZh": "您具体出售哪些家具？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 1
+      }
     },
     {
       "id": 2,
-      "fr": "du mobilier",
-      "zh": "家具用品",
+      "fr": "un meuble à vendre",
+      "zh": "待售家具",
       "scenario": "furniture",
       "priority": 4,
-      "exampleFr": "Je souhaite vendre mon mobilier avant mon départ.",
-      "exampleZh": "我想在离开前卖掉家具。"
+      "exampleFr": "Quels meubles vendez-vous exactement ?",
+      "exampleZh": "您具体出售哪些家具？",
+      "learningKey": "consumption-final15-v2-2",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 1
+      }
     },
     {
       "id": 3,
@@ -64,7 +79,12 @@
       "scenario": "furniture",
       "priority": 5,
       "exampleFr": "Dans quel état sont les meubles ?",
-      "exampleZh": "这些家具整体状况怎么样？"
+      "exampleZh": "这些家具的状况怎么样？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 2
+      }
     },
     {
       "id": 4,
@@ -73,7 +93,12 @@
       "scenario": "furniture",
       "priority": 5,
       "exampleFr": "Les meubles présentent-ils des défauts ou des traces d’usure ?",
-      "exampleZh": "家具有缺陷或使用痕迹吗？"
+      "exampleZh": "家具上有瑕疵或磨损痕迹吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 3
+      }
     },
     {
       "id": 5,
@@ -82,7 +107,12 @@
       "scenario": "furniture",
       "priority": 5,
       "exampleFr": "Les meubles présentent-ils des défauts ou des traces d’usure ?",
-      "exampleZh": "家具有缺陷或使用痕迹吗？"
+      "exampleZh": "家具上有瑕疵或磨损痕迹吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 3
+      }
     },
     {
       "id": 6,
@@ -90,8 +120,14 @@
       "zh": "尺寸",
       "scenario": "furniture",
       "priority": 5,
-      "exampleFr": "Le meuble qui m’intéresse fait quelles dimensions ?",
-      "exampleZh": "我感兴趣的家具尺寸是多少？"
+      "exampleFr": "Quelles sont les dimensions du meuble qui m’intéresse ?",
+      "exampleZh": "我感兴趣的这件家具尺寸是多少？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 4
+      },
+      "learningKey": "consumption-final15-v2-6"
     },
     {
       "id": 7,
@@ -100,7 +136,12 @@
       "scenario": "furniture",
       "priority": 4,
       "exampleFr": "Avez-vous un modèle un peu plus petit ?",
-      "exampleZh": "您有小一点的款式吗？"
+      "exampleZh": "您有稍小一点的款式吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 3,
+        "question": 5
+      }
     },
     {
       "id": 8,
@@ -109,16 +150,27 @@
       "scenario": "furniture",
       "priority": 5,
       "exampleFr": "Puis-je venir voir les meubles sur place avant de me décider ?",
-      "exampleZh": "我决定前可以现场看看家具吗？"
+      "exampleZh": "决定之前，我可以到现场看看这些家具吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 6
+      }
     },
     {
       "id": 9,
-      "fr": "examiner un article",
-      "zh": "查看商品",
+      "fr": "passer voir un meuble",
+      "zh": "过去看家具",
       "scenario": "furniture",
       "priority": 4,
-      "exampleFr": "Quand puis-je venir examiner les meubles sur place ?",
-      "exampleZh": "我什么时候可以来现场查看家具？"
+      "exampleFr": "À quel moment puis-je passer voir les meubles ?",
+      "exampleZh": "我什么时候可以过去看家具？",
+      "learningKey": "consumption-final15-v2-9",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 15
+      }
     },
     {
       "id": 10,
@@ -127,7 +179,12 @@
       "scenario": "furniture",
       "priority": 4,
       "exampleFr": "Puis-je venir voir les meubles sur place avant de me décider ?",
-      "exampleZh": "我决定前可以现场看看家具吗？"
+      "exampleZh": "决定之前，我可以到现场看看这些家具吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 6
+      }
     },
     {
       "id": 11,
@@ -136,7 +193,12 @@
       "scenario": "furniture",
       "priority": 5,
       "exampleFr": "Combien coûte ce meuble ?",
-      "exampleZh": "这件家具多少钱？"
+      "exampleZh": "这件家具多少钱？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 7
+      }
     },
     {
       "id": 12,
@@ -145,7 +207,12 @@
       "scenario": "furniture",
       "priority": 5,
       "exampleFr": "Le prix peut-il être négocié ?",
-      "exampleZh": "价格可以商量吗？"
+      "exampleZh": "价格可以商量吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 3,
+        "question": 8
+      }
     },
     {
       "id": 13,
@@ -154,7 +221,12 @@
       "scenario": "furniture",
       "priority": 5,
       "exampleFr": "Est-ce que vous faites un prix si j’achète plusieurs meubles ?",
-      "exampleZh": "如果我买多件家具，可以优惠吗？"
+      "exampleZh": "如果我买多件家具，价格可以优惠吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 9
+      }
     },
     {
       "id": 14,
@@ -163,7 +235,12 @@
       "scenario": "furniture",
       "priority": 4,
       "exampleFr": "Est-ce que vous faites un prix si j’achète plusieurs meubles ?",
-      "exampleZh": "如果我买多件家具，可以优惠吗？"
+      "exampleZh": "如果我买多件家具，价格可以优惠吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 9
+      }
     },
     {
       "id": 15,
@@ -172,7 +249,12 @@
       "scenario": "furniture",
       "priority": 5,
       "exampleFr": "Proposez-vous la livraison à domicile ?",
-      "exampleZh": "您提供送货上门吗？"
+      "exampleZh": "您提供送货上门服务吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 10
+      }
     },
     {
       "id": 16,
@@ -181,7 +263,12 @@
       "scenario": "furniture",
       "priority": 5,
       "exampleFr": "Les frais de livraison sont-ils compris dans le prix ?",
-      "exampleZh": "运费包含在价格里吗？"
+      "exampleZh": "送货费包含在价格里吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 11
+      }
     },
     {
       "id": 17,
@@ -190,7 +277,12 @@
       "scenario": "furniture",
       "priority": 5,
       "exampleFr": "Les frais de livraison sont-ils compris dans le prix ?",
-      "exampleZh": "运费包含在价格里吗？"
+      "exampleZh": "送货费包含在价格里吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 11
+      }
     },
     {
       "id": 18,
@@ -199,7 +291,12 @@
       "scenario": "furniture",
       "priority": 4,
       "exampleFr": "Le montage ou l’installation sont-ils inclus ?",
-      "exampleZh": "组装或安装包含吗？"
+      "exampleZh": "费用包含组装或安装吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 3,
+        "question": 12
+      }
     },
     {
       "id": 19,
@@ -208,7 +305,12 @@
       "scenario": "furniture",
       "priority": 4,
       "exampleFr": "Le montage ou l’installation sont-ils inclus ?",
-      "exampleZh": "组装或安装包含吗？"
+      "exampleZh": "费用包含组装或安装吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 3,
+        "question": 12
+      }
     },
     {
       "id": 20,
@@ -217,7 +319,12 @@
       "scenario": "furniture",
       "priority": 5,
       "exampleFr": "Pourriez-vous me réserver le meuble pendant quelques jours ?",
-      "exampleZh": "您能帮我把这件家具留几天吗？"
+      "exampleZh": "您能帮我把这件家具留几天吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 14
+      }
     },
     {
       "id": 21,
@@ -226,7 +333,12 @@
       "scenario": "clothing",
       "priority": 5,
       "exampleFr": "Qu’est-ce que vous proposez comme costumes ?",
-      "exampleZh": "您提供哪些服装？"
+      "exampleZh": "您店里有哪些类型的服装？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 3
+      }
     },
     {
       "id": 22,
@@ -235,7 +347,12 @@
       "scenario": "clothing",
       "priority": 5,
       "exampleFr": "Vous avez quelles tailles disponibles ?",
-      "exampleZh": "有哪些尺码？"
+      "exampleZh": "您这边有哪些尺码？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 4
+      }
     },
     {
       "id": 23,
@@ -244,7 +361,12 @@
       "scenario": "clothing",
       "priority": 5,
       "exampleFr": "Puis-je essayer le costume avant de le louer ?",
-      "exampleZh": "租之前可以试穿吗？"
+      "exampleZh": "租之前我可以试穿这套服装吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 5
+      }
     },
     {
       "id": 24,
@@ -253,7 +375,12 @@
       "scenario": "clothing",
       "priority": 5,
       "exampleFr": "Pour combien de temps peut-on louer un costume ?",
-      "exampleZh": "可以租这套服装多久？"
+      "exampleZh": "一套服装可以租多长时间？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 6
+      }
     },
     {
       "id": 25,
@@ -262,7 +389,12 @@
       "scenario": "clothing",
       "priority": 4,
       "exampleFr": "Pour combien de temps peut-on louer un costume ?",
-      "exampleZh": "可以租多久？"
+      "exampleZh": "一套服装可以租多长时间？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 6
+      }
     },
     {
       "id": 26,
@@ -271,7 +403,12 @@
       "scenario": "clothing",
       "priority": 4,
       "exampleFr": "Combien coûte la location par jour ?",
-      "exampleZh": "每天租金是多少？"
+      "exampleZh": "每天的租金是多少？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 7
+      }
     },
     {
       "id": 27,
@@ -280,7 +417,12 @@
       "scenario": "clothing",
       "priority": 5,
       "exampleFr": "Une caution est-elle demandée ?",
-      "exampleZh": "需要交押金吗？"
+      "exampleZh": "需要交押金吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 8
+      }
     },
     {
       "id": 28,
@@ -288,8 +430,14 @@
       "zh": "租赁合同",
       "scenario": "clothing",
       "priority": 5,
-      "exampleFr": "Un contrat de location est-il à signer ?",
-      "exampleZh": "需要签租赁合同吗？"
+      "exampleFr": "Faut-il signer un contrat de location ?",
+      "exampleZh": "需要签租赁合同吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 11
+      },
+      "learningKey": "consumption-final15-v2-28"
     },
     {
       "id": 29,
@@ -298,7 +446,12 @@
       "scenario": "clothing",
       "priority": 4,
       "exampleFr": "Comment se passe le retour du costume ?",
-      "exampleZh": "服装怎么归还？"
+      "exampleZh": "服装要怎么归还？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 12
+      }
     },
     {
       "id": 30,
@@ -307,7 +460,12 @@
       "scenario": "clothing",
       "priority": 4,
       "exampleFr": "Que se passe-t-il si je rends le costume en retard ?",
-      "exampleZh": "如果我逾期归还会怎样？"
+      "exampleZh": "如果我逾期归还服装，会有什么后果？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 13
+      }
     },
     {
       "id": 31,
@@ -316,7 +474,12 @@
       "scenario": "clothing",
       "priority": 5,
       "exampleFr": "Et si le costume est abîmé, quels frais dois-je payer ?",
-      "exampleZh": "如果服装损坏，我要付哪些费用？"
+      "exampleZh": "如果服装损坏，我需要支付哪些费用？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 14
+      }
     },
     {
       "id": 32,
@@ -325,7 +488,12 @@
       "scenario": "clothing",
       "priority": 5,
       "exampleFr": "Et si le costume est abîmé, quels frais dois-je payer ?",
-      "exampleZh": "如果服装损坏，我要付哪些额外费用？"
+      "exampleZh": "如果服装损坏，我需要支付哪些费用？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 14
+      }
     },
     {
       "id": 33,
@@ -334,16 +502,27 @@
       "scenario": "clothing",
       "priority": 5,
       "exampleFr": "Vaut-il mieux réserver le costume à l’avance ?",
-      "exampleZh": "最好提前预订吗？"
+      "exampleZh": "最好提前预订服装吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 15
+      }
     },
     {
       "id": 34,
-      "fr": "des vêtements d’occasion",
-      "zh": "二手衣服",
+      "fr": "des vêtements pour l’hiver ou pour l’été",
+      "zh": "冬装或夏装",
       "scenario": "clothing",
       "priority": 5,
-      "exampleFr": "Je vends un stock de vêtements d’occasion pour enfants.",
-      "exampleZh": "我在卖一批儿童二手衣服。"
+      "exampleFr": "Est-ce que tu vends plutôt des vêtements pour l’hiver ou pour l’été ?",
+      "exampleZh": "你主要卖冬装还是夏装？",
+      "learningKey": "consumption-final15-v2-34",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 3
+      }
     },
     {
       "id": 35,
@@ -352,7 +531,12 @@
       "scenario": "clothing",
       "priority": 4,
       "exampleFr": "Combien de vêtements as-tu encore en stock ?",
-      "exampleZh": "你还有多少衣服有库存？"
+      "exampleZh": "你还剩多少件衣服？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 5
+      }
     },
     {
       "id": 36,
@@ -361,7 +545,12 @@
       "scenario": "clothing",
       "priority": 4,
       "exampleFr": "Certains articles ont-ils des taches ou des défauts ?",
-      "exampleZh": "有些衣服有污渍或瑕疵吗？"
+      "exampleZh": "有些衣服上有污渍或瑕疵吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 7
+      }
     },
     {
       "id": 37,
@@ -370,16 +559,27 @@
       "scenario": "clothing",
       "priority": 5,
       "exampleFr": "Puis-je retourner un vêtement s’il ne convient pas ?",
-      "exampleZh": "如果不合适，我可以退货吗？"
+      "exampleZh": "如果衣服不合适，可以退货吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 13
+      }
     },
     {
       "id": 38,
       "fr": "être remboursé(e)",
       "zh": "退款",
-      "scenario": "clothing",
+      "scenario": "delivery",
       "priority": 5,
-      "exampleFr": "Et s’il y a un problème avec l’article, puis-je être remboursée ?",
-      "exampleZh": "如果商品有问题，可以退款吗？"
+      "exampleFr": "Dans ce cas, puis-je être remboursée ?",
+      "exampleZh": "这种情况下可以退款吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 14
+      },
+      "learningKey": "consumption-final15-v2-38"
     },
     {
       "id": 39,
@@ -387,8 +587,14 @@
       "zh": "礼物",
       "scenario": "gift",
       "priority": 5,
-      "exampleFr": "Quel cadeau lui offrir ?",
-      "exampleZh": "该送她什么礼物？"
+      "exampleFr": "Combien te semblerait raisonnable pour son cadeau ?",
+      "exampleZh": "你觉得给她买礼物花多少钱比较合适？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 13
+      },
+      "learningKey": "consumption-final15-v2-39"
     },
     {
       "id": 40,
@@ -397,7 +603,12 @@
       "scenario": "gift",
       "priority": 5,
       "exampleFr": "Qu’est-ce qu’elle aime en général ?",
-      "exampleZh": "她一般喜欢什么？"
+      "exampleZh": "她平时喜欢什么？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 2
+      }
     },
     {
       "id": 41,
@@ -406,25 +617,42 @@
       "scenario": "gift",
       "priority": 5,
       "exampleFr": "Comment décrirais-tu sa personnalité ?",
-      "exampleZh": "你会怎么形容她的性格？"
+      "exampleZh": "你会怎么形容她的性格？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 9
+      }
     },
     {
       "id": 42,
-      "fr": "une activité sportive",
-      "zh": "体育活动",
+      "fr": "une passion",
+      "zh": "爱好／热爱的事情",
       "scenario": "gift",
       "priority": 4,
-      "exampleFr": "Elle fait de la randonnée ou d’autres activités sportives ?",
-      "exampleZh": "她徒步或做其他运动吗？"
+      "exampleFr": "Est-ce qu’elle a une passion en particulier ?",
+      "exampleZh": "她有什么特别热爱的事情吗？",
+      "learningKey": "consumption-final15-v2-42",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 4
+      }
     },
     {
       "id": 43,
-      "fr": "la randonnée",
-      "zh": "徒步",
+      "fr": "une expérience à offrir",
+      "zh": "作为礼物的体验活动",
       "scenario": "gift",
       "priority": 4,
-      "exampleFr": "Elle fait de la randonnée ou d’autres activités sportives ?",
-      "exampleZh": "她会徒步吗？"
+      "exampleFr": "Est-ce qu’elle aime les expériences, comme les concerts ou les ateliers ?",
+      "exampleZh": "她喜欢演唱会或体验课程一类的活动吗？",
+      "learningKey": "consumption-final15-v2-43",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 6
+      }
     },
     {
       "id": 44,
@@ -432,17 +660,29 @@
       "zh": "让某人开心",
       "scenario": "gift",
       "priority": 5,
-      "exampleFr": "Tu crois qu’une robe lui ferait plaisir ?",
-      "exampleZh": "你觉得一条裙子会让她开心吗？"
+      "exampleFr": "Est-ce qu’elle a parlé récemment d’un cadeau qui lui ferait plaisir ?",
+      "exampleZh": "她最近有没有提过想收到什么礼物？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 7
+      },
+      "learningKey": "consumption-final15-v2-44"
     },
     {
       "id": 45,
-      "fr": "convenir à quelqu’un",
-      "zh": "适合某人",
+      "fr": "conseiller une idée de cadeau",
+      "zh": "推荐一个礼物想法",
       "scenario": "gift",
       "priority": 5,
-      "exampleFr": "Et une paire de chaussures de randonnée, ça lui conviendrait ?",
-      "exampleZh": "一双徒步鞋适合她吗？"
+      "exampleFr": "Parmi ces idées, laquelle me conseillerais-tu le plus ?",
+      "exampleZh": "这些想法里，你最推荐哪一个？",
+      "learningKey": "consumption-final15-v2-45",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 14
+      }
     },
     {
       "id": 46,
@@ -451,7 +691,12 @@
       "scenario": "gift",
       "priority": 4,
       "exampleFr": "Elle préfère plutôt quelque chose de pratique ou de plus élégant ?",
-      "exampleZh": "她更喜欢实用的还是优雅的东西？"
+      "exampleZh": "她更喜欢实用款，还是更优雅的款式？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 11
+      }
     },
     {
       "id": 47,
@@ -460,7 +705,12 @@
       "scenario": "gift",
       "priority": 4,
       "exampleFr": "Elle préfère plutôt quelque chose de pratique ou de plus élégant ?",
-      "exampleZh": "她更喜欢实用的还是优雅的东西？"
+      "exampleZh": "她更喜欢实用款，还是更优雅的款式？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 11
+      }
     },
     {
       "id": 48,
@@ -469,7 +719,12 @@
       "scenario": "gift",
       "priority": 4,
       "exampleFr": "Y a-t-il quelque chose qu’elle possède déjà et que je devrais éviter d’acheter ?",
-      "exampleZh": "她已经有的东西里，有什么我最好别再买吗？"
+      "exampleZh": "有什么东西是她已经有了、我最好别再买的吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 12
+      }
     },
     {
       "id": 49,
@@ -478,7 +733,12 @@
       "scenario": "gift",
       "priority": 5,
       "exampleFr": "Combien te semblerait raisonnable pour son cadeau ?",
-      "exampleZh": "你觉得礼物多少预算合理？"
+      "exampleZh": "你觉得给她买礼物花多少钱比较合适？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 13
+      }
     },
     {
       "id": 50,
@@ -487,7 +747,12 @@
       "scenario": "gift",
       "priority": 4,
       "exampleFr": "Tu penses qu’il vaut mieux ajouter une carte ou faire un emballage spécial ?",
-      "exampleZh": "你觉得加卡片还是做特别包装更好？"
+      "exampleZh": "你觉得最好附上一张卡片，还是做特别包装？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 15
+      }
     },
     {
       "id": 51,
@@ -496,7 +761,12 @@
       "scenario": "gift",
       "priority": 3,
       "exampleFr": "Tu penses qu’il vaut mieux ajouter une carte ou faire un emballage spécial ?",
-      "exampleZh": "你觉得加卡片还是做特别包装更好？"
+      "exampleZh": "你觉得最好附上一张卡片，还是做特别包装？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 15
+      }
     },
     {
       "id": 52,
@@ -505,7 +775,12 @@
       "scenario": "restaurant",
       "priority": 5,
       "exampleFr": "Où se trouve exactement ce nouveau restaurant ?",
-      "exampleZh": "这家新餐厅具体在哪里？"
+      "exampleZh": "这家新餐厅具体在哪里？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 1
+      }
     },
     {
       "id": 53,
@@ -514,7 +789,12 @@
       "scenario": "restaurant",
       "priority": 5,
       "exampleFr": "Qu’est-ce que le restaurant propose comme cuisine ?",
-      "exampleZh": "这家餐厅是什么菜系？"
+      "exampleZh": "这家餐厅主打什么菜系？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 3
+      }
     },
     {
       "id": 54,
@@ -523,16 +803,27 @@
       "scenario": "restaurant",
       "priority": 5,
       "exampleFr": "Qu’est-ce que tu me recommanderais comme plat ?",
-      "exampleZh": "你会推荐我吃什么菜？"
+      "exampleZh": "你会给我推荐什么菜？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 4
+      }
     },
     {
       "id": 55,
-      "fr": "un plat signature",
-      "zh": "招牌菜",
+      "fr": "une spécialité",
+      "zh": "特色菜",
       "scenario": "restaurant",
       "priority": 4,
-      "exampleFr": "Qu’est-ce que tu me recommanderais comme plat ?",
-      "exampleZh": "你会推荐我吃什么招牌菜？"
+      "exampleFr": "Quelle spécialité est la plus connue ?",
+      "exampleZh": "这里最有名的特色菜是什么？",
+      "source": {
+        "month": "2026-07",
+        "number": 3,
+        "question": 6
+      },
+      "learningKey": "consumption-final15-v2-55"
     },
     {
       "id": 56,
@@ -541,7 +832,12 @@
       "scenario": "restaurant",
       "priority": 4,
       "exampleFr": "Tu peux me décrire ce plat un peu plus en détail ?",
-      "exampleZh": "你能更详细描述一下这道菜吗？"
+      "exampleZh": "你能再详细介绍一下这道菜吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 5
+      }
     },
     {
       "id": 57,
@@ -550,7 +846,12 @@
       "scenario": "vegetarian",
       "priority": 5,
       "exampleFr": "Comme je suis végétarienne, est-ce qu’on trouve des plats végétariens ?",
-      "exampleZh": "因为我是素食者，有素食菜吗？"
+      "exampleZh": "我是素食者，这里有素食菜肴吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 6
+      }
     },
     {
       "id": 58,
@@ -559,7 +860,12 @@
       "scenario": "vegetarian",
       "priority": 5,
       "exampleFr": "Comme je suis végétarienne, est-ce qu’on trouve des plats végétariens ?",
-      "exampleZh": "因为我是素食者，有素食菜吗？"
+      "exampleZh": "我是素食者，这里有素食菜肴吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 6
+      }
     },
     {
       "id": 59,
@@ -568,7 +874,12 @@
       "scenario": "restaurant",
       "priority": 5,
       "exampleFr": "Comment était l’ambiance ?",
-      "exampleZh": "氛围怎么样？"
+      "exampleZh": "那里的氛围怎么样？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 8
+      }
     },
     {
       "id": 60,
@@ -577,7 +888,12 @@
       "scenario": "restaurant",
       "priority": 5,
       "exampleFr": "Et le service, tu l’as trouvé comment ?",
-      "exampleZh": "你觉得服务怎么样？"
+      "exampleZh": "你觉得他们的服务怎么样？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 9
+      }
     },
     {
       "id": 61,
@@ -586,7 +902,12 @@
       "scenario": "restaurant",
       "priority": 5,
       "exampleFr": "Combien faut-il prévoir par personne ?",
-      "exampleZh": "每个人大概要预算多少？"
+      "exampleZh": "每人需要准备多少钱？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 10
+      }
     },
     {
       "id": 62,
@@ -595,7 +916,12 @@
       "scenario": "restaurant",
       "priority": 5,
       "exampleFr": "Comment se passe la réservation d’une table ?",
-      "exampleZh": "怎么订桌？"
+      "exampleZh": "餐桌要怎么预订？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 12
+      }
     },
     {
       "id": 63,
@@ -604,16 +930,27 @@
       "scenario": "restaurant",
       "priority": 4,
       "exampleFr": "À quelles heures le restaurant est-il ouvert ?",
-      "exampleZh": "餐厅几点营业？"
+      "exampleZh": "餐厅的营业时间是什么？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 13
+      }
     },
     {
       "id": 64,
-      "fr": "recommander un restaurant",
-      "zh": "推荐餐厅",
+      "fr": "recommander un type de restaurant",
+      "zh": "推荐某类餐厅",
       "scenario": "restaurant",
       "priority": 4,
-      "exampleFr": "Tu me conseillerais vraiment ce restaurant ?",
-      "exampleZh": "你真的会推荐这家餐厅吗？"
+      "exampleFr": "Pour mon anniversaire, quel genre de restaurant me recommanderiez-vous ?",
+      "exampleZh": "我想过生日，您会推荐什么类型的餐厅？",
+      "learningKey": "consumption-final15-v2-64",
+      "source": {
+        "month": "2026-07",
+        "number": 3,
+        "question": 1
+      }
     },
     {
       "id": 65,
@@ -622,16 +959,27 @@
       "scenario": "restaurant",
       "priority": 5,
       "exampleFr": "Qu’est-ce que vous proposez comme menus pour un anniversaire ?",
-      "exampleZh": "生日聚餐有哪些菜单？"
+      "exampleZh": "您为生日聚会提供哪些套餐？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 5
+      }
     },
     {
       "id": 66,
-      "fr": "la disponibilité",
-      "zh": "可订情况",
+      "fr": "une table disponible",
+      "zh": "可预订的餐桌",
       "scenario": "restaurant",
       "priority": 5,
-      "exampleFr": "Avez-vous encore de la disponibilité pour la date de l’anniversaire ?",
-      "exampleZh": "生日当天还有位置吗？"
+      "exampleFr": "Avez-vous encore des tables disponibles à la date de l’anniversaire ?",
+      "exampleZh": "生日当天您还有空桌吗？",
+      "learningKey": "consumption-final15-v2-66",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 3
+      }
     },
     {
       "id": 67,
@@ -640,7 +988,12 @@
       "scenario": "restaurant",
       "priority": 4,
       "exampleFr": "Jusqu’à combien de personnes pouvez-vous accueillir pour ce repas ?",
-      "exampleZh": "这顿饭最多能接待多少人？"
+      "exampleZh": "这顿饭最多可以接待多少人？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 4
+      }
     },
     {
       "id": 68,
@@ -649,7 +1002,12 @@
       "scenario": "restaurant",
       "priority": 4,
       "exampleFr": "Proposez-vous un tarif de groupe ?",
-      "exampleZh": "有团体价吗？"
+      "exampleZh": "您提供团体优惠价吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 11
+      }
     },
     {
       "id": 69,
@@ -658,7 +1016,12 @@
       "scenario": "restaurant",
       "priority": 5,
       "exampleFr": "Puis-je annuler ou modifier la réservation en cas de problème ?",
-      "exampleZh": "有问题时可以取消或修改预订吗？"
+      "exampleZh": "如果临时有事，我可以取消或更改预订吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 14
+      }
     },
     {
       "id": 70,
@@ -667,7 +1030,12 @@
       "scenario": "restaurant",
       "priority": 5,
       "exampleFr": "Puis-je annuler ou modifier la réservation en cas de problème ?",
-      "exampleZh": "有问题时可以修改预订吗？"
+      "exampleZh": "如果临时有事，我可以取消或更改预订吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 14
+      }
     },
     {
       "id": 71,
@@ -676,7 +1044,12 @@
       "scenario": "chef",
       "priority": 5,
       "exampleFr": "Les allergies ou restrictions alimentaires peuvent-elles être prises en compte ?",
-      "exampleZh": "过敏或饮食限制可以考虑进去吗？"
+      "exampleZh": "可以考虑食物过敏或饮食限制吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 4
+      }
     },
     {
       "id": 72,
@@ -685,7 +1058,12 @@
       "scenario": "chef",
       "priority": 5,
       "exampleFr": "Les allergies ou restrictions alimentaires peuvent-elles être prises en compte ?",
-      "exampleZh": "过敏或饮食限制可以考虑进去吗？"
+      "exampleZh": "可以考虑食物过敏或饮食限制吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 4
+      }
     },
     {
       "id": 73,
@@ -694,7 +1072,12 @@
       "scenario": "chef",
       "priority": 5,
       "exampleFr": "Depuis quand travaillez-vous comme chef à domicile ?",
-      "exampleZh": "您做上门厨师多久了？"
+      "exampleZh": "您做上门厨师有多久了？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 6
+      }
     },
     {
       "id": 74,
@@ -703,7 +1086,12 @@
       "scenario": "chef",
       "priority": 5,
       "exampleFr": "Utilisez-vous des produits frais et de saison ?",
-      "exampleZh": "您使用新鲜时令食材吗？"
+      "exampleZh": "您会使用新鲜的时令食材吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 8
+      }
     },
     {
       "id": 75,
@@ -712,7 +1100,12 @@
       "scenario": "chef",
       "priority": 4,
       "exampleFr": "Utilisez-vous des produits frais et de saison ?",
-      "exampleZh": "您使用新鲜时令食材吗？"
+      "exampleZh": "您会使用新鲜的时令食材吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 8
+      }
     },
     {
       "id": 76,
@@ -721,16 +1114,27 @@
       "scenario": "chef",
       "priority": 5,
       "exampleFr": "Qui s’occupe d’acheter les ingrédients ?",
-      "exampleZh": "谁负责买食材？"
+      "exampleZh": "食材由谁负责购买？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 7
+      }
     },
     {
       "id": 77,
-      "fr": "du matériel professionnel",
-      "zh": "专业设备",
+      "fr": "disposer de matériel",
+      "zh": "备有设备",
       "scenario": "chef",
       "priority": 4,
-      "exampleFr": "Vous apportez votre propre matériel professionnel ?",
-      "exampleZh": "您会带自己的专业设备吗？"
+      "exampleFr": "De quel matériel faut-il disposer à la maison ?",
+      "exampleZh": "家里需要准备哪些设备？",
+      "learningKey": "consumption-final15-v2-77",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 9
+      }
     },
     {
       "id": 78,
@@ -739,7 +1143,12 @@
       "scenario": "chef",
       "priority": 4,
       "exampleFr": "Le service à table est-il compris ?",
-      "exampleZh": "包含桌边服务吗？"
+      "exampleZh": "费用包含上菜服务吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 11
+      }
     },
     {
       "id": 79,
@@ -748,7 +1157,12 @@
       "scenario": "chef",
       "priority": 4,
       "exampleFr": "Le nettoyage de la cuisine est-il inclus après le repas ?",
-      "exampleZh": "饭后厨房清洁包含吗？"
+      "exampleZh": "用餐后清理厨房包含在服务里吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 12
+      }
     },
     {
       "id": 80,
@@ -757,7 +1171,12 @@
       "scenario": "chef",
       "priority": 5,
       "exampleFr": "Quel est votre tarif par personne ?",
-      "exampleZh": "您每人收费多少？"
+      "exampleZh": "您的收费标准是每人多少？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 13
+      }
     },
     {
       "id": 81,
@@ -766,7 +1185,12 @@
       "scenario": "delivery",
       "priority": 5,
       "exampleFr": "Combien coûte la livraison ?",
-      "exampleZh": "配送费多少？"
+      "exampleZh": "配送费是多少？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 5
+      }
     },
     {
       "id": 82,
@@ -775,7 +1199,12 @@
       "scenario": "delivery",
       "priority": 4,
       "exampleFr": "Quelles zones desservez-vous pour la livraison ?",
-      "exampleZh": "你们配送哪些区域？"
+      "exampleZh": "您提供送货服务的区域有哪些？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 1
+      }
     },
     {
       "id": 83,
@@ -784,7 +1213,12 @@
       "scenario": "delivery",
       "priority": 5,
       "exampleFr": "Quels créneaux sont disponibles ?",
-      "exampleZh": "有哪些配送时段？"
+      "exampleZh": "目前有哪些配送时段？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 2
+      }
     },
     {
       "id": 84,
@@ -793,7 +1227,12 @@
       "scenario": "delivery",
       "priority": 4,
       "exampleFr": "Livrez-vous aussi le week-end ?",
-      "exampleZh": "周末也配送吗？"
+      "exampleZh": "周末也配送吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 3
+      }
     },
     {
       "id": 85,
@@ -802,7 +1241,12 @@
       "scenario": "delivery",
       "priority": 5,
       "exampleFr": "À partir de quel montant la livraison est-elle gratuite ?",
-      "exampleZh": "满多少金额免运费？"
+      "exampleZh": "订单金额达到多少可以免配送费？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 6
+      }
     },
     {
       "id": 86,
@@ -811,7 +1255,12 @@
       "scenario": "delivery",
       "priority": 4,
       "exampleFr": "Proposez-vous la livraison sans contact ?",
-      "exampleZh": "提供无接触配送吗？"
+      "exampleZh": "您提供无接触配送吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 8
+      }
     },
     {
       "id": 87,
@@ -820,7 +1269,12 @@
       "scenario": "delivery",
       "priority": 5,
       "exampleFr": "À qui dois-je m’adresser si la livraison est en retard ?",
-      "exampleZh": "配送延误我该联系谁？"
+      "exampleZh": "如果配送延误，我应该联系谁？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 11
+      }
     },
     {
       "id": 88,
@@ -829,7 +1283,12 @@
       "scenario": "delivery",
       "priority": 4,
       "exampleFr": "Comment ça se passe si un produit arrive abîmé ?",
-      "exampleZh": "商品送到时损坏怎么办？"
+      "exampleZh": "如果收到的商品损坏了，该怎么处理？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 13
+      }
     },
     {
       "id": 89,
@@ -838,7 +1297,12 @@
       "scenario": "online",
       "priority": 5,
       "exampleFr": "Tu utilises quelle plateforme pour vendre tes objets ?",
-      "exampleZh": "你用哪个平台卖东西？"
+      "exampleZh": "你用哪个平台卖东西？",
+      "source": {
+        "month": "2026-09",
+        "number": 4,
+        "question": 1
+      }
     },
     {
       "id": 90,
@@ -847,7 +1311,12 @@
       "scenario": "online",
       "priority": 5,
       "exampleFr": "Comment se passe la création du compte ?",
-      "exampleZh": "怎么创建账号？"
+      "exampleZh": "账号要怎么注册？",
+      "source": {
+        "month": "2026-09",
+        "number": 4,
+        "question": 4
+      }
     },
     {
       "id": 91,
@@ -856,7 +1325,12 @@
       "scenario": "online",
       "priority": 5,
       "exampleFr": "Comment t’y prends-tu pour rédiger et publier une annonce ?",
-      "exampleZh": "你怎么写并发布广告？"
+      "exampleZh": "你通常怎么撰写并发布商品信息？",
+      "source": {
+        "month": "2026-09",
+        "number": 4,
+        "question": 7
+      }
     },
     {
       "id": 92,
@@ -865,7 +1339,12 @@
       "scenario": "online",
       "priority": 5,
       "exampleFr": "Comment t’y prends-tu pour rédiger et publier une annonce ?",
-      "exampleZh": "你怎么写并发布广告？"
+      "exampleZh": "你通常怎么撰写并发布商品信息？",
+      "source": {
+        "month": "2026-09",
+        "number": 4,
+        "question": 7
+      }
     },
     {
       "id": 93,
@@ -874,7 +1353,12 @@
       "scenario": "online",
       "priority": 5,
       "exampleFr": "Comment fixes-tu le prix de tes objets ?",
-      "exampleZh": "你怎么给物品定价？"
+      "exampleZh": "你怎么给物品定价？",
+      "source": {
+        "month": "2026-09",
+        "number": 4,
+        "question": 9
+      }
     },
     {
       "id": 94,
@@ -883,7 +1367,12 @@
       "scenario": "online",
       "priority": 4,
       "exampleFr": "Qu’est-ce que tu fais pour rendre tes annonces plus visibles ?",
-      "exampleZh": "你怎么让广告更容易被看到？"
+      "exampleZh": "你会怎么提高商品信息的曝光度？",
+      "source": {
+        "month": "2026-09",
+        "number": 4,
+        "question": 10
+      }
     },
     {
       "id": 95,
@@ -892,7 +1381,12 @@
       "scenario": "online",
       "priority": 5,
       "exampleFr": "Comment restes-tu en contact avec les acheteurs ?",
-      "exampleZh": "你怎么和买家保持联系？"
+      "exampleZh": "你怎么和买家保持联系？",
+      "source": {
+        "month": "2026-09",
+        "number": 4,
+        "question": 11
+      }
     },
     {
       "id": 96,
@@ -901,7 +1395,12 @@
       "scenario": "online",
       "priority": 5,
       "exampleFr": "Quel mode de paiement te paraît le plus sûr ?",
-      "exampleZh": "你觉得哪种付款方式最安全？"
+      "exampleZh": "你觉得哪种付款方式最安全？",
+      "source": {
+        "month": "2026-09",
+        "number": 4,
+        "question": 12
+      }
     },
     {
       "id": 97,
@@ -910,7 +1409,12 @@
       "scenario": "online",
       "priority": 5,
       "exampleFr": "Tu préfères remettre l’objet en main propre ou l’envoyer ?",
-      "exampleZh": "你更愿意当面交货还是邮寄？"
+      "exampleZh": "你更喜欢当面交货，还是邮寄？",
+      "source": {
+        "month": "2026-09",
+        "number": 4,
+        "question": 13
+      }
     },
     {
       "id": 98,
@@ -919,7 +1423,12 @@
       "scenario": "online",
       "priority": 4,
       "exampleFr": "Que fais-tu si l’acheteur annule au dernier moment ?",
-      "exampleZh": "买家最后一刻取消怎么办？"
+      "exampleZh": "如果买家临时取消，你会怎么办？",
+      "source": {
+        "month": "2026-09",
+        "number": 4,
+        "question": 14
+      }
     },
     {
       "id": 99,
@@ -928,7 +1437,12 @@
       "scenario": "online",
       "priority": 5,
       "exampleFr": "Comment éviter les arnaques selon toi ?",
-      "exampleZh": "你觉得怎么避免诈骗？"
+      "exampleZh": "你觉得怎样才能避免被骗？",
+      "source": {
+        "month": "2026-09",
+        "number": 4,
+        "question": 15
+      }
     },
     {
       "id": 100,
@@ -937,7 +1451,12 @@
       "scenario": "vegetarian",
       "priority": 4,
       "exampleFr": "Les produits sont-ils clairement étiquetés pour les végétariens ?",
-      "exampleZh": "产品是否清楚标明适合素食者？"
+      "exampleZh": "产品上会清楚标明是否适合素食者吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 5,
+        "question": 12
+      }
     },
     {
       "id": 101,
@@ -946,7 +1465,12 @@
       "scenario": "vegetarian",
       "priority": 4,
       "exampleFr": "Trouve-t-on facilement du tofu, des légumineuses ou d’autres protéines végétales ?",
-      "exampleZh": "容易买到豆腐、豆类或其他植物蛋白吗？"
+      "exampleZh": "容易买到豆腐、豆类或其他植物蛋白吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 5,
+        "question": 9
+      }
     },
     {
       "id": 102,
@@ -955,7 +1479,12 @@
       "scenario": "vegetarian",
       "priority": 5,
       "exampleFr": "Et les produits végétariens au supermarché, sont-ils abordables ?",
-      "exampleZh": "超市的素食产品价格实惠吗？"
+      "exampleZh": "超市里的素食产品价格实惠吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 5,
+        "question": 11
+      }
     },
     {
       "id": 103,
@@ -964,7 +1493,402 @@
       "scenario": "vegetarian",
       "priority": 4,
       "exampleFr": "Peut-on facilement demander un plat sans viande au restaurant ?",
-      "exampleZh": "餐厅里容易要求无肉菜吗？"
+      "exampleZh": "在餐厅容易要求做一道不含肉的菜吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 5,
+        "question": 13
+      }
+    },
+    {
+      "id": 104,
+      "fr": "démonter un meuble",
+      "zh": "拆卸家具",
+      "scenario": "furniture",
+      "priority": 5,
+      "exampleFr": "Est-ce que je devrai démonter le meuble pour le transporter ?",
+      "exampleZh": "搬运前需要我自己拆卸家具吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 12
+      },
+      "learningKey": "consumption-final15-v2-104"
+    },
+    {
+      "id": 105,
+      "fr": "baisser le prix",
+      "zh": "降低价格",
+      "scenario": "furniture",
+      "priority": 5,
+      "exampleFr": "Seriez-vous prêt(e) à baisser un peu le prix ?",
+      "exampleZh": "您愿意稍微降一点价格吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 8
+      },
+      "learningKey": "consumption-final15-v2-105"
+    },
+    {
+      "id": 106,
+      "fr": "récupérer un meuble",
+      "zh": "取走家具",
+      "scenario": "furniture",
+      "priority": 4,
+      "exampleFr": "Faudra-t-il venir le récupérer avant une certaine date ?",
+      "exampleZh": "需要在某个日期之前把它搬走吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 5,
+        "question": 9
+      },
+      "learningKey": "consumption-final15-v2-106"
+    },
+    {
+      "id": 107,
+      "fr": "descendre un meuble",
+      "zh": "把家具搬下楼",
+      "scenario": "furniture",
+      "priority": 4,
+      "exampleFr": "Est-ce que vous pourriez m’aider à le descendre ?",
+      "exampleZh": "您能帮我把家具搬下楼吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 5,
+        "question": 10
+      },
+      "learningKey": "consumption-final15-v2-107"
+    },
+    {
+      "id": 108,
+      "fr": "échanger un vêtement",
+      "zh": "换衣服／换货",
+      "scenario": "clothing",
+      "priority": 5,
+      "exampleFr": "Si un vêtement ne convient pas, est-ce qu’on peut l’échanger ?",
+      "exampleZh": "如果衣服不合适，可以换货吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 14
+      },
+      "learningKey": "consumption-final15-v2-108"
+    },
+    {
+      "id": 109,
+      "fr": "un cadeau pratique",
+      "zh": "实用的礼物",
+      "scenario": "gift",
+      "priority": 5,
+      "exampleFr": "Est-ce qu’elle préfère les cadeaux pratiques ou les surprises ?",
+      "exampleZh": "她更喜欢实用的礼物还是惊喜？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 3
+      },
+      "learningKey": "consumption-final15-v2-109"
+    },
+    {
+      "id": 110,
+      "fr": "une surprise",
+      "zh": "惊喜",
+      "scenario": "gift",
+      "priority": 4,
+      "exampleFr": "Est-ce qu’elle préfère les cadeaux pratiques ou les surprises ?",
+      "exampleZh": "她更喜欢实用的礼物还是惊喜？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 3
+      },
+      "learningKey": "consumption-final15-v2-110"
+    },
+    {
+      "id": 111,
+      "fr": "posséder déjà quelque chose",
+      "zh": "已经拥有某物",
+      "scenario": "gift",
+      "priority": 4,
+      "exampleFr": "Y a-t-il quelque chose qu’elle possède déjà et que je devrais éviter d’acheter ?",
+      "exampleZh": "有什么东西是她已经有了、我最好别再买的吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 12
+      },
+      "learningKey": "consumption-final15-v2-111"
+    },
+    {
+      "id": 112,
+      "fr": "un plat préféré",
+      "zh": "最喜欢的菜",
+      "scenario": "restaurant",
+      "priority": 4,
+      "exampleFr": "Quel a été ton plat préféré là-bas ?",
+      "exampleZh": "你在那里最喜欢哪道菜？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 14
+      },
+      "learningKey": "consumption-final15-v2-112"
+    },
+    {
+      "id": 113,
+      "fr": "un espace réservé aux groupes",
+      "zh": "团体专用区域",
+      "scenario": "restaurant",
+      "priority": 5,
+      "exampleFr": "Y a-t-il une salle ou un espace réservé aux groupes ?",
+      "exampleZh": "有适合团体的包间或区域吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 2
+      },
+      "learningKey": "consumption-final15-v2-113"
+    },
+    {
+      "id": 114,
+      "fr": "un gâteau d’anniversaire",
+      "zh": "生日蛋糕",
+      "scenario": "restaurant",
+      "priority": 4,
+      "exampleFr": "Est-ce que vous préparez aussi des gâteaux d’anniversaire ?",
+      "exampleZh": "您也会制作生日蛋糕吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 8
+      },
+      "learningKey": "consumption-final15-v2-114"
+    },
+    {
+      "id": 115,
+      "fr": "confirmer le nombre d’invités",
+      "zh": "确认宾客人数",
+      "scenario": "restaurant",
+      "priority": 5,
+      "exampleFr": "À quel moment faut-il confirmer le nombre final d’invités ?",
+      "exampleZh": "需要在什么时候确认最终的宾客人数？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 15
+      },
+      "learningKey": "consumption-final15-v2-115"
+    },
+    {
+      "id": 116,
+      "fr": "un sac isotherme",
+      "zh": "保温袋",
+      "scenario": "delivery",
+      "priority": 5,
+      "exampleFr": "Est-ce que vous livrez les produits frais dans des sacs isothermes ?",
+      "exampleZh": "生鲜食品会用保温袋配送吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 7
+      },
+      "learningKey": "consumption-final15-v2-116"
+    },
+    {
+      "id": 117,
+      "fr": "une forte demande",
+      "zh": "大量需求／订单高峰",
+      "scenario": "delivery",
+      "priority": 4,
+      "exampleFr": "En cas de forte demande, les délais peuvent-ils être plus longs ?",
+      "exampleZh": "订单多时配送会延迟吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 4
+      },
+      "learningKey": "consumption-final15-v2-117"
+    },
+    {
+      "id": 118,
+      "fr": "passer une commande",
+      "zh": "下单",
+      "scenario": "delivery",
+      "priority": 5,
+      "exampleFr": "Comment passer une commande avec livraison ?",
+      "exampleZh": "怎样下单并选择送货？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 15
+      },
+      "learningKey": "consumption-final15-v2-118"
+    },
+    {
+      "id": 119,
+      "fr": "une cantine d’entreprise",
+      "zh": "公司食堂",
+      "scenario": "vegetarian",
+      "priority": 4,
+      "exampleFr": "Les cantines d’entreprise proposent-elles généralement des options végétariennes ?",
+      "exampleZh": "公司食堂通常会提供素食选项吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 5,
+        "question": 5
+      },
+      "learningKey": "consumption-final15-v2-119"
+    },
+    {
+      "id": 120,
+      "fr": "des légumineuses",
+      "zh": "豆类",
+      "scenario": "vegetarian",
+      "priority": 4,
+      "exampleFr": "Trouve-t-on facilement du tofu, des légumineuses ou d’autres protéines végétales ?",
+      "exampleZh": "容易买到豆腐、豆类或其他植物蛋白吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 5,
+        "question": 9
+      },
+      "learningKey": "consumption-final15-v2-120"
+    },
+    {
+      "id": 121,
+      "fr": "un plat traditionnel canadien",
+      "zh": "加拿大传统菜肴",
+      "scenario": "canadian",
+      "priority": 5,
+      "exampleFr": "Qu’est-ce que je devrais proposer comme plats traditionnels canadiens ?",
+      "exampleZh": "我应该准备哪些加拿大传统菜？",
+      "source": {
+        "month": "2026-07",
+        "number": 4,
+        "question": 5
+      },
+      "learningKey": "consumption-final15-v2-121"
+    },
+    {
+      "id": 122,
+      "fr": "un plat représentatif",
+      "zh": "有代表性的菜肴",
+      "scenario": "canadian",
+      "priority": 4,
+      "exampleFr": "Quel plat serait le plus représentatif de la cuisine canadienne ?",
+      "exampleZh": "哪道菜最能代表加拿大美食？",
+      "source": {
+        "month": "2026-07",
+        "number": 4,
+        "question": 6
+      },
+      "learningKey": "consumption-final15-v2-122"
+    },
+    {
+      "id": 123,
+      "fr": "le goût d’un plat",
+      "zh": "一道菜的味道",
+      "scenario": "canadian",
+      "priority": 4,
+      "exampleFr": "Comment décrirais-tu le goût de ce plat ?",
+      "exampleZh": "你会怎么形容这道菜的味道？",
+      "source": {
+        "month": "2026-07",
+        "number": 4,
+        "question": 7
+      },
+      "learningKey": "consumption-final15-v2-123"
+    },
+    {
+      "id": 124,
+      "fr": "des ingrédients typiquement canadiens",
+      "zh": "具有加拿大特色的食材",
+      "scenario": "canadian",
+      "priority": 4,
+      "exampleFr": "Qu’est-ce qu’on peut utiliser comme ingrédients typiquement canadiens ?",
+      "exampleZh": "可以用哪些具有加拿大特色的食材？",
+      "source": {
+        "month": "2026-07",
+        "number": 4,
+        "question": 8
+      },
+      "learningKey": "consumption-final15-v2-124"
+    },
+    {
+      "id": 125,
+      "fr": "privilégier les produits de saison",
+      "zh": "优先选用时令食材",
+      "scenario": "canadian",
+      "priority": 4,
+      "exampleFr": "Quels produits de saison vaudrait-il mieux privilégier ?",
+      "exampleZh": "最好优先选用哪些时令食材？",
+      "source": {
+        "month": "2026-07",
+        "number": 4,
+        "question": 9
+      },
+      "learningKey": "consumption-final15-v2-125"
+    },
+    {
+      "id": 126,
+      "fr": "un dessert canadien",
+      "zh": "加拿大甜点",
+      "scenario": "canadian",
+      "priority": 4,
+      "exampleFr": "Qu’est-ce que tu me conseillerais comme dessert canadien ?",
+      "exampleZh": "你建议我准备哪种加拿大甜点？",
+      "source": {
+        "month": "2026-07",
+        "number": 4,
+        "question": 11
+      },
+      "learningKey": "consumption-final15-v2-126"
+    },
+    {
+      "id": 127,
+      "fr": "aller bien avec le menu",
+      "zh": "与菜单搭配得当",
+      "scenario": "canadian",
+      "priority": 4,
+      "exampleFr": "Quelles boissons iraient bien avec le menu ?",
+      "exampleZh": "哪些饮料适合搭配这份菜单？",
+      "source": {
+        "month": "2026-07",
+        "number": 4,
+        "question": 12
+      },
+      "learningKey": "consumption-final15-v2-127"
+    },
+    {
+      "id": 128,
+      "fr": "préparer à l’avance",
+      "zh": "提前准备",
+      "scenario": "canadian",
+      "priority": 5,
+      "exampleFr": "Si je cuisine chez moi, quels plats puis-je préparer à l’avance ?",
+      "exampleZh": "如果我在家做饭，哪些菜可以提前准备？",
+      "source": {
+        "month": "2026-07",
+        "number": 4,
+        "question": 14
+      },
+      "learningKey": "consumption-final15-v2-128"
+    },
+    {
+      "id": 129,
+      "fr": "un menu complet",
+      "zh": "完整菜单",
+      "scenario": "canadian",
+      "priority": 4,
+      "exampleFr": "Si tu voulais faire découvrir la cuisine canadienne, quel menu complet choisirais-tu ?",
+      "exampleZh": "如果你想让朋友了解加拿大美食，你会选择什么完整菜单？",
+      "source": {
+        "month": "2026-07",
+        "number": 4,
+        "question": 15
+      },
+      "learningKey": "consumption-final15-v2-129"
     }
   ],
   "patterns": [
@@ -973,32 +1897,53 @@
       "pattern": "Dans quel état est/sont + objet ?",
       "zh": "……状况怎么样？",
       "exampleFr": "Dans quel état sont les meubles ?",
-      "exampleZh": "家具状况怎么样？",
-      "scenario": "furniture"
+      "exampleZh": "这些家具的状况怎么样？",
+      "scenario": "furniture",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 2
+      }
     },
     {
       "id": 2,
       "pattern": "Présente-t-il / elle des défauts ou des traces d’usure ?",
       "zh": "有瑕疵或使用痕迹吗？",
       "exampleFr": "Les meubles présentent-ils des défauts ou des traces d’usure ?",
-      "exampleZh": "家具有瑕疵或使用痕迹吗？",
-      "scenario": "furniture"
+      "exampleZh": "家具上有瑕疵或磨损痕迹吗？",
+      "scenario": "furniture",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 3
+      }
     },
     {
       "id": 3,
-      "pattern": "Quelles dimensions fait + objet ?",
-      "zh": "……尺寸是多少？",
-      "exampleFr": "Le meuble qui m’intéresse fait quelles dimensions ?",
-      "exampleZh": "我感兴趣的家具尺寸是多少？",
-      "scenario": "furniture"
+      "pattern": "Quelles sont les dimensions de + objet ?",
+      "zh": "……的尺寸是多少？",
+      "exampleFr": "Quelles sont les dimensions du meuble qui m’intéresse ?",
+      "exampleZh": "我感兴趣的这件家具尺寸是多少？",
+      "scenario": "furniture",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 4
+      },
+      "learningKey": "consumption-final15-v2-3"
     },
     {
       "id": 4,
       "pattern": "Puis-je venir voir + objet + sur place ?",
       "zh": "可以现场看吗？",
       "exampleFr": "Puis-je venir voir les meubles sur place avant de me décider ?",
-      "exampleZh": "决定前可以现场看家具吗？",
-      "scenario": "furniture"
+      "exampleZh": "决定之前，我可以到现场看看这些家具吗？",
+      "scenario": "furniture",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 6
+      }
     },
     {
       "id": 5,
@@ -1006,7 +1951,12 @@
       "zh": "……多少钱？",
       "exampleFr": "Combien coûte ce meuble ?",
       "exampleZh": "这件家具多少钱？",
-      "scenario": "furniture"
+      "scenario": "furniture",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 7
+      }
     },
     {
       "id": 6,
@@ -1014,87 +1964,143 @@
       "zh": "价格可以商量吗？",
       "exampleFr": "Le prix peut-il être négocié ?",
       "exampleZh": "价格可以商量吗？",
-      "scenario": "furniture"
+      "scenario": "furniture",
+      "source": {
+        "month": "2026-09",
+        "number": 3,
+        "question": 8
+      }
     },
     {
       "id": 7,
       "pattern": "Faites-vous un prix si j’en achète plusieurs ?",
       "zh": "买多件有优惠吗？",
       "exampleFr": "Est-ce que vous faites un prix si j’achète plusieurs meubles ?",
-      "exampleZh": "买多件家具有优惠吗？",
-      "scenario": "furniture"
+      "exampleZh": "如果我买多件家具，价格可以优惠吗？",
+      "scenario": "furniture",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 9
+      }
     },
     {
       "id": 8,
       "pattern": "Proposez-vous la livraison à domicile ?",
       "zh": "提供送货上门吗？",
       "exampleFr": "Proposez-vous la livraison à domicile ?",
-      "exampleZh": "提供送货上门吗？",
-      "scenario": "delivery"
+      "exampleZh": "您提供送货上门服务吗？",
+      "scenario": "delivery",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 10
+      }
     },
     {
       "id": 9,
       "pattern": "Les frais de livraison sont-ils compris ?",
       "zh": "运费包含吗？",
       "exampleFr": "Les frais de livraison sont-ils compris dans le prix ?",
-      "exampleZh": "运费包含在价格中吗？",
-      "scenario": "delivery"
+      "exampleZh": "送货费包含在价格里吗？",
+      "scenario": "delivery",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 11
+      }
     },
     {
       "id": 10,
       "pattern": "Quels moyens de paiement acceptez-vous ?",
       "zh": "接受哪些付款方式？",
       "exampleFr": "Quels moyens de paiement acceptez-vous ?",
-      "exampleZh": "接受哪些付款方式？",
-      "scenario": "furniture"
+      "exampleZh": "您接受哪些付款方式？",
+      "scenario": "furniture",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 13
+      }
     },
     {
       "id": 11,
       "pattern": "Pourriez-vous me réserver + objet ?",
       "zh": "能帮我预留……吗？",
       "exampleFr": "Pourriez-vous me réserver le meuble pendant quelques jours ?",
-      "exampleZh": "能帮我预留这件家具几天吗？",
-      "scenario": "furniture"
+      "exampleZh": "您能帮我把这件家具留几天吗？",
+      "scenario": "furniture",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 14
+      }
     },
     {
       "id": 12,
       "pattern": "Puis-je essayer + vêtement + avant de le louer/acheter ?",
       "zh": "租/买前可以试穿吗？",
       "exampleFr": "Puis-je essayer le costume avant de le louer ?",
-      "exampleZh": "租之前可以试穿吗？",
-      "scenario": "clothing"
+      "exampleZh": "租之前我可以试穿这套服装吗？",
+      "scenario": "clothing",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 5
+      }
     },
     {
       "id": 13,
       "pattern": "Pour combien de temps peut-on louer + objet ?",
       "zh": "可以租多久？",
       "exampleFr": "Pour combien de temps peut-on louer un costume ?",
-      "exampleZh": "可以租这套服装多久？",
-      "scenario": "clothing"
+      "exampleZh": "一套服装可以租多长时间？",
+      "scenario": "clothing",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 6
+      }
     },
     {
       "id": 14,
       "pattern": "Que se passe-t-il si je rends + objet + en retard ?",
       "zh": "逾期归还会怎样？",
       "exampleFr": "Que se passe-t-il si je rends le costume en retard ?",
-      "exampleZh": "逾期归还会怎样？",
-      "scenario": "clothing"
+      "exampleZh": "如果我逾期归还服装，会有什么后果？",
+      "scenario": "clothing",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 13
+      }
     },
     {
       "id": 15,
-      "pattern": "Puis-je être remboursé(e) ?",
-      "zh": "可以退款吗？",
-      "exampleFr": "Et s’il y a un problème avec l’article, puis-je être remboursée ?",
-      "exampleZh": "商品有问题可以退款吗？",
-      "scenario": "clothing"
+      "pattern": "Dans ce cas, puis-je être remboursé(e) ?",
+      "zh": "这种情况下可以退款吗？",
+      "exampleFr": "Dans ce cas, puis-je être remboursée ?",
+      "exampleZh": "这种情况下可以退款吗？",
+      "scenario": "delivery",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 14
+      },
+      "learningKey": "consumption-final15-v2-15"
     },
     {
       "id": 16,
       "pattern": "Qu’est-ce qu’il/elle aime en général ?",
       "zh": "他/她一般喜欢什么？",
       "exampleFr": "Qu’est-ce qu’elle aime en général ?",
-      "exampleZh": "她一般喜欢什么？",
-      "scenario": "gift"
+      "exampleZh": "她平时喜欢什么？",
+      "scenario": "gift",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 2
+      }
     },
     {
       "id": 17,
@@ -1102,103 +2108,170 @@
       "zh": "你会怎么形容她的性格？",
       "exampleFr": "Comment décrirais-tu sa personnalité ?",
       "exampleZh": "你会怎么形容她的性格？",
-      "scenario": "gift"
+      "scenario": "gift",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 9
+      }
     },
     {
       "id": 18,
-      "pattern": "Ça lui conviendrait ?",
-      "zh": "这适合她吗？",
-      "exampleFr": "Et une paire de chaussures de randonnée, ça lui conviendrait ?",
-      "exampleZh": "一双徒步鞋适合她吗？",
-      "scenario": "gift"
+      "pattern": "Parmi ces idées, laquelle me conseillerais-tu le plus ?",
+      "zh": "这些想法里你最推荐哪个？",
+      "exampleFr": "Parmi ces idées, laquelle me conseillerais-tu le plus ?",
+      "exampleZh": "这些想法里，你最推荐哪一个？",
+      "scenario": "gift",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 14
+      },
+      "learningKey": "consumption-final15-v2-18"
     },
     {
       "id": 19,
       "pattern": "Combien te semblerait raisonnable pour + cadeau ?",
       "zh": "礼物预算多少合理？",
       "exampleFr": "Combien te semblerait raisonnable pour son cadeau ?",
-      "exampleZh": "你觉得礼物多少预算合理？",
-      "scenario": "gift"
+      "exampleZh": "你觉得给她买礼物花多少钱比较合适？",
+      "scenario": "gift",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 13
+      }
     },
     {
       "id": 20,
       "pattern": "Qu’est-ce que + restaurant + propose comme cuisine ?",
       "zh": "餐厅是什么菜系？",
       "exampleFr": "Qu’est-ce que le restaurant propose comme cuisine ?",
-      "exampleZh": "这家餐厅是什么菜系？",
-      "scenario": "restaurant"
+      "exampleZh": "这家餐厅主打什么菜系？",
+      "scenario": "restaurant",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 3
+      }
     },
     {
       "id": 21,
       "pattern": "Qu’est-ce que tu me recommanderais comme plat ?",
       "zh": "你推荐什么菜？",
       "exampleFr": "Qu’est-ce que tu me recommanderais comme plat ?",
-      "exampleZh": "你会推荐我吃什么菜？",
-      "scenario": "restaurant"
+      "exampleZh": "你会给我推荐什么菜？",
+      "scenario": "restaurant",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 4
+      }
     },
     {
       "id": 22,
       "pattern": "Comment as-tu trouvé + lieu/service ?",
       "zh": "你觉得……怎么样？",
       "exampleFr": "Comment as-tu trouvé ce restaurant dans l’ensemble ?",
-      "exampleZh": "你整体觉得这家餐厅怎么样？",
-      "scenario": "restaurant"
+      "exampleZh": "总体来说，你觉得这家餐厅怎么样？",
+      "scenario": "restaurant",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 7
+      }
     },
     {
       "id": 23,
       "pattern": "Combien faut-il prévoir par personne ?",
       "zh": "人均大概要多少？",
       "exampleFr": "Combien faut-il prévoir par personne ?",
-      "exampleZh": "每个人大概要预算多少？",
-      "scenario": "restaurant"
+      "exampleZh": "每人需要准备多少钱？",
+      "scenario": "restaurant",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 10
+      }
     },
     {
       "id": 24,
       "pattern": "Comment se passe la réservation ?",
       "zh": "怎么预订？",
       "exampleFr": "Comment se passe la réservation d’une table ?",
-      "exampleZh": "怎么订桌？",
-      "scenario": "restaurant"
+      "exampleZh": "餐桌要怎么预订？",
+      "scenario": "restaurant",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 12
+      }
     },
     {
       "id": 25,
-      "pattern": "Avez-vous encore de la disponibilité pour + date ?",
-      "zh": "某天还有位置吗？",
-      "exampleFr": "Avez-vous encore de la disponibilité pour la date de l’anniversaire ?",
-      "exampleZh": "生日当天还有位置吗？",
-      "scenario": "restaurant"
+      "pattern": "Avez-vous encore des tables disponibles à + date ?",
+      "zh": "……日期还有空桌吗？",
+      "exampleFr": "Avez-vous encore des tables disponibles à la date de l’anniversaire ?",
+      "exampleZh": "生日当天您还有空桌吗？",
+      "scenario": "restaurant",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 3
+      },
+      "learningKey": "consumption-final15-v2-25"
     },
     {
       "id": 26,
       "pattern": "Pouvez-vous adapter + menu + aux besoins de + personne ?",
       "zh": "可以按需求调整菜单吗？",
       "exampleFr": "Pouvez-vous adapter le menu aux goûts de ma famille ?",
-      "exampleZh": "菜单可以按家人的口味调整吗？",
-      "scenario": "chef"
+      "exampleZh": "您可以根据我家人的口味调整菜单吗？",
+      "scenario": "chef",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 3
+      }
     },
     {
       "id": 27,
       "pattern": "Les allergies ou restrictions peuvent-elles être prises en compte ?",
       "zh": "过敏/忌口能考虑吗？",
       "exampleFr": "Les allergies ou restrictions alimentaires peuvent-elles être prises en compte ?",
-      "exampleZh": "过敏或饮食限制可以考虑进去吗？",
-      "scenario": "chef"
+      "exampleZh": "可以考虑食物过敏或饮食限制吗？",
+      "scenario": "chef",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 4
+      }
     },
     {
       "id": 28,
       "pattern": "À partir de quel montant + service + est-il gratuit ?",
       "zh": "满多少金额免费？",
       "exampleFr": "À partir de quel montant la livraison est-elle gratuite ?",
-      "exampleZh": "满多少金额免运费？",
-      "scenario": "delivery"
+      "exampleZh": "订单金额达到多少可以免配送费？",
+      "scenario": "delivery",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 6
+      }
     },
     {
       "id": 29,
       "pattern": "Que se passe-t-il si je ne suis pas chez moi ?",
       "zh": "我不在家时怎么办？",
       "exampleFr": "Que se passe-t-il si je ne suis pas chez moi au moment de la livraison ?",
-      "exampleZh": "配送时我不在家怎么办？",
-      "scenario": "delivery"
+      "exampleZh": "送货时如果我不在家，会怎么办？",
+      "scenario": "delivery",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 12
+      }
     },
     {
       "id": 30,
@@ -1206,23 +2279,38 @@
       "zh": "你用哪个平台……？",
       "exampleFr": "Tu utilises quelle plateforme pour vendre tes objets ?",
       "exampleZh": "你用哪个平台卖东西？",
-      "scenario": "online"
+      "scenario": "online",
+      "source": {
+        "month": "2026-09",
+        "number": 4,
+        "question": 1
+      }
     },
     {
       "id": 31,
       "pattern": "Comment se passe la création du compte ?",
       "zh": "账号怎么创建？",
       "exampleFr": "Comment se passe la création du compte ?",
-      "exampleZh": "账号怎么创建？",
-      "scenario": "online"
+      "exampleZh": "账号要怎么注册？",
+      "scenario": "online",
+      "source": {
+        "month": "2026-09",
+        "number": 4,
+        "question": 4
+      }
     },
     {
       "id": 32,
       "pattern": "Comment t’y prends-tu pour publier une annonce ?",
       "zh": "你怎么发布广告？",
       "exampleFr": "Comment t’y prends-tu pour rédiger et publier une annonce ?",
-      "exampleZh": "你怎么写并发布广告？",
-      "scenario": "online"
+      "exampleZh": "你通常怎么撰写并发布商品信息？",
+      "scenario": "online",
+      "source": {
+        "month": "2026-09",
+        "number": 4,
+        "question": 7
+      }
     },
     {
       "id": 33,
@@ -1230,15 +2318,351 @@
       "zh": "哪种付款方式最安全？",
       "exampleFr": "Quel mode de paiement te paraît le plus sûr ?",
       "exampleZh": "你觉得哪种付款方式最安全？",
-      "scenario": "online"
+      "scenario": "online",
+      "source": {
+        "month": "2026-09",
+        "number": 4,
+        "question": 12
+      }
     },
     {
       "id": 34,
       "pattern": "Comment éviter les arnaques ?",
       "zh": "怎么避免诈骗？",
       "exampleFr": "Comment éviter les arnaques selon toi ?",
-      "exampleZh": "你觉得怎么避免诈骗？",
-      "scenario": "online"
+      "exampleZh": "你觉得怎样才能避免被骗？",
+      "scenario": "online",
+      "source": {
+        "month": "2026-09",
+        "number": 4,
+        "question": 15
+      }
+    },
+    {
+      "id": 35,
+      "pattern": "Seriez-vous prêt(e) à + infinitif ?",
+      "zh": "您愿意……吗？",
+      "scenario": "furniture",
+      "exampleFr": "Seriez-vous prêt(e) à baisser un peu le prix ?",
+      "exampleZh": "您愿意稍微降一点价格吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 8
+      },
+      "learningKey": "consumption-final15-v2-35"
+    },
+    {
+      "id": 36,
+      "pattern": "Est-ce que je devrai + infinitif + pour + infinitif ?",
+      "zh": "为了……我是否需要……？",
+      "scenario": "furniture",
+      "exampleFr": "Est-ce que je devrai démonter le meuble pour le transporter ?",
+      "exampleZh": "搬运前需要我自己拆卸家具吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 12
+      },
+      "learningKey": "consumption-final15-v2-36"
+    },
+    {
+      "id": 37,
+      "pattern": "Faut-il signer + document ?",
+      "zh": "需要签……吗？",
+      "scenario": "clothing",
+      "exampleFr": "Faut-il signer un contrat de location ?",
+      "exampleZh": "需要签租赁合同吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 11
+      },
+      "learningKey": "consumption-final15-v2-37"
+    },
+    {
+      "id": 38,
+      "pattern": "Si + présent, est-ce qu’on peut + infinitif ?",
+      "zh": "如果……可以……吗？",
+      "scenario": "clothing",
+      "exampleFr": "Si un vêtement ne convient pas, est-ce qu’on peut l’échanger ?",
+      "exampleZh": "如果衣服不合适，可以换货吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 14
+      },
+      "learningKey": "consumption-final15-v2-38"
+    },
+    {
+      "id": 39,
+      "pattern": "Est-ce qu’elle préfère + nom + ou + nom ?",
+      "zh": "她更喜欢……还是……？",
+      "scenario": "gift",
+      "exampleFr": "Est-ce qu’elle préfère les cadeaux pratiques ou les surprises ?",
+      "exampleZh": "她更喜欢实用的礼物还是惊喜？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 3
+      },
+      "learningKey": "consumption-final15-v2-39"
+    },
+    {
+      "id": 40,
+      "pattern": "Est-ce qu’elle a parlé récemment de + nom ?",
+      "zh": "她最近有没有提起……？",
+      "scenario": "gift",
+      "exampleFr": "Est-ce qu’elle a parlé récemment d’un cadeau qui lui ferait plaisir ?",
+      "exampleZh": "她最近有没有提过想收到什么礼物？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 7
+      },
+      "learningKey": "consumption-final15-v2-40"
+    },
+    {
+      "id": 41,
+      "pattern": "Y a-t-il quelque chose que je devrais éviter de + infinitif ?",
+      "zh": "有没有我最好避免……的东西？",
+      "scenario": "gift",
+      "exampleFr": "Y a-t-il quelque chose qu’elle possède déjà et que je devrais éviter d’acheter ?",
+      "exampleZh": "有什么东西是她已经有了、我最好别再买的吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 12
+      },
+      "learningKey": "consumption-final15-v2-41"
+    },
+    {
+      "id": 42,
+      "pattern": "Quel a été ton + nom + préféré ?",
+      "zh": "你当时最喜欢的……是什么？",
+      "scenario": "restaurant",
+      "exampleFr": "Quel a été ton plat préféré là-bas ?",
+      "exampleZh": "你在那里最喜欢哪道菜？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 14
+      },
+      "learningKey": "consumption-final15-v2-42"
+    },
+    {
+      "id": 43,
+      "pattern": "Y a-t-il un espace réservé aux + personnes ?",
+      "zh": "有没有供……专用的区域？",
+      "scenario": "restaurant",
+      "exampleFr": "Y a-t-il une salle ou un espace réservé aux groupes ?",
+      "exampleZh": "有适合团体的包间或区域吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 2
+      },
+      "learningKey": "consumption-final15-v2-43"
+    },
+    {
+      "id": 44,
+      "pattern": "À quel moment faut-il confirmer + nom ?",
+      "zh": "需要什么时候确认……？",
+      "scenario": "restaurant",
+      "exampleFr": "À quel moment faut-il confirmer le nombre final d’invités ?",
+      "exampleZh": "需要在什么时候确认最终的宾客人数？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 15
+      },
+      "learningKey": "consumption-final15-v2-44"
+    },
+    {
+      "id": 45,
+      "pattern": "De quel matériel faut-il disposer à + lieu ?",
+      "zh": "……需要备有哪些设备？",
+      "scenario": "chef",
+      "exampleFr": "De quel matériel faut-il disposer à la maison ?",
+      "exampleZh": "家里需要准备哪些设备？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 9
+      },
+      "learningKey": "consumption-final15-v2-45"
+    },
+    {
+      "id": 46,
+      "pattern": "Est-ce que vous livrez + produits + dans + contenant ?",
+      "zh": "……会装在……里面配送吗？",
+      "scenario": "delivery",
+      "exampleFr": "Est-ce que vous livrez les produits frais dans des sacs isothermes ?",
+      "exampleZh": "生鲜食品会用保温袋配送吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 7
+      },
+      "learningKey": "consumption-final15-v2-46"
+    },
+    {
+      "id": 47,
+      "pattern": "Comment ça se passe si + présent ?",
+      "zh": "如果……该怎样处理？",
+      "scenario": "delivery",
+      "exampleFr": "Comment ça se passe si un produit arrive abîmé ?",
+      "exampleZh": "如果收到的商品损坏了，该怎么处理？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 13
+      },
+      "learningKey": "consumption-final15-v2-47"
+    },
+    {
+      "id": 48,
+      "pattern": "Les produits sont-ils clairement étiquetés pour + personnes ?",
+      "zh": "产品是否清楚标注适合……？",
+      "scenario": "vegetarian",
+      "exampleFr": "Les produits sont-ils clairement étiquetés pour les végétariens ?",
+      "exampleZh": "产品上会清楚标明是否适合素食者吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 5,
+        "question": 12
+      },
+      "learningKey": "consumption-final15-v2-48"
+    },
+    {
+      "id": 49,
+      "pattern": "Qu’est-ce que je devrais proposer comme + nom ?",
+      "zh": "我应该准备哪些……？",
+      "scenario": "canadian",
+      "exampleFr": "Qu’est-ce que je devrais proposer comme plats traditionnels canadiens ?",
+      "exampleZh": "我应该准备哪些加拿大传统菜？",
+      "source": {
+        "month": "2026-07",
+        "number": 4,
+        "question": 5
+      },
+      "learningKey": "consumption-final15-v2-49"
+    },
+    {
+      "id": 50,
+      "pattern": "Quelles boissons iraient bien avec + menu ?",
+      "zh": "哪些饮料适合搭配……？",
+      "scenario": "canadian",
+      "exampleFr": "Quelles boissons iraient bien avec le menu ?",
+      "exampleZh": "哪些饮料适合搭配这份菜单？",
+      "source": {
+        "month": "2026-07",
+        "number": 4,
+        "question": 12
+      },
+      "learningKey": "consumption-final15-v2-50"
+    },
+    {
+      "id": 51,
+      "pattern": "Si je cuisine chez moi, quels plats puis-je préparer à l’avance ?",
+      "zh": "如果在家做饭，哪些菜可提前准备？",
+      "scenario": "canadian",
+      "exampleFr": "Si je cuisine chez moi, quels plats puis-je préparer à l’avance ?",
+      "exampleZh": "如果我在家做饭，哪些菜可以提前准备？",
+      "source": {
+        "month": "2026-07",
+        "number": 4,
+        "question": 14
+      },
+      "learningKey": "consumption-final15-v2-51"
+    },
+    {
+      "id": 52,
+      "pattern": "Si tu voulais + infinitif, quel menu choisirais-tu ?",
+      "zh": "如果你想……会选择什么菜单？",
+      "scenario": "canadian",
+      "exampleFr": "Si tu voulais faire découvrir la cuisine canadienne, quel menu complet choisirais-tu ?",
+      "exampleZh": "如果你想让朋友了解加拿大美食，你会选择什么完整菜单？",
+      "source": {
+        "month": "2026-07",
+        "number": 4,
+        "question": 15
+      },
+      "learningKey": "consumption-final15-v2-52"
     }
+  ],
+  "core20": [
+    1,
+    3,
+    4,
+    6,
+    8,
+    11,
+    12,
+    15,
+    16,
+    20,
+    22,
+    27,
+    37,
+    39,
+    54,
+    61,
+    62,
+    71,
+    83,
+    96
+  ],
+  "core50": [
+    1,
+    3,
+    4,
+    6,
+    8,
+    11,
+    12,
+    15,
+    16,
+    20,
+    22,
+    27,
+    37,
+    39,
+    54,
+    61,
+    62,
+    71,
+    83,
+    96,
+    5,
+    7,
+    13,
+    17,
+    23,
+    24,
+    28,
+    30,
+    31,
+    33,
+    35,
+    38,
+    40,
+    41,
+    44,
+    48,
+    59,
+    63,
+    67,
+    68,
+    69,
+    73,
+    76,
+    78,
+    79,
+    85,
+    87,
+    91,
+    99,
+    104
   ]
 }
