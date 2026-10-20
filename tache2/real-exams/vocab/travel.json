@@ -46,7 +46,7 @@
       "scenario": "agency",
       "priority": 5,
       "exampleFr": "Quelles destinations pourriez-vous me recommander au Canada ?",
-      "exampleZh": "您能推荐一些加拿大的目的地吗？",
+      "exampleZh": "您能推荐加拿大的哪些目的地？",
       "source": {
         "month": "2026-07",
         "number": 3,
@@ -75,7 +75,7 @@
       "scenario": "agency",
       "priority": 5,
       "exampleFr": "Quelles destinations pourriez-vous me recommander au Canada ?",
-      "exampleZh": "您能推荐一些加拿大的目的地吗？",
+      "exampleZh": "您能推荐加拿大的哪些目的地？",
       "source": {
         "month": "2026-07",
         "number": 3,
@@ -249,7 +249,7 @@
       "scenario": "general",
       "priority": 5,
       "exampleFr": "Comment puis-je m’y rendre le plus facilement ?",
-      "exampleZh": "我可以选择什么交通方式去那里？",
+      "exampleZh": "我怎样前往那里最方便？",
       "source": {
         "month": "2026-07",
         "number": 6,
@@ -391,7 +391,7 @@
       "scenario": "family",
       "priority": 4,
       "exampleFr": "Est-il possible d’avoir une chambre familiale ? Je vais y aller avec mon enfant.",
-      "exampleZh": "会有家庭房吗？因为我要和孩子一起去。",
+      "exampleZh": "可以安排一间家庭房吗？我要和孩子一起去。",
       "source": {
         "month": "2026-07",
         "number": 9,
@@ -605,7 +605,7 @@
       "scenario": "general",
       "priority": 5,
       "exampleFr": "Quelles spécialités locales me conseilleriez-vous de goûter ?",
-      "exampleZh": "有没有您推荐我品尝的当地特色美食？",
+      "exampleZh": "您会建议我品尝哪些当地特色美食？",
       "source": {
         "month": "2026-08",
         "number": 6,
@@ -619,7 +619,7 @@
       "scenario": "general",
       "priority": 5,
       "exampleFr": "Quelles spécialités locales me conseilleriez-vous de goûter ?",
-      "exampleZh": "有没有您推荐我品尝的当地特色美食？",
+      "exampleZh": "您会建议我品尝哪些当地特色美食？",
       "source": {
         "month": "2026-08",
         "number": 6,
@@ -634,7 +634,7 @@
       "scenario": "sightseeing",
       "priority": 5,
       "exampleFr": "Peut-on se restaurer sur place ?",
-      "exampleZh": "园内有咖啡馆或餐厅吗？",
+      "exampleZh": "可以在现场用餐吗？",
       "source": {
         "month": "2026-10",
         "number": 6,
@@ -677,7 +677,7 @@
       "scenario": "general",
       "priority": 5,
       "exampleFr": "Est-ce que je pourrais bénéficier d’une réduction ?",
-      "exampleZh": "会有折扣吗？",
+      "exampleZh": "我可以享受折扣吗？",
       "source": {
         "month": "2026-10",
         "number": 6,
@@ -916,7 +916,7 @@
       "scenario": "general",
       "priority": 5,
       "exampleFr": "Que se passe-t-il si je dois annuler ma réservation ?",
-      "exampleZh": "如果有需要，可以取消预订吗？",
+      "exampleZh": "如果我必须取消预订，会怎样？",
       "source": {
         "month": "2026-07",
         "number": 11,
@@ -959,7 +959,7 @@
       "scenario": "general",
       "priority": 4,
       "exampleFr": "Quels hébergements abordables me recommanderiez-vous ?",
-      "exampleZh": "有您推荐的平价住宿吗？",
+      "exampleZh": "您会推荐哪些价格实惠的住宿？",
       "source": {
         "month": "2026-07",
         "number": 13,
@@ -1072,7 +1072,7 @@
       "scenario": "outdoor",
       "priority": 4,
       "exampleFr": "Où pourrions-nous faire une promenade sur un sentier calme ?",
-      "exampleZh": "有没有一条安静的步道适合我们散步？",
+      "exampleZh": "我们可以去哪里找一条安静的步道散步？",
       "source": {
         "month": "2026-08",
         "number": 4,
@@ -1142,7 +1142,7 @@
       "scenario": "hotel",
       "priority": 4,
       "exampleFr": "Est-il possible d’avoir une chambre avec vue sur la mer ?",
-      "exampleZh": "有海景房吗？",
+      "exampleZh": "可以要一间海景房吗？",
       "source": {
         "month": "2026-07",
         "number": 9,
@@ -1301,7 +1301,7 @@
       "scenario": "city",
       "priority": 4,
       "exampleFr": "Comment est l’ambiance dans ce quartier le soir ?",
-      "exampleZh": "这个街区晚上热闹吗？",
+      "exampleZh": "这个街区晚上的氛围怎么样？",
       "source": {
         "month": "2026-07",
         "number": 7,
@@ -1316,7 +1316,7 @@
       "scenario": "city",
       "priority": 4,
       "exampleFr": "Où pourrais-je me promener au calme dans cette ville ?",
-      "exampleZh": "有没有适合散步的公园或安静地方？",
+      "exampleZh": "在这个城市，我可以去哪里安静地散步？",
       "source": {
         "month": "2026-07",
         "number": 6,
@@ -1457,7 +1457,7 @@
       "scenario": "outdoor",
       "priority": 5,
       "exampleFr": "Quelles consignes de sécurité faut-il respecter ?",
-      "exampleZh": "有没有需要遵守的特别安全规定？",
+      "exampleZh": "需要遵守哪些安全规定？",
       "source": {
         "month": "2026-08",
         "number": 7,
@@ -1561,7 +1561,7 @@
       "scenario": "cruise",
       "priority": 4,
       "exampleFr": "Pouvait-on réserver des excursions à terre ?",
-      "exampleZh": "可以预订岸上游览吗？",
+      "exampleZh": "当时可以预订岸上游览吗？",
       "source": {
         "month": "2026-08",
         "number": 1,
@@ -1741,7 +1741,7 @@
       "pattern": "Quelles destinations pourriez-vous me recommander + lieu ?",
       "zh": "您能推荐哪些目的地？",
       "exampleFr": "Quelles destinations pourriez-vous me recommander au Canada ?",
-      "exampleZh": "您能推荐一些加拿大的目的地吗？",
+      "exampleZh": "您能推荐加拿大的哪些目的地？",
       "scenario": "agency",
       "source": {
         "month": "2026-07",
@@ -1793,7 +1793,7 @@
       "pattern": "Comment puis-je m’y rendre + complément ?",
       "zh": "我怎样前往那里？",
       "exampleFr": "Comment puis-je m’y rendre le plus facilement ?",
-      "exampleZh": "我可以选择什么交通方式去那里？",
+      "exampleZh": "我怎样前往那里最方便？",
       "scenario": "general",
       "source": {
         "month": "2026-07",
@@ -2001,7 +2001,7 @@
       "pattern": "Est-ce que je pourrais bénéficier d’une réduction ?",
       "zh": "我可以享受折扣吗？",
       "exampleFr": "Est-ce que je pourrais bénéficier d’une réduction ?",
-      "exampleZh": "会有折扣吗？",
+      "exampleZh": "我可以享受折扣吗？",
       "scenario": "general",
       "source": {
         "month": "2026-10",
@@ -2066,7 +2066,7 @@
       "pattern": "Que se passe-t-il si + sujet + présent ?",
       "zh": "如果……，会怎样？",
       "exampleFr": "Que se passe-t-il si je dois annuler ma réservation ?",
-      "exampleZh": "如果有需要，可以取消预订吗？",
+      "exampleZh": "如果我必须取消预订，会怎样？",
       "scenario": "outdoor",
       "source": {
         "month": "2026-07",
@@ -2158,7 +2158,7 @@
       "zh": "当时可以……吗？",
       "scenario": "cruise",
       "exampleFr": "Pouvait-on réserver des excursions à terre ?",
-      "exampleZh": "可以预订岸上游览吗？",
+      "exampleZh": "当时可以预订岸上游览吗？",
       "source": {
         "month": "2026-08",
         "number": 1,
@@ -2223,7 +2223,7 @@
       "zh": "您会推荐哪些……？",
       "scenario": "hotel",
       "exampleFr": "Quels hébergements abordables me recommanderiez-vous ?",
-      "exampleZh": "有您推荐的平价住宿吗？",
+      "exampleZh": "您会推荐哪些价格实惠的住宿？",
       "source": {
         "month": "2026-07",
         "number": 13,

@@ -312,7 +312,7 @@
       "scenario": "neighborhood",
       "priority": 5,
       "exampleFr": "Comment peut-on se déplacer en transports en commun à proximité ?",
-      "exampleZh": "附近乘坐公共交通方便吗？",
+      "exampleZh": "在附近可以怎样乘坐公共交通出行？",
       "source": {
         "month": "2026-10",
         "number": 3,
