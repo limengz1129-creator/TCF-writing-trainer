@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Generate and audit exact-text static Piper recordings for the C1 travel view."""
+"""Generate and audit exact-text static Piper recordings for the C1 travel view.
+
+Build automatically on GitHub Actions; acceptance requires a verified manifest and packs.
+"""
 import argparse, base64, io, json, re, subprocess, wave
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2]
