@@ -142,14 +142,14 @@
   // C1 review: all scenes are visible in the selected mother argument.
   function renderC1Review(body,id,topic){
     body.replaceChildren();
-    const dataset=topic==='媒体与文化'?window.TCF_C1_MEDIA:topic==='教育与儿童'?window.TCF_C1_EDUCATION:topic==='职业与职场'?window.TCF_C1_CAREER:topic==='科技与网络'?window.TCF_C1_TECH:topic==='饮食与健康'?window.TCF_C1_HEALTH:window.TCF_C1_TRAVEL;
+    const dataset=topic==='媒体与文化'?window.TCF_C1_MEDIA:topic==='教育与儿童'?window.TCF_C1_EDUCATION:topic==='职业与职场'?window.TCF_C1_CAREER:topic==='科技与网络'?window.TCF_C1_TECH:topic==='饮食与健康'?window.TCF_C1_HEALTH:topic==='环境与城市'?window.TCF_C1_ENVIRONMENT:window.TCF_C1_TRAVEL;
     const records=(dataset||[]).filter(x=>x.mother.slice(0,2)===id);
     if(!records.length){body.textContent='该母论点尚无 C1 冲刺资料。';return;}
     const tip=document.createElement('p');tip.className='note';tip.textContent='全部 '+records.length+' 个情境连续展示；点击情境名称可快速定位。法语朗读仅使用已生成的 Piper siwis 静态音频。';body.append(tip);
     const nav=document.createElement('nav');nav.className='c1-jump';nav.setAttribute('aria-label','C1 情境快速定位');body.append(nav);
     const status=document.createElement('p');status.className='note';status.setAttribute('role','status');body.append(status);
     // Reuse exactly indexed audio; never silently substitute a browser/system voice.
-    const audioFolder=topic==='媒体与文化'?'c1-media-audio/':topic==='教育与儿童'?'c1-education-audio/':topic==='职业与职场'?'c1-career-audio/':topic==='科技与网络'?'tech-audio/':topic==='饮食与健康'?'health-audio/':'c1-travel-audio/';
+    const audioFolder=topic==='媒体与文化'?'c1-media-audio/':topic==='教育与儿童'?'c1-education-audio/':topic==='职业与职场'?'c1-career-audio/':topic==='科技与网络'?'tech-audio/':topic==='饮食与健康'?'health-audio/':topic==='环境与城市'?'environment-audio/':'c1-travel-audio/';
     let manifestPromise=null,currentAudio=null,currentUrl=null,currentButton=null;
     function stop(){
       if(currentAudio){currentAudio.pause();currentAudio=null;}
@@ -295,7 +295,7 @@
     const d=D.M[id];if(!d)return;stage.replaceChildren();
     const back=document.createElement('button');back.className='back-to-map';back.textContent='← 返回 '+D.mothers+' 个母论点总图';back.onclick=()=>renderOverview(stage,D);stage.append(back);
     const head=document.createElement('div');head.className='argument-head';head.innerHTML='<div><p class="eyebrow">'+D.title+' · 母论点详情</p><h2>#'+id+' '+d.t+(d.badge?' <span class="argument-badge">'+d.badge+'</span>':'')+'</h2></div>';const warn=weakMarker(weakCount(D,id));if(warn)head.querySelector('h2')?.append(warn);stage.append(head);
-    const modes=document.createElement('div');modes.className='argument-modes mother-modes';[['map','🧠 思维导图'],['chain','🔗 法语逻辑链'],['quick','⚡ 极简速记'],...(['旅行与移民','职业与职场','教育与儿童','媒体与文化','科技与网络','饮食与健康'].includes(D.title)?[['c1','C1 冲刺复习']]:[])].forEach(([k,label])=>{const b=document.createElement('button');b.dataset.motherMode=k;b.textContent=label;b.classList.toggle('active',k===mode);modes.append(b);});stage.append(modes);
+    const modes=document.createElement('div');modes.className='argument-modes mother-modes';[['map','🧠 思维导图'],['chain','🔗 法语逻辑链'],['quick','⚡ 极简速记'],...(['旅行与移民','职业与职场','教育与儿童','媒体与文化','科技与网络','饮食与健康','环境与城市'].includes(D.title)?[['c1','C1 冲刺复习']]:[])].forEach(([k,label])=>{const b=document.createElement('button');b.dataset.motherMode=k;b.textContent=label;b.classList.toggle('active',k===mode);modes.append(b);});stage.append(modes);
     const body=document.createElement('div');body.className='mother-stage';stage.append(body);
     const showMap=()=>{body.replaceChildren();const map=document.createElement('div');map.className='argument-map-sample';const center=document.createElement('button');center.className='mother-node active';center.innerHTML='<strong>#'+id+' '+d.t+'</strong><small>'+(d.badge?d.badge+' · ':'')+'点击下面场景链继续展开</small>';map.append(center);const branches=document.createElement('div');branches.className='scene-grid';d.scenes.forEach((s,i)=>{const card=document.createElement('button');card.className='scene-node';card.innerHTML='<span>场景 '+(i+1)+'</span><strong>'+s.title+'</strong><small lang="fr">'+s.fr+'</small>';const weak=sceneWeakCount(s);if(weak){const icon=weakMarker(weak);icon.title='这个场景有 '+weak+' 个不熟练论段';card.querySelector('strong').append(icon);}card.onclick=()=>renderScene(stage,D,id,i);branches.append(card);});map.append(branches);body.append(map);};
     const showChain=()=>{
@@ -303,7 +303,7 @@
       const core=document.createElement('section');core.className='argument-core';
       const label=document.createElement('p');label.className='argument-label';label.textContent='核心法语逻辑链';
       const zh=document.createElement('div');zh.className='logic-zh';zh.textContent=d.zh;
-      core.append(label,logicAudioChain(d.fr,['旅行与移民','职业与职场','教育与儿童','媒体与文化','科技与网络','饮食与健康'].includes(D.title)),zh);body.append(core);
+      core.append(label,logicAudioChain(d.fr,['旅行与移民','职业与职场','教育与儿童','媒体与文化','科技与网络','饮食与健康','环境与城市'].includes(D.title)),zh);body.append(core);
       const branches=document.createElement('div');branches.className='scene-list';
       d.scenes.forEach((scene,i)=>{
         const wrapper=document.createElement('section');wrapper.className='scene-chain-audio-row';
