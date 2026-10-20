@@ -47,6 +47,10 @@ def targets():
                 for chunk in re.split(r"\s*(?:→|/|\+|[,，、])\s*",sentence):
                     if chunk.strip():ret.append(chunk.strip())
         ret.extend(vocab(r["vocab"]))
+    # Regression guard: these four separate buttons must exist in the manifest.
+    required=("recherche d’emploi au Canada","entretien","comprendre les consignes","collaboration")
+    missing=set(required)-set(ret)
+    assert not missing, f"Missing split example audio targets: {sorted(missing)}"
     return list(dict.fromkeys(ret))
 def verify():
     expected=targets()
