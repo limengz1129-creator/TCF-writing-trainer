@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>旅行与住宿｜提问去重 List</title>
+<style>
+:root{--bg:#f7f7f4;--line:#dde2de;--accent:#285b4c;--muted:#69716c}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#1f2421;font-family:system-ui,"PingFang SC","Microsoft YaHei",sans-serif}.wrap{max-width:1150px;margin:auto;padding:24px 16px 70px}h1{font-size:clamp(25px,4vw,36px);margin:10px 0}p{line-height:1.65}.muted{color:var(--muted)}a{color:var(--accent)}.nav{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.panel{background:#fff;border:1px solid var(--line);padding:16px;border-radius:15px;margin:14px 0}.stats,.controls,.actions,.source{display:flex;gap:9px;flex-wrap:wrap;align-items:center}.stat{padding:8px 14px;border-radius:12px;background:#e8f0ed}.stat strong{font-size:20px}select,input,button{font:inherit;border:1px solid var(--line);border-radius:9px;background:#fff;padding:9px 11px}button{cursor:pointer}button.active,.primary{background:var(--accent);color:white;border-color:var(--accent)}input[type=search]{flex:1;min-width:200px}.controls>*{max-width:100%}.item{padding:15px 0;border-bottom:1px solid var(--line)}.item:last-child{border-bottom:0}.fr{font-weight:750;font-size:18px;line-height:1.6;margin:8px 0}.zh{line-height:1.6;color:#49554d}.meta{font-size:12px;color:var(--muted)}.source{font-size:12px;margin:10px 0}.source a{padding:3px 6px;background:#eef5f1;border-radius:6px;text-decoration:none}.actions button{font-size:12px;padding:6px 9px}.focused .fr{font-size:23px}.focused .zh{font-size:21px;font-weight:650}.hide{display:none}.pill{display:inline-block;padding:4px 8px;background:#eef5f1;border-radius:20px;font-size:12px}.sectionhead{display:flex;justify-content:space-between;align-items:center;gap:10px}.hint{font-size:13px;color:var(--muted)}@media(max-width:650px){.controls>*{width:100%}.stat strong{font-size:17px}}
+</style></head><body><main class="wrap">
+<div class="nav"><a href="travel.html">← 返回旅行与住宿原始27题</a><a href="./">返回真题总览</a></div>
+<h1>旅行与住宿｜提问去重 List</h1>
+<p class="muted">全部27题 × 每题15问 · 仅合并法语原文完全相同的提问（忽略首尾空格及 Unicode 等价编码）。不同句型、时态、人称和用途全部保留。按提问功能分类，类别之间不重复。</p>
+<div class="panel stats" id="stats"></div>
+<div class="panel controls">
+<select id="category" aria-label="提问功能"></select>
+<select id="filter" aria-label="掌握状态"><option value="all">全部学习状态</option><option value="new">未学习</option><option value="review">待复习</option><option value="mastered">已掌握</option><option value="favorite">收藏</option></select>
+<select id="sort" aria-label="排序"><option value="freq">重复频次从高到低</option><option value="original">来源题目顺序</option><option value="alpha">法语字母顺序</option></select>
+<input id="search" type="search" placeholder="搜索法语 / 中文 / 维度">
+<button id="view" class="primary">切换：逐句学习</button>
+</div>
+<div class="hint" id="speechStatus" aria-live="polite">Piper · fr_FR-siwis-medium（沿用原页静态预生成音频）</div>
+<div class="panel"><div class="sectionhead"><strong id="results"></strong><span class="hint" id="position"></span></div><div id="list"></div><div class="actions" id="pager" style="margin-top:14px"></div></div>
+</main>
+<script src="piper-inline.js?v=travel27-fusion3d"></script>
+<script>window.T2_TRAVEL=[];</script>
+<script src="travel-data-1.js?v=travel27-tridim-v2"></script><script src="travel-data-2.js?v=travel27-tridim-v2"></script><script src="travel-data-3.js?v=travel27-tridim-v2"></script><script src="travel-data-4.js?v=travel27-tridim-v2"></script><script src="travel-data-5.js?v=travel27-tridim-v2"></script><script src="travel-data-6.js?v=travel27-tridim-v2"></script><script src="travel-data-7.js?v=travel27-tridim-v2"></script><script src="travel-data-8.js?v=travel27-tridim-v2"></script><script src="travel-data-9.js?v=travel27-tridim-v2"></script>
+<script>
+(()=>{
+'use strict';
+const KEY='TCF-T2-REAL-TRAVEL-v1', $=id=>document.getElementById(id);
+const D=window.T2_TRAVEL.sort((a,b)=>a.month.localeCompare(b.month)||a.number-b.number);
+const cats=['价格与费用','时间与安排','地点与交通','住宿与设施','活动与景点','天气与环境','餐饮与美食','预订与条件','取消与退款','安全与保障','评价与推荐','家庭与儿童','其他'];
+function category(r){
+ const s=(r.dimension+' '+r.sub+' '+r.zh).toLowerCase();
+ if(/取消|退款|退订|退还|rembours/.test(s))return '取消与退款';
+ if(/价格|费用|支付|预算|押金|折扣|收费|票价|免费|优惠|价钱|多少钱|花费/.test(s))return '价格与费用';
+ if(/时间|行程|日期|时长|开放时间|营业时间|入住时间|退房时间|期限|何时|什么时候|几天|多久|季节|周末/.test(s))return '时间与安排';
+ if(/交通|地点|位置|距离|地址|路线|停车|街区|出行|怎么去|如何前往/.test(s))return '地点与交通';
+ if(/住宿|酒店|旅馆|房间|民宿|设施|早餐|wifi|wi-fi|游泳池|洗衣|隔音|网络|床位/.test(s))return '住宿与设施';
+ if(/天气|环境|气候|温度|气温/.test(s))return '天气与环境';
+ if(/餐饮|美食|餐厅|吃饭|饮食|特色菜/.test(s))return '餐饮与美食';
+ if(/家庭|儿童|孩子|小孩|亲子/.test(s))return '家庭与儿童';
+ if(/安全|保险|保障|紧急/.test(s))return '安全与保障';
+ if(/预订|手续|证件|条件|报名|登记|预定|需要准备|需要什么|资格/.test(s))return '预订与条件';
+ if(/体验|建议|推荐|比较|评价|适合|初学者|准备/.test(s))return '评价与推荐';
+ if(/活动|景点|参观|游览|文化|娱乐|项目|旅游|行程安排/.test(s))return '活动与景点';
+ return '其他';
+}
+const map=new Map();let total=0;
+D.forEach((q,qi)=>q.rows.forEach(r=>{total++;const key=r.fr.trim().normalize('NFC');let x=map.get(key);if(!x){x={key,fr:r.fr,zh:r.zh,cat:category(r),dim:r.dimension,sub:r.sub,order:total,refs:[]};map.set(key,x)}x.refs.push({month:q.month,number:q.number,n:r.n,q,r})}));
+const all=[...map.values()];
+let saved={};try{saved=JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch(e){}
+if(!saved.progress)saved.progress={};
+function rowKey(q,r){return q.month+'-'+q.number+'-'+r.n+(r.originalFr?'-fusion-'+r.fr:'')}
+function states(x){return x.refs.map(({q,r})=>saved.progress[rowKey(q,r)]||{status:'new',favorite:false})}
+function status(x){const ss=states(x);return {mastered:ss.some(p=>p.status==='mastered'),review:ss.some(p=>p.status==='review'),favorite:ss.some(p=>p.favorite)}}
+function update(x,type){const current=status(x);x.refs.forEach(({q,r})=>{const k=rowKey(q,r),p=saved.progress[k]||{status:'new',favorite:false};if(type==='favorite')p.favorite=!current.favorite;else p.status=type;saved.progress[k]=p});try{localStorage.setItem(KEY,JSON.stringify(saved))}catch(e){}render()}
+function speak(x){if(window.TCF_TRAVEL_PIPER?.play)return window.TCF_TRAVEL_PIPER.play(x.fr,$('speechStatus'),1);$('speechStatus').textContent='Piper 播放器未成功加载，请刷新页面。'}
+const count=()=>all.filter(x=>status(x).mastered).length;
+$('stats').innerHTML='<span class="stat"><strong>'+D.length+'</strong> 道真题</span><span class="stat"><strong>'+total+'</strong> 原始提问</span><span class="stat"><strong>'+(total-all.length)+'</strong> 重复条目</span><span class="stat"><strong>'+all.length+'</strong> 去重后</span><span class="stat" id="done"></span>';
+$('category').innerHTML='<option value="all">全部提问功能（'+all.length+'）</option>'+cats.map(c=>'<option value="'+c+'">'+c+'（'+all.filter(x=>x.cat===c).length+'）</option>').join('');
+let focus=false,index=0,page=0;
+function filtered(){
+ const cat=$('category').value,filter=$('filter').value,query=$('search').value.trim().toLocaleLowerCase(),sort=$('sort').value;
+ let a=all.filter(x=>(cat==='all'||x.cat===cat)&&(!query||(x.fr+' '+x.zh+' '+x.dim+' '+x.sub).toLocaleLowerCase().includes(query)));
+ a=a.filter(x=>{let s=status(x);return filter==='all'||filter==='favorite'&&s.favorite||filter==='mastered'&&s.mastered||filter==='review'&&s.review||filter==='new'&& !s.mastered&&!s.review});
+ if(sort==='freq')a.sort((a,b)=>b.refs.length-a.refs.length||a.order-b.order);
+ if(sort==='alpha')a.sort((a,b)=>a.fr.localeCompare(b.fr,'fr'));
+ if(sort==='original')a.sort((a,b)=>a.order-b.order);
+ return a;
+}
+function node(tag,cls,t){let el=document.createElement(tag);if(cls)el.className=cls;if(t!==undefined)el.textContent=t;return el}
+function makeBtn(txt,fn,active){let b=node('button',active?'active':'',txt);b.onclick=fn;return b}
+function drawItem(x,num){
+ const p=status(x),it=node('article','item'+(focus?' focused':'')),heading=node('div','meta',num+' · '+x.cat+' · '+x.dim+' / '+x.sub+' · 涉及'+x.refs.length+'条');it.append(heading);
+ const zh=node('div','zh',x.zh),fr=node('div','fr',x.fr);
+ if(focus){it.append(zh,fr);fr.classList.add('hide');it.append(makeBtn('显示 / 隐藏法语',()=>fr.classList.toggle('hide')))}else it.append(fr,zh);
+ const actions=node('div','actions');actions.append(makeBtn('🔊 发音',()=>speak(x)),makeBtn('✅ 已掌握',()=>update(x,'mastered'),p.mastered),makeBtn('🟡 待复习',()=>update(x,'review'),p.review),makeBtn(p.favorite?'★ 已收藏':'☆ 收藏',()=>update(x,'favorite'),p.favorite));it.append(actions);
+ const refs=node('div','source');refs.append(node('span','meta','来源（'+x.refs.length+'）：'));x.refs.forEach(({month,number,n})=>{const a=node('a','',month+' 第'+number+'题 #'+n);a.href='travel.html?month='+encodeURIComponent(month)+'&question='+number+'&row='+n;refs.append(a)});it.append(refs);return it;
+}
+function render(){
+ const a=filtered();index=Math.max(0,Math.min(index,a.length-1));$('done').textContent='✅ '+count()+' / '+all.length+' 已掌握';$('list').replaceChildren();$('pager').replaceChildren();
+ $('results').textContent='当前筛选：'+a.length+' 条';$('view').textContent=focus?'切换：完整清单':'切换：逐句学习';
+ if(!a.length){$('list').append(node('p','muted','没有匹配的提问。'));$('position').textContent='';return}
+ if(focus){$('list').append(drawItem(a[index],index+1));$('position').textContent=(index+1)+' / '+a.length;$('pager').append(makeBtn('← 上一句',()=>{index=(index+a.length-1)%a.length;render()}),makeBtn('下一句 →',()=>{index=(index+1)%a.length;render()}))}
+ else{const pageSize=30,pages=Math.ceil(a.length/pageSize);page=Math.min(page,pages-1);a.slice(page*pageSize,(page+1)*pageSize).forEach((x,j)=>$('list').append(drawItem(x,page*pageSize+j+1)));$('position').textContent='第 '+(page+1)+' / '+pages+' 页';$('pager').append(makeBtn('← 上一页',()=>{page=Math.max(0,page-1);render();scrollTo(0,0)}),makeBtn('下一页 →',()=>{page=Math.min(pages-1,page+1);render();scrollTo(0,0)}))}
+}
+['category','filter','sort'].forEach(id=>$(id).onchange=()=>{index=page=0;render()});$('search').oninput=()=>{index=page=0;render()};$('view').onclick=()=>{focus=!focus;index=page=0;render()};render();
+})();
+</script></body></html>
