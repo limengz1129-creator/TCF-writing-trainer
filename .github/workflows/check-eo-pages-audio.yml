@@ -1,0 +1,15 @@
+name: Verify published EO Piper audio
+on:
+  push:
+    paths:
+      - 'scripts/check_eo_pages_audio.py'
+      - '.github/workflows/check-eo-pages-audio.yml'
+  workflow_dispatch:
+jobs:
+  verify-pages:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check public Pages assets and every published audio reference
+        run: python3 scripts/check_eo_pages_audio.py
