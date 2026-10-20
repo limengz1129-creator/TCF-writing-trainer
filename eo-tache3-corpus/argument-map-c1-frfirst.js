@@ -149,7 +149,7 @@
     const nav=document.createElement('nav');nav.className='c1-jump';nav.setAttribute('aria-label','C1 情境快速定位');body.append(nav);
     const status=document.createElement('p');status.className='note';status.setAttribute('role','status');body.append(status);
     // Reuse exactly indexed audio; never silently substitute a browser/system voice.
-    const audioFolder=topic==='媒体与文化'?'c1-media-audio/':topic==='教育与儿童'?'c1-education-audio/':topic==='职业与职场'?'c1-career-audio/':topic==='科技与网络'?'c1-tech-audio/':'c1-travel-audio/';
+    const audioFolder=topic==='媒体与文化'?'c1-media-audio/':topic==='教育与儿童'?'c1-education-audio/':topic==='职业与职场'?'c1-career-audio/':topic==='科技与网络'?'tech-audio/':'c1-travel-audio/';
     let manifestPromise=null,currentAudio=null,currentUrl=null,currentButton=null;
     function stop(){
       if(currentAudio){currentAudio.pause();currentAudio=null;}
