@@ -6,6 +6,9 @@ on:
       - 'scripts/generate_c1_health_piper.py'
       - 'eo-tache3-corpus/c1-health-data.js'
       - '.github/workflows/generate-c1-health-audio.yml'
+concurrency:
+  group: health-c1-piper-main
+  cancel-in-progress: false
 permissions:
   contents: write
 jobs:
@@ -36,5 +39,12 @@ jobs:
           git add eo-tache3-corpus/health-audio/
           if ! git diff --cached --quiet; then
             git commit -m 'Generate missing Piper siwis Health C1 audio'
-            git push
+            for attempt in 1 2 3 4 5; do
+              git fetch origin main
+              git rebase origin/main || { git rebase --abort; exit 1; }
+              if git push origin HEAD:main; then exit 0; fi
+              sleep 5
+            done
+            echo 'Audio push failed after retries' >&2
+            exit 1
           fi
