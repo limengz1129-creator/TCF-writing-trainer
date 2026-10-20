@@ -31,6 +31,23 @@ def synthesize(voice,text):
 def main():
     ap=argparse.ArgumentParser(); ap.add_argument("--model",required=True); args=ap.parse_args()
     texts=load_texts(); print(f"{len(texts)} unique sport vocabulary / example targets")
+    # Reuse a fully indexed pre-generated set; avoid repacking published audio URLs.
+    manifest_path=OUT/"manifest.json"
+    if manifest_path.exists():
+        try:
+            existing=json.loads(manifest_path.read_text(encoding="utf-8"))
+            assert existing["voice"]=="fr_FR-siwis-medium"
+            cached={}
+            for text in texts:
+                rec=existing["records"][existing["targets"][text][0]["id"]]
+                if rec["pack"] not in cached:
+                    cached[rec["pack"]]=json.loads((OUT/rec["pack"]).read_text(encoding="utf-8"))
+                data=cached[rec["pack"]][rec["id"]]
+                assert data["text"]==text and len(base64.b64decode(data["audio"],validate=True))>100
+            print(f"All {len(texts)} current audio targets verified; retaining existing immutable packs")
+            return
+        except (AssertionError,KeyError,ValueError,OSError):
+            pass
     OUT.mkdir(parents=True,exist_ok=True)
     for old in OUT.glob("pack-*.json"): old.unlink()
     voice=PiperVoice.load(args.model)

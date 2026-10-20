@@ -2,8 +2,8 @@
   "theme": "sport",
   "title": "体育户外与场馆",
   "target": "TCF Canada 口语 Tâche 2 · C1",
-  "version": 1,
-  "principle": "约100个高价值词/词块，以最终真题为基础；词块与真实套用问法绑定，优先训练中文→法语主动调用。",
+  "version": 2,
+  "principle": "以当前9题×15问为依据，108个词块与45组问法均标注真题来源；按5个场景训练中文→法语，区分直接咨询、向邻居求建议和未来赛事安排。",
   "scenarios": [
     {
       "id": "club",
@@ -34,7 +34,12 @@
       "scenario": "club",
       "priority": 5,
       "exampleFr": "Où se trouve exactement votre club sportif ?",
-      "exampleZh": "您的体育俱乐部具体在哪里？"
+      "exampleZh": "您的体育俱乐部具体在哪里？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 1
+      }
     },
     {
       "id": 2,
@@ -42,8 +47,14 @@
       "zh": "健身房",
       "scenario": "club",
       "priority": 5,
-      "exampleFr": "Où se trouve exactement la salle de sport ?",
-      "exampleZh": "健身房具体在哪里？"
+      "exampleFr": "Connaissez-vous une salle de sport dans le quartier ?",
+      "exampleZh": "您知道附近有健身房吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 1
+      },
+      "learningKey": "sport-final15-v2-2"
     },
     {
       "id": 3,
@@ -52,7 +63,12 @@
       "scenario": "dance",
       "priority": 5,
       "exampleFr": "Où se trouve exactement votre école de danse ?",
-      "exampleZh": "您的舞蹈学校具体在哪里？"
+      "exampleZh": "您的舞蹈学校具体在哪里？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 1
+      }
     },
     {
       "id": 4,
@@ -60,17 +76,29 @@
       "zh": "体育课程",
       "scenario": "club",
       "priority": 5,
-      "exampleFr": "Vous voulez vous inscrire à un cours de sport.",
-      "exampleZh": "您想报名体育课程。"
+      "exampleFr": "Qu’est-ce qu’on peut pratiquer comme sport dans votre club ?",
+      "exampleZh": "在你们俱乐部可以参加哪些运动？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 5
+      },
+      "learningKey": "sport-final15-v2-4"
     },
     {
       "id": 5,
       "fr": "une séance",
       "zh": "一次训练 / 一节课",
-      "scenario": "general",
+      "scenario": "yoga",
       "priority": 5,
-      "exampleFr": "À quelle fréquence proposez-vous les séances ?",
-      "exampleZh": "你们多久安排一次训练？"
+      "exampleFr": "Les séances ont-elles lieu chaque semaine ?",
+      "exampleZh": "瑜伽课每周都举行吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 2
+      },
+      "learningKey": "sport-final15-v2-5"
     },
     {
       "id": 6,
@@ -79,7 +107,12 @@
       "scenario": "yoga",
       "priority": 5,
       "exampleFr": "Quels sont les jours et les horaires des séances de yoga ?",
-      "exampleZh": "瑜伽课哪几天、几点？"
+      "exampleZh": "瑜伽课安排在星期几、什么时间？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 1
+      }
     },
     {
       "id": 7,
@@ -88,7 +121,12 @@
       "scenario": "club",
       "priority": 5,
       "exampleFr": "À quelles heures êtes-vous ouverts ?",
-      "exampleZh": "你们几点开放？"
+      "exampleZh": "你们的开放时间是什么？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 3
+      }
     },
     {
       "id": 8,
@@ -96,8 +134,14 @@
       "zh": "周末时间",
       "scenario": "club",
       "priority": 4,
-      "exampleFr": "Et le week-end, les horaires changent-ils ?",
-      "exampleZh": "周末时间会变吗？"
+      "exampleFr": "Et le week-end, ses horaires changent-ils ?",
+      "exampleZh": "那家健身房周末的开放时间会变吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 4
+      },
+      "learningKey": "sport-final15-v2-8"
     },
     {
       "id": 9,
@@ -105,8 +149,14 @@
       "zh": "前往那里",
       "scenario": "club",
       "priority": 5,
-      "exampleFr": "Quel est le moyen le plus simple pour m’y rendre ?",
-      "exampleZh": "怎么去最方便？"
+      "exampleFr": "Quel est le moyen le plus simple pour s’y rendre ?",
+      "exampleZh": "怎么去那里最方便？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 4
+      },
+      "learningKey": "sport-final15-v2-9"
     },
     {
       "id": 10,
@@ -115,7 +165,12 @@
       "scenario": "club",
       "priority": 4,
       "exampleFr": "Quel est le moyen le plus simple pour y aller ?",
-      "exampleZh": "怎么去最方便？"
+      "exampleZh": "怎么去那里最方便？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 2
+      }
     },
     {
       "id": 11,
@@ -124,7 +179,12 @@
       "scenario": "dance",
       "priority": 5,
       "exampleFr": "Qu’est-ce que vous proposez comme styles de danse ?",
-      "exampleZh": "你们提供哪些舞蹈类型？"
+      "exampleZh": "你们提供哪些舞蹈课程？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 5
+      }
     },
     {
       "id": 12,
@@ -133,7 +193,12 @@
       "scenario": "general",
       "priority": 5,
       "exampleFr": "Les cours sont-ils adaptés aux débutants ?",
-      "exampleZh": "课程适合初学者吗？"
+      "exampleZh": "这些课程适合初学者吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 6
+      }
     },
     {
       "id": 13,
@@ -141,26 +206,44 @@
       "zh": "适合初学者",
       "scenario": "general",
       "priority": 5,
-      "exampleFr": "Cette activité est-elle adaptée à une débutante comme moi ?",
-      "exampleZh": "这项活动适合像我这样的初学者吗？"
+      "exampleFr": "Cette activité convient-elle aux personnes qui débutent ?",
+      "exampleZh": "这项活动适合初学者吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 7
+      },
+      "learningKey": "sport-final15-v2-13"
     },
     {
       "id": 14,
-      "fr": "se préparer",
-      "zh": "做准备",
-      "scenario": "general",
+      "fr": "connaître quelques pas de danse",
+      "zh": "会一些舞步",
+      "scenario": "dance",
       "priority": 5,
-      "exampleFr": "Dois-je préparer quelque chose avant de commencer ?",
-      "exampleZh": "开始前需要准备什么吗？"
+      "exampleFr": "Faut-il déjà connaître quelques pas de danse ?",
+      "exampleZh": "需要事先会一些舞步吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 7
+      },
+      "learningKey": "sport-final15-v2-14"
     },
     {
       "id": 15,
-      "fr": "une préparation particulière",
-      "zh": "特别准备",
+      "fr": "un mouvement à éviter",
+      "zh": "应避免的动作",
       "scenario": "yoga",
       "priority": 4,
-      "exampleFr": "Dois-je faire une préparation particulière avant de commencer ?",
-      "exampleZh": "开始前需要特别准备吗？"
+      "exampleFr": "Y a-t-il des mouvements à éviter pour les débutants ?",
+      "exampleZh": "初学者有没有需要避免的动作？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 8
+      },
+      "learningKey": "sport-final15-v2-15"
     },
     {
       "id": 16,
@@ -169,7 +252,12 @@
       "scenario": "dance",
       "priority": 4,
       "exampleFr": "Quelle formation ont suivie les professeurs ?",
-      "exampleZh": "老师有什么培训背景？"
+      "exampleZh": "老师们接受过什么专业培训？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 8
+      }
     },
     {
       "id": 17,
@@ -177,8 +265,14 @@
       "zh": "教练",
       "scenario": "club",
       "priority": 5,
-      "exampleFr": "Puis-je être accompagnée par un entraîneur au début ?",
-      "exampleZh": "刚开始时可以有教练指导吗？"
+      "exampleFr": "Puis-je bénéficier d’un accompagnement par un entraîneur quand je débute ?",
+      "exampleZh": "刚开始时，我可以请教练指导吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 8
+      },
+      "learningKey": "sport-final15-v2-17"
     },
     {
       "id": 18,
@@ -186,8 +280,14 @@
       "zh": "由教练陪同指导",
       "scenario": "club",
       "priority": 5,
-      "exampleFr": "Est-il possible d’être accompagné par un entraîneur quand on débute ?",
-      "exampleZh": "初学时可以由教练带吗？"
+      "exampleFr": "Peut-on bénéficier d’un accompagnement par un entraîneur quand on débute ?",
+      "exampleZh": "刚开始锻炼时，可以请教练指导吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 9
+      },
+      "learningKey": "sport-final15-v2-18"
     },
     {
       "id": 19,
@@ -196,7 +296,12 @@
       "scenario": "general",
       "priority": 5,
       "exampleFr": "Vous proposez des cours individuels, en groupe, ou les deux ?",
-      "exampleZh": "你们提供个人课、团体课还是都有？"
+      "exampleZh": "你们提供单人课、团体课，还是两种都有？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 9
+      }
     },
     {
       "id": 20,
@@ -205,7 +310,12 @@
       "scenario": "general",
       "priority": 5,
       "exampleFr": "Vous proposez des cours individuels, en groupe, ou les deux ?",
-      "exampleZh": "你们提供个人课、团体课还是都有？"
+      "exampleZh": "你们提供单人课、团体课，还是两种都有？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 9
+      }
     },
     {
       "id": 21,
@@ -214,7 +324,12 @@
       "scenario": "general",
       "priority": 4,
       "exampleFr": "Les séances sont-elles collectives ?",
-      "exampleZh": "训练是集体的吗？"
+      "exampleZh": "这些课程是团体课吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 10
+      }
     },
     {
       "id": 22,
@@ -222,8 +337,14 @@
       "zh": "个人训练",
       "scenario": "club",
       "priority": 4,
-      "exampleFr": "Vous proposez plutôt des entraînements collectifs, individuels, ou les deux ?",
-      "exampleZh": "你们主要提供团体训练、个人训练，还是都有？"
+      "exampleFr": "Les entraînements sont-ils individuels, collectifs, ou les deux ?",
+      "exampleZh": "训练是单人、团体，还是两种形式都有？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 10
+      },
+      "learningKey": "sport-final15-v2-22"
     },
     {
       "id": 23,
@@ -232,7 +353,12 @@
       "scenario": "general",
       "priority": 5,
       "exampleFr": "Quelle est la taille des groupes en général ?",
-      "exampleZh": "每组通常有多少人？"
+      "exampleZh": "每个班通常有多少人？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 10
+      }
     },
     {
       "id": 24,
@@ -241,7 +367,12 @@
       "scenario": "dance",
       "priority": 5,
       "exampleFr": "Comment faut-il s’habiller pour les cours ?",
-      "exampleZh": "上课应该怎么穿？"
+      "exampleZh": "上课时应该穿什么？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 11
+      }
     },
     {
       "id": 25,
@@ -250,16 +381,27 @@
       "scenario": "dance",
       "priority": 4,
       "exampleFr": "Comment faut-il s’habiller pour les cours ?",
-      "exampleZh": "上课应该怎么穿？"
+      "exampleZh": "上课时应该穿什么？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 11
+      }
     },
     {
       "id": 26,
-      "fr": "du matériel particulier",
-      "zh": "特殊装备",
-      "scenario": "general",
+      "fr": "des chaussures spéciales",
+      "zh": "专用鞋",
+      "scenario": "dance",
       "priority": 4,
-      "exampleFr": "Dois-je apporter du matériel particulier ?",
-      "exampleZh": "需要自带特殊装备吗？"
+      "exampleFr": "Faut-il apporter des chaussures spéciales ?",
+      "exampleZh": "需要自带专用舞鞋吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 12
+      },
+      "learningKey": "sport-final15-v2-26"
     },
     {
       "id": 27,
@@ -267,8 +409,14 @@
       "zh": "装备",
       "scenario": "general",
       "priority": 5,
-      "exampleFr": "Quel autre équipement faut-il prévoir ?",
-      "exampleZh": "还需要准备什么装备？"
+      "exampleFr": "De quel équipement ai-je besoin pour la course ?",
+      "exampleZh": "参加比赛需要准备什么装备？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 9
+      },
+      "learningKey": "sport-final15-v2-27"
     },
     {
       "id": 28,
@@ -277,7 +425,12 @@
       "scenario": "yoga",
       "priority": 5,
       "exampleFr": "Le tapis de yoga est-il fourni ou dois-je apporter le mien ?",
-      "exampleZh": "瑜伽垫提供还是要自带？"
+      "exampleZh": "你们提供瑜伽垫吗，还是需要我自带？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 12
+      }
     },
     {
       "id": 29,
@@ -286,7 +439,12 @@
       "scenario": "general",
       "priority": 4,
       "exampleFr": "Le tapis de yoga est-il fourni ou dois-je apporter le mien ?",
-      "exampleZh": "瑜伽垫提供吗？"
+      "exampleZh": "你们提供瑜伽垫吗，还是需要我自带？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 12
+      }
     },
     {
       "id": 30,
@@ -295,7 +453,12 @@
       "scenario": "club",
       "priority": 5,
       "exampleFr": "Est-ce que le matériel est disponible sur place ?",
-      "exampleZh": "器材现场提供吗？"
+      "exampleZh": "现场提供运动器材吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 12
+      }
     },
     {
       "id": 31,
@@ -304,7 +467,12 @@
       "scenario": "general",
       "priority": 5,
       "exampleFr": "Quel est le tarif des cours ?",
-      "exampleZh": "课程多少钱？"
+      "exampleZh": "课程费用是多少？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 13
+      }
     },
     {
       "id": 32,
@@ -313,7 +481,12 @@
       "scenario": "yoga",
       "priority": 5,
       "exampleFr": "Quel est le prix d’une séance ?",
-      "exampleZh": "一节课多少钱？"
+      "exampleZh": "每节课多少钱？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 14
+      }
     },
     {
       "id": 33,
@@ -321,26 +494,44 @@
       "zh": "会员费",
       "scenario": "club",
       "priority": 5,
-      "exampleFr": "Quel est le prix de l’abonnement ?",
-      "exampleZh": "会员费多少钱？"
+      "exampleFr": "Savez-vous combien coûte l’abonnement mensuel ?",
+      "exampleZh": "您知道月费大概多少吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 12
+      },
+      "learningKey": "sport-final15-v2-33"
     },
     {
       "id": 34,
-      "fr": "une réduction étudiante",
-      "zh": "学生优惠",
+      "fr": "un engagement annuel",
+      "zh": "一年合约",
       "scenario": "club",
       "priority": 4,
-      "exampleFr": "Les étudiants ont-ils droit à une réduction ?",
-      "exampleZh": "学生有优惠吗？"
+      "exampleFr": "À votre connaissance, peut-on s’inscrire sans engagement annuel ?",
+      "exampleZh": "据您所知，可以不签年约吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 13
+      },
+      "learningKey": "sport-final15-v2-34"
     },
     {
       "id": 35,
-      "fr": "un moyen de paiement",
-      "zh": "付款方式",
-      "scenario": "general",
+      "fr": "payer au mois",
+      "zh": "按月付费",
+      "scenario": "club",
       "priority": 5,
-      "exampleFr": "Comment peut-on payer ?",
-      "exampleZh": "怎么付款？"
+      "exampleFr": "Est-ce que je peux payer au mois sans m’engager pour un an ?",
+      "exampleZh": "可以按月付款、不签一年合同吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 14
+      },
+      "learningKey": "sport-final15-v2-35"
     },
     {
       "id": 36,
@@ -349,7 +540,12 @@
       "scenario": "dance",
       "priority": 5,
       "exampleFr": "Puis-je faire un cours d’essai avant de m’inscrire ?",
-      "exampleZh": "报名之前可以试听吗？"
+      "exampleZh": "报名之前，我可以先试听一节课吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 14
+      }
     },
     {
       "id": 37,
@@ -358,7 +554,12 @@
       "scenario": "club",
       "priority": 5,
       "exampleFr": "Puis-je faire une séance d’essai avant de m’inscrire ?",
-      "exampleZh": "报名之前可以体验一次吗？"
+      "exampleZh": "报名之前，我可以先体验一节课吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 14
+      }
     },
     {
       "id": 38,
@@ -367,7 +568,12 @@
       "scenario": "general",
       "priority": 5,
       "exampleFr": "Comment se passe l’inscription ?",
-      "exampleZh": "怎么报名？"
+      "exampleZh": "报名流程是怎样的？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 15
+      }
     },
     {
       "id": 39,
@@ -376,7 +582,12 @@
       "scenario": "general",
       "priority": 5,
       "exampleFr": "Quel est le prix de l’inscription ?",
-      "exampleZh": "报名费多少钱？"
+      "exampleZh": "报名费是多少？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 12
+      }
     },
     {
       "id": 40,
@@ -385,7 +596,12 @@
       "scenario": "race",
       "priority": 5,
       "exampleFr": "Quel est le prix de l’inscription ?",
-      "exampleZh": "报名费用是多少？"
+      "exampleZh": "报名费是多少？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 12
+      }
     },
     {
       "id": 41,
@@ -394,7 +610,12 @@
       "scenario": "race",
       "priority": 5,
       "exampleFr": "Jusqu’à quand peut-on s’inscrire ?",
-      "exampleZh": "报名截止到什么时候？"
+      "exampleZh": "最晚可以报名到什么时候？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 14
+      }
     },
     {
       "id": 42,
@@ -403,7 +624,12 @@
       "scenario": "club",
       "priority": 5,
       "exampleFr": "Qu’est-ce qu’on peut pratiquer comme sport dans votre club ?",
-      "exampleZh": "你们俱乐部可以做哪些运动？"
+      "exampleZh": "在你们俱乐部可以参加哪些运动？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 5
+      }
     },
     {
       "id": 43,
@@ -412,7 +638,12 @@
       "scenario": "club",
       "priority": 5,
       "exampleFr": "Parmi ces activités, laquelle me conseilleriez-vous ?",
-      "exampleZh": "这些活动里您最推荐哪一个？"
+      "exampleZh": "这些活动中，您会推荐哪一项？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 6
+      }
     },
     {
       "id": 44,
@@ -421,25 +652,42 @@
       "scenario": "club",
       "priority": 5,
       "exampleFr": "Parmi ces activités, laquelle me conseilleriez-vous ?",
-      "exampleZh": "这些活动里您最推荐哪一个？"
+      "exampleZh": "这些活动中，您会推荐哪一项？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 6
+      }
     },
     {
       "id": 45,
-      "fr": "un programme",
-      "zh": "训练计划",
+      "fr": "les activités proposées",
+      "zh": "提供的活动",
       "scenario": "club",
       "priority": 4,
-      "exampleFr": "Qu’est-ce que vous proposez comme activités ou programmes ?",
-      "exampleZh": "你们提供哪些活动或训练计划？"
+      "exampleFr": "Quelles activités y sont proposées ?",
+      "exampleZh": "那里提供哪些活动？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 5
+      },
+      "learningKey": "sport-final15-v2-45"
     },
     {
       "id": 46,
-      "fr": "un programme pour débutants",
-      "zh": "初学者计划",
+      "fr": "une séance pour débutants",
+      "zh": "新手课程",
       "scenario": "club",
       "priority": 4,
-      "exampleFr": "Ce programme est-il adapté à une débutante ?",
-      "exampleZh": "这个计划适合初学者吗？"
+      "exampleFr": "Est-ce que cette salle propose des séances pour débutants ?",
+      "exampleZh": "这家健身房有适合新手的课程吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 7
+      },
+      "learningKey": "sport-final15-v2-46"
     },
     {
       "id": 47,
@@ -448,7 +696,12 @@
       "scenario": "yoga",
       "priority": 4,
       "exampleFr": "Qui encadre les séances : un professeur ou un entraîneur ?",
-      "exampleZh": "谁来带训练，是老师还是教练？"
+      "exampleZh": "课程由谁带领，是瑜伽老师还是教练？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 9
+      }
     },
     {
       "id": 48,
@@ -457,7 +710,12 @@
       "scenario": "club",
       "priority": 5,
       "exampleFr": "Comment la sécurité des participants est-elle assurée ?",
-      "exampleZh": "怎么保障参与者安全？"
+      "exampleZh": "你们如何保障参与者的安全？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 11
+      }
     },
     {
       "id": 49,
@@ -466,7 +724,12 @@
       "scenario": "club",
       "priority": 5,
       "exampleFr": "Comment la sécurité des participants est-elle assurée ?",
-      "exampleZh": "怎么保障参与者安全？"
+      "exampleZh": "你们如何保障参与者的安全？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 11
+      }
     },
     {
       "id": 50,
@@ -474,8 +737,14 @@
       "zh": "跑步比赛",
       "scenario": "race",
       "priority": 5,
-      "exampleFr": "Je vais participer à une course à pied à Vancouver.",
-      "exampleZh": "我要参加温哥华的跑步比赛。"
+      "exampleFr": "Cette course est-elle accessible aux débutants ?",
+      "exampleZh": "这项比赛适合初学者参加吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 6
+      },
+      "learningKey": "sport-final15-v2-50"
     },
     {
       "id": 51,
@@ -483,8 +752,14 @@
       "zh": "参加比赛",
       "scenario": "race",
       "priority": 5,
-      "exampleFr": "Je vais participer à une course à pied à Vancouver.",
-      "exampleZh": "我要参加一场跑步比赛。"
+      "exampleFr": "Tu comptes t’entraîner comment pour cette course ?",
+      "exampleZh": "你打算怎么备赛？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 7
+      },
+      "learningKey": "sport-final15-v2-51"
     },
     {
       "id": 52,
@@ -493,16 +768,27 @@
       "scenario": "race",
       "priority": 5,
       "exampleFr": "Quand aura lieu la course exactement ?",
-      "exampleZh": "比赛具体什么时候举行？"
+      "exampleZh": "比赛具体在什么时候举行？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 1
+      }
     },
     {
       "id": 53,
-      "fr": "la durée de l’événement",
-      "zh": "赛事时长",
+      "fr": "l’heure du départ",
+      "zh": "起跑时间",
       "scenario": "race",
       "priority": 4,
-      "exampleFr": "En général, combien de temps dure l’événement ?",
-      "exampleZh": "赛事一般持续多久？"
+      "exampleFr": "À quelle heure le départ sera-t-il donné ?",
+      "exampleZh": "比赛几点起跑？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 2
+      },
+      "learningKey": "sport-final15-v2-53"
     },
     {
       "id": 54,
@@ -511,7 +797,12 @@
       "scenario": "race",
       "priority": 5,
       "exampleFr": "Où aura lieu la course exactement ?",
-      "exampleZh": "比赛具体在哪里举行？"
+      "exampleZh": "比赛具体在哪里举行？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 3
+      }
     },
     {
       "id": 55,
@@ -520,7 +811,12 @@
       "scenario": "race",
       "priority": 5,
       "exampleFr": "Des points d’eau ou de ravitaillement sont-ils prévus sur le parcours ?",
-      "exampleZh": "赛道上有饮水或补给吗？"
+      "exampleZh": "赛道沿途设有饮水点或补给点吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 10
+      }
     },
     {
       "id": 56,
@@ -528,8 +824,14 @@
       "zh": "距离",
       "scenario": "race",
       "priority": 5,
-      "exampleFr": "La course fait combien de kilomètres ?",
-      "exampleZh": "比赛多少公里？"
+      "exampleFr": "Quelle est la distance de la course ?",
+      "exampleZh": "比赛距离是多少？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 5
+      },
+      "learningKey": "sport-final15-v2-56"
     },
     {
       "id": 57,
@@ -538,7 +840,12 @@
       "scenario": "race",
       "priority": 5,
       "exampleFr": "Cette course est-elle accessible aux débutants ?",
-      "exampleZh": "这场比赛适合初学者吗？"
+      "exampleZh": "这项比赛适合初学者参加吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 6
+      }
     },
     {
       "id": 58,
@@ -546,8 +853,14 @@
       "zh": "训练",
       "scenario": "race",
       "priority": 5,
-      "exampleFr": "Comment devrais-je m’entraîner avant la course selon toi ?",
-      "exampleZh": "比赛前我该怎么训练？"
+      "exampleFr": "Tu comptes t’entraîner comment pour cette course ?",
+      "exampleZh": "你打算怎么备赛？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 7
+      },
+      "learningKey": "sport-final15-v2-58"
     },
     {
       "id": 59,
@@ -555,17 +868,29 @@
       "zh": "训练",
       "scenario": "race",
       "priority": 5,
-      "exampleFr": "Comment devrais-je m’entraîner avant la course selon toi ?",
-      "exampleZh": "比赛前我该怎么训练？"
+      "exampleFr": "Tu comptes t’entraîner comment pour cette course ?",
+      "exampleZh": "你打算怎么备赛？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 7
+      },
+      "learningKey": "sport-final15-v2-59"
     },
     {
       "id": 60,
-      "fr": "une période de préparation",
-      "zh": "准备周期",
+      "fr": "un parcours d’entraînement",
+      "zh": "训练路线",
       "scenario": "race",
       "priority": 4,
-      "exampleFr": "Combien de semaines de préparation me conseillerais-tu ?",
-      "exampleZh": "你建议准备几周？"
+      "exampleFr": "Est-ce que tu connais un parcours où je pourrais m’entraîner ?",
+      "exampleZh": "你知道哪里有适合训练的路线吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 8
+      },
+      "learningKey": "sport-final15-v2-60"
     },
     {
       "id": 61,
@@ -574,7 +899,12 @@
       "scenario": "race",
       "priority": 4,
       "exampleFr": "De quel équipement ai-je besoin pour la course ?",
-      "exampleZh": "比赛需要什么装备？"
+      "exampleZh": "参加比赛需要准备什么装备？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 9
+      }
     },
     {
       "id": 62,
@@ -583,7 +913,12 @@
       "scenario": "race",
       "priority": 4,
       "exampleFr": "De quel équipement ai-je besoin pour la course ?",
-      "exampleZh": "比赛需要什么装备？"
+      "exampleZh": "参加比赛需要准备什么装备？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 9
+      }
     },
     {
       "id": 63,
@@ -592,7 +927,12 @@
       "scenario": "race",
       "priority": 5,
       "exampleFr": "Des points d’eau ou de ravitaillement sont-ils prévus sur le parcours ?",
-      "exampleZh": "赛道上有饮水点吗？"
+      "exampleZh": "赛道沿途设有饮水点或补给点吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 10
+      }
     },
     {
       "id": 64,
@@ -601,7 +941,12 @@
       "scenario": "race",
       "priority": 5,
       "exampleFr": "Des points d’eau ou de ravitaillement sont-ils prévus sur le parcours ?",
-      "exampleZh": "赛道上有补给站吗？"
+      "exampleZh": "赛道沿途设有饮水点或补给点吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 10
+      }
     },
     {
       "id": 65,
@@ -610,7 +955,12 @@
       "scenario": "race",
       "priority": 5,
       "exampleFr": "Un service médical sera-t-il disponible en cas d’urgence ?",
-      "exampleZh": "紧急情况下有医疗服务吗？"
+      "exampleZh": "如果发生紧急情况，会有医疗服务吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 11
+      }
     },
     {
       "id": 66,
@@ -619,34 +969,57 @@
       "scenario": "race",
       "priority": 5,
       "exampleFr": "Un service médical sera-t-il disponible en cas d’urgence ?",
-      "exampleZh": "紧急情况下有医疗服务吗？"
+      "exampleZh": "如果发生紧急情况，会有医疗服务吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 11
+      }
     },
     {
       "id": 67,
-      "fr": "une attestation",
-      "zh": "参与证明",
+      "fr": "un service de consigne",
+      "zh": "物品寄存服务",
       "scenario": "race",
       "priority": 4,
-      "exampleFr": "Reçoit-on une attestation ou une médaille après la course ?",
-      "exampleZh": "比赛后会拿到证明或奖牌吗？"
+      "exampleFr": "Y aura-t-il un service de consigne pour les affaires personnelles ?",
+      "exampleZh": "现场有寄存个人物品的服务吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 15
+      },
+      "learningKey": "sport-final15-v2-67"
     },
     {
       "id": 68,
-      "fr": "une médaille",
-      "zh": "奖牌",
+      "fr": "les affaires personnelles",
+      "zh": "个人物品",
       "scenario": "race",
       "priority": 4,
-      "exampleFr": "Reçoit-on une attestation ou une médaille après la course ?",
-      "exampleZh": "比赛后会拿到证明或奖牌吗？"
+      "exampleFr": "Y aura-t-il un service de consigne pour les affaires personnelles ?",
+      "exampleZh": "现场有寄存个人物品的服务吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 15
+      },
+      "learningKey": "sport-final15-v2-68"
     },
     {
       "id": 69,
-      "fr": "faire son choix",
-      "zh": "做选择",
+      "fr": "choisir une salle adaptée",
+      "zh": "选择适合的健身房",
       "scenario": "club",
       "priority": 4,
-      "exampleFr": "Vous me posez des questions pour obtenir des informations et faire votre choix.",
-      "exampleZh": "您通过提问获取信息并做选择。"
+      "exampleFr": "D’après vous, quelle salle serait la plus adaptée à une débutante ?",
+      "exampleZh": "您觉得哪家健身房最适合初学者？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 6
+      },
+      "learningKey": "sport-final15-v2-69"
     },
     {
       "id": 70,
@@ -654,8 +1027,14 @@
       "zh": "会员订阅",
       "scenario": "club",
       "priority": 5,
-      "exampleFr": "Quel est le prix de l’abonnement ?",
-      "exampleZh": "会员费多少钱？"
+      "exampleFr": "Savez-vous combien coûte l’abonnement mensuel ?",
+      "exampleZh": "您知道月费大概多少吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 12
+      },
+      "learningKey": "sport-final15-v2-70"
     },
     {
       "id": 71,
@@ -664,7 +1043,12 @@
       "scenario": "general",
       "priority": 5,
       "exampleFr": "Quels sont les jours et les horaires des séances de yoga ?",
-      "exampleZh": "瑜伽课哪几天、几点？"
+      "exampleZh": "瑜伽课安排在星期几、什么时间？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 1
+      }
     },
     {
       "id": 72,
@@ -672,8 +1056,14 @@
       "zh": "频率",
       "scenario": "general",
       "priority": 4,
-      "exampleFr": "À quelle fréquence proposez-vous les séances ?",
-      "exampleZh": "你们多久安排一次训练？"
+      "exampleFr": "Les séances ont-elles lieu chaque semaine ?",
+      "exampleZh": "瑜伽课每周都举行吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 2
+      },
+      "learningKey": "sport-final15-v2-72"
     },
     {
       "id": 73,
@@ -682,16 +1072,27 @@
       "scenario": "general",
       "priority": 4,
       "exampleFr": "Où ont lieu les séances exactement ?",
-      "exampleZh": "训练具体在哪里举行？"
+      "exampleZh": "瑜伽课具体在哪里上？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 3
+      }
     },
     {
       "id": 74,
-      "fr": "une formule de yoga",
-      "zh": "瑜伽形式",
+      "fr": "un type de yoga",
+      "zh": "瑜伽种类",
       "scenario": "yoga",
       "priority": 4,
-      "exampleFr": "Quelles formules de yoga proposez-vous ?",
-      "exampleZh": "你们提供哪些瑜伽形式？"
+      "exampleFr": "Quel type de yoga pratique-t-on pendant ces séances ?",
+      "exampleZh": "这些课程练习哪一种瑜伽？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 5
+      },
+      "learningKey": "sport-final15-v2-74"
     },
     {
       "id": 75,
@@ -700,7 +1101,12 @@
       "scenario": "yoga",
       "priority": 4,
       "exampleFr": "Comment se déroule une séance typique ?",
-      "exampleZh": "一节典型训练怎么进行？"
+      "exampleZh": "一节常规课程通常怎么进行？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 6
+      }
     },
     {
       "id": 76,
@@ -709,7 +1115,12 @@
       "scenario": "yoga",
       "priority": 4,
       "exampleFr": "Comment se déroule une séance typique ?",
-      "exampleZh": "一节典型训练怎么进行？"
+      "exampleZh": "一节常规课程通常怎么进行？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 6
+      }
     },
     {
       "id": 77,
@@ -718,7 +1129,12 @@
       "scenario": "club",
       "priority": 5,
       "exampleFr": "Qu’est-ce qu’on peut pratiquer comme sport dans votre club ?",
-      "exampleZh": "你们俱乐部可以做哪些运动？"
+      "exampleZh": "在你们俱乐部可以参加哪些运动？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 5
+      }
     },
     {
       "id": 78,
@@ -726,35 +1142,59 @@
       "zh": "合适的活动",
       "scenario": "club",
       "priority": 4,
-      "exampleFr": "Cette activité est-elle adaptée à une débutante comme moi ?",
-      "exampleZh": "这项活动适合我这样的初学者吗？"
+      "exampleFr": "Cette activité convient-elle aux personnes qui débutent ?",
+      "exampleZh": "这项活动适合初学者吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 7
+      },
+      "learningKey": "sport-final15-v2-78"
     },
     {
       "id": 79,
-      "fr": "avoir droit à une réduction",
-      "zh": "有资格享受折扣",
+      "fr": "s’engager pour un an",
+      "zh": "签约一年",
       "scenario": "club",
       "priority": 4,
-      "exampleFr": "Les étudiants ont-ils droit à une réduction ?",
-      "exampleZh": "学生有优惠吗？"
+      "exampleFr": "Est-ce que je peux payer au mois sans m’engager pour un an ?",
+      "exampleZh": "可以按月付款、不签一年合同吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 14
+      },
+      "learningKey": "sport-final15-v2-79"
     },
     {
       "id": 80,
-      "fr": "payer par carte",
-      "zh": "刷卡付款",
-      "scenario": "general",
+      "fr": "sans engagement annuel",
+      "zh": "无需签年约",
+      "scenario": "club",
       "priority": 4,
-      "exampleFr": "Comment peut-on payer ?",
-      "exampleZh": "怎么付款？"
+      "exampleFr": "Est-ce que je peux payer au mois sans m’engager pour un an ?",
+      "exampleZh": "可以按月付款、不签一年合同吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 14
+      },
+      "learningKey": "sport-final15-v2-80"
     },
     {
       "id": 81,
-      "fr": "payer en ligne",
-      "zh": "在线付款",
-      "scenario": "general",
+      "fr": "réserver un cours collectif",
+      "zh": "预约团体课",
+      "scenario": "club",
       "priority": 4,
-      "exampleFr": "Comment peut-on payer ?",
-      "exampleZh": "怎么付款？"
+      "exampleFr": "Est-ce qu’il faut réserver les cours collectifs à l’avance ?",
+      "exampleZh": "团体课需要提前预约吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 8
+      },
+      "learningKey": "sport-final15-v2-81"
     },
     {
       "id": 82,
@@ -763,7 +1203,12 @@
       "scenario": "club",
       "priority": 4,
       "exampleFr": "Qu’est-ce qu’on trouve comme équipements dans la salle ?",
-      "exampleZh": "健身房里有哪些设备？"
+      "exampleZh": "健身房里有哪些器材？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 11
+      }
     },
     {
       "id": 83,
@@ -772,7 +1217,12 @@
       "scenario": "club",
       "priority": 4,
       "exampleFr": "Qu’est-ce qu’on trouve comme équipements dans la salle ?",
-      "exampleZh": "健身房里有哪些设备？"
+      "exampleZh": "健身房里有哪些器材？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 11
+      }
     },
     {
       "id": 84,
@@ -781,7 +1231,12 @@
       "scenario": "club",
       "priority": 4,
       "exampleFr": "Les séances se font-elles individuellement ou en groupe ?",
-      "exampleZh": "训练是个人还是团体形式？"
+      "exampleZh": "训练是单独进行还是团体进行？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 9
+      }
     },
     {
       "id": 85,
@@ -790,25 +1245,42 @@
       "scenario": "club",
       "priority": 4,
       "exampleFr": "Les séances se font-elles individuellement ou en groupe ?",
-      "exampleZh": "训练是个人还是团体形式？"
+      "exampleZh": "训练是单独进行还是团体进行？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 9
+      }
     },
     {
       "id": 86,
-      "fr": "commencer progressivement",
-      "zh": "循序渐进开始",
-      "scenario": "general",
+      "fr": "bénéficier d’un accompagnement",
+      "zh": "获得指导",
+      "scenario": "club",
       "priority": 4,
-      "exampleFr": "Dois-je préparer quelque chose avant de commencer ?",
-      "exampleZh": "开始前需要准备什么？"
+      "exampleFr": "Puis-je bénéficier d’un accompagnement par un entraîneur quand je débute ?",
+      "exampleZh": "刚开始时，我可以请教练指导吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 8
+      },
+      "learningKey": "sport-final15-v2-86"
     },
     {
       "id": 87,
-      "fr": "une condition physique",
-      "zh": "体能状况",
-      "scenario": "general",
+      "fr": "une salle adaptée à une débutante",
+      "zh": "适合初学者的健身房",
+      "scenario": "club",
       "priority": 4,
-      "exampleFr": "Cette activité est-elle adaptée à une débutante comme moi ?",
-      "exampleZh": "这项活动适合我这样的初学者吗？"
+      "exampleFr": "D’après vous, quelle salle serait la plus adaptée à une débutante ?",
+      "exampleZh": "您觉得哪家健身房最适合初学者？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 6
+      },
+      "learningKey": "sport-final15-v2-87"
     },
     {
       "id": 88,
@@ -817,61 +1289,312 @@
       "scenario": "race",
       "priority": 4,
       "exampleFr": "Un service médical sera-t-il disponible en cas d’urgence ?",
-      "exampleZh": "紧急情况下有医疗服务吗？"
+      "exampleZh": "如果发生紧急情况，会有医疗服务吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 11
+      }
     },
     {
       "id": 89,
-      "fr": "un échauffement",
-      "zh": "热身",
-      "scenario": "general",
+      "fr": "débuter une activité",
+      "zh": "开始一项活动",
+      "scenario": "club",
       "priority": 4,
-      "exampleFr": "Dois-je préparer quelque chose avant de commencer ?",
-      "exampleZh": "开始前需要准备什么？"
+      "exampleFr": "Cette activité convient-elle aux personnes qui débutent ?",
+      "exampleZh": "这项活动适合初学者吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 7
+      },
+      "learningKey": "sport-final15-v2-89"
     },
     {
       "id": 90,
-      "fr": "une récupération",
-      "zh": "恢复",
-      "scenario": "general",
+      "fr": "pratiquer le yoga",
+      "zh": "练习瑜伽",
+      "scenario": "yoga",
       "priority": 3,
-      "exampleFr": "Comment se déroule une séance typique ?",
-      "exampleZh": "一节典型训练怎么进行？"
+      "exampleFr": "Quel type de yoga pratique-t-on pendant ces séances ?",
+      "exampleZh": "这些课程练习哪一种瑜伽？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 5
+      },
+      "learningKey": "sport-final15-v2-90"
     },
     {
       "id": 91,
-      "fr": "une inscription en ligne",
-      "zh": "线上报名",
+      "fr": "les modalités d’inscription",
+      "zh": "报名办法",
       "scenario": "general",
       "priority": 4,
       "exampleFr": "Comment se passe l’inscription ?",
-      "exampleZh": "怎么报名？"
+      "exampleZh": "报名流程是怎样的？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 15
+      },
+      "learningKey": "sport-final15-v2-91"
     },
     {
       "id": 92,
-      "fr": "une place disponible",
-      "zh": "可用名额",
+      "fr": "participer à une séance",
+      "zh": "参加一次课程",
       "scenario": "general",
       "priority": 4,
       "exampleFr": "Comment se passe l’inscription ?",
-      "exampleZh": "怎么报名？"
+      "exampleZh": "报名流程是怎样的？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 15
+      },
+      "learningKey": "sport-final15-v2-92"
     },
     {
       "id": 93,
       "fr": "un vestiaire",
       "zh": "更衣室",
-      "scenario": "club",
+      "scenario": "yoga",
       "priority": 3,
-      "exampleFr": "Qu’est-ce qu’on trouve comme équipements dans la salle ?",
-      "exampleZh": "健身房里有哪些设施？"
+      "exampleFr": "Y a-t-il un endroit pour se changer après la séance ?",
+      "exampleZh": "课后有换衣服的地方吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 13
+      },
+      "learningKey": "sport-final15-v2-93"
     },
     {
       "id": 94,
-      "fr": "une douche",
-      "zh": "淋浴设施",
-      "scenario": "club",
+      "fr": "se changer après la séance",
+      "zh": "课后换衣服",
+      "scenario": "yoga",
       "priority": 3,
-      "exampleFr": "Qu’est-ce qu’on trouve comme équipements dans la salle ?",
-      "exampleZh": "健身房里有哪些设施？"
+      "exampleFr": "Y a-t-il un endroit pour se changer après la séance ?",
+      "exampleZh": "课后有换衣服的地方吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 13
+      },
+      "learningKey": "sport-final15-v2-94"
+    },
+    {
+      "id": 95,
+      "fr": "les jours fériés",
+      "zh": "节假日",
+      "scenario": "club",
+      "priority": 5,
+      "exampleFr": "Le club est-il aussi ouvert les jours fériés ?",
+      "exampleZh": "俱乐部节假日也营业吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 4
+      },
+      "learningKey": "sport-final15-v2-95"
+    },
+    {
+      "id": 96,
+      "fr": "la réservation des cours collectifs",
+      "zh": "团体课预约",
+      "scenario": "club",
+      "priority": 5,
+      "exampleFr": "Est-ce qu’il faut réserver les cours collectifs à l’avance ?",
+      "exampleZh": "团体课需要提前预约吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 8
+      },
+      "learningKey": "sport-final15-v2-96"
+    },
+    {
+      "id": 97,
+      "fr": "prendre rendez-vous pour une visite",
+      "zh": "预约参观",
+      "scenario": "club",
+      "priority": 5,
+      "exampleFr": "Savez-vous s’il faut prendre rendez-vous pour visiter la salle ?",
+      "exampleZh": "您知道参观健身房是否需要预约吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 15
+      },
+      "learningKey": "sport-final15-v2-97"
+    },
+    {
+      "id": 98,
+      "fr": "à votre connaissance",
+      "zh": "据您所知",
+      "scenario": "club",
+      "priority": 4,
+      "exampleFr": "À votre connaissance, peut-on s’inscrire sans engagement annuel ?",
+      "exampleZh": "据您所知，可以不签年约吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 13
+      },
+      "learningKey": "sport-final15-v2-98"
+    },
+    {
+      "id": 99,
+      "fr": "d’après vous",
+      "zh": "在您看来",
+      "scenario": "club",
+      "priority": 4,
+      "exampleFr": "D’après vous, quelle salle serait la plus adaptée à une débutante ?",
+      "exampleZh": "您觉得哪家健身房最适合初学者？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 6
+      },
+      "learningKey": "sport-final15-v2-99"
+    },
+    {
+      "id": 100,
+      "fr": "la pause déjeuner",
+      "zh": "午休时间",
+      "scenario": "yoga",
+      "priority": 5,
+      "exampleFr": "Est-ce que les séances ont lieu pendant la pause déjeuner ?",
+      "exampleZh": "瑜伽课是在午休时间举行吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 4
+      },
+      "learningKey": "sport-final15-v2-100"
+    },
+    {
+      "id": 101,
+      "fr": "apporter son propre tapis",
+      "zh": "自带瑜伽垫",
+      "scenario": "yoga",
+      "priority": 5,
+      "exampleFr": "Le tapis de yoga est-il fourni ou dois-je apporter le mien ?",
+      "exampleZh": "你们提供瑜伽垫吗，还是需要我自带？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 12
+      },
+      "learningKey": "sport-final15-v2-101"
+    },
+    {
+      "id": 102,
+      "fr": "être collectif / collective",
+      "zh": "团体形式的",
+      "scenario": "yoga",
+      "priority": 4,
+      "exampleFr": "Les séances sont-elles collectives ?",
+      "exampleZh": "这些课程是团体课吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 10
+      },
+      "learningKey": "sport-final15-v2-102"
+    },
+    {
+      "id": 103,
+      "fr": "chaque semaine",
+      "zh": "每周",
+      "scenario": "yoga",
+      "priority": 4,
+      "exampleFr": "Les séances ont-elles lieu chaque semaine ?",
+      "exampleZh": "瑜伽课每周都举行吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 2
+      },
+      "learningKey": "sport-final15-v2-103"
+    },
+    {
+      "id": 104,
+      "fr": "la formation des professeurs",
+      "zh": "教师培训背景",
+      "scenario": "dance",
+      "priority": 5,
+      "exampleFr": "Quelle formation ont suivie les professeurs ?",
+      "exampleZh": "老师们接受过什么专业培训？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 8
+      },
+      "learningKey": "sport-final15-v2-104"
+    },
+    {
+      "id": 105,
+      "fr": "un pas de danse",
+      "zh": "舞步",
+      "scenario": "dance",
+      "priority": 4,
+      "exampleFr": "Faut-il déjà connaître quelques pas de danse ?",
+      "exampleZh": "需要事先会一些舞步吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 7
+      },
+      "learningKey": "sport-final15-v2-105"
+    },
+    {
+      "id": 106,
+      "fr": "le départ de la course",
+      "zh": "比赛起跑",
+      "scenario": "race",
+      "priority": 5,
+      "exampleFr": "À quelle heure le départ sera-t-il donné ?",
+      "exampleZh": "比赛几点起跑？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 2
+      },
+      "learningKey": "sport-final15-v2-106"
+    },
+    {
+      "id": 107,
+      "fr": "un point de ravitaillement prévu",
+      "zh": "计划设置的补给点",
+      "scenario": "race",
+      "priority": 4,
+      "exampleFr": "Des points d’eau ou de ravitaillement sont-ils prévus sur le parcours ?",
+      "exampleZh": "赛道沿途设有饮水点或补给点吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 10
+      },
+      "learningKey": "sport-final15-v2-107"
+    },
+    {
+      "id": 108,
+      "fr": "s’entraîner sur un parcours",
+      "zh": "在某条路线上训练",
+      "scenario": "race",
+      "priority": 5,
+      "exampleFr": "Est-ce que tu connais un parcours où je pourrais m’entraîner ?",
+      "exampleZh": "你知道哪里有适合训练的路线吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 8
+      },
+      "learningKey": "sport-final15-v2-108"
     }
   ],
   "patterns": [
@@ -881,271 +1604,680 @@
       "zh": "……具体在哪里？",
       "exampleFr": "Où se trouve exactement votre club sportif ?",
       "exampleZh": "您的体育俱乐部具体在哪里？",
-      "scenario": "club"
+      "scenario": "club",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 1
+      }
     },
     {
       "id": 2,
       "pattern": "Quel est le moyen le plus simple pour s’y rendre ?",
       "zh": "怎么去最方便？",
-      "exampleFr": "Quel est le moyen le plus simple pour m’y rendre ?",
-      "exampleZh": "怎么去最方便？",
-      "scenario": "club"
+      "exampleFr": "Quel est le moyen le plus simple pour s’y rendre ?",
+      "exampleZh": "怎么去那里最方便？",
+      "scenario": "club",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 4
+      },
+      "learningKey": "sport-final15-v2-2"
     },
     {
       "id": 3,
       "pattern": "À quelles heures êtes-vous ouverts ?",
       "zh": "几点开放？",
       "exampleFr": "À quelles heures êtes-vous ouverts ?",
-      "exampleZh": "你们几点开放？",
-      "scenario": "club"
+      "exampleZh": "你们的开放时间是什么？",
+      "scenario": "club",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 3
+      }
     },
     {
       "id": 4,
-      "pattern": "Et le week-end, les horaires changent-ils ?",
-      "zh": "周末时间会变吗？",
-      "exampleFr": "Et le week-end, les horaires changent-ils ?",
-      "exampleZh": "周末时间会变吗？",
-      "scenario": "club"
+      "pattern": "Et le week-end, ses horaires changent-ils ?",
+      "zh": "周末开放时间会变化吗？",
+      "exampleFr": "Et le week-end, ses horaires changent-ils ?",
+      "exampleZh": "那家健身房周末的开放时间会变吗？",
+      "scenario": "club",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 4
+      },
+      "learningKey": "sport-final15-v2-4"
     },
     {
       "id": 5,
       "pattern": "Qu’est-ce que vous proposez comme + activité ?",
       "zh": "提供哪些……？",
       "exampleFr": "Qu’est-ce que vous proposez comme styles de danse ?",
-      "exampleZh": "你们提供哪些舞蹈类型？",
-      "scenario": "dance"
+      "exampleZh": "你们提供哪些舞蹈课程？",
+      "scenario": "dance",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 5
+      }
     },
     {
       "id": 6,
       "pattern": "Les cours sont-ils adaptés aux débutants ?",
       "zh": "课程适合初学者吗？",
       "exampleFr": "Les cours sont-ils adaptés aux débutants ?",
-      "exampleZh": "课程适合初学者吗？",
-      "scenario": "general"
+      "exampleZh": "这些课程适合初学者吗？",
+      "scenario": "general",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 6
+      }
     },
     {
       "id": 7,
-      "pattern": "Dois-je préparer quelque chose avant de commencer ?",
-      "zh": "开始前要准备什么吗？",
-      "exampleFr": "Dois-je préparer quelque chose avant de commencer ?",
-      "exampleZh": "开始前需要准备什么吗？",
-      "scenario": "general"
+      "pattern": "Faut-il déjà connaître + nom ?",
+      "zh": "是否需要事先会……？",
+      "exampleFr": "Faut-il déjà connaître quelques pas de danse ?",
+      "exampleZh": "需要事先会一些舞步吗？",
+      "scenario": "dance",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 7
+      },
+      "learningKey": "sport-final15-v2-7"
     },
     {
       "id": 8,
       "pattern": "Vous proposez des cours individuels, en groupe, ou les deux ?",
       "zh": "有个人课、团体课还是都有？",
       "exampleFr": "Vous proposez des cours individuels, en groupe, ou les deux ?",
-      "exampleZh": "有个人课、团体课还是都有？",
-      "scenario": "general"
+      "exampleZh": "你们提供单人课、团体课，还是两种都有？",
+      "scenario": "general",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 9
+      }
     },
     {
       "id": 9,
       "pattern": "Quelle est la taille des groupes ?",
       "zh": "每组多少人？",
       "exampleFr": "Quelle est la taille des groupes en général ?",
-      "exampleZh": "每组通常有多少人？",
-      "scenario": "general"
+      "exampleZh": "每个班通常有多少人？",
+      "scenario": "general",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 10
+      }
     },
     {
       "id": 10,
       "pattern": "Comment faut-il s’habiller ?",
       "zh": "应该怎么穿？",
       "exampleFr": "Comment faut-il s’habiller pour les cours ?",
-      "exampleZh": "上课应该怎么穿？",
-      "scenario": "dance"
+      "exampleZh": "上课时应该穿什么？",
+      "scenario": "dance",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 11
+      }
     },
     {
       "id": 11,
-      "pattern": "Dois-je apporter du matériel particulier ?",
-      "zh": "需要自带特殊装备吗？",
-      "exampleFr": "Dois-je apporter du matériel particulier ?",
-      "exampleZh": "需要自带特殊装备吗？",
-      "scenario": "general"
+      "pattern": "Faut-il apporter + matériel ?",
+      "zh": "需要自带……吗？",
+      "exampleFr": "Faut-il apporter des chaussures spéciales ?",
+      "exampleZh": "需要自带专用舞鞋吗？",
+      "scenario": "dance",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 12
+      },
+      "learningKey": "sport-final15-v2-11"
     },
     {
       "id": 12,
       "pattern": "Quel est le tarif des cours ?",
       "zh": "课程多少钱？",
       "exampleFr": "Quel est le tarif des cours ?",
-      "exampleZh": "课程多少钱？",
-      "scenario": "general"
+      "exampleZh": "课程费用是多少？",
+      "scenario": "general",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 13
+      }
     },
     {
       "id": 13,
       "pattern": "Puis-je faire un cours d’essai ?",
       "zh": "可以试听吗？",
       "exampleFr": "Puis-je faire un cours d’essai avant de m’inscrire ?",
-      "exampleZh": "报名之前可以试听吗？",
-      "scenario": "dance"
+      "exampleZh": "报名之前，我可以先试听一节课吗？",
+      "scenario": "dance",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 14
+      }
     },
     {
       "id": 14,
       "pattern": "Comment se passe l’inscription ?",
       "zh": "怎么报名？",
       "exampleFr": "Comment se passe l’inscription ?",
-      "exampleZh": "怎么报名？",
-      "scenario": "general"
+      "exampleZh": "报名流程是怎样的？",
+      "scenario": "general",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 15
+      }
     },
     {
       "id": 15,
       "pattern": "Quels sont les jours et les horaires ?",
       "zh": "哪几天、几点？",
       "exampleFr": "Quels sont les jours et les horaires des séances de yoga ?",
-      "exampleZh": "瑜伽课哪几天、几点？",
-      "scenario": "yoga"
+      "exampleZh": "瑜伽课安排在星期几、什么时间？",
+      "scenario": "yoga",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 1
+      }
     },
     {
       "id": 16,
-      "pattern": "À quelle fréquence proposez-vous les séances ?",
-      "zh": "多久安排一次？",
-      "exampleFr": "À quelle fréquence proposez-vous les séances ?",
-      "exampleZh": "多久安排一次训练？",
-      "scenario": "yoga"
+      "pattern": "Les séances ont-elles lieu chaque semaine ?",
+      "zh": "课程每周都举行吗？",
+      "exampleFr": "Les séances ont-elles lieu chaque semaine ?",
+      "exampleZh": "瑜伽课每周都举行吗？",
+      "scenario": "yoga",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 2
+      },
+      "learningKey": "sport-final15-v2-16"
     },
     {
       "id": 17,
       "pattern": "Comment se déroule une séance typique ?",
       "zh": "典型一节课怎么进行？",
       "exampleFr": "Comment se déroule une séance typique ?",
-      "exampleZh": "典型一节课怎么进行？",
-      "scenario": "yoga"
+      "exampleZh": "一节常规课程通常怎么进行？",
+      "scenario": "yoga",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 6
+      }
     },
     {
       "id": 18,
       "pattern": "Qui encadre les séances ?",
       "zh": "谁带训练？",
       "exampleFr": "Qui encadre les séances : un professeur ou un entraîneur ?",
-      "exampleZh": "谁来带训练，是老师还是教练？",
-      "scenario": "yoga"
+      "exampleZh": "课程由谁带领，是瑜伽老师还是教练？",
+      "scenario": "yoga",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 9
+      }
     },
     {
       "id": 19,
       "pattern": "Le matériel est-il fourni ?",
       "zh": "器材提供吗？",
       "exampleFr": "Le tapis de yoga est-il fourni ou dois-je apporter le mien ?",
-      "exampleZh": "瑜伽垫提供还是自带？",
-      "scenario": "yoga"
+      "exampleZh": "你们提供瑜伽垫吗，还是需要我自带？",
+      "scenario": "yoga",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 12
+      }
     },
     {
       "id": 20,
       "pattern": "Parmi ces activités, laquelle me conseilleriez-vous ?",
       "zh": "这些活动里您推荐哪个？",
       "exampleFr": "Parmi ces activités, laquelle me conseilleriez-vous ?",
-      "exampleZh": "这些活动里您推荐哪个？",
-      "scenario": "club"
+      "exampleZh": "这些活动中，您会推荐哪一项？",
+      "scenario": "club",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 6
+      }
     },
     {
       "id": 21,
-      "pattern": "Est-il possible d’être accompagné par un entraîneur ?",
-      "zh": "可以由教练指导吗？",
-      "exampleFr": "Est-il possible d’être accompagné par un entraîneur quand on débute ?",
-      "exampleZh": "初学时可以由教练带吗？",
-      "scenario": "club"
+      "pattern": "Peut-on bénéficier d’un accompagnement par + personne + quand on débute ?",
+      "zh": "刚开始时可以获得……的指导吗？",
+      "exampleFr": "Peut-on bénéficier d’un accompagnement par un entraîneur quand on débute ?",
+      "exampleZh": "刚开始锻炼时，可以请教练指导吗？",
+      "scenario": "club",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 9
+      },
+      "learningKey": "sport-final15-v2-21"
     },
     {
       "id": 22,
       "pattern": "Comment la sécurité est-elle assurée ?",
       "zh": "安全怎么保障？",
       "exampleFr": "Comment la sécurité des participants est-elle assurée ?",
-      "exampleZh": "参与者安全怎么保障？",
-      "scenario": "club"
+      "exampleZh": "你们如何保障参与者的安全？",
+      "scenario": "club",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 11
+      }
     },
     {
       "id": 23,
-      "pattern": "Comment peut-on payer ?",
-      "zh": "怎么付款？",
-      "exampleFr": "Comment peut-on payer ?",
-      "exampleZh": "怎么付款？",
-      "scenario": "general"
+      "pattern": "Est-ce que je peux payer au mois sans + infinitif ?",
+      "zh": "可以按月付费而无需……吗？",
+      "exampleFr": "Est-ce que je peux payer au mois sans m’engager pour un an ?",
+      "exampleZh": "可以按月付款、不签一年合同吗？",
+      "scenario": "club",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 14
+      },
+      "learningKey": "sport-final15-v2-23"
     },
     {
       "id": 24,
       "pattern": "Quand aura lieu la course ?",
       "zh": "比赛什么时候举行？",
       "exampleFr": "Quand aura lieu la course exactement ?",
-      "exampleZh": "比赛具体什么时候举行？",
-      "scenario": "race"
+      "exampleZh": "比赛具体在什么时候举行？",
+      "scenario": "race",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 1
+      }
     },
     {
       "id": 25,
-      "pattern": "La course fait combien de kilomètres ?",
-      "zh": "比赛多少公里？",
-      "exampleFr": "La course fait combien de kilomètres ?",
-      "exampleZh": "比赛多少公里？",
-      "scenario": "race"
+      "pattern": "Quelle est la distance de + course ?",
+      "zh": "……比赛的距离是多少？",
+      "exampleFr": "Quelle est la distance de la course ?",
+      "exampleZh": "比赛距离是多少？",
+      "scenario": "race",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 5
+      },
+      "learningKey": "sport-final15-v2-25"
     },
     {
       "id": 26,
       "pattern": "Cette course est-elle accessible aux débutants ?",
       "zh": "比赛适合初学者吗？",
       "exampleFr": "Cette course est-elle accessible aux débutants ?",
-      "exampleZh": "比赛适合初学者吗？",
-      "scenario": "race"
+      "exampleZh": "这项比赛适合初学者参加吗？",
+      "scenario": "race",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 6
+      }
     },
     {
       "id": 27,
-      "pattern": "Combien de semaines de préparation me conseillerais-tu ?",
-      "zh": "建议准备几周？",
-      "exampleFr": "Combien de semaines de préparation me conseillerais-tu ?",
-      "exampleZh": "你建议准备几周？",
-      "scenario": "race"
+      "pattern": "Est-ce que tu connais un parcours où je pourrais + infinitif ?",
+      "zh": "你知道有没有适合我……的路线？",
+      "exampleFr": "Est-ce que tu connais un parcours où je pourrais m’entraîner ?",
+      "exampleZh": "你知道哪里有适合训练的路线吗？",
+      "scenario": "race",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 8
+      },
+      "learningKey": "sport-final15-v2-27"
     },
     {
       "id": 28,
-      "pattern": "Comment devrais-je m’entraîner avant la course ?",
-      "zh": "赛前怎么训练？",
-      "exampleFr": "Comment devrais-je m’entraîner avant la course selon toi ?",
-      "exampleZh": "你建议我赛前怎么训练？",
-      "scenario": "race"
+      "pattern": "Tu comptes t’entraîner comment pour + course ?",
+      "zh": "你打算如何为……备赛？",
+      "exampleFr": "Tu comptes t’entraîner comment pour cette course ?",
+      "exampleZh": "你打算怎么备赛？",
+      "scenario": "race",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 7
+      },
+      "learningKey": "sport-final15-v2-28"
     },
     {
       "id": 29,
       "pattern": "De quel équipement ai-je besoin ?",
       "zh": "需要什么装备？",
       "exampleFr": "De quel équipement ai-je besoin pour la course ?",
-      "exampleZh": "比赛需要什么装备？",
-      "scenario": "race"
+      "exampleZh": "参加比赛需要准备什么装备？",
+      "scenario": "race",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 9
+      }
     },
     {
       "id": 30,
       "pattern": "Des points d’eau sont-ils prévus ?",
       "zh": "有饮水点吗？",
       "exampleFr": "Des points d’eau ou de ravitaillement sont-ils prévus sur le parcours ?",
-      "exampleZh": "赛道上有饮水或补给吗？",
-      "scenario": "race"
+      "exampleZh": "赛道沿途设有饮水点或补给点吗？",
+      "scenario": "race",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 10
+      }
     },
     {
       "id": 31,
       "pattern": "Un service médical sera-t-il disponible ?",
       "zh": "有医疗服务吗？",
       "exampleFr": "Un service médical sera-t-il disponible en cas d’urgence ?",
-      "exampleZh": "紧急情况下有医疗服务吗？",
-      "scenario": "race"
+      "exampleZh": "如果发生紧急情况，会有医疗服务吗？",
+      "scenario": "race",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 11
+      }
     },
     {
       "id": 32,
       "pattern": "Quel est le prix de l’inscription ?",
       "zh": "报名费多少钱？",
       "exampleFr": "Quel est le prix de l’inscription ?",
-      "exampleZh": "报名费用是多少？",
-      "scenario": "race"
+      "exampleZh": "报名费是多少？",
+      "scenario": "race",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 12
+      }
     },
     {
       "id": 33,
       "pattern": "Jusqu’à quand peut-on s’inscrire ?",
       "zh": "报名截止到什么时候？",
       "exampleFr": "Jusqu’à quand peut-on s’inscrire ?",
-      "exampleZh": "报名截止到什么时候？",
-      "scenario": "race"
+      "exampleZh": "最晚可以报名到什么时候？",
+      "scenario": "race",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 14
+      }
     },
     {
       "id": 34,
-      "pattern": "Reçoit-on une attestation ou une médaille ?",
-      "zh": "会拿到证明或奖牌吗？",
-      "exampleFr": "Reçoit-on une attestation ou une médaille après la course ?",
-      "exampleZh": "比赛后会拿到证明或奖牌吗？",
-      "scenario": "race"
+      "pattern": "Y aura-t-il un service de consigne pour + affaires ?",
+      "zh": "届时有寄存……的服务吗？",
+      "exampleFr": "Y aura-t-il un service de consigne pour les affaires personnelles ?",
+      "exampleZh": "现场有寄存个人物品的服务吗？",
+      "scenario": "race",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 15
+      },
+      "learningKey": "sport-final15-v2-34"
+    },
+    {
+      "id": 35,
+      "pattern": "Le club est-il aussi ouvert + période ?",
+      "zh": "俱乐部……也开放吗？",
+      "scenario": "club",
+      "exampleFr": "Le club est-il aussi ouvert les jours fériés ?",
+      "exampleZh": "俱乐部节假日也营业吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 4
+      },
+      "learningKey": "sport-final15-v2-35"
+    },
+    {
+      "id": 36,
+      "pattern": "Est-ce qu’il faut réserver + cours + à l’avance ?",
+      "zh": "……课程需要提前预约吗？",
+      "scenario": "club",
+      "exampleFr": "Est-ce qu’il faut réserver les cours collectifs à l’avance ?",
+      "exampleZh": "团体课需要提前预约吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 8
+      },
+      "learningKey": "sport-final15-v2-36"
+    },
+    {
+      "id": 37,
+      "pattern": "À votre connaissance, peut-on + infinitif + sans + nom ?",
+      "zh": "据您所知，可以无需……而……吗？",
+      "scenario": "club",
+      "exampleFr": "À votre connaissance, peut-on s’inscrire sans engagement annuel ?",
+      "exampleZh": "据您所知，可以不签年约吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 13
+      },
+      "learningKey": "sport-final15-v2-37"
+    },
+    {
+      "id": 38,
+      "pattern": "Savez-vous s’il faut prendre rendez-vous pour + infinitif ?",
+      "zh": "您知道……是否需要预约吗？",
+      "scenario": "club",
+      "exampleFr": "Savez-vous s’il faut prendre rendez-vous pour visiter la salle ?",
+      "exampleZh": "您知道参观健身房是否需要预约吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 15
+      },
+      "learningKey": "sport-final15-v2-38"
+    },
+    {
+      "id": 39,
+      "pattern": "D’après vous, quelle salle serait la plus adaptée à + personne ?",
+      "zh": "您觉得哪家健身房最适合……？",
+      "scenario": "club",
+      "exampleFr": "D’après vous, quelle salle serait la plus adaptée à une débutante ?",
+      "exampleZh": "您觉得哪家健身房最适合初学者？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 6
+      },
+      "learningKey": "sport-final15-v2-39"
+    },
+    {
+      "id": 40,
+      "pattern": "Est-ce que les séances ont lieu pendant + période ?",
+      "zh": "课程是在……期间进行吗？",
+      "scenario": "yoga",
+      "exampleFr": "Est-ce que les séances ont lieu pendant la pause déjeuner ?",
+      "exampleZh": "瑜伽课是在午休时间举行吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 4
+      },
+      "learningKey": "sport-final15-v2-40"
+    },
+    {
+      "id": 41,
+      "pattern": "Y a-t-il des mouvements à éviter pour + personnes ?",
+      "zh": "……有没有需要避免的动作？",
+      "scenario": "yoga",
+      "exampleFr": "Y a-t-il des mouvements à éviter pour les débutants ?",
+      "exampleZh": "初学者有没有需要避免的动作？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 8
+      },
+      "learningKey": "sport-final15-v2-41"
+    },
+    {
+      "id": 43,
+      "pattern": "Y a-t-il un endroit pour + infinitif + après + activité ?",
+      "zh": "……后有没有可以……的地方？",
+      "scenario": "yoga",
+      "exampleFr": "Y a-t-il un endroit pour se changer après la séance ?",
+      "exampleZh": "课后有换衣服的地方吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 13
+      },
+      "learningKey": "sport-final15-v2-43"
+    },
+    {
+      "id": 44,
+      "pattern": "Quelle formation ont suivie + personnes ?",
+      "zh": "……接受过哪些培训？",
+      "scenario": "dance",
+      "exampleFr": "Quelle formation ont suivie les professeurs ?",
+      "exampleZh": "老师们接受过什么专业培训？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 8
+      },
+      "learningKey": "sport-final15-v2-44"
+    },
+    {
+      "id": 45,
+      "pattern": "À quelle heure le départ sera-t-il donné ?",
+      "zh": "比赛几点起跑？",
+      "scenario": "race",
+      "exampleFr": "À quelle heure le départ sera-t-il donné ?",
+      "exampleZh": "比赛几点起跑？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 2
+      },
+      "learningKey": "sport-final15-v2-45"
+    },
+    {
+      "id": 46,
+      "pattern": "Savez-vous combien coûte + abonnement ?",
+      "zh": "您知道……会员费多少吗？",
+      "scenario": "club",
+      "exampleFr": "Savez-vous combien coûte l’abonnement mensuel ?",
+      "exampleZh": "您知道月费大概多少吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 12
+      },
+      "learningKey": "sport-final15-v2-46"
     }
+  ],
+  "core20": [
+    1,
+    2,
+    7,
+    11,
+    12,
+    16,
+    17,
+    19,
+    20,
+    23,
+    28,
+    30,
+    31,
+    34,
+    35,
+    36,
+    38,
+    41,
+    48,
+    57
+  ],
+  "core50": [
+    1,
+    2,
+    7,
+    11,
+    12,
+    16,
+    17,
+    19,
+    20,
+    23,
+    28,
+    30,
+    31,
+    34,
+    35,
+    36,
+    38,
+    41,
+    48,
+    57,
+    3,
+    4,
+    6,
+    8,
+    10,
+    13,
+    14,
+    15,
+    18,
+    22,
+    24,
+    26,
+    29,
+    32,
+    33,
+    37,
+    40,
+    44,
+    47,
+    52,
+    53,
+    55,
+    56,
+    58,
+    59,
+    60,
+    65,
+    67,
+    68,
+    81
   ]
 }
