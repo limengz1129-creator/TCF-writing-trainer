@@ -210,7 +210,7 @@
       // Keep every source line, do not invent or rewrite collocations.
       for(const l of ls){
         const p=document.createElement('div');p.className='c1-vocab-row';
-        if(/[\u3400-\u9fff]/.test(l)){p.textContent=l.replace(/^\s*(?:核心|拓展)\s*/, '').trim();p.classList.add('logic-zh');}
+        if(/[\u3400-\u9fff]/.test(l)){p.textContent=l.replace(/(?:核心|拓展)/g, '').replace(/\s+/g, ' ').trim();p.classList.add('logic-zh');}
         else if(/[A-Za-zÀ-ÿ]/.test(l)){p.append(audioLine(l));}
         else p.textContent=l;
         area.append(p);
