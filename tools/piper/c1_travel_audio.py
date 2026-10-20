@@ -3,7 +3,7 @@
 
 Build automatically on GitHub Actions; acceptance requires a verified manifest and packs.
 """
-import argparse, base64, io, json, re, subprocess, wave
+import argparse, base64, hashlib, io, json, re, subprocess, wave
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2]
 DATA=ROOT/"eo-tache3-corpus/c1-travel-data.js"
@@ -87,8 +87,10 @@ def generate(model):
     def flush():
         nonlocal batch,size,number
         if not batch:return
-        name=f"pack-{number:04d}.json"
-        (OUT/name).write_text(json.dumps(batch,ensure_ascii=False,separators=(",",":")),encoding="utf-8")
+        body=json.dumps(batch,ensure_ascii=False,separators=(",",":"))
+        digest=hashlib.sha256(body.encode("utf-8")).hexdigest()[:16]
+        name=f"pack-{number:04d}-{digest}.json"
+        (OUT/name).write_text(body,encoding="utf-8")
         for key,value in batch.items():entries[value["text"]]={"pack":name,"id":key}
         packs[name]=True;number+=1;batch={};size=0
     for i,text in enumerate(expected):
@@ -103,7 +105,7 @@ def generate(model):
         batch[f"c{i:05d}"]=value;size+=encoded
         if (i+1)%50==0:print(f"Synthesized {i+1}/{len(expected)}",flush=True)
     flush()
-    mf.write_text(json.dumps({"voice":"fr_FR-siwis-medium","entries":entries},ensure_ascii=False,separators=(",",":")),encoding="utf-8")
+    mf.write_text(json.dumps({"voice":"fr_FR-siwis-medium","version":"content-addressed-v2","entries":entries},ensure_ascii=False,separators=(",",":")),encoding="utf-8")
     verify()
 if __name__=="__main__":
     cli=argparse.ArgumentParser()
