@@ -203,22 +203,28 @@
     function chainBlock(section,raw){
       const area=document.createElement('div');area.className='c1-text c1-chain';
       const ls=lines(raw).filter(x=>!/(?:保留原中文节点与顺序|保留已编辑 Word 的原链|仅补齐缺失的对应法语|以下保留已编辑 Word|原链文字与顺序|原链文字|保留已编辑)/.test(x));
-      // Source chain typically alternates Chinese node then French counterpart.
-      // Reorder only the display; never rewrite the original source or audio text.
+      const split=x=>x.split(/\s*(?:→|\/|\+|[,，、])\s*/).map(v=>v.trim()).filter(Boolean);
       for(let i=0;i<ls.length;){
-        const current=ls[i];
-        if(/[\u3400-\u9fff]/.test(current)){
-          const zh=current;let fr='';let j=i+1;
-          while(j<ls.length&&!/[\u3400-\u9fff]/.test(ls[j])){
-            fr+=(fr?' ':'')+ls[j];j++;
+        const zh=/[\u3400-\u9fff]/.test(ls[i])?ls[i++]:null;
+        let fr='';
+        while(i<ls.length&&!/[\u3400-\u9fff]/.test(ls[i])){
+          fr+=(fr?' ':'')+ls[i++];
+        }
+        if(!fr){
+          if(zh){const p=document.createElement('p');p.className='logic-zh';p.textContent=zh;area.append(p);}
+          continue;
+        }
+        const frParts=split(fr),zhParts=zh?split(zh):[];
+        // Pair individual nodes only when their counts correspond; otherwise keep
+        // original French-first line and original Chinese translation intact.
+        if(zhParts.length===frParts.length&&frParts.length>1){
+          for(let j=0;j<frParts.length;j++){
+            area.append(audioLine(frParts[j]));
+            const p=document.createElement('p');p.className='logic-zh';p.textContent=zhParts[j];area.append(p);
           }
-          if(fr)area.append(audioLine(fr));
-          const p=document.createElement('p');p.className='logic-zh';p.textContent=zh;area.append(p);
-          i=j;
         }else{
-          let fr=current;i++;
-          while(i<ls.length&&!/[\u3400-\u9fff]/.test(ls[i])){fr+=' '+ls[i];i++;}
-          area.append(audioLine(fr));
+          for(const part of frParts)area.append(audioLine(part));
+          if(zh){const p=document.createElement('p');p.className='logic-zh';p.textContent=zh;area.append(p);}
         }
       }
       section.append(area);
