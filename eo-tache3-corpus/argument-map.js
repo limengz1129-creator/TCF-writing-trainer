@@ -200,6 +200,29 @@
       }
       flush();section.append(area);
     }
+    function chainBlock(section,raw){
+      const area=document.createElement('div');area.className='c1-text c1-chain';
+      const ls=lines(raw).filter(x=>!/(?:保留原中文节点与顺序|保留已编辑 Word 的原链|仅补齐缺失的对应法语|以下保留已编辑 Word)/.test(x));
+      // Source chain typically alternates Chinese node then French counterpart.
+      // Reorder only the display; never rewrite the original source or audio text.
+      for(let i=0;i<ls.length;){
+        const current=ls[i];
+        if(/[\u3400-\u9fff]/.test(current)){
+          const zh=current;let fr='';let j=i+1;
+          while(j<ls.length&&!/[\u3400-\u9fff]/.test(ls[j])){
+            fr+=(fr?' ':'')+ls[j];j++;
+          }
+          if(fr)area.append(audioLine(fr));
+          const p=document.createElement('p');p.className='logic-zh';p.textContent=zh;area.append(p);
+          i=j;
+        }else{
+          let fr=current;i++;
+          while(i<ls.length&&!/[\u3400-\u9fff]/.test(ls[i])){fr+=' '+ls[i];i++;}
+          area.append(audioLine(fr));
+        }
+      }
+      section.append(area);
+    }
     function vocab(section,raw){
       const area=document.createElement('div');area.className='c1-vocab';
       const ls=lines(raw).filter(x=>!/^类型\s+法语表达/.test(x));
@@ -222,7 +245,7 @@
       const meta=document.createElement('p');meta.className='note';meta.textContent='原论段：'+r.source+' ｜ 原题：'+r.question;card.append(meta);
       [['① 核心论点与例子关键词',r.core,'bi'],['② 精简词块',r.vocab,'vocab'],['③ 中法逻辑链',r.chain,'bi'],['④ 完整法语论段与逐句中文',r.text,'bi']].forEach(([label,content,type])=>{
         const heading=document.createElement('h4');heading.textContent=label;card.append(heading);
-        type==='vocab'?vocab(card,content):bilingual(card,content);
+        type==='vocab'?vocab(card,content):label.startsWith('③')?chainBlock(card,content):bilingual(card,content);
       });
       body.append(card);
     }
