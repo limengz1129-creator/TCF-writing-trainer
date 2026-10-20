@@ -2,8 +2,8 @@
   "theme": "culture",
   "title": "文化媒体与节庆",
   "target": "TCF Canada 口语 Tâche 2 · C1",
-  "version": 1,
-  "principle": "约100个高价值词/词块，以12道最终真题为基础；词块与真实套用问法绑定，优先训练中文→法语主动调用。",
+  "version": 2,
+  "principle": "以当前12题×15问为依据，123个词块与62组问法均标注真题来源；按8个场景训练中文→法语，区分演出安排、内容推荐、创作经验和节庆传统。",
   "scenarios": [
     {
       "id": "show",
@@ -45,8 +45,14 @@
       "zh": "演出",
       "scenario": "show",
       "priority": 5,
-      "exampleFr": "Quel type de spectacle est-ce exactement ?",
-      "exampleZh": "这到底是什么类型的演出？"
+      "exampleFr": "De quel genre de spectacle s’agit-il ?",
+      "exampleZh": "这是什么类型的演出？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 6
+      },
+      "learningKey": "culture-final15-v2-1"
     },
     {
       "id": 2,
@@ -54,17 +60,29 @@
       "zh": "票 / 座位",
       "scenario": "show",
       "priority": 5,
-      "exampleFr": "Je vous propose deux places pour un spectacle.",
-      "exampleZh": "我给你两张演出票。"
+      "exampleFr": "Où se trouvent les deux places ?",
+      "exampleZh": "这两个座位在哪里？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 9
+      },
+      "learningKey": "culture-final15-v2-2"
     },
     {
       "id": 3,
-      "fr": "une billetterie",
-      "zh": "售票处",
+      "fr": "les spectacles proposés",
+      "zh": "可选演出",
       "scenario": "show",
       "priority": 5,
-      "exampleFr": "Je travaille à l’accueil d’une billetterie de spectacles.",
-      "exampleZh": "我在演出售票处工作。"
+      "exampleFr": "Quels spectacles proposez-vous cette semaine ?",
+      "exampleZh": "本周你们有哪些演出？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 1
+      },
+      "learningKey": "culture-final15-v2-3"
     },
     {
       "id": 4,
@@ -72,8 +90,14 @@
       "zh": "门票",
       "scenario": "show",
       "priority": 5,
-      "exampleFr": "Comment puis-je acheter les billets ?",
-      "exampleZh": "我怎么可以买票？"
+      "exampleFr": "Comment se passe l’achat des billets ?",
+      "exampleZh": "如何购买门票？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 15
+      },
+      "learningKey": "culture-final15-v2-4"
     },
     {
       "id": 5,
@@ -81,35 +105,59 @@
       "zh": "买票",
       "scenario": "show",
       "priority": 5,
-      "exampleFr": "Comment puis-je acheter les billets ?",
-      "exampleZh": "我怎么可以买票？"
+      "exampleFr": "Comment se passe l’achat des billets ?",
+      "exampleZh": "如何购买门票？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 15
+      },
+      "learningKey": "culture-final15-v2-5"
     },
     {
       "id": 6,
       "fr": "réserver à l’avance",
       "zh": "提前预订",
-      "scenario": "show",
+      "scenario": "cinema",
       "priority": 5,
-      "exampleFr": "Vaut-il mieux réserver à l’avance ?",
-      "exampleZh": "最好提前预订吗？"
+      "exampleFr": "Vaut-il mieux réserver certaines séances à l’avance ?",
+      "exampleZh": "有些场次最好提前预订吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 15
+      },
+      "learningKey": "culture-final15-v2-6"
     },
     {
       "id": 7,
-      "fr": "annuler un billet",
-      "zh": "取消票",
+      "fr": "annuler une réservation",
+      "zh": "取消预订",
       "scenario": "show",
       "priority": 4,
-      "exampleFr": "Peut-on annuler ou échanger un billet ?",
-      "exampleZh": "可以退票或换票吗？"
+      "exampleFr": "Puis-je modifier ou annuler ma réservation ?",
+      "exampleZh": "我可以更改或取消预订吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 14
+      },
+      "learningKey": "culture-final15-v2-7"
     },
     {
       "id": 8,
-      "fr": "échanger un billet",
-      "zh": "换票",
+      "fr": "modifier une réservation",
+      "zh": "修改预订",
       "scenario": "show",
       "priority": 4,
-      "exampleFr": "Peut-on annuler ou échanger un billet ?",
-      "exampleZh": "可以换票吗？"
+      "exampleFr": "Puis-je modifier ou annuler ma réservation ?",
+      "exampleZh": "我可以更改或取消预订吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 14
+      },
+      "learningKey": "culture-final15-v2-8"
     },
     {
       "id": 9,
@@ -117,8 +165,14 @@
       "zh": "优惠价",
       "scenario": "show",
       "priority": 5,
-      "exampleFr": "Y a-t-il des tarifs réduits ?",
-      "exampleZh": "有优惠票价吗？"
+      "exampleFr": "Y a-t-il des tarifs réduits pour certaines catégories de visiteurs ?",
+      "exampleZh": "某些观众类别有优惠票价吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 11
+      },
+      "learningKey": "culture-final15-v2-9"
     },
     {
       "id": 10,
@@ -126,8 +180,14 @@
       "zh": "票价",
       "scenario": "show",
       "priority": 5,
-      "exampleFr": "Combien coûte une place ?",
-      "exampleZh": "一张票多少钱？"
+      "exampleFr": "Quel est le prix d’une place ?",
+      "exampleZh": "一张票多少钱？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 11
+      },
+      "learningKey": "culture-final15-v2-10"
     },
     {
       "id": 11,
@@ -135,8 +195,14 @@
       "zh": "付款方式",
       "scenario": "show",
       "priority": 5,
-      "exampleFr": "Quels moyens de paiement acceptez-vous ?",
-      "exampleZh": "接受哪些付款方式？"
+      "exampleFr": "Quels moyens de paiement acceptez-vous sur place ?",
+      "exampleZh": "现场接受哪些付款方式？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 15
+      },
+      "learningKey": "culture-final15-v2-11"
     },
     {
       "id": 12,
@@ -144,8 +210,14 @@
       "zh": "日期",
       "scenario": "show",
       "priority": 5,
-      "exampleFr": "À quelle date aura lieu le spectacle ?",
-      "exampleZh": "演出哪天举行？"
+      "exampleFr": "À quelle date aura-t-il lieu ?",
+      "exampleZh": "演出将在哪一天举行？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 4
+      },
+      "learningKey": "culture-final15-v2-12"
     },
     {
       "id": 13,
@@ -153,17 +225,29 @@
       "zh": "开始时间",
       "scenario": "show",
       "priority": 5,
-      "exampleFr": "À quelle heure commence le spectacle ?",
-      "exampleZh": "演出几点开始？"
+      "exampleFr": "À quelle heure le spectacle commencera-t-il ?",
+      "exampleZh": "演出几点开始？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 2
+      },
+      "learningKey": "culture-final15-v2-13"
     },
     {
       "id": 14,
-      "fr": "une heure de fin",
-      "zh": "结束时间",
+      "fr": "un entracte",
+      "zh": "幕间休息",
       "scenario": "show",
       "priority": 4,
-      "exampleFr": "À quelle heure se termine le spectacle ?",
-      "exampleZh": "演出几点结束？"
+      "exampleFr": "Est-ce qu’il y aura un entracte ?",
+      "exampleZh": "演出中间会有休息时间吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 10
+      },
+      "learningKey": "culture-final15-v2-14"
     },
     {
       "id": 15,
@@ -171,8 +255,14 @@
       "zh": "持续时间",
       "scenario": "show",
       "priority": 5,
-      "exampleFr": "Combien de temps dure le spectacle ?",
-      "exampleZh": "演出持续多久？"
+      "exampleFr": "Combien de temps durera le spectacle ?",
+      "exampleZh": "演出会持续多长时间？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 3
+      },
+      "learningKey": "culture-final15-v2-15"
     },
     {
       "id": 16,
@@ -180,8 +270,14 @@
       "zh": "演出地点",
       "scenario": "show",
       "priority": 5,
-      "exampleFr": "Où aura lieu le spectacle ?",
-      "exampleZh": "演出在哪里举行？"
+      "exampleFr": "Dans quelle salle le spectacle aura-t-il lieu ?",
+      "exampleZh": "演出会在哪个场馆举行？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 4
+      },
+      "learningKey": "culture-final15-v2-16"
     },
     {
       "id": 17,
@@ -190,7 +286,12 @@
       "scenario": "show",
       "priority": 5,
       "exampleFr": "Quel est le moyen le plus simple pour s’y rendre ?",
-      "exampleZh": "怎么去最方便？"
+      "exampleZh": "去那里最方便的方式是什么？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 5
+      }
     },
     {
       "id": 18,
@@ -198,26 +299,44 @@
       "zh": "停车",
       "scenario": "show",
       "priority": 4,
-      "exampleFr": "Est-ce qu’on peut se garer facilement à proximité ?",
-      "exampleZh": "附近容易停车吗？"
+      "exampleFr": "Est-ce qu’on peut se garer à proximité ?",
+      "exampleZh": "附近可以停车吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 6
+      },
+      "learningKey": "culture-final15-v2-18"
     },
     {
       "id": 19,
-      "fr": "un siège",
-      "zh": "座位",
+      "fr": "une catégorie de places",
+      "zh": "座位类别",
       "scenario": "show",
       "priority": 5,
-      "exampleFr": "Quels types de places ou de sièges proposez-vous ?",
-      "exampleZh": "有哪些座位类型？"
+      "exampleFr": "Quelles catégories de places proposez-vous ?",
+      "exampleZh": "你们提供哪些座位类别？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 9
+      },
+      "learningKey": "culture-final15-v2-19"
     },
     {
       "id": 20,
-      "fr": "une bonne visibilité",
-      "zh": "视野好",
+      "fr": "l’emplacement des places",
+      "zh": "座位位置",
       "scenario": "show",
       "priority": 4,
-      "exampleFr": "Est-ce qu’on voit bien la scène depuis ces places ?",
-      "exampleZh": "从这些座位看舞台清楚吗？"
+      "exampleFr": "Où se trouvent les deux places ?",
+      "exampleZh": "这两个座位在哪里？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 9
+      },
+      "learningKey": "culture-final15-v2-20"
     },
     {
       "id": 21,
@@ -225,8 +344,14 @@
       "zh": "艺术家",
       "scenario": "show",
       "priority": 5,
-      "exampleFr": "Quels artistes participent au spectacle ?",
-      "exampleZh": "有哪些艺术家参加演出？"
+      "exampleFr": "Qui sera sur scène parmi les artistes ou les acteurs ?",
+      "exampleZh": "哪些艺术家或演员会登台演出？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 8
+      },
+      "learningKey": "culture-final15-v2-21"
     },
     {
       "id": 22,
@@ -234,17 +359,29 @@
       "zh": "演员",
       "scenario": "series",
       "priority": 5,
-      "exampleFr": "Qui sont les principaux acteurs ?",
-      "exampleZh": "主要演员是谁？"
+      "exampleFr": "Qui joue les rôles principaux ?",
+      "exampleZh": "谁担任主要角色？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 4
+      },
+      "learningKey": "culture-final15-v2-22"
     },
     {
       "id": 23,
-      "fr": "une performance",
-      "zh": "表演",
+      "fr": "un avis sur un spectacle",
+      "zh": "对一场演出的看法",
       "scenario": "show",
       "priority": 4,
-      "exampleFr": "Comment as-tu trouvé la performance des acteurs ?",
-      "exampleZh": "你觉得演员的表演怎么样？"
+      "exampleFr": "Et qu’en avez-vous pensé ?",
+      "exampleZh": "您觉得那场演出怎么样？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 9
+      },
+      "learningKey": "culture-final15-v2-23"
     },
     {
       "id": 24,
@@ -252,17 +389,29 @@
       "zh": "节目单",
       "scenario": "festival",
       "priority": 5,
-      "exampleFr": "Quel est le programme prévu ?",
-      "exampleZh": "节目安排是什么？"
+      "exampleFr": "Où est-ce que je peux voir le programme complet ?",
+      "exampleZh": "我在哪里可以查看完整节目单？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 8
+      },
+      "learningKey": "culture-final15-v2-24"
     },
     {
       "id": 25,
-      "fr": "valoir le coup",
-      "zh": "值得",
+      "fr": "avoir envie de voir un spectacle",
+      "zh": "想看一场演出",
       "scenario": "show",
       "priority": 5,
-      "exampleFr": "Est-ce que tu trouves que ce spectacle vaut vraiment le coup ?",
-      "exampleZh": "你觉得这个演出真的值得看吗？"
+      "exampleFr": "Qu’est-ce qui vous donne envie d’aller voir ce spectacle ?",
+      "exampleZh": "这场演出最吸引您的是什么？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 15
+      },
+      "learningKey": "culture-final15-v2-25"
     },
     {
       "id": 26,
@@ -270,8 +419,14 @@
       "zh": "推荐",
       "scenario": "show",
       "priority": 5,
-      "exampleFr": "Quel spectacle me conseilleriez-vous ?",
-      "exampleZh": "您会推荐哪个演出？"
+      "exampleFr": "Lequel me conseillez-vous en priorité ?",
+      "exampleZh": "您最优先推荐哪一场？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 2
+      },
+      "learningKey": "culture-final15-v2-26"
     },
     {
       "id": 27,
@@ -279,17 +434,29 @@
       "zh": "电视剧",
       "scenario": "series",
       "priority": 5,
-      "exampleFr": "Vous voulez regarder une série télévisée.",
-      "exampleZh": "你想看一部电视剧。"
+      "exampleFr": "Tu as une série à me conseiller en ce moment ?",
+      "exampleZh": "最近有哪部电视剧你会推荐给我？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 1
+      },
+      "learningKey": "culture-final15-v2-27"
     },
     {
       "id": 28,
-      "fr": "un type de série",
-      "zh": "剧集类型",
+      "fr": "conseiller une série",
+      "zh": "推荐电视剧",
       "scenario": "series",
       "priority": 5,
-      "exampleFr": "Quel type de série me conseillerais-tu ?",
-      "exampleZh": "你会推荐什么类型的剧？"
+      "exampleFr": "Tu as une série à me conseiller en ce moment ?",
+      "exampleZh": "最近有哪部电视剧你会推荐给我？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 1
+      },
+      "learningKey": "culture-final15-v2-28"
     },
     {
       "id": 29,
@@ -297,8 +464,14 @@
       "zh": "剧情",
       "scenario": "series",
       "priority": 5,
-      "exampleFr": "De quoi parle l’intrigue ?",
-      "exampleZh": "剧情讲什么？"
+      "exampleFr": "De quoi parle cette série ?",
+      "exampleZh": "这部剧讲的是什么？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 3
+      },
+      "learningKey": "culture-final15-v2-29"
     },
     {
       "id": 30,
@@ -306,8 +479,14 @@
       "zh": "一集",
       "scenario": "series",
       "priority": 5,
-      "exampleFr": "Combien de temps dure un épisode ?",
-      "exampleZh": "一集多长时间？"
+      "exampleFr": "Un épisode dure combien de temps en moyenne ?",
+      "exampleZh": "每集平均多长时间？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 6
+      },
+      "learningKey": "culture-final15-v2-30"
     },
     {
       "id": 31,
@@ -315,8 +494,14 @@
       "zh": "一季",
       "scenario": "series",
       "priority": 5,
-      "exampleFr": "Combien de saisons y a-t-il ?",
-      "exampleZh": "一共有几季？"
+      "exampleFr": "La série compte combien de saisons ?",
+      "exampleZh": "这部剧一共有几季？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 8
+      },
+      "learningKey": "culture-final15-v2-31"
     },
     {
       "id": 32,
@@ -324,8 +509,14 @@
       "zh": "流媒体平台",
       "scenario": "series",
       "priority": 5,
-      "exampleFr": "Sur quelle plateforme peut-on regarder cette série ?",
-      "exampleZh": "这部剧在哪个平台能看？"
+      "exampleFr": "Sur quelle chaîne ou quelle plateforme peut-on la regarder ?",
+      "exampleZh": "在哪个频道或平台可以观看？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 9
+      },
+      "learningKey": "culture-final15-v2-32"
     },
     {
       "id": 33,
@@ -333,17 +524,29 @@
       "zh": "频道",
       "scenario": "series",
       "priority": 4,
-      "exampleFr": "Sur quelle chaîne est-elle diffusée ?",
-      "exampleZh": "在哪个频道播？"
+      "exampleFr": "Sur quelle chaîne ou quelle plateforme peut-on la regarder ?",
+      "exampleZh": "在哪个频道或平台可以观看？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 9
+      },
+      "learningKey": "culture-final15-v2-33"
     },
     {
       "id": 34,
-      "fr": "être diffusé(e)",
-      "zh": "播出",
+      "fr": "regarder sur une plateforme",
+      "zh": "在平台上观看",
       "scenario": "series",
       "priority": 4,
-      "exampleFr": "Sur quelle chaîne est-elle diffusée ?",
-      "exampleZh": "在哪个频道播？"
+      "exampleFr": "Sur quelle chaîne ou quelle plateforme peut-on la regarder ?",
+      "exampleZh": "在哪个频道或平台可以观看？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 9
+      },
+      "learningKey": "culture-final15-v2-34"
     },
     {
       "id": 35,
@@ -351,17 +554,29 @@
       "zh": "订阅",
       "scenario": "series",
       "priority": 5,
-      "exampleFr": "Faut-il un abonnement pour la regarder ?",
-      "exampleZh": "看这部剧需要订阅吗？"
+      "exampleFr": "Un abonnement est-il nécessaire pour la regarder ?",
+      "exampleZh": "观看这部剧需要订阅吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 10
+      },
+      "learningKey": "culture-final15-v2-35"
     },
     {
       "id": 36,
-      "fr": "être gratuit(e)",
-      "zh": "免费",
+      "fr": "nécessiter un abonnement",
+      "zh": "需要订阅",
       "scenario": "series",
       "priority": 4,
-      "exampleFr": "Est-ce que cette série est gratuite ?",
-      "exampleZh": "这部剧免费吗？"
+      "exampleFr": "Un abonnement est-il nécessaire pour la regarder ?",
+      "exampleZh": "观看这部剧需要订阅吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 10
+      },
+      "learningKey": "culture-final15-v2-36"
     },
     {
       "id": 37,
@@ -369,44 +584,74 @@
       "zh": "字幕",
       "scenario": "series",
       "priority": 5,
-      "exampleFr": "Y a-t-il des sous-titres en français ?",
-      "exampleZh": "有法语字幕吗？"
+      "exampleFr": "Des sous-titres en français sont-ils disponibles ?",
+      "exampleZh": "有法语字幕吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 12
+      },
+      "learningKey": "culture-final15-v2-37"
     },
     {
       "id": 38,
-      "fr": "le niveau de langue",
-      "zh": "语言难度",
+      "fr": "le français utilisé",
+      "zh": "所使用的法语",
       "scenario": "series",
       "priority": 5,
-      "exampleFr": "Le niveau de langue est-il difficile ?",
-      "exampleZh": "语言难度大吗？"
+      "exampleFr": "Le français utilisé est-il assez facile à comprendre ?",
+      "exampleZh": "剧中的法语容易听懂吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 11
+      },
+      "learningKey": "culture-final15-v2-38"
     },
     {
       "id": 39,
-      "fr": "être facile à suivre",
-      "zh": "容易跟上",
+      "fr": "être facile à comprendre",
+      "zh": "容易听懂",
       "scenario": "series",
       "priority": 5,
-      "exampleFr": "Est-ce que la série est facile à suivre pour quelqu’un qui apprend le français ?",
-      "exampleZh": "学法语的人容易看懂吗？"
+      "exampleFr": "Le français utilisé est-il assez facile à comprendre ?",
+      "exampleZh": "剧中的法语容易听懂吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 11
+      },
+      "learningKey": "culture-final15-v2-39"
     },
     {
       "id": 40,
-      "fr": "être populaire",
-      "zh": "受欢迎",
+      "fr": "devenir intéressant dès le premier épisode",
+      "zh": "从第一集就吸引人",
       "scenario": "series",
       "priority": 4,
-      "exampleFr": "Cette série est-elle populaire en ce moment ?",
-      "exampleZh": "这部剧现在受欢迎吗？"
+      "exampleFr": "Est-ce que l’histoire devient intéressante dès le premier épisode ?",
+      "exampleZh": "剧情从第一集就开始吸引人吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 13
+      },
+      "learningKey": "culture-final15-v2-40"
     },
     {
       "id": 41,
-      "fr": "comparer deux séries",
-      "zh": "比较两部剧",
+      "fr": "choisir selon le temps disponible",
+      "zh": "根据可用时间选择",
       "scenario": "series",
       "priority": 5,
-      "exampleFr": "Entre les deux séries, laquelle me conseillerais-tu ?",
-      "exampleZh": "这两部剧你更推荐哪一部？"
+      "exampleFr": "Si je n’ai pas beaucoup de temps, laquelle me conseillerais-tu ?",
+      "exampleZh": "如果我时间不多，你会推荐哪部？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 14
+      },
+      "learningKey": "culture-final15-v2-41"
     },
     {
       "id": 42,
@@ -414,8 +659,14 @@
       "zh": "博客",
       "scenario": "blog",
       "priority": 5,
-      "exampleFr": "J’ai un blog depuis longtemps.",
-      "exampleZh": "我做博客很多年了。"
+      "exampleFr": "Ça fait combien de temps que tu tiens ton blog ?",
+      "exampleZh": "你经营博客多久了？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 1
+      },
+      "learningKey": "culture-final15-v2-42"
     },
     {
       "id": 43,
@@ -423,8 +674,14 @@
       "zh": "创建博客",
       "scenario": "blog",
       "priority": 5,
-      "exampleFr": "Vous voulez créer un blog pour votre prochain voyage au Canada.",
-      "exampleZh": "你想为下次加拿大旅行创建博客。"
+      "exampleFr": "Tu me conseillerais quelles rubriques pour un blog de voyage au Canada ?",
+      "exampleZh": "如果写加拿大旅行博客，你会建议设置哪些栏目？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 4
+      },
+      "learningKey": "culture-final15-v2-43"
     },
     {
       "id": 44,
@@ -432,8 +689,14 @@
       "zh": "博客平台",
       "scenario": "blog",
       "priority": 4,
-      "exampleFr": "Quelle plateforme utilises-tu pour ton blog ?",
-      "exampleZh": "你用什么平台做博客？"
+      "exampleFr": "Tu publies ton blog sur quelle plateforme ?",
+      "exampleZh": "你在哪个平台上发布博客？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 2
+      },
+      "learningKey": "culture-final15-v2-44"
     },
     {
       "id": 45,
@@ -441,17 +704,29 @@
       "zh": "主题",
       "scenario": "blog",
       "priority": 5,
-      "exampleFr": "Quel thème me conseillerais-tu pour mon blog ?",
-      "exampleZh": "你建议我的博客用什么主题？"
+      "exampleFr": "Tu abordes surtout quels sujets ?",
+      "exampleZh": "你主要写哪些主题？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 3
+      },
+      "learningKey": "culture-final15-v2-45"
     },
     {
       "id": 46,
-      "fr": "une rubrique",
-      "zh": "栏目",
+      "fr": "une rubrique de blog",
+      "zh": "博客栏目",
       "scenario": "blog",
       "priority": 5,
-      "exampleFr": "Quelles rubriques faudrait-il prévoir ?",
-      "exampleZh": "应该设置哪些栏目？"
+      "exampleFr": "Tu me conseillerais quelles rubriques pour un blog de voyage au Canada ?",
+      "exampleZh": "如果写加拿大旅行博客，你会建议设置哪些栏目？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 4
+      },
+      "learningKey": "culture-final15-v2-46"
     },
     {
       "id": 47,
@@ -459,8 +734,14 @@
       "zh": "内容类型",
       "scenario": "blog",
       "priority": 5,
-      "exampleFr": "Quels types de contenus fonctionnent le mieux ?",
-      "exampleZh": "哪些内容形式效果最好？"
+      "exampleFr": "Qu’est-ce qui fonctionne le mieux : les textes, les photos ou les vidéos ?",
+      "exampleZh": "文字、照片和视频，哪种内容效果最好？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 5
+      },
+      "learningKey": "culture-final15-v2-47"
     },
     {
       "id": 48,
@@ -468,17 +749,29 @@
       "zh": "发布",
       "scenario": "blog",
       "priority": 5,
-      "exampleFr": "À quelle fréquence faudrait-il publier ?",
-      "exampleZh": "应该多久发布一次？"
+      "exampleFr": "À quelle fréquence publies-tu de nouveaux articles ?",
+      "exampleZh": "你多久发布一次新文章？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 6
+      },
+      "learningKey": "culture-final15-v2-48"
     },
     {
       "id": 49,
-      "fr": "le rythme de publication",
-      "zh": "发布频率",
+      "fr": "publier régulièrement",
+      "zh": "定期发布",
       "scenario": "blog",
       "priority": 5,
-      "exampleFr": "Quel rythme de publication me conseillerais-tu ?",
-      "exampleZh": "你建议什么发布节奏？"
+      "exampleFr": "Avant de partir, qu’est-ce que je devrais préparer pour pouvoir publier régulièrement ?",
+      "exampleZh": "出发前，我应该准备些什么才能定期发布内容？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 15
+      },
+      "learningKey": "culture-final15-v2-49"
     },
     {
       "id": 50,
@@ -486,8 +779,14 @@
       "zh": "文章",
       "scenario": "blog",
       "priority": 5,
-      "exampleFr": "Quelle longueur devrait faire un article ?",
-      "exampleZh": "一篇文章应该多长？"
+      "exampleFr": "Est-ce que les lecteurs préfèrent les articles courts ou détaillés ?",
+      "exampleZh": "读者更喜欢短文章还是详细文章？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 7
+      },
+      "learningKey": "culture-final15-v2-50"
     },
     {
       "id": 51,
@@ -495,8 +794,14 @@
       "zh": "照片",
       "scenario": "blog",
       "priority": 4,
-      "exampleFr": "Combien de photos faudrait-il mettre dans chaque article ?",
-      "exampleZh": "每篇文章放多少照片比较好？"
+      "exampleFr": "Combien de photos conseillerais-tu de mettre dans un article ?",
+      "exampleZh": "你建议一篇文章放多少张照片？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 8
+      },
+      "learningKey": "culture-final15-v2-51"
     },
     {
       "id": 52,
@@ -504,8 +809,14 @@
       "zh": "读者",
       "scenario": "blog",
       "priority": 4,
-      "exampleFr": "Quel type de lecteurs veux-tu viser ?",
-      "exampleZh": "你想面向什么样的读者？"
+      "exampleFr": "Quel public devrais-je viser avec mon blog ?",
+      "exampleZh": "我的博客应该面向哪些读者？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 9
+      },
+      "learningKey": "culture-final15-v2-52"
     },
     {
       "id": 53,
@@ -513,26 +824,44 @@
       "zh": "评论",
       "scenario": "blog",
       "priority": 4,
-      "exampleFr": "Comment encourager les lecteurs à laisser des commentaires ?",
-      "exampleZh": "怎么鼓励读者留言？"
+      "exampleFr": "Comment réagis-tu aux commentaires des lecteurs ?",
+      "exampleZh": "你通常如何回复读者评论？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 10
+      },
+      "learningKey": "culture-final15-v2-53"
     },
     {
       "id": 54,
-      "fr": "interagir avec les lecteurs",
-      "zh": "与读者互动",
+      "fr": "réagir aux commentaires",
+      "zh": "回应评论",
       "scenario": "blog",
       "priority": 5,
-      "exampleFr": "Comment peut-on interagir avec les lecteurs ?",
-      "exampleZh": "怎么和读者互动？"
+      "exampleFr": "Comment réagis-tu aux commentaires des lecteurs ?",
+      "exampleZh": "你通常如何回复读者评论？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 10
+      },
+      "learningKey": "culture-final15-v2-54"
     },
     {
       "id": 55,
-      "fr": "promouvoir un blog",
-      "zh": "推广博客",
+      "fr": "attirer des lecteurs",
+      "zh": "吸引读者",
       "scenario": "blog",
       "priority": 5,
-      "exampleFr": "Comment faire connaître son blog ?",
-      "exampleZh": "怎么推广自己的博客？"
+      "exampleFr": "Qu’est-ce qui t’aide à attirer plus de lecteurs ?",
+      "exampleZh": "什么方法能帮你吸引更多读者？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 11
+      },
+      "learningKey": "culture-final15-v2-55"
     },
     {
       "id": 56,
@@ -540,17 +869,29 @@
       "zh": "社交媒体",
       "scenario": "blog",
       "priority": 5,
-      "exampleFr": "Est-ce utile de partager les articles sur les réseaux sociaux ?",
-      "exampleZh": "把文章分享到社交媒体有用吗？"
+      "exampleFr": "Tu partages tes articles sur quels réseaux sociaux ?",
+      "exampleZh": "你会在哪些社交媒体平台分享文章？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 12
+      },
+      "learningKey": "culture-final15-v2-56"
     },
     {
       "id": 57,
-      "fr": "un outil numérique",
-      "zh": "数字工具",
+      "fr": "une application pratique",
+      "zh": "实用的应用程序",
       "scenario": "blog",
       "priority": 4,
-      "exampleFr": "Quels outils me conseillerais-tu pour préparer le blog ?",
-      "exampleZh": "你建议用哪些工具准备博客？"
+      "exampleFr": "Tu connais une application pratique pour publier pendant le voyage ?",
+      "exampleZh": "你知道适合旅行途中发布内容的实用应用吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 13
+      },
+      "learningKey": "culture-final15-v2-57"
     },
     {
       "id": 58,
@@ -558,53 +899,89 @@
       "zh": "报纸",
       "scenario": "press",
       "priority": 5,
-      "exampleFr": "Vous souhaitez lire des journaux canadiens.",
-      "exampleZh": "你想读加拿大报纸。"
+      "exampleFr": "Qu’est-ce que vous vendez comme journaux canadiens ?",
+      "exampleZh": "你们出售哪些加拿大报纸？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 1
+      },
+      "learningKey": "culture-final15-v2-58"
     },
     {
       "id": 59,
-      "fr": "un kiosque à journaux",
-      "zh": "报刊亭",
+      "fr": "vendre des journaux",
+      "zh": "出售报纸",
       "scenario": "press",
       "priority": 4,
-      "exampleFr": "Je tiens un kiosque à journaux.",
-      "exampleZh": "我经营一家报刊亭。"
+      "exampleFr": "Qu’est-ce que vous vendez comme journaux canadiens ?",
+      "exampleZh": "你们出售哪些加拿大报纸？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 1
+      },
+      "learningKey": "culture-final15-v2-59"
     },
     {
       "id": 60,
-      "fr": "un quotidien",
-      "zh": "日报",
+      "fr": "un vocabulaire courant",
+      "zh": "日常词汇",
       "scenario": "press",
       "priority": 4,
-      "exampleFr": "Est-ce plutôt un quotidien ou un hebdomadaire ?",
-      "exampleZh": "这是日报还是周报？"
+      "exampleFr": "Les articles utilisent-ils un vocabulaire plutôt courant ou spécialisé ?",
+      "exampleZh": "文章用词偏日常还是专业？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 5
+      },
+      "learningKey": "culture-final15-v2-60"
     },
     {
       "id": 61,
-      "fr": "un hebdomadaire",
-      "zh": "周报",
+      "fr": "un vocabulaire spécialisé",
+      "zh": "专业词汇",
       "scenario": "press",
       "priority": 4,
-      "exampleFr": "Est-ce plutôt un quotidien ou un hebdomadaire ?",
-      "exampleZh": "这是日报还是周报？"
+      "exampleFr": "Les articles utilisent-ils un vocabulaire plutôt courant ou spécialisé ?",
+      "exampleZh": "文章用词偏日常还是专业？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 5
+      },
+      "learningKey": "culture-final15-v2-61"
     },
     {
       "id": 62,
-      "fr": "un thème d’actualité",
-      "zh": "新闻主题",
+      "fr": "la culture ou la société",
+      "zh": "文化或社会议题",
       "scenario": "press",
       "priority": 5,
-      "exampleFr": "Quels journaux parlent surtout d’actualité internationale ?",
-      "exampleZh": "哪些报纸主要报道国际新闻？"
+      "exampleFr": "Lesquels parlent surtout de culture ou de société ?",
+      "exampleZh": "哪些报纸主要报道文化或社会议题？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 2
+      },
+      "learningKey": "culture-final15-v2-62"
     },
     {
       "id": 63,
-      "fr": "une rubrique",
-      "zh": "栏目",
+      "fr": "une rubrique de journal",
+      "zh": "报纸栏目",
       "scenario": "press",
       "priority": 4,
-      "exampleFr": "Quelles rubriques trouve-t-on dans ce journal ?",
-      "exampleZh": "这份报纸有哪些栏目？"
+      "exampleFr": "Qu’est-ce qu’on trouve comme rubriques dans ce journal ?",
+      "exampleZh": "这份报纸设有哪些栏目？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 6
+      },
+      "learningKey": "culture-final15-v2-63"
     },
     {
       "id": 64,
@@ -613,7 +990,12 @@
       "scenario": "press",
       "priority": 4,
       "exampleFr": "À quelle fréquence ce journal paraît-il ?",
-      "exampleZh": "这份报纸多久出版一次？"
+      "exampleZh": "这份报纸多久出版一次？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 7
+      }
     },
     {
       "id": 65,
@@ -621,17 +1003,29 @@
       "zh": "一份报纸",
       "scenario": "press",
       "priority": 4,
-      "exampleFr": "Combien coûte un exemplaire ?",
-      "exampleZh": "一份多少钱？"
+      "exampleFr": "Puis-je consulter un exemplaire avant de m’abonner ?",
+      "exampleZh": "订阅前我可以先看一期吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 12
+      },
+      "learningKey": "culture-final15-v2-65"
     },
     {
       "id": 66,
-      "fr": "un abonnement annuel",
-      "zh": "年度订阅",
+      "fr": "le coût de l’abonnement",
+      "zh": "订阅费用",
       "scenario": "press",
       "priority": 4,
-      "exampleFr": "Combien coûte l’abonnement annuel ?",
-      "exampleZh": "年度订阅多少钱？"
+      "exampleFr": "À combien revient l’abonnement ?",
+      "exampleZh": "订阅费用是多少？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 9
+      },
+      "learningKey": "culture-final15-v2-66"
     },
     {
       "id": 67,
@@ -639,8 +1033,14 @@
       "zh": "电子版",
       "scenario": "press",
       "priority": 5,
-      "exampleFr": "Existe-t-il une version numérique ?",
-      "exampleZh": "有电子版吗？"
+      "exampleFr": "Le journal existe-t-il aussi en version numérique ?",
+      "exampleZh": "这份报纸也有电子版吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 10
+      },
+      "learningKey": "culture-final15-v2-67"
     },
     {
       "id": 68,
@@ -648,17 +1048,29 @@
       "zh": "在线阅读",
       "scenario": "press",
       "priority": 5,
-      "exampleFr": "Peut-on le lire en ligne ?",
-      "exampleZh": "可以在线阅读吗？"
+      "exampleFr": "Est-il accessible sur une application ou un site internet ?",
+      "exampleZh": "可以通过应用或网站阅读吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 11
+      },
+      "learningKey": "culture-final15-v2-68"
     },
     {
       "id": 69,
-      "fr": "un numéro d’essai",
-      "zh": "试读样刊",
+      "fr": "consulter un exemplaire",
+      "zh": "翻阅一期报纸",
       "scenario": "press",
       "priority": 4,
-      "exampleFr": "Puis-je lire un numéro d’essai avant de m’abonner ?",
-      "exampleZh": "订阅前可以先试读吗？"
+      "exampleFr": "Puis-je consulter un exemplaire avant de m’abonner ?",
+      "exampleZh": "订阅前我可以先看一期吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 12
+      },
+      "learningKey": "culture-final15-v2-69"
     },
     {
       "id": 70,
@@ -666,8 +1078,14 @@
       "zh": "节庆 / 节日活动",
       "scenario": "festival",
       "priority": 5,
-      "exampleFr": "J’organise un festival de musique dans votre ville.",
-      "exampleZh": "我在你所在的城市组织音乐节。"
+      "exampleFr": "À quelles dates le festival aura-t-il lieu ?",
+      "exampleZh": "音乐节将于哪几天举行？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 1
+      },
+      "learningKey": "culture-final15-v2-70"
     },
     {
       "id": 71,
@@ -675,17 +1093,29 @@
       "zh": "音乐节",
       "scenario": "festival",
       "priority": 5,
-      "exampleFr": "J’organise un festival de musique dans votre ville.",
-      "exampleZh": "我组织一个音乐节。"
+      "exampleFr": "À quelles dates le festival aura-t-il lieu ?",
+      "exampleZh": "音乐节将于哪几天举行？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 1
+      },
+      "learningKey": "culture-final15-v2-71"
     },
     {
       "id": 72,
       "fr": "un festival de cinéma",
       "zh": "电影节",
-      "scenario": "festival",
+      "scenario": "cinema",
       "priority": 5,
-      "exampleFr": "J’organise un festival de cinéma francophone.",
-      "exampleZh": "我组织一个法语电影节。"
+      "exampleFr": "Quels genres de films seront au programme ?",
+      "exampleZh": "节目中会放映哪些类型的电影？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 4
+      },
+      "learningKey": "culture-final15-v2-72"
     },
     {
       "id": 73,
@@ -693,8 +1123,14 @@
       "zh": "音乐会",
       "scenario": "concert",
       "priority": 5,
-      "exampleFr": "Je vous propose de m’accompagner à un concert de musique.",
-      "exampleZh": "我邀请你和我一起去音乐会。"
+      "exampleFr": "Quand le concert aura-t-il lieu exactement ?",
+      "exampleZh": "音乐会具体什么时候举行？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 1
+      },
+      "learningKey": "culture-final15-v2-73"
     },
     {
       "id": 74,
@@ -702,8 +1138,14 @@
       "zh": "音乐类型",
       "scenario": "concert",
       "priority": 5,
-      "exampleFr": "Quel type de musique sera joué ?",
-      "exampleZh": "会演奏什么类型的音乐？"
+      "exampleFr": "Quel style de musique sera au programme ?",
+      "exampleZh": "音乐会会演奏什么风格的音乐？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 6
+      },
+      "learningKey": "culture-final15-v2-74"
     },
     {
       "id": 75,
@@ -711,8 +1153,14 @@
       "zh": "歌手",
       "scenario": "concert",
       "priority": 5,
-      "exampleFr": "Quels chanteurs ou groupes seront présents ?",
-      "exampleZh": "有哪些歌手或乐队参加？"
+      "exampleFr": "Qui va jouer : quel chanteur ou quel groupe ?",
+      "exampleZh": "会由谁演出：哪位歌手或哪个乐队？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 7
+      },
+      "learningKey": "culture-final15-v2-75"
     },
     {
       "id": 76,
@@ -720,8 +1168,14 @@
       "zh": "乐队",
       "scenario": "concert",
       "priority": 5,
-      "exampleFr": "Quels chanteurs ou groupes seront présents ?",
-      "exampleZh": "有哪些歌手或乐队参加？"
+      "exampleFr": "Qui va jouer : quel chanteur ou quel groupe ?",
+      "exampleZh": "会由谁演出：哪位歌手或哪个乐队？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 7
+      },
+      "learningKey": "culture-final15-v2-76"
     },
     {
       "id": 77,
@@ -729,8 +1183,14 @@
       "zh": "歌曲",
       "scenario": "concert",
       "priority": 4,
-      "exampleFr": "Tu connais déjà certaines de leurs chansons ?",
-      "exampleZh": "你已经听过他们的一些歌吗？"
+      "exampleFr": "Sais-tu quelles chansons sont au programme ?",
+      "exampleZh": "你知道演出曲目有哪些吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 8
+      },
+      "learningKey": "culture-final15-v2-77"
     },
     {
       "id": 78,
@@ -738,35 +1198,59 @@
       "zh": "舞台",
       "scenario": "festival",
       "priority": 4,
-      "exampleFr": "Combien de scènes y aura-t-il ?",
-      "exampleZh": "会有几个舞台？"
+      "exampleFr": "Est-ce qu’il y aura plusieurs scènes ?",
+      "exampleZh": "现场会有多个舞台吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 3
+      },
+      "learningKey": "culture-final15-v2-78"
     },
     {
       "id": 79,
-      "fr": "un concert en plein air",
-      "zh": "露天音乐会",
+      "fr": "la sécurité du festival",
+      "zh": "音乐节安全安排",
       "scenario": "festival",
       "priority": 4,
-      "exampleFr": "Les concerts auront-ils lieu en plein air ?",
-      "exampleZh": "音乐会会在户外举行吗？"
+      "exampleFr": "Comment la sécurité sera-t-elle assurée pendant le festival ?",
+      "exampleZh": "音乐节期间会如何保障安全？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 14
+      },
+      "learningKey": "culture-final15-v2-79"
     },
     {
       "id": 80,
-      "fr": "un stand de restauration",
-      "zh": "餐饮摊位",
+      "fr": "se restaurer sur place",
+      "zh": "在现场用餐",
       "scenario": "festival",
       "priority": 4,
-      "exampleFr": "Y aura-t-il des stands de restauration ?",
-      "exampleZh": "会有餐饮摊位吗？"
+      "exampleFr": "Pourra-t-on se restaurer sur place ?",
+      "exampleZh": "现场可以用餐吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 12
+      },
+      "learningKey": "culture-final15-v2-80"
     },
     {
       "id": 81,
       "fr": "un pass",
       "zh": "通票",
-      "scenario": "festival",
+      "scenario": "cinema",
       "priority": 5,
-      "exampleFr": "Existe-t-il un pass pour plusieurs séances ?",
-      "exampleZh": "有多场通票吗？"
+      "exampleFr": "Peut-on acheter un pass pour plusieurs films ?",
+      "exampleZh": "可以买观看多部电影的通票吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 11
+      },
+      "learningKey": "culture-final15-v2-81"
     },
     {
       "id": 82,
@@ -774,8 +1258,14 @@
       "zh": "烟花",
       "scenario": "holiday",
       "priority": 5,
-      "exampleFr": "Y aura-t-il un feu d’artifice ?",
-      "exampleZh": "会有烟花吗？"
+      "exampleFr": "Les feux d’artifice sont-ils fréquents pour le Nouvel An ?",
+      "exampleZh": "新年期间经常有烟花表演吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 3,
+        "question": 5
+      },
+      "learningKey": "culture-final15-v2-82"
     },
     {
       "id": 83,
@@ -783,8 +1273,14 @@
       "zh": "新年",
       "scenario": "holiday",
       "priority": 5,
-      "exampleFr": "Vous allez passer le prochain Nouvel An au Canada.",
-      "exampleZh": "你将在加拿大过下一个新年。"
+      "exampleFr": "À partir de quand commencent généralement les célébrations du Nouvel An ?",
+      "exampleZh": "新年庆祝活动通常从什么时候开始？",
+      "source": {
+        "month": "2026-09",
+        "number": 3,
+        "question": 1
+      },
+      "learningKey": "culture-final15-v2-83"
     },
     {
       "id": 84,
@@ -792,8 +1288,14 @@
       "zh": "庆祝",
       "scenario": "holiday",
       "priority": 5,
-      "exampleFr": "Comment les Canadiens célèbrent-ils le Nouvel An ?",
-      "exampleZh": "加拿大人怎么庆祝新年？"
+      "exampleFr": "Est-ce qu’on fête plutôt le Nouvel An en famille ou entre amis ?",
+      "exampleZh": "新年更多是和家人还是朋友一起庆祝？",
+      "source": {
+        "month": "2026-09",
+        "number": 3,
+        "question": 3
+      },
+      "learningKey": "culture-final15-v2-84"
     },
     {
       "id": 85,
@@ -801,8 +1303,14 @@
       "zh": "传统",
       "scenario": "holiday",
       "priority": 5,
-      "exampleFr": "Quelles traditions sont les plus courantes ?",
-      "exampleZh": "最常见的传统有哪些？"
+      "exampleFr": "Quelles traditions devrais-je connaître avant d’y participer ?",
+      "exampleZh": "参加之前，我应该了解哪些传统？",
+      "source": {
+        "month": "2026-09",
+        "number": 3,
+        "question": 7
+      },
+      "learningKey": "culture-final15-v2-85"
     },
     {
       "id": 86,
@@ -810,8 +1318,14 @@
       "zh": "典型菜肴",
       "scenario": "holiday",
       "priority": 5,
-      "exampleFr": "Quels plats typiques mange-t-on pour le Nouvel An ?",
-      "exampleZh": "新年通常吃哪些典型菜？"
+      "exampleFr": "Qu’est-ce qu’on mange généralement ce soir-là ?",
+      "exampleZh": "新年夜通常吃些什么？",
+      "source": {
+        "month": "2026-09",
+        "number": 3,
+        "question": 8
+      },
+      "learningKey": "culture-final15-v2-86"
     },
     {
       "id": 87,
@@ -819,17 +1333,29 @@
       "zh": "饮品",
       "scenario": "holiday",
       "priority": 4,
-      "exampleFr": "Qu’est-ce qu’on boit généralement pendant la fête ?",
-      "exampleZh": "节日期间一般喝什么？"
+      "exampleFr": "Qu’est-ce qu’on sert généralement comme boissons ?",
+      "exampleZh": "通常会提供哪些饮料？",
+      "source": {
+        "month": "2026-09",
+        "number": 3,
+        "question": 9
+      },
+      "learningKey": "culture-final15-v2-87"
     },
     {
       "id": 88,
-      "fr": "une tenue",
-      "zh": "着装",
+      "fr": "une précaution pour les célébrations",
+      "zh": "参加庆祝活动的注意事项",
       "scenario": "holiday",
       "priority": 4,
-      "exampleFr": "Comment faut-il s’habiller pour cette soirée ?",
-      "exampleZh": "这个晚上应该怎么穿？"
+      "exampleFr": "Quelles précautions conseillez-vous pour les célébrations en plein air ?",
+      "exampleZh": "参加户外庆祝活动需要注意什么？",
+      "source": {
+        "month": "2026-09",
+        "number": 3,
+        "question": 10
+      },
+      "learningKey": "culture-final15-v2-88"
     },
     {
       "id": 89,
@@ -837,8 +1363,14 @@
       "zh": "准备保暖衣物",
       "scenario": "holiday",
       "priority": 4,
-      "exampleFr": "Faut-il prévoir des vêtements très chauds ?",
-      "exampleZh": "需要准备很暖的衣服吗？"
+      "exampleFr": "Comme il fait froid, que me conseillez-vous d’emporter ?",
+      "exampleZh": "天气很冷，您建议我带些什么？",
+      "source": {
+        "month": "2026-09",
+        "number": 3,
+        "question": 11
+      },
+      "learningKey": "culture-final15-v2-89"
     },
     {
       "id": 90,
@@ -846,17 +1378,29 @@
       "zh": "户外活动",
       "scenario": "holiday",
       "priority": 4,
-      "exampleFr": "Y a-t-il beaucoup d’activités en plein air ?",
-      "exampleZh": "有很多户外活动吗？"
+      "exampleFr": "Des activités en plein air sont-elles aussi organisées ?",
+      "exampleZh": "也会组织户外活动吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 3,
+        "question": 6
+      },
+      "learningKey": "culture-final15-v2-90"
     },
     {
       "id": 91,
-      "fr": "rentrer chez soi",
-      "zh": "回家",
+      "fr": "des transports après minuit",
+      "zh": "午夜后的交通",
       "scenario": "holiday",
       "priority": 4,
-      "exampleFr": "Comment peut-on rentrer chez soi après minuit ?",
-      "exampleZh": "午夜后怎么回家？"
+      "exampleFr": "Y a-t-il généralement des transports supplémentaires après minuit ?",
+      "exampleZh": "午夜之后通常会加开公共交通吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 3,
+        "question": 12
+      },
+      "learningKey": "culture-final15-v2-91"
     },
     {
       "id": 92,
@@ -864,8 +1408,14 @@
       "zh": "家庭活动",
       "scenario": "holiday",
       "priority": 4,
-      "exampleFr": "Y a-t-il des activités adaptées aux familles ?",
-      "exampleZh": "有适合家庭的活动吗？"
+      "exampleFr": "Qu’est-ce qui est prévu pour les familles ?",
+      "exampleZh": "有哪些适合家庭参加的活动？",
+      "source": {
+        "month": "2026-09",
+        "number": 3,
+        "question": 14
+      },
+      "learningKey": "culture-final15-v2-92"
     },
     {
       "id": 93,
@@ -873,8 +1423,14 @@
       "zh": "首次体验",
       "scenario": "holiday",
       "priority": 4,
-      "exampleFr": "Qu’est-ce que tu me conseillerais pour une première expérience du Nouvel An au Canada ?",
-      "exampleZh": "第一次在加拿大过新年，你建议我做什么？"
+      "exampleFr": "Pour mon premier Nouvel An au Canada, qu’est-ce que vous me conseilleriez de faire absolument ?",
+      "exampleZh": "在加拿大过第一个新年，您最建议我一定体验什么？",
+      "source": {
+        "month": "2026-09",
+        "number": 3,
+        "question": 15
+      },
+      "learningKey": "culture-final15-v2-93"
     },
     {
       "id": 94,
@@ -882,8 +1438,14 @@
       "zh": "电影",
       "scenario": "cinema",
       "priority": 5,
-      "exampleFr": "Quels films seront présentés pendant le festival ?",
-      "exampleZh": "电影节会放哪些电影？"
+      "exampleFr": "Quels genres de films seront au programme ?",
+      "exampleZh": "节目中会放映哪些类型的电影？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 4
+      },
+      "learningKey": "culture-final15-v2-94"
     },
     {
       "id": 95,
@@ -891,8 +1453,14 @@
       "zh": "法语电影",
       "scenario": "cinema",
       "priority": 5,
-      "exampleFr": "Le festival présente-t-il uniquement des films francophones ?",
-      "exampleZh": "电影节只放法语电影吗？"
+      "exampleFr": "Quels genres de films seront au programme ?",
+      "exampleZh": "节目中会放映哪些类型的电影？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 4
+      },
+      "learningKey": "culture-final15-v2-95"
     },
     {
       "id": 96,
@@ -900,8 +1468,14 @@
       "zh": "导演",
       "scenario": "cinema",
       "priority": 4,
-      "exampleFr": "Y aura-t-il des réalisateurs invités ?",
-      "exampleZh": "会有受邀导演吗？"
+      "exampleFr": "Des réalisateurs ou des acteurs seront-ils invités ?",
+      "exampleZh": "会邀请导演或演员参加吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 8
+      },
+      "learningKey": "culture-final15-v2-96"
     },
     {
       "id": 97,
@@ -909,8 +1483,14 @@
       "zh": "放映",
       "scenario": "cinema",
       "priority": 5,
-      "exampleFr": "À quelle heure commencent les projections ?",
-      "exampleZh": "放映几点开始？"
+      "exampleFr": "À quelles heures commencent les projections ?",
+      "exampleZh": "电影放映从几点开始？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 2
+      },
+      "learningKey": "culture-final15-v2-97"
     },
     {
       "id": 98,
@@ -918,8 +1498,14 @@
       "zh": "场次",
       "scenario": "cinema",
       "priority": 5,
-      "exampleFr": "Combien de séances y a-t-il par jour ?",
-      "exampleZh": "每天有几场？"
+      "exampleFr": "Quel est le prix d’une séance de projection ?",
+      "exampleZh": "一场电影的票价是多少？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 10
+      },
+      "learningKey": "culture-final15-v2-98"
     },
     {
       "id": 99,
@@ -927,8 +1513,14 @@
       "zh": "嘉宾",
       "scenario": "cinema",
       "priority": 4,
-      "exampleFr": "Y aura-t-il des invités ou des acteurs présents ?",
-      "exampleZh": "会有嘉宾或演员到场吗？"
+      "exampleFr": "Des réalisateurs ou des acteurs seront-ils invités ?",
+      "exampleZh": "会邀请导演或演员参加吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 8
+      },
+      "learningKey": "culture-final15-v2-99"
     },
     {
       "id": 100,
@@ -936,8 +1528,14 @@
       "zh": "交流活动",
       "scenario": "cinema",
       "priority": 4,
-      "exampleFr": "Y aura-t-il des rencontres avec les réalisateurs ?",
-      "exampleZh": "会有和导演的交流活动吗？"
+      "exampleFr": "Y aura-t-il des échanges avec les réalisateurs après les séances ?",
+      "exampleZh": "放映后会有和导演的交流吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 14
+      },
+      "learningKey": "culture-final15-v2-100"
     },
     {
       "id": 101,
@@ -945,8 +1543,14 @@
       "zh": "字幕",
       "scenario": "cinema",
       "priority": 5,
-      "exampleFr": "Les films sont-ils sous-titrés ?",
-      "exampleZh": "电影有字幕吗？"
+      "exampleFr": "Des sous-titres sont-ils prévus pour les films ?",
+      "exampleZh": "电影会配字幕吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 7
+      },
+      "learningKey": "culture-final15-v2-101"
     },
     {
       "id": 102,
@@ -954,371 +1558,1272 @@
       "zh": "带字幕",
       "scenario": "cinema",
       "priority": 4,
-      "exampleFr": "Les films sont-ils sous-titrés ?",
-      "exampleZh": "电影有字幕吗？"
+      "exampleFr": "Des sous-titres sont-ils prévus pour les films ?",
+      "exampleZh": "电影会配字幕吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 7
+      },
+      "learningKey": "culture-final15-v2-102"
     },
     {
       "id": 103,
-      "fr": "une séance spéciale",
-      "zh": "特别场次",
+      "fr": "une animation après la projection",
+      "zh": "放映后的活动",
       "scenario": "cinema",
       "priority": 4,
-      "exampleFr": "Y a-t-il des séances spéciales avec des invités ?",
-      "exampleZh": "有嘉宾参加的特别场次吗？"
+      "exampleFr": "Des rencontres ou des animations sont-elles prévues après certaines projections ?",
+      "exampleZh": "有些场次放映后会安排交流或活动吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 9
+      },
+      "learningKey": "culture-final15-v2-103"
+    },
+    {
+      "id": 104,
+      "fr": "céder des places",
+      "zh": "转让座位票",
+      "scenario": "show",
+      "priority": 5,
+      "exampleFr": "Vous me cédez les places ou vous souhaitez les vendre ?",
+      "exampleZh": "这两张票是送给我，还是您打算出售？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 10
+      },
+      "learningKey": "culture-final15-v2-104"
+    },
+    {
+      "id": 105,
+      "fr": "récupérer les billets",
+      "zh": "取票",
+      "scenario": "show",
+      "priority": 5,
+      "exampleFr": "Comment puis-je récupérer les billets ?",
+      "exampleZh": "我该如何取票？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 15
+      },
+      "learningKey": "culture-final15-v2-105"
+    },
+    {
+      "id": 106,
+      "fr": "une brochure",
+      "zh": "介绍手册",
+      "scenario": "show",
+      "priority": 4,
+      "exampleFr": "Existe-t-il un programme ou une brochure qui donne plus de détails ?",
+      "exampleZh": "有没有介绍更多详情的节目单或手册？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 14
+      },
+      "learningKey": "culture-final15-v2-106"
+    },
+    {
+      "id": 107,
+      "fr": "la personne de son choix",
+      "zh": "自己选择的同伴",
+      "scenario": "show",
+      "priority": 4,
+      "exampleFr": "Est-ce que je peux venir avec la personne de mon choix ?",
+      "exampleZh": "我可以带自己选择的同伴一起来吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 12
+      },
+      "learningKey": "culture-final15-v2-107"
+    },
+    {
+      "id": 108,
+      "fr": "des surtitres",
+      "zh": "舞台字幕",
+      "scenario": "show",
+      "priority": 5,
+      "exampleFr": "Est-ce que certains spectacles sont proposés avec des surtitres ?",
+      "exampleZh": "有些演出会提供字幕吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 12
+      },
+      "learningKey": "culture-final15-v2-108"
+    },
+    {
+      "id": 109,
+      "fr": "les rôles principaux",
+      "zh": "主要角色",
+      "scenario": "series",
+      "priority": 5,
+      "exampleFr": "Qui joue les rôles principaux ?",
+      "exampleZh": "谁担任主要角色？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 4
+      },
+      "learningKey": "culture-final15-v2-109"
+    },
+    {
+      "id": 110,
+      "fr": "le nombre d’épisodes par saison",
+      "zh": "每季集数",
+      "scenario": "series",
+      "priority": 4,
+      "exampleFr": "Il y a combien d’épisodes par saison ?",
+      "exampleZh": "每一季有多少集？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 7
+      },
+      "learningKey": "culture-final15-v2-110"
+    },
+    {
+      "id": 111,
+      "fr": "convenir à quelqu’un",
+      "zh": "适合某人",
+      "scenario": "series",
+      "priority": 5,
+      "exampleFr": "Tu crois que cette série me conviendrait ?",
+      "exampleZh": "你觉得这部剧适合我吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 15
+      },
+      "learningKey": "culture-final15-v2-111"
+    },
+    {
+      "id": 112,
+      "fr": "tenir un blog",
+      "zh": "经营博客",
+      "scenario": "blog",
+      "priority": 5,
+      "exampleFr": "Ça fait combien de temps que tu tiens ton blog ?",
+      "exampleZh": "你经营博客多久了？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 1
+      },
+      "learningKey": "culture-final15-v2-112"
+    },
+    {
+      "id": 113,
+      "fr": "viser un public",
+      "zh": "面向某类受众",
+      "scenario": "blog",
+      "priority": 5,
+      "exampleFr": "Quel public devrais-je viser avec mon blog ?",
+      "exampleZh": "我的博客应该面向哪些读者？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 9
+      },
+      "learningKey": "culture-final15-v2-113"
+    },
+    {
+      "id": 114,
+      "fr": "un article court ou détaillé",
+      "zh": "简短或详细的文章",
+      "scenario": "blog",
+      "priority": 4,
+      "exampleFr": "Est-ce que les lecteurs préfèrent les articles courts ou détaillés ?",
+      "exampleZh": "读者更喜欢短文章还是详细文章？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 7
+      },
+      "learningKey": "culture-final15-v2-114"
+    },
+    {
+      "id": 115,
+      "fr": "éviter les erreurs au début",
+      "zh": "避免入门时犯错",
+      "scenario": "blog",
+      "priority": 4,
+      "exampleFr": "Qu’est-ce que je devrais surtout éviter quand je débute ?",
+      "exampleZh": "刚开始时，我尤其应该避免什么？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 14
+      },
+      "learningKey": "culture-final15-v2-115"
+    },
+    {
+      "id": 116,
+      "fr": "être adapté à son niveau",
+      "zh": "适合自己的水平",
+      "scenario": "press",
+      "priority": 5,
+      "exampleFr": "Entre ces deux journaux, lequel serait le plus adapté à mon niveau ?",
+      "exampleZh": "这两份报纸中，哪一份更适合我的法语水平？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 13
+      },
+      "learningKey": "culture-final15-v2-116"
+    },
+    {
+      "id": 117,
+      "fr": "l’actualité locale",
+      "zh": "当地新闻",
+      "scenario": "press",
+      "priority": 5,
+      "exampleFr": "Est-ce que ce journal traite aussi de l’actualité locale ?",
+      "exampleZh": "这份报纸也报道当地新闻吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 14
+      },
+      "learningKey": "culture-final15-v2-117"
+    },
+    {
+      "id": 118,
+      "fr": "entrer et sortir avec le même billet",
+      "zh": "持同一张票中途进出",
+      "scenario": "festival",
+      "priority": 5,
+      "exampleFr": "Pourra-t-on entrer et sortir du festival avec le même billet ?",
+      "exampleZh": "使用同一张门票能否中途进出？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 13
+      },
+      "learningKey": "culture-final15-v2-118"
+    },
+    {
+      "id": 119,
+      "fr": "se produire sur scène",
+      "zh": "登台演出",
+      "scenario": "festival",
+      "priority": 5,
+      "exampleFr": "Qui va se produire pendant le festival ?",
+      "exampleZh": "音乐节期间会有哪些歌手或乐队演出？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 7
+      },
+      "learningKey": "culture-final15-v2-119"
+    },
+    {
+      "id": 120,
+      "fr": "les célébrations du Nouvel An",
+      "zh": "新年庆祝活动",
+      "scenario": "holiday",
+      "priority": 5,
+      "exampleFr": "À partir de quand commencent généralement les célébrations du Nouvel An ?",
+      "exampleZh": "新年庆祝活动通常从什么时候开始？",
+      "source": {
+        "month": "2026-09",
+        "number": 3,
+        "question": 1
+      },
+      "learningKey": "culture-final15-v2-120"
+    },
+    {
+      "id": 121,
+      "fr": "des transports supplémentaires",
+      "zh": "加开的交通班次",
+      "scenario": "holiday",
+      "priority": 5,
+      "exampleFr": "Y a-t-il généralement des transports supplémentaires après minuit ?",
+      "exampleZh": "午夜之后通常会加开公共交通吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 3,
+        "question": 12
+      },
+      "learningKey": "culture-final15-v2-121"
+    },
+    {
+      "id": 122,
+      "fr": "les échanges avec les réalisateurs",
+      "zh": "与导演的交流",
+      "scenario": "cinema",
+      "priority": 5,
+      "exampleFr": "Y aura-t-il des échanges avec les réalisateurs après les séances ?",
+      "exampleZh": "放映后会有和导演的交流吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 14
+      },
+      "learningKey": "culture-final15-v2-122"
+    },
+    {
+      "id": 123,
+      "fr": "une séance de projection",
+      "zh": "一场电影放映",
+      "scenario": "cinema",
+      "priority": 5,
+      "exampleFr": "Quel est le prix d’une séance de projection ?",
+      "exampleZh": "一场电影的票价是多少？",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 10
+      },
+      "learningKey": "culture-final15-v2-123"
     }
   ],
   "patterns": [
     {
       "id": 1,
-      "pattern": "À quelle date aura lieu + événement ?",
-      "zh": "活动哪天举行？",
-      "exampleFr": "À quelle date aura lieu le spectacle ?",
-      "exampleZh": "演出哪天举行？",
-      "scenario": "show"
+      "pattern": "À quelle date aura-t-il lieu ?",
+      "zh": "活动将在哪一天举行？",
+      "exampleFr": "À quelle date aura-t-il lieu ?",
+      "exampleZh": "演出将在哪一天举行？",
+      "scenario": "show",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 4
+      },
+      "learningKey": "culture-final15-v2-1"
     },
     {
       "id": 2,
-      "pattern": "À quelle heure commence / se termine + événement ?",
-      "zh": "几点开始/结束？",
-      "exampleFr": "À quelle heure commence le spectacle ?",
+      "pattern": "À quelle heure + événement + commencera-t-il ?",
+      "zh": "……将几点开始？",
+      "exampleFr": "À quelle heure le spectacle commencera-t-il ?",
       "exampleZh": "演出几点开始？",
-      "scenario": "show"
+      "scenario": "show",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 2
+      },
+      "learningKey": "culture-final15-v2-2"
     },
     {
       "id": 3,
-      "pattern": "Combien de temps dure + événement ?",
-      "zh": "持续多久？",
-      "exampleFr": "Combien de temps dure le spectacle ?",
-      "exampleZh": "演出持续多久？",
-      "scenario": "show"
+      "pattern": "Combien de temps durera + événement ?",
+      "zh": "……会持续多久？",
+      "exampleFr": "Combien de temps durera le spectacle ?",
+      "exampleZh": "演出会持续多长时间？",
+      "scenario": "show",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 3
+      },
+      "learningKey": "culture-final15-v2-3"
     },
     {
       "id": 4,
-      "pattern": "Où aura lieu + événement ?",
-      "zh": "在哪里举行？",
-      "exampleFr": "Où aura lieu le spectacle ?",
-      "exampleZh": "演出在哪里举行？",
-      "scenario": "show"
+      "pattern": "Dans quelle salle + événement + aura-t-il lieu ?",
+      "zh": "……会在哪个场馆举行？",
+      "exampleFr": "Dans quelle salle le spectacle aura-t-il lieu ?",
+      "exampleZh": "演出会在哪个场馆举行？",
+      "scenario": "show",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 4
+      },
+      "learningKey": "culture-final15-v2-4"
     },
     {
       "id": 5,
       "pattern": "Quel est le moyen le plus simple pour s’y rendre ?",
       "zh": "怎么去最方便？",
       "exampleFr": "Quel est le moyen le plus simple pour s’y rendre ?",
-      "exampleZh": "怎么去最方便？",
-      "scenario": "show"
+      "exampleZh": "去那里最方便的方式是什么？",
+      "scenario": "show",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 5
+      }
     },
     {
       "id": 6,
-      "pattern": "Quel type de spectacle est-ce ?",
-      "zh": "是什么类型的演出？",
-      "exampleFr": "Quel type de spectacle est-ce exactement ?",
-      "exampleZh": "这到底是什么类型的演出？",
-      "scenario": "show"
+      "pattern": "De quel genre de spectacle s’agit-il ?",
+      "zh": "这是什么类型的演出？",
+      "exampleFr": "De quel genre de spectacle s’agit-il ?",
+      "exampleZh": "这是什么类型的演出？",
+      "scenario": "show",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 6
+      },
+      "learningKey": "culture-final15-v2-6"
     },
     {
       "id": 7,
-      "pattern": "Quels artistes / acteurs participent ?",
-      "zh": "有哪些艺术家/演员？",
-      "exampleFr": "Quels artistes participent au spectacle ?",
-      "exampleZh": "有哪些艺术家参加演出？",
-      "scenario": "show"
+      "pattern": "Qui sera sur scène parmi + artistes ?",
+      "zh": "哪些……会登台？",
+      "exampleFr": "Qui sera sur scène parmi les artistes ou les acteurs ?",
+      "exampleZh": "哪些艺术家或演员会登台演出？",
+      "scenario": "show",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 8
+      },
+      "learningKey": "culture-final15-v2-7"
     },
     {
       "id": 8,
-      "pattern": "Quels types de places proposez-vous ?",
-      "zh": "有哪些座位类型？",
-      "exampleFr": "Quels types de places ou de sièges proposez-vous ?",
-      "exampleZh": "有哪些座位类型？",
-      "scenario": "show"
+      "pattern": "Quelles catégories de places proposez-vous ?",
+      "zh": "提供哪些座位类别？",
+      "exampleFr": "Quelles catégories de places proposez-vous ?",
+      "exampleZh": "你们提供哪些座位类别？",
+      "scenario": "show",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 9
+      },
+      "learningKey": "culture-final15-v2-8"
     },
     {
       "id": 9,
-      "pattern": "Combien coûte une place ?",
+      "pattern": "Quel est le prix d’une place ?",
       "zh": "一张票多少钱？",
-      "exampleFr": "Combien coûte une place ?",
+      "exampleFr": "Quel est le prix d’une place ?",
       "exampleZh": "一张票多少钱？",
-      "scenario": "show"
+      "scenario": "show",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 11
+      },
+      "learningKey": "culture-final15-v2-9"
     },
     {
       "id": 10,
-      "pattern": "Y a-t-il des tarifs réduits ?",
-      "zh": "有优惠票吗？",
-      "exampleFr": "Y a-t-il des tarifs réduits ?",
-      "exampleZh": "有优惠票价吗？",
-      "scenario": "show"
+      "pattern": "Y a-t-il des tarifs réduits pour + personnes ?",
+      "zh": "……能享受优惠价吗？",
+      "exampleFr": "Y a-t-il des tarifs réduits pour certaines catégories de visiteurs ?",
+      "exampleZh": "某些观众类别有优惠票价吗？",
+      "scenario": "show",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 11
+      },
+      "learningKey": "culture-final15-v2-10"
     },
     {
       "id": 11,
-      "pattern": "Vaut-il mieux réserver à l’avance ?",
-      "zh": "最好提前预订吗？",
-      "exampleFr": "Vaut-il mieux réserver à l’avance ?",
-      "exampleZh": "最好提前预订吗？",
-      "scenario": "show"
+      "pattern": "Vaut-il mieux réserver + séances + à l’avance ?",
+      "zh": "……最好提前预约吗？",
+      "exampleFr": "Vaut-il mieux réserver certaines séances à l’avance ?",
+      "exampleZh": "有些场次最好提前预订吗？",
+      "scenario": "cinema",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 15
+      },
+      "learningKey": "culture-final15-v2-11"
     },
     {
       "id": 12,
-      "pattern": "Peut-on annuler ou échanger un billet ?",
-      "zh": "可以退票/换票吗？",
-      "exampleFr": "Peut-on annuler ou échanger un billet ?",
-      "exampleZh": "可以退票或换票吗？",
-      "scenario": "show"
+      "pattern": "Puis-je modifier ou annuler ma réservation ?",
+      "zh": "可以修改或取消预订吗？",
+      "exampleFr": "Puis-je modifier ou annuler ma réservation ?",
+      "exampleZh": "我可以更改或取消预订吗？",
+      "scenario": "show",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 14
+      },
+      "learningKey": "culture-final15-v2-12"
     },
     {
       "id": 13,
-      "pattern": "Quel type de série me conseillerais-tu ?",
-      "zh": "你推荐什么类型的剧？",
-      "exampleFr": "Quel type de série me conseillerais-tu ?",
-      "exampleZh": "你会推荐什么类型的剧？",
-      "scenario": "series"
+      "pattern": "Tu as une série à me conseiller en ce moment ?",
+      "zh": "最近有哪部剧可以推荐？",
+      "exampleFr": "Tu as une série à me conseiller en ce moment ?",
+      "exampleZh": "最近有哪部电视剧你会推荐给我？",
+      "scenario": "series",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 1
+      },
+      "learningKey": "culture-final15-v2-13"
     },
     {
       "id": 14,
-      "pattern": "De quoi parle l’intrigue ?",
-      "zh": "剧情讲什么？",
-      "exampleFr": "De quoi parle l’intrigue ?",
-      "exampleZh": "剧情讲什么？",
-      "scenario": "series"
+      "pattern": "De quoi parle + série ?",
+      "zh": "……讲什么？",
+      "exampleFr": "De quoi parle cette série ?",
+      "exampleZh": "这部剧讲的是什么？",
+      "scenario": "series",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 3
+      },
+      "learningKey": "culture-final15-v2-14"
     },
     {
       "id": 15,
-      "pattern": "Qui sont les principaux acteurs ?",
-      "zh": "主要演员是谁？",
-      "exampleFr": "Qui sont les principaux acteurs ?",
-      "exampleZh": "主要演员是谁？",
-      "scenario": "series"
+      "pattern": "Qui joue les rôles principaux ?",
+      "zh": "谁担任主要角色？",
+      "exampleFr": "Qui joue les rôles principaux ?",
+      "exampleZh": "谁担任主要角色？",
+      "scenario": "series",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 4
+      },
+      "learningKey": "culture-final15-v2-15"
     },
     {
       "id": 16,
-      "pattern": "Combien de temps dure un épisode ?",
-      "zh": "一集多长？",
-      "exampleFr": "Combien de temps dure un épisode ?",
-      "exampleZh": "一集多长时间？",
-      "scenario": "series"
+      "pattern": "Un épisode dure combien de temps en moyenne ?",
+      "zh": "每集平均多长时间？",
+      "exampleFr": "Un épisode dure combien de temps en moyenne ?",
+      "exampleZh": "每集平均多长时间？",
+      "scenario": "series",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 6
+      },
+      "learningKey": "culture-final15-v2-16"
     },
     {
       "id": 17,
-      "pattern": "Combien de saisons y a-t-il ?",
-      "zh": "有几季？",
-      "exampleFr": "Combien de saisons y a-t-il ?",
-      "exampleZh": "一共有几季？",
-      "scenario": "series"
+      "pattern": "La série compte combien de saisons ?",
+      "zh": "这部剧有几季？",
+      "exampleFr": "La série compte combien de saisons ?",
+      "exampleZh": "这部剧一共有几季？",
+      "scenario": "series",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 8
+      },
+      "learningKey": "culture-final15-v2-17"
     },
     {
       "id": 18,
-      "pattern": "Sur quelle plateforme peut-on regarder + série ?",
-      "zh": "在哪个平台看？",
-      "exampleFr": "Sur quelle plateforme peut-on regarder cette série ?",
-      "exampleZh": "这部剧在哪个平台能看？",
-      "scenario": "series"
+      "pattern": "Sur quelle chaîne ou quelle plateforme peut-on la regarder ?",
+      "zh": "在哪个频道或平台可以观看？",
+      "exampleFr": "Sur quelle chaîne ou quelle plateforme peut-on la regarder ?",
+      "exampleZh": "在哪个频道或平台可以观看？",
+      "scenario": "series",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 9
+      },
+      "learningKey": "culture-final15-v2-18"
     },
     {
       "id": 19,
-      "pattern": "Faut-il un abonnement ?",
-      "zh": "需要订阅吗？",
-      "exampleFr": "Faut-il un abonnement pour la regarder ?",
-      "exampleZh": "看这部剧需要订阅吗？",
-      "scenario": "series"
+      "pattern": "Un abonnement est-il nécessaire pour + infinitif ?",
+      "zh": "……需要订阅吗？",
+      "exampleFr": "Un abonnement est-il nécessaire pour la regarder ?",
+      "exampleZh": "观看这部剧需要订阅吗？",
+      "scenario": "series",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 10
+      },
+      "learningKey": "culture-final15-v2-19"
     },
     {
       "id": 20,
-      "pattern": "Y a-t-il des sous-titres ?",
-      "zh": "有字幕吗？",
-      "exampleFr": "Y a-t-il des sous-titres en français ?",
+      "pattern": "Des sous-titres en français sont-ils disponibles ?",
+      "zh": "有法语字幕吗？",
+      "exampleFr": "Des sous-titres en français sont-ils disponibles ?",
       "exampleZh": "有法语字幕吗？",
-      "scenario": "series"
+      "scenario": "series",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 12
+      },
+      "learningKey": "culture-final15-v2-20"
     },
     {
       "id": 21,
-      "pattern": "Le niveau de langue est-il difficile ?",
-      "zh": "语言难度大吗？",
-      "exampleFr": "Le niveau de langue est-il difficile ?",
-      "exampleZh": "语言难度大吗？",
-      "scenario": "series"
+      "pattern": "Le français utilisé est-il assez facile à comprendre ?",
+      "zh": "使用的法语容易听懂吗？",
+      "exampleFr": "Le français utilisé est-il assez facile à comprendre ?",
+      "exampleZh": "剧中的法语容易听懂吗？",
+      "scenario": "series",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 11
+      },
+      "learningKey": "culture-final15-v2-21"
     },
     {
       "id": 22,
-      "pattern": "Entre les deux, laquelle me conseillerais-tu ?",
-      "zh": "两个里面你推荐哪个？",
-      "exampleFr": "Entre les deux séries, laquelle me conseillerais-tu ?",
-      "exampleZh": "两部剧你更推荐哪部？",
-      "scenario": "series"
+      "pattern": "Si je n’ai pas beaucoup de temps, laquelle me conseillerais-tu ?",
+      "zh": "时间不多的话，你推荐哪一部？",
+      "exampleFr": "Si je n’ai pas beaucoup de temps, laquelle me conseillerais-tu ?",
+      "exampleZh": "如果我时间不多，你会推荐哪部？",
+      "scenario": "series",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 14
+      },
+      "learningKey": "culture-final15-v2-22"
     },
     {
       "id": 23,
-      "pattern": "Quelle plateforme utilises-tu pour + blog ?",
-      "zh": "你用哪个平台？",
-      "exampleFr": "Quelle plateforme utilises-tu pour ton blog ?",
-      "exampleZh": "你用什么平台做博客？",
-      "scenario": "blog"
+      "pattern": "Tu publies ton blog sur quelle plateforme ?",
+      "zh": "你在哪个平台发布博客？",
+      "exampleFr": "Tu publies ton blog sur quelle plateforme ?",
+      "exampleZh": "你在哪个平台上发布博客？",
+      "scenario": "blog",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 2
+      },
+      "learningKey": "culture-final15-v2-23"
     },
     {
       "id": 24,
-      "pattern": "Quelles rubriques faudrait-il prévoir ?",
-      "zh": "应该设置哪些栏目？",
-      "exampleFr": "Quelles rubriques faudrait-il prévoir ?",
-      "exampleZh": "应该设置哪些栏目？",
-      "scenario": "blog"
+      "pattern": "Tu me conseillerais quelles rubriques pour + blog ?",
+      "zh": "你建议给……设置哪些栏目？",
+      "exampleFr": "Tu me conseillerais quelles rubriques pour un blog de voyage au Canada ?",
+      "exampleZh": "如果写加拿大旅行博客，你会建议设置哪些栏目？",
+      "scenario": "blog",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 4
+      },
+      "learningKey": "culture-final15-v2-24"
     },
     {
       "id": 25,
-      "pattern": "Quels types de contenus fonctionnent le mieux ?",
-      "zh": "哪些内容形式效果最好？",
-      "exampleFr": "Quels types de contenus fonctionnent le mieux ?",
-      "exampleZh": "哪些内容形式效果最好？",
-      "scenario": "blog"
+      "pattern": "Qu’est-ce qui fonctionne le mieux : + formats ?",
+      "zh": "……哪种形式效果最好？",
+      "exampleFr": "Qu’est-ce qui fonctionne le mieux : les textes, les photos ou les vidéos ?",
+      "exampleZh": "文字、照片和视频，哪种内容效果最好？",
+      "scenario": "blog",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 5
+      },
+      "learningKey": "culture-final15-v2-25"
     },
     {
       "id": 26,
-      "pattern": "À quelle fréquence faudrait-il publier ?",
-      "zh": "多久发布一次？",
-      "exampleFr": "À quelle fréquence faudrait-il publier ?",
-      "exampleZh": "应该多久发布一次？",
-      "scenario": "blog"
+      "pattern": "À quelle fréquence publies-tu + contenu ?",
+      "zh": "你多久发布一次……？",
+      "exampleFr": "À quelle fréquence publies-tu de nouveaux articles ?",
+      "exampleZh": "你多久发布一次新文章？",
+      "scenario": "blog",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 6
+      },
+      "learningKey": "culture-final15-v2-26"
     },
     {
       "id": 27,
-      "pattern": "Comment faire connaître + blog ?",
-      "zh": "怎么推广博客？",
-      "exampleFr": "Comment faire connaître son blog ?",
-      "exampleZh": "怎么推广自己的博客？",
-      "scenario": "blog"
+      "pattern": "Qu’est-ce qui t’aide à attirer plus de lecteurs ?",
+      "zh": "什么能帮助你吸引更多读者？",
+      "exampleFr": "Qu’est-ce qui t’aide à attirer plus de lecteurs ?",
+      "exampleZh": "什么方法能帮你吸引更多读者？",
+      "scenario": "blog",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 11
+      },
+      "learningKey": "culture-final15-v2-27"
     },
     {
       "id": 28,
-      "pattern": "Quel type de journal me conseilleriez-vous ?",
-      "zh": "您推荐什么报纸？",
-      "exampleFr": "Quel type de journal me conseilleriez-vous ?",
-      "exampleZh": "您推荐什么类型的报纸？",
-      "scenario": "press"
+      "pattern": "Par lequel me conseilleriez-vous de commencer ?",
+      "zh": "您建议先从哪一份开始？",
+      "exampleFr": "Par lequel me conseilleriez-vous de commencer ?",
+      "exampleZh": "您建议我先从哪份报纸读起？",
+      "scenario": "press",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 3
+      },
+      "learningKey": "culture-final15-v2-28"
     },
     {
       "id": 29,
-      "pattern": "Quel est le niveau de langue ?",
-      "zh": "语言难度怎样？",
-      "exampleFr": "Quel est le niveau de langue de ce journal ?",
-      "exampleZh": "这份报纸的语言难度怎样？",
-      "scenario": "press"
+      "pattern": "Selon vous, lequel serait le plus accessible à + personne ?",
+      "zh": "您觉得哪一份对……最容易理解？",
+      "exampleFr": "Selon vous, lequel serait le plus accessible à quelqu’un qui apprend le français ?",
+      "exampleZh": "您觉得哪份报纸对法语学习者比较容易读？",
+      "scenario": "press",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 4
+      },
+      "learningKey": "culture-final15-v2-29"
     },
     {
       "id": 30,
-      "pattern": "Combien coûte un exemplaire ?",
+      "pattern": "Quel est le prix d’un numéro ?",
       "zh": "一份多少钱？",
-      "exampleFr": "Combien coûte un exemplaire ?",
-      "exampleZh": "一份多少钱？",
-      "scenario": "press"
+      "exampleFr": "Quel est le prix d’un numéro ?",
+      "exampleZh": "一份报纸多少钱？",
+      "scenario": "press",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 8
+      },
+      "learningKey": "culture-final15-v2-30"
     },
     {
       "id": 31,
-      "pattern": "Existe-t-il une version numérique ?",
-      "zh": "有电子版吗？",
-      "exampleFr": "Existe-t-il une version numérique ?",
-      "exampleZh": "有电子版吗？",
-      "scenario": "press"
+      "pattern": "Le journal existe-t-il aussi en version numérique ?",
+      "zh": "这份报纸也有电子版吗？",
+      "exampleFr": "Le journal existe-t-il aussi en version numérique ?",
+      "exampleZh": "这份报纸也有电子版吗？",
+      "scenario": "press",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 10
+      },
+      "learningKey": "culture-final15-v2-31"
     },
     {
       "id": 32,
-      "pattern": "Puis-je lire un numéro d’essai ?",
-      "zh": "可以试读吗？",
-      "exampleFr": "Puis-je lire un numéro d’essai avant de m’abonner ?",
-      "exampleZh": "订阅前可以试读吗？",
-      "scenario": "press"
+      "pattern": "Puis-je consulter un exemplaire avant de m’abonner ?",
+      "zh": "订阅前可以先看一期吗？",
+      "exampleFr": "Puis-je consulter un exemplaire avant de m’abonner ?",
+      "exampleZh": "订阅前我可以先看一期吗？",
+      "scenario": "press",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 12
+      },
+      "learningKey": "culture-final15-v2-32"
     },
     {
       "id": 33,
-      "pattern": "Quels chanteurs ou groupes seront présents ?",
-      "zh": "有哪些歌手或乐队？",
-      "exampleFr": "Quels chanteurs ou groupes seront présents ?",
-      "exampleZh": "有哪些歌手或乐队参加？",
-      "scenario": "concert"
+      "pattern": "Qui va jouer : quel chanteur ou quel groupe ?",
+      "zh": "谁演出：哪位歌手或哪个乐队？",
+      "exampleFr": "Qui va jouer : quel chanteur ou quel groupe ?",
+      "exampleZh": "会由谁演出：哪位歌手或哪个乐队？",
+      "scenario": "concert",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 7
+      },
+      "learningKey": "culture-final15-v2-33"
     },
     {
       "id": 34,
-      "pattern": "Quel type de musique sera joué ?",
-      "zh": "会演奏什么音乐？",
-      "exampleFr": "Quel type de musique sera joué ?",
-      "exampleZh": "会演奏什么类型的音乐？",
-      "scenario": "concert"
+      "pattern": "Quel style de musique sera au programme ?",
+      "zh": "节目会包括什么风格的音乐？",
+      "exampleFr": "Quel style de musique sera au programme ?",
+      "exampleZh": "音乐会会演奏什么风格的音乐？",
+      "scenario": "concert",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 6
+      },
+      "learningKey": "culture-final15-v2-34"
     },
     {
       "id": 35,
-      "pattern": "Existe-t-il un pass pour plusieurs séances ?",
-      "zh": "有多场通票吗？",
-      "exampleFr": "Existe-t-il un pass pour plusieurs séances ?",
-      "exampleZh": "有多场通票吗？",
-      "scenario": "festival"
+      "pattern": "Peut-on acheter un pass pour plusieurs films ?",
+      "zh": "可以买多部电影通票吗？",
+      "exampleFr": "Peut-on acheter un pass pour plusieurs films ?",
+      "exampleZh": "可以买观看多部电影的通票吗？",
+      "scenario": "cinema",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 11
+      },
+      "learningKey": "culture-final15-v2-35"
     },
     {
       "id": 36,
-      "pattern": "Y aura-t-il des stands de restauration ?",
-      "zh": "有餐饮摊位吗？",
-      "exampleFr": "Y aura-t-il des stands de restauration ?",
-      "exampleZh": "会有餐饮摊位吗？",
-      "scenario": "festival"
+      "pattern": "Pourra-t-on se restaurer sur place ?",
+      "zh": "届时可以在现场用餐吗？",
+      "exampleFr": "Pourra-t-on se restaurer sur place ?",
+      "exampleZh": "现场可以用餐吗？",
+      "scenario": "festival",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 12
+      },
+      "learningKey": "culture-final15-v2-36"
     },
     {
       "id": 37,
-      "pattern": "Quelles traditions sont les plus courantes ?",
-      "zh": "最常见的传统有哪些？",
-      "exampleFr": "Quelles traditions sont les plus courantes ?",
-      "exampleZh": "最常见的传统有哪些？",
-      "scenario": "holiday"
+      "pattern": "Quelles traditions devrais-je connaître avant de + infinitif ?",
+      "zh": "……之前应该了解哪些传统？",
+      "exampleFr": "Quelles traditions devrais-je connaître avant d’y participer ?",
+      "exampleZh": "参加之前，我应该了解哪些传统？",
+      "scenario": "holiday",
+      "source": {
+        "month": "2026-09",
+        "number": 3,
+        "question": 7
+      },
+      "learningKey": "culture-final15-v2-37"
     },
     {
       "id": 38,
-      "pattern": "Quels plats typiques mange-t-on ?",
-      "zh": "通常吃什么典型菜？",
-      "exampleFr": "Quels plats typiques mange-t-on pour le Nouvel An ?",
-      "exampleZh": "新年通常吃哪些典型菜？",
-      "scenario": "holiday"
+      "pattern": "Qu’est-ce qu’on mange généralement ce soir-là ?",
+      "zh": "那天晚上通常吃什么？",
+      "exampleFr": "Qu’est-ce qu’on mange généralement ce soir-là ?",
+      "exampleZh": "新年夜通常吃些什么？",
+      "scenario": "holiday",
+      "source": {
+        "month": "2026-09",
+        "number": 3,
+        "question": 8
+      },
+      "learningKey": "culture-final15-v2-38"
     },
     {
       "id": 39,
-      "pattern": "Comment faut-il s’habiller ?",
-      "zh": "应该怎么穿？",
-      "exampleFr": "Comment faut-il s’habiller pour cette soirée ?",
-      "exampleZh": "这个晚上应该怎么穿？",
-      "scenario": "holiday"
+      "pattern": "Comme il fait froid, que me conseillez-vous d’emporter ?",
+      "zh": "天气冷，您建议带什么？",
+      "exampleFr": "Comme il fait froid, que me conseillez-vous d’emporter ?",
+      "exampleZh": "天气很冷，您建议我带些什么？",
+      "scenario": "holiday",
+      "source": {
+        "month": "2026-09",
+        "number": 3,
+        "question": 11
+      },
+      "learningKey": "culture-final15-v2-39"
     },
     {
       "id": 40,
-      "pattern": "Y a-t-il des activités adaptées aux familles ?",
-      "zh": "有适合家庭的活动吗？",
-      "exampleFr": "Y a-t-il des activités adaptées aux familles ?",
-      "exampleZh": "有适合家庭的活动吗？",
-      "scenario": "holiday"
+      "pattern": "Qu’est-ce qui est prévu pour les familles ?",
+      "zh": "为家庭安排了什么？",
+      "exampleFr": "Qu’est-ce qui est prévu pour les familles ?",
+      "exampleZh": "有哪些适合家庭参加的活动？",
+      "scenario": "holiday",
+      "source": {
+        "month": "2026-09",
+        "number": 3,
+        "question": 14
+      },
+      "learningKey": "culture-final15-v2-40"
     },
     {
       "id": 41,
-      "pattern": "Quels films seront présentés ?",
-      "zh": "会放哪些电影？",
-      "exampleFr": "Quels films seront présentés pendant le festival ?",
-      "exampleZh": "电影节会放哪些电影？",
-      "scenario": "cinema"
+      "pattern": "Quels genres de films seront au programme ?",
+      "zh": "节目中会有哪些类型的电影？",
+      "exampleFr": "Quels genres de films seront au programme ?",
+      "exampleZh": "节目中会放映哪些类型的电影？",
+      "scenario": "cinema",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 4
+      },
+      "learningKey": "culture-final15-v2-41"
     },
     {
       "id": 42,
-      "pattern": "Les films sont-ils sous-titrés ?",
-      "zh": "电影有字幕吗？",
-      "exampleFr": "Les films sont-ils sous-titrés ?",
-      "exampleZh": "电影有字幕吗？",
-      "scenario": "cinema"
+      "pattern": "Des sous-titres sont-ils prévus pour + films ?",
+      "zh": "……会配字幕吗？",
+      "exampleFr": "Des sous-titres sont-ils prévus pour les films ?",
+      "exampleZh": "电影会配字幕吗？",
+      "scenario": "cinema",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 7
+      },
+      "learningKey": "culture-final15-v2-42"
     },
     {
       "id": 43,
-      "pattern": "Y aura-t-il des invités ou des acteurs présents ?",
-      "zh": "会有嘉宾或演员吗？",
-      "exampleFr": "Y aura-t-il des invités ou des acteurs présents ?",
-      "exampleZh": "会有嘉宾或演员到场吗？",
-      "scenario": "cinema"
+      "pattern": "Des réalisateurs ou des acteurs seront-ils invités ?",
+      "zh": "会邀请导演或演员吗？",
+      "exampleFr": "Des réalisateurs ou des acteurs seront-ils invités ?",
+      "exampleZh": "会邀请导演或演员参加吗？",
+      "scenario": "cinema",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 8
+      },
+      "learningKey": "culture-final15-v2-43"
     },
     {
       "id": 44,
-      "pattern": "Y aura-t-il des rencontres avec les réalisateurs ?",
-      "zh": "会有和导演的交流吗？",
-      "exampleFr": "Y aura-t-il des rencontres avec les réalisateurs ?",
-      "exampleZh": "会有和导演的交流活动吗？",
-      "scenario": "cinema"
+      "pattern": "Y aura-t-il des échanges avec + personnes + après + séances ?",
+      "zh": "……之后会有和……的交流吗？",
+      "exampleFr": "Y aura-t-il des échanges avec les réalisateurs après les séances ?",
+      "exampleZh": "放映后会有和导演的交流吗？",
+      "scenario": "cinema",
+      "source": {
+        "month": "2026-07",
+        "number": 1,
+        "question": 14
+      },
+      "learningKey": "culture-final15-v2-44"
+    },
+    {
+      "id": 45,
+      "pattern": "Vous me cédez les places ou vous souhaitez les vendre ?",
+      "zh": "这两张票是送给我还是出售？",
+      "scenario": "show",
+      "exampleFr": "Vous me cédez les places ou vous souhaitez les vendre ?",
+      "exampleZh": "这两张票是送给我，还是您打算出售？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 10
+      },
+      "learningKey": "culture-final15-v2-45"
+    },
+    {
+      "id": 46,
+      "pattern": "Comment préférez-vous que je vous paie + billets ?",
+      "zh": "您希望我如何支付……？",
+      "scenario": "show",
+      "exampleFr": "Comment préférez-vous que je vous paie les billets ?",
+      "exampleZh": "您希望我用什么方式支付票款？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 11
+      },
+      "learningKey": "culture-final15-v2-46"
+    },
+    {
+      "id": 47,
+      "pattern": "Comment puis-je récupérer + billets ?",
+      "zh": "我该如何取……票？",
+      "scenario": "show",
+      "exampleFr": "Comment puis-je récupérer les billets ?",
+      "exampleZh": "我该如何取票？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 15
+      },
+      "learningKey": "culture-final15-v2-47"
+    },
+    {
+      "id": 48,
+      "pattern": "Qu’est-ce qui vous avait donné envie de + infinitif ?",
+      "zh": "最初是什么吸引您想……？",
+      "scenario": "show",
+      "exampleFr": "Qu’est-ce qui vous avait donné envie d’aller voir ce spectacle ?",
+      "exampleZh": "最初是什么吸引您想去看这场演出？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 13
+      },
+      "learningKey": "culture-final15-v2-48"
+    },
+    {
+      "id": 49,
+      "pattern": "Est-ce que certains spectacles sont proposés avec des surtitres ?",
+      "zh": "有些演出提供字幕吗？",
+      "scenario": "show",
+      "exampleFr": "Est-ce que certains spectacles sont proposés avec des surtitres ?",
+      "exampleZh": "有些演出会提供字幕吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 4,
+        "question": 12
+      },
+      "learningKey": "culture-final15-v2-49"
+    },
+    {
+      "id": 50,
+      "pattern": "Il y a combien d’épisodes par saison ?",
+      "zh": "每季有多少集？",
+      "scenario": "series",
+      "exampleFr": "Il y a combien d’épisodes par saison ?",
+      "exampleZh": "每一季有多少集？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 7
+      },
+      "learningKey": "culture-final15-v2-50"
+    },
+    {
+      "id": 51,
+      "pattern": "Tu crois que + série + me conviendrait ?",
+      "zh": "你觉得……适合我吗？",
+      "scenario": "series",
+      "exampleFr": "Tu crois que cette série me conviendrait ?",
+      "exampleZh": "你觉得这部剧适合我吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 15
+      },
+      "learningKey": "culture-final15-v2-51"
+    },
+    {
+      "id": 52,
+      "pattern": "Ça fait combien de temps que tu + présent ?",
+      "zh": "你……多久了？",
+      "scenario": "blog",
+      "exampleFr": "Ça fait combien de temps que tu tiens ton blog ?",
+      "exampleZh": "你经营博客多久了？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 1
+      },
+      "learningKey": "culture-final15-v2-52"
+    },
+    {
+      "id": 53,
+      "pattern": "Quel public devrais-je viser avec + blog ?",
+      "zh": "……应该面向什么读者？",
+      "scenario": "blog",
+      "exampleFr": "Quel public devrais-je viser avec mon blog ?",
+      "exampleZh": "我的博客应该面向哪些读者？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 9
+      },
+      "learningKey": "culture-final15-v2-53"
+    },
+    {
+      "id": 54,
+      "pattern": "Comment réagis-tu aux commentaires de + lecteurs ?",
+      "zh": "你通常如何回应……的评论？",
+      "scenario": "blog",
+      "exampleFr": "Comment réagis-tu aux commentaires des lecteurs ?",
+      "exampleZh": "你通常如何回复读者评论？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 10
+      },
+      "learningKey": "culture-final15-v2-54"
+    },
+    {
+      "id": 55,
+      "pattern": "Avant de + infinitif, qu’est-ce que je devrais préparer pour + infinitif ?",
+      "zh": "……之前，我应该准备什么才能……？",
+      "scenario": "blog",
+      "exampleFr": "Avant de partir, qu’est-ce que je devrais préparer pour pouvoir publier régulièrement ?",
+      "exampleZh": "出发前，我应该准备些什么才能定期发布内容？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 15
+      },
+      "learningKey": "culture-final15-v2-55"
+    },
+    {
+      "id": 56,
+      "pattern": "Les articles utilisent-ils un vocabulaire plutôt courant ou spécialisé ?",
+      "zh": "文章用词偏日常还是专业？",
+      "scenario": "press",
+      "exampleFr": "Les articles utilisent-ils un vocabulaire plutôt courant ou spécialisé ?",
+      "exampleZh": "文章用词偏日常还是专业？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 5
+      },
+      "learningKey": "culture-final15-v2-56"
+    },
+    {
+      "id": 57,
+      "pattern": "Entre ces deux journaux, lequel serait le plus adapté à mon niveau ?",
+      "zh": "这两份报纸中哪份更适合我的水平？",
+      "scenario": "press",
+      "exampleFr": "Entre ces deux journaux, lequel serait le plus adapté à mon niveau ?",
+      "exampleZh": "这两份报纸中，哪一份更适合我的法语水平？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 13
+      },
+      "learningKey": "culture-final15-v2-57"
+    },
+    {
+      "id": 58,
+      "pattern": "Pourra-t-on entrer et sortir avec le même billet ?",
+      "zh": "届时能否持同一张票中途进出？",
+      "scenario": "festival",
+      "exampleFr": "Pourra-t-on entrer et sortir du festival avec le même billet ?",
+      "exampleZh": "使用同一张门票能否中途进出？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 13
+      },
+      "learningKey": "culture-final15-v2-58"
+    },
+    {
+      "id": 59,
+      "pattern": "Comment la sécurité sera-t-elle assurée pendant + événement ?",
+      "zh": "……期间将如何保障安全？",
+      "scenario": "festival",
+      "exampleFr": "Comment la sécurité sera-t-elle assurée pendant le festival ?",
+      "exampleZh": "音乐节期间会如何保障安全？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 14
+      },
+      "learningKey": "culture-final15-v2-59"
+    },
+    {
+      "id": 60,
+      "pattern": "Y a-t-il généralement des transports supplémentaires après minuit ?",
+      "zh": "午夜后通常会加开交通班次吗？",
+      "scenario": "holiday",
+      "exampleFr": "Y a-t-il généralement des transports supplémentaires après minuit ?",
+      "exampleZh": "午夜之后通常会加开公共交通吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 3,
+        "question": 12
+      },
+      "learningKey": "culture-final15-v2-60"
+    },
+    {
+      "id": 61,
+      "pattern": "Avez-vous déjà assisté à ce type de spectacle ?",
+      "zh": "您以前看过这类演出吗？",
+      "scenario": "show",
+      "exampleFr": "Avez-vous déjà assisté à ce type de spectacle ?",
+      "exampleZh": "您以前看过这种类型的演出吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 3,
+        "question": 8
+      },
+      "learningKey": "culture-final15-v2-61"
+    },
+    {
+      "id": 62,
+      "pattern": "Tu crois que ce concert me plairait ?",
+      "zh": "你觉得我会喜欢这场音乐会吗？",
+      "scenario": "concert",
+      "exampleFr": "Tu crois que ce concert me plairait ?",
+      "exampleZh": "你觉得我会喜欢这场音乐会吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 15
+      },
+      "learningKey": "culture-final15-v2-62"
     }
+  ],
+  "core20": [
+    1,
+    2,
+    4,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    15,
+    17,
+    19,
+    22,
+    29,
+    30,
+    31,
+    32,
+    35,
+    37,
+    46
+  ],
+  "core50": [
+    1,
+    2,
+    4,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    15,
+    17,
+    19,
+    22,
+    29,
+    30,
+    31,
+    32,
+    35,
+    37,
+    46,
+    5,
+    11,
+    14,
+    16,
+    18,
+    20,
+    21,
+    26,
+    27,
+    28,
+    38,
+    39,
+    42,
+    44,
+    47,
+    48,
+    49,
+    52,
+    53,
+    55,
+    56,
+    60,
+    61,
+    63,
+    64,
+    65,
+    67,
+    71,
+    81,
+    85
   ]
 }
