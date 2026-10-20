@@ -138,11 +138,106 @@
       chunk.append(txt,play);row.append(chunk);
     });return row;
   }
+
+  // C1 review: all scenes are visible in the selected mother argument.
+  function renderC1Review(body,id){
+    body.replaceChildren();
+    const records=(window.TCF_C1_TRAVEL||[]).filter(x=>x.mother.slice(0,2)===id);
+    if(!records.length){body.textContent='该母论点尚无 C1 冲刺资料。';return;}
+    const tip=document.createElement('p');tip.className='note';tip.textContent='全部 '+records.length+' 个情境连续展示；点击情境名称可快速定位。法语朗读仅使用已生成的 Piper siwis 静态音频。';body.append(tip);
+    const nav=document.createElement('nav');nav.className='c1-jump';nav.setAttribute('aria-label','C1 情境快速定位');body.append(nav);
+    const status=document.createElement('p');status.className='note';status.setAttribute('role','status');body.append(status);
+    // Reuse exactly indexed audio; never silently substitute a browser/system voice.
+    let manifestPromise=null,currentAudio=null,currentUrl=null,currentButton=null;
+    function stop(){
+      if(currentAudio){currentAudio.pause();currentAudio=null;}
+      if(currentUrl){URL.revokeObjectURL(currentUrl);currentUrl=null;}
+      if(currentButton){currentButton.textContent='🔊';currentButton.disabled=false;currentButton=null;}
+    }
+    const loadManifest=()=>manifestPromise||(manifestPromise=fetch(new URL('../piper-audio/manifest.json',document.baseURI)).then(r=>{if(!r.ok)throw Error('音频索引无法加载');return r.json();}).catch(e=>{manifestPromise=null;throw e;}));
+    async function speak(fr,btn){
+      stop();currentButton=btn;btn.textContent='加载中';btn.disabled=true;status.textContent='正在查找 Piper 音频……';
+      try{
+        const index=await loadManifest();const links=index.targets?.[fr];
+        if(!links?.length)throw Error('这段法语尚无匹配的 Piper 预生成音频');
+        const parts=await Promise.all(links.map(async link=>{
+          const record=index.records[link.id];if(!record)throw Error('音频索引记录缺失');
+          const url=new URL(record.pack,new URL('../piper-audio/',document.baseURI));
+          const response=await fetch(url);if(!response.ok)throw Error('Piper 音频包加载失败');
+          const pack=await response.json(),item=pack[record.id];
+          if(!item||fr.slice(link.offset,link.offset+item.text.length)!==item.text)throw Error('法语原文与音频内容不一致');
+          return item;
+        }));
+        if(currentButton!==btn)return;
+        let pos=0;
+        const next=()=>{
+          if(currentButton!==btn||pos>=parts.length){stop();status.textContent='朗读结束';return;}
+          const bytes=Uint8Array.from(atob(parts[pos++].audio),x=>x.charCodeAt(0));
+          if(currentUrl)URL.revokeObjectURL(currentUrl);
+          currentUrl=URL.createObjectURL(new Blob([bytes],{type:'audio/mpeg'}));
+          currentAudio=new Audio(currentUrl);currentAudio.onended=next;
+          currentAudio.play().catch(()=>{status.textContent='浏览器阻止自动播放，请再次点击朗读';stop();});
+        };
+        btn.disabled=false;btn.textContent='■ 停止';btn.onclick=()=>{stop();status.textContent='已停止';};status.textContent='正在朗读 Piper siwis';next();
+      }catch(e){if(currentButton===btn){stop();status.textContent=e.message;}}
+    }
+    function audioLine(fr){
+      const line=document.createElement('div');line.className='c1-fr-line';
+      const text=document.createElement('span');text.lang='fr';text.textContent=fr;
+      const btn=document.createElement('button');btn.type='button';btn.className='argument-word-audio';btn.textContent='🔊';btn.setAttribute('aria-label','Piper 朗读');
+      btn.onclick=()=>speak(fr,btn);
+      line.append(text,btn);return line;
+    }
+    function lines(txt){return String(txt||'').split(/\n/).map(x=>x.trim()).filter(Boolean);}
+    function bilingual(section,raw){
+      const all=lines(raw);const area=document.createElement('div');area.className='c1-text';
+      let carry='';
+      function flush(){if(carry){area.append(audioLine(carry));carry='';}}
+      for(const line of all){
+        if(/[\u3400-\u9fff]/.test(line)){flush();const p=document.createElement('p');p.className='logic-zh';p.textContent=line;area.append(p);}
+        else if(/[A-Za-zÀ-ÿ]/.test(line)){
+          // wrapped French PDF/Word lines: accumulate until punctuation at end
+          carry+=(carry?' ':'')+line;
+          if(/[.!?。]$/.test(line))flush();
+        }else{flush();const p=document.createElement('p');p.textContent=line;area.append(p);}
+      }
+      flush();section.append(area);
+    }
+    function vocab(section,raw){
+      const area=document.createElement('div');area.className='c1-vocab';
+      const ls=lines(raw).filter(x=>!/^类型\s+法语表达/.test(x));
+      // Original Word extraction retains Chinese type labels and line wrapping.
+      // Keep every source line, do not invent or rewrite collocations.
+      for(const l of ls){
+        const p=document.createElement('div');p.className='c1-vocab-row';
+        if(/[\u3400-\u9fff]/.test(l)){p.textContent=l;p.classList.add('logic-zh');}
+        else if(/[A-Za-zÀ-ÿ]/.test(l)){p.append(audioLine(l));}
+        else p.textContent=l;
+        area.append(p);
+      }
+      section.append(area);
+    }
+    for(const [i,r] of records.entries()){
+      const slug='c1-scene-'+id+'-'+i;
+      const go=document.createElement('button');go.type='button';go.textContent=r.scene.replace('｜',' · ');go.onclick=()=>document.getElementById(slug)?.scrollIntoView({behavior:'smooth',block:'start'});nav.append(go);
+      const card=document.createElement('section');card.id=slug;card.className='argument-core c1-scene-card';
+      const h=document.createElement('h3');h.textContent=r.scene+' · '+r.id;card.append(h);
+      const meta=document.createElement('p');meta.className='note';meta.textContent='原论段：'+r.source+' ｜ 原题：'+r.question;card.append(meta);
+      [['① 核心论点与例子关键词',r.core,'bi'],['② 精简词块',r.vocab,'vocab'],['③ 中法逻辑链',r.chain,'bi'],['④ 完整法语论段与逐句中文',r.text,'bi']].forEach(([label,content,type])=>{
+        const heading=document.createElement('h4');heading.textContent=label;card.append(heading);
+        type==='vocab'?vocab(card,content):bilingual(card,content);
+      });
+      body.append(card);
+    }
+  }
+  const c1style=document.createElement('style');
+  c1style.textContent='.c1-jump{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.c1-jump button{font-size:13px}.c1-scene-card{margin:15px 0;padding:16px;scroll-margin-top:20px}.c1-scene-card h4{margin:20px 0 7px;color:#304985}.c1-fr-line{display:flex;gap:9px;align-items:flex-start;line-height:1.8;margin:6px 0;white-space:pre-wrap}.c1-fr-line>span{flex:1;min-width:0}.c1-fr-line button{flex:none}.c1-text>.logic-zh{margin:2px 0 12px}.c1-vocab-row{margin:5px 0}.c1-vocab-row.logic-zh{color:#68758a;font-size:.9em}';document.head.append(c1style);
+
   function renderMother(stage,D,id,mode='map'){
     const d=D.M[id];if(!d)return;stage.replaceChildren();
     const back=document.createElement('button');back.className='back-to-map';back.textContent='← 返回 '+D.mothers+' 个母论点总图';back.onclick=()=>renderOverview(stage,D);stage.append(back);
     const head=document.createElement('div');head.className='argument-head';head.innerHTML='<div><p class="eyebrow">'+D.title+' · 母论点详情</p><h2>#'+id+' '+d.t+(d.badge?' <span class="argument-badge">'+d.badge+'</span>':'')+'</h2></div>';const warn=weakMarker(weakCount(D,id));if(warn)head.querySelector('h2')?.append(warn);stage.append(head);
-    const modes=document.createElement('div');modes.className='argument-modes mother-modes';[['map','🧠 思维导图'],['chain','🔗 法语逻辑链'],['quick','⚡ 极简速记']].forEach(([k,label])=>{const b=document.createElement('button');b.dataset.motherMode=k;b.textContent=label;b.classList.toggle('active',k===mode);modes.append(b);});stage.append(modes);
+    const modes=document.createElement('div');modes.className='argument-modes mother-modes';[['map','🧠 思维导图'],['chain','🔗 法语逻辑链'],['quick','⚡ 极简速记'],...(D.title==='旅行与移民'?[['c1','C1 冲刺复习']]:[])].forEach(([k,label])=>{const b=document.createElement('button');b.dataset.motherMode=k;b.textContent=label;b.classList.toggle('active',k===mode);modes.append(b);});stage.append(modes);
     const body=document.createElement('div');body.className='mother-stage';stage.append(body);
     const showMap=()=>{body.replaceChildren();const map=document.createElement('div');map.className='argument-map-sample';const center=document.createElement('button');center.className='mother-node active';center.innerHTML='<strong>#'+id+' '+d.t+'</strong><small>'+(d.badge?d.badge+' · ':'')+'点击下面场景链继续展开</small>';map.append(center);const branches=document.createElement('div');branches.className='scene-grid';d.scenes.forEach((s,i)=>{const card=document.createElement('button');card.className='scene-node';card.innerHTML='<span>场景 '+(i+1)+'</span><strong>'+s.title+'</strong><small lang="fr">'+s.fr+'</small>';const weak=sceneWeakCount(s);if(weak){const icon=weakMarker(weak);icon.title='这个场景有 '+weak+' 个不熟练论段';card.querySelector('strong').append(icon);}card.onclick=()=>renderScene(stage,D,id,i);branches.append(card);});map.append(branches);body.append(map);};
     const showChain=()=>{
@@ -165,8 +260,8 @@
       });body.append(branches);
     };
     const showQuick=()=>{body.replaceChildren();const q=document.createElement('section');q.className='quick-card';q.innerHTML='<p class="argument-label">考前极简速记</p><div class="quick-memory">'+d.zh+'</div><p class="logic-fr" lang="fr">'+d.fr+'</p><p class="logic-zh">'+d.zh+'</p>';body.append(q);};
-    modes.onclick=e=>{const b=e.target.closest('button[data-mother-mode]');if(!b)return;modes.querySelectorAll('button').forEach(x=>x.classList.toggle('active',x===b));b.dataset.motherMode==='map'?showMap():b.dataset.motherMode==='chain'?showChain():showQuick();};
-    mode==='chain'?showChain():mode==='quick'?showQuick():showMap();
+    modes.onclick=e=>{const b=e.target.closest('button[data-mother-mode]');if(!b)return;modes.querySelectorAll('button').forEach(x=>x.classList.toggle('active',x===b));b.dataset.motherMode==='map'?showMap():b.dataset.motherMode==='chain'?showChain():b.dataset.motherMode==='c1'?renderC1Review(body,id):showQuick();};
+    mode==='chain'?showChain():mode==='quick'?showQuick():mode==='c1'?renderC1Review(body,id):showMap();
   }
   // 场景链下方的一句话中文总结；与箭头直译分别呈现。
   const TRAVEL_SCENE_SUMMARIES={"01-0":"熟悉购物、银行和行政手续等日常场景，能够帮助新移民更独立地生活。","01-1":"能够表达需求、与当地居民交流，有助于新移民建立关系并适应环境。","02-0":"掌握当地语言能帮助人们参与社会活动、结交朋友并建立归属感。","02-1":"因害怕语言错误而不敢交流，可能使新移民更难建立友谊。","03-0":"旅行中的点餐、问路和交谈提供了练习外语的真实机会。","03-1":"长期在工作和生活中使用外语，有助于提高口语流利度。","04-0":"良好的语言能力有助于顺利面试、展示自身技能并寻找工作。","04-1":"理解职场沟通方式和工作规则，可以促进团队合作与职业融入。","05-0":"通过了解当地习俗、价值观和节庆活动，可以更深入地理解当地人的生活方式。","05-1":"理解文化差异与社会规则，有助于减少误解并更好地融入当地社会。","06-0":"在国外接触不同的生活方式，可以促使人反思固有观念并变得更开放。","06-1":"亲眼观察不同文化的实际生活，有助于减少先入为主的刻板印象。","06-2":"多元文化社会中的日常交流，可以帮助人们理解不同传统并拓宽视野。","07-0":"书籍和视频能够传递文化知识，但往往难以替代真实体验。","07-1":"实地旅行并与居民交流，可以获得更具体、更深入的文化体验。","08-0":"长期主要使用当地语言，可能使人减少使用母语并逐渐生疏。","08-1":"逐渐接受新的饮食、作息和节庆习惯，可能削弱部分原有传统。","09-0":"在家庭中使用母语，有助于跨代沟通并传承文化记忆。","09-1":"参与同胞社区的传统活动，可以帮助海外移民保留文化联系和归属感。","10-0":"同胞关系能够在移居初期提供情感支持并减少不安。","10-1":"主动拓宽社交圈并与当地人交流，有助于更充分地融入新社会。","11-0":"离开亲友和熟悉的社交环境，可能让新移民缺乏支持并感到孤独。","11-1":"家人和同伴可以通过分享困难、互相鼓励来提供实际与情感支持。","12-0":"参加协会或志愿活动，是认识当地人并建立社会联系的有效方式。","12-1":"校园活动和小组合作能够帮助学生交友并增强归属感。","13-0":"了解招聘要求并调整简历，可以提高求职准备的针对性。","13-1":"通过会议与团队合作建立信任，有助于适应新的职场环境。","14-0":"职业培训和政府提供的就业指导，可以降低新移民进入就业市场的难度。","14-1":"求职工作坊、人脉和简历优化，都可以提升求职竞争力。","15-0":"海外经历可以锻炼适应能力和跨文化技能，为职业发展加分。","15-1":"海外经历并不自动保证职业成功，仍需专业技能、动力与合作能力。","16-0":"移民有助于缓解劳动力短缺，并支持重要行业正常运转。","16-1":"人口增长也可能增加住房、公共服务及基础设施的压力。","17-0":"新移民主动学语言、熟悉习俗并参与社会活动，是融入的重要条件。","17-1":"接收社会提供语言课程和安家支持，也能帮助移民克服融入困难。","18-0":"孩子通过学校学习语言和社会规则，有助于更快适应新环境。","18-1":"家长参加学校活动，不仅能认识其他家庭，也能加深对当地社会的了解。","19-0":"海外教育可能提供多语言和不同教学方式，拓宽孩子未来的选择。","19-1":"掌握当地教学语言，有助于孩子理解课程并取得更好的学业表现。","19-2":"语言能力让孩子更容易参加活动、与同龄人沟通并建立友谊。","20-0":"丰富的生活经验能够帮助人在国外更有效地处理预算、住房及手续。","21-0":"独自处理住房、财务和行政手续，可以锻炼个人自主能力。","21-1":"独自安排交通、调整行程和应对意外，能够提高实际解决问题的能力。","22-0":"独自旅行可以自由改变路线和节奏，更好地按照个人意愿安排行程。","23-0":"交通、住宿和活动的成本，加上时间限制，可能影响人们的旅行机会。","23-1":"选择廉价交通、经济住宿和淡季出行，可以降低旅行成本。","24-0":"长途出行时，飞机可以节省时间，适合优先考虑效率的人。","24-1":"对于预算有限的旅行者，大巴通常是一种较经济的选择。","24-2":"火车不仅是一种交通工具，也能让人欣赏沿途风景并享受旅程。","25-0":"国家间简化出入境手续，可以让跨境旅行更加便利。","25-1":"减少跨境手续，有助于增加海外学习和就业的机会。","25-2":"跨境流动仍需必要的身份核验与安全管理，以降低潜在风险。","26-0":"旅游人数增长能够带动消费，为当地企业和经济创造收入。","26-1":"旅游需求上升会推动企业招聘，从而创造更多就业机会。","26-2":"过度旅游可能造成垃圾与污染，因此需要适当的环境保护措施。","26-3":"旅游短租需求增加可能压缩居民住房供应，并推高租金。","27-0":"游客通过参观、体验传统和分享见闻，能够促进不同文化之间的交流。","27-1":"北京和上海展现中国的历史与现代面貌，帮助游客了解文化多样性。","27-2":"当地美食和共同用餐不仅带来味觉体验，也体现当地生活与文化。","28-0":"社交媒体、视频和纪录片让人即使不出国，也能接触其他文化。","28-1":"电影与艺术作品可以向海外观众传播一个国家的传统和价值观。","28-2":"跨国工作交流能够帮助员工理解不同国家的职场习惯和文化。","28-3":"结合书籍、电影、纪录片等多种来源，能更全面地认识一个国家。"};
