@@ -152,7 +152,7 @@
     function stop(){
       if(currentAudio){currentAudio.pause();currentAudio=null;}
       if(currentUrl){URL.revokeObjectURL(currentUrl);currentUrl=null;}
-      if(currentButton){currentButton.textContent='🔊';currentButton.disabled=false;currentButton=null;}
+      if(currentButton){currentButton.textContent='🔊';currentButton.disabled=false;currentButton.onclick=currentButton._c1PlayHandler;currentButton=null;}
     }
     const loadManifest=()=>manifestPromise||(manifestPromise=fetch(new URL('../piper-audio/manifest.json',document.baseURI)).then(r=>{if(!r.ok)throw Error('音频索引无法加载');return r.json();}).catch(e=>{manifestPromise=null;throw e;}));
     async function speak(fr,btn){
@@ -185,7 +185,7 @@
       const line=document.createElement('div');line.className='c1-fr-line';
       const text=document.createElement('span');text.lang='fr';text.textContent=fr;
       const btn=document.createElement('button');btn.type='button';btn.className='argument-word-audio';btn.textContent='🔊';btn.setAttribute('aria-label','Piper 朗读');
-      btn.onclick=()=>speak(fr,btn);
+      btn._c1PlayHandler=()=>speak(fr,btn);btn.onclick=btn._c1PlayHandler;
       line.append(text,btn);return line;
     }
     function lines(txt){return String(txt||'').split(/\n/).map(x=>x.trim()).filter(Boolean);}
