@@ -154,16 +154,16 @@
       if(currentUrl){URL.revokeObjectURL(currentUrl);currentUrl=null;}
       if(currentButton){currentButton.textContent='🔊';currentButton.disabled=false;currentButton.onclick=currentButton._c1PlayHandler;currentButton=null;}
     }
-    const loadManifest=()=>manifestPromise||(manifestPromise=fetch(new URL('c1-travel-audio/manifest.json',document.baseURI)).then(r=>{if(!r.ok)throw Error('C1 Piper 音频尚未部署');return r.json();}).catch(e=>{manifestPromise=null;throw e;}));
+    const loadManifest=()=>manifestPromise||(manifestPromise=fetch(new URL('c1-travel-audio/manifest.json?v=1475-20261020',document.baseURI),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('C1 Piper 音频尚未部署');return r.json();}).catch(e=>{manifestPromise=null;throw e;}));
     async function speak(fr,btn){
       stop();currentButton=btn;btn.textContent='加载中';btn.disabled=true;status.textContent='正在加载 C1 Piper siwis 音频……';
       try{
         const index=await loadManifest();const entry=index.entries?.[fr];
-        if(!entry)throw Error('本条 C1 Piper 音频尚未生成');
+        if(!entry)throw Error('最新音频索引中找不到本词块：'+fr);
         const packUrl=new URL(entry.pack,new URL('c1-travel-audio/',document.baseURI));
-        const response=await fetch(packUrl);if(!response.ok)throw Error('C1 Piper 音频包加载失败');
+        const response=await fetch(packUrl,{cache:'no-store'});if(!response.ok)throw Error('C1 Piper 音频包加载失败（HTTP '+response.status+'）：'+entry.pack);
         const item=(await response.json())[entry.id];
-        if(!item||item.text!==fr)throw Error('法语文字与录音索引不匹配');
+        if(!item||item.text!==fr)throw Error('C1 音频索引与录音内容不匹配：'+fr);
         const parts=[item];
         if(currentButton!==btn)return;
         let pos=0;
