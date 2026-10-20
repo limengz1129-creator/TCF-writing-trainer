@@ -1176,7 +1176,7 @@
       "id": 80,
       "fr": "les vacances universitaires",
       "zh": "大学假期",
-      "scenario": "school",
+      "scenario": "general",
       "priority": 5,
       "exampleFr": "Les cours avaient-ils lieu pendant les vacances universitaires ?",
       "exampleZh": "大学放假期间，当时也会上课吗？",
