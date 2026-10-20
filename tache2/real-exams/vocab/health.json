@@ -2,8 +2,8 @@
   "theme": "health",
   "title": "健康安全与公共服务",
   "target": "TCF Canada 口语 Tâche 2 · C1",
-  "version": 1,
-  "principle": "约100个高价值词/词块，以10道最终真题为基础；词块与真实套用问法绑定，优先训练中文→法语主动调用。",
+  "version": 2,
+  "principle": "以当前10题×15问为依据，119个词块与61组问法均标注真题来源；按6个场景练习中文→法语，涵盖就医咨询、道路救援、志愿服务及公共设施使用。",
   "scenarios": [
     {
       "id": "medical",
@@ -38,7 +38,12 @@
       "scenario": "public",
       "priority": 5,
       "exampleFr": "Où se trouve exactement le centre culturel ?",
-      "exampleZh": "文化中心具体在哪里？"
+      "exampleZh": "文化中心具体在哪里？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 1
+      }
     },
     {
       "id": 2,
@@ -47,7 +52,12 @@
       "scenario": "public",
       "priority": 5,
       "exampleFr": "À quelles heures êtes-vous ouverts ?",
-      "exampleZh": "几点开放？"
+      "exampleZh": "你们的开放时间是什么？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 2
+      }
     },
     {
       "id": 3,
@@ -56,7 +66,12 @@
       "scenario": "public",
       "priority": 4,
       "exampleFr": "Le centre est-il aussi ouvert le week-end ?",
-      "exampleZh": "中心周末也开放吗？"
+      "exampleZh": "文化中心周末也开放吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 3
+      }
     },
     {
       "id": 4,
@@ -65,7 +80,12 @@
       "scenario": "public",
       "priority": 5,
       "exampleFr": "Qu’est-ce que vous proposez comme activités ?",
-      "exampleZh": "你们提供哪些活动？"
+      "exampleZh": "你们提供哪些活动？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 4
+      }
     },
     {
       "id": 5,
@@ -74,7 +94,12 @@
       "scenario": "public",
       "priority": 5,
       "exampleFr": "Proposez-vous des ateliers pour les adultes ?",
-      "exampleZh": "有成人工作坊吗？"
+      "exampleZh": "你们为成年人开设工作坊吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 4
+      }
     },
     {
       "id": 6,
@@ -83,7 +108,12 @@
       "scenario": "public",
       "priority": 4,
       "exampleFr": "Et pour les enfants, qu’est-ce qui est prévu ?",
-      "exampleZh": "孩子有哪些活动？"
+      "exampleZh": "那孩子们可以参加哪些活动？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 6
+      }
     },
     {
       "id": 7,
@@ -92,34 +122,57 @@
       "scenario": "public",
       "priority": 5,
       "exampleFr": "Quelles expositions peut-on voir en ce moment ?",
-      "exampleZh": "现在可以看哪些展览？"
+      "exampleZh": "目前可以看哪些展览？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 7
+      }
     },
     {
       "id": 8,
-      "fr": "un équipement public",
-      "zh": "公共设备",
+      "fr": "une visite guidée",
+      "zh": "导览活动",
       "scenario": "public",
       "priority": 4,
-      "exampleFr": "Qu’est-ce qu’on peut utiliser comme équipements sur place ?",
-      "exampleZh": "现场可以使用哪些设备？"
+      "exampleFr": "Est-ce qu’il y a des visites guidées ?",
+      "exampleZh": "是否有导览活动？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 9
+      },
+      "learningKey": "health-final15-v2-8"
     },
     {
       "id": 9,
-      "fr": "le Wi-Fi gratuit",
-      "zh": "免费 Wi-Fi",
+      "fr": "un atelier en soirée",
+      "zh": "晚间工作坊",
       "scenario": "public",
       "priority": 4,
-      "exampleFr": "Le Wi-Fi est-il gratuit sur place ?",
-      "exampleZh": "现场 Wi-Fi 免费吗？"
+      "exampleFr": "Organisez-vous des ateliers en soirée pour les personnes qui travaillent ?",
+      "exampleZh": "是否为上班族安排晚间工作坊？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 5
+      },
+      "learningKey": "health-final15-v2-9"
     },
     {
       "id": 10,
-      "fr": "imprimer des documents",
-      "zh": "打印文件",
+      "fr": "réserver une place",
+      "zh": "预约名额",
       "scenario": "public",
       "priority": 4,
-      "exampleFr": "Peut-on imprimer des documents sur place ?",
-      "exampleZh": "现场可以打印文件吗？"
+      "exampleFr": "Faut-il réserver une place pour assister aux expositions ?",
+      "exampleZh": "参观展览是否需要预约？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 8
+      },
+      "learningKey": "health-final15-v2-10"
     },
     {
       "id": 11,
@@ -128,7 +181,12 @@
       "scenario": "public",
       "priority": 5,
       "exampleFr": "Certaines personnes ont-elles droit à un tarif réduit ?",
-      "exampleZh": "某些人可以享受优惠价吗？"
+      "exampleZh": "哪些人可以享受优惠价？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 12
+      }
     },
     {
       "id": 12,
@@ -137,7 +195,12 @@
       "scenario": "public",
       "priority": 5,
       "exampleFr": "Vaut-il mieux s’inscrire à l’avance pour participer aux ateliers ?",
-      "exampleZh": "参加工作坊最好提前报名吗？"
+      "exampleZh": "参加工作坊最好提前报名吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 13
+      }
     },
     {
       "id": 13,
@@ -146,7 +209,12 @@
       "scenario": "public",
       "priority": 5,
       "exampleFr": "Le centre est-il accessible aux personnes à mobilité réduite ?",
-      "exampleZh": "中心对行动不便者无障碍吗？"
+      "exampleZh": "行动不便者可以方便地进入文化中心吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 15
+      }
     },
     {
       "id": 14,
@@ -155,7 +223,12 @@
       "scenario": "public",
       "priority": 4,
       "exampleFr": "Le centre est-il accessible aux personnes à mobilité réduite ?",
-      "exampleZh": "中心对行动不便者无障碍吗？"
+      "exampleZh": "行动不便者可以方便地进入文化中心吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 15
+      }
     },
     {
       "id": 15,
@@ -164,7 +237,12 @@
       "scenario": "volunteer",
       "priority": 5,
       "exampleFr": "Qu’est-ce qu’on peut faire comme bénévolat dans le quartier ?",
-      "exampleZh": "社区里可以做哪些志愿服务？"
+      "exampleZh": "在附近有哪些志愿服务可以参加？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 1
+      }
     },
     {
       "id": 16,
@@ -173,7 +251,12 @@
       "scenario": "volunteer",
       "priority": 5,
       "exampleFr": "Existe-t-il des associations qui travaillent avec des enfants ?",
-      "exampleZh": "有没有与儿童合作的协会？"
+      "exampleZh": "有没有为儿童提供服务的协会？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 2
+      }
     },
     {
       "id": 17,
@@ -181,8 +264,14 @@
       "zh": "志愿任务",
       "scenario": "volunteer",
       "priority": 5,
-      "exampleFr": "Existe-t-il aussi des missions auprès de personnes handicapées ?",
-      "exampleZh": "也有面向残障人士的志愿任务吗？"
+      "exampleFr": "Quelles missions peut-on faire auprès des personnes âgées ?",
+      "exampleZh": "有哪些为老年人提供帮助的志愿活动？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 3
+      },
+      "learningKey": "health-final15-v2-17"
     },
     {
       "id": 18,
@@ -191,7 +280,12 @@
       "scenario": "volunteer",
       "priority": 5,
       "exampleFr": "Concrètement, qu’est-ce que font les bénévoles ?",
-      "exampleZh": "志愿者具体做什么？"
+      "exampleZh": "志愿者具体要做些什么？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 5
+      }
     },
     {
       "id": 19,
@@ -199,26 +293,44 @@
       "zh": "老年人",
       "scenario": "volunteer",
       "priority": 4,
-      "exampleFr": "Et avec des personnes âgées ?",
-      "exampleZh": "也有面向老年人的服务吗？"
+      "exampleFr": "Quelles missions peut-on faire auprès des personnes âgées ?",
+      "exampleZh": "有哪些为老年人提供帮助的志愿活动？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 3
+      },
+      "learningKey": "health-final15-v2-19"
     },
     {
       "id": 20,
-      "fr": "une personne handicapée",
-      "zh": "残障人士",
+      "fr": "une expérience préalable",
+      "zh": "先前经验",
       "scenario": "volunteer",
       "priority": 4,
-      "exampleFr": "Existe-t-il aussi des missions auprès de personnes handicapées ?",
-      "exampleZh": "也有面向残障人士的任务吗？"
+      "exampleFr": "Y a-t-il des missions accessibles sans expérience préalable ?",
+      "exampleZh": "是否有无需经验也可参与的志愿活动？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 4
+      },
+      "learningKey": "health-final15-v2-20"
     },
     {
       "id": 21,
-      "fr": "être disponible",
-      "zh": "有时间参与",
+      "fr": "s’engager quelques heures par mois",
+      "zh": "每月投入几个小时",
       "scenario": "volunteer",
       "priority": 5,
-      "exampleFr": "À quelle fréquence faut-il être disponible chaque semaine ?",
-      "exampleZh": "每周需要有多少时间可以参与？"
+      "exampleFr": "Peut-on s’engager seulement quelques heures par mois ?",
+      "exampleZh": "是否可以每月只参与几个小时？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 8
+      },
+      "learningKey": "health-final15-v2-21"
     },
     {
       "id": 22,
@@ -227,7 +339,12 @@
       "scenario": "volunteer",
       "priority": 4,
       "exampleFr": "Une formation est-elle prévue avant de commencer ?",
-      "exampleZh": "开始前会有培训吗？"
+      "exampleZh": "开始之前会安排培训吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 9
+      }
     },
     {
       "id": 23,
@@ -236,7 +353,12 @@
       "scenario": "volunteer",
       "priority": 5,
       "exampleFr": "Les bénévoles sont-ils encadrés par un responsable ?",
-      "exampleZh": "志愿者有负责人指导吗？"
+      "exampleZh": "志愿者会有负责人指导吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 10
+      }
     },
     {
       "id": 24,
@@ -245,7 +367,12 @@
       "scenario": "volunteer",
       "priority": 4,
       "exampleFr": "Les bénévoles sont-ils encadrés par un responsable ?",
-      "exampleZh": "志愿者有负责人指导吗？"
+      "exampleZh": "志愿者会有负责人指导吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 10
+      }
     },
     {
       "id": 25,
@@ -254,7 +381,12 @@
       "scenario": "volunteer",
       "priority": 4,
       "exampleFr": "Une expérience ou une compétence particulière est-elle nécessaire ?",
-      "exampleZh": "需要特殊经验或技能吗？"
+      "exampleZh": "需要相关经验或特殊技能吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 11
+      }
     },
     {
       "id": 26,
@@ -263,7 +395,12 @@
       "scenario": "volunteer",
       "priority": 4,
       "exampleFr": "Une attestation de bénévolat est-elle remise ?",
-      "exampleZh": "会发志愿服务证明吗？"
+      "exampleZh": "会提供志愿服务证明吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 12
+      }
     },
     {
       "id": 27,
@@ -272,7 +409,12 @@
       "scenario": "volunteer",
       "priority": 5,
       "exampleFr": "Les bénévoles sont-ils couverts par une assurance pendant les activités ?",
-      "exampleZh": "志愿活动期间志愿者有保险吗？"
+      "exampleZh": "志愿服务期间，志愿者享有保险保障吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 13
+      }
     },
     {
       "id": 28,
@@ -281,7 +423,12 @@
       "scenario": "medical",
       "priority": 5,
       "exampleFr": "Trouve-t-on facilement un médecin de famille ?",
-      "exampleZh": "容易找到家庭医生吗？"
+      "exampleZh": "在这里容易找到家庭医生吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 2
+      }
     },
     {
       "id": 29,
@@ -290,7 +437,12 @@
       "scenario": "medical",
       "priority": 5,
       "exampleFr": "Doit-on passer par un médecin généraliste pour consulter un spécialiste ?",
-      "exampleZh": "看专科前需要先看全科医生吗？"
+      "exampleZh": "看专科医生之前，必须先看全科医生吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 14
+      }
     },
     {
       "id": 30,
@@ -299,7 +451,12 @@
       "scenario": "medical",
       "priority": 5,
       "exampleFr": "Quels spécialistes peut-on consulter près d’ici ?",
-      "exampleZh": "附近有哪些专科医生？"
+      "exampleZh": "附近可以看哪些专科医生？",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 3
+      }
     },
     {
       "id": 31,
@@ -308,7 +465,12 @@
       "scenario": "medical",
       "priority": 5,
       "exampleFr": "Où se trouve la clinique la plus proche ?",
-      "exampleZh": "最近的诊所在哪里？"
+      "exampleZh": "最近的诊所在哪里？",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 4
+      }
     },
     {
       "id": 32,
@@ -317,7 +479,12 @@
       "scenario": "medical",
       "priority": 5,
       "exampleFr": "Existe-t-il des cliniques sans rendez-vous ?",
-      "exampleZh": "有无预约诊所吗？"
+      "exampleZh": "这里有免预约诊所吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 8
+      }
     },
     {
       "id": 33,
@@ -326,7 +493,12 @@
       "scenario": "medical",
       "priority": 5,
       "exampleFr": "Comment se passe la prise de rendez-vous ?",
-      "exampleZh": "预约流程怎样？"
+      "exampleZh": "预约就诊的流程是怎样的？",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 6
+      }
     },
     {
       "id": 34,
@@ -335,7 +507,12 @@
       "scenario": "medical",
       "priority": 4,
       "exampleFr": "Comment se passe la prise de rendez-vous ?",
-      "exampleZh": "预约流程怎样？"
+      "exampleZh": "预约就诊的流程是怎样的？",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 6
+      }
     },
     {
       "id": 35,
@@ -344,7 +521,12 @@
       "scenario": "medical",
       "priority": 5,
       "exampleFr": "En moyenne, combien de temps faut-il attendre pour obtenir un rendez-vous ?",
-      "exampleZh": "平均要等多久才能约到？"
+      "exampleZh": "通常要等多久才能约上？",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 7
+      }
     },
     {
       "id": 36,
@@ -353,16 +535,27 @@
       "scenario": "medical",
       "priority": 5,
       "exampleFr": "Quel est le prix d’une consultation ?",
-      "exampleZh": "一次看诊多少钱？"
+      "exampleZh": "一次门诊大约多少钱？",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 9
+      }
     },
     {
       "id": 37,
-      "fr": "une carte d’assurance maladie",
-      "zh": "医保卡",
+      "fr": "la couverture médicale",
+      "zh": "医疗保障",
       "scenario": "medical",
       "priority": 5,
-      "exampleFr": "Puis-je utiliser ma carte d’assurance maladie ?",
-      "exampleZh": "可以使用医保卡吗？"
+      "exampleFr": "Pour une personne qui vient d’arriver, comment fonctionne la couverture médicale au Québec ?",
+      "exampleZh": "刚到魁北克的人，医疗保险如何运作？",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 10
+      },
+      "learningKey": "health-final15-v2-37"
     },
     {
       "id": 38,
@@ -371,7 +564,12 @@
       "scenario": "medical",
       "priority": 5,
       "exampleFr": "Quels frais ne sont pas couverts ?",
-      "exampleZh": "哪些费用不在保险覆盖范围内？"
+      "exampleZh": "哪些费用不在保险承保范围内？",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 11
+      }
     },
     {
       "id": 39,
@@ -380,7 +578,12 @@
       "scenario": "medical",
       "priority": 4,
       "exampleFr": "Quels frais ne sont pas couverts ?",
-      "exampleZh": "哪些费用不在保险覆盖范围内？"
+      "exampleZh": "哪些费用不在保险承保范围内？",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 11
+      }
     },
     {
       "id": 40,
@@ -389,7 +592,12 @@
       "scenario": "medical",
       "priority": 5,
       "exampleFr": "Est-ce que le médecin peut me prescrire des médicaments si nécessaire ?",
-      "exampleZh": "如果需要医生可以开药吗？"
+      "exampleZh": "如果有需要，医生可以给我开药吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 12
+      }
     },
     {
       "id": 41,
@@ -398,7 +606,12 @@
       "scenario": "medical",
       "priority": 5,
       "exampleFr": "Pourra-t-il renouveler mes ordonnances si nécessaire ?",
-      "exampleZh": "如果需要，他可以续我的处方吗？"
+      "exampleZh": "有需要的话，他可以续开我的处方吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 10
+      }
     },
     {
       "id": 42,
@@ -407,7 +620,12 @@
       "scenario": "medical",
       "priority": 5,
       "exampleFr": "Pourra-t-il renouveler mes ordonnances si nécessaire ?",
-      "exampleZh": "如果需要，他可以续方吗？"
+      "exampleZh": "有需要的话，他可以续开我的处方吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 10
+      }
     },
     {
       "id": 43,
@@ -416,7 +634,12 @@
       "scenario": "medical",
       "priority": 4,
       "exampleFr": "Où faut-il aller pour faire les examens prescrits par le médecin ?",
-      "exampleZh": "医生开的检查要去哪里做？"
+      "exampleZh": "医生开了检查后，我应该去哪里做？",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 13
+      }
     },
     {
       "id": 44,
@@ -424,8 +647,14 @@
       "zh": "化验结果",
       "scenario": "medical",
       "priority": 4,
-      "exampleFr": "Pourra-t-il consulter mes résultats d’analyses précédents ?",
-      "exampleZh": "他能查看我之前的化验结果吗？"
+      "exampleFr": "Est-ce que mes résultats d’analyses seront accessibles pendant le rendez-vous ?",
+      "exampleZh": "就诊时能查看我之前的检查结果吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 11
+      },
+      "learningKey": "health-final15-v2-44"
     },
     {
       "id": 45,
@@ -434,7 +663,12 @@
       "scenario": "medical",
       "priority": 5,
       "exampleFr": "Pourra-t-il consulter mon dossier médical ?",
-      "exampleZh": "他能查看我的病历吗？"
+      "exampleZh": "他能查阅我的病历吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 9
+      }
     },
     {
       "id": 46,
@@ -443,7 +677,12 @@
       "scenario": "medical",
       "priority": 5,
       "exampleFr": "Quel est le nom du médecin remplaçant ?",
-      "exampleZh": "代诊医生叫什么？"
+      "exampleZh": "代诊医生叫什么名字？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 1
+      }
     },
     {
       "id": 47,
@@ -452,16 +691,27 @@
       "scenario": "medical",
       "priority": 4,
       "exampleFr": "Jusqu’à quand va-t-il remplacer mon médecin ?",
-      "exampleZh": "他要代诊到什么时候？"
+      "exampleZh": "他会代替我的医生到什么时候？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 4
+      }
     },
     {
       "id": 48,
-      "fr": "une spécialité",
-      "zh": "专业 / 专科",
+      "fr": "s’agir d’un médecin généraliste",
+      "zh": "是全科医生",
       "scenario": "medical",
       "priority": 5,
-      "exampleFr": "Quelle est sa spécialité ?",
-      "exampleZh": "他的专业是什么？"
+      "exampleFr": "Est-ce qu’il s’agit d’un médecin généraliste ?",
+      "exampleZh": "替班的是全科医生吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 2
+      },
+      "learningKey": "health-final15-v2-48"
     },
     {
       "id": 49,
@@ -470,7 +720,12 @@
       "scenario": "medical",
       "priority": 5,
       "exampleFr": "À quels horaires consulte-t-il ?",
-      "exampleZh": "他的看诊时间是什么？"
+      "exampleZh": "他通常在什么时间接诊？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 5
+      }
     },
     {
       "id": 50,
@@ -479,7 +734,12 @@
       "scenario": "medical",
       "priority": 4,
       "exampleFr": "Va-t-il consulter dans le même cabinet ?",
-      "exampleZh": "他会在同一个诊所看诊吗？"
+      "exampleZh": "他也会在同一家诊所接诊吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 6
+      }
     },
     {
       "id": 51,
@@ -488,7 +748,12 @@
       "scenario": "medical",
       "priority": 5,
       "exampleFr": "Quand on tombe malade, où va-t-on généralement en premier ?",
-      "exampleZh": "生病时一般先去哪里？"
+      "exampleZh": "生病时，人们通常首先去哪里就诊？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 1
+      }
     },
     {
       "id": 52,
@@ -497,7 +762,12 @@
       "scenario": "emergency",
       "priority": 5,
       "exampleFr": "Dans quels cas faut-il aller directement à l’hôpital ?",
-      "exampleZh": "什么情况下要直接去医院？"
+      "exampleZh": "哪些情况下需要直接去医院？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 5
+      }
     },
     {
       "id": 53,
@@ -506,7 +776,12 @@
       "scenario": "emergency",
       "priority": 5,
       "exampleFr": "Comment fonctionne le service des urgences ?",
-      "exampleZh": "急诊怎么运作？"
+      "exampleZh": "急诊服务是怎样运作的？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 6
+      }
     },
     {
       "id": 54,
@@ -515,7 +790,12 @@
       "scenario": "emergency",
       "priority": 5,
       "exampleFr": "Comment fonctionne le service des urgences ?",
-      "exampleZh": "急诊服务怎么运作？"
+      "exampleZh": "急诊服务是怎样运作的？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 6
+      }
     },
     {
       "id": 55,
@@ -524,7 +804,12 @@
       "scenario": "emergency",
       "priority": 5,
       "exampleFr": "Quel numéro faut-il appeler pour une ambulance en cas d’urgence ?",
-      "exampleZh": "紧急时叫救护车要打哪个号码？"
+      "exampleZh": "遇到紧急情况时，叫救护车应该拨打什么号码？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 8
+      }
     },
     {
       "id": 56,
@@ -533,7 +818,12 @@
       "scenario": "emergency",
       "priority": 5,
       "exampleFr": "Que dois-je faire si mon problème devient urgent ?",
-      "exampleZh": "如果问题变紧急我该怎么办？"
+      "exampleZh": "如果我的病情变得紧急，我应该怎么办？",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 14
+      }
     },
     {
       "id": 57,
@@ -542,7 +832,12 @@
       "scenario": "emergency",
       "priority": 5,
       "exampleFr": "Quel numéro faut-il appeler pour une ambulance en cas d’urgence ?",
-      "exampleZh": "紧急情况下叫救护车打哪个号码？"
+      "exampleZh": "遇到紧急情况时，叫救护车应该拨打什么号码？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 8
+      }
     },
     {
       "id": 58,
@@ -551,16 +846,27 @@
       "scenario": "medical",
       "priority": 5,
       "exampleFr": "Comment fonctionne l’assurance maladie dans ton pays ?",
-      "exampleZh": "你们国家的医疗保险怎么运作？"
+      "exampleZh": "你们国家的医疗保险是怎么运作的？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 10
+      }
     },
     {
       "id": 59,
-      "fr": "les soins couverts",
-      "zh": "保险覆盖的医疗服务",
+      "fr": "les soins dentaires",
+      "zh": "牙科治疗",
       "scenario": "medical",
       "priority": 4,
-      "exampleFr": "Quels soins sont généralement couverts ?",
-      "exampleZh": "通常哪些医疗服务被覆盖？"
+      "exampleFr": "Les soins dentaires sont-ils couverts de la même manière ?",
+      "exampleZh": "牙科治疗也是同样的保险报销方式吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 11
+      },
+      "learningKey": "health-final15-v2-59"
     },
     {
       "id": 60,
@@ -569,7 +875,12 @@
       "scenario": "medical",
       "priority": 5,
       "exampleFr": "Trouve-t-on facilement une pharmacie ?",
-      "exampleZh": "容易找到药房吗？"
+      "exampleZh": "附近容易找到药店吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 12
+      }
     },
     {
       "id": 61,
@@ -578,7 +889,12 @@
       "scenario": "medical",
       "priority": 5,
       "exampleFr": "La plupart des médicaments nécessitent-ils une ordonnance ?",
-      "exampleZh": "大多数药需要处方吗？"
+      "exampleZh": "大多数药物都需要处方吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 13
+      }
     },
     {
       "id": 62,
@@ -586,8 +902,14 @@
       "zh": "车辆故障",
       "scenario": "roadside",
       "priority": 5,
-      "exampleFr": "Vous êtes en voiture au Canada et vous tombez en panne.",
-      "exampleZh": "你在加拿大开车时车辆发生故障。"
+      "exampleFr": "Comment se passe la déclaration de la panne et l’envoi des justificatifs ?",
+      "exampleZh": "故障如何申报，相关凭证要怎样提交？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 12
+      },
+      "learningKey": "health-final15-v2-62"
     },
     {
       "id": 63,
@@ -595,8 +917,14 @@
       "zh": "抛锚 / 出故障",
       "scenario": "roadside",
       "priority": 5,
-      "exampleFr": "Vous êtes en voiture au Canada et vous tombez en panne.",
-      "exampleZh": "你在加拿大开车时车辆抛锚。"
+      "exampleFr": "Comment se passe la déclaration de la panne et l’envoi des justificatifs ?",
+      "exampleZh": "故障如何申报，相关凭证要怎样提交？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 12
+      },
+      "learningKey": "health-final15-v2-63"
     },
     {
       "id": 64,
@@ -605,7 +933,12 @@
       "scenario": "roadside",
       "priority": 5,
       "exampleFr": "Quelles informations dois-je vous donner pour localiser ma voiture ?",
-      "exampleZh": "我需要提供什么信息来定位车辆？"
+      "exampleZh": "我需要提供哪些信息，您才能定位我的车？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 1
+      }
     },
     {
       "id": 65,
@@ -614,7 +947,12 @@
       "scenario": "roadside",
       "priority": 5,
       "exampleFr": "Qu’est-ce que je dois faire immédiatement pour rester en sécurité ?",
-      "exampleZh": "我现在应该怎么做才能保持安全？"
+      "exampleZh": "为了确保安全，我现在应该马上做什么？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 2
+      }
     },
     {
       "id": 66,
@@ -622,8 +960,14 @@
       "zh": "拖车",
       "scenario": "roadside",
       "priority": 5,
-      "exampleFr": "Est-il possible d’envoyer une dépanneuse ?",
-      "exampleZh": "可以派拖车吗？"
+      "exampleFr": "Pouvez-vous envoyer une dépanneuse ?",
+      "exampleZh": "您可以派一辆拖车来吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 3
+      },
+      "learningKey": "health-final15-v2-66"
     },
     {
       "id": 67,
@@ -632,7 +976,12 @@
       "scenario": "roadside",
       "priority": 5,
       "exampleFr": "Les frais de remorquage sont-ils pris en charge par mon assurance ?",
-      "exampleZh": "拖车费用由保险承担吗？"
+      "exampleZh": "拖车费用由我的保险承担吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 5
+      }
     },
     {
       "id": 68,
@@ -641,7 +990,12 @@
       "scenario": "roadside",
       "priority": 5,
       "exampleFr": "Les frais de remorquage sont-ils pris en charge par mon assurance ?",
-      "exampleZh": "拖车费由保险承担吗？"
+      "exampleZh": "拖车费用由我的保险承担吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 5
+      }
     },
     {
       "id": 69,
@@ -650,7 +1004,12 @@
       "scenario": "roadside",
       "priority": 5,
       "exampleFr": "Les frais de remorquage sont-ils pris en charge par mon assurance ?",
-      "exampleZh": "拖车费由保险承担吗？"
+      "exampleZh": "拖车费用由我的保险承担吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 5
+      }
     },
     {
       "id": 70,
@@ -658,8 +1017,14 @@
       "zh": "维修",
       "scenario": "roadside",
       "priority": 5,
-      "exampleFr": "Où la voiture sera-t-elle réparée ?",
-      "exampleZh": "车会在哪里修？"
+      "exampleFr": "Puis-je choisir le garage où faire remorquer la voiture ?",
+      "exampleZh": "我可以选择拖车送往的修理厂吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 6
+      },
+      "learningKey": "health-final15-v2-70"
     },
     {
       "id": 71,
@@ -668,7 +1033,12 @@
       "scenario": "roadside",
       "priority": 5,
       "exampleFr": "Qu’est-ce que mon contrat couvre comme frais de réparation ?",
-      "exampleZh": "合同覆盖哪些维修费？"
+      "exampleZh": "我的保险合同涵盖哪些维修费用？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 7
+      }
     },
     {
       "id": 72,
@@ -677,7 +1047,12 @@
       "scenario": "roadside",
       "priority": 5,
       "exampleFr": "Faut-il votre accord avant que je fasse réparer la voiture ?",
-      "exampleZh": "修车前需要你们同意吗？"
+      "exampleZh": "维修汽车之前需要先得到您的同意吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 8
+      }
     },
     {
       "id": 73,
@@ -686,7 +1061,12 @@
       "scenario": "roadside",
       "priority": 5,
       "exampleFr": "Mon assurance prévoit-elle une voiture de remplacement ?",
-      "exampleZh": "保险提供代步车吗？"
+      "exampleZh": "我的保险包含代步车吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 9
+      }
     },
     {
       "id": 74,
@@ -694,8 +1074,14 @@
       "zh": "安排返程",
       "scenario": "roadside",
       "priority": 4,
-      "exampleFr": "Si la réparation prend plusieurs jours, pouvez-vous organiser mon retour ?",
-      "exampleZh": "如果维修要几天，可以安排我返程吗？"
+      "exampleFr": "Si la réparation prend plusieurs jours, pouvez-vous organiser mon retour chez moi ?",
+      "exampleZh": "如果维修需要几天，您能安排我回家吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 10
+      },
+      "learningKey": "health-final15-v2-74"
     },
     {
       "id": 75,
@@ -704,7 +1090,12 @@
       "scenario": "roadside",
       "priority": 4,
       "exampleFr": "L’assurance peut-elle prendre en charge un hôtel si je suis loin de chez moi ?",
-      "exampleZh": "如果离家很远，保险能承担酒店吗？"
+      "exampleZh": "如果我离家很远，保险能承担酒店费用吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 11
+      }
     },
     {
       "id": 76,
@@ -713,7 +1104,12 @@
       "scenario": "roadside",
       "priority": 5,
       "exampleFr": "Comment se passe la déclaration de la panne et l’envoi des justificatifs ?",
-      "exampleZh": "故障申报和提交证明怎么进行？"
+      "exampleZh": "故障如何申报，相关凭证要怎样提交？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 12
+      }
     },
     {
       "id": 77,
@@ -722,16 +1118,27 @@
       "scenario": "roadside",
       "priority": 5,
       "exampleFr": "Comment se passe la déclaration de la panne et l’envoi des justificatifs ?",
-      "exampleZh": "故障申报和提交证明怎么进行？"
+      "exampleZh": "故障如何申报，相关凭证要怎样提交？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 12
+      }
     },
     {
       "id": 78,
-      "fr": "être remboursé(e)",
-      "zh": "获得报销",
+      "fr": "demander un remboursement",
+      "zh": "申请报销",
       "scenario": "roadside",
       "priority": 5,
-      "exampleFr": "Qu’est-ce que je dois garder comme documents pour être remboursée ?",
-      "exampleZh": "为了报销我需要保留哪些文件？"
+      "exampleFr": "Quels documents dois-je conserver pour demander un remboursement ?",
+      "exampleZh": "申请报销需要保留哪些文件？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 13
+      },
+      "learningKey": "health-final15-v2-78"
     },
     {
       "id": 79,
@@ -740,7 +1147,12 @@
       "scenario": "public",
       "priority": 5,
       "exampleFr": "Quels musées valent le plus le détour selon vous ?",
-      "exampleZh": "您最推荐哪些博物馆？"
+      "exampleZh": "您觉得哪些博物馆最值得一去？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 3
+      }
     },
     {
       "id": 80,
@@ -749,7 +1161,12 @@
       "scenario": "public",
       "priority": 5,
       "exampleFr": "Quels musées valent le plus le détour selon vous ?",
-      "exampleZh": "哪些博物馆值得专程去？"
+      "exampleZh": "您觉得哪些博物馆最值得一去？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 3
+      }
     },
     {
       "id": 81,
@@ -758,7 +1175,12 @@
       "scenario": "public",
       "priority": 5,
       "exampleFr": "Vaut-il mieux réserver à l’avance ?",
-      "exampleZh": "最好提前预约吗？"
+      "exampleZh": "最好提前预约吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 11
+      }
     },
     {
       "id": 82,
@@ -767,7 +1189,12 @@
       "scenario": "public",
       "priority": 4,
       "exampleFr": "Les étudiants, les familles ou les nouveaux arrivants ont-ils droit à des réductions ?",
-      "exampleZh": "学生、家庭或新居民有折扣吗？"
+      "exampleZh": "学生、家庭或新来者可以享受优惠吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 10
+      }
     },
     {
       "id": 83,
@@ -776,7 +1203,12 @@
       "scenario": "library",
       "priority": 5,
       "exampleFr": "Où se trouve exactement la bibliothèque ?",
-      "exampleZh": "图书馆具体在哪里？"
+      "exampleZh": "图书馆具体在哪里？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 1
+      }
     },
     {
       "id": 84,
@@ -785,7 +1217,12 @@
       "scenario": "library",
       "priority": 5,
       "exampleFr": "Une carte de bibliothèque est-elle remise après l’inscription ?",
-      "exampleZh": "报名后会发图书卡吗？"
+      "exampleZh": "注册后会发图书馆借阅卡吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 7
+      }
     },
     {
       "id": 85,
@@ -794,7 +1231,12 @@
       "scenario": "library",
       "priority": 5,
       "exampleFr": "Quel est le nombre maximum de documents que je peux emprunter à la fois ?",
-      "exampleZh": "一次最多能借多少资料？"
+      "exampleZh": "我一次最多可以借几件资料？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 8
+      }
     },
     {
       "id": 86,
@@ -803,7 +1245,12 @@
       "scenario": "library",
       "priority": 5,
       "exampleFr": "Combien de temps puis-je les garder ?",
-      "exampleZh": "可以借多久？"
+      "exampleZh": "我可以借阅多长时间？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 9
+      }
     },
     {
       "id": 87,
@@ -812,7 +1259,12 @@
       "scenario": "library",
       "priority": 5,
       "exampleFr": "Puis-je renouveler un emprunt ?",
-      "exampleZh": "可以续借吗？"
+      "exampleZh": "我可以续借吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 10
+      }
     },
     {
       "id": 88,
@@ -821,7 +1273,12 @@
       "scenario": "library",
       "priority": 5,
       "exampleFr": "Est-il possible de réserver un livre déjà emprunté ?",
-      "exampleZh": "已经借出的书可以预约吗？"
+      "exampleZh": "已经借出的书可以预约吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 11
+      }
     },
     {
       "id": 89,
@@ -830,7 +1287,12 @@
       "scenario": "library",
       "priority": 4,
       "exampleFr": "Est-il possible de réserver un livre déjà emprunté ?",
-      "exampleZh": "已经借出的书可以预约吗？"
+      "exampleZh": "已经借出的书可以预约吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 11
+      }
     },
     {
       "id": 90,
@@ -839,7 +1301,12 @@
       "scenario": "library",
       "priority": 4,
       "exampleFr": "Que se passe-t-il si je rends un document en retard ?",
-      "exampleZh": "如果资料逾期归还会怎样？"
+      "exampleZh": "如果我逾期归还资料，会有什么后果？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 15
+      }
     },
     {
       "id": 91,
@@ -847,8 +1314,14 @@
       "zh": "注册条件",
       "scenario": "library",
       "priority": 5,
-      "exampleFr": "Que faut-il remplir comme conditions pour s’inscrire ?",
-      "exampleZh": "注册需要满足哪些条件？"
+      "exampleFr": "Est-ce qu’il faut habiter dans la ville pour obtenir une carte ?",
+      "exampleZh": "必须住在本市才能办借书证吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 4
+      },
+      "learningKey": "health-final15-v2-91"
     },
     {
       "id": 92,
@@ -856,8 +1329,14 @@
       "zh": "居住条件",
       "scenario": "library",
       "priority": 4,
-      "exampleFr": "Faut-il respecter une condition d’âge ou de résidence ?",
-      "exampleZh": "有年龄或居住条件吗？"
+      "exampleFr": "Est-ce qu’il faut habiter dans la ville pour obtenir une carte ?",
+      "exampleZh": "必须住在本市才能办借书证吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 4
+      },
+      "learningKey": "health-final15-v2-92"
     },
     {
       "id": 93,
@@ -865,8 +1344,14 @@
       "zh": "出示文件",
       "scenario": "library",
       "priority": 4,
-      "exampleFr": "Doit-on présenter un document particulier pour s’inscrire ?",
-      "exampleZh": "报名需要出示特殊文件吗？"
+      "exampleFr": "Qu’est-ce que je dois apporter comme documents ?",
+      "exampleZh": "我需要带哪些文件？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 6
+      },
+      "learningKey": "health-final15-v2-93"
     },
     {
       "id": 94,
@@ -874,35 +1359,59 @@
       "zh": "免费活动",
       "scenario": "public",
       "priority": 4,
-      "exampleFr": "L’inscription est-elle gratuite ?",
-      "exampleZh": "报名免费吗？"
+      "exampleFr": "Proposez-vous des activités gratuites ?",
+      "exampleZh": "是否提供免费活动？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 10
+      },
+      "learningKey": "health-final15-v2-94"
     },
     {
       "id": 95,
-      "fr": "un service public",
-      "zh": "公共服务",
+      "fr": "s’inscrire à un atelier",
+      "zh": "报名工作坊",
       "scenario": "public",
       "priority": 4,
-      "exampleFr": "Qu’est-ce qu’on peut utiliser comme équipements sur place ?",
-      "exampleZh": "现场有哪些公共服务和设备？"
+      "exampleFr": "Comment se passe l’inscription à un atelier ?",
+      "exampleZh": "工作坊的报名流程是怎样的？",
+      "source": {
+        "month": "2026-08",
+        "number": 2,
+        "question": 12
+      },
+      "learningKey": "health-final15-v2-95"
     },
     {
       "id": 96,
-      "fr": "un accueil",
-      "zh": "接待处",
+      "fr": "l’ouverture le week-end",
+      "zh": "周末开放安排",
       "scenario": "public",
       "priority": 4,
-      "exampleFr": "Je travaille à l’accueil du nouveau centre culturel de votre ville.",
-      "exampleZh": "我在新文化中心接待处工作。"
+      "exampleFr": "Le centre est-il aussi ouvert le week-end ?",
+      "exampleZh": "文化中心周末也开放吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 3
+      },
+      "learningKey": "health-final15-v2-96"
     },
     {
       "id": 97,
-      "fr": "un bureau d’information",
-      "zh": "信息咨询处",
+      "fr": "une mission accessible sans expérience",
+      "zh": "无需经验即可参与的志愿任务",
       "scenario": "volunteer",
       "priority": 4,
-      "exampleFr": "Je suis agent d’accueil dans un bureau d’information sur les associations.",
-      "exampleZh": "我在协会信息咨询处工作。"
+      "exampleFr": "Y a-t-il des missions accessibles sans expérience préalable ?",
+      "exampleZh": "是否有无需经验也可参与的志愿活动？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 4
+      },
+      "learningKey": "health-final15-v2-97"
     },
     {
       "id": 98,
@@ -911,7 +1420,12 @@
       "scenario": "medical",
       "priority": 5,
       "exampleFr": "Les tarifs ou la couverture restent-ils les mêmes ?",
-      "exampleZh": "费用和保险覆盖范围保持不变吗？"
+      "exampleZh": "诊费和保险报销范围保持不变吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 12
+      }
     },
     {
       "id": 99,
@@ -920,7 +1434,12 @@
       "scenario": "medical",
       "priority": 4,
       "exampleFr": "Quand mon médecin habituel doit-il revenir ?",
-      "exampleZh": "我平时看的医生什么时候回来？"
+      "exampleZh": "我的固定医生预计什么时候回来？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 15
+      }
     },
     {
       "id": 100,
@@ -929,289 +1448,760 @@
       "scenario": "medical",
       "priority": 4,
       "exampleFr": "Qu’est-ce que tu conseillerais à quelqu’un qui vient d’arriver et qui tombe malade ?",
-      "exampleZh": "你会给刚到这里又生病的人什么建议？"
+      "exampleZh": "如果刚到你们国家的人生病了，你会给他什么建议？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 15
+      }
+    },
+    {
+      "id": 101,
+      "fr": "accepter de nouveaux patients",
+      "zh": "接收新患者",
+      "scenario": "medical",
+      "priority": 5,
+      "exampleFr": "Est-ce que vous connaissez une clinique qui accepte de nouveaux patients ?",
+      "exampleZh": "您知道有接收新患者的诊所吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 1
+      },
+      "learningKey": "health-final15-v2-101"
+    },
+    {
+      "id": 102,
+      "fr": "les examens prescrits",
+      "zh": "医生开具的检查",
+      "scenario": "medical",
+      "priority": 5,
+      "exampleFr": "Où faut-il aller pour faire les examens prescrits par le médecin ?",
+      "exampleZh": "医生开了检查后，我应该去哪里做？",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 13
+      },
+      "learningKey": "health-final15-v2-102"
+    },
+    {
+      "id": 103,
+      "fr": "les résultats d’analyses accessibles",
+      "zh": "可查阅的化验结果",
+      "scenario": "medical",
+      "priority": 4,
+      "exampleFr": "Est-ce que mes résultats d’analyses seront accessibles pendant le rendez-vous ?",
+      "exampleZh": "就诊时能查看我之前的检查结果吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 11
+      },
+      "learningKey": "health-final15-v2-103"
+    },
+    {
+      "id": 104,
+      "fr": "la prise en charge aux urgences",
+      "zh": "急诊接诊安排",
+      "scenario": "emergency",
+      "priority": 5,
+      "exampleFr": "Comment les patients sont-ils pris en charge aux urgences ?",
+      "exampleZh": "急诊如何接诊患者？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 7
+      },
+      "learningKey": "health-final15-v2-104"
+    },
+    {
+      "id": 105,
+      "fr": "une estimation avant les réparations",
+      "zh": "维修前报价",
+      "scenario": "roadside",
+      "priority": 5,
+      "exampleFr": "Est-ce qu’un garage pourra me donner une estimation avant les réparations ?",
+      "exampleZh": "修车前修理厂能提供报价吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 15
+      },
+      "learningKey": "health-final15-v2-105"
+    },
+    {
+      "id": 106,
+      "fr": "choisir un garage",
+      "zh": "选择修理厂",
+      "scenario": "roadside",
+      "priority": 5,
+      "exampleFr": "Puis-je choisir le garage où faire remorquer la voiture ?",
+      "exampleZh": "我可以选择拖车送往的修理厂吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 6
+      },
+      "learningKey": "health-final15-v2-106"
+    },
+    {
+      "id": 107,
+      "fr": "obtenir un accord avant les réparations",
+      "zh": "维修前获得同意",
+      "scenario": "roadside",
+      "priority": 5,
+      "exampleFr": "Faut-il votre accord avant que je fasse réparer la voiture ?",
+      "exampleZh": "维修汽车之前需要先得到您的同意吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 8
+      },
+      "learningKey": "health-final15-v2-107"
+    },
+    {
+      "id": 108,
+      "fr": "le retour chez soi",
+      "zh": "返回家中",
+      "scenario": "roadside",
+      "priority": 4,
+      "exampleFr": "Si la réparation prend plusieurs jours, pouvez-vous organiser mon retour chez moi ?",
+      "exampleZh": "如果维修需要几天，您能安排我回家吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 10
+      },
+      "learningKey": "health-final15-v2-108"
+    },
+    {
+      "id": 109,
+      "fr": "conserver les documents",
+      "zh": "保留文件",
+      "scenario": "roadside",
+      "priority": 5,
+      "exampleFr": "Quels documents dois-je conserver pour demander un remboursement ?",
+      "exampleZh": "申请报销需要保留哪些文件？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 13
+      },
+      "learningKey": "health-final15-v2-109"
+    },
+    {
+      "id": 110,
+      "fr": "le délai d’arrivée de la dépanneuse",
+      "zh": "拖车到达所需时间",
+      "scenario": "roadside",
+      "priority": 5,
+      "exampleFr": "Dans combien de temps la dépanneuse peut-elle arriver ?",
+      "exampleZh": "拖车大约多久能到？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 4
+      },
+      "learningKey": "health-final15-v2-110"
+    },
+    {
+      "id": 111,
+      "fr": "travailler auprès des personnes âgées",
+      "zh": "为老年人提供服务",
+      "scenario": "volunteer",
+      "priority": 4,
+      "exampleFr": "Quelles missions peut-on faire auprès des personnes âgées ?",
+      "exampleZh": "有哪些为老年人提供帮助的志愿活动？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 3
+      },
+      "learningKey": "health-final15-v2-111"
+    },
+    {
+      "id": 112,
+      "fr": "un responsable encadrant",
+      "zh": "负责指导的人",
+      "scenario": "volunteer",
+      "priority": 4,
+      "exampleFr": "Les bénévoles sont-ils encadrés par un responsable ?",
+      "exampleZh": "志愿者会有负责人指导吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 10
+      },
+      "learningKey": "health-final15-v2-112"
+    },
+    {
+      "id": 113,
+      "fr": "une assurance pendant les activités",
+      "zh": "活动期间的保险保障",
+      "scenario": "volunteer",
+      "priority": 5,
+      "exampleFr": "Les bénévoles sont-ils couverts par une assurance pendant les activités ?",
+      "exampleZh": "志愿服务期间，志愿者享有保险保障吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 13
+      },
+      "learningKey": "health-final15-v2-113"
+    },
+    {
+      "id": 114,
+      "fr": "un atelier pour les personnes qui travaillent",
+      "zh": "为上班族开设的工作坊",
+      "scenario": "public",
+      "priority": 4,
+      "exampleFr": "Organisez-vous des ateliers en soirée pour les personnes qui travaillent ?",
+      "exampleZh": "是否为上班族安排晚间工作坊？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 5
+      },
+      "learningKey": "health-final15-v2-114"
+    },
+    {
+      "id": 115,
+      "fr": "en ce moment",
+      "zh": "目前／现在",
+      "scenario": "public",
+      "priority": 4,
+      "exampleFr": "Quelles expositions peut-on voir en ce moment ?",
+      "exampleZh": "目前可以看哪些展览？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 7
+      },
+      "learningKey": "health-final15-v2-115"
+    },
+    {
+      "id": 116,
+      "fr": "habiter dans la ville",
+      "zh": "住在本市",
+      "scenario": "library",
+      "priority": 5,
+      "exampleFr": "Est-ce qu’il faut habiter dans la ville pour obtenir une carte ?",
+      "exampleZh": "必须住在本市才能办借书证吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 4
+      },
+      "learningKey": "health-final15-v2-116"
+    },
+    {
+      "id": 117,
+      "fr": "s’inscrire directement en ligne",
+      "zh": "直接在线注册",
+      "scenario": "library",
+      "priority": 5,
+      "exampleFr": "Puis-je faire l’inscription directement en ligne ?",
+      "exampleZh": "可以直接在线注册吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 5
+      },
+      "learningKey": "health-final15-v2-117"
+    },
+    {
+      "id": 118,
+      "fr": "un espace pour étudier",
+      "zh": "学习区域",
+      "scenario": "library",
+      "priority": 5,
+      "exampleFr": "Disposez-vous d’espaces pour étudier ou travailler sur place ?",
+      "exampleZh": "馆内是否有学习或工作的区域？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 12
+      },
+      "learningKey": "health-final15-v2-118"
+    },
+    {
+      "id": 119,
+      "fr": "le nombre maximum de documents",
+      "zh": "资料借阅数量上限",
+      "scenario": "library",
+      "priority": 5,
+      "exampleFr": "Quel est le nombre maximum de documents que je peux emprunter à la fois ?",
+      "exampleZh": "我一次最多可以借几件资料？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 8
+      },
+      "learningKey": "health-final15-v2-119"
     }
   ],
   "patterns": [
     {
       "id": 1,
-      "pattern": "Quels types de médecins trouve-t-on + lieu ?",
-      "zh": "某地有哪些医生？",
-      "exampleFr": "Quels types de médecins trouve-t-on dans la ville ?",
-      "exampleZh": "这个城市有哪些类型的医生？",
-      "scenario": "medical"
+      "pattern": "Est-ce que vous connaissez une clinique qui + verbe ?",
+      "zh": "您知道有……的诊所吗？",
+      "exampleFr": "Est-ce que vous connaissez une clinique qui accepte de nouveaux patients ?",
+      "exampleZh": "您知道有接收新患者的诊所吗？",
+      "scenario": "medical",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 1
+      },
+      "learningKey": "health-final15-v2-1"
     },
     {
       "id": 2,
       "pattern": "Trouve-t-on facilement un médecin de famille ?",
       "zh": "容易找到家庭医生吗？",
       "exampleFr": "Trouve-t-on facilement un médecin de famille ?",
-      "exampleZh": "容易找到家庭医生吗？",
-      "scenario": "medical"
+      "exampleZh": "在这里容易找到家庭医生吗？",
+      "scenario": "medical",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 2
+      }
     },
     {
       "id": 3,
       "pattern": "Quels spécialistes peut-on consulter près d’ici ?",
       "zh": "附近有哪些专科医生？",
       "exampleFr": "Quels spécialistes peut-on consulter près d’ici ?",
-      "exampleZh": "附近有哪些专科医生？",
-      "scenario": "medical"
+      "exampleZh": "附近可以看哪些专科医生？",
+      "scenario": "medical",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 3
+      }
     },
     {
       "id": 4,
       "pattern": "Comment se passe la prise de rendez-vous ?",
       "zh": "预约流程怎样？",
       "exampleFr": "Comment se passe la prise de rendez-vous ?",
-      "exampleZh": "预约流程怎样？",
-      "scenario": "medical"
+      "exampleZh": "预约就诊的流程是怎样的？",
+      "scenario": "medical",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 6
+      }
     },
     {
       "id": 5,
       "pattern": "Combien de temps faut-il attendre pour obtenir un rendez-vous ?",
       "zh": "约诊要等多久？",
       "exampleFr": "En moyenne, combien de temps faut-il attendre pour obtenir un rendez-vous ?",
-      "exampleZh": "平均要等多久才能约到？",
-      "scenario": "medical"
+      "exampleZh": "通常要等多久才能约上？",
+      "scenario": "medical",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 7
+      }
     },
     {
       "id": 6,
       "pattern": "Existe-t-il des cliniques sans rendez-vous ?",
       "zh": "有无预约诊所吗？",
       "exampleFr": "Existe-t-il des cliniques sans rendez-vous ?",
-      "exampleZh": "有无预约诊所吗？",
-      "scenario": "medical"
+      "exampleZh": "这里有免预约诊所吗？",
+      "scenario": "medical",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 8
+      }
     },
     {
       "id": 7,
       "pattern": "Quel est le prix d’une consultation ?",
       "zh": "看诊多少钱？",
       "exampleFr": "Quel est le prix d’une consultation ?",
-      "exampleZh": "一次看诊多少钱？",
-      "scenario": "medical"
+      "exampleZh": "一次门诊大约多少钱？",
+      "scenario": "medical",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 9
+      }
     },
     {
       "id": 8,
-      "pattern": "Puis-je utiliser ma carte d’assurance maladie ?",
-      "zh": "可以使用医保卡吗？",
-      "exampleFr": "Puis-je utiliser ma carte d’assurance maladie ?",
-      "exampleZh": "可以使用医保卡吗？",
-      "scenario": "medical"
+      "pattern": "Pour + personne, comment fonctionne la couverture médicale ?",
+      "zh": "对于……医疗保障如何运作？",
+      "exampleFr": "Pour une personne qui vient d’arriver, comment fonctionne la couverture médicale au Québec ?",
+      "exampleZh": "刚到魁北克的人，医疗保险如何运作？",
+      "scenario": "medical",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 10
+      },
+      "learningKey": "health-final15-v2-8"
     },
     {
       "id": 9,
       "pattern": "Quels frais ne sont pas couverts ?",
       "zh": "哪些费用不被覆盖？",
       "exampleFr": "Quels frais ne sont pas couverts ?",
-      "exampleZh": "哪些费用不在保险覆盖范围？",
-      "scenario": "medical"
+      "exampleZh": "哪些费用不在保险承保范围内？",
+      "scenario": "medical",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 11
+      }
     },
     {
       "id": 10,
       "pattern": "Le médecin peut-il me prescrire + médicament ?",
       "zh": "医生能开药吗？",
       "exampleFr": "Est-ce que le médecin peut me prescrire des médicaments si nécessaire ?",
-      "exampleZh": "如果需要医生可以开药吗？",
-      "scenario": "medical"
+      "exampleZh": "如果有需要，医生可以给我开药吗？",
+      "scenario": "medical",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 12
+      }
     },
     {
       "id": 11,
       "pattern": "Où faut-il aller pour faire + examen ?",
       "zh": "检查要去哪里做？",
       "exampleFr": "Où faut-il aller pour faire les examens prescrits par le médecin ?",
-      "exampleZh": "医生开的检查要去哪里做？",
-      "scenario": "medical"
+      "exampleZh": "医生开了检查后，我应该去哪里做？",
+      "scenario": "medical",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 13
+      }
     },
     {
       "id": 12,
       "pattern": "Que dois-je faire si mon problème devient urgent ?",
       "zh": "问题变紧急怎么办？",
       "exampleFr": "Que dois-je faire si mon problème devient urgent ?",
-      "exampleZh": "如果问题变紧急我该怎么办？",
-      "scenario": "emergency"
+      "exampleZh": "如果我的病情变得紧急，我应该怎么办？",
+      "scenario": "emergency",
+      "source": {
+        "month": "2026-10",
+        "number": 3,
+        "question": 14
+      }
     },
     {
       "id": 13,
       "pattern": "Quel est le nom du médecin remplaçant ?",
       "zh": "代诊医生叫什么？",
       "exampleFr": "Quel est le nom du médecin remplaçant ?",
-      "exampleZh": "代诊医生叫什么？",
-      "scenario": "medical"
+      "exampleZh": "代诊医生叫什么名字？",
+      "scenario": "medical",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 1
+      }
     },
     {
       "id": 14,
-      "pattern": "Quelle est sa spécialité ?",
-      "zh": "他的专业是什么？",
-      "exampleFr": "Quelle est sa spécialité ?",
-      "exampleZh": "他的专业是什么？",
-      "scenario": "medical"
+      "pattern": "Est-ce qu’il s’agit d’un médecin généraliste ?",
+      "zh": "这是全科医生吗？",
+      "exampleFr": "Est-ce qu’il s’agit d’un médecin généraliste ?",
+      "exampleZh": "替班的是全科医生吗？",
+      "scenario": "medical",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 2
+      },
+      "learningKey": "health-final15-v2-14"
     },
     {
       "id": 15,
       "pattern": "Jusqu’à quand va-t-il remplacer mon médecin ?",
       "zh": "代诊到什么时候？",
       "exampleFr": "Jusqu’à quand va-t-il remplacer mon médecin ?",
-      "exampleZh": "他要代诊到什么时候？",
-      "scenario": "medical"
+      "exampleZh": "他会代替我的医生到什么时候？",
+      "scenario": "medical",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 4
+      }
     },
     {
       "id": 16,
       "pattern": "Pourra-t-il consulter mon dossier médical ?",
       "zh": "他能看我的病历吗？",
       "exampleFr": "Pourra-t-il consulter mon dossier médical ?",
-      "exampleZh": "他能查看我的病历吗？",
-      "scenario": "medical"
+      "exampleZh": "他能查阅我的病历吗？",
+      "scenario": "medical",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 9
+      }
     },
     {
       "id": 17,
       "pattern": "Pourra-t-il renouveler mes ordonnances ?",
       "zh": "他能续方吗？",
       "exampleFr": "Pourra-t-il renouveler mes ordonnances si nécessaire ?",
-      "exampleZh": "如果需要，他能续方吗？",
-      "scenario": "medical"
+      "exampleZh": "有需要的话，他可以续开我的处方吗？",
+      "scenario": "medical",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 10
+      }
     },
     {
       "id": 18,
       "pattern": "Dans quels cas faut-il aller directement à l’hôpital ?",
       "zh": "什么情况要直接去医院？",
       "exampleFr": "Dans quels cas faut-il aller directement à l’hôpital ?",
-      "exampleZh": "什么情况下要直接去医院？",
-      "scenario": "emergency"
+      "exampleZh": "哪些情况下需要直接去医院？",
+      "scenario": "emergency",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 5
+      }
     },
     {
       "id": 19,
       "pattern": "Comment fonctionne le service des urgences ?",
       "zh": "急诊怎么运作？",
       "exampleFr": "Comment fonctionne le service des urgences ?",
-      "exampleZh": "急诊怎么运作？",
-      "scenario": "emergency"
+      "exampleZh": "急诊服务是怎样运作的？",
+      "scenario": "emergency",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 6
+      }
     },
     {
       "id": 20,
       "pattern": "Quel numéro faut-il appeler pour une ambulance ?",
       "zh": "叫救护车打什么号码？",
       "exampleFr": "Quel numéro faut-il appeler pour une ambulance en cas d’urgence ?",
-      "exampleZh": "紧急时叫救护车要打哪个号码？",
-      "scenario": "emergency"
+      "exampleZh": "遇到紧急情况时，叫救护车应该拨打什么号码？",
+      "scenario": "emergency",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 8
+      }
     },
     {
       "id": 21,
       "pattern": "Comment fonctionne l’assurance maladie ?",
       "zh": "医疗保险怎么运作？",
       "exampleFr": "Comment fonctionne l’assurance maladie dans ton pays ?",
-      "exampleZh": "你们国家医疗保险怎么运作？",
-      "scenario": "medical"
+      "exampleZh": "你们国家的医疗保险是怎么运作的？",
+      "scenario": "medical",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 10
+      }
     },
     {
       "id": 22,
       "pattern": "Doit-on passer par un généraliste pour consulter un spécialiste ?",
       "zh": "看专科前要先看全科吗？",
       "exampleFr": "Doit-on passer par un médecin généraliste pour consulter un spécialiste ?",
-      "exampleZh": "看专科前要先看全科医生吗？",
-      "scenario": "medical"
+      "exampleZh": "看专科医生之前，必须先看全科医生吗？",
+      "scenario": "medical",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 14
+      }
     },
     {
       "id": 23,
       "pattern": "Quelles informations dois-je donner pour localiser + véhicule ?",
       "zh": "定位车辆要提供什么？",
       "exampleFr": "Quelles informations dois-je vous donner pour localiser ma voiture ?",
-      "exampleZh": "定位车辆需要提供什么信息？",
-      "scenario": "roadside"
+      "exampleZh": "我需要提供哪些信息，您才能定位我的车？",
+      "scenario": "roadside",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 1
+      }
     },
     {
       "id": 24,
       "pattern": "Qu’est-ce que je dois faire immédiatement pour rester en sécurité ?",
       "zh": "现在怎样做最安全？",
       "exampleFr": "Qu’est-ce que je dois faire immédiatement pour rester en sécurité ?",
-      "exampleZh": "我现在应该怎么做才能保持安全？",
-      "scenario": "roadside"
+      "exampleZh": "为了确保安全，我现在应该马上做什么？",
+      "scenario": "roadside",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 2
+      }
     },
     {
       "id": 25,
-      "pattern": "Est-il possible d’envoyer une dépanneuse ?",
-      "zh": "可以派拖车吗？",
-      "exampleFr": "Est-il possible d’envoyer une dépanneuse ?",
-      "exampleZh": "可以派拖车吗？",
-      "scenario": "roadside"
+      "pattern": "Pouvez-vous envoyer + véhicule ?",
+      "zh": "您可以派……来吗？",
+      "exampleFr": "Pouvez-vous envoyer une dépanneuse ?",
+      "exampleZh": "您可以派一辆拖车来吗？",
+      "scenario": "roadside",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 3
+      },
+      "learningKey": "health-final15-v2-25"
     },
     {
       "id": 26,
       "pattern": "Les frais de remorquage sont-ils pris en charge ?",
       "zh": "拖车费报销吗？",
       "exampleFr": "Les frais de remorquage sont-ils pris en charge par mon assurance ?",
-      "exampleZh": "拖车费由保险承担吗？",
-      "scenario": "roadside"
+      "exampleZh": "拖车费用由我的保险承担吗？",
+      "scenario": "roadside",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 5
+      }
     },
     {
       "id": 27,
       "pattern": "Mon assurance prévoit-elle une voiture de remplacement ?",
       "zh": "保险提供代步车吗？",
       "exampleFr": "Mon assurance prévoit-elle une voiture de remplacement ?",
-      "exampleZh": "保险提供代步车吗？",
-      "scenario": "roadside"
+      "exampleZh": "我的保险包含代步车吗？",
+      "scenario": "roadside",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 9
+      }
     },
     {
       "id": 28,
       "pattern": "Comment se passe la déclaration + problème ?",
       "zh": "怎么申报？",
       "exampleFr": "Comment se passe la déclaration de la panne et l’envoi des justificatifs ?",
-      "exampleZh": "故障申报和提交证明怎么进行？",
-      "scenario": "roadside"
+      "exampleZh": "故障如何申报，相关凭证要怎样提交？",
+      "scenario": "roadside",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 12
+      }
     },
     {
       "id": 29,
-      "pattern": "Qu’est-ce que je dois garder comme documents pour être remboursé(e) ?",
-      "zh": "报销要保留哪些文件？",
-      "exampleFr": "Qu’est-ce que je dois garder comme documents pour être remboursée ?",
-      "exampleZh": "为了报销需要保留哪些文件？",
-      "scenario": "roadside"
+      "pattern": "Quels documents dois-je conserver pour + infinitif ?",
+      "zh": "为了……需要保留哪些文件？",
+      "exampleFr": "Quels documents dois-je conserver pour demander un remboursement ?",
+      "exampleZh": "申请报销需要保留哪些文件？",
+      "scenario": "roadside",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 13
+      },
+      "learningKey": "health-final15-v2-29"
     },
     {
       "id": 30,
       "pattern": "Qu’est-ce qu’on peut faire comme bénévolat ?",
       "zh": "可以做哪些志愿服务？",
       "exampleFr": "Qu’est-ce qu’on peut faire comme bénévolat dans le quartier ?",
-      "exampleZh": "社区里可以做哪些志愿服务？",
-      "scenario": "volunteer"
+      "exampleZh": "在附近有哪些志愿服务可以参加？",
+      "scenario": "volunteer",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 1
+      }
     },
     {
       "id": 31,
-      "pattern": "À quelle fréquence faut-il être disponible ?",
-      "zh": "每周需要多少时间？",
-      "exampleFr": "À quelle fréquence faut-il être disponible chaque semaine ?",
-      "exampleZh": "每周需要有多少时间可以参与？",
-      "scenario": "volunteer"
+      "pattern": "Peut-on s’engager seulement quelques heures par mois ?",
+      "zh": "可以每月只参与几个小时吗？",
+      "exampleFr": "Peut-on s’engager seulement quelques heures par mois ?",
+      "exampleZh": "是否可以每月只参与几个小时？",
+      "scenario": "volunteer",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 8
+      },
+      "learningKey": "health-final15-v2-31"
     },
     {
       "id": 32,
       "pattern": "Une formation est-elle prévue avant de commencer ?",
       "zh": "开始前有培训吗？",
       "exampleFr": "Une formation est-elle prévue avant de commencer ?",
-      "exampleZh": "开始前会有培训吗？",
-      "scenario": "volunteer"
+      "exampleZh": "开始之前会安排培训吗？",
+      "scenario": "volunteer",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 9
+      }
     },
     {
       "id": 33,
       "pattern": "Les bénévoles sont-ils encadrés ?",
       "zh": "志愿者有人指导吗？",
       "exampleFr": "Les bénévoles sont-ils encadrés par un responsable ?",
-      "exampleZh": "志愿者有负责人指导吗？",
-      "scenario": "volunteer"
+      "exampleZh": "志愿者会有负责人指导吗？",
+      "scenario": "volunteer",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 10
+      }
     },
     {
       "id": 34,
       "pattern": "Une expérience particulière est-elle nécessaire ?",
       "zh": "需要特殊经验吗？",
       "exampleFr": "Une expérience ou une compétence particulière est-elle nécessaire ?",
-      "exampleZh": "需要特殊经验或技能吗？",
-      "scenario": "volunteer"
+      "exampleZh": "需要相关经验或特殊技能吗？",
+      "scenario": "volunteer",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 11
+      }
     },
     {
       "id": 35,
       "pattern": "Une attestation est-elle remise ?",
       "zh": "会发证明吗？",
       "exampleFr": "Une attestation de bénévolat est-elle remise ?",
-      "exampleZh": "会发志愿服务证明吗？",
-      "scenario": "volunteer"
+      "exampleZh": "会提供志愿服务证明吗？",
+      "scenario": "volunteer",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 12
+      }
     },
     {
       "id": 36,
@@ -1219,79 +2209,427 @@
       "zh": "提供哪些活动？",
       "exampleFr": "Qu’est-ce que vous proposez comme activités ?",
       "exampleZh": "你们提供哪些活动？",
-      "scenario": "public"
+      "scenario": "public",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 4
+      }
     },
     {
       "id": 37,
       "pattern": "Quelles expositions peut-on voir en ce moment ?",
       "zh": "现在有哪些展览？",
       "exampleFr": "Quelles expositions peut-on voir en ce moment ?",
-      "exampleZh": "现在可以看哪些展览？",
-      "scenario": "public"
+      "exampleZh": "目前可以看哪些展览？",
+      "scenario": "public",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 7
+      }
     },
     {
       "id": 38,
       "pattern": "Certaines personnes ont-elles droit à un tarif réduit ?",
       "zh": "某些人有优惠吗？",
       "exampleFr": "Certaines personnes ont-elles droit à un tarif réduit ?",
-      "exampleZh": "某些人可以享受优惠价吗？",
-      "scenario": "public"
+      "exampleZh": "哪些人可以享受优惠价？",
+      "scenario": "public",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 12
+      }
     },
     {
       "id": 39,
       "pattern": "Le lieu est-il accessible aux personnes à mobilité réduite ?",
       "zh": "对行动不便者无障碍吗？",
       "exampleFr": "Le centre est-il accessible aux personnes à mobilité réduite ?",
-      "exampleZh": "中心对行动不便者无障碍吗？",
-      "scenario": "public"
+      "exampleZh": "行动不便者可以方便地进入文化中心吗？",
+      "scenario": "public",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 15
+      }
     },
     {
       "id": 40,
       "pattern": "Comment se passe l’inscription ?",
       "zh": "报名流程怎样？",
       "exampleFr": "Comment se passe l’inscription ?",
-      "exampleZh": "报名流程怎样？",
-      "scenario": "public"
+      "exampleZh": "报名流程是怎样的？",
+      "scenario": "public",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 14
+      }
     },
     {
       "id": 41,
       "pattern": "Une carte est-elle remise après l’inscription ?",
       "zh": "报名后会发卡吗？",
       "exampleFr": "Une carte de bibliothèque est-elle remise après l’inscription ?",
-      "exampleZh": "报名后会发图书卡吗？",
-      "scenario": "library"
+      "exampleZh": "注册后会发图书馆借阅卡吗？",
+      "scenario": "library",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 7
+      }
     },
     {
       "id": 42,
       "pattern": "Combien de documents puis-je emprunter à la fois ?",
       "zh": "一次能借多少？",
       "exampleFr": "Quel est le nombre maximum de documents que je peux emprunter à la fois ?",
-      "exampleZh": "一次最多能借多少资料？",
-      "scenario": "library"
+      "exampleZh": "我一次最多可以借几件资料？",
+      "scenario": "library",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 8
+      }
     },
     {
       "id": 43,
       "pattern": "Combien de temps puis-je les garder ?",
       "zh": "可以借多久？",
       "exampleFr": "Combien de temps puis-je les garder ?",
-      "exampleZh": "可以借多久？",
-      "scenario": "library"
+      "exampleZh": "我可以借阅多长时间？",
+      "scenario": "library",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 9
+      }
     },
     {
       "id": 44,
       "pattern": "Puis-je renouveler un emprunt ?",
       "zh": "可以续借吗？",
       "exampleFr": "Puis-je renouveler un emprunt ?",
-      "exampleZh": "可以续借吗？",
-      "scenario": "library"
+      "exampleZh": "我可以续借吗？",
+      "scenario": "library",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 10
+      }
     },
     {
       "id": 45,
       "pattern": "Que se passe-t-il si je rends un document en retard ?",
       "zh": "逾期归还会怎样？",
       "exampleFr": "Que se passe-t-il si je rends un document en retard ?",
-      "exampleZh": "资料逾期归还会怎样？",
-      "scenario": "library"
+      "exampleZh": "如果我逾期归还资料，会有什么后果？",
+      "scenario": "library",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 15
+      }
+    },
+    {
+      "id": 46,
+      "pattern": "Est-ce que + résultats + seront accessibles pendant + rendez-vous ?",
+      "zh": "……结果在……期间能查阅吗？",
+      "scenario": "medical",
+      "exampleFr": "Est-ce que mes résultats d’analyses seront accessibles pendant le rendez-vous ?",
+      "exampleZh": "就诊时能查看我之前的检查结果吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 11
+      },
+      "learningKey": "health-final15-v2-46"
+    },
+    {
+      "id": 47,
+      "pattern": "Les tarifs ou la couverture restent-ils les mêmes ?",
+      "zh": "收费或保障范围保持不变吗？",
+      "scenario": "medical",
+      "exampleFr": "Les tarifs ou la couverture restent-ils les mêmes ?",
+      "exampleZh": "诊费和保险报销范围保持不变吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 12
+      },
+      "learningKey": "health-final15-v2-47"
+    },
+    {
+      "id": 48,
+      "pattern": "Quand mon médecin habituel doit-il revenir ?",
+      "zh": "我的固定医生预计何时回来？",
+      "scenario": "medical",
+      "exampleFr": "Quand mon médecin habituel doit-il revenir ?",
+      "exampleZh": "我的固定医生预计什么时候回来？",
+      "source": {
+        "month": "2026-09",
+        "number": 1,
+        "question": 15
+      },
+      "learningKey": "health-final15-v2-48"
+    },
+    {
+      "id": 49,
+      "pattern": "Comment les patients sont-ils pris en charge aux urgences ?",
+      "zh": "急诊如何接诊患者？",
+      "scenario": "emergency",
+      "exampleFr": "Comment les patients sont-ils pris en charge aux urgences ?",
+      "exampleZh": "急诊如何接诊患者？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 7
+      },
+      "learningKey": "health-final15-v2-49"
+    },
+    {
+      "id": 50,
+      "pattern": "Les soins dentaires sont-ils couverts de la même manière ?",
+      "zh": "牙科治疗也按同样方式报销吗？",
+      "scenario": "medical",
+      "exampleFr": "Les soins dentaires sont-ils couverts de la même manière ?",
+      "exampleZh": "牙科治疗也是同样的保险报销方式吗？",
+      "source": {
+        "month": "2026-09",
+        "number": 2,
+        "question": 11
+      },
+      "learningKey": "health-final15-v2-50"
+    },
+    {
+      "id": 51,
+      "pattern": "Dans combien de temps la dépanneuse peut-elle arriver ?",
+      "zh": "……大约多久能到？",
+      "scenario": "roadside",
+      "exampleFr": "Dans combien de temps la dépanneuse peut-elle arriver ?",
+      "exampleZh": "拖车大约多久能到？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 4
+      },
+      "learningKey": "health-final15-v2-51"
+    },
+    {
+      "id": 52,
+      "pattern": "Puis-je choisir + lieu + où faire + infinitif ?",
+      "zh": "我可以选择……的地点吗？",
+      "scenario": "roadside",
+      "exampleFr": "Puis-je choisir le garage où faire remorquer la voiture ?",
+      "exampleZh": "我可以选择拖车送往的修理厂吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 6
+      },
+      "learningKey": "health-final15-v2-52"
+    },
+    {
+      "id": 53,
+      "pattern": "Faut-il votre accord avant que je + subjonctif ?",
+      "zh": "我……之前是否需要您的同意？",
+      "scenario": "roadside",
+      "exampleFr": "Faut-il votre accord avant que je fasse réparer la voiture ?",
+      "exampleZh": "维修汽车之前需要先得到您的同意吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 8
+      },
+      "learningKey": "health-final15-v2-53"
+    },
+    {
+      "id": 54,
+      "pattern": "Si + présent, pouvez-vous organiser + nom ?",
+      "zh": "如果……您能安排……吗？",
+      "scenario": "roadside",
+      "exampleFr": "Si la réparation prend plusieurs jours, pouvez-vous organiser mon retour chez moi ?",
+      "exampleZh": "如果维修需要几天，您能安排我回家吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 10
+      },
+      "learningKey": "health-final15-v2-54"
+    },
+    {
+      "id": 55,
+      "pattern": "Est-ce qu’un garage pourra me donner une estimation avant + nom ?",
+      "zh": "修理厂能否在……之前提供报价？",
+      "scenario": "roadside",
+      "exampleFr": "Est-ce qu’un garage pourra me donner une estimation avant les réparations ?",
+      "exampleZh": "修车前修理厂能提供报价吗？",
+      "source": {
+        "month": "2026-08",
+        "number": 1,
+        "question": 15
+      },
+      "learningKey": "health-final15-v2-55"
+    },
+    {
+      "id": 56,
+      "pattern": "Y a-t-il des missions accessibles sans + expérience ?",
+      "zh": "有没有无需……经验即可参与的任务？",
+      "scenario": "volunteer",
+      "exampleFr": "Y a-t-il des missions accessibles sans expérience préalable ?",
+      "exampleZh": "是否有无需经验也可参与的志愿活动？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 4
+      },
+      "learningKey": "health-final15-v2-56"
+    },
+    {
+      "id": 57,
+      "pattern": "Les bénévoles sont-ils couverts par une assurance pendant + activités ?",
+      "zh": "志愿者在……期间有保险保障吗？",
+      "scenario": "volunteer",
+      "exampleFr": "Les bénévoles sont-ils couverts par une assurance pendant les activités ?",
+      "exampleZh": "志愿服务期间，志愿者享有保险保障吗？",
+      "source": {
+        "month": "2026-10",
+        "number": 2,
+        "question": 13
+      },
+      "learningKey": "health-final15-v2-57"
+    },
+    {
+      "id": 58,
+      "pattern": "Organisez-vous des ateliers en soirée pour + personnes ?",
+      "zh": "是否为……安排晚间工作坊？",
+      "scenario": "public",
+      "exampleFr": "Organisez-vous des ateliers en soirée pour les personnes qui travaillent ?",
+      "exampleZh": "是否为上班族安排晚间工作坊？",
+      "source": {
+        "month": "2026-10",
+        "number": 1,
+        "question": 5
+      },
+      "learningKey": "health-final15-v2-58"
+    },
+    {
+      "id": 59,
+      "pattern": "Est-ce qu’il faut habiter dans + lieu + pour + infinitif ?",
+      "zh": "必须住在……才能……吗？",
+      "scenario": "library",
+      "exampleFr": "Est-ce qu’il faut habiter dans la ville pour obtenir une carte ?",
+      "exampleZh": "必须住在本市才能办借书证吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 4
+      },
+      "learningKey": "health-final15-v2-59"
+    },
+    {
+      "id": 60,
+      "pattern": "Puis-je faire l’inscription directement en ligne ?",
+      "zh": "可以直接在线注册吗？",
+      "scenario": "library",
+      "exampleFr": "Puis-je faire l’inscription directement en ligne ?",
+      "exampleZh": "可以直接在线注册吗？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 5
+      },
+      "learningKey": "health-final15-v2-60"
+    },
+    {
+      "id": 61,
+      "pattern": "Disposez-vous d’espaces pour + infinitif + sur place ?",
+      "zh": "是否有可以在现场……的区域？",
+      "scenario": "library",
+      "exampleFr": "Disposez-vous d’espaces pour étudier ou travailler sur place ?",
+      "exampleZh": "馆内是否有学习或工作的区域？",
+      "source": {
+        "month": "2026-07",
+        "number": 2,
+        "question": 12
+      },
+      "learningKey": "health-final15-v2-61"
     }
+  ],
+  "core20": [
+    11,
+    13,
+    15,
+    22,
+    25,
+    28,
+    32,
+    33,
+    35,
+    36,
+    37,
+    38,
+    40,
+    42,
+    45,
+    46,
+    55,
+    64,
+    67,
+    78
+  ],
+  "core50": [
+    11,
+    13,
+    15,
+    22,
+    25,
+    28,
+    32,
+    33,
+    35,
+    36,
+    37,
+    38,
+    40,
+    42,
+    45,
+    46,
+    55,
+    64,
+    67,
+    78,
+    1,
+    2,
+    7,
+    8,
+    9,
+    10,
+    12,
+    14,
+    16,
+    18,
+    19,
+    23,
+    24,
+    26,
+    27,
+    29,
+    30,
+    31,
+    39,
+    41,
+    43,
+    44,
+    47,
+    50,
+    58,
+    59,
+    66,
+    72,
+    73,
+    84
   ]
 }
