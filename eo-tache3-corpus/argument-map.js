@@ -202,7 +202,7 @@
     }
     function chainBlock(section,raw){
       const area=document.createElement('div');area.className='c1-text c1-chain';
-      const ls=lines(raw).filter(x=>!/(?:保留原中文节点与顺序|保留已编辑 Word 的原链|仅补齐缺失的对应法语|以下保留已编辑 Word)/.test(x));
+      const ls=lines(raw).filter(x=>!/(?:保留原中文节点与顺序|保留已编辑 Word 的原链|仅补齐缺失的对应法语|以下保留已编辑 Word|原链文字与顺序|原链文字|保留已编辑)/.test(x));
       // Source chain typically alternates Chinese node then French counterpart.
       // Reorder only the display; never rewrite the original source or audio text.
       for(let i=0;i<ls.length;){
