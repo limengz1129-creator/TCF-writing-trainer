@@ -6,6 +6,9 @@ on:
       - 'scripts/generate_c1_environment_piper.py'
       - 'eo-tache3-corpus/c1-environment-data.js'
       - '.github/workflows/generate-c1-environment-audio.yml'
+concurrency:
+  group: environment-c1-piper-main
+  cancel-in-progress: false
 permissions:
   contents: write
 jobs:
@@ -36,5 +39,13 @@ jobs:
           git add eo-tache3-corpus/environment-audio/
           if ! git diff --cached --quiet; then
             git commit -m 'Generate missing Piper siwis Environment C1 audio'
-            git push
+            for attempt in 1 2 3 4 5; do
+              git fetch origin main
+              git rebase origin/main || { git rebase --abort; exit 1; }
+              if git push origin HEAD:main; then exit 0; fi
+              echo "Push race detected, retrying ($attempt/5)"
+              sleep 5
+            done
+            echo 'Unable to push generated Piper packs after five attempts' >&2
+            exit 1
           fi
