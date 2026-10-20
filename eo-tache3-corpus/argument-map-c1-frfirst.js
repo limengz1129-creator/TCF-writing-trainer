@@ -160,7 +160,18 @@
     async function speak(fr,btn){
       stop();currentButton=btn;btn.textContent='加载中';btn.disabled=true;status.textContent='正在加载 C1 Piper siwis 音频……';
       try{
-        const index=await loadManifest();const entry=index.entries?.[fr];
+        let index=await loadManifest();
+        let entry=index.entries?.[fr];
+        // Newly deployed GitHub Pages may briefly serve the previous manifest.
+        // Force a fresh index on missing entries, preserving exact Piper audio.
+        if(!entry && topic==='饮食与健康'){
+          const fresh=await fetch(new URL(audioFolder+'manifest.json?refresh='+Date.now(),document.baseURI),{cache:'reload'});
+          if(fresh.ok){
+            index=await fresh.json();
+            manifestPromise=Promise.resolve(index);
+            entry=index.entries?.[fr];
+          }
+        }
         if(!entry)throw Error('最新音频索引中找不到本词块：'+fr);
         const packUrl=new URL(entry.pack,new URL(audioFolder,document.baseURI));
         const response=await fetch(packUrl,{cache:'no-store'});if(!response.ok)throw Error('C1 Piper 音频包加载失败（HTTP '+response.status+'）：'+entry.pack);
