@@ -6,7 +6,7 @@ const audio=new Audio();audio.preload='auto';audio.preservesPitch=true;
 function setStatus(el,msg){if(el)el.textContent=msg;}
 async function readJson(url){const r=await fetch(url,{cache:'force-cache'});if(!r.ok)throw Error('Piper 音频文件加载失败');return r.json();}
 async function manifest(){
- if(!manifestPromise)manifestPromise=readJson(new URL('manifest.json?v=travel27-fusion3d',root)).catch(e=>{manifestPromise=null;throw e;});
+ if(!manifestPromise)manifestPromise=readJson(new URL('manifest.json?v=travel-vocab-final15-v2',root)).catch(e=>{manifestPromise=null;throw e;});
  return manifestPromise;
 }
 async function load(text){
