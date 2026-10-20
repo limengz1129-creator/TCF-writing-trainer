@@ -122,6 +122,24 @@ jobs:
         run: python3 tools/piper/audit_t3_social.py
       - name: Validate family topic Piper before publishing
         run: python3 tools/piper/audit_t3_family.py
+      - name: Verify C1 review audio packs before Pages upload
+        run: |
+          python3 tools/piper/c1_travel_audio.py verify
+          python3 tools/piper/c1_career_audio.py verify
+          python3 tools/piper/c1_education_audio.py verify
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          root=Path('eo-tache3-corpus')
+          for name,minimum in (('travel',1200),('career',1100),('education',1100)):
+              folder=root/f'c1-{name}-audio'
+              manifest=json.loads((folder/'manifest.json').read_text(encoding='utf-8'))
+              entries=manifest['entries']
+              assert len(entries)>=minimum,(name,len(entries))
+              for text,record in entries.items():
+                  assert (folder/record['pack']).is_file(),f'Missing C1 {name}: {text}'
+              print(f'Pages C1 {name}: {len(entries)} text targets verified')
+          PY
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
