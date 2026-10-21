@@ -1,0 +1,48 @@
+name: Generate BonTCF supplemental C1 Piper audio
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/generate_bontcf_c1_piper.py'
+      - 'eo-tache3-corpus/bontcf-t3-supplements.js'
+      - '.github/workflows/generate-bontcf-c1-audio.yml'
+concurrency:
+  group: bontcf-c1-audio
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Piper and ffmpeg
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+          python -m pip install 'piper-tts>=1.3,<2'
+      - name: Download French siwis medium voice
+        run: |
+          curl -fL --retry 5 -o /tmp/fr_FR-siwis-medium.onnx 'https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx'
+          curl -fL --retry 5 -o /tmp/fr_FR-siwis-medium.onnx.json 'https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx.json'
+      - name: Generate only new BonTCF phrases
+        run: python scripts/generate_bontcf_c1_piper.py
+      - name: Commit new audio index and packs
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add eo-tache3-corpus/c1-media-audio/ eo-tache3-corpus/family-audio/ eo-tache3-corpus/c1-career-audio/ eo-tache3-corpus/environment-audio/ eo-tache3-corpus/health-audio/
+          if ! git diff --cached --quiet; then
+            git commit -m 'Generate missing Piper siwis audio for BonTCF C1 arguments'
+            for attempt in 1 2 3 4 5; do
+              git fetch origin main
+              git rebase origin/main || { git rebase --abort; exit 1; }
+              if git push origin HEAD:main; then exit 0; fi
+              sleep 5
+            done
+            exit 1
+          fi
