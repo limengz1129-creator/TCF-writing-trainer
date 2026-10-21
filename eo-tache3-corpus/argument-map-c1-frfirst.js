@@ -361,5 +361,20 @@
     renderOverview(stage,D);
   }
   function getMeta(topic){const D=TOPICS[topic]||TOPICS['旅行与移民'];return{paragraphs:D.paragraphs,mothers:D.mothers,title:D.title};}
+  // BonTCF extension: keep the original nine-theme map and all existing
+  // mother-argument branches unchanged; append only approved new C1 scenes.
+  // The same source array is used by bontcf-t3-register.js and bontcf-t3.html.
+  for(const [index,item] of (window.BONT_T3_SUPPLEMENTS||[]).entries()){
+    const topic=TOPICS[item.topic], id=String(item.mother).padStart(2,'0');
+    const mother=topic?.M?.[id];
+    if(!mother)continue;
+    const sid='BONTCF-'+String(index+1).padStart(2,'0');
+    if(mother.scenes.some(scene=>scene.bontcfId===sid))continue;
+    const scene={title:item.scene,fr:item.core,zh:item.zh,
+      sourceIds:[],words:[],bontcfId:sid,
+      isBonTCFAddition:true};
+    mother.scenes.push(scene);
+    if(Array.isArray(mother.sc))mother.sc.push([item.scene,item.core,item.zh]);
+  }
   window.CORPUS_ARGUMENT_MAP={render,getMeta,topics:Object.keys(TOPICS)};
 })();
