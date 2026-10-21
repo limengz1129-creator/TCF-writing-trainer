@@ -370,11 +370,11 @@
     if(!mother)continue;
     const sid='BONTCF-'+String(index+1).padStart(2,'0');
     if(mother.scenes.some(scene=>scene.bontcfId===sid))continue;
-    const scene={title:item.scene,fr:item.core,zh:item.zh,
-      sourceIds:[],words:[],bontcfId:sid,
+    const scene={title:item.scene,fr:item.logic.join(' → '),zh:item.logicZh,
+      sourceIds:[],words:item.words,bontcfId:sid,
       isBonTCFAddition:true};
     mother.scenes.push(scene);
-    if(Array.isArray(mother.sc))mother.sc.push([item.scene,item.core,item.zh]);
+    if(Array.isArray(mother.sc))mother.sc.push([item.scene,item.logic.join(' → '),item.logicZh]);
   }
   window.CORPUS_ARGUMENT_MAP={render,getMeta,topics:Object.keys(TOPICS)};
 })();
