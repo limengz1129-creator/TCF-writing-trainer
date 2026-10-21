@@ -69,3 +69,21 @@ function move(delta){const xs=filtered(),index=xs.findIndex(x=>x.id===current?.i
 function download(blob,name){const u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(u),1000);}$('export').onclick=()=>{saveDraft();download(new Blob([JSON.stringify({...state,vocabulary:window.CORPUS_VOCAB?.getWords()||[]},null,2)],{type:'application/json'}),'EO-T3-语料默写-进度与单词本.json');};$('import').onclick=()=>$('backupFile').click();$('backupFile').onchange=async e=>{try{const f=e.target.files[0];if(!f)return;const x=JSON.parse(await f.text());if(x.app!=='eo-t3-corpus'||x.version!==1||!x.records||Array.isArray(x.records)||typeof x.records!=='object')throw Error('请选择本网页导出的备份文件。');for(const[id,r]of Object.entries(x.records)){if(!unitById.has(id)||!r||typeof r.draft!=='string'||typeof r.last!=='boolean'&&r.last!==null||!['attempts','correct','wrong'].every(k=>Number.isInteger(r[k])&&r[k]>=0)||r.error&&(typeof r.error.answer!=='string'||r.error.answer.length>50000||typeof r.error.resolved!=='boolean'||!Number.isInteger(r.error.count)))throw Error('备份记录格式不正确。');}if(x.vocabulary&&!window.CORPUS_VOCAB?.validate(x.vocabulary))throw Error('单词本格式不正确。');if(x.vocabulary&&!window.CORPUS_VOCAB.importWords(x.vocabulary))throw Error('单词本未能保存。');for(const r of Object.values(x.records))if(r.mastery!==undefined&&!['fluent','weak','unset'].includes(r.mastery))throw Error('备份熟练度格式不正确。');state.records={...state.records,...x.records};persist();state.view==='errors'?(renderErrors(),renderList()):show(current);$('toast').textContent='进度与单词本已导入。';}catch(err){$('toast').textContent=err.message;}e.target.value='';};
 for(const topic of topicNames){const xs=CORPUS.filter(x=>x.topic===topic),p=document.createElement('p');p.className='note';p.textContent=topic+'：'+xs.length+' 段 / '+new Set(xs.map(x=>x.questionId)).size+' 题 / '+new Set(xs.map(x=>x.category)).size+' 个子话题';$('audit').append(p);}
 window.CORPUS_OPEN_PARAGRAPH=id=>{const x=paragraphs.find(p=>p.id==='p:'+id);if(!x)return;$('topic').value=x.topic;state.topic=x.topic;state.category=x.category;$('category').value=x.category;setView('paragraph');$('category').value=x.category;state.category=x.category;show(x);};window.CORPUS_OPEN_QUESTION=(topic,n,mode='opening')=>{const x=questions.find(q=>q.topic===topic&&q.questionNumber===n);if(!x)return;sessionStorage.setItem('tcf-eo-t3-return-frameworks','1');sessionStorage.setItem('tcf-eo-t3-framework-mode',mode);$('topic').value=topic;state.topic=topic;state.category='';$('category').value='';setView('question');show(x);};window.CORPUS_OPEN_TOPIC_QUESTIONS=(topic,mode='virtual')=>{const x=questions.find(q=>q.topic===topic);if(!x)return;sessionStorage.setItem('tcf-eo-t3-return-frameworks','1');sessionStorage.setItem('tcf-eo-t3-framework-mode',mode);$('topic').value=topic;state.topic=topic;state.category='';$('category').value='';setView('question');show(x);};window.CORPUS_CONTEXT=()=>current?current.topic+' · '+current.categories.join(' / ')+' · 第 '+current.questionNumber+' 题':'口语 Tâche 3 语料库';window.CORPUS_TEST={CORPUS,paragraphs,questions,compare,tokenize};setView(state.view);
+(function(){
+  const p=new URLSearchParams(window.location.search);
+  const topic=p.get('c1topic'),mother=p.get('c1mother'),record=p.get('c1record');
+  if(!topic||!mother||!record)return;
+  if(!topicNames.includes(topic))return;
+  $('topic').value=topic;state.topic=topic;state.category='';
+  setView('argumentMap');
+  const ok=window.CORPUS_ARGUMENT_MAP?.openDetail?.(topic,mother,record);
+  if(!ok){$('toast').textContent='没有找到对应的 C1 情境，请检查论点索引。';return;}
+  const returnQ=p.get('returnQ');
+  if(returnQ){
+    const link=document.createElement('a');
+    link.href='bontcf-t3.html?qid='+encodeURIComponent(returnQ);
+    link.textContent='← 返回刚才的 BonTCF 真题';
+    link.style.cssText='display:inline-block;padding:10px 14px;margin:0 0 14px;background:#ebeeff;border:1px solid #d3dafb;border-radius:10px;color:#3f4cb5;font-weight:700;text-decoration:none';
+    $('argumentStage')?.prepend(link);
+  }
+})();
