@@ -303,11 +303,26 @@
         const heading=document.createElement('h4');heading.textContent=label;card.append(heading);
         type==='vocab'?vocab(card,content):label.startsWith('③')?chainBlock(card,content):label.startsWith('①')?coreBlock(card,content):bilingual(card,content);
       });
+      // One C1 scene may serve multiple BonTCF question groups.
+      const related=(window.BONT_T3_GROUPS||[]).filter(q=>q.args.some(a=>a.topic===topic&&a.record===r.id));
+      if(related.length){
+        const associated=document.createElement('details');associated.className='bontcf-related';
+        const label=document.createElement('summary');label.textContent='适用 BonTCF 真题（'+related.length+'组）';associated.append(label);
+        const list=document.createElement('div');
+        for(const q of related){
+          const link=document.createElement('a');
+          link.href='bontcf-t3.html?qid='+encodeURIComponent(q.id);
+          link.textContent=q.q+(q.score===null?' · 未练习':' · '+q.score+'/20');
+          link.style.cssText='display:block;padding:8px 2px;line-height:1.5;color:#4456b5';
+          list.append(link);
+        }
+        associated.append(list);card.append(associated);
+      }
       body.append(card);
     }
   }
   const c1style=document.createElement('style');
-  c1style.textContent='.c1-chain-row{display:flex;align-items:flex-start;gap:9px;flex-wrap:wrap;margin:12px 0 20px}.c1-chain-node{display:flex;flex-direction:column;min-width:0;max-width:100%}.c1-chain-node .c1-fr-line{margin:0;gap:4px;align-items:center}.c1-chain-node .c1-fr-line button{padding:4px 6px;font-size:.8rem}.c1-chain-node .logic-zh{margin:4px 0 0!important;font-size:.88em}.c1-chain-arrow{align-self:flex-start;padding-top:6px;font-weight:bold;color:#72809b}.c1-chain-translation{flex-basis:100%;margin:0}.c1-audio-missing{font-size:.76rem;white-space:nowrap;color:#a44343}.c1-jump{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.c1-jump button{font-size:13px}.c1-scene-card{margin:15px 0;padding:16px;scroll-margin-top:20px}.c1-scene-card h4{margin:20px 0 7px;color:#304985}.c1-fr-line{display:flex;gap:9px;align-items:flex-start;line-height:1.8;margin:6px 0;white-space:pre-wrap}.c1-fr-line>span{flex:1;min-width:0}.c1-fr-line button{flex:none}.c1-text>.logic-zh{margin:2px 0 12px}.c1-vocab-row{margin:5px 0}.c1-vocab-row.logic-zh{color:#68758a;font-size:.9em}';document.head.append(c1style);
+  c1style.textContent='.bontcf-related{margin-top:18px;padding:12px;background:#f0f2ff;border-radius:10px}.bontcf-related summary{cursor:pointer;font-weight:700;color:#3d4ca8}.c1-chain-row{display:flex;align-items:flex-start;gap:9px;flex-wrap:wrap;margin:12px 0 20px}.c1-chain-node{display:flex;flex-direction:column;min-width:0;max-width:100%}.c1-chain-node .c1-fr-line{margin:0;gap:4px;align-items:center}.c1-chain-node .c1-fr-line button{padding:4px 6px;font-size:.8rem}.c1-chain-node .logic-zh{margin:4px 0 0!important;font-size:.88em}.c1-chain-arrow{align-self:flex-start;padding-top:6px;font-weight:bold;color:#72809b}.c1-chain-translation{flex-basis:100%;margin:0}.c1-audio-missing{font-size:.76rem;white-space:nowrap;color:#a44343}.c1-jump{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.c1-jump button{font-size:13px}.c1-scene-card{margin:15px 0;padding:16px;scroll-margin-top:20px}.c1-scene-card h4{margin:20px 0 7px;color:#304985}.c1-fr-line{display:flex;gap:9px;align-items:flex-start;line-height:1.8;margin:6px 0;white-space:pre-wrap}.c1-fr-line>span{flex:1;min-width:0}.c1-fr-line button{flex:none}.c1-text>.logic-zh{margin:2px 0 12px}.c1-vocab-row{margin:5px 0}.c1-vocab-row.logic-zh{color:#68758a;font-size:.9em}';document.head.append(c1style);
 
   function renderMother(stage,D,id,mode='map'){
     const d=D.M[id];if(!d)return;stage.replaceChildren();
@@ -401,5 +416,24 @@
     mother.scenes.push(scene);
     if(Array.isArray(mother.sc))mother.sc.push([item.scene,item.logic.join(' → '),item.logicZh]);
   }
-  window.CORPUS_ARGUMENT_MAP={render,getMeta,topics:Object.keys(TOPICS)};
+  function openDetail(topic,mother,record){
+    const D=TOPICS[topic];if(!D)return false;
+    const id=String(mother).padStart(2,'0');
+    if(!D.M[id])return false;
+    const root=document.getElementById('argumentMapView');if(!root)return false;
+    root.replaceChildren();
+    const stage=document.createElement('div');stage.id='argumentStage';root.append(stage);
+    renderMother(stage,D,id,'c1');
+    const dataset=topic==='媒体与文化'?window.TCF_C1_MEDIA:topic==='教育与儿童'?window.TCF_C1_EDUCATION:topic==='职业与职场'?window.TCF_C1_CAREER:topic==='科技与网络'?window.TCF_C1_TECH:topic==='饮食与健康'?window.TCF_C1_HEALTH:topic==='环境与城市'?window.TCF_C1_ENVIRONMENT:topic==='社会与公共事务'?window.TCF_C1_SOCIAL:topic==='家庭与人际'?window.TCF_C1_FAMILY:window.TCF_C1_TRAVEL;
+    const matches=(dataset||[]).filter(x=>x.mother.slice(0,2)===id),idx=matches.findIndex(x=>x.id===record);
+    if(idx<0)return false;
+    const card=document.getElementById('c1-scene-'+id+'-'+idx);
+    if(card){
+      card.style.border='2px solid #5260e8';
+      card.style.scrollMarginTop='22px';
+      requestAnimationFrame(()=>card.scrollIntoView({block:'start'}));
+    }
+    return true;
+  }
+  window.CORPUS_ARGUMENT_MAP={render,getMeta,openDetail,topics:Object.keys(TOPICS)};
 })();
