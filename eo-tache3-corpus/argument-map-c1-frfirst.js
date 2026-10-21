@@ -309,8 +309,15 @@
         const wrapper=document.createElement('section');wrapper.className='scene-chain-audio-row';
         const card=document.createElement('button');card.className='scene-chain';card.type='button';
         const name=document.createElement('strong');name.textContent=scene.title;
+        if(scene.isBonTCFAddition){
+          const mark=document.createElement('span');
+          mark.textContent=' · BonTCF 新增';mark.style.cssText='font-size:.76em;color:#5058d9;margin-left:8px';
+          name.append(mark);
+          wrapper.dataset.bontcfAddition=scene.bontcfId;
+          wrapper.style.cssText='border-left:3px solid #6264dc;padding-left:12px';
+        }
         const chinese=document.createElement('span');chinese.className='logic-zh';chinese.textContent=scene.zh;
-        const tip=document.createElement('em');tip.textContent='点击展开主题词组 ›';
+        const tip=document.createElement('em');tip.textContent=scene.isBonTCFAddition?'点击查看新增词块及 C1 完整论段 ›':'点击展开主题词组 ›';
         card.append(name,chinese,tip);
         const weak=sceneWeakCount(scene);if(weak){const icon=weakMarker(weak);card.append(icon);}
         card.onclick=()=>renderScene(stage,D,id,i);
