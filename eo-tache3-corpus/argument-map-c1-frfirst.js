@@ -15,6 +15,24 @@
       if(!argumentAudioManifestPromise)argumentAudioManifestPromise=fetch(new URL('argument-audio/manifest.json',document.baseURI)).then(r=>{if(!r.ok)throw Error('Piper 音频尚未部署');return r.json();}).catch(e=>{argumentAudioManifestPromise=null;throw e;});
       argumentAudioManifest=await argumentAudioManifestPromise;
       let entry=argumentAudioManifest.entries?.[text],dir='argument-audio/';
+      // New BonTCF scene words/chains are generated in the existing C1 audio catalogs,
+      // not in the old argument-audio or chain-audio catalogs.
+      if(!entry){
+        const audioDirs={'媒体与文化':'c1-media-audio/','家庭与人际':'family-audio/','职业与职场':'c1-career-audio/','环境与城市':'environment-audio/','饮食与健康':'health-audio/'};
+        const addition=(window.BONT_T3_SUPPLEMENTS||[]).find(item=>
+          item.core===text || item.logic?.includes(text) ||
+          item.words?.some(word=>word[0]===text) ||
+          item.paragraphs?.some(pair=>pair[0]===text));
+        const target=addition&&audioDirs[addition.topic];
+        if(target){
+          const response=await fetch(new URL(target+'manifest.json?v=bontcf-c1-20261021',document.baseURI),{cache:'no-store'});
+          if(!response.ok)throw Error('BonTCF Piper 音频目录无法加载');
+          const catalog=await response.json();
+          entry=catalog.entries?.[text];
+          if(!entry)throw Error('新增情境的 Piper 音频索引缺少词块：'+text);
+          dir=target;
+        }
+      }
       if(!entry){
         if(!chainAudioManifestPromise)chainAudioManifestPromise=fetch(new URL('chain-audio/manifest.json',document.baseURI)).then(r=>{if(!r.ok)throw Error('场景逻辑链 Piper 音频尚未部署');return r.json();}).catch(e=>{chainAudioManifestPromise=null;throw e;});
         const chainManifest=await chainAudioManifestPromise;
