@@ -164,6 +164,27 @@ jobs:
               assert pack[ref['id']]['audio'], f'Empty audio: {unit["id"]}'
           print('PASS: 45/45 compact Travel C1 Piper audio packs and exact original texts')
           PY
+      - name: Verify Career C1 43-group Piper and all 71 source positions
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          root = Path('eo-tache3-corpus')
+          units = json.loads((root/'c1-career-minimal43-data.js').read_text(encoding='utf-8').split('=',1)[1].rstrip(';\n'))
+          originals = json.loads((root/'c1-career-data.js').read_text(encoding='utf-8').split('=',1)[1].rstrip(';\n'))
+          assert len(units) == 43
+          assert sorted(x for u in units for x in u['references']) == sorted(x['id'] for x in originals)
+          folder=root/'c1-career-minimal43-audio'
+          manifest=json.loads((folder/'manifest.json').read_text(encoding='utf-8'))['entries']
+          for u in units:
+              for phrase in [u['fr'],*[a['fr'] for a in u['alternatives']]]:
+                  record=manifest[phrase.strip()]
+                  pack_path=folder/record.get('reuse',record.get('pack',''))
+                  assert pack_path.is_file(),pack_path
+                  content=json.loads(pack_path.read_text(encoding='utf-8'))
+                  assert content[record['id']]['text']==phrase.strip(),u['id']
+          print('PASS: 43 career study groups, 71 source records and exact Piper phrase audio')
+          PY
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
