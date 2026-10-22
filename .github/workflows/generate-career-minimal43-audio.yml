@@ -1,10 +1,10 @@
-name: Build Career C1 Minimal 45 Piper Audio
+name: Build Career C1 Minimal 43 Piper Audio
 on:
   workflow_dispatch:
   push:
     branches: [main]
     paths:
-      - 'scripts/generate_travel_minimal45_piper.py'
+      - 'scripts/generate_career_minimal43_piper.py'
       - 'eo-tache3-corpus/c1-career-minimal43-data.js'
       - '.github/workflows/generate-career-minimal43-audio.yml'
 permissions:
@@ -31,7 +31,7 @@ jobs:
           curl -fL --retry 4 -o /tmp/fr_FR-siwis-medium.onnx 'https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx'
           curl -fL --retry 4 -o /tmp/fr_FR-siwis-medium.onnx.json 'https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx.json'
       - name: Synthesize and verify 71 original C1 phrases
-        run: python scripts/generate_travel_minimal45_piper.py
+        run: python scripts/generate_career_minimal43_piper.py
       - name: Publish static audio and index
         run: |
           git config user.name 'github-actions[bot]'
