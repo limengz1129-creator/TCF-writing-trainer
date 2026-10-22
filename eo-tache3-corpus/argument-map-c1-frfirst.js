@@ -290,8 +290,10 @@
           // If the next line is a Chinese gloss, this starts a new row.
           // If no gloss follows, it is a Word-wrapped continuation.
           const next=parsed[i+1];
-          const continuation=entries.length>0 && !item.zh &&
-            (!next || !next.zh || Boolean(next.fr));
+          const prev=entries[entries.length-1];
+          const incomplete=prev && /(?:\\b(?:de|des|du|à|au|aux|en|dans|avec|pour|sur|sans|ou|et|un|une|le|la|les|ses|son|sa|leur|leurs|véritable|ouverture|relations)\\s*)$/i.test(prev.fr);
+          const fragment=/^(?:[a-zà-ÿ’'-]+\\s*){1,3}$/i.test(item.fr) && !next?.zh;
+          const continuation=entries.length>0 && !item.zh && (!prev.zh || incomplete || fragment);
           if(continuation){entries[entries.length-1].fr+=' '+item.fr;if(item.zh)entries[entries.length-1].zh+=' '+item.zh;}
           else entries.push({fr:item.fr,zh:item.zh});
         }else if(item.zh){
