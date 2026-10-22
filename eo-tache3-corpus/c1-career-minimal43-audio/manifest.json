@@ -1,0 +1,290 @@
+{
+  "voice": "fr_FR-siwis-medium",
+  "version": "career-minimal43-v1",
+  "entries": {
+    "Un salaire suffisant reste essentiel pour vivre de son travail et assurer une stabilité financière.": {
+      "reuse": "../c1-career-audio/pack-0000-91443160bbbc44f7.json",
+      "id": "c00000"
+    },
+    "Certaines personnes continuent à travailler pour des raisons financières.": {
+      "reuse": "../c1-career-audio/pack-0000-91443160bbbc44f7.json",
+      "id": "c00021"
+    },
+    "Le travail reste indispensable pour gagner sa vie et assurer une certaine sécurité financière.": {
+      "reuse": "../c1-career-audio/pack-0000-91443160bbbc44f7.json",
+      "id": "c00039"
+    },
+    "Certains métiers particulièrement difficiles exigent des compétences très spécialisées et peuvent": {
+      "pack": "ca-004.json",
+      "id": "0"
+    },
+    "Certains métiers difficiles impliquent de lourdes responsabilités.": {
+      "reuse": "../c1-career-audio/pack-0001-1a8d903deb2eb03a.json",
+      "id": "c00080"
+    },
+    "La difficulté d’un métier ne détermine pas toujours le niveau de rémunération.": {
+      "reuse": "../c1-career-audio/pack-0002-d9f382b9801541fc.json",
+      "id": "c00101"
+    },
+    "Les salaires de certains sportifs peuvent paraître excessifs lorsqu’on les compare à ceux d’autres": {
+      "pack": "ca-007.json",
+      "id": "0"
+    },
+    "L’instabilité des revenus ne suffit pas à retirer toute valeur aux métiers artistiques.": {
+      "reuse": "../c1-career-audio/pack-0003-e6b44b287a0fc501.json",
+      "id": "c00142"
+    },
+    "L’épanouissement professionnel peut compter autant que le salaire dans le choix d’un emploi.": {
+      "reuse": "../c1-career-audio/pack-0003-e6b44b287a0fc501.json",
+      "id": "c00162"
+    },
+    "Certaines personnes souhaitent continuer à travailler parce que leur métier constitue une véritable": {
+      "pack": "ca-010.json",
+      "id": "0"
+    },
+    "Aimer son métier peut favoriser la réussite professionnelle en renforçant l’envie de s’investir.": {
+      "reuse": "../c1-career-audio/pack-0004-b30813a2bd690b6e.json",
+      "id": "c00182"
+    },
+    "La passion pour son métier peut soutenir la créativité et l’innovation.": {
+      "reuse": "../c1-career-audio/pack-0005-43c350090e373cb6.json",
+      "id": "c00223"
+    },
+    "Les métiers artistiques permettent, comme beaucoup d’autres professions, de gagner sa vie.": {
+      "reuse": "../c1-career-audio/pack-0005-43c350090e373cb6.json",
+      "id": "c00243"
+    },
+    "L’ambiance de travail constitue également un facteur important.": {
+      "reuse": "../c1-career-audio/pack-0005-43c350090e373cb6.json",
+      "id": "c00265"
+    },
+    "Travailler avec un proche peut faciliter la coopération lorsque la relation repose sur une confiance": {
+      "pack": "ca-015.json",
+      "id": "0"
+    },
+    "L’entreprise pourrait organiser des activités de bienvenue afin d’aider les nouveaux employés à créer": {
+      "pack": "ca-016.json",
+      "id": "0"
+    },
+    "Je privilégierais un responsable patient et bienveillant, quel que soit son sexe.": {
+      "reuse": "../c1-career-audio/pack-0007-43ade8a80c3ae302.json",
+      "id": "c00325"
+    },
+    "Pour diriger une équipe, les compétences techniques doivent s’accompagner d’une réelle capacité à": {
+      "pack": "ca-018.json",
+      "id": "0"
+    },
+    "La capacité à diriger une équipe devrait être appréciée selon les compétences et les comportements,": {
+      "pack": "ca-019.json",
+      "id": "0"
+    },
+    "Occuper un poste de responsable exige des compétences d’organisation et une expérience adaptée.": {
+      "reuse": "../c1-career-audio/pack-0008-9acf3605f053923b.json",
+      "id": "c00388"
+    },
+    "Être compétent dans son métier peut permettre à un employé de développer progressivement ses": {
+      "pack": "ca-021.json",
+      "id": "0"
+    },
+    "Les compétences nécessaires pour devenir responsable ne sont pas forcément innées.": {
+      "reuse": "../c1-career-audio/pack-0009-7b1ad27a3d0a2a92.json",
+      "id": "c00409"
+    },
+    "Travailler avec un membre de sa famille peut rendre plus difficile la prise de décisions justes et": {
+      "pack": "ca-023.json",
+      "id": "0"
+    },
+    "Les membres d’une même famille ne possèdent pas nécessairement les compétences et l’expérience": {
+      "pack": "ca-024.json",
+      "id": "0"
+    },
+    "Le télétravail peut améliorer l’équilibre de vie en réduisant le temps consacré aux trajets.": {
+      "reuse": "../c1-career-audio/pack-0011-7ce8a8feac9bf021.json",
+      "id": "c00493"
+    },
+    "Devenir vlogueuse me permettrait d’avoir davantage de flexibilité dans mon travail.": {
+      "reuse": "../c1-career-audio/pack-0012-b3a3980bbe485ad1.json",
+      "id": "c00534"
+    },
+    "Le télétravail peut brouiller la frontière entre la vie professionnelle et la vie personnelle.": {
+      "reuse": "../c1-career-audio/pack-0011-7ce8a8feac9bf021.json",
+      "id": "c00514"
+    },
+    "Le travail ne constitue pas le seul aspect important de la vie.": {
+      "reuse": "../c1-career-audio/pack-0012-b3a3980bbe485ad1.json",
+      "id": "c00554"
+    },
+    "Travailler moins peut permettre de mieux préserver sa santé physique.": {
+      "reuse": "../c1-career-audio/pack-0013-6cff88a77c5a39d4.json",
+      "id": "c00596"
+    },
+    "Travailler pendant leurs études peut également présenter certains inconvénients.": {
+      "reuse": "../c1-career-audio/pack-0012-b3a3980bbe485ad1.json",
+      "id": "c00574"
+    },
+    "La charge de travail peut également décourager certaines personnes.": {
+      "reuse": "../c1-career-audio/pack-0014-7eb03549ed7f420f.json",
+      "id": "c00638"
+    },
+    "La vie personnelle joue un rôle tout aussi important que la vie professionnelle.": {
+      "reuse": "../c1-career-audio/pack-0013-6cff88a77c5a39d4.json",
+      "id": "c00617"
+    },
+    "La sieste peut permettre aux employés de récupérer lorsqu’ils sont fatigués ou stressés.": {
+      "reuse": "../c1-career-audio/pack-0014-7eb03549ed7f420f.json",
+      "id": "c00661"
+    },
+    "Autoriser la sieste peut constituer une mesure favorable au bien-être des employés.": {
+      "reuse": "../c1-career-audio/pack-0015-9b65bf9cb82609e9.json",
+      "id": "c00682"
+    },
+    "La sieste doit être encadrée.": {
+      "reuse": "../c1-career-audio/pack-0015-9b65bf9cb82609e9.json",
+      "id": "c00703"
+    },
+    "L’entreprise devrait proposer une formation ainsi qu’une documentation claire et structurée aux": {
+      "pack": "ca-036.json",
+      "id": "0"
+    },
+    "Un système de mentorat peut aider les nouveaux employés à devenir progressivement autonomes.": {
+      "reuse": "../c1-career-audio/pack-0016-14f6d20e5fd552f0.json",
+      "id": "c00744"
+    },
+    "La formation continue permet aux employés de développer leurs compétences et de s’adapter aux": {
+      "pack": "ca-038.json",
+      "id": "0"
+    },
+    "Les formations proposées par l’entreprise peuvent favoriser l’égalité des chances entre les employés.": {
+      "reuse": "../c1-career-audio/pack-0017-c0f627d1074350b1.json",
+      "id": "c00783"
+    },
+    "La formation continue devrait reposer sur une responsabilité partagée entre l’employeur et les": {
+      "pack": "ca-040.json",
+      "id": "0"
+    },
+    "Apprendre peut devenir plus difficile avec l’âge.": {
+      "reuse": "../c1-career-audio/pack-0018-084dd72bc104ed7b.json",
+      "id": "c00825"
+    },
+    "Changer de métier peut représenter un véritable défi, notamment pour les personnes plus âgées.": {
+      "reuse": "../c1-career-audio/pack-0019-9860ab1ec124d763.json",
+      "id": "c00886"
+    },
+    "Les ressources numériques peuvent faciliter l’apprentissage tout au long de la vie.": {
+      "reuse": "../c1-career-audio/pack-0018-084dd72bc104ed7b.json",
+      "id": "c00846"
+    },
+    "Il existe aujourd’hui de nombreuses ressources qui facilitent la reconversion professionnelle.": {
+      "reuse": "../c1-career-audio/pack-0020-fcf4b240f9ece004.json",
+      "id": "c00907"
+    },
+    "La motivation et la persévérance jouent un rôle essentiel dans la capacité à apprendre à tout âge.": {
+      "reuse": "../c1-career-audio/pack-0019-9860ab1ec124d763.json",
+      "id": "c00866"
+    },
+    "Une reconversion reste envisageable à différents âges lorsque l’on accepte d’apprendre et de": {
+      "pack": "ca-046.json",
+      "id": "0"
+    },
+    "Exercer plusieurs métiers peut aider à développer une vision plus ouverte du monde professionnel.": {
+      "reuse": "../c1-career-audio/pack-0021-2339e2c8ce5a78d5.json",
+      "id": "c00949"
+    },
+    "Exercer plusieurs métiers permet d’acquérir des compétences diversifiées et de développer un profil": {
+      "pack": "ca-048.json",
+      "id": "0"
+    },
+    "Changer de métier trop fréquemment peut également présenter certains inconvénients.": {
+      "reuse": "../c1-career-audio/pack-0022-f7e66fe395221681.json",
+      "id": "c00988"
+    },
+    "Être compétent dans son métier permet généralement d’obtenir de bons résultats professionnels, ce": {
+      "pack": "ca-050.json",
+      "id": "0"
+    },
+    "Travailler pendant leurs études peut permettre aux jeunes de développer leur sens des": {
+      "pack": "ca-051.json",
+      "id": "0"
+    },
+    "Un emploi étudiant peut apporter une première expérience utile pour entrer ensuite sur le marché du": {
+      "pack": "ca-052.json",
+      "id": "0"
+    },
+    "Les jeunes peuvent rencontrer des difficultés en raison de leur manque d’expérience professionnelle.": {
+      "reuse": "../c1-career-audio/pack-0024-1d800c425bbfccbb.json",
+      "id": "c01071"
+    },
+    "Les jeunes diplômés doivent faire face à une forte concurrence sur le marché du travail.": {
+      "reuse": "../c1-career-audio/pack-0024-1d800c425bbfccbb.json",
+      "id": "c01092"
+    },
+    "Les outils numériques peuvent aider les jeunes à mieux préparer leur recherche d’emploi.": {
+      "reuse": "../c1-career-audio/pack-0025-305b1d3ed6cd7829.json",
+      "id": "c01114"
+    },
+    "Le téléphone portable permet aux employés de rester joignables en cas d’urgence.": {
+      "reuse": "../c1-career-audio/pack-0025-305b1d3ed6cd7829.json",
+      "id": "c01134"
+    },
+    "Une utilisation excessive du téléphone peut nuire à la concentration et à l’efficacité au travail.": {
+      "reuse": "../c1-career-audio/pack-0026-6b57b582e48091a1.json",
+      "id": "c01171"
+    },
+    "La performance d’un employé devrait être évaluée principalement en fonction des résultats obtenus,": {
+      "pack": "ca-058.json",
+      "id": "0"
+    },
+    "Un supérieur possède généralement davantage d’expérience professionnelle que les membres de son": {
+      "pack": "ca-059.json",
+      "id": "0"
+    },
+    "Une hiérarchie claire peut faciliter l’organisation du travail dans une entreprise.": {
+      "reuse": "../c1-career-audio/pack-0027-ea7ac46579f45cd2.json",
+      "id": "c01212"
+    },
+    "Respecter la hiérarchie ne signifie pas obéir aveuglément.": {
+      "reuse": "../c1-career-audio/pack-0027-ea7ac46579f45cd2.json",
+      "id": "c01232"
+    },
+    "Les sportifs professionnels consacrent énormément de temps et d’énergie à leur carrière.": {
+      "reuse": "../c1-career-audio/pack-0028-307c37dc700c2d7d.json",
+      "id": "c01252"
+    },
+    "Le sport peut constituer un véritable vecteur de rayonnement international.": {
+      "reuse": "../c1-career-audio/pack-0028-307c37dc700c2d7d.json",
+      "id": "c01272"
+    },
+    "Les métiers artistiques jouent un rôle important dans le rayonnement culturel d’un pays.": {
+      "reuse": "../c1-career-audio/pack-0029-b163d93d6360b447.json",
+      "id": "c01293"
+    },
+    "Devenir vlogueuse de voyage me donnerait l’occasion de voyager davantage et de découvrir d’autres": {
+      "pack": "ca-065.json",
+      "id": "0"
+    },
+    "Le métier d’enseignant implique une lourde responsabilité, notamment lorsqu’il s’agit d’encadrer les": {
+      "pack": "ca-066.json",
+      "id": "0"
+    },
+    "Les enseignants peuvent subir une forte pression de la part des parents.": {
+      "reuse": "../c1-career-audio/pack-0030-8e979df800d73969.json",
+      "id": "c01356"
+    },
+    "Les nouvelles technologies peuvent remplacer certaines tâches répétitives ou physiques.": {
+      "reuse": "../c1-career-audio/pack-0031-08e627b447577cb9.json",
+      "id": "c01377"
+    },
+    "La numérisation transforme souvent les métiers au lieu de supprimer toute activité humaine.": {
+      "reuse": "../c1-career-audio/pack-0031-08e627b447577cb9.json",
+      "id": "c01397"
+    },
+    "Les métiers fondés sur une relation humaine ne se résument pas à des tâches facilement": {
+      "pack": "ca-070.json",
+      "id": "0"
+    },
+    "Le métier de créatrice de contenu me permettrait de partager mes expériences et de créer des liens": {
+      "pack": "ca-071.json",
+      "id": "0"
+    }
+  }
+}
