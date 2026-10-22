@@ -1,0 +1,49 @@
+name: Build Career C1 Minimal 45 Piper Audio
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/generate_travel_minimal45_piper.py'
+      - 'eo-tache3-corpus/c1-career-minimal43-data.js'
+      - '.github/workflows/generate-career-minimal43-audio.yml'
+permissions:
+  contents: write
+concurrency:
+  group: c1-career-minimal43-piper
+  cancel-in-progress: false
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Piper and ffmpeg
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+          python -m pip install 'piper-tts==1.3.0'
+      - name: Download siwis medium French voice
+        run: |
+          curl -fL --retry 4 -o /tmp/fr_FR-siwis-medium.onnx 'https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx'
+          curl -fL --retry 4 -o /tmp/fr_FR-siwis-medium.onnx.json 'https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx.json'
+      - name: Synthesize and verify 71 original C1 phrases
+        run: python scripts/generate_travel_minimal45_piper.py
+      - name: Publish static audio and index
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add eo-tache3-corpus/c1-career-minimal43-audio/
+          if ! git diff --cached --quiet; then
+            git commit -m 'Generate Piper siwis audio for 71 career C1 compact units'
+            for attempt in 1 2 3 4 5; do
+              git fetch origin main
+              git rebase origin/main || { git rebase --abort; exit 1; }
+              if git push origin HEAD:main; then exit 0; fi
+              sleep 5
+            done
+            exit 1
+          fi
