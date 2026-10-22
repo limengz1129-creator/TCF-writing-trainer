@@ -285,6 +285,218 @@
     "Le métier de créatrice de contenu me permettrait de partager mes expériences et de créer des liens": {
       "pack": "ca-071.json",
       "id": "0"
+    },
+    "Un salaire suffisant est essentiel pour vivre de son travail et assurer une stabilité financière. La passion ne suffit pas lorsque les revenus ne couvrent pas les dépenses quotidiennes et les besoins de la famille. Prenons des parents qui doivent payer les frais liés aux enfants tout en remboursant un prêt immobilier.": {
+      "pack": "ca-072.json",
+      "id": "0"
+    },
+    "Tout d’abord, certains métiers particulièrement difficiles exigent des compétences très spécialisées et peuvent apporter une contribution importante à la société. Prenons l’exemple des chercheurs : ils doivent parfois consacrer plusieurs années à des recherches complexes, résoudre des problèmes difficiles et acquérir des connaissances très spécialisées. Leurs travaux peuvent contribuer au progrès scientifique et au développement de la société.": {
+      "pack": "ca-073.json",
+      "id": "0"
+    },
+    "Cela étant dit, il faut reconnaître que la difficulté d’un métier ne détermine pas toujours le niveau de rémunération. Prenons l’exemple des agents d’entretien : leur travail peut être particulièrement exigeant sur le plan physique, car ils doivent parfois travailler pendant de longues heures, rester debout et effectuer des tâches fatigantes. Pourtant, leur salaire reste souvent relativement faible par rapport à celui d’autres professionnels.": {
+      "pack": "ca-074.json",
+      "id": "0"
+    },
+    "Les salaires de certains sportifs peuvent paraître excessifs lorsqu’on les compare à ceux d’autres professions essentielles à la société.": {
+      "reuse": "../c1-career-audio/pack-0002-d9f382b9801541fc.json",
+      "id": "c00122"
+    },
+    "L’instabilité des revenus ne suffit pas à retirer toute valeur aux métiers artistiques. Un artiste peut posséder de réelles compétences tout en ayant du mal à trouver régulièrement des contrats, ce qui rend sa situation plus précaire que celle d’un salarié au revenu fixe. Imaginons un musicien dont un projet se termine et qui doit chercher un nouvel engagement pour les mois suivants.": {
+      "pack": "ca-076.json",
+      "id": "0"
+    },
+    "L’épanouissement professionnel peut compter autant que le salaire dans le choix d’un emploi. Comme le travail occupe une grande partie de notre vie, pouvoir développer ses compétences et atteindre des objectifs qui ont du sens nourrit durablement la motivation. Imaginons une personne qui apprécie son métier et à qui l’on confie un projet lui permettant enfin d’utiliser une compétence qu’elle vient d’acquérir.": {
+      "pack": "ca-077.json",
+      "id": "0"
+    },
+    "Certaines personnes souhaitent continuer à travailler parce que leur métier constitue une véritable source d’épanouissement et de réalisation de soi.": {
+      "reuse": "../c1-career-audio/pack-0004-b30813a2bd690b6e.json",
+      "id": "c00202"
+    },
+    "Aimer son métier peut favoriser la réussite professionnelle en renforçant l’envie de s’investir. Une personne motivée cherche plus volontiers à améliorer ses compétences, à prendre des initiatives et à assumer de nouvelles responsabilités. Imaginons un employé passionné qui apprend à utiliser un nouvel outil et propose ensuite d’aider ses collègues à le maîtriser.": {
+      "pack": "ca-079.json",
+      "id": "0"
+    },
+    "Tout d’abord, les métiers artistiques permettent, comme beaucoup d’autres professions, de gagner sa vie. Les personnes qui suivent une formation artistique peuvent travailler dans différents domaines, par exemple dans le cinéma, dans un théâtre, dans un musée ou encore dans une galerie d’art. Selon leur activité, elles peuvent exercer leur métier à temps plein, percevoir un salaire ou des honoraires et subvenir aux besoins de leur famille.": {
+      "pack": "ca-080.json",
+      "id": "0"
+    },
+    "Par ailleurs, l’ambiance de travail constitue également un facteur important. Avoir de bonnes relations avec ses collègues et ses responsables peut rendre le travail quotidien beaucoup plus agréable. Par exemple, dans une équipe où les employés communiquent efficacement, s’entraident et se respectent, il est généralement plus facile de collaborer et de faire face aux difficultés.": {
+      "pack": "ca-081.json",
+      "id": "0"
+    },
+    "Travailler avec un proche peut faciliter la coopération lorsque la relation repose sur une confiance réelle.": {
+      "reuse": "../c1-career-audio/pack-0006-33d296eee3215003.json",
+      "id": "c00286"
+    },
+    "De plus, l’entreprise pourrait organiser des activités de bienvenue afin d’aider les nouveaux employés à créer des liens avec leurs collègues. Par exemple, le responsable pourrait réserver un restaurant italien et inviter les membres du service à partager un repas. Dans une ambiance plus détendue, les nouveaux employés auraient l’occasion de faire connaissance avec leurs collègues en dehors du cadre strictement professionnel.": {
+      "pack": "ca-083.json",
+      "id": "0"
+    },
+    "Je privilégierais un responsable patient et bienveillant, quel que soit son sexe. Lorsqu’un employé rencontre une difficulté, une personne capable de garder son calme peut chercher à comprendre la situation avant de réagir, ce qui facilite le dialogue. Imaginons une employée qui signale à sa responsable une erreur dans un dossier urgent.": {
+      "pack": "ca-084.json",
+      "id": "0"
+    },
+    "Pour diriger une équipe, les compétences techniques doivent s’accompagner d’une réelle capacité à écouter et à gérer les conflits.": {
+      "reuse": "../c1-career-audio/pack-0007-43ade8a80c3ae302.json",
+      "id": "c00346"
+    },
+    "La capacité à diriger une équipe devrait être appréciée selon les compétences et les comportements, plutôt que selon le sexe. L’expérience, le sens des responsabilités et les qualités humaines permettent de mieux comprendre comment une personne réagit aux difficultés professionnelles. Imaginons deux candidats à un poste de responsable, un homme et une femme, à qui l’on demande comment ils géreraient un désaccord dans leur équipe.": {
+      "pack": "ca-086.json",
+      "id": "0"
+    },
+    "Occuper un poste de responsable exige des compétences d’organisation et une expérience adaptée. Il ne suffit pas de connaître son métier : il faut aussi répartir le travail, prendre des décisions et coordonner une équipe lorsque plusieurs contraintes se présentent en même temps. Imaginons une entreprise qui recrute un dirigeant ayant une formation en gestion et une expérience de projets difficiles.": {
+      "pack": "ca-087.json",
+      "id": "0"
+    },
+    "Être compétent dans son métier peut permettre à un employé de développer progressivement ses compétences en leadership.": {
+      "reuse": "../c1-career-audio/pack-0009-7b1ad27a3d0a2a92.json",
+      "id": "c00430"
+    },
+    "Cela étant dit, les compétences nécessaires pour devenir responsable ne sont pas forcément innées. Elles peuvent s’acquérir progressivement grâce à la formation et à l’expérience. Prenons l’exemple de la restauration : de nombreux responsables de restaurant ont commencé leur carrière comme serveurs avant d’être progressivement promus à des postes à responsabilités.": {
+      "pack": "ca-089.json",
+      "id": "0"
+    },
+    "Tout d’abord, travailler avec un membre de sa famille peut rendre plus difficile la prise de décisions justes et objectives. En effet, lorsqu’une personne travaille avec un proche, ses émotions personnelles peuvent influencer son jugement. Si un responsable travaillait avec un membre de sa famille et que celui-ci commettait une erreur, il pourrait avoir du mal à le traiter de la même manière que les autres employés.": {
+      "pack": "ca-090.json",
+      "id": "0"
+    },
+    "Les membres d’une même famille ne possèdent pas nécessairement les compétences et l’expérience requises pour gérer une entreprise.": {
+      "reuse": "../c1-career-audio/pack-0010-1a159518984cb8e8.json",
+      "id": "c00472"
+    },
+    "Le télétravail peut améliorer l’équilibre de vie en réduisant le temps consacré aux trajets. Les déplacements évités libèrent du temps pour le repos, les loisirs et les responsabilités familiales, sans nécessairement réduire la durée du travail. Imaginons un parent qui, les jours où il travaille chez lui, n’a plus à prendre le métro ni à subir les embouteillages pour rejoindre son bureau.": {
+      "pack": "ca-092.json",
+      "id": "0"
+    },
+    "Cependant, il faut reconnaître que le télétravail peut brouiller la frontière entre la vie professionnelle et la vie personnelle. Lorsqu’une personne travaille à domicile, elle peut avoir du mal à se déconnecter complètement de son travail. Par exemple, même après avoir terminé sa journée de travail, son téléphone peut continuer à sonner et elle peut recevoir constamment des messages dans les groupes de travail ou des courriels professionnels.": {
+      "pack": "ca-093.json",
+      "id": "0"
+    },
+    "Cependant, il faut reconnaître que le travail ne constitue pas le seul aspect important de la vie. Après plusieurs décennies de carrière, certaines personnes peuvent souhaiter prendre leur retraite plus tôt afin de prendre soin de leur santé et de profiter davantage de leur vie personnelle. Par exemple, elles peuvent vouloir voyager, pratiquer des activités qu’elles apprécient ou simplement passer davantage de temps avec leur famille.": {
+      "pack": "ca-094.json",
+      "id": "0"
+    },
+    "Cela étant dit, il faut reconnaître que travailler pendant leurs études peut également présenter certains inconvénients. Si les étudiants consacrent trop de temps à leur emploi à temps partiel, ils ont plus de difficultés à concilier leur travail et leurs études. De plus, une lourde charge de travail peut être épuisante pour les étudiants.": {
+      "pack": "ca-095.json",
+      "id": "0"
+    },
+    "De plus, la vie personnelle joue un rôle tout aussi important que la vie professionnelle. Lorsqu’une personne consacre trop de temps à son travail, elle dispose de moins de temps pour sa famille, ses amis ou ses loisirs. Or, ces moments sont essentiels pour maintenir un certain équilibre dans la vie.": {
+      "pack": "ca-096.json",
+      "id": "0"
+    },
+    "Tout d’abord, la sieste peut permettre aux employés de récupérer lorsqu’ils sont fatigués ou stressés. De nos jours, de nombreuses personnes sont confrontées à une lourde charge de travail, ce qui peut être particulièrement épuisant. Une courte sieste pendant la pause déjeuner peut leur permettre de souffler un peu, de récupérer de l’énergie et de mieux se concentrer lorsqu’ils reprennent leur travail.": {
+      "pack": "ca-097.json",
+      "id": "0"
+    },
+    "Cela étant dit, il faut reconnaître que la sieste doit être encadrée. Si les employés dormaient trop longtemps pendant leurs heures de travail, cela pourrait perturber l’organisation de l’entreprise et réduire leur productivité. Une sieste excessivement longue pourrait aussi donner aux responsables l’impression que les règles de travail ne sont pas respectées.": {
+      "pack": "ca-098.json",
+      "id": "0"
+    },
+    "L’entreprise devrait proposer aux nouveaux employés une formation et une documentation claire et structurée. Comme ils ne connaissent pas encore les outils et les procédures internes, ils ont besoin de ressources consultables au moment où une difficulté se présente. Prenons un programmeur récemment recruté qui doit utiliser des données stockées dans la base de données de l’entreprise.": {
+      "pack": "ca-099.json",
+      "id": "0"
+    },
+    "La formation continue peut bénéficier à la fois aux salariés et à leur entreprise. Les technologies et les méthodes de travail évoluent, si bien que des compétences acquises plusieurs années auparavant peuvent ne plus suffire. Prenons un informaticien à qui son employeur propose régulièrement des formations pour découvrir de nouveaux logiciels et outils numériques.": {
+      "pack": "ca-100.json",
+      "id": "0"
+    },
+    "La formation continue devrait reposer sur une responsabilité partagée entre l’employeur et les salariés. L’entreprise peut fournir des cours et du temps pour apprendre, mais les progrès restent limités si les employés ne participent pas ou n’utilisent jamais leurs acquis. Imaginons un salarié qui suit une formation à un nouveau logiciel de gestion, puis reprend son travail exactement comme avant, sans essayer les fonctions apprises.": {
+      "pack": "ca-101.json",
+      "id": "0"
+    },
+    "Tout d’abord, il faut reconnaître qu’apprendre peut devenir plus difficile avec l’âge. Certaines personnes âgées peuvent avoir davantage de difficultés à mémoriser de nouvelles informations ou à rester concentrées pendant longtemps. Prenons l’exemple d’une personne âgée qui commence à apprendre une langue étrangère comme le français.": {
+      "pack": "ca-102.json",
+      "id": "0"
+    },
+    "Les ressources numériques peuvent faciliter l’apprentissage tout au long de la vie. Les adultes, y compris les personnes âgées, peuvent suivre des cours et revoir les explications à leur rythme sans devoir reprendre une scolarité classique. Imaginons une personne qui apprend le français avec un cours en ligne et ne comprend pas une expression dans une vidéo.": {
+      "pack": "ca-103.json",
+      "id": "0"
+    },
+    "La motivation et la persévérance jouent un rôle essentiel dans la capacité à apprendre à tout âge. Se fixer des objectifs réalistes et travailler régulièrement permet d’avancer, tandis que la jeunesse ne suffit pas si l’on ne s’investit pas dans l’apprentissage. Imaginons une personne de soixante ans qui veut apprendre une langue pour échanger avec de nouvelles connaissances et qui s’exerce un peu chaque jour.": {
+      "pack": "ca-104.json",
+      "id": "0"
+    },
+    "Une reconversion reste envisageable à différents âges lorsque l’on accepte d’apprendre et de s’adapter.": {
+      "reuse": "../c1-career-audio/pack-0020-fcf4b240f9ece004.json",
+      "id": "c00929"
+    },
+    "Exercer plusieurs métiers peut aider à développer une vision plus ouverte du monde professionnel. En découvrant différents environnements et des collègues aux profils variés, on comprend mieux les difficultés propres à chaque activité et l’on peut remettre en question ses préjugés. Imaginons une personne venant d’un bureau qui travaille ensuite dans un restaurant et découvre les contraintes du service.": {
+      "pack": "ca-106.json",
+      "id": "0"
+    },
+    "Exercer plusieurs métiers permet d’acquérir des compétences diversifiées et de développer un profil interdisciplinaire.": {
+      "reuse": "../c1-career-audio/pack-0021-2339e2c8ce5a78d5.json",
+      "id": "c00968"
+    },
+    "Cela étant dit, changer de métier trop fréquemment peut également présenter certains inconvénients. Pour développer une véritable expertise dans un domaine, il faut généralement du temps et de l’expérience. Prenons l’exemple d’un candidat dont le CV présente de nombreuses expériences dans des secteurs très différents.": {
+      "pack": "ca-108.json",
+      "id": "0"
+    },
+    "Tout d’abord, être compétent dans son métier permet généralement d’obtenir de bons résultats professionnels, ce qui constitue souvent un atout important pour obtenir une promotion. Prenons l’exemple d’un commercial : s’il maîtrise parfaitement les techniques de vente, comprend les besoins de ses clients et réussit à signer régulièrement de nombreux contrats commerciaux, il pourra atteindre, voire dépasser, ses objectifs commerciaux. Grâce à ces bons résultats, son responsable pourrait avoir davantage confiance en lui et lui confier progressivement plus de responsabilités.": {
+      "pack": "ca-109.json",
+      "id": "0"
+    },
+    "Tout d’abord, travailler pendant leurs études peut permettre aux jeunes de développer leur sens des responsabilités. Lorsqu’ils commencent à gagner leur propre argent, ils peuvent mieux comprendre les efforts nécessaires pour financer leurs études et leurs dépenses quotidiennes. Ils pourraient ainsi reconnaître la valeur de l’argent et donc apprendre à épargner de l’argent et à ne pas en gaspiller.": {
+      "pack": "ca-110.json",
+      "id": "0"
+    },
+    "Un emploi étudiant peut apporter une première expérience utile pour entrer ensuite sur le marché du travail.": {
+      "reuse": "../c1-career-audio/pack-0023-d5804ff2f801cfa1.json",
+      "id": "c01050"
+    },
+    "Tout d’abord, les jeunes peuvent rencontrer des difficultés en raison de leur manque d’expérience professionnelle. Certains jeunes diplômés viennent tout juste de terminer leurs études et n’ont parfois même jamais effectué de stage. Or, de nombreux recruteurs recherchent des candidats qui possèdent déjà une certaine expérience et qui peuvent être rapidement opérationnels.": {
+      "pack": "ca-112.json",
+      "id": "0"
+    },
+    "Les outils numériques peuvent aider les jeunes à mieux préparer leur recherche d’emploi. Un outil d’intelligence artificielle peut notamment aider à reformuler un CV et à s’entraîner à présenter ses compétences lors d’un entretien. Imaginons un jeune candidat qui veut expliquer plus clairement les tâches réalisées pendant un stage et préparer des réponses aux questions d’un recruteur.": {
+      "pack": "ca-113.json",
+      "id": "0"
+    },
+    "Tout d’abord, le téléphone portable permet aux employés de rester joignables en cas d’urgence. Aujourd’hui, de nombreuses personnes ont des enfants ou des parents dont elles doivent parfois s’occuper. Par exemple, si un problème survenait à l’école de leur enfant ou si un membre de leur famille avait besoin d’aide, elles pourraient être contactées immédiatement.": {
+      "pack": "ca-114.json",
+      "id": "0"
+    },
+    "De plus, la performance d’un employé devrait être évaluée principalement en fonction des résultats obtenus, plutôt que de l’utilisation occasionnelle de son téléphone personnel. Prenons l’exemple d’un commercial : pour l’entreprise, ce qui compte avant tout, c’est le nombre de contrats commerciaux qu’il réussit à signer chaque mois, et non le nombre de fois où il utilise son téléphone personnel. Tant qu’il atteint ses objectifs sans gêner ses collègues ni le service, quelques appels personnels occasionnels ne devraient pas poser de problème.": {
+      "pack": "ca-115.json",
+      "id": "0"
+    },
+    "Les instructions d’un supérieur peuvent être utiles lorsqu’elles s’appuient sur une expérience pertinente. Un responsable ayant déjà rencontré certaines difficultés peut indiquer une méthode et donner des conseils précis à un employé moins expérimenté. Imaginons un jeune salarié qui doit traiter pour la première fois un dossier complexe, alors que son responsable connaît déjà ce type de situation.": {
+      "pack": "ca-116.json",
+      "id": "0"
+    },
+    "Cela étant dit, respecter la hiérarchie ne signifie pas obéir aveuglément. Un responsable peut lui aussi commettre des erreurs ou donner une instruction inappropriée. Par exemple, si un responsable demandait à un employé de modifier volontairement certaines données afin de dissimuler une erreur, l’employé ne devrait évidemment pas suivre cette instruction.": {
+      "pack": "ca-117.json",
+      "id": "0"
+    },
+    "Les efforts des sportifs professionnels et leur influence peuvent, dans une certaine mesure, justifier une rémunération élevée. Leur carrière exige un entraînement intense et de la persévérance, tandis que les compétitions peuvent transmettre la discipline, l’esprit d’équipe et le dépassement de soi. Imaginons un jeune qui admire un sportif et décide de pratiquer régulièrement une activité physique en suivant son exemple.": {
+      "pack": "ca-118.json",
+      "id": "0"
+    },
+    "De plus, les métiers artistiques jouent un rôle important dans le rayonnement culturel d’un pays. Les films, la musique, la peinture ou encore le théâtre permettent de transmettre certaines valeurs, traditions et façons de voir le monde. Prenons l’exemple des œuvres présentées dans une galerie d’art : elles peuvent constituer une véritable vitrine culturelle permettant au public de découvrir l’histoire, la sensibilité et l’expression artistique d’une société.": {
+      "pack": "ca-119.json",
+      "id": "0"
+    },
+    "Devenir vlogueuse de voyage me donnerait l’occasion de voyager davantage et de découvrir d’autres cultures.": {
+      "reuse": "../c1-career-audio/pack-0029-b163d93d6360b447.json",
+      "id": "c01314"
+    },
+    "Tout d’abord, le métier d’enseignant implique une lourde responsabilité, notamment lorsqu’il s’agit d’encadrer les élèves. Dans une classe, certains enfants peuvent être très bruyants, tandis que certains adolescents peuvent se montrer rebelles et avoir du mal à respecter les consignes de leur professeur. Pourtant, l’enseignant doit maintenir la discipline tout en créant un environnement favorable à l’apprentissage.": {
+      "pack": "ca-121.json",
+      "id": "0"
+    },
+    "Tout d’abord, les nouvelles technologies peuvent remplacer certaines tâches répétitives ou physiques. On peut envisager des robots capables d’effectuer certaines tâches dans les lieux de travail comme dans la vie quotidienne. Dans la vie quotidienne, les robots aspirateurs peuvent par exemple nettoyer automatiquement le sol sans intervention humaine, ce qui permet de réduire certaines tâches ménagères.": {
+      "pack": "ca-122.json",
+      "id": "0"
+    },
+    "Les métiers fondés sur une relation humaine ne se résument pas à des tâches facilement automatisables. L’écoute, l’empathie et la confiance se construisent dans des échanges où une personne se sent comprise et accompagnée dans la durée. Imaginons une personne qui consulte un psychologue et qui a besoin de temps pour parler d’une difficulté personnelle.": {
+      "pack": "ca-123.json",
+      "id": "0"
+    },
+    "Le métier de créatrice de contenu me permettrait de partager mes expériences et de créer des liens avec d’autres personnes. Après avoir publié une vidéo sur un voyage ou un restaurant, les internautes pourraient laisser des commentaires, poser des questions ou partager leurs propres expériences. Je trouverais particulièrement intéressant d’échanger avec eux et de répondre à leurs commentaires.": {
+      "pack": "ca-124.json",
+      "id": "0"
     }
   }
 }
