@@ -278,27 +278,35 @@
     function vocab(section,raw){
       const area=document.createElement('div');area.className='c1-vocab';
       const ls=lines(raw).filter(x=>!/^类型\s+法语表达/.test(x));
-      // Word-table exports can put the Chinese gloss between a wrapped
-      // French entry and its continuation. Assemble logical entries first.
-      const entries=[];
-      for(let i=0;i<ls.length;i++){
-        const original=ls[i];
+      const entries=[];let pending=null;
+      function flush(){if(pending){entries.push(pending);pending=null;}}
+      for(const original of ls){
         const line=original.replace(/^(?:核心|拓展)\s*/,'').trim();
         if(!line)continue;
         const zhAt=line.search(/[\u3400-\u9fff]/);
         const fr=(zhAt<0?line:line.slice(0,zhAt)).trim();
         const zh=(zhAt<0?'':line.slice(zhAt)).trim();
-        const hasGloss=/^(?:核心|拓展)\s*/.test(original)||Boolean(zh);
-        if(fr && !zh && !hasGloss && entries.length && entries[entries.length-1].zh &&
-           !(i+1<ls.length && /^(?:核心|拓展)\s*/.test(ls[i+1]))){
-          // Continuation has no own Chinese gloss: attach to the last entry.
-          entries[entries.length-1].fr+=' '+fr;
-        }else if(zh && !fr && entries.length){
-          entries[entries.length-1].zh+=(entries[entries.length-1].zh?' ':'')+zh;
-        }else if(fr || zh){
-          entries.push({fr,zh});
+        // Each Chinese gloss marks a word-table row. A French continuation
+        // following that gloss belongs to that row only when it has no
+        // corresponding new Chinese gloss before the next French expression.
+        if(zh){
+          if(fr){flush();pending={fr,zh};}
+          else if(pending&&!pending.zh)pending.zh=zh;
+          else if(pending&&pending.zh){pending.zh+=' '+zh;}
+          else if(entries.length)entries[entries.length-1].zh+=' '+zh;
+        }else if(fr){
+          if(!pending){pending={fr,zh:''};continue;}
+          if(!pending.zh){pending.fr+=' '+fr;continue;}
+          // If a preceding row has a gloss, usually this begins a new row.
+          // Wrapped fragments are detected by incomplete grammatical endings.
+          const prev=pending.fr.trim();
+          const continued=/(?:\b(?:de|des|du|à|au|aux|en|dans|avec|pour|sur|sans|ou|et|un|une|le|la|les|ses|son|sa|leur|leurs|plus|véritable)\s*)$/i.test(prev)||
+            /[,:;–-]$/.test(prev);
+          if(continued)pending.fr+=' '+fr;
+          else{flush();pending={fr,zh:''};}
         }
       }
+      flush();
       for(const entry of entries){
         const row=document.createElement('div');row.className='c1-vocab-row';
         if(/[A-Za-zÀ-ÿ]/.test(entry.fr))row.append(audioLine(entry.fr));
