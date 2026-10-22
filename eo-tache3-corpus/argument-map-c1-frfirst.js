@@ -278,35 +278,26 @@
     function vocab(section,raw){
       const area=document.createElement('div');area.className='c1-vocab';
       const ls=lines(raw).filter(x=>!/^类型\s+法语表达/.test(x));
-      const entries=[];let pending=null;
-      function flush(){if(pending){entries.push(pending);pending=null;}}
-      for(const original of ls){
+      const parsed=ls.map(original=>{
         const line=original.replace(/^(?:核心|拓展)\s*/,'').trim();
-        if(!line)continue;
-        const zhAt=line.search(/[\u3400-\u9fff]/);
-        const fr=(zhAt<0?line:line.slice(0,zhAt)).trim();
-        const zh=(zhAt<0?'':line.slice(zhAt)).trim();
-        // Each Chinese gloss marks a word-table row. A French continuation
-        // following that gloss belongs to that row only when it has no
-        // corresponding new Chinese gloss before the next French expression.
-        if(zh){
-          if(fr){flush();pending={fr,zh};}
-          else if(pending&&!pending.zh)pending.zh=zh;
-          else if(pending&&pending.zh){pending.zh+=' '+zh;}
-          else if(entries.length)entries[entries.length-1].zh+=' '+zh;
-        }else if(fr){
-          if(!pending){pending={fr,zh:''};continue;}
-          if(!pending.zh){pending.fr+=' '+fr;continue;}
-          // If a preceding row has a gloss, usually this begins a new row.
-          // Wrapped fragments are detected by incomplete grammatical endings.
-          const prev=pending.fr.trim();
-          const continued=/(?:\b(?:de|des|du|à|au|aux|en|dans|avec|pour|sur|sans|ou|et|un|une|le|la|les|ses|son|sa|leur|leurs|plus|véritable)\s*)$/i.test(prev)||
-            /[,:;–-]$/.test(prev);
-          if(continued)pending.fr+=' '+fr;
-          else{flush();pending={fr,zh:''};}
+        const at=line.search(/[\u3400-\u9fff]/);
+        return {fr:(at<0?line:line.slice(0,at)).trim(),zh:(at<0?'':line.slice(at)).trim()};
+      }).filter(x=>x.fr||x.zh);
+      const entries=[];
+      for(let i=0;i<parsed.length;i++){
+        const item=parsed[i];
+        if(item.fr){
+          // If the next line is a Chinese gloss, this starts a new row.
+          // If no gloss follows, it is a Word-wrapped continuation.
+          const next=parsed[i+1];
+          const continuation=entries.length>0 && !item.zh &&
+            (!next || !next.zh || Boolean(next.fr));
+          if(continuation){entries[entries.length-1].fr+=' '+item.fr;if(item.zh)entries[entries.length-1].zh+=' '+item.zh;}
+          else entries.push({fr:item.fr,zh:item.zh});
+        }else if(item.zh){
+          if(entries.length)entries[entries.length-1].zh+=(entries[entries.length-1].zh?' ':'')+item.zh;
         }
       }
-      flush();
       for(const entry of entries){
         const row=document.createElement('div');row.className='c1-vocab-row';
         if(/[A-Za-zÀ-ÿ]/.test(entry.fr))row.append(audioLine(entry.fr));
