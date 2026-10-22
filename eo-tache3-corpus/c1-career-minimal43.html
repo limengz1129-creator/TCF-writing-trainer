@@ -4,11 +4,11 @@
 <div class="note">这是独立试点，不覆盖原有71条 C1 记录及159题双向索引。43个短主段根据既有素材整理，按真题要求切换结论；不能把一套通用骨架重复当作三个独立理由。</div>
 <div class="tools"><input id="search" type="search" placeholder="搜索法语、中文、母论点"><select id="mother"><option value="">全部母论点</option></select><select id="status"><option value="">全部进度</option><option value="new">未学习</option><option value="learning">学习中</option><option value="mastered">已掌握</option></select><button id="toggle">隐藏全部法语</button><label for="piperRate">语速</label><select id="piperRate"><option value="0.8">0.8×</option><option value="1" selected>1×</option><option value="1.2">1.2×</option></select></div>
 <p id="summary"></p><main id="list" class="wrap"></main>
-<script src="c1-career-minimal43-data.js?v=20261022career"></script><script>
+<script src="c1-career-minimal43-data.js?v=career43-final-20261022"></script><script>
 'use strict';
 let currentAudio=null,currentUrl=null,playingButton=null,manifestPromise=null,playVersion=0;
 function stopPiper(){playVersion++;if(currentAudio){currentAudio.pause();currentAudio.removeAttribute('src');currentAudio=null;}if(currentUrl){URL.revokeObjectURL(currentUrl);currentUrl=null;}if(playingButton){playingButton.textContent='🔊 Piper 朗读';playingButton=null;}}
-function getAudioIndex(){if(!manifestPromise)manifestPromise=fetch('c1-career-minimal43-audio/manifest.json?v=20261022career',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('静态音频尚未部署');return r.json()}).catch(e=>{manifestPromise=null;throw e});return manifestPromise}
+function getAudioIndex(){if(!manifestPromise)manifestPromise=fetch('c1-career-minimal43-audio/manifest.json?v=career43-final-20261022',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('静态音频尚未部署');return r.json()}).catch(e=>{manifestPromise=null;throw e});return manifestPromise}
 async function playPiper(sentence,btn){
  if(playingButton===btn){stopPiper();return;}stopPiper();const version=playVersion;btn.textContent='加载 Piper…';playingButton=btn;
  try{
