@@ -141,6 +141,29 @@ jobs:
                   assert (folder/record['pack']).is_file(),f'Missing C1 {name}: {text}'
               print(f'Pages C1 {name}: {len(entries)} text targets verified')
           PY
+      - name: Verify 45 compact Travel C1 Piper recordings in Pages artifact
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          root = Path('eo-tache3-corpus')
+          data = (root / 'c1-travel-minimal45-data.js').read_text(encoding='utf-8')
+          units = json.loads(data.split('=', 1)[1].strip().rstrip(';'))
+          folder = root / 'c1-travel-minimal45-audio'
+          manifest = json.loads((folder / 'manifest.json').read_text(encoding='utf-8'))
+          entries = manifest['entries']
+          assert len(units) == 45, f'Expected 45 C1 units, found {len(units)}'
+          for unit in units:
+              phrase = unit['fr'].strip()
+              assert phrase in entries, f'Missing audio index: {unit["id"]}'
+              ref = entries[phrase]
+              file = folder / ref.get('reuse', ref.get('pack', ''))
+              assert file.is_file() and file.stat().st_size > 100, f'Missing audio pack: {file}'
+              pack = json.loads(file.read_text(encoding='utf-8'))
+              assert pack[ref['id']]['text'] == phrase, f'Audio/text mismatch: {unit["id"]}'
+              assert pack[ref['id']]['audio'], f'Empty audio: {unit["id"]}'
+          print('PASS: 45/45 compact Travel C1 Piper audio packs and exact original texts')
+          PY
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
