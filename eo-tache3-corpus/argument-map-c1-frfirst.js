@@ -278,22 +278,36 @@
     function vocab(section,raw){
       const area=document.createElement('div');area.className='c1-vocab';
       const ls=lines(raw).filter(x=>!/^类型\s+法语表达/.test(x));
-      // Word table extraction puts French and Chinese on the same line.
-      // Separate the two languages so that French always receives its Piper button.
-      for(const original of ls){
-        const row=document.createElement('div');row.className='c1-vocab-row';
+      // Word-table exports can put the Chinese gloss between a wrapped
+      // French entry and its continuation. Assemble logical entries first.
+      const entries=[];
+      for(let i=0;i<ls.length;i++){
+        const original=ls[i];
         const line=original.replace(/^(?:核心|拓展)\s*/,'').trim();
+        if(!line)continue;
         const zhAt=line.search(/[\u3400-\u9fff]/);
         const fr=(zhAt<0?line:line.slice(0,zhAt)).trim();
         const zh=(zhAt<0?'':line.slice(zhAt)).trim();
-        if(/[A-Za-zÀ-ÿ]/.test(fr))row.append(audioLine(fr));
-        if(zh){const label=document.createElement('span');label.className='logic-zh';label.textContent=zh;row.append(label);}
-        if(!row.childNodes.length)row.textContent=line;
-        area.append(row);
+        const hasGloss=/^(?:核心|拓展)\s*/.test(original)||Boolean(zh);
+        if(fr && !zh && !hasGloss && entries.length && entries[entries.length-1].zh &&
+           !(i+1<ls.length && /^(?:核心|拓展)\s*/.test(ls[i+1]))){
+          // Continuation has no own Chinese gloss: attach to the last entry.
+          entries[entries.length-1].fr+=' '+fr;
+        }else if(zh && !fr && entries.length){
+          entries[entries.length-1].zh+=(entries[entries.length-1].zh?' ':'')+zh;
+        }else if(fr || zh){
+          entries.push({fr,zh});
+        }
+      }
+      for(const entry of entries){
+        const row=document.createElement('div');row.className='c1-vocab-row';
+        if(/[A-Za-zÀ-ÿ]/.test(entry.fr))row.append(audioLine(entry.fr));
+        if(entry.zh){const label=document.createElement('span');label.className='logic-zh';label.textContent=entry.zh;row.append(label);}
+        if(row.childNodes.length)area.append(row);
       }
       section.append(area);
     }
-    for(const [i,r] of records.entries()){
+        for(const [i,r] of records.entries()){
       const slug='c1-scene-'+id+'-'+i;
       const go=document.createElement('button');go.type='button';go.textContent=r.scene.replace('｜',' · ');go.onclick=()=>document.getElementById(slug)?.scrollIntoView({behavior:'smooth',block:'start'});nav.append(go);
       const card=document.createElement('section');card.id=slug;card.className='argument-core c1-scene-card';
