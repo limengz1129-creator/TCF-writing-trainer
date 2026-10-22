@@ -192,7 +192,7 @@
         const segments=entry?[fr]:((topic==='旅行与移民'||topic==='职业与职场')&&legacyWrapped[fr]||[fr]);
         // Newly deployed GitHub Pages may briefly serve the previous manifest.
         // Force a fresh index on missing entries, preserving exact Piper audio.
-        if(!entry && topic==='饮食与健康'){
+        if(!entry){
           const fresh=await fetch(new URL(audioFolder+'manifest.json?refresh='+Date.now(),document.baseURI),{cache:'reload'});
           if(fresh.ok){
             index=await fresh.json();
