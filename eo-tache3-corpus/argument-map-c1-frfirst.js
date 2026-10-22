@@ -180,6 +180,13 @@
       try{
         let index=await loadManifest();
         let entry=index.entries?.[fr];
+        const legacyWrapped={
+          'au travail, dans les commerces ou dans ses relations sociales':['au travail, dans les commerces ou dans ses relations','sociales'],
+          'Les jeunes ont généralement plus de facilité à assimiler de nouveaux mots et de nouvelles expressions.':['Les jeunes ont généralement plus de facilité à assimiler de','nouveaux mots et de nouvelles expressions.'],
+          'La maîtrise de plusieurs langues constitue un véritable atout, notamment dans les entreprises internationales.':['La maîtrise de plusieurs langues constitue un véritable','atout, notamment dans les entreprises internationales.'],
+          'les jeunes font souvent preuve d’une plus grande ouverture d’esprit':['les jeunes font souvent preuve d’une plus grande ouverture','d’esprit']
+        };
+        const segments=entry?[fr]:(topic==='旅行与移民'&&legacyWrapped[fr]||[fr]);
         // Newly deployed GitHub Pages may briefly serve the previous manifest.
         // Force a fresh index on missing entries, preserving exact Piper audio.
         if(!entry && topic==='饮食与健康'){
@@ -190,12 +197,21 @@
             entry=index.entries?.[fr];
           }
         }
-        if(!entry)throw Error('最新音频索引中找不到本词块：'+fr);
-        const packUrl=new URL(entry.pack,new URL(audioFolder,document.baseURI));
-        const response=await fetch(packUrl,{cache:'no-store'});if(!response.ok)throw Error('C1 Piper 音频包加载失败（HTTP '+response.status+'）：'+entry.pack);
-        const item=(await response.json())[entry.id];
-        if(!item||item.text!==fr)throw Error('C1 音频索引与录音内容不匹配：'+fr);
-        const parts=[item];
+        const parts=[];
+        const packCache=new Map();
+        for(const phrase of segments){
+          const hit=index.entries?.[phrase];
+          if(!hit)throw Error('最新音频索引中找不到本词块：'+phrase);
+          if(!packCache.has(hit.pack)){
+            const packUrl=new URL(hit.pack,new URL(audioFolder,document.baseURI));
+            const response=await fetch(packUrl,{cache:'no-store'});
+            if(!response.ok)throw Error('C1 Piper 音频包加载失败（HTTP '+response.status+'）：'+hit.pack);
+            packCache.set(hit.pack,await response.json());
+          }
+          const item=packCache.get(hit.pack)[hit.id];
+          if(!item||item.text!==phrase)throw Error('C1 音频索引与录音内容不匹配：'+phrase);
+          parts.push(item);
+        }
         if(currentButton!==btn)return;
         let pos=0;
         const next=()=>{
