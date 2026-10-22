@@ -184,9 +184,12 @@
           'au travail, dans les commerces ou dans ses relations sociales':['au travail, dans les commerces ou dans ses relations','sociales'],
           'Les jeunes ont généralement plus de facilité à assimiler de nouveaux mots et de nouvelles expressions.':['Les jeunes ont généralement plus de facilité à assimiler de','nouveaux mots et de nouvelles expressions.'],
           'La maîtrise de plusieurs langues constitue un véritable atout, notamment dans les entreprises internationales.':['La maîtrise de plusieurs langues constitue un véritable','atout, notamment dans les entreprises internationales.'],
-          'les jeunes font souvent preuve d’une plus grande ouverture d’esprit':['les jeunes font souvent preuve d’une plus grande ouverture','d’esprit']
+          'les jeunes font souvent preuve d’une plus grande ouverture d’esprit':['les jeunes font souvent preuve d’une plus grande ouverture','d’esprit'],
+          'apporter un regard extérieur sur le fonctionnement de l’entreprise':['apporter un regard extérieur sur le fonctionnement de','l’entreprise'],
+          'brouiller la frontière entre la vie professionnelle et la vie personnelle':['brouiller la frontière entre la vie professionnelle et la vie','personnelle'],
+          'acquérir progressivement les compétences techniques nécessaires':['acquérir progressivement les compétences techniques','nécessaires']
         };
-        const segments=entry?[fr]:(topic==='旅行与移民'&&legacyWrapped[fr]||[fr]);
+        const segments=entry?[fr]:((topic==='旅行与移民'||topic==='职业与职场')&&legacyWrapped[fr]||[fr]);
         // Newly deployed GitHub Pages may briefly serve the previous manifest.
         // Force a fresh index on missing entries, preserving exact Piper audio.
         if(!entry && topic==='饮食与健康'){
@@ -307,9 +310,9 @@
           // If no gloss follows, it is a Word-wrapped continuation.
           const next=parsed[i+1];
           const prev=entries[entries.length-1];
-          const incomplete=prev && /(?:\b(?:de|des|du|à|au|aux|en|dans|avec|pour|sur|sans|ou|et|un|une|le|la|les|ses|son|sa|leur|leurs|véritable|ouverture|relations)\s*)$/i.test(prev.fr);
-          const fragment=/^(?:[a-zà-ÿ’'-]+\s*){1,3}$/i.test(item.fr) && !next?.zh;
-          const continuation=entries.length>0 && !item.zh && (!prev.zh || incomplete || fragment);
+          // An adjacent French line starts a NEW term when its own gloss follows.
+          // Only a gloss-less continuation belongs to the previous entry.
+          const continuation=entries.length>0 && !item.zh && (!prev.zh || !next || !next.zh || Boolean(next.fr));
           if(continuation){entries[entries.length-1].fr+=' '+item.fr;if(item.zh)entries[entries.length-1].zh+=' '+item.zh;}
           else entries.push({fr:item.fr,zh:item.zh});
         }else if(item.zh){
