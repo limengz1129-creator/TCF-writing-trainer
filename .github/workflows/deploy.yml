@@ -193,3 +193,4 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 # Audio packs are generated in separate bot commits; this workflow must validate the latest main snapshot.
+# Deploy latest Piper assets generated after the previous Pages workflow run.
