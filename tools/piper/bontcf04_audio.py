@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate and verify the four BonTCF-04 C1 career sentence recordings."""
+"""Generate and verify all BonTCF-04 C1 playback targets."""
 import base64
 import json
 import subprocess
@@ -14,7 +14,7 @@ def targets():
     raw = DATA.read_text(encoding="utf-8")
     item = json.loads(raw.split("=", 1)[1].strip().rstrip(";"))[3]
     assert item["topic"] == "职业与职场" and item["scene"] == "运动员薪酬的商业来源"
-    return [phrase for phrase, _ in item["paragraphs"]]
+    # UI plays core, every vocabulary entry, split logic-chain nodes, and each sentence.\n    phrases = [item["core"]]\n    phrases += [word[0] for word in item["words"]]\n    phrases += [node.strip() for node in item["logic"]]\n    phrases += [phrase for phrase, _ in item["paragraphs"]]\n    return list(dict.fromkeys(phrases))
 
 def verify():
     entries = json.loads((OUT / "manifest.json").read_text(encoding="utf-8"))["entries"]
@@ -27,7 +27,7 @@ def verify():
         data = base64.b64decode(clip["audio"], validate=True)
         assert data[:3] == b"ID3" or data[:2] in (bytes.fromhex("fffb"),bytes.fromhex("fff3"),bytes.fromhex("fff2"))
         assert len(data) > 200, f"Empty audio for {phrase}"
-    print("PASS: all four BonTCF-04 sentences have validated Piper MP3", flush=True)
+    print("PASS: all BonTCF-04 core, vocabulary, logic-chain and sentence clips have validated Piper MP3", flush=True)
 
 def generate(model):
     from piper import PiperVoice
@@ -36,7 +36,7 @@ def generate(model):
     missing = [phrase for phrase in targets() if phrase not in catalog["entries"]]
     if missing:
         voice = PiperVoice.load(model)
-        pack = {}
+        pack = {}\n        # A new unique pack name prevents overwriting packs from a previous deployment.
         for index, phrase in enumerate(missing):
             pcm = b"".join(chunk.audio_int16_bytes for chunk in voice.synthesize(phrase))
             assert pcm, phrase
@@ -46,10 +46,10 @@ def generate(model):
                 "-codec:a", "libmp3lame", "-b:a", "48k", "-f", "mp3", "pipe:1"
             ], input=pcm, capture_output=True, check=True).stdout
             assert mp3, phrase
-            key = f"bontcf04_{index}"
+            key = f"bontcf04_extra_{index}"
             pack[key] = {"text": phrase, "audio": base64.b64encode(mp3).decode("ascii")}
-            catalog["entries"][phrase] = {"pack": "pack-bontcf04.json", "id": key}
-        (OUT / "pack-bontcf04.json").write_text(
+            catalog["entries"][phrase] = {"pack": "pack-bontcf04-extra.json", "id": key}
+        (OUT / "pack-bontcf04-extra.json").write_text(
             json.dumps(pack, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
         path.write_text(json.dumps(catalog, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     verify()
