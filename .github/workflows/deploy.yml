@@ -195,3 +195,4 @@ jobs:
 # Audio packs are generated in separate bot commits; this workflow must validate the latest main snapshot.
 # Deploy latest Piper assets generated after the previous Pages workflow run.
 # Redeploy latest main after C1 travel Piper audio bot commit 8b6dfe8.
+# Redeploy latest main with verified environment C1 Piper audio commit c452338d.
