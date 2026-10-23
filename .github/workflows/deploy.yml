@@ -193,6 +193,8 @@ jobs:
                   assert content[record['id']]['text']==phrase.strip(),u['id']
           print('PASS: 43 career study groups, 71 source records and exact Piper phrase audio')
           PY
+      - name: Generate and verify Piper audio for all 324 verb constructions
+        run: python3 tools/piper/build_verb324_audio.py
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
