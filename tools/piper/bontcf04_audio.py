@@ -14,7 +14,12 @@ def targets():
     raw = DATA.read_text(encoding="utf-8")
     item = json.loads(raw.split("=", 1)[1].strip().rstrip(";"))[3]
     assert item["topic"] == "职业与职场" and item["scene"] == "运动员薪酬的商业来源"
-    # UI plays core, every vocabulary entry, split logic-chain nodes, and each sentence.\n    phrases = [item["core"]]\n    phrases += [word[0] for word in item["words"]]\n    phrases += [node.strip() for node in item["logic"]]\n    phrases += [phrase for phrase, _ in item["paragraphs"]]\n    return list(dict.fromkeys(phrases))
+    # UI plays core, every vocabulary entry, split logic-chain nodes, and each sentence.
+    phrases = [item["core"]]
+    phrases += [word[0] for word in item["words"]]
+    phrases += [node.strip() for node in item["logic"]]
+    phrases += [phrase for phrase, _ in item["paragraphs"]]
+    return list(dict.fromkeys(phrases))
 
 def verify():
     entries = json.loads((OUT / "manifest.json").read_text(encoding="utf-8"))["entries"]
@@ -36,7 +41,8 @@ def generate(model):
     missing = [phrase for phrase in targets() if phrase not in catalog["entries"]]
     if missing:
         voice = PiperVoice.load(model)
-        pack = {}\n        # A new unique pack name prevents overwriting packs from a previous deployment.
+        pack = {}
+        # A new unique pack name prevents overwriting packs from a previous deployment.
         for index, phrase in enumerate(missing):
             pcm = b"".join(chunk.audio_int16_bytes for chunk in voice.synthesize(phrase))
             assert pcm, phrase
