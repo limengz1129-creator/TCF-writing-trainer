@@ -131,6 +131,9 @@ jobs:
         run: python3 tools/piper/audit_t3_social.py
       - name: Validate family topic Piper before publishing
         run: python3 tools/piper/audit_t3_family.py
+      - name: Generate missing C1 travel Piper recordings for Pages
+        run: |
+          python3 tools/piper/c1_travel_audio.py generate-missing --model /tmp/fr_FR-siwis-medium.onnx
       - name: Verify C1 review audio packs before Pages upload
         run: |
           python3 tools/piper/c1_travel_audio.py verify
