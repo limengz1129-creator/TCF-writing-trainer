@@ -1,0 +1,29 @@
+name: Export T3 C1 Paragraph Word Documents
+on:
+  push:
+    paths:
+      - 'scripts/export_t3_c1_paragraphs_docx.py'
+      - '.github/workflows/export-t3-c1-word.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install python-docx
+      - run: python scripts/export_t3_c1_paragraphs_docx.py
+      - name: Commit nine Word files
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add exports/t3-c1-paragraphs/*.docx
+          if ! git diff --cached --quiet; then
+            git commit -m 'Export current nine C1 themes as bilingual paragraph Word files'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
