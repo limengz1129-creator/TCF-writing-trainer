@@ -107,13 +107,57 @@ def generate(model):
     flush()
     mf.write_text(json.dumps({"voice":"fr_FR-siwis-medium","version":"content-addressed-v2","entries":entries},ensure_ascii=False,separators=(",",":")),encoding="utf-8")
     verify()
+
+def generate_missing(model):
+    """Generate only utterances absent from the manifest, retaining existing audio packs."""
+    from piper import PiperVoice
+    OUT.mkdir(parents=True, exist_ok=True)
+    expected=targets()
+    mf=OUT/"manifest.json"
+    previous=json.loads(mf.read_text(encoding="utf-8")) if mf.exists() else {}
+    entries=previous.get("entries",{}).copy()
+    missing=[text for text in expected if text not in entries or not (OUT/entries[text]["pack"]).is_file()]
+    print(f"C1 travel: {len(missing)} missing utterances of {len(expected)} total",flush=True)
+    if not missing:
+        verify()
+        return
+    voice=PiperVoice.load(str(model))
+    batch={}
+    size=0
+    number=0
+    def flush():
+        nonlocal batch,size,number
+        if not batch:return
+        body=json.dumps(batch,ensure_ascii=False,separators=(",",":"))
+        digest=hashlib.sha256(body.encode("utf-8")).hexdigest()[:16]
+        name=f"pack-extra-{number:04d}-{digest}.json"
+        (OUT/name).write_text(body,encoding="utf-8")
+        for key,value in batch.items():entries[value["text"]]={"pack":name,"id":key}
+        batch={}
+        size=0
+        number+=1
+    for i,phrase in enumerate(missing):
+        pcm=b"".join(ch.audio_int16_bytes for ch in voice.synthesize(phrase))
+        if not pcm:raise RuntimeError("Empty Piper synthesis: "+phrase)
+        audio=subprocess.run(["ffmpeg","-hide_banner","-loglevel","error","-f","s16le","-ar",str(voice.config.sample_rate),"-ac","1","-i","pipe:0","-codec:a","libmp3lame","-b:a","48k","-f","mp3","pipe:1"],input=pcm,capture_output=True,check=True).stdout
+        if not audio:raise RuntimeError("Empty MP3: "+phrase)
+        record={"text":phrase,"audio":base64.b64encode(audio).decode("ascii")}
+        if size+len(record["audio"])>1350000:flush()
+        batch[f"extra{i:05d}"]=record
+        size+=len(record["audio"])
+        if (i+1)%25==0:print(f"Generated {i+1}/{len(missing)} missing C1 travel clips",flush=True)
+    flush()
+    mf.write_text(json.dumps({"voice":"fr_FR-siwis-medium","version":"content-addressed-v2","entries":entries},ensure_ascii=False,separators=(",",":")),encoding="utf-8")
+    verify()
+
 if __name__=="__main__":
     cli=argparse.ArgumentParser()
-    cli.add_argument("operation",choices=["generate","verify","count"])
+    cli.add_argument("operation",choices=["generate","generate-missing","verify","count"])
     cli.add_argument("--model")
     args=cli.parse_args()
     if args.operation=="count":print(len(targets()))
     elif args.operation=="verify":verify()
     else:
         if not args.model:cli.error("--model is required")
-        generate(Path(args.model))
+        if args.operation=="generate-missing":generate_missing(Path(args.model))
+        else:generate(Path(args.model))
