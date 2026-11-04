@@ -48,3 +48,4 @@ jobs:
             echo 'Audio push failed after retries' >&2
             exit 1
           fi
+# Regenerate missing remote-work utterances after concurrent Piper manifest updates (Nov 2026).
