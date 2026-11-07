@@ -1,0 +1,55 @@
+name: Generate oral T1 R1 Piper siwis audio
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/generate-t1-r1-piper.yml'
+      - 'tools/piper/t1-r1/generate.py'
+      - 'eo-tache1/r1-audio/terms.json'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: t1-r1-piper-siwis
+  cancel-in-progress: false
+jobs:
+  generate:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Piper and ffmpeg
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+          python -m pip install 'piper-tts>=1.3,<2'
+      - name: Download fr_FR-siwis-medium model
+        run: |
+          mkdir -p .piper-model
+          curl -fL --retry 5 -o .piper-model/fr_FR-siwis-medium.onnx 'https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx'
+          curl -fL --retry 5 -o .piper-model/fr_FR-siwis-medium.onnx.json 'https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx.json'
+      - name: Generate all 144 isolated R1 audio targets
+        run: python tools/piper/t1-r1/generate.py --model .piper-model/fr_FR-siwis-medium.onnx
+      - name: Commit generated Piper packs
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add eo-tache1/r1-audio/manifest.json eo-tache1/r1-audio/pack-*.json
+          if git diff --cached --quiet; then
+            echo 'No audio changes'
+          else
+            git commit -m 'Generate 144 Piper siwis tracks for oral T1 R1'
+            for attempt in 1 2 3 4 5; do
+              git fetch origin main
+              git rebase origin/main || { git rebase --abort; exit 1; }
+              if git push origin HEAD:main; then exit 0; fi
+              echo "Push race; retrying ($attempt/5)"
+              sleep 5
+            done
+            echo 'Piper audio push failed' >&2
+            exit 1
+          fi
