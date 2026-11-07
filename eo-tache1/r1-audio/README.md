@@ -14,3 +14,5 @@ The 144 vocabulary / phrase entries in R1 use **Piper fr_FR-siwis-medium**. Audi
 The output contains MP3 audio in base64 JSON pack entries and whole-phrase timestamps. It does **not** claim word-level alignment. The general T1 answers and R2 sentence patterns remain text-only.
 
 To regenerate after editing the R1 phrases, synchronize `terms.json` with R1, then run the workflow. Do not publish a modified entry without matching exact audio.
+
+Audio published for all 144 exact R1 targets, with two JSON packs. The R1 web page uses the local pre-generated manifest and validates exact text equality before playing.
