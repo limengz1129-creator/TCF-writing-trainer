@@ -199,10 +199,47 @@ jobs:
           PY
       - name: Generate and verify Piper audio for all 324 verb constructions
         run: python3 tools/piper/build_verb324_audio.py
+      - name: Prepare minimal Pages site and audit upload size
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/tcf-pages-site
+          # Keep all browser-facing documents, scripts, data and audio; omit source
+          # control, development tools and Python-only build inputs from the site.
+          rsync -a ./ /tmp/tcf-pages-site/ \
+            --exclude='/.git/' \
+            --exclude='/.github/' \
+            --exclude='/tools/' \
+            --exclude='/tests/' \
+            --exclude='/node_modules/' \
+            --exclude='/.venv/' \
+            --exclude='/venv/' \
+            --exclude='__pycache__/' \
+            --exclude='*.pyc' \
+            --exclude='*.onnx' \
+            --exclude='*.onnx.json' \
+            --exclude='*.zip' \
+            --exclude='*.tar' \
+            --exclude='*.tar.gz' \
+            --exclude='*.log'
+          test -s /tmp/tcf-pages-site/index.html
+          test -s /tmp/tcf-pages-site/eo-tache1/index.html
+          python3 - <<'PY'
+          from pathlib import Path
+          root=Path('/tmp/tcf-pages-site')
+          totals={}
+          for p in root.rglob('*'):
+              if p.is_file():
+                  category=p.relative_to(root).parts[0]
+                  totals[category]=totals.get(category,0)+p.stat().st_size
+          for folder,size in sorted(totals.items(),key=lambda x:-x[1])[:30]:
+              print(f'{size/1024**2:9.1f} MiB  {folder}')
+          total=sum(totals.values())
+          print(f'Uncompressed site payload: {total/1024**2:.1f} MiB')
+          PY
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: .
+          path: /tmp/tcf-pages-site
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
