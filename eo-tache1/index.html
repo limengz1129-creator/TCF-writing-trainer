@@ -18,6 +18,10 @@ textarea{display:block;width:100%;min-height:105px;padding:12px;border:1px solid
 .practice-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:9px}
 .status{font-size:13px;color:#567;float:right}.highlight{background:#fff0c1}
 .tip{border-left:3px solid #6f98c9;padding:10px 14px;background:#f1f6ff;color:#435d7c;margin:18px 0}
+.r1-line{padding:10px 0;border-bottom:1px solid #e7edf4;display:flex;gap:12px;justify-content:space-between;align-items:flex-start;flex-wrap:wrap}
+.r1-line:last-child{border-bottom:0}.r1-words{min-width:0;flex:1;line-height:1.6}.r1-fr{font-weight:600;color:#244369;overflow-wrap:anywhere}.r1-zh{font-size:14px;color:#4e6276}.r1-source{font-size:12px;color:#7c8998}
+.r1-speak{flex-shrink:0;border:1px solid #b7cae4;background:#edf4fe;color:#18487e;border-radius:9px;padding:7px 10px;cursor:pointer;min-width:50px}.r1-speak:focus-visible{outline:3px solid #82b5f4}
+.r1-audio{border:1px solid #c4d9ef;border-radius:10px;background:#f4f8ff;padding:12px;margin:8px 0;flex-basis:100%}.r1-audio audio{display:block;width:100%;margin-top:8px}.r1-audio select{margin-left:6px;padding:4px;border-radius:5px}.r1-playing{background:#f1f7ff}
 @media(max-width:760px){main{grid-template-columns:1fr}aside{position:static;max-height:none}aside nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:3px}.panel{padding:15px}}
 </style></head><body>
 <header><small>TCF Canada · Expression orale · Tâche 1</small><h1>口语 T1｜自我介绍与考官追问</h1>
@@ -92,10 +96,104 @@ for(const [label,prefix] of references){
  const src=rawChapters.find(c=>c.title.startsWith(prefix));
  if(src)chapters.push({title:label,items:src.items});
 }
+
+const r1AudioRoot=new URL("./r1-audio/",location.href);
+let r1ManifestRequest=null,r1PlayToken=0,r1PlayingTerm="",r1BlobUrl=null;
+const r1PackCache=new Map();
+const r1AudioPanel=document.createElement("div");
+r1AudioPanel.className="r1-audio";
+r1AudioPanel.setAttribute("role","region");
+r1AudioPanel.setAttribute("aria-label","Piper 法语 siwis 音频播放器");
+const r1Title=document.createElement("div"),r1Status=document.createElement("div");
+r1Title.className="r1-fr";r1Status.className="muted";r1Status.setAttribute("role","status");
+const r1Audio=document.createElement("audio");r1Audio.controls=true;r1Audio.preload="none";
+const speed=document.createElement("label");speed.textContent="语速 ";
+const r1Rate=document.createElement("select");
+for(const [value,name] of [["0.75","0.75×"],["0.85","0.85×"],["1","1×"],["1.15","1.15×"],["1.25","1.25×"]]){
+ const opt=document.createElement("option");opt.value=value;opt.textContent=name;if(value==="1")opt.selected=true;r1Rate.appendChild(opt);
+}
+speed.appendChild(r1Rate);
+r1Rate.onchange=()=>{r1Audio.playbackRate=Number(r1Rate.value)};
+r1AudioPanel.append(r1Title,r1Status,r1Audio,speed);
+function r1Stop(){
+ ++r1PlayToken;
+ r1Audio.pause();r1Audio.removeAttribute("src");r1Audio.load();
+ if(r1BlobUrl){URL.revokeObjectURL(r1BlobUrl);r1BlobUrl=null}
+ r1PlayingTerm="";
+ r1AudioPanel.remove();
+ document.querySelectorAll(".r1-playing").forEach(row=>row.classList.remove("r1-playing"));
+}
+async function r1Json(url){
+ const response=await fetch(url,{cache:"no-store"});
+ if(!response.ok)throw Error(response.status===404?"当前音频尚未生成（请等待 GitHub Actions 发布）":"音频资源加载失败："+response.status);
+ return response.json();
+}
+async function r1Pack(name){
+ let promise=r1PackCache.get(name);
+ if(!promise){
+  promise=r1Json(new URL(name,r1AudioRoot)).catch(e=>{r1PackCache.delete(name);throw e});
+  r1PackCache.set(name,promise);
+  if(r1PackCache.size>6)r1PackCache.delete(r1PackCache.keys().next().value);
+ }
+ return promise;
+}
+async function speakR1(term,row){
+ if(r1PlayingTerm===term&&!r1Audio.paused){r1Audio.pause();r1Status.textContent="已暂停，点击播放器可继续。";return}
+ r1Stop();
+ const token=r1PlayToken;
+ r1PlayingTerm=term;
+ row.classList.add("r1-playing");
+ r1Title.textContent=term;
+ r1Status.textContent="正在加载 Piper · fr_FR-siwis-medium…";
+ row.appendChild(r1AudioPanel);
+ try{
+  if(!r1ManifestRequest)r1ManifestRequest=r1Json(new URL("manifest.json",r1AudioRoot)).catch(e=>{r1ManifestRequest=null;throw e});
+  const manifest=await r1ManifestRequest;
+  if(token!==r1PlayToken)return;
+  if(manifest.voice!=="fr_FR-siwis-medium")throw Error("Piper 声音模型与预期不符");
+  const link=manifest.targets?.[term]?.[0];
+  if(!link)throw Error("该词块还没有对应的 Piper 音频");
+  const record=manifest.records?.[link.id];
+  if(!record)throw Error("音频索引缺失");
+  const pack=await r1Pack(record.pack);
+  if(token!==r1PlayToken)return;
+  const item=pack[record.id];
+  if(!item||item.text!==term)throw Error("音频与词块原文不一致");
+  const bytes=Uint8Array.from(atob(item.audio),c=>c.charCodeAt(0));
+  r1BlobUrl=URL.createObjectURL(new Blob([bytes],{type:"audio/mpeg"}));
+  r1Audio.src=r1BlobUrl;
+  r1Audio.playbackRate=Number(r1Rate.value);
+  r1Status.textContent="Piper 法语录音已就绪 · 可暂停、拖动和调整语速";
+  try{await r1Audio.play()}catch{r1Status.textContent="已加载录音，请点击播放器上的播放键。"}
+ }catch(e){if(token===r1PlayToken)r1Status.textContent=e.message}
+}
+function renderR1Answer(body,item){
+ for(const line of item.body.split("\n")){
+  const trimmed=line.trim();if(!trimmed)continue;
+  const match=trimmed.match(/^(.+?) — (.+?)｜来源：(.+)$/);
+  if(!match){
+   const para=document.createElement("p");para.textContent=trimmed;body.appendChild(para);
+   continue;
+  }
+  const [,fr,zh,origin]=match;
+  const row=document.createElement("div");row.className="r1-line";
+  const words=document.createElement("div");words.className="r1-words";
+  const label=document.createElement("div");label.className="r1-fr";label.lang="fr";label.textContent=fr;
+  const trans=document.createElement("div");trans.className="r1-zh";trans.textContent=zh;
+  const source=document.createElement("div");source.className="r1-source";source.textContent="来源："+origin;
+  words.append(label,trans,source);
+  const btn=document.createElement("button");btn.type="button";btn.className="r1-speak";btn.textContent="🔊";btn.setAttribute("aria-label","朗读："+fr);
+  btn.onclick=()=>speakR1(fr,row);
+  row.append(words,btn);body.appendChild(row);
+ }
+}
+window.addEventListener("pagehide",r1Stop);
+
 const nav=document.getElementById("nav"),cards=document.getElementById("cards"),heading=document.getElementById("heading");
 let selected=0;
 chapters.forEach((c,i)=>{const b=document.createElement("button");b.textContent=c.title;b.onclick=()=>{selected=i;document.getElementById("search").value="";render();window.scrollTo({top:0,behavior:"smooth"})};nav.appendChild(b)});
 function render(){
+ r1Stop();
  const needle=document.getElementById("search").value.trim().toLocaleLowerCase();
  [...nav.children].forEach((el,i)=>el.classList.toggle("active",i===selected));
  const shown=needle?chapters:[chapters[selected]];
@@ -113,9 +211,9 @@ function render(){
    rendered++;
    const article=document.createElement("article");article.className="item";
    const title=document.createElement("h3");title.textContent=it.title;article.appendChild(title);
-   const body=document.createElement("div");body.className="source";body.textContent=it.body;article.appendChild(body);
+   const body=document.createElement("div");body.className="source";if(ch.title.startsWith("R1."))renderR1Answer(body,it);else body.textContent=it.body;article.appendChild(body);
    const m=it.title.match(/^(\d{2})\s*[·｜]/);
-   if(m){
+   if(m&&!ch.title.startsWith("R1.")&&!ch.title.startsWith("R2.")){
     const area=document.createElement("textarea");
     area.placeholder="可在此自行默写或记录（仅保存在本浏览器）";
     const key="tcf_t1_text_"+m[1];
