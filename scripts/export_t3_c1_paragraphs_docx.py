@@ -69,3 +69,52 @@ for slug,title in TOPICS:
     dest=OUT/f'{title}｜C1完整论段.docx'
     doc.save(dest)
     print(f'{title}: {len(entries)} paragraphs -> {dest}')
+
+
+# Combined latest-version Word: theme → mother argument → scene → bilingual paragraph.
+combined=Document()
+sec=combined.sections[0]
+sec.top_margin=Cm(2);sec.bottom_margin=Cm(2)
+sec.left_margin=Cm(2.25);sec.right_margin=Cm(2.25)
+styles=combined.styles
+styles['Normal'].font.name='Arial';styles['Normal'].font.size=Pt(10.5)
+styles['Normal'].paragraph_format.space_after=Pt(4)
+for s,size in [('Title',20),('Heading 1',16),('Heading 2',13),('Heading 3',11)]:
+    styles[s].font.name='Arial';styles[s].font.size=Pt(size)
+    styles[s].font.color.rgb=RGBColor(29,55,82)
+fr=styles.add_style('French Text Full',WD_STYLE_TYPE.PARAGRAPH)
+fr.base_style=styles['Normal'];fr.font.name='Arial';fr.font.size=Pt(10.5)
+fr.paragraph_format.space_before=Pt(6);fr.paragraph_format.space_after=Pt(2)
+zh=styles.add_style('Chinese Text Full',WD_STYLE_TYPE.PARAGRAPH)
+zh.base_style=styles['Normal'];zh.font.name='Microsoft YaHei';zh.font.size=Pt(10)
+zh.font.color.rgb=RGBColor(75,80,87)
+zh.paragraph_format.space_after=Pt(4)
+combined.add_heading('TCF Canada Tâche 3｜九大主题 C1 完整论段',0)
+combined.add_paragraph('当前仓库数据版本 · 按主题 / 母论点 / 具体情境整理 · 完整法语论段与逐句中文')
+toc=combined.add_paragraph('目录：')
+for idx,(slug,title) in enumerate(TOPICS,1):
+    entries=parse(ROOT/f'c1-{slug}-data.js')
+    combined.add_paragraph(f'{idx:02d}  {title}（{len(entries)} 个情境）')
+combined.add_page_break()
+for idx,(slug,title) in enumerate(TOPICS,1):
+    entries=parse(ROOT/f'c1-{slug}-data.js')
+    if idx>1: combined.add_page_break()
+    combined.add_heading(f'{idx:02d}｜{title}',level=1)
+    group=None;mother=None
+    for e in entries:
+        g=e.get('group') or '母论点'
+        m=e.get('mother') or ''
+        if g!=group:
+            group=g;mother=None
+            if g!='母论点': combined.add_heading(g,level=2)
+        if m!=mother:
+            mother=m
+            combined.add_heading(m,level=2 if g=='母论点' else 3)
+        p=combined.add_paragraph()
+        p.style='Heading 3'
+        p.add_run(f"{e['id']} · {e.get('scene','情境')}")
+        for lang,line in bilingual(e.get('text','')):
+            combined.add_paragraph(line,style='French Text Full' if lang=='fr' else 'Chinese Text Full')
+dest=OUT/'TCF_Tache3_九大主题_C1最新版完整论段_总汇.docx'
+combined.save(dest)
+print('Combined document:',dest)
