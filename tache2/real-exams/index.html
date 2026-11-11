@@ -13,7 +13,7 @@
     .back{display:inline-block;text-decoration:none;border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px 12px;font-weight:700}
     .intro{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:16px;padding:18px;margin-bottom:20px}
     .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.card{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:17px}.card h2{font-size:18px;margin:0 0 7px}.card-link{display:block;text-decoration:none;color:inherit}.card-link:hover{border-color:#9bb8aa;box-shadow:0 6px 18px rgba(40,91,76,.08)}.count{display:inline-block;background:var(--accent-soft);color:var(--accent);padding:3px 8px;border-radius:999px;font-size:12px;font-weight:700}
-    .status{font-size:13px;color:var(--muted);margin-top:8px}.note{margin-top:22px;padding-top:15px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+    .status{font-size:13px;color:var(--muted);margin-top:8px}.theme-unit{display:flex;flex-direction:column;gap:6px}.theme-unit>.card{flex:1}.compact-link{display:block;text-decoration:none;padding:9px 12px;background:var(--accent-soft);border:1px solid #c7ddd1;color:var(--accent);border-radius:9px;font-size:14px;font-weight:700}.compact-link:hover{background:#d7eae0}.note{margin-top:22px;padding-top:15px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
     @media(max-width:720px){.top{flex-direction:column}.grid{grid-template-columns:1fr}}
   </style>
 </head>
@@ -34,17 +34,17 @@
   </div>
 
   <div class="grid">
-    <a class="card card-link" href="travel.html"><h2>旅行与住宿</h2><span class="count">27 题</span><div class="status">✅ 已正式导入 · 点击学习</div></a>
-    <a class="card card-link" href="theme-study.html?theme=housing"><h2>住房与安家</h2><span class="count">33 题</span><div class="status">✅ 已正式导入 · 点击学习</div></a>
-    <a class="card card-link" href="theme-study.html?theme=social"><h2>社交聚会与个人生活</h2><span class="count">17 题</span><div class="status">✅ 已正式导入 · 点击学习</div></a>
-    <a class="card card-link" href="theme-study.html?theme=education"><h2>教育与培训</h2><span class="count">17 题</span><div class="status">✅ 已正式导入 · 点击学习</div></a>
-    <a class="card card-link" href="theme-study.html?theme=consumption"><h2>消费餐饮与生活服务</h2><span class="count">19 题</span><div class="status">✅ 已正式导入 · 点击学习</div></a>
+    <div class="theme-unit"><a class="card card-link" href="travel.html"><h2>旅行与住宿</h2><span class="count">27 题</span><div class="status">✅ 已正式导入 · 点击学习</div></a><a class="compact-link" href="travel-compact.html">精简背诵版 · 110 条主力问句（纯文本）</a></div>
+    <div class="theme-unit"><a class="card card-link" href="theme-study.html?theme=housing"><h2>住房与安家</h2><span class="count">33 题</span><div class="status">✅ 已正式导入 · 点击学习</div></a><a class="compact-link" href="housing-compact.html">精简背诵版 · 181 条主力问句（纯文本）</a></div>
+    <div class="theme-unit"><a class="card card-link" href="theme-study.html?theme=social"><h2>社交聚会与个人生活</h2><span class="count">17 题</span><div class="status">✅ 已正式导入 · 点击学习</div></a><a class="compact-link" href="social-compact.html">精简背诵版 · 142 条主力问句（纯文本）</a></div>
+    <div class="theme-unit"><a class="card card-link" href="theme-study.html?theme=education"><h2>教育与培训</h2><span class="count">17 题</span><div class="status">✅ 已正式导入 · 点击学习</div></a><a class="compact-link" href="education-compact.html">精简背诵版 · 59 条主力问句（纯文本）</a></div>
+    <div class="theme-unit"><a class="card card-link" href="theme-study.html?theme=consumption"><h2>消费餐饮与生活服务</h2><span class="count">19 题</span><div class="status">✅ 已正式导入 · 点击学习</div></a><a class="compact-link" href="consumption-compact.html">精简背诵版 · 123 条主力问句（纯文本）</a></div>
     <a class="card card-link" href="theme-study.html?theme=transport"><h2>交通与车辆</h2><span class="count">13 题</span><div class="status">✅ 已正式导入 · 点击学习</div></a>
-    <a class="card card-link" href="theme-study.html?theme=family"><h2>家庭儿童与宠物照护</h2><span class="count">5 题</span><div class="status">✅ 已正式导入 · 点击学习</div></a>
+    <div class="theme-unit"><a class="card card-link" href="theme-study.html?theme=family"><h2>家庭儿童与宠物照护</h2><span class="count">5 题</span><div class="status">✅ 已正式导入 · 点击学习</div></a><a class="compact-link" href="family-compact.html">精简背诵版 · 41 条主力问句（纯文本）</a></div>
     <a class="card card-link" href="theme-study.html?theme=sport"><h2>体育户外与场馆</h2><span class="count">9 题</span><div class="status">✅ 已正式导入 · 点击学习</div></a>
-    <a class="card card-link" href="theme-study.html?theme=health"><h2>健康安全与公共服务</h2><span class="count">10 题</span><div class="status">✅ 已正式导入 · 点击学习</div></a>
-    <a class="card card-link" href="theme-study.html?theme=culture"><h2>文化媒体与节庆</h2><span class="count">12 题</span><div class="status">✅ 已正式导入 · 点击学习</div></a>
-    <a class="card card-link" href="theme-study.html?theme=work"><h2>工作与职业</h2><span class="count">9 题</span><div class="status">✅ 已正式导入 · 点击学习</div></a>
+    <div class="theme-unit"><a class="card card-link" href="theme-study.html?theme=health"><h2>健康安全与公共服务</h2><span class="count">10 题</span><div class="status">✅ 已正式导入 · 点击学习</div></a><a class="compact-link" href="health-compact.html">精简背诵版 · 94 条主力问句（纯文本）</a></div>
+    <div class="theme-unit"><a class="card card-link" href="theme-study.html?theme=culture"><h2>文化媒体与节庆</h2><span class="count">12 题</span><div class="status">✅ 已正式导入 · 点击学习</div></a><a class="compact-link" href="culture-compact.html">精简背诵版 · 99 条主力问句（纯文本）</a></div>
+    <div class="theme-unit"><a class="card card-link" href="theme-study.html?theme=work"><h2>工作与职业</h2><span class="count">9 题</span><div class="status">✅ 已正式导入 · 点击学习</div></a><a class="compact-link" href="work-compact.html">精简背诵版 · 107 条主力问句（纯文本）</a></div>
   </div>
 
   <div class="note">11个主题均已导入当前15问学习版；主题词汇与问法已同步对应真题，并可通过来源链接定位到具体提问。</div>
