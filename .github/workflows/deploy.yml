@@ -199,6 +199,12 @@ jobs:
           PY
       - name: Generate and verify Piper audio for all 324 verb constructions
         run: python3 tools/piper/build_verb324_audio.py
+      - name: Generate missing Piper SIWIS audio for 11 T2 compact topics
+        run: |
+          python3 tools/piper/build_t2_compact_audio.py audit
+          python3 tools/piper/build_t2_compact_audio.py generate --model /tmp/fr_FR-siwis-medium.onnx
+      - name: Verify complete T2 compact audio coverage before Pages upload
+        run: python3 tools/piper/build_t2_compact_audio.py verify
       - name: Prepare minimal Pages site and audit upload size
         run: |
           set -euo pipefail
