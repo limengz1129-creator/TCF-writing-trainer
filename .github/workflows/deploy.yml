@@ -23,6 +23,7 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Generate missing BonTCF-04 career Piper recordings
+        if: ${{ !contains(github.event.head_commit.message, '[template-only]') }}
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y ffmpeg
@@ -31,6 +32,7 @@ jobs:
           curl --fail --location --retry 3 --silent --show-error -o /tmp/fr_FR-siwis-medium.onnx.json https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx.json
           python3 tools/piper/bontcf04_audio.py generate /tmp/fr_FR-siwis-medium.onnx
       - name: Verify T3 Piper audio included in Pages deployment
+        if: ${{ !contains(github.event.head_commit.message, '[template-only]') }}
         run: |
           python - <<'PY'
           import json,base64
@@ -120,21 +122,29 @@ jobs:
 
           PY
       - name: Validate education topic Piper before publishing
+        if: ${{ !contains(github.event.head_commit.message, '[template-only]') }}
         run: python3 tools/piper/audit_t3_education.py
       - name: Validate media and culture Piper before publishing
+        if: ${{ !contains(github.event.head_commit.message, '[template-only]') }}
         run: python3 tools/piper/audit_t3_media.py
       - name: Validate food and health topic Piper before publishing
+        if: ${{ !contains(github.event.head_commit.message, '[template-only]') }}
         run: python3 tools/piper/audit_t3_health.py
       - name: Validate environment topic Piper before publishing
+        if: ${{ !contains(github.event.head_commit.message, '[template-only]') }}
         run: python3 tools/piper/audit_t3_environment.py
       - name: Validate social and public affairs Piper before publishing
+        if: ${{ !contains(github.event.head_commit.message, '[template-only]') }}
         run: python3 tools/piper/audit_t3_social.py
       - name: Validate family topic Piper before publishing
+        if: ${{ !contains(github.event.head_commit.message, '[template-only]') }}
         run: python3 tools/piper/audit_t3_family.py
       - name: Generate missing C1 travel Piper recordings for Pages
+        if: ${{ !contains(github.event.head_commit.message, '[template-only]') }}
         run: |
           python3 tools/piper/c1_travel_audio.py generate-missing --model /tmp/fr_FR-siwis-medium.onnx
       - name: Verify C1 review audio packs before Pages upload
+        if: ${{ !contains(github.event.head_commit.message, '[template-only]') }}
         run: |
           python3 tools/piper/c1_travel_audio.py verify
           python3 tools/piper/c1_career_audio.py verify
@@ -154,6 +164,7 @@ jobs:
               print(f'Pages C1 {name}: {len(entries)} text targets verified')
           PY
       - name: Verify 45 compact Travel C1 Piper recordings in Pages artifact
+        if: ${{ !contains(github.event.head_commit.message, '[template-only]') }}
         run: |
           python3 - <<'PY'
           import json
@@ -177,6 +188,7 @@ jobs:
           print('PASS: 45/45 compact Travel C1 Piper audio packs and exact original texts')
           PY
       - name: Verify Career C1 43-group Piper and all 71 source positions
+        if: ${{ !contains(github.event.head_commit.message, '[template-only]') }}
         run: |
           python3 - <<'PY'
           import json
@@ -198,12 +210,15 @@ jobs:
           print('PASS: 43 career study groups, 71 source records and exact Piper phrase audio')
           PY
       - name: Generate and verify Piper audio for all 324 verb constructions
+        if: ${{ !contains(github.event.head_commit.message, '[template-only]') }}
         run: python3 tools/piper/build_verb324_audio.py
       - name: Generate missing Piper SIWIS audio for 11 T2 compact topics
+        if: ${{ !contains(github.event.head_commit.message, '[template-only]') }}
         run: |
           python3 tools/piper/build_t2_compact_audio.py audit
           python3 tools/piper/build_t2_compact_audio.py generate --model /tmp/fr_FR-siwis-medium.onnx
       - name: Verify complete T2 compact audio coverage before Pages upload
+        if: ${{ !contains(github.event.head_commit.message, '[template-only]') }}
         run: python3 tools/piper/build_t2_compact_audio.py verify
       - name: Prepare minimal Pages site and audit upload size
         run: |
